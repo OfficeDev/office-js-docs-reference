@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_3
     children:
       - excel_1_3.Excel.ChartLineFormat.clear
@@ -85,7 +85,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_3.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_3.Excel.ChartLineFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -117,13 +117,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;'
       return:
         type:
-          - excel_1_3.Excel.ChartLineFormat
+          - excel.Excel.ChartLineFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_3.Excel.Interfaces.ChartLineFormatLoadOptions
+            - excel.Excel.Interfaces.ChartLineFormatLoadOptions
   - uid: excel_1_3.Excel.ChartLineFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -137,7 +137,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLineFormat;'
       return:
         type:
-          - excel_1_3.Excel.ChartLineFormat
+          - excel.Excel.ChartLineFormat
         description: |-
 
           #### Examples
@@ -175,7 +175,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLineFormat;'
       return:
         type:
-          - excel_1_3.Excel.ChartLineFormat
+          - excel.Excel.ChartLineFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -213,7 +213,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_3.Excel.ChartLineFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -231,7 +231,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_3.Excel.ChartLineFormat
+            - excel.Excel.ChartLineFormat
   - uid: excel_1_3.Excel.ChartLineFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -248,5 +248,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLineFormatData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartLineFormatData
+          - excel.Excel.Interfaces.ChartLineFormatData
         description: ''

@@ -63,7 +63,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.CustomPropertyCollection.deleteAll
     summary: |-
       Deletes all custom properties in this collection.

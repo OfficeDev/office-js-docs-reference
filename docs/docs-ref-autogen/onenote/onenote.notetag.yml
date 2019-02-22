@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.NoteTag.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.NoteTag.id
     summary: |-
       Gets the Id of the NoteTag object. Read-only.

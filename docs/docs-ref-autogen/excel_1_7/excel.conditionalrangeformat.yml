@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.ConditionalRangeFormat.borders
@@ -39,7 +39,7 @@ items:
       content: 'readonly borders: Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalRangeBorderCollection
+          - excel.Excel.ConditionalRangeBorderCollection
   - uid: excel_1_7.Excel.ConditionalRangeFormat.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -53,7 +53,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.ConditionalRangeFormat.fill
     summary: |-
       Returns the fill object defined on the overall conditional format range. Read-only.
@@ -68,7 +68,7 @@ items:
       content: 'readonly fill: Excel.ConditionalRangeFill;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalRangeFill
+          - excel.Excel.ConditionalRangeFill
   - uid: excel_1_7.Excel.ConditionalRangeFormat.font
     summary: |-
       Returns the font object defined on the overall conditional format range. Read-only.
@@ -83,7 +83,7 @@ items:
       content: 'readonly font: Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalRangeFont
+          - excel.Excel.ConditionalRangeFont
   - uid: excel_1_7.Excel.ConditionalRangeFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -115,13 +115,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalRangeFormat
+          - excel.Excel.ConditionalRangeFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+            - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel_1_7.Excel.ConditionalRangeFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -135,7 +135,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalRangeFormat
+          - excel.Excel.ConditionalRangeFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -155,7 +155,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalRangeFormat
+          - excel.Excel.ConditionalRangeFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -208,7 +208,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ConditionalRangeFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -226,7 +226,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_7.Excel.ConditionalRangeFormat
+            - excel.Excel.ConditionalRangeFormat
   - uid: excel_1_7.Excel.ConditionalRangeFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -243,5 +243,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ConditionalRangeFormatData
+          - excel.Excel.Interfaces.ConditionalRangeFormatData
         description: ''

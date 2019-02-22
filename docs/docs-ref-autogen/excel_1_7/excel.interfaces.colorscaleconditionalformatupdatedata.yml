@@ -26,4 +26,4 @@ items:
       content: 'criteria?: Excel.ConditionalColorScaleCriteria;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalColorScaleCriteria
+          - excel.Excel.ConditionalColorScaleCriteria

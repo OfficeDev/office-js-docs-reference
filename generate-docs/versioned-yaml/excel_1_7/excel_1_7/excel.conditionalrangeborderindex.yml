@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ConditionalRangeBorderIndex
+    summary: '\[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ConditionalRangeBorderIndex
+    fullName: Excel.ConditionalRangeBorderIndex
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ConditionalRangeBorderIndex.edgeBottom
+      - excel_1_7.Excel.ConditionalRangeBorderIndex.edgeLeft
+      - excel_1_7.Excel.ConditionalRangeBorderIndex.edgeRight
+      - excel_1_7.Excel.ConditionalRangeBorderIndex.edgeTop
+  - uid: excel_1_7.Excel.ConditionalRangeBorderIndex.edgeBottom
+    name: edgeBottom
+    fullName: edgeBottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeBottom"'
+  - uid: excel_1_7.Excel.ConditionalRangeBorderIndex.edgeLeft
+    name: edgeLeft
+    fullName: edgeLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeLeft"'
+  - uid: excel_1_7.Excel.ConditionalRangeBorderIndex.edgeRight
+    name: edgeRight
+    fullName: edgeRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeRight"'
+  - uid: excel_1_7.Excel.ConditionalRangeBorderIndex.edgeTop
+    name: edgeTop
+    fullName: edgeTop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EdgeTop"'

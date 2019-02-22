@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.Application.context
@@ -50,7 +50,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.Application.getActiveNotebook
     summary: |-
       Gets the active notebook if one exists. If no notebook is active, throws ItemNotFound.
@@ -520,13 +520,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.ApplicationLoadOptions): OneNote.Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - OneNote.Application
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.ApplicationLoadOptions
+            - OneNote.Interfaces.ApplicationLoadOptions
   - uid: onenote.OneNote.Application.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -540,7 +540,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - OneNote.Application
         description: ''
       parameters:
         - id: propertyNames
@@ -560,7 +560,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - OneNote.Application
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -712,5 +712,5 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ApplicationData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ApplicationData
+          - OneNote.Interfaces.ApplicationData
         description: ''

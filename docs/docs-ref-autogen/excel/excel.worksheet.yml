@@ -186,7 +186,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.Worksheet.copy
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.

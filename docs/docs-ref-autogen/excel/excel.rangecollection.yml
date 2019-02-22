@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.RangeCollection.getCount
     summary: >-
       Returns the number of ranges in the RangeCollection.

@@ -43,7 +43,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartSeriesFormatLoadOptions
+          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: excel_1_3.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
     summary: |-
       For EACH ITEM in the collection: Represents the name of a series in a chart.
@@ -73,4 +73,4 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartPointsCollectionLoadOptions
+          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions

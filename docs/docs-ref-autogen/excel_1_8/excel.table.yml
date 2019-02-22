@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.Table.clearFilters
@@ -76,7 +76,7 @@ items:
       content: 'readonly columns: Excel.TableColumnCollection;'
       return:
         type:
-          - excel_1_8.Excel.TableColumnCollection
+          - excel.Excel.TableColumnCollection
   - uid: excel_1_8.Excel.Table.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -90,7 +90,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.Table.convertToRange
     summary: |-
       Converts the table into a normal range of cells. All data is preserved.
@@ -105,7 +105,7 @@ items:
       content: 'convertToRange(): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -169,7 +169,7 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -204,7 +204,7 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -239,7 +239,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -274,7 +274,7 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -388,13 +388,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;'
       return:
         type:
-          - excel_1_8.Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.TableLoadOptions
+            - excel.Excel.Interfaces.TableLoadOptions
   - uid: excel_1_8.Excel.Table.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -408,7 +408,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Table;'
       return:
         type:
-          - excel_1_8.Excel.Table
+          - excel.Excel.Table
         description: |-
 
           #### Examples
@@ -482,7 +482,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Table;'
       return:
         type:
-          - excel_1_8.Excel.Table
+          - excel.Excel.Table
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -592,7 +592,7 @@ items:
       content: 'readonly rows: Excel.TableRowCollection;'
       return:
         type:
-          - excel_1_8.Excel.TableRowCollection
+          - excel.Excel.TableRowCollection
   - uid: excel_1_8.Excel.Table.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -622,7 +622,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.Table.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -640,7 +640,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.Table
+            - excel.Excel.Table
   - uid: excel_1_8.Excel.Table.showBandedColumns
     summary: >-
       Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even
@@ -736,7 +736,7 @@ items:
       content: 'readonly sort: Excel.TableSort;'
       return:
         type:
-          - excel_1_8.Excel.TableSort
+          - excel.Excel.TableSort
   - uid: excel_1_8.Excel.Table.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
@@ -771,7 +771,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.TableData
+          - excel.Excel.Interfaces.TableData
         description: ''
   - uid: excel_1_8.Excel.Table.worksheet
     summary: |-
@@ -787,4 +787,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel_1_8.Excel.Worksheet
+          - excel.Excel.Worksheet

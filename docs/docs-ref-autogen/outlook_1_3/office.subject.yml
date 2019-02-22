@@ -44,7 +44,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (result: CommonAPI.AsyncResult<string>) => void):
+        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<string>) => void):
         void;
       return:
         type:
@@ -56,13 +56,13 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_3.Office.Subject.getAsync_1
     summary: >-
       Gets the subject of an appointment or message.
@@ -98,7 +98,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -109,7 +109,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_3.Office.Subject.setAsync
     summary: >-
       Sets the subject of an appointment or message.
@@ -135,8 +135,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(subject: string, options?: CommonAPI.AsyncContextOptions, callback?: (result:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(subject: string, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -151,14 +151,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will contain an
             error code.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_3.Office.Subject.setAsync_1
     summary: >-
       Sets the subject of an appointment or message.
@@ -230,7 +230,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(data: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -246,4 +246,4 @@ items:
             of type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will contain an
             error code.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

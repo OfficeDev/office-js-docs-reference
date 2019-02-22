@@ -45,7 +45,7 @@ items:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.ChartCollectionLoadOptions
+          - excel.Excel.Interfaces.ChartCollectionLoadOptions
   - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.id
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
@@ -107,7 +107,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.WorksheetProtectionLoadOptions
+          - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
     summary: |-
       For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
@@ -122,7 +122,7 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.TableCollectionLoadOptions
+          - excel.Excel.Interfaces.TableCollectionLoadOptions
   - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
     summary: >-
       For EACH ITEM in the collection: The Visibility of the worksheet.

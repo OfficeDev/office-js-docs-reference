@@ -155,7 +155,7 @@ items:
       content: 'dataValidation?: Excel.Interfaces.DataValidationData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.DataValidationData
+          - excel.Excel.Interfaces.DataValidationData
   - uid: excel_1_8.Excel.Interfaces.RangeData.format
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
@@ -172,7 +172,7 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.RangeFormatData
+          - excel.Excel.Interfaces.RangeFormatData
   - uid: excel_1_8.Excel.Interfaces.RangeData.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
@@ -257,7 +257,7 @@ items:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
         type:
-          - excel_1_8.Excel.RangeHyperlink
+          - excel.Excel.RangeHyperlink
   - uid: excel_1_8.Excel.Interfaces.RangeData.isEntireColumn
     summary: |-
       Represents if the current range is an entire column. Read-only.

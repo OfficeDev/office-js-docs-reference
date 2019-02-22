@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.ListCollection.context
@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.ListCollection.getById
     summary: |-
       Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
@@ -224,7 +224,7 @@ items:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.ListCollection.toJSON
     name: toJSON()
     fullName: toJSON()

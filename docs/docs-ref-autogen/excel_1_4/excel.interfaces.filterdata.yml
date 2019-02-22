@@ -24,4 +24,4 @@ items:
       content: 'criteria?: Excel.FilterCriteria;'
       return:
         type:
-          - excel_1_4.Excel.FilterCriteria
+          - excel.Excel.FilterCriteria

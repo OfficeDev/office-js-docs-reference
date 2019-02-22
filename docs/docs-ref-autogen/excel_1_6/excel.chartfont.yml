@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_6
     remarks: |-
 
@@ -92,7 +92,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_6.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_6.Excel.ChartFont.italic
     summary: |-
       Represents the italic status of the font.
@@ -139,13 +139,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;'
       return:
         type:
-          - excel_1_6.Excel.ChartFont
+          - excel.Excel.ChartFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_6.Excel.Interfaces.ChartFontLoadOptions
+            - excel.Excel.Interfaces.ChartFontLoadOptions
   - uid: excel_1_6.Excel.ChartFont.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -159,7 +159,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartFont;'
       return:
         type:
-          - excel_1_6.Excel.ChartFont
+          - excel.Excel.ChartFont
         description: ''
       parameters:
         - id: propertyNames
@@ -179,7 +179,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartFont;'
       return:
         type:
-          - excel_1_6.Excel.ChartFont
+          - excel.Excel.ChartFont
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -232,7 +232,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_6.Excel.ChartFont.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -250,7 +250,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_6.Excel.ChartFont
+            - excel.Excel.ChartFont
   - uid: excel_1_6.Excel.ChartFont.size
     summary: |-
       Size of the font (e.g. 11)
@@ -282,7 +282,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ChartFontData
+          - excel.Excel.Interfaces.ChartFontData
         description: ''
   - uid: excel_1_6.Excel.ChartFont.underline
     summary: |-

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.Body.clear
@@ -138,7 +138,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.Body.font
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
@@ -291,7 +291,7 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocation
@@ -312,7 +312,7 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocationString
@@ -386,7 +386,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertBreak_1
     summary: |-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
@@ -472,7 +472,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -509,7 +509,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertFileFromBase64_1
     summary: >-
       Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -528,7 +528,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -553,7 +553,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -590,7 +590,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertHtml_1
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -605,7 +605,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: html
@@ -674,7 +674,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertInlinePictureFromBase64_1
     summary: |-
       Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
@@ -716,7 +716,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -726,7 +726,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertOoxml_1
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
@@ -741,7 +741,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -766,7 +766,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: >-
 
           #### Examples
@@ -847,7 +847,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertParagraph_1
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
@@ -864,7 +864,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -891,7 +891,7 @@ items:
         Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: |-
 
           #### Examples
@@ -922,7 +922,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -943,7 +943,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -978,7 +978,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -1014,7 +1014,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Body.insertText_1
     summary: >-
       Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -1031,7 +1031,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: text
@@ -1088,7 +1088,7 @@ items:
       content: 'load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
         description: ''
       parameters:
         - id: option
@@ -1108,7 +1108,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
         description: ''
       parameters:
         - id: propertyNames
@@ -1128,7 +1128,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1151,7 +1151,7 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
   - uid: word.Word.Body.parentBody
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there
@@ -1168,7 +1168,7 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.Body.parentBodyOrNullObject
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null
@@ -1185,7 +1185,7 @@ items:
       content: 'readonly parentBodyOrNullObject: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.Body.parentContentControl
     summary: |-
       Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
@@ -1232,7 +1232,7 @@ items:
       content: 'readonly parentSection: Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - Word.Section
   - uid: word.Word.Body.parentSectionOrNullObject
     summary: |-
       Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
@@ -1247,7 +1247,7 @@ items:
       content: 'readonly parentSectionOrNullObject: Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - Word.Section
   - uid: word.Word.Body.search
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the body object. The search results are a
@@ -1273,7 +1273,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples
@@ -1418,7 +1418,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
+            - Word.SelectionMode
   - uid: word.Word.Body.select_1
     summary: |-
       Selects the body and navigates the Word UI to it.
@@ -1469,7 +1469,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Body.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1487,7 +1487,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Body
+            - Word.Body
   - uid: word.Word.Body.style
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
@@ -1600,7 +1600,7 @@ items:
       content: 'readonly tables: Word.TableCollection;'
       return:
         type:
-          - word.Word.TableCollection
+          - Word.TableCollection
   - uid: word.Word.Body.text
     summary: |-
       Gets the text of the body. Use the insertText method to insert text. Read-only.
@@ -1672,7 +1672,7 @@ items:
       content: 'track(): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
         description: ''
   - uid: word.Word.Body.type
     summary: |-
@@ -1704,5 +1704,5 @@ items:
       content: 'untrack(): Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
         description: ''

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.IconSetConditionalFormat.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.IconSetConditionalFormat.criteria
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
@@ -132,13 +132,13 @@ items:
       content: 'load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;'
       return:
         type:
-          - excel_1_8.Excel.IconSetConditionalFormat
+          - excel.Excel.IconSetConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.IconSetConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.IconSetConditionalFormatLoadOptions
   - uid: excel_1_8.Excel.IconSetConditionalFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -152,7 +152,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.IconSetConditionalFormat;'
       return:
         type:
-          - excel_1_8.Excel.IconSetConditionalFormat
+          - excel.Excel.IconSetConditionalFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -172,7 +172,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat;'
       return:
         type:
-          - excel_1_8.Excel.IconSetConditionalFormat
+          - excel.Excel.IconSetConditionalFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -225,7 +225,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.IconSetConditionalFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -243,7 +243,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.IconSetConditionalFormat
+            - excel.Excel.IconSetConditionalFormat
   - uid: excel_1_8.Excel.IconSetConditionalFormat.showIconOnly
     summary: |-
       If true, hides the values and only shows icons.
@@ -344,5 +344,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.IconSetConditionalFormatData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.IconSetConditionalFormatData
+          - excel.Excel.Interfaces.IconSetConditionalFormatData
         description: ''

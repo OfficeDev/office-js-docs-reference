@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_2
     children:
       - excel_1_2.Excel.Worksheet.activate
@@ -79,7 +79,7 @@ items:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
-          - excel_1_2.Excel.ChartCollection
+          - excel.Excel.ChartCollection
   - uid: excel_1_2.Excel.Worksheet.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -93,7 +93,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_2.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_2.Excel.Worksheet.delete
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
@@ -144,7 +144,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel_1_2.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -188,7 +188,7 @@ items:
       content: 'getRange(address?: string): Excel.Range;'
       return:
         type:
-          - excel_1_2.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -251,7 +251,7 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel_1_2.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -327,13 +327,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
-          - excel_1_2.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_2.Excel.Interfaces.WorksheetLoadOptions
+            - excel.Excel.Interfaces.WorksheetLoadOptions
   - uid: excel_1_2.Excel.Worksheet.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -347,7 +347,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       return:
         type:
-          - excel_1_2.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -400,7 +400,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;'
       return:
         type:
-          - excel_1_2.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -453,7 +453,7 @@ items:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type:
-          - excel_1_2.Excel.WorksheetProtection
+          - excel.Excel.WorksheetProtection
   - uid: excel_1_2.Excel.Worksheet.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -483,7 +483,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_2.Excel.Worksheet.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -501,7 +501,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_2.Excel.Worksheet
+            - excel.Excel.Worksheet
   - uid: excel_1_2.Excel.Worksheet.tables
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.
@@ -516,7 +516,7 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel_1_2.Excel.TableCollection
+          - excel.Excel.TableCollection
   - uid: excel_1_2.Excel.Worksheet.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -533,7 +533,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.WorksheetData
+          - excel.Excel.Interfaces.WorksheetData
         description: ''
   - uid: excel_1_2.Excel.Worksheet.visibility
     summary: >-

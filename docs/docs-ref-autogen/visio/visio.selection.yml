@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: visio
     children:
       - visio.Visio.Selection.load
@@ -74,7 +74,7 @@ items:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Selection.toJSON
     name: toJSON()
     fullName: toJSON()

@@ -54,7 +54,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartAxes.getItem
     summary: |-
       Returns the specific axis identified by type and group.

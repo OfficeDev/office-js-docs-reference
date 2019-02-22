@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.BindingCollection.add
@@ -45,7 +45,7 @@ items:
       content: 'add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: range
@@ -57,7 +57,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel_1_8.Excel.BindingType
+            - excel.Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -76,7 +76,7 @@ items:
       content: 'add(range: Range | string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: range
@@ -109,7 +109,7 @@ items:
       content: 'addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: name
@@ -119,7 +119,7 @@ items:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel_1_8.Excel.BindingType
+            - excel.Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -140,7 +140,7 @@ items:
       content: 'addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: name
@@ -171,13 +171,13 @@ items:
       content: 'addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: bindingType
           description: Type of binding. See Excel.BindingType.
           type:
-            - excel_1_8.Excel.BindingType
+            - excel.Excel.BindingType
         - id: id
           description: Name of binding.
           type:
@@ -198,7 +198,7 @@ items:
       content: 'addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: bindingTypeString
@@ -222,7 +222,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.BindingCollection.count
     summary: |-
       Returns the number of bindings in the collection. Read-only.
@@ -268,7 +268,7 @@ items:
       content: 'getItem(id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: |-
 
           #### Examples
@@ -334,7 +334,7 @@ items:
       content: 'getItemAt(index: number): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: |-
 
           #### Examples
@@ -373,7 +373,7 @@ items:
       content: 'getItemOrNullObject(id: string): Excel.Binding;'
       return:
         type:
-          - excel_1_8.Excel.Binding
+          - excel.Excel.Binding
         description: ''
       parameters:
         - id: id
@@ -425,7 +425,7 @@ items:
         Excel.BindingCollection;
       return:
         type:
-          - excel_1_8.Excel.BindingCollection
+          - excel.Excel.BindingCollection
         description: ''
       parameters:
         - id: option
@@ -445,7 +445,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.BindingCollection;'
       return:
         type:
-          - excel_1_8.Excel.BindingCollection
+          - excel.Excel.BindingCollection
         description: |-
 
           #### Examples
@@ -497,13 +497,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;'
       return:
         type:
-          - excel_1_8.Excel.BindingCollection
+          - excel.Excel.BindingCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_8.Excel.BindingCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -520,5 +520,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingCollectionData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.BindingCollectionData
+          - excel.Excel.Interfaces.BindingCollectionData
         description: ''

@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderData
+    summary: An interface describing the data returned by calling "conditionalRangeBorder.toJSON()".
+    name: Excel.Interfaces.ConditionalRangeBorderData
+    fullName: Excel.Interfaces.ConditionalRangeBorderData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderData.color
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderData.sideIndex
+      - excel_1_8.Excel.Interfaces.ConditionalRangeBorderData.style
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderData.color
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderData.sideIndex
+    summary: >-
+      Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: sideIndex
+    fullName: sideIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sideIndex?: Excel.ConditionalRangeBorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight";'
+      return:
+        type:
+          - Excel.ConditionalRangeBorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeBorderData.style
+    summary: >-
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+        "Dot";
+      return:
+        type:
+          - Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"

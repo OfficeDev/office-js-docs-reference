@@ -327,7 +327,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
+          - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.parentTableCell
     summary: |-
       Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell.
@@ -342,7 +342,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
+          - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.parentTableCellOrNullObject
     summary: |-
       Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
@@ -357,7 +357,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
+          - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.parentTableOrNullObject
     summary: |-
       Gets the table that contains the paragraph. Returns a null object if it is not contained in a table.
@@ -372,7 +372,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
+          - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.ParagraphLoadOptions.rightIndent
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.

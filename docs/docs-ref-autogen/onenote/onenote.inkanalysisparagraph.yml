@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.InkAnalysisParagraph.context
@@ -39,7 +39,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.InkAnalysisParagraph.id
     summary: |-
       Gets the ID of the InkAnalysisParagraph object. Read-only.
@@ -227,7 +227,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.InkAnalysisParagraph.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

@@ -22,7 +22,7 @@ items:
       content: 'grayDownArrow: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon
   - uid: excel_1_2.Excel.FourArrowsGraySet.grayDownInclineArrow
     name: grayDownInclineArrow
     fullName: grayDownInclineArrow
@@ -33,7 +33,7 @@ items:
       content: 'grayDownInclineArrow: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon
   - uid: excel_1_2.Excel.FourArrowsGraySet.grayUpArrow
     name: grayUpArrow
     fullName: grayUpArrow
@@ -44,7 +44,7 @@ items:
       content: 'grayUpArrow: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon
   - uid: excel_1_2.Excel.FourArrowsGraySet.grayUpInclineArrow
     name: grayUpInclineArrow
     fullName: grayUpInclineArrow
@@ -55,4 +55,4 @@ items:
       content: 'grayUpInclineArrow: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon

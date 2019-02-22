@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.ListDataValidation
+    summary: |-
+      Represents the List data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ListDataValidation
+    fullName: Excel.ListDataValidation
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.ListDataValidation.inCellDropDown
+      - excel_1_8.Excel.ListDataValidation.source
+  - uid: excel_1_8.Excel.ListDataValidation.inCellDropDown
+    summary: |-
+      Displays the list in cell drop down or not, it defaults to true.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: inCellDropDown
+    fullName: inCellDropDown
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inCellDropDown: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.ListDataValidation.source
+    summary: >-
+      The source of the list for data validation. The value is a string, which can either be a range reference (e.g.
+      `"=Names!$A$1:$A$3"`<!-- -->) or a comma-separated list of the values themselves.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: string;'
+      return:
+        type:
+          - string

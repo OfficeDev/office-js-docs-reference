@@ -1,0 +1,250 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.IconCollections
+    name: Excel.IconCollections
+    fullName: Excel.IconCollections
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.IconCollections.fiveArrows
+      - excel_1_7.Excel.IconCollections.fiveArrowsGray
+      - excel_1_7.Excel.IconCollections.fiveBoxes
+      - excel_1_7.Excel.IconCollections.fiveQuarters
+      - excel_1_7.Excel.IconCollections.fiveRating
+      - excel_1_7.Excel.IconCollections.fourArrows
+      - excel_1_7.Excel.IconCollections.fourArrowsGray
+      - excel_1_7.Excel.IconCollections.fourRating
+      - excel_1_7.Excel.IconCollections.fourRedToBlack
+      - excel_1_7.Excel.IconCollections.fourTrafficLights
+      - excel_1_7.Excel.IconCollections.threeArrows
+      - excel_1_7.Excel.IconCollections.threeArrowsGray
+      - excel_1_7.Excel.IconCollections.threeFlags
+      - excel_1_7.Excel.IconCollections.threeSigns
+      - excel_1_7.Excel.IconCollections.threeStars
+      - excel_1_7.Excel.IconCollections.threeSymbols
+      - excel_1_7.Excel.IconCollections.threeSymbols2
+      - excel_1_7.Excel.IconCollections.threeTrafficLights1
+      - excel_1_7.Excel.IconCollections.threeTrafficLights2
+      - excel_1_7.Excel.IconCollections.threeTriangles
+  - uid: excel_1_7.Excel.IconCollections.fiveArrows
+    name: fiveArrows
+    fullName: fiveArrows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveArrows: FiveArrowsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FiveArrowsSet
+  - uid: excel_1_7.Excel.IconCollections.fiveArrowsGray
+    name: fiveArrowsGray
+    fullName: fiveArrowsGray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveArrowsGray: FiveArrowsGraySet;'
+      return:
+        type:
+          - excel_1_7.Excel.FiveArrowsGraySet
+  - uid: excel_1_7.Excel.IconCollections.fiveBoxes
+    name: fiveBoxes
+    fullName: fiveBoxes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveBoxes: FiveBoxesSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FiveBoxesSet
+  - uid: excel_1_7.Excel.IconCollections.fiveQuarters
+    name: fiveQuarters
+    fullName: fiveQuarters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveQuarters: FiveQuartersSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FiveQuartersSet
+  - uid: excel_1_7.Excel.IconCollections.fiveRating
+    name: fiveRating
+    fullName: fiveRating
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fiveRating: FiveRatingSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FiveRatingSet
+  - uid: excel_1_7.Excel.IconCollections.fourArrows
+    name: fourArrows
+    fullName: fourArrows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourArrows: FourArrowsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FourArrowsSet
+  - uid: excel_1_7.Excel.IconCollections.fourArrowsGray
+    name: fourArrowsGray
+    fullName: fourArrowsGray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourArrowsGray: FourArrowsGraySet;'
+      return:
+        type:
+          - excel_1_7.Excel.FourArrowsGraySet
+  - uid: excel_1_7.Excel.IconCollections.fourRating
+    name: fourRating
+    fullName: fourRating
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourRating: FourRatingSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FourRatingSet
+  - uid: excel_1_7.Excel.IconCollections.fourRedToBlack
+    name: fourRedToBlack
+    fullName: fourRedToBlack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourRedToBlack: FourRedToBlackSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FourRedToBlackSet
+  - uid: excel_1_7.Excel.IconCollections.fourTrafficLights
+    name: fourTrafficLights
+    fullName: fourTrafficLights
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourTrafficLights: FourTrafficLightsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.FourTrafficLightsSet
+  - uid: excel_1_7.Excel.IconCollections.threeArrows
+    name: threeArrows
+    fullName: threeArrows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeArrows: ThreeArrowsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeArrowsSet
+  - uid: excel_1_7.Excel.IconCollections.threeArrowsGray
+    name: threeArrowsGray
+    fullName: threeArrowsGray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeArrowsGray: ThreeArrowsGraySet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeArrowsGraySet
+  - uid: excel_1_7.Excel.IconCollections.threeFlags
+    name: threeFlags
+    fullName: threeFlags
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeFlags: ThreeFlagsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeFlagsSet
+  - uid: excel_1_7.Excel.IconCollections.threeSigns
+    name: threeSigns
+    fullName: threeSigns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeSigns: ThreeSignsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeSignsSet
+  - uid: excel_1_7.Excel.IconCollections.threeStars
+    name: threeStars
+    fullName: threeStars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeStars: ThreeStarsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeStarsSet
+  - uid: excel_1_7.Excel.IconCollections.threeSymbols
+    name: threeSymbols
+    fullName: threeSymbols
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeSymbols: ThreeSymbolsSet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeSymbolsSet
+  - uid: excel_1_7.Excel.IconCollections.threeSymbols2
+    name: threeSymbols2
+    fullName: threeSymbols2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeSymbols2: ThreeSymbols2Set;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeSymbols2Set
+  - uid: excel_1_7.Excel.IconCollections.threeTrafficLights1
+    name: threeTrafficLights1
+    fullName: threeTrafficLights1
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeTrafficLights1: ThreeTrafficLights1Set;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeTrafficLights1Set
+  - uid: excel_1_7.Excel.IconCollections.threeTrafficLights2
+    name: threeTrafficLights2
+    fullName: threeTrafficLights2
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeTrafficLights2: ThreeTrafficLights2Set;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeTrafficLights2Set
+  - uid: excel_1_7.Excel.IconCollections.threeTriangles
+    name: threeTriangles
+    fullName: threeTriangles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeTriangles: ThreeTrianglesSet;'
+      return:
+        type:
+          - excel_1_7.Excel.ThreeTrianglesSet

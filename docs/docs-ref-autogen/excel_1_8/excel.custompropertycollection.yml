@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.CustomPropertyCollection.add
@@ -39,7 +39,7 @@ items:
       content: 'add(key: string, value: any): Excel.CustomProperty;'
       return:
         type:
-          - excel_1_8.Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -63,7 +63,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.CustomPropertyCollection.deleteAll
     summary: |-
       Deletes all custom properties in this collection.
@@ -110,7 +110,7 @@ items:
       content: 'getItem(key: string): Excel.CustomProperty;'
       return:
         type:
-          - excel_1_8.Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -133,7 +133,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.CustomProperty;'
       return:
         type:
-          - excel_1_8.Excel.CustomProperty
+          - excel.Excel.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -185,7 +185,7 @@ items:
         Excel.CustomPropertyCollection;
       return:
         type:
-          - excel_1_8.Excel.CustomPropertyCollection
+          - excel.Excel.CustomPropertyCollection
         description: ''
       parameters:
         - id: option
@@ -205,7 +205,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomPropertyCollection;'
       return:
         type:
-          - excel_1_8.Excel.CustomPropertyCollection
+          - excel.Excel.CustomPropertyCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -222,13 +222,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;'
       return:
         type:
-          - excel_1_8.Excel.CustomPropertyCollection
+          - excel.Excel.CustomPropertyCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_8.Excel.CustomPropertyCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -245,5 +245,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyCollectionData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.CustomPropertyCollectionData
+          - excel.Excel.Interfaces.CustomPropertyCollectionData
         description: ''

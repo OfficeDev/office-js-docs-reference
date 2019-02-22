@@ -62,6 +62,20 @@ cd ..\api-extractor-inputs-word
 
 call ..\node_modules\.bin\api-extractor run
 
+cd ..\api-extractor-inputs-word-release\Word_1_3
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Word_1_2
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..\Word_1_1
+
+call ..\..\node_modules\.bin\api-extractor run
+
+cd ..
+
 cd ..\api-extractor-inputs-onenote
 
 call ..\node_modules\.bin\api-extractor run
@@ -122,7 +136,7 @@ pushd scripts
 call node midprocessor.js
 popd
 
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json --office
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel --output-folder .\versioned-yaml\excel --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_1 --output-folder .\versioned-yaml\excel_1_1 --office

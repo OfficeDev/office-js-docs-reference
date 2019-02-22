@@ -94,7 +94,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.TableColumnCollection.count
     summary: |-
       Returns the number of columns in the table. Read-only.

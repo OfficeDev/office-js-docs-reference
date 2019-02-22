@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.DocumentProperties.author
@@ -106,7 +106,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.DocumentProperties.creationDate
     summary: |-
       Gets the creation date of the workbook. Read only.
@@ -136,7 +136,7 @@ items:
       content: 'readonly custom: Excel.CustomPropertyCollection;'
       return:
         type:
-          - excel_1_8.Excel.CustomPropertyCollection
+          - excel.Excel.CustomPropertyCollection
   - uid: excel_1_8.Excel.DocumentProperties.keywords
     summary: |-
       Gets or sets the keywords of the workbook.
@@ -198,13 +198,13 @@ items:
       content: 'load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;'
       return:
         type:
-          - excel_1_8.Excel.DocumentProperties
+          - excel.Excel.DocumentProperties
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.DocumentPropertiesLoadOptions
+            - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: excel_1_8.Excel.DocumentProperties.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -218,7 +218,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DocumentProperties;'
       return:
         type:
-          - excel_1_8.Excel.DocumentProperties
+          - excel.Excel.DocumentProperties
         description: ''
       parameters:
         - id: propertyNames
@@ -238,7 +238,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DocumentProperties;'
       return:
         type:
-          - excel_1_8.Excel.DocumentProperties
+          - excel.Excel.DocumentProperties
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -306,7 +306,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.DocumentProperties.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -324,7 +324,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.DocumentProperties
+            - excel.Excel.DocumentProperties
   - uid: excel_1_8.Excel.DocumentProperties.subject
     summary: |-
       Gets or sets the subject of the workbook.
@@ -371,5 +371,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.DocumentPropertiesData
+          - excel.Excel.Interfaces.DocumentPropertiesData
         description: ''

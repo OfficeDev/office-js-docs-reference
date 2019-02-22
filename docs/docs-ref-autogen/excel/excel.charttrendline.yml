@@ -61,7 +61,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartTrendline.delete
     summary: |-
       Delete the trendline object.

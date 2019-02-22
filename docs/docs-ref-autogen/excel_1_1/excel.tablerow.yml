@@ -17,7 +17,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_1
     children:
       - excel_1_1.Excel.TableRow.context
@@ -44,7 +44,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_1.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_1.Excel.TableRow.delete
     summary: |-
       Deletes the row from the table.
@@ -91,7 +91,7 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel_1_1.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -158,13 +158,13 @@ items:
       content: 'load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;'
       return:
         type:
-          - excel_1_1.Excel.TableRow
+          - excel.Excel.TableRow
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_1.Excel.Interfaces.TableRowLoadOptions
+            - excel.Excel.Interfaces.TableRowLoadOptions
   - uid: excel_1_1.Excel.TableRow.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -178,7 +178,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableRow;'
       return:
         type:
-          - excel_1_1.Excel.TableRow
+          - excel.Excel.TableRow
         description: |-
 
           #### Examples
@@ -234,7 +234,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableRow;'
       return:
         type:
-          - excel_1_1.Excel.TableRow
+          - excel.Excel.TableRow
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -272,7 +272,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_1.Excel.TableRow.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -290,7 +290,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_1.Excel.TableRow
+            - excel.Excel.TableRow
   - uid: excel_1_1.Excel.TableRow.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -307,7 +307,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableRowData;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.TableRowData
+          - excel.Excel.Interfaces.TableRowData
         description: ''
   - uid: excel_1_1.Excel.TableRow.values
     summary: >-

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: visio
     children:
       - visio.Visio.Document.application
@@ -46,7 +46,7 @@ items:
       content: 'readonly application: Visio.Application;'
       return:
         type:
-          - visio.Visio.Application
+          - Visio.Application
   - uid: visio.Visio.Document.getActivePage
     summary: |-
       Returns the Active Page of the document.
@@ -61,7 +61,7 @@ items:
       content: 'getActivePage(): Visio.Page;'
       return:
         type:
-          - visio.Visio.Page
+          - Visio.Page
         description: |-
 
           #### Examples
@@ -112,7 +112,7 @@ items:
       content: 'load(option?: Visio.Interfaces.DocumentLoadOptions): Visio.Document;'
       return:
         type:
-          - visio.Visio.Document
+          - Visio.Document
         description: ''
       parameters:
         - id: option
@@ -132,7 +132,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.Document;'
       return:
         type:
-          - visio.Visio.Document
+          - Visio.Document
         description: ''
       parameters:
         - id: propertyNames
@@ -152,7 +152,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Document;'
       return:
         type:
-          - visio.Visio.Document
+          - Visio.Document
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -265,7 +265,7 @@ items:
       content: 'readonly pages: Visio.PageCollection;'
       return:
         type:
-          - visio.Visio.PageCollection
+          - Visio.PageCollection
         description: |-
 
           #### Examples
@@ -313,7 +313,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.Document.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -331,7 +331,7 @@ items:
         - id: properties
           description: ''
           type:
-            - visio.Visio.Document
+            - Visio.Document
   - uid: visio.Visio.Document.setActivePage
     summary: |-
       Set the Active Page of the document.

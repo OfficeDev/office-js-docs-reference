@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellPropertiesBorderLoadOptions
+    summary: >-
+      Represents which properties to load on the format.borders object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CellPropertiesBorderLoadOptions
+    fullName: Excel.CellPropertiesBorderLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.CellPropertiesBorderLoadOptions.color
+      - excel.Excel.CellPropertiesBorderLoadOptions.style
+      - excel.Excel.CellPropertiesBorderLoadOptions.tintAndShade
+      - excel.Excel.CellPropertiesBorderLoadOptions.weight
+  - uid: excel.Excel.CellPropertiesBorderLoadOptions.color
+    isPreview: true
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesBorderLoadOptions.style
+    isPreview: true
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesBorderLoadOptions.tintAndShade
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellPropertiesBorderLoadOptions.weight
+    isPreview: true
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: boolean;'
+      return:
+        type:
+          - boolean

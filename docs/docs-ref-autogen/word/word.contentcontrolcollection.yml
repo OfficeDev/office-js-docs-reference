@@ -15,7 +15,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.ContentControlCollection.context
@@ -47,7 +47,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.ContentControlCollection.getById
     summary: >-
       Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
@@ -577,7 +577,7 @@ items:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.ContentControlCollection.toJSON
     name: toJSON()
     fullName: toJSON()

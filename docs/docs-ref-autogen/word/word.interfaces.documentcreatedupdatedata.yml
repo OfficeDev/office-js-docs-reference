@@ -47,4 +47,4 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesUpdateData
+          - Word.Interfaces.DocumentPropertiesUpdateData

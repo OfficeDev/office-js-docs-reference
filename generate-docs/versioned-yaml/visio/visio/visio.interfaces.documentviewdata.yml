@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.DocumentViewData
+    summary: An interface describing the data returned by calling "documentView.toJSON()".
+    name: Visio.Interfaces.DocumentViewData
+    fullName: Visio.Interfaces.DocumentViewData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.DocumentViewData.disableHyperlinks
+      - visio.Visio.Interfaces.DocumentViewData.disablePan
+      - visio.Visio.Interfaces.DocumentViewData.disableZoom
+      - visio.Visio.Interfaces.DocumentViewData.hideDiagramBoundary
+  - uid: visio.Visio.Interfaces.DocumentViewData.disableHyperlinks
+    summary: |-
+      Disable Hyperlinks.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: disableHyperlinks
+    fullName: disableHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableHyperlinks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewData.disablePan
+    summary: |-
+      Disable Pan.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: disablePan
+    fullName: disablePan
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disablePan?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewData.disableZoom
+    summary: |-
+      Disable Zoom.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: disableZoom
+    fullName: disableZoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disableZoom?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewData.hideDiagramBoundary
+    summary: |-
+      Hide Diagram Boundary.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: hideDiagramBoundary
+    fullName: hideDiagramBoundary
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hideDiagramBoundary?: boolean;'
+      return:
+        type:
+          - boolean

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.WorkbookProtection.context
@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.WorkbookProtection.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -67,13 +67,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;'
       return:
         type:
-          - excel_1_7.Excel.WorkbookProtection
+          - excel.Excel.WorkbookProtection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.WorkbookProtectionLoadOptions
+            - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel_1_7.Excel.WorkbookProtection.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -87,7 +87,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.WorkbookProtection;'
       return:
         type:
-          - excel_1_7.Excel.WorkbookProtection
+          - excel.Excel.WorkbookProtection
         description: ''
       parameters:
         - id: propertyNames
@@ -107,7 +107,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookProtection;'
       return:
         type:
-          - excel_1_7.Excel.WorkbookProtection
+          - excel.Excel.WorkbookProtection
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -197,7 +197,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookProtectionData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.WorkbookProtectionData
+          - excel.Excel.Interfaces.WorkbookProtectionData
         description: ''
   - uid: excel_1_7.Excel.WorkbookProtection.unprotect
     summary: |-

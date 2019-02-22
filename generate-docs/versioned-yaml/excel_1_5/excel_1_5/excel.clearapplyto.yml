@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.ClearApplyTo
+    summary: >-
+      \[ [API set: ExcelApi 1.1 for All/Formats/Contents, 1.7 for Hyperlinks &amp;
+      HyperlinksAndFormats.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ClearApplyTo
+    fullName: Excel.ClearApplyTo
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.ClearApplyTo.all
+      - excel_1_5.Excel.ClearApplyTo.contents
+      - excel_1_5.Excel.ClearApplyTo.formats
+      - excel_1_5.Excel.ClearApplyTo.hyperlinks
+      - excel_1_5.Excel.ClearApplyTo.removeHyperlinks
+  - uid: excel_1_5.Excel.ClearApplyTo.all
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"All"'
+  - uid: excel_1_5.Excel.ClearApplyTo.contents
+    summary: Clears the contents of the range.
+    name: contents
+    fullName: contents
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Contents"'
+  - uid: excel_1_5.Excel.ClearApplyTo.formats
+    summary: Clears all formatting for the range.
+    name: formats
+    fullName: formats
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formats"'
+  - uid: excel_1_5.Excel.ClearApplyTo.hyperlinks
+    summary: 'Clears all hyperlinks, but leaves all content and formatting intact.'
+    name: hyperlinks
+    fullName: hyperlinks
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hyperlinks"'
+  - uid: excel_1_5.Excel.ClearApplyTo.removeHyperlinks
+    summary: >-
+      Removes hyperlinks and formatting for the cell but leaves content, conditional formats, and data validation
+      intact.
+    name: removeHyperlinks
+    fullName: removeHyperlinks
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RemoveHyperlinks"'

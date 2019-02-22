@@ -119,4 +119,4 @@ items:
       content: 'rows?: OneNote.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowCollectionLoadOptions
+          - OneNote.Interfaces.TableRowCollectionLoadOptions

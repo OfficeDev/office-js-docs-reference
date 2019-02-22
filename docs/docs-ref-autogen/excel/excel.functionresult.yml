@@ -34,7 +34,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.FunctionResult.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function

@@ -78,7 +78,7 @@ items:
       content: 'lowerBoundRule?: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalDataBarRule
+          - excel.Excel.ConditionalDataBarRule
   - uid: excel_1_7.Excel.Interfaces.DataBarConditionalFormatData.negativeFormat
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar. Read-only.
@@ -93,7 +93,7 @@ items:
       content: 'negativeFormat?: Excel.Interfaces.ConditionalDataBarNegativeFormatData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ConditionalDataBarNegativeFormatData
+          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
   - uid: excel_1_7.Excel.Interfaces.DataBarConditionalFormatData.positiveFormat
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar. Read-only.
@@ -108,7 +108,7 @@ items:
       content: 'positiveFormat?: Excel.Interfaces.ConditionalDataBarPositiveFormatData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ConditionalDataBarPositiveFormatData
+          - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatData
   - uid: excel_1_7.Excel.Interfaces.DataBarConditionalFormatData.showDataBarOnly
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
@@ -138,4 +138,4 @@ items:
       content: 'upperBoundRule?: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalDataBarRule
+          - excel.Excel.ConditionalDataBarRule

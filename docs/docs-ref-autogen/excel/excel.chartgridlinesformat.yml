@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartGridlinesFormat.line
     summary: |-
       Represents chart line formatting. Read-only.

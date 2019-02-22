@@ -21,7 +21,7 @@ items:
       content: 'greenFlag: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon
   - uid: excel_1_4.Excel.ThreeFlagsSet.redFlag
     name: redFlag
     fullName: redFlag
@@ -32,7 +32,7 @@ items:
       content: 'redFlag: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon
   - uid: excel_1_4.Excel.ThreeFlagsSet.yellowFlag
     name: yellowFlag
     fullName: yellowFlag
@@ -43,4 +43,4 @@ items:
       content: 'yellowFlag: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon

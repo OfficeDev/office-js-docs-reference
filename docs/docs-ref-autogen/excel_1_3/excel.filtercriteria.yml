@@ -136,7 +136,7 @@ items:
       content: 'icon?: Excel.Icon;'
       return:
         type:
-          - excel_1_3.Excel.Icon
+          - excel.Excel.Icon
   - uid: excel_1_3.Excel.FilterCriteria.operator
     summary: |-
       The operator used to combine criterion 1 and 2 when using "custom" filtering.

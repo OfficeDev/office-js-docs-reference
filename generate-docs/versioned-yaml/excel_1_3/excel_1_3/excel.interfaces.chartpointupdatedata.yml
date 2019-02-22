@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_3.Excel.Interfaces.ChartPointUpdateData
+    summary: 'An interface for updating data on the ChartPoint object, for use in "chartPoint.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.ChartPointUpdateData
+    fullName: Excel.Interfaces.ChartPointUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_3
+    children:
+      - excel_1_3.Excel.Interfaces.ChartPointUpdateData.format
+  - uid: excel_1_3.Excel.Interfaces.ChartPointUpdateData.format
+    summary: |-
+      Encapsulates the format properties chart point.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartPointFormatUpdateData;'
+      return:
+        type:
+          - excel_1_3.Excel.Interfaces.ChartPointFormatUpdateData

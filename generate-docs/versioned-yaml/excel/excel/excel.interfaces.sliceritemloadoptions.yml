@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions
+    summary: >-
+      Represents a slicer item in a slicer.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.SlicerItemLoadOptions
+    fullName: Excel.Interfaces.SlicerItemLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerItemLoadOptions.$all
+      - excel.Excel.Interfaces.SlicerItemLoadOptions.hasData
+      - excel.Excel.Interfaces.SlicerItemLoadOptions.isSelected
+      - excel.Excel.Interfaces.SlicerItemLoadOptions.key
+      - excel.Excel.Interfaces.SlicerItemLoadOptions.name
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.hasData
+    summary: >-
+      True if the slicer item has data.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: hasData
+    fullName: hasData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasData?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.isSelected
+    summary: >-
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelected?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.key
+    summary: >-
+      Represents the unique value representing the slicer item.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.name
+    summary: >-
+      Represents the value displayed on UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean

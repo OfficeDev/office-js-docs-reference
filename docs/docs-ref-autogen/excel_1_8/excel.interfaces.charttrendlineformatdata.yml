@@ -24,4 +24,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartLineFormatData
+          - excel.Excel.Interfaces.ChartLineFormatData

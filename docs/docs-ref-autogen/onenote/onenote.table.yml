@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.Table.appendColumn
@@ -108,7 +108,7 @@ items:
       content: 'appendRow(values?: string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: |-
 
           #### Examples
@@ -209,7 +209,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.Table.getCell
     summary: |-
       Gets the table cell at a specified row and column.
@@ -361,7 +361,7 @@ items:
       content: 'insertRow(index: number, values?: string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: |-
 
           #### Examples
@@ -438,13 +438,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.TableLoadOptions): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.TableLoadOptions
+            - OneNote.Interfaces.TableLoadOptions
   - uid: onenote.OneNote.Table.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -458,7 +458,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: |-
 
           #### Examples
@@ -555,7 +555,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -608,7 +608,7 @@ items:
       content: 'readonly rows: OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - OneNote.TableRowCollection
   - uid: onenote.OneNote.Table.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -638,7 +638,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.Table.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -656,7 +656,7 @@ items:
         - id: properties
           description: ''
           type:
-            - onenote.OneNote.Table
+            - OneNote.Table
   - uid: onenote.OneNote.Table.setShadingColor
     summary: |-
       Sets the shading color of all cells in the table. The color code to set the cells to.
@@ -694,7 +694,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableData
+          - OneNote.Interfaces.TableData
         description: ''
   - uid: onenote.OneNote.Table.track
     summary: >-
@@ -712,7 +712,7 @@ items:
       content: 'track(): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''
   - uid: onenote.OneNote.Table.untrack
     summary: >-
@@ -729,5 +729,5 @@ items:
       content: 'untrack(): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''

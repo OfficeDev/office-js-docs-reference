@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkWordCollectionData
+    summary: An interface describing the data returned by calling "inkWordCollection.toJSON()".
+    name: OneNote.Interfaces.InkWordCollectionData
+    fullName: OneNote.Interfaces.InkWordCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkWordCollectionData.items
+  - uid: onenote.OneNote.Interfaces.InkWordCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: OneNote.Interfaces.InkWordData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.InkWordData[]'

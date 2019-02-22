@@ -33,13 +33,13 @@ items:
       content: 'getRange(ctx: Excel.RequestContext): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: ctx
           description: ''
           type:
-            - excel_1_8.Excel.RequestContext
+            - excel.Excel.RequestContext
   - uid: excel_1_8.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
     summary: |-
       Gets the range that represents the changed area of a specific worksheet. It might return null object.
@@ -54,13 +54,13 @@ items:
       content: 'getRangeOrNullObject(ctx: Excel.RequestContext): Excel.Range;'
       return:
         type:
-          - excel_1_8.Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: ctx
           description: ''
           type:
-            - excel_1_8.Excel.RequestContext
+            - excel.Excel.RequestContext
   - uid: excel_1_8.Excel.WorksheetChangedEventArgs.address
     summary: |-
       Gets the range address that represents the changed area of a specific worksheet.

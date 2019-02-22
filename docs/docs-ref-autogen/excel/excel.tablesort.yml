@@ -136,7 +136,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.TableSort.fields
     summary: |-
       Represents the current conditions used to last sort the table. Read-only.

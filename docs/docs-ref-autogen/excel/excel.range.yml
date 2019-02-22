@@ -353,7 +353,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.Range.convertDataTypeToText
     summary: >-
       Converts the range cells with datatypes into text.

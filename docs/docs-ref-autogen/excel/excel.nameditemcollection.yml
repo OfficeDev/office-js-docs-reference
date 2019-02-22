@@ -112,7 +112,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.NamedItemCollection.getCount
     summary: |-
       Gets the number of named items in the collection.

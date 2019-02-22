@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.DocumentCreated.body
@@ -49,7 +49,7 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.DocumentCreated.contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
@@ -81,7 +81,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.DocumentCreated.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -194,7 +194,7 @@ items:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
   - uid: word.Word.DocumentCreated.save
     summary: >-
       Saves the document. This will use the Word default file naming convention if the document has not been saved
@@ -248,7 +248,7 @@ items:
       content: 'readonly sections: Word.SectionCollection;'
       return:
         type:
-          - word.Word.SectionCollection
+          - Word.SectionCollection
   - uid: word.Word.DocumentCreated.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -278,7 +278,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.DocumentCreated.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

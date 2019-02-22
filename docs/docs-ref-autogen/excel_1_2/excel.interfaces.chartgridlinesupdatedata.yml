@@ -27,7 +27,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartGridlinesFormatUpdateData
+          - excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
   - uid: excel_1_2.Excel.Interfaces.ChartGridlinesUpdateData.visible
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.

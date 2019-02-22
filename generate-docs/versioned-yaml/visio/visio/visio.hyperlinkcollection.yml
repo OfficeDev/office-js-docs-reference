@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.HyperlinkCollection
+    summary: |-
+      Represents the Hyperlink Collection.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.HyperlinkCollection
+    fullName: Visio.HyperlinkCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: visio
+    children:
+      - visio.Visio.HyperlinkCollection.getCount
+      - visio.Visio.HyperlinkCollection.getItem
+      - visio.Visio.HyperlinkCollection.items
+      - visio.Visio.HyperlinkCollection.load
+      - visio.Visio.HyperlinkCollection.load_1
+      - visio.Visio.HyperlinkCollection.load_2
+      - visio.Visio.HyperlinkCollection.toJSON
+  - uid: visio.Visio.HyperlinkCollection.getCount
+    summary: |-
+      Gets the number of hyperlinks.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: visio.Visio.HyperlinkCollection.getItem
+    summary: |-
+      Gets a Hyperlink using its key (name or Id).
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: getItem(Key)
+    fullName: getItem(Key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(Key: number | string): Visio.Hyperlink;'
+      return:
+        type:
+          - visio.Visio.Hyperlink
+        description: ''
+      parameters:
+        - id: Key
+          description: Key is the name or index of the Hyperlink to be retrieved.
+          type:
+            - number | string
+  - uid: visio.Visio.HyperlinkCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Visio.Hyperlink[];'
+      return:
+        type:
+          - 'Visio.Hyperlink[]'
+  - uid: visio.Visio.HyperlinkCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+
+      #### Examples
+
+
+      ```javascript
+
+      Visio.run(session, function (ctx) {
+          var activePage = ctx.document.getActivePage();
+          var shapeName = "Manager Belt";
+          var shape = activePage.shapes.getItem(shapeName);
+          var hyperlinks = shape.hyperlinks;
+          shapeHyperlinks.load();
+              ctx.sync().then(function () {
+                  for(var i=0; i<shapeHyperlinks.items.length;i++)
+                  {
+                      var hyperlink = shapeHyperlinks.items[i];
+                      console.log(
+                          "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
+                          hyperlink.subAddress);
+                  }
+              });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+
+      ```
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions):
+        Visio.HyperlinkCollection;
+      return:
+        type:
+          - visio.Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
+  - uid: visio.Visio.HyperlinkCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Visio.HyperlinkCollection;'
+      return:
+        type:
+          - visio.Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: visio.Visio.HyperlinkCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;'
+      return:
+        type:
+          - visio.Visio.HyperlinkCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OfficeExtension.LoadOption
+  - uid: visio.Visio.HyperlinkCollection.toJSON
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Visio.Interfaces.HyperlinkCollectionData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.HyperlinkCollectionData
+        description: ''

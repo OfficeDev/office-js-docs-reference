@@ -14,7 +14,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.StyleCollection.add
@@ -84,7 +84,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.StyleCollection.getItem
     summary: |-
       Gets a style by name.
@@ -99,7 +99,7 @@ items:
       content: 'getItem(name: string): Excel.Style;'
       return:
         type:
-          - excel_1_7.Excel.Style
+          - excel.Excel.Style
         description: |-
 
           #### Examples
@@ -160,7 +160,7 @@ items:
         Excel.StyleCollection;
       return:
         type:
-          - excel_1_7.Excel.StyleCollection
+          - excel.Excel.StyleCollection
         description: ''
       parameters:
         - id: option
@@ -180,7 +180,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.StyleCollection;'
       return:
         type:
-          - excel_1_7.Excel.StyleCollection
+          - excel.Excel.StyleCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -197,13 +197,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;'
       return:
         type:
-          - excel_1_7.Excel.StyleCollection
+          - excel.Excel.StyleCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_7.Excel.StyleCollection.toJSON
     summary: >-
       WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use
@@ -217,5 +217,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleCollectionData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.StyleCollectionData
+          - excel.Excel.Interfaces.StyleCollectionData
         description: ''

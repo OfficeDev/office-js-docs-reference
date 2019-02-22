@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionUpdateData
+    summary: >-
+      An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set(<!-- -->{
+      ... }<!-- -->)".
+    name: OneNote.Interfaces.TableCellCollectionUpdateData
+    fullName: OneNote.Interfaces.TableCellCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.TableCellCollectionUpdateData.items
+  - uid: onenote.OneNote.Interfaces.TableCellCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: OneNote.Interfaces.TableCellData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.TableCellData[]'

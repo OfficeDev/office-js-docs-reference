@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.ChartLineFormatLoadOptions
+    summary: |-
+      Encapsulates the formatting options for line elements.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLineFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLineFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.ChartLineFormatLoadOptions.$all
+      - excel_1_2.Excel.Interfaces.ChartLineFormatLoadOptions.color
+  - uid: excel_1_2.Excel.Interfaces.ChartLineFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.ChartLineFormatLoadOptions.color
+    summary: |-
+      HTML color code representing the color of lines in the chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean

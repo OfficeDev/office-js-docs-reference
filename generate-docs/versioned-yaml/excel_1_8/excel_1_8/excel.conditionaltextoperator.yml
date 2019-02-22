@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.ConditionalTextOperator
+    summary: |-
+      Represents the operator of the text conditional format type.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalTextOperator
+    fullName: Excel.ConditionalTextOperator
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.ConditionalTextOperator.beginsWith
+      - excel_1_8.Excel.ConditionalTextOperator.contains
+      - excel_1_8.Excel.ConditionalTextOperator.endsWith
+      - excel_1_8.Excel.ConditionalTextOperator.invalid
+      - excel_1_8.Excel.ConditionalTextOperator.notContains
+  - uid: excel_1_8.Excel.ConditionalTextOperator.beginsWith
+    name: beginsWith
+    fullName: beginsWith
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BeginsWith"'
+  - uid: excel_1_8.Excel.ConditionalTextOperator.contains
+    name: contains
+    fullName: contains
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Contains"'
+  - uid: excel_1_8.Excel.ConditionalTextOperator.endsWith
+    name: endsWith
+    fullName: endsWith
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EndsWith"'
+  - uid: excel_1_8.Excel.ConditionalTextOperator.invalid
+    name: invalid
+    fullName: invalid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Invalid"'
+  - uid: excel_1_8.Excel.ConditionalTextOperator.notContains
+    name: notContains
+    fullName: notContains
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotContains"'

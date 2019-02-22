@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_2
     children:
       - excel_1_2.Excel.ChartCollection.add
@@ -39,23 +39,23 @@ items:
       content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
-          - excel_1_2.Excel.Chart
+          - excel.Excel.Chart
         description: ''
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - excel_1_2.Excel.ChartType
+            - excel.Excel.ChartType
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel_1_2.Excel.Range
+            - Range
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
-            - excel_1_2.Excel.ChartSeriesBy
+            - excel.Excel.ChartSeriesBy
   - uid: excel_1_2.Excel.ChartCollection.add_1
     summary: |-
       Creates a new chart.
@@ -85,7 +85,7 @@ items:
         sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
       return:
         type:
-          - excel_1_2.Excel.Chart
+          - excel.Excel.Chart
         description: |-
 
           #### Examples
@@ -131,7 +131,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel_1_2.Excel.Range
+            - Range
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
@@ -151,7 +151,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_2.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_2.Excel.ChartCollection.count
     summary: |-
       Returns the number of charts in the worksheet. Read-only.
@@ -181,7 +181,7 @@ items:
       content: 'getItem(name: string): Excel.Chart;'
       return:
         type:
-          - excel_1_2.Excel.Chart
+          - excel.Excel.Chart
         description: |-
 
           #### Examples
@@ -247,7 +247,7 @@ items:
       content: 'getItemAt(index: number): Excel.Chart;'
       return:
         type:
-          - excel_1_2.Excel.Chart
+          - excel.Excel.Chart
         description: |-
 
           #### Examples
@@ -316,7 +316,7 @@ items:
         Excel.ChartCollection;
       return:
         type:
-          - excel_1_2.Excel.ChartCollection
+          - excel.Excel.ChartCollection
         description: ''
       parameters:
         - id: option
@@ -336,7 +336,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
       return:
         type:
-          - excel_1_2.Excel.ChartCollection
+          - excel.Excel.ChartCollection
         description: |-
 
           #### Examples
@@ -388,13 +388,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;'
       return:
         type:
-          - excel_1_2.Excel.ChartCollection
+          - excel.Excel.ChartCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_2.Excel.ChartCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -411,5 +411,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartCollectionData
+          - excel.Excel.Interfaces.ChartCollectionData
         description: ''

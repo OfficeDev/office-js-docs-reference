@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions
+    summary: |-
+      Represents the options in sheet protection.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetProtectionOptions
+    fullName: Excel.WorksheetProtectionOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_3
+    children:
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowAutoFilter
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowDeleteColumns
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowDeleteRows
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowFormatCells
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowFormatColumns
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowFormatRows
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowInsertColumns
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowInsertRows
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowPivotTables
+      - excel_1_3.Excel.WorksheetProtectionOptions.allowSort
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowAutoFilter
+    summary: |-
+      Represents the worksheet protection option of allowing using auto filter feature.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowAutoFilter
+    fullName: allowAutoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowAutoFilter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowDeleteColumns
+    summary: |-
+      Represents the worksheet protection option of allowing deleting columns.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowDeleteColumns
+    fullName: allowDeleteColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowDeleteRows
+    summary: |-
+      Represents the worksheet protection option of allowing deleting rows.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowDeleteRows
+    fullName: allowDeleteRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowDeleteRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowFormatCells
+    summary: |-
+      Represents the worksheet protection option of allowing formatting cells.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowFormatCells
+    fullName: allowFormatCells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatCells?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowFormatColumns
+    summary: |-
+      Represents the worksheet protection option of allowing formatting columns.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowFormatColumns
+    fullName: allowFormatColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowFormatRows
+    summary: |-
+      Represents the worksheet protection option of allowing formatting rows.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowFormatRows
+    fullName: allowFormatRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowFormatRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowInsertColumns
+    summary: |-
+      Represents the worksheet protection option of allowing inserting columns.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowInsertColumns
+    fullName: allowInsertColumns
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertColumns?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+    summary: |-
+      Represents the worksheet protection option of allowing inserting hyperlinks.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowInsertHyperlinks
+    fullName: allowInsertHyperlinks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertHyperlinks?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowInsertRows
+    summary: |-
+      Represents the worksheet protection option of allowing inserting rows.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowInsertRows
+    fullName: allowInsertRows
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowInsertRows?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowPivotTables
+    summary: |-
+      Represents the worksheet protection option of allowing using PivotTable feature.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowPivotTables
+    fullName: allowPivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowPivotTables?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_3.Excel.WorksheetProtectionOptions.allowSort
+    summary: |-
+      Represents the worksheet protection option of allowing using sort feature.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowSort
+    fullName: allowSort
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowSort?: boolean;'
+      return:
+        type:
+          - boolean

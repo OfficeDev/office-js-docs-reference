@@ -44,7 +44,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartLegend.format
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.

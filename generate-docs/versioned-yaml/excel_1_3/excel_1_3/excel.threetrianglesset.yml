@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_3.Excel.ThreeTrianglesSet
+    name: Excel.ThreeTrianglesSet
+    fullName: Excel.ThreeTrianglesSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_3
+    children:
+      - excel_1_3.Excel.ThreeTrianglesSet.greenUpTriangle
+      - excel_1_3.Excel.ThreeTrianglesSet.redDownTriangle
+      - excel_1_3.Excel.ThreeTrianglesSet.yellowDash
+  - uid: excel_1_3.Excel.ThreeTrianglesSet.greenUpTriangle
+    name: greenUpTriangle
+    fullName: greenUpTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenUpTriangle: Icon;'
+      return:
+        type:
+          - excel_1_3.Excel.Icon
+  - uid: excel_1_3.Excel.ThreeTrianglesSet.redDownTriangle
+    name: redDownTriangle
+    fullName: redDownTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDownTriangle: Icon;'
+      return:
+        type:
+          - excel_1_3.Excel.Icon
+  - uid: excel_1_3.Excel.ThreeTrianglesSet.yellowDash
+    name: yellowDash
+    fullName: yellowDash
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowDash: Icon;'
+      return:
+        type:
+          - excel_1_3.Excel.Icon

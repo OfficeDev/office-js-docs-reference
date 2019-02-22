@@ -182,7 +182,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartAxisFormatLoadOptions
+          - excel.Excel.Interfaces.ChartAxisFormatLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartAxisLoadOptions.height
     summary: |-
       Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
@@ -244,7 +244,7 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartGridlinesLoadOptions
+          - excel.Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartAxisLoadOptions.majorTickMark
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -342,7 +342,7 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartGridlinesLoadOptions
+          - excel.Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartAxisLoadOptions.minorTickMark
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -500,7 +500,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartAxisTitleLoadOptions
+          - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
   - uid: excel_1_7.Excel.Interfaces.ChartAxisLoadOptions.top
     summary: >-
       Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is

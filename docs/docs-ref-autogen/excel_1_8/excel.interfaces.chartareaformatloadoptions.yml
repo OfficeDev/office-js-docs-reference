@@ -40,7 +40,7 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartBorderLoadOptions
+          - excel.Excel.Interfaces.ChartBorderLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartAreaFormatLoadOptions.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object.
@@ -55,4 +55,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartFontLoadOptions
+          - excel.Excel.Interfaces.ChartFontLoadOptions

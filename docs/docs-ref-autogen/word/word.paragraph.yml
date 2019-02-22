@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.Paragraph.alignment
@@ -221,7 +221,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.Paragraph.delete
     summary: |-
       Deletes the paragraph and its content from the document.
@@ -390,7 +390,7 @@ items:
       content: 'getNext(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Paragraph.getNextOrNullObject
     summary: |-
@@ -406,7 +406,7 @@ items:
       content: 'getNextOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Paragraph.getOoxml
     summary: |-
@@ -472,7 +472,7 @@ items:
       content: 'getPrevious(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Paragraph.getPreviousOrNullObject
     summary: |-
@@ -488,7 +488,7 @@ items:
       content: 'getPreviousOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: |-
 
           #### Examples
@@ -545,7 +545,7 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocation
@@ -566,7 +566,7 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocationString
@@ -587,7 +587,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: endingMarks
@@ -663,7 +663,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertBreak_1
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
@@ -801,7 +801,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -811,7 +811,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertFileFromBase64_1
     summary: >-
       Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace',
@@ -830,7 +830,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -857,7 +857,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -905,7 +905,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertHtml_1
     summary: >-
       Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -922,7 +922,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: html
@@ -1000,7 +1000,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertInlinePictureFromBase64_1
     summary: >-
       Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace',
@@ -1046,7 +1046,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -1056,7 +1056,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertOoxml_1
     summary: >-
       Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -1073,7 +1073,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -1098,7 +1098,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: |-
 
           #### Examples
@@ -1164,7 +1164,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertParagraph_1
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -1181,7 +1181,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -1210,7 +1210,7 @@ items:
         Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -1224,7 +1224,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -1247,7 +1247,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -1282,7 +1282,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -1341,7 +1341,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Paragraph.insertText_1
     summary: >-
       Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or
@@ -1358,7 +1358,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: text
@@ -1578,13 +1578,13 @@ items:
       content: 'load(option?: Word.Interfaces.ParagraphLoadOptions): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ParagraphLoadOptions
+            - Word.Interfaces.ParagraphLoadOptions
   - uid: word.Word.Paragraph.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -1598,7 +1598,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: propertyNames
@@ -1618,7 +1618,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1656,7 +1656,7 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.Paragraph.parentContentControl
     summary: |-
       Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
@@ -1703,7 +1703,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.Paragraph.parentTableCell
     summary: |-
       Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
@@ -1718,7 +1718,7 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.Paragraph.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
@@ -1735,7 +1735,7 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.Paragraph.parentTableOrNullObject
     summary: |-
       Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
@@ -1750,7 +1750,7 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.Paragraph.rightIndent
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
@@ -1791,7 +1791,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -1886,7 +1886,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
+            - Word.SelectionMode
   - uid: word.Word.Paragraph.select_1
     summary: |-
       Selects and navigates the Word UI to the paragraph.
@@ -1966,7 +1966,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Paragraph.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1984,7 +1984,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Paragraph
+            - Word.Paragraph
   - uid: word.Word.Paragraph.spaceAfter
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
@@ -2042,7 +2042,7 @@ items:
       content: 'split(delimiters: string[], trimDelimiters?: boolean, trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples
@@ -2279,7 +2279,7 @@ items:
       content: 'toJSON(): Word.Interfaces.ParagraphData;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphData
+          - Word.Interfaces.ParagraphData
         description: ''
   - uid: word.Word.Paragraph.track
     summary: >-
@@ -2297,7 +2297,7 @@ items:
       content: 'track(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Paragraph.untrack
     summary: >-
@@ -2314,5 +2314,5 @@ items:
       content: 'untrack(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''

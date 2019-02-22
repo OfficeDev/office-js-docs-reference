@@ -29,7 +29,7 @@ items:
       content: 'errorAlert?: Excel.DataValidationErrorAlert;'
       return:
         type:
-          - excel_1_8.Excel.DataValidationErrorAlert
+          - excel.Excel.DataValidationErrorAlert
   - uid: excel_1_8.Excel.Interfaces.DataValidationData.ignoreBlanks
     summary: |-
       Ignore blanks: no data validation will be performed on blank cells, it defaults to true.
@@ -59,7 +59,7 @@ items:
       content: 'prompt?: Excel.DataValidationPrompt;'
       return:
         type:
-          - excel_1_8.Excel.DataValidationPrompt
+          - excel.Excel.DataValidationPrompt
   - uid: excel_1_8.Excel.Interfaces.DataValidationData.rule
     summary: |-
       Data validation rule that contains different type of data validation criteria.
@@ -74,7 +74,7 @@ items:
       content: 'rule?: Excel.DataValidationRule;'
       return:
         type:
-          - excel_1_8.Excel.DataValidationRule
+          - excel.Excel.DataValidationRule
   - uid: excel_1_8.Excel.Interfaces.DataValidationData.type
     summary: |-
       Type of the data validation, see Excel.DataValidationType for details.

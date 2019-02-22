@@ -23,7 +23,7 @@ items:
       content: 'fourBars: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon
   - uid: excel_1_4.Excel.FiveRatingSet.noBars
     name: noBars
     fullName: noBars
@@ -34,7 +34,7 @@ items:
       content: 'noBars: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon
   - uid: excel_1_4.Excel.FiveRatingSet.oneBar
     name: oneBar
     fullName: oneBar
@@ -45,7 +45,7 @@ items:
       content: 'oneBar: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon
   - uid: excel_1_4.Excel.FiveRatingSet.threeBars
     name: threeBars
     fullName: threeBars
@@ -56,7 +56,7 @@ items:
       content: 'threeBars: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon
   - uid: excel_1_4.Excel.FiveRatingSet.twoBars
     name: twoBars
     fullName: twoBars
@@ -67,4 +67,4 @@ items:
       content: 'twoBars: Icon;'
       return:
         type:
-          - excel_1_4.Excel.Icon
+          - Icon

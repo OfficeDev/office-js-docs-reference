@@ -48,7 +48,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+          - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartPlotAreaLoadOptions.height
     summary: |-
       Represents the height value of plotArea.

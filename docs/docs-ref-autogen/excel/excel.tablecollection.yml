@@ -97,7 +97,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.TableCollection.count
     summary: |-
       Returns the number of tables in the workbook. Read-only.

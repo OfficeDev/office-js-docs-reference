@@ -87,7 +87,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartLineFormat.lineStyle
     summary: |-
       Represents the line style. See Excel.ChartLineStyle for details.

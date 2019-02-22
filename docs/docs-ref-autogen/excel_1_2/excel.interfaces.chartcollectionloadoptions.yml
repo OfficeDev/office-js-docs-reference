@@ -50,7 +50,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartAxesLoadOptions
+          - excel.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartCollectionLoadOptions.dataLabels
     summary: |-
       For EACH ITEM in the collection: Represents the datalabels on the chart.
@@ -65,7 +65,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartDataLabelsLoadOptions
+          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartCollectionLoadOptions.format
     summary: |-
       For EACH ITEM in the collection: Encapsulates the format properties for the chart area.
@@ -80,7 +80,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartAreaFormatLoadOptions
+          - excel.Excel.Interfaces.ChartAreaFormatLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartCollectionLoadOptions.height
     summary: |-
       For EACH ITEM in the collection: Represents the height, in points, of the chart object.
@@ -125,7 +125,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartLegendLoadOptions
+          - excel.Excel.Interfaces.ChartLegendLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartCollectionLoadOptions.name
     summary: |-
       For EACH ITEM in the collection: Represents the name of a chart object.
@@ -155,7 +155,7 @@ items:
       content: 'series?: Excel.Interfaces.ChartSeriesCollectionLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+          - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartCollectionLoadOptions.title
     summary: >-
       For EACH ITEM in the collection: Represents the title of the specified chart, including the text, visibility,
@@ -172,7 +172,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.ChartTitleLoadOptions
+          - excel.Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel_1_2.Excel.Interfaces.ChartCollectionLoadOptions.top
     summary: >-
       For EACH ITEM in the collection: Represents the distance, in points, from the top edge of the object to the top of
@@ -219,4 +219,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.WorksheetLoadOptions
+          - excel.Excel.Interfaces.WorksheetLoadOptions

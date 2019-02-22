@@ -50,7 +50,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartTrendlineLabelFormatUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
+          - excel.Excel.Interfaces.ChartTrendlineLabelFormatUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartTrendlineLabelUpdateData.formula
     summary: |-
       String value that represents the formula of chart trendline label using A1-style notation.

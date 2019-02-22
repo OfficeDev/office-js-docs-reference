@@ -116,7 +116,7 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.RangeFormatData
+          - excel.Excel.Interfaces.RangeFormatData
   - uid: excel_1_1.Excel.Interfaces.RangeData.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a

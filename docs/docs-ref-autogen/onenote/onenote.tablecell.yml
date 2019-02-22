@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.TableCell.appendHtml
@@ -106,7 +106,7 @@ items:
       content: 'appendImage(base64EncodedImage: string, width: number, height: number): OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -191,7 +191,7 @@ items:
       content: 'appendTable(rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''
       parameters:
         - id: rowCount
@@ -250,7 +250,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.TableCell.id
     summary: |-
       Gets the ID of the cell. Read-only.
@@ -460,7 +460,7 @@ items:
       content: 'readonly parentRow: OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
   - uid: onenote.OneNote.TableCell.rowIndex
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
@@ -505,7 +505,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.TableCell.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

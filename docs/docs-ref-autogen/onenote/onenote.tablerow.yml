@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.TableRow.cellCount
@@ -89,7 +89,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.TableRow.id
     summary: |-
       Gets the ID of the row. Read-only.
@@ -119,7 +119,7 @@ items:
       content: 'insertRowAsSibling(insertLocation: OneNote.InsertLocation, values?: string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: |-
 
           #### Examples
@@ -187,7 +187,7 @@ items:
       content: 'insertRowAsSibling(insertLocationString: "Before" | "After", values?: string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''
       parameters:
         - id: insertLocationString
@@ -231,13 +231,13 @@ items:
       content: 'load(option?: OneNote.Interfaces.TableRowLoadOptions): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.TableRowLoadOptions
+            - OneNote.Interfaces.TableRowLoadOptions
   - uid: onenote.OneNote.TableRow.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -251,7 +251,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: |-
 
           #### Examples
@@ -360,7 +360,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -383,7 +383,7 @@ items:
       content: 'readonly parentTable: OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
   - uid: onenote.OneNote.TableRow.rowIndex
     summary: |-
       Gets the index of the row in its parent table. Read-only.
@@ -436,7 +436,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableRowData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowData
+          - OneNote.Interfaces.TableRowData
         description: ''
   - uid: onenote.OneNote.TableRow.track
     summary: >-
@@ -454,7 +454,7 @@ items:
       content: 'track(): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''
   - uid: onenote.OneNote.TableRow.untrack
     summary: >-
@@ -471,5 +471,5 @@ items:
       content: 'untrack(): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''

@@ -49,7 +49,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartTitle.format
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting. Read-only.

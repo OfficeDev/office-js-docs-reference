@@ -31,7 +31,7 @@ items:
       content: 'field?: Excel.Interfaces.PivotFieldUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.PivotFieldUpdateData
+          - excel.Excel.Interfaces.PivotFieldUpdateData
   - uid: excel_1_8.Excel.Interfaces.DataPivotHierarchyUpdateData.name
     summary: |-
       Name of the DataPivotHierarchy.
@@ -91,7 +91,7 @@ items:
       content: 'showAs?: Excel.ShowAsRule;'
       return:
         type:
-          - excel_1_8.Excel.ShowAsRule
+          - excel.Excel.ShowAsRule
   - uid: excel_1_8.Excel.Interfaces.DataPivotHierarchyUpdateData.summarizeBy
     summary: |-
       Determines whether to show all items of the DataPivotHierarchy.

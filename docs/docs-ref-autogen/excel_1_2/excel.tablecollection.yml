@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_2
     children:
       - excel_1_2.Excel.TableCollection.add
@@ -43,7 +43,7 @@ items:
       content: 'add(address: Range | string, hasHeaders: boolean): Excel.Table;'
       return:
         type:
-          - excel_1_2.Excel.Table
+          - excel.Excel.Table
         description: |-
 
           #### Examples
@@ -91,7 +91,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_2.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_2.Excel.TableCollection.count
     summary: |-
       Returns the number of tables in the workbook. Read-only.
@@ -121,7 +121,7 @@ items:
       content: 'getItem(key: string): Excel.Table;'
       return:
         type:
-          - excel_1_2.Excel.Table
+          - excel.Excel.Table
         description: |-
 
           #### Examples
@@ -160,7 +160,7 @@ items:
       content: 'getItemAt(index: number): Excel.Table;'
       return:
         type:
-          - excel_1_2.Excel.Table
+          - excel.Excel.Table
         description: |-
 
           #### Examples
@@ -229,7 +229,7 @@ items:
         Excel.TableCollection;
       return:
         type:
-          - excel_1_2.Excel.TableCollection
+          - excel.Excel.TableCollection
         description: ''
       parameters:
         - id: option
@@ -249,7 +249,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableCollection;'
       return:
         type:
-          - excel_1_2.Excel.TableCollection
+          - excel.Excel.TableCollection
         description: |-
 
           #### Examples
@@ -302,13 +302,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableCollection;'
       return:
         type:
-          - excel_1_2.Excel.TableCollection
+          - excel.Excel.TableCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_2.Excel.TableCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -325,5 +325,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.TableCollectionData
+          - excel.Excel.Interfaces.TableCollectionData
         description: ''

@@ -27,7 +27,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ConditionalRangeFormatUpdateData
+          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
   - uid: excel_1_6.Excel.Interfaces.TopBottomConditionalFormatUpdateData.rule
     summary: |-
       The criteria of the Top/Bottom conditional format.
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.ConditionalTopBottomRule;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalTopBottomRule
+          - excel.Excel.ConditionalTopBottomRule

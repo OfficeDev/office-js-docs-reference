@@ -44,8 +44,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], options?: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResultStatus) => void): void;
+        addAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResultStatus) => void): void;
       return:
         type:
           - void
@@ -60,14 +60,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
             determine if the call succeeded.
           type:
-            - '(asyncResult: CommonAPI.AsyncResultStatus) => void'
+            - '(asyncResult: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.addAsync_1
     summary: |-
       Adds to the set of locations associated with the appointment.
@@ -88,7 +88,7 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: CommonAPI.AsyncResultStatus) =>
+        addAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResultStatus) =>
         void): void;
       return:
         type:
@@ -105,7 +105,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
             determine if the call succeeded.
           type:
-            - '(asyncResult: CommonAPI.AsyncResultStatus) => void'
+            - '(asyncResult: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.getAsync
     summary: |-
       Gets the set of locations associated with the appointment.
@@ -124,8 +124,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<LocationDetails[]>) => void): void;
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<LocationDetails[]>) => void): void;
       return:
         type:
           - void
@@ -136,13 +136,13 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
   - uid: outlook.Office.EnhancedLocation.getAsync_1
     summary: |-
       Gets the set of locations associated with the appointment.
@@ -180,7 +180,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<LocationDetails[]>) => void): void;'
       return:
         type:
           - void
@@ -191,7 +191,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<LocationDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
   - uid: outlook.Office.EnhancedLocation.removeAsync
     summary: >-
       Removes the set of locations associated with the appointment.
@@ -215,8 +215,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], options?: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResultStatus) => void): void;
+        removeAsync(locationIdentifiers: LocationIdentifier[], options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResultStatus) => void): void;
       return:
         type:
           - void
@@ -231,14 +231,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
             determine if the call succeeded.
           type:
-            - '(asyncResult: CommonAPI.AsyncResultStatus) => void'
+            - '(asyncResult: Office.AsyncResultStatus) => void'
   - uid: outlook.Office.EnhancedLocation.removeAsync_1
     summary: >-
       Removes the set of locations associated with the appointment.
@@ -262,7 +262,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: CommonAPI.AsyncResultStatus) =>
+        removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: Office.AsyncResultStatus) =>
         void): void;
       return:
         type:
@@ -279,4 +279,4 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. Check the `status` property of asyncResult to
             determine if the call succeeded.
           type:
-            - '(asyncResult: CommonAPI.AsyncResultStatus) => void'
+            - '(asyncResult: Office.AsyncResultStatus) => void'

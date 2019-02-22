@@ -89,7 +89,7 @@ items:
       content: 'parentRow?: OneNote.Interfaces.TableRowLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowLoadOptions
+          - OneNote.Interfaces.TableRowLoadOptions
   - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions.rowIndex
     summary: |-
       For EACH ITEM in the collection: Gets the index of the cell's row in the table. Read-only.

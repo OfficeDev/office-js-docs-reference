@@ -25,7 +25,7 @@ items:
       content: 'application?: Visio.Interfaces.ApplicationUpdateData;'
       return:
         type:
-          - visio.Visio.Interfaces.ApplicationUpdateData
+          - Visio.Interfaces.ApplicationUpdateData
   - uid: visio.Visio.Interfaces.DocumentUpdateData.view
     summary: |-
       Returns the DocumentView object.

@@ -29,7 +29,7 @@ items:
       content: 'maximum: Excel.ConditionalColorScaleCriterion;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalColorScaleCriterion
+          - excel.Excel.ConditionalColorScaleCriterion
   - uid: excel_1_6.Excel.ConditionalColorScaleCriteria.midpoint
     summary: |-
       The midpoint Color Scale Criterion if the color scale is a 3-color scale.
@@ -44,7 +44,7 @@ items:
       content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalColorScaleCriterion
+          - excel.Excel.ConditionalColorScaleCriterion
   - uid: excel_1_6.Excel.ConditionalColorScaleCriteria.minimum
     summary: |-
       The minimum point Color Scale Criterion.
@@ -59,4 +59,4 @@ items:
       content: 'minimum: Excel.ConditionalColorScaleCriterion;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalColorScaleCriterion
+          - excel.Excel.ConditionalColorScaleCriterion

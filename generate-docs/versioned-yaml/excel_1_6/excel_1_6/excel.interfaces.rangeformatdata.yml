@@ -1,0 +1,163 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData
+    summary: An interface describing the data returned by calling "rangeFormat.toJSON()".
+    name: Excel.Interfaces.RangeFormatData
+    fullName: Excel.Interfaces.RangeFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.RangeFormatData.borders
+      - excel_1_6.Excel.Interfaces.RangeFormatData.columnWidth
+      - excel_1_6.Excel.Interfaces.RangeFormatData.fill
+      - excel_1_6.Excel.Interfaces.RangeFormatData.font
+      - excel_1_6.Excel.Interfaces.RangeFormatData.horizontalAlignment
+      - excel_1_6.Excel.Interfaces.RangeFormatData.protection
+      - excel_1_6.Excel.Interfaces.RangeFormatData.rowHeight
+      - excel_1_6.Excel.Interfaces.RangeFormatData.verticalAlignment
+      - excel_1_6.Excel.Interfaces.RangeFormatData.wrapText
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.borders
+    summary: |-
+      Collection of border objects that apply to the overall range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.Interfaces.RangeBorderData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.RangeBorderData[]'
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.columnWidth
+    summary: >-
+      Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
+      returned.
+
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnWidth
+    fullName: columnWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnWidth?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.fill
+    summary: |-
+      Returns the fill object defined on the overall range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.Interfaces.RangeFillData;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.RangeFillData
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.font
+    summary: |-
+      Returns the font object defined on the overall range. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.RangeFontData;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.RangeFontData
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+        "CenterAcrossSelection" | "Distributed";
+      return:
+        type:
+          - >-
+            Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
+            "CenterAcrossSelection" | "Distributed"
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.protection
+    summary: |-
+      Returns the format protection object for a range. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.FormatProtectionData;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.FormatProtectionData
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.rowHeight
+    summary: |-
+      Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowHeight
+    fullName: rowHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHeight?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.verticalAlignment
+    summary: |-
+      Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed";'
+      return:
+        type:
+          - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
+  - uid: excel_1_6.Excel.Interfaces.RangeFormatData.wrapText
+    summary: >-
+      Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
+      wrap setting
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wrapText
+    fullName: wrapText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wrapText?: boolean;'
+      return:
+        type:
+          - boolean

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.ChartTrendline.backwardPeriod
@@ -61,7 +61,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.ChartTrendline.delete
     summary: |-
       Delete the trendline object.
@@ -92,7 +92,7 @@ items:
       content: 'readonly format: Excel.ChartTrendlineFormat;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendlineFormat
+          - excel.Excel.ChartTrendlineFormat
   - uid: excel_1_8.Excel.ChartTrendline.forwardPeriod
     summary: |-
       Represents the number of periods that the trendline extends forward.
@@ -139,7 +139,7 @@ items:
       content: 'readonly label: Excel.ChartTrendlineLabel;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendlineLabel
+          - excel.Excel.ChartTrendlineLabel
   - uid: excel_1_8.Excel.ChartTrendline.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -171,13 +171,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.ChartTrendlineLoadOptions
+            - excel.Excel.Interfaces.ChartTrendlineLoadOptions
   - uid: excel_1_8.Excel.ChartTrendline.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -191,7 +191,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTrendline;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: propertyNames
@@ -211,7 +211,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendline;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -296,7 +296,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.ChartTrendline.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -314,7 +314,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.ChartTrendline
+            - excel.Excel.ChartTrendline
   - uid: excel_1_8.Excel.ChartTrendline.showEquation
     summary: |-
       True if the equation for the trendline is displayed on the chart.
@@ -361,7 +361,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTrendlineData
+          - excel.Excel.Interfaces.ChartTrendlineData
         description: ''
   - uid: excel_1_8.Excel.ChartTrendline.type
     summary: |-

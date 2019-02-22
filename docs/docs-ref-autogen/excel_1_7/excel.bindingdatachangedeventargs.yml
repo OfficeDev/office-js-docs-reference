@@ -27,4 +27,4 @@ items:
       content: 'binding: Excel.Binding;'
       return:
         type:
-          - excel_1_7.Excel.Binding
+          - excel.Excel.Binding

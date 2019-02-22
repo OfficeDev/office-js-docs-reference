@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_5
     children:
       - excel_1_5.Excel.ChartPoint.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_5.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_5.Excel.ChartPoint.format
     summary: |-
       Encapsulates the format properties chart point. Read-only.
@@ -51,7 +51,7 @@ items:
       content: 'readonly format: Excel.ChartPointFormat;'
       return:
         type:
-          - excel_1_5.Excel.ChartPointFormat
+          - excel.Excel.ChartPointFormat
   - uid: excel_1_5.Excel.ChartPoint.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -83,13 +83,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;'
       return:
         type:
-          - excel_1_5.Excel.ChartPoint
+          - excel.Excel.ChartPoint
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_5.Excel.Interfaces.ChartPointLoadOptions
+            - excel.Excel.Interfaces.ChartPointLoadOptions
   - uid: excel_1_5.Excel.ChartPoint.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -103,7 +103,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPoint;'
       return:
         type:
-          - excel_1_5.Excel.ChartPoint
+          - excel.Excel.ChartPoint
         description: ''
       parameters:
         - id: propertyNames
@@ -123,7 +123,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPoint;'
       return:
         type:
-          - excel_1_5.Excel.ChartPoint
+          - excel.Excel.ChartPoint
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -161,7 +161,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_5.Excel.ChartPoint.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -179,7 +179,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_5.Excel.ChartPoint
+            - excel.Excel.ChartPoint
   - uid: excel_1_5.Excel.ChartPoint.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -196,7 +196,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPointData;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.ChartPointData
+          - excel.Excel.Interfaces.ChartPointData
         description: ''
   - uid: excel_1_5.Excel.ChartPoint.value
     summary: |-

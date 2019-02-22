@@ -34,7 +34,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartTitleFormatUpdateData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartTitleFormatUpdateData
+          - excel.Excel.Interfaces.ChartTitleFormatUpdateData
   - uid: excel_1_7.Excel.Interfaces.ChartTitleUpdateData.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for chart title.

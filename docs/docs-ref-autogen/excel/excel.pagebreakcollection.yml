@@ -62,7 +62,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.PageBreakCollection.getCount
     summary: >-
       Gets the number of page breaks in the collection.

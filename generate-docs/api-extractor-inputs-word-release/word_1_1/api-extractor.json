@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/OfficeDev/office-js-docs-reference/master/generate-docs/schemas/api-extractor.schema.json",
+  "compiler" : {
+    "configType": "tsconfig",
+    "rootFolder": "."
+  },
+  "policies": {
+    "namespaceSupport": "permissive"
+  },
+  "validationRules": {
+    "missingReleaseTags": "allow"
+  },
+  "project": {
+    "entryPointSourceFile": "word_1_1.d.ts"
+  },
+  "apiReviewFile": {
+    "enabled": false
+  },
+  "apiJsonFile": {
+    "enabled": true,
+    "outputFolder": "../json"
+  }
+}

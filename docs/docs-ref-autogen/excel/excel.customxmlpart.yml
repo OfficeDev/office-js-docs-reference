@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.CustomXmlPart.delete
     summary: |-
       Deletes the custom XML part.

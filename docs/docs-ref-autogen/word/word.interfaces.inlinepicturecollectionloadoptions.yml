@@ -132,7 +132,7 @@ items:
       content: 'paragraph?: Word.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphLoadOptions
+          - Word.Interfaces.ParagraphLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a
@@ -183,7 +183,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
+          - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained
@@ -200,7 +200,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
+          - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it
@@ -217,7 +217,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
+          - Word.Interfaces.TableCellLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not
@@ -234,7 +234,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
+          - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
     summary: |-
       For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.

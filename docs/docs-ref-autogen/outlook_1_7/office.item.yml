@@ -54,8 +54,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: any, callback?: (result:
-        CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -64,7 +64,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -82,7 +82,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Item.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event.
@@ -124,7 +124,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (result: CommonAPI.AsyncResult<void>)
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>)
         => void): void;
       return:
         type:
@@ -134,7 +134,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -146,7 +146,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Item.addHandlerAsync_2
     summary: >-
       Adds an event handler for a supported event.
@@ -168,7 +168,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addHandlerAsync(eventType: CommonAPI.EventType, handler: any): void;'
+      content: 'addHandlerAsync(eventType: Office.EventType, handler: any): void;'
       return:
         type:
           - void
@@ -177,7 +177,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -213,7 +213,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?:
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
         any): void;
       return:
         type:
@@ -225,7 +225,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -304,7 +304,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void): void;'
+      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
       return:
         type:
           - void
@@ -315,7 +315,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
   - uid: Outlook_1_7.Office.Item.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type.
@@ -339,8 +339,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType, options?: any, callback?: (result:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -349,7 +349,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -361,7 +361,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Item.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type.
@@ -385,7 +385,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (result: CommonAPI.AsyncResult<void>) => void):
+        removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -395,13 +395,13 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Item.removeHandlerAsync_2
     summary: >-
       Removes the event handlers for a supported event type.
@@ -423,7 +423,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeHandlerAsync(eventType: CommonAPI.EventType): void;'
+      content: 'removeHandlerAsync(eventType: Office.EventType): void;'
       return:
         type:
           - void
@@ -432,7 +432,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
   - uid: Outlook_1_7.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
@@ -476,7 +476,7 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook_1_7.Office.Body
+          - Body
   - uid: Outlook_1_7.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.
@@ -549,7 +549,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook_1_7.Office.NotificationMessages
+          - NotificationMessages
   - uid: Outlook_1_7.Office.Item.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.

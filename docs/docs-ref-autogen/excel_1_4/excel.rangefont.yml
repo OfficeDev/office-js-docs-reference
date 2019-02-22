@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_4
     children:
       - excel_1_4.Excel.RangeFont.bold
@@ -70,7 +70,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_4.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_4.Excel.RangeFont.italic
     summary: |-
       Represents the italic status of the font.
@@ -117,13 +117,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
       return:
         type:
-          - excel_1_4.Excel.RangeFont
+          - excel.Excel.RangeFont
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_4.Excel.Interfaces.RangeFontLoadOptions
+            - excel.Excel.Interfaces.RangeFontLoadOptions
   - uid: excel_1_4.Excel.RangeFont.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -137,7 +137,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFont;'
       return:
         type:
-          - excel_1_4.Excel.RangeFont
+          - excel.Excel.RangeFont
         description: |-
 
           #### Examples
@@ -193,7 +193,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFont;'
       return:
         type:
-          - excel_1_4.Excel.RangeFont
+          - excel.Excel.RangeFont
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -246,7 +246,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_4.Excel.RangeFont.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -264,7 +264,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_4.Excel.RangeFont
+            - excel.Excel.RangeFont
   - uid: excel_1_4.Excel.RangeFont.size
     summary: |-
       Font size.
@@ -296,7 +296,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - excel_1_4.Excel.Interfaces.RangeFontData
+          - excel.Excel.Interfaces.RangeFontData
         description: ''
   - uid: excel_1_4.Excel.RangeFont.underline
     summary: |-

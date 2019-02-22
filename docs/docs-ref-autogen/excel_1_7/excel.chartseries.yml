@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.ChartSeries.chartType
@@ -98,7 +98,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.ChartSeries.delete
     summary: |-
       Deletes the chart series.
@@ -181,7 +181,7 @@ items:
       content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
-          - excel_1_7.Excel.ChartSeriesFormat
+          - excel.Excel.ChartSeriesFormat
   - uid: excel_1_7.Excel.ChartSeries.gapWidth
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
@@ -245,13 +245,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_7.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.ChartSeriesLoadOptions
+            - excel.Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel_1_7.Excel.ChartSeries.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -265,7 +265,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_7.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: |-
 
           #### Examples
@@ -303,7 +303,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_7.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -552,7 +552,7 @@ items:
       content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
-          - excel_1_7.Excel.ChartPointsCollection
+          - excel.Excel.ChartPointsCollection
   - uid: excel_1_7.Excel.ChartSeries.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -582,7 +582,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ChartSeries.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -600,7 +600,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_7.Excel.ChartSeries
+            - excel.Excel.ChartSeries
   - uid: excel_1_7.Excel.ChartSeries.setBubbleSizes
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.
@@ -621,7 +621,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel_1_7.Excel.Range
+            - Range
   - uid: excel_1_7.Excel.ChartSeries.setValues
     summary: |-
       Set values for a chart series. For scatter chart, it means Y axis values.
@@ -661,7 +661,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel_1_7.Excel.Range
+            - Range
   - uid: excel_1_7.Excel.ChartSeries.setXAxisValues
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.
@@ -682,7 +682,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel_1_7.Excel.Range
+            - Range
   - uid: excel_1_7.Excel.ChartSeries.showShadow
     summary: |-
       Boolean value representing if the series has a shadow or not.
@@ -729,7 +729,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartSeriesData
+          - excel.Excel.Interfaces.ChartSeriesData
         description: ''
   - uid: excel_1_7.Excel.ChartSeries.trendlines
     summary: |-
@@ -745,4 +745,4 @@ items:
       content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel_1_7.Excel.ChartTrendlineCollection
+          - excel.Excel.ChartTrendlineCollection

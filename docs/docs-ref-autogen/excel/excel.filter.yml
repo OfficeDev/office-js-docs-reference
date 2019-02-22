@@ -368,7 +368,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.Filter.criteria
     summary: |-
       The currently applied filter on the given column. Read-only.

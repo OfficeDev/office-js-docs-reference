@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.FilterPivotHierarchy.context
@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.FilterPivotHierarchy.enableMultipleFilterItems
     summary: |-
       Determines whether to allow multiple filter items.
@@ -70,7 +70,7 @@ items:
       content: 'readonly fields: Excel.PivotFieldCollection;'
       return:
         type:
-          - excel_1_8.Excel.PivotFieldCollection
+          - excel.Excel.PivotFieldCollection
   - uid: excel_1_8.Excel.FilterPivotHierarchy.id
     summary: |-
       Id of the FilterPivotHierarchy.
@@ -117,13 +117,13 @@ items:
       content: 'load(option?: Excel.Interfaces.FilterPivotHierarchyLoadOptions): Excel.FilterPivotHierarchy;'
       return:
         type:
-          - excel_1_8.Excel.FilterPivotHierarchy
+          - excel.Excel.FilterPivotHierarchy
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.FilterPivotHierarchyLoadOptions
+            - excel.Excel.Interfaces.FilterPivotHierarchyLoadOptions
   - uid: excel_1_8.Excel.FilterPivotHierarchy.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -137,7 +137,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.FilterPivotHierarchy;'
       return:
         type:
-          - excel_1_8.Excel.FilterPivotHierarchy
+          - excel.Excel.FilterPivotHierarchy
         description: ''
       parameters:
         - id: propertyNames
@@ -157,7 +157,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy;'
       return:
         type:
-          - excel_1_8.Excel.FilterPivotHierarchy
+          - excel.Excel.FilterPivotHierarchy
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -225,7 +225,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.FilterPivotHierarchy.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -243,7 +243,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.FilterPivotHierarchy
+            - excel.Excel.FilterPivotHierarchy
   - uid: excel_1_8.Excel.FilterPivotHierarchy.setToDefault
     summary: |-
       Reset the FilterPivotHierarchy back to its default values.
@@ -276,5 +276,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.FilterPivotHierarchyData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.FilterPivotHierarchyData
+          - excel.Excel.Interfaces.FilterPivotHierarchyData
         description: ''

@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.Runtime.enableEvents
     summary: |-
       Toggle JavaScript events in the current task pane or content add-in.

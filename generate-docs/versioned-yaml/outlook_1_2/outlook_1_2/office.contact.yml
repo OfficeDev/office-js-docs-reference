@@ -1,0 +1,127 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_2.Office.Contact
+    summary: >-
+      Represents a contact stored on the server. Read mode only.
+
+
+      The list of contacts associated with an email message or appointment is returned in the contacts property of the
+      [Office.Entities](xref:Outlook_1_2.Office.Entities) object that is returned by the getEntities or
+      getEntitiesByType method of the active item.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      // Get an array of strings that represent contacts in the current item's body.
+
+      var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+
+      console.log("There are " + contacts.length + " contacts.")
+
+      contacts.forEach(function (contact) {
+          console.log("Person name: " + JSON.stringify(contact.personName));
+          console.log("Business name: " + JSON.stringify(contact.businessName));
+          console.log("Addresses: " + JSON.stringify(contact.addresses));
+          console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
+          console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
+          console.log("Urls: " + JSON.stringify(contact.urls));
+      });
+
+      ```
+    name: Office.Contact
+    fullName: Office.Contact
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook_1_2
+    children:
+      - Outlook_1_2.Office.Contact.addresses
+      - Outlook_1_2.Office.Contact.businessName
+      - Outlook_1_2.Office.Contact.emailAddresses
+      - Outlook_1_2.Office.Contact.personName
+      - Outlook_1_2.Office.Contact.phoneNumbers
+      - Outlook_1_2.Office.Contact.urls
+  - uid: Outlook_1_2.Office.Contact.addresses
+    summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
+    name: addresses
+    fullName: addresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addresses: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: Outlook_1_2.Office.Contact.businessName
+    summary: A string containing the name of the business associated with the contact. Nullable.
+    name: businessName
+    fullName: businessName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'businessName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_2.Office.Contact.emailAddresses
+    summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
+    name: emailAddresses
+    fullName: emailAddresses
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddresses: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: Outlook_1_2.Office.Contact.personName
+    summary: A string containing the name of the person associated with the contact. Nullable.
+    name: personName
+    fullName: personName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'personName: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook_1_2.Office.Contact.phoneNumbers
+    summary: An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
+    name: phoneNumbers
+    fullName: phoneNumbers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneNumbers: PhoneNumber[];'
+      return:
+        type:
+          - 'PhoneNumber[]'
+  - uid: Outlook_1_2.Office.Contact.urls
+    summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
+    name: urls
+    fullName: urls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'urls: string[];'
+      return:
+        type:
+          - 'string[]'

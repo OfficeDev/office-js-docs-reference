@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.CalculationType
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.CalculationType
+    fullName: Excel.CalculationType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.CalculationType.full
+      - excel_1_2.Excel.CalculationType.fullRebuild
+      - excel_1_2.Excel.CalculationType.recalculate
+  - uid: excel_1_2.Excel.CalculationType.full
+    summary: This will mark all cells as dirty and then recalculate them.
+    name: full
+    fullName: full
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Full"'
+  - uid: excel_1_2.Excel.CalculationType.fullRebuild
+    summary: 'This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.'
+    name: fullRebuild
+    fullName: fullRebuild
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FullRebuild"'
+  - uid: excel_1_2.Excel.CalculationType.recalculate
+    summary: >-
+      Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells
+      programmatically marked as dirty.
+    name: recalculate
+    fullName: recalculate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Recalculate"'

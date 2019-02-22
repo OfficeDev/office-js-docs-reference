@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.ConditionalFormatCollection.add
@@ -40,7 +40,7 @@ items:
       content: 'add(type: Excel.ConditionalFormatType): Excel.ConditionalFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: |-
 
           #### Examples
@@ -82,7 +82,7 @@ items:
         - id: type
           description: The type of conditional format being added. See Excel.ConditionalFormatType for details.
           type:
-            - excel_1_7.Excel.ConditionalFormatType
+            - excel.Excel.ConditionalFormatType
   - uid: excel_1_7.Excel.ConditionalFormatCollection.add_1
     summary: |-
       Adds a new conditional format to the collection at the first/top priority.
@@ -99,7 +99,7 @@ items:
         "ContainsText" | "CellValue"): Excel.ConditionalFormat;
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: ''
       parameters:
         - id: typeString
@@ -168,7 +168,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.ConditionalFormatCollection.getCount
     summary: |-
       Returns the number of conditional formats in the workbook. Read-only.
@@ -221,7 +221,7 @@ items:
       content: 'getItem(id: string): Excel.ConditionalFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: |-
           Conditional Format object.
           #### Examples
@@ -262,7 +262,7 @@ items:
       content: 'getItemAt(index: number): Excel.ConditionalFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormat
+          - excel.Excel.ConditionalFormat
         description: |-
 
           #### Examples
@@ -361,7 +361,7 @@ items:
         Excel.ConditionalFormatCollection;
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormatCollection
+          - excel.Excel.ConditionalFormatCollection
         description: ''
       parameters:
         - id: option
@@ -381,7 +381,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalFormatCollection;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormatCollection
+          - excel.Excel.ConditionalFormatCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -398,13 +398,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalFormatCollection
+          - excel.Excel.ConditionalFormatCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_7.Excel.ConditionalFormatCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -421,5 +421,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalFormatCollectionData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ConditionalFormatCollectionData
+          - excel.Excel.Interfaces.ConditionalFormatCollectionData
         description: ''

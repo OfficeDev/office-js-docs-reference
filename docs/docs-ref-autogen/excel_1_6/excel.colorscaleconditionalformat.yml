@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_6
     children:
       - excel_1_6.Excel.ColorScaleConditionalFormat.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_6.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_6.Excel.ColorScaleConditionalFormat.criteria
     summary: |-
       The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -51,7 +51,7 @@ items:
       content: 'criteria: Excel.ConditionalColorScaleCriteria;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalColorScaleCriteria
+          - excel.Excel.ConditionalColorScaleCriteria
         description: |-
 
           #### Examples
@@ -103,13 +103,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - excel_1_6.Excel.ColorScaleConditionalFormat
+          - excel.Excel.ColorScaleConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_6.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: excel_1_6.Excel.ColorScaleConditionalFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -123,7 +123,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - excel_1_6.Excel.ColorScaleConditionalFormat
+          - excel.Excel.ColorScaleConditionalFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -143,7 +143,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat;'
       return:
         type:
-          - excel_1_6.Excel.ColorScaleConditionalFormat
+          - excel.Excel.ColorScaleConditionalFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -183,7 +183,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_6.Excel.ColorScaleConditionalFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -201,7 +201,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_6.Excel.ColorScaleConditionalFormat
+            - excel.Excel.ColorScaleConditionalFormat
   - uid: excel_1_6.Excel.ColorScaleConditionalFormat.threeColorScale
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
@@ -235,5 +235,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ColorScaleConditionalFormatData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ColorScaleConditionalFormatData
+          - excel.Excel.Interfaces.ColorScaleConditionalFormatData
         description: ''

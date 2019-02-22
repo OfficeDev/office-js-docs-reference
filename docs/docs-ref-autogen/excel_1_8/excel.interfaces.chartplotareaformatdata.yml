@@ -24,4 +24,4 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartBorderData
+          - excel.Excel.Interfaces.ChartBorderData

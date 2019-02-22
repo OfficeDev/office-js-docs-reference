@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.FunctionResult.context
@@ -34,7 +34,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.FunctionResult.error
     summary: >-
       Error value (such as "\#DIV/0") representing the error. If the error string is not set, then the function
@@ -89,7 +89,7 @@ items:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.FunctionResultLoadOptions
+            - excel.Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel_1_7.Excel.FunctionResult.load_1
     name: load(option)
     fullName: load(option)

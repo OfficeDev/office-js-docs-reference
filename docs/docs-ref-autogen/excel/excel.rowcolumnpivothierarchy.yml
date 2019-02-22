@@ -39,7 +39,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.RowColumnPivotHierarchy.fields
     summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.

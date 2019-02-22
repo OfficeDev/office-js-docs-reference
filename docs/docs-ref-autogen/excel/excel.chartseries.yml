@@ -198,7 +198,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartSeries.dataLabels
     summary: |-
       Represents a collection of all dataLabels in the series.
@@ -1053,7 +1053,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - Range
   - uid: excel.Excel.ChartSeries.setValues
     summary: |-
       Set values for a chart series. For scatter chart, it means Y axis values.
@@ -1093,7 +1093,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - Range
   - uid: excel.Excel.ChartSeries.setXAxisValues
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.
@@ -1114,7 +1114,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - Range
   - uid: excel.Excel.ChartSeries.showConnectorLines
     summary: >-
       Returns or sets if connector lines show in a waterfall chart. Read/Write.

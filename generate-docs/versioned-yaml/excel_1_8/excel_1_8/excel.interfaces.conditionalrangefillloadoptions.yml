@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeFillLoadOptions
+    summary: |-
+      Represents the background of a conditional range object.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ConditionalRangeFillLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ConditionalRangeFillLoadOptions.$all
+      - excel_1_8.Excel.Interfaces.ConditionalRangeFillLoadOptions.color
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeFillLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ConditionalRangeFillLoadOptions.color
+    summary: >-
+      HTML color code representing the color of the fill, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
+      (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean

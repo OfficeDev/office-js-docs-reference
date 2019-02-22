@@ -55,4 +55,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.WorksheetLoadOptions
+          - excel.Excel.Interfaces.WorksheetLoadOptions

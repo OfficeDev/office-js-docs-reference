@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: visio
     children:
       - visio.Visio.Page.activate
@@ -60,7 +60,7 @@ items:
       content: 'readonly allShapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Page.comments
     summary: |-
       Returns the Comments Collection. Read-only.
@@ -75,7 +75,7 @@ items:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
+          - Visio.CommentCollection
   - uid: visio.Visio.Page.height
     summary: |-
       Returns the height of the page. Read-only.
@@ -152,13 +152,13 @@ items:
       content: 'load(option?: Visio.Interfaces.PageLoadOptions): Visio.Page;'
       return:
         type:
-          - visio.Visio.Page
+          - Visio.Page
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.PageLoadOptions
+            - Visio.Interfaces.PageLoadOptions
   - uid: visio.Visio.Page.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -172,7 +172,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.Page;'
       return:
         type:
-          - visio.Visio.Page
+          - Visio.Page
         description: ''
       parameters:
         - id: propertyNames
@@ -192,7 +192,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Page;'
       return:
         type:
-          - visio.Visio.Page
+          - Visio.Page
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -245,7 +245,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.Page.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -263,7 +263,7 @@ items:
         - id: properties
           description: ''
           type:
-            - visio.Visio.Page
+            - Visio.Page
   - uid: visio.Visio.Page.shapes
     summary: |-
       All top-level shapes in the Page.Read-only.
@@ -278,7 +278,7 @@ items:
       content: 'readonly shapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - Visio.ShapeCollection
   - uid: visio.Visio.Page.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -289,7 +289,7 @@ items:
       content: 'toJSON(): Visio.Interfaces.PageData;'
       return:
         type:
-          - visio.Visio.Interfaces.PageData
+          - Visio.Interfaces.PageData
         description: ''
   - uid: visio.Visio.Page.view
     summary: |-

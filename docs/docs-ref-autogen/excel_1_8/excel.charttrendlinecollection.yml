@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.ChartTrendlineCollection.add
@@ -38,7 +38,7 @@ items:
       content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: |-
 
           #### Examples
@@ -59,7 +59,7 @@ items:
         - id: type
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
-            - excel_1_8.Excel.ChartTrendlineType
+            - excel.Excel.ChartTrendlineType
   - uid: excel_1_8.Excel.ChartTrendlineCollection.add_1
     summary: |-
       Adds a new trendline to trendline collection.
@@ -76,7 +76,7 @@ items:
         Excel.ChartTrendline;
       return:
         type:
-          - excel_1_8.Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: typeString
@@ -96,7 +96,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.ChartTrendlineCollection.getCount
     summary: |-
       Returns the number of trendlines in the collection.
@@ -127,7 +127,7 @@ items:
       content: 'getItem(index: number): Excel.ChartTrendline;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendline
+          - excel.Excel.ChartTrendline
         description: ''
       parameters:
         - id: index
@@ -179,7 +179,7 @@ items:
         Excel.ChartTrendlineCollection;
       return:
         type:
-          - excel_1_8.Excel.ChartTrendlineCollection
+          - excel.Excel.ChartTrendlineCollection
         description: ''
       parameters:
         - id: option
@@ -199,7 +199,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendlineCollection
+          - excel.Excel.ChartTrendlineCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -216,13 +216,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel_1_8.Excel.ChartTrendlineCollection
+          - excel.Excel.ChartTrendlineCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_8.Excel.ChartTrendlineCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -239,5 +239,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTrendlineCollectionData
+          - excel.Excel.Interfaces.ChartTrendlineCollectionData
         description: ''

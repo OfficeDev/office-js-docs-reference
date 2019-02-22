@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_1
     children:
       - excel_1_1.Excel.RangeFormat.borders
@@ -41,7 +41,7 @@ items:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
-          - excel_1_1.Excel.RangeBorderCollection
+          - excel.Excel.RangeBorderCollection
   - uid: excel_1_1.Excel.RangeFormat.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -55,7 +55,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_1.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_1.Excel.RangeFormat.fill
     summary: |-
       Returns the fill object defined on the overall range. Read-only.
@@ -70,7 +70,7 @@ items:
       content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
-          - excel_1_1.Excel.RangeFill
+          - excel.Excel.RangeFill
   - uid: excel_1_1.Excel.RangeFormat.font
     summary: |-
       Returns the font object defined on the overall range. Read-only.
@@ -85,7 +85,7 @@ items:
       content: 'readonly font: Excel.RangeFont;'
       return:
         type:
-          - excel_1_1.Excel.RangeFont
+          - excel.Excel.RangeFont
   - uid: excel_1_1.Excel.RangeFormat.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
@@ -136,13 +136,13 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;'
       return:
         type:
-          - excel_1_1.Excel.RangeFormat
+          - excel.Excel.RangeFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_1.Excel.Interfaces.RangeFormatLoadOptions
+            - excel.Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel_1_1.Excel.RangeFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -156,7 +156,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFormat;'
       return:
         type:
-          - excel_1_1.Excel.RangeFormat
+          - excel.Excel.RangeFormat
         description: |-
 
           #### Examples
@@ -236,7 +236,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFormat;'
       return:
         type:
-          - excel_1_1.Excel.RangeFormat
+          - excel.Excel.RangeFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -274,7 +274,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_1.Excel.RangeFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -292,7 +292,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_1.Excel.RangeFormat
+            - excel.Excel.RangeFormat
   - uid: excel_1_1.Excel.RangeFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -309,7 +309,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.RangeFormatData
+          - excel.Excel.Interfaces.RangeFormatData
         description: ''
   - uid: excel_1_1.Excel.RangeFormat.verticalAlignment
     summary: |-

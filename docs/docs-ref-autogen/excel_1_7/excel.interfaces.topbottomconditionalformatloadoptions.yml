@@ -40,7 +40,7 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
   - uid: excel_1_7.Excel.Interfaces.TopBottomConditionalFormatLoadOptions.rule
     summary: |-
       The criteria of the Top/Bottom conditional format.

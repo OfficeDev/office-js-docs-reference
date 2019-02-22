@@ -43,7 +43,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartAxesUpdateData
+          - excel.Excel.Interfaces.ChartAxesUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartUpdateData.categoryLabelLevel
     summary: >-
       Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
@@ -119,7 +119,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartDataLabelsUpdateData
+          - excel.Excel.Interfaces.ChartDataLabelsUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartUpdateData.displayBlanksAs
     summary: |-
       Returns or sets the way that blank cells are plotted on a chart. Read/Write.
@@ -149,7 +149,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartAreaFormatUpdateData
+          - excel.Excel.Interfaces.ChartAreaFormatUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartUpdateData.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -194,7 +194,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartLegendUpdateData
+          - excel.Excel.Interfaces.ChartLegendUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartUpdateData.name
     summary: |-
       Represents the name of a chart object.
@@ -224,7 +224,7 @@ items:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartPlotAreaUpdateData
+          - excel.Excel.Interfaces.ChartPlotAreaUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartUpdateData.plotBy
     summary: |-
       Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
@@ -336,7 +336,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTitleUpdateData
+          - excel.Excel.Interfaces.ChartTitleUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartUpdateData.top
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the

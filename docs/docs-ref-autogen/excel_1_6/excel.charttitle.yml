@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_6
     children:
       - excel_1_6.Excel.ChartTitle.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_6.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_6.Excel.ChartTitle.format
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
@@ -53,7 +53,7 @@ items:
       content: 'readonly format: Excel.ChartTitleFormat;'
       return:
         type:
-          - excel_1_6.Excel.ChartTitleFormat
+          - excel.Excel.ChartTitleFormat
   - uid: excel_1_6.Excel.ChartTitle.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -85,13 +85,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;'
       return:
         type:
-          - excel_1_6.Excel.ChartTitle
+          - excel.Excel.ChartTitle
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_6.Excel.Interfaces.ChartTitleLoadOptions
+            - excel.Excel.Interfaces.ChartTitleLoadOptions
   - uid: excel_1_6.Excel.ChartTitle.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -105,7 +105,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTitle;'
       return:
         type:
-          - excel_1_6.Excel.ChartTitle
+          - excel.Excel.ChartTitle
         description: |-
 
           #### Examples
@@ -164,7 +164,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitle;'
       return:
         type:
-          - excel_1_6.Excel.ChartTitle
+          - excel.Excel.ChartTitle
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -217,7 +217,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_6.Excel.ChartTitle.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -235,7 +235,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_6.Excel.ChartTitle
+            - excel.Excel.ChartTitle
   - uid: excel_1_6.Excel.ChartTitle.text
     summary: |-
       Represents the title text of a chart.
@@ -267,7 +267,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ChartTitleData
+          - excel.Excel.Interfaces.ChartTitleData
         description: ''
   - uid: excel_1_6.Excel.ChartTitle.visible
     summary: |-

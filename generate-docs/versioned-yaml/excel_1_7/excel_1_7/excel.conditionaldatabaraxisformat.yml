@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ConditionalDataBarAxisFormat
+    summary: |-
+      Represents the format options for a Data Bar Axis.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ConditionalDataBarAxisFormat
+    fullName: Excel.ConditionalDataBarAxisFormat
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ConditionalDataBarAxisFormat.automatic
+      - excel_1_7.Excel.ConditionalDataBarAxisFormat.cellMidPoint
+      - excel_1_7.Excel.ConditionalDataBarAxisFormat.none
+  - uid: excel_1_7.Excel.ConditionalDataBarAxisFormat.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_1_7.Excel.ConditionalDataBarAxisFormat.cellMidPoint
+    name: cellMidPoint
+    fullName: cellMidPoint
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CellMidPoint"'
+  - uid: excel_1_7.Excel.ConditionalDataBarAxisFormat.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'

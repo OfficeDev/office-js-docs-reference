@@ -21,7 +21,7 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - excel_1_8.Excel.Icon
+          - Icon
   - uid: excel_1_8.Excel.ThreeArrowsSet.redDownArrow
     name: redDownArrow
     fullName: redDownArrow
@@ -32,7 +32,7 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - excel_1_8.Excel.Icon
+          - Icon
   - uid: excel_1_8.Excel.ThreeArrowsSet.yellowSideArrow
     name: yellowSideArrow
     fullName: yellowSideArrow
@@ -43,4 +43,4 @@ items:
       content: 'yellowSideArrow: Icon;'
       return:
         type:
-          - excel_1_8.Excel.Icon
+          - Icon

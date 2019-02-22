@@ -92,7 +92,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartDataLabelsLoadOptions
+          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
     summary: >-
       For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
@@ -178,7 +178,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartSeriesFormatLoadOptions
+          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
     summary: >-
       For EACH ITEM in the collection: Represents the gap width of a chart series. Only valid on bar and column charts,
@@ -351,7 +351,7 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartPointsCollectionLoadOptions
+          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
   - uid: excel_1_8.Excel.Interfaces.ChartSeriesCollectionLoadOptions.secondPlotSize
     summary: >-
       For EACH ITEM in the collection: Returns or sets the size of the secondary section of either a pie of pie chart or

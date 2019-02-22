@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartLegendEntry.height
     summary: |-
       Represents the height of the legendEntry on the chart legend.

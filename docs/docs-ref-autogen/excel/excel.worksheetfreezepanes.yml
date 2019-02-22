@@ -32,7 +32,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.WorksheetFreezePanes.freezeAt
     summary: >-
       Sets the frozen cells in the active worksheet view. The range provided corresponds to cells that will be frozen in

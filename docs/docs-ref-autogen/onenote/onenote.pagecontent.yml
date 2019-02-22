@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.PageContent.context
@@ -47,7 +47,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.PageContent.delete
     summary: |-
       Deletes the PageContent object.
@@ -121,7 +121,7 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
   - uid: onenote.OneNote.PageContent.ink
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
@@ -291,7 +291,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.PageContent.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

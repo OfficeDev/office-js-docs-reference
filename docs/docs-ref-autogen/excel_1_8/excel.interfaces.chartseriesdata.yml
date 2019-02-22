@@ -107,7 +107,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartDataLabelsData
+          - excel.Excel.Interfaces.ChartDataLabelsData
   - uid: excel_1_8.Excel.Interfaces.ChartSeriesData.doughnutHoleSize
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
@@ -188,7 +188,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartSeriesFormatData
+          - excel.Excel.Interfaces.ChartSeriesFormatData
   - uid: excel_1_8.Excel.Interfaces.ChartSeriesData.gapWidth
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of

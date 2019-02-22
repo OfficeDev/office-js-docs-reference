@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.NamedItemLoadOptions
+    summary: >-
+      Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
+      below), range object, or a reference to a range. This object can be used to obtain range object associated with
+      names.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.NamedItemLoadOptions
+    fullName: Excel.Interfaces.NamedItemLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.NamedItemLoadOptions.$all
+      - excel_1_2.Excel.Interfaces.NamedItemLoadOptions.name
+      - excel_1_2.Excel.Interfaces.NamedItemLoadOptions.type
+      - excel_1_2.Excel.Interfaces.NamedItemLoadOptions.value
+      - excel_1_2.Excel.Interfaces.NamedItemLoadOptions.visible
+  - uid: excel_1_2.Excel.Interfaces.NamedItemLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.NamedItemLoadOptions.name
+    summary: |-
+      The name of the object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.NamedItemLoadOptions.type
+    summary: >-
+      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.NamedItemLoadOptions.value
+    summary: |-
+      Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.NamedItemLoadOptions.visible
+    summary: |-
+      Specifies whether the object is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionData
+    summary: An interface describing the data returned by calling "inkAnalysisLineCollection.toJSON()".
+    name: OneNote.Interfaces.InkAnalysisLineCollectionData
+    fullName: OneNote.Interfaces.InkAnalysisLineCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionData.items
+  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: OneNote.Interfaces.InkAnalysisLineData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.InkAnalysisLineData[]'

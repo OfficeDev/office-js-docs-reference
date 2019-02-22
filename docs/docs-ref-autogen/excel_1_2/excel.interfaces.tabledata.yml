@@ -123,7 +123,7 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortData;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.TableSortData
+          - excel.Excel.Interfaces.TableSortData
   - uid: excel_1_2.Excel.Interfaces.TableData.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,

@@ -129,7 +129,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.WorksheetProtectionData
+          - excel.Excel.Interfaces.WorksheetProtectionData
   - uid: excel_1_8.Excel.Interfaces.WorksheetData.showGridlines
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.

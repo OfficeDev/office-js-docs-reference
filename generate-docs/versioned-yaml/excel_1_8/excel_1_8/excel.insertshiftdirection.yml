@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.InsertShiftDirection
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.InsertShiftDirection
+    fullName: Excel.InsertShiftDirection
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.InsertShiftDirection.down
+      - excel_1_8.Excel.InsertShiftDirection.right
+  - uid: excel_1_8.Excel.InsertShiftDirection.down
+    name: down
+    fullName: down
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Down"'
+  - uid: excel_1_8.Excel.InsertShiftDirection.right
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'

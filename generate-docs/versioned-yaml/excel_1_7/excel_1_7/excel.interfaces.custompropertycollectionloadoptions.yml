@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions
+    summary: |-
+      Contains the collection of customProperty objects.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.CustomPropertyCollectionLoadOptions
+    fullName: Excel.Interfaces.CustomPropertyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.$all
+      - excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.key
+      - excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.type
+      - excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.value
+  - uid: excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.key
+    summary: |-
+      For EACH ITEM in the collection: Gets the key of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.type
+    summary: |-
+      For EACH ITEM in the collection: Gets the value type of the custom property. Read only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_7.Excel.Interfaces.CustomPropertyCollectionLoadOptions.value
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets the value of the custom property.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean

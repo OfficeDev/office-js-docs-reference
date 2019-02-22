@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.InlinePicture.altTextDescription
@@ -102,7 +102,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.InlinePicture.delete
     summary: |-
       Deletes the inline picture from the document.
@@ -260,7 +260,7 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocation
@@ -281,7 +281,7 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocationString
@@ -344,7 +344,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertBreak_1
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
@@ -404,7 +404,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -414,7 +414,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertFileFromBase64_1
     summary: |-
       Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -431,7 +431,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -456,7 +456,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: html
@@ -466,7 +466,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertHtml_1
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -481,7 +481,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: html
@@ -520,7 +520,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertInlinePictureFromBase64_1
     summary: >-
       Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or
@@ -564,7 +564,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -574,7 +574,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertOoxml_1
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -589,7 +589,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -614,7 +614,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -624,7 +624,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertParagraph_1
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -641,7 +641,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -666,7 +666,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: text
@@ -676,7 +676,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.InlinePicture.insertText_1
     summary: |-
       Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -691,7 +691,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: text
@@ -811,7 +811,7 @@ items:
       content: 'readonly paragraph: Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
   - uid: word.Word.InlinePicture.parentContentControl
     summary: >-
       Gets the content control that contains the inline image. Throws if there isn't a parent content control.
@@ -860,7 +860,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.InlinePicture.parentTableCell
     summary: |-
       Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
@@ -875,7 +875,7 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.InlinePicture.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
@@ -892,7 +892,7 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.InlinePicture.parentTableOrNullObject
     summary: |-
       Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
@@ -907,7 +907,7 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.InlinePicture.select
     summary: |-
       Selects the inline picture. This causes Word to scroll to the selection.
@@ -928,7 +928,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
+            - Word.SelectionMode
   - uid: word.Word.InlinePicture.select_1
     summary: |-
       Selects the inline picture. This causes Word to scroll to the selection.
@@ -979,7 +979,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.InlinePicture.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

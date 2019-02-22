@@ -88,4 +88,4 @@ items:
       content: 'subtotals?: Excel.Subtotals;'
       return:
         type:
-          - excel_1_8.Excel.Subtotals
+          - excel.Excel.Subtotals

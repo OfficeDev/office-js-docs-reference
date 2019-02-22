@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    summary: |-
+      A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    fullName: Excel.Interfaces.ConditionalRangeFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders
+      - excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.fill
+      - excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.font
+      - excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.numberFormat
+  - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.borders
+    summary: |-
+      Collection of border objects that apply to the overall conditional format range.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions
+  - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.fill
+    summary: |-
+      Returns the fill object defined on the overall conditional format range.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.Interfaces.ConditionalRangeFillLoadOptions;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.ConditionalRangeFillLoadOptions
+  - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.font
+    summary: |-
+      Returns the font object defined on the overall conditional format range.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ConditionalRangeFontLoadOptions;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.ConditionalRangeFontLoadOptions
+  - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatLoadOptions.numberFormat
+    summary: |-
+      Represents Excel's number format code for the given range. Cleared if null is passed in.
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: numberFormat
+    fullName: numberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'numberFormat?: boolean;'
+      return:
+        type:
+          - boolean

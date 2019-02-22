@@ -57,7 +57,7 @@ items:
       content: 'layout?: Excel.Interfaces.PivotLayoutLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.PivotLayoutLoadOptions
+          - excel.Excel.Interfaces.PivotLayoutLoadOptions
   - uid: excel_1_8.Excel.Interfaces.PivotTableCollectionLoadOptions.name
     summary: |-
       For EACH ITEM in the collection: Name of the PivotTable.
@@ -87,4 +87,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.WorksheetLoadOptions
+          - excel.Excel.Interfaces.WorksheetLoadOptions

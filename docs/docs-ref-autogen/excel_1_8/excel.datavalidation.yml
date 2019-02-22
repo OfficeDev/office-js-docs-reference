@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.DataValidation.clear
@@ -57,7 +57,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.DataValidation.errorAlert
     summary: |-
       Error alert when user enters invalid data.
@@ -72,7 +72,7 @@ items:
       content: 'errorAlert: Excel.DataValidationErrorAlert;'
       return:
         type:
-          - excel_1_8.Excel.DataValidationErrorAlert
+          - excel.Excel.DataValidationErrorAlert
         description: |-
 
           #### Examples
@@ -152,13 +152,13 @@ items:
       content: 'load(option?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;'
       return:
         type:
-          - excel_1_8.Excel.DataValidation
+          - excel.Excel.DataValidation
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.DataValidationLoadOptions
+            - excel.Excel.Interfaces.DataValidationLoadOptions
   - uid: excel_1_8.Excel.DataValidation.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -172,7 +172,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DataValidation;'
       return:
         type:
-          - excel_1_8.Excel.DataValidation
+          - excel.Excel.DataValidation
         description: ''
       parameters:
         - id: propertyNames
@@ -192,7 +192,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataValidation;'
       return:
         type:
-          - excel_1_8.Excel.DataValidation
+          - excel.Excel.DataValidation
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -215,7 +215,7 @@ items:
       content: 'prompt: Excel.DataValidationPrompt;'
       return:
         type:
-          - excel_1_8.Excel.DataValidationPrompt
+          - excel.Excel.DataValidationPrompt
   - uid: excel_1_8.Excel.DataValidation.rule
     summary: |-
       Data validation rule that contains different type of data validation criteria.
@@ -230,7 +230,7 @@ items:
       content: 'rule: Excel.DataValidationRule;'
       return:
         type:
-          - excel_1_8.Excel.DataValidationRule
+          - excel.Excel.DataValidationRule
   - uid: excel_1_8.Excel.DataValidation.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -260,7 +260,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.DataValidation.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -278,7 +278,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.DataValidation
+            - excel.Excel.DataValidation
   - uid: excel_1_8.Excel.DataValidation.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -295,7 +295,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.DataValidationData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.DataValidationData
+          - excel.Excel.Interfaces.DataValidationData
         description: ''
   - uid: excel_1_8.Excel.DataValidation.type
     summary: |-

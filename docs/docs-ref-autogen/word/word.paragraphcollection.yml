@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.ParagraphCollection.context
@@ -39,7 +39,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.ParagraphCollection.getFirst
     summary: |-
       Gets the first paragraph in this collection. Throws if the collection is empty.
@@ -54,7 +54,7 @@ items:
       content: 'getFirst(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.getFirstOrNullObject
     summary: |-
@@ -70,7 +70,7 @@ items:
       content: 'getFirstOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.getLast
     summary: |-
@@ -86,7 +86,7 @@ items:
       content: 'getLast(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.getLastOrNullObject
     summary: |-
@@ -102,7 +102,7 @@ items:
       content: 'getLastOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.ParagraphCollection.items
     summary: Gets the loaded child items in this collection.
@@ -189,7 +189,7 @@ items:
         Word.ParagraphCollection;
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
         description: ''
       parameters:
         - id: option
@@ -209,7 +209,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -226,13 +226,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.ParagraphCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -243,7 +243,7 @@ items:
       content: 'toJSON(): Word.Interfaces.ParagraphCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphCollectionData
+          - Word.Interfaces.ParagraphCollectionData
         description: ''
   - uid: word.Word.ParagraphCollection.track
     summary: >-
@@ -261,7 +261,7 @@ items:
       content: 'track(): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
         description: ''
   - uid: word.Word.ParagraphCollection.untrack
     summary: >-
@@ -278,5 +278,5 @@ items:
       content: 'untrack(): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
         description: ''

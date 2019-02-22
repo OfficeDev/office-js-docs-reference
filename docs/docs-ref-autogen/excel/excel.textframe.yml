@@ -91,7 +91,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.TextFrame.deleteText
     summary: >-
       Deletes all the text in the textframe.

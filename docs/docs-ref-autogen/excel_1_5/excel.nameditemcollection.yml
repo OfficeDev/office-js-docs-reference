@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_5
     children:
       - excel_1_5.Excel.NamedItemCollection.add
@@ -41,7 +41,7 @@ items:
       content: 'add(name: string, reference: Range | string, comment?: string): Excel.NamedItem;'
       return:
         type:
-          - excel_1_5.Excel.NamedItem
+          - excel.Excel.NamedItem
         description: |-
 
           #### Examples
@@ -84,7 +84,7 @@ items:
       content: 'addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;'
       return:
         type:
-          - excel_1_5.Excel.NamedItem
+          - excel.Excel.NamedItem
         description: ''
       parameters:
         - id: name
@@ -112,7 +112,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_5.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_5.Excel.NamedItemCollection.getCount
     summary: |-
       Gets the number of named items in the collection.
@@ -143,7 +143,7 @@ items:
       content: 'getItem(name: string): Excel.NamedItem;'
       return:
         type:
-          - excel_1_5.Excel.NamedItem
+          - excel.Excel.NamedItem
         description: |-
 
           #### Examples
@@ -182,7 +182,7 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.NamedItem;'
       return:
         type:
-          - excel_1_5.Excel.NamedItem
+          - excel.Excel.NamedItem
         description: ''
       parameters:
         - id: name
@@ -234,7 +234,7 @@ items:
         Excel.NamedItemCollection;
       return:
         type:
-          - excel_1_5.Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
         description: ''
       parameters:
         - id: option
@@ -254,7 +254,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItemCollection;'
       return:
         type:
-          - excel_1_5.Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
         description: |-
 
           #### Examples
@@ -292,13 +292,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;'
       return:
         type:
-          - excel_1_5.Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_5.Excel.NamedItemCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -315,5 +315,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemCollectionData;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.NamedItemCollectionData
+          - excel.Excel.Interfaces.NamedItemCollectionData
         description: ''

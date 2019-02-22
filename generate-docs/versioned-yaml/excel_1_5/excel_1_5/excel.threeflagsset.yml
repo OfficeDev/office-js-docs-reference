@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.ThreeFlagsSet
+    name: Excel.ThreeFlagsSet
+    fullName: Excel.ThreeFlagsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.ThreeFlagsSet.greenFlag
+      - excel_1_5.Excel.ThreeFlagsSet.redFlag
+      - excel_1_5.Excel.ThreeFlagsSet.yellowFlag
+  - uid: excel_1_5.Excel.ThreeFlagsSet.greenFlag
+    name: greenFlag
+    fullName: greenFlag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenFlag: Icon;'
+      return:
+        type:
+          - excel_1_5.Excel.Icon
+  - uid: excel_1_5.Excel.ThreeFlagsSet.redFlag
+    name: redFlag
+    fullName: redFlag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redFlag: Icon;'
+      return:
+        type:
+          - excel_1_5.Excel.Icon
+  - uid: excel_1_5.Excel.ThreeFlagsSet.yellowFlag
+    name: yellowFlag
+    fullName: yellowFlag
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowFlag: Icon;'
+      return:
+        type:
+          - excel_1_5.Excel.Icon

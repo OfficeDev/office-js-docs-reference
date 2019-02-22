@@ -47,7 +47,7 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions
+          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
   - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.id
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
@@ -94,7 +94,7 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.TableRowCollectionLoadOptions
+          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
   - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.showHeaders
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
@@ -139,7 +139,7 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.TableSortLoadOptions
+          - excel.Excel.Interfaces.TableSortLoadOptions
   - uid: excel_1_2.Excel.Interfaces.TableLoadOptions.style
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
@@ -172,4 +172,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.WorksheetLoadOptions
+          - excel.Excel.Interfaces.WorksheetLoadOptions

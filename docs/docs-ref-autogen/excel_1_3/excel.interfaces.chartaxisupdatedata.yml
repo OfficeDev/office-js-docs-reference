@@ -31,7 +31,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartAxisFormatUpdateData
+          - excel.Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartAxisUpdateData.majorGridlines
     summary: |-
       Returns a Gridlines object that represents the major gridlines for the specified axis.
@@ -46,7 +46,7 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartGridlinesUpdateData
+          - excel.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartAxisUpdateData.majorUnit
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
@@ -112,7 +112,7 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartGridlinesUpdateData
+          - excel.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_1_3.Excel.Interfaces.ChartAxisUpdateData.minorUnit
     summary: >-
       Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
@@ -144,4 +144,4 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartAxisTitleUpdateData
+          - excel.Excel.Interfaces.ChartAxisTitleUpdateData

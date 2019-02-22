@@ -49,7 +49,7 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatUpdateData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.RangeFormatUpdateData
+          - excel.Excel.Interfaces.RangeFormatUpdateData
   - uid: excel_1_7.Excel.Interfaces.RangeUpdateData.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
@@ -119,7 +119,7 @@ items:
       content: 'hyperlink?: Excel.RangeHyperlink;'
       return:
         type:
-          - excel_1_7.Excel.RangeHyperlink
+          - excel.Excel.RangeHyperlink
   - uid: excel_1_7.Excel.Interfaces.RangeUpdateData.numberFormat
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value

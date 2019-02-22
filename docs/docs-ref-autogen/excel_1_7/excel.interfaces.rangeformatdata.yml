@@ -67,7 +67,7 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.RangeFillData
+          - excel.Excel.Interfaces.RangeFillData
   - uid: excel_1_7.Excel.Interfaces.RangeFormatData.font
     summary: |-
       Returns the font object defined on the overall range. Read-only.
@@ -82,7 +82,7 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.RangeFontData
+          - excel.Excel.Interfaces.RangeFontData
   - uid: excel_1_7.Excel.Interfaces.RangeFormatData.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
@@ -116,7 +116,7 @@ items:
       content: 'protection?: Excel.Interfaces.FormatProtectionData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.FormatProtectionData
+          - excel.Excel.Interfaces.FormatProtectionData
   - uid: excel_1_7.Excel.Interfaces.RangeFormatData.rowHeight
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.

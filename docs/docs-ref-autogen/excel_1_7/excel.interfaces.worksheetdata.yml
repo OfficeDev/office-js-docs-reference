@@ -127,7 +127,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.WorksheetProtectionData
+          - excel.Excel.Interfaces.WorksheetProtectionData
   - uid: excel_1_7.Excel.Interfaces.WorksheetData.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.

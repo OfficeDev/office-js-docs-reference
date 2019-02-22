@@ -1,0 +1,142 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions
+    summary: |-
+      Represents a collection of worksheet objects that are part of the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.WorksheetCollectionLoadOptions
+    fullName: Excel.Interfaces.WorksheetCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_5
+    children:
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.id
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.name
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.position
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.protection
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
+      - excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
+    summary: |-
+      For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: charts
+    fullName: charts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
+      value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: The display name of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.position
+    summary: |-
+      For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: position
+    fullName: position
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'position?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.protection
+    summary: |-
+      For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.WorksheetProtectionLoadOptions
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
+    summary: |-
+      For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
+      return:
+        type:
+          - excel_1_5.Excel.Interfaces.TableCollectionLoadOptions
+  - uid: excel_1_5.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
+    summary: >-
+      For EACH ITEM in the collection: The Visibility of the worksheet.
+
+
+      \[ [API set: ExcelApi 1.1 for reading visibility; 1.2 for setting
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visibility
+    fullName: visibility
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visibility?: boolean;'
+      return:
+        type:
+          - boolean

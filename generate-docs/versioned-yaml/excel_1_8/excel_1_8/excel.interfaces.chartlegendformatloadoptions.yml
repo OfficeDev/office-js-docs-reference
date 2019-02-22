@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions
+    summary: |-
+      Encapsulates the format properties of a chart legend.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartLegendFormatLoadOptions
+    fullName: Excel.Interfaces.ChartLegendFormatLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_8
+    children:
+      - excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions.$all
+      - excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions.border
+      - excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions.font
+  - uid: excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions.border
+    summary: |-
+      Represents the border format, which includes color, linestyle, and weight.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: border
+    fullName: border
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
+      return:
+        type:
+          - excel_1_8.Excel.Interfaces.ChartBorderLoadOptions
+  - uid: excel_1_8.Excel.Interfaces.ChartLegendFormatLoadOptions.font
+    summary: |-
+      Represents the font attributes such as font name, font size, color, etc. of a chart legend.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
+      return:
+        type:
+          - excel_1_8.Excel.Interfaces.ChartFontLoadOptions

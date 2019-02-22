@@ -51,7 +51,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTrendlineFormatUpdateData
+          - excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartTrendlineUpdateData.forwardPeriod
     summary: |-
       Represents the number of periods that the trendline extends forward.
@@ -98,7 +98,7 @@ items:
       content: 'label?: Excel.Interfaces.ChartTrendlineLabelUpdateData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTrendlineLabelUpdateData
+          - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData
   - uid: excel_1_8.Excel.Interfaces.ChartTrendlineUpdateData.movingAveragePeriod
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.

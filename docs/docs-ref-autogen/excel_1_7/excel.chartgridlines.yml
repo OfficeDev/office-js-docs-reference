@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.ChartGridlines.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.ChartGridlines.format
     summary: |-
       Represents the formatting of chart gridlines. Read-only.
@@ -51,7 +51,7 @@ items:
       content: 'readonly format: Excel.ChartGridlinesFormat;'
       return:
         type:
-          - excel_1_7.Excel.ChartGridlinesFormat
+          - excel.Excel.ChartGridlinesFormat
   - uid: excel_1_7.Excel.ChartGridlines.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -83,13 +83,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;'
       return:
         type:
-          - excel_1_7.Excel.ChartGridlines
+          - excel.Excel.ChartGridlines
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.ChartGridlinesLoadOptions
+            - excel.Excel.Interfaces.ChartGridlinesLoadOptions
   - uid: excel_1_7.Excel.ChartGridlines.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -103,7 +103,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartGridlines;'
       return:
         type:
-          - excel_1_7.Excel.ChartGridlines
+          - excel.Excel.ChartGridlines
         description: |-
 
           #### Examples
@@ -157,7 +157,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlines;'
       return:
         type:
-          - excel_1_7.Excel.ChartGridlines
+          - excel.Excel.ChartGridlines
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -195,7 +195,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ChartGridlines.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -213,7 +213,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_7.Excel.ChartGridlines
+            - excel.Excel.ChartGridlines
   - uid: excel_1_7.Excel.ChartGridlines.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -230,7 +230,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartGridlinesData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartGridlinesData
+          - excel.Excel.Interfaces.ChartGridlinesData
         description: ''
   - uid: excel_1_7.Excel.ChartGridlines.visible
     summary: |-

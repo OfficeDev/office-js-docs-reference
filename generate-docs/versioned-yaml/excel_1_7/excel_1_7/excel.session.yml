@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.Session
+    summary: Provides connection session for a remote workbook.
+    name: Excel.Session
+    fullName: Excel.Session
+    langs:
+      - typeScript
+    type: class
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.Session.(constructor)
+      - excel_1_7.Excel.Session.close
+  - uid: excel_1_7.Excel.Session.(constructor)
+    name: '(constructor)(workbookUrl, requestHeaders, persisted)'
+    fullName: '(constructor)(workbookUrl, requestHeaders, persisted)'
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: "constructor(workbookUrl?: string, requestHeaders?: {\r\n            [name: string]: string;\r\n        }, persisted?: boolean);"
+      parameters:
+        - id: workbookUrl
+          description: ''
+          type:
+            - string
+        - id: requestHeaders
+          description: ''
+          type:
+            - "{\r\n            [name: string]: string;\r\n        }"
+        - id: persisted
+          description: ''
+          type:
+            - boolean
+  - uid: excel_1_7.Excel.Session.close
+    summary: Close the session.
+    name: close()
+    fullName: close()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(): Promise<void>;'
+      return:
+        type:
+          - Promise<void>
+        description: ''

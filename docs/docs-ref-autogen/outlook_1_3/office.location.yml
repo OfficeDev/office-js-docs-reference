@@ -59,7 +59,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options?: CommonAPI.AsyncContextOptions, callback?: (result: CommonAPI.AsyncResult<string>) => void):
+        getAsync(options?: Office.AsyncContextOptions, callback?: (result: Office.AsyncResult<string>) => void):
         void;
       return:
         type:
@@ -71,7 +71,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -80,7 +80,7 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_3.Office.Location.getAsync_1
     summary: >-
       Gets the location of an appointment.
@@ -99,7 +99,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -113,7 +113,7 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook_1_3.Office.Location.getAsync_2
     summary: >-
       Gets the location of an appointment.
@@ -161,8 +161,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(location: string, options?: CommonAPI.AsyncContextOptions, callback?: (result:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(location: string, options?: Office.AsyncContextOptions, callback?: (result:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -177,7 +177,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -187,7 +187,7 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_3.Office.Location.setAsync_1
     summary: >-
       Sets the location of an appointment.
@@ -257,7 +257,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(location: string, callback: (result: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -276,4 +276,4 @@ items:
 
             \[Api set: Mailbox 1.1\]
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'

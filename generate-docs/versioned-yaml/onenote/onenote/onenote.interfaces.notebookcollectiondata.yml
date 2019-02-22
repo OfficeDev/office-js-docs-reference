@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.NotebookCollectionData
+    summary: An interface describing the data returned by calling "notebookCollection.toJSON()".
+    name: OneNote.Interfaces.NotebookCollectionData
+    fullName: OneNote.Interfaces.NotebookCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.NotebookCollectionData.items
+  - uid: onenote.OneNote.Interfaces.NotebookCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: OneNote.Interfaces.NotebookData[];'
+      return:
+        type:
+          - 'OneNote.Interfaces.NotebookData[]'

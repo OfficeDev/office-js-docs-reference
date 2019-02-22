@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.Worksheet.activate
@@ -119,7 +119,7 @@ items:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
-          - excel_1_7.Excel.ChartCollection
+          - excel.Excel.ChartCollection
   - uid: excel_1_7.Excel.Worksheet.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -133,7 +133,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.Worksheet.copy
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
@@ -148,7 +148,7 @@ items:
       content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -172,11 +172,11 @@ items:
         - id: positionType
           description: Optional.
           type:
-            - excel_1_7.Excel.WorksheetPositionType
+            - excel.Excel.WorksheetPositionType
         - id: relativeTo
           description: Optional.
           type:
-            - excel_1_7.Excel.Worksheet
+            - excel.Excel.Worksheet
   - uid: excel_1_7.Excel.Worksheet.copy_1
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
@@ -193,7 +193,7 @@ items:
         Excel.Worksheet;
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: positionTypeString
@@ -203,7 +203,7 @@ items:
         - id: relativeTo
           description: Optional.
           type:
-            - excel_1_7.Excel.Worksheet
+            - excel.Excel.Worksheet
   - uid: excel_1_7.Excel.Worksheet.delete
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
@@ -252,7 +252,7 @@ items:
       content: 'readonly freezePanes: Excel.WorksheetFreezePanes;'
       return:
         type:
-          - excel_1_7.Excel.WorksheetFreezePanes
+          - excel.Excel.WorksheetFreezePanes
   - uid: excel_1_7.Excel.Worksheet.getCell
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
@@ -269,7 +269,7 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel_1_7.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -315,7 +315,7 @@ items:
       content: 'getNext(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -367,7 +367,7 @@ items:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -388,7 +388,7 @@ items:
       content: 'getPrevious(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -436,7 +436,7 @@ items:
       content: 'getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: visibleOnly
@@ -457,7 +457,7 @@ items:
       content: 'getRange(address?: string): Excel.Range;'
       return:
         type:
-          - excel_1_7.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -520,7 +520,7 @@ items:
       content: 'getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number): Excel.Range;'
       return:
         type:
-          - excel_1_7.Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: startRow
@@ -555,7 +555,7 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel_1_7.Excel.Range
+          - excel.Excel.Range
         description: |-
 
           #### Examples
@@ -599,7 +599,7 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel_1_7.Excel.Range
+          - excel.Excel.Range
         description: ''
       parameters:
         - id: valuesOnly
@@ -654,13 +654,13 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.WorksheetLoadOptions
+            - excel.Excel.Interfaces.WorksheetLoadOptions
   - uid: excel_1_7.Excel.Worksheet.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -674,7 +674,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: |-
 
           #### Examples
@@ -727,7 +727,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;'
       return:
         type:
-          - excel_1_7.Excel.Worksheet
+          - excel.Excel.Worksheet
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -765,7 +765,7 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel_1_7.Excel.NamedItemCollection
+          - excel.Excel.NamedItemCollection
   - uid: excel_1_7.Excel.Worksheet.onActivated
     summary: |-
       Occurs when the worksheet is activated.
@@ -901,7 +901,7 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel_1_7.Excel.PivotTableCollection
+          - excel.Excel.PivotTableCollection
   - uid: excel_1_7.Excel.Worksheet.position
     summary: |-
       The zero-based position of the worksheet within the workbook.
@@ -931,7 +931,7 @@ items:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type:
-          - excel_1_7.Excel.WorksheetProtection
+          - excel.Excel.WorksheetProtection
   - uid: excel_1_7.Excel.Worksheet.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -961,7 +961,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.Worksheet.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -979,7 +979,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_7.Excel.Worksheet
+            - excel.Excel.Worksheet
   - uid: excel_1_7.Excel.Worksheet.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
@@ -1058,7 +1058,7 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel_1_7.Excel.TableCollection
+          - excel.Excel.TableCollection
   - uid: excel_1_7.Excel.Worksheet.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -1075,7 +1075,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.WorksheetData
+          - excel.Excel.Interfaces.WorksheetData
         description: ''
   - uid: excel_1_7.Excel.Worksheet.visibility
     summary: >-

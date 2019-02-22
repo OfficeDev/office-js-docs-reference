@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.Document.body
@@ -48,7 +48,7 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.Document.contentControls
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
@@ -79,7 +79,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.Document.getSelection
     summary: |-
       Gets the current selection of the document. Multiple selections are not supported.
@@ -94,7 +94,7 @@ items:
       content: 'getSelection(): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -198,13 +198,13 @@ items:
       content: 'load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - Word.Document
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.DocumentLoadOptions
+            - Word.Interfaces.DocumentLoadOptions
   - uid: word.Word.Document.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -218,7 +218,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - Word.Document
         description: ''
       parameters:
         - id: propertyNames
@@ -238,7 +238,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - Word.Document
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -261,7 +261,7 @@ items:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
         description: |-
 
           #### Examples
@@ -362,7 +362,7 @@ items:
       content: 'readonly sections: Word.SectionCollection;'
       return:
         type:
-          - word.Word.SectionCollection
+          - Word.SectionCollection
   - uid: word.Word.Document.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -392,7 +392,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Document.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -410,7 +410,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Document
+            - Word.Document
   - uid: word.Word.Document.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -421,7 +421,7 @@ items:
       content: 'toJSON(): Word.Interfaces.DocumentData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentData
+          - Word.Interfaces.DocumentData
         description: ''
   - uid: word.Word.Document.track
     summary: >-
@@ -439,7 +439,7 @@ items:
       content: 'track(): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - Word.Document
         description: ''
   - uid: word.Word.Document.untrack
     summary: >-
@@ -456,5 +456,5 @@ items:
       content: 'untrack(): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - Word.Document
         description: ''

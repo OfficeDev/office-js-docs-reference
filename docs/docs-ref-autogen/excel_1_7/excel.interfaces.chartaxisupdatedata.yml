@@ -95,7 +95,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartAxisFormatUpdateData
+          - excel.Excel.Interfaces.ChartAxisFormatUpdateData
   - uid: excel_1_7.Excel.Interfaces.ChartAxisUpdateData.logBase
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
@@ -125,7 +125,7 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartGridlinesUpdateData
+          - excel.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_1_7.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -223,7 +223,7 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartGridlinesUpdateData
+          - excel.Excel.Interfaces.ChartGridlinesUpdateData
   - uid: excel_1_7.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
@@ -381,7 +381,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ChartAxisTitleUpdateData
+          - excel.Excel.Interfaces.ChartAxisTitleUpdateData
   - uid: excel_1_7.Excel.Interfaces.ChartAxisUpdateData.visible
     summary: |-
       A boolean value represents the visibility of the axis.

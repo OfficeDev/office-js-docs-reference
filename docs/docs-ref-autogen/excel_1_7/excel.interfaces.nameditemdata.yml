@@ -31,7 +31,7 @@ items:
       content: 'arrayValues?: Excel.Interfaces.NamedItemArrayValuesData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.NamedItemArrayValuesData
+          - excel.Excel.Interfaces.NamedItemArrayValuesData
   - uid: excel_1_7.Excel.Interfaces.NamedItemData.comment
     summary: |-
       Represents the comment associated with this name.

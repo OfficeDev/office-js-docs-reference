@@ -1,0 +1,323 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ChartTrendline
+    summary: |-
+      This object represents the attributes for a chart trendline object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartTrendline
+    fullName: Excel.ChartTrendline
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ChartTrendline.context
+      - excel_1_7.Excel.ChartTrendline.delete
+      - excel_1_7.Excel.ChartTrendline.format
+      - excel_1_7.Excel.ChartTrendline.intercept
+      - excel_1_7.Excel.ChartTrendline.load
+      - excel_1_7.Excel.ChartTrendline.load_1
+      - excel_1_7.Excel.ChartTrendline.load_2
+      - excel_1_7.Excel.ChartTrendline.movingAveragePeriod
+      - excel_1_7.Excel.ChartTrendline.name
+      - excel_1_7.Excel.ChartTrendline.polynomialOrder
+      - excel_1_7.Excel.ChartTrendline.set
+      - excel_1_7.Excel.ChartTrendline.set_1
+      - excel_1_7.Excel.ChartTrendline.toJSON
+      - excel_1_7.Excel.ChartTrendline.type
+  - uid: excel_1_7.Excel.ChartTrendline.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel_1_7.Excel.RequestContext
+  - uid: excel_1_7.Excel.ChartTrendline.delete
+    summary: |-
+      Delete the trendline object.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: delete()
+    fullName: delete()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'delete(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel_1_7.Excel.ChartTrendline.format
+    summary: |-
+      Represents the formatting of a chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartTrendlineFormat;'
+      return:
+        type:
+          - excel_1_7.Excel.ChartTrendlineFormat
+  - uid: excel_1_7.Excel.ChartTrendline.intercept
+    summary: >-
+      Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
+      values). The returned value is always a number.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: intercept
+    fullName: intercept
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'intercept: any;'
+      return:
+        type:
+          - any
+  - uid: excel_1_7.Excel.ChartTrendline.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.ChartTrendline` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartTrendline` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendline` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;'
+      return:
+        type:
+          - excel_1_7.Excel.ChartTrendline
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel_1_7.Excel.Interfaces.ChartTrendlineLoadOptions
+  - uid: excel_1_7.Excel.ChartTrendline.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartTrendline;'
+      return:
+        type:
+          - excel_1_7.Excel.ChartTrendline
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_1_7.Excel.ChartTrendline.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendline;'
+      return:
+        type:
+          - excel_1_7.Excel.ChartTrendline
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel_1_7.Excel.ChartTrendline.movingAveragePeriod
+    summary: |-
+      Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: movingAveragePeriod
+    fullName: movingAveragePeriod
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'movingAveragePeriod: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_7.Excel.ChartTrendline.name
+    summary: >-
+      Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
+      automatic values. The returned value is always a string
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_7.Excel.ChartTrendline.polynomialOrder
+    summary: |-
+      Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: polynomialOrder
+    fullName: polynomialOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'polynomialOrder: number;'
+      return:
+        type:
+          - number
+  - uid: excel_1_7.Excel.ChartTrendline.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartTrendline): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartTrendlineUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartTrendlineUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel_1_7.Excel.ChartTrendline.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartTrendline): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel_1_7.Excel.ChartTrendline
+  - uid: excel_1_7.Excel.ChartTrendline.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartTrendline object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartTrendlineData;'
+      return:
+        type:
+          - excel_1_7.Excel.Interfaces.ChartTrendlineData
+        description: ''
+  - uid: excel_1_7.Excel.ChartTrendline.type
+    summary: |-
+      Represents the type of a chart trendline.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        type: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
+        "Power";
+      return:
+        type:
+          - >-
+            Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" |
+            "Power"
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+
+              let seriesCollection = sheet.charts.getItemAt(0).series;
+
+              // Get the trendline for series 1 and load its type property.  
+              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
+              trendline.load("type");
+
+              await context.sync();
+
+              console.log("The trendline type is:" + trendline.type);  
+          });
+          ```

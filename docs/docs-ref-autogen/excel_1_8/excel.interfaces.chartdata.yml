@@ -45,7 +45,7 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartAxesData
+          - excel.Excel.Interfaces.ChartAxesData
   - uid: excel_1_8.Excel.Interfaces.ChartData.categoryLabelLevel
     summary: >-
       Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
@@ -121,7 +121,7 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartDataLabelsData
+          - excel.Excel.Interfaces.ChartDataLabelsData
   - uid: excel_1_8.Excel.Interfaces.ChartData.displayBlanksAs
     summary: |-
       Returns or sets the way that blank cells are plotted on a chart. Read/Write.
@@ -151,7 +151,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartAreaFormatData
+          - excel.Excel.Interfaces.ChartAreaFormatData
   - uid: excel_1_8.Excel.Interfaces.ChartData.height
     summary: |-
       Represents the height, in points, of the chart object.
@@ -211,7 +211,7 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartLegendData
+          - excel.Excel.Interfaces.ChartLegendData
   - uid: excel_1_8.Excel.Interfaces.ChartData.name
     summary: |-
       Represents the name of a chart object.
@@ -241,7 +241,7 @@ items:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartPlotAreaData
+          - excel.Excel.Interfaces.ChartPlotAreaData
   - uid: excel_1_8.Excel.Interfaces.ChartData.plotBy
     summary: |-
       Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
@@ -368,7 +368,7 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartTitleData
+          - excel.Excel.Interfaces.ChartTitleData
   - uid: excel_1_8.Excel.Interfaces.ChartData.top
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the

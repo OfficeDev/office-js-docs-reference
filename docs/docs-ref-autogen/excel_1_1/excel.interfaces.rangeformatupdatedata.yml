@@ -28,7 +28,7 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillUpdateData;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.RangeFillUpdateData
+          - excel.Excel.Interfaces.RangeFillUpdateData
   - uid: excel_1_1.Excel.Interfaces.RangeFormatUpdateData.font
     summary: |-
       Returns the font object defined on the overall range.
@@ -43,7 +43,7 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontUpdateData;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.RangeFontUpdateData
+          - excel.Excel.Interfaces.RangeFontUpdateData
   - uid: excel_1_1.Excel.Interfaces.RangeFormatUpdateData.horizontalAlignment
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.

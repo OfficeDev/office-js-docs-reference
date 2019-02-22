@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TextRangeLoadOptions
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.TextRangeLoadOptions
+    fullName: Excel.Interfaces.TextRangeLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TextRangeLoadOptions.$all
+      - excel.Excel.Interfaces.TextRangeLoadOptions.font
+      - excel.Excel.Interfaces.TextRangeLoadOptions.text
+  - uid: excel.Excel.Interfaces.TextRangeLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextRangeLoadOptions.font
+    summary: >-
+      Returns a ShapeFont object that represents the font attributes for the text range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ShapeFontLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeFontLoadOptions
+  - uid: excel.Excel.Interfaces.TextRangeLoadOptions.text
+    summary: >-
+      Represents the plain text content of the text range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean

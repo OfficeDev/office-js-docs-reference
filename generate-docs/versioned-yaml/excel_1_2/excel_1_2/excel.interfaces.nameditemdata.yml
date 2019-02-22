@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.NamedItemData
+    summary: An interface describing the data returned by calling "namedItem.toJSON()".
+    name: Excel.Interfaces.NamedItemData
+    fullName: Excel.Interfaces.NamedItemData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.NamedItemData.name
+      - excel_1_2.Excel.Interfaces.NamedItemData.type
+      - excel_1_2.Excel.Interfaces.NamedItemData.value
+      - excel_1_2.Excel.Interfaces.NamedItemData.visible
+  - uid: excel_1_2.Excel.Interfaces.NamedItemData.name
+    summary: |-
+      The name of the object. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_2.Excel.Interfaces.NamedItemData.type
+    summary: >-
+      Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for
+      Array](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array";'
+      return:
+        type:
+          - Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
+  - uid: excel_1_2.Excel.Interfaces.NamedItemData.value
+    summary: |-
+      Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: any;'
+      return:
+        type:
+          - any
+  - uid: excel_1_2.Excel.Interfaces.NamedItemData.visible
+    summary: |-
+      Specifies whether the object is visible or not.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean

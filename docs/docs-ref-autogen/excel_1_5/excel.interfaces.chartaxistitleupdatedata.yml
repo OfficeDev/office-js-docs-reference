@@ -28,7 +28,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.ChartAxisTitleFormatUpdateData
+          - excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
   - uid: excel_1_5.Excel.Interfaces.ChartAxisTitleUpdateData.text
     summary: |-
       Represents the axis title.

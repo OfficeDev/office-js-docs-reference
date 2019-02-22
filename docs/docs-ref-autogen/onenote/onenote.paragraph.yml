@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.Paragraph.addNoteTag
@@ -115,7 +115,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.Paragraph.delete
     summary: |-
       Deletes the paragraph
@@ -215,7 +215,7 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
   - uid: onenote.OneNote.Paragraph.inkWords
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
@@ -340,7 +340,7 @@ items:
         number): OneNote.Image;
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: |-
 
           #### Examples
@@ -412,7 +412,7 @@ items:
         height: number): OneNote.Image;
       return:
         type:
-          - onenote.OneNote.Image
+          - OneNote.Image
         description: ''
       parameters:
         - id: insertLocationString
@@ -534,7 +534,7 @@ items:
         string[][]): OneNote.Table;
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''
       parameters:
         - id: insertLocation
@@ -569,7 +569,7 @@ items:
         string[][]): OneNote.Table;
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
         description: ''
       parameters:
         - id: insertLocationString
@@ -877,7 +877,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: onenote.OneNote.Paragraph.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -910,7 +910,7 @@ items:
       content: 'readonly table: OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
+          - OneNote.Table
   - uid: onenote.OneNote.Paragraph.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

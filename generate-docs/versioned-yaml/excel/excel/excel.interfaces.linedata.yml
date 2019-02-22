@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.LineData
+    summary: An interface describing the data returned by calling "line.toJSON()".
+    name: Excel.Interfaces.LineData
+    fullName: Excel.Interfaces.LineData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.LineData.connectorType
+      - excel.Excel.Interfaces.LineData.id
+  - uid: excel.Excel.Interfaces.LineData.connectorType
+    summary: >-
+      Represents the connector type for the line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
+      return:
+        type:
+          - Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
+  - uid: excel.Excel.Interfaces.LineData.id
+    summary: >-
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string

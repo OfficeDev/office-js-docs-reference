@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.PageContentType
+    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.PageContentType
+    fullName: OneNote.PageContentType
+    langs:
+      - typeScript
+    type: enum
+    package: onenote
+    children:
+      - onenote.OneNote.PageContentType.image
+      - onenote.OneNote.PageContentType.ink
+      - onenote.OneNote.PageContentType.other
+      - onenote.OneNote.PageContentType.outline
+  - uid: onenote.OneNote.PageContentType.image
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: onenote.OneNote.PageContentType.ink
+    name: ink
+    fullName: ink
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ink"'
+  - uid: onenote.OneNote.PageContentType.other
+    name: other
+    fullName: other
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Other"'
+  - uid: onenote.OneNote.PageContentType.outline
+    name: outline
+    fullName: outline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Outline"'

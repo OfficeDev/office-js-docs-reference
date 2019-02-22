@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.DataPivotHierarchy.context
@@ -42,7 +42,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.DataPivotHierarchy.field
     summary: |-
       Returns the PivotFields associated with the DataPivotHierarchy.
@@ -57,7 +57,7 @@ items:
       content: 'readonly field: Excel.PivotField;'
       return:
         type:
-          - excel_1_8.Excel.PivotField
+          - excel.Excel.PivotField
   - uid: excel_1_8.Excel.DataPivotHierarchy.id
     summary: |-
       Id of the DataPivotHierarchy.
@@ -104,13 +104,13 @@ items:
       content: 'load(option?: Excel.Interfaces.DataPivotHierarchyLoadOptions): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel_1_8.Excel.DataPivotHierarchy
+          - excel.Excel.DataPivotHierarchy
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.DataPivotHierarchyLoadOptions
+            - excel.Excel.Interfaces.DataPivotHierarchyLoadOptions
   - uid: excel_1_8.Excel.DataPivotHierarchy.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -124,7 +124,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel_1_8.Excel.DataPivotHierarchy
+          - excel.Excel.DataPivotHierarchy
         description: ''
       parameters:
         - id: propertyNames
@@ -144,7 +144,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel_1_8.Excel.DataPivotHierarchy
+          - excel.Excel.DataPivotHierarchy
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -242,7 +242,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.DataPivotHierarchy.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -260,7 +260,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.DataPivotHierarchy
+            - excel.Excel.DataPivotHierarchy
   - uid: excel_1_8.Excel.DataPivotHierarchy.setToDefault
     summary: |-
       Reset the DataPivotHierarchy back to its default values.
@@ -291,7 +291,7 @@ items:
       content: 'showAs: Excel.ShowAsRule;'
       return:
         type:
-          - excel_1_8.Excel.ShowAsRule
+          - excel.Excel.ShowAsRule
         description: |-
 
           #### Examples
@@ -354,5 +354,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.DataPivotHierarchyData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.DataPivotHierarchyData
+          - excel.Excel.Interfaces.DataPivotHierarchyData
         description: ''

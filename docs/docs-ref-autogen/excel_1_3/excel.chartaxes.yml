@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_3
     children:
       - excel_1_3.Excel.ChartAxes.categoryAxis
@@ -38,7 +38,7 @@ items:
       content: 'readonly categoryAxis: Excel.ChartAxis;'
       return:
         type:
-          - excel_1_3.Excel.ChartAxis
+          - excel.Excel.ChartAxis
   - uid: excel_1_3.Excel.ChartAxes.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -52,7 +52,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_3.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_3.Excel.ChartAxes.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -84,13 +84,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;'
       return:
         type:
-          - excel_1_3.Excel.ChartAxes
+          - excel.Excel.ChartAxes
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_3.Excel.Interfaces.ChartAxesLoadOptions
+            - excel.Excel.Interfaces.ChartAxesLoadOptions
   - uid: excel_1_3.Excel.ChartAxes.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -104,7 +104,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxes;'
       return:
         type:
-          - excel_1_3.Excel.ChartAxes
+          - excel.Excel.ChartAxes
         description: ''
       parameters:
         - id: propertyNames
@@ -124,7 +124,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxes;'
       return:
         type:
-          - excel_1_3.Excel.ChartAxes
+          - excel.Excel.ChartAxes
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -147,7 +147,7 @@ items:
       content: 'readonly seriesAxis: Excel.ChartAxis;'
       return:
         type:
-          - excel_1_3.Excel.ChartAxis
+          - excel.Excel.ChartAxis
   - uid: excel_1_3.Excel.ChartAxes.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -177,7 +177,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_3.Excel.ChartAxes.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -195,7 +195,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_3.Excel.ChartAxes
+            - excel.Excel.ChartAxes
   - uid: excel_1_3.Excel.ChartAxes.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -212,7 +212,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxesData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.ChartAxesData
+          - excel.Excel.Interfaces.ChartAxesData
         description: ''
   - uid: excel_1_3.Excel.ChartAxes.valueAxis
     summary: |-
@@ -228,4 +228,4 @@ items:
       content: 'readonly valueAxis: Excel.ChartAxis;'
       return:
         type:
-          - excel_1_3.Excel.ChartAxis
+          - excel.Excel.ChartAxis

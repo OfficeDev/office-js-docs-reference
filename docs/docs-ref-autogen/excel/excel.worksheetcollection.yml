@@ -178,7 +178,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.WorksheetCollection.getActiveWorksheet
     summary: |-
       Gets the currently active worksheet in the workbook.

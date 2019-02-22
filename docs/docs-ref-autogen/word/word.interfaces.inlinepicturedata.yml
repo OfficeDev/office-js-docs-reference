@@ -111,7 +111,7 @@ items:
       content: 'paragraph?: Word.Interfaces.ParagraphData;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphData
+          - Word.Interfaces.ParagraphData
   - uid: word.Word.Interfaces.InlinePictureData.parentContentControl
     summary: >-
       Gets the content control that contains the inline image. Throws if there isn't a parent content control.
@@ -160,7 +160,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableData;'
       return:
         type:
-          - word.Word.Interfaces.TableData
+          - Word.Interfaces.TableData
   - uid: word.Word.Interfaces.InlinePictureData.parentTableCell
     summary: |-
       Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.
@@ -175,7 +175,7 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellData;'
       return:
         type:
-          - word.Word.Interfaces.TableCellData
+          - Word.Interfaces.TableCellData
   - uid: word.Word.Interfaces.InlinePictureData.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell.
@@ -192,7 +192,7 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellData;'
       return:
         type:
-          - word.Word.Interfaces.TableCellData
+          - Word.Interfaces.TableCellData
   - uid: word.Word.Interfaces.InlinePictureData.parentTableOrNullObject
     summary: |-
       Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.
@@ -207,7 +207,7 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableData;'
       return:
         type:
-          - word.Word.Interfaces.TableData
+          - Word.Interfaces.TableData
   - uid: word.Word.Interfaces.InlinePictureData.width
     summary: |-
       Gets or sets a number that describes the width of the inline image.

@@ -96,7 +96,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.AutoFilter.criteria
     summary: >-
       Array that holds all filter criterias in an autofiltered range. Read-Only.

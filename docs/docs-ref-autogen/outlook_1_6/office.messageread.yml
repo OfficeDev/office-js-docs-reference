@@ -15,8 +15,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook_1_6.Office.Message
-      - Outlook_1_6.Office.ItemRead
+      - Message
+      - 'ItemRead '
     package: Outlook_1_6
     children:
       - Outlook_1_6.Office.MessageRead.displayReplyAllForm
@@ -114,7 +114,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: CommonAPI.AsyncResult<void>) => void):
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -133,7 +133,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.MessageRead.displayReplyAllForm_1
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
@@ -309,7 +309,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (result: CommonAPI.AsyncResult<void>) => void):
+        displayReplyForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -328,7 +328,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: CommonAPI.AsyncResult<void>) => void'
+            - '(result: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_6.Office.MessageRead.displayReplyForm_1
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
@@ -469,7 +469,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Outlook_1_6.Office.Entities
+          - Entities
         description: ''
   - uid: Outlook_1_6.Office.MessageRead.getEntitiesByType
     summary: |-
@@ -788,7 +788,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - Outlook_1_6.Office.Entities
+          - Entities
         description: ''
   - uid: Outlook_1_6.Office.MessageRead.getSelectedRegExMatches
     summary: >-
@@ -909,7 +909,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?:
+        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
         any): void;
       return:
         type:
@@ -921,7 +921,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -956,7 +956,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: CommonAPI.AsyncResult<CustomProperties>) => void): void;'
+      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
       return:
         type:
           - void
@@ -967,7 +967,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: CommonAPI.AsyncResult<CustomProperties>) => void'
+            - '(result: Office.AsyncResult<CustomProperties>) => void'
   - uid: Outlook_1_6.Office.MessageRead.attachments
     summary: |-
       Gets the item's attachments as an array.
@@ -1067,7 +1067,7 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook_1_6.Office.Body
+          - Body
   - uid: Outlook_1_6.Office.MessageRead.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
@@ -1250,7 +1250,7 @@ items:
       content: 'from: EmailAddressDetails;'
       return:
         type:
-          - Outlook_1_6.Office.EmailAddressDetails
+          - EmailAddressDetails
   - uid: Outlook_1_6.Office.MessageRead.internetMessageId
     summary: |-
       Gets the Internet message identifier for an email message.
@@ -1495,7 +1495,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook_1_6.Office.NotificationMessages
+          - NotificationMessages
   - uid: Outlook_1_6.Office.MessageRead.sender
     summary: >-
       Gets the email address of the sender of an email message.
@@ -1536,7 +1536,7 @@ items:
       content: 'sender: EmailAddressDetails;'
       return:
         type:
-          - Outlook_1_6.Office.EmailAddressDetails
+          - EmailAddressDetails
   - uid: Outlook_1_6.Office.MessageRead.subject
     summary: >-
       Gets the description that appears in the subject field of an item.

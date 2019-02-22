@@ -21,7 +21,7 @@ items:
       content: 'greenCheckSymbol: Icon;'
       return:
         type:
-          - excel_1_6.Excel.Icon
+          - Icon
   - uid: excel_1_6.Excel.ThreeSymbolsSet.redCrossSymbol
     name: redCrossSymbol
     fullName: redCrossSymbol
@@ -32,7 +32,7 @@ items:
       content: 'redCrossSymbol: Icon;'
       return:
         type:
-          - excel_1_6.Excel.Icon
+          - Icon
   - uid: excel_1_6.Excel.ThreeSymbolsSet.yellowExclamationSymbol
     name: yellowExclamationSymbol
     fullName: yellowExclamationSymbol
@@ -43,4 +43,4 @@ items:
       content: 'yellowExclamationSymbol: Icon;'
       return:
         type:
-          - excel_1_6.Excel.Icon
+          - Icon

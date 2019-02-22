@@ -109,7 +109,7 @@ items:
       content: 'parentRow?: Word.Interfaces.TableRowLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableRowLoadOptions
+          - Word.Interfaces.TableRowLoadOptions
   - uid: word.Word.Interfaces.TableCellLoadOptions.parentTable
     summary: |-
       Gets the parent table of the cell.
@@ -124,7 +124,7 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
+          - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Interfaces.TableCellLoadOptions.rowIndex
     summary: |-
       Gets the index of the cell's row in the table. Read-only.

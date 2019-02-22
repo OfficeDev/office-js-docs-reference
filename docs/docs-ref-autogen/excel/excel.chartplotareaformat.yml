@@ -51,7 +51,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartPlotAreaFormat.fill
     summary: |-
       Represents the fill format of an object, which includes background formatting information.

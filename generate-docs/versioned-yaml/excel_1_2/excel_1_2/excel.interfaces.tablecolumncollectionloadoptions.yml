@@ -1,0 +1,112 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions
+    summary: |-
+      Represents a collection of all the columns that are part of the table.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TableColumnCollectionLoadOptions
+    fullName: Excel.Interfaces.TableColumnCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.$all
+      - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.filter
+      - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.id
+      - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.index
+      - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.name
+      - excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.values
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.filter
+    summary: |-
+      For EACH ITEM in the collection: Retrieve the filter applied to the column.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filter?: Excel.Interfaces.FilterLoadOptions;'
+      return:
+        type:
+          - excel_1_2.Excel.Interfaces.FilterLoadOptions
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Returns a unique key that identifies the column within the table. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.index
+    summary: >-
+      For EACH ITEM in the collection: Returns the index number of the column within the columns collection of the
+      table. Zero-indexed. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: index
+    fullName: index
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'index?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.name
+    summary: >-
+      For EACH ITEM in the collection: Represents the name of the table column.
+
+
+      \[ [API set: ExcelApi 1.1 for getting the name; 1.4 for setting
+      it.](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_2.Excel.Interfaces.TableColumnCollectionLoadOptions.values
+    summary: >-
+      For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
+      type string, number, or a boolean. Cells that contain an error will return the error string.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type:
+          - boolean

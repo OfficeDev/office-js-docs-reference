@@ -35,7 +35,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.RangeViewCollection.getCount
     summary: |-
       Gets the number of RangeView objects in the collection.

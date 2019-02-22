@@ -40,8 +40,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult:
-        CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
       return:
         type:
           - void
@@ -52,14 +52,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,
             asyncResult, which is an AsyncResult object. The `value` property of the result is the appointment's
             organizer value, as an EmailAddressDetails object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<EmailAddressDetails>) => void'
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
   - uid: outlook.Office.Organizer.getAsync_1
     summary: >-
       Gets the organizer value of an appointment as an
@@ -91,7 +91,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<EmailAddressDetails>) => void): void;'
       return:
         type:
           - void
@@ -103,4 +103,4 @@ items:
             asyncResult, which is an AsyncResult object. The `value` property of the result is the appointment's
             organizer value, as an EmailAddressDetails object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<EmailAddressDetails>) => void'
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'

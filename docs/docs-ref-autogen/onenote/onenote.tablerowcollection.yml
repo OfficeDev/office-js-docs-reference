@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: onenote
     children:
       - onenote.OneNote.TableRowCollection.context
@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
+          - RequestContext
   - uid: onenote.OneNote.TableRowCollection.count
     summary: |-
       Returns the number of table rows in this collection. Read-only.
@@ -68,7 +68,7 @@ items:
       content: 'getItem(index: number | string): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''
       parameters:
         - id: index
@@ -89,7 +89,7 @@ items:
       content: 'getItemAt(index: number): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - OneNote.TableRow
         description: ''
       parameters:
         - id: index
@@ -141,7 +141,7 @@ items:
         OneNote.TableRowCollection;
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - OneNote.TableRowCollection
         description: ''
       parameters:
         - id: option
@@ -161,7 +161,7 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - OneNote.TableRowCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -178,13 +178,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - OneNote.TableRowCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: onenote.OneNote.TableRowCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -201,7 +201,7 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowCollectionData
+          - OneNote.Interfaces.TableRowCollectionData
         description: ''
   - uid: onenote.OneNote.TableRowCollection.track
     summary: >-
@@ -219,7 +219,7 @@ items:
       content: 'track(): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - OneNote.TableRowCollection
         description: ''
   - uid: onenote.OneNote.TableRowCollection.untrack
     summary: >-
@@ -236,5 +236,5 @@ items:
       content: 'untrack(): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - OneNote.TableRowCollection
         description: ''

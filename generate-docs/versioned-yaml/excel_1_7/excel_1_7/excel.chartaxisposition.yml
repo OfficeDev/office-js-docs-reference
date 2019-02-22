@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_7.Excel.ChartAxisPosition
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisPosition
+    fullName: Excel.ChartAxisPosition
+    langs:
+      - typeScript
+    type: enum
+    package: excel_1_7
+    children:
+      - excel_1_7.Excel.ChartAxisPosition.automatic
+      - excel_1_7.Excel.ChartAxisPosition.custom
+      - excel_1_7.Excel.ChartAxisPosition.maximum
+      - excel_1_7.Excel.ChartAxisPosition.minimum
+  - uid: excel_1_7.Excel.ChartAxisPosition.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_1_7.Excel.ChartAxisPosition.custom
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: excel_1_7.Excel.ChartAxisPosition.maximum
+    name: maximum
+    fullName: maximum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Maximum"'
+  - uid: excel_1_7.Excel.ChartAxisPosition.minimum
+    name: minimum
+    fullName: minimum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Minimum"'

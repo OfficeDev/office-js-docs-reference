@@ -47,8 +47,8 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: CommonAPI.AsyncContextOptions,
-        callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -63,14 +63,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.addAsync_1
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
@@ -99,7 +99,7 @@ items:
     syntax:
       content: >-
         addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -115,7 +115,7 @@ items:
             parameter of type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will
             contain an error code.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.getAsync
     summary: >-
       Gets a recipient list for an appointment or message.
@@ -138,8 +138,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult:
-        CommonAPI.AsyncResult<EmailAddressDetails[]>) => void): void;
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails[]>) => void): void;
       return:
         type:
           - void
@@ -150,13 +150,13 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<EmailAddressDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
   - uid: outlook.Office.Recipients.getAsync_1
     summary: >-
       Gets a recipient list for an appointment or message.
@@ -199,7 +199,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback: (asyncResult: CommonAPI.AsyncResult<EmailAddressDetails[]>) => void): void;'
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void): void;'
       return:
         type:
           - void
@@ -210,7 +210,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<EmailAddressDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
   - uid: outlook.Office.Recipients.setAsync
     summary: |-
       Sets a recipient list for an appointment or message.
@@ -240,8 +240,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: CommonAPI.AsyncContextOptions,
-        callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -256,14 +256,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
             code that indicates any error that occurred while adding the data.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recipients.setAsync_1
     summary: |-
       Sets a recipient list for an appointment or message.
@@ -294,7 +294,7 @@ items:
     syntax:
       content: >-
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -310,4 +310,4 @@ items:
             of type Office.AsyncResult. If setting the recipients fails the asyncResult.error property will contain a
             code that indicates any error that occurred while adding the data.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'

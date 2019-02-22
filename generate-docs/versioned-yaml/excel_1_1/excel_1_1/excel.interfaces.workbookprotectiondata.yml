@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.WorkbookProtectionData
+    summary: An interface describing the data returned by calling "workbookProtection.toJSON()".
+    name: Excel.Interfaces.WorkbookProtectionData
+    fullName: Excel.Interfaces.WorkbookProtectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1

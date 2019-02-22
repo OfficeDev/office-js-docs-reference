@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.IconSetConditionalFormat.criteria
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for

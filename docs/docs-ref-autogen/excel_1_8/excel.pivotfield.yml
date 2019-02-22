@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.PivotField.context
@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.PivotField.id
     summary: |-
       Id of the PivotField.
@@ -70,7 +70,7 @@ items:
       content: 'readonly items: Excel.PivotItemCollection;'
       return:
         type:
-          - excel_1_8.Excel.PivotItemCollection
+          - excel.Excel.PivotItemCollection
   - uid: excel_1_8.Excel.PivotField.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -102,13 +102,13 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;'
       return:
         type:
-          - excel_1_8.Excel.PivotField
+          - excel.Excel.PivotField
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.PivotFieldLoadOptions
+            - excel.Excel.Interfaces.PivotFieldLoadOptions
   - uid: excel_1_8.Excel.PivotField.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -122,7 +122,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotField;'
       return:
         type:
-          - excel_1_8.Excel.PivotField
+          - excel.Excel.PivotField
         description: ''
       parameters:
         - id: propertyNames
@@ -142,7 +142,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotField;'
       return:
         type:
-          - excel_1_8.Excel.PivotField
+          - excel.Excel.PivotField
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -195,7 +195,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.PivotField.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -213,7 +213,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.PivotField
+            - excel.Excel.PivotField
   - uid: excel_1_8.Excel.PivotField.showAllItems
     summary: |-
       Determines whether to show all items of the PivotField.
@@ -251,7 +251,7 @@ items:
         - id: sortby
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
-            - excel_1_8.Excel.SortBy
+            - SortBy
   - uid: excel_1_8.Excel.PivotField.subtotals
     summary: |-
       Subtotals of the PivotField.
@@ -266,7 +266,7 @@ items:
       content: 'subtotals: Excel.Subtotals;'
       return:
         type:
-          - excel_1_8.Excel.Subtotals
+          - excel.Excel.Subtotals
   - uid: excel_1_8.Excel.PivotField.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -283,5 +283,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotFieldData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.PivotFieldData
+          - excel.Excel.Interfaces.PivotFieldData
         description: ''

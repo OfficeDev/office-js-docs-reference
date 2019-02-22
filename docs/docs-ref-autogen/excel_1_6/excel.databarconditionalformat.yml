@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_6
     children:
       - excel_1_6.Excel.DataBarConditionalFormat.axisColor
@@ -104,7 +104,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_6.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_6.Excel.DataBarConditionalFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -136,13 +136,13 @@ items:
       content: 'load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;'
       return:
         type:
-          - excel_1_6.Excel.DataBarConditionalFormat
+          - excel.Excel.DataBarConditionalFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_6.Excel.Interfaces.DataBarConditionalFormatLoadOptions
+            - excel.Excel.Interfaces.DataBarConditionalFormatLoadOptions
   - uid: excel_1_6.Excel.DataBarConditionalFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -156,7 +156,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DataBarConditionalFormat;'
       return:
         type:
-          - excel_1_6.Excel.DataBarConditionalFormat
+          - excel.Excel.DataBarConditionalFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -176,7 +176,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat;'
       return:
         type:
-          - excel_1_6.Excel.DataBarConditionalFormat
+          - excel.Excel.DataBarConditionalFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -199,7 +199,7 @@ items:
       content: 'lowerBoundRule: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalDataBarRule
+          - excel.Excel.ConditionalDataBarRule
   - uid: excel_1_6.Excel.DataBarConditionalFormat.negativeFormat
     summary: |-
       Representation of all values to the left of the axis in an Excel data bar. Read-only.
@@ -214,7 +214,7 @@ items:
       content: 'readonly negativeFormat: Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalDataBarNegativeFormat
+          - excel.Excel.ConditionalDataBarNegativeFormat
   - uid: excel_1_6.Excel.DataBarConditionalFormat.positiveFormat
     summary: |-
       Representation of all values to the right of the axis in an Excel data bar. Read-only.
@@ -229,7 +229,7 @@ items:
       content: 'readonly positiveFormat: Excel.ConditionalDataBarPositiveFormat;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalDataBarPositiveFormat
+          - excel.Excel.ConditionalDataBarPositiveFormat
   - uid: excel_1_6.Excel.DataBarConditionalFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -259,7 +259,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_6.Excel.DataBarConditionalFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -277,7 +277,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_6.Excel.DataBarConditionalFormat
+            - excel.Excel.DataBarConditionalFormat
   - uid: excel_1_6.Excel.DataBarConditionalFormat.showDataBarOnly
     summary: |-
       If true, hides the values from the cells where the data bar is applied.
@@ -309,7 +309,7 @@ items:
       content: 'toJSON(): Excel.Interfaces.DataBarConditionalFormatData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.DataBarConditionalFormatData
+          - excel.Excel.Interfaces.DataBarConditionalFormatData
         description: ''
   - uid: excel_1_6.Excel.DataBarConditionalFormat.upperBoundRule
     summary: |-
@@ -325,4 +325,4 @@ items:
       content: 'upperBoundRule: Excel.ConditionalDataBarRule;'
       return:
         type:
-          - excel_1_6.Excel.ConditionalDataBarRule
+          - excel.Excel.ConditionalDataBarRule

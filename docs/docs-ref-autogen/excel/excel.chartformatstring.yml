@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartFormatString.font
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart characters object.

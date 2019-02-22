@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.CustomXmlPartScopedCollection.getCount
     summary: |-
       Gets the number of CustomXML parts in this collection.

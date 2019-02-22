@@ -44,7 +44,7 @@ items:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ApplicationLoadOptions
+          - excel.Excel.Interfaces.ApplicationLoadOptions
   - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook.
@@ -59,7 +59,7 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.BindingCollectionLoadOptions
+          - excel.Excel.Interfaces.BindingCollectionLoadOptions
   - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -89,7 +89,7 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.DocumentPropertiesLoadOptions
+          - excel.Excel.Interfaces.DocumentPropertiesLoadOptions
   - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.protection
     summary: |-
       Returns workbook protection object for a workbook.
@@ -104,7 +104,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.WorkbookProtectionLoadOptions
+          - excel.Excel.Interfaces.WorkbookProtectionLoadOptions
   - uid: excel_1_7.Excel.Interfaces.WorkbookLoadOptions.tables
     summary: |-
       Represents a collection of tables associated with the workbook.
@@ -119,4 +119,4 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.TableCollectionLoadOptions
+          - excel.Excel.Interfaces.TableCollectionLoadOptions

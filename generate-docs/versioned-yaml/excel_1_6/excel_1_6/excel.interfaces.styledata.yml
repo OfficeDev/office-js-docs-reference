@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.StyleData
+    summary: An interface describing the data returned by calling "style.toJSON()".
+    name: Excel.Interfaces.StyleData
+    fullName: Excel.Interfaces.StyleData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6

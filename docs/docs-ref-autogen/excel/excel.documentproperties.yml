@@ -106,7 +106,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.DocumentProperties.creationDate
     summary: |-
       Gets the creation date of the workbook. Read only.

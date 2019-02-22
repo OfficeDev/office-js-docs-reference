@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_8
     children:
       - excel_1_8.Excel.ConditionalRangeBorder.color
@@ -54,7 +54,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_8.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_8.Excel.ConditionalRangeBorder.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -86,13 +86,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel_1_8.Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_8.Excel.Interfaces.ConditionalRangeBorderLoadOptions
+            - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions
   - uid: excel_1_8.Excel.ConditionalRangeBorder.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -106,7 +106,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel_1_8.Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: propertyNames
@@ -126,7 +126,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel_1_8.Excel.ConditionalRangeBorder
+          - excel.Excel.ConditionalRangeBorder
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -164,7 +164,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_8.Excel.ConditionalRangeBorder.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -182,7 +182,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_8.Excel.ConditionalRangeBorder
+            - excel.Excel.ConditionalRangeBorder
   - uid: excel_1_8.Excel.ConditionalRangeBorder.sideIndex
     summary: >-
       Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
@@ -235,5 +235,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderData;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ConditionalRangeBorderData
+          - excel.Excel.Interfaces.ConditionalRangeBorderData
         description: ''

@@ -1,0 +1,240 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkAnalysisLineCollection
+    summary: |-
+      Represents a collection of InkAnalysisLine objects.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.InkAnalysisLineCollection
+    fullName: OneNote.InkAnalysisLineCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: onenote
+    children:
+      - onenote.OneNote.InkAnalysisLineCollection.context
+      - onenote.OneNote.InkAnalysisLineCollection.count
+      - onenote.OneNote.InkAnalysisLineCollection.getItem
+      - onenote.OneNote.InkAnalysisLineCollection.getItemAt
+      - onenote.OneNote.InkAnalysisLineCollection.items
+      - onenote.OneNote.InkAnalysisLineCollection.load
+      - onenote.OneNote.InkAnalysisLineCollection.load_1
+      - onenote.OneNote.InkAnalysisLineCollection.load_2
+      - onenote.OneNote.InkAnalysisLineCollection.toJSON
+      - onenote.OneNote.InkAnalysisLineCollection.track
+      - onenote.OneNote.InkAnalysisLineCollection.untrack
+  - uid: onenote.OneNote.InkAnalysisLineCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - onenote.OneNote.RequestContext
+  - uid: onenote.OneNote.InkAnalysisLineCollection.count
+    summary: |-
+      Returns the number of InkAnalysisLines in the page. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly count: number;'
+      return:
+        type:
+          - number
+  - uid: onenote.OneNote.InkAnalysisLineCollection.getItem
+    summary: |-
+      Gets a InkAnalysisLine object by ID or by its index in the collection. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: getItem(index)
+    fullName: getItem(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(index: number | string): OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLine
+        description: ''
+      parameters:
+        - id: index
+          description: 'The ID of the InkAnalysisLine object, or the index location of the InkAnalysisLine object in the collection.'
+          type:
+            - number | string
+  - uid: onenote.OneNote.InkAnalysisLineCollection.getItemAt
+    summary: |-
+      Gets a InkAnalysisLine on its position in the collection.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLine
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the object to be retrieved. Zero-indexed.
+          type:
+            - number
+  - uid: onenote.OneNote.InkAnalysisLineCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: OneNote.InkAnalysisLine[];'
+      return:
+        type:
+          - 'OneNote.InkAnalysisLine[]'
+  - uid: onenote.OneNote.InkAnalysisLineCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.InkAnalysisLineCollection` - Where option is a comma-delimited string
+      or an array of strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is
+      a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string
+      that specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }):
+      OneNote.InkAnalysisLineCollection` - Only available on collection types. It is similar to the preceding signature.
+      Option.top specifies the maximum number of collection items that can be included in the result. Option.skip
+      specifies the number of items that are to be skipped and not included in the result. If option.top is specified,
+      the result set will start after skipping the specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions &
+        OneNote.Interfaces.CollectionLoadOptions): OneNote.InkAnalysisLineCollection;
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLineCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
+  - uid: onenote.OneNote.InkAnalysisLineCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.InkAnalysisLineCollection;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLineCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: onenote.OneNote.InkAnalysisLineCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): OneNote.InkAnalysisLineCollection;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLineCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OfficeExtension.LoadOption
+  - uid: onenote.OneNote.InkAnalysisLineCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `OneNote.InkAnalysisLineCollection` object is an API object, the `toJSON`
+      method returns a plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisLineCollectionData`<!-- -->)
+      that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.InkAnalysisLineCollectionData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.InkAnalysisLineCollectionData
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisLineCollection.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.InkAnalysisLineCollection;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLineCollection
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisLineCollection.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.InkAnalysisLineCollection;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLineCollection
+        description: ''

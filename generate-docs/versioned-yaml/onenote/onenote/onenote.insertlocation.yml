@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InsertLocation
+    summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
+    name: OneNote.InsertLocation
+    fullName: OneNote.InsertLocation
+    langs:
+      - typeScript
+    type: enum
+    package: onenote
+    children:
+      - onenote.OneNote.InsertLocation.after
+      - onenote.OneNote.InsertLocation.before
+  - uid: onenote.OneNote.InsertLocation.after
+    name: after
+    fullName: after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: onenote.OneNote.InsertLocation.before
+    name: before
+    fullName: before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'

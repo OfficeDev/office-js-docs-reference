@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.ChartSeriesData
+    summary: An interface describing the data returned by calling "chartSeries.toJSON()".
+    name: Excel.Interfaces.ChartSeriesData
+    fullName: Excel.Interfaces.ChartSeriesData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2
+    children:
+      - excel_1_2.Excel.Interfaces.ChartSeriesData.format
+      - excel_1_2.Excel.Interfaces.ChartSeriesData.name
+      - excel_1_2.Excel.Interfaces.ChartSeriesData.points
+  - uid: excel_1_2.Excel.Interfaces.ChartSeriesData.format
+    summary: |-
+      Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartSeriesFormatData;'
+      return:
+        type:
+          - excel_1_2.Excel.Interfaces.ChartSeriesFormatData
+  - uid: excel_1_2.Excel.Interfaces.ChartSeriesData.name
+    summary: |-
+      Represents the name of a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_2.Excel.Interfaces.ChartSeriesData.points
+    summary: |-
+      Represents a collection of all points in the series. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'points?: Excel.Interfaces.ChartPointData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartPointData[]'

@@ -39,7 +39,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartErrorBarsFormat.line
     summary: >-
       Represents chart line formatting.

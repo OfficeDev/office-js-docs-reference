@@ -130,7 +130,7 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatLoadOptions;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.RangeFormatLoadOptions
+          - excel.Excel.Interfaces.RangeFormatLoadOptions
   - uid: excel_1_1.Excel.Interfaces.RangeLoadOptions.formulas
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
@@ -281,4 +281,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.WorksheetLoadOptions
+          - excel.Excel.Interfaces.WorksheetLoadOptions

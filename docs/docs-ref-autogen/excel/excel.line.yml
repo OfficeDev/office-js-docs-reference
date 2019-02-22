@@ -59,7 +59,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.Line.id
     summary: >-
       Represents the shape identifier. Read-only.

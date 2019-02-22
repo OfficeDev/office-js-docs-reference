@@ -15,8 +15,8 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Appointment
-      - outlook.Office.ItemRead
+      - Appointment
+      - 'ItemRead '
     package: outlook
     children:
       - outlook.Office.AppointmentRead.addHandlerAsync
@@ -78,8 +78,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: any, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -88,7 +88,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -106,7 +106,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event.
@@ -131,8 +131,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -141,7 +141,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -153,7 +153,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
@@ -221,7 +221,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       return:
         type:
@@ -240,7 +240,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
@@ -308,7 +308,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
+        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       return:
         type:
@@ -327,7 +327,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
@@ -362,7 +362,7 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.AppointmentRead.getEntitiesByType
     summary: |-
@@ -501,8 +501,8 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -513,7 +513,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -522,7 +522,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentRead.getInitializationContextAsync_1
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
@@ -547,7 +547,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -561,7 +561,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.AppointmentRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
@@ -772,7 +772,7 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - outlook.Office.Entities
+          - Entities
         description: ''
   - uid: outlook.Office.AppointmentRead.getSelectedRegExMatches
     summary: >-
@@ -865,7 +865,7 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void,
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
         userContext?: any): void;
       return:
         type:
@@ -877,7 +877,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void'
+            - '(asyncResult: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
@@ -908,8 +908,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType, options?: any, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -918,7 +918,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -930,7 +930,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type.
@@ -955,7 +955,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
+        removeHandlerAsync(eventType: Office.EventType, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       return:
         type:
@@ -965,13 +965,13 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - CommonAPI.EventType
+            - Office.EventType
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.AppointmentRead.attachments
     summary: |-
       Gets the item's attachments as an array.
@@ -1073,7 +1073,7 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - outlook.Office.Body
+          - Body
   - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created.
@@ -1482,7 +1482,7 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - outlook.Office.NotificationMessages
+          - NotificationMessages
   - uid: outlook.Office.AppointmentRead.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
@@ -1555,7 +1555,7 @@ items:
       content: 'organizer: EmailAddressDetails;'
       return:
         type:
-          - outlook.Office.EmailAddressDetails
+          - EmailAddressDetails
   - uid: outlook.Office.AppointmentRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
@@ -1600,7 +1600,7 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - outlook.Office.Recurrence
+          - Recurrence
   - uid: outlook.Office.AppointmentRead.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode

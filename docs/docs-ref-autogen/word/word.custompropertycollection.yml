@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.CustomPropertyCollection.add
@@ -41,7 +41,7 @@ items:
       content: 'add(key: string, value: any): Word.CustomProperty;'
       return:
         type:
-          - word.Word.CustomProperty
+          - Word.CustomProperty
         description: |-
 
           #### Examples
@@ -84,7 +84,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.CustomPropertyCollection.deleteAll
     summary: |-
       Deletes all custom properties in this collection.
@@ -131,7 +131,7 @@ items:
       content: 'getItem(key: string): Word.CustomProperty;'
       return:
         type:
-          - word.Word.CustomProperty
+          - Word.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -154,7 +154,7 @@ items:
       content: 'getItemOrNullObject(key: string): Word.CustomProperty;'
       return:
         type:
-          - word.Word.CustomProperty
+          - Word.CustomProperty
         description: ''
       parameters:
         - id: key
@@ -220,7 +220,7 @@ items:
         Word.CustomPropertyCollection;
       return:
         type:
-          - word.Word.CustomPropertyCollection
+          - Word.CustomPropertyCollection
         description: ''
       parameters:
         - id: option
@@ -240,7 +240,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.CustomPropertyCollection;'
       return:
         type:
-          - word.Word.CustomPropertyCollection
+          - Word.CustomPropertyCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -257,13 +257,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.CustomPropertyCollection;'
       return:
         type:
-          - word.Word.CustomPropertyCollection
+          - Word.CustomPropertyCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.CustomPropertyCollection.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -274,7 +274,7 @@ items:
       content: 'toJSON(): Word.Interfaces.CustomPropertyCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.CustomPropertyCollectionData
+          - Word.Interfaces.CustomPropertyCollectionData
         description: ''
   - uid: word.Word.CustomPropertyCollection.track
     summary: >-
@@ -292,7 +292,7 @@ items:
       content: 'track(): Word.CustomPropertyCollection;'
       return:
         type:
-          - word.Word.CustomPropertyCollection
+          - Word.CustomPropertyCollection
         description: ''
   - uid: word.Word.CustomPropertyCollection.untrack
     summary: >-
@@ -309,5 +309,5 @@ items:
       content: 'untrack(): Word.CustomPropertyCollection;'
       return:
         type:
-          - word.Word.CustomPropertyCollection
+          - Word.CustomPropertyCollection
         description: ''

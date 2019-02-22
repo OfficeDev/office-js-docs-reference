@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.HyperlinkData
+    summary: An interface describing the data returned by calling "hyperlink.toJSON()".
+    name: Visio.Interfaces.HyperlinkData
+    fullName: Visio.Interfaces.HyperlinkData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.HyperlinkData.address
+      - visio.Visio.Interfaces.HyperlinkData.description
+      - visio.Visio.Interfaces.HyperlinkData.extraInfo
+      - visio.Visio.Interfaces.HyperlinkData.subAddress
+  - uid: visio.Visio.Interfaces.HyperlinkData.address
+    summary: |-
+      Gets the address of the Hyperlink object. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.HyperlinkData.description
+    summary: |-
+      Gets the description of a hyperlink. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: description
+    fullName: description
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'description?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.HyperlinkData.extraInfo
+    summary: |-
+      Gets the extra URL request information used to resolve the hyperlink's URL. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: extraInfo
+    fullName: extraInfo
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'extraInfo?: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.Interfaces.HyperlinkData.subAddress
+    summary: |-
+      Gets the sub-address of the Hyperlink object. Read-only.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: subAddress
+    fullName: subAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subAddress?: string;'
+      return:
+        type:
+          - string

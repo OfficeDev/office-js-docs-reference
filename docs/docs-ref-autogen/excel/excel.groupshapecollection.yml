@@ -40,7 +40,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.GroupShapeCollection.getCount
     summary: >-
       Returns the number of shapes in the group shape. Read-only.

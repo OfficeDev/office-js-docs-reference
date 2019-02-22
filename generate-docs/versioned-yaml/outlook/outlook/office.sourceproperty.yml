@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.SourceProperty
+    name: Office.SourceProperty
+    fullName: Office.SourceProperty
+    langs:
+      - typeScript
+    type: enum
+    package: outlook
+    children:
+      - outlook.Office.SourceProperty.Body
+      - outlook.Office.SourceProperty.Subject
+  - uid: outlook.Office.SourceProperty.Body
+    summary: The source of the data is from the body of the message.
+    name: Body
+    fullName: Body
+    langs:
+      - typeScript
+    type: field
+  - uid: outlook.Office.SourceProperty.Subject
+    summary: The source of the data is from the subject of the message.
+    name: Subject
+    fullName: Subject
+    langs:
+      - typeScript
+    type: field

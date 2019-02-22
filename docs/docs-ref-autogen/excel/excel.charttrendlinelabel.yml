@@ -62,7 +62,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartTrendlineLabel.format
     summary: |-
       Represents the format of chart trendline label.

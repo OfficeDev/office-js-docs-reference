@@ -29,7 +29,7 @@ items:
       content: 'borders?: Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
+          - excel.Excel.Interfaces.ConditionalRangeBorderCollectionUpdateData
   - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatUpdateData.fill
     summary: |-
       Returns the fill object defined on the overall conditional format range.
@@ -44,7 +44,7 @@ items:
       content: 'fill?: Excel.Interfaces.ConditionalRangeFillUpdateData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ConditionalRangeFillUpdateData
+          - excel.Excel.Interfaces.ConditionalRangeFillUpdateData
   - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatUpdateData.font
     summary: |-
       Returns the font object defined on the overall conditional format range.
@@ -59,7 +59,7 @@ items:
       content: 'font?: Excel.Interfaces.ConditionalRangeFontUpdateData;'
       return:
         type:
-          - excel_1_6.Excel.Interfaces.ConditionalRangeFontUpdateData
+          - excel.Excel.Interfaces.ConditionalRangeFontUpdateData
   - uid: excel_1_6.Excel.Interfaces.ConditionalRangeFormatUpdateData.numberFormat
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.

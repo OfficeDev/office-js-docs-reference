@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_4
     children:
       - excel_1_4.Excel.ChartSeriesCollection.context
@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_4.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_4.Excel.ChartSeriesCollection.count
     summary: |-
       Returns the number of series in the collection. Read-only.
@@ -82,7 +82,7 @@ items:
       content: 'getItemAt(index: number): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_4.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: |-
 
           #### Examples
@@ -152,7 +152,7 @@ items:
         Excel.ChartSeriesCollection;
       return:
         type:
-          - excel_1_4.Excel.ChartSeriesCollection
+          - excel.Excel.ChartSeriesCollection
         description: ''
       parameters:
         - id: option
@@ -172,7 +172,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeriesCollection;'
       return:
         type:
-          - excel_1_4.Excel.ChartSeriesCollection
+          - excel.Excel.ChartSeriesCollection
         description: |-
 
           #### Examples
@@ -225,13 +225,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;'
       return:
         type:
-          - excel_1_4.Excel.ChartSeriesCollection
+          - excel.Excel.ChartSeriesCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_4.Excel.ChartSeriesCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -248,5 +248,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesCollectionData;'
       return:
         type:
-          - excel_1_4.Excel.Interfaces.ChartSeriesCollectionData
+          - excel.Excel.Interfaces.ChartSeriesCollectionData
         description: ''

@@ -13,7 +13,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_5
     children:
       - excel_1_5.Excel.SettingCollection.add
@@ -41,7 +41,7 @@ items:
       content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
       return:
         type:
-          - excel_1_5.Excel.Setting
+          - excel.Excel.Setting
         description: |-
 
           #### Examples
@@ -77,7 +77,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_5.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_5.Excel.SettingCollection.getCount
     summary: |-
       Gets the number of Settings in the collection.
@@ -108,7 +108,7 @@ items:
       content: 'getItem(key: string): Excel.Setting;'
       return:
         type:
-          - excel_1_5.Excel.Setting
+          - excel.Excel.Setting
         description: ''
       parameters:
         - id: key
@@ -129,7 +129,7 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Setting;'
       return:
         type:
-          - excel_1_5.Excel.Setting
+          - excel.Excel.Setting
         description: |-
 
           #### Examples
@@ -202,7 +202,7 @@ items:
         Excel.SettingCollection;
       return:
         type:
-          - excel_1_5.Excel.SettingCollection
+          - excel.Excel.SettingCollection
         description: ''
       parameters:
         - id: option
@@ -222,7 +222,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.SettingCollection;'
       return:
         type:
-          - excel_1_5.Excel.SettingCollection
+          - excel.Excel.SettingCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -239,13 +239,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;'
       return:
         type:
-          - excel_1_5.Excel.SettingCollection
+          - excel.Excel.SettingCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_5.Excel.SettingCollection.onSettingsChanged
     summary: |-
       Occurs when the Settings in the document are changed.
@@ -290,5 +290,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SettingCollectionData;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.SettingCollectionData
+          - excel.Excel.Interfaces.SettingCollectionData
         description: ''

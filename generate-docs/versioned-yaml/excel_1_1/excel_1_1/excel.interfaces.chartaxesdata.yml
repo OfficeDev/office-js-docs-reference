@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.ChartAxesData
+    summary: An interface describing the data returned by calling "chartAxes.toJSON()".
+    name: Excel.Interfaces.ChartAxesData
+    fullName: Excel.Interfaces.ChartAxesData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1
+    children:
+      - excel_1_1.Excel.Interfaces.ChartAxesData.categoryAxis
+      - excel_1_1.Excel.Interfaces.ChartAxesData.seriesAxis
+      - excel_1_1.Excel.Interfaces.ChartAxesData.valueAxis
+  - uid: excel_1_1.Excel.Interfaces.ChartAxesData.categoryAxis
+    summary: |-
+      Represents the category axis in a chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryAxis
+    fullName: categoryAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryAxis?: Excel.Interfaces.ChartAxisData;'
+      return:
+        type:
+          - excel_1_1.Excel.Interfaces.ChartAxisData
+  - uid: excel_1_1.Excel.Interfaces.ChartAxesData.seriesAxis
+    summary: |-
+      Represents the series axis of a 3-dimensional chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesAxis
+    fullName: seriesAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesAxis?: Excel.Interfaces.ChartAxisData;'
+      return:
+        type:
+          - excel_1_1.Excel.Interfaces.ChartAxisData
+  - uid: excel_1_1.Excel.Interfaces.ChartAxesData.valueAxis
+    summary: |-
+      Represents the value axis in an axis. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: valueAxis
+    fullName: valueAxis
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueAxis?: Excel.Interfaces.ChartAxisData;'
+      return:
+        type:
+          - excel_1_1.Excel.Interfaces.ChartAxisData

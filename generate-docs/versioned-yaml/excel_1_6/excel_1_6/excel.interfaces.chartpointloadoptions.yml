@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.ChartPointLoadOptions
+    summary: |-
+      Represents a point of a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartPointLoadOptions
+    fullName: Excel.Interfaces.ChartPointLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.ChartPointLoadOptions.$all
+      - excel_1_6.Excel.Interfaces.ChartPointLoadOptions.format
+      - excel_1_6.Excel.Interfaces.ChartPointLoadOptions.value
+  - uid: excel_1_6.Excel.Interfaces.ChartPointLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_1_6.Excel.Interfaces.ChartPointLoadOptions.format
+    summary: |-
+      Encapsulates the format properties chart point.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
+      return:
+        type:
+          - excel_1_6.Excel.Interfaces.ChartPointFormatLoadOptions
+  - uid: excel_1_6.Excel.Interfaces.ChartPointLoadOptions.value
+    summary: |-
+      Returns the value of a chart point. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: boolean;'
+      return:
+        type:
+          - boolean

@@ -38,7 +38,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.RangeBorderCollection.count
     summary: |-
       Number of border objects in the collection. Read-only.

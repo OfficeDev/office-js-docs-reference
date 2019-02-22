@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_7
     children:
       - excel_1_7.Excel.ConditionalDataBarNegativeFormat.borderColor
@@ -55,7 +55,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_7.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_7.Excel.ConditionalDataBarNegativeFormat.fillColor
     summary: >-
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
@@ -106,13 +106,13 @@ items:
         Excel.ConditionalDataBarNegativeFormat;
       return:
         type:
-          - excel_1_7.Excel.ConditionalDataBarNegativeFormat
+          - excel.Excel.ConditionalDataBarNegativeFormat
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_7.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
+            - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
   - uid: excel_1_7.Excel.ConditionalDataBarNegativeFormat.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -126,7 +126,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalDataBarNegativeFormat
+          - excel.Excel.ConditionalDataBarNegativeFormat
         description: ''
       parameters:
         - id: propertyNames
@@ -146,7 +146,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
-          - excel_1_7.Excel.ConditionalDataBarNegativeFormat
+          - excel.Excel.ConditionalDataBarNegativeFormat
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -216,7 +216,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_7.Excel.ConditionalDataBarNegativeFormat.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -234,7 +234,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_7.Excel.ConditionalDataBarNegativeFormat
+            - excel.Excel.ConditionalDataBarNegativeFormat
   - uid: excel_1_7.Excel.ConditionalDataBarNegativeFormat.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -251,5 +251,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;'
       return:
         type:
-          - excel_1_7.Excel.Interfaces.ConditionalDataBarNegativeFormatData
+          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
         description: ''

@@ -50,7 +50,7 @@ items:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.ChartCollectionLoadOptions
+          - excel.Excel.Interfaces.ChartCollectionLoadOptions
   - uid: excel_1_8.Excel.Interfaces.WorksheetLoadOptions.id
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
@@ -112,7 +112,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.WorksheetProtectionLoadOptions
+          - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel_1_8.Excel.Interfaces.WorksheetLoadOptions.showGridlines
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
@@ -209,7 +209,7 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel_1_8.Excel.Interfaces.TableCollectionLoadOptions
+          - excel.Excel.Interfaces.TableCollectionLoadOptions
   - uid: excel_1_8.Excel.Interfaces.WorksheetLoadOptions.visibility
     summary: >-
       The Visibility of the worksheet.

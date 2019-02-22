@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientRequestContext '
+      - office.OfficeExtension.ClientRequestContext
     package: word
     remarks: >-
 
@@ -132,7 +132,7 @@ items:
       content: 'readonly application: Application;'
       return:
         type:
-          - word.Word.Application
+          - Application
   - uid: word.Word.RequestContext.document
     name: document
     fullName: document
@@ -143,4 +143,4 @@ items:
       content: 'readonly document: Document;'
       return:
         type:
-          - word.Word.Document
+          - Document

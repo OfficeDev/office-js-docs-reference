@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientRequestContext '
+      - office.OfficeExtension.ClientRequestContext
     package: excel_1_7
     children:
       - excel_1_7.Excel.RequestContext.(constructor)
@@ -41,7 +41,7 @@ items:
       content: 'readonly application: Application;'
       return:
         type:
-          - excel_1_7.Excel.Application
+          - Application
   - uid: excel_1_7.Excel.RequestContext.runtime
     name: runtime
     fullName: runtime
@@ -52,7 +52,7 @@ items:
       content: 'readonly runtime: Runtime;'
       return:
         type:
-          - excel_1_7.Excel.Runtime
+          - Runtime
   - uid: excel_1_7.Excel.RequestContext.workbook
     name: workbook
     fullName: workbook
@@ -63,4 +63,4 @@ items:
       content: 'readonly workbook: Workbook;'
       return:
         type:
-          - excel_1_7.Excel.Workbook
+          - Workbook

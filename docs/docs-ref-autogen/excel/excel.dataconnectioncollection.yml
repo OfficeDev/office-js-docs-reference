@@ -30,7 +30,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.DataConnectionCollection.refreshAll
     summary: |-
       Refreshes all the Data Connections in the collection.

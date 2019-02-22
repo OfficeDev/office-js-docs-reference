@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.Table.addColumns
@@ -106,7 +106,7 @@ items:
         - id: insertLocation
           description: 'Required. It can be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: columnCount
           description: Required. Number of columns to add.
           type:
@@ -164,13 +164,13 @@ items:
       content: 'addRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - Word.TableRowCollection
         description: ''
       parameters:
         - id: insertLocation
           description: Required. It can be 'Start' or 'End'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -197,7 +197,7 @@ items:
         string[][]): Word.TableRowCollection;
       return:
         type:
-          - word.Word.TableRowCollection
+          - Word.TableRowCollection
         description: ''
       parameters:
         - id: insertLocationString
@@ -272,7 +272,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.Table.delete
     summary: |-
       Deletes the entire table.
@@ -428,7 +428,7 @@ items:
       content: 'getCell(rowIndex: number, cellIndex: number): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
         description: |-
 
           #### Examples
@@ -467,7 +467,7 @@ items:
       content: 'getCellOrNullObject(rowIndex: number, cellIndex: number): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
         description: ''
       parameters:
         - id: rowIndex
@@ -536,7 +536,7 @@ items:
       content: 'getNext(): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
   - uid: word.Word.Table.getNextOrNullObject
     summary: |-
@@ -552,7 +552,7 @@ items:
       content: 'getNextOrNullObject(): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
   - uid: word.Word.Table.getParagraphAfter
     summary: |-
@@ -568,7 +568,7 @@ items:
       content: 'getParagraphAfter(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Table.getParagraphAfterOrNullObject
     summary: |-
@@ -584,7 +584,7 @@ items:
       content: 'getParagraphAfterOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Table.getParagraphBefore
     summary: |-
@@ -600,7 +600,7 @@ items:
       content: 'getParagraphBefore(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Table.getParagraphBeforeOrNullObject
     summary: |-
@@ -616,7 +616,7 @@ items:
       content: 'getParagraphBeforeOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
   - uid: word.Word.Table.getRange
     summary: |-
@@ -632,7 +632,7 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocation
@@ -653,7 +653,7 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocationString
@@ -722,7 +722,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -732,7 +732,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Table.insertParagraph_1
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -749,7 +749,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -778,7 +778,7 @@ items:
         Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -792,7 +792,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -815,7 +815,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -880,13 +880,13 @@ items:
       content: 'load(option?: Word.Interfaces.TableLoadOptions): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.TableLoadOptions
+            - Word.Interfaces.TableLoadOptions
   - uid: word.Word.Table.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -900,7 +900,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: propertyNames
@@ -920,7 +920,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -958,7 +958,7 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.Table.parentContentControl
     summary: |-
       Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
@@ -1005,7 +1005,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.Table.parentTableCell
     summary: |-
       Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
@@ -1020,7 +1020,7 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.Table.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell.
@@ -1037,7 +1037,7 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.Table.parentTableOrNullObject
     summary: |-
       Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
@@ -1052,7 +1052,7 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.Table.rowCount
     summary: |-
       Gets the number of rows in the table. Read-only.
@@ -1082,7 +1082,7 @@ items:
       content: 'readonly rows: Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - Word.TableRowCollection
   - uid: word.Word.Table.search
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the table object. The search results are a
@@ -1108,7 +1108,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -1148,7 +1148,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
+            - Word.SelectionMode
   - uid: word.Word.Table.select_1
     summary: |-
       Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.
@@ -1199,7 +1199,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Table.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1217,7 +1217,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Table
+            - Word.Table
   - uid: word.Word.Table.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -1470,7 +1470,7 @@ items:
       content: 'readonly tables: Word.TableCollection;'
       return:
         type:
-          - word.Word.TableCollection
+          - Word.TableCollection
   - uid: word.Word.Table.toJSON
     name: toJSON()
     fullName: toJSON()
@@ -1481,7 +1481,7 @@ items:
       content: 'toJSON(): Word.Interfaces.TableData;'
       return:
         type:
-          - word.Word.Interfaces.TableData
+          - Word.Interfaces.TableData
         description: ''
   - uid: word.Word.Table.track
     summary: >-
@@ -1499,7 +1499,7 @@ items:
       content: 'track(): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
   - uid: word.Word.Table.untrack
     summary: >-
@@ -1516,7 +1516,7 @@ items:
       content: 'untrack(): Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
   - uid: word.Word.Table.values
     summary: |-

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_2.Excel.Interfaces.CustomXmlPartData
+    summary: An interface describing the data returned by calling "customXmlPart.toJSON()".
+    name: Excel.Interfaces.CustomXmlPartData
+    fullName: Excel.Interfaces.CustomXmlPartData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_2

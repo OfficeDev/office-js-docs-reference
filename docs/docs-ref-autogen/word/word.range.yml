@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.Range.clear
@@ -140,7 +140,7 @@ items:
         - id: range
           description: Required. The range to compare with this range.
           type:
-            - word.Word.Range
+            - Word.Range
   - uid: word.Word.Range.contentControls
     summary: |-
       Gets the collection of content control objects in the range. Read-only.
@@ -169,7 +169,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.Range.delete
     summary: |-
       Deletes the range and its content from the document.
@@ -229,13 +229,13 @@ items:
       content: 'expandTo(range: Word.Range): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: range
           description: Required. Another range.
           type:
-            - word.Word.Range
+            - Word.Range
   - uid: word.Word.Range.expandToOrNullObject
     summary: >-
       Returns a new range that extends from this range in either direction to cover another range. This range is not
@@ -252,13 +252,13 @@ items:
       content: 'expandToOrNullObject(range: Word.Range): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: range
           description: Required. Another range.
           type:
-            - word.Word.Range
+            - Word.Range
   - uid: word.Word.Range.font
     summary: >-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
@@ -337,7 +337,7 @@ items:
       content: 'getHyperlinkRanges(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
   - uid: word.Word.Range.getNextTextRange
     summary: >-
@@ -355,7 +355,7 @@ items:
       content: 'getNextTextRange(endingMarks: string[], trimSpacing?: boolean): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: endingMarks
@@ -385,7 +385,7 @@ items:
       content: 'getNextTextRangeOrNullObject(endingMarks: string[], trimSpacing?: boolean): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: endingMarks
@@ -456,7 +456,7 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocation
@@ -477,7 +477,7 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: rangeLocationString
@@ -498,7 +498,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: |-
 
           #### Examples
@@ -596,7 +596,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertBreak_1
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
@@ -740,7 +740,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -778,7 +778,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertFileFromBase64_1
     summary: >-
       Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
@@ -797,7 +797,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: base64File
@@ -824,7 +824,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -861,7 +861,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertHtml_1
     summary: >-
       Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
@@ -878,7 +878,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: html
@@ -917,7 +917,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertInlinePictureFromBase64_1
     summary: >-
       Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before',
@@ -963,7 +963,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -1003,7 +1003,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertOoxml_1
     summary: >-
       Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
@@ -1020,7 +1020,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: ooxml
@@ -1045,7 +1045,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: |-
 
           #### Examples
@@ -1082,7 +1082,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertParagraph_1
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
@@ -1099,7 +1099,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - Word.Paragraph
         description: ''
       parameters:
         - id: paragraphText
@@ -1128,7 +1128,7 @@ items:
         Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -1142,7 +1142,7 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
@@ -1165,7 +1165,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - word.Word.Table
+          - Word.Table
         description: ''
       parameters:
         - id: rowCount
@@ -1200,7 +1200,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: |-
 
           #### Examples
@@ -1237,7 +1237,7 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
   - uid: word.Word.Range.insertText_1
     summary: >-
       Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or
@@ -1254,7 +1254,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: text
@@ -1281,13 +1281,13 @@ items:
       content: 'intersectWith(range: Word.Range): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: range
           description: Required. Another range.
           type:
-            - word.Word.Range
+            - Word.Range
   - uid: word.Word.Range.intersectWithOrNullObject
     summary: >-
       Returns a new range as the intersection of this range with another range. This range is not changed. Returns a
@@ -1304,13 +1304,13 @@ items:
       content: 'intersectWithOrNullObject(range: Word.Range): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: range
           description: Required. Another range.
           type:
-            - word.Word.Range
+            - Word.Range
   - uid: word.Word.Range.isEmpty
     summary: |-
       Checks whether the range length is zero. Read-only.
@@ -1372,13 +1372,13 @@ items:
       content: 'load(option?: Word.Interfaces.RangeLoadOptions): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.RangeLoadOptions
+            - Word.Interfaces.RangeLoadOptions
   - uid: word.Word.Range.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -1392,7 +1392,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: propertyNames
@@ -1412,7 +1412,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1435,7 +1435,7 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - Word.ParagraphCollection
   - uid: word.Word.Range.parentBody
     summary: |-
       Gets the parent body of the range. Read-only.
@@ -1450,7 +1450,7 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - word.Word.Body
+          - Word.Body
   - uid: word.Word.Range.parentContentControl
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.
@@ -1497,7 +1497,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.Range.parentTableCell
     summary: |-
       Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.
@@ -1512,7 +1512,7 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.Range.parentTableCellOrNullObject
     summary: >-
       Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
@@ -1529,7 +1529,7 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - Word.TableCell
   - uid: word.Word.Range.parentTableOrNullObject
     summary: |-
       Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.
@@ -1544,7 +1544,7 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.Range.search
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the range object. The search results are a
@@ -1570,7 +1570,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -1640,7 +1640,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
+            - Word.SelectionMode
   - uid: word.Word.Range.select_1
     summary: |-
       Selects and navigates the Word UI to the range.
@@ -1691,7 +1691,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.Range.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -1709,7 +1709,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Range
+            - Word.Range
   - uid: word.Word.Range.split
     summary: |-
       Splits the range into child ranges by using delimiters.
@@ -1726,7 +1726,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: delimiters
@@ -1864,7 +1864,7 @@ items:
       content: 'readonly tables: Word.TableCollection;'
       return:
         type:
-          - word.Word.TableCollection
+          - Word.TableCollection
   - uid: word.Word.Range.text
     summary: |-
       Gets the text of the range. Read-only.
@@ -1890,7 +1890,7 @@ items:
       content: 'toJSON(): Word.Interfaces.RangeData;'
       return:
         type:
-          - word.Word.Interfaces.RangeData
+          - Word.Interfaces.RangeData
         description: ''
   - uid: word.Word.Range.track
     summary: >-
@@ -1908,7 +1908,7 @@ items:
       content: 'track(): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''
   - uid: word.Word.Range.untrack
     summary: >-
@@ -1925,5 +1925,5 @@ items:
       content: 'untrack(): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - Word.Range
         description: ''

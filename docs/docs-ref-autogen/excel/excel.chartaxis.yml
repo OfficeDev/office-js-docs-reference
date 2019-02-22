@@ -136,7 +136,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartAxis.customDisplayUnit
     summary: >-
       Represents the custom axis display unit value. Read-only. To set this property, please use the
@@ -745,7 +745,7 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - Range
   - uid: excel.Excel.ChartAxis.setCustomDisplayUnit
     summary: |-
       Sets the axis display unit to a custom value.

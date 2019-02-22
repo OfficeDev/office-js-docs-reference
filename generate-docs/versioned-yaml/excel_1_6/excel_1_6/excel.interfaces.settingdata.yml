@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_6.Excel.Interfaces.SettingData
+    summary: An interface describing the data returned by calling "setting.toJSON()".
+    name: Excel.Interfaces.SettingData
+    fullName: Excel.Interfaces.SettingData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_6
+    children:
+      - excel_1_6.Excel.Interfaces.SettingData.key
+      - excel_1_6.Excel.Interfaces.SettingData.value
+  - uid: excel_1_6.Excel.Interfaces.SettingData.key
+    summary: |-
+      Returns the key that represents the id of the Setting. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_1_6.Excel.Interfaces.SettingData.value
+    summary: |-
+      Represents the value stored for this setting.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: value
+    fullName: value
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'value?: any;'
+      return:
+        type:
+          - any

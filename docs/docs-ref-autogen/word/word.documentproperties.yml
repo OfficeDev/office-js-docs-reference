@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.DocumentProperties.applicationName
@@ -129,7 +129,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.DocumentProperties.creationDate
     summary: |-
       Gets the creation date of the document. Read only.
@@ -159,7 +159,7 @@ items:
       content: 'readonly customProperties: Word.CustomPropertyCollection;'
       return:
         type:
-          - word.Word.CustomPropertyCollection
+          - Word.CustomPropertyCollection
   - uid: word.Word.DocumentProperties.format
     summary: |-
       Gets or sets the format of the document.
@@ -266,13 +266,13 @@ items:
       content: 'load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.DocumentPropertiesLoadOptions
+            - Word.Interfaces.DocumentPropertiesLoadOptions
   - uid: word.Word.DocumentProperties.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -286,7 +286,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
         description: ''
       parameters:
         - id: propertyNames
@@ -306,7 +306,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -389,7 +389,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.DocumentProperties.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -407,7 +407,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.DocumentProperties
+            - Word.DocumentProperties
   - uid: word.Word.DocumentProperties.subject
     summary: |-
       Gets or sets the subject of the document.
@@ -463,7 +463,7 @@ items:
       content: 'toJSON(): Word.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesData
+          - Word.Interfaces.DocumentPropertiesData
         description: ''
   - uid: word.Word.DocumentProperties.track
     summary: >-
@@ -481,7 +481,7 @@ items:
       content: 'track(): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
         description: ''
   - uid: word.Word.DocumentProperties.untrack
     summary: >-
@@ -498,5 +498,5 @@ items:
       content: 'untrack(): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - Word.DocumentProperties
         description: ''

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_1_1.Excel.Interfaces.ChartTrendlineData
+    summary: An interface describing the data returned by calling "chartTrendline.toJSON()".
+    name: Excel.Interfaces.ChartTrendlineData
+    fullName: Excel.Interfaces.ChartTrendlineData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_1_1

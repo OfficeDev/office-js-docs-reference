@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_5
     children:
       - excel_1_5.Excel.CustomXmlPartCollection.add
@@ -39,7 +39,7 @@ items:
       content: 'add(xml: string): Excel.CustomXmlPart;'
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: |-
 
           #### Examples
@@ -83,7 +83,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_5.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_5.Excel.CustomXmlPartCollection.getByNamespace
     summary: |-
       Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
@@ -98,7 +98,7 @@ items:
       content: 'getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;'
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPartScopedCollection
+          - excel.Excel.CustomXmlPartScopedCollection
         description: |-
 
           #### Examples
@@ -167,7 +167,7 @@ items:
       content: 'getItem(id: string): Excel.CustomXmlPart;'
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: |-
 
           #### Examples
@@ -214,7 +214,7 @@ items:
       content: 'getItemOrNullObject(id: string): Excel.CustomXmlPart;'
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPart
+          - excel.Excel.CustomXmlPart
         description: ''
       parameters:
         - id: id
@@ -266,7 +266,7 @@ items:
         Excel.CustomXmlPartCollection;
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPartCollection
+          - excel.Excel.CustomXmlPartCollection
         description: ''
       parameters:
         - id: option
@@ -286,7 +286,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomXmlPartCollection;'
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPartCollection
+          - excel.Excel.CustomXmlPartCollection
         description: ''
       parameters:
         - id: propertyNames
@@ -303,13 +303,13 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;'
       return:
         type:
-          - excel_1_5.Excel.CustomXmlPartCollection
+          - excel.Excel.CustomXmlPartCollection
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: excel_1_5.Excel.CustomXmlPartCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -326,5 +326,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomXmlPartCollectionData;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.CustomXmlPartCollectionData
+          - excel.Excel.Interfaces.CustomXmlPartCollectionData
         description: ''

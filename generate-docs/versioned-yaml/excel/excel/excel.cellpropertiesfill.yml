@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellPropertiesFill
+    summary: >-
+      Represents the returned format.fill properties of getCell/Row/ColumnProperties or format.fill input parameter of
+      setCell/Row/ColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.CellPropertiesFill
+    fullName: Excel.CellPropertiesFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.CellPropertiesFill.color
+      - excel.Excel.CellPropertiesFill.pattern
+      - excel.Excel.CellPropertiesFill.patternColor
+      - excel.Excel.CellPropertiesFill.patternTintAndShade
+      - excel.Excel.CellPropertiesFill.tintAndShade
+  - uid: excel.Excel.CellPropertiesFill.color
+    isPreview: true
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellPropertiesFill.pattern
+    isPreview: true
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
+        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
+        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+      return:
+        type:
+          - >-
+            Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+            "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
+            "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
+  - uid: excel.Excel.CellPropertiesFill.patternColor
+    isPreview: true
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellPropertiesFill.patternTintAndShade
+    isPreview: true
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.CellPropertiesFill.tintAndShade
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number

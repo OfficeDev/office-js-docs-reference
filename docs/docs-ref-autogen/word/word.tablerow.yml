@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.TableRow.cellCount
@@ -78,7 +78,7 @@ items:
       content: 'readonly cells: Word.TableCellCollection;'
       return:
         type:
-          - word.Word.TableCellCollection
+          - Word.TableCellCollection
   - uid: word.Word.TableRow.clear
     summary: |-
       Clears the contents of the row.
@@ -108,7 +108,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.TableRow.delete
     summary: |-
       Deletes the entire row.
@@ -242,7 +242,7 @@ items:
       content: 'getNext(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
   - uid: word.Word.TableRow.getNextOrNullObject
     summary: |-
@@ -258,7 +258,7 @@ items:
       content: 'getNextOrNullObject(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
   - uid: word.Word.TableRow.horizontalAlignment
     summary: >-
@@ -291,13 +291,13 @@ items:
       content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - Word.TableRowCollection
         description: ''
       parameters:
         - id: insertLocation
           description: 'Required. Where the new rows should be inserted, relative to the current row. It can be ''Before'' or ''After''.'
           type:
-            - word.Word.InsertLocation
+            - Word.InsertLocation
         - id: rowCount
           description: Required. Number of rows to add
           type:
@@ -324,7 +324,7 @@ items:
         string[][]): Word.TableRowCollection;
       return:
         type:
-          - word.Word.TableRowCollection
+          - Word.TableRowCollection
         description: ''
       parameters:
         - id: insertLocationString
@@ -389,13 +389,13 @@ items:
       content: 'load(option?: Word.Interfaces.TableRowLoadOptions): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.TableRowLoadOptions
+            - Word.Interfaces.TableRowLoadOptions
   - uid: word.Word.TableRow.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -409,7 +409,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
       parameters:
         - id: propertyNames
@@ -429,7 +429,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -452,7 +452,7 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
+          - Word.Table
   - uid: word.Word.TableRow.preferredHeight
     summary: |-
       Gets and sets the preferred height of the row in points.
@@ -508,7 +508,7 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - Word.RangeCollection
         description: ''
       parameters:
         - id: searchText
@@ -548,7 +548,7 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
+            - Word.SelectionMode
   - uid: word.Word.TableRow.select_1
     summary: |-
       Selects the row and navigates the Word UI to it.
@@ -599,7 +599,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: word.Word.TableRow.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -617,7 +617,7 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.TableRow
+            - Word.TableRow
   - uid: word.Word.TableRow.setCellPadding
     summary: |-
       Sets cell padding in points.
@@ -693,7 +693,7 @@ items:
       content: 'toJSON(): Word.Interfaces.TableRowData;'
       return:
         type:
-          - word.Word.Interfaces.TableRowData
+          - Word.Interfaces.TableRowData
         description: ''
   - uid: word.Word.TableRow.track
     summary: >-
@@ -711,7 +711,7 @@ items:
       content: 'track(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
   - uid: word.Word.TableRow.untrack
     summary: >-
@@ -728,7 +728,7 @@ items:
       content: 'untrack(): Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
+          - Word.TableRow
         description: ''
   - uid: word.Word.TableRow.values
     summary: |-

@@ -92,7 +92,7 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel_1_2.Excel.Interfaces.WorksheetProtectionData
+          - excel.Excel.Interfaces.WorksheetProtectionData
   - uid: excel_1_2.Excel.Interfaces.WorksheetData.tables
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.

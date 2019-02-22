@@ -28,7 +28,7 @@ items:
       content: 'filter?: Excel.Interfaces.FilterData;'
       return:
         type:
-          - excel_1_3.Excel.Interfaces.FilterData
+          - excel.Excel.Interfaces.FilterData
   - uid: excel_1_3.Excel.Interfaces.TableColumnData.id
     summary: |-
       Returns a unique key that identifies the column within the table. Read-only.

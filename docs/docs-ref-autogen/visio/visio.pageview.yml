@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: visio
     children:
       - visio.Visio.PageView.centerViewportOnShape
@@ -132,7 +132,7 @@ items:
         - id: Shape
           description: Shape to be checked.
           type:
-            - visio.Visio.Shape
+            - Visio.Shape
   - uid: visio.Visio.PageView.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -242,7 +242,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: visio.Visio.PageView.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)

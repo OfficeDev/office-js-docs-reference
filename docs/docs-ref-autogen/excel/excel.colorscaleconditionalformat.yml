@@ -36,7 +36,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ColorScaleConditionalFormat.criteria
     summary: |-
       The criteria of the color scale. Midpoint is optional when using a two point color scale.

@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: word
     children:
       - word.Word.InlinePictureCollection.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
+          - RequestContext
   - uid: word.Word.InlinePictureCollection.getFirst
     summary: |-
       Gets the first inline image in this collection. Throws if this collection is empty.
@@ -158,7 +158,7 @@ items:
         - id: option
           description: ''
           type:
-            - OfficeExtension.LoadOption
+            - office.OfficeExtension.LoadOption
   - uid: word.Word.InlinePictureCollection.toJSON
     name: toJSON()
     fullName: toJSON()

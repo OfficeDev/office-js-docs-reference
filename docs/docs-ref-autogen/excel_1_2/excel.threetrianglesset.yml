@@ -21,7 +21,7 @@ items:
       content: 'greenUpTriangle: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon
   - uid: excel_1_2.Excel.ThreeTrianglesSet.redDownTriangle
     name: redDownTriangle
     fullName: redDownTriangle
@@ -32,7 +32,7 @@ items:
       content: 'redDownTriangle: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon
   - uid: excel_1_2.Excel.ThreeTrianglesSet.yellowDash
     name: yellowDash
     fullName: yellowDash
@@ -43,4 +43,4 @@ items:
       content: 'yellowDash: Icon;'
       return:
         type:
-          - excel_1_2.Excel.Icon
+          - Icon

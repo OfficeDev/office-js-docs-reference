@@ -21,7 +21,7 @@ items:
       content: 'greenTrafficLight: Icon;'
       return:
         type:
-          - excel_1_6.Excel.Icon
+          - Icon
   - uid: excel_1_6.Excel.ThreeTrafficLights2Set.redTrafficLight
     name: redTrafficLight
     fullName: redTrafficLight
@@ -32,7 +32,7 @@ items:
       content: 'redTrafficLight: Icon;'
       return:
         type:
-          - excel_1_6.Excel.Icon
+          - Icon
   - uid: excel_1_6.Excel.ThreeTrafficLights2Set.yellowTrafficLight
     name: yellowTrafficLight
     fullName: yellowTrafficLight
@@ -43,4 +43,4 @@ items:
       content: 'yellowTrafficLight: Icon;'
       return:
         type:
-          - excel_1_6.Excel.Icon
+          - Icon

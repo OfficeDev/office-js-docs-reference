@@ -25,7 +25,7 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatUpdateData;'
       return:
         type:
-          - excel_1_5.Excel.Interfaces.ChartSeriesFormatUpdateData
+          - excel.Excel.Interfaces.ChartSeriesFormatUpdateData
   - uid: excel_1_5.Excel.Interfaces.ChartSeriesUpdateData.name
     summary: |-
       Represents the name of a series in a chart.

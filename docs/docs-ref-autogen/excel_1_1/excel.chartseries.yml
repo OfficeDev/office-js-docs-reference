@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_1
     children:
       - excel_1_1.Excel.ChartSeries.context
@@ -37,7 +37,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_1.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_1.Excel.ChartSeries.format
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
@@ -52,7 +52,7 @@ items:
       content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
-          - excel_1_1.Excel.ChartSeriesFormat
+          - excel.Excel.ChartSeriesFormat
   - uid: excel_1_1.Excel.ChartSeries.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -84,13 +84,13 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_1.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel_1_1.Excel.Interfaces.ChartSeriesLoadOptions
+            - excel.Excel.Interfaces.ChartSeriesLoadOptions
   - uid: excel_1_1.Excel.ChartSeries.load_1
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
@@ -104,7 +104,7 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_1.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: |-
 
           #### Examples
@@ -142,7 +142,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;'
       return:
         type:
-          - excel_1_1.Excel.ChartSeries
+          - excel.Excel.ChartSeries
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -180,7 +180,7 @@ items:
       content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
-          - excel_1_1.Excel.ChartPointsCollection
+          - excel.Excel.ChartPointsCollection
   - uid: excel_1_1.Excel.ChartSeries.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -210,7 +210,7 @@ items:
         - id: options
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
-            - OfficeExtension.UpdateOptions
+            - office.OfficeExtension.UpdateOptions
   - uid: excel_1_1.Excel.ChartSeries.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
@@ -228,7 +228,7 @@ items:
         - id: properties
           description: ''
           type:
-            - excel_1_1.Excel.ChartSeries
+            - excel.Excel.ChartSeries
   - uid: excel_1_1.Excel.ChartSeries.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
@@ -245,5 +245,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - excel_1_1.Excel.Interfaces.ChartSeriesData
+          - excel.Excel.Interfaces.ChartSeriesData
         description: ''

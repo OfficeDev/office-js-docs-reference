@@ -11,7 +11,7 @@ items:
       - typeScript
     type: class
     extends:
-      - 'OfficeExtension.ClientObject '
+      - office.OfficeExtension.ClientObject
     package: excel_1_2
     children:
       - excel_1_2.Excel.Functions.abs
@@ -2099,7 +2099,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel_1_2.Excel.RequestContext
+          - RequestContext
   - uid: excel_1_2.Excel.Functions.convert
     summary: |-
       Converts a number from one measurement system to another.

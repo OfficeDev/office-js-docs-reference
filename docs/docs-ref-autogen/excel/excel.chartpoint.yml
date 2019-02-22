@@ -42,7 +42,7 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
+          - RequestContext
   - uid: excel.Excel.ChartPoint.dataLabel
     summary: |-
       Returns the data label of a chart point. Read-only.
