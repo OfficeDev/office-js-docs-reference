@@ -1,6 +1,6 @@
 items:
   - name: API reference
-    href: ../overview/office.md
+    href: /javascript/api/overview/office.md
     items:
       - name: excel
         uid: excel

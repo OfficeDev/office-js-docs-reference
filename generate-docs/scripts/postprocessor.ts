@@ -364,7 +364,7 @@ tryCatch(async () => {
             fsx.readdirSync(subfolder)
                 .filter(subfilename => subfilename.indexOf("toc") >= 0)
                 .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "../overview/office.md"));
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office.md"));
                 });
         });
 
