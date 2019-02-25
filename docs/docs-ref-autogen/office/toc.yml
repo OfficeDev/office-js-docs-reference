@@ -1,6 +1,6 @@
 items:
   - name: API reference
-    href: ~/docs-ref-autogen/overview/office.md
+    href: /javascript/api/overview/office
     items:
       - name: Common API
         uid: office

@@ -123,18 +123,18 @@ tryCatch(async () => {
     //             });
     //     });
 
-    // console.log(`Fixing TOCs`);
-    // fsx.readdirSync(docsSource)
-    //     .forEach(filename => {
-    //         console.log(filename);
-    //         let subfolder = docsSource + '/' + filename;
-    //         console.log(subfolder);
-    //         fsx.readdirSync(subfolder)
-    //             .filter(subfilename => subfilename.indexOf("toc") >= 0)
-    //             .forEach(subfilename => {
-    //                 fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office"));
-    //             });
-    //     });
+    console.log(`Fixing TOCs`);
+    fsx.readdirSync(docsSource)
+        .forEach(filename => {
+            console.log(filename);
+            let subfolder = docsSource + '/' + filename;
+            console.log(subfolder);
+            fsx.readdirSync(subfolder)
+                .filter(subfilename => subfilename.indexOf("toc") >= 0)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office"));
+                });
+        });
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
@@ -374,7 +374,7 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
     excelRoot.items.unshift(customFunctionsRoot);
 
     // append the common API toc
-    newToc.items[0].items.push(commonToc.items[0].items[0]);
+    //newToc.items[0].items.push(commonToc.items[0].items[0]);
     fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
 }
 
