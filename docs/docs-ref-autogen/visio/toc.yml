@@ -1,6 +1,5 @@
 items:
 - name: API reference
-  href: overview/office
   items:
   - name: Visio
     items:

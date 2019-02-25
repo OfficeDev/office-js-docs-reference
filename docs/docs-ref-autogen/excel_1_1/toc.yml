@@ -1,6 +1,6 @@
 items:
 - name: API reference
-  href: /overview/office
+  href: api-ref.md
   items:
   - name: Excel
     items:

@@ -1,6 +1,5 @@
 items:
 - name: API reference
-  href: overview/office.md
   items:
   - name: OneNote
     items:
