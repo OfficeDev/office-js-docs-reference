@@ -1,5 +1,6 @@
 items:
 - name: API reference
+  href: ~/docs-ref-autogen/overview/office.md
   items:
   - name: Excel
     items:
