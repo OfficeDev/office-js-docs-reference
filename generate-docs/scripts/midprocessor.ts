@@ -14,6 +14,8 @@ tryCatch(async () => {
     fsx.copySync(snippets, "../versioned-json/excel_1_7/snippets.yaml");
     fsx.copySync(snippets, "../versioned-json/excel_1_8/snippets.yaml");
 
+    fsx.copySync(snippets, "../versioned-json/office/snippets.yaml");
+
     fsx.copySync(snippets, "../versioned-json/onenote/snippets.yaml");
 
     fsx.copySync(snippets, "../versioned-json/outlook/snippets.yaml");

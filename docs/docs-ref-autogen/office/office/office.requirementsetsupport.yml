@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.RequirementSetSupport
+    summary: Provides information about what Requirement Sets are supported in current environment.
+    name: Office.RequirementSetSupport
+    fullName: Office.RequirementSetSupport
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.RequirementSetSupport.isSetSupported
+  - uid: office.Office.RequirementSetSupport.isSetSupported
+    summary: Check if the specified requirement set is supported by the host Office application.
+    name: 'isSetSupported(name, minVersion)'
+    fullName: 'isSetSupported(name, minVersion)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'isSetSupported(name: string, minVersion?: number): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: name
+          description: 'Set name; e.g., "MatrixBindings".'
+          type:
+            - string
+        - id: minVersion
+          description: 'The minimum required version; e.g., "1.4".'
+          type:
+            - number

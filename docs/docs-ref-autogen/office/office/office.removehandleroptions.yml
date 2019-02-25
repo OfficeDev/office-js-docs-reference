@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.RemoveHandlerOptions
+    summary: Provides options to determine which event handler or handlers are removed.
+    name: Office.RemoveHandlerOptions
+    fullName: Office.RemoveHandlerOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.RemoveHandlerOptions.asyncContext
+      - office.Office.RemoveHandlerOptions.handler
+  - uid: office.Office.RemoveHandlerOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any'
+      return:
+        type:
+          - any
+  - uid: office.Office.RemoveHandlerOptions.handler
+    summary: The handler to be removed. If not specified all handlers for the specified event type are removed.
+    name: handler
+    fullName: handler
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'handler?: string'
+      return:
+        type:
+          - string

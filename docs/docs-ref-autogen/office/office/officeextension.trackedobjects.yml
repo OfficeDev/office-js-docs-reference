@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.TrackedObjects
+    summary: >-
+      Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more
+      information.
+    name: OfficeExtension.TrackedObjects
+    fullName: OfficeExtension.TrackedObjects
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.OfficeExtension.TrackedObjects.add
+      - office.OfficeExtension.TrackedObjects.add_1
+      - office.OfficeExtension.TrackedObjects.remove
+      - office.OfficeExtension.TrackedObjects.remove_1
+  - uid: office.OfficeExtension.TrackedObjects.add
+    summary: >-
+      Track a new object for automatic adjustment based on surrounding changes in the document. Only some object types
+      require this. If you are using an object across ".sync" calls and outside the sequential execution of a ".run"
+      batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed
+      to have added the object to the tracked object collection when the object was first created.
+
+
+      This method also has the following signature:
+
+
+      `add(objects: ClientObject[]): void;` Where objects is an array of objects to be tracked.
+    name: add(object)
+    fullName: add(object)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(object: ClientObject): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: object
+          description: ''
+          type:
+            - office.OfficeExtension.ClientObject
+  - uid: office.OfficeExtension.TrackedObjects.add_1
+    summary: >-
+      Track a set of objects for automatic adjustment based on surrounding changes in the document. Only some object
+      types require this. If you are using an object across ".sync" calls and outside the sequential execution of a
+      ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you
+      needed to have added the object to the tracked object collection when the object was first created.
+    name: add(objects)
+    fullName: add(objects)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(objects: ClientObject[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: objects
+          description: ''
+          type:
+            - 'ClientObject[]'
+  - uid: office.OfficeExtension.TrackedObjects.remove
+    summary: >-
+      Release the memory associated with an object that was previously added to this collection. Having many tracked
+      objects slows down the host application, so please remember to free any objects you add, once you're done using
+      them. You will need to call `context.sync()` before the memory release takes effect.
+
+
+      This method also has the following signature:
+
+
+      `remove(objects: ClientObject[]): void;` Where objects is an array of objects to be removed.
+    name: remove(object)
+    fullName: remove(object)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(object: ClientObject): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: object
+          description: ''
+          type:
+            - office.OfficeExtension.ClientObject
+  - uid: office.OfficeExtension.TrackedObjects.remove_1
+    summary: >-
+      Release the memory associated with an object that was previously added to this collection. Having many tracked
+      objects slows down the host application, so please remember to free any objects you add, once you're done using
+      them. You will need to call `context.sync()` before the memory release takes effect.
+    name: remove(objects)
+    fullName: remove(objects)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(objects: ClientObject[]): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: objects
+          description: ''
+          type:
+            - 'ClientObject[]'

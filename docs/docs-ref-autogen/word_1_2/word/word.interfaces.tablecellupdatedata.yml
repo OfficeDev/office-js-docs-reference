@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.TableCellUpdateData
+    summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set(<!-- -->{ ... }<!-- -->)".'
+    name: Word.Interfaces.TableCellUpdateData
+    fullName: Word.Interfaces.TableCellUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word

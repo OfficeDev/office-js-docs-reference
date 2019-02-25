@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.UpdateOptions
+    summary: >-
+      Provides an option for suppressing an error when the object that is used to set multiple properties tries to set
+      read-only properties.
+    name: OfficeExtension.UpdateOptions
+    fullName: OfficeExtension.UpdateOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.UpdateOptions.throwOnReadOnly
+  - uid: office.OfficeExtension.UpdateOptions.throwOnReadOnly
+    summary: Throw an error if the passed-in property list includes read-only properties (default = true).
+    name: throwOnReadOnly
+    fullName: throwOnReadOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'throwOnReadOnly?: boolean'
+      return:
+        type:
+          - boolean

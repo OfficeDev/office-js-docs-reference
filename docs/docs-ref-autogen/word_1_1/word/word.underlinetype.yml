@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.UnderlineType
+    summary: |-
+      Underline types
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.UnderlineType
+    fullName: Word.UnderlineType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.UnderlineType.dashLine
+      - word.Word.UnderlineType.dashLineHeavy
+      - word.Word.UnderlineType.dashLineLong
+      - word.Word.UnderlineType.dashLineLongHeavy
+      - word.Word.UnderlineType.dotDashLine
+      - word.Word.UnderlineType.dotDashLineHeavy
+      - word.Word.UnderlineType.dotLine
+      - word.Word.UnderlineType.dotted
+      - word.Word.UnderlineType.dottedHeavy
+      - word.Word.UnderlineType.double
+      - word.Word.UnderlineType.hidden
+      - word.Word.UnderlineType.mixed
+      - word.Word.UnderlineType.none
+      - word.Word.UnderlineType.single
+      - word.Word.UnderlineType.thick
+      - word.Word.UnderlineType.twoDotDashLine
+      - word.Word.UnderlineType.twoDotDashLineHeavy
+      - word.Word.UnderlineType.wave
+      - word.Word.UnderlineType.waveDouble
+      - word.Word.UnderlineType.waveHeavy
+      - word.Word.UnderlineType.word
+  - uid: word.Word.UnderlineType.dashLine
+    summary: A single dash underline.
+    name: dashLine
+    fullName: dashLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLine"'
+  - uid: word.Word.UnderlineType.dashLineHeavy
+    name: dashLineHeavy
+    fullName: dashLineHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLineHeavy"'
+  - uid: word.Word.UnderlineType.dashLineLong
+    name: dashLineLong
+    fullName: dashLineLong
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLineLong"'
+  - uid: word.Word.UnderlineType.dashLineLongHeavy
+    name: dashLineLongHeavy
+    fullName: dashLineLongHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLineLongHeavy"'
+  - uid: word.Word.UnderlineType.dotDashLine
+    summary: An alternating dot-dash underline.
+    name: dotDashLine
+    fullName: dotDashLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDashLine"'
+  - uid: word.Word.UnderlineType.dotDashLineHeavy
+    name: dotDashLineHeavy
+    fullName: dotDashLineHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDashLineHeavy"'
+  - uid: word.Word.UnderlineType.dotLine
+    deprecated:
+      content: DotLine is no longer supported.
+    name: dotLine
+    fullName: dotLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotLine"'
+  - uid: word.Word.UnderlineType.dotted
+    summary: A dotted underline.
+    name: dotted
+    fullName: dotted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dotted"'
+  - uid: word.Word.UnderlineType.dottedHeavy
+    name: dottedHeavy
+    fullName: dottedHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DottedHeavy"'
+  - uid: word.Word.UnderlineType.double
+    summary: A double underline.
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: word.Word.UnderlineType.hidden
+    deprecated:
+      content: Hidden is no longer supported.
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hidden"'
+  - uid: word.Word.UnderlineType.mixed
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: word.Word.UnderlineType.none
+    summary: No underline.
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: word.Word.UnderlineType.single
+    summary: A single underline. This is the default value.
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'
+  - uid: word.Word.UnderlineType.thick
+    summary: A single thick underline.
+    name: thick
+    fullName: thick
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Thick"'
+  - uid: word.Word.UnderlineType.twoDotDashLine
+    summary: An alternating dot-dot-dash underline.
+    name: twoDotDashLine
+    fullName: twoDotDashLine
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoDotDashLine"'
+  - uid: word.Word.UnderlineType.twoDotDashLineHeavy
+    name: twoDotDashLineHeavy
+    fullName: twoDotDashLineHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoDotDashLineHeavy"'
+  - uid: word.Word.UnderlineType.wave
+    summary: A single wavy underline.
+    name: wave
+    fullName: wave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wave"'
+  - uid: word.Word.UnderlineType.waveDouble
+    name: waveDouble
+    fullName: waveDouble
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WaveDouble"'
+  - uid: word.Word.UnderlineType.waveHeavy
+    name: waveHeavy
+    fullName: waveHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WaveHeavy"'
+  - uid: word.Word.UnderlineType.word
+    summary: Only underline individual words.
+    name: word
+    fullName: word
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Word"'

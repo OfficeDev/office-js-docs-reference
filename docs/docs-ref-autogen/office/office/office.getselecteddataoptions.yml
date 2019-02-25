@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.GetSelectedDataOptions
+    summary: Provides options for customizing what data is returned and how it is formatted.
+    name: Office.GetSelectedDataOptions
+    fullName: Office.GetSelectedDataOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.GetSelectedDataOptions.asyncContext
+      - office.Office.GetSelectedDataOptions.filterType
+      - office.Office.GetSelectedDataOptions.valueFormat
+  - uid: office.Office.GetSelectedDataOptions.asyncContext
+    summary: >-
+      A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
+      object that is passed to a callback.
+    name: asyncContext
+    fullName: asyncContext
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'asyncContext?: any'
+      return:
+        type:
+          - any
+  - uid: office.Office.GetSelectedDataOptions.filterType
+    summary: >-
+      Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data.
+      Use [Office.FilterType](xref:office.Office.FilterType) or string equivalent. This parameter is ignored in Word
+      documents.
+    name: filterType
+    fullName: filterType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filterType?: Office.FilterType | string'
+      return:
+        type:
+          - Office.FilterType | string
+  - uid: office.Office.GetSelectedDataOptions.valueFormat
+    summary: Specify whether the data is formatted. Use Office.ValueFormat or string equivalent.
+    name: valueFormat
+    fullName: valueFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'valueFormat?: Office.ValueFormat | string'
+      return:
+        type:
+          - Office.ValueFormat | string

@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.ImageFormat
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.ImageFormat
+    fullName: Word.ImageFormat
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.ImageFormat.bmp
+      - word.Word.ImageFormat.emf
+      - word.Word.ImageFormat.exif
+      - word.Word.ImageFormat.gif
+      - word.Word.ImageFormat.icon
+      - word.Word.ImageFormat.jpeg
+      - word.Word.ImageFormat.pdf
+      - word.Word.ImageFormat.pict
+      - word.Word.ImageFormat.png
+      - word.Word.ImageFormat.svg
+      - word.Word.ImageFormat.tiff
+      - word.Word.ImageFormat.undefined
+      - word.Word.ImageFormat.unsupported
+      - word.Word.ImageFormat.wmf
+  - uid: word.Word.ImageFormat.bmp
+    name: bmp
+    fullName: bmp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bmp"'
+  - uid: word.Word.ImageFormat.emf
+    name: emf
+    fullName: emf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Emf"'
+  - uid: word.Word.ImageFormat.exif
+    name: exif
+    fullName: exif
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Exif"'
+  - uid: word.Word.ImageFormat.gif
+    name: gif
+    fullName: gif
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gif"'
+  - uid: word.Word.ImageFormat.icon
+    name: icon
+    fullName: icon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Icon"'
+  - uid: word.Word.ImageFormat.jpeg
+    name: jpeg
+    fullName: jpeg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Jpeg"'
+  - uid: word.Word.ImageFormat.pdf
+    name: pdf
+    fullName: pdf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pdf"'
+  - uid: word.Word.ImageFormat.pict
+    name: pict
+    fullName: pict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pict"'
+  - uid: word.Word.ImageFormat.png
+    name: png
+    fullName: png
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Png"'
+  - uid: word.Word.ImageFormat.svg
+    name: svg
+    fullName: svg
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Svg"'
+  - uid: word.Word.ImageFormat.tiff
+    name: tiff
+    fullName: tiff
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tiff"'
+  - uid: word.Word.ImageFormat.undefined
+    name: undefined
+    fullName: undefined
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Undefined"'
+  - uid: word.Word.ImageFormat.unsupported
+    name: unsupported
+    fullName: unsupported
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unsupported"'
+  - uid: word.Word.ImageFormat.wmf
+    name: wmf
+    fullName: wmf
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wmf"'
