@@ -1,6 +1,6 @@
 items:
 - name: API reference
-  href: overview/office.md
+  href: /overview/office.md
   items:
   - name: Word
     items:
