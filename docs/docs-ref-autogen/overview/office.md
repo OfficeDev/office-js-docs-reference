@@ -2,12 +2,12 @@
 
 The JavaScript API for Office enables you to create web applications that interact with the object models in Office host applications. Use this section to learn more about the classes, methods, and other types available for building Office Add-ins.
 
-- [Excel](https://docs.microsoft.com/javascript/api/excel?view=office-js)
-- [OneNote](https://docs.microsoft.com/javascript/api/onenote?view=office-js)
-- [Outlook](https://docs.microsoft.com/javascript/api/outlook?view=office-js)
-- [Visio](https://docs.microsoft.com/javascript/api/visio?view=office-js)
-- [Word](https://docs.microsoft.com/javascript/api/word?view=office-js)
-- [Common API](https://docs.microsoft.com/javascript/api/office?view=office-js)
+- [Excel](/javascript/api/excel?view=excel-js-preview)
+- [OneNote](/javascript/api/onenote?view=onenote-js-1.1)
+- [Outlook](/javascript/api/outlook?view=outlook-js-preview)
+- [Visio](/javascript/api/visio?view=visio-js-1.1)
+- [Word](/javascript/api/word?view=word-js-preview)
+- [Common API](/javascript/api/office?view=common-js)
 
 ## See also
 
