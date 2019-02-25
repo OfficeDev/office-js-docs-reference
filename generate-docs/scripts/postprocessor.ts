@@ -374,7 +374,7 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
     excelRoot.items.unshift(customFunctionsRoot);
 
     // append the common API toc
-    //newToc.items[0].items.push(commonToc.items[0].items[0]);
+    newToc.items[0].items.push(commonToc.items[0].items[0]);
     fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
 }
 
