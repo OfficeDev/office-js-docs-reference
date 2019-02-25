@@ -90,30 +90,30 @@ popd
 call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\office --output-folder .\versioned-yaml\office --office
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel --output-folder .\versioned-yaml\excel --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_1 --output-folder .\versioned-yaml\excel_1_1 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_2 --output-folder .\versioned-yaml\excel_1_2 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_3 --output-folder .\versioned-yaml\excel_1_3 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_4 --output-folder .\versioned-yaml\excel_1_4 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_5 --output-folder .\versioned-yaml\excel_1_5 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_6 --output-folder .\versioned-yaml\excel_1_6 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_7 --output-folder .\versioned-yaml\excel_1_7 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_8 --output-folder .\versioned-yaml\excel_1_8 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\office --output-folder .\versioned-yaml\office --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook --output-folder .\versioned-yaml\outlook --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_1 --output-folder .\versioned-yaml\outlook_1_1 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_2 --output-folder .\versioned-yaml\outlook_1_2 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_3 --output-folder .\versioned-yaml\outlook_1_3 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_4 --output-folder .\versioned-yaml\outlook_1_4 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_5 --output-folder .\versioned-yaml\outlook_1_5 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_6 --output-folder .\versioned-yaml\outlook_1_6 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_7 --output-folder .\versioned-yaml\outlook_1_7 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\powerpoint --output-folder .\versioned-yaml\powerpoint --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\onenote --output-folder .\versioned-yaml\onenote --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\visio --output-folder .\versioned-yaml\visio --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word --output-folder .\versioned-yaml\word --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word_1_1 --output-folder .\versioned-yaml\word_1_1 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word_1_2 --output-folder .\versioned-yaml\word_1_2 --office
-REM call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word_1_3 --output-folder .\versioned-yaml\word_1_3 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_1 --output-folder .\versioned-yaml\excel_1_1 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_2 --output-folder .\versioned-yaml\excel_1_2 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_3 --output-folder .\versioned-yaml\excel_1_3 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_4 --output-folder .\versioned-yaml\excel_1_4 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_5 --output-folder .\versioned-yaml\excel_1_5 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_6 --output-folder .\versioned-yaml\excel_1_6 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_7 --output-folder .\versioned-yaml\excel_1_7 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\excel_1_8 --output-folder .\versioned-yaml\excel_1_8 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\office --output-folder .\versioned-yaml\office --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook --output-folder .\versioned-yaml\outlook --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_1 --output-folder .\versioned-yaml\outlook_1_1 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_2 --output-folder .\versioned-yaml\outlook_1_2 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_3 --output-folder .\versioned-yaml\outlook_1_3 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_4 --output-folder .\versioned-yaml\outlook_1_4 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_5 --output-folder .\versioned-yaml\outlook_1_5 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_6 --output-folder .\versioned-yaml\outlook_1_6 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\outlook_1_7 --output-folder .\versioned-yaml\outlook_1_7 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\powerpoint --output-folder .\versioned-yaml\powerpoint --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\onenote --output-folder .\versioned-yaml\onenote --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\visio --output-folder .\versioned-yaml\visio --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word --output-folder .\versioned-yaml\word --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word_1_1 --output-folder .\versioned-yaml\word_1_1 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word_1_2 --output-folder .\versioned-yaml\word_1_2 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\versioned-json\word_1_3 --output-folder .\versioned-yaml\word_1_3 --office
 
 
 pushd scripts
