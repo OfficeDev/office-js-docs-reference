@@ -123,18 +123,18 @@ tryCatch(async () => {
     //             });
     //     });
 
-    console.log(`Fixing TOCs`);
-    fsx.readdirSync(docsSource)
-        .forEach(filename => {
-            console.log(filename);
-            let subfolder = docsSource + '/' + filename;
-            console.log(subfolder);
-            fsx.readdirSync(subfolder)
-                .filter(subfilename => subfilename.indexOf("toc") >= 0)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office"));
-                });
-        });
+    // console.log(`Fixing TOCs`);
+    // fsx.readdirSync(docsSource)
+    //     .forEach(filename => {
+    //         console.log(filename);
+    //         let subfolder = docsSource + '/' + filename;
+    //         console.log(subfolder);
+    //         fsx.readdirSync(subfolder)
+    //             .filter(subfilename => subfilename.indexOf("toc") >= 0)
+    //             .forEach(subfilename => {
+    //                 fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office"));
+    //             });
+    //     });
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
