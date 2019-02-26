@@ -2041,6 +2041,12 @@ export declare namespace Office {
          */
         ItemChanged,
         /**
+         * Triggers when the appointment location is changed in Outlook.
+         * 
+         * [Api set: Mailbox Preview]
+         */
+        EnhancedLocationsChanged,
+        /**
          * Triggers when a customXmlPart node is deleted.
          */
         NodeDeleted,

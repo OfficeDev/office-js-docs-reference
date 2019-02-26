@@ -590,11 +590,10 @@ items:
     type: method
     syntax:
       content: >-
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" | "Constants" |
-        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
-        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
-        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
-        "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" |
+        "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
+        "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
       return:
         type:
           - excel.Excel.RangeAreas
@@ -604,8 +603,8 @@ items:
           description: The type of cells to include.
           type:
             - >-
-              "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" | "Constants" | "Formulas" |
-              "SameConditionalFormat" | "SameDataValidation" | "Visible"
+              "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+              "SameDataValidation" | "Visible"
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
@@ -666,9 +665,9 @@ items:
     type: method
     syntax:
       content: >-
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" |
-        "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" |
-        "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
+        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
         "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
         "NumbersText" | "Text"): Excel.RangeAreas;
       return:
@@ -680,8 +679,8 @@ items:
           description: The type of cells to include.
           type:
             - >-
-              "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" | "Constants" | "Formulas" |
-              "SameConditionalFormat" | "SameDataValidation" | "Visible"
+              "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+              "SameDataValidation" | "Visible"
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used to determine which types of cells to

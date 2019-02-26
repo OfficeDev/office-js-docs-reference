@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ArrowHeadWidth
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ArrowHeadWidth
+    fullName: Excel.ArrowHeadWidth
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ArrowHeadWidth.medium
+      - excel.Excel.ArrowHeadWidth.narrow
+      - excel.Excel.ArrowHeadWidth.wide
+  - uid: excel.Excel.ArrowHeadWidth.medium
+    isPreview: true
+    name: medium
+    fullName: medium
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Medium"'
+  - uid: excel.Excel.ArrowHeadWidth.narrow
+    isPreview: true
+    name: narrow
+    fullName: narrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Narrow"'
+  - uid: excel.Excel.ArrowHeadWidth.wide
+    isPreview: true
+    name: wide
+    fullName: wide
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wide"'

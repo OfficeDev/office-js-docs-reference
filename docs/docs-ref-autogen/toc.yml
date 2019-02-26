@@ -40,6 +40,12 @@ items:
                 items:
                   - name: AggregationFunction
                     uid: excel.Excel.AggregationFunction
+                  - name: ArrowHeadLength
+                    uid: excel.Excel.ArrowHeadLength
+                  - name: ArrowHeadStyle
+                    uid: excel.Excel.ArrowHeadStyle
+                  - name: ArrowHeadWidth
+                    uid: excel.Excel.ArrowHeadWidth
                   - name: AutoFillType
                     uid: excel.Excel.AutoFillType
                   - name: BindingType
@@ -252,6 +258,8 @@ items:
                     uid: excel.Excel.RangeValueType
                   - name: ReadingOrder
                     uid: excel.Excel.ReadingOrder
+                  - name: RibbonTab
+                    uid: excel.Excel.RibbonTab
                   - name: SaveBehavior
                     uid: excel.Excel.SaveBehavior
                   - name: SearchDirection
@@ -340,6 +348,8 @@ items:
                 uid: excel.Excel.CellPropertiesProtection
               - name: CellValueConditionalFormat
                 uid: excel.Excel.CellValueConditionalFormat
+              - name: ChangedEventDetail
+                uid: excel.Excel.ChangedEventDetail
               - name: Chart
                 uid: excel.Excel.Chart
               - name: ChartAreaFormat

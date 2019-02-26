@@ -162,7 +162,15 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              context.workbook.close(Excel.CloseBehavior.save);
+          });
+          ```
       parameters:
         - id: closeBehavior
           description: workbook close behavior.
@@ -452,7 +460,19 @@ items:
       return:
         type:
           - excel.Excel.RangeAreas
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const selectedRanges = context.workbook.getSelectedRanges();
+              selectedRanges.format.fill.color = "lightblue";
+
+              await context.sync();
+          })
+          ```
   - uid: excel.Excel.Workbook.isDirty
     summary: >-
       True if no changes have been made to the specified workbook since it was last saved. You can set this property to
@@ -741,7 +761,15 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              context.workbook.save(Excel.SaveBehavior.save);
+          });
+          ```
       parameters:
         - id: saveBehavior
           description: workbook save behavior.

@@ -18,6 +18,7 @@ items:
       - excel.Excel.Interfaces.ShapeLoadOptions.$all
       - excel.Excel.Interfaces.ShapeLoadOptions.altTextDescription
       - excel.Excel.Interfaces.ShapeLoadOptions.altTextTitle
+      - excel.Excel.Interfaces.ShapeLoadOptions.connectionSiteCount
       - excel.Excel.Interfaces.ShapeLoadOptions.fill
       - excel.Excel.Interfaces.ShapeLoadOptions.geometricShape
       - excel.Excel.Interfaces.ShapeLoadOptions.geometricShapeType
@@ -85,6 +86,24 @@ items:
     type: property
     syntax:
       content: 'altTextTitle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeLoadOptions.connectionSiteCount
+    summary: >-
+      Returns the number of connection sites on the specified shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: connectionSiteCount
+    fullName: connectionSiteCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectionSiteCount?: boolean;'
       return:
         type:
           - boolean

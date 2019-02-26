@@ -19,6 +19,7 @@ items:
     children:
       - excel.Excel.Shape.altTextDescription
       - excel.Excel.Shape.altTextTitle
+      - excel.Excel.Shape.connectionSiteCount
       - excel.Excel.Shape.context
       - excel.Excel.Shape.delete
       - excel.Excel.Shape.fill
@@ -98,6 +99,24 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Shape.connectionSiteCount
+    summary: >-
+      Returns the number of connection sites on the specified shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: connectionSiteCount
+    fullName: connectionSiteCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly connectionSiteCount: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Shape.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -131,7 +150,23 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shapes = sheet.shapes;
+
+              // load all the shapes in the collection without loading their properties
+              shapes.load("items/$none");
+              await context.sync();
+
+              shapes.items.forEach((shape) => shape.delete());
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Shape.fill
     summary: >-
       Returns the fill formatting of the shape object. Read-only.
@@ -150,6 +185,22 @@ items:
       return:
         type:
           - excel.Excel.ShapeFill
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
+              shape.left = 300;
+              shape.top = 100;
+              shape.height = 100;
+              shape.width = 100;
+              shape.fill.foreColor = "yellow"
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Shape.geometricShape
     summary: >-
       Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type
@@ -344,7 +395,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Square")
+              shape.incrementLeft(-25);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: increment
           description: >-
@@ -372,7 +434,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Image");
+              shape.incrementRotation(180);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: increment
           description: >-
@@ -398,7 +471,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Pentagon")
+              shape.incrementTop(25);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: increment
           description: >-
@@ -690,6 +774,23 @@ items:
       return:
         type:
           - number
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
+              shape.left = 100;
+              shape.top = 300;
+              shape.height = 150;
+              shape.width = 200;
+              shape.rotation = 45;
+              shape.fill.clear();
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Shape.saveAsPicture
     summary: >-
       Saves the shape as a picture and returns the picture in the form of base64 encoded string, using the DPI sets to
@@ -764,7 +865,19 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Octagon")
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              shape.scaleWidth(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
@@ -844,7 +957,19 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Octagon")
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              shape.scaleWidth(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
@@ -973,7 +1098,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Octagon")
+              shape.setZOrder(Excel.ShapeZOrder.sendBackward);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: value
           description: where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
