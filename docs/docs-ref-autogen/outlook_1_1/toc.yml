@@ -1,5 +1,6 @@
 items:
 - name: API reference
+  href: api-ref-outlook-1-1.md
   items:
   - name: Outlook
     items:

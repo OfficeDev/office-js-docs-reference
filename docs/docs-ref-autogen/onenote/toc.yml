@@ -1,5 +1,6 @@
 items:
 - name: API reference
+  href: api-ref-onenote.md
   items:
   - name: OneNote
     items:

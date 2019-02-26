@@ -1,5 +1,6 @@
 items:
 - name: API reference
+  href: api-ref-visio.md
   items:
   - name: Visio
     items:

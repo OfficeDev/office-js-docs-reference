@@ -1,5 +1,6 @@
 items:
 - name: API reference
+  href: api-ref-excel-1-7.md
   items:
   - name: Excel
     items:
