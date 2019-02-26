@@ -363,6 +363,29 @@ items:
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are
           no matches, this function will return a null object.
+
+          #### Examples
+
+
+          ```typescript
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const foundRanges = sheet.findAllOrNullObject("Complete", {
+                  completeMatch: true,
+                  matchCase: false
+              });
+
+              await context.sync();
+
+              if (foundRanges.isNullObject) {
+                  console.log("No complete projects");
+              } else {
+                  foundRanges.format.fill.color = "green"
+              }
+          });
+
+          ```
       parameters:
         - id: text
           description: String to find.
@@ -692,7 +715,20 @@ items:
       return:
         type:
           - excel.Excel.RangeAreas
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const specifiedRanges = sheet.getRanges("D3:D5, G3:G5");
+              specifiedRanges.format.fill.color = "pink";
+
+              await context.sync();
+          })
+          ```
       parameters:
         - id: address
           description: >-

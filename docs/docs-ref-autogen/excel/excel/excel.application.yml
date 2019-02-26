@@ -357,7 +357,38 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const rowCount = 500;
+              const columnCount = 20;
+
+              const startTime = Date.now();
+              console.log("Starting...");
+
+              if (pauseScreenPainting) {
+                  context.application.suspendScreenUpdatingUntilNextSync();
+              }
+
+              for (let i = 0; i < rowCount; i++) {
+                  for (let j = 0; j < columnCount; j++) {
+                      let cell = sheet.getCell(i, j);
+                      cell.values = [[i * j * Math.random()]];
+                      if (untrack) {
+                          cell.untrack();
+                      }
+                  }
+              }
+
+              await context.sync();
+
+              console.log(`Ending. Adding ${rowCount * columnCount} cells took ${Date.now() - startTime} milliseconds`);
+          });
+          ```
   - uid: excel.Excel.Application.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

@@ -52,6 +52,7 @@ items:
       - word.Word.Table.load
       - word.Word.Table.load_1
       - word.Word.Table.load_2
+      - word.Word.Table.mergeCells
       - word.Word.Table.nestingLevel
       - word.Word.Table.parentBody
       - word.Word.Table.parentContentControl
@@ -929,6 +930,42 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
+  - uid: word.Word.Table.mergeCells
+    summary: >-
+      Merges the cells bounded inclusively by a first and last cell.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: 'mergeCells(topRow, firstCell, bottomRow, lastCell)'
+    fullName: 'mergeCells(topRow, firstCell, bottomRow, lastCell)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'mergeCells(topRow: number, firstCell: number, bottomRow: number, lastCell: number): Word.TableCell;'
+      return:
+        type:
+          - word.Word.TableCell
+        description: ''
+      parameters:
+        - id: topRow
+          description: Required. The row of the first cell
+          type:
+            - number
+        - id: firstCell
+          description: Required. The index of the first cell in its row
+          type:
+            - number
+        - id: bottomRow
+          description: Required. The row of the last cell
+          type:
+            - number
+        - id: lastCell
+          description: Required. The index of the last cell in its row
+          type:
+            - number
   - uid: word.Word.Table.nestingLevel
     summary: |-
       Gets the nesting level of the table. Top-level tables have level 1. Read-only.

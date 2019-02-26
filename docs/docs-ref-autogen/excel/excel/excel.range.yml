@@ -423,7 +423,22 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.getRange("F2").values = [["Copied Formula"]];
+              sheet.getRange("F2").format.autofitColumns();
+
+              // copy a range preserving the formulas
+              // note: non-formula values are copied over as is
+              sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: sourceRange
           description: >-
@@ -578,7 +593,31 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: The Range which matched the search criteria.
+        description: |-
+          The Range which matched the search criteria.
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const table = sheet.tables.getItem("ExpensesTable");
+              const searchRange = table.getRange();
+
+              // NOTE: If no match is found, an ItemNotFound error
+              // is thrown when Range.find is evaluated.
+              const foundRange = searchRange.find($("#searchText").text(), {
+                  completeMatch: completeMatch,
+                  matchCase: matchCase,
+                  searchDirection: searchDirection
+              });
+              
+              foundRange.load("address");
+              await context.sync();
+
+
+              console.log(foundRange.address);
+          });
+          ```
       parameters:
         - id: text
           description: String to find.
@@ -608,7 +647,31 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: The Range which matched the search criteria.
+        description: |-
+          The Range which matched the search criteria.
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const table = sheet.tables.getItem("ExpensesTable");
+              const searchRange = table.getRange();
+              const foundRange = searchRange.findOrNullObject($("#searchText").text(), {
+                  completeMatch: completeMatch,
+                  matchCase: matchCase,
+                  searchDirection: searchDirection
+              });
+              
+              foundRange.load("address");
+              await context.sync();
+
+              if (foundRange.isNullObject) {
+                  console.log("Text not found");
+              } else {
+                  console.log(foundRange.address);
+              }
+          });
+          ```
       parameters:
         - id: text
           description: String to find.
@@ -1494,7 +1557,24 @@ items:
       return:
         type:
           - excel.Excel.RangeAreas
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const usedRange = sheet.getUsedRange();
+
+              // Find the ranges with either text or logical (boolean)
+              // values
+              const formulaRanges = usedRange.getSpecialCells("Constants", "LogicalText");
+              formulaRanges.format.fill.color = "orange";
+
+              return context.sync();
+          });
+          ```
       parameters:
         - id: cellType
           description: The type of cells to include.
@@ -2321,7 +2401,23 @@ items:
       return:
         type:
           - excel.Excel.RemoveDuplicatesResult
-        description: The resulting object that contains the number of rows removed and the number of remaining unique rows.
+        description: |-
+          The resulting object that contains the number of rows removed and the number of remaining unique rows.
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:D11");
+
+              const deleteResult = range.removeDuplicates([0],true);    
+              deleteResult.load();    
+              await context.sync();
+
+              console.log(deleteResult.removed + " entries with duplicate names removed.");
+              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
+          });
+          ```
       parameters:
         - id: columns
           description: >-

@@ -21,42 +21,61 @@ call ..\node_modules\.bin\api-extractor run
 
 cd ..\api-extractor-inputs-excel
 call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-excel-release\Excel_1_8
+cd ..\api-extractor-inputs-excel-release\excel_1_8
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_7
+cd ..\excel_1_7
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_6
+cd ..\excel_1_6
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_5
+cd ..\excel_1_5
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_4
+cd ..\excel_1_4
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_3
+cd ..\excel_1_3
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_2
+cd ..\excel_1_2
 call ..\..\node_modules\.bin\api-extractor run
-cd ..\Excel_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
-
-cd ..\api-extractor-inputs-word
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-word-release\Word_1_3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Word_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Word_1_1
+cd ..\excel_1_1
 call ..\..\node_modules\.bin\api-extractor run
 cd ..
 
 cd ..\api-extractor-inputs-onenote
 call ..\node_modules\.bin\api-extractor run
 
-cd ..\api-extractor-inputs-visio
+cd ..\api-extractor-inputs-outlook
 call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-outlook-release\outlook_1_7
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\outlook_1_6
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\outlook_1_5
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\outlook_1_4
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\outlook_1_3
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\outlook_1_2
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\outlook_1_1
+call ..\..\node_modules\.bin\api-extractor run
+cd ..
 
 cd ..\api-extractor-inputs-powerpoint
 call ..\node_modules\.bin\api-extractor run
+
+cd ..\api-extractor-inputs-visio
+call ..\node_modules\.bin\api-extractor run
+
+cd ..\api-extractor-inputs-word
+call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-word-release\word_1_3
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\word_1_2
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\word_1_1
+call ..\..\node_modules\.bin\api-extractor run
+cd ..
+
 
 cd ..\api-extractor-inputs-custom-functions-runtime
 call ..\node_modules\.bin\api-extractor run
@@ -64,23 +83,6 @@ call ..\node_modules\.bin\api-extractor run
 cd ..\api-extractor-inputs-office-runtime
 call ..\node_modules\.bin\api-extractor run
 
-cd ..\api-extractor-inputs-outlook
-call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-outlook-release\Outlook_1_7
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Outlook_1_6
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Outlook_1_5
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Outlook_1_4
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Outlook_1_3
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Outlook_1_2
-call ..\..\node_modules\.bin\api-extractor run
-cd ..\Outlook_1_1
-call ..\..\node_modules\.bin\api-extractor run
-cd ..
 cd ..
 
 pushd scripts

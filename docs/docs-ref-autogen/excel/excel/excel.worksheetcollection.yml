@@ -101,7 +101,33 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<string[]>'
-        description: An array where each item represents the Id of the new inserted worksheet.
+        description: |-
+          An array where each item represents the Id of the new inserted worksheet.
+          #### Examples
+
+          ```javascript
+          const myFile = <HTMLInputElement>document.getElementById("file");
+          const reader = new FileReader();
+
+          reader.onload = (event) => {
+              Excel.run((context) => {
+                  // strip off the metadata before the base64-encoded string
+                  const startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
+                  const workbookContents = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+
+                  const sheets = context.workbook.worksheets;
+                  sheets.addFromBase64(
+                      workbookContents,
+                      null, // get all the worksheets 
+                      Excel.WorksheetPositionType.end // insert them after the current workbook's worksheets
+                      );
+                  return context.sync();
+              });
+          };
+
+          // read in the file as a data URL so we can parse the base64-encoded string
+          reader.readAsDataURL(myFile.files[0]);
+          ```
       parameters:
         - id: base64File
           description: Required. Base64 string representing the source workbook.

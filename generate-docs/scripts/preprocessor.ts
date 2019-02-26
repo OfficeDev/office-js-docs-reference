@@ -101,7 +101,7 @@ tryCatch(async () => {
 
     console.log("\ncreate file: excel_1_8.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-excel-release/Excel_1_8/excel_1_8.d.ts',
+        '../api-extractor-inputs-excel-release/excel_1_8/excel_1_8.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true)
     );
 
@@ -132,7 +132,13 @@ tryCatch(async () => {
     console.log("create file: word.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+    );
+
+    console.log("create file: word_1_3.d.ts");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other", true)
     );
 
     // ----
