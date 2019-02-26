@@ -136,6 +136,15 @@
       },
       {
         "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "group": "outlook-js-preview",
@@ -150,6 +159,15 @@
         ],
         "group": "outlook-js-1.1",
         "src": "docs-ref-autogen/outlook_1_1",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen/office",
         "dest": "api"
       },
       {
@@ -194,6 +212,14 @@
         "group": "outlook-js-1.2",
         "src": "docs-ref-autogen",
         "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
       },
 
       {
@@ -330,7 +356,7 @@
         "files": [
           "toc.yml"
         ],
-        "group": "outlook-js-1.5",
+        "group": "outlook-js-1.6",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
