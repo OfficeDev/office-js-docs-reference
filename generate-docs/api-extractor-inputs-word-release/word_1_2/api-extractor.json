@@ -18,6 +18,6 @@
   },
   "apiJsonFile": {
     "enabled": true,
-    "outputFolder": "../../versioned-json/word_1_2"
+    "outputFolder": "../../json/word_1_2"
   }
 }

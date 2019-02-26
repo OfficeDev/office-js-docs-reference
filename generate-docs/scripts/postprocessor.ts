@@ -76,7 +76,7 @@ tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
 
     // fix all the individual TOC files
-    const commonTocPath = path.resolve("../versioned-yaml/office/toc.yml");
+    const commonTocPath = path.resolve("../yaml/office/toc.yml");
     const commonToc = fixCommonToc(commonTocPath);
     const hostVersionMap = [{host: "excel", versions: 9},
                             {host: "onenote", versions: 1},
@@ -86,13 +86,13 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        fixToc(path.resolve(`../versioned-yaml/${category.host}/toc.yml`), commonToc);
+        fixToc(path.resolve(`../yaml/${category.host}/toc.yml`), commonToc);
         for (let i = 1; i < category.versions; i++) {
-            fixToc(path.resolve(`../versioned-yaml/${category.host}_1_${i}/toc.yml`), commonToc);
+            fixToc(path.resolve(`../yaml/${category.host}_1_${i}/toc.yml`), commonToc);
         }
     });
 
-    const docsSource = path.resolve("../versioned-yaml");
+    const docsSource = path.resolve("../yaml");
     const docsDestination = path.resolve("../../docs/docs-ref-autogen");
 
     console.log(`Deleting old docs at: ${docsDestination}`);

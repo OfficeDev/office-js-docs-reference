@@ -18,6 +18,6 @@
   },
   "apiJsonFile": {
     "enabled": true,
-    "outputFolder": "../versioned-json/office"
+    "outputFolder": "../json/office"
   }
 }
