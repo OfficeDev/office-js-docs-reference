@@ -107,6 +107,18 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.centerHorizontally = true;
+              farmSheet.pageLayout.centerVertically = true;
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.PageLayout.centerVertically
     summary: >-
       Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
@@ -126,6 +138,18 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.centerHorizontally = true;
+              farmSheet.pageLayout.centerVertically = true;
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.PageLayout.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -466,6 +490,17 @@ items:
       return:
         type:
           - Excel.PageOrientation | "Portrait" | "Landscape"
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.PageLayout.paperSize
     summary: >-
       Gets or sets the worksheet's paper size of the page.
@@ -673,7 +708,17 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.setPrintArea("A1:D41");
+              await context.sync();
+          });
+          ```
       parameters:
         - id: printArea
           description: 'The range, or RangeAreas of the content to print.'
@@ -779,7 +824,17 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.setPrintTitleRows("$1:$1");
+              await context.sync();
+          });
+          ```
       parameters:
         - id: printTitleRows
           description: 'The rows to be repeated at the top of each page, range must span the entire row to be valid.'

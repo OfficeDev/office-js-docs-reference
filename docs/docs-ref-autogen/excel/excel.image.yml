@@ -58,6 +58,21 @@ items:
       return:
         type:
           - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const image = sheet.shapes.getItem("Image").image;
+              image.load("format");
+              await context.sync();
+
+              console.log("The image's format is: " + image.format);
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Image.id
     summary: >-
       Represents the shape identifier for the image object. Read-only.

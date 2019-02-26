@@ -42,7 +42,17 @@ items:
       return:
         type:
           - excel.Excel.PageBreak
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.horizontalPageBreaks.add("A21:E21");
+              await context.sync();
+          });
+          ```
       parameters:
         - id: pageBreakRange
           description: The range immediately after the page break to be added.
