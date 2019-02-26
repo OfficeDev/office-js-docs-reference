@@ -42,40 +42,36 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'addGeometricShape(geometricShapeType, left, top, width, height)'
-    fullName: 'addGeometricShape(geometricShapeType, left, top, width, height)'
+    name: addGeometricShape(geometricShapeType)
+    fullName: addGeometricShape(geometricShapeType)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        addGeometricShape(geometricShapeType: Excel.GeometricShapeType, left: number, top: number, width: number,
-        height: number): Excel.Shape;
+      content: 'addGeometricShape(geometricShapeType: Excel.GeometricShapeType): Excel.Shape;'
       return:
         type:
           - excel.Excel.Shape
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+              shape.left = 5;
+              shape.top = 5;
+              shape.height = 175;
+              shape.width = 200;
+              await context.sync();
+          });
+          ```
       parameters:
         - id: geometricShapeType
           description: Represents the geometric type of the shape. See Excel.GeometricShapeType for details.
           type:
             - excel.Excel.GeometricShapeType
-        - id: left
-          description: 'The distance, in points, from the left side of the shape to the left side of the worksheet.'
-          type:
-            - number
-        - id: top
-          description: 'The distance, in points, from the top edge of the shape to the top of the worksheet.'
-          type:
-            - number
-        - id: width
-          description: 'The width, in points, of the shape.'
-          type:
-            - number
-        - id: height
-          description: 'The height, in points, of the shape.'
-          type:
-            - number
   - uid: excel.Excel.ShapeCollection.addGeometricShape_1
     summary: >-
       Adds a geometric shape to worksheet. Returns a Shape object that represents the new shape.
@@ -84,8 +80,8 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'addGeometricShape(geometricShapeTypeString, left, top, width, height)'
-    fullName: 'addGeometricShape(geometricShapeTypeString, left, top, width, height)'
+    name: addGeometricShape(geometricShapeTypeString)
+    fullName: addGeometricShape(geometricShapeTypeString)
     langs:
       - typeScript
     type: method
@@ -121,8 +117,7 @@ items:
         "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
         "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
         "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
-        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus", left: number, top: number, width: number, height: number):
-        Excel.Shape;
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"): Excel.Shape;
       return:
         type:
           - excel.Excel.Shape
@@ -164,22 +159,6 @@ items:
               "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
               "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
               "ChartStar" | "ChartPlus"
-        - id: left
-          description: 'The distance, in points, from the left side of the shape to the left side of the worksheet.'
-          type:
-            - number
-        - id: top
-          description: 'The distance, in points, from the top edge of the shape to the top of the worksheet.'
-          type:
-            - number
-        - id: width
-          description: 'The width, in points, of the shape.'
-          type:
-            - number
-        - id: height
-          description: 'The height, in points, of the shape.'
-          type:
-            - number
   - uid: excel.Excel.ShapeCollection.addGroup
     summary: >-
       Group a subset of shapes in a worksheet. Returns a Shape object that represents the new group of shapes.
@@ -223,7 +202,28 @@ items:
       return:
         type:
           - excel.Excel.Shape
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          const myFile = <HTMLInputElement>document.getElementById("selectedFile");
+          const reader = new FileReader();
+
+          reader.onload = (event) => {
+              Excel.run((context) => {
+                  const startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
+                  const mybase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+                  const sheet = context.workbook.worksheets.getItem("Shapes");
+                  const image = sheet.shapes.addImage(mybase64);
+                  image.name = "Image";
+                  return context.sync();
+              });
+          };
+
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
       parameters:
         - id: base64ImageString
           description: A base64 encoded image in JPEG or PNG formats.

@@ -36,6 +36,7 @@ items:
       - excel.Excel.Range.delete_1
       - excel.Excel.Range.find
       - excel.Excel.Range.findOrNullObject
+      - excel.Excel.Range.flashFill
       - excel.Excel.Range.format
       - excel.Excel.Range.formulas
       - excel.Excel.Range.formulasLocal
@@ -143,6 +144,14 @@ items:
         type:
           - string
   - uid: excel.Excel.Range.autoFill
+    summary: >-
+      Fills range from the current range to the destination range. The destination range must extend the source either
+      horizontally or vertically. Discontiguous ranges are not supported.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -156,14 +165,24 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: ''
+          description: The destination range to autofill.
           type:
             - Range | string
         - id: autoFillType
-          description: ''
+          description: >-
+            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
+            current range. Default is "FillDefault".
           type:
             - excel.Excel.AutoFillType
   - uid: excel.Excel.Range.autoFill_1
+    summary: >-
+      Fills range from the current range to the destination range. The destination range must extend the source either
+      horizontally or vertically. Discontiguous ranges are not supported.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
     name: 'autoFill(destinationRange, autoFillTypeString)'
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     langs:
@@ -180,11 +199,13 @@ items:
         description: ''
       parameters:
         - id: destinationRange
-          description: ''
+          description: The destination range to autofill.
           type:
             - Range | string
         - id: autoFillTypeString
-          description: ''
+          description: >-
+            The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
+            current range. Default is "FillDefault".
           type:
             - >-
               "FillDefault" | "FillCopy" | "FillSeries" | "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" |
@@ -423,7 +444,22 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              sheet.getRange("F2").values = [["Copied Formula"]];
+              sheet.getRange("F2").format.autofitColumns();
+
+              // copy a range preserving the formulas
+              // note: non-formula values are copied over as is
+              sheet.getRange("G2").copyFrom("A1:E1", Excel.RangeCopyType.formulas);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: sourceRange
           description: >-
@@ -578,7 +614,31 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: The Range which matched the search criteria.
+        description: |-
+          The Range which matched the search criteria.
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const table = sheet.tables.getItem("ExpensesTable");
+              const searchRange = table.getRange();
+
+              // NOTE: If no match is found, an ItemNotFound error
+              // is thrown when Range.find is evaluated.
+              const foundRange = searchRange.find($("#searchText").text(), {
+                  completeMatch: completeMatch,
+                  matchCase: matchCase,
+                  searchDirection: searchDirection
+              });
+              
+              foundRange.load("address");
+              await context.sync();
+
+
+              console.log(foundRange.address);
+          });
+          ```
       parameters:
         - id: text
           description: String to find.
@@ -608,7 +668,31 @@ items:
       return:
         type:
           - excel.Excel.Range
-        description: The Range which matched the search criteria.
+        description: |-
+          The Range which matched the search criteria.
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const table = sheet.tables.getItem("ExpensesTable");
+              const searchRange = table.getRange();
+              const foundRange = searchRange.findOrNullObject($("#searchText").text(), {
+                  completeMatch: completeMatch,
+                  matchCase: matchCase,
+                  searchDirection: searchDirection
+              });
+              
+              foundRange.load("address");
+              await context.sync();
+
+              if (foundRange.isNullObject) {
+                  console.log("Text not found");
+              } else {
+                  console.log(foundRange.address);
+              }
+          });
+          ```
       parameters:
         - id: text
           description: String to find.
@@ -618,6 +702,26 @@ items:
           description: Additional Criteria.
           type:
             - excel.Excel.SearchCriteria
+  - uid: excel.Excel.Range.flashFill
+    summary: >-
+      Does FlashFill to current range. Flash Fill will automatically fills data when it senses a pattern, so the range
+      must be single column range and have data around in order to find pattern.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: flashFill()
+    fullName: flashFill()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'flashFill(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.Range.format
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
@@ -1494,7 +1598,24 @@ items:
       return:
         type:
           - excel.Excel.RangeAreas
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const usedRange = sheet.getUsedRange();
+
+              // Find the ranges with either text or logical (boolean)
+              // values
+              const formulaRanges = usedRange.getSpecialCells("Constants", "LogicalText");
+              formulaRanges.format.fill.color = "orange";
+
+              return context.sync();
+          });
+          ```
       parameters:
         - id: cellType
           description: The type of cells to include.
@@ -1523,11 +1644,10 @@ items:
     type: method
     syntax:
       content: >-
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" | "Constants" |
-        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
-        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
-        "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
-        "NumbersText" | "Text"): Excel.RangeAreas;
+        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" |
+        "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
+        "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
       return:
         type:
           - excel.Excel.RangeAreas
@@ -1537,8 +1657,8 @@ items:
           description: The type of cells to include.
           type:
             - >-
-              "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" | "Constants" | "Formulas" |
-              "SameConditionalFormat" | "SameDataValidation" | "Visible"
+              "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+              "SameDataValidation" | "Visible"
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
@@ -1599,9 +1719,9 @@ items:
     type: method
     syntax:
       content: >-
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" |
-        "Constants" | "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" |
-        "Errors" | "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
+        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+        "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
+        "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
         "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
         "NumbersText" | "Text"): Excel.RangeAreas;
       return:
@@ -1613,8 +1733,8 @@ items:
           description: The type of cells to include.
           type:
             - >-
-              "ConditionalFormats" | "DataValidations" | "Blanks" | "Comments" | "Constants" | "Formulas" |
-              "SameConditionalFormat" | "SameDataValidation" | "Visible"
+              "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" | "SameConditionalFormat" |
+              "SameDataValidation" | "Visible"
         - id: cellValueType
           description: >-
             If cellType is either Constants or Formulas, this argument is used to determine which types of cells to
@@ -2321,7 +2441,23 @@ items:
       return:
         type:
           - excel.Excel.RemoveDuplicatesResult
-        description: The resulting object that contains the number of rows removed and the number of remaining unique rows.
+        description: |-
+          The resulting object that contains the number of rows removed and the number of remaining unique rows.
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:D11");
+
+              const deleteResult = range.removeDuplicates([0],true);    
+              deleteResult.load();    
+              await context.sync();
+
+              console.log(deleteResult.removed + " entries with duplicate names removed.");
+              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
+          });
+          ```
       parameters:
         - id: columns
           description: >-

@@ -11,6 +11,7 @@ items:
     children:
       - excel.Excel.Interfaces.ShapeData.altTextDescription
       - excel.Excel.Interfaces.ShapeData.altTextTitle
+      - excel.Excel.Interfaces.ShapeData.connectionSiteCount
       - excel.Excel.Interfaces.ShapeData.fill
       - excel.Excel.Interfaces.ShapeData.geometricShapeType
       - excel.Excel.Interfaces.ShapeData.height
@@ -63,6 +64,24 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.ShapeData.connectionSiteCount
+    summary: >-
+      Returns the number of connection sites on the specified shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: connectionSiteCount
+    fullName: connectionSiteCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectionSiteCount?: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Interfaces.ShapeData.fill
     summary: >-
       Returns the fill formatting of the shape object. Read-only.
