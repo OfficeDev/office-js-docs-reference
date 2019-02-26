@@ -14,9 +14,9 @@ Once you've determined the maximum requirement set that your add-in will support
 
 To view documentation for APIs available in a specific requirement set or earlier, select the Office host and requirement set from the list that appears above the table of contents and filter box on the left side of the page.
 
-![Office JavaScript API reference documentation with product Excel JavaScript API and version 1.4 selected in the list above the table of contents](overview/images/moniker-selector-2.png)
+![Office JavaScript API reference documentation with product Excel JavaScript API and version 1.4 selected in the list above the table of contents](api-ref-moniker-selector-2.png)
 
 For example, if `Excel JavaScript API 1.4` is selected (as shown in the following screenshot), the **API reference** section of the documentation will contain only information about Excel JavaScript APIs that are available in that requirement set or earlier, as well as information about the Common APIs (which you can use in any Office add-in).
 
-![Office JavaScript API reference documentation with Excel JavaScript API 1.4 selected above the table of contents](overview/images/moniker-selector-1.png)
+![Office JavaScript API reference documentation with Excel JavaScript API 1.4 selected above the table of contents](api-ref-moniker-selector-1.png)
 
