@@ -14727,6 +14727,23 @@
                 },
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "EnhancedLocationsChanged",
+                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "EnhancedLocationsChanged"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "EnhancedLocationsChanged",
+                  "initializerTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "ItemChanged",
                   "docComment": "/**\n * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.\n *\n * [Api set: Mailbox 1.5]\n */\n",
                   "excerptTokens": [
