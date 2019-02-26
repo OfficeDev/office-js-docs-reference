@@ -13,7 +13,6 @@ items:
     package: excel
     children:
       - excel.Excel.SpecialCellType.blanks
-      - excel.Excel.SpecialCellType.comments
       - excel.Excel.SpecialCellType.conditionalFormats
       - excel.Excel.SpecialCellType.constants
       - excel.Excel.SpecialCellType.dataValidations
@@ -30,15 +29,6 @@ items:
       - typeScript
     type: field
     numericValue: '"Blanks"'
-  - uid: excel.Excel.SpecialCellType.comments
-    summary: Cells containing comments.
-    isPreview: true
-    name: comments
-    fullName: comments
-    langs:
-      - typeScript
-    type: field
-    numericValue: '"Comments"'
   - uid: excel.Excel.SpecialCellType.conditionalFormats
     summary: All cells with conditional formats
     isPreview: true

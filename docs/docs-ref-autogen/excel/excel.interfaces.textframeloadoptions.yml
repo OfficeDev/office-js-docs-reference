@@ -205,6 +205,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.textRange
+    summary: >-
+      Represents the text range in the text frame.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: textRange
     fullName: textRange
