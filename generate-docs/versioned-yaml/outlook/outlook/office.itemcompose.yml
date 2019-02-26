@@ -68,8 +68,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: CommonAPI.AsyncContextOptions & {
-        isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions & {
+        isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -93,7 +93,7 @@ items:
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - 'CommonAPI.AsyncContextOptions & { isInline: boolean }'
+            - 'Office.AsyncContextOptions & { isInline: boolean }'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -101,7 +101,7 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.addFileAttachmentAsync_1
     summary: >-
       Adds a file to a message or appointment as an attachment.
@@ -133,7 +133,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -158,7 +158,7 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async
     summary: >-
       Adds a file to a message or appointment as an attachment.
@@ -191,7 +191,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, options?:
-        CommonAPI.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: CommonAPI.AsyncResult<string>)
+        Office.AsyncContextOptions & { isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>)
         => void): void;
       return:
         type:
@@ -214,7 +214,7 @@ items:
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body and should not be displayed in the attachment list.
           type:
-            - 'CommonAPI.AsyncContextOptions & { isInline: boolean }'
+            - 'Office.AsyncContextOptions & { isInline: boolean }'
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -222,7 +222,7 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.addFileAttachmentFromBase64Async_1
     summary: >-
       Adds a file to a message or appointment as an attachment.
@@ -255,7 +255,7 @@ items:
     syntax:
       content: >-
         addFileAttachmentFromBase64Async(base64File: string, attachmentName: string, callback?: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -278,7 +278,7 @@ items:
             asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -313,8 +313,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: CommonAPI.AsyncContextOptions, callback?:
-        (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -335,7 +335,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -343,7 +343,7 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.addItemAttachmentAsync_1
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -379,7 +379,7 @@ items:
     syntax:
       content: >-
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -402,7 +402,7 @@ items:
             asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
             object that provides a description of the error.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.close
     summary: >-
       Closes the current item that is being composed
@@ -454,8 +454,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAttachmentsAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<AttachmentDetails[]>) => void): void;
+        getAttachmentsAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<AttachmentDetails[]>) => void): void;
       return:
         type:
           - void
@@ -466,14 +466,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and
             error code with the reason for the failure.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<AttachmentDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
   - uid: outlook.Office.ItemCompose.getAttachmentsAsync_1
     summary: |-
       Gets the item's attachments as an array.
@@ -491,7 +491,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAttachmentsAsync(callback?: (asyncResult: CommonAPI.AsyncResult<AttachmentDetails[]>) => void): void;'
+      content: 'getAttachmentsAsync(callback?: (asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void): void;'
       return:
         type:
           - void
@@ -503,7 +503,7 @@ items:
             parameter of type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and
             error code with the reason for the failure.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<AttachmentDetails[]>) => void'
+            - '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
   - uid: outlook.Office.ItemCompose.getInitializationContextAsync
     summary: >-
       Gets initialization data passed when the add-in is activated by an actionable message.
@@ -531,8 +531,8 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -543,7 +543,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -552,7 +552,7 @@ items:
             contain an Error object with its code property set to 9020 and its name property set to
             GenericResponseError.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.getInitializationContextAsync_1
     summary: >-
       Gets initialization data passed when the add-in is activated by an actionable message.
@@ -579,7 +579,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -593,7 +593,7 @@ items:
             contain an Error object with its code property set to 9020 and its name property set to
             GenericResponseError.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -620,8 +620,8 @@ items:
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback:
-        (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback:
+        (asyncResult: Office.AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -632,19 +632,19 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - CommonAPI.CoercionType
+            - Office.CoercionType
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<any>) => void'
+            - '(asyncResult: Office.AsyncResult<any>) => void'
   - uid: outlook.Office.ItemCompose.getSelectedDataAsync_1
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -671,7 +671,7 @@ items:
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<any>)
+        getSelectedDataAsync(coercionType: Office.CoercionType, callback: (asyncResult: Office.AsyncResult<any>)
         => void): void;
       return:
         type:
@@ -683,13 +683,13 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - CommonAPI.CoercionType
+            - Office.CoercionType
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<any>) => void'
+            - '(asyncResult: Office.AsyncResult<any>) => void'
   - uid: outlook.Office.ItemCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -716,8 +716,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -732,14 +732,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.ItemCompose.removeAttachmentAsync_1
     summary: >-
       Removes an attachment from a message or appointment.
@@ -766,7 +766,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void):
+        removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void):
         void;
       return:
         type:
@@ -783,7 +783,7 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.ItemCompose.saveAsync
     summary: >-
       Asynchronously saves an item.
@@ -829,7 +829,7 @@ items:
     type: method
     syntax:
       content: >-
-        saveAsync(options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<string>) =>
+        saveAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
         void): void;
       return:
         type:
@@ -841,14 +841,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an
             error code with the reason for the failure.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.saveAsync_1
     summary: >-
       Asynchronously saves an item.
@@ -893,7 +893,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'saveAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -905,7 +905,7 @@ items:
             of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will contain an
             error code with the reason for the failure.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemCompose.setSelectedDataAsync
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
@@ -930,8 +930,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options: CommonAPI.AsyncContextOptions & CoercionTypeOptions, callback:
-        (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -953,13 +953,13 @@ items:
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
-            - CommonAPI.AsyncContextOptions & CoercionTypeOptions
+            - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.ItemCompose.setSelectedDataAsync_1
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
@@ -983,7 +983,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -1000,7 +1000,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.ItemCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.

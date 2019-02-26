@@ -316,10 +316,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'mailbox: Outlook.Mailbox;'
+      content: 'mailbox: Office.Mailbox;'
       return:
         type:
-          - Outlook.Mailbox
+          - Office.Mailbox
   - uid: office.Office.Context.officeTheme
     summary: Provides access to the properties for Office theme colors.
     name: officeTheme
@@ -393,10 +393,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'roamingSettings: Outlook.RoamingSettings;'
+      content: 'roamingSettings: Office.RoamingSettings;'
       return:
         type:
-          - Outlook.RoamingSettings
+          - Office.RoamingSettings
   - uid: office.Office.Context.touchEnabled
     summary: >-
       Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch

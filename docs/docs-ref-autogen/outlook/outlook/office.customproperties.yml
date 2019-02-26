@@ -109,7 +109,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void, asyncContext?: any): void;'
+      content: 'saveAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void, asyncContext?: any): void;'
       return:
         type:
           - void
@@ -120,7 +120,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
         - id: asyncContext
           description: |-
             Optional. Any state data that is passed to the callback method.

@@ -101,27 +101,23 @@ tryCatch(async () => {
         .filter(filename => filename !== "overview")
         .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
-    // console.log(`Namespace pass on Outlook docs`);
-    // // replace Outlook/CommonAPI namespace references with Office
-    // fsx.readdirSync(docsSource)
-    //     .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
-    //     .forEach(filename => {
-    //         let subfolder = docsSource + '/' + filename;
-    //         fsx.readdirSync(subfolder)
-    //             .forEach(subfilename => {
-    //                 fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
-    //             });
-    //     });
-    // console.log(`Namespace pass on Office docs`);
-    // fsx.readdirSync(docsSource)
-    //     .filter(filename => filename.indexOf("office") >= 0 && filename.indexOf(".yml") < 0)
-    //     .forEach(filename => {
-    //         let subfolder = docsSource + '/' + filename;
-    //         fsx.readdirSync(subfolder).filter(filename => filename.indexOf("context") >= 0)
-    //             .forEach(subfilename => {
-    //                 fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
-    //             });
-    //     });
+    console.log(`Namespace pass on Outlook docs`);
+    // replace Outlook/CommonAPI namespace references with Office
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf("outlook") >= 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename + "/outlook";
+            fsx.readdirSync(subfolder)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+                });
+        });
+    console.log(`Namespace pass on Office docs`);
+    const officeFolder = docsSource + "/office/office";
+    fsx.readdirSync(officeFolder)
+        .forEach(filename => {
+            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+        });
 
     console.log(`Fixing TOCs`);
     fsx.readdirSync(docsSource)

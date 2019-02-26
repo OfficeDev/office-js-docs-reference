@@ -45,7 +45,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options: CommonAPI.AsyncContextOptions, callback: (result: CommonAPI.AsyncResult<EmailAddressDetails>)
+        getAsync(options: Office.AsyncContextOptions, callback: (result: Office.AsyncResult<EmailAddressDetails>)
         => void): void;
       return:
         type:
@@ -57,14 +57,14 @@ items:
             An object literal that contains one or more of the following properties. asyncContext: Developers can
             provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter,
             asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
             value, as an EmailAddressDetails object.
           type:
-            - '(result: CommonAPI.AsyncResult<EmailAddressDetails>) => void'
+            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
   - uid: Outlook.Office.From.getAsync_1
     summary: >-
       Gets the from value of a message.
@@ -104,7 +104,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (result: CommonAPI.AsyncResult<EmailAddressDetails>) => void): void;'
+      content: 'getAsync(callback?: (result: Office.AsyncResult<EmailAddressDetails>) => void): void;'
       return:
         type:
           - void
@@ -116,7 +116,7 @@ items:
             asyncResult, which is an Office.AsyncResult object. The `value` property of the result is message's from
             value, as an EmailAddressDetails object.
           type:
-            - '(result: CommonAPI.AsyncResult<EmailAddressDetails>) => void'
+            - '(result: Office.AsyncResult<EmailAddressDetails>) => void'
   - uid: Outlook.Office.From.getAsync_2
     summary: >-
       Gets the from value of a message.

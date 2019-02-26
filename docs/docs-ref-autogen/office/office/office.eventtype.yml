@@ -43,6 +43,7 @@ items:
       - office.Office.EventType.DialogEventReceived
       - office.Office.EventType.DialogMessageReceived
       - office.Office.EventType.DocumentSelectionChanged
+      - office.Office.EventType.EnhancedLocationsChanged
       - office.Office.EventType.ItemChanged
       - office.Office.EventType.NodeDeleted
       - office.Office.EventType.NodeInserted
@@ -186,6 +187,16 @@ items:
       </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> </td></tr> </table>
     name: DocumentSelectionChanged
     fullName: DocumentSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.EnhancedLocationsChanged
+    summary: |-
+      Triggers when the appointment location is changed in Outlook.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: EnhancedLocationsChanged
+    fullName: EnhancedLocationsChanged
     langs:
       - typeScript
     type: field

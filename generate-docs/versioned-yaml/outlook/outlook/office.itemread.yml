@@ -68,7 +68,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       return:
         type:
@@ -87,7 +87,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.ItemRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
@@ -122,7 +122,7 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) =>
+        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
         void): void;
       return:
         type:
@@ -141,7 +141,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.ItemRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
@@ -274,8 +274,8 @@ items:
     type: method
     syntax:
       content: >-
-        getInitializationContextAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<string>) => void): void;
+        getInitializationContextAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -286,7 +286,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -295,7 +295,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemRead.getInitializationContextAsync_1
     summary: >-
       Gets initialization data passed when the add-in is [activated by an actionable
@@ -319,7 +319,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getInitializationContextAsync(callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getInitializationContextAsync(callback?: (asyncResult: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -333,7 +333,7 @@ items:
             asyncResult object will contain an Error object with its code property set to 9020 and its name property set
             to GenericResponseError.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.ItemRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.

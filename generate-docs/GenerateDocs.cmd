@@ -11,77 +11,77 @@ call npm install
 pushd scripts
 call npm install
 call npm run build
-REM call node preprocessor.js
+call node preprocessor.js
 popd
 
 del package-lock.json
 
-REM cd api-extractor-inputs-office
-REM call ..\node_modules\.bin\api-extractor run
+cd api-extractor-inputs-office
+call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-excel
-REM call ..\node_modules\.bin\api-extractor run
-REM cd ..\api-extractor-inputs-excel-release\Excel_1_8
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_7
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_6
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_5
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_4
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_3
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_2
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Excel_1_1
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..
+cd ..\api-extractor-inputs-excel
+call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-excel-release\Excel_1_8
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_7
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_6
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_5
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_4
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_3
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_2
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Excel_1_1
+call ..\..\node_modules\.bin\api-extractor run
+cd ..
 
-REM cd ..\api-extractor-inputs-word
-REM call ..\node_modules\.bin\api-extractor run
-REM cd ..\api-extractor-inputs-word-release\Word_1_3
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Word_1_2
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Word_1_1
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..
+cd ..\api-extractor-inputs-word
+call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-word-release\Word_1_3
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Word_1_2
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Word_1_1
+call ..\..\node_modules\.bin\api-extractor run
+cd ..
 
-REM cd ..\api-extractor-inputs-onenote
-REM call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-onenote
+call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-visio
-REM call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-visio
+call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-powerpoint
-REM call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-powerpoint
+call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-custom-functions-runtime
-REM call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-custom-functions-runtime
+call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-office-runtime
-REM call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-office-runtime
+call ..\node_modules\.bin\api-extractor run
 
-REM cd ..\api-extractor-inputs-outlook
-REM call ..\node_modules\.bin\api-extractor run
-REM cd ..\api-extractor-inputs-outlook-release\Outlook_1_7
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Outlook_1_6
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Outlook_1_5
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Outlook_1_4
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Outlook_1_3
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Outlook_1_2
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..\Outlook_1_1
-REM call ..\..\node_modules\.bin\api-extractor run
-REM cd ..
-REM cd ..
+cd ..\api-extractor-inputs-outlook
+call ..\node_modules\.bin\api-extractor run
+cd ..\api-extractor-inputs-outlook-release\Outlook_1_7
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Outlook_1_6
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Outlook_1_5
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Outlook_1_4
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Outlook_1_3
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Outlook_1_2
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\Outlook_1_1
+call ..\..\node_modules\.bin\api-extractor run
+cd ..
+cd ..
 
 pushd scripts
 call node midprocessor.js

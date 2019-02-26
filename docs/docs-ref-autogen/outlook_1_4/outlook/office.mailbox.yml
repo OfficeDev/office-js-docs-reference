@@ -466,7 +466,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getCallbackTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -479,7 +479,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
@@ -506,7 +506,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;'
       return:
         type:
           - void
@@ -519,7 +519,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.\|
           type:
@@ -562,7 +562,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getUserIdentityTokenAsync(callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'getUserIdentityTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -575,7 +575,7 @@ items:
             was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional
             information.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
@@ -646,7 +646,7 @@ items:
     type: method
     syntax:
       content: >-
-        makeEwsRequestAsync(data: any, callback: (result: CommonAPI.AsyncResult<string>) => void, userContext?: any):
+        makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void, userContext?: any):
         void;
       return:
         type:
@@ -663,7 +663,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
         - id: userContext
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
@@ -786,7 +786,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'makeEwsRequestAsync(data: any, callback: (result: CommonAPI.AsyncResult<string>) => void): void;'
+      content: 'makeEwsRequestAsync(data: any, callback: (result: Office.AsyncResult<string>) => void): void;'
       return:
         type:
           - void
@@ -802,7 +802,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the XML of the EWS request provided as a
             string. If the result exceeds 1 MB in size, an error message is returned instead.
           type:
-            - '(result: CommonAPI.AsyncResult<string>) => void'
+            - '(result: Office.AsyncResult<string>) => void'
   - uid: Outlook.Office.Mailbox.diagnostics
     summary: >-
       Provides diagnostic information to an Outlook add-in.

@@ -60,7 +60,7 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<Recurrence>) =>
+        getAsync(options?: Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<Recurrence>) =>
         void): void;
       return:
         type:
@@ -72,14 +72,14 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is a
             Recurrence object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<Recurrence>) => void'
+            - '(asyncResult: Office.AsyncResult<Recurrence>) => void'
   - uid: outlook.Office.Recurrence.getAsync_1
     summary: |-
       Returns the current recurrence object of an appointment series.
@@ -136,7 +136,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'getAsync(callback?: (asyncResult: CommonAPI.AsyncResult<Recurrence>) => void): void;'
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<Recurrence>) => void): void;'
       return:
         type:
           - void
@@ -148,7 +148,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object. The `value` property of the result is a
             Recurrence object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<Recurrence>) => void'
+            - '(asyncResult: Office.AsyncResult<Recurrence>) => void'
   - uid: outlook.Office.Recurrence.setAsync
     summary: |-
       Sets the recurrence pattern of an appointment series.
@@ -169,8 +169,8 @@ items:
     type: method
     syntax:
       content: >-
-        setAsync(recurrencePattern: Recurrence, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult:
-        CommonAPI.AsyncResult<void>) => void): void;
+        setAsync(recurrencePattern: Recurrence, options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -185,13 +185,13 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - CommonAPI.AsyncContextOptions
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recurrence.setAsync_1
     summary: |-
       Sets the recurrence pattern of an appointment series.
@@ -251,7 +251,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setAsync(recurrencePattern: Recurrence, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;'
+      content: 'setAsync(recurrencePattern: Recurrence, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -266,7 +266,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(asyncResult: CommonAPI.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
