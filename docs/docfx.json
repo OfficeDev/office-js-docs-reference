@@ -473,6 +473,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "aaatest.md"
+        ],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen/excel_1_1",
+        "dest": "api"
+      },
       
       {
         "files": [
@@ -508,7 +516,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
-
+      {
+        "files": [
+          "aaatest.md"
+        ],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen/excel_1_2",
+        "dest": "api"
+      },
       
       {
         "files": [
