@@ -16,6 +16,7 @@
           "excel_1_6/**",
           "excel_1_7/**",
           "excel_1_8/**",
+          "office/**",
           "onenote/**",
           "outlook/**",
           "outlook_1_1/**",
@@ -79,6 +80,8 @@
           "excel_1_7.yml",
           "excel_1_8/**",
           "excel_1_8.yml",
+          "office/**",
+          "office.yml",
           "onenote/**",
           "onenote.yml",
           "outlook/**",
@@ -118,6 +121,32 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "common-js",
+        "src": "docs-ref-autogen/office",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "office.yml"
+        ],
+        "group": "common-js",
+        "src": "docs-ref-autogen",
+        "dest": "api"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "group": "common-js",
+        "src": "breadcrumb",
+        "dest": "office_js_breadcrumb"
       },
       
       {
@@ -1006,6 +1035,10 @@
       }
     ],
     "groups": {
+      "common-js": {
+        "dest": "common-js",
+        "moniker_range": "common-js"
+      },
       "outlook-js-preview": {
         "dest": "outlook-js-preview",
         "moniker_range": "outlook-js-preview"
@@ -1141,6 +1174,9 @@
         "docs-ref-autogen/custom-functions-runtime/**": [
           "excel",
           "custom functions"
+        ],
+        "docs-ref-autogen/office/**": [
+          "common"
         ],
         "docs-ref-autogen/excel/**": [
           "excel preview"
