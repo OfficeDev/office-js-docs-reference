@@ -5,6 +5,7 @@ The JavaScript API for Office enables you to create web applications that intera
 - [Excel](/javascript/api/excel?view=excel-js-preview)
 - [OneNote](/javascript/api/onenote?view=onenote-js-1.1)
 - [Outlook](/javascript/api/outlook?view=outlook-js-preview)
+- [PowerPoint](/javascript/api/powerpoint?view=powerpoint-js-1.1)
 - [Visio](/javascript/api/visio?view=visio-js-1.1)
 - [Word](/javascript/api/word?view=word-js-preview)
 - [Common API](/javascript/api/office?view=common-js)

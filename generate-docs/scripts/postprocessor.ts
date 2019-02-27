@@ -138,11 +138,12 @@ tryCatch(async () => {
     // create global TOC
     let globalToc = <INewToc>{};
     globalToc.items = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
-    {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
-    {"name": "Excel", "href": "/javascript/api/outlook?view=outlook-js-preview"},
-    {"name": "Excel", "href": "/javascript/api/visio?view=visio-js-1.1"},
-    {"name": "Excel", "href": "/javascript/api/word?view=word-js-preview"},
-    {"name": "Excel", "href": "/javascript/api/office?view=common-js"}] as any;
+                       {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
+                       {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
+                       {"name": "PowerPoint", "href": "/javascript/api/outlook?view=powerpoint-js-1.1"},
+                       {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
+                       {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
+                       {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
 
     console.log(`Copying docs output files to: ${docsDestination}`);
