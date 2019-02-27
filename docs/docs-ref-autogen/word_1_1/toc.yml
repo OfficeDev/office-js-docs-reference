@@ -1,6 +1,6 @@
 items:
 - name: API reference
-  href: api-ref-word-1-1.md
+  href: api-ref.md
   items:
   - name: Word
     items:

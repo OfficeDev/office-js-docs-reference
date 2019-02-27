@@ -1,6 +1,6 @@
 items:
 - name: API reference
-  href: api-ref-excel-preview.md
+  href: api-ref.md
   items:
   - name: Excel
     items:
