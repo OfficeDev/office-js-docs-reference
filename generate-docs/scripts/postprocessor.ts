@@ -133,7 +133,7 @@ tryCatch(async () => {
         });
 
     // removing common TOC
-    fsx.removeSync(commonTocPath);
+    //fsx.removeSync(commonTocPath);
 
     // create global TOC
     let globalToc = <INewToc>{};
