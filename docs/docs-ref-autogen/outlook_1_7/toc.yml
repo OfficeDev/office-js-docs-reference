@@ -3,103 +3,100 @@ items:
     href: /javascript/api/overview/office
     items:
       - name: Outlook
-        uid: ''
+        uid: Outlook
         items:
-          - name: Outlook - Preview
-            uid: Outlook
+          - name: MailboxEnums
             items:
-              - name: MailboxEnums
-                items:
-                  - name: AttachmentType
-                    uid: Outlook.Office.MailboxEnums.AttachmentType
-                  - name: Days
-                    uid: Outlook.Office.MailboxEnums.Days
-                  - name: EntityType
-                    uid: Outlook.Office.MailboxEnums.EntityType
-                  - name: ItemNotificationMessageType
-                    uid: Outlook.Office.MailboxEnums.ItemNotificationMessageType
-                  - name: ItemType
-                    uid: Outlook.Office.MailboxEnums.ItemType
-                  - name: Month
-                    uid: Outlook.Office.MailboxEnums.Month
-                  - name: OWAView
-                    uid: Outlook.Office.MailboxEnums.OWAView
-                  - name: RecipientType
-                    uid: Outlook.Office.MailboxEnums.RecipientType
-                  - name: RecurrenceTimeZone
-                    uid: Outlook.Office.MailboxEnums.RecurrenceTimeZone
-                  - name: RecurrenceType
-                    uid: Outlook.Office.MailboxEnums.RecurrenceType
-                  - name: ResponseType
-                    uid: Outlook.Office.MailboxEnums.ResponseType
-                  - name: RestVersion
-                    uid: Outlook.Office.MailboxEnums.RestVersion
-                  - name: WeekNumber
-                    uid: Outlook.Office.MailboxEnums.WeekNumber
-              - name: AppointmentCompose
-                uid: Outlook.Office.AppointmentCompose
-              - name: AppointmentRead
-                uid: Outlook.Office.AppointmentRead
-              - name: AttachmentDetails
-                uid: Outlook.Office.AttachmentDetails
-              - name: Body
-                uid: Outlook.Office.Body
-              - name: Contact
-                uid: Outlook.Office.Contact
-              - name: CustomProperties
-                uid: Outlook.Office.CustomProperties
-              - name: EmailAddressDetails
-                uid: Outlook.Office.EmailAddressDetails
-              - name: EmailUser
-                uid: Outlook.Office.EmailUser
-              - name: Entities
-                uid: Outlook.Office.Entities
-              - name: From
-                uid: Outlook.Office.From
-              - name: Item
-                uid: Outlook.Office.Item
-              - name: LocalClientTime
-                uid: Outlook.Office.LocalClientTime
-              - name: Location
-                uid: Outlook.Office.Location
-              - name: Mailbox
-                uid: Outlook.Office.Mailbox
-              - name: MeetingSuggestion
-                uid: Outlook.Office.MeetingSuggestion
-              - name: MessageCompose
-                uid: Outlook.Office.MessageCompose
-              - name: MessageRead
-                uid: Outlook.Office.MessageRead
-              - name: NotificationMessageDetails
-                uid: Outlook.Office.NotificationMessageDetails
-              - name: NotificationMessages
-                uid: Outlook.Office.NotificationMessages
-              - name: Organizer
-                uid: Outlook.Office.Organizer
-              - name: PhoneNumber
-                uid: Outlook.Office.PhoneNumber
-              - name: Recipients
-                uid: Outlook.Office.Recipients
-              - name: Recurrence
-                uid: Outlook.Office.Recurrence
-              - name: RecurrenceProperties
-                uid: Outlook.Office.RecurrenceProperties
+              - name: AttachmentType
+                uid: Outlook.Office.MailboxEnums.AttachmentType
+              - name: Days
+                uid: Outlook.Office.MailboxEnums.Days
+              - name: EntityType
+                uid: Outlook.Office.MailboxEnums.EntityType
+              - name: ItemNotificationMessageType
+                uid: Outlook.Office.MailboxEnums.ItemNotificationMessageType
+              - name: ItemType
+                uid: Outlook.Office.MailboxEnums.ItemType
+              - name: Month
+                uid: Outlook.Office.MailboxEnums.Month
+              - name: OWAView
+                uid: Outlook.Office.MailboxEnums.OWAView
+              - name: RecipientType
+                uid: Outlook.Office.MailboxEnums.RecipientType
               - name: RecurrenceTimeZone
-                uid: Outlook.Office.RecurrenceTimeZone
-              - name: RoamingSettings
-                uid: Outlook.Office.RoamingSettings
-              - name: SeriesTime
-                uid: Outlook.Office.SeriesTime
-              - name: SourceProperty
-                uid: Outlook.Office.SourceProperty
-              - name: Subject
-                uid: Outlook.Office.Subject
-              - name: TaskSuggestion
-                uid: Outlook.Office.TaskSuggestion
-              - name: Time
-                uid: Outlook.Office.Time
-              - name: UserProfile
-                uid: Outlook.Office.UserProfile
+                uid: Outlook.Office.MailboxEnums.RecurrenceTimeZone
+              - name: RecurrenceType
+                uid: Outlook.Office.MailboxEnums.RecurrenceType
+              - name: ResponseType
+                uid: Outlook.Office.MailboxEnums.ResponseType
+              - name: RestVersion
+                uid: Outlook.Office.MailboxEnums.RestVersion
+              - name: WeekNumber
+                uid: Outlook.Office.MailboxEnums.WeekNumber
+          - name: AppointmentCompose
+            uid: Outlook.Office.AppointmentCompose
+          - name: AppointmentRead
+            uid: Outlook.Office.AppointmentRead
+          - name: AttachmentDetails
+            uid: Outlook.Office.AttachmentDetails
+          - name: Body
+            uid: Outlook.Office.Body
+          - name: Contact
+            uid: Outlook.Office.Contact
+          - name: CustomProperties
+            uid: Outlook.Office.CustomProperties
+          - name: EmailAddressDetails
+            uid: Outlook.Office.EmailAddressDetails
+          - name: EmailUser
+            uid: Outlook.Office.EmailUser
+          - name: Entities
+            uid: Outlook.Office.Entities
+          - name: From
+            uid: Outlook.Office.From
+          - name: Item
+            uid: Outlook.Office.Item
+          - name: LocalClientTime
+            uid: Outlook.Office.LocalClientTime
+          - name: Location
+            uid: Outlook.Office.Location
+          - name: Mailbox
+            uid: Outlook.Office.Mailbox
+          - name: MeetingSuggestion
+            uid: Outlook.Office.MeetingSuggestion
+          - name: MessageCompose
+            uid: Outlook.Office.MessageCompose
+          - name: MessageRead
+            uid: Outlook.Office.MessageRead
+          - name: NotificationMessageDetails
+            uid: Outlook.Office.NotificationMessageDetails
+          - name: NotificationMessages
+            uid: Outlook.Office.NotificationMessages
+          - name: Organizer
+            uid: Outlook.Office.Organizer
+          - name: PhoneNumber
+            uid: Outlook.Office.PhoneNumber
+          - name: Recipients
+            uid: Outlook.Office.Recipients
+          - name: Recurrence
+            uid: Outlook.Office.Recurrence
+          - name: RecurrenceProperties
+            uid: Outlook.Office.RecurrenceProperties
+          - name: RecurrenceTimeZone
+            uid: Outlook.Office.RecurrenceTimeZone
+          - name: RoamingSettings
+            uid: Outlook.Office.RoamingSettings
+          - name: SeriesTime
+            uid: Outlook.Office.SeriesTime
+          - name: SourceProperty
+            uid: Outlook.Office.SourceProperty
+          - name: Subject
+            uid: Outlook.Office.Subject
+          - name: TaskSuggestion
+            uid: Outlook.Office.TaskSuggestion
+          - name: Time
+            uid: Outlook.Office.Time
+          - name: UserProfile
+            uid: Outlook.Office.UserProfile
       - name: Common API
         uid: office
         items:

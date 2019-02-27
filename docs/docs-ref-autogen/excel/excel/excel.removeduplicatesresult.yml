@@ -177,3 +177,20 @@ items:
       return:
         type:
           - number
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const range = sheet.getRange("B2:D11");
+
+              const deleteResult = range.removeDuplicates([0],true);    
+              deleteResult.load();    
+              await context.sync();
+
+              console.log(deleteResult.removed + " entries with duplicate names removed.");
+              console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
+          });
+          ```

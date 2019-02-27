@@ -355,7 +355,22 @@ items:
       return:
         type:
           - excel.Excel.Shape
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const textbox = shapes.addTextBox("A box with text");
+              textbox.left = 100;
+              textbox.top = 100;
+              textbox.height = 20;
+              textbox.width = 175;
+              textbox.name = "Textbox";
+              await context.sync();
+          });
+          ```
       parameters:
         - id: text
           description: Represents the text that will be shown in the created text box.

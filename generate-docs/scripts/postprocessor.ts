@@ -182,16 +182,10 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
     }];
     newToc.items[0].items = [] as any;
 
-    // create a root for all the Outlook versions
-    let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
-    let outlookRootPushed = false;
-
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
-    let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
-    let excelRootPushed = false;
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
 
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
@@ -240,42 +234,26 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
 
                     // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
-                        if (!outlookRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(outlookRoot);
-                            outlookRootPushed = true;
-                        }
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
                         });
+                        // move MailboxEnums to top
                         let folderIndex: number = 0;
-                            while (folderIndex >= 0) {
-                                folderIndex = membersToMove.items.findIndex(item => {
-                                    return outlookFolders.indexOf(item.name) >= 0;
-                                });
-                                if (folderIndex >= 0) {
-                                    filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
-                                }
+                        while (folderIndex >= 0) {
+                            folderIndex = membersToMove.items.findIndex(item => {
+                                return outlookFolders.indexOf(item.name) >= 0;
+                            });
+                            if (folderIndex >= 0) {
+                                filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
                             }
-                        if (packageName === 'Outlook') { // The version without a suffix is the preview version
-                            outlookRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items": filterToCContent
-                            });
                         }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
-                            outlookRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items": filterToCContent
-                            });
-                        }
+
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": filterToCContent as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        if (!excelRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(excelRoot);
-                            excelRootPushed = true;
-                        }
                         let enumList = membersToMove.items.filter(item => {
                              return excelEnumFilter.indexOf(item.name) >= 0;
                          });
@@ -285,22 +263,11 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
-
-                        if (packageName === 'Excel') { // The version without a suffix is the preview version
-                            excelRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items": primaryList
-                            });
-                        }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
-                            excelRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items": primaryList
-                            });
-                        }
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": primaryList as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
@@ -376,11 +343,6 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
             }
         });
     });
-    // Get the logical order: Preview, 1.6, 1.5, etc.
-    outlookRoot.items.reverse();
-    outlookRoot.items.unshift(outlookRoot.items.pop());
-    // add custom functions packages under excel
-    excelRoot.items.unshift(customFunctionsRoot);
 
     // append the common API toc
     newToc.items[0].items.push(commonToc.items[0].items[0]);
