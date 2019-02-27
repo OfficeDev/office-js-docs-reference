@@ -25,6 +25,7 @@
           "outlook_1_5/**",
           "outlook_1_6/**",
           "outlook_1_7/**",
+          "powerpoint/**",
           "visio/**",
           "word/**",
           "word_1_1/**",
@@ -96,6 +97,8 @@
           "outlook_1_6.yml",
           "outlook_1_7/**",
           "outlook_1_7.yml", 
+          "powerpoint/**",
+          "powerpoint.yml",  
           "visio/**",
           "visio.yml",  
           "word/**",
@@ -762,6 +765,41 @@
         "**/*.md",
         "**/*.yml"
       ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen/powerpoint",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "powerpoint.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
       "group": "visio-js-1.1",
       "src": "docs-ref-autogen/visio",
       "dest": "api"
@@ -1040,6 +1078,10 @@
         "dest": "onenote-js-1.1",
         "moniker_range": "onenote-js-1.1"
       },
+      "powerpoint-js-1.1": {
+        "dest": "powerpoint-js-1.1",
+        "moniker_range": "powerpoint-js-1.1"
+      },
       "visio-js-1.1": {
         "dest": "visio-js-1.1",
         "moniker_range": "visio-js-1.1"
@@ -1154,6 +1196,9 @@
         "docs-ref-autogen/outlook_1_7/**": [
           "outlook 1.7"
         ],
+        "docs-ref-autogen/powerpoint/**": [
+          "powerpoint"
+        ],
         "docs-ref-autogen/visio/**": [
           "visio"
         ],
@@ -1185,6 +1230,7 @@
         "docs-ref-autogen/outlook_1_6/**": "outlook",
         "docs-ref-autogen/outlook_1_7/**": "outlook",
         "docs-ref-autogen/overview/**": "non-product-specific",
+        "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
         "docs-ref-autogen/custom-functions-runtime.yml": "excel",
