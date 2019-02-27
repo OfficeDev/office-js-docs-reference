@@ -7,6 +7,7 @@
           "**/toc.yml"
         ],
         "exclude": [
+          "common/**",
           "excel/**",
           "excel_1_1/**",
           "excel_1_2/**",
@@ -62,6 +63,7 @@
         "src": "docs-ref-autogen",
         "dest": "api",
         "exclude": [
+          "common/**",
           "excel/**",
           "excel.yml",
           "excel_1_1/**",
@@ -123,6 +125,15 @@
         ]
       },
       
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "common-js",
+        "src": "docs-ref-autogen/common",
+        "dest": "api"
+      },
       {
         "files": [
           "**/*.md",
