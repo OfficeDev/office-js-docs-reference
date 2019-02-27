@@ -19,9 +19,7 @@ items:
     package: Outlook
     children:
       - Outlook.Office.ItemRead.displayReplyAllForm
-      - Outlook.Office.ItemRead.displayReplyAllForm_1
       - Outlook.Office.ItemRead.displayReplyForm
-      - Outlook.Office.ItemRead.displayReplyForm_1
       - Outlook.Office.ItemRead.getEntities
       - Outlook.Office.ItemRead.getEntitiesByType
       - Outlook.Office.ItemRead.getFilteredEntitiesByName
@@ -68,8 +66,8 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
-        void;
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -87,53 +85,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemRead.displayReplyAllForm_1
-    summary: >-
-      Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
-      attendees of the selected appointment.
-
-
-      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
-      or 1-column view.
-
-
-      If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
-
-
-      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
-      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
-      in the form UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
-    name: displayReplyAllForm(formData)
-    fullName: displayReplyAllForm(formData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formData
-          description: >-
-            A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function.
-          type:
-            - string | ReplyFormData
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.ItemRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
@@ -168,8 +120,8 @@ items:
     type: method
     syntax:
       content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
-        void;
+        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -187,53 +139,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemRead.displayReplyForm_1
-    summary: >-
-      Displays a reply form that includes only the sender of the selected message or the organizer of the selected
-      appointment.
-
-
-      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
-      or 1-column view.
-
-
-      If any of the string parameters exceed their limits, displayReplyForm throws an exception.
-
-
-      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
-      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
-      in the form UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
-    name: displayReplyForm(formData)
-    fullName: displayReplyForm(formData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'displayReplyForm(formData: string | ReplyFormData): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formData
-          description: >-
-            A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function.
-          type:
-            - string | ReplyFormData
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.ItemRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.

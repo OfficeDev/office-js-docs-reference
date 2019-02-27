@@ -9,6 +9,9 @@ items:
     children:
       - excel.Excel.AggregationFunction
       - excel.Excel.Application
+      - excel.Excel.ArrowHeadLength
+      - excel.Excel.ArrowHeadStyle
+      - excel.Excel.ArrowHeadWidth
       - excel.Excel.AutoFillType
       - excel.Excel.AutoFilter
       - excel.Excel.BasicDataValidation
@@ -37,6 +40,7 @@ items:
       - excel.Excel.CellPropertiesLoadOptions
       - excel.Excel.CellPropertiesProtection
       - excel.Excel.CellValueConditionalFormat
+      - excel.Excel.ChangedEventDetail
       - excel.Excel.Chart
       - excel.Excel.ChartActivatedEventArgs
       - excel.Excel.ChartAddedEventArgs
@@ -719,6 +723,7 @@ items:
       - excel.Excel.RemoveDuplicatesResult
       - excel.Excel.ReplaceCriteria
       - excel.Excel.RequestContext
+      - excel.Excel.RibbonTab
       - excel.Excel.RowColumnPivotHierarchy
       - excel.Excel.RowColumnPivotHierarchyCollection
       - excel.Excel.RowProperties
@@ -1085,6 +1090,12 @@ references:
     name: Excel.AggregationFunction
   - uid: excel.Excel.Application
     name: Excel.Application
+  - uid: excel.Excel.ArrowHeadLength
+    name: Excel.ArrowHeadLength
+  - uid: excel.Excel.ArrowHeadStyle
+    name: Excel.ArrowHeadStyle
+  - uid: excel.Excel.ArrowHeadWidth
+    name: Excel.ArrowHeadWidth
   - uid: excel.Excel.AutoFillType
     name: Excel.AutoFillType
   - uid: excel.Excel.AutoFilter
@@ -1141,6 +1152,8 @@ references:
     name: Excel.CellPropertiesProtection
   - uid: excel.Excel.CellValueConditionalFormat
     name: Excel.CellValueConditionalFormat
+  - uid: excel.Excel.ChangedEventDetail
+    name: Excel.ChangedEventDetail
   - uid: excel.Excel.Chart
     name: Excel.Chart
   - uid: excel.Excel.ChartActivatedEventArgs
@@ -2499,6 +2512,8 @@ references:
     name: Excel.ReplaceCriteria
   - uid: excel.Excel.RequestContext
     name: Excel.RequestContext
+  - uid: excel.Excel.RibbonTab
+    name: Excel.RibbonTab
   - uid: excel.Excel.RowColumnPivotHierarchy
     name: Excel.RowColumnPivotHierarchy
   - uid: excel.Excel.RowColumnPivotHierarchyCollection

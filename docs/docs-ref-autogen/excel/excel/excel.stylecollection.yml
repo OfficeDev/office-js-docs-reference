@@ -170,7 +170,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
+          description: Index value of the style object to be retrieved. Zero-indexed.
           type:
             - number
   - uid: excel.Excel.StyleCollection.items

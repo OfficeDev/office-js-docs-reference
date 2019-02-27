@@ -20,58 +20,9 @@ items:
     package: Outlook
     children:
       - Outlook.Office.Item.loadCustomPropertiesAsync
-      - Outlook.Office.Item.loadCustomPropertiesAsync_1
       - Outlook.Office.Item.body
       - Outlook.Office.Item.itemType
   - uid: Outlook.Office.Item.loadCustomPropertiesAsync
-    summary: >-
-      Asynchronously loads custom properties for this add-in on the selected item.
-
-
-      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
-      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
-      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
-      as secure storage.
-
-
-      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
-      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
-      to the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: 'loadCustomPropertiesAsync(callback, userContext)'
-    fullName: 'loadCustomPropertiesAsync(callback, userContext)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
-        any): void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
-          type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
-        - id: userContext
-          description: >-
-            Optional. Developers can provide any object they wish to access in the callback function. This object can be
-            accessed by the asyncResult.asyncContext property in the callback function.
-          type:
-            - any
-  - uid: Outlook.Office.Item.loadCustomPropertiesAsync_1
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -137,13 +88,15 @@ items:
       }
 
       ```
-    name: loadCustomPropertiesAsync(callback)
-    fullName: loadCustomPropertiesAsync(callback)
+    name: 'loadCustomPropertiesAsync(callback, userContext)'
+    fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
+      content: >-
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       return:
         type:
           - void
@@ -154,7 +107,13 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(asyncResult: Office.AsyncResult<CustomProperties>) => void'
+        - id: userContext
+          description: >-
+            Optional. Developers can provide any object they wish to access in the callback function. This object can be
+            accessed by the asyncResult.asyncContext property in the callback function.
+          type:
+            - any
   - uid: Outlook.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.

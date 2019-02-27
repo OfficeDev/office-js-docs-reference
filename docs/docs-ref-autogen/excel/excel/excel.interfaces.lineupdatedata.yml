@@ -9,7 +9,67 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.LineUpdateData.beginArrowHeadLength
+      - excel.Excel.Interfaces.LineUpdateData.beginArrowHeadStyle
+      - excel.Excel.Interfaces.LineUpdateData.beginArrowHeadWidth
       - excel.Excel.Interfaces.LineUpdateData.connectorType
+      - excel.Excel.Interfaces.LineUpdateData.endArrowHeadLength
+      - excel.Excel.Interfaces.LineUpdateData.endArrowHeadStyle
+      - excel.Excel.Interfaces.LineUpdateData.endArrowHeadWidth
+  - uid: excel.Excel.Interfaces.LineUpdateData.beginArrowHeadLength
+    summary: >-
+      Represents the length of the arrowhead at the beginning of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginArrowHeadLength
+    fullName: beginArrowHeadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowHeadLength?: Excel.ArrowHeadLength | "Short" | "Medium" | "Long";'
+      return:
+        type:
+          - Excel.ArrowHeadLength | "Short" | "Medium" | "Long"
+  - uid: excel.Excel.Interfaces.LineUpdateData.beginArrowHeadStyle
+    summary: >-
+      Represents the style of the arrowhead at the beginning of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginArrowHeadStyle
+    fullName: beginArrowHeadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowHeadStyle?: Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type:
+          - Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+  - uid: excel.Excel.Interfaces.LineUpdateData.beginArrowHeadWidth
+    summary: >-
+      Represents the width of the arrowhead at the beginning of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginArrowHeadWidth
+    fullName: beginArrowHeadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowHeadWidth?: Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type:
+          - Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide"
   - uid: excel.Excel.Interfaces.LineUpdateData.connectorType
     summary: >-
       Represents the connector type for the line.
@@ -28,3 +88,57 @@ items:
       return:
         type:
           - Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
+  - uid: excel.Excel.Interfaces.LineUpdateData.endArrowHeadLength
+    summary: >-
+      Represents the length of the arrowhead at the end of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endArrowHeadLength
+    fullName: endArrowHeadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowHeadLength?: Excel.ArrowHeadLength | "Short" | "Medium" | "Long";'
+      return:
+        type:
+          - Excel.ArrowHeadLength | "Short" | "Medium" | "Long"
+  - uid: excel.Excel.Interfaces.LineUpdateData.endArrowHeadStyle
+    summary: >-
+      Represents the style of the arrowhead at the end of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endArrowHeadStyle
+    fullName: endArrowHeadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowHeadStyle?: Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type:
+          - Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+  - uid: excel.Excel.Interfaces.LineUpdateData.endArrowHeadWidth
+    summary: >-
+      Represents the width of the arrowhead at the end of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endArrowHeadWidth
+    fullName: endArrowHeadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowHeadWidth?: Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type:
+          - Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide"

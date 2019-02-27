@@ -20,19 +20,14 @@ items:
     children:
       - Outlook.Office.ItemCompose.addFileAttachmentAsync
       - Outlook.Office.ItemCompose.addFileAttachmentAsync_1
-      - Outlook.Office.ItemCompose.addFileAttachmentAsync_2
       - Outlook.Office.ItemCompose.addItemAttachmentAsync
       - Outlook.Office.ItemCompose.addItemAttachmentAsync_1
-      - Outlook.Office.ItemCompose.addItemAttachmentAsync_2
       - Outlook.Office.ItemCompose.getSelectedDataAsync
       - Outlook.Office.ItemCompose.getSelectedDataAsync_1
       - Outlook.Office.ItemCompose.removeAttachmentAsync
       - Outlook.Office.ItemCompose.removeAttachmentAsync_1
-      - Outlook.Office.ItemCompose.removeAttachmentAsync_2
-      - Outlook.Office.ItemCompose.removeAttachmentAsync_3
       - Outlook.Office.ItemCompose.setSelectedDataAsync
       - Outlook.Office.ItemCompose.setSelectedDataAsync_1
-      - Outlook.Office.ItemCompose.setSelectedDataAsync_2
       - Outlook.Office.ItemCompose.subject
   - uid: Outlook.Office.ItemCompose.addFileAttachmentAsync
     summary: >-
@@ -64,8 +59,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResult<string>) => void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, options?: Office.AsyncContextOptions & {
+        isInline: boolean }, callback?: (asyncResult: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -89,63 +84,16 @@ items:
             can provide any object they wish to access in the callback method. isInline: If true, indicates that the
             attachment will be shown inline in the message body, and should not be displayed in the attachment list.
           type:
-            - Office.AsyncContextOptions
+            - 'Office.AsyncContextOptions & { isInline: boolean }'
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
-            provides a description of the error.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the
+            asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
+            object that provides a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: Outlook.Office.ItemCompose.addFileAttachmentAsync_1
-    summary: >-
-      Adds a file to a message or appointment as an attachment.
-
-
-      The addFileAttachmentAsync method uploads the file at the specified URI and attaches it to the item in the compose
-      form.
-
-
-      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
-      session.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
-      <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
-      <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
-      </table>
-    name: 'addFileAttachmentAsync(uri, attachmentName)'
-    fullName: 'addFileAttachmentAsync(uri, attachmentName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addFileAttachmentAsync(uri: string, attachmentName: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: uri
-          description: >-
-            The URI that provides the location of the file to attach to the message or appointment. The maximum length
-            is 2048 characters.
-          type:
-            - string
-        - id: attachmentName
-          description: >-
-            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
-            characters.
-          type:
-            - string
-  - uid: Outlook.Office.ItemCompose.addFileAttachmentAsync_2
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -175,8 +123,8 @@ items:
     type: method
     syntax:
       content: >-
-        addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
-        void): void;
+        addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -196,12 +144,12 @@ items:
             - string
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If uploading the attachment fails, the asyncResult object will contain an Error object that
-            provides a description of the error.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the
+            asyncResult.value property. If uploading the attachment fails, the asyncResult object will contain an Error
+            object that provides a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: Outlook.Office.ItemCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
@@ -237,7 +185,7 @@ items:
     syntax:
       content: >-
         addItemAttachmentAsync(itemId: any, attachmentName: string, options?: Office.AsyncContextOptions, callback?:
-        (result: Office.AsyncResult<string>) => void): void;
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -255,68 +203,19 @@ items:
             - string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method.
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
           type:
             - Office.AsyncContextOptions
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
-            a description of the error.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the
+            asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
+            object that provides a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: Outlook.Office.ItemCompose.addItemAttachmentAsync_1
-    summary: >-
-      Adds an Exchange item, such as a message, as an attachment to the message or appointment.
-
-
-      The addItemAttachmentAsync method attaches the item with the specified Exchange identifier to the item in the
-      compose form. If you specify a callback method, the method is called with one parameter, asyncResult, which
-      contains either the attachment identifier or a code that indicates any error that occurred while attaching the
-      item. You can use the options parameter to pass state information to the callback method, if needed.
-
-
-      You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same
-      session.
-
-
-      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
-      other than the item that you are editing; however, this is not supported and is not recommended.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
-      attachments.</td></tr> </table>
-    name: 'addItemAttachmentAsync(itemId, attachmentName)'
-    fullName: 'addItemAttachmentAsync(itemId, attachmentName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'addItemAttachmentAsync(itemId: any, attachmentName: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: itemId
-          description: The Exchange identifier of the item to attach. The maximum length is 100 characters.
-          type:
-            - any
-        - id: attachmentName
-          description: >-
-            The name of the attachment that is shown while the attachment is uploading. The maximum length is 255
-            characters.
-          type:
-            - string
-  - uid: Outlook.Office.ItemCompose.addItemAttachmentAsync_2
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -350,8 +249,8 @@ items:
     type: method
     syntax:
       content: >-
-        addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) =>
-        void): void;
+        addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult:
+        Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -369,12 +268,12 @@ items:
             - string
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value
-            property. If adding the attachment fails, the asyncResult object will contain an Error object that provides
-            a description of the error.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. On success, the attachment identifier will be provided in the
+            asyncResult.value property. If adding the attachment fails, the asyncResult object will contain an Error
+            object that provides a description of the error.
           type:
-            - '(result: Office.AsyncResult<string>) => void'
+            - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: Outlook.Office.ItemCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -402,7 +301,7 @@ items:
     syntax:
       content: >-
         getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback:
-        (result: Office.AsyncResult<any>) => void): void;
+        (asyncResult: Office.AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -425,7 +324,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<any>) => void'
+            - '(asyncResult: Office.AsyncResult<any>) => void'
   - uid: Outlook.Office.ItemCompose.getSelectedDataAsync_1
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
@@ -452,8 +351,8 @@ items:
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<any>) =>
-        void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType, callback: (asyncResult: Office.AsyncResult<any>)
+        => void): void;
       return:
         type:
           - void
@@ -470,7 +369,7 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<any>) => void'
+            - '(asyncResult: Office.AsyncResult<any>) => void'
   - uid: Outlook.Office.ItemCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
@@ -497,7 +396,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (result:
+        removeAttachmentAsync(attachmentId: string, options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -520,84 +419,8 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.ItemCompose.removeAttachmentAsync_1
-    summary: >-
-      Removes an attachment from a message or appointment.
-
-
-      The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
-      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
-    name: removeAttachmentAsync(attachmentId)
-    fullName: removeAttachmentAsync(attachmentId)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeAttachmentAsync(attachmentId: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: attachmentId
-          description: The identifier of the attachment to remove.
-          type:
-            - string
-  - uid: Outlook.Office.ItemCompose.removeAttachmentAsync_2
-    summary: >-
-      Removes an attachment from a message or appointment.
-
-
-      The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
-      practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
-      only within the same session. A session is over when the user closes the app, or if the user starts composing an
-      inline form then subsequently pops out the form to continue in a separate window.
-
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
-    name: 'removeAttachmentAsync(attachmentId, options)'
-    fullName: 'removeAttachmentAsync(attachmentId, options)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: attachmentId
-          description: The identifier of the attachment to remove.
-          type:
-            - string
-        - id: options
-          description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method.
-          type:
-            - Office.AsyncContextOptions
-  - uid: Outlook.Office.ItemCompose.removeAttachmentAsync_3
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -622,7 +445,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: >-
+        removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: Office.AsyncResult<void>) => void):
+        void;
       return:
         type:
           - void
@@ -638,7 +463,7 @@ items:
             parameter of type Office.AsyncResult. If removing the attachment fails, the asyncResult.error property will
             contain an error code with the reason for the failure.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.ItemCompose.setSelectedDataAsync
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
@@ -663,8 +488,8 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
-        (result: Office.AsyncResult<void>) => void): void;
+        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -678,57 +503,22 @@ items:
             - string
         - id: options
           description: >-
-            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
-            can provide any object they wish to access in the callback method. coercionType: If text, the current style
-            is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted,
-            even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is
-            applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method. coercionType: If text, the current style is
+            applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted, even
+            if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied
+            in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
             - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.ItemCompose.setSelectedDataAsync_1
-    summary: >-
-      Asynchronously inserts data into the body or subject of a message.
-
-
-      The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the
-      item, or, if text is selected in the editor, it replaces the selected text. If the cursor is not in the body or
-      subject field, an error is returned. After insertion, the cursor is placed at the end of the inserted content.
-
-
-      \[ [API set: Mailbox 1.2](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose</td></tr>
-      <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
-    name: setSelectedDataAsync(data)
-    fullName: setSelectedDataAsync(data)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setSelectedDataAsync(data: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: data
-          description: >-
-            The data to be inserted. Data is not to exceed 1,000,000 characters. If more than 1,000,000 characters are
-            passed in, an ArgumentOutOfRange exception is thrown.
-          type:
-            - string
-  - uid: Outlook.Office.ItemCompose.setSelectedDataAsync_2
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -751,7 +541,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -765,10 +555,10 @@ items:
             - string
         - id: callback
           description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter of type Office.AsyncResult.
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.ItemCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.

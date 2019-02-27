@@ -17,9 +17,25 @@ items:
       - 'OfficeExtension.ClientObject '
     package: excel
     children:
+      - excel.Excel.Line.beginArrowHeadLength
+      - excel.Excel.Line.beginArrowHeadStyle
+      - excel.Excel.Line.beginArrowHeadWidth
+      - excel.Excel.Line.beginConnect
+      - excel.Excel.Line.beginConnectedShape
+      - excel.Excel.Line.beginConnectedSite
+      - excel.Excel.Line.beginDisconnect
       - excel.Excel.Line.connectorType
       - excel.Excel.Line.context
+      - excel.Excel.Line.endArrowHeadLength
+      - excel.Excel.Line.endArrowHeadStyle
+      - excel.Excel.Line.endArrowHeadWidth
+      - excel.Excel.Line.endConnect
+      - excel.Excel.Line.endConnectedShape
+      - excel.Excel.Line.endConnectedSite
+      - excel.Excel.Line.endDisconnect
       - excel.Excel.Line.id
+      - excel.Excel.Line.isBeginConnected
+      - excel.Excel.Line.isEndConnected
       - excel.Excel.Line.load
       - excel.Excel.Line.load_1
       - excel.Excel.Line.load_2
@@ -27,6 +43,146 @@ items:
       - excel.Excel.Line.set_1
       - excel.Excel.Line.shape
       - excel.Excel.Line.toJSON
+  - uid: excel.Excel.Line.beginArrowHeadLength
+    summary: >-
+      Represents the length of the arrowhead at the beginning of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginArrowHeadLength
+    fullName: beginArrowHeadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowHeadLength: Excel.ArrowHeadLength | "Short" | "Medium" | "Long";'
+      return:
+        type:
+          - Excel.ArrowHeadLength | "Short" | "Medium" | "Long"
+  - uid: excel.Excel.Line.beginArrowHeadStyle
+    summary: >-
+      Represents the style of the arrowhead at the beginning of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginArrowHeadStyle
+    fullName: beginArrowHeadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowHeadStyle: Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type:
+          - Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+  - uid: excel.Excel.Line.beginArrowHeadWidth
+    summary: >-
+      Represents the width of the arrowhead at the beginning of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginArrowHeadWidth
+    fullName: beginArrowHeadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowHeadWidth: Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type:
+          - Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide"
+  - uid: excel.Excel.Line.beginConnect
+    summary: >-
+      Attaches the beginning of the specified connector to a specified shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'beginConnect(shape, connectionSite)'
+    fullName: 'beginConnect(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'beginConnect(shape: Excel.Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: shape
+          description: The shape to attach the beginning of the connector to.
+          type:
+            - excel.Excel.Shape
+        - id: connectionSite
+          description: >-
+            The connection site on the shape which the beginning of the connector attach to. Must be an integer between
+            0 and the connection site count(not included) of the specified shape.
+          type:
+            - number
+  - uid: excel.Excel.Line.beginConnectedShape
+    summary: >-
+      Represents the shape object that the beginning of the specified line is attached to. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginConnectedShape
+    fullName: beginConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedShape: Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+  - uid: excel.Excel.Line.beginConnectedSite
+    summary: >-
+      Represents an integer that specifies the connection site that the beginning of a connector is connected to.
+      Read-only. Returns null when the beginning of the line is not attached to any shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginConnectedSite
+    fullName: beginConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly beginConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Line.beginDisconnect
+    summary: >-
+      Detaches the beginning of the specified connector from the shape it's attached to.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: beginDisconnect()
+    fullName: beginDisconnect()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'beginDisconnect(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.Line.connectorType
     summary: >-
       Represents the connector type for the line.
@@ -60,6 +216,146 @@ items:
       return:
         type:
           - excel.Excel.RequestContext
+  - uid: excel.Excel.Line.endArrowHeadLength
+    summary: >-
+      Represents the length of the arrowhead at the end of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endArrowHeadLength
+    fullName: endArrowHeadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowHeadLength: Excel.ArrowHeadLength | "Short" | "Medium" | "Long";'
+      return:
+        type:
+          - Excel.ArrowHeadLength | "Short" | "Medium" | "Long"
+  - uid: excel.Excel.Line.endArrowHeadStyle
+    summary: >-
+      Represents the style of the arrowhead at the end of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endArrowHeadStyle
+    fullName: endArrowHeadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowHeadStyle: Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type:
+          - Excel.ArrowHeadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+  - uid: excel.Excel.Line.endArrowHeadWidth
+    summary: >-
+      Represents the width of the arrowhead at the end of the specified line.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endArrowHeadWidth
+    fullName: endArrowHeadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowHeadWidth: Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type:
+          - Excel.ArrowHeadWidth | "Narrow" | "Medium" | "Wide"
+  - uid: excel.Excel.Line.endConnect
+    summary: >-
+      Attaches the end of the specified connector to a specified shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'endConnect(shape, connectionSite)'
+    fullName: 'endConnect(shape, connectionSite)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'endConnect(shape: Excel.Shape, connectionSite: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: shape
+          description: The shape to attach the end of the connector to.
+          type:
+            - excel.Excel.Shape
+        - id: connectionSite
+          description: >-
+            The connection site on the shape which the end of the connector attach to. Must be an integer between 0 and
+            the connection site count(not included) of the specified shape.
+          type:
+            - number
+  - uid: excel.Excel.Line.endConnectedShape
+    summary: >-
+      Represents the shape object that the end of the specified line is attached to. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endConnectedShape
+    fullName: endConnectedShape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedShape: Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+  - uid: excel.Excel.Line.endConnectedSite
+    summary: >-
+      Represents an integer that specifies the connection site that the end of a connector is connected to. Read-only.
+      Returns null when the end of the line is not attached to any shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endConnectedSite
+    fullName: endConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly endConnectedSite: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Line.endDisconnect
+    summary: >-
+      Detaches the end of the specified connector from the shape it's attached to.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: endDisconnect()
+    fullName: endDisconnect()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'endDisconnect(): void;'
+      return:
+        type:
+          - void
+        description: ''
   - uid: excel.Excel.Line.id
     summary: >-
       Represents the shape identifier. Read-only.
@@ -78,6 +374,42 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Line.isBeginConnected
+    summary: >-
+      Represents whether the beginning of the specified line is connected to a shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isBeginConnected
+    fullName: isBeginConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isBeginConnected: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Line.isEndConnected
+    summary: >-
+      Represents whether the end of the specified line is connected to a shape. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isEndConnected
+    fullName: isEndConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isEndConnected: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Line.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

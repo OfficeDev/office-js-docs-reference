@@ -114,11 +114,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        load(option?: {
-                    select?: string;
-                    expand?: string;
-                }): FunctionResult<T>;
+      content: "load(option?: {\r\n            select?: string;\r\n            expand?: string;\r\n        }): FunctionResult<T>;"
       return:
         type:
           - FunctionResult<T>
@@ -127,11 +123,7 @@ items:
         - id: option
           description: ''
           type:
-            - |-
-              {
-                          select?: string;
-                          expand?: string;
-                      }
+            - "{\r\n            select?: string;\r\n            expand?: string;\r\n        }"
   - uid: excel.Excel.FunctionResult.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

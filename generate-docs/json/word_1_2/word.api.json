@@ -2186,7 +2186,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": " | {\n            "
+                      "text": " | {\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2194,7 +2194,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2202,7 +2202,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2210,7 +2210,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2218,7 +2218,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2226,7 +2226,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2234,7 +2234,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -2242,7 +2242,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n        }"
+                      "text": "?: boolean;\r\n        }"
                     },
                     {
                       "kind": "Content",
@@ -6353,7 +6353,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": " | {\n            "
+                      "text": " | {\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6361,7 +6361,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6369,7 +6369,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6377,7 +6377,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6385,7 +6385,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6393,7 +6393,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6401,7 +6401,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -6409,7 +6409,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n        }"
+                      "text": "?: boolean;\r\n        }"
                     },
                     {
                       "kind": "Content",
@@ -28367,7 +28367,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": " | {\n            "
+                      "text": " | {\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28375,7 +28375,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28383,7 +28383,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28391,7 +28391,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28399,7 +28399,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28407,7 +28407,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28415,7 +28415,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -28423,7 +28423,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n        }"
+                      "text": "?: boolean;\r\n        }"
                     },
                     {
                       "kind": "Content",
@@ -31507,7 +31507,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": " | {\n            "
+                      "text": " | {\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31515,7 +31515,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31523,7 +31523,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31531,7 +31531,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31539,7 +31539,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31547,7 +31547,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31555,7 +31555,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n            "
+                      "text": "?: boolean;\r\n            "
                     },
                     {
                       "kind": "Reference",
@@ -31563,7 +31563,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "?: boolean;\n        }"
+                      "text": "?: boolean;\r\n        }"
                     },
                     {
                       "kind": "Content",

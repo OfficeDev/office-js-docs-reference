@@ -16,6 +16,7 @@ items:
       - excel.Excel.TableChangedEventArgs.getRangeOrNullObject
       - excel.Excel.TableChangedEventArgs.address
       - excel.Excel.TableChangedEventArgs.changeType
+      - excel.Excel.TableChangedEventArgs.details
       - excel.Excel.TableChangedEventArgs.source
       - excel.Excel.TableChangedEventArgs.tableId
       - excel.Excel.TableChangedEventArgs.type
@@ -96,6 +97,23 @@ items:
           - >-
             Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
             "ColumnDeleted" | "CellInserted" | "CellDeleted"
+  - uid: excel.Excel.TableChangedEventArgs.details
+    summary: >-
+      Represents the information about the change detail
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: details
+    fullName: details
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'details: Excel.ChangedEventDetail;'
+      return:
+        type:
+          - excel.Excel.ChangedEventDetail
   - uid: excel.Excel.TableChangedEventArgs.source
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.

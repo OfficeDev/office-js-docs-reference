@@ -60,7 +60,6 @@ items:
       - Outlook.Office.RoamingSettings.get
       - Outlook.Office.RoamingSettings.remove
       - Outlook.Office.RoamingSettings.saveAsync
-      - Outlook.Office.RoamingSettings.saveAsync_1
       - Outlook.Office.RoamingSettings.set
   - uid: Outlook.Office.RoamingSettings.get
     summary: |-
@@ -137,7 +136,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'saveAsync(callback?: (result: Office.AsyncResult<void>) => void): void;'
+      content: 'saveAsync(callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -148,35 +147,7 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.RoamingSettings.saveAsync_1
-    summary: >-
-      Saves the settings.
-
-
-      Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the
-      session you can just use the set and get methods to work with the in-memory copy of the settings property bag.
-      When you want to persist the settings so that they are available the next time the add-in is used, use the
-      saveAsync method.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
-    name: saveAsync()
-    fullName: saveAsync()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'saveAsync(): void;'
-      return:
-        type:
-          - void
-        description: ''
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.RoamingSettings.set
     summary: >-
       Sets or creates the specified setting.

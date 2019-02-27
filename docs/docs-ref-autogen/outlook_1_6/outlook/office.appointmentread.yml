@@ -20,9 +20,7 @@ items:
     package: Outlook
     children:
       - Outlook.Office.AppointmentRead.displayReplyAllForm
-      - Outlook.Office.AppointmentRead.displayReplyAllForm_1
       - Outlook.Office.AppointmentRead.displayReplyForm
-      - Outlook.Office.AppointmentRead.displayReplyForm_1
       - Outlook.Office.AppointmentRead.getEntities
       - Outlook.Office.AppointmentRead.getEntitiesByType
       - Outlook.Office.AppointmentRead.getFilteredEntitiesByName
@@ -31,7 +29,6 @@ items:
       - Outlook.Office.AppointmentRead.getSelectedEntities
       - Outlook.Office.AppointmentRead.getSelectedRegExMatches
       - Outlook.Office.AppointmentRead.loadCustomPropertiesAsync
-      - Outlook.Office.AppointmentRead.loadCustomPropertiesAsync_1
       - Outlook.Office.AppointmentRead.attachments
       - Outlook.Office.AppointmentRead.body
       - Outlook.Office.AppointmentRead.dateTimeCreated
@@ -49,93 +46,6 @@ items:
       - Outlook.Office.AppointmentRead.start
       - Outlook.Office.AppointmentRead.subject
   - uid: Outlook.Office.AppointmentRead.displayReplyAllForm
-    summary: >-
-      Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
-      attendees of the selected appointment.
-
-
-      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
-      or 1-column view.
-
-
-      If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
-
-
-      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
-      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
-      in the form UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // Reply with a body, file attachment, item attachment, and a callback.
-
-      Office.context.mailbox.item.displayReplyAllForm(
-
-      {
-          'htmlBody' : 'hi',
-          'attachments' :
-          [
-              {
-                  'type' : Office.MailboxEnums.AttachmentType.File,
-                  'name' : 'squirrel.png',
-                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
-              },
-              {
-                  'type' : 'item',
-                  'name' : 'rand',
-                  'itemId' : Office.context.mailbox.item.itemId
-              }
-          ],
-          'callback' : function(asyncResult)
-          {
-              console.log(asyncResult.value);
-          }
-      });
-
-      ```
-    name: 'displayReplyAllForm(formData, callback)'
-    fullName: 'displayReplyAllForm(formData, callback)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        displayReplyAllForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
-        void;
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formData
-          description: >-
-            A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function.
-          type:
-            - string | ReplyFormData
-        - id: callback
-          description: >-
-            Optional. When the method completes, the function passed in the callback parameter is called with a single
-            parameter, asyncResult, which is an Office.AsyncResult object.
-          type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.displayReplyAllForm_1
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
       attendees of the selected appointment.
@@ -225,63 +135,10 @@ items:
           ]
       });
 
-      ```
-    name: displayReplyAllForm(formData)
-    fullName: displayReplyAllForm(formData)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'displayReplyAllForm(formData: string | ReplyFormData): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: formData
-          description: >-
-            A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
-            attachment data and a callback function.
-          type:
-            - string | ReplyFormData
-  - uid: Outlook.Office.AppointmentRead.displayReplyForm
-    summary: >-
-      Displays a reply form that includes only the sender of the selected message or the organizer of the selected
-      appointment.
-
-
-      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
-      or 1-column view.
-
-
-      If any of the string parameters exceed their limits, displayReplyForm throws an exception.
-
-
-      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
-      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
-      in the form UI. If this isn't possible, then no error message is thrown.
-
-
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
-
-      #### Examples
-
-
-      ```javascript
 
       // Reply with a body, file attachment, item attachment, and a callback.
 
-      Office.context.mailbox.item.displayReplyForm(
+      Office.context.mailbox.item.displayReplyAllForm(
 
       {
           'htmlBody' : 'hi',
@@ -305,15 +162,15 @@ items:
       });
 
       ```
-    name: 'displayReplyForm(formData, callback)'
-    fullName: 'displayReplyForm(formData, callback)'
+    name: 'displayReplyAllForm(formData, callback)'
+    fullName: 'displayReplyAllForm(formData, callback)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        displayReplyForm(formData: string | ReplyFormData, callback?: (result: Office.AsyncResult<void>) => void):
-        void;
+        displayReplyAllForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -331,8 +188,8 @@ items:
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
-            - '(result: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.displayReplyForm_1
+            - '(asyncResult: Office.AsyncResult<void>) => void'
+  - uid: Outlook.Office.AppointmentRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
@@ -420,14 +277,42 @@ items:
           ]
       });
 
+
+      // Reply with a body, file attachment, item attachment, and a callback.
+
+      Office.context.mailbox.item.displayReplyForm(
+
+      {
+          'htmlBody' : 'hi',
+          'attachments' :
+          [
+              {
+                  'type' : Office.MailboxEnums.AttachmentType.File,
+                  'name' : 'squirrel.png',
+                  'url' : 'http://i.imgur.com/sRgTlGR.jpg'
+              },
+              {
+                  'type' : 'item',
+                  'name' : 'rand',
+                  'itemId' : Office.context.mailbox.item.itemId
+              }
+          ],
+          'callback' : function(asyncResult)
+          {
+              console.log(asyncResult.value);
+          }
+      });
+
       ```
-    name: displayReplyForm(formData)
-    fullName: displayReplyForm(formData)
+    name: 'displayReplyForm(formData, callback)'
+    fullName: 'displayReplyForm(formData, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'displayReplyForm(formData: string | ReplyFormData): void;'
+      content: >-
+        displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: Office.AsyncResult<void>) =>
+        void): void;
       return:
         type:
           - void
@@ -440,6 +325,12 @@ items:
             attachment data and a callback function.
           type:
             - string | ReplyFormData
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter, asyncResult, which is an Office.AsyncResult object.
+          type:
+            - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook.Office.AppointmentRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
@@ -891,8 +782,8 @@ items:
     type: method
     syntax:
       content: >-
-        loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void, userContext?:
-        any): void;
+        loadCustomPropertiesAsync(callback: (asyncResult: Office.AsyncResult<CustomProperties>) => void,
+        userContext?: any): void;
       return:
         type:
           - void
@@ -903,54 +794,13 @@ items:
             When the method completes, the function passed in the callback parameter is called with a single parameter
             of type Office.AsyncResult.
           type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
+            - '(asyncResult: Office.AsyncResult<CustomProperties>) => void'
         - id: userContext
           description: >-
             Optional. Developers can provide any object they wish to access in the callback function. This object can be
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.AppointmentRead.loadCustomPropertiesAsync_1
-    summary: >-
-      Asynchronously loads custom properties for this add-in on the selected item.
-
-
-      Custom properties are stored as key/value pairs on a per-app, per-item basis. This method returns a
-      CustomProperties object in the callback, which provides methods to access the custom properties specific to the
-      current item and the current add-in. Custom properties are not encrypted on the item, so this should not be used
-      as secure storage.
-
-
-      The custom properties are provided as a CustomProperties object in the asyncResult.value property. This object can
-      be used to get, set, and remove custom properties from the item and save changes to the custom property set back
-      to the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
-    name: loadCustomPropertiesAsync(callback)
-    fullName: loadCustomPropertiesAsync(callback)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'loadCustomPropertiesAsync(callback: (result: Office.AsyncResult<CustomProperties>) => void): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: callback
-          description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
-          type:
-            - '(result: Office.AsyncResult<CustomProperties>) => void'
   - uid: Outlook.Office.AppointmentRead.attachments
     summary: |-
       Gets the item's attachments as an array.

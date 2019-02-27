@@ -1023,16 +1023,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: |-
-        search(searchText: string, searchOptions?: Word.SearchOptions | {
-                    ignorePunct?: boolean;
-                    ignoreSpace?: boolean;
-                    matchCase?: boolean;
-                    matchPrefix?: boolean;
-                    matchSuffix?: boolean;
-                    matchWholeWord?: boolean;
-                    matchWildcards?: boolean;
-                }): Word.RangeCollection;
+      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
       return:
         type:
           - word.Word.RangeCollection
@@ -1123,16 +1114,7 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - |-
-              Word.SearchOptions | {
-                          ignorePunct?: boolean;
-                          ignoreSpace?: boolean;
-                          matchCase?: boolean;
-                          matchPrefix?: boolean;
-                          matchSuffix?: boolean;
-                          matchWholeWord?: boolean;
-                          matchWildcards?: boolean;
-                      }
+            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
   - uid: word.Word.Body.select
     summary: |-
       Selects the body and navigates the Word UI to it.
