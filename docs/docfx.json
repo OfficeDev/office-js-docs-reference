@@ -64,10 +64,10 @@
         "exclude": [
           "excel/**",
           "excel.yml",
-          "excel_1_1**",
+          "excel_1_1/**",
           "excel_1_1.yml",
           "excel_1_2/**",
-          "excel_1_2yml",
+          "excel_1_2.yml",
           "excel_1_3/**",
           "excel_1_3.yml",
           "excel_1_4/**",
