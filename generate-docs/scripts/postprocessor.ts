@@ -132,8 +132,8 @@ tryCatch(async () => {
                 });
         });
 
-    // removing common TOC
-    //fsx.removeSync(commonTocPath);
+    // moving common TOC to its own folder
+    fsx.copySync(commonTocPath,  path.resolve("../yaml/common/toc.yml"));
 
     // create global TOC
     let globalToc = <INewToc>{};

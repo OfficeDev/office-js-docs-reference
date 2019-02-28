@@ -249,7 +249,18 @@ items:
       return:
         type:
           - excel.Excel.Shape
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+              line.name = "StraightLine";
+              await context.sync();
+          });
+          ```
       parameters:
         - id: startLeft
           description: 'The distance, in points, from the start left of the line to the left side of the worksheet.'

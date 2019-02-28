@@ -547,6 +547,25 @@ items:
       return:
         type:
           - excel.Excel.Line
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.getItem("StraightLine").line;
+              line.beginArrowHeadLength = Excel.ArrowHeadLength.long;
+              line.beginArrowHeadWidth = Excel.ArrowHeadWidth.wide;
+              line.beginArrowHeadStyle = Excel.ArrowHeadStyle.oval;
+
+              line.endArrowHeadLength = Excel.ArrowHeadLength.long;
+              line.endArrowHeadWidth = Excel.ArrowHeadWidth.wide;
+              line.endArrowHeadStyle = Excel.ArrowHeadStyle.triangle;
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Shape.lineFormat
     summary: >-
       Returns the line formatting of the shape object. Read-only.

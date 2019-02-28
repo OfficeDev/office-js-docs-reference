@@ -1,0 +1,129 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+    summary: Provides options for how a dialog is displayed.
+    name: OfficeRuntime.DisplayWebDialogOptions
+    fullName: OfficeRuntime.DisplayWebDialogOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office-runtime
+    children:
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+    summary: Callback that is run when the dialog sends a message to its parent.
+    isPreview: true
+    name: 'onMessage(message, dialog)'
+    fullName: 'onMessage(message, dialog)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'onMessage?(message: string, dialog?: Dialog): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: message
+          description: ''
+          type:
+            - string
+        - id: dialog
+          description: ''
+          type:
+            - office-runtime.OfficeRuntime.Dialog
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+    name: 'onRuntimeError(error, dialog)'
+    fullName: 'onRuntimeError(error, dialog)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'onRuntimeError?(error: Error, dialog?: Dialog): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: error
+          description: ''
+          type:
+            - Error
+        - id: dialog
+          description: ''
+          type:
+            - office-runtime.OfficeRuntime.Dialog
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+    summary: >-
+      Determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only
+      applicable to custom functions running on Excel Online.
+    isPreview: true
+    name: displayInIFrame
+    fullName: displayInIFrame
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayInIFrame?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+    summary: Defines the height of the dialog box as a percentage of the current display.
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: string;'
+      return:
+        type:
+          - string
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.hideTitle
+    summary: True if title is hidden from the dialog box.
+    isPreview: true
+    name: hideTitle
+    fullName: hideTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hideTitle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+    summary: Callback that is run when the dialog box is closed.
+    isPreview: true
+    name: onClose
+    fullName: onClose
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'onClose?: () => void;'
+      return:
+        type:
+          - () => void
+  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+    summary: Defines the width of the dialog box as a percentage of the current display.
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: string;'
+      return:
+        type:
+          - string

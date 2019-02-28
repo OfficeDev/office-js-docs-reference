@@ -2,6 +2,7 @@ import * as fsx from 'fs-extra';
 import * as path from "path";
 
 tryCatch(async () => {
+    console.log("Copying snippets file to subfolders");
     const snippets = path.resolve("../json/snippets.yaml");
 
     fsx.copySync(snippets, "../json/excel/snippets.yaml");
@@ -35,6 +36,12 @@ tryCatch(async () => {
     fsx.copySync(snippets, "../json/word_1_1/snippets.yaml");
     fsx.copySync(snippets, "../json/word_1_2/snippets.yaml");
     fsx.copySync(snippets, "../json/word_1_3/snippets.yaml");
+
+    console.log("Moving Custom Functions APIs to correct versions of Excel");
+    const customFunctionsJson = path.resolve("../json/custom-functions-runtime.api.json");
+    const officeRuntimeJson = path.resolve("../json/office-runtime.api.json");
+    fsx.copySync(customFunctionsJson, "../json/excel/custom-functions-runtime.api.json");
+    fsx.copySync(officeRuntimeJson, "../json/excel/office-runtime.api.json");
 });
 
 async function tryCatch(call: () => Promise<void>) {
