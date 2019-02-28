@@ -23,10 +23,4 @@ The JavaScript API for Office enables you to create web applications that intera
 > ![Office JavaScript API reference documentation with product Excel JavaScript API and version 1.4 selected about the table of contents](images/api-ref-moniker-selector-1.png)
 > 
 > IMG-2:
-> ![Office JavaScript API reference documentation with product Excel JavaScript API and version 1.4 selected about the table of contents](~/docs-ref-autogen/overview/images/api-ref-moniker-selector-1.png)
-> 
-> IMG-3:
 > ![Office JavaScript API reference documentation with product Excel JavaScript API and version 1.4 selected about the table of contents](/javascript/api/images/api-ref-moniker-selector-1.png)
-> 
-> IMG-4:
-> ![Office JavaScript API reference documentation with product Excel JavaScript API and version 1.4 selected about the table of contents](~/docs-ref-autogen/images/api-ref-moniker-selector-1.png)
