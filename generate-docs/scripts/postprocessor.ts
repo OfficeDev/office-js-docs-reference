@@ -121,11 +121,8 @@ tryCatch(async () => {
 
     console.log(`Fixing TOCs`);
     fsx.readdirSync(docsSource)
-        .filter(filename => filename.indexOf(".yml") < 0)
         .forEach(filename => {
-            console.log(filename);
             let subfolder = docsSource + '/' + filename;
-            console.log(subfolder);
             fsx.readdirSync(subfolder)
                 .filter(subfilename => subfilename.indexOf("toc") >= 0)
                 .forEach(subfilename => {
@@ -196,6 +193,7 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
     let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
     let customFunctionsRoot = {"name": "Custom Functions - Preview", "uid": "", "items": [] as any};
+    let customFunctionsRootPushed = false;
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -265,7 +263,6 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
-                        newToc.items[0].items.push(customFunctionsRoot); // add custom functions too
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
@@ -315,12 +312,22 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
                             "uid": packageItem.uid,
                             "items":  membersToMove.items as any
                         });
+
+                        if (!customFunctionsRootPushed) {
+                            newToc.items[0].items.push(customFunctionsRoot);
+                            customFunctionsRootPushed = true;
+                        }
                     } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
                         customFunctionsRoot.items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
                             "items":  membersToMove.items as any
                         });
+
+                        if (!customFunctionsRootPushed) {
+                            newToc.items[0].items.push(customFunctionsRoot);
+                            customFunctionsRootPushed = true;
+                        }
                     } else {
                         if (membersToMove.items) {
                             newToc.items[0].items.push({

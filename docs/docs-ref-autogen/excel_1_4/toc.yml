@@ -2,9 +2,6 @@ items:
   - name: API reference
     href: /javascript/api/overview/office
     items:
-      - name: Custom Functions - Preview
-        uid: ''
-        items: []
       - name: Excel
         uid: excel
         items:
