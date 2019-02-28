@@ -1,6 +1,6 @@
 items:
 - name: API reference
-  href: api-ref.md
+  href: api-ref-office-js.md
   items:
   - name: Visio
     items:
