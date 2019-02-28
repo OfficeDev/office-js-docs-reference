@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.SettableRowProperties
+    summary: Represents the input parameter of setRowProperties.
+    name: Excel.SettableRowProperties
+    fullName: Excel.SettableRowProperties
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'SettableCellProperties '
+    package: excel_release
+    children:
+      - excel_release.Excel.SettableRowProperties.format
+      - excel_release.Excel.SettableRowProperties.rowHidden
+  - uid: excel_release.Excel.SettableRowProperties.format
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        format?: Excel.CellPropertiesFormat & {
+                    rowHeight?: number;
+                };
+      return:
+        type:
+          - |-
+            Excel.CellPropertiesFormat & {
+                        rowHeight?: number;
+                    }
+  - uid: excel_release.Excel.SettableRowProperties.rowHidden
+    name: rowHidden
+    fullName: rowHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowHidden?: boolean;'
+      return:
+        type:
+          - boolean

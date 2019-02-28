@@ -1,0 +1,192 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.DataValidationRule
+    summary: >-
+      Data validation rule contains different types of data validation. You can only use one of them at a time according
+      the Excel.DataValidationType.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.DataValidationRule
+    fullName: Excel.DataValidationRule
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.DataValidationRule.custom
+      - excel_release.Excel.DataValidationRule.date
+      - excel_release.Excel.DataValidationRule.decimal
+      - excel_release.Excel.DataValidationRule.list
+      - excel_release.Excel.DataValidationRule.textLength
+      - excel_release.Excel.DataValidationRule.time
+      - excel_release.Excel.DataValidationRule.wholeNumber
+  - uid: excel_release.Excel.DataValidationRule.custom
+    summary: |-
+      Custom data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'custom?: Excel.CustomDataValidation;'
+      return:
+        type:
+          - excel.Excel.CustomDataValidation
+  - uid: excel_release.Excel.DataValidationRule.date
+    summary: |-
+      Date data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: date
+    fullName: date
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'date?: Excel.DateTimeDataValidation;'
+      return:
+        type:
+          - excel.Excel.DateTimeDataValidation
+  - uid: excel_release.Excel.DataValidationRule.decimal
+    summary: |-
+      Decimal data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: decimal
+    fullName: decimal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'decimal?: Excel.BasicDataValidation;'
+      return:
+        type:
+          - excel.Excel.BasicDataValidation
+  - uid: excel_release.Excel.DataValidationRule.list
+    summary: |-
+      List data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: list
+    fullName: list
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'list?: Excel.ListDataValidation;'
+      return:
+        type:
+          - excel.Excel.ListDataValidation
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Decision");
+              const nameRange = 
+                  sheet.tables.getItem("NameOptionsTable").columns.getItem("Baby Name").getDataBodyRange();
+
+              // When you are developing, it is a good practice to
+              // clear the dataValidation object with each run of your code.
+              nameRange.dataValidation.clear();
+
+              const nameSourceRange = context.workbook.worksheets.getItem("Names").getRange("A1:A3");
+
+              let approvedListRule = {
+                  list: {
+                      inCellDropDown: true,
+                      source: '=Names!$A$1:$A$3'
+                  }
+              };
+              nameRange.dataValidation.rule = approvedListRule;
+
+              await context.sync();
+          });
+          ```
+  - uid: excel_release.Excel.DataValidationRule.textLength
+    summary: |-
+      TextLength data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textLength
+    fullName: textLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textLength?: Excel.BasicDataValidation;'
+      return:
+        type:
+          - excel.Excel.BasicDataValidation
+  - uid: excel_release.Excel.DataValidationRule.time
+    summary: |-
+      Time data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: time
+    fullName: time
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'time?: Excel.DateTimeDataValidation;'
+      return:
+        type:
+          - excel.Excel.DateTimeDataValidation
+  - uid: excel_release.Excel.DataValidationRule.wholeNumber
+    summary: |-
+      WholeNumber data validation criteria.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: wholeNumber
+    fullName: wholeNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'wholeNumber?: Excel.BasicDataValidation;'
+      return:
+        type:
+          - excel.Excel.BasicDataValidation
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Decision");
+              const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
+
+              // When you are developing, it is a good practice to
+              // clear the dataValidation object with each run of your code.
+              rankingRange.dataValidation.clear();
+
+              let greaterThanZeroRule = {
+                  wholeNumber: {
+                      formula1: 0,
+                      operator: Excel.DataValidationOperator.greaterThan
+                  }
+              };
+              rankingRange.dataValidation.rule = greaterThanZeroRule;
+
+              rankingRange.dataValidation.prompt = {
+                  message: "Please enter a positive number.",
+                  showPrompt: true,
+                  title: "Positive numbers only."
+              };
+
+              rankingRange.dataValidation.errorAlert = {
+                  message: "Sorry, only positive numbers are allowed",
+                  showAlert: true,
+                  style: "Stop",
+                  title: "Negative Number Entered"
+              };
+
+              await context.sync();
+          });
+          ```

@@ -1,0 +1,14 @@
+### YamlMime:UniversalReference
+items:
+  - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
+    deprecated:
+      content: Use `CancelableInvocation` instead.
+    isPreview: true
+    name: CustomFunctions.CancelableHandler
+    fullName: CustomFunctions.CancelableHandler
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - custom-functions-runtime.CustomFunctions.CancelableInvocation
+    package: custom-functions-runtime

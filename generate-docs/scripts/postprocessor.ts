@@ -104,7 +104,7 @@ tryCatch(async () => {
     console.log(`Namespace pass on Outlook docs`);
     // replace Outlook/CommonAPI namespace references with Office
     fsx.readdirSync(docsSource)
-        .filter(filename => filename.indexOf("outlook") >= 0)
+        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
         .forEach(filename => {
             let subfolder = docsSource + '/' + filename + "/outlook";
             fsx.readdirSync(subfolder)
@@ -121,6 +121,7 @@ tryCatch(async () => {
 
     console.log(`Fixing TOCs`);
     fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf(".yml") < 0)
         .forEach(filename => {
             console.log(filename);
             let subfolder = docsSource + '/' + filename;
@@ -172,7 +173,7 @@ async function tryCatch(call: () => Promise<void>) {
 }
 
 function fixToc(tocPath: string, commonToc: INewToc): void {
-    console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
+    console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
@@ -264,7 +265,7 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
-                        newToc.items[0].items.push(customFunctionsRoot);
+                        newToc.items[0].items.push(customFunctionsRoot); // add custom functions too
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,

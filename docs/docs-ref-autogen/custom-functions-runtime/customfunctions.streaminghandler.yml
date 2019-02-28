@@ -1,0 +1,14 @@
+### YamlMime:UniversalReference
+items:
+  - uid: custom-functions-runtime.CustomFunctions.StreamingHandler
+    deprecated:
+      content: Use `StreamingInvocation<ResultType>` instead.
+    isPreview: true
+    name: CustomFunctions.StreamingHandler
+    fullName: CustomFunctions.StreamingHandler
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'StreamingInvocation<ResultType> '
+    package: custom-functions-runtime
