@@ -234,7 +234,6 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
                         membersToMove.items = namespaceItem.items;
                     });
 
-                    // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
@@ -265,6 +264,7 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
+                        newToc.items[0].items.push(customFunctionsRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
