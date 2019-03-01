@@ -9510,11 +9510,12 @@ Office.AppointmentCompose.seriesId:
     var isSeriesInstance = (seriesId != null);
     console.log("SeriesId is " + seriesId 
         + " and isSeriesInstance is " + isSeriesInstance);
-Office.AppointmentCompose.setSelectedDataAsync_2:
-  - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+Office.AppointmentCompose.setSelectedDataAsync:
   - >-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
     coercionType : "html" });
+Office.AppointmentCompose.setSelectedDataAsync_1:
+  - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.AppointmentCompose.start:
   - >-
     // The following example sets the start time of an appointment in compose
@@ -10872,11 +10873,12 @@ Office.MessageCompose.seriesId:
     var isSeriesInstance = (seriesId != null);
     console.log("SeriesId is " + seriesId 
         + " and isSeriesInstance is " + isSeriesInstance);
-Office.MessageCompose.setSelectedDataAsync_2:
-  - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+Office.MessageCompose.setSelectedDataAsync:
   - >-
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", {
     coercionType : "html" });
+Office.MessageCompose.setSelectedDataAsync_1:
+  - Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.MessageCompose.subject:
   - |-
     Office.context.mailbox.item.subject.getAsync(callback);
