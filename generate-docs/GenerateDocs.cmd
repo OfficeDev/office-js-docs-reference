@@ -76,7 +76,6 @@ cd ..\word_1_1
 call ..\..\node_modules\.bin\api-extractor run
 cd ..
 
-
 cd ..\api-extractor-inputs-custom-functions-runtime
 call ..\node_modules\.bin\api-extractor run
 

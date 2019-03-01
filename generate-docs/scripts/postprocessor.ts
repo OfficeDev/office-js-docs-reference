@@ -77,7 +77,7 @@ tryCatch(async () => {
 
     // fix all the individual TOC files
     const commonTocPath = path.resolve("../yaml/office/toc.yml");
-    const commonToc = fixCommonToc(commonTocPath);
+    const commonToc = scrubAndWriteToc(commonTocPath);
     const hostVersionMap = [{host: "excel", versions: 9},
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 8},
@@ -86,9 +86,9 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        fixToc(path.resolve(`../yaml/${category.host}/toc.yml`), commonToc);
+        scrubAndWriteToc(path.resolve(`../yaml/${category.host}/toc.yml`), commonToc, category.host);
         for (let i = 1; i < category.versions; i++) {
-            fixToc(path.resolve(`../yaml/${category.host}_1_${i}/toc.yml`), commonToc);
+            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}/toc.yml`), commonToc, category.host);
         }
     });
 
@@ -119,7 +119,7 @@ tryCatch(async () => {
             fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
         });
 
-    console.log(`Fixing TOCs`);
+    console.log(`Fixing top href`);
     fsx.readdirSync(docsSource)
         .forEach(filename => {
             let subfolder = docsSource + '/' + filename;
@@ -169,7 +169,7 @@ async function tryCatch(call: () => Promise<void>) {
     }
 }
 
-function fixToc(tocPath: string, commonToc: INewToc): void {
+function fixToc(tocPath: string, commonToc: INewToc): INewToc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
@@ -356,7 +356,7 @@ function fixToc(tocPath: string, commonToc: INewToc): void {
 
     // append the common API toc
     newToc.items[0].items.push(commonToc.items[0].items[0]);
-    fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
+    return newToc;
 }
 
 function fixCommonToc(tocPath: string): INewToc {
@@ -401,7 +401,33 @@ function fixCommonToc(tocPath: string): INewToc {
         });
     });
 
-    fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
     return newToc;
 }
 
+function addCrossHostTocStubs(toc: INewToc, hostName: string): void {
+    const stubItems = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
+                       {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
+                       {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
+                       {"name": "PowerPoint", "href": "/javascript/api/outlook?view=powerpoint-js-1.1"},
+                       {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
+                       {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"}];
+
+    stubItems
+        .filter(stub => !hostName || !hostName.toLowerCase().includes(stub.name.toLowerCase()))
+        .forEach((stubItem, stubIndex) => {
+            toc.items[0].items.push(stubItem as any);
+        });
+}
+
+function scrubAndWriteToc(tocPath: string, commonToc?: INewToc, hostName?: string): INewToc {
+    let latestToc;
+    if (!commonToc) {
+        latestToc = fixCommonToc(tocPath);
+    } else {
+        latestToc = fixToc(tocPath, commonToc);
+    }
+
+    addCrossHostTocStubs(latestToc, hostName);
+    fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
+    return latestToc;
+}
