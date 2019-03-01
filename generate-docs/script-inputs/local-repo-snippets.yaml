@@ -9228,6 +9228,8 @@ Office.CustomProperties.saveAsync:
     }
 Office.EmailAddressDetails.appointmentResponse:
   - |-
+    // The following sample provides the responses of required attendees.
+    // Note that Appointment Read/Attendee mode is required.
     var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
     console.log("There are " + requiredAttendees.length + " required attendees.")
     requiredAttendees.forEach(function (requiredAttendee) {

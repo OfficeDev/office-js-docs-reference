@@ -110,7 +110,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const textbox = shapes.getItem("Textbox");
+              textbox.textFrame.deleteText();
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.TextFrame.hasText
     summary: >-
       Specifies whether the TextFrame contains text.
