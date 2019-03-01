@@ -321,6 +321,6 @@ items:
       - name: Outlook
         href: /javascript/api/outlook?view=outlook-js-preview
       - name: PowerPoint
-        href: /javascript/api/outlook?view=powerpoint-js-1.1
+        href: /javascript/api/powerpoint?view=powerpoint-js-1.1
       - name: Visio
         href: /javascript/api/visio?view=visio-js-1.1
