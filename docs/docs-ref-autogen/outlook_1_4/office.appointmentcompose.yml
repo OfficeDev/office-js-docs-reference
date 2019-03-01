@@ -824,6 +824,15 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+
+      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
@@ -831,7 +840,7 @@ items:
     type: method
     syntax:
       content: >-
-        setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions, callback:
+        setSelectedDataAsync(data: string, options?: Office.AsyncContextOptions & CoercionTypeOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -846,19 +855,19 @@ items:
             - string
         - id: options
           description: >-
-            An object literal that contains one or more of the following properties. asyncContext: Developers can
-            provide any object they wish to access in the callback method. coercionType: If text, the current style is
-            applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted, even
-            if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is applied
-            in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method. coercionType: If text, the current style
+            is applied in Outlook Web App and Outlook. If the field is an HTML editor, only the text data is inserted,
+            even if the data is HTML. If html and the field supports HTML (the subject doesn't), the current style is
+            applied in Outlook Web App and the default style is applied in Outlook. If the field is a text field, an
             InvalidDataFormat error is returned. If coercionType is not set, the result depends on the field: if the
             field is HTML then HTML is used; if the field is text, then plain text is used.
           type:
             - Office.AsyncContextOptions & CoercionTypeOptions
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.AppointmentCompose.setSelectedDataAsync_1
@@ -878,13 +887,22 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
+
+      ```
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setSelectedDataAsync(data: string, callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'setSelectedDataAsync(data: string, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
@@ -898,8 +916,8 @@ items:
             - string
         - id: callback
           description: >-
-            When the method completes, the function passed in the callback parameter is called with a single parameter
-            of type Office.AsyncResult.
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_4.Office.AppointmentCompose.body
