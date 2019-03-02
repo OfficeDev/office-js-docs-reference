@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData
+    summary: 'An interface for updating data on the RangeFont object, for use in "rangeFont.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.RangeFontUpdateData
+    fullName: Excel.Interfaces.RangeFontUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.RangeFontUpdateData.bold
+      - excel.Excel.Interfaces.RangeFontUpdateData.color
+      - excel.Excel.Interfaces.RangeFontUpdateData.italic
+      - excel.Excel.Interfaces.RangeFontUpdateData.name
+      - excel.Excel.Interfaces.RangeFontUpdateData.size
+      - excel.Excel.Interfaces.RangeFontUpdateData.strikethrough
+      - excel.Excel.Interfaces.RangeFontUpdateData.subscript
+      - excel.Excel.Interfaces.RangeFontUpdateData.superscript
+      - excel.Excel.Interfaces.RangeFontUpdateData.tintAndShade
+      - excel.Excel.Interfaces.RangeFontUpdateData.underline
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.bold
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.color
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.italic
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.name
+    summary: |-
+      Font name (e.g. "Calibri")
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.size
+    summary: |-
+      Font size.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.strikethrough
+    summary: >-
+      Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
+      Strikethrough setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.subscript
+    summary: >-
+      Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
+      if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
+      otherwise.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.superscript
+    summary: >-
+      Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
+      False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
+      otherwise.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.tintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
+      tintAndShade setting.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.RangeFontUpdateData.underline
+    summary: |-
+      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
+      return:
+        type:
+          - Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

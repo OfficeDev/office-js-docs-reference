@@ -1,0 +1,422 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartData
+    summary: An interface describing the data returned by calling "chart.toJSON()".
+    name: Excel.Interfaces.ChartData
+    fullName: Excel.Interfaces.ChartData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartData.axes
+      - excel.Excel.Interfaces.ChartData.categoryLabelLevel
+      - excel.Excel.Interfaces.ChartData.chartType
+      - excel.Excel.Interfaces.ChartData.dataLabels
+      - excel.Excel.Interfaces.ChartData.displayBlanksAs
+      - excel.Excel.Interfaces.ChartData.format
+      - excel.Excel.Interfaces.ChartData.height
+      - excel.Excel.Interfaces.ChartData.id
+      - excel.Excel.Interfaces.ChartData.left
+      - excel.Excel.Interfaces.ChartData.legend
+      - excel.Excel.Interfaces.ChartData.name
+      - excel.Excel.Interfaces.ChartData.pivotOptions
+      - excel.Excel.Interfaces.ChartData.plotArea
+      - excel.Excel.Interfaces.ChartData.plotBy
+      - excel.Excel.Interfaces.ChartData.plotVisibleOnly
+      - excel.Excel.Interfaces.ChartData.series
+      - excel.Excel.Interfaces.ChartData.seriesNameLevel
+      - excel.Excel.Interfaces.ChartData.showAllFieldButtons
+      - excel.Excel.Interfaces.ChartData.showDataLabelsOverMaximum
+      - excel.Excel.Interfaces.ChartData.style
+      - excel.Excel.Interfaces.ChartData.title
+      - excel.Excel.Interfaces.ChartData.top
+      - excel.Excel.Interfaces.ChartData.width
+  - uid: excel.Excel.Interfaces.ChartData.axes
+    summary: |-
+      Represents chart axes. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: axes
+    fullName: axes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'axes?: Excel.Interfaces.ChartAxesData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAxesData
+  - uid: excel.Excel.Interfaces.ChartData.categoryLabelLevel
+    summary: >-
+      Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
+      are being sourced from. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: categoryLabelLevel
+    fullName: categoryLabelLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categoryLabelLevel?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.chartType
+    summary: |-
+      Represents the type of the chart. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        chartType?: Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" |
+        "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100"
+        | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+        "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+        "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" |
+        "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" |
+        "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" |
+        "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" |
+        "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" |
+        "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" |
+        "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" |
+        "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" |
+        "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" |
+        "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel";
+      return:
+        type:
+          - >-
+            Excel.ChartType | "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered"
+            | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" |
+            "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" |
+            "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" |
+            "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" |
+            "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" |
+            "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" |
+            "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" |
+            "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" |
+            "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered"
+            | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" |
+            "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" |
+            "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
+            "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
+            "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
+  - uid: excel.Excel.Interfaces.ChartData.dataLabels
+    summary: |-
+      Represents the datalabels on the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataLabels
+    fullName: dataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartDataLabelsData
+  - uid: excel.Excel.Interfaces.ChartData.displayBlanksAs
+    summary: |-
+      Returns or sets the way that blank cells are plotted on a chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: displayBlanksAs
+    fullName: displayBlanksAs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayBlanksAs?: Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted";'
+      return:
+        type:
+          - Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted"
+  - uid: excel.Excel.Interfaces.ChartData.format
+    summary: |-
+      Encapsulates the format properties for the chart area. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartAreaFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartAreaFormatData
+  - uid: excel.Excel.Interfaces.ChartData.height
+    summary: |-
+      Represents the height, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.id
+    summary: |-
+      The unique id of chart. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartData.left
+    summary: |-
+      The distance, in points, from the left side of the chart to the worksheet origin.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.legend
+    summary: |-
+      Represents the legend for the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: legend
+    fullName: legend
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'legend?: Excel.Interfaces.ChartLegendData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartLegendData
+  - uid: excel.Excel.Interfaces.ChartData.name
+    summary: |-
+      Represents the name of a chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ChartData.pivotOptions
+    summary: >-
+      Encapsulates the options for the pivot chart. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pivotOptions
+    fullName: pivotOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotOptions?: Excel.Interfaces.ChartPivotOptionsData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPivotOptionsData
+  - uid: excel.Excel.Interfaces.ChartData.plotArea
+    summary: |-
+      Represents the plotArea for the chart.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotArea
+    fullName: plotArea
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotArea?: Excel.Interfaces.ChartPlotAreaData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPlotAreaData
+  - uid: excel.Excel.Interfaces.ChartData.plotBy
+    summary: |-
+      Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotBy
+    fullName: plotBy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotBy?: Excel.ChartPlotBy | "Rows" | "Columns";'
+      return:
+        type:
+          - Excel.ChartPlotBy | "Rows" | "Columns"
+  - uid: excel.Excel.Interfaces.ChartData.plotVisibleOnly
+    summary: |-
+      True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotVisibleOnly
+    fullName: plotVisibleOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotVisibleOnly?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartData.series
+    summary: |-
+      Represents either a single series or collection of series in the chart. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: series
+    fullName: series
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'series?: Excel.Interfaces.ChartSeriesData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.ChartSeriesData[]'
+  - uid: excel.Excel.Interfaces.ChartData.seriesNameLevel
+    summary: >-
+      Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
+      being sourced from. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: seriesNameLevel
+    fullName: seriesNameLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesNameLevel?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.showAllFieldButtons
+    summary: |-
+      Represents whether to display all field buttons on a PivotChart.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showAllFieldButtons
+    fullName: showAllFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAllFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartData.showDataLabelsOverMaximum
+    summary: >-
+      Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
+      value axis became smaller than the size of data points, you can use this property to set whether to show the data
+      labels. This property applies to 2-D charts only.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showDataLabelsOverMaximum
+    fullName: showDataLabelsOverMaximum
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showDataLabelsOverMaximum?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartData.style
+    summary: |-
+      Returns or sets the chart style for the chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.title
+    summary: >-
+      Represents the title of the specified chart, including the text, visibility, position, and formatting of the
+      title. Read-only.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: title
+    fullName: title
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'title?: Excel.Interfaces.ChartTitleData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartTitleData
+  - uid: excel.Excel.Interfaces.ChartData.top
+    summary: >-
+      Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
+      top of the chart area (on a chart).
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ChartData.width
+    summary: |-
+      Represents the width, in points, of the chart object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

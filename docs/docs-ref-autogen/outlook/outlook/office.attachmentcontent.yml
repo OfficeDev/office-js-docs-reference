@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.AttachmentContent
+    summary: |-
+      Represents the content of an attachment on a message or appointment item.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: Office.AttachmentContent
+    fullName: Office.AttachmentContent
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.AttachmentContent.content
+      - outlook.Office.AttachmentContent.format
+  - uid: outlook.Office.AttachmentContent.content
+    summary: The content of an attachment as a string.
+    isPreview: true
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.AttachmentContent.format
+    summary: |-
+      The string format to use for an attachment's content.
+
+      For file attachments, the formatting is a base64-encoded string.
+
+      For item attachments that represent messages, the formatting is a string representing an .eml formatted file.
+
+      For item attachments that represent calendar items, the formatting is a string representing an .icalendar file.
+
+      For cloud attachments, the formatting is a URL string.
+    isPreview: true
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format: MailboxEnums.AttachmentContentFormat;'
+      return:
+        type:
+          - MailboxEnums.AttachmentContentFormat
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          var item = Office.context.mailbox.item;
+          var listOfAttachments = [];
+          item.getAttachmentsAsync(callback);
+
+          function callback(result) {
+              if (result.value.length > 0) {
+                  for (i = 0 ; i < result.value.length ; i++) {
+                      var options = {asyncContext: {type: result.value[i].attachmentType}};
+                      getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
+                  }
+              }
+          }
+
+          function handleAttachmentsCallback(result) {
+              // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+              if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
+                  // Handle file attachment.
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+                  // Handle email item attachment.
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+                  // Handle .icalender attachment.
+              } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+                  // Handle cloud attachment.
+              } else {
+                  // Handle attachment formats that are not supported.
+              }
+          }
+          ```

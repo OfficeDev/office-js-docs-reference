@@ -1,4 +1,19 @@
-Excel.Application.calculate:
+Excel.createWorkbook:
+  - |-
+    var myFile = document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = event.target.result.indexOf("base64,");
+        var copyBase64 = event.target.result.substr(startIndex + 7);
+
+        Excel.createWorkbook(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);
+Excel.Application.calculate_1:
   - |-
     Excel.run(function (ctx) {
         ctx.workbook.application.calculate('Full');
@@ -9,7 +24,7 @@ Excel.Application.calculate:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Application.load:
+Excel.Application.load_1:
   - |-
     Excel.run(function (ctx) {
         var application = ctx.workbook.application;
@@ -68,7 +83,7 @@ Excel.Binding.getText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Binding.load:
+Excel.Binding.load_1:
   - |-
     Excel.run(function (ctx) { 
         var binding = ctx.workbook.bindings.getItemAt(0);
@@ -87,58 +102,43 @@ Excel.BindingCollection.getItem:
     // Create a table binding to monitor data changes in the table. 
     // When data is changed, the background color of the table will be changed to orange.
     function addEventHandler() {
-        //Create Table1
-    Excel.run(function (ctx) { 
-        ctx.workbook.tables.add("Sheet1!A1:C4", true);
-        return ctx.sync().then(function() {
-                 console.log("My Diet Data Inserted!");
-        })
-        .catch(function (error) {
-                 console.log(JSON.stringify(error));
+        // Create Table1
+        Excel.run(function (ctx) { 
+            ctx.workbook.tables.add("Sheet1!A1:C4", true);
+            return ctx.sync().then(function() {
+                    console.log("My Diet Data Inserted!");
+            })
+            .catch(function (error) {
+                    console.log(JSON.stringify(error));
+            });
         });
-    });
         //Create a new table binding for Table1
-    Office.context.document.bindings.addFromNamedItemAsync(
-        "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
-        if (asyncResult.status == "failed") {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        }
-        else {
-            // If succeeded, then add event handler to the table binding.
-            Office.select("bindings#myBinding").addHandlerAsync(
-                Office.EventType.BindingDataChanged, onBindingDataChanged);
-        }
-    });
+        Office.context.document.bindings.addFromNamedItemAsync(
+            "Table1", Office.CoercionType.Table, { id: "myBinding" }, function (asyncResult) {
+            if (asyncResult.status == "failed") {
+                console.log("Action failed with error: " + asyncResult.error.message);
+            }
+            else {
+                // If succeeded, then add event handler to the table binding.
+                Office.select("bindings#myBinding").addHandlerAsync(
+                    Office.EventType.BindingDataChanged, onBindingDataChanged);
+            }
+        });
     }
         
     // when data in the table is changed, this event will be triggered.
     function onBindingDataChanged(eventArgs) {
-    Excel.run(function (ctx) { 
-        // highlight the table in orange to indicate data has been changed.
-        ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
-        return ctx.sync().then(function() {
-                console.log("The value in this table got changed!");
-        })
-        .catch(function (error) {
-                console.log(JSON.stringify(error));
+        Excel.run(function (ctx) { 
+            // highlight the table in orange to indicate data has been changed.
+            ctx.workbook.bindings.getItem(eventArgs.binding.id).getTable().getDataBodyRange().format.fill.color = "Orange";
+            return ctx.sync().then(function() {
+                    console.log("The value in this table got changed!");
+            })
+            .catch(function (error) {
+                    console.log(JSON.stringify(error));
+            });
         });
-    });
     }
-    
-  - |-
-    Excel.run(function (ctx) { 
-        var lastPosition = ctx.workbook.bindings.count - 1;
-        var binding = ctx.workbook.bindings.getItemAt(lastPosition);
-        binding.load('type')
-        return ctx.sync().then(function() {
-                console.log(binding.type); 
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.BindingCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -154,7 +154,7 @@ Excel.BindingCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.BindingCollection.load:
+Excel.BindingCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var bindings = ctx.workbook.bindings;
@@ -227,7 +227,7 @@ Excel.Chart.name:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.setData:
+Excel.Chart.setData_1:
   - |-
     // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
     Excel.run(function (ctx) { 
@@ -259,7 +259,7 @@ Excel.Chart.setPosition:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Chart.load:
+Excel.Chart.load_1:
   - |-
     // Get a chart named "Chart1"
     Excel.run(function (ctx) { 
@@ -274,7 +274,7 @@ Excel.Chart.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxis.load:
+Excel.ChartAxis.load_1:
   - |-
     // Get the maximum of Chart Axis from Chart1
     Excel.run(function (ctx) { 
@@ -307,7 +307,7 @@ Excel.ChartAxis.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartAxisTitle.load:
+Excel.ChartAxisTitle.load_1:
   - |-
     // Get the text of Chart Axis Title from the value axis of Chart1.
     Excel.run(function (ctx) { 
@@ -337,7 +337,31 @@ Excel.ChartAxisTitle.load:
                 console.log("Debug info: " + JSON.stringify(error.debugInfo));
             }
     });
-Excel.ChartCollection.add:
+Excel.Chart.onActivated:
+  - |-
+    Excel.run(function (context){
+        var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+        pieChart.onActivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The pie chart is the active chart. ID: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Chart.onDeactivated:
+  - |-
+    Excel.run(function (context){
+        var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
+        pieChart.onDeactivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The pie chart is NOT active.");
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.add_1:
   - |-
     // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
     // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
@@ -371,7 +395,7 @@ Excel.ChartCollection.getItem:
     });
   - |-
     Excel.run(function (ctx) { 
-        var chartId = 'SamplChartId';
+        var chartId = 'SampleChartId';
         var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
         return ctx.sync().then(function() {
                 console.log(chart.height);
@@ -409,7 +433,7 @@ Excel.ChartCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartCollection.load:
+Excel.ChartCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
@@ -440,7 +464,55 @@ Excel.ChartCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartDataLabels.load:
+Excel.ChartCollection.onActivated:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onActivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The ID of the active chart is: " + event.chartId)
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.onAdded:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onAdded.add(function (event) {
+            return Excel.run((context) => {
+                console.log("A chart has been added with ID: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.onDeactivated:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onDeactivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The chart with this ID was deactivated: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartCollection.onDeleted:
+  - |-
+    Excel.run(function (context){
+        context.workbook.worksheets.getActiveWorksheet()
+            .charts.onDeleted.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The chart with this ID was deleted: " + event.chartId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.ChartDataLabels.load_1:
   - |-
     // Make Series Name shown in Datalabels and set the position of datalabels to be "top";
     Excel.run(function (ctx) { 
@@ -506,7 +578,7 @@ Excel.ChartFont:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartGridlines.load:
+Excel.ChartGridlines.load_1:
   - |-
     // Get the visible of Major Gridlines on value axis of Chart1
     Excel.run(function (ctx) { 
@@ -536,7 +608,7 @@ Excel.ChartGridlines.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLegend.load:
+Excel.ChartLegend.load_1:
   - |-
     // Get the position of Chart Legend from Chart1
     Excel.run(function (ctx) { 
@@ -583,7 +655,7 @@ Excel.ChartLineFormat.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartLineFormat.load:
+Excel.ChartLineFormat.load_1:
   - |-
     // Set chart major gridlines on value axis to be red.
     Excel.run(function (ctx) {
@@ -613,7 +685,7 @@ Excel.ChartPointsCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartPointsCollection.load:
+Excel.ChartPointsCollection.load_1:
   - |-
     // Get the names of points in the points collection
     Excel.run(function (ctx) { 
@@ -644,7 +716,7 @@ Excel.ChartPointsCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeries.load:
+Excel.ChartSeries.load_1:
   - |-
     // Rename the 1st series of Chart1 to "New Series Name"
     Excel.run(function (ctx) { 
@@ -674,7 +746,7 @@ Excel.ChartSeriesCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartSeriesCollection.load:
+Excel.ChartSeriesCollection.load_1:
   - |-
     // Getting the names of series in the series collection.
     Excel.run(function (ctx) { 
@@ -706,7 +778,7 @@ Excel.ChartSeriesCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.ChartTitle.load:
+Excel.ChartTitle.load_1:
   - |-
     // Get the text of Chart Title from Chart1.
     Excel.run(function (ctx) { 
@@ -865,7 +937,7 @@ Excel.NamedItem.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItem.load:
+Excel.NamedItem.load_1:
   - |-
     Excel.run(function (ctx) { 
         var names = ctx.workbook.names;
@@ -895,7 +967,7 @@ Excel.NamedItemCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.NamedItemCollection.load:
+Excel.NamedItemCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var nameditems = ctx.workbook.names;
@@ -928,7 +1000,7 @@ Excel.Range.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Range.delete:
+Excel.Range.delete_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1236,7 +1308,7 @@ Excel.Range.untrack:
 
         await context.sync();
     });
-Excel.Range.load:
+Excel.Range.load_1:
   - |-
     // Below example uses range address to get the range object.
     Excel.run(function (ctx) {
@@ -1291,7 +1363,7 @@ Excel.Range.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorder.load:
+Excel.RangeBorder.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1351,23 +1423,6 @@ Excel.RangeBorderCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var sheetName = "Sheet1";
-        var rangeAddress = "A1:F8";
-        var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-        var range = worksheet.getRange(rangeAddress);
-        var border = range.format.borders.getItemAt(0);
-        border.load('sideIndex');
-        return ctx.sync().then(function() {
-                console.log(border.sideIndex);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.RangeBorderCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -1386,7 +1441,7 @@ Excel.RangeBorderCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeBorderCollection.load:
+Excel.RangeBorderCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1443,7 +1498,7 @@ Excel.RangeFill.clear:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFill.load:
+Excel.RangeFill.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1475,7 +1530,7 @@ Excel.RangeFill.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFont.load:
+Excel.RangeFont.load_1:
   - |-
     Excel.run(function (ctx) { 
         var sheetName = "Sheet1";
@@ -1507,7 +1562,7 @@ Excel.RangeFont.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.RangeFormat.load:
+Excel.RangeFormat.load_1:
   - |-
     // Below example selects all of the Range's format properties. 
     Excel.run(function (ctx) { 
@@ -1652,7 +1707,7 @@ Excel.Table.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Table.load:
+Excel.Table.load_1:
   - |-
     // Get a table by name. 
     Excel.run(function (ctx) { 
@@ -1730,19 +1785,6 @@ Excel.TableCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var table = ctx.workbook.tables.getItemAt(0);
-        table.load('name');
-        return ctx.sync().then(function() {
-                console.log(table.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.TableCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -1757,7 +1799,7 @@ Excel.TableCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableCollection.load:
+Excel.TableCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tables = ctx.workbook.tables;
@@ -1865,7 +1907,7 @@ Excel.TableColumn.getTotalRowRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumn.load:
+Excel.TableColumn.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -1927,19 +1969,6 @@ Excel.TableColumnCollection.getItem:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-  - |-
-    Excel.run(function (ctx) { 
-        var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-        tablecolumn.load('name');
-        return ctx.sync().then(function() {
-                console.log(tablecolumn.name);
-        });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
 Excel.TableColumnCollection.getItemAt:
   - |-
     Excel.run(function (ctx) { 
@@ -1954,15 +1983,14 @@ Excel.TableColumnCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableColumnCollection.load:
+Excel.TableColumnCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
         tablecolumns.load('items');
         return ctx.sync().then(function() {
             console.log("tablecolumns Count: " + tablecolumns.count);
-            for (var i = 0; i < tablecolumns.items.length; i++)
-            {
+            for (var i = 0; i < tablecolumns.items.length; i++) {
                 console.log(tablecolumns.items[i].name);
             }
         });
@@ -2001,7 +2029,7 @@ Excel.TableRow.getRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRow.load:
+Excel.TableRow.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tableName = 'Table1';
@@ -2063,7 +2091,7 @@ Excel.TableRowCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.TableRowCollection.load:
+Excel.TableRowCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var tablerows = ctx.workbook.tables.getItem('Table1').rows;
@@ -2223,7 +2251,7 @@ Excel.Worksheet.getUsedRange:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.Worksheet.load:
+Excel.Worksheet.load_1:
   - |-
     // Get worksheet properties based on sheet name.
     Excel.run(function (ctx) { 
@@ -2251,6 +2279,54 @@ Excel.Worksheet.load:
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
+    });
+Excel.Worksheet.onActivated:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onActivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The activated worksheet ID is: " + event.worksheetId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Worksheet.onCalculated:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onCalculated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The worksheet has recalculated.");
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Worksheet.onDeactivated:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onDeactivated.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The deactivated worksheet is: " + event.worksheetId);
+                return context.sync();
+            });
+        });
+        return context.sync();
+    });
+Excel.Worksheet.onSelectionChanged:
+  - |-
+    Excel.run(function (context) {
+        var sheet = context.workbook.worksheets.getItem("Sample");
+        sheet.onSelectionChanged.add(function (event) {
+            return Excel.run((context) => {
+                console.log("The selected range has changed to: " + event.address);
+                return context.sync();
+            });
+        });
+        return context.sync();
     });
 Excel.WorksheetCollection.add:
   - |-
@@ -2281,7 +2357,7 @@ Excel.WorksheetCollection.getActiveWorksheet:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Excel.WorksheetCollection.load:
+Excel.WorksheetCollection.load_1:
   - |-
     Excel.run(function (ctx) { 
         var worksheets = ctx.workbook.worksheets;
@@ -2376,29 +2452,30 @@ Office.AddinCommands.Event.completed:
 Office.AddinCommands.Event.source:
   - |-
     // In this example, consider a button defined in an add-in manifest as follows:
-    <Control xsi:type="Button" id="eventTestButton">
-        <Label resid="eventButtonLabel" />
-        <Tooltip resid="eventButtonTooltip" />
-        <Supertip>
-            <Title resid="eventSuperTipTitle" />
-            <Description resid="eventSuperTipDescription" />
-        </Supertip>
-        <Icon>
-            <bt:Image size="16" resid="blue-icon-16" />
-            <bt:Image size="32" resid="blue-icon-32" />
-            <bt:Image size="80" resid="blue-icon-80" />
-        </Icon>
-        <Action xsi:type="ExecuteFunction">
-            <FunctionName>testEventObject</FunctionName>
-        </Action>
-    </Control>
+    //<Control xsi:type="Button" id="eventTestButton">
+    //    <Label resid="eventButtonLabel" />
+    //    <Tooltip resid="eventButtonTooltip" />
+    //    <Supertip>
+    //        <Title resid="eventSuperTipTitle" />
+    //        <Description resid="eventSuperTipDescription" />
+    //    </Supertip>
+    //    <Icon>
+    //        <bt:Image size="16" resid="blue-icon-16" />
+    //        <bt:Image size="32" resid="blue-icon-32" />
+    //        <bt:Image size="80" resid="blue-icon-80" />
+    //    </Icon>
+    //    <Action xsi:type="ExecuteFunction">
+    //        <FunctionName>testEventObject</FunctionName>
+    //    </Action>
+    //</Control>
+
     // The button has an id attribute set to eventTestButton, and will invoke
     // the testEventObject function defined in the add-in.
     // That function looks like this:
     function testEventObject(event) {
-        // The event object implements the Event interface
+        // The event object implements the Event interface.
 
-        // This value will be "eventTestButton"
+        // This value will be "eventTestButton".
         var buttonId = event.source.id;
 
         // Signal to the host app that processing is complete.
@@ -2408,13 +2485,59 @@ Office.AddinCommands.Event.source:
     // Function is used by two buttons:
     // button1 and button2
     function multiButton (event) {
-        // Check which button was clicked
+        // Check which button was clicked.
         var buttonId = event.source.id;
 
         if (buttonId === 'button1') {
             doButton1Action();
+        } else {
+            doButton2Action();
         }
-        else {
+
+        event.completed();
+    }
+Office.AddinCommands.Source.id:
+  - |-
+    // In this example, consider a button defined in an add-in manifest as follows:
+    //<Control xsi:type="Button" id="eventTestButton">
+    //    <Label resid="eventButtonLabel" />
+    //    <Tooltip resid="eventButtonTooltip" />
+    //    <Supertip>
+    //        <Title resid="eventSuperTipTitle" />
+    //        <Description resid="eventSuperTipDescription" />
+    //    </Supertip>
+    //    <Icon>
+    //        <bt:Image size="16" resid="blue-icon-16" />
+    //        <bt:Image size="32" resid="blue-icon-32" />
+    //        <bt:Image size="80" resid="blue-icon-80" />
+    //    </Icon>
+    //    <Action xsi:type="ExecuteFunction">
+    //        <FunctionName>testEventObject</FunctionName>
+    //    </Action>
+    //</Control>
+    
+    // The button has an id attribute set to eventTestButton, and will invoke
+    // the testEventObject function defined in the add-in.
+    // That function looks like this:
+    function testEventObject(event) {
+        // The event object implements the Event interface.
+
+        // This value will be "eventTestButton".
+        var buttonId = event.source.id;
+
+        // Signal to the host app that processing is complete.
+        event.completed();
+    }
+  - |-
+    // Function is used by two buttons:
+    // button1 and button2
+    function multiButton (event) {
+        // Check which button was clicked.
+        var buttonId = event.source.id;
+
+        if (buttonId === 'button1') {
+            doButton1Action();
+        } else {
             doButton2Action();
         }
 
@@ -2520,7 +2643,7 @@ Office.Auth.getAccessTokenAsync:
             console.log("Error obtaining token", result.error);
         }
     });
-Office.Binding.addHandlerAsync:
+Office.Binding.addHandlerAsync_1:
   - |-
     // The following code sample calls the select method of the Office object to access the binding
     // with ID "MyBinding", and then calls the addHandlerAsync method to add a handler function 
@@ -2648,7 +2771,7 @@ Office.Binding.document:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.getDataAsync:
+Office.Binding.getDataAsync_1:
   - |-
     function showBindingData() {
         Office.select("bindings#MyBinding").getDataAsync(function (asyncResult) {
@@ -2720,13 +2843,13 @@ Office.Binding.id:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Binding.removeHandlerAsync:
+Office.Binding.removeHandlerAsync_1:
   - |-
     function removeEventHandlerFromBinding() {
         Office.select("bindings#MyBinding").removeHandlerAsync(
             Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
     }
-Office.Binding.setDataAsync:
+Office.Binding.setDataAsync_1:
   - |-
     function setBindingData() {
         Office.select("bindings#MyBinding").setDataAsync('Hello World!', function (asyncResult) { });
@@ -2905,7 +3028,7 @@ Office.Bindings.addFromSelectionAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.getAllAsync:
+Office.Bindings.getAllAsync_1:
   - |-
     function displayAllBindingNames() {
         Office.context.document.bindings.getAllAsync(function (asyncResult) {
@@ -2920,7 +3043,7 @@ Office.Bindings.getAllAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.getByIdAsync:
+Office.Bindings.getByIdAsync_1:
   - |-
     function displayBindingType() {
         Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
@@ -2931,7 +3054,7 @@ Office.Bindings.getByIdAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Bindings.releaseByIdAsync:
+Office.Bindings.releaseByIdAsync_1:
   - |-
     Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
         write("Released MyBinding!"); 
@@ -3029,7 +3152,7 @@ Office.CustomXmlNode.baseName:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getNodesAsync:
+Office.CustomXmlNode.getNodesAsync_1:
   - |-
     function showXmlChildNodes() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3049,7 +3172,7 @@ Office.CustomXmlNode.getNodesAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.getNodeValueAsync:
+Office.CustomXmlNode.getNodeValueAsync_1:
   - |-
     function showXmlNodeValues() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3104,7 +3227,7 @@ Office.CustomXmlNode.getTextAsync:
             });
         });
     });
-Office.CustomXmlNode.getXmlAsync:
+Office.CustomXmlNode.getXmlAsync_1:
   - |-
     function showXmlNodeInnerXml() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3160,7 +3283,7 @@ Office.CustomXmlNode.nodeType:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlNode.setNodeValueAsync:
+Office.CustomXmlNode.setNodeValueAsync_1:
   - |-
     function setXmlNodeValue() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3170,7 +3293,7 @@ Office.CustomXmlNode.setNodeValueAsync:
                 for (i = 0; i < nodeResults.value.length; i++) {
                     var node = nodeResults.value[i];
                     write(node);
-                    node.setNodeValueAsync("item number" + i, {}, function (result) { });
+                    node.setNodeValueAsync("item number" + i, function (result) { });
                 }
             });
         });
@@ -3235,7 +3358,7 @@ Office.CustomXmlNode.setXmlAsync:
             });
         });
     }
-Office.CustomXmlPart.addHandlerAsync:
+Office.CustomXmlPart.addHandlerAsync_1:
   - |-
     // To add an event handler for the NodeDeleted event, use the addHandlerAsync method of the CustomXmlPart object.
     function addNodeDeletedEvent() {
@@ -3295,7 +3418,7 @@ Office.CustomXmlPart.builtIn:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.deleteAsync:
+Office.CustomXmlPart.deleteAsync_1:
   - |-
     function deleteXMLPart() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3310,7 +3433,7 @@ Office.CustomXmlPart.deleteAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.getNodesAsync:
+Office.CustomXmlPart.getNodesAsync_1:
   - |-
     function showXmlNodeType() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3328,13 +3451,13 @@ Office.CustomXmlPart.getNodesAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlPart.getXmlAsync:
+Office.CustomXmlPart.getXmlAsync_1:
   - |-
     function showXMLPartInnerXML() {
         Office.context.document.customXmlParts.getByIdAsync(
             "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
             var xmlPart = result.value;
-            xmlPart.getXmlAsync({}, function (eventArgs) {
+            xmlPart.getXmlAsync(function (eventArgs) {
                 write(eventArgs.value);
             });
         });
@@ -3365,7 +3488,7 @@ Office.CustomXmlPart.namespaceManager:
             xmlPart.namespaceManager.addNamespaceAsync("myPrefix", "myNamespace");
         });
     }
-Office.CustomXmlPart.removeHandlerAsync:
+Office.CustomXmlPart.removeHandlerAsync_1:
   - |-
     function removeNodeInsertedEventHandler() {
         Office.context.document.customXmlParts.getByIdAsync(
@@ -3375,7 +3498,7 @@ Office.CustomXmlPart.removeHandlerAsync:
                 xmlPart.removeHandlerAsync(Office.EventType.DataNodeInserted, {handler:myHandler});
         });
     }
-Office.CustomXmlParts.addAsync:
+Office.CustomXmlParts.addAsync_1:
   - |-
     function addXMLPart() {
         Office.context.document.customXmlParts.addAsync(
@@ -3413,7 +3536,7 @@ Office.CustomXmlParts.getByIdAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.CustomXmlParts.getByNamespaceAsync:
+Office.CustomXmlParts.getByNamespaceAsync_1:
   - |-
     function showXMLPartsInNamespace() {
         Office.context.document.customXmlParts.getByNamespaceAsync(
@@ -3426,7 +3549,7 @@ Office.CustomXmlParts.getByNamespaceAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.addHandlerAsync:
+Office.Document.addHandlerAsync_1:
   - |-
     // The following example adds an event handler for the SelectionChanged event of a document
     function addSelectionChangedEventHandler() {
@@ -3683,7 +3806,7 @@ Office.Document.customXmlParts:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Document.getActiveViewAsync:
+Office.Document.getActiveViewAsync_1:
   - |-
     function getFileView() {
         // Get whether the current view is edit or read.
@@ -3780,7 +3903,7 @@ Office.Document.getFileAsync:
             }
     }
     );
-Office.Document.getFilePropertiesAsync:
+Office.Document.getFilePropertiesAsync_1:
   - |-
     // To read the URL of the current file, you need to write a callback function that returns the URL.
     // The following example shows how to:
@@ -3890,7 +4013,7 @@ Office.Document.getSelectedDataAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.goToByIdAsync:
+Office.Document.goToByIdAsync_1:
   - |-
     // Go to a binding by id (Word and Excel)
     // The following example shows how to:
@@ -4031,7 +4154,7 @@ Office.Document.mode:
             $('#message').html(output);
         }
     })();
-Office.Document.removeHandlerAsync:
+Office.Document.removeHandlerAsync_1:
   - |-
     // The following example removes the event handler named 'MyHandler'.
     function removeSelectionChangedEventHandler() {
@@ -4123,7 +4246,7 @@ Office.Document.setSelectedDataAsync:
 
     // Specifying the optional coercionType parameter lets you specify the kind of data you want to write
     // to a selection. The following example writes data as an array of three rows of two columns, 
-    // specifying the coercionType as "matrix" for that data structure, and if that fails, 
+    // specifying the coercionType as `Matrix` for that data structure, and if that fails, 
     // displays the value of the error.message property.
     function writeMatrix() {
         Office.context.document.setSelectedDataAsync(
@@ -4143,7 +4266,7 @@ Office.Document.setSelectedDataAsync:
     }
 
     // The following example writes data as a one column table with a header and four rows, 
-    // specifying the coercionType as "table" for that data structure, and if that fails, 
+    // specifying the coercionType as `Table` for that data structure, and if that fails, 
     // displays the value of the error.message property.
     function writeTable() {
         // Build table.
@@ -4166,7 +4289,7 @@ Office.Document.setSelectedDataAsync:
         document.getElementById('message').innerText += message; 
     }
 
-    // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as "html"
+    // In Word if you want to write HTML to the selection, you can specify the coercionType parameter as `Html`
     // as shown in the following example, which uses HTML <b> tags to make "Hello" bold.
     function writeHtmlData() {
         Office.context.document.setSelectedDataAsync(
@@ -4183,21 +4306,37 @@ Office.Document.setSelectedDataAsync:
     }
 
     // In Word, PowerPoint, or Excel, if you want to write an image to the selection, you can specify the coercionType
-    // parameter as "image" as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+    // parameter as `Image` as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
     function insertPictureAtSelection(base64EncodedImageStr) {
 
         Office.context.document.setSelectedDataAsync(base64EncodedImageStr, {
-        coercionType: Office.CoercionType.Image,
-        imageLeft: 50,
-        imageTop: 50,
-        imageWidth: 100,
-        imageHeight: 100
+            coercionType: Office.CoercionType.Image,
+            imageLeft: 50,
+            imageTop: 50,
+            imageWidth: 100,
+            imageHeight: 100
         },
         function (asyncResult) {
             if (asyncResult.status === Office.AsyncResultStatus.Failed) {
                 console.log("Action failed with error: " + asyncResult.error.message);
             }
         });
+    }
+
+    // In Word, PowerPoint, or Excel, if you want to write an scalable vector graphic (SVG) to the selection, you can specify the 
+    // coercionType parameter as `XmlSvg` as shown in the following example. Note that imageLeft and imageTop are ignored by Word.
+    function insertSvgAtSelection(base64EncodedImageStr) {
+        Office.context.document.setSelectedDataAsync(getImageAsBase64String(), {
+            coercionType: Office.CoercionType.XmlSvg,
+            imageLeft: 50,
+            imageTop: 50,
+            imageWidth: 400
+        },
+            function (asyncResult) {
+                if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+                    console.log(asyncResult.error.message);
+                }
+            });
     }
 Office.Document.url:
   - |-
@@ -4314,7 +4453,7 @@ Office.OfficeTheme:
         // Apply body background color to a CSS class.
         $('.body').css('background-color', bodyBackgroundColor);
     }
-Office.Document.getMaxResourceIndexAsync:
+Office.Document.getMaxResourceIndexAsync_1:
   - |-
     // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
     // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
@@ -4391,7 +4530,7 @@ Office.Document.getMaxResourceIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getMaxTaskIndexAsync:
+Office.Document.getMaxTaskIndexAsync_1:
   - |-
     // The following code example calls getMaxTaskIndexAsync to get the maximum index
     // of the collection of tasks in the current project. Then it uses the returned value
@@ -4468,7 +4607,7 @@ Office.Document.getMaxTaskIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getProjectFieldAsync:
+Office.Document.getProjectFieldAsync_1:
   - |-
     // The following code example gets the values of three specified fields for the active project, 
     // and then displays the values in the add-in.
@@ -4532,7 +4671,7 @@ Office.Document.getProjectFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getResourceByIndexAsync:
+Office.Document.getResourceByIndexAsync_1:
   - |-
     // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource
     // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
@@ -4609,7 +4748,7 @@ Office.Document.getResourceByIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getResourceFieldAsync:
+Office.Document.getResourceFieldAsync_1:
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource
     // that's currently selected in a resource view. Then it gets three resource field values by calling 
@@ -4699,7 +4838,7 @@ Office.Document.getResourceFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedResourceAsync:
+Office.Document.getSelectedResourceAsync_1:
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
     // currently selected in a resource view. Then it gets three resource field values by calling 
@@ -4789,7 +4928,7 @@ Office.Document.getSelectedResourceAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedTaskAsync:
+Office.Document.getSelectedTaskAsync_1:
   - |-
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
     // selected in a task view. Then it gets task properties by calling getTaskAsync.
@@ -4858,7 +4997,7 @@ Office.Document.getSelectedTaskAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getSelectedViewAsync:
+Office.Document.getSelectedViewAsync_1:
   - |-
     // The following code example calls adds a ViewSelectionChanged event handler that
     // calls getSelectedViewAsync to get the name and type of the active view in the document.
@@ -4902,7 +5041,7 @@ Office.Document.getSelectedViewAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskAsync:
+Office.Document.getTaskAsync_1:
   - |-
     // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
     // selected task. Then it calls getTaskAsync to get the properties for the task that are
@@ -4972,7 +5111,7 @@ Office.Document.getTaskAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskByIndexAsync:
+Office.Document.getTaskByIndexAsync_1:
   - |-
     // The following code example calls getMaxTaskIndexAsync to get the
     // maximum index in the project's task collection, and then
@@ -5050,7 +5189,7 @@ Office.Document.getTaskByIndexAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.getTaskFieldAsync:
+Office.Document.getTaskFieldAsync_1:
   - |-
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
     // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
@@ -5136,7 +5275,7 @@ Office.Document.getTaskFieldAsync:
             $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setResourceFieldAsync:
+Office.Document.setResourceFieldAsync_1:
   - |-
     // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
     // currently selected in a resource view. Then it sets two resource field values by calling
@@ -5215,7 +5354,7 @@ Office.Document.setResourceFieldAsync:
             app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
         }
     })();
-Office.Document.setTaskFieldAsync:
+Office.Document.setTaskFieldAsync_1:
   - |-
     // The following code example calls getSelectedTaskAsync to get the GUID of the task that's
     // currently selected in a task view. Then it sets two task field values by calling
@@ -5305,7 +5444,7 @@ Office.select:
             doSomethingWithBinding(eventArgs.binding);
         });
     }
-Office.Settings.addHandlerAsync:
+Office.Settings.addHandlerAsync_1:
   - |-
     function addSelectionChangedEventHandler() {
         Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
@@ -5345,7 +5484,7 @@ Office.Settings.remove:
     function removeMySetting() {
         Office.context.document.settings.remove('mySetting');
     }
-Office.Settings.removeHandlerAsync:
+Office.Settings.removeHandlerAsync_1:
   - |-
     function removeSettingsChangedEventHandler() {
         Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
@@ -5360,7 +5499,7 @@ Office.Settings.removeHandlerAsync:
     function write(message){
         document.getElementById('message').innerText += message; 
     }
-Office.Settings.saveAsync:
+Office.Settings.saveAsync_1:
   - |-
     function persistSettings() {
         Office.context.document.settings.saveAsync(function (asyncResult) {
@@ -5867,7 +6006,7 @@ OneNote.Application.navigateToPageWithClientUrl:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.FloatingInk.load:
+OneNote.FloatingInk.load_1:
   - |-
     OneNote.run(function(context) {
     
@@ -5940,7 +6079,7 @@ OneNote.Image.getBase64Image:
                 console.log(imageString);
             });
     });
-OneNote.Image.load:
+OneNote.Image.load_1:
   - |-
     OneNote.run(function(ctx){
         // Get the current outline.         
@@ -6055,7 +6194,7 @@ OneNote.Image.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ImageOcrData.load:
+OneNote.Image.ocrData:
   - |-
     var image = null;
     
@@ -6093,7 +6232,7 @@ OneNote.ImageOcrData.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.InkAnalysis.load:
+OneNote.InkAnalysis.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -6115,7 +6254,7 @@ OneNote.InkAnalysis.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisLine.load:
+OneNote.InkAnalysisLine.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -6142,7 +6281,7 @@ OneNote.InkAnalysisLine.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisParagraph.load:
+OneNote.InkAnalysisParagraph.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -6172,7 +6311,7 @@ OneNote.InkAnalysisParagraph.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.InkAnalysisWord.load:
+OneNote.InkAnalysisWord.load_1:
   - |-
     OneNote.run(function (ctx) {        
         var app = ctx.application;
@@ -6275,7 +6414,7 @@ OneNote.Notebook.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Notebook.load:
+OneNote.Notebook.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -6426,7 +6565,7 @@ OneNote.NotebookCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.NotebookCollection.load:
+OneNote.NotebookCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -6615,7 +6754,7 @@ OneNote.Page.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Page.insertPageAsSibling:
+OneNote.Page.insertPageAsSibling_1:
   - |-
     OneNote.run(function (context) {
     
@@ -6640,7 +6779,7 @@ OneNote.Page.insertPageAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Page.load:
+OneNote.Page.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -6764,7 +6903,7 @@ OneNote.PageCollection.getByTitle:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageCollection.load:
+OneNote.PageCollection.load_1:
   - |-
     OneNote.run(function (context) {
         
@@ -6838,7 +6977,7 @@ OneNote.PageContentCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.PageContentCollection.load:
+OneNote.PageContentCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -7026,7 +7165,7 @@ OneNote.Paragraph.insertRichTextAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.Paragraph.load:
+OneNote.Paragraph.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -7125,7 +7264,7 @@ OneNote.ParagraphCollection.getItemAt:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.ParagraphCollection.load:
+OneNote.ParagraphCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -7213,7 +7352,7 @@ OneNote.ParagraphCollection.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.RichText.load:
+OneNote.RichText.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -7358,7 +7497,7 @@ OneNote.Section.copyToSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Section.insertSectionAsSibling:
+OneNote.Section.insertSectionAsSibling_1:
   - |-
     OneNote.run(function (context) {
                 
@@ -7401,7 +7540,7 @@ OneNote.Section.getRestApiId:
                 // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
             });
     });
-OneNote.Section.load:
+OneNote.Section.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -7504,7 +7643,7 @@ OneNote.SectionCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionCollection.load:
+OneNote.SectionCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -7603,7 +7742,7 @@ OneNote.SectionGroup.addSectionGroup:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     }); 
-OneNote.SectionGroup.load:
+OneNote.SectionGroup.load_1:
   - |-
     OneNote.run(function (context) {
             
@@ -7748,7 +7887,7 @@ OneNote.SectionGroupCollection.getByName:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.SectionGroupCollection.load:
+OneNote.SectionGroupCollection.load_1:
   - |-
     OneNote.run(function (context) {
     
@@ -7927,7 +8066,7 @@ OneNote.Table.insertRow:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.Table.load:
+OneNote.Table.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -8063,7 +8202,7 @@ OneNote.TableCell.appendRichText:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableCell.load:
+OneNote.TableCell.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -8182,7 +8321,7 @@ OneNote.TableRow.insertRowAsSibling:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-OneNote.TableRow.load:
+OneNote.TableRow.load_1:
   - |-
     OneNote.run(function(ctx) {
         var app = ctx.application;
@@ -8272,14 +8411,14 @@ Office.AppointmentCompose.addFileAttachmentAsync:
   - |-
     function callback(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
-            showMessage("Attachment added");
+            console.log("Attachment added");
         }
     }
 
     function addAttachment() {
-        // The values in asyncContext can be accessed in the callback
+        // The values in asyncContext can be accessed in the callback.
         var options = { 'asyncContext': { var1: 1, var2: 2 } };
 
         var attachmentURL = "https://contoso.com/rtm/icon.png";
@@ -8308,21 +8447,36 @@ Office.AppointmentCompose.addItemAttachmentAsync:
     // with the name `My Attachment`.
     function callback(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
-            showMessage("Attachment added");
+            console.log("Attachment added");
         }
     }
 
     function addAttachment() {
-        // EWS ID of item to attach
-        // (Shortened for readability)
+        // EWS ID of item to attach (shortened for readability).
         var itemId = "AAMkADI1...AAA=";
 
-        // The values in asyncContext can be accessed in the callback
+        // The values in asyncContext can be accessed in the callback.
         var options = { 'asyncContext': { var1: 1, var2: 2 } };
 
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
+    }
+Office.AppointmentCompose.body:
+  - |-
+    // This example gets the body of the message as plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext: "This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result.
+        });
+
+    // The following is an example of an object that is passed as the result parameter to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
     }
 Office.AppointmentCompose.end:
   - |-
@@ -8330,43 +8484,72 @@ Office.AppointmentCompose.end:
     // using the `setAsync` method of the `Time` object.
     var endTime = new Date("3/14/2015");
     var options = {
-        // Pass information that can be used
-        // in the callback
-        asyncContext: {verb:"Set"}
-    }
+        // Pass information that can be used in the callback.
+        asyncContext: {verb: "Set"}
+    };
     Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function
+            // Access the asyncContext that was passed to the setAsync function.
             console.debug("End Time " + result.asyncContext.verb);
         }
     });
-Office.AppointmentCompose.getAttachmentsAsync:
+Office.AppointmentCompose.enhancedLocation:
+  - |-
+    var locations = [
+        {
+            "id": "Contoso",
+            "type": Office.MailboxEnums.LocationType.Custom
+        }
+    ];
+    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
+
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (place) {
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
+            }
+        });
+    }
+  - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (currentValue) {
+            Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
+        });
+    }
+Office.AppointmentCompose.getAttachmentsAsync_1:
   - |-
     var item = Office.context.mailbox.item;
     var outputString = "";
-    item.getAttachmentsAsync(callback);  
+    item.getAttachmentsAsync(callback);
+
     function callback(result) {
         if (result.value.length > 0) {
             for (i = 0 ; i < result.value.length ; i++) {
-                var _att = result.value [i];
+                var attachment = result.value [i];
                 outputString += "<BR>" + i + ". Name: ";
-                outputString += _att.name;
-                outputString += "<BR>ID: " + _att.id;
-                outputString += "<BR>contentType: " + _att.contentType;
-                outputString += "<BR>size: " + _att.size;
-                outputString += "<BR>attachmentType: " + _att.attachmentType;
-                outputString += "<BR>isInline: " + _att.isInline;
+                outputString += attachment.name;
+                outputString += "<BR>ID: " + attachment.id;
+                outputString += "<BR>contentType: " + attachment.contentType;
+                outputString += "<BR>size: " + attachment.size;
+                outputString += "<BR>attachmentType: " + attachment.attachmentType;
+                outputString += "<BR>isInline: " + attachment.isInline;
             }
         }
     }
 Office.AppointmentCompose.getSelectedDataAsync:
   - |-
-    // getting selected data
+    // Get selected data.
     Office.initialize = function () {
         Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-    }
+    };
 
     function getCallback(asyncResult) {
         var text = asyncResult.value.data;
@@ -8376,7 +8559,14 @@ Office.AppointmentCompose.getSelectedDataAsync:
     }
 
     function setCallback(asyncResult) {
-        // check for errors
+        // Check for errors.
+    }
+Office.AppointmentCompose.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
+        // Do something.
+    } else {
+        // Do something else.
     }
 Office.AppointmentCompose.location:
   - |-
@@ -8387,6 +8577,14 @@ Office.AppointmentCompose.location:
         var context = asyncResult.context;
         var location = asyncResult.value;
     }
+Office.AppointmentCompose.notificationMessages:
+  - |-
+    // Get all notifications.
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.AppointmentCompose.optionalAttendees:
   - |-
     Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -8398,8 +8596,36 @@ Office.AppointmentCompose.optionalAttendees:
     }
 Office.AppointmentCompose.organizer:
   - |-
-    var organizerName = Office.context.mailbox.item.organizer.displayName;
-    var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+    Office.context.mailbox.item.organizer.getAsync(
+        function(asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
+Office.AppointmentCompose.recurrence:
+  - |-
+    // This example gets the Recurrence object of an appointment item.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult) {
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        if (!recurrence) {
+            console.log("One-time appointment or meeting");
+        } else {
+            console.log(JSON.stringify(recurrence));
+        }
+    }
+
+    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
+    // recurrence date and time properties.
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject},
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+    }
 Office.AppointmentCompose.removeAttachmentAsync:
   - |-
     // The following code removes an attachment with an identifier of '0'.
@@ -8419,12 +8645,13 @@ Office.AppointmentCompose.requiredAttendees:
 
     function callback(asyncResult) {
         var arrayOfRequiredAttendeesRecipients = asyncResult.value;
+        console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
     }
-Office.AppointmentCompose.saveAsync:
+Office.AppointmentCompose.saveAsync_1:
   - |-
     Office.context.mailbox.item.saveAsync(
         function callback(result) {
-            // Process the result
+            // Process the result.
         });
 
     // The following is an example of the
@@ -8433,28 +8660,40 @@ Office.AppointmentCompose.saveAsync:
     // property contains the item ID of
     // the item.
     {
-        "value":"AAMkADI5...AAA=",
-        "status":"succeeded"
+        "value": "AAMkADI5...AAA=",
+        "status": "succeeded"
     }
+Office.AppointmentCompose.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId;
+
+    // The seriesId property returns null for items that do
+    // not have parent items (such as single appointments,
+    // series items, or meeting requests) and returns
+    // undefined for messages that are not meeting requests.
+    var isSeriesInstance = (seriesId != null);
+    console.log("SeriesId is " + seriesId 
+        + " and isSeriesInstance is " + isSeriesInstance);
 Office.AppointmentCompose.setSelectedDataAsync:
   - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+Office.AppointmentCompose.setSelectedDataAsync_1:
+  - |-
+    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.AppointmentCompose.start:
   - |-
     // The following example sets the start time of an appointment in compose mode by
     // using the `setAsync` method of the `Time` object.
     var startTime = new Date("3/14/2015");
     var options = {
-        // Pass information that can be used
-        // in the callback
-        asyncContext: {verb:"Set"}
-    }
+        // Pass information that can be used in the callback.
+        asyncContext: {verb: "Set"}
+    };
     Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function
+            // Access the asyncContext that was passed to the setAsync function.
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
@@ -8468,23 +8707,47 @@ Office.AppointmentCompose.subject:
 Office.AppointmentRead.attachments:
   - |-
     // The following code builds an HTML string with details of all attachments on the current item.
-    var _Item = Office.context.mailbox.item;
+    var item = Office.context.mailbox.item;
     var outputString = "";
 
-    if (_Item.attachments.length > 0) {
-        for (i = 0 ; i < _Item.attachments.length ; i++) {
-            var _att = _Item.attachments[i];
+    if (item.attachments.length > 0) {
+        for (i = 0 ; i < item.attachments.length ; i++) {
+            var attachment = item.attachments[i];
             outputString += "<BR>" + i + ". Name: ";
-            outputString += _att.name;
-            outputString += "<BR>ID: " + _att.id;
-            outputString += "<BR>contentType: " + _att.contentType;
-            outputString += "<BR>size: " + _att.size;
-            outputString += "<BR>attachmentType: " + _att.attachmentType;
-            outputString += "<BR>isInline: " + _att.isInline;
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
         }
     }
 
-    // Do something with outputString
+    console.log(outputString);
+Office.AppointmentRead.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext: "This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result.
+        });
+
+    // The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
+Office.AppointmentRead.dateTimeCreated:
+  - |-
+    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
+    console.log("Date and time created: " + dateTimeCreated);
+Office.AppointmentRead.dateTimeModified:
+  - |-
+    var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
+    console.log("Date and time modified: " + dateTimeModified);
 Office.AppointmentRead.displayReplyAllForm:
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -8615,10 +8878,32 @@ Office.AppointmentRead.displayReplyForm:
             console.log(asyncResult.value);
         }
     });
+Office.AppointmentRead.end:
+  - |-
+    var end = Office.context.mailbox.item.end;
+    console.log("Appointment end: " + end);
+Office.AppointmentRead.enhancedLocation:
+  - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (place) {
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
+            }
+        });
+    }
+Office.AppointmentRead.getEntities:
+  - |-
+    // The following example accesses the contacts entities in the current item's body.
+
+    var contacts = Office.context.mailbox.item.getEntities().contacts;
 Office.AppointmentRead.getEntitiesByType:
   - |-
-    // The following example shows how to access an array of strings that represent postal addresses
-    // in the current item's body.
+    // The following example shows how to access an array of strings that represent
+    // postal addresses in the current item's body.
 
     // The initialize function is required for all apps.
     Office.initialize = function () {
@@ -8630,24 +8915,54 @@ Office.AppointmentRead.getEntitiesByType:
             var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
             // Continue processing the array of addresses.
         });
-    }
+    };
 Office.AppointmentRead.getRegExMatches:
   - |-
+    // Consider an add-in manifest has the following `Rule` element:
+    //<Rule xsi:type="RuleCollection" Mode="And">
+    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+    //  <Rule xsi:type="RuleCollection" Mode="Or">
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //  </Rule>
+    //</Rule>
+
+    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+    //{
+    //'fruits': ['apple','banana','Banana','coconut'],
+    //'veggies': ['tomato','onion','spinach','broccoli']
+    //}
+
     // The following example shows how to access the array of
     // matches for the regular expression rule elements `fruits`
     // and `veggies`, which are specified in the manifest.
     var allMatches = Office.context.mailbox.item.getRegExMatches();
     var fruits = allMatches.fruits;
-    var veges = allMatches.veggies;
+    var veggies = allMatches.veggies;
 Office.AppointmentRead.getRegExMatchesByName:
   - |-
+    // Consider an add-in manifest has the following `Rule` element:
+    //<Rule xsi:type="RuleCollection" Mode="And">
+    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+    //  <Rule xsi:type="RuleCollection" Mode="Or">
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //  </Rule>
+    //</Rule>
+
+    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+    //{
+    //'fruits': ['apple','banana','Banana','coconut'],
+    //'veggies': ['tomato','onion','spinach','broccoli']
+    //}
+
     var fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
     var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
 Office.AppointmentRead.getSelectedEntities:
   - |-
     // The following example accesses the addresses entities in the highlighted
     // match selected by the user.
-    var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
+    var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
 Office.AppointmentRead.getSelectedRegExMatches:
   - |-
     // The following example shows how to access the array of matches for the
@@ -8656,6 +8971,10 @@ Office.AppointmentRead.getSelectedRegExMatches:
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
+Office.AppointmentRead.itemClass:
+  - |-
+    var itemClass = Office.context.mailbox.item.itemClass;
+    console.log("Item class: " + itemClass);
 Office.AppointmentRead.itemId:
   - |-
     // The following code checks for the presence of an item
@@ -8664,59 +8983,65 @@ Office.AppointmentRead.itemId:
     // item identifier from the asynchronous result.
     var itemId = Office.context.mailbox.item.itemId;
     if (itemId === null || itemId == undefined) {
-        Office.context.mailbox.item.saveAsync(function(result){
+        Office.context.mailbox.item.saveAsync(function(result) {
             itemId = result.value;
         });
     }
+Office.AppointmentRead.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
+        // Do something.
+    } else {
+        // Do something else.
+    }
 Office.AppointmentRead.location:
   - |-
-    var userContext = { value : 1 };
-    Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
-
-    function callback(asyncResult) {
-        var context = asyncResult.context;
-        var location = asyncResult.value;
-    }
+    var location = Office.context.mailbox.item.location;
+    console.log("location: " + location);
+Office.AppointmentRead.normalizedSubject:
+  - |-
+    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
+    console.log("Normalized subject: " + normalizedSubject);
+Office.AppointmentRead.notificationMessages:
+  - |-
+    // Get all notifications.
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.AppointmentRead.optionalAttendees:
   - |-
-    Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.optionalAttendees.getAsync(callback);
-
-    function callback(asyncResult) {
-        var arrayOfOptionalAttendeesRecipients = asyncResult.value;
-    }
+    var optionalAttendees = Office.context.mailbox.item.optionalAttendees;
+    console.log("Optional attendees: " + JSON.stringify(optionalAttendees));
 Office.AppointmentRead.organizer:
   - |-
     var organizerName = Office.context.mailbox.item.organizer.displayName;
     var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+    console.log("Organizer: " + organizerName + " (" + organizerAddress + ")");
+Office.AppointmentRead.recurrence:
+  - |-
+    var recurrence = Office.context.mailbox.item.recurrence;
+    console.log("Recurrence: " + JSON.stringify(recurrence));
 Office.AppointmentRead.requiredAttendees:
   - |-
-    Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.requiredAttendees.getAsync(callback);
+    var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+    console.log("Required attendees: " + JSON.stringify(requiredAttendees));
+Office.AppointmentRead.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId;
 
-    function callback(asyncResult) {
-        var arrayOfRequiredAttendeesRecipients = asyncResult.value;
-    }
+    // The seriesId property returns null for items that do
+    // not have parent items (such as single appointments,
+    // series items, or meeting requests) and returns
+    // undefined for messages that are not meeting requests.
+    var isSeriesInstance = (seriesId != null);
+    console.log("SeriesId is " + seriesId 
+        + " and isSeriesInstance is " + isSeriesInstance);
 Office.AppointmentRead.start:
   - |-
-    // The following example sets the start time of an appointment in compose mode by
-    // using the `setAsync` method of the `Time` object.
-    var startTime = new Date("3/14/2015");
-    var options = {
-        // Pass information that can be used
-        // in the callback
-        asyncContext: {verb:"Set"}
-    }
-    Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-        if (result.error) {
-            console.debug(result.error);
-        } else {
-            // Access the asyncContext that was passed to the setAsync function
-            console.debug("Start Time " + result.asyncContext.verb);
-        }
-    });
+    var start = Office.context.mailbox.item.start;
+    console.log("Appointment start: " + JSON.stringify(start));
 Office.AppointmentRead.subject:
   - |-
     // The following JavaScript code example shows how to access the
@@ -8729,26 +9054,85 @@ Office.AppointmentRead.subject:
             // After the DOM is loaded, app-specific code can run.
             var item = Office.context.mailbox.item;
             var subject = item.subject;
-            // Continue with processing the subject of the current item,
-            // which can be a message or appointment.
+            // Continue with processing the subject of the
+            // current item, which can be a message or appointment.
         });
+    };
+Office.AttachmentContent.format:
+  - |-
+    var item = Office.context.mailbox.item;
+    var listOfAttachments = [];
+    item.getAttachmentsAsync(callback);
+
+    function callback(result) {
+        if (result.value.length > 0) {
+            for (i = 0 ; i < result.value.length ; i++) {
+                var options = {asyncContext: {type: result.value[i].attachmentType}};
+                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
+            }
+        }
     }
+
+    function handleAttachmentsCallback(result) {
+        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
+            // Handle file attachment.
+        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+            // Handle email item attachment.
+        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+            // Handle .icalender attachment.
+        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+            // Handle cloud attachment.
+        } else {
+            // Handle attachment formats that are not supported.
+        }
+    }
+Office.AttachmentDetails:
+  - |-
+    // The following code builds an HTML string with details
+    // of all attachments on the current item.
+    var item = Office.context.mailbox.item;
+    var outputString = "";
+
+    if (item.attachments.length > 0) {
+        for (i = 0 ; i < item.attachments.length ; i++) {
+            var attachment = item.attachments[i];
+            outputString += "<BR>" + i + ". Name: ";
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
+        }
+    }
+
+    console.log(outputString);
 Office.Body.getAsync:
   - |-
     // This example gets the body of the message in plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
-        { asyncContext:"This is passed to the callback" },
+        { asyncContext: "This is passed to the callback" },
         function callback(result) {
-            // Do something with the result
+            // Do something with the result.
         });
 
-    //The following is an example of the result parameter passed to the callback function.
+    // The following is an example of the result parameter passed to the callback function.
     {
         "value": "TEXT of whole body (including threads below)",
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.Body.getTypeAsync_1:
+  - |-
+    Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
+        if (asyncResult.status === "failed") {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Body type: " + asyncResult.value);
+        }
+    });
 Office.Body.prependAsync:
   - |-
     // When including links in HTML markup, you can disable online link preview
@@ -8767,16 +9151,16 @@ Office.Body.setAsync:
         callback);
     Office.context.mailbox.item.body.setAsync(
         "<b>(replaces all body, including threads you are replying to that may be on the bottom)</b>",
-        { coercionType:"html", asyncContext:"This is passed to the callback" },
+        { coercionType: "html", asyncContext: "This is passed to the callback" },
         function callback(result) {
-            // Process the result
+            // Process the result.
     });
 
     // The following is an example of the result parameter passed to the callback function.
     {
         "value":null,
-        "status":"succeeded",
-        "asyncContext":"This is passed to the callback"
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
     }
 Office.Body.setSelectedDataAsync:
   - |-
@@ -8786,6 +9170,20 @@ Office.Body.setSelectedDataAsync:
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
+Office.Contact:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent contacts in the current item's body.
+    var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+    console.log("There are " + contacts.length + " contacts.")
+    contacts.forEach(function (contact) {
+        console.log("Person name: " + JSON.stringify(contact.personName));
+        console.log("Business name: " + JSON.stringify(contact.businessName));
+        console.log("Addresses: " + JSON.stringify(contact.addresses));
+        console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
+        console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
+        console.log("Urls: " + JSON.stringify(contact.urls));
+    });
 Office.CustomProperties.saveAsync:
   - |-
     // The following JavaScript code sample shows how to asynchronously use
@@ -8804,7 +9202,8 @@ Office.CustomProperties.saveAsync:
             var item = Office.context.mailbox.item;
             item.loadCustomPropertiesAsync(customPropsCallback);
         });
-    }
+    };
+
     function customPropsCallback(asyncResult) {
         var customProps = asyncResult.value;
         var myProp = customProps.get("myProp");
@@ -8814,7 +9213,7 @@ Office.CustomProperties.saveAsync:
     }
 
     function saveCallback(asyncResult) {
-        if (asyncResult.status == Office.AsyncResultStatus.Failed){
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
             write(asyncResult.error.message);
         }
         else {
@@ -8824,98 +9223,206 @@ Office.CustomProperties.saveAsync:
     }
 
     // Writes to a div with id='message' on the page.
-    function write(message){
+    function write(message) {
         document.getElementById('message').innerText += message;
     }
-Office.InternetHeaders.getAsync:
+Office.EmailAddressDetails.appointmentResponse:
   - |-
-    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback); 
+    var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+    console.log("There are " + requiredAttendees.length + " required attendees.")
+    requiredAttendees.forEach(function (requiredAttendee) {
+        console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.appointmentResponse);
+    });
+Office.EmailAddressDetails.displayName:
+  - |-
+    var organizerName = Office.context.mailbox.item.organizer.displayName;
+    console.log("Organizer: " + organizerName);
+Office.EmailAddressDetails.emailAddress:
+  - |-
+    var organizerAddress = Office.context.mailbox.item.organizer.emailAddress;
+    console.log("Organizer's email address: " + organizerAddress);
+Office.EmailAddressDetails.recipientType:
+  - |-
+    var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
+    console.log("There are " + requiredAttendees.length + " required attendees.")
+    requiredAttendees.forEach(function (requiredAttendee) {
+        console.log("Attendee " + requiredAttendee.displayName + ": " + requiredAttendee.recipientType);
+    });
+Office.EnhancedLocation.addAsync_1:
+  - |-
+    var locations = [
+        {
+            "id": "Contoso",
+            "type": Office.MailboxEnums.LocationType.Custom
+        }
+    ];
+    Office.context.mailbox.item.enhancedLocation.addAsync(locations);
+Office.EnhancedLocation.getAsync_1:
+  - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
 
-    function callback(asyncResult) { 
-        var dictionary = asyncResult.value; 
-        var header1_value = dictionary["header1"]; 
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (place) {
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
+            }
+        });
     }
-Office.InternetHeaders.removeAsync:
+Office.EnhancedLocation.removeAsync_1:
+  - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (currentValue) {
+            Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
+        });
+    }
+Office.Entities.addresses:
+  - |-
+    var item = Office.context.mailbox.item;
+    var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
+Office.Entities.contacts:
+  - |-
+    var item = Office.context.mailbox.item;
+    var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
+Office.Entities.emailAddresses:
+  - |-
+    var item = Office.context.mailbox.item;
+    var emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
+Office.Entities.meetingSuggestions:
+  - |-
+    var item = Office.context.mailbox.item;
+    var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+Office.Entities.phoneNumbers:
+  - |-
+    var item = Office.context.mailbox.item;
+    var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+Office.Entities.taskSuggestions:
+  - |-
+    var item = Office.context.mailbox.item;
+    var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+Office.Entities.urls:
+  - |-
+    var item = Office.context.mailbox.item;
+    var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
+Office.From.getAsync_1:
+  - |-
+    Office.context.mailbox.item.from.getAsync(callback);
+
+    function callback(asyncResult) {
+        var from = asyncResult.value;
+        console.log("From " + from);
+    }
+Office.InternetHeaders.getAsync_1:
+  - |-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
+
+    function callback(asyncResult) {
+        var dictionary = asyncResult.value;
+        var header1_value = dictionary["header1"];
+    }
+Office.InternetHeaders.removeAsync_1:
   - |-
     Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-Office.InternetHeaders.setAsync:
+Office.InternetHeaders.setAsync_1:
   - |-
     Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
-Office.Item.addHandlerAsync:
+Office.Item.addHandlerAsync_1:
   - |-
-    function myHandlerFunction(eventarg) { 
-        if (eventarg.attachmentStatus == Office.MailboxEnums.AttachmentStatus.Added) { 
-            var _att = eventarg.attachmentDetails; 
-            showMessage("Event Fired and Attachment Added!"); 
-            getAttachmentContentAsync(_att.id, options, callback); 
-        } 
-    } 
+    function myHandlerFunction(eventarg) {
+        if (eventarg.attachmentStatus === Office.MailboxEnums.AttachmentStatus.Added) {
+            var attachment = eventarg.attachmentDetails;
+            console.log("Event Fired and Attachment Added!");
+            getAttachmentContentAsync(attachment.id, options, callback);
+        }
+    }
+
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
+Office.Item.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext: "This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result.
+        });
+
+    // The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.Item.getAttachmentContentAsync:
   - |-
     var item = Office.context.mailbox.item;
     var listOfAttachments = [];
     item.getAttachmentsAsync(callback);
+
     function callback(result) {
         if (result.value.length > 0) {
             for (i = 0 ; i < result.value.length ; i++) {
                 var options = {asyncContext: {type: result.value[i].attachmentType}};
-                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);  
+                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
             }
         }
     }
 
     function handleAttachmentsCallback(result) {
-        // parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file
-        if (result.format == Office.MailboxEnums.AttachmentContentFormat.Base64) {
-            // handle file attachment
-        }
-        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.Eml) {
-            // handle item attachment
-        }
-        else if (result.format == Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
-            // handle .icalender attachment
-        }
-        else {
-            // handle cloud attachment  
+        // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
+        if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
+            // Handle file attachment.
+        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+            // Handle email item attachment.
+        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+            // Handle .icalender attachment.
+        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+            // Handle cloud attachment.
+        } else {
+            // Handle attachment formats that are not supported.
         }
     }
-Office.Item.getInitializationContextAsync:
+Office.Item.getInitializationContextAsync_1:
   - |-
-    // Get the initialization context (if present)
+    // Get the initialization context (if present).
     Office.context.mailbox.item.getInitializationContextAsync(
         function(asyncResult) {
-            if (asyncResult.status == Office.AsyncResultStatus.Succeeded) {
+            if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
                 if (asyncResult.value != null && asyncResult.value.length > 0) {
-                    // The value is a string, parse to an object
+                    // The value is a string, parse to an object.
                     var context = JSON.parse(asyncResult.value);
-                    // Do something with context
+                    // Do something with context.
                 } else {
-                    // Empty context, treat as no context
+                    // Empty context, treat as no context.
                 }
             } else {
                 if (asyncResult.error.code == 9020) {
-                    // GenericResponseError returned when there is no context
-                    // Treat as no context
+                    // GenericResponseError returned when there is no context.
+                    // Treat as no context.
                 } else {
-                    // Handle the error
+                    // Handle the error.
                 }
             }
         }
     );
-Office.Item.getSharedPropertiesAsync:
+Office.Item.getSharedPropertiesAsync_1:
   - |-
     Office.context.mailbox.item.getSharedPropertiesAsync(callback);
+
     function callback (asyncResult) {
-        var context=asyncResult.context;
+        var context = asyncResult.context;
         var sharedProperties = asyncResult.value;
     }
 Office.Item.itemType:
   - |-
-    if (Office.context.mailbox.item.itemType == Office.MailboxEnums.ItemType.Message)
-        // do something
-    else
-        // do something else
+    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
+        // Do something.
+    } else {
+        // Do something else.
+    }
 Office.Item.loadCustomPropertiesAsync:
   - |-
     // The following example shows how to use the loadCustomPropertiesAsync method
@@ -8932,7 +9439,8 @@ Office.Item.loadCustomPropertiesAsync:
             var mailbox = Office.context.mailbox;
             mailbox.item.loadCustomPropertiesAsync(customPropsCallback);
         });
-    }
+    };
+
     function customPropsCallback(asyncResult) {
         var customProps = asyncResult.value;
         var myProp = customProps.get("myProp");
@@ -8943,40 +9451,101 @@ Office.Item.loadCustomPropertiesAsync:
 
     function saveCallback(asyncResult) {
     }
+Office.Item.notificationMessages:
+  - |-
+    // Get all notifications.
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.Item.seriesId:
   - |-
-    var seriesId = Office.context.mailbox.item.seriesId; 
-    var isSeries = (seriesId == null);
-Office.Mailbox.addHandlerAsync:
+    var seriesId = Office.context.mailbox.item.seriesId;
+
+    // The seriesId property returns null for items that do
+    // not have parent items (such as single appointments,
+    // series items, or meeting requests) and returns
+    // undefined for messages that are not meeting requests.
+    var isSeriesInstance = (seriesId != null);
+    console.log("SeriesId is " + seriesId 
+        + " and isSeriesInstance is " + isSeriesInstance);
+Office.Location.getAsync:
+  - |-
+    var userContext = { value : 1 };
+    Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
+
+    function callback(asyncResult) {
+        var context = asyncResult.context;
+        var location = asyncResult.value;
+    }
+Office.Location.setAsync_1:
+  - |-
+    Office.context.mailbox.item.location.setAsync(
+        "Room 1",
+        function (asyncResult) {
+            if (asyncResult.status === "failed") {
+                console.log("Action failed with error: " + asyncResult.error.message);
+            }
+        }
+    );
+Office.LocationDetails:
+  - |-
+    Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+    function callbackFunction(asyncResult) {
+        asyncResult.value.forEach(function (place) {
+            console.log("Display name: " + place.displayName);
+            console.log("Type: " + place.locationIdentifier.type);
+            if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                console.log("Email address: " + place.emailAddress);
+            }
+        });
+    }
+Office.LocationIdentifier:
+  - |-
+    var locations = [
+        {
+            "id": "Contoso",
+            "type": Office.MailboxEnums.LocationType.Custom
+        }
+    ];
+Office.Mailbox.addHandlerAsync_1:
   - |-
     Office.initialize = function (reason) {
         $(document).ready(function () {
             Office.context.mailbox.addHandlerAsync(Office.EventType.ItemChanged, loadNewItem, function (result) {
             if (result.status === Office.AsyncResultStatus.Failed) {
-                    // Handle error
+                    // Handle error.
                 }
             });
         });
     };
 
     function loadNewItem(eventArgs) {
-        // Load the properties of the newly selected item
+        // Load the properties of the newly selected item.
         loadProps(Office.context.mailbox.item);
-    };
+    }
 Office.Mailbox.convertToEwsId:
   - |-
-    // Get an item's ID from a REST API
+    // Get an item's ID from a REST API.
     var restId = 'AAMkAGVlOTZjNTM3LW...';
 
-    // Treat restId as coming from the v2.0 version of the Outlook Mail API
+    // Treat restId as coming from the v2.0 version of the Outlook Mail API.
     var ewsId = Office.context.mailbox.convertToEwsId(restId, Office.MailboxEnums.RestVersion.v2_0);
 Office.Mailbox.convertToRestId:
   - |-
-    // Get the currently selected item's ID
+    // Get the currently selected item's ID.
     var ewsId = Office.context.mailbox.item.itemId;
 
-    // Convert to a REST ID for the v2.0 version of the Outlook Mail API
+    // Convert to a REST ID for the v2.0 version of the Outlook Mail API.
     var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+Office.Mailbox.displayAppointmentForm:
+  - |-
+    Office.context.mailbox.displayAppointmentForm(appointmentId);
+Office.Mailbox.displayMessageForm:
+  - |-
+    Office.context.mailbox.displayMessageForm(messageId);
 Office.Mailbox.displayNewAppointmentForm:
   - |-
     var start = new Date();
@@ -8998,7 +9567,8 @@ Office.Mailbox.displayNewMessageForm:
   - |-
     Office.context.mailbox.displayNewMessageForm(
     {
-        toRecipients: Office.context.mailbox.item.to, // Copy the To line from current item
+        // Copy the To line from current item.
+        toRecipients: Office.context.mailbox.item.to,
         ccRecipients: ['sam@contoso.com'],
         subject: 'Outlook add-ins are cool!',
         htmlBody: 'Hello <b>World</b>!<br/><img src="cid:image.png"></i>',
@@ -9025,6 +9595,7 @@ Office.Mailbox.getCallbackTokenAsync:
     function cb(asyncResult) {
         var token = asyncResult.value;
     }
+Office.Mailbox.getCallbackTokenAsync_1:
   - |-
     function getCallbackToken() {
         Office.context.mailbox.getCallbackTokenAsync(cb);
@@ -9083,18 +9654,32 @@ Office.Mailbox.makeEwsRequestAsync:
 
         // Process the returned response here.
     }
+Office.MeetingSuggestion:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent meeting suggestions in the current item's body.
+    var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
+    console.log("There are " + meetingSuggestions.length + " meeting suggestions.")
+    meetingSuggestions.forEach(function (meetingSuggestion) {
+        console.log("Subject: " + JSON.stringify(meetingSuggestion.subject));
+        console.log("Attendees: " + JSON.stringify(meetingSuggestion.attendees));
+        console.log("Location: " + JSON.stringify(meetingSuggestion.location));
+        console.log("Start: " + JSON.stringify(meetingSuggestion.start));
+        console.log("End: " + JSON.stringify(meetingSuggestion.end));
+        console.log("Meeting: " + JSON.stringify(meetingSuggestion.meetingString));
+    });
 Office.MessageCompose.addFileAttachmentAsync:
   - |-
     function callback(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
-            showMessage("Attachment added");
+            console.log("Attachment added");
         }
     }
 
     function addAttachment() {
-        // The values in asyncContext can be accessed in the callback
+        // The values in asyncContext can be accessed in the callback.
         var options = { 'asyncContext': { var1: 1, var2: 2 } };
 
         var attachmentURL = "https://contoso.com/rtm/icon.png";
@@ -9103,8 +9688,7 @@ Office.MessageCompose.addFileAttachmentAsync:
   - |-
     // The following example adds an image file as an inline attachment and
     // references the attachment in the message body.
-    Office.context.mailbox.item.addFileAttachmentAsync
-    (
+    Office.context.mailbox.item.addFileAttachmentAsync(
         "http://i.imgur.com/WJXklif.png",
         "cute_bird.png",
         {
@@ -9117,7 +9701,7 @@ Office.MessageCompose.addFileAttachmentAsync:
                     "coercionType": "html"
                 },
                 function (asyncResult) {
-                    
+                    // Do something here.
                 });
         });
 Office.MessageCompose.addFileAttachmentFromBase64Async:
@@ -9135,6 +9719,7 @@ Office.MessageCompose.addFileAttachmentFromBase64Async:
                     "coercionType": "html"
                 },
                 function (asyncResult) {
+                    // Do something here.
                 });
         });
 Office.MessageCompose.addItemAttachmentAsync:
@@ -9143,18 +9728,17 @@ Office.MessageCompose.addItemAttachmentAsync:
     // with the name `My Attachment`.
     function callback(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
-            showMessage("Attachment added");
+            console.log("Attachment added");
         }
     }
 
     function addAttachment() {
-        // EWS ID of item to attach
-        // (Shortened for readability)
+        // EWS ID of item to attach (shortened for readability).
         var itemId = "AAMkADI1...AAA=";
 
-        // The values in asyncContext can be accessed in the callback
+        // The values in asyncContext can be accessed in the callback.
         var options = { 'asyncContext': { var1: 1, var2: 2 } };
 
         Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
@@ -9168,6 +9752,22 @@ Office.MessageCompose.bcc:
     function callback(asyncResult) {
         var arrayOfBccRecipients = asyncResult.value;
     }
+Office.MessageCompose.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext: "This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result.
+        });
+
+    // The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.MessageCompose.cc:
   - |-
     Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
@@ -9177,6 +9777,10 @@ Office.MessageCompose.cc:
     function callback(asyncResult) {
         var arrayOfCcRecipients = asyncResult.value;
     }
+Office.MessageCompose.conversationId:
+  - |-
+    var conversationId = Office.context.mailbox.item.conversationId;
+    console.log("conversationId: " + conversationId);
 Office.MessageCompose.from:
   - |-
     Office.context.mailbox.item.from.getAsync(callback);
@@ -9184,31 +9788,32 @@ Office.MessageCompose.from:
     function callback(asyncResult) {
         var from = asyncResult.value;
     }
-Office.MessageCompose.getAttachmentsAsync:
+Office.MessageCompose.getAttachmentsAsync_1:
   - |-
     var item = Office.context.mailbox.item;
     var outputString = "";
-    item.getAttachmentsAsync(callback);  
+    item.getAttachmentsAsync(callback);
+
     function callback(result) {
         if (result.value.length > 0) {
             for (i = 0 ; i < result.value.length ; i++) {
-                var _att = result.value [i];
+                var attachment = result.value [i];
                 outputString += "<BR>" + i + ". Name: ";
-                outputString += _att.name;
-                outputString += "<BR>ID: " + _att.id;
-                outputString += "<BR>contentType: " + _att.contentType;
-                outputString += "<BR>size: " + _att.size;
-                outputString += "<BR>attachmentType: " + _att.attachmentType;
-                outputString += "<BR>isInline: " + _att.isInline;
+                outputString += attachment.name;
+                outputString += "<BR>ID: " + attachment.id;
+                outputString += "<BR>contentType: " + attachment.contentType;
+                outputString += "<BR>size: " + attachment.size;
+                outputString += "<BR>attachmentType: " + attachment.attachmentType;
+                outputString += "<BR>isInline: " + attachment.isInline;
             }
         }
     }
 Office.MessageCompose.getSelectedDataAsync:
   - |-
-    // getting selected data
+    // Get selected data.
     Office.initialize = function () {
         Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-    }
+    };
 
     function getCallback(asyncResult) {
         var text = asyncResult.value.data;
@@ -9218,8 +9823,31 @@ Office.MessageCompose.getSelectedDataAsync:
     }
 
     function setCallback(asyncResult) {
-        // check for errors
+        // Check for errors.
     }
+Office.MessageCompose.internetHeaders:
+  - |-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
+
+    function callback(asyncResult) {
+        var dictionary = asyncResult.value;
+        var header1_value = dictionary["header1"];
+    }
+Office.MessageCompose.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
+        // Do something.
+    } else {
+        // Do something else.
+    }
+Office.MessageCompose.notificationMessages:
+  - |-
+    // Get all notifications.
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
 Office.MessageCompose.removeAttachmentAsync:
   - |-
     // The following code removes an attachment with an identifier of '0'.
@@ -9231,11 +9859,11 @@ Office.MessageCompose.removeAttachmentAsync:
             console.log(asyncResult.status);
         }
     );
-Office.MessageCompose.saveAsync:
+Office.MessageCompose.saveAsync_1:
   - |-
     Office.context.mailbox.item.saveAsync(
         function callback(result) {
-            // Process the result
+            // Process the result.
         });
 
     // The following is an example of the
@@ -9244,13 +9872,26 @@ Office.MessageCompose.saveAsync:
     // property contains the item ID of
     // the item.
     {
-        "value":"AAMkADI5...AAA=",
-        "status":"succeeded"
+        "value": "AAMkADI5...AAA=",
+        "status": "succeeded"
     }
+Office.MessageCompose.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId;
+
+    // The seriesId property returns null for items that do
+    // not have parent items (such as single appointments,
+    // series items, or meeting requests) and returns
+    // undefined for messages that are not meeting requests.
+    var isSeriesInstance = (seriesId != null);
+    console.log("SeriesId is " + seriesId 
+        + " and isSeriesInstance is " + isSeriesInstance);
 Office.MessageCompose.setSelectedDataAsync:
   - |-
-    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
     Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
+Office.MessageCompose.setSelectedDataAsync_1:
+  - |-
+    Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
 Office.MessageCompose.subject:
   - |-
     Office.context.mailbox.item.subject.getAsync(callback);
@@ -9270,32 +9911,54 @@ Office.MessageCompose.to:
 Office.MessageRead.attachments:
   - |-
     // The following code builds an HTML string with details of all attachments on the current item.
-    var _Item = Office.context.mailbox.item;
+    var item = Office.context.mailbox.item;
     var outputString = "";
 
-    if (_Item.attachments.length > 0) {
-        for (i = 0 ; i < _Item.attachments.length ; i++) {
-            var _att = _Item.attachments[i];
+    if (item.attachments.length > 0) {
+        for (i = 0 ; i < item.attachments.length ; i++) {
+            var attachment = item.attachments[i];
             outputString += "<BR>" + i + ". Name: ";
-            outputString += _att.name;
-            outputString += "<BR>ID: " + _att.id;
-            outputString += "<BR>contentType: " + _att.contentType;
-            outputString += "<BR>size: " + _att.size;
-            outputString += "<BR>attachmentType: " + _att.attachmentType;
-            outputString += "<BR>isInline: " + _att.isInline;
+            outputString += attachment.name;
+            outputString += "<BR>ID: " + attachment.id;
+            outputString += "<BR>contentType: " + attachment.contentType;
+            outputString += "<BR>size: " + attachment.size;
+            outputString += "<BR>attachmentType: " + attachment.attachmentType;
+            outputString += "<BR>isInline: " + attachment.isInline;
         }
     }
 
-    // Do something with outputString
+    console.log(outputString);
+Office.MessageRead.body:
+  - |-
+    // This example gets the body of the message in plain text.
+    Office.context.mailbox.item.body.getAsync(
+        "text",
+        { asyncContext: "This is passed to the callback" },
+        function callback(result) {
+            // Do something with the result.
+        });
+
+    // The following is an example of the result parameter passed to the callback function.
+    {
+        "value": "TEXT of whole body (including threads below)",
+        "status": "succeeded",
+        "asyncContext": "This is passed to the callback"
+    }
 Office.MessageRead.cc:
   - |-
-    Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.cc.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.cc.getAsync(callback);
-
-    function callback(asyncResult) {
-        var arrayOfCcRecipients = asyncResult.value;
-    }
+    console.log(JSON.stringify(Office.context.mailbox.item.cc));
+Office.MessageRead.conversationId:
+  - |-
+    var conversationId = Office.context.mailbox.item.conversationId;
+    console.log("conversationId: " + conversationId);
+Office.MessageRead.dateTimeCreated:
+  - |-
+    var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
+    console.log("Date and time created: " + dateTimeCreated);
+Office.MessageRead.dateTimeModified:
+  - |-
+    var dateTimeModified = Office.context.mailbox.item.dateTimeModified;
+    console.log("Date and time modified: " + dateTimeModified);
 Office.MessageRead.displayReplyAllForm:
   - |-
     // The following code passes a string to the `displayReplyAllForm` function.
@@ -9426,6 +10089,15 @@ Office.MessageRead.displayReplyForm:
             console.log(asyncResult.value);
         }
     });
+Office.MessageRead.from:
+  - |-
+    var from = Office.context.mailbox.item.from;
+    console.log("From " + from);
+Office.MessageRead.getEntities:
+  - |-
+    // The following example accesses the contacts entities in the current item's body.
+
+    var contacts = Office.context.mailbox.item.getEntities().contacts;
 Office.MessageRead.getEntitiesByType:
   - |-
     // The following example shows how to access an array of strings that represent postal addresses
@@ -9441,32 +10113,93 @@ Office.MessageRead.getEntitiesByType:
             var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
             // Continue processing the array of addresses.
         });
-    }
+    };
 Office.MessageRead.getRegExMatches:
   - |-
+    // Consider an add-in manifest has the following `Rule` element:
+    //<Rule xsi:type="RuleCollection" Mode="And">
+    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+    //  <Rule xsi:type="RuleCollection" Mode="Or">
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //  </Rule>
+    //</Rule>
+
+    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+    //{
+    //'fruits': ['apple','banana','Banana','coconut'],
+    //'veggies': ['tomato','onion','spinach','broccoli']
+    //}
+
     // The following example shows how to access the array of
     // matches for the regular expression rule elements `fruits`
     // and `veggies`, which are specified in the manifest.
     var allMatches = Office.context.mailbox.item.getRegExMatches();
     var fruits = allMatches.fruits;
-    var veges = allMatches.veggies;
+    var veggies = allMatches.veggies;
 Office.MessageRead.getRegExMatchesByName:
   - |-
+    // Consider an add-in manifest has the following `Rule` element:
+    //<Rule xsi:type="RuleCollection" Mode="And">
+    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+    //  <Rule xsi:type="RuleCollection" Mode="Or">
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //  </Rule>
+    //</Rule>
+
+    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+    //{
+    //'fruits': ['apple','banana','Banana','coconut'],
+    //'veggies': ['tomato','onion','spinach','broccoli']
+    //}
+
     var fruits = Office.context.mailbox.item.getRegExMatchesByName("fruits");
     var veggies = Office.context.mailbox.item.getRegExMatchesByName("veggies");
 Office.MessageRead.getSelectedEntities:
   - |-
     // The following example accesses the addresses entities in the highlighted
     // match selected by the user.
-    var contacts = Office.context.mailbox.item.getSelectedEntities().addresses;
+    var addresses = Office.context.mailbox.item.getSelectedEntities().addresses;
 Office.MessageRead.getSelectedRegExMatches:
   - |-
+    // Consider an add-in manifest has the following `Rule` element:
+    //<Rule xsi:type="RuleCollection" Mode="And">
+    //  <Rule xsi:type="ItemIs" FormType="Read" ItemType="Message" />
+    //  <Rule xsi:type="RuleCollection" Mode="Or">
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="fruits" RegExValue="apple|banana|coconut" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //    <Rule xsi:type="ItemHasRegularExpressionMatch" RegExName="veggies" RegExValue="tomato|onion|spinach|broccoli" PropertyName="BodyAsPlaintext" IgnoreCase="true" />
+    //  </Rule>
+    //</Rule>
+
+    // The object returned from `getRegExMatches` would have two properties: `fruits` and `veggies`.
+    //{
+    //'fruits': ['apple','banana','Banana','coconut'],
+    //'veggies': ['tomato','onion','spinach','broccoli']
+    //}
+
     // The following example shows how to access the array of matches for the
     // regular expression rule elements `fruits` and `veggies`, which are
     // specified in the manifest.
     var selectedMatches = Office.context.mailbox.item.getSelectedRegExMatches();
     var fruits = selectedMatches.fruits;
     var veggies = selectedMatches.veggies;
+Office.MessageRead.internetHeaders:
+  - |-
+    Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
+
+    function callback(asyncResult) {
+        var dictionary = asyncResult.value;
+        var header1_value = dictionary["header1"];
+    }
+Office.MessageRead.internetMessageId:
+  - |-
+    var internetMessageId = Office.context.mailbox.item.internetMessageId;
+    console.log("internetMessageId: " + internetMessageId);
+Office.MessageRead.itemClass:
+  - |-
+    var itemClass = Office.context.mailbox.item.itemClass;
+    console.log("Item class: " + itemClass);
 Office.MessageRead.itemId:
   - |-
     // The following code checks for the presence of an item
@@ -9475,14 +10208,49 @@ Office.MessageRead.itemId:
     // item identifier from the asynchronous result.
     var itemId = Office.context.mailbox.item.itemId;
     if (itemId === null || itemId == undefined) {
-        Office.context.mailbox.item.saveAsync(function(result){
+        Office.context.mailbox.item.saveAsync(function(result) {
             itemId = result.value;
         });
     }
+Office.MessageRead.itemType:
+  - |-
+    if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Message) {
+        // Do something.
+    } else {
+        // Do something else.
+    }
+Office.MessageRead.normalizedSubject:
+  - |-
+    var normalizedSubject = Office.context.mailbox.item.normalizedSubject;
+    console.log("Normalized subject: " + normalizedSubject);
+Office.MessageRead.notificationMessages:
+  - |-
+    // Get all notifications.
+    Office.context.mailbox.item.notificationMessages.getAllAsync(
+        function (asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
+Office.MessageRead.recurrence:
+  - |-
+    var recurrence = Office.context.mailbox.item.recurrence;
+    console.log("Recurrence: " + JSON.stringify(recurrence));
 Office.MessageRead.sender:
   - |-
     var senderName = Office.context.mailbox.item.sender.displayName;
     var senderAddress = Office.context.mailbox.item.sender.emailAddress;
+    console.log("Sender: " + senderName + " (" + senderAddress + ")");
+Office.MessageRead.seriesId:
+  - |-
+    var seriesId = Office.context.mailbox.item.seriesId;
+
+    // The seriesId property returns null for items that do
+    // not have parent items (such as single appointments,
+    // series items, or meeting requests) and returns
+    // undefined for messages that are not meeting requests.
+    var isSeriesInstance = (seriesId != null);
+    console.log("SeriesId is " + seriesId 
+        + " and isSeriesInstance is " + isSeriesInstance);
 Office.MessageRead.subject:
   - |-
     // The following JavaScript code example shows how to access the
@@ -9498,19 +10266,13 @@ Office.MessageRead.subject:
             // Continue with processing the subject of the current item,
             // which can be a message or appointment.
         });
-    }
+    };
 Office.MessageRead.to:
   - |-
-    Office.context.mailbox.item.to.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-    Office.context.mailbox.item.to.addAsync( ['jason@contoso.com'] );
-    Office.context.mailbox.item.to.getAsync(callback);
-
-    function callback(asyncResult) {
-        var arrayOfToRecipients = asyncResult.value;
-    }
-Office.NotificationMessages.addAsync:
+    console.log(JSON.stringify(Office.context.mailbox.item.to));
+Office.NotificationMessages.addAsync_1:
   - |-
-    // Create three notifications, each with a different key
+    // Create three notifications, each with a different key.
     Office.context.mailbox.item.notificationMessages.addAsync("progress", {
         type: "progressIndicator",
         message : "An add-in is processing this message."
@@ -9525,9 +10287,9 @@ Office.NotificationMessages.addAsync:
         type: "errorMessage",
         message : "The add-in failed to process this message."
     });
-Office.NotificationMessages.getAllAsync:
+Office.NotificationMessages.getAllAsync_1:
   - |-
-    // Get all notifications
+    // Get all notifications.
     Office.context.mailbox.item.notificationMessages.getAllAsync(function (asyncResult) {
         if (asyncResult.status != "failed") {
             Office.context.mailbox.item.notificationMessages.replaceAsync( "notifications", {
@@ -9538,20 +10300,38 @@ Office.NotificationMessages.getAllAsync:
             });
         }
     });
-Office.NotificationMessages.removeAsync:
+Office.NotificationMessages.removeAsync_1:
   - |-
-    // Remove a notification
+    // Remove a notification.
     Office.context.mailbox.item.notificationMessages.removeAsync("progress");
-Office.NotificationMessages.replaceAsync:
+Office.NotificationMessages.replaceAsync_1:
   - |-
-    // Replace a notification with an informational notification
+    // Replace a notification with an informational notification.
     Office.context.mailbox.item.notificationMessages.replaceAsync("progress", {
         type: "informationalMessage",
         message : "The message was processed successfully.",
         icon : "iconid",
         persistent: false
     });
-Office.Recipients.addAsync:
+Office.Organizer.getAsync_1:
+  - |-
+    Office.context.mailbox.item.organizer.getAsync(
+        function(asyncResult) {
+            console.log(JSON.stringify(asyncResult));
+        }
+    );
+Office.PhoneNumber:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent phone numbers in the current item's body.
+    var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+    console.log("There are " + phoneNumbers.length + " phone numbers.")
+    phoneNumbers.forEach(function (phoneNumber) {
+        console.log("Phone number: " + JSON.stringify(phoneNumber.phoneString));
+        console.log("Type: " + JSON.stringify(phoneNumber.type));
+        console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
+    });
+Office.Recipients.addAsync_1:
   - |-
     // The following example creates an array of EmailUser objects
     // and adds them to the To recipients of the message.
@@ -9568,26 +10348,26 @@ Office.Recipients.addAsync:
 
     Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
-            showMessage("Recipients added");
+            console.log("Recipients added");
         }
     });
-Office.Recipients.getAsync:
+Office.Recipients.getAsync_1:
   - |-
     // The following example gets the optional attendees of a meeting.
     Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
             var msg = "";
             result.value.forEach(function(recip, index) {
                 msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
             });
-            showMessage(msg);
+            console.log(msg);
         }
     });
-Office.Recipients.setAsync:
+Office.Recipients.setAsync_1:
   - |-
     // The following example creates an array of EmailUser objects and
     // replaces the CC recipients of the message with the array.
@@ -9604,42 +10384,43 @@ Office.Recipients.setAsync:
 
     Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
         if (result.error) {
-            showMessage(result.error);
+            console.log(result.error);
         } else {
-            showMessage("Recipients overwritten");
+            console.log("Recipients overwritten");
         }
     });
-Office.Recurrence.getAsync:
+Office.Recurrence.getAsync_1:
   - |-
-    // This example gets the recurrence object of an appointment or meeting request item.
+    // This example gets the Recurrence object of an appointment item.
     Office.context.mailbox.item.recurrence.getAsync(callback);
-    function callback(asyncResult){
+
+    function callback(asyncResult) {
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
-        if (recurrence == null) {
-            console.log("Non-recurring meeting");
-            return;
+        if (!recurrence) {
+            console.log("One-time appointment or meeting");
+        } else {
+            console.log(JSON.stringify(recurrence));
         }
-
-        console.log(JSON.stringify(recurrence));
     }
 
     // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
-    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the 
-    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the 
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
     // recurrence date and time properties.
     Recurrence = {
         "recurrenceType": "weekly",
         "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-        "seriesTime": {seriesTimeObject}, 
-        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}}
-Office.Recurrence.setAsync:
+        "seriesTime": {seriesTimeObject},
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+    }
+Office.Recurrence.setAsync_1:
   - |-
     // The following example sets the recurrence pattern of an appointment series.
-    var seriesTimeObject = new Office.SeriesTime(); 
-    seriesTimeObject.setStartDate(2019,10,2);  
-    seriesTimeObject.setEndDate(2019,11,2); 
-    seriesTimeObject.setStartTime(10,30); 
+    var seriesTimeObject = new Office.SeriesTime();
+    seriesTimeObject.setStartDate(2019,10,2);
+    seriesTimeObject.setEndDate(2019,11,2);
+    seriesTimeObject.setStartTime(10,30);
     seriesTimeObject.setDuration(30);
 
     var pattern = {
@@ -9652,24 +10433,76 @@ Office.Recurrence.setAsync:
 
     function callback(asyncResult)
     {
-        console.log(JSON.stringify(asyncResult)); 
+        console.log(JSON.stringify(asyncResult));
     }
 
-    //Result: This created a recurring event from November 2, 2019 to December 2, 2019
-    //        at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+    // Result: This created a recurring event from November 2, 2019 to December 2, 2019
+    //         at 10:30 A.M. to 11 A.M. PST every Tuesday and Thursday.
+Office.RecurrenceProperties:
+  - |-
+    // This example gets the Recurrence object of an appointment item.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult) {
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        if (!recurrence) {
+            console.log("One-time appointment or meeting");
+        } else {
+            console.log(JSON.stringify(recurrence));
+        }
+    }
+
+    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
+    // recurrence date and time properties.
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject},
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+    }
+Office.RecurrenceTimeZone:
+  - |-
+    // This example gets the Recurrence object of an appointment item.
+    Office.context.mailbox.item.recurrence.getAsync(callback);
+
+    function callback(asyncResult) {
+        var context = asyncResult.context;
+        var recurrence = asyncResult.value;
+        if (!recurrence) {
+        //if (recurrence == null) {
+            console.log("One-time appointment or meeting");
+        } else {
+            console.log(JSON.stringify(recurrence));
+        }
+    }
+
+    // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
+    // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
+    // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
+    // recurrence date and time properties.
+    Recurrence = {
+        "recurrenceType": "weekly",
+        "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
+        "seriesTime": {seriesTimeObject},
+        "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
+    }
 Office.RoamingSettings:
   - |-
-    // Get the current value of the 'myKey' setting
+    // Get the current value of the 'myKey' setting.
     var value = Office.context.roamingSettings.get('myKey');
-    // Update the value of the 'myKey' setting
+    // Update the value of the 'myKey' setting.
     Office.context.roamingSettings.set('myKey', 'Hello World!');
-    // Persist the change
+    // Persist the change.
     Office.context.roamingSettings.saveAsync();
 Office.SeriesTime.getDuration:
   - |-
     // This example gets the duration of a usual instance in a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
-    function callback(asyncResult){
+
+    function callback(asyncResult) {
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
         var duration = recurrence.seriesTime.getDuration();
@@ -9678,7 +10511,8 @@ Office.SeriesTime.getEndDate:
   - |-
     // This example gets the end date of a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
-    function callback(asyncResult){
+
+    function callback(asyncResult) {
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
         var endDate = recurrence.seriesTime.getEndDate();
@@ -9687,7 +10521,8 @@ Office.SeriesTime.getEndTime:
   - |-
     // This example gets the end time of a usual instance in a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
-    function callback(asyncResult){
+
+    function callback(asyncResult) {
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
         var endDate = recurrence.seriesTime.getEndTime();
@@ -9696,69 +10531,152 @@ Office.SeriesTime.getStartDate:
   - |-
     // This example gets the start date of a recurring appointment series.
     Office.context.mailbox.item.recurrence.getAsync(callback);
-    function callback(asyncResult){
+
+    function callback(asyncResult) {
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
         var endDate = recurrence.seriesTime.getStartDate();
     }
 Office.SeriesTime.getStartTime:
   - |-
-    // This example gets the start time of a usual instance in a recurring appointment series.
-    var seriesTimeObject = new SeriesTime()
+    // This example gets the start time of a usual
+    // instance in a recurring appointment series.
+    var seriesTimeObject = new SeriesTime();
     seriesTimeObject.setDuration(120);
 Office.SeriesTime.setDuration:
   - |-
-    // This example sets the duration of each appointment in a recurring series to 2 hours.
+    // This example sets the duration of each appointment
+    // in a recurring series to 2 hours.
     Office.context.mailbox.item.recurrence.getAsync(callback);
-    function callback(asyncResult){
+
+    function callback(asyncResult) {
         var context = asyncResult.context;
         var recurrence = asyncResult.value;
         var endDate = recurrence.seriesTime.getStartTime();
     }
 Office.SeriesTime.setEndDate:
   - |-
-    // This example sets the end date of a recurring appointment series to November 2, 2017.
-    var seriesTimeObject = new SeriesTime()
+    // This example sets the end date of a recurring
+    // appointment series to November 2, 2017.
+    var seriesTimeObject = new SeriesTime();
     seriesTimeObject.setEndDate(2017, 10, 2);
-
-    // Alternative: Set the end date using ISO 8601 date standard
+Office.SeriesTime.setEndDate_1:
+  - |-
+    // This example sets the end date of a
+    // recurring appointment series to November 2, 2017
+    // using ISO 8601 date standard.
+    var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setEndDate("2017-11-02");
 Office.SeriesTime.setStartDate:
   - |-
-    // This example sets the start date of a recurring appointment series to November 2, 2017.
-    var seriesTimeObject = new SeriesTime()
+    // This example sets the start date of a recurring
+    // appointment series to November 2, 2017.
+    var seriesTimeObject = new SeriesTime();
     seriesTimeObject.setStartDate(2017, 10, 2);
-
-    // Alternative: Set the start date using ISO 8601 date standard
+Office.SeriesTime.setStartDate_1:
+  - |-
+    // This example sets the start date of a recurring
+    // appointment series to November 2, 2017
+    // using ISO 8601 date standard.
+    var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartDate("2017-11-02");
 Office.SeriesTime.setStartTime:
   - |-
-    // This example sets the start time of each instance of a recurring appointment series to 1:30 PM.
-    var seriesTimeObject = new SeriesTime()
+    // This example sets the start time of each instance
+    // of a recurring appointment series to 1:30 PM.
+    var seriesTimeObject = new SeriesTime();
     seriesTimeObject.setStartTime(13, 30);
 
-    // This example sets the start time of each instance of a recurring appointment series to 11:30 AM.
+    // This example sets the start time of each instance
+    // of a recurring appointment series to 11:30 AM.
     seriesTimeObject.setStartTime(11, 30);
-
-    // Alternative: Set the start time of all instances of a recurring appointment series to 11:30 PM.
+Office.SeriesTime.setStartTime_1:
+  - |-
+    // This example sets the start time of each instance
+    // of a recurring appointment series to 11:30 PM.
+    var seriesTimeObject = new SeriesTime()
     seriesTimeObject.setStartTime("T23:30:00");
+Office.Subject.getAsync_1:
+  - |-
+    Office.context.mailbox.item.subject.getAsync(callback);
+
+    function callback(asyncResult) {
+        var subject = asyncResult.value;
+    }
+Office.Subject.setAsync_1:
+  - |-
+    Office.context.mailbox.item.subject.setAsync("New subject!", function (asyncResult) {
+        if (asyncResult.status === "failed") {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+    });
+Office.TaskSuggestion:
+  - |-
+    var item = Office.context.mailbox.item;
+    // Get an array of strings that represent task suggestions in the current item's body.
+    var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
+    console.log("There are " + taskSuggestions.length + " task suggestions.")
+    taskSuggestions.forEach(function (taskSuggestion) {
+        console.log("Assignees: " + JSON.stringify(taskSuggestion.assignees));
+        console.log("Task: " + JSON.stringify(taskSuggestion.taskString));
+    });
+Office.Time.getAsync_1:
+  - |-
+    Office.context.mailbox.item.start.getAsync(function (asyncResult) {
+        if (asyncResult.status === "failed") {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        }
+        else {
+            console.log("Start date and time: " + asyncResult.value);
+        }
+    });
 Office.Time.setAsync:
   - |-
     var startTime = new Date("3/14/2015");
     var options = {
-        // Pass information that can be used
-        // in the callback
-        asyncContext: {verb:"Set"}
-    }
+        // Pass information that can be used in the callback.
+        asyncContext: {verb: "Set"}
+    };
     Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
         if (result.error) {
             console.debug(result.error);
         } else {
-            // Access the asyncContext that was passed to the setAsync function
+            // Access the asyncContext that was passed to the setAsync function.
             console.debug("Start Time " + result.asyncContext.verb);
         }
     });
-Visio.Application.load:
+Office.UserProfile.accountType:
+  - |-
+    console.log(Office.context.mailbox.userProfile.accountType);
+Office.UserProfile.displayName:
+  - |-
+    // Example: Allie Bellew
+    console.log(Office.context.mailbox.userProfile.displayName);
+Office.UserProfile.emailAddress:
+  - |-
+    // Example: allieb@contoso.com
+    console.log(Office.context.mailbox.userProfile.emailAddress);
+Office.UserProfile.timeZone:
+  - |-
+    // Example: Pacific Standard Time
+    console.log(Office.context.mailbox.userProfile.timeZone);
+
+PowerPoint.createPresentation:
+  - |-
+    var myFile = document.getElementById("file");
+    var reader = new FileReader();
+
+    reader.onload = function (event) {
+        // strip off the metadata before the base64-encoded string
+        var startIndex = event.target.result.indexOf("base64,");
+        var copyBase64 = event.target.result.substr(startIndex + 7);
+
+        PowerPoint.createPresentation(copyBase64);        
+    };
+
+    // read in the file as a data URL so we can parse the base64-encoded string
+    reader.readAsDataURL(myFile.files[0]);
+Visio.Application.showBorders:
   - |-
     Visio.run(session, function (ctx) {
         var application = ctx.document.application;
@@ -9875,7 +10793,7 @@ Visio.Document.startDataRefresh:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.Document.load:
+Visio.Document.pages:
   - |-
     Visio.run(session, function (ctx) {
         var pages = ctx.document.pages;
@@ -9883,28 +10801,6 @@ Visio.Document.load:
         return ctx.sync().then(function () {
             console.log("Pages Count: " +pageCount.value);
         });
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Visio.run(session, function (ctx) {
-        var documentView = ctx.document.view;
-        documentView.disableHyperlinks();
-        return ctx.sync();
-    }).catch(function(error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error) {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    Visio.run(session, function (ctx) {
-        var application = ctx.document.application;
-        application.showToolbars = false;
-        return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -9923,6 +10819,18 @@ Visio.DocumentLoadCompleteEventArgs:
         return ctx.sync().then(function () {
             console.log("Success");
         });
+    }).catch(function(error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error) {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
+Visio.DocumentView.disableHyperlinks:
+  - |-
+    Visio.run(session, function (ctx) {
+        var documentView = ctx.document.view;
+        documentView.disableHyperlinks();
+        return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
@@ -10029,7 +10937,7 @@ Visio.PageView.centerViewportOnShape:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.PageView.load:
+Visio.PageView.zoom:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -10208,7 +11116,7 @@ Visio.ShapeMouseLeaveEventArgs:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
-Visio.ShapeView.load:
+Visio.ShapeView.highlight:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -10221,11 +11129,12 @@ Visio.ShapeView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.ShapeView.addOverlay:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-        var overlayId=shape.view.addOverlay(1, "Visio Online", 2, 2, 50, 50);
+        var overlayId=shape.view.addOverlay("Image", "Visio Online", "Center", "Center", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -10233,6 +11142,7 @@ Visio.ShapeView.load:
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
         }
     });
+Visio.ShapeView.removeOverlay:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
@@ -10273,6 +11183,37 @@ Word.Body.clear:
     // The Silly stories add-in sample shows how the 
     // clear method can be used to clear the contents of a document.
     // https://aka.ms/sillystorywordaddin
+Word.Body.font:
+  - |-
+    // Get the style and the font size, font name, and font color properties on the body object.
+    // Run a batch operation against the Word object model.
+    Word.run(function (context) {
+    
+        // Create a proxy object for the document body.
+        var body = context.document.body;
+    
+        // Queue a commmand to load font and style information for the document body.
+        context.load(body, 'font/size, font/name, font/color, style');
+    
+        // Synchronize the document state by executing the queued commands,
+        // and return a promise to indicate task completion.
+        return context.sync().then(function () {
+            // Show the results of the load method. Here we show the
+            // property values on the body object.
+            var results = 'Font size: ' + body.font.size +
+                          '; Font name: ' + body.font.name +
+                          '; Font color: ' + body.font.color +
+                          '; Body style: ' + body.style;
+    
+            console.log(results);
+        });
+    })
+    .catch(function (error) {
+        console.log('Error: ' + JSON.stringify(error));
+        if (error instanceof OfficeExtension.Error) {
+            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+        }
+    });
 Word.Body.getHtml:
   - |-
     // Run a batch operation against the Word object model.
@@ -10558,7 +11499,7 @@ Word.Body.select:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Body.load:
+Word.Body.text:
   - |-
     // Get the text property on the body object
     // Run a batch operation against the Word object model.
@@ -10580,36 +11521,6 @@ Word.Body.load:
         console.log("Error: " + JSON.stringify(error));
         if (error instanceof OfficeExtension.Error) {
             console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
-    });
-  - |-
-    // Get the style and the font size, font name, and font color properties on the body object.
-    // Run a batch operation against the Word object model.
-    Word.run(function (context) {
-    
-        // Create a proxy object for the document body.
-        var body = context.document.body;
-    
-        // Queue a commmand to load font and style information for the document body.
-        context.load(body, 'font/size, font/name, font/color, style');
-    
-        // Synchronize the document state by executing the queued commands,
-        // and return a promise to indicate task completion.
-        return context.sync().then(function () {
-            // Show the results of the load method. Here we show the
-            // property values on the body object.
-            var results = 'Font size: ' + body.font.size +
-                          '; Font name: ' + body.font.name +
-                          '; Font color: ' + body.font.color +
-                          '; Body style: ' + body.style;
-    
-            console.log(results);
-        });
-    })
-    .catch(function (error) {
-        console.log('Error: ' + JSON.stringify(error));
-        if (error instanceof OfficeExtension.Error) {
-            console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
 Word.ContentControl.clear:
@@ -10758,7 +11669,7 @@ Word.ContentControl.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertBreak:
+Word.ContentControl.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -10795,7 +11706,7 @@ Word.ContentControl.insertBreak:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertFileFromBase64:
+Word.ContentControl.insertHtml_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -10833,7 +11744,7 @@ Word.ContentControl.insertFileFromBase64:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertInlinePictureFromBase64:
+Word.ContentControl.insertOoxml_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -10872,7 +11783,7 @@ Word.ContentControl.insertInlinePictureFromBase64:
 
     // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
     // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-Word.ContentControl.insertParagraph:
+Word.ContentControl.insertParagraph_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -10908,7 +11819,7 @@ Word.ContentControl.insertParagraph:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.ContentControl.insertText:
+Word.ContentControl.insertText_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -10947,7 +11858,7 @@ Word.ContentControl.insertText:
 
     // The Silly stories add-in sample shows how to use the insertText method.
     // https://aka.ms/sillystorywordaddin
-Word.ContentControl.load:
+Word.ContentControl.tag:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -10978,6 +11889,7 @@ Word.ContentControl.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
+Word.ContentControl.load_1:
   - |-
     // Load all of the content control properties
     // Run a batch operation against the Word object model.
@@ -11865,7 +12777,7 @@ Word.Paragraph.getPreviousOrNullObject:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Paragraph.insertBreak:
+Word.Paragraph.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12238,7 +13150,7 @@ Word.Range.getOoxml:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Range.insertBreak:
+Word.Range.insertBreak_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12653,7 +13565,7 @@ Word.SearchOptions.load:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getFooter:
+Word.Section.getFooter_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {
@@ -12691,7 +13603,7 @@ Word.Section.getFooter:
             console.log('Debug info: ' + JSON.stringify(error.debugInfo));
         }
     });
-Word.Section.getHeader:
+Word.Section.getHeader_1:
   - |-
     // Run a batch operation against the Word object model.
     Word.run(function (context) {

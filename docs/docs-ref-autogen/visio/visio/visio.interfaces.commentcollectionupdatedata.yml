@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.CommentCollectionUpdateData
+    summary: >-
+      An interface for updating data on the CommentCollection object, for use in "commentCollection.set(<!-- -->{ ...
+      }<!-- -->)".
+    name: Visio.Interfaces.CommentCollectionUpdateData
+    fullName: Visio.Interfaces.CommentCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.CommentCollectionUpdateData.items
+  - uid: visio.Visio.Interfaces.CommentCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Visio.Interfaces.CommentData[];'
+      return:
+        type:
+          - 'Visio.Interfaces.CommentData[]'

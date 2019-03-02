@@ -1,5 +1,6 @@
 #!/usr/bin/env node --harmony
 
+import { generateEnumList } from './util';
 import * as fsx from 'fs-extra';
 import * as jsyaml from "js-yaml";
 import * as path from "path";
@@ -72,12 +73,104 @@ interface INewToc {
 }
 
 tryCatch(async () => {
-
-    const tocPath = path.resolve("../yaml/toc.yml");
-
     console.log("\nStarting postprocessor script...");
 
-    console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
+    // fix all the individual TOC files
+    const commonTocPath = path.resolve("../yaml/office/toc.yml");
+    const commonToc = scrubAndWriteToc(commonTocPath);
+    const hostVersionMap = [{host: "excel", versions: 9},
+                            {host: "onenote", versions: 1},
+                            {host: "outlook", versions: 8},
+                            {host: "powerpoint", versions: 1},
+                            {host: "visio", versions: 1},
+                            {host: "word", versions: 4}];
+
+    hostVersionMap.forEach(category => {
+        scrubAndWriteToc(path.resolve(`../yaml/${category.host}/toc.yml`), commonToc, category.host);
+        for (let i = 1; i < category.versions; i++) {
+            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}/toc.yml`), commonToc, category.host);
+        }
+    });
+
+    const docsSource = path.resolve("../yaml");
+    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
+
+    console.log(`Deleting old docs at: ${docsDestination}`);
+    // delete everything except the 'overview' folder from the /docs folder
+    fsx.readdirSync(docsDestination)
+        .filter(filename => filename !== "overview")
+        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
+
+    console.log(`Namespace pass on Outlook docs`);
+    // replace Outlook/CommonAPI namespace references with Office
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename + "/outlook";
+            fsx.readdirSync(subfolder)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+                });
+        });
+    console.log(`Namespace pass on Office docs`);
+    const officeFolder = docsSource + "/office/office";
+    fsx.readdirSync(officeFolder)
+        .forEach(filename => {
+            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+        });
+
+    console.log(`Fixing top href`);
+    fsx.readdirSync(docsSource)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename;
+            fsx.readdirSync(subfolder)
+                .filter(subfilename => subfilename.indexOf("toc") >= 0)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office"));
+                });
+        });
+
+    // moving common TOC to its own folder
+    fsx.copySync(commonTocPath,  path.resolve("../yaml/common/toc.yml"));
+    fsx.removeSync(commonTocPath);
+
+    // create global TOC
+    let globalToc = <INewToc>{};
+    globalToc.items = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
+                       {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
+                       {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
+                       {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
+                       {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
+                       {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
+                       {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
+    fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
+
+    console.log(`Copying docs output files to: ${docsDestination}`);
+    // copy docs output to /docs/docs-ref-autogen folder
+    fsx.readdirSync(docsSource)
+        .forEach(filename => {
+        fsx.copySync(
+            docsSource + '/' + filename,
+            docsDestination + '/' + filename
+        );
+    });
+
+    console.log("\nPostprocessor script complete!\n");
+
+    process.exit(0);
+});
+
+async function tryCatch(call: () => Promise<void>) {
+    try {
+        await call();
+    } catch (e) {
+        console.error(e);
+        process.exit(1);
+    }
+}
+
+function fixToc(tocPath: string, commonToc: INewToc): INewToc {
+    console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
@@ -89,34 +182,26 @@ tryCatch(async () => {
     }];
     newToc.items[0].items = [] as any;
 
-    // create a root for all the Outlook versions
-    let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
-    let rootPushed = false;
-
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
-    let excelRoot;
-    let excelEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let excelEnumFilter : string [] = ["AggregationFunction", "BindingType", "BorderIndex", "BorderLineStyle", "BorderWeight", "BuiltInStyle", "CalculationMode", "CalculationState", "CalculationType", "ChartAxisCategoryType", "ChartAxisDisplayUnit", "ChartAxisGroup", "ChartAxisPosition", "ChartAxisScaleType", "ChartAxisTickLabelPosition", "ChartAxisTickMark", "ChartAxisTimeUnit", "ChartAxisType", "ChartBinType", "ChartBoxQuartileCalculation", "ChartColorScheme", "ChartDataLabelPosition", "ChartDisplayBlankAs", "ChartErrorBarsInclude", "ChartErrorBarsType", "ChartGradientStyle", "ChartGradientStyleType", "ChartLegendPosition", "ChartLineStyle", "ChartMapAreaLevel", "ChartMapLabelStrategy", "ChartMapProjectionType", "ChartMarkerStyle", "ChartParentLabelStrategy", "ChartPlotAreaPosition", "ChartPlotBy", "ChartSeriesBy", "ChartSplitSType", "ChartTextHorizontalAlignment", "ChartTextVerticalAlignment", "ChartTickLabelAlignment", "ChartTitlePosition", "ChartTrendlineType", "ChartType", "ChartUnderlineStyle", "ClearApplyTo", "ConditionalCellValueOperator", "ConditionalDataBarAxisFormat", "ConditionalDataBarDirection", "ConditionalFormatColorCriterionType", "ConditionalFormatDirection", "ConditionalFormatIconRuleType", "ConditionalFormatPresetCriterion", "ConditionalFormatRuleType", "ConditionalFormatType", "ConditionalIconCriterionOperator", "ConditionalRangeBorderIndex", "ConditionalRangeBorderLineStyle", "ConditionalRangeFontUnderlineStyle", "ConditionalTextOperator", "ConditionalTopBottomCriterionType", "ContentType", "CustomFunctionMetadataFormat", "CustomFunctionType", "DataChangeType", "DataValidationAlertStyle", "DataValidationOperator", "DataValidationType", "DeleteShiftDirection", "DocumentPropertyItem", "DocumentPropertyType", "DynamicFilterCriteria", "ErrorCodes", "EventSource", "EventType", "FillPattern", "FilterDatetimeSpecificity", "FilterOn", "FilterOperator", "GeometricShapeType", "HeaderFooterState", "HorizontalAlignment", "IconSet", "ImageFittingMode", "InsertShiftDirection", "LinkedDataTypeState", "NamedItemScope", "NamedItemType", "PageOrientation", "PaperType", "PictureFormat", "PivotAxis", "PivotFilterTopBottomCriterion", "PivotLayoutType", "Placement", "PrintComments", "PrintErrorType", "PrintMarginUnit", "PrintOrder", "ProtectionSelectionMode", "RangeCopyType", "RangeUnderlineStyle", "RangeValueType", "ReadingOrder", "SaveBehavior", "SearchDirection", "ShapeAutoSize", "ShapeFillType", "ShapeFontUnderlineStyle", "ShapeScaleFrom", "ShapeScaleType", "ShapeTextHorizontalAlignType", "ShapeTextHorzOverflowType", "ShapeTextOrientationType", "ShapeTextReadingOrder", "ShapeTextVerticalAlignType", "ShapeTextVertOverflowType", "ShapeType", "ShapeZOrder", "SheetVisibility", "ShowAsCalculation", "SortBy",  "SortDataOption", "SortMethod", "SortOn", "SortOrientation", "SpecialCellType", "SpecialCellValueType", "SubtotalLocationType", "VerticalAlignment", "WorksheetPositionType"];
+    let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
+
     let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
-    let excelInterfaceFilter : string [] = ["ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RunOptions", "SortField", "WorksheetProtectionOptions"];
-    let customFunctionsRoot = {"name": "Custom Functions (Preview)", "uid": "", "items": [] as any};
+    let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
+
+    let customFunctionsRoot = {"name": "Custom Functions - Preview", "uid": "", "items": [] as any};
+    let customFunctionsRootPushed = false;
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let oneNoteEnumFilter : string [] = ["EntityType", "ErrorCodes", "InsertLocation", "ListType", "NoteTagStatus", "NoteTagType", "NumberType", "PageContentType", "ParagraphType"];
+    let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
     let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
-    let wordEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let wordEnumFilter : string [] = ["Alignment", "BodyType", "BorderLocation", "BorderType", "BreakType", "CellPaddingLocation", "ContentControlAppearance", "ContentControlType", "DocumentPropertyType", "ErrorCodes", "FileContentFormat", "HeaderFooterType", "ImageFormat", "InsertLocation", "ListBullet", "ListLevelType", "ListNumbering", "LocationRelation", "RangeLocation", "SelectionMode", "Style", "TapObjectType", "UnderlineType", "VerticalAlignment"];
-
-    // create folders for common (shared) API subcategories
-    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let sharedEnumFilter : string [] = ["ActiveView", "AsyncResultStatus", "BindingType", "CoercionType", "CustomXMLNodeType", "DocumentMode", "EventType", "FileType", "FilterType", "GoToType", "HostType", "InitializationReason", "PlatformType", "ProjectProjectFields", "ProjectResourceFields", "ProjectTaskFields", "ProjectViewTypes", "SelectionMode", "Table", "ValueFormat"];
+    let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
     // create filter lists for types we shouldn't expose
     let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
@@ -133,68 +218,56 @@ tryCatch(async () => {
     origToc.items.forEach((rootItem, rootIndex) => {
         rootItem.items.forEach((packageItem, packageIndex) => {
             if (packageItem.name !== 'office') {
-                const packageName = packageItem.name === 'onenote' ? 'OneNote' : (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
+                // fix host capitalization
+                let packageName;
+                if (packageItem.name === 'onenote') {
+                    packageName = 'OneNote';
+                } else if (packageItem.name === 'powerpoint') {
+                    packageName = 'PowerPoint';
+                } else {
+                    packageName = (packageItem.name.substr(0, 1).toUpperCase() + packageItem.name.substr(1)).replace(/\-/g, ' ');
+                }
+
                 if (packageItem.items.length === 1) {
                     packageItem.items.forEach((namespaceItem, namespaceIndex) => {
                         membersToMove.items = namespaceItem.items;
                     });
 
-                    // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
-                        if (!rootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(outlookRoot);
-                            rootPushed = true;
-                        }
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
                         });
+                        // move MailboxEnums to top
                         let folderIndex: number = 0;
-                            while (folderIndex >= 0) {
-                                folderIndex = membersToMove.items.findIndex(item => {
-                                    return outlookFolders.indexOf(item.name) >= 0;
-                                });
-                                if (folderIndex >= 0) {
-                                    filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
-                                }
+                        while (folderIndex >= 0) {
+                            folderIndex = membersToMove.items.findIndex(item => {
+                                return outlookFolders.indexOf(item.name) >= 0;
+                            });
+                            if (folderIndex >= 0) {
+                                filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
                             }
-                        if (packageName === 'Outlook') { // The version without a suffix is the preview version
-                            outlookRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items": filterToCContent
-                            });
                         }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
-                            outlookRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items": filterToCContent
-                            });
-                        }
+
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": filterToCContent as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        membersToMove.items.filter(item => {
-                            return excelIconSetFilter.indexOf(item.name) >= 0;
-                        });
-                        membersToMove.items.filter(item => {
-                            return excelEventArgsFilter.indexOf(item.name) >= 0;
-                        });
                         let enumList = membersToMove.items.filter(item => {
-                            return excelEnumFilter.indexOf(item.name) >= 0;
-                        });
+                             return excelEnumFilter.indexOf(item.name) >= 0;
+                         });
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });
-                        excelEnumRoot.items = enumList;
 
+                        let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(excelEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
-                            "items":  primaryList as any
+                            "items": primaryList as any
                         });
-
-                        excelRoot = primaryList;
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
@@ -202,7 +275,8 @@ tryCatch(async () => {
                         let primaryList = membersToMove.items.filter(item => {
                             return wordFilter.indexOf(item.name) < 0;
                         });
-                        wordEnumRoot.items = enumList;
+
+                        let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
                         newToc.items[0].items.push({
                             "name": packageName,
@@ -238,18 +312,36 @@ tryCatch(async () => {
                             "uid": packageItem.uid,
                             "items":  membersToMove.items as any
                         });
+
+                        if (!customFunctionsRootPushed) {
+                            newToc.items[0].items.push(customFunctionsRoot);
+                            customFunctionsRootPushed = true;
+                        }
                     } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
                         customFunctionsRoot.items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
                             "items":  membersToMove.items as any
                         });
+
+                        if (!customFunctionsRootPushed) {
+                            newToc.items[0].items.push(customFunctionsRoot);
+                            customFunctionsRootPushed = true;
+                        }
                     } else {
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items": membersToMove.items
-                        });
+                        if (membersToMove.items) {
+                            newToc.items[0].items.push({
+                                "name": packageName,
+                                "uid": packageItem.uid,
+                                "items": membersToMove.items
+                            });
+                        } else {
+                            newToc.items[0].items.push({
+                                "name": packageName,
+                                "uid": packageItem.uid,
+                                "items": [] as any
+                            });
+                        }
                     }
                 } else {
                     newToc.items[0].items.push({
@@ -262,12 +354,26 @@ tryCatch(async () => {
         });
     });
 
-    // add custom functions packages under excel
-    excelRoot.unshift(customFunctionsRoot);
+    // append the common API toc
+    newToc.items[0].items.push(commonToc.items[0].items[0]);
+    return newToc;
+}
 
-    // Get the logical order: Preview, 1.6, 1.5, etc.
-    outlookRoot.items.reverse();
-    outlookRoot.items.unshift(outlookRoot.items.pop());
+function fixCommonToc(tocPath: string): INewToc {
+    console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
+
+    let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
+    let newToc = <INewToc>{};
+
+    newToc.items = [{
+        "name": origToc.items[0].name,
+        "href": origToc.items[0].href
+    }];
+    newToc.items[0].items = [] as any;
+
+    // create folders for common (shared) API subcategories
+    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -295,39 +401,33 @@ tryCatch(async () => {
         });
     });
 
-    // write file
-    fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
-
-    const docsSource = path.resolve("../yaml");
-    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
-
-    console.log(`\nCopying docs output files to: ${docsDestination}`);
-
-    // delete everything except the 'overview' folder from the /docs folder
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename !== "overview")
-        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
-
-    // copy docs output to /docs/docs-ref-autogen folder
-    fsx.readdirSync(docsSource)
-        .forEach(filename => {
-            fsx.copySync(
-                docsSource + '/' + filename,
-                docsDestination + '/' + filename
-            );
-    });
-
-    console.log("\nPostprocessor script complete!\n");
-
-    process.exit(0);
-});
-
-async function tryCatch(call: () => Promise<void>) {
-    try {
-        await call();
-    } catch (e) {
-        console.error(e);
-        process.exit(1);
-    }
+    return newToc;
 }
 
+function addCrossHostTocStubs(toc: INewToc, hostName: string): void {
+    const stubItems = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
+                       {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
+                       {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
+                       {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
+                       {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
+                       {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"}];
+
+    stubItems
+        .filter(stub => !hostName || !hostName.toLowerCase().includes(stub.name.toLowerCase()))
+        .forEach((stubItem, stubIndex) => {
+            toc.items[0].items.push(stubItem as any);
+        });
+}
+
+function scrubAndWriteToc(tocPath: string, commonToc?: INewToc, hostName?: string): INewToc {
+    let latestToc;
+    if (!commonToc) {
+        latestToc = fixCommonToc(tocPath);
+    } else {
+        latestToc = fixToc(tocPath, commonToc);
+    }
+
+    addCrossHostTocStubs(latestToc, hostName);
+    fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
+    return latestToc;
+}

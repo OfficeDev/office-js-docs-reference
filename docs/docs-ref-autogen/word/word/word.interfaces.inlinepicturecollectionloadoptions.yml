@@ -1,0 +1,271 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions
+    summary: |-
+      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.InlinePictureCollectionLoadOptions
+    fullName: Word.Interfaces.InlinePictureCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.imageFormat
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the
+      inline image.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '\#' to separate the address part
+      from the optional location part.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: hyperlink
+    fullName: hyperlink
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hyperlink?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.imageFormat
+    summary: >-
+      For EACH ITEM in the collection: Gets the format of the inline image. Read-only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: imageFormat
+    fullName: imageFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original
+      proportions when you resize it.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph
+    summary: |-
+      For EACH ITEM in the collection: Gets the parent paragraph that contains the inline image.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraph
+    fullName: paragraph
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paragraph?: Word.Interfaces.ParagraphLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ParagraphLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a
+      parent content control.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControlOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the inline image. Returns a null object if
+      there isn't a parent content control.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTable
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the inline image. Throws if it is not contained in a
+      table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCell
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the inline image. Throws if it is not contained
+      in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCell
+    fullName: parentTableCell
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableCellOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table cell that contains the inline image. Returns a null object if it
+      is not contained in a table cell.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableCellOrNullObject
+    fullName: parentTableCellOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableCellLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentTableOrNullObject
+    summary: >-
+      For EACH ITEM in the collection: Gets the table that contains the inline image. Returns a null object if it is not
+      contained in a table.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTableOrNullObject
+    fullName: parentTableOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.TableLoadOptions
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
+    summary: |-
+      For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean

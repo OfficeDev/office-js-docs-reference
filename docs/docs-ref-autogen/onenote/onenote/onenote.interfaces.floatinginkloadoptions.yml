@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions
+    summary: |-
+      Represents a group of ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.Interfaces.FloatingInkLoadOptions
+    fullName: OneNote.Interfaces.FloatingInkLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: onenote
+    children:
+      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.$all
+      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.id
+      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.inkStrokes
+      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.pageContent
+  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.id
+    summary: |-
+      Gets the ID of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.inkStrokes
+    summary: |-
+      Gets the strokes of the FloatingInk object.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkStrokes
+    fullName: inkStrokes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inkStrokes?: OneNote.Interfaces.InkStrokeCollectionLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
+  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.pageContent
+    summary: |-
+      Gets the PageContent parent of the FloatingInk object.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: pageContent
+    fullName: pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.PageContentLoadOptions

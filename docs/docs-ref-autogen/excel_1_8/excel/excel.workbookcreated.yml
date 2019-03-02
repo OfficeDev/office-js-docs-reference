@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorkbookCreated
+    summary: >-
+      The WorkbookCreated object is the top level object created by Application.CreateWorkbook. A WorkbookCreated object
+      is a special Workbook object.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorkbookCreated
+    fullName: Excel.WorkbookCreated
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.WorkbookCreated.context
+      - excel.Excel.WorkbookCreated.load
+      - excel.Excel.WorkbookCreated.load_1
+      - excel.Excel.WorkbookCreated.toJSON
+  - uid: excel.Excel.WorkbookCreated.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.WorkbookCreated.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.WorkbookCreated;'
+      return:
+        type:
+          - excel.Excel.WorkbookCreated
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.WorkbookCreated.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookCreated;'
+      return:
+        type:
+          - excel.Excel.WorkbookCreated
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.WorkbookCreated.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.WorkbookCreated object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.WorkbookCreatedData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WorkbookCreatedData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookCreatedData
+        description: ''

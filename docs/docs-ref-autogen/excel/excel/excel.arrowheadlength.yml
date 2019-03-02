@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ArrowHeadLength
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ArrowHeadLength
+    fullName: Excel.ArrowHeadLength
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ArrowHeadLength.long
+      - excel.Excel.ArrowHeadLength.medium
+      - excel.Excel.ArrowHeadLength.short
+  - uid: excel.Excel.ArrowHeadLength.long
+    isPreview: true
+    name: long
+    fullName: long
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Long"'
+  - uid: excel.Excel.ArrowHeadLength.medium
+    isPreview: true
+    name: medium
+    fullName: medium
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Medium"'
+  - uid: excel.Excel.ArrowHeadLength.short
+    isPreview: true
+    name: short
+    fullName: short
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Short"'

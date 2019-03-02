@@ -1,6 +1,734 @@
 { 
     "redirections": [
         {
+            "source_path": "docs/docs-ref-autogen/excel/excel.excel-add-ins-reference-overview.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.onenote-add-ins-javascript-reference.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/onenote-add-ins-javascript-reference"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/visio/visio.visio-javascript-reference-overview.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/visio-javascript-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.word-add-ins-reference-overview.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/word-add-ins-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.error.md",
+            "redirect_url": "/javascript/api/office/officeextension.error"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/outlook-requirement-set-preview"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_1/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/outlook-requirement-set-1.1"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_2/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/outlook-requirement-set-1.2"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/outlook-requirement-set-1.4"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.index.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/outlook-requirement-set-1.6"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.enums.md",
+            "redirect_url": "/javascript/api/word#enums"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/word/word.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunctionsenumerations.md",
+            "redirect_url": "//office/dev/add-ins/reference/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunction.md",
+            "redirect_url": "/office/dev/add-ins/reference/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunctioncollection.md",
+            "redirect_url": "/office/dev/add-ins/reference/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.scriptcustomfunctions.md",
+            "redirect_url": "/office/dev/add-ins/reference/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.error.md",
+            "redirect_url": "/javascript/api/office/officeextension.error"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/visio/visio.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_6/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_5/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_4/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_3/office.Event.md",
+            "redirect_url": "/javascript/api/office/office.addincommands.event"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_2/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/outlook_1_1/office.Office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.binding.bindingselectionchangedevent.md",
+            "redirect_url": "/javascript/api/office/office.bindingselectionchangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodedeleted.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodeinserted.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.customxmlpart.nodereplaced.md",
+            "redirect_url": "/javascript/api/office/office.customxmlpart"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.document.selectionchanged.md",
+            "redirect_url": "/javascript/api/office/office.document"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.customfunctionpostprocessaction.md",
+            "redirect_url": "/office/dev/add-ins/reference/openspec#new-excel-javascript-apis"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/onenote/onenote.loadoption.md",
+            "redirect_url": "/javascript/api/office/officeextension.loadoption"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.binding.bindingdatachangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.bindingdatachangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.document.selectionchangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.documentselectionchangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/excel/excel.showcardpostprocessaction.md",
+            "redirect_url": "/javascript/api/excel"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.common.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.richapiobject-methods.md",
+            "redirect_url": "/office/dev/add-ins/reference/javascript-api-for-office"
+        },
+        {
+            "source_path": "docs/docs-ref-autogen/office/office.settings.settingschangedeventargs.md",
+            "redirect_url": "/javascript/api/office/office.settingschangedeventargs"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/javascript-api-for-office.md",
+            "redirect_url": "/office/dev/add-ins/reference/javascript-api-for-office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/javascript-api-for-office-error-codes.md",
+            "redirect_url": "/office/dev/add-ins/reference/javascript-api-for-office-error-codes"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/openspec.md",
+            "redirect_url": "/office/dev/add-ins/reference/openspec"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/what's-changed-in-the-javascript-api-for-office.md",
+            "redirect_url": "/office/dev/add-ins/reference/what's-changed-in-the-javascript-api-for-office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/action.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/action"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/allformfactors.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/allformfactors"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/allowsnapshot.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/allowsnapshot"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/alternateid.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/alternateid"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/appdomain.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/appdomain"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/appdomains.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/appdomains"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/citationtext.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/citationtext"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/control.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/control"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/customfunctionssourcelocation.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/customfunctionssourcelocation"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/customtab.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/customtab"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/defaultlocale.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/defaultlocale"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/defaultsettings.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/defaultsettings"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/description.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/description"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/desktopformfactor.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/desktopformfactor"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/desktopsettings.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/desktopsettings"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/dictionary.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/dictionary"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/dictionaryhomepage.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/dictionaryhomepage"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/dictionaryname.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/dictionaryname"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/disableentityhighlighting.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/disableentityhighlighting"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/displayname.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/displayname"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/event.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/event"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/extensionpoint.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/extensionpoint"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/form.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/form"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/formsettings.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/formsettings"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/functionfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/functionfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/getstarted.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/getstarted"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/group.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/group"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/highresolutioniconurl.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/highresolutioniconurl"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/host.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/host"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/hosts.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/hosts"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/icon.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/icon"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/iconurl.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/iconurl"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/id.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/id"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/metadata.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/metadata"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/method.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/method"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/methods.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/methods"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/mobileformfactor.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/mobileformfactor"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/namespace.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/namespace"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/officeapp.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/officeapp"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/officemenu.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/officemenu"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/officetab.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/officetab"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/override.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/override"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/page.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/page"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/permissions.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/permissions"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/phonesettings.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/phonesettings"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/providername.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/providername"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/queryuri.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/queryuri"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/requestedheight.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/requestedheight"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/requestedwidth.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/requestedwidth"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/requirements.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/requirements"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/resources.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/resources"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/rule.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/rule"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/scopes.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/scopes"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/script.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/script"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/set.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/set"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/sourcelocation.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/sourcelocation"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/supertip.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/supertip"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/supporturl.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/supporturl"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/tabletsettings.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/tabletsettings"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/targetdialect.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/targetdialect"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/targetdialects.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/targetdialects"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/version.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/version"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/versionoverrides.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/versionoverrides"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/manifest/webapplicationinfo.md",
+            "redirect_url": "/office/dev/add-ins/reference/manifest/webapplicationinfo"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/preview-requirement-set/outlook-requirement-set-preview.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/preview-requirement-set/outlook-requirement-set-preview"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.1/outlook-requirement-set-1.1.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.1/outlook-requirement-set-1.1"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.2/outlook-requirement-set-1.2.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.2/outlook-requirement-set-1.2"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.3/outlook-requirement-set-1.3"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.4/outlook-requirement-set-1.4.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.4/outlook-requirement-set-1.4"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.5/outlook-requirement-set-1.5"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.6/outlook-requirement-set-1.6.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.6/outlook-requirement-set-1.6"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.diagnostics.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.diagnostics"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.item.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.item"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.mailbox.userProfile.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context.mailbox.userProfile"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.context.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office.context"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/office.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/office"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/objectmodel/requirement-set-1.7/outlook-requirement-set-1.7.md",
+            "redirect_url": "/office/dev/add-ins/reference/objectmodel/requirement-set-1.7/outlook-requirement-set-1.7"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/overview/excel-add-ins-reference-overview.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/overview/onenote-add-ins-javascript-reference.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/onenote-add-ins-javascript-reference"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/overview/visio-javascript-reference-overview.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/visio-javascript-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/overview/word-add-ins-reference-overview.md",
+            "redirect_url": "/office/dev/add-ins/reference/overview/word-add-ins-reference-overview"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/add-in-commands-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/add-in-commands-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/dialog-api-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/excel-api-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/identity-api-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/office-add-in-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/onenote-api-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/outlook-api-requirement-sets.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets"
+        },
+        {
+            "source_path": "docs/docs-ref-conceptual/requirement-sets/powerpoint-and-project-note.md",
+            "redirect_url": "/office/dev/add-ins/reference/requirement-sets/powerpoint-and-project-note"
+        },
+        {
             "source_path": "docs/docs-ref-conceptual/requirement-sets/word-api-requirement-sets.md",
             "redirect_url": "/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets"
         }

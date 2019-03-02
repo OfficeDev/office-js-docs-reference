@@ -1,0 +1,260 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.FloatingInk
+    summary: |-
+      Represents a group of ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.FloatingInk
+    fullName: OneNote.FloatingInk
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: onenote
+    children:
+      - onenote.OneNote.FloatingInk.context
+      - onenote.OneNote.FloatingInk.id
+      - onenote.OneNote.FloatingInk.inkStrokes
+      - onenote.OneNote.FloatingInk.load
+      - onenote.OneNote.FloatingInk.load_1
+      - onenote.OneNote.FloatingInk.load_2
+      - onenote.OneNote.FloatingInk.pageContent
+      - onenote.OneNote.FloatingInk.toJSON
+      - onenote.OneNote.FloatingInk.track
+      - onenote.OneNote.FloatingInk.untrack
+  - uid: onenote.OneNote.FloatingInk.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - onenote.OneNote.RequestContext
+  - uid: onenote.OneNote.FloatingInk.id
+    summary: |-
+      Gets the ID of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.FloatingInk.inkStrokes
+    summary: |-
+      Gets the strokes of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: inkStrokes
+    fullName: inkStrokes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly inkStrokes: OneNote.InkStrokeCollection;'
+      return:
+        type:
+          - onenote.OneNote.InkStrokeCollection
+  - uid: onenote.OneNote.FloatingInk.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.FloatingInk` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.FloatingInkLoadOptions): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.FloatingInkLoadOptions
+  - uid: onenote.OneNote.FloatingInk.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function(context) {
+
+              // Gets the active page.
+              var page = context.application.getActivePage();
+              var contents = page.contents;
+              
+              // Load page contents and their types.
+              page.load('contents/type');
+              return context.sync()
+                  .then(function(){
+                  
+                      // Load every ink content.
+                      $.each(contents.items, function(i, content) {
+                          if (content.type == "Ink")
+                          {
+                              content.load('ink/id');
+                          }                            
+                      })
+                      return context.sync();
+                  })
+                  .then(function(){
+                  
+                      // Log ID of every ink content.
+                      $.each(contents.items, function(i, content) {
+                          if (content.type == "Ink")
+                          {
+                              console.log(content.ink.id);
+                          }                            
+                      })                
+                  });
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: onenote.OneNote.FloatingInk.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: onenote.OneNote.FloatingInk.pageContent
+    summary: |-
+      Gets the PageContent parent of the FloatingInk object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: pageContent
+    fullName: pageContent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pageContent: OneNote.PageContent;'
+      return:
+        type:
+          - onenote.OneNote.PageContent
+  - uid: onenote.OneNote.FloatingInk.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.FloatingInk object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.FloatingInkData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.FloatingInkData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.FloatingInkData
+        description: ''
+  - uid: onenote.OneNote.FloatingInk.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''
+  - uid: onenote.OneNote.FloatingInk.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.FloatingInk;'
+      return:
+        type:
+          - onenote.OneNote.FloatingInk
+        description: ''

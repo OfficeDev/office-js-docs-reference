@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.ApplicationUpdateData
+    summary: 'An interface for updating data on the Application object, for use in "application.set(<!-- -->{ ... }<!-- -->)".'
+    name: Visio.Interfaces.ApplicationUpdateData
+    fullName: Visio.Interfaces.ApplicationUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.ApplicationUpdateData.showBorders
+      - visio.Visio.Interfaces.ApplicationUpdateData.showToolbars
+  - uid: visio.Visio.Interfaces.ApplicationUpdateData.showBorders
+    summary: |-
+      Show or hide the iFrame application borders.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: showBorders
+    fullName: showBorders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showBorders?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.ApplicationUpdateData.showToolbars
+    summary: |-
+      Show or hide the standard toolbars.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: showToolbars
+    fullName: showToolbars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showToolbars?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,293 +1,313 @@
 items:
-- name: API reference
-  href: api-ref-office-js.md
-  items:
-  - name: Outlook
+  - name: API reference
+    href: api-ref-office-js.md
     items:
-      - name: MailboxEnums
+      - name: Outlook
+        uid: outlook
         items:
-          - name: AttachmentContentFormat
-            uid: outlook.Office.MailboxEnums.AttachmentContentFormat
-          - name: AttachmentStatus
-            uid: outlook.Office.MailboxEnums.AttachmentStatus
-          - name: AttachmentType
-            uid: outlook.Office.MailboxEnums.AttachmentType
-          - name: Days
-            uid: outlook.Office.MailboxEnums.Days
-          - name: DelegatePermissions
-            uid: outlook.Office.MailboxEnums.DelegatePermissions
-          - name: EntityType
-            uid: outlook.Office.MailboxEnums.EntityType
-          - name: ItemNotificationMessageType
-            uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
-          - name: ItemType
-            uid: outlook.Office.MailboxEnums.ItemType
-          - name: Month
-            uid: outlook.Office.MailboxEnums.Month
-          - name: OWAView
-            uid: outlook.Office.MailboxEnums.OWAView
-          - name: RecipientType
-            uid: outlook.Office.MailboxEnums.RecipientType
+          - name: MailboxEnums
+            items:
+              - name: AttachmentContentFormat
+                uid: outlook.Office.MailboxEnums.AttachmentContentFormat
+              - name: AttachmentStatus
+                uid: outlook.Office.MailboxEnums.AttachmentStatus
+              - name: AttachmentType
+                uid: outlook.Office.MailboxEnums.AttachmentType
+              - name: Days
+                uid: outlook.Office.MailboxEnums.Days
+              - name: DelegatePermissions
+                uid: outlook.Office.MailboxEnums.DelegatePermissions
+              - name: EntityType
+                uid: outlook.Office.MailboxEnums.EntityType
+              - name: ItemNotificationMessageType
+                uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
+              - name: ItemType
+                uid: outlook.Office.MailboxEnums.ItemType
+              - name: LocationType
+                uid: outlook.Office.MailboxEnums.LocationType
+              - name: Month
+                uid: outlook.Office.MailboxEnums.Month
+              - name: OWAView
+                uid: outlook.Office.MailboxEnums.OWAView
+              - name: RecipientType
+                uid: outlook.Office.MailboxEnums.RecipientType
+              - name: RecurrenceTimeZone
+                uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
+              - name: RecurrenceType
+                uid: outlook.Office.MailboxEnums.RecurrenceType
+              - name: ResponseType
+                uid: outlook.Office.MailboxEnums.ResponseType
+              - name: RestVersion
+                uid: outlook.Office.MailboxEnums.RestVersion
+              - name: WeekNumber
+                uid: outlook.Office.MailboxEnums.WeekNumber
+          - name: AppointmentCompose
+            uid: outlook.Office.AppointmentCompose
+          - name: AppointmentRead
+            uid: outlook.Office.AppointmentRead
+          - name: AttachmentContent
+            uid: outlook.Office.AttachmentContent
+          - name: AttachmentDetails
+            uid: outlook.Office.AttachmentDetails
+          - name: Body
+            uid: outlook.Office.Body
+          - name: Contact
+            uid: outlook.Office.Contact
+          - name: CustomProperties
+            uid: outlook.Office.CustomProperties
+          - name: EmailAddressDetails
+            uid: outlook.Office.EmailAddressDetails
+          - name: EmailUser
+            uid: outlook.Office.EmailUser
+          - name: EnhancedLocation
+            uid: outlook.Office.EnhancedLocation
+          - name: Entities
+            uid: outlook.Office.Entities
+          - name: From
+            uid: outlook.Office.From
+          - name: InternetHeaders
+            uid: outlook.Office.InternetHeaders
+          - name: Item
+            uid: outlook.Office.Item
+          - name: LocalClientTime
+            uid: outlook.Office.LocalClientTime
+          - name: Location
+            uid: outlook.Office.Location
+          - name: LocationDetails
+            uid: outlook.Office.LocationDetails
+          - name: LocationIdentifier
+            uid: outlook.Office.LocationIdentifier
+          - name: Mailbox
+            uid: outlook.Office.Mailbox
+          - name: MeetingSuggestion
+            uid: outlook.Office.MeetingSuggestion
+          - name: MessageCompose
+            uid: outlook.Office.MessageCompose
+          - name: MessageRead
+            uid: outlook.Office.MessageRead
+          - name: NotificationMessageDetails
+            uid: outlook.Office.NotificationMessageDetails
+          - name: NotificationMessages
+            uid: outlook.Office.NotificationMessages
+          - name: Organizer
+            uid: outlook.Office.Organizer
+          - name: PhoneNumber
+            uid: outlook.Office.PhoneNumber
+          - name: Recipients
+            uid: outlook.Office.Recipients
+          - name: Recurrence
+            uid: outlook.Office.Recurrence
+          - name: RecurrenceProperties
+            uid: outlook.Office.RecurrenceProperties
           - name: RecurrenceTimeZone
-            uid: outlook.Office.MailboxEnums.RecurrenceTimeZone
-          - name: RecurrenceType
-            uid: outlook.Office.MailboxEnums.RecurrenceType
-          - name: ResponseType
-            uid: outlook.Office.MailboxEnums.ResponseType
-          - name: RestVersion
-            uid: outlook.Office.MailboxEnums.RestVersion
-          - name: WeekNumber
-            uid: outlook.Office.MailboxEnums.WeekNumber
-      - name: AppointmentCompose
-        uid: outlook.Office.AppointmentCompose
-      - name: AppointmentRead
-        uid: outlook.Office.AppointmentRead
-      - name: AttachmentContent
-        uid: outlook.Office.AttachmentContent
-      - name: AttachmentDetails
-        uid: outlook.Office.AttachmentDetails
-      - name: Body
-        uid: outlook.Office.Body
-      - name: Contact
-        uid: outlook.Office.Contact
-      - name: CustomProperties
-        uid: outlook.Office.CustomProperties
-      - name: EmailAddressDetails
-        uid: outlook.Office.EmailAddressDetails
-      - name: EmailUser
-        uid: outlook.Office.EmailUser
-      - name: Entities
-        uid: outlook.Office.Entities
-      - name: From
-        uid: outlook.Office.From
-      - name: InternetHeaders
-        uid: outlook.Office.InternetHeaders
-      - name: Item
-        uid: outlook.Office.Item
-      - name: LocalClientTime
-        uid: outlook.Office.LocalClientTime
-      - name: Location
-        uid: outlook.Office.Location
-      - name: Mailbox
-        uid: outlook.Office.Mailbox
-      - name: MeetingSuggestion
-        uid: outlook.Office.MeetingSuggestion
-      - name: MessageCompose
-        uid: outlook.Office.MessageCompose
-      - name: MessageRead
-        uid: outlook.Office.MessageRead
-      - name: NotificationMessageDetails
-        uid: outlook.Office.NotificationMessageDetails
-      - name: NotificationMessages
-        uid: outlook.Office.NotificationMessages
-      - name: Organizer
-        uid: outlook.Office.Organizer
-      - name: PhoneNumber
-        uid: outlook.Office.PhoneNumber
-      - name: Recipients
-        uid: outlook.Office.Recipients
-      - name: Recurrence
-        uid: outlook.Office.Recurrence
-      - name: RecurrenceProperties
-        uid: outlook.Office.RecurrenceProperties
-      - name: RecurrenceTimeZone
-        uid: outlook.Office.RecurrenceTimeZone
-      - name: RoamingSettings
-        uid: outlook.Office.RoamingSettings
-      - name: SeriesTime
-        uid: outlook.Office.SeriesTime
-      - name: SharedProperties
-        uid: outlook.Office.SharedProperties
-      - name: SourceProperty
-        uid: outlook.Office.SourceProperty
-      - name: Subject
-        uid: outlook.Office.Subject
-      - name: TaskSuggestion
-        uid: outlook.Office.TaskSuggestion
-      - name: Time
-        uid: outlook.Office.Time
-      - name: UserProfile
-        uid: outlook.Office.UserProfile
-  - name: Common API
-    items:
-      - name: Office
+            uid: outlook.Office.RecurrenceTimeZone
+          - name: RoamingSettings
+            uid: outlook.Office.RoamingSettings
+          - name: SeriesTime
+            uid: outlook.Office.SeriesTime
+          - name: SharedProperties
+            uid: outlook.Office.SharedProperties
+          - name: SourceProperty
+            uid: outlook.Office.SourceProperty
+          - name: Subject
+            uid: outlook.Office.Subject
+          - name: TaskSuggestion
+            uid: outlook.Office.TaskSuggestion
+          - name: Time
+            uid: outlook.Office.Time
+          - name: UserProfile
+            uid: outlook.Office.UserProfile
+      - name: Common API
+        uid: office
         items:
-          - name: Enums
-            uid: ''
+          - name: Office
             items:
-              - name: ActiveView
-                uid: office.Office.ActiveView
-              - name: AsyncResultStatus
-                uid: office.Office.AsyncResultStatus
-              - name: BindingType
-                uid: office.Office.BindingType
-              - name: CoercionType
-                uid: office.Office.CoercionType
-              - name: CustomXMLNodeType
-                uid: office.Office.CustomXMLNodeType
-              - name: DocumentMode
-                uid: office.Office.DocumentMode
-              - name: EventType
-                uid: office.Office.EventType
-              - name: FileType
-                uid: office.Office.FileType
-              - name: FilterType
-                uid: office.Office.FilterType
-              - name: GoToType
-                uid: office.Office.GoToType
-              - name: HostType
-                uid: office.Office.HostType
-              - name: InitializationReason
-                uid: office.Office.InitializationReason
-              - name: PlatformType
-                uid: office.Office.PlatformType
-              - name: ProjectProjectFields
-                uid: office.Office.ProjectProjectFields
-              - name: ProjectResourceFields
-                uid: office.Office.ProjectResourceFields
-              - name: ProjectTaskFields
-                uid: office.Office.ProjectTaskFields
-              - name: ProjectViewTypes
-                uid: office.Office.ProjectViewTypes
-              - name: SelectionMode
-                uid: office.Office.SelectionMode
-              - name: Table
-                uid: office.Office.Table
-              - name: ValueFormat
-                uid: office.Office.ValueFormat
-          - name: AddBindingFromNamedItemOptions
-            uid: office.Office.AddBindingFromNamedItemOptions
-          - name: AddBindingFromPromptOptions
-            uid: office.Office.AddBindingFromPromptOptions
-          - name: AddBindingFromSelectionOptions
-            uid: office.Office.AddBindingFromSelectionOptions
-          - name: AddinCommands
+              - name: Enums
+                uid: ''
+                items:
+                  - name: ActiveView
+                    uid: office.Office.ActiveView
+                  - name: AsyncResultStatus
+                    uid: office.Office.AsyncResultStatus
+                  - name: BindingType
+                    uid: office.Office.BindingType
+                  - name: CoercionType
+                    uid: office.Office.CoercionType
+                  - name: CustomXMLNodeType
+                    uid: office.Office.CustomXMLNodeType
+                  - name: DocumentMode
+                    uid: office.Office.DocumentMode
+                  - name: EventType
+                    uid: office.Office.EventType
+                  - name: FileType
+                    uid: office.Office.FileType
+                  - name: FilterType
+                    uid: office.Office.FilterType
+                  - name: GoToType
+                    uid: office.Office.GoToType
+                  - name: HostType
+                    uid: office.Office.HostType
+                  - name: Index
+                    uid: office.Office.Index
+                  - name: InitializationReason
+                    uid: office.Office.InitializationReason
+                  - name: PlatformType
+                    uid: office.Office.PlatformType
+                  - name: ProjectProjectFields
+                    uid: office.Office.ProjectProjectFields
+                  - name: ProjectResourceFields
+                    uid: office.Office.ProjectResourceFields
+                  - name: ProjectTaskFields
+                    uid: office.Office.ProjectTaskFields
+                  - name: ProjectViewTypes
+                    uid: office.Office.ProjectViewTypes
+                  - name: SelectionMode
+                    uid: office.Office.SelectionMode
+                  - name: Table
+                    uid: office.Office.Table
+                  - name: ValueFormat
+                    uid: office.Office.ValueFormat
+              - name: AddBindingFromNamedItemOptions
+                uid: office.Office.AddBindingFromNamedItemOptions
+              - name: AddBindingFromPromptOptions
+                uid: office.Office.AddBindingFromPromptOptions
+              - name: AddBindingFromSelectionOptions
+                uid: office.Office.AddBindingFromSelectionOptions
+              - name: AddinCommands
+                items:
+                  - name: Event
+                    uid: office.Office.AddinCommands.Event
+                  - name: Source
+                    uid: office.Office.AddinCommands.Source
+              - name: AsyncContextOptions
+                uid: office.Office.AsyncContextOptions
+              - name: AsyncResult
+                uid: office.Office.AsyncResult
+              - name: Binding
+                uid: office.Office.Binding
+              - name: BindingDataChangedEventArgs
+                uid: office.Office.BindingDataChangedEventArgs
+              - name: Bindings
+                uid: office.Office.Bindings
+              - name: BindingSelectionChangedEventArgs
+                uid: office.Office.BindingSelectionChangedEventArgs
+              - name: Context
+                uid: office.Office.Context
+              - name: ContextInformation
+                uid: office.Office.ContextInformation
+              - name: CustomXmlNode
+                uid: office.Office.CustomXmlNode
+              - name: CustomXmlPart
+                uid: office.Office.CustomXmlPart
+              - name: CustomXmlParts
+                uid: office.Office.CustomXmlParts
+              - name: CustomXmlPrefixMappings
+                uid: office.Office.CustomXmlPrefixMappings
+              - name: Dialog
+                uid: office.Office.Dialog
+              - name: DialogOptions
+                uid: office.Office.DialogOptions
+              - name: Document
+                uid: office.Office.Document
+              - name: DocumentSelectionChangedEventArgs
+                uid: office.Office.DocumentSelectionChangedEventArgs
+              - name: Error
+                uid: office.Office.Error
+              - name: File
+                uid: office.Office.File
+              - name: FileProperties
+                uid: office.Office.FileProperties
+              - name: GetBindingDataOptions
+                uid: office.Office.GetBindingDataOptions
+              - name: GetFileOptions
+                uid: office.Office.GetFileOptions
+              - name: GetSelectedDataOptions
+                uid: office.Office.GetSelectedDataOptions
+              - name: GoToByIdOptions
+                uid: office.Office.GoToByIdOptions
+              - name: IPromiseConstructor
+                uid: office.Office.IPromiseConstructor
+              - name: MatrixBinding
+                uid: office.Office.MatrixBinding
+              - name: NodeDeletedEventArgs
+                uid: office.Office.NodeDeletedEventArgs
+              - name: NodeInsertedEventArgs
+                uid: office.Office.NodeInsertedEventArgs
+              - name: NodeReplacedEventArgs
+                uid: office.Office.NodeReplacedEventArgs
+              - name: OfficeTheme
+                uid: office.Office.OfficeTheme
+              - name: RangeCoordinates
+                uid: office.Office.RangeCoordinates
+              - name: RangeFormatConfiguration
+                uid: office.Office.RangeFormatConfiguration
+              - name: RemoveHandlerOptions
+                uid: office.Office.RemoveHandlerOptions
+              - name: RequirementSetSupport
+                uid: office.Office.RequirementSetSupport
+              - name: SaveSettingsOptions
+                uid: office.Office.SaveSettingsOptions
+              - name: SetBindingDataOptions
+                uid: office.Office.SetBindingDataOptions
+              - name: SetSelectedDataOptions
+                uid: office.Office.SetSelectedDataOptions
+              - name: Settings
+                uid: office.Office.Settings
+              - name: SettingsChangedEventArgs
+                uid: office.Office.SettingsChangedEventArgs
+              - name: Slice
+                uid: office.Office.Slice
+              - name: TableBinding
+                uid: office.Office.TableBinding
+              - name: TableData
+                uid: office.Office.TableData
+              - name: TextBinding
+                uid: office.Office.TextBinding
+              - name: UI
+                uid: office.Office.UI
+          - name: OfficeExtension
             items:
-              - name: Event
-                uid: office.Office.AddinCommands.Event
-              - name: Source
-                uid: office.Office.AddinCommands.Source
-          - name: AsyncContextOptions
-            uid: office.Office.AsyncContextOptions
-          - name: AsyncResult
-            uid: office.Office.AsyncResult
-          - name: Binding
-            uid: office.Office.Binding
-          - name: BindingDataChangedEventArgs
-            uid: office.Office.BindingDataChangedEventArgs
-          - name: Bindings
-            uid: office.Office.Bindings
-          - name: BindingSelectionChangedEventArgs
-            uid: office.Office.BindingSelectionChangedEventArgs
-          - name: Context
-            uid: office.Office.Context
-          - name: ContextInformation
-            uid: office.Office.ContextInformation
-          - name: CustomXmlNode
-            uid: office.Office.CustomXmlNode
-          - name: CustomXmlPart
-            uid: office.Office.CustomXmlPart
-          - name: CustomXmlParts
-            uid: office.Office.CustomXmlParts
-          - name: CustomXmlPrefixMappings
-            uid: office.Office.CustomXmlPrefixMappings
-          - name: Dialog
-            uid: office.Office.Dialog
-          - name: DialogOptions
-            uid: office.Office.DialogOptions
-          - name: Document
-            uid: office.Office.Document
-          - name: DocumentSelectionChangedEventArgs
-            uid: office.Office.DocumentSelectionChangedEventArgs
-          - name: Error
-            uid: office.Office.Error
-          - name: File
-            uid: office.Office.File
-          - name: FileProperties
-            uid: office.Office.FileProperties
-          - name: GetBindingDataOptions
-            uid: office.Office.GetBindingDataOptions
-          - name: GetFileOptions
-            uid: office.Office.GetFileOptions
-          - name: GetSelectedDataOptions
-            uid: office.Office.GetSelectedDataOptions
-          - name: GoToByIdOptions
-            uid: office.Office.GoToByIdOptions
-          - name: Index
-            uid: office.Office.Index
-          - name: IPromiseConstructor
-            uid: office.Office.IPromiseConstructor
-          - name: MatrixBinding
-            uid: office.Office.MatrixBinding
-          - name: NodeDeletedEventArgs
-            uid: office.Office.NodeDeletedEventArgs
-          - name: NodeInsertedEventArgs
-            uid: office.Office.NodeInsertedEventArgs
-          - name: NodeReplacedEventArgs
-            uid: office.Office.NodeReplacedEventArgs
-          - name: OfficeTheme
-            uid: office.Office.OfficeTheme
-          - name: RangeCoordinates
-            uid: office.Office.RangeCoordinates
-          - name: RangeFormatConfiguration
-            uid: office.Office.RangeFormatConfiguration
-          - name: RemoveHandlerOptions
-            uid: office.Office.RemoveHandlerOptions
-          - name: RequirementSetSupport
-            uid: office.Office.RequirementSetSupport
-          - name: SaveSettingsOptions
-            uid: office.Office.SaveSettingsOptions
-          - name: SetBindingDataOptions
-            uid: office.Office.SetBindingDataOptions
-          - name: SetSelectedDataOptions
-            uid: office.Office.SetSelectedDataOptions
-          - name: Settings
-            uid: office.Office.Settings
-          - name: SettingsChangedEventArgs
-            uid: office.Office.SettingsChangedEventArgs
-          - name: Slice
-            uid: office.Office.Slice
-          - name: TableBinding
-            uid: office.Office.TableBinding
-          - name: TableData
-            uid: office.Office.TableData
-          - name: TextBinding
-            uid: office.Office.TextBinding
-          - name: UI
-            uid: office.Office.UI
-      - name: OfficeExtension
-        items:
-            - name: ClientObject
-              uid: office.OfficeExtension.ClientObject
-            - name: ClientRequestContext
-              uid: office.OfficeExtension.ClientRequestContext
-            - name: ClientResult
-              uid: office.OfficeExtension.ClientResult
-            - name: DebugInfo
-              uid: office.OfficeExtension.DebugInfo
-            - name: EmbeddedOptions
-              uid: office.OfficeExtension.EmbeddedOptions
-            - name: EmbeddedSession
-              uid: office.OfficeExtension.EmbeddedSession
-            - name: Error
-              uid: office.OfficeExtension.Error
-            - name: ErrorCodes
-              uid: office.OfficeExtension.ErrorCodes
-            - name: EventHandlerResult
-              uid: office.OfficeExtension.EventHandlerResult
-            - name: EventHandlers
-              uid: office.OfficeExtension.EventHandlers
-            - name: EventInfo
-              uid: office.OfficeExtension.EventInfo
-            - name: LoadOption
-              uid: office.OfficeExtension.LoadOption
-            - name: RequestContextDebugInfo
-              uid: office.OfficeExtension.RequestContextDebugInfo
-            - name: RequestUrlAndHeaderInfo
-              uid: office.OfficeExtension.RequestUrlAndHeaderInfo
-            - name: RunOptions
-              uid: office.OfficeExtension.RunOptions
-            - name: TrackedObjects
-              uid: office.OfficeExtension.TrackedObjects
-            - name: UpdateOptions
-              uid: office.OfficeExtension.UpdateOptions
+              - name: ClientObject
+                uid: office.OfficeExtension.ClientObject
+              - name: ClientRequestContext
+                uid: office.OfficeExtension.ClientRequestContext
+              - name: ClientResult
+                uid: office.OfficeExtension.ClientResult
+              - name: DebugInfo
+                uid: office.OfficeExtension.DebugInfo
+              - name: EmbeddedOptions
+                uid: office.OfficeExtension.EmbeddedOptions
+              - name: EmbeddedSession
+                uid: office.OfficeExtension.EmbeddedSession
+              - name: Error
+                uid: office.OfficeExtension.Error
+              - name: ErrorCodes
+                uid: office.OfficeExtension.ErrorCodes
+              - name: EventHandlerResult
+                uid: office.OfficeExtension.EventHandlerResult
+              - name: EventHandlers
+                uid: office.OfficeExtension.EventHandlers
+              - name: EventInfo
+                uid: office.OfficeExtension.EventInfo
+              - name: LoadOption
+                uid: office.OfficeExtension.LoadOption
+              - name: RequestContextDebugInfo
+                uid: office.OfficeExtension.RequestContextDebugInfo
+              - name: RequestUrlAndHeaderInfo
+                uid: office.OfficeExtension.RequestUrlAndHeaderInfo
+              - name: RunOptions
+                uid: office.OfficeExtension.RunOptions
+              - name: TrackedObjects
+                uid: office.OfficeExtension.TrackedObjects
+              - name: UpdateOptions
+                uid: office.OfficeExtension.UpdateOptions
+      - name: Excel
+        href: /javascript/api/excel?view=excel-js-preview
+      - name: OneNote
+        href: /javascript/api/onenote?view=onenote-js-1.1
+      - name: PowerPoint
+        href: /javascript/api/powerpoint?view=powerpoint-js-1.1
+      - name: Visio
+        href: /javascript/api/visio?view=visio-js-1.1
+      - name: Word
+        href: /javascript/api/word?view=word-js-preview

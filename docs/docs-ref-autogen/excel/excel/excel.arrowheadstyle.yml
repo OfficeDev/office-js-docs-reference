@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ArrowHeadStyle
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ArrowHeadStyle
+    fullName: Excel.ArrowHeadStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ArrowHeadStyle.diamond
+      - excel.Excel.ArrowHeadStyle.none
+      - excel.Excel.ArrowHeadStyle.open
+      - excel.Excel.ArrowHeadStyle.oval
+      - excel.Excel.ArrowHeadStyle.stealth
+      - excel.Excel.ArrowHeadStyle.triangle
+  - uid: excel.Excel.ArrowHeadStyle.diamond
+    isPreview: true
+    name: diamond
+    fullName: diamond
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Diamond"'
+  - uid: excel.Excel.ArrowHeadStyle.none
+    isPreview: true
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.ArrowHeadStyle.open
+    isPreview: true
+    name: open
+    fullName: open
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Open"'
+  - uid: excel.Excel.ArrowHeadStyle.oval
+    isPreview: true
+    name: oval
+    fullName: oval
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Oval"'
+  - uid: excel.Excel.ArrowHeadStyle.stealth
+    isPreview: true
+    name: stealth
+    fullName: stealth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Stealth"'
+  - uid: excel.Excel.ArrowHeadStyle.triangle
+    isPreview: true
+    name: triangle
+    fullName: triangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Triangle"'

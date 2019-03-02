@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.SettableColumnProperties
+    summary: Represents the input parameter of setColumnProperties.
+    name: Excel.SettableColumnProperties
+    fullName: Excel.SettableColumnProperties
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - excel.Excel.SettableCellProperties
+    package: excel
+    children:
+      - excel.Excel.SettableColumnProperties.columnHidden
+      - excel.Excel.SettableColumnProperties.format
+  - uid: excel.Excel.SettableColumnProperties.columnHidden
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.SettableColumnProperties.format
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        format?: Excel.CellPropertiesFormat & {
+                    columnWidth?: number;
+                };
+      return:
+        type:
+          - |-
+            Excel.CellPropertiesFormat & {
+                        columnWidth?: number;
+                    }

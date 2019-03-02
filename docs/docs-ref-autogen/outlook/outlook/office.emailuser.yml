@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.EmailUser
+    summary: |-
+      Represents an email account on an Exchange Server.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Read</td></tr> </table>
+    name: Office.EmailUser
+    fullName: Office.EmailUser
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.EmailUser.displayName
+      - outlook.Office.EmailUser.emailAddress
+  - uid: outlook.Office.EmailUser.displayName
+    summary: Gets the display name associated with an email address.
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.EmailUser.emailAddress
+    summary: Gets the SMTP email address.
+    name: emailAddress
+    fullName: emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string

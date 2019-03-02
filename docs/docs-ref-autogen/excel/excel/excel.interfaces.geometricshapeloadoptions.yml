@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions
+    summary: >-
+      Represents a geometric shape object inside a worksheet. A geometric shape can be a line, rectangle, block arrow,
+      equation, flowchart, start, banner, callout or basic shape in Excel.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.GeometricShapeLoadOptions
+    fullName: Excel.Interfaces.GeometricShapeLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.GeometricShapeLoadOptions.$all
+      - excel.Excel.Interfaces.GeometricShapeLoadOptions.id
+      - excel.Excel.Interfaces.GeometricShapeLoadOptions.shape
+  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.id
+    summary: >-
+      Represents the shape identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.shape
+    summary: >-
+      Returns the shape object for the geometric shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeLoadOptions

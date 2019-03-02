@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerItemData
+    summary: An interface describing the data returned by calling "slicerItem.toJSON()".
+    name: Excel.Interfaces.SlicerItemData
+    fullName: Excel.Interfaces.SlicerItemData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerItemData.hasData
+      - excel.Excel.Interfaces.SlicerItemData.isSelected
+      - excel.Excel.Interfaces.SlicerItemData.key
+      - excel.Excel.Interfaces.SlicerItemData.name
+  - uid: excel.Excel.Interfaces.SlicerItemData.hasData
+    summary: >-
+      True if the slicer item has data.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: hasData
+    fullName: hasData
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasData?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemData.isSelected
+    summary: >-
+      True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state. By
+      default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isSelected
+    fullName: isSelected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isSelected?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerItemData.key
+    summary: >-
+      Represents the unique value representing the slicer item.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: key
+    fullName: key
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'key?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.SlicerItemData.name
+    summary: >-
+      Represents the value displayed on UI.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

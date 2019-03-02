@@ -1,0 +1,88 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions
+    summary: >-
+      Represents a collection of comment reply objects that are part of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.isParent
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
+    summary: >-
+      For EACH ITEM in the collection: Get/Set the content.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.isParent
+    summary: >-
+      For EACH ITEM in the collection: Represents whether it is a comment thread or reply. Always return false here.
+      Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: isParent
+    fullName: isParent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isParent?: boolean;'
+      return:
+        type:
+          - boolean

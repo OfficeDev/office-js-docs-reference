@@ -1,0 +1,444 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Context
+    summary: >-
+      Represents the runtime environment of the add-in and provides access to key objects of the API. The current
+      context exists as a property of Office. It is accessed using `Office.context`<!-- -->.
+    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, Outlook, PowerPoint, Project, Word </td></tr></table>'
+    name: Office.Context
+    fullName: Office.Context
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Context.commerceAllowed
+      - office.Office.Context.contentLanguage
+      - office.Office.Context.diagnostics
+      - office.Office.Context.displayLanguage
+      - office.Office.Context.document
+      - office.Office.Context.host
+      - office.Office.Context.license
+      - office.Office.Context.mailbox
+      - office.Office.Context.officeTheme
+      - office.Office.Context.platform
+      - office.Office.Context.requirements
+      - office.Office.Context.roamingSettings
+      - office.Office.Context.touchEnabled
+      - office.Office.Context.ui
+  - uid: office.Office.Context.commerceAllowed
+    summary: 'True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.'
+    remarks: >-
+      The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However,
+      Office Add-ins running on the Windows desktop or for Office Online in the browser do allow such links. If you want
+      the UI of your add-in to provide a link to an external payment system on platforms other than iOS, you can use the
+      commerceAllowed property to control when that link is displayed.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for iPad </th></tr> <tr><td><strong> Excel
+      </strong></td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td></tr> </table>
+    name: commerceAllowed
+    fullName: commerceAllowed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'commerceAllowed: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.Context.contentLanguage
+    summary: Gets the locale (language) specified by the user for editing the document or item.
+    remarks: >-
+      The `contentLanguage` value reflects the **Editing Language** setting specified with **File &gt; Options &gt;
+      Language** in the Office host application.
+
+
+      In content add-ins for Access web apps, the `contentLanguage` property gets the add-in culture (e.g., "en-GB").
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
+      Access </strong></td><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function sayHelloWithContentLanguage() {
+          var myContentLanguage = Office.context.contentLanguage;
+          switch (myContentLanguage) {
+              case 'en-US':
+                  write('Hello!');
+                  break;
+              case 'en-NZ':
+                  write('G\'day mate!');
+                  break;
+          }
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: contentLanguage
+    fullName: contentLanguage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'contentLanguage: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Context.diagnostics
+    summary: Gets information about the environment in which the add-in is running.
+    name: diagnostics
+    fullName: diagnostics
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'diagnostics: ContextInformation;'
+      return:
+        type:
+          - office.Office.ContextInformation
+  - uid: office.Office.Context.displayLanguage
+    summary: Gets the locale (language) specified by the user for the UI of the Office host application.
+    remarks: >-
+      The returned value is a string in the RFC 1766 Language tag format, such as en-US.
+
+
+      The `displayLanguage` value reflects the current **Display Language** setting specified with **File &gt; Options
+      &gt; Language** in the Office host application.
+
+
+      In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
+
+
+      When using in Outlook, the applicable modes are Compose or Read.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
+      Access </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
+      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
+      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
+      </td><td> </td><td> Y </td><td> </td><td> </td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      function sayHelloWithDisplayLanguage() {
+          var myDisplayLanguage = Office.context.displayLanguage;
+          switch (myDisplayLanguage) {
+              case 'en-US':
+                  write('Hello!');
+                  break;
+              case 'en-NZ':
+                  write('G\'day mate!');
+                  break;
+          }
+      }
+
+      // Function that writes to a div with id='message' on the page.
+
+      function write(message){
+          document.getElementById('message').innerText += message; 
+      }
+
+      ```
+    name: displayLanguage
+    fullName: displayLanguage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayLanguage: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Context.document
+    summary: Gets an object that represents the document the content or task pane add-in is interacting with.
+    remarks: >-
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
+      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
+      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong>
+      PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y
+      </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td></tr>
+      </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // Extension initialization code.
+
+      var _document;
+
+
+      // The initialize function is required for all add-ins.
+
+      Office.initialize = function () {
+          // Checks for the DOM to load using the jQuery ready function.
+          $(document).ready(function () {
+          // After the DOM is loaded, code specific to the add-in can run.
+          // Initialize instance variables to access API objects.
+          _document = Office.context.document;
+          });
+      }
+
+      ```
+    name: document
+    fullName: document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Office.Document;'
+      return:
+        type:
+          - office.Office.Document
+  - uid: office.Office.Context.host
+    summary: Contains the Office application host in which the add-in is running.
+    name: host
+    fullName: host
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'host: HostType;'
+      return:
+        type:
+          - office.Office.HostType
+  - uid: office.Office.Context.license
+    summary: Gets the license information for the user's Office installation.
+    name: license
+    fullName: license
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'license: string;'
+      return:
+        type:
+          - string
+  - uid: office.Office.Context.mailbox
+    summary: |-
+      Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
+
+      Namespaces:
+
+      - diagnostics: Provides diagnostic information to an Outlook add-in.
+
+      - item: Provides methods and properties for accessing a message or appointment in an Outlook add-in.
+
+      - userProfile: Provides information about the user in an Outlook add-in.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      // The following line of code access the item object of the JavaScript API for Office.
+
+      var item = Office.context.mailbox.item;
+
+      ```
+    name: mailbox
+    fullName: mailbox
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mailbox: Office.Mailbox;'
+      return:
+        type:
+          - Office.Mailbox
+  - uid: office.Office.Context.officeTheme
+    summary: Provides access to the properties for Office theme colors.
+    name: officeTheme
+    fullName: officeTheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'officeTheme: OfficeTheme;'
+      return:
+        type:
+          - office.Office.OfficeTheme
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function applyOfficeTheme(){
+              // Get office theme colors.
+              var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
+              var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
+              var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+              var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
+
+              // Apply body background color to a CSS class.
+              $('.body').css('background-color', bodyBackgroundColor);
+          }
+          ```
+  - uid: office.Office.Context.platform
+    summary: Provides the platform on which the add-in is running.
+    name: platform
+    fullName: platform
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'platform: PlatformType;'
+      return:
+        type:
+          - office.Office.PlatformType
+  - uid: office.Office.Context.requirements
+    summary: Provides a method for determining what requirement sets are supported on the current host and platform.
+    name: requirements
+    fullName: requirements
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requirements: RequirementSetSupport;'
+      return:
+        type:
+          - office.Office.RequirementSetSupport
+  - uid: office.Office.Context.roamingSettings
+    summary: >-
+      Gets an object that represents the custom settings or state of a mail add-in saved to a user's mailbox.
+
+
+      The RoamingSettings object lets you store and access data for a mail add-in that is stored in a user's mailbox, so
+      that is available to that add-in when it is running from any host client application used to access that mailbox.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    name: roamingSettings
+    fullName: roamingSettings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roamingSettings: Office.RoamingSettings;'
+      return:
+        type:
+          - Office.RoamingSettings
+  - uid: office.Office.Context.touchEnabled
+    summary: >-
+      Specifies whether the platform and device allows touch interaction. True if the add-in is running on a touch
+      device, such as an iPad; false otherwise.
+    remarks: >-
+      Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust
+      the kind of controls, and size and spacing of elements in your add-in's UI to accommodate touch interactions.
+
+
+      **Support details**
+
+
+      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+
+
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+
+
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for iPad </th></tr> <tr><td><strong> Excel
+      </strong></td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td></tr> <tr><td><strong> Word
+      </strong></td><td> Y </td></tr> </table>
+    name: touchEnabled
+    fullName: touchEnabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'touchEnabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: office.Office.Context.ui
+    summary: 'Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes.'
+    name: ui
+    fullName: ui
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'ui: UI;'
+      return:
+        type:
+          - office.Office.UI

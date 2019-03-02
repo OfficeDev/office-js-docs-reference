@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+    summary: >-
+      An interface for updating data on the IconSetConditionalFormat object, for use in
+      "iconSetConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.IconSetConditionalFormatUpdateData
+    fullName: Excel.Interfaces.IconSetConditionalFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel

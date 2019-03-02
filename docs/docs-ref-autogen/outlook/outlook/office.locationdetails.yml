@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.LocationDetails
+    summary: |-
+      Represents a location. Read only.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
+
+
+      function callbackFunction(asyncResult) {
+          asyncResult.value.forEach(function (place) {
+              console.log("Display name: " + place.displayName);
+              console.log("Type: " + place.locationIdentifier.type);
+              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
+                  console.log("Email address: " + place.emailAddress);
+              }
+          });
+      }
+
+      ```
+    isPreview: true
+    name: Office.LocationDetails
+    fullName: Office.LocationDetails
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.LocationDetails.displayName
+      - outlook.Office.LocationDetails.emailAddress
+      - outlook.Office.LocationDetails.locationIdentifier
+  - uid: outlook.Office.LocationDetails.displayName
+    summary: The location's display name.
+    isPreview: true
+    name: displayName
+    fullName: displayName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'displayName: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.LocationDetails.emailAddress
+    summary: The email address associated with the location.
+    isPreview: true
+    name: emailAddress
+    fullName: emailAddress
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'emailAddress: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.LocationDetails.locationIdentifier
+    summary: The LocationIdentifier of the location.
+    isPreview: true
+    name: locationIdentifier
+    fullName: locationIdentifier
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'locationIdentifier: LocationIdentifier;'
+      return:
+        type:
+          - outlook.Office.LocationIdentifier

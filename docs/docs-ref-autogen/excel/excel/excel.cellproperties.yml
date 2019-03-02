@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CellProperties
+    summary: Represents the returned properties of getCellProperties.
+    name: Excel.CellProperties
+    fullName: Excel.CellProperties
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - excel.Excel.SettableCellProperties
+    package: excel
+    children:
+      - excel.Excel.CellProperties.address
+      - excel.Excel.CellProperties.addressLocal
+      - excel.Excel.CellProperties.hasSpill
+      - excel.Excel.CellProperties.hidden
+  - uid: excel.Excel.CellProperties.address
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellProperties.addressLocal
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CellProperties.hasSpill
+    name: hasSpill
+    fullName: hasSpill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasSpill?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.CellProperties.hidden
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hidden?: boolean;'
+      return:
+        type:
+          - boolean
