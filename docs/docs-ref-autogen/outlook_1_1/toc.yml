@@ -1,6 +1,6 @@
 items:
   - name: API reference
-    href: /javascript/api/overview/office
+    href: api-ref-office-js.md
     items:
       - name: Outlook
         uid: Outlook
