@@ -132,6 +132,7 @@ tryCatch(async () => {
 
     // moving common TOC to its own folder
     fsx.copySync(commonTocFolder + "/toc.yml",  path.resolve("../yaml/common/toc.yml"));
+    fsx.copySync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md", commonTocFolder + "/api-ref-office-js.md");
 
     // create global TOC
     let globalToc = <INewToc>{};
