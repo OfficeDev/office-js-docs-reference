@@ -77,8 +77,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -99,7 +99,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - any
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -1035,8 +1035,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1051,7 +1051,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - any
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

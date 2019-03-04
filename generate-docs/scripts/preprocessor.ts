@@ -219,7 +219,18 @@ tryCatch(async () => {
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
 
-    fsx.writeFileSync("../json/snippets.yaml", yaml.dump(snippets));
+    fsx.writeFileSync("../json/snippets.yaml", yaml.safeDump(
+        snippets,
+        {sortKeys: <any>((a: string, b: string) => {
+            if (a < b) {
+                return -1;
+            } else if (a > b) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })}
+    ));
 
     console.log("\nPreprocessor script complete!");
 

@@ -75,9 +75,18 @@ interface INewToc {
 tryCatch(async () => {
     console.log("\nStarting postprocessor script...");
 
+    const docsSource = path.resolve("../yaml");
+    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
+
+    console.log(`Deleting old docs at: ${docsDestination}`);
+    // delete everything except the 'overview' folder from the /docs folder
+    fsx.readdirSync(docsDestination)
+        .filter(filename => filename !== "overview" && filename !== "images")
+        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
+
     // fix all the individual TOC files
-    const commonTocPath = path.resolve("../yaml/office/toc.yml");
-    const commonToc = scrubAndWriteToc(commonTocPath);
+    const commonTocFolder = path.resolve("../yaml/office");
+    const commonToc = scrubAndWriteToc(commonTocFolder);
     const hostVersionMap = [{host: "excel", versions: 9},
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 8},
@@ -86,20 +95,11 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`../yaml/${category.host}/toc.yml`), commonToc, category.host);
+        scrubAndWriteToc(path.resolve(`../yaml/${category.host}`), commonToc, category.host);
         for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}/toc.yml`), commonToc, category.host);
+            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}`), commonToc, category.host);
         }
     });
-
-    const docsSource = path.resolve("../yaml");
-    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
-
-    console.log(`Deleting old docs at: ${docsDestination}`);
-    // delete everything except the 'overview' folder from the /docs folder
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename !== "overview")
-        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
 
     console.log(`Namespace pass on Outlook docs`);
     // replace Outlook/CommonAPI namespace references with Office
@@ -126,13 +126,12 @@ tryCatch(async () => {
             fsx.readdirSync(subfolder)
                 .filter(subfilename => subfilename.indexOf("toc") >= 0)
                 .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "/javascript/api/overview/office"));
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "api-ref-office-js.md"));
                 });
         });
 
     // moving common TOC to its own folder
-    fsx.copySync(commonTocPath,  path.resolve("../yaml/common/toc.yml"));
-    fsx.removeSync(commonTocPath);
+    fsx.copySync(commonTocFolder + "/toc.yml",  path.resolve("../yaml/common/toc.yml"));
 
     // create global TOC
     let globalToc = <INewToc>{};
@@ -419,7 +418,8 @@ function addCrossHostTocStubs(toc: INewToc, hostName: string): void {
         });
 }
 
-function scrubAndWriteToc(tocPath: string, commonToc?: INewToc, hostName?: string): INewToc {
+function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?: string): INewToc {
+    const tocPath = versionFolder + "/toc.yml";
     let latestToc;
     if (!commonToc) {
         latestToc = fixCommonToc(tocPath);
@@ -429,5 +429,6 @@ function scrubAndWriteToc(tocPath: string, commonToc?: INewToc, hostName?: strin
 
     addCrossHostTocStubs(latestToc, hostName);
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
+    fsx.copySync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md", versionFolder + "/api-ref-office-js.md");
     return latestToc;
 }
