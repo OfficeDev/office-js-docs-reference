@@ -1633,7 +1633,7 @@ declare namespace Office {
          */
         controlBackgroundColor: string;
         /**
-         * Gets the Office theme body control color as a hexadecimal color triplet (e.g. "FFA500").
+         * Gets the Office theme control foreground color as a hexadecimal color triplet (e.g. "FFA500").
          */
         controlForegroundColor: string;
     }
@@ -10751,6 +10751,12 @@ declare namespace Office {
          * Gets the size of the attachment in bytes.
          */
         size: number;
+        /**
+         * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.
+         * 
+         * [Api set: Mailbox Preview]
+         */
+        url: string;
     }
     /**
      * The body object provides methods for adding and updating the content of the message or appointment. 

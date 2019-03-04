@@ -5977,6 +5977,35 @@
                     "startIndex": 2,
                     "endIndex": 3
                   }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "url",
+                  "docComment": "/**\n * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "url"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "url",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
                 }
               ],
               "extendsTokenRanges": []
