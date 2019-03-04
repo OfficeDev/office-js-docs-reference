@@ -60,6 +60,7 @@ items:
       - outlook.Office.AttachmentDetails.isInline
       - outlook.Office.AttachmentDetails.name
       - outlook.Office.AttachmentDetails.size
+      - outlook.Office.AttachmentDetails.url
   - uid: outlook.Office.AttachmentDetails.attachmentType
     summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
@@ -132,3 +133,18 @@ items:
       return:
         type:
           - number
+  - uid: outlook.Office.AttachmentDetails.url
+    summary: |-
+      Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`<!-- -->.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: url
+    fullName: url
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'url: string;'
+      return:
+        type:
+          - string
