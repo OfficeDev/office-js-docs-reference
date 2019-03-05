@@ -10141,6 +10141,11 @@ Office.CustomProperties.saveAsync:
     }
 Office.EmailAddressDetails.appointmentResponse:
   - >-
+    // The following sample provides the responses from required attendees.
+
+    // Note that this sample needs the add-in to be in Appointment Read
+    (Attendee) mode.
+
     var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
     console.log("There are " + requiredAttendees.length + " required
@@ -17031,7 +17036,7 @@ Excel.Range.removeDuplicates:
         console.log(deleteResult.removed + " entries with duplicate names removed.");
         console.log(deleteResult.uniqueRemaining + " entries with unique names remain in the range.");
     });
-Excel.RemoveDuplicateResult.uniqueRemaining:
+Excel.RemoveDuplicatesResult.uniqueRemaining:
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
@@ -17247,7 +17252,7 @@ Excel.Image.format:
         console.log("The image's format is: " + image.format);
         await context.sync();
     });
-Excel.Image.saveAsPicture:
+Excel.Shape.saveAsPicture:
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Shapes");
@@ -17763,6 +17768,49 @@ Excel.Worksheet.tabColor:
     await Excel.run(async (context) => {
         const activeSheet = context.workbook.worksheets.getActiveWorksheet();
         activeSheet.tabColor = "#FF0000";
+
+        await context.sync();
+    });
+Excel.ShapeCollection.addTextBox:
+  - |-
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const textbox = shapes.addTextBox("A box with text");
+        textbox.left = 100;
+        textbox.top = 100;
+        textbox.height = 20;
+        textbox.width = 175;
+        textbox.name = "Textbox";
+        await context.sync();
+    });
+Excel.TextFrame.deleteText:
+  - |-
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const textbox = shapes.getItem("Textbox");
+        textbox.textFrame.deleteText();
+        await context.sync();
+    });
+Excel.ShapeCollection.addLine:
+  - |-
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+        line.name = "StraightLine";
+        await context.sync();
+    });
+Excel.Shape.line:
+  - |-
+    await Excel.run(async (context) => {
+        const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+        const line = shapes.getItem("StraightLine").line;
+        line.beginArrowHeadLength = Excel.ArrowHeadLength.long;
+        line.beginArrowHeadWidth = Excel.ArrowHeadWidth.wide;
+        line.beginArrowHeadStyle = Excel.ArrowHeadStyle.oval;
+
+        line.endArrowHeadLength = Excel.ArrowHeadLength.long;
+        line.endArrowHeadWidth = Excel.ArrowHeadWidth.wide;
+        line.endArrowHeadStyle = Excel.ArrowHeadStyle.triangle;
 
         await context.sync();
     });

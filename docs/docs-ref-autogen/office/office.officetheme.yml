@@ -90,7 +90,7 @@ items:
         type:
           - string
   - uid: office.Office.OfficeTheme.controlForegroundColor
-    summary: Gets the Office theme body control color as a hexadecimal color triplet (e.g. "FFA500").
+    summary: Gets the Office theme control foreground color as a hexadecimal color triplet (e.g. "FFA500").
     name: controlForegroundColor
     fullName: controlForegroundColor
     langs:

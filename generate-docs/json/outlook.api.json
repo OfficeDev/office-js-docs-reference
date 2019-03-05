@@ -756,8 +756,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -813,8 +821,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 26,
-                    "endIndex": 27
+                    "startIndex": 28,
+                    "endIndex": 29
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -837,14 +845,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 14,
-                        "endIndex": 15
+                        "endIndex": 17
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 18,
-                        "endIndex": 25
+                        "startIndex": 20,
+                        "endIndex": 27
                       }
                     }
                   ],
@@ -2331,8 +2339,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -2388,8 +2404,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 24,
+                    "endIndex": 25
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -2405,14 +2421,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 10,
-                        "endIndex": 11
+                        "endIndex": 13
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 16,
+                        "endIndex": 23
                       }
                     }
                   ],
@@ -3728,8 +3744,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -3785,8 +3809,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 26,
-                    "endIndex": 27
+                    "startIndex": 28,
+                    "endIndex": 29
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -3809,14 +3833,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 14,
-                        "endIndex": 15
+                        "endIndex": 17
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 18,
-                        "endIndex": 25
+                        "startIndex": 20,
+                        "endIndex": 27
                       }
                     }
                   ],
@@ -4873,8 +4897,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -4930,8 +4962,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 24,
+                    "endIndex": 25
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -4947,14 +4979,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 10,
-                        "endIndex": 11
+                        "endIndex": 13
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 16,
+                        "endIndex": 23
                       }
                     }
                   ],
@@ -5941,6 +5973,35 @@
                   ],
                   "releaseTag": "Public",
                   "name": "size",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "url",
+                  "docComment": "/**\n * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "url"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "url",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -11175,8 +11236,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -11232,8 +11301,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 24,
+                    "endIndex": 25
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -11249,14 +11318,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 10,
-                        "endIndex": 11
+                        "endIndex": 13
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 16,
+                        "endIndex": 23
                       }
                     }
                   ],
@@ -24061,8 +24130,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -24118,8 +24195,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 26,
-                    "endIndex": 27
+                    "startIndex": 28,
+                    "endIndex": 29
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -24142,14 +24219,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 14,
-                        "endIndex": 15
+                        "endIndex": 17
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 18,
-                        "endIndex": 25
+                        "startIndex": 20,
+                        "endIndex": 27
                       }
                     }
                   ],
@@ -25636,8 +25713,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -25693,8 +25778,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 24,
+                    "endIndex": 25
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -25710,14 +25795,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 10,
-                        "endIndex": 11
+                        "endIndex": 13
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 16,
+                        "endIndex": 23
                       }
                     }
                   ],
@@ -26703,8 +26788,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -26760,8 +26853,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 26,
-                    "endIndex": 27
+                    "startIndex": 28,
+                    "endIndex": 29
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -26784,14 +26877,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 14,
-                        "endIndex": 15
+                        "endIndex": 17
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 18,
-                        "endIndex": 25
+                        "startIndex": 20,
+                        "endIndex": 27
                       }
                     }
                   ],
@@ -27848,8 +27941,16 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any"
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
                     },
                     {
                       "kind": "Content",
@@ -27905,8 +28006,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 24,
+                    "endIndex": 25
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -27922,14 +28023,14 @@
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
                         "startIndex": 10,
-                        "endIndex": 11
+                        "endIndex": 13
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 16,
+                        "endIndex": 23
                       }
                     }
                   ],
