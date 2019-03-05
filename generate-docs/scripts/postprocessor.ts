@@ -131,12 +131,12 @@ tryCatch(async () => {
         });
 
     // moving common TOC to its own folder
-    fsx.copySync(commonTocFolder + "/toc.yml",  path.resolve("../yaml/common/toc.yml"));
-    fsx.copySync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md", commonTocFolder + "/api-ref-office-js.md");
+    fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
+    fsx.copySync(commonTocFolder + "/api-ref-office-js.md", "../yaml/common/api-ref-office-js.md");
 
     // remove to prevent build errors
     fsx.removeSync(commonTocFolder + "/toc.yml");
-    fsx.removeSync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md");
+    fsx.removeSync(commonTocFolder + "/api-ref-office-js.md");
 
     // create global TOC
     let globalToc = <INewToc>{};
