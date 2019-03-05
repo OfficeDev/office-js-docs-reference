@@ -134,6 +134,10 @@ tryCatch(async () => {
     fsx.copySync(commonTocFolder + "/toc.yml",  path.resolve("../yaml/common/toc.yml"));
     fsx.copySync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md", commonTocFolder + "/api-ref-office-js.md");
 
+    // remove to prevent build errors
+    fsx.removeSync(commonTocFolder + "/toc.yml");
+    fsx.removeSync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md");
+
     // create global TOC
     let globalToc = <INewToc>{};
     globalToc.items = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},

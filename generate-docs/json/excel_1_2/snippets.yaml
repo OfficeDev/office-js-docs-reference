@@ -9591,6 +9591,11 @@ Office.Document.url:
     }
 Office.EmailAddressDetails.appointmentResponse:
   - >-
+    // The following sample provides the responses from required attendees.
+
+    // Note that this sample needs the add-in to be in Appointment Read
+    (Attendee) mode.
+
     var requiredAttendees = Office.context.mailbox.item.requiredAttendees;
 
     console.log("There are " + requiredAttendees.length + " required
