@@ -157,3 +157,50 @@ function lookForEnums(node: ts.Node, enumList: string[]): void {
         lookForEnums(element, enumList);
     });
 }
+
+export function isEntryInDts(dtsFile: string, containingClass: string, field: string): boolean {
+    const releaseFile: ts.SourceFile = ts.createSourceFile(
+        "office",
+        dtsFile,
+        ts.ScriptTarget.ES2015,
+        true);
+
+    releaseFile.getChildren().forEach((element) => {
+        return isClassInDts(releaseFile, containingClass, field);
+    });
+
+    return false;
+}
+
+function isClassInDts(node: ts.Node, containingClass: string, field: string): void {
+    // switch (node.kind) {
+    //     case ts.SyntaxKind.InterfaceDeclaration:
+    //         parseDTSTopLevelItem(node as ts.InterfaceDeclaration, allClasses, ClassType.Interface);
+    //         break;
+    //     case ts.SyntaxKind.ClassDeclaration:
+    //         parseDTSTopLevelItem(node as ts.ClassDeclaration, allClasses, ClassType.Class);
+    //         break;
+    //     case ts.SyntaxKind.EnumDeclaration:
+    //         parseDTSTopLevelItem(node as ts.EnumDeclaration, allClasses, ClassType.Enum);
+    //         break;
+    //     case ts.SyntaxKind.PropertySignature:
+    //         parseDTSFieldItem(node as ts.PropertySignature, FieldType.Property);
+    //         break;
+    //     case ts.SyntaxKind.PropertyDeclaration:
+    //         parseDTSFieldItem(node as ts.PropertyDeclaration, FieldType.Property);
+    //         break;
+    //     case ts.SyntaxKind.EnumMember:
+    //         parseDTSFieldItem(node as ts.EnumMember, FieldType.Enum);
+    //         break;
+    //     case ts.SyntaxKind.MethodSignature:
+    //         parseDTSFieldItem(node as ts.MethodSignature, FieldType.Method);
+    //         break;
+    //     case ts.SyntaxKind.MethodDeclaration:
+    //         parseDTSFieldItem(node as ts.MethodDeclaration, FieldType.Method);
+    //         break;
+    // }
+
+    // node.getChildren().forEach((element) => {
+    //     isEntryInDtsHelper(element, allClasses);
+    // });
+}
