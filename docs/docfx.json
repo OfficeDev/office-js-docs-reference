@@ -159,6 +159,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "common-js",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
       
       {
         "files": [
@@ -193,6 +201,14 @@
         "group": "outlook-js-preview",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-preview",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
       },
       
       {
@@ -229,6 +245,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.1",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
       
       {
         "files": [
@@ -264,6 +288,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.2",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
 
       {
         "files": [
@@ -298,6 +330,14 @@
         "group": "outlook-js-1.3",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.3",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
       },
 
       {
@@ -336,6 +376,15 @@
       },
       {
         "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.4",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
+
+      {
+        "files": [
           "**/*.md",
           "**/*.yml"
         ],
@@ -367,6 +416,14 @@
         "group": "outlook-js-1.5",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.5",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
       },
       
       {
@@ -403,6 +460,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.6",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
       
       {
         "files": [
@@ -437,6 +502,14 @@
         "group": "outlook-js-1.7",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "outlook-js-1.7",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
       },
 
       {
@@ -481,6 +554,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "excel-js-preview",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
 
       {
         "files": [
@@ -515,6 +596,14 @@
         "group": "excel-js-1.1",
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
+      },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "excel-js-1.1",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
       },
       
       {
@@ -551,6 +640,14 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "excel-js-1.2",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
       
       {
         "files": [
@@ -586,8 +683,16 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
+      {
+        "files": [
+          "*.png"
+        ],
+        "group": "excel-js-1.3",
+        "src": "docs-ref-autogen/images",
+        "dest": "api"
+      },
 
-       {
+    {
       "files": [
         "**/*.md",
         "**/*.yml"
@@ -621,7 +726,16 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-        {
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "excel-js-1.4",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
+
+    {
       "files": [
         "**/*.md",
         "**/*.yml"
@@ -655,7 +769,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "excel-js-1.5",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
     
     {
       "files": [
@@ -691,7 +812,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "excel-js-1.6",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
     
     {
       "files": [
@@ -727,7 +855,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "excel-js-1.7",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
     
     {
       "files": [
@@ -762,6 +897,14 @@
       "group": "excel-js-1.8",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
+    },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "excel-js-1.8",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
     },
 
     {
@@ -798,6 +941,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "onenote-js-1.1",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
     
     {
       "files": [
@@ -832,6 +983,14 @@
       "group": "powerpoint-js-1.1",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
+    },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "powerpoint-js-1.1",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
     },
     
     {
@@ -868,7 +1027,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
-
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "visio-js-1.1",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
     
     {
       "files": [
@@ -903,6 +1069,14 @@
       "group": "word-js-preview",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
+    },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "word-js-preview",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
     },
 
     {
@@ -939,6 +1113,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "word-js-1.1",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
     
     {
       "files": [
@@ -974,6 +1156,14 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "word-js-1.2",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
+    },
 
     {
       "files": [
@@ -1008,6 +1198,14 @@
       "group": "word-js-1.3",
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
+    },
+    {
+      "files": [
+        "*.png"
+      ],
+      "group": "word-js-1.3",
+      "src": "docs-ref-autogen/images",
+      "dest": "api"
     },
 
     {
