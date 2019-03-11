@@ -194,14 +194,6 @@
         "src": "breadcrumb",
         "dest": "office_js_breadcrumb"
       },
-      {
-        "files": [
-          "*.png"
-        ],
-        "group": "outlook-js-preview",
-        "src": "docs-ref-autogen/images",
-        "dest": "api"
-      },
       
       {
         "files": [
