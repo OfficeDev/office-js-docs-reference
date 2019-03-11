@@ -16,19 +16,23 @@ items:
     children:
       - excel.Excel.RangeFormat.autofitColumns
       - excel.Excel.RangeFormat.autofitRows
+      - excel.Excel.RangeFormat.autoIndent
       - excel.Excel.RangeFormat.borders
       - excel.Excel.RangeFormat.columnWidth
       - excel.Excel.RangeFormat.context
       - excel.Excel.RangeFormat.fill
       - excel.Excel.RangeFormat.font
       - excel.Excel.RangeFormat.horizontalAlignment
+      - excel.Excel.RangeFormat.indentLevel
       - excel.Excel.RangeFormat.load
       - excel.Excel.RangeFormat.load_1
       - excel.Excel.RangeFormat.load_2
       - excel.Excel.RangeFormat.protection
+      - excel.Excel.RangeFormat.readingOrder
       - excel.Excel.RangeFormat.rowHeight
       - excel.Excel.RangeFormat.set
       - excel.Excel.RangeFormat.set_1
+      - excel.Excel.RangeFormat.shrinkToFit
       - excel.Excel.RangeFormat.textOrientation
       - excel.Excel.RangeFormat.toJSON
       - excel.Excel.RangeFormat.useStandardHeight
@@ -71,6 +75,24 @@ items:
         type:
           - void
         description: ''
+  - uid: excel.Excel.RangeFormat.autoIndent
+    summary: >-
+      Indicates if text is automatically indented when text alignment is set to equal distribution.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.RangeFormat.borders
     summary: |-
       Collection of border objects that apply to the overall range. Read-only.
@@ -166,6 +188,24 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
+  - uid: excel.Excel.RangeFormat.indentLevel
+    summary: >-
+      An integer from 0 to 250 that indicates the indent level.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.RangeFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -321,6 +361,24 @@ items:
       return:
         type:
           - excel.Excel.FormatProtection
+  - uid: excel.Excel.RangeFormat.readingOrder
+    summary: >-
+      The reading order for the range.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
   - uid: excel.Excel.RangeFormat.rowHeight
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
@@ -384,6 +442,24 @@ items:
           description: ''
           type:
             - excel.Excel.RangeFormat
+  - uid: excel.Excel.RangeFormat.shrinkToFit
+    summary: >-
+      Indicates if text automatically shrinks to fit in the available column width.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.RangeFormat.textOrientation
     summary: >-
       Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer

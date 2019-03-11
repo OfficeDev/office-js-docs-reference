@@ -15,12 +15,14 @@ items:
     package: excel
     children:
       - excel.Excel.ChartAreaFormat.border
+      - excel.Excel.ChartAreaFormat.colorScheme
       - excel.Excel.ChartAreaFormat.context
       - excel.Excel.ChartAreaFormat.fill
       - excel.Excel.ChartAreaFormat.font
       - excel.Excel.ChartAreaFormat.load
       - excel.Excel.ChartAreaFormat.load_1
       - excel.Excel.ChartAreaFormat.load_2
+      - excel.Excel.ChartAreaFormat.roundedCorners
       - excel.Excel.ChartAreaFormat.set
       - excel.Excel.ChartAreaFormat.set_1
       - excel.Excel.ChartAreaFormat.toJSON
@@ -39,6 +41,34 @@ items:
       return:
         type:
           - excel.Excel.ChartBorder
+  - uid: excel.Excel.ChartAreaFormat.colorScheme
+    summary: >-
+      Returns or sets an integer that represents the color scheme for the chart. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: colorScheme
+    fullName: colorScheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        colorScheme: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" |
+        "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" |
+        "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" |
+        "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" |
+        "MonochromaticPalette12" | "MonochromaticPalette13";
+      return:
+        type:
+          - >-
+            Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
+            "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" |
+            "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" |
+            "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" |
+            "MonochromaticPalette13"
   - uid: excel.Excel.ChartAreaFormat.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -163,6 +193,24 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.ChartAreaFormat.roundedCorners
+    summary: >-
+      True if the chart area of the chart has rounded corners. Read/Write.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: roundedCorners
+    fullName: roundedCorners
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roundedCorners: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.ChartAreaFormat.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate

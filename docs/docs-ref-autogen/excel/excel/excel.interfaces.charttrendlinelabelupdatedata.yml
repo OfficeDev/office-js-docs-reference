@@ -16,6 +16,7 @@ items:
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.formula
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.horizontalAlignment
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.left
+      - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.linkNumberFormat
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.numberFormat
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.text
       - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.textOrientation
@@ -102,6 +103,25 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.linkNumberFormat
+    summary: >-
+      Boolean value representing if the number format is linked to the cells (so that the number format changes in the
+      labels when it changes in the cells).
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.ChartTrendlineLabelUpdateData.numberFormat
     summary: |-
       String value that represents the format code for trendline label.

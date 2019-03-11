@@ -14,6 +14,7 @@ items:
       - excel.Excel.EventType.chartAdded
       - excel.Excel.EventType.chartDeactivated
       - excel.Excel.EventType.chartDeleted
+      - excel.Excel.EventType.ribbonCommandExecuted
       - excel.Excel.EventType.shapeActivated
       - excel.Excel.EventType.shapeDeactivated
       - excel.Excel.EventType.tableAdded
@@ -23,6 +24,7 @@ items:
       - excel.Excel.EventType.tableSelectionChanged
       - excel.Excel.EventType.visualChange
       - excel.Excel.EventType.visualSelectionChanged
+      - excel.Excel.EventType.wacoperationEvent
       - excel.Excel.EventType.workbookAutoSaveSettingChanged
       - excel.Excel.EventType.worksheetActivated
       - excel.Excel.EventType.worksheetAdded
@@ -83,6 +85,14 @@ items:
       - typeScript
     type: field
     numericValue: '"ChartDeleted"'
+  - uid: excel.Excel.EventType.ribbonCommandExecuted
+    summary: 'RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon'
+    name: ribbonCommandExecuted
+    fullName: ribbonCommandExecuted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RibbonCommandExecuted"'
   - uid: excel.Excel.EventType.shapeActivated
     summary: 'ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.'
     name: shapeActivated
@@ -161,6 +171,13 @@ items:
       - typeScript
     type: field
     numericValue: '"VisualSelectionChanged"'
+  - uid: excel.Excel.EventType.wacoperationEvent
+    name: wacoperationEvent
+    fullName: wacoperationEvent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WACOperationEvent"'
   - uid: excel.Excel.EventType.workbookAutoSaveSettingChanged
     summary: >-
       WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an
