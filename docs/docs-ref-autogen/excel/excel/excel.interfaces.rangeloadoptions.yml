@@ -24,12 +24,10 @@ items:
       - excel.Excel.Interfaces.RangeLoadOptions.formulas
       - excel.Excel.Interfaces.RangeLoadOptions.formulasLocal
       - excel.Excel.Interfaces.RangeLoadOptions.formulasR1C1
-      - excel.Excel.Interfaces.RangeLoadOptions.hasSpill
       - excel.Excel.Interfaces.RangeLoadOptions.hidden
       - excel.Excel.Interfaces.RangeLoadOptions.hyperlink
       - excel.Excel.Interfaces.RangeLoadOptions.isEntireColumn
       - excel.Excel.Interfaces.RangeLoadOptions.isEntireRow
-      - excel.Excel.Interfaces.RangeLoadOptions.linkedDataTypeState
       - excel.Excel.Interfaces.RangeLoadOptions.numberFormat
       - excel.Excel.Interfaces.RangeLoadOptions.numberFormatLocal
       - excel.Excel.Interfaces.RangeLoadOptions.rowCount
@@ -228,25 +226,6 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.hasSpill
-    summary: >-
-      Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
-      do not have a spill border. Returns null if there are cells both with and without spill borders within the range.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: hasSpill
-    fullName: hasSpill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasSpill?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Interfaces.RangeLoadOptions.hidden
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
@@ -304,24 +283,6 @@ items:
     type: property
     syntax:
       content: 'isEntireRow?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: excel.Excel.Interfaces.RangeLoadOptions.linkedDataTypeState
-    summary: >-
-      Represents the data type state of each cell. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: linkedDataTypeState
-    fullName: linkedDataTypeState
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'linkedDataTypeState?: boolean;'
       return:
         type:
           - boolean

@@ -15,7 +15,6 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.TableCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.autoFilter
       - excel.Excel.Interfaces.TableCollectionLoadOptions.columns
       - excel.Excel.Interfaces.TableCollectionLoadOptions.highlightFirstColumn
       - excel.Excel.Interfaces.TableCollectionLoadOptions.highlightLastColumn
@@ -42,24 +41,6 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.autoFilter
-    summary: >-
-      For EACH ITEM in the collection: Represents the AutoFilter object of the table.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: autoFilter
-    fullName: autoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
-      return:
-        type:
-          - excel.Excel.Interfaces.AutoFilterLoadOptions
   - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.columns
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the columns in the table.

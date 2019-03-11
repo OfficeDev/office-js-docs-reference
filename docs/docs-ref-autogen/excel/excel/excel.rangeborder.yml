@@ -23,7 +23,6 @@ items:
       - excel.Excel.RangeBorder.set_1
       - excel.Excel.RangeBorder.sideIndex
       - excel.Excel.RangeBorder.style
-      - excel.Excel.RangeBorder.tintAndShade
       - excel.Excel.RangeBorder.toJSON
       - excel.Excel.RangeBorder.weight
   - uid: excel.Excel.RangeBorder.color
@@ -270,26 +269,6 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
-  - uid: excel.Excel.RangeBorder.tintAndShade
-    summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
-      tintAndShade setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade: number;'
-      return:
-        type:
-          - number
   - uid: excel.Excel.RangeBorder.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

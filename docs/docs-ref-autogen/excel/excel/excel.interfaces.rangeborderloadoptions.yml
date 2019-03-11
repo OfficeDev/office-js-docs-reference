@@ -16,7 +16,6 @@ items:
       - excel.Excel.Interfaces.RangeBorderLoadOptions.color
       - excel.Excel.Interfaces.RangeBorderLoadOptions.sideIndex
       - excel.Excel.Interfaces.RangeBorderLoadOptions.style
-      - excel.Excel.Interfaces.RangeBorderLoadOptions.tintAndShade
       - excel.Excel.Interfaces.RangeBorderLoadOptions.weight
   - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.$all
     name: $all
@@ -75,26 +74,6 @@ items:
     type: property
     syntax:
       content: 'style?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.tintAndShade
-    summary: >-
-      Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
-      1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
-      tintAndShade setting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: tintAndShade
-    fullName: tintAndShade
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'tintAndShade?: boolean;'
       return:
         type:
           - boolean

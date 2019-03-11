@@ -14,9 +14,7 @@ items:
     children:
       - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.$all
       - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.border
-      - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.colorScheme
       - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.font
-      - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.roundedCorners
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.$all
     name: $all
     fullName: $all
@@ -43,24 +41,6 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartBorderLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.colorScheme
-    summary: >-
-      Returns or sets an integer that represents the color scheme for the chart. Read/Write.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: colorScheme
-    fullName: colorScheme
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'colorScheme?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object.
@@ -76,21 +56,3 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartFontLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.roundedCorners
-    summary: >-
-      True if the chart area of the chart has rounded corners. Read/Write.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: roundedCorners
-    fullName: roundedCorners
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'roundedCorners?: boolean;'
-      return:
-        type:
-          - boolean

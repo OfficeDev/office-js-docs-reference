@@ -14,9 +14,7 @@ items:
       - 'OfficeExtension.ClientObject '
     package: excel
     children:
-      - excel.Excel.Table.autoFilter
       - excel.Excel.Table.clearFilters
-      - excel.Excel.Table.clearStyle
       - excel.Excel.Table.columns
       - excel.Excel.Table.context
       - excel.Excel.Table.convertToRange
@@ -34,7 +32,6 @@ items:
       - excel.Excel.Table.load_2
       - excel.Excel.Table.name
       - excel.Excel.Table.onChanged
-      - excel.Excel.Table.onFiltered
       - excel.Excel.Table.onSelectionChanged
       - excel.Excel.Table.reapplyFilters
       - excel.Excel.Table.rows
@@ -49,24 +46,6 @@ items:
       - excel.Excel.Table.style
       - excel.Excel.Table.toJSON
       - excel.Excel.Table.worksheet
-  - uid: excel.Excel.Table.autoFilter
-    summary: >-
-      Represents the AutoFilter object of the table. Read-Only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: autoFilter
-    fullName: autoFilter
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly autoFilter: Excel.AutoFilter;'
-      return:
-        type:
-          - excel.Excel.AutoFilter
   - uid: excel.Excel.Table.clearFilters
     summary: |-
       Clears all the filters currently applied on the table.
@@ -79,25 +58,6 @@ items:
     type: method
     syntax:
       content: 'clearFilters(): void;'
-      return:
-        type:
-          - void
-        description: ''
-  - uid: excel.Excel.Table.clearStyle
-    summary: >-
-      Changes the table to use the default table style.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: clearStyle()
-    fullName: clearStyle()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'clearStyle(): void;'
       return:
         type:
           - void
@@ -574,24 +534,6 @@ items:
               console.log("A handler has been registered for the onChanged event");
           });
           ```
-  - uid: excel.Excel.Table.onFiltered
-    summary: >-
-      Occurs when filter is applied on a specific table.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onFiltered
-    fullName: onFiltered
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>
   - uid: excel.Excel.Table.onSelectionChanged
     summary: |-
       Occurs when the selection changes on a specific table.

@@ -27,10 +27,7 @@ items:
       - excel.Excel.TableCollection.load
       - excel.Excel.TableCollection.load_1
       - excel.Excel.TableCollection.load_2
-      - excel.Excel.TableCollection.onAdded
       - excel.Excel.TableCollection.onChanged
-      - excel.Excel.TableCollection.onDeleted
-      - excel.Excel.TableCollection.onFiltered
       - excel.Excel.TableCollection.toJSON
   - uid: excel.Excel.TableCollection.add
     summary: >-
@@ -352,24 +349,6 @@ items:
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.TableCollection.onAdded
-    summary: >-
-      Occurs when new table is added in a workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onAdded
-    fullName: onAdded
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>
   - uid: excel.Excel.TableCollection.onChanged
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.
@@ -398,42 +377,6 @@ items:
               console.log("A handler has been registered for the table collection onChanged event");
           });
           ```
-  - uid: excel.Excel.TableCollection.onDeleted
-    summary: >-
-      Occurs when the specified table is deleted in a workbook.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onDeleted
-    fullName: onDeleted
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>
-  - uid: excel.Excel.TableCollection.onFiltered
-    summary: >-
-      Occurs when filter is applied on any table in a workbook, or a worksheet.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: onFiltered
-    fullName: onFiltered
-    langs:
-      - typeScript
-    type: event
-    syntax:
-      content: 'readonly onFiltered: OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>;'
-      return:
-        type:
-          - OfficeExtension.EventHandlers<Excel.TableFilteredEventArgs>
   - uid: excel.Excel.TableCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

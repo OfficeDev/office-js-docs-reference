@@ -19,7 +19,6 @@ items:
       - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.height
       - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.horizontalAlignment
       - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.left
-      - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.linkNumberFormat
       - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.numberFormat
       - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.text
       - excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.textOrientation
@@ -130,25 +129,6 @@ items:
     type: property
     syntax:
       content: 'left?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelLoadOptions.linkNumberFormat
-    summary: >-
-      Boolean value representing if the number format is linked to the cells (so that the number format changes in the
-      labels when it changes in the cells).
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: linkNumberFormat
-    fullName: linkNumberFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'linkNumberFormat?: boolean;'
       return:
         type:
           - boolean

@@ -18,7 +18,6 @@ items:
       - excel.Excel.PivotTable.context
       - excel.Excel.PivotTable.dataHierarchies
       - excel.Excel.PivotTable.delete
-      - excel.Excel.PivotTable.enableDataValueEditing
       - excel.Excel.PivotTable.filterHierarchies
       - excel.Excel.PivotTable.hierarchies
       - excel.Excel.PivotTable.id
@@ -32,7 +31,6 @@ items:
       - excel.Excel.PivotTable.set
       - excel.Excel.PivotTable.set_1
       - excel.Excel.PivotTable.toJSON
-      - excel.Excel.PivotTable.useCustomSortLists
       - excel.Excel.PivotTable.worksheet
   - uid: excel.Excel.PivotTable.columnHierarchies
     summary: |-
@@ -140,24 +138,6 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.PivotTable.enableDataValueEditing
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: enableDataValueEditing
-    fullName: enableDataValueEditing
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableDataValueEditing: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.PivotTable.filterHierarchies
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
@@ -453,24 +433,6 @@ items:
         type:
           - excel.Excel.Interfaces.PivotTableData
         description: ''
-  - uid: excel.Excel.PivotTable.useCustomSortLists
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: useCustomSortLists
-    fullName: useCustomSortLists
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'useCustomSortLists: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.PivotTable.worksheet
     summary: |-
       The worksheet containing the current PivotTable.

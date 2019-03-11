@@ -11,13 +11,11 @@ items:
     children:
       - excel.Excel.Interfaces.PivotTableData.columnHierarchies
       - excel.Excel.Interfaces.PivotTableData.dataHierarchies
-      - excel.Excel.Interfaces.PivotTableData.enableDataValueEditing
       - excel.Excel.Interfaces.PivotTableData.filterHierarchies
       - excel.Excel.Interfaces.PivotTableData.hierarchies
       - excel.Excel.Interfaces.PivotTableData.id
       - excel.Excel.Interfaces.PivotTableData.name
       - excel.Excel.Interfaces.PivotTableData.rowHierarchies
-      - excel.Excel.Interfaces.PivotTableData.useCustomSortLists
   - uid: excel.Excel.Interfaces.PivotTableData.columnHierarchies
     summary: |-
       The Column Pivot Hierarchies of the PivotTable.
@@ -48,24 +46,6 @@ items:
       return:
         type:
           - 'Excel.Interfaces.DataPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.enableDataValueEditing
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: enableDataValueEditing
-    fullName: enableDataValueEditing
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enableDataValueEditing?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Interfaces.PivotTableData.filterHierarchies
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
@@ -141,21 +121,3 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.useCustomSortLists
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: useCustomSortLists
-    fullName: useCustomSortLists
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'useCustomSortLists?: boolean;'
-      return:
-        type:
-          - boolean
