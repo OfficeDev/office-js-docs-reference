@@ -142,6 +142,10 @@
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
     {
+      "ReferenceTOC": "docs/docs-ref-autogen/powerpoint/toc.yml",
+      "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
+    },
+    {
       "ReferenceTOC": "docs/docs-ref-autogen/visio/toc.yml",
       "ConceptualTOCUrl": "/office/dev/add-ins/toc.json"
     },
