@@ -197,7 +197,7 @@ items:
               shape.top = 100;
               shape.height = 100;
               shape.width = 100;
-              shape.fill.foreColor = "yellow"
+              shape.fill.foregroundColor = "yellow"
               await context.sync();
           });
           ```
@@ -321,6 +321,21 @@ items:
       return:
         type:
           - excel.Excel.ShapeGroup
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+
+              const shapeGroup = sheet.shapes.getItem("Group").group;
+              shapeGroup.ungroup();
+              console.log("Shapes ungrouped");
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Shape.height
     summary: >-
       Represents the height, in points, of the shape. Throws an invalid argument exception when set with negative value
@@ -555,13 +570,13 @@ items:
           await Excel.run(async (context) => {
               const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
               const line = shapes.getItem("StraightLine").line;
-              line.beginArrowHeadLength = Excel.ArrowHeadLength.long;
-              line.beginArrowHeadWidth = Excel.ArrowHeadWidth.wide;
-              line.beginArrowHeadStyle = Excel.ArrowHeadStyle.oval;
+              line.beginArrowheadLength = Excel.ArrowheadLength.long;
+              line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
+              line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
 
-              line.endArrowHeadLength = Excel.ArrowHeadLength.long;
-              line.endArrowHeadWidth = Excel.ArrowHeadWidth.wide;
-              line.endArrowHeadStyle = Excel.ArrowHeadStyle.triangle;
+              line.endArrowheadLength = Excel.ArrowheadLength.long;
+              line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
+              line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
 
               await context.sync();
           });
@@ -838,7 +853,7 @@ items:
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Image");
-              const result = shape.saveAsPicture(Excel.PictureFormat.png);
+              const result = shape.getAsImage(Excel.PictureFormat.png);
               await context.sync();
 
               const imageString = result.value;
