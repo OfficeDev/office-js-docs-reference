@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.Placement
     summary: >-
+      Specifies the way that an object is attached to its underlying cells.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -16,6 +19,7 @@ items:
       - excel.Excel.Placement.oneCell
       - excel.Excel.Placement.twoCell
   - uid: excel.Excel.Placement.absolute
+    summary: The object is free floating.
     isPreview: true
     name: absolute
     fullName: absolute
@@ -24,6 +28,7 @@ items:
     type: field
     numericValue: '"Absolute"'
   - uid: excel.Excel.Placement.oneCell
+    summary: The object is moved and sized with the cells.
     isPreview: true
     name: oneCell
     fullName: oneCell
@@ -32,6 +37,7 @@ items:
     type: field
     numericValue: '"OneCell"'
   - uid: excel.Excel.Placement.twoCell
+    summary: The object is moved with the cells.
     isPreview: true
     name: twoCell
     fullName: twoCell

@@ -55,7 +55,7 @@ items:
           - excel.Excel.Interfaces.ApplicationLoadOptions
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.autoSave
     summary: >-
-      True if the workbook is in auto save mode.
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -125,8 +125,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.isDirty
     summary: >-
-      True if no changes have been made to the specified workbook since it was last saved. You can set this property to
-      True if you want to close a modified workbook without either saving it or being prompted to save it.
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -159,7 +159,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.WorkbookLoadOptions.previouslySaved
     summary: >-
-      True if the workbook has ever been saved locally or online.
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

@@ -40,12 +40,12 @@ items:
                 items:
                   - name: AggregationFunction
                     uid: excel.Excel.AggregationFunction
-                  - name: ArrowHeadLength
-                    uid: excel.Excel.ArrowHeadLength
-                  - name: ArrowHeadStyle
-                    uid: excel.Excel.ArrowHeadStyle
-                  - name: ArrowHeadWidth
-                    uid: excel.Excel.ArrowHeadWidth
+                  - name: ArrowheadLength
+                    uid: excel.Excel.ArrowheadLength
+                  - name: ArrowheadStyle
+                    uid: excel.Excel.ArrowheadStyle
+                  - name: ArrowheadWidth
+                    uid: excel.Excel.ArrowheadWidth
                   - name: AutoFillType
                     uid: excel.Excel.AutoFillType
                   - name: BindingType
@@ -278,18 +278,18 @@ items:
                     uid: excel.Excel.ShapeScaleFrom
                   - name: ShapeScaleType
                     uid: excel.Excel.ShapeScaleType
-                  - name: ShapeTextHorizontalAlignType
-                    uid: excel.Excel.ShapeTextHorizontalAlignType
-                  - name: ShapeTextHorzOverflowType
-                    uid: excel.Excel.ShapeTextHorzOverflowType
-                  - name: ShapeTextOrientationType
-                    uid: excel.Excel.ShapeTextOrientationType
+                  - name: ShapeTextHorizontalAlignment
+                    uid: excel.Excel.ShapeTextHorizontalAlignment
+                  - name: ShapeTextHorizontalOverflow
+                    uid: excel.Excel.ShapeTextHorizontalOverflow
+                  - name: ShapeTextOrientation
+                    uid: excel.Excel.ShapeTextOrientation
                   - name: ShapeTextReadingOrder
                     uid: excel.Excel.ShapeTextReadingOrder
-                  - name: ShapeTextVerticalAlignType
-                    uid: excel.Excel.ShapeTextVerticalAlignType
-                  - name: ShapeTextVertOverflowType
-                    uid: excel.Excel.ShapeTextVertOverflowType
+                  - name: ShapeTextVerticalAlignment
+                    uid: excel.Excel.ShapeTextVerticalAlignment
+                  - name: ShapeTextVerticalOverflow
+                    uid: excel.Excel.ShapeTextVerticalOverflow
                   - name: ShapeType
                     uid: excel.Excel.ShapeType
                   - name: ShapeZOrder
@@ -570,6 +570,10 @@ items:
                 uid: excel.Excel.PivotTable
               - name: PivotTableCollection
                 uid: excel.Excel.PivotTableCollection
+              - name: PivotTableStyle
+                uid: excel.Excel.PivotTableStyle
+              - name: PivotTableStyleCollection
+                uid: excel.Excel.PivotTableStyleCollection
               - name: PresetCriteriaConditionalFormat
                 uid: excel.Excel.PresetCriteriaConditionalFormat
               - name: Range
@@ -648,6 +652,10 @@ items:
                 uid: excel.Excel.SlicerItem
               - name: SlicerItemCollection
                 uid: excel.Excel.SlicerItemCollection
+              - name: SlicerStyle
+                uid: excel.Excel.SlicerStyle
+              - name: SlicerStyleCollection
+                uid: excel.Excel.SlicerStyleCollection
               - name: Style
                 uid: excel.Excel.Style
               - name: StyleCollection
@@ -676,12 +684,20 @@ items:
                 uid: excel.Excel.TableScopedCollection
               - name: TableSort
                 uid: excel.Excel.TableSort
+              - name: TableStyle
+                uid: excel.Excel.TableStyle
+              - name: TableStyleCollection
+                uid: excel.Excel.TableStyleCollection
               - name: TextConditionalFormat
                 uid: excel.Excel.TextConditionalFormat
               - name: TextFrame
                 uid: excel.Excel.TextFrame
               - name: TextRange
                 uid: excel.Excel.TextRange
+              - name: TimelineStyle
+                uid: excel.Excel.TimelineStyle
+              - name: TimelineStyleCollection
+                uid: excel.Excel.TimelineStyleCollection
               - name: TopBottomConditionalFormat
                 uid: excel.Excel.TopBottomConditionalFormat
               - name: Workbook

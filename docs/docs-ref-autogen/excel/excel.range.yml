@@ -68,7 +68,9 @@ items:
       - excel.Excel.Range.getSpecialCellsOrNullObject
       - excel.Excel.Range.getSpecialCellsOrNullObject_1
       - excel.Excel.Range.getSpillingToRange
+      - excel.Excel.Range.getSpillingToRangeOrNullObject
       - excel.Excel.Range.getSpillParent
+      - excel.Excel.Range.getSpillParentOrNullObject
       - excel.Excel.Range.getSurroundingRegion
       - excel.Excel.Range.getTables
       - excel.Excel.Range.getUsedRange
@@ -704,7 +706,7 @@ items:
             - excel.Excel.SearchCriteria
   - uid: excel.Excel.Range.flashFill
     summary: >-
-      Does FlashFill to current range. Flash Fill will automatically fills data when it senses a pattern, so the range
+      Does FlashFill to current range.Flash Fill will automatically fills data when it senses a pattern, so the range
       must be single column range and have data around in order to find pattern.
 
 
@@ -1748,7 +1750,7 @@ items:
   - uid: excel.Excel.Range.getSpillingToRange
     summary: >-
       Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with
-      more than one cell. Read only.
+      more than one cell. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1765,10 +1767,30 @@ items:
         type:
           - excel.Excel.Range
         description: ''
+  - uid: excel.Excel.Range.getSpillingToRangeOrNullObject
+    summary: >-
+      Gets the range object containing the spill range when called on an anchor cell. Read-only. If the range is not an
+      anchor cell or spill range can't be found, a null object will be returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getSpillingToRangeOrNullObject()
+    fullName: getSpillingToRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillingToRangeOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
   - uid: excel.Excel.Range.getSpillParent
     summary: >-
       Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with
-      more than one cell. Read only.
+      more than one cell. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1781,6 +1803,26 @@ items:
     type: method
     syntax:
       content: 'getSpillParent(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.Range.getSpillParentOrNullObject
+    summary: >-
+      Gets the range object containing the anchor cell for a cell getting spilled into. Read-only. If it is not a spill
+      cell or more than once cells are give, a null object will be returned.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getSpillParentOrNullObject()
+    fullName: getSpillParentOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSpillParentOrNullObject(): Excel.Range;'
       return:
         type:
           - excel.Excel.Range
@@ -2682,7 +2724,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;'
+      content: >-
+        setCellProperties(cellPropertiesData: SettableCellProperties[][] |
+        OfficeExtension.ClientResult<SettableCellProperties[][]>): void;
       return:
         type:
           - void
@@ -2691,7 +2735,7 @@ items:
         - id: cellPropertiesData
           description: ''
           type:
-            - 'SettableCellProperties[][]'
+            - 'SettableCellProperties[][] | OfficeExtension.ClientResult<SettableCellProperties[][]>'
   - uid: excel.Excel.Range.setColumnProperties
     summary: >-
       Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill,
@@ -2707,7 +2751,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;'
+      content: >-
+        setColumnProperties(columnPropertiesData: SettableColumnProperties[] |
+        OfficeExtension.ClientResult<SettableColumnProperties[]>): void;
       return:
         type:
           - void
@@ -2716,7 +2762,7 @@ items:
         - id: columnPropertiesData
           description: ''
           type:
-            - 'SettableColumnProperties[]'
+            - 'SettableColumnProperties[] | OfficeExtension.ClientResult<SettableColumnProperties[]>'
   - uid: excel.Excel.Range.setDirty
     summary: >-
       Set a range to be recalculated when the next recalculation occurs.
@@ -2751,7 +2797,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setRowProperties(rowPropertiesData: SettableRowProperties[]): void;'
+      content: >-
+        setRowProperties(rowPropertiesData: SettableRowProperties[] |
+        OfficeExtension.ClientResult<SettableRowProperties[]>): void;
       return:
         type:
           - void
@@ -2760,7 +2808,7 @@ items:
         - id: rowPropertiesData
           description: ''
           type:
-            - 'SettableRowProperties[]'
+            - 'SettableRowProperties[] | OfficeExtension.ClientResult<SettableRowProperties[]>'
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.

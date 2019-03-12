@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions
+    summary: >-
+      Represents a Timeline style, which defines style elements by region in the Timeline.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.TimelineStyleLoadOptions
+    fullName: Excel.Interfaces.TimelineStyleLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TimelineStyleLoadOptions.$all
+      - excel.Excel.Interfaces.TimelineStyleLoadOptions.name
+      - excel.Excel.Interfaces.TimelineStyleLoadOptions.readOnly
+  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions.name
+    summary: >-
+      Gets the name of the TimelineStyle.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions.readOnly
+    summary: >-
+      True means that this TimelineStyle object is read-only. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean

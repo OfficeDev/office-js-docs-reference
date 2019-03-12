@@ -20,7 +20,7 @@ items:
       - excel.Excel.ShapeDeactivatedEventArgs.worksheetId
   - uid: excel.Excel.ShapeDeactivatedEventArgs.shapeId
     summary: >-
-      Gets the id of the shape that is deactivated.
+      Gets the id of the shape deactivated shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

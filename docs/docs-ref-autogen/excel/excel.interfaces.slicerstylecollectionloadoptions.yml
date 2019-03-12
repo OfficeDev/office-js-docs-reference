@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions
+    summary: >-
+      Represents a collection of SlicerStyle objects.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.SlicerStyleCollectionLoadOptions
+    fullName: Excel.Interfaces.SlicerStyleCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.name
+      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.readOnly
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.name
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the SlicerStyle.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.readOnly
+    summary: >-
+      For EACH ITEM in the collection: True means that this SlicerStyle object is read-only. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean

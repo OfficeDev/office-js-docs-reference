@@ -1,0 +1,298 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.TableStyleCollection
+    summary: >-
+      Represents a collection of TableStyles.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.TableStyleCollection
+    fullName: Excel.TableStyleCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: excel
+    children:
+      - excel.Excel.TableStyleCollection.add
+      - excel.Excel.TableStyleCollection.context
+      - excel.Excel.TableStyleCollection.getCount
+      - excel.Excel.TableStyleCollection.getDefault
+      - excel.Excel.TableStyleCollection.getItem
+      - excel.Excel.TableStyleCollection.getItemOrNullObject
+      - excel.Excel.TableStyleCollection.items
+      - excel.Excel.TableStyleCollection.load
+      - excel.Excel.TableStyleCollection.load_1
+      - excel.Excel.TableStyleCollection.load_2
+      - excel.Excel.TableStyleCollection.setDefault
+      - excel.Excel.TableStyleCollection.toJSON
+  - uid: excel.Excel.TableStyleCollection.add
+    summary: >-
+      Creates a blank TableStyle with the specified name.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): Excel.TableStyle;'
+      return:
+        type:
+          - excel.Excel.TableStyle
+        description: The newly created TableStyle.
+      parameters:
+        - id: name
+          description: >-
+            The unique name for the new TableStyle. Will throw an invalid argument exception if the name is already in
+            use.
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
+          type:
+            - boolean
+  - uid: excel.Excel.TableStyleCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel.Excel.TableStyleCollection.getCount
+    summary: >-
+      Gets the number of table styles in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.TableStyleCollection.getDefault
+    summary: >-
+      Gets the default TableStyle for the parent object's scope.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): Excel.TableStyle;'
+      return:
+        type:
+          - excel.Excel.TableStyle
+        description: The TableStyle object that is the current default TableStyle.
+  - uid: excel.Excel.TableStyleCollection.getItem
+    summary: >-
+      Gets a TableStyle by name.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.TableStyle;'
+      return:
+        type:
+          - excel.Excel.TableStyle
+        description: The TableStyle object whose name matches the input.
+      parameters:
+        - id: name
+          description: Name of the TableStyle to be retrieved.
+          type:
+            - string
+  - uid: excel.Excel.TableStyleCollection.getItemOrNullObject
+    summary: >-
+      Gets a TableStyle by name. If the TableStyle does not exist, will return a null object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.TableStyle;'
+      return:
+        type:
+          - excel.Excel.TableStyle
+        description: The TableStyle object whose name matches the input.
+      parameters:
+        - id: name
+          description: Name of the TableStyle to be retrieved.
+          type:
+            - string
+  - uid: excel.Excel.TableStyleCollection.items
+    summary: Gets the loaded child items in this collection.
+    isPreview: true
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.TableStyle[];'
+      return:
+        type:
+          - 'Excel.TableStyle[]'
+  - uid: excel.Excel.TableStyleCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.TableStyleCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.TableStyleCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableStyleCollection` -
+      Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TableStyleCollection;
+      return:
+        type:
+          - excel.Excel.TableStyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.TableStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.TableStyleCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TableStyleCollection;'
+      return:
+        type:
+          - excel.Excel.TableStyleCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.TableStyleCollection.load_2
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.TableStyleCollection;'
+      return:
+        type:
+          - excel.Excel.TableStyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
+  - uid: excel.Excel.TableStyleCollection.setDefault
+    summary: >-
+      Sets the default TableStyle for use in the parent object's scope.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TableStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: The TableStyle object or name of the TableStyle object that should be the new default.
+          type:
+            - TableStyle | string
+  - uid: excel.Excel.TableStyleCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TableStyleCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TableStyleCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
+    isPreview: true
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TableStyleCollectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TableStyleCollectionData
+        description: ''

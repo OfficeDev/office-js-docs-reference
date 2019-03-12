@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.ShapeZOrder
     summary: >-
+      Specifies where in the z-order a shape should be moved relative to other shapes.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true

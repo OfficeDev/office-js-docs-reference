@@ -9,32 +9,32 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.Interfaces.ShapeFillUpdateData.foreColor
+      - excel.Excel.Interfaces.ShapeFillUpdateData.foregroundColor
       - excel.Excel.Interfaces.ShapeFillUpdateData.transparency
-  - uid: excel.Excel.Interfaces.ShapeFillUpdateData.foreColor
+  - uid: excel.Excel.Interfaces.ShapeFillUpdateData.foregroundColor
     summary: >-
-      Represents the shape fill fore color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange")
+      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
+      named HTML color (e.g. "orange")
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: foreColor
-    fullName: foreColor
+    name: foregroundColor
+    fullName: foregroundColor
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'foreColor?: string;'
+      content: 'foregroundColor?: string;'
       return:
         type:
           - string
   - uid: excel.Excel.Interfaces.ShapeFillUpdateData.transparency
     summary: >-
-      Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear).
-      For API not supported shape types or special fill type with inconsistent transparencies, return null. For example,
-      gradient fill type could have inconsistent transparencies.
+      Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns
+      null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with
+      a gradient fill type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

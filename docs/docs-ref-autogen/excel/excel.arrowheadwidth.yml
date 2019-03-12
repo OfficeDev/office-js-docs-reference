@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ArrowHeadWidth
+  - uid: excel.Excel.ArrowheadWidth
     summary: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.ArrowHeadWidth
-    fullName: Excel.ArrowHeadWidth
+    name: Excel.ArrowheadWidth
+    fullName: Excel.ArrowheadWidth
     langs:
       - typeScript
     type: enum
     package: excel
     children:
-      - excel.Excel.ArrowHeadWidth.medium
-      - excel.Excel.ArrowHeadWidth.narrow
-      - excel.Excel.ArrowHeadWidth.wide
-  - uid: excel.Excel.ArrowHeadWidth.medium
+      - excel.Excel.ArrowheadWidth.medium
+      - excel.Excel.ArrowheadWidth.narrow
+      - excel.Excel.ArrowheadWidth.wide
+  - uid: excel.Excel.ArrowheadWidth.medium
     isPreview: true
     name: medium
     fullName: medium
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Medium"'
-  - uid: excel.Excel.ArrowHeadWidth.narrow
+  - uid: excel.Excel.ArrowheadWidth.narrow
     isPreview: true
     name: narrow
     fullName: narrow
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Narrow"'
-  - uid: excel.Excel.ArrowHeadWidth.wide
+  - uid: excel.Excel.ArrowheadWidth.wide
     isPreview: true
     name: wide
     fullName: wide

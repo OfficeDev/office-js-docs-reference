@@ -102,7 +102,7 @@ items:
         type:
           - 'OfficeExtension.ClientResult<string[]>'
         description: |-
-          An array where each item represents the Id of the new inserted worksheet.
+          An array of ids corresponding to each newly inserted worksheet.
           #### Examples
 
           ```javascript
@@ -130,23 +130,25 @@ items:
           ```
       parameters:
         - id: base64File
-          description: Required. Base64 string representing the source workbook.
+          description: Required. The base64-encoded string representing the source workbook file.
           type:
             - string
         - id: sheetNamesToInsert
           description: >-
-            Optional. The speified worksheet names to insert. By default it will insert all worksheets from the source
-            workbook.
+            Optional. The names of individual worksheets to insert. By default, all the worksheets from the source
+            workbook are inserted.
           type:
             - 'string[]'
         - id: positionType
-          description: 'Optional. Insert position type, see Excel.WorksheetPositionType for details. Default is "Start".'
+          description: >-
+            Optional. Where in the current workbook the new worksheets will be inserted. See Excel.WorksheetPositionType
+            for details. Default is "Start".
           type:
             - excel.Excel.WorksheetPositionType
         - id: relativeTo
           description: >-
-            Optional. The referencing worksheet object or worksheet name/id in the current workbook. Default is null and
-            based on the postionType parameter it will insert worksheets at the start or end of the current workbook.
+            Optional. The worksheet in the current workbook that is referenced for the positionType parameter. Default
+            is null and, based on positionType, it will insert worksheets at the start or end of the current workbook.
           type:
             - Worksheet | string
   - uid: excel.Excel.WorksheetCollection.addFromBase64_1
@@ -169,26 +171,28 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<string[]>'
-        description: An array where each item represents the Id of the new inserted worksheet.
+        description: An array of ids corresponding to each newly inserted worksheet.
       parameters:
         - id: base64File
-          description: Required. Base64 string representing the source workbook.
+          description: Required. The base64-encoded string representing the source workbook file.
           type:
             - string
         - id: sheetNamesToInsert
           description: >-
-            Optional. The speified worksheet names to insert. By default it will insert all worksheets from the source
-            workbook.
+            Optional. The names of individual worksheets to insert. By default, all the worksheets from the source
+            workbook are inserted.
           type:
             - 'string[]'
         - id: positionTypeString
-          description: 'Optional. Insert position type, see Excel.WorksheetPositionType for details. Default is "Start".'
+          description: >-
+            Optional. Where in the current workbook the new worksheets will be inserted. See Excel.WorksheetPositionType
+            for details. Default is "Start".
           type:
             - '"None" | "Before" | "After" | "Beginning" | "End"'
         - id: relativeTo
           description: >-
-            Optional. The referencing worksheet object or worksheet name/id in the current workbook. Default is null and
-            based on the postionType parameter it will insert worksheets at the start or end of the current workbook.
+            Optional. The worksheet in the current workbook that is referenced for the positionType parameter. Default
+            is null and, based on positionType, it will insert worksheets at the start or end of the current workbook.
           type:
             - Worksheet | string
   - uid: excel.Excel.WorksheetCollection.context

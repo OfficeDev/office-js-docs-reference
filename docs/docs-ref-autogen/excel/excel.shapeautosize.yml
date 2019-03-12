@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.ShapeAutoSize
     summary: >-
+      Determines the type of automatic sizing allowed.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -17,6 +20,7 @@ items:
       - excel.Excel.ShapeAutoSize.autoSizeShapeToFitText
       - excel.Excel.ShapeAutoSize.autoSizeTextToFitShape
   - uid: excel.Excel.ShapeAutoSize.autoSizeMixed
+    summary: A combination of automatic sizing schemes are used.
     isPreview: true
     name: autoSizeMixed
     fullName: autoSizeMixed
@@ -25,6 +29,7 @@ items:
     type: field
     numericValue: '"AutoSizeMixed"'
   - uid: excel.Excel.ShapeAutoSize.autoSizeNone
+    summary: No autosizing.
     isPreview: true
     name: autoSizeNone
     fullName: autoSizeNone
@@ -33,6 +38,7 @@ items:
     type: field
     numericValue: '"AutoSizeNone"'
   - uid: excel.Excel.ShapeAutoSize.autoSizeShapeToFitText
+    summary: The shape is adjusted to fit the text.
     isPreview: true
     name: autoSizeShapeToFitText
     fullName: autoSizeShapeToFitText
@@ -41,6 +47,7 @@ items:
     type: field
     numericValue: '"AutoSizeShapeToFitText"'
   - uid: excel.Excel.ShapeAutoSize.autoSizeTextToFitShape
+    summary: The text is adjusted to fit the shape.
     isPreview: true
     name: autoSizeTextToFitShape
     fullName: autoSizeTextToFitShape

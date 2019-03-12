@@ -258,10 +258,8 @@ items:
           type:
             - excel.Excel.Worksheet
   - uid: excel.Excel.Worksheet.delete
-    summary: >-
-      Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
-      delete operation will fail with a GeneralException.
-
+    summary: |-
+      Deletes the worksheet from the workbook.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()

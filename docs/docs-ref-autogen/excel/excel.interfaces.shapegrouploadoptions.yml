@@ -2,7 +2,8 @@
 items:
   - uid: excel.Excel.Interfaces.ShapeGroupLoadOptions
     summary: >-
-      Represents a shape group object inside a worksheet.
+      Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`<!--
+      -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -50,7 +51,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeGroupLoadOptions.shape
     summary: >-
-      Returns the shape object for the group.
+      Returns the Shape object associated with the group.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
