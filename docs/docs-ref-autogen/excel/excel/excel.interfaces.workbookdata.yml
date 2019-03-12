@@ -19,20 +19,24 @@ items:
       - excel.Excel.Interfaces.WorkbookData.name
       - excel.Excel.Interfaces.WorkbookData.names
       - excel.Excel.Interfaces.WorkbookData.pivotTables
+      - excel.Excel.Interfaces.WorkbookData.pivotTableStyles
       - excel.Excel.Interfaces.WorkbookData.previouslySaved
       - excel.Excel.Interfaces.WorkbookData.properties
       - excel.Excel.Interfaces.WorkbookData.protection
       - excel.Excel.Interfaces.WorkbookData.readOnly
       - excel.Excel.Interfaces.WorkbookData.settings
       - excel.Excel.Interfaces.WorkbookData.slicers
+      - excel.Excel.Interfaces.WorkbookData.slicerStyles
       - excel.Excel.Interfaces.WorkbookData.styles
       - excel.Excel.Interfaces.WorkbookData.tables
+      - excel.Excel.Interfaces.WorkbookData.tableStyles
+      - excel.Excel.Interfaces.WorkbookData.timelineStyles
       - excel.Excel.Interfaces.WorkbookData.use1904DateSystem
       - excel.Excel.Interfaces.WorkbookData.usePrecisionAsDisplayed
       - excel.Excel.Interfaces.WorkbookData.worksheets
   - uid: excel.Excel.Interfaces.WorkbookData.autoSave
     summary: >-
-      True if the workbook is in auto save mode.
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -135,8 +139,8 @@ items:
           - 'Excel.Interfaces.CustomXmlPartData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.isDirty
     summary: >-
-      True if no changes have been made to the specified workbook since it was last saved. You can set this property to
-      True if you want to close a modified workbook without either saving it or being prompted to save it.
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -197,9 +201,27 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotTableData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.pivotTableStyles
+    summary: >-
+      Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pivotTableStyles
+    fullName: pivotTableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pivotTableStyles?: Excel.Interfaces.PivotTableStyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.PivotTableStyleData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.previouslySaved
     summary: >-
-      True if the workbook has ever been saved locally or online.
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -293,6 +315,24 @@ items:
       return:
         type:
           - 'Excel.Interfaces.SlicerData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.slicerStyles
+    summary: >-
+      Represents a collection of SlicerStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicerStyles
+    fullName: slicerStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'slicerStyles?: Excel.Interfaces.SlicerStyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SlicerStyleData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.styles
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
@@ -323,6 +363,42 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.tableStyles
+    summary: >-
+      Represents a collection of TableStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tableStyles
+    fullName: tableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tableStyles?: Excel.Interfaces.TableStyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TableStyleData[]'
+  - uid: excel.Excel.Interfaces.WorkbookData.timelineStyles
+    summary: >-
+      Represents a collection of TimelineStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: timelineStyles
+    fullName: timelineStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timelineStyles?: Excel.Interfaces.TimelineStyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TimelineStyleData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.use1904DateSystem
     summary: >-
       True if the workbook uses the 1904 date system.

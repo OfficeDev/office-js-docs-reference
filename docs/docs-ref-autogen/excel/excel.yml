@@ -9,9 +9,9 @@ items:
     children:
       - excel.Excel.AggregationFunction
       - excel.Excel.Application
-      - excel.Excel.ArrowHeadLength
-      - excel.Excel.ArrowHeadStyle
-      - excel.Excel.ArrowHeadWidth
+      - excel.Excel.ArrowheadLength
+      - excel.Excel.ArrowheadStyle
+      - excel.Excel.ArrowheadWidth
       - excel.Excel.AutoFillType
       - excel.Excel.AutoFilter
       - excel.Excel.BasicDataValidation
@@ -531,6 +531,12 @@ items:
       - excel.Excel.Interfaces.PivotTableCollectionUpdateData
       - excel.Excel.Interfaces.PivotTableData
       - excel.Excel.Interfaces.PivotTableLoadOptions
+      - excel.Excel.Interfaces.PivotTableStyleCollectionData
+      - excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+      - excel.Excel.Interfaces.PivotTableStyleCollectionUpdateData
+      - excel.Excel.Interfaces.PivotTableStyleData
+      - excel.Excel.Interfaces.PivotTableStyleLoadOptions
+      - excel.Excel.Interfaces.PivotTableStyleUpdateData
       - excel.Excel.Interfaces.PivotTableUpdateData
       - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
       - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
@@ -610,6 +616,12 @@ items:
       - excel.Excel.Interfaces.SlicerItemLoadOptions
       - excel.Excel.Interfaces.SlicerItemUpdateData
       - excel.Excel.Interfaces.SlicerLoadOptions
+      - excel.Excel.Interfaces.SlicerStyleCollectionData
+      - excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions
+      - excel.Excel.Interfaces.SlicerStyleCollectionUpdateData
+      - excel.Excel.Interfaces.SlicerStyleData
+      - excel.Excel.Interfaces.SlicerStyleLoadOptions
+      - excel.Excel.Interfaces.SlicerStyleUpdateData
       - excel.Excel.Interfaces.SlicerUpdateData
       - excel.Excel.Interfaces.StyleCollectionData
       - excel.Excel.Interfaces.StyleCollectionLoadOptions
@@ -639,6 +651,12 @@ items:
       - excel.Excel.Interfaces.TableScopedCollectionUpdateData
       - excel.Excel.Interfaces.TableSortData
       - excel.Excel.Interfaces.TableSortLoadOptions
+      - excel.Excel.Interfaces.TableStyleCollectionData
+      - excel.Excel.Interfaces.TableStyleCollectionLoadOptions
+      - excel.Excel.Interfaces.TableStyleCollectionUpdateData
+      - excel.Excel.Interfaces.TableStyleData
+      - excel.Excel.Interfaces.TableStyleLoadOptions
+      - excel.Excel.Interfaces.TableStyleUpdateData
       - excel.Excel.Interfaces.TableUpdateData
       - excel.Excel.Interfaces.TextConditionalFormatData
       - excel.Excel.Interfaces.TextConditionalFormatLoadOptions
@@ -649,6 +667,12 @@ items:
       - excel.Excel.Interfaces.TextRangeData
       - excel.Excel.Interfaces.TextRangeLoadOptions
       - excel.Excel.Interfaces.TextRangeUpdateData
+      - excel.Excel.Interfaces.TimelineStyleCollectionData
+      - excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions
+      - excel.Excel.Interfaces.TimelineStyleCollectionUpdateData
+      - excel.Excel.Interfaces.TimelineStyleData
+      - excel.Excel.Interfaces.TimelineStyleLoadOptions
+      - excel.Excel.Interfaces.TimelineStyleUpdateData
       - excel.Excel.Interfaces.TopBottomConditionalFormatData
       - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
       - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
@@ -695,6 +719,8 @@ items:
       - excel.Excel.PivotLayoutType
       - excel.Excel.PivotTable
       - excel.Excel.PivotTableCollection
+      - excel.Excel.PivotTableStyle
+      - excel.Excel.PivotTableStyleCollection
       - excel.Excel.Placement
       - excel.Excel.postprocessBindingDescriptor
       - excel.Excel.PresetCriteriaConditionalFormat
@@ -761,12 +787,12 @@ items:
       - excel.Excel.ShapeLineStyle
       - excel.Excel.ShapeScaleFrom
       - excel.Excel.ShapeScaleType
-      - excel.Excel.ShapeTextHorizontalAlignType
-      - excel.Excel.ShapeTextHorzOverflowType
-      - excel.Excel.ShapeTextOrientationType
+      - excel.Excel.ShapeTextHorizontalAlignment
+      - excel.Excel.ShapeTextHorizontalOverflow
+      - excel.Excel.ShapeTextOrientation
       - excel.Excel.ShapeTextReadingOrder
-      - excel.Excel.ShapeTextVerticalAlignType
-      - excel.Excel.ShapeTextVertOverflowType
+      - excel.Excel.ShapeTextVerticalAlignment
+      - excel.Excel.ShapeTextVerticalOverflow
       - excel.Excel.ShapeType
       - excel.Excel.ShapeZOrder
       - excel.Excel.SheetVisibility
@@ -777,6 +803,8 @@ items:
       - excel.Excel.SlicerItem
       - excel.Excel.SlicerItemCollection
       - excel.Excel.SlicerSortType
+      - excel.Excel.SlicerStyle
+      - excel.Excel.SlicerStyleCollection
       - excel.Excel.SortBy
       - excel.Excel.SortDataOption
       - excel.Excel.SortField
@@ -802,6 +830,8 @@ items:
       - excel.Excel.TableScopedCollection
       - excel.Excel.TableSelectionChangedEventArgs
       - excel.Excel.TableSort
+      - excel.Excel.TableStyle
+      - excel.Excel.TableStyleCollection
       - excel.Excel.TextConditionalFormat
       - excel.Excel.TextFrame
       - excel.Excel.TextRange
@@ -815,6 +845,8 @@ items:
       - excel.Excel.ThreeTrafficLights1Set
       - excel.Excel.ThreeTrafficLights2Set
       - excel.Excel.ThreeTrianglesSet
+      - excel.Excel.TimelineStyle
+      - excel.Excel.TimelineStyleCollection
       - excel.Excel.TopBottomConditionalFormat
       - excel.Excel.VerticalAlignment
       - excel.Excel.Workbook
@@ -1090,12 +1122,12 @@ references:
     name: Excel.AggregationFunction
   - uid: excel.Excel.Application
     name: Excel.Application
-  - uid: excel.Excel.ArrowHeadLength
-    name: Excel.ArrowHeadLength
-  - uid: excel.Excel.ArrowHeadStyle
-    name: Excel.ArrowHeadStyle
-  - uid: excel.Excel.ArrowHeadWidth
-    name: Excel.ArrowHeadWidth
+  - uid: excel.Excel.ArrowheadLength
+    name: Excel.ArrowheadLength
+  - uid: excel.Excel.ArrowheadStyle
+    name: Excel.ArrowheadStyle
+  - uid: excel.Excel.ArrowheadWidth
+    name: Excel.ArrowheadWidth
   - uid: excel.Excel.AutoFillType
     name: Excel.AutoFillType
   - uid: excel.Excel.AutoFilter
@@ -2130,6 +2162,18 @@ references:
     name: Excel.Interfaces.PivotTableData
   - uid: excel.Excel.Interfaces.PivotTableLoadOptions
     name: Excel.Interfaces.PivotTableLoadOptions
+  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionData
+    name: Excel.Interfaces.PivotTableStyleCollectionData
+  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+    name: Excel.Interfaces.PivotTableStyleCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.PivotTableStyleCollectionUpdateData
+    name: Excel.Interfaces.PivotTableStyleCollectionUpdateData
+  - uid: excel.Excel.Interfaces.PivotTableStyleData
+    name: Excel.Interfaces.PivotTableStyleData
+  - uid: excel.Excel.Interfaces.PivotTableStyleLoadOptions
+    name: Excel.Interfaces.PivotTableStyleLoadOptions
+  - uid: excel.Excel.Interfaces.PivotTableStyleUpdateData
+    name: Excel.Interfaces.PivotTableStyleUpdateData
   - uid: excel.Excel.Interfaces.PivotTableUpdateData
     name: Excel.Interfaces.PivotTableUpdateData
   - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
@@ -2288,6 +2332,18 @@ references:
     name: Excel.Interfaces.SlicerItemUpdateData
   - uid: excel.Excel.Interfaces.SlicerLoadOptions
     name: Excel.Interfaces.SlicerLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionData
+    name: Excel.Interfaces.SlicerStyleCollectionData
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions
+    name: Excel.Interfaces.SlicerStyleCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionUpdateData
+    name: Excel.Interfaces.SlicerStyleCollectionUpdateData
+  - uid: excel.Excel.Interfaces.SlicerStyleData
+    name: Excel.Interfaces.SlicerStyleData
+  - uid: excel.Excel.Interfaces.SlicerStyleLoadOptions
+    name: Excel.Interfaces.SlicerStyleLoadOptions
+  - uid: excel.Excel.Interfaces.SlicerStyleUpdateData
+    name: Excel.Interfaces.SlicerStyleUpdateData
   - uid: excel.Excel.Interfaces.SlicerUpdateData
     name: Excel.Interfaces.SlicerUpdateData
   - uid: excel.Excel.Interfaces.StyleCollectionData
@@ -2346,6 +2402,18 @@ references:
     name: Excel.Interfaces.TableSortData
   - uid: excel.Excel.Interfaces.TableSortLoadOptions
     name: Excel.Interfaces.TableSortLoadOptions
+  - uid: excel.Excel.Interfaces.TableStyleCollectionData
+    name: Excel.Interfaces.TableStyleCollectionData
+  - uid: excel.Excel.Interfaces.TableStyleCollectionLoadOptions
+    name: Excel.Interfaces.TableStyleCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.TableStyleCollectionUpdateData
+    name: Excel.Interfaces.TableStyleCollectionUpdateData
+  - uid: excel.Excel.Interfaces.TableStyleData
+    name: Excel.Interfaces.TableStyleData
+  - uid: excel.Excel.Interfaces.TableStyleLoadOptions
+    name: Excel.Interfaces.TableStyleLoadOptions
+  - uid: excel.Excel.Interfaces.TableStyleUpdateData
+    name: Excel.Interfaces.TableStyleUpdateData
   - uid: excel.Excel.Interfaces.TableUpdateData
     name: Excel.Interfaces.TableUpdateData
   - uid: excel.Excel.Interfaces.TextConditionalFormatData
@@ -2366,6 +2434,18 @@ references:
     name: Excel.Interfaces.TextRangeLoadOptions
   - uid: excel.Excel.Interfaces.TextRangeUpdateData
     name: Excel.Interfaces.TextRangeUpdateData
+  - uid: excel.Excel.Interfaces.TimelineStyleCollectionData
+    name: Excel.Interfaces.TimelineStyleCollectionData
+  - uid: excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions
+    name: Excel.Interfaces.TimelineStyleCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.TimelineStyleCollectionUpdateData
+    name: Excel.Interfaces.TimelineStyleCollectionUpdateData
+  - uid: excel.Excel.Interfaces.TimelineStyleData
+    name: Excel.Interfaces.TimelineStyleData
+  - uid: excel.Excel.Interfaces.TimelineStyleLoadOptions
+    name: Excel.Interfaces.TimelineStyleLoadOptions
+  - uid: excel.Excel.Interfaces.TimelineStyleUpdateData
+    name: Excel.Interfaces.TimelineStyleUpdateData
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData
     name: Excel.Interfaces.TopBottomConditionalFormatData
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
@@ -2458,6 +2538,10 @@ references:
     name: Excel.PivotTable
   - uid: excel.Excel.PivotTableCollection
     name: Excel.PivotTableCollection
+  - uid: excel.Excel.PivotTableStyle
+    name: Excel.PivotTableStyle
+  - uid: excel.Excel.PivotTableStyleCollection
+    name: Excel.PivotTableStyleCollection
   - uid: excel.Excel.Placement
     name: Excel.Placement
   - uid: excel.Excel.PresetCriteriaConditionalFormat
@@ -2578,18 +2662,18 @@ references:
     name: Excel.ShapeScaleFrom
   - uid: excel.Excel.ShapeScaleType
     name: Excel.ShapeScaleType
-  - uid: excel.Excel.ShapeTextHorizontalAlignType
-    name: Excel.ShapeTextHorizontalAlignType
-  - uid: excel.Excel.ShapeTextHorzOverflowType
-    name: Excel.ShapeTextHorzOverflowType
-  - uid: excel.Excel.ShapeTextOrientationType
-    name: Excel.ShapeTextOrientationType
+  - uid: excel.Excel.ShapeTextHorizontalAlignment
+    name: Excel.ShapeTextHorizontalAlignment
+  - uid: excel.Excel.ShapeTextHorizontalOverflow
+    name: Excel.ShapeTextHorizontalOverflow
+  - uid: excel.Excel.ShapeTextOrientation
+    name: Excel.ShapeTextOrientation
   - uid: excel.Excel.ShapeTextReadingOrder
     name: Excel.ShapeTextReadingOrder
-  - uid: excel.Excel.ShapeTextVerticalAlignType
-    name: Excel.ShapeTextVerticalAlignType
-  - uid: excel.Excel.ShapeTextVertOverflowType
-    name: Excel.ShapeTextVertOverflowType
+  - uid: excel.Excel.ShapeTextVerticalAlignment
+    name: Excel.ShapeTextVerticalAlignment
+  - uid: excel.Excel.ShapeTextVerticalOverflow
+    name: Excel.ShapeTextVerticalOverflow
   - uid: excel.Excel.ShapeType
     name: Excel.ShapeType
   - uid: excel.Excel.ShapeZOrder
@@ -2610,6 +2694,10 @@ references:
     name: Excel.SlicerItemCollection
   - uid: excel.Excel.SlicerSortType
     name: Excel.SlicerSortType
+  - uid: excel.Excel.SlicerStyle
+    name: Excel.SlicerStyle
+  - uid: excel.Excel.SlicerStyleCollection
+    name: Excel.SlicerStyleCollection
   - uid: excel.Excel.SortBy
     name: Excel.SortBy
   - uid: excel.Excel.SortDataOption
@@ -2660,6 +2748,10 @@ references:
     name: Excel.TableSelectionChangedEventArgs
   - uid: excel.Excel.TableSort
     name: Excel.TableSort
+  - uid: excel.Excel.TableStyle
+    name: Excel.TableStyle
+  - uid: excel.Excel.TableStyleCollection
+    name: Excel.TableStyleCollection
   - uid: excel.Excel.TextConditionalFormat
     name: Excel.TextConditionalFormat
   - uid: excel.Excel.TextFrame
@@ -2686,6 +2778,10 @@ references:
     name: Excel.ThreeTrafficLights2Set
   - uid: excel.Excel.ThreeTrianglesSet
     name: Excel.ThreeTrianglesSet
+  - uid: excel.Excel.TimelineStyle
+    name: Excel.TimelineStyle
+  - uid: excel.Excel.TimelineStyleCollection
+    name: Excel.TimelineStyleCollection
   - uid: excel.Excel.TopBottomConditionalFormat
     name: Excel.TopBottomConditionalFormat
   - uid: excel.Excel.VerticalAlignment

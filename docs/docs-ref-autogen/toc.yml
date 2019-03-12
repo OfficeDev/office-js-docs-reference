@@ -1,18 +1,15 @@
 items:
-  - name: API reference
-    href: api-ref-office-js.md
-    items:
-      - name: Excel
-        href: /javascript/api/excel
-      - name: OneNote
-        href: /javascript/api/onenote
-      - name: Outlook
-        href: /javascript/api/outlook
-      - name: PowerPoint
-        href: /javascript/api/powerpoint
-      - name: Visio
-        href: /javascript/api/visio
-      - name: Word
-        href: /javascript/api/word
-      - name: CommonAPI
-        href: /javascript/api/office
+  - name: Excel
+    href: /javascript/api/excel
+  - name: OneNote
+    href: /javascript/api/onenote
+  - name: Outlook
+    href: /javascript/api/outlook
+  - name: PowerPoint
+    href: /javascript/api/powerpoint
+  - name: Visio
+    href: /javascript/api/visio
+  - name: Word
+    href: /javascript/api/word
+  - name: CommonAPI
+    href: /javascript/api/office

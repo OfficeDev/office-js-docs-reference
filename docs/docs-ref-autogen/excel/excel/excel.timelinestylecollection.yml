@@ -1,0 +1,298 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.TimelineStyleCollection
+    summary: >-
+      Represents a collection of TimelineStyles.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.TimelineStyleCollection
+    fullName: Excel.TimelineStyleCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.TimelineStyleCollection.add
+      - excel.Excel.TimelineStyleCollection.context
+      - excel.Excel.TimelineStyleCollection.getCount
+      - excel.Excel.TimelineStyleCollection.getDefault
+      - excel.Excel.TimelineStyleCollection.getItem
+      - excel.Excel.TimelineStyleCollection.getItemOrNullObject
+      - excel.Excel.TimelineStyleCollection.items
+      - excel.Excel.TimelineStyleCollection.load
+      - excel.Excel.TimelineStyleCollection.load_1
+      - excel.Excel.TimelineStyleCollection.load_2
+      - excel.Excel.TimelineStyleCollection.setDefault
+      - excel.Excel.TimelineStyleCollection.toJSON
+  - uid: excel.Excel.TimelineStyleCollection.add
+    summary: >-
+      Creates a blank TimelineStyle with the specified name.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'add(name, makeUniqueName)'
+    fullName: 'add(name, makeUniqueName)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'add(name: string, makeUniqueName?: boolean): Excel.TimelineStyle;'
+      return:
+        type:
+          - excel.Excel.TimelineStyle
+        description: The newly created TimelineStyle.
+      parameters:
+        - id: name
+          description: >-
+            The unique name for the new TimelineStyle. Will throw an invalid argument exception if the name is already
+            in use.
+          type:
+            - string
+        - id: makeUniqueName
+          description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
+          type:
+            - boolean
+  - uid: excel.Excel.TimelineStyleCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    isPreview: true
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.TimelineStyleCollection.getCount
+    summary: >-
+      Gets the number of timeline styles in the collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel.Excel.TimelineStyleCollection.getDefault
+    summary: >-
+      Gets the default TimelineStyle for the parent object's scope.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getDefault()
+    fullName: getDefault()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getDefault(): Excel.TimelineStyle;'
+      return:
+        type:
+          - excel.Excel.TimelineStyle
+        description: The TimelineStyle object that is the current default TimelineStyle.
+  - uid: excel.Excel.TimelineStyleCollection.getItem
+    summary: >-
+      Gets a TimelineStyle by name.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItem(name)
+    fullName: getItem(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(name: string): Excel.TimelineStyle;'
+      return:
+        type:
+          - excel.Excel.TimelineStyle
+        description: The TimelineStyle object whose name matches the input.
+      parameters:
+        - id: name
+          description: Name of the TimelineStyle to be retrieved.
+          type:
+            - string
+  - uid: excel.Excel.TimelineStyleCollection.getItemOrNullObject
+    summary: >-
+      Gets a TimelineStyle by name. If the TimelineStyle does not exist, will return a null object.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getItemOrNullObject(name)
+    fullName: getItemOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemOrNullObject(name: string): Excel.TimelineStyle;'
+      return:
+        type:
+          - excel.Excel.TimelineStyle
+        description: The TimelineStyle object whose name matches the input.
+      parameters:
+        - id: name
+          description: Name of the TimelineStyle to be retrieved.
+          type:
+            - string
+  - uid: excel.Excel.TimelineStyleCollection.items
+    summary: Gets the loaded child items in this collection.
+    isPreview: true
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.TimelineStyle[];'
+      return:
+        type:
+          - 'Excel.TimelineStyle[]'
+  - uid: excel.Excel.TimelineStyleCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.TimelineStyleCollection` - Where option is a comma-delimited string or an
+      array of strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.TimelineStyleCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TimelineStyleCollection`
+      - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum
+      number of collection items that can be included in the result. Option.skip specifies the number of items that are
+      to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
+      the specified number of items.
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.TimelineStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.TimelineStyleCollection;
+      return:
+        type:
+          - excel.Excel.TimelineStyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.TimelineStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel.Excel.TimelineStyleCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    isPreview: true
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TimelineStyleCollection;'
+      return:
+        type:
+          - excel.Excel.TimelineStyleCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.TimelineStyleCollection.load_2
+    isPreview: true
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.TimelineStyleCollection;'
+      return:
+        type:
+          - excel.Excel.TimelineStyleCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - OfficeExtension.LoadOption
+  - uid: excel.Excel.TimelineStyleCollection.setDefault
+    summary: >-
+      Sets the default TimelineStyle for use in the parent object's scope.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: setDefault(newDefaultStyle)
+    fullName: setDefault(newDefaultStyle)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setDefault(newDefaultStyle: TimelineStyle | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: newDefaultStyle
+          description: The TimelineStyle object or name of the TimelineStyle object that should be the new default.
+          type:
+            - TimelineStyle | string
+  - uid: excel.Excel.TimelineStyleCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.TimelineStyleCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Excel.Interfaces.TimelineStyleCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
+    isPreview: true
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TimelineStyleCollectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TimelineStyleCollectionData
+        description: ''

@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Image
     summary: >-
-      Represents an image object in the worksheet.
+      Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -42,7 +42,7 @@ items:
           - excel.Excel.RequestContext
   - uid: excel.Excel.Image.format
     summary: >-
-      Returns the format for the image. Read-only.
+      Returns the format of the image. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -176,7 +176,7 @@ items:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Image.shape
     summary: >-
-      Returns the shape object for the image. Read-only.
+      Returns the Shape object associated with the image. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

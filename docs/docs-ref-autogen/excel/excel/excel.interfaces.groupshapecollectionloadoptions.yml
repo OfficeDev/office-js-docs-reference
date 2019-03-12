@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions
     summary: >-
-      Represents a shape collection inside a shape group.
+      Represents the shape collection inside a shape group.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -55,8 +55,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextDescription
     summary: >-
-      For EACH ITEM in the collection: Returns or sets the alternative descriptive text string for a Shape object when
-      the object is saved to a Web page.
+      For EACH ITEM in the collection: Returns or sets the alternative description text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -74,8 +73,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextTitle
     summary: >-
-      For EACH ITEM in the collection: Returns or sets the alternative title text string for a Shape object when the
-      object is saved to a Web page.
+      For EACH ITEM in the collection: Returns or sets the alternative title text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -93,7 +91,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.connectionSiteCount
     summary: >-
-      For EACH ITEM in the collection: Returns the number of connection sites on the specified shape. Read-only.
+      For EACH ITEM in the collection: Returns the number of connection sites on this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -111,7 +109,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.fill
     summary: >-
-      For EACH ITEM in the collection: Returns the fill formatting of the shape object.
+      For EACH ITEM in the collection: Returns the fill formatting of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -129,8 +127,8 @@ items:
           - excel.Excel.Interfaces.ShapeFillLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape
     summary: >-
-      For EACH ITEM in the collection: Returns the geometric shape for the shape object. Error will be thrown, if the
-      shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape.
+      For EACH ITEM in the collection: Returns the geometric shape associated with the shape. An error will be thrown if
+      the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -148,9 +146,8 @@ items:
           - excel.Excel.Interfaces.GeometricShapeLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShapeType
     summary: >-
-      For EACH ITEM in the collection: Represents the geometric shape type of the specified shape. See
-      Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get
-      GeometricShapeType of a line or a chart will return null.
+      For EACH ITEM in the collection: Represents the geometric shape type of this geometric shape. See
+      Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -168,8 +165,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.group
     summary: >-
-      For EACH ITEM in the collection: Returns the shape group for the shape object. Error will be thrown, if the shape
-      object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape.
+      For EACH ITEM in the collection: Returns the shape group associated with the shape. An error will be thrown if the
+      shape type is not "GroupShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -188,7 +185,7 @@ items:
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.height
     summary: >-
       For EACH ITEM in the collection: Represents the height, in points, of the shape. Throws an invalid argument
-      exception when set with negative value or zero as input.
+      exception when set with a negative value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -224,8 +221,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.image
     summary: >-
-      For EACH ITEM in the collection: Returns the image for the shape object. Error will be thrown, if the shape object
-      is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+      For EACH ITEM in the collection: Returns the image associated with the shape. An error will be thrown if the shape
+      type is not "Image".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -243,8 +240,8 @@ items:
           - excel.Excel.Interfaces.ImageLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.left
     summary: >-
-      For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left of the
-      worksheet. Throws an invalid argument exception when set with negative value as input.
+      For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the
+      worksheet. Throws an invalid argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -262,8 +259,9 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.level
     summary: >-
-      For EACH ITEM in the collection: Represents the level of the specified shape. Level 0 means the shape is not part
-      of any group, level 1 means the shape is part of a top-level group, etc.
+      For EACH ITEM in the collection: Represents the level of the specified shape. For example, a level of 0 means that
+      the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2
+      means the shape is part of a sub-group of the top level.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -281,8 +279,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.line
     summary: >-
-      For EACH ITEM in the collection: Returns the line object for the shape object. Error will be thrown, if the shape
-      object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+      For EACH ITEM in the collection: Returns the line associated with the shape. An error will be thrown if the shape
+      type is not "Line".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -300,7 +298,7 @@ items:
           - excel.Excel.Interfaces.LineLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lineFormat
     summary: >-
-      For EACH ITEM in the collection: Returns the line formatting of the shape object.
+      For EACH ITEM in the collection: Returns the line formatting of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -318,7 +316,7 @@ items:
           - excel.Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lockAspectRatio
     summary: >-
-      For EACH ITEM in the collection: Represents if the aspect ratio locked, in boolean, of the shape.
+      For EACH ITEM in the collection: Specifies whether or not the aspect ratio of this shape is locked.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -354,7 +352,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup
     summary: >-
-      For EACH ITEM in the collection: Represents the parent group of the specified shape.
+      For EACH ITEM in the collection: Represents the parent group of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -372,8 +370,7 @@ items:
           - excel.Excel.Interfaces.ShapeLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.placement
     summary: >-
-      For EACH ITEM in the collection: Represents the placment, value that represents the way the object is attached to
-      the cells below it.
+      For EACH ITEM in the collection: Represents how the object is attached to the cells below it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -409,7 +406,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame
     summary: >-
-      For EACH ITEM in the collection: Returns the textFrame object of a shape. Read only.
+      For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -427,8 +424,8 @@ items:
           - excel.Excel.Interfaces.TextFrameLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.top
     summary: >-
-      For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top of the
-      worksheet. Throws an invalid argument exception when set with negative value as input.
+      For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the
+      worksheet. Throws an invalid argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -446,8 +443,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.type
     summary: >-
-      For EACH ITEM in the collection: Returns the type of the specified shape. Read-only. See Excel.ShapeType for
-      detail.
+      For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -465,7 +461,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.visible
     summary: >-
-      For EACH ITEM in the collection: Represents the visibility, in boolean, of the specified shape.
+      For EACH ITEM in the collection: Represents the visibility of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -484,7 +480,7 @@ items:
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.width
     summary: >-
       For EACH ITEM in the collection: Represents the width, in points, of the shape. Throws an invalid argument
-      exception when set with negative value or zero as input.
+      exception when set with a negative value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -502,8 +498,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zorderPosition
     summary: >-
-      For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, the very bottom
-      shape's z-order value is 0. Read-only.
+      For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing
+      the bottom of the order stack. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

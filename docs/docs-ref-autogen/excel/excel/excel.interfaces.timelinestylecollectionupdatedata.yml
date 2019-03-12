@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TimelineStyleCollectionUpdateData
+    summary: >-
+      An interface for updating data on the TimelineStyleCollection object, for use in "timelineStyleCollection.set(<!--
+      -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.TimelineStyleCollectionUpdateData
+    fullName: Excel.Interfaces.TimelineStyleCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TimelineStyleCollectionUpdateData.items
+  - uid: excel.Excel.Interfaces.TimelineStyleCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.TimelineStyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.TimelineStyleData[]'

@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.ShapeFillType
     summary: >-
+      Specifies a shape's fill type.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -19,6 +22,7 @@ items:
       - excel.Excel.ShapeFillType.pictureAndTexture
       - excel.Excel.ShapeFillType.solid
   - uid: excel.Excel.ShapeFillType.gradient
+    summary: Gradient fill.
     isPreview: true
     name: gradient
     fullName: gradient
@@ -27,6 +31,7 @@ items:
     type: field
     numericValue: '"Gradient"'
   - uid: excel.Excel.ShapeFillType.mixed
+    summary: Mixed fill.
     isPreview: true
     name: mixed
     fullName: mixed
@@ -35,6 +40,7 @@ items:
     type: field
     numericValue: '"Mixed"'
   - uid: excel.Excel.ShapeFillType.noFill
+    summary: No fill.
     isPreview: true
     name: noFill
     fullName: noFill
@@ -43,6 +49,7 @@ items:
     type: field
     numericValue: '"NoFill"'
   - uid: excel.Excel.ShapeFillType.pattern
+    summary: Pattern fill.
     isPreview: true
     name: pattern
     fullName: pattern
@@ -51,6 +58,7 @@ items:
     type: field
     numericValue: '"Pattern"'
   - uid: excel.Excel.ShapeFillType.pictureAndTexture
+    summary: Picture and texture fill.
     isPreview: true
     name: pictureAndTexture
     fullName: pictureAndTexture
@@ -59,6 +67,7 @@ items:
     type: field
     numericValue: '"PictureAndTexture"'
   - uid: excel.Excel.ShapeFillType.solid
+    summary: Solid fill.
     isPreview: true
     name: solid
     fullName: solid

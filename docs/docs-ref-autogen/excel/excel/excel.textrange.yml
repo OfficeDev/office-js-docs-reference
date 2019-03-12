@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.TextRange
     summary: >-
+      Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -16,7 +19,7 @@ items:
     children:
       - excel.Excel.TextRange.context
       - excel.Excel.TextRange.font
-      - excel.Excel.TextRange.getCharacters
+      - excel.Excel.TextRange.getSubstring
       - excel.Excel.TextRange.load
       - excel.Excel.TextRange.load_1
       - excel.Excel.TextRange.load_2
@@ -57,34 +60,34 @@ items:
       return:
         type:
           - excel.Excel.ShapeFont
-  - uid: excel.Excel.TextRange.getCharacters
+  - uid: excel.Excel.TextRange.getSubstring
     summary: >-
-      Returns a TextRange object for characters in the given range.
+      Returns a TextRange object for the substring in the given range.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'getCharacters(start, length)'
-    fullName: 'getCharacters(start, length)'
+    name: 'getSubstring(start, length)'
+    fullName: 'getSubstring(start, length)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getCharacters(start: number, length?: number): Excel.TextRange;'
+      content: 'getSubstring(start: number, length?: number): Excel.TextRange;'
       return:
         type:
           - excel.Excel.TextRange
         description: ''
       parameters:
         - id: start
-          description: Position of the first character in the returned range.
+          description: The zero-based index of the first character to get from the text range.
           type:
             - number
         - id: length
           description: >-
-            Optional. The number of characters to be returned. If omitted, it represents the number of characters from
-            "start" to the end of the last paragraph in TextRange.
+            Optional. The number of characters to be returned in the new text range. If length is omitted, all the
+            characters from start to the end of the text range's last paragraph will be returned.
           type:
             - number
   - uid: excel.Excel.TextRange.load

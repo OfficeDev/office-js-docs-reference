@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.GeometricShapeData.id
   - uid: excel.Excel.Interfaces.GeometricShapeData.id
     summary: >-
-      Represents the shape identifier. Read-only.
+      Returns the shape identifier. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

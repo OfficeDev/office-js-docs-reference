@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.GroupShapeCollection
     summary: >-
-      Represents a shape collection inside a shape group.
+      Represents the shape collection inside a shape group.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -43,7 +43,7 @@ items:
           - excel.Excel.RequestContext
   - uid: excel.Excel.GroupShapeCollection.getCount
     summary: >-
-      Returns the number of shapes in the group shape. Read-only.
+      Returns the number of shapes in the shape group. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -81,7 +81,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the shape to be retrieved.
+          description: The name of the shape to be retrieved.
           type:
             - string
   - uid: excel.Excel.GroupShapeCollection.getItemAt
@@ -105,7 +105,7 @@ items:
         description: ''
       parameters:
         - id: index
-          description: Index value of the object to be retrieved. Zero-indexed.
+          description: The zero-based index value of the object to be retrieved.
           type:
             - number
   - uid: excel.Excel.GroupShapeCollection.items

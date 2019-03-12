@@ -14,7 +14,6 @@ items:
       - excel.Excel.ColumnProperties.address
       - excel.Excel.ColumnProperties.addressLocal
       - excel.Excel.ColumnProperties.columnIndex
-      - excel.Excel.ColumnProperties.hasSpill
   - uid: excel.Excel.ColumnProperties.address
     name: address
     fullName: address
@@ -48,14 +47,3 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ColumnProperties.hasSpill
-    name: hasSpill
-    fullName: hasSpill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasSpill?: boolean;'
-      return:
-        type:
-          - boolean

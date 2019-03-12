@@ -948,7 +948,7 @@ items:
   - uid: word.Word.ContentControl.insertParagraph
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+      'After'.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -977,7 +977,7 @@ items:
   - uid: word.Word.ContentControl.insertParagraph_1
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
-      'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+      'After'.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -1570,8 +1570,10 @@ items:
         type:
           - word.Word.Table
   - uid: word.Word.ContentControl.placeholderText
-    summary: |-
-      Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+    summary: >-
+      Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
+      is empty.
+
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: placeholderText
@@ -2097,6 +2099,12 @@ items:
         type:
           - string
   - uid: word.Word.ContentControl.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.ContentControlData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

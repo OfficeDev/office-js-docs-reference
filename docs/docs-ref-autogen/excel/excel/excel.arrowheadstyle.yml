@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ArrowHeadStyle
+  - uid: excel.Excel.ArrowheadStyle
     summary: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.ArrowHeadStyle
-    fullName: Excel.ArrowHeadStyle
+    name: Excel.ArrowheadStyle
+    fullName: Excel.ArrowheadStyle
     langs:
       - typeScript
     type: enum
     package: excel
     children:
-      - excel.Excel.ArrowHeadStyle.diamond
-      - excel.Excel.ArrowHeadStyle.none
-      - excel.Excel.ArrowHeadStyle.open
-      - excel.Excel.ArrowHeadStyle.oval
-      - excel.Excel.ArrowHeadStyle.stealth
-      - excel.Excel.ArrowHeadStyle.triangle
-  - uid: excel.Excel.ArrowHeadStyle.diamond
+      - excel.Excel.ArrowheadStyle.diamond
+      - excel.Excel.ArrowheadStyle.none
+      - excel.Excel.ArrowheadStyle.open
+      - excel.Excel.ArrowheadStyle.oval
+      - excel.Excel.ArrowheadStyle.stealth
+      - excel.Excel.ArrowheadStyle.triangle
+  - uid: excel.Excel.ArrowheadStyle.diamond
     isPreview: true
     name: diamond
     fullName: diamond
@@ -26,7 +26,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Diamond"'
-  - uid: excel.Excel.ArrowHeadStyle.none
+  - uid: excel.Excel.ArrowheadStyle.none
     isPreview: true
     name: none
     fullName: none
@@ -34,7 +34,7 @@ items:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.ArrowHeadStyle.open
+  - uid: excel.Excel.ArrowheadStyle.open
     isPreview: true
     name: open
     fullName: open
@@ -42,7 +42,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Open"'
-  - uid: excel.Excel.ArrowHeadStyle.oval
+  - uid: excel.Excel.ArrowheadStyle.oval
     isPreview: true
     name: oval
     fullName: oval
@@ -50,7 +50,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Oval"'
-  - uid: excel.Excel.ArrowHeadStyle.stealth
+  - uid: excel.Excel.ArrowheadStyle.stealth
     isPreview: true
     name: stealth
     fullName: stealth
@@ -58,7 +58,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Stealth"'
-  - uid: excel.Excel.ArrowHeadStyle.triangle
+  - uid: excel.Excel.ArrowheadStyle.triangle
     isPreview: true
     name: triangle
     fullName: triangle

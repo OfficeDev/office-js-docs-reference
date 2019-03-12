@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.ShapeLineStyle
     summary: >-
+      The style for a line.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -18,6 +21,7 @@ items:
       - excel.Excel.ShapeLineStyle.thinThick
       - excel.Excel.ShapeLineStyle.thinThin
   - uid: excel.Excel.ShapeLineStyle.single
+    summary: Single line.
     isPreview: true
     name: single
     fullName: single
@@ -26,6 +30,7 @@ items:
     type: field
     numericValue: '"Single"'
   - uid: excel.Excel.ShapeLineStyle.thickBetweenThin
+    summary: Thick line with a thin line on each side.
     isPreview: true
     name: thickBetweenThin
     fullName: thickBetweenThin
@@ -34,6 +39,9 @@ items:
     type: field
     numericValue: '"ThickBetweenThin"'
   - uid: excel.Excel.ShapeLineStyle.thickThin
+    summary: >-
+      Thick line next to thin line. For horizontal lines, the thick line is above the thin line. For vertical lines, the
+      thick line is to the left of the thin line.
     isPreview: true
     name: thickThin
     fullName: thickThin
@@ -42,6 +50,9 @@ items:
     type: field
     numericValue: '"ThickThin"'
   - uid: excel.Excel.ShapeLineStyle.thinThick
+    summary: >-
+      Thick line next to thin line. For horizontal lines, the thick line is below the thin line. For vertical lines, the
+      thick line is to the right of the thin line.
     isPreview: true
     name: thinThick
     fullName: thinThick
@@ -50,6 +61,7 @@ items:
     type: field
     numericValue: '"ThinThick"'
   - uid: excel.Excel.ShapeLineStyle.thinThin
+    summary: Two thin lines.
     isPreview: true
     name: thinThin
     fullName: thinThin

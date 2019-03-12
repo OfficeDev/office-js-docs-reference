@@ -17,9 +17,13 @@ items:
       - 'OfficeExtension.ClientObject '
     package: excel
     children:
+      - excel.Excel.CommentReply.authorEmail
+      - excel.Excel.CommentReply.authorName
       - excel.Excel.CommentReply.content
       - excel.Excel.CommentReply.context
+      - excel.Excel.CommentReply.creationDate
       - excel.Excel.CommentReply.delete
+      - excel.Excel.CommentReply.getLocation
       - excel.Excel.CommentReply.getParentComment
       - excel.Excel.CommentReply.id
       - excel.Excel.CommentReply.isParent
@@ -29,9 +33,45 @@ items:
       - excel.Excel.CommentReply.set
       - excel.Excel.CommentReply.set_1
       - excel.Excel.CommentReply.toJSON
+  - uid: excel.Excel.CommentReply.authorEmail
+    summary: >-
+      Get author email of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorEmail: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.CommentReply.authorName
+    summary: >-
+      Get author name of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly authorName: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.CommentReply.content
     summary: >-
-      Get/Set the content.
+      Get or set the content.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -62,6 +102,24 @@ items:
       return:
         type:
           - excel.Excel.RequestContext
+  - uid: excel.Excel.CommentReply.creationDate
+    summary: >-
+      Get creation time of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly creationDate: Date;'
+      return:
+        type:
+          - Date
   - uid: excel.Excel.CommentReply.delete
     summary: >-
       Deletes the comment reply.
@@ -80,6 +138,25 @@ items:
       return:
         type:
           - void
+        description: ''
+  - uid: excel.Excel.CommentReply.getLocation
+    summary: >-
+      Get location of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getLocation()
+    fullName: getLocation()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getLocation(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
         description: ''
   - uid: excel.Excel.CommentReply.getParentComment
     summary: >-

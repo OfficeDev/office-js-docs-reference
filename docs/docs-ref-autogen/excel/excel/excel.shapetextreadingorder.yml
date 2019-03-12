@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.ShapeTextReadingOrder
     summary: >-
+      Specifies the reading order for the text frame in a shape.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -12,21 +15,21 @@ items:
     type: enum
     package: excel
     children:
-      - excel.Excel.ShapeTextReadingOrder.ltr
-      - excel.Excel.ShapeTextReadingOrder.rtl
-  - uid: excel.Excel.ShapeTextReadingOrder.ltr
+      - excel.Excel.ShapeTextReadingOrder.leftToRight
+      - excel.Excel.ShapeTextReadingOrder.rightToLeft
+  - uid: excel.Excel.ShapeTextReadingOrder.leftToRight
     isPreview: true
-    name: ltr
-    fullName: ltr
+    name: leftToRight
+    fullName: leftToRight
     langs:
       - typeScript
     type: field
-    numericValue: '"LTR"'
-  - uid: excel.Excel.ShapeTextReadingOrder.rtl
+    numericValue: '"LeftToRight"'
+  - uid: excel.Excel.ShapeTextReadingOrder.rightToLeft
     isPreview: true
-    name: rtl
-    fullName: rtl
+    name: rightToLeft
+    fullName: rightToLeft
     langs:
       - typeScript
     type: field
-    numericValue: '"RTL"'
+    numericValue: '"RightToLeft"'
