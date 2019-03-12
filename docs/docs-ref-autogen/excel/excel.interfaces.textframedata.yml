@@ -9,7 +9,7 @@ items:
     type: interface
     package: excel
     children:
-      - excel.Excel.Interfaces.TextFrameData.autoSize
+      - excel.Excel.Interfaces.TextFrameData.autoSizeSetting
       - excel.Excel.Interfaces.TextFrameData.bottomMargin
       - excel.Excel.Interfaces.TextFrameData.hasText
       - excel.Excel.Interfaces.TextFrameData.horizontalAlignment
@@ -21,23 +21,23 @@ items:
       - excel.Excel.Interfaces.TextFrameData.topMargin
       - excel.Excel.Interfaces.TextFrameData.verticalAlignment
       - excel.Excel.Interfaces.TextFrameData.verticalOverflow
-  - uid: excel.Excel.Interfaces.TextFrameData.autoSize
+  - uid: excel.Excel.Interfaces.TextFrameData.autoSizeSetting
     summary: >-
-      Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the
-      text frame, or auto size the text frame to fit the text, or without auto sizing.
+      Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
+      text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: autoSize
-    fullName: autoSize
+    name: autoSizeSetting
+    fullName: autoSizeSetting
     langs:
       - typeScript
     type: property
     syntax:
       content: >-
-        autoSize?: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" |
+        autoSizeSetting?: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" |
         "AutoSizeMixed";
       return:
         type:
@@ -62,7 +62,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.hasText
     summary: >-
-      Specifies whether the TextFrame contains text.
+      Specifies whether the text frame contains text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -80,7 +80,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameData.horizontalAlignment
     summary: >-
-      Represents the horizontal alignment of the text frame.
+      Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -93,16 +93,16 @@ items:
     type: property
     syntax:
       content: >-
-        horizontalAlignment?: Excel.ShapeTextHorizontalAlignType | "Left" | "Center" | "Right" | "Justify" |
-        "JustifyLow" | "Distributed" | "ThaiDistributed" | "ShapeTextHorizontalAlignType_MaxEnumIDs";
+        horizontalAlignment?: Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" |
+        "JustifyLow" | "Distributed" | "ThaiDistributed";
       return:
         type:
           - >-
-            Excel.ShapeTextHorizontalAlignType | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
-            | "ThaiDistributed" | "ShapeTextHorizontalAlignType_MaxEnumIDs"
+            Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
+            | "ThaiDistributed"
   - uid: excel.Excel.Interfaces.TextFrameData.horizontalOverflow
     summary: >-
-      Represents the horizontal overflow type of the text frame.
+      Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -114,12 +114,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        horizontalOverflow?: Excel.ShapeTextHorzOverflowType | "Overflow" | "Clip" |
-        "ShapeTextHorzOverflowType_MaxEnumIDs";
+      content: 'horizontalOverflow?: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip";'
       return:
         type:
-          - Excel.ShapeTextHorzOverflowType | "Overflow" | "Clip" | "ShapeTextHorzOverflowType_MaxEnumIDs"
+          - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
   - uid: excel.Excel.Interfaces.TextFrameData.leftMargin
     summary: >-
       Represents the left margin, in points, of the text frame.
@@ -140,7 +138,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.orientation
     summary: >-
-      Represents the text orientation of the text frame.
+      Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -153,16 +151,17 @@ items:
     type: property
     syntax:
       content: >-
-        orientation?: Excel.ShapeTextOrientationType | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
-        "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL" | "ShapeTextOrientationType_MaxEnumIDs";
+        orientation?: Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+        "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
       return:
         type:
           - >-
-            Excel.ShapeTextOrientationType | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
-            "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL" | "ShapeTextOrientationType_MaxEnumIDs"
+            Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+            "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
   - uid: excel.Excel.Interfaces.TextFrameData.readingOrder
     summary: >-
-      Represents the reading order of the text frame, RTL or LTR.
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      Excel.ShapeTextReadingOrder for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -174,10 +173,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readingOrder?: Excel.ShapeTextReadingOrder | "LTR" | "RTL";'
+      content: 'readingOrder?: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft";'
       return:
         type:
-          - Excel.ShapeTextReadingOrder | "LTR" | "RTL"
+          - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
   - uid: excel.Excel.Interfaces.TextFrameData.rightMargin
     summary: >-
       Represents the right margin, in points, of the text frame.
@@ -216,7 +215,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.TextFrameData.verticalAlignment
     summary: >-
-      Represents the vertical alignment of the text frame.
+      Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -229,16 +228,14 @@ items:
     type: property
     syntax:
       content: >-
-        verticalAlignment?: Excel.ShapeTextVerticalAlignType | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
-        | "ShapeTextVerticalAlignType_MaxEnumIDs";
+        verticalAlignment?: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" |
+        "Distributed";
       return:
         type:
-          - >-
-            Excel.ShapeTextVerticalAlignType | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed" |
-            "ShapeTextVerticalAlignType_MaxEnumIDs"
+          - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
   - uid: excel.Excel.Interfaces.TextFrameData.verticalOverflow
     summary: >-
-      Represents the vertical overflow type of the text frame.
+      Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -250,9 +247,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: >-
-        verticalOverflow?: Excel.ShapeTextVertOverflowType | "Overflow" | "Ellipsis" | "Clip" |
-        "ShapeTextVertOverflowType_MaxEnumIDs";
+      content: 'verticalOverflow?: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip";'
       return:
         type:
-          - Excel.ShapeTextVertOverflowType | "Overflow" | "Ellipsis" | "Clip" | "ShapeTextVertOverflowType_MaxEnumIDs"
+          - Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"

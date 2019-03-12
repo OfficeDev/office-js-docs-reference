@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ShapeFill
     summary: >-
-      Represents the fill formatting for a shape object.
+      Represents the fill formatting of a shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -19,7 +19,7 @@ items:
     children:
       - excel.Excel.ShapeFill.clear
       - excel.Excel.ShapeFill.context
-      - excel.Excel.ShapeFill.foreColor
+      - excel.Excel.ShapeFill.foregroundColor
       - excel.Excel.ShapeFill.load
       - excel.Excel.ShapeFill.load_1
       - excel.Excel.ShapeFill.load_2
@@ -31,7 +31,7 @@ items:
       - excel.Excel.ShapeFill.type
   - uid: excel.Excel.ShapeFill.clear
     summary: >-
-      Clears the fill formatting of a shape object.
+      Clears the fill formatting of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -63,22 +63,22 @@ items:
       return:
         type:
           - RequestContext
-  - uid: excel.Excel.ShapeFill.foreColor
+  - uid: excel.Excel.ShapeFill.foregroundColor
     summary: >-
-      Represents the shape fill fore color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
-      color (e.g. "orange")
+      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
+      named HTML color (e.g. "orange")
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: foreColor
-    fullName: foreColor
+    name: foregroundColor
+    fullName: foregroundColor
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'foreColor: string;'
+      content: 'foregroundColor: string;'
       return:
         type:
           - string
@@ -217,7 +217,7 @@ items:
             - excel.Excel.ShapeFill
   - uid: excel.Excel.ShapeFill.setSolidColor
     summary: >-
-      Sets the fill formatting of a shape object to a uniform color, fill type changeing to Solid Fill.
+      Sets the fill formatting of the shape to a uniform color. This changes the fill type to "Solid".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -262,9 +262,9 @@ items:
         description: ''
   - uid: excel.Excel.ShapeFill.transparency
     summary: >-
-      Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear).
-      For API not supported shape types or special fill type with inconsistent transparencies, return null. For example,
-      gradient fill type could have inconsistent transparencies.
+      Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns
+      null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with
+      a gradient fill type.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -282,7 +282,7 @@ items:
           - number
   - uid: excel.Excel.ShapeFill.type
     summary: >-
-      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail.
+      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

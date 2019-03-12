@@ -17,7 +17,7 @@ items:
       - excel.Excel.PageBreak.columnIndex
       - excel.Excel.PageBreak.context
       - excel.Excel.PageBreak.delete
-      - excel.Excel.PageBreak.getStartCell
+      - excel.Excel.PageBreak.getCellAfterBreak
       - excel.Excel.PageBreak.load
       - excel.Excel.PageBreak.load_1
       - excel.Excel.PageBreak.load_2
@@ -75,7 +75,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.PageBreak.getStartCell
+  - uid: excel.Excel.PageBreak.getCellAfterBreak
     summary: >-
       Gets the first cell after the page break.
 
@@ -83,13 +83,13 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: getStartCell()
-    fullName: getStartCell()
+    name: getCellAfterBreak()
+    fullName: getCellAfterBreak()
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getStartCell(): Excel.Range;'
+      content: 'getCellAfterBreak(): Excel.Range;'
       return:
         type:
           - excel.Excel.Range

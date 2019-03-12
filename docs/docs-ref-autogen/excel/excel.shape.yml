@@ -2,7 +2,8 @@
 items:
   - uid: excel.Excel.Shape
     summary: >-
-      Represents a generic shape object in the worksheet.
+      Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
+      etc.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -25,6 +26,8 @@ items:
       - excel.Excel.Shape.fill
       - excel.Excel.Shape.geometricShape
       - excel.Excel.Shape.geometricShapeType
+      - excel.Excel.Shape.getAsImage
+      - excel.Excel.Shape.getAsImage_1
       - excel.Excel.Shape.group
       - excel.Excel.Shape.height
       - excel.Excel.Shape.id
@@ -46,8 +49,6 @@ items:
       - excel.Excel.Shape.parentGroup
       - excel.Excel.Shape.placement
       - excel.Excel.Shape.rotation
-      - excel.Excel.Shape.saveAsPicture
-      - excel.Excel.Shape.saveAsPicture_1
       - excel.Excel.Shape.scaleHeight
       - excel.Excel.Shape.scaleHeight_1
       - excel.Excel.Shape.scaleWidth
@@ -65,7 +66,7 @@ items:
       - excel.Excel.Shape.zorderPosition
   - uid: excel.Excel.Shape.altTextDescription
     summary: >-
-      Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+      Returns or sets the alternative description text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -83,7 +84,7 @@ items:
           - string
   - uid: excel.Excel.Shape.altTextTitle
     summary: >-
-      Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+      Returns or sets the alternative title text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -101,7 +102,7 @@ items:
           - string
   - uid: excel.Excel.Shape.connectionSiteCount
     summary: >-
-      Returns the number of connection sites on the specified shape. Read-only.
+      Returns the number of connection sites on this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -134,7 +135,7 @@ items:
           - RequestContext
   - uid: excel.Excel.Shape.delete
     summary: >-
-      Deletes the Shape
+      Removes the shape from the worksheet.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -169,7 +170,7 @@ items:
           ```
   - uid: excel.Excel.Shape.fill
     summary: >-
-      Returns the fill formatting of the shape object. Read-only.
+      Returns the fill formatting of this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -203,8 +204,8 @@ items:
           ```
   - uid: excel.Excel.Shape.geometricShape
     summary: >-
-      Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type
-      (Like, Image, SmartArt, etc.) rather than GeometricShape.
+      Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not
+      "GeometricShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -222,8 +223,8 @@ items:
           - excel.Excel.GeometricShape
   - uid: excel.Excel.Shape.geometricShapeType
     summary: >-
-      Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null
-      if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
+      null if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -302,10 +303,63 @@ items:
             "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
             "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
             "ChartStar" | "ChartPlus"
+  - uid: excel.Excel.Shape.getAsImage
+    summary: >-
+      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
+      -->, and `Excel.PictureFormat.GIF`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getAsImage(format)
+    fullName: getAsImage(format)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsImage(format: Excel.PictureFormat): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+      parameters:
+        - id: format
+          description: Specifies the format of the image.
+          type:
+            - excel.Excel.PictureFormat
+  - uid: excel.Excel.Shape.getAsImage_1
+    summary: >-
+      Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
+      formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
+      -->, and `Excel.PictureFormat.GIF`<!-- -->.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: getAsImage(formatString)
+    fullName: getAsImage(formatString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"):
+        OfficeExtension.ClientResult<string>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: ''
+      parameters:
+        - id: formatString
+          description: Specifies the format of the image.
+          type:
+            - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
   - uid: excel.Excel.Shape.group
     summary: >-
-      Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like,
-      Image, SmartArt, etc.) rather than GroupShape.
+      Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -338,8 +392,8 @@ items:
           ```
   - uid: excel.Excel.Shape.height
     summary: >-
-      Represents the height, in points, of the shape. Throws an invalid argument exception when set with negative value
-      or zero as input.
+      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
+      value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -375,8 +429,7 @@ items:
           - string
   - uid: excel.Excel.Shape.image
     summary: >-
-      Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like,
-      GeometricShape, SmartArt, etc.) rather than Image.
+      Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -425,15 +478,15 @@ items:
       parameters:
         - id: increment
           description: >-
-            Specifies how far the shape is to be moved horizontally, in points. A positive value moves the shape to the
-            right; a negative value moves it to the left. If the sheet is RTL, IncrementLeft with a positive value
-            should move the shape to the left instead of right.
+            The increment, in points, the shape will be horizontally moved. A positive value moves the shape to the
+            right and a negative value moves it to the left. If the sheet is right-to-left oriented, this is reversed:
+            positive values will move the shape to the left and negative values will move it to the right.
           type:
             - number
   - uid: excel.Excel.Shape.incrementRotation
     summary: >-
-      Changes the rotation of the shape around the z-axis by the specified number of degrees. Use the Rotation property
-      to set the absolute rotation of the shape.
+      Rotates the shape clockwise around the z-axis by the specified number of degrees. Use the `rotation` property to
+      set the absolute rotation of the shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -464,8 +517,8 @@ items:
       parameters:
         - id: increment
           description: >-
-            Specifies how far the shape is to be rotated horizontally, in degrees. A positive value rotates the shape
-            clockwise; a negative value rotates it counterclockwise.
+            How many degrees the shape will be rotated. A positive value rotates the shape clockwise; a negative value
+            rotates it counterclockwise.
           type:
             - number
   - uid: excel.Excel.Shape.incrementTop
@@ -501,14 +554,14 @@ items:
       parameters:
         - id: increment
           description: >-
-            Specifies how far the shape is to be moved vertically, in points. A positive value moves the shape down; a
-            negative value moves it up.
+            The increment, in points, the shape will be vertically moved. in points. A positive value moves the shape
+            down and a negative value moves it up.
           type:
             - number
   - uid: excel.Excel.Shape.left
     summary: >-
-      The distance, in points, from the left side of the shape to the left of the worksheet. Throws an invalid argument
-      exception when set with negative value as input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -526,8 +579,9 @@ items:
           - number
   - uid: excel.Excel.Shape.level
     summary: >-
-      Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the
-      shape is part of a top-level group, etc.
+      Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
+      sub-group of the top level.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -545,8 +599,7 @@ items:
           - number
   - uid: excel.Excel.Shape.line
     summary: >-
-      Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like,
-      GeometricShape, SmartArt, etc.) rather than Image.
+      Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -583,7 +636,7 @@ items:
           ```
   - uid: excel.Excel.Shape.lineFormat
     summary: >-
-      Returns the line formatting of the shape object. Read-only.
+      Returns the line formatting of this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -684,7 +737,7 @@ items:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Shape.lockAspectRatio
     summary: >-
-      Represents if the aspect ratio locked, in boolean, of the shape.
+      Specifies whether or not the aspect ratio of this shape is locked.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -738,7 +791,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
   - uid: excel.Excel.Shape.onDeactivated
     summary: >-
-      Occurs when the shape is activated.
+      Occurs when the shape is deactivated.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -756,7 +809,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>
   - uid: excel.Excel.Shape.parentGroup
     summary: >-
-      Represents the parent group of the specified shape.
+      Represents the parent group of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -774,7 +827,7 @@ items:
           - excel.Excel.Shape
   - uid: excel.Excel.Shape.placement
     summary: >-
-      Represents the placment, value that represents the way the object is attached to the cells below it.
+      Represents how the object is attached to the cells below it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -825,78 +878,9 @@ items:
               await context.sync();
           });
           ```
-  - uid: excel.Excel.Shape.saveAsPicture
-    summary: >-
-      Saves the shape as a picture and returns the picture in the form of base64 encoded string, using the DPI sets to
-      96. Only support saves as to Excel.PictureFormat.BMP, Excel.PictureFormat.PNG, Excel.PictureFormat.JPEG and
-      Excel.PictureFormat.GIF.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: saveAsPicture(format)
-    fullName: saveAsPicture(format)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'saveAsPicture(format: Excel.PictureFormat): OfficeExtension.ClientResult<string>;'
-      return:
-        type:
-          - OfficeExtension.ClientResult<string>
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Image");
-              const result = shape.getAsImage(Excel.PictureFormat.png);
-              await context.sync();
-
-              const imageString = result.value;
-              // Your add-in would save this string as a .png file.
-              console.log("The image's base64-encoded string: " + imageString);
-          });
-          ```
-      parameters:
-        - id: format
-          description: ''
-          type:
-            - excel.Excel.PictureFormat
-  - uid: excel.Excel.Shape.saveAsPicture_1
-    summary: >-
-      Saves the shape as a picture and returns the picture in the form of base64 encoded string, using the DPI sets to
-      96. Only support saves as to Excel.PictureFormat.BMP, Excel.PictureFormat.PNG, Excel.PictureFormat.JPEG and
-      Excel.PictureFormat.GIF.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: saveAsPicture(formatString)
-    fullName: saveAsPicture(formatString)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: >-
-        saveAsPicture(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"):
-        OfficeExtension.ClientResult<string>;
-      return:
-        type:
-          - OfficeExtension.ClientResult<string>
-        description: ''
-      parameters:
-        - id: formatString
-          description: ''
-          type:
-            - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
   - uid: excel.Excel.Shape.scaleHeight
     summary: >-
-      Scales the height of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current height.
 
@@ -934,20 +918,19 @@ items:
             - number
         - id: scaleType
           description: >-
-            OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its
-            current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type:
             - excel.Excel.ShapeScaleType
         - id: scaleFrom
           description: >-
-            Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its
-            position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its
-            position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type:
             - excel.Excel.ShapeScaleFrom
   - uid: excel.Excel.Shape.scaleHeight_1
     summary: >-
-      Scales the height of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
+      Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current height.
 
@@ -975,20 +958,19 @@ items:
             - number
         - id: scaleTypeString
           description: >-
-            OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its
-            current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type:
             - '"CurrentSize" | "OriginalSize"'
         - id: scaleFrom
           description: >-
-            Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its
-            position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its
-            position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type:
             - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
   - uid: excel.Excel.Shape.scaleWidth
     summary: >-
-      Scales the width of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current width.
 
@@ -1026,20 +1008,19 @@ items:
             - number
         - id: scaleType
           description: >-
-            OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its
-            current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type:
             - excel.Excel.ShapeScaleType
         - id: scaleFrom
           description: >-
-            Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its
-            position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its
-            position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type:
             - excel.Excel.ShapeScaleFrom
   - uid: excel.Excel.Shape.scaleWidth_1
     summary: >-
-      Scales the width of the shape by a specified factor. For pictures, you can indicate whether you want to scale the
+      Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
       current width.
 
@@ -1067,15 +1048,14 @@ items:
             - number
         - id: scaleTypeString
           description: >-
-            OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its
-            current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
+            Specifies whether the shape is scaled relative to its original or current size. The original size scaling
+            option only works for images.
           type:
             - '"CurrentSize" | "OriginalSize"'
         - id: scaleFrom
           description: >-
-            Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its
-            position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its
-            position.
+            Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
+            represents the shape's upper left corner retains its position.
           type:
             - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
   - uid: excel.Excel.Shape.set
@@ -1130,20 +1110,19 @@ items:
             - excel.Excel.Shape
   - uid: excel.Excel.Shape.setZOrder
     summary: >-
-      Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's
-      position in the z-order).
+      Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: setZOrder(value)
-    fullName: setZOrder(value)
+    name: setZOrder(position)
+    fullName: setZOrder(position)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setZOrder(value: Excel.ShapeZOrder): void;'
+      content: 'setZOrder(position: Excel.ShapeZOrder): void;'
       return:
         type:
           - void
@@ -1160,38 +1139,41 @@ items:
           });
           ```
       parameters:
-        - id: value
-          description: where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
+        - id: position
+          description: >-
+            Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
+            details.
           type:
             - excel.Excel.ShapeZOrder
   - uid: excel.Excel.Shape.setZOrder_1
     summary: >-
-      Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's
-      position in the z-order).
+      Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: setZOrder(valueString)
-    fullName: setZOrder(valueString)
+    name: setZOrder(positionString)
+    fullName: setZOrder(positionString)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setZOrder(valueString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
+      content: 'setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: valueString
-          description: where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
+        - id: positionString
+          description: >-
+            Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
+            details.
           type:
             - '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
   - uid: excel.Excel.Shape.textFrame
     summary: >-
-      Returns the textFrame object of a shape. Read only.
+      Returns the text frame object of this shape. Read only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1228,8 +1210,8 @@ items:
         description: ''
   - uid: excel.Excel.Shape.top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top of the worksheet. Throws an invalid argument
-      exception when set with negative value as input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1247,7 +1229,7 @@ items:
           - number
   - uid: excel.Excel.Shape.type
     summary: >-
-      Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.
+      Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1259,13 +1241,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'readonly type: Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group" | "Line";'
+      content: 'readonly type: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
       return:
         type:
-          - Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group" | "Line"
+          - Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
   - uid: excel.Excel.Shape.visible
     summary: >-
-      Represents the visibility, in boolean, of the specified shape.
+      Represents the visibility of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1283,7 +1265,7 @@ items:
           - boolean
   - uid: excel.Excel.Shape.width
     summary: >-
-      Represents the width, in points, of the shape. Throws an invalid argument exception when set with negative value
+      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.
 
 
@@ -1302,7 +1284,8 @@ items:
           - number
   - uid: excel.Excel.Shape.zorderPosition
     summary: >-
-      Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.
+      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
+      Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

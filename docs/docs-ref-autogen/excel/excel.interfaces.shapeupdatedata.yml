@@ -25,7 +25,7 @@ items:
       - excel.Excel.Interfaces.ShapeUpdateData.width
   - uid: excel.Excel.Interfaces.ShapeUpdateData.altTextDescription
     summary: >-
-      Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+      Returns or sets the alternative description text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -43,7 +43,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeUpdateData.altTextTitle
     summary: >-
-      Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+      Returns or sets the alternative title text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -61,7 +61,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeUpdateData.fill
     summary: >-
-      Returns the fill formatting of the shape object.
+      Returns the fill formatting of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -79,8 +79,8 @@ items:
           - excel.Excel.Interfaces.ShapeFillUpdateData
   - uid: excel.Excel.Interfaces.ShapeUpdateData.geometricShapeType
     summary: >-
-      Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null
-      if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
+      null if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -161,8 +161,8 @@ items:
             "ChartStar" | "ChartPlus"
   - uid: excel.Excel.Interfaces.ShapeUpdateData.height
     summary: >-
-      Represents the height, in points, of the shape. Throws an invalid argument exception when set with negative value
-      or zero as input.
+      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
+      value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -180,8 +180,8 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeUpdateData.left
     summary: >-
-      The distance, in points, from the left side of the shape to the left of the worksheet. Throws an invalid argument
-      exception when set with negative value as input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -199,7 +199,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeUpdateData.lineFormat
     summary: >-
-      Returns the line formatting of the shape object.
+      Returns the line formatting of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -217,7 +217,7 @@ items:
           - excel.Excel.Interfaces.ShapeLineFormatUpdateData
   - uid: excel.Excel.Interfaces.ShapeUpdateData.lockAspectRatio
     summary: >-
-      Represents if the aspect ratio locked, in boolean, of the shape.
+      Specifies whether or not the aspect ratio of this shape is locked.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -253,7 +253,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeUpdateData.placement
     summary: >-
-      Represents the placment, value that represents the way the object is attached to the cells below it.
+      Represents how the object is attached to the cells below it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -289,8 +289,8 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeUpdateData.top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top of the worksheet. Throws an invalid argument
-      exception when set with negative value as input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -308,7 +308,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeUpdateData.visible
     summary: >-
-      Represents the visibility, in boolean, of the specified shape.
+      Represents the visibility of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -326,7 +326,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeUpdateData.width
     summary: >-
-      Represents the width, in points, of the shape. Throws an invalid argument exception when set with negative value
+      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.
 
 

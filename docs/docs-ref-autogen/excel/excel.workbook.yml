@@ -43,6 +43,7 @@ items:
       - excel.Excel.Workbook.onAutoSaveSettingChanged
       - excel.Excel.Workbook.onSelectionChanged
       - excel.Excel.Workbook.pivotTables
+      - excel.Excel.Workbook.pivotTableStyles
       - excel.Excel.Workbook.previouslySaved
       - excel.Excel.Workbook.properties
       - excel.Excel.Workbook.protection
@@ -53,8 +54,11 @@ items:
       - excel.Excel.Workbook.set_1
       - excel.Excel.Workbook.settings
       - excel.Excel.Workbook.slicers
+      - excel.Excel.Workbook.slicerStyles
       - excel.Excel.Workbook.styles
       - excel.Excel.Workbook.tables
+      - excel.Excel.Workbook.tableStyles
+      - excel.Excel.Workbook.timelineStyles
       - excel.Excel.Workbook.toJSON
       - excel.Excel.Workbook.use1904DateSystem
       - excel.Excel.Workbook.usePrecisionAsDisplayed
@@ -76,7 +80,7 @@ items:
           - excel.Excel.Application
   - uid: excel.Excel.Workbook.autoSave
     summary: >-
-      True if the workbook is in auto save mode.
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -475,8 +479,8 @@ items:
           ```
   - uid: excel.Excel.Workbook.isDirty
     summary: >-
-      True if no changes have been made to the specified workbook since it was last saved. You can set this property to
-      True if you want to close a modified workbook without either saving it or being prompted to save it.
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -604,7 +608,7 @@ items:
           - excel.Excel.NamedItemCollection
   - uid: excel.Excel.Workbook.onAutoSaveSettingChanged
     summary: >-
-      Occurs when AutoSave setting is changed on the workbook.
+      Occurs when the autoSave setting is changed on the workbook.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -650,9 +654,27 @@ items:
       return:
         type:
           - excel.Excel.PivotTableCollection
+  - uid: excel.Excel.Workbook.pivotTableStyles
+    summary: >-
+      Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: pivotTableStyles
+    fullName: pivotTableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotTableStyles: Excel.PivotTableStyleCollection;'
+      return:
+        type:
+          - excel.Excel.PivotTableStyleCollection
   - uid: excel.Excel.Workbook.previouslySaved
     summary: >-
-      True if the workbook has ever been saved locally or online.
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -880,6 +902,24 @@ items:
       return:
         type:
           - excel.Excel.SlicerCollection
+  - uid: excel.Excel.Workbook.slicerStyles
+    summary: >-
+      Represents a collection of SlicerStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: slicerStyles
+    fullName: slicerStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly slicerStyles: Excel.SlicerStyleCollection;'
+      return:
+        type:
+          - excel.Excel.SlicerStyleCollection
   - uid: excel.Excel.Workbook.styles
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
@@ -910,6 +950,42 @@ items:
       return:
         type:
           - excel.Excel.TableCollection
+  - uid: excel.Excel.Workbook.tableStyles
+    summary: >-
+      Represents a collection of TableStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: tableStyles
+    fullName: tableStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tableStyles: Excel.TableStyleCollection;'
+      return:
+        type:
+          - excel.Excel.TableStyleCollection
+  - uid: excel.Excel.Workbook.timelineStyles
+    summary: >-
+      Represents a collection of TimelineStyles associated with the workbook. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: timelineStyles
+    fullName: timelineStyles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly timelineStyles: Excel.TimelineStyleCollection;'
+      return:
+        type:
+          - excel.Excel.TimelineStyleCollection
   - uid: excel.Excel.Workbook.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

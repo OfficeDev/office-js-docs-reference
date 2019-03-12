@@ -2,8 +2,8 @@
 items:
   - uid: excel.Excel.ShapeLineFormat
     summary: >-
-      Represents the line formatting for the shape object. For picture and geometric shape, line formatting represents
-      the border of shape object.
+      Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents
+      the border of the shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -67,8 +67,8 @@ items:
           - RequestContext
   - uid: excel.Excel.ShapeLineFormat.dashStyle
     summary: >-
-      Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style
-      property (e.g. group type of shape). See Excel.ShapeLineStyle for details.
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash
+      styles. See Excel.ShapeLineStyle for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -223,8 +223,8 @@ items:
             - excel.Excel.ShapeLineFormat
   - uid: excel.Excel.ShapeLineFormat.style
     summary: >-
-      Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible
-      property (e.g. group type of shape). See Excel.ShapeLineStyle for details.
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent
+      styles. See Excel.ShapeLineStyle for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -262,7 +262,7 @@ items:
   - uid: excel.Excel.ShapeLineFormat.transparency
     summary: >-
       Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
-      Returns null when the shape has mixed line transparency property (e.g. group type of shape).
+      Returns null when the shape has inconsistent transparencies.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -280,8 +280,8 @@ items:
           - number
   - uid: excel.Excel.ShapeLineFormat.visible
     summary: >-
-      Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line
-      visible property (e.g. group type of shape).
+      Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has
+      inconsistent visibilities.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -299,8 +299,8 @@ items:
           - boolean
   - uid: excel.Excel.ShapeLineFormat.weight
     summary: >-
-      Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight
-      property (e.g. group type of shape).
+      Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent
+      line weights.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

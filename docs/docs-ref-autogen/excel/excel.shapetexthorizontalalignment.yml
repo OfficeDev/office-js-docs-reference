@@ -1,0 +1,80 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeTextHorizontalAlignment
+    summary: >-
+      Specifies the horizontal alignment for the text frame in a shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.ShapeTextHorizontalAlignment
+    fullName: Excel.ShapeTextHorizontalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeTextHorizontalAlignment.center
+      - excel.Excel.ShapeTextHorizontalAlignment.distributed
+      - excel.Excel.ShapeTextHorizontalAlignment.justify
+      - excel.Excel.ShapeTextHorizontalAlignment.justifyLow
+      - excel.Excel.ShapeTextHorizontalAlignment.left
+      - excel.Excel.ShapeTextHorizontalAlignment.right
+      - excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.center
+    isPreview: true
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.distributed
+    isPreview: true
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.justify
+    isPreview: true
+    name: justify
+    fullName: justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.justifyLow
+    isPreview: true
+    name: justifyLow
+    fullName: justifyLow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"JustifyLow"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.left
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.right
+    isPreview: true
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
+    isPreview: true
+    name: thaiDistributed
+    fullName: thaiDistributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThaiDistributed"'

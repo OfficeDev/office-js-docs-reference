@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ArrowHeadLength
+  - uid: excel.Excel.ArrowheadLength
     summary: >-
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: Excel.ArrowHeadLength
-    fullName: Excel.ArrowHeadLength
+    name: Excel.ArrowheadLength
+    fullName: Excel.ArrowheadLength
     langs:
       - typeScript
     type: enum
     package: excel
     children:
-      - excel.Excel.ArrowHeadLength.long
-      - excel.Excel.ArrowHeadLength.medium
-      - excel.Excel.ArrowHeadLength.short
-  - uid: excel.Excel.ArrowHeadLength.long
+      - excel.Excel.ArrowheadLength.long
+      - excel.Excel.ArrowheadLength.medium
+      - excel.Excel.ArrowheadLength.short
+  - uid: excel.Excel.ArrowheadLength.long
     isPreview: true
     name: long
     fullName: long
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Long"'
-  - uid: excel.Excel.ArrowHeadLength.medium
+  - uid: excel.Excel.ArrowheadLength.medium
     isPreview: true
     name: medium
     fullName: medium
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Medium"'
-  - uid: excel.Excel.ArrowHeadLength.short
+  - uid: excel.Excel.ArrowheadLength.short
     isPreview: true
     name: short
     fullName: short

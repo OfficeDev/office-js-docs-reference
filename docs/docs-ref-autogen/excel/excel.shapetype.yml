@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.ShapeType
     summary: >-
+      Specifies the type of a shape.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -16,7 +19,7 @@ items:
       - excel.Excel.ShapeType.group
       - excel.Excel.ShapeType.image
       - excel.Excel.ShapeType.line
-      - excel.Excel.ShapeType.unknown
+      - excel.Excel.ShapeType.unsupported
   - uid: excel.Excel.ShapeType.geometricShape
     isPreview: true
     name: geometricShape
@@ -49,11 +52,11 @@ items:
       - typeScript
     type: field
     numericValue: '"Line"'
-  - uid: excel.Excel.ShapeType.unknown
+  - uid: excel.Excel.ShapeType.unsupported
     isPreview: true
-    name: unknown
-    fullName: unknown
+    name: unsupported
+    fullName: unsupported
     langs:
       - typeScript
     type: field
-    numericValue: '"Unknown"'
+    numericValue: '"Unsupported"'

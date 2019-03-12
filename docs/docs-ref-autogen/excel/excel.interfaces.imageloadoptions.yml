@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Interfaces.ImageLoadOptions
     summary: >-
-      Represents an image object in the worksheet.
+      Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ImageLoadOptions.format
     summary: >-
-      Returns the format for the image. Read-only.
+      Returns the format of the image. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -69,7 +69,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ImageLoadOptions.shape
     summary: >-
-      Returns the shape object for the image.
+      Returns the Shape object associated with the image.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

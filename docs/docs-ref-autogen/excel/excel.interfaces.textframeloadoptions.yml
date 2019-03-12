@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions
     summary: >-
-      Represents the text frame for a shape object.
+      Represents the text frame of a shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -16,7 +16,7 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.TextFrameLoadOptions.$all
-      - excel.Excel.Interfaces.TextFrameLoadOptions.autoSize
+      - excel.Excel.Interfaces.TextFrameLoadOptions.autoSizeSetting
       - excel.Excel.Interfaces.TextFrameLoadOptions.bottomMargin
       - excel.Excel.Interfaces.TextFrameLoadOptions.hasText
       - excel.Excel.Interfaces.TextFrameLoadOptions.horizontalAlignment
@@ -41,22 +41,22 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.autoSize
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.autoSizeSetting
     summary: >-
-      Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the
-      text frame, or auto size the text frame to fit the text, or without auto sizing.
+      Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
+      text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: autoSize
-    fullName: autoSize
+    name: autoSizeSetting
+    fullName: autoSizeSetting
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'autoSize?: boolean;'
+      content: 'autoSizeSetting?: boolean;'
       return:
         type:
           - boolean
@@ -80,7 +80,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.hasText
     summary: >-
-      Specifies whether the TextFrame contains text.
+      Specifies whether the text frame contains text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -98,7 +98,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.horizontalAlignment
     summary: >-
-      Represents the horizontal alignment of the text frame.
+      Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -116,7 +116,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.horizontalOverflow
     summary: >-
-      Represents the horizontal overflow type of the text frame.
+      Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -152,7 +152,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.orientation
     summary: >-
-      Represents the text orientation of the text frame.
+      Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -170,7 +170,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.readingOrder
     summary: >-
-      Represents the reading order of the text frame, RTL or LTR.
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      Excel.ShapeTextReadingOrder for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -206,7 +207,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.textRange
     summary: >-
-      Represents the text range in the text frame.
+      Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
+      text. See Excel.TextRange for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -242,7 +244,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.verticalAlignment
     summary: >-
-      Represents the vertical alignment of the text frame.
+      Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -260,7 +262,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TextFrameLoadOptions.verticalOverflow
     summary: >-
-      Represents the vertical overflow type of the text frame.
+      Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

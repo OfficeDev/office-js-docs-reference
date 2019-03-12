@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.PictureFormat
     summary: >-
+      The format of the image.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
@@ -19,6 +22,7 @@ items:
       - excel.Excel.PictureFormat.svg
       - excel.Excel.PictureFormat.unknown
   - uid: excel.Excel.PictureFormat.bmp
+    summary: Bitmap image.
     isPreview: true
     name: bmp
     fullName: bmp
@@ -27,6 +31,7 @@ items:
     type: field
     numericValue: '"BMP"'
   - uid: excel.Excel.PictureFormat.gif
+    summary: Graphics Interchange Format.
     isPreview: true
     name: gif
     fullName: gif
@@ -35,6 +40,7 @@ items:
     type: field
     numericValue: '"GIF"'
   - uid: excel.Excel.PictureFormat.jpeg
+    summary: Joint Photographic Experts Group.
     isPreview: true
     name: jpeg
     fullName: jpeg
@@ -43,6 +49,7 @@ items:
     type: field
     numericValue: '"JPEG"'
   - uid: excel.Excel.PictureFormat.png
+    summary: Portable Network Graphics.
     isPreview: true
     name: png
     fullName: png
@@ -51,6 +58,7 @@ items:
     type: field
     numericValue: '"PNG"'
   - uid: excel.Excel.PictureFormat.svg
+    summary: Scalable Vector Graphic.
     isPreview: true
     name: svg
     fullName: svg
