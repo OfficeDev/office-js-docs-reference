@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerStyleUpdateData
+    summary: 'An interface for updating data on the SlicerStyle object, for use in "slicerStyle.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.SlicerStyleUpdateData
+    fullName: Excel.Interfaces.SlicerStyleUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerStyleUpdateData.name
+  - uid: excel.Excel.Interfaces.SlicerStyleUpdateData.name
+    summary: >-
+      Gets the name of the SlicerStyle.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string

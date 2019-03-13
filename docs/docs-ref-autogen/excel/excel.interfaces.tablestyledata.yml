@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TableStyleData
+    summary: An interface describing the data returned by calling "tableStyle.toJSON()".
+    name: Excel.Interfaces.TableStyleData
+    fullName: Excel.Interfaces.TableStyleData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TableStyleData.name
+      - excel.Excel.Interfaces.TableStyleData.readOnly
+  - uid: excel.Excel.Interfaces.TableStyleData.name
+    summary: >-
+      Gets the name of the TableStyle.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.TableStyleData.readOnly
+    summary: >-
+      True means that this TableStyle object is read-only. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readOnly?: boolean;'
+      return:
+        type:
+          - boolean

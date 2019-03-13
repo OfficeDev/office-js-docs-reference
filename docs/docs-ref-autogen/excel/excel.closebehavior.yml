@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.CloseBehavior
     summary: >-
-      Specifies the close behavior for workbook.close API.
+      Specifies the close behavior for Workbook.close API.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

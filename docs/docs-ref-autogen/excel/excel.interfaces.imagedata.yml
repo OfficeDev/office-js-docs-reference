@@ -13,7 +13,7 @@ items:
       - excel.Excel.Interfaces.ImageData.id
   - uid: excel.Excel.Interfaces.ImageData.format
     summary: >-
-      Returns the format for the image. Read-only.
+      Returns the format of the image. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

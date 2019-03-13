@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs
     summary: >-
-      Provides information about the workbook AutoSave setting changed event.
+      Provides information about the workbook's onAutoSaveSettingChanged event.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

@@ -9,12 +9,51 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.CommentReplyData.authorEmail
+      - excel.Excel.Interfaces.CommentReplyData.authorName
       - excel.Excel.Interfaces.CommentReplyData.content
+      - excel.Excel.Interfaces.CommentReplyData.creationDate
       - excel.Excel.Interfaces.CommentReplyData.id
       - excel.Excel.Interfaces.CommentReplyData.isParent
+  - uid: excel.Excel.Interfaces.CommentReplyData.authorEmail
+    summary: >-
+      Get author email of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.authorName
+    summary: >-
+      Get author name of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.Interfaces.CommentReplyData.content
     summary: >-
-      Get/Set the content.
+      Get or set the content.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -30,6 +69,24 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.creationDate
+    summary: >-
+      Get creation time of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type:
+          - Date
   - uid: excel.Excel.Interfaces.CommentReplyData.id
     summary: >-
       Represents the comment reply identifier. Read-only.

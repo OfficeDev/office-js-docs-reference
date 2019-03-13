@@ -2,6 +2,9 @@
 items:
   - uid: excel.Excel.Interfaces.TextRangeLoadOptions
     summary: >-
+      Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
+
+
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true

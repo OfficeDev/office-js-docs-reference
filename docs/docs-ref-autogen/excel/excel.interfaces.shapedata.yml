@@ -30,7 +30,7 @@ items:
       - excel.Excel.Interfaces.ShapeData.zorderPosition
   - uid: excel.Excel.Interfaces.ShapeData.altTextDescription
     summary: >-
-      Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+      Returns or sets the alternative description text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -48,7 +48,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeData.altTextTitle
     summary: >-
-      Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+      Returns or sets the alternative title text for a Shape object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -66,7 +66,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeData.connectionSiteCount
     summary: >-
-      Returns the number of connection sites on the specified shape. Read-only.
+      Returns the number of connection sites on this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -84,7 +84,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeData.fill
     summary: >-
-      Returns the fill formatting of the shape object. Read-only.
+      Returns the fill formatting of this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -102,8 +102,8 @@ items:
           - excel.Excel.Interfaces.ShapeFillData
   - uid: excel.Excel.Interfaces.ShapeData.geometricShapeType
     summary: >-
-      Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null
-      if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
+      null if the shape type is not "GeometricShape".
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -184,8 +184,8 @@ items:
             "ChartStar" | "ChartPlus"
   - uid: excel.Excel.Interfaces.ShapeData.height
     summary: >-
-      Represents the height, in points, of the shape. Throws an invalid argument exception when set with negative value
-      or zero as input.
+      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
+      value or zero as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -221,8 +221,8 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeData.left
     summary: >-
-      The distance, in points, from the left side of the shape to the left of the worksheet. Throws an invalid argument
-      exception when set with negative value as input.
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -240,8 +240,9 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeData.level
     summary: >-
-      Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the
-      shape is part of a top-level group, etc.
+      Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
+      sub-group of the top level.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -259,7 +260,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeData.lineFormat
     summary: >-
-      Returns the line formatting of the shape object. Read-only.
+      Returns the line formatting of this shape. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -277,7 +278,7 @@ items:
           - excel.Excel.Interfaces.ShapeLineFormatData
   - uid: excel.Excel.Interfaces.ShapeData.lockAspectRatio
     summary: >-
-      Represents if the aspect ratio locked, in boolean, of the shape.
+      Specifies whether or not the aspect ratio of this shape is locked.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -313,7 +314,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.ShapeData.placement
     summary: >-
-      Represents the placment, value that represents the way the object is attached to the cells below it.
+      Represents how the object is attached to the cells below it.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -349,8 +350,8 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeData.top
     summary: >-
-      The distance, in points, from the top edge of the shape to the top of the worksheet. Throws an invalid argument
-      exception when set with negative value as input.
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -368,7 +369,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeData.type
     summary: >-
-      Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.
+      Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -380,13 +381,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type?: Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group" | "Line";'
+      content: 'type?: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
       return:
         type:
-          - Excel.ShapeType | "Unknown" | "Image" | "GeometricShape" | "Group" | "Line"
+          - Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
   - uid: excel.Excel.Interfaces.ShapeData.visible
     summary: >-
-      Represents the visibility, in boolean, of the specified shape.
+      Represents the visibility of this shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -404,7 +405,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeData.width
     summary: >-
-      Represents the width, in points, of the shape. Throws an invalid argument exception when set with negative value
+      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.
 
 
@@ -423,7 +424,8 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ShapeData.zorderPosition
     summary: >-
-      Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.
+      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
+      Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

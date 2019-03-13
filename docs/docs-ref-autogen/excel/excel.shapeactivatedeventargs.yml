@@ -20,7 +20,7 @@ items:
       - excel.Excel.ShapeActivatedEventArgs.worksheetId
   - uid: excel.Excel.ShapeActivatedEventArgs.shapeId
     summary: >-
-      Gets the id of the shape that is activated.
+      Gets the id of the activated shape.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

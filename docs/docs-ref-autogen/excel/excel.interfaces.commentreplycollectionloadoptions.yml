@@ -16,7 +16,10 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.isParent
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
@@ -31,9 +34,45 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
+    summary: >-
+      For EACH ITEM in the collection: Get author email of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
+    summary: >-
+      For EACH ITEM in the collection: Get author name of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
     summary: >-
-      For EACH ITEM in the collection: Get/Set the content.
+      For EACH ITEM in the collection: Get or set the content.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -46,6 +85,24 @@ items:
     type: property
     syntax:
       content: 'content?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
+    summary: >-
+      For EACH ITEM in the collection: Get creation time of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: boolean;'
       return:
         type:
           - boolean

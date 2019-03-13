@@ -1,0 +1,23 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionData
+    summary: An interface describing the data returned by calling "slicerStyleCollection.toJSON()".
+    name: Excel.Interfaces.SlicerStyleCollectionData
+    fullName: Excel.Interfaces.SlicerStyleCollectionData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.SlicerStyleCollectionData.items
+  - uid: excel.Excel.Interfaces.SlicerStyleCollectionData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Excel.Interfaces.SlicerStyleData[];'
+      return:
+        type:
+          - 'Excel.Interfaces.SlicerStyleData[]'

@@ -9,13 +9,52 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.CommentData.authorEmail
+      - excel.Excel.Interfaces.CommentData.authorName
       - excel.Excel.Interfaces.CommentData.content
+      - excel.Excel.Interfaces.CommentData.creationDate
       - excel.Excel.Interfaces.CommentData.id
       - excel.Excel.Interfaces.CommentData.isParent
       - excel.Excel.Interfaces.CommentData.replies
+  - uid: excel.Excel.Interfaces.CommentData.authorEmail
+    summary: >-
+      Get author email of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CommentData.authorName
+    summary: >-
+      Get author name of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: string;'
+      return:
+        type:
+          - string
   - uid: excel.Excel.Interfaces.CommentData.content
     summary: >-
-      Get/Set the content.
+      Get or set the content.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -31,6 +70,25 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.CommentData.creationDate
+    summary: >-
+      Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the
+      comment will not has created date.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type:
+          - Date
   - uid: excel.Excel.Interfaces.CommentData.id
     summary: >-
       Represents the comment identifier. Read-only.
