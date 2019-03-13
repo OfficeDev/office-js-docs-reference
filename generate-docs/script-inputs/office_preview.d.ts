@@ -379,12 +379,11 @@ declare namespace Office {
      * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
-     *  <table>
-     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
-     *  </table>
+     *  || Office for Windows desktop | Office Online (in browser) | Office for iPad |
+     *  |---|---|---|---|
+     *  | **Excel**   | Y | Y | Y |
+     *  | **Project** | Y |   |   |
+     *  | **Word**    | Y |   | Y |
      */
     enum InitializationReason {
         /**
