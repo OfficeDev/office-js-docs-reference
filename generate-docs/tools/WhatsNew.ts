@@ -145,7 +145,7 @@ class APISet {
     public getAsMarkdown(relativePath: string): string {
         this.sort();
         // table header
-        let output: string = "|Class|Fields|Description|\n|:---|:---|:---|\n";
+        let output: string = "| Class | Fields | Description |\n|:---|:---|:---|\n";
         this.api.forEach((clas) => {
             // ignore enums
             if (clas.type !== ClassType.Enum) {
