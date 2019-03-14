@@ -379,7 +379,7 @@ declare namespace Office {
      * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
      * 
      * *Supported hosts, by platform*
-     *  || Office for Windows desktop | Office Online (in browser) | Office for iPad |
+     *  | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
      *  |---|---|---|---|
      *  | **Excel**   | Y | Y | Y |
      *  | **Project** | Y |   |   |
