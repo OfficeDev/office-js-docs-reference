@@ -14,12 +14,14 @@ items:
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* 
+      *Supported hosts, by platform*
+      
       | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
       |---|---|---|---|
       | **Excel**   | Y | Y | Y |
       | **Project** | Y |   |   |
       | **Word**    | Y |   | Y |
+      
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
