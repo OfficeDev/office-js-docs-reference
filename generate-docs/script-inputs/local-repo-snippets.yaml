@@ -8464,7 +8464,7 @@ Office.AppointmentCompose.addItemAttachmentAsync:
     }
 Office.AppointmentCompose.body:
   - |-
-    // This example gets the body of the message as plain text.
+    // This example gets the body of the item as plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext: "This is passed to the callback" },
@@ -8726,7 +8726,7 @@ Office.AppointmentRead.attachments:
     console.log(outputString);
 Office.AppointmentRead.body:
   - |-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext: "This is passed to the callback" },
@@ -9110,7 +9110,7 @@ Office.AttachmentDetails:
     console.log(outputString);
 Office.Body.getAsync:
   - |-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext: "This is passed to the callback" },
@@ -9344,7 +9344,7 @@ Office.Item.addHandlerAsync_1:
     Office.context.mailbox.item.addHandlerAsync(Office.EventType.AttachmentsChanged, myHandlerFunction, myCallback);
 Office.Item.body:
   - |-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext: "This is passed to the callback" },
@@ -9756,7 +9756,7 @@ Office.MessageCompose.bcc:
     }
 Office.MessageCompose.body:
   - |-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext: "This is passed to the callback" },
@@ -9932,7 +9932,7 @@ Office.MessageRead.attachments:
     console.log(outputString);
 Office.MessageRead.body:
   - |-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
     Office.context.mailbox.item.body.getAsync(
         "text",
         { asyncContext: "This is passed to the callback" },
