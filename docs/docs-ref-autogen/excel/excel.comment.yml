@@ -87,6 +87,17 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const comment = context.workbook.comments.getItemAt(0);
+              comment.content = "PLEASE add headers here.";
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Comment.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -139,7 +150,16 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              context.workbook.comments.getItemByCell("Comments!A2").delete();
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Comment.getLocation
     summary: >-
       Get location of the comment.
@@ -270,7 +290,20 @@ items:
       return:
         type:
           - excel.Excel.Comment
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const comment = context.workbook.comments.getItemByCell("Comments!A1");
+              comment.load(["authorEmail", "authorName", "creationDate"]);
+              await context.sync();
+
+              console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: propertyNamesAndPaths
           description: >-
