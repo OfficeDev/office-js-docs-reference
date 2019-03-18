@@ -181,6 +181,7 @@
       "ms.prod": {
         "docs-ref-autogen/custom-functions-runtime/**": "excel",
         "docs-ref-autogen/excel/**": "excel",
+        "docs-ref-autogen/excel_release/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office-runtime/**": "non-product-specific",
         "docs-ref-autogen/onenote/**": "onenote",
@@ -197,6 +198,7 @@
         "docs-ref-autogen/word/**": "word",
         "docs-ref-autogen/custom-functions-runtime.yml": "excel",
         "docs-ref-autogen/excel.yml": "excel",
+        "docs-ref-autogen/excel_release.yml": "excel",
         "docs-ref-autogen/office-runtime.yml": "non-product-specific",
         "docs-ref-autogen/office.yml": "non-product-specific",
         "docs-ref-autogen/onenote.yml": "onenote",
