@@ -16,11 +16,6 @@ items:
 
       *Supported hosts, by platform*
 
-|Column1  |Column2  |
-|---------|---------|
-|Row1     |         |
-|Row2     |   foo      |
-
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
@@ -44,3 +39,8 @@ items:
     langs:
       - typeScript
     type: field
+
+
+A: [1, 5]
+B: [2, 6]
+C: [3, 7]
