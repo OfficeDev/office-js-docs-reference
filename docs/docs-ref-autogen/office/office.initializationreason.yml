@@ -16,12 +16,6 @@ items:
 
       *Supported hosts, by platform*
 
-
- | Priority apples | Second priority | Third priority |
- | ambrosia | gala | red delicious |
- | pink lady | jazz | macintosh |
- | honeycrisp | granny smith | Fuji |
-
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
