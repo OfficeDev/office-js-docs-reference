@@ -1177,6 +1177,60 @@ Excel.ColorScaleConditionalFormat.criteria:
 
         await context.sync();
     });
+Excel.Comment.content:
+  - |-
+    await Excel.run(async (context) => {
+        const comment = context.workbook.comments.getItemAt(0);
+        comment.content = "PLEASE add headers here.";
+        await context.sync();
+    });
+Excel.Comment.delete:
+  - |-
+    await Excel.run(async (context) => {
+        context.workbook.comments.getItemByCell("Comments!A2").delete();
+        await context.sync();
+    });
+Excel.Comment.load_2:
+  - |-
+    await Excel.run(async (context) => {
+        const comment = context.workbook.comments.getItemByCell("Comments!A1");
+        comment.load(["authorEmail", "authorName", "creationDate"]);
+        await context.sync();
+
+        console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
+        await context.sync();
+    });
+Excel.CommentCollection.add:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Comments");
+        sheet.comments.add("TODO: add data.", "A2");
+        await context.sync();
+    });
+Excel.CommentReply.content:
+  - |-
+    await Excel.run(async (context) => {
+        const comment = context.workbook.comments.getItemAt(0);
+        comment.content = "PLEASE add headers here.";
+        await context.sync();
+    });
+Excel.CommentReply.delete:
+  - |-
+    await Excel.run(async (context) => {
+        var comment = context.workbook.comments.getItemAt(0);
+        comment.load("replies");
+        await context.sync();
+
+        comment.replies.getItemAt(0).delete();
+        await context.sync();
+    });
+Excel.CommentReplyCollection.add:
+  - |-
+    await Excel.run(async (context) => {
+        const comment = context.workbook.comments.getItemByCell("Comments!A1");
+        comment.replies.add("Do I have to?");
+        await context.sync();
+    });
 Excel.ConditionalCellValueRule.formula1:
   - |-
     await Excel.run(async (context) => {
@@ -3649,6 +3703,18 @@ Excel.Shape.fill:
         shape.fill.foregroundColor = "yellow"
         await context.sync();
     });
+Excel.Shape.getAsImage:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Shapes");
+        const shape = sheet.shapes.getItem("Image");
+        const result = shape.getAsImage(Excel.PictureFormat.png);
+        await context.sync();
+
+        const imageString = result.value;
+        // Your add-in would save this string as a .png file.
+        console.log("The image's base64-encoded string: " + imageString);
+    });
 Excel.Shape.group:
   - |-
     await Excel.run(async (context) => {
@@ -3711,18 +3777,6 @@ Excel.Shape.rotation:
         shape.rotation = 45;
         shape.fill.clear();
         await context.sync();
-    });
-Excel.Shape.saveAsPicture:
-  - |-
-    await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Shapes");
-        const shape = sheet.shapes.getItem("Image");
-        const result = shape.getAsImage(Excel.PictureFormat.png);
-        await context.sync();
-
-        const imageString = result.value;
-        // Your add-in would save this string as a .png file.
-        console.log("The image's base64-encoded string: " + imageString);
     });
 Excel.Shape.scaleHeight:
   - |-

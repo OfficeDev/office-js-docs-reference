@@ -46,7 +46,17 @@ items:
       return:
         type:
           - excel.Excel.CommentReply
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const comment = context.workbook.comments.getItemByCell("Comments!A1");
+              comment.replies.add("Do I have to?");
+              await context.sync();
+          });
+          ```
       parameters:
         - id: content
           description: The comment content.

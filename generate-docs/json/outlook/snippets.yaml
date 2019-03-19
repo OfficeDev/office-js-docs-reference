@@ -217,7 +217,7 @@ Office.AppointmentCompose.addItemAttachmentAsync:
     }
 Office.AppointmentCompose.body:
   - >-
-    // This example gets the body of the message as plain text.
+    // This example gets the body of the item as plain text.
 
     Office.context.mailbox.item.body.getAsync(
         "text",
@@ -523,7 +523,7 @@ Office.AppointmentRead.attachments:
     console.log(outputString);
 Office.AppointmentRead.body:
   - >-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
 
     Office.context.mailbox.item.body.getAsync(
         "text",
@@ -1635,7 +1635,7 @@ Office.Bindings.releaseByIdAsync_1:
     }
 Office.Body.getAsync:
   - >-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
 
     Office.context.mailbox.item.body.getAsync(
         "text",
@@ -4584,7 +4584,7 @@ Office.Item.addHandlerAsync_1:
     myHandlerFunction, myCallback);
 Office.Item.body:
   - >-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
 
     Office.context.mailbox.item.body.getAsync(
         "text",
@@ -5058,7 +5058,7 @@ Office.MessageCompose.bcc:
     }
 Office.MessageCompose.body:
   - >-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
 
     Office.context.mailbox.item.body.getAsync(
         "text",
@@ -5253,7 +5253,7 @@ Office.MessageRead.attachments:
     console.log(outputString);
 Office.MessageRead.body:
   - >-
-    // This example gets the body of the message in plain text.
+    // This example gets the body of the item as plain text.
 
     Office.context.mailbox.item.body.getAsync(
         "text",

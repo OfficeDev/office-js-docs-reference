@@ -752,7 +752,7 @@ items:
 
       ```javascript
 
-      // This example gets the body of the message as plain text.
+      // This example gets the body of the item as plain text.
 
       Office.context.mailbox.item.body.getAsync(
           "text",

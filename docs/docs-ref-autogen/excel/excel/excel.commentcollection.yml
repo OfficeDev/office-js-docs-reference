@@ -49,7 +49,17 @@ items:
       return:
         type:
           - excel.Excel.Comment
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Comments");
+              sheet.comments.add("TODO: add data.", "A2");
+              await context.sync();
+          });
+          ```
       parameters:
         - id: content
           description: The comment content.

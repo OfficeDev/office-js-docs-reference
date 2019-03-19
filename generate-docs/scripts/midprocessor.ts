@@ -69,7 +69,7 @@ tryCatch(async () => {
 
     fsx.writeFileSync("../json/excel/snippets.yaml", yaml.safeDump(excelSnippets));
     for (let i = CURRENT_EXCEL_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/excel_1_${i}snippets.yaml`, yaml.safeDump(excelSnippets));
+        fsx.writeFileSync(`../json/excel_1_${i}/snippets.yaml`, yaml.safeDump(excelSnippets));
     }
 
     fsx.writeFileSync("../json/office/snippets.yaml", yaml.safeDump(outlookAndCommonSnippets));
@@ -78,7 +78,7 @@ tryCatch(async () => {
 
     fsx.writeFileSync("../json/outlook/snippets.yaml", yaml.safeDump(outlookAndCommonSnippets));
     for (let i = CURRENT_OUTLOOK_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/outlook_1_${i}snippets.yaml`, yaml.safeDump(outlookAndCommonSnippets));
+        fsx.writeFileSync(`../json/outlook_1_${i}/snippets.yaml`, yaml.safeDump(outlookAndCommonSnippets));
     }
 
     fsx.writeFileSync("../json/powerpoint/snippets.yaml", yaml.safeDump(powerpointSnippets));
@@ -87,7 +87,7 @@ tryCatch(async () => {
 
     fsx.writeFileSync("../json/word/snippets.yaml", yaml.safeDump(wordSnippets));
     for (let i = CURRENT_WORD_RELEASE; i > 0; i--) {
-        fsx.writeFileSync(`../json/word_1_${i}snippets.yaml`, yaml.safeDump(wordSnippets));
+        fsx.writeFileSync(`../json/word_1_${i}/snippets.yaml`, yaml.safeDump(wordSnippets));
     }
 
     console.log("Moving Custom Functions APIs to correct versions of Excel");
