@@ -16,6 +16,11 @@ items:
 
       *Supported hosts, by platform*
 
+|Column1  |Column2  |
+|---------|---------|
+|Row1     |         |
+|Row2     |         |
+
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
