@@ -16,13 +16,11 @@ items:
 
       *Supported hosts, by platform*
 
+ | Priority apples | Second priority | Third priority |
+ | ambrosia | gala | red delicious |
+ | pink lady | jazz | macintosh |
+ | honeycrisp | granny smith | Fuji | 
 
-      | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
-      |---|---|---|---|
-      | **Excel**   | Y | Y | Y |
-      | **Project** | Y |   |   |
-      | **Word**    | Y |   | Y |        
-      
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
