@@ -16,15 +16,13 @@ items:
 
       *Supported hosts, by platform*
 
- ## formatting table in yaml example
-
+ 
 | Priority apples | Second priority | Third priority |
 |-------|--------|---------|
 | ambrosia | gala | red delicious |
 | pink lady | jazz | macintosh |
 | honeycrisp | granny smith | Fuji |
 
-## end
 
       | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
       |---|---|---|---|
