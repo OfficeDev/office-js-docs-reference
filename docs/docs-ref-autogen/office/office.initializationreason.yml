@@ -21,7 +21,7 @@ items:
       |---|---|---|---|
       | **Excel**   | Y | Y | Y |
       | **Project** | Y |   |   |
-      | **Word**    | Y |   | Y | 
+      | **Word**    | Y |   | Y |       
       
     name: Office.InitializationReason
     fullName: Office.InitializationReason
