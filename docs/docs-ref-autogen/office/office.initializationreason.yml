@@ -16,12 +16,21 @@ items:
 
       *Supported hosts, by platform*
 
- 
-       | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
+ ## formatting table in yaml example
+
+| Priority apples | Second priority | Third priority |
+|-------|--------|---------|
+| ambrosia | gala | red delicious |
+| pink lady | jazz | macintosh |
+| honeycrisp | granny smith | Fuji |
+
+## end
+
+      | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
       |---|---|---|---|
       | **Excel**   | Y | Y | Y |
       | **Project** | Y |   |   |
-      | **Word**    | Y |   | Y |       
+      | **Word**    | Y |   | Y |        
       
     name: Office.InitializationReason
     fullName: Office.InitializationReason
