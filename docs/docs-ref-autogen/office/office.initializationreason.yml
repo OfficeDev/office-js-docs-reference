@@ -19,7 +19,7 @@ items:
 |Column1  |Column2  |
 |---------|---------|
 |Row1     |         |
-|Row2     |         |
+|Row2     |   foo      |
 
     name: Office.InitializationReason
     fullName: Office.InitializationReason
