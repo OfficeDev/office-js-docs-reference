@@ -13,9 +13,8 @@ items:
       For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
-
       *Supported hosts, by platform*
-
+  
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
@@ -25,6 +24,7 @@ items:
     children:
       - office.Office.InitializationReason.DocumentOpened
       - office.Office.InitializationReason.Inserted
+      - office.Office.InitializationReason.Update
   - uid: office.Office.InitializationReason.DocumentOpened
     summary: The add-in is already part of the document that was opened.
     name: DocumentOpened
@@ -39,8 +39,11 @@ items:
     langs:
       - typeScript
     type: field
+  - uid: office.Office.InitializationReason.Update
+    summary: The update into the document.
+    name: Update
+    fullName: Update
+    langs:
+      - typeScript
+    type: field
 
-
-A: [1, 5]
-B: [2, 6]
-C: [3, 7]
