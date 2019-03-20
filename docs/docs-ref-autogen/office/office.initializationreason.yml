@@ -2,34 +2,17 @@
 items:
   - uid: office.Office.InitializationReason
     summary: Specifies whether the add-in was just inserted or was already contained in the document.
-remarks: |
-
- **Support details**
- 
-
- A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
-
- application. An empty cell indicates that the Office host application doesn't support this enumeration.
- 
-
- For more information about Office host application and server requirements, see [Requirements for running Office
-
- Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
- 
-
- *Supported hosts, by platform*
- 
-
- | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
-
- |---|---|---|---|
-
- | **Excel** | Y | Y | Y |
-
- | **Project** | Y | | |
-
- | **Word** | Y | | Y |
-
+    remarks: |
+      **Support details**
+      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
+      application. An empty cell indicates that the Office host application doesn't support this enumeration.
+      For more information about Office host application and server requirements, see [Requirements for running Office
+      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
+      *Supported hosts, by platform* 
+      |Column1  |Column2  |
+      |---------|---------|
+      |Row1     |         |
+      |Row2     |         |   
     name: Office.InitializationReason
     fullName: Office.InitializationReason
     langs:
