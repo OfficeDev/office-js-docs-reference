@@ -1,19 +1,50 @@
 --- 
+class: 
+  - statistics-table
+  - nsa-surveillance-details
+cols: 
+  - 
+    name: authority
+  - 
+    name: num_orders
+  - 
+    name: num_targets
+data: 
+  - 
+    authority: "Legal Authority"
+    class: table-header
+    num_orders: "Annual Number of Orders"
+    num_targets: "Estimated Number of Targets Affected"
+  - 
+    authority: |
+        __FISA Orders__  
+        Based on probable cause
+        (Title I and III of FISA, Sections 703 and 704 of FISA)
+    num_orders: "1,167 orders"
+    num_targets: "1,144"
+  - 
+    authority: |
+        __Section 702__  
+        of FISA
+    num_orders: "1 order"
+    num_targets: "89,138"
+  - 
+    authority: |
+        __FISA Pen Register/Trap and Trace__  
+        (Title IV of FISA)
+    num_orders: "131 orders"
+    num_targets: "319"
 items: 
   - 
     children: 
       - office.Office.InitializationReason.DocumentOpened
       - office.Office.InitializationReason.Inserted
-      - office.Office.InitializationReason.Update
     fullName: Office.InitializationReason
     langs: 
       - typeScript
     name: Office.InitializationReason
     package: office
-    remarks: "**Support details**\n\n\
-        A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.\n\n\
-        For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->. \n\n\
-        *Supported hosts, by platform*  | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad | |---|---|---|---| | **Excel**   | Y | Y | Y | | **Project** | Y |   |   | | **Word**    | Y |   | Y |  " 
+    remarks: "**Support details** A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration. For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->."
     summary: "Specifies whether the add-in was just inserted or was already contained in the document."
     type: enum
     uid: office.Office.InitializationReason
@@ -33,11 +64,3 @@ items:
     summary: "The add-in was just inserted into the document."
     type: field
     uid: office.Office.InitializationReason.Inserted
-  - 
-    fullName: Update
-    langs: 
-      - typeScript
-    name: Update
-    summary: "The update into the document."
-    type: field
-    uid: office.Office.InitializationReason.Update
