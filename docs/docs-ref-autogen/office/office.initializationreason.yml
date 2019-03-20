@@ -12,9 +12,7 @@ items:
 
       For more information about Office host application and server requirements, see [Requirements for running Office
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-      *peanut*
-
+      
       *Supported hosts, by platform*
 
       | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad |
