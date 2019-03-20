@@ -1,35 +1,4 @@
 ### YamlMime:UniversalReference
-items: 
-  - 
-    children: 
-      - office.Office.InitializationReason.DocumentOpened
-      - office.Office.InitializationReason.Inserted
-    fullName: Office.InitializationReason
-    langs: 
-      - typeScript
-    name: Office.InitializationReason
-    package: office
-    remarks: "**Support details** A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration. For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->."
-    summary: "Specifies whether the add-in was just inserted or was already contained in the document."
-    type: enum
-    uid: office.Office.InitializationReason
-  - 
-    fullName: DocumentOpened
-    langs: 
-      - typeScript
-    name: DocumentOpened
-    summary: "The add-in is already part of the document that was opened."
-    type: field
-    uid: office.Office.InitializationReason.DocumentOpened
-  - 
-    fullName: Inserted
-    langs: 
-      - typeScript
-    name: Inserted
-    summary: "The add-in was just inserted into the document."
-    type: field
-    uid: office.Office.InitializationReason.Inserted
-
 class: 
   - statistics-table
 cols: 
