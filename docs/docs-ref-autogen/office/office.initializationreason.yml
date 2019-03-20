@@ -1,58 +1,43 @@
-### YamlMime:UniversalReference
-items:
-  - uid: office.Office.InitializationReason
-    summary: Specifies whether the add-in was just inserted or was already contained in the document.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this enumeration.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> OneNote
-      </strong></td><td> </td><td> Y </td><td> </td><td> Y </td><td> </td></tr> <tr><td><strong> Outlook
-      </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
-      </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> </table>
-    
-
-    name: Office.InitializationReason
-    fullName: Office.InitializationReason
-    langs:
-      - typeScript
-    type: enum
-    package: office
-    children:
+--- 
+items: 
+  - 
+    children: 
       - office.Office.InitializationReason.DocumentOpened
       - office.Office.InitializationReason.Inserted
       - office.Office.InitializationReason.Update
-  - uid: office.Office.InitializationReason.DocumentOpened
-    summary: The add-in is already part of the document that was opened.
-    name: DocumentOpened
+    fullName: Office.InitializationReason
+    langs: 
+      - typeScript
+    name: Office.InitializationReason
+    package: office
+    remarks: "**Support details**\n\n\
+        A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.\n\n\
+        For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->. \n\n\
+        *Supported hosts, by platform* | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad | |---|---|---|---| | **Excel**   | Y | Y | Y | | **Project** | Y |   |   | | **Word**    | Y |   | Y |  "
+    summary: "Specifies whether the add-in was just inserted or was already contained in the document."
+    type: enum
+    uid: office.Office.InitializationReason
+  - 
     fullName: DocumentOpened
-    langs:
+    langs: 
       - typeScript
+    name: DocumentOpened
+    summary: "The add-in is already part of the document that was opened."
     type: field
-  - uid: office.Office.InitializationReason.Inserted
-    summary: The add-in was just inserted into the document.
-    name: Inserted
+    uid: office.Office.InitializationReason.DocumentOpened
+  - 
     fullName: Inserted
-    langs:
+    langs: 
       - typeScript
+    name: Inserted
+    summary: "The add-in was just inserted into the document."
     type: field
-  - uid: office.Office.InitializationReason.Update
-    summary: The update into the document.
-    name: Update
+    uid: office.Office.InitializationReason.Inserted
+  - 
     fullName: Update
-    langs:
+    langs: 
       - typeScript
+    name: Update
+    summary: "The update into the document."
     type: field
-
+    uid: office.Office.InitializationReason.Update
