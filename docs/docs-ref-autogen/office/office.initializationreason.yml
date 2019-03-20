@@ -13,7 +13,7 @@ items:
     remarks: "**Support details**\n\n\
         A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. An empty cell indicates that the Office host application doesn't support this enumeration.\n\n\
         For more information about Office host application and server requirements, see [Requirements for running Office Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->. \n\n\
-        *Supported hosts, by platform* | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad | |---|---|---|---| | **Excel**   | Y | Y | Y | | **Project** | Y |   |   | | **Word**    | Y |   | Y |  "
+        *Supported hosts, by platform*  | Host | Office for Windows desktop | Office Online (in browser) | Office for iPad | |---|---|---|---| | **Excel**   | Y | Y | Y | | **Project** | Y |   |   | | **Word**    | Y |   | Y |  " 
     summary: "Specifies whether the add-in was just inserted or was already contained in the document."
     type: enum
     uid: office.Office.InitializationReason
