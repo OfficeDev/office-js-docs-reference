@@ -268,6 +268,10 @@ items:
                 uid: office.Office.AsyncContextOptions
               - name: AsyncResult
                 uid: office.Office.AsyncResult
+              - name: Auth
+                uid: office.Office.Auth
+              - name: AuthOptions
+                uid: office.Office.AuthOptions
               - name: Binding
                 uid: office.Office.Binding
               - name: BindingDataChangedEventArgs

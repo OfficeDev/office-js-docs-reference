@@ -87,7 +87,7 @@ tryCatch(async () => {
     console.log("create file: office.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-office/office.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Office namespace", "End Office namespace") +
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Office namespace", "End Office namespace") +
         '\n' +
         '\n' +
         dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API")

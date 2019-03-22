@@ -16,6 +16,8 @@ items:
       - office.Office.AsyncContextOptions
       - office.Office.AsyncResult
       - office.Office.AsyncResultStatus
+      - office.Office.Auth
+      - office.Office.AuthOptions
       - office.Office.Binding
       - office.Office.BindingDataChangedEventArgs
       - office.Office.Bindings
@@ -368,6 +370,10 @@ references:
     name: Office.AsyncResult
   - uid: office.Office.AsyncResultStatus
     name: Office.AsyncResultStatus
+  - uid: office.Office.Auth
+    name: Office.Auth
+  - uid: office.Office.AuthOptions
+    name: Office.AuthOptions
   - uid: office.Office.Binding
     name: Office.Binding
   - uid: office.Office.BindingDataChangedEventArgs
