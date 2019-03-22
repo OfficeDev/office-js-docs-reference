@@ -73,7 +73,7 @@ tryCatch(async () => {
     }
 
     const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
-    if (urlToCopyOfficeJsFrom.length > 0) {
+    if (urlToCopyPreviewOfficeJsFrom.length > 0) {
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));
     }
 
