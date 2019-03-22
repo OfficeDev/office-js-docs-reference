@@ -4150,7 +4150,9 @@ items:
             "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work
             around this when you want to write `data` that contains formulas to a selected table, try specifying the
             data as an array of arrays (instead of a TableData object), and specify the coercionType as
-            Microsoft.Office.Matrix or "matrix".
+            Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature
+            only when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2)
+            there are already at least two different formulas in the column.
           type:
             - 'string | TableData | any[][]'
         - id: options
@@ -4297,7 +4299,9 @@ items:
             "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work
             around this when you want to write `data` that contains formulas to a selected table, try specifying the
             data as an array of arrays (instead of a TableData object), and specify the coercionType as
-            Microsoft.Office.Matrix or "matrix".
+            Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature
+            only when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2)
+            there are already at least two different formulas in the column.
           type:
             - 'string | TableData | any[][]'
         - id: callback
