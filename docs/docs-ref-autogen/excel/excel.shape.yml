@@ -768,6 +768,19 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.getItem("Octagon")
+              shape.lockAspectRatio = true;
+              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Shape.name
     summary: >-
       Represents the name of the shape.
@@ -921,8 +934,8 @@ items:
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Shapes");
               const shape = sheet.shapes.getItem("Octagon")
+              shape.lockAspectRatio = true;
               shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-              shape.scaleWidth(1.25, Excel.ShapeScaleType.currentSize);
               await context.sync();
           });
           ```
@@ -1003,19 +1016,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-              shape.scaleWidth(1.25, Excel.ShapeScaleType.currentSize);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the width of the shape after you resize it and the current or original width.

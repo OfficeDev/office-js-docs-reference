@@ -31,7 +31,7 @@ tryCatch(async () => {
         choices: [
             { name: "DefinitelyTyped (preview)", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts" },
             { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" }
+            { name: "Local file [generate-docs\\script-inputs\\office_preview.d.ts]", value: "" }
         ]
     });
 
@@ -73,7 +73,7 @@ tryCatch(async () => {
     }
 
     const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
-    if (urlToCopyOfficeJsFrom.length > 0) {
+    if (urlToCopyPreviewOfficeJsFrom.length > 0) {
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));
     }
 
@@ -87,7 +87,7 @@ tryCatch(async () => {
     console.log("create file: office.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-office/office.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Office namespace", "End Office namespace") +
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Office namespace", "End Office namespace") +
         '\n' +
         '\n' +
         dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API")

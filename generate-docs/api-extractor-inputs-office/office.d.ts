@@ -650,6 +650,12 @@ export declare namespace Office {
      */     
     export interface Context {
         /**
+         * Provides information and access to the signed-in user.
+         * 
+         * @beta
+         */
+        auth: Auth;
+        /**
         * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
         * 
         * @remarks
@@ -951,11 +957,11 @@ export declare namespace Office {
              * 
              * *Supported hosts, by platform*
              *  <table>
-             *   <tr><th>                             </th><th> Office for Windows desktop                                       </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-             *   <tr><td><strong> Excel      </strong></td><td> Y                                                                </td><td> Y                          </td><td> Y               </td></tr>
-             *   <tr><td><strong> Outlook    </strong></td><td> Y (Mailbox 1.3: without options<br>Mailbox Preview: with options)</td><td>                            </td><td>                 </td></tr>
-             *   <tr><td><strong> PowerPoint </strong></td><td> Y                                                                </td><td> Y                          </td><td> Y               </td></tr>
-             *   <tr><td><strong> Word       </strong></td><td> Y                                                                </td><td> Y                          </td><td> Y               </td></tr>
+             *   <tr><th>                             </th><th> Office for Windows desktop                                                                                  </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
+             *   <tr><td><strong> Excel      </strong></td><td> Y                                                                                                           </td><td> Y                          </td><td> Y               </td></tr>
+             *   <tr><td><strong> Outlook    </strong></td><td> Y (Since Mailbox 1.3: without `options` parameter;<br>Mailbox Preview: adds support for `options` parameter)</td><td>                            </td><td>                 </td></tr>
+             *   <tr><td><strong> PowerPoint </strong></td><td> Y                                                                                                           </td><td> Y                          </td><td> Y               </td></tr>
+             *   <tr><td><strong> Word       </strong></td><td> Y                                                                                                           </td><td> Y                          </td><td> Y               </td></tr>
              *  </table>
              * 
              * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -1247,6 +1253,84 @@ export declare namespace Office {
          * `false` - The dialog will not be shown and the developer must handle pop-ups (by providing a user interface artifact to trigger the navigation).
          */
         promptBeforeOpen?: boolean;
+        /**
+         * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
+         */
+        asyncContext?: any
+    }
+
+    /**
+     * The Office Auth namespace, Office.context.auth, provides a method that allows the Office host to obtain an access token to the add-in's web application. 
+     * Indirectly, this also enables the add-in to access the signed-in user's Microsoft Graph data without requiring the user to sign in a second time.
+     * 
+     * @beta
+     */
+    export interface Auth {
+        /**
+         * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables  add-ins to identify users. 
+         * Server side code can use this token to access Microsoft Graph for the add-in's web application by using the 
+         * {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
+         * 
+         * Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+         *
+         * @remarks
+         * <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
+         *
+         * <tr><td>Requirement sets</td><td>{@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | IdentityAPI}</td></tr></table>
+         *
+         * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational 
+         * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
+         *
+         * @param options - Optional. Accepts an AuthOptions object to define sign-on behaviors.
+         * @param callback - Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the "on behalf of" flow to get access to Microsoft Graph.
+         *                   If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+         * 
+         * @beta
+         */
+        getAccessTokenAsync(options?: AuthOptions, callback?: (result: AsyncResult<string>) => void): void;
+        /**
+         * Calls the Azure Active Directory V 2.0 endpoint to get an access token to your add-in's web application. Enables  add-ins to identify users. 
+         * Server side code can use this token to access Microsoft Graph for the add-in's web application by using the 
+         * {@link https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-on-behalf-of | "on behalf of" OAuth flow}.
+         * 
+         * Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
+         *
+         * @remarks
+         * <table><tr><td>Hosts</td><td>Excel, OneNote, Outlook, PowerPoint, Word</td></tr>
+         *
+         * <tr><td>Requirement sets</td><td>{@link https://docs.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | IdentityAPI}</td></tr></table>
+         *
+         * This API requires a single sign-on configuration that bridges the add-in to an Azure application. Office users sign-in with Organizational 
+         * Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user account types to access resources in the Microsoft Graph.
+         *
+         * @param callback - Optional. Accepts a callback method that can use parse the token for the user's ID or use the token in the "on behalf of" flow to get access to Microsoft Graph.
+         *                   If AsyncResult.status is "succeeded", then AsyncResult.value is the raw AAD v. 2.0-formatted access token.
+         * 
+         * @beta
+         */
+        getAccessTokenAsync(callback?: (result: AsyncResult<string>) => void): void;
+    }
+    /**
+     * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the getAccessTokenAsync method.
+     */
+    export interface AuthOptions {
+        /**
+         * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has
+         * been revoked.
+         */
+        forceConsent?: boolean,
+        /**
+         * Prompts the user to add their Office account (or to switch to it, if it is already added).
+         */
+        forceAddAccount?: boolean,
+        /**
+         * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor
+         * authentication. The string value identifies the type of additional factor that is required. In most cases, you won't know at development
+         * time whether the user's tenant requires an additional factor or what the string should be. So this option would be used in a "second try"
+         * call of getAccessTokenAsync after Microsoft Graph has sent an error requesting the additional factor and containing the string that should
+         * be used with the authChallenge option.
+         */
+        authChallenge?: string
         /**
          * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
          */
@@ -4709,7 +4793,9 @@ export declare namespace Office {
          * In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to 
          * the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to 
          * write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and 
-         * specify the coercionType as Microsoft.Office.Matrix or "matrix".
+         * specify the coercionType as Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature only 
+         * when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2) there are already at least two 
+         * different formulas in the column.
          * 
          * @param options - Provides options for how to insert data to the selection.
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -4893,7 +4979,9 @@ export declare namespace Office {
          * In Excel, if you specify formulas in the TableData object you pass for the data parameter, you might not get the results you expect due to 
          * the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to 
          * write `data` that contains formulas to a selected table, try specifying the data as an array of arrays (instead of a TableData object), and 
-         * specify the coercionType as Microsoft.Office.Matrix or "matrix".
+         * specify the coercionType as Microsoft.Office.Matrix or "matrix". However, this technique will block the "calculated columns" feature only 
+         * when one of the following conditions is met: (1) you are writing to all the cells of the column, or (2) there are already at least two 
+         * different formulas in the column.
          * 
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
          *                  The AsyncResult.value property always returns undefined because there is no object or data to retrieve.

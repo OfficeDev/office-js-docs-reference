@@ -78,6 +78,12 @@ items:
       string for mixed highlight colors, or null for no highlight color.
 
 
+      **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow",
+      "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
+      "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the
+      closest color when applied to the font.
+
+
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: highlightColor
     fullName: highlightColor
