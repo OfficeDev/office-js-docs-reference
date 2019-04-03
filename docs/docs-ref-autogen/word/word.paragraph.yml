@@ -109,11 +109,10 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              // Centers last paragraph alignment
-              context.document.body.paragraphs
-                  .getLast().alignment = "Centered";
+            // Centers last paragraph alignment.
+            context.document.body.paragraphs.getLast().alignment = "Centered";
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.attachToList
@@ -641,18 +640,18 @@ items:
 
           ```typescript
           Word.run(async (context) => {
-              context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
+            context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
 
-              await context.sync();
-              console.log("success");
+            await context.sync();
+            console.log("success");
           });
           ```
           ```typescript
           await Word.run(async (context) => {
-              context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
+            context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
 
-              await context.sync();
-              console.log("success");
+            await context.sync();
+            console.log("success");
           });
           ```
       parameters:
@@ -1324,13 +1323,12 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              // Here we insert to replace text
-              let range = context.document.body.paragraphs
-                  .getLast().insertText("Just replaced the last paragraph!", "Replace");
-              range.font.highlightColor = "black";
-              range.font.color = "white";
+            // Replace the last paragraph.
+            let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+            range.font.highlightColor = "black";
+            range.font.color = "white";
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:
@@ -1420,11 +1418,10 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              // Indents the first paragraph
-              context.document.body.paragraphs.
-                  getFirst().leftIndent = 75; //units = points
+            // Indents the first paragraph.
+            context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
-              return context.sync();
+            return context.sync();
           });
           ```
   - uid: word.Word.Paragraph.lineSpacing
@@ -1450,11 +1447,10 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              // Adjusts line spacing 
-              context.document.body.paragraphs
-                  .getFirst().lineSpacing = 20;
+            // Adjusts line spacing.
+            context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.lineUnitAfter
@@ -1868,18 +1864,18 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              // If select is called, with no parameters it selects the object.
-              context.document.body.paragraphs.getLast().select();
+            // If select is called with no parameters, it selects the object.
+            context.document.body.paragraphs.getLast().select();
 
-              await context.sync();
+            await context.sync();
           });
           ```
           ```typescript
           await Word.run(async (context) => {
-              //Select can be at the start or end of a range, this by definition moves the insertion point without selecting the range. 
-              context.document.body.paragraphs.getLast().select("End");
+            // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+            context.document.body.paragraphs.getLast().select("End");
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:
@@ -2006,11 +2002,10 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              //Adjust space between paragraphs
-              context.document.body.paragraphs
-                  .getFirst().spaceAfter = 20;
+            // Adjust space between paragraphs.
+            context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.spaceBefore
@@ -2049,22 +2044,21 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              let paragraph = context.document.body.paragraphs.getFirst();
-              let words = paragraph.split(
-                  [" "], true /* trimDelimiters*/, true /* trimSpaces */);
-              words.load("text");
+            let paragraph = context.document.body.paragraphs.getFirst();
+            let words = paragraph.split([" "], true /* trimDelimiters*/, true /* trimSpaces */);
+            words.load("text");
+
+            await context.sync();
+
+            for (let i = 0; i < words.items.length; i++) {
+              if (i >= 1) {
+                words.items[i - 1].font.highlightColor = "#FFFFFF";
+              }
+              words.items[i].font.highlightColor = "#FFFF00";
 
               await context.sync();
-
-              for (let i = 0; i < words.items.length; i++) {
-                  if (i >= 1) {
-                      words.items[i - 1].font.highlightColor = "#FFFFFF";
-                  }
-                  words.items[i].font.highlightColor = "#FFFF00";
-
-                  await context.sync();
-                  await pause(200);
-              }
+              await pause(200);
+            }
           });
           ```
       parameters:
@@ -2105,26 +2099,26 @@ items:
           #### Examples
 
           ```typescript
-          //This example starts a new list stating with the second paragraph.
+          // This example starts a new list stating with the second paragraph.
           await Word.run(async (context) => {
-              let paragraphs = context.document.body.paragraphs;
-              paragraphs.load("$none"); //We need no properties.
+            let paragraphs = context.document.body.paragraphs;
+            paragraphs.load("$none"); // No properties needed.
 
-              await context.sync();
+            await context.sync();
 
-              var list = paragraphs.items[1].startNewList(); //Indicates new list to be started in the second paragraph.
-              list.load("$none"); //We need no properties.
+            var list = paragraphs.items[1].startNewList(); // Indicates new list to be started in the second paragraph.
+            list.load("$none"); // No properties needed.
 
-              await context.sync();
+            await context.sync();
 
-              //To add new items to the list use start/end on the insert location parameter.
-              list.insertParagraph('New list item on top of the list', 'Start');
-              let paragraph = list.insertParagraph('New list item at the end of the list (4th level)', 'End');
-              paragraph.listItem.level = 4; //Sets up list level for the lsit item.
-              //To add paragraphs outside the list use before/after:
-              list.insertParagraph('New paragraph goes after (not part of the list)', 'After');
+            // To add new items to the list use start/end on the insert location parameter.
+            list.insertParagraph("New list item on top of the list", "Start");
+            let paragraph = list.insertParagraph("New list item at the end of the list (4th level)", "End");
+            paragraph.listItem.level = 4; // Sets up list level for the lsit item.
+            // To add paragraphs outside the list use before/after:
+            list.insertParagraph("New paragraph goes after (not part of the list)", "After");
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.style
@@ -2261,12 +2255,12 @@ items:
 
           ```typescript
           await Word.run(async (context) => {
-              // The collection of paragraphs of the current selection returns the full paragraphs contanied on it. 
-              let paragraph = context.document.getSelection().paragraphs.getFirst();
-              paragraph.load("text");
+            // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+            let paragraph = context.document.getSelection().paragraphs.getFirst();
+            paragraph.load("text");
 
-              await context.sync();
-              console.log(paragraph.text);
+            await context.sync();
+            console.log(paragraph.text);
           });
           ```
   - uid: word.Word.Paragraph.toJSON

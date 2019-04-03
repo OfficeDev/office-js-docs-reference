@@ -25,10 +25,12 @@ items:
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasLocal
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasR1C1
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.hasSpill
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.height
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.hidden
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.hyperlink
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireColumn
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireRow
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.left
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.linkedDataTypeState
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormat
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormatLocal
@@ -37,8 +39,10 @@ items:
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.rowIndex
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.style
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.text
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.top
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.values
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.valueTypes
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.width
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.worksheet
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.$all
     isPreview: true
@@ -268,6 +272,25 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.height
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to
+      bottom edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.hidden
     summary: |-
       For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
@@ -329,6 +352,25 @@ items:
     type: property
     syntax:
       content: 'isEntireRow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.left
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the worksheet to
+      left edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
       return:
         type:
           - boolean
@@ -475,6 +517,25 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.top
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the worksheet to
+      top edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.values
     summary: >-
       For EACH ITEM in the collection: Represents the raw values of the specified range. The data returned could be of
@@ -508,6 +569,25 @@ items:
     type: property
     syntax:
       content: 'valueTypes?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.width
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the range to
+      right edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
       return:
         type:
           - boolean

@@ -50,7 +50,7 @@ items:
           - 'Excel.Interfaces.DataPivotHierarchyData[]'
   - uid: excel.Excel.Interfaces.PivotTableData.enableDataValueEditing
     summary: >-
-      True if the PivotTable should use custom lists when sorting.
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -143,7 +143,7 @@ items:
           - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
   - uid: excel.Excel.Interfaces.PivotTableData.useCustomSortLists
     summary: >-
-      True if the PivotTable should use custom lists when sorting.
+      Specifies whether the PivotTable uses custom lists when sorting.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
