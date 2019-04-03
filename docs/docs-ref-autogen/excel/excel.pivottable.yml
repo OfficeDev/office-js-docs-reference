@@ -142,7 +142,7 @@ items:
           ```
   - uid: excel.Excel.PivotTable.enableDataValueEditing
     summary: >-
-      True if the PivotTable should use custom lists when sorting.
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -455,7 +455,7 @@ items:
         description: ''
   - uid: excel.Excel.PivotTable.useCustomSortLists
     summary: >-
-      True if the PivotTable should use custom lists when sorting.
+      Specifies whether the PivotTable uses custom lists when sorting.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

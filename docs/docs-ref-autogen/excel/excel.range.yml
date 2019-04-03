@@ -77,12 +77,14 @@ items:
       - excel.Excel.Range.getUsedRangeOrNullObject
       - excel.Excel.Range.getVisibleView
       - excel.Excel.Range.hasSpill
+      - excel.Excel.Range.height
       - excel.Excel.Range.hidden
       - excel.Excel.Range.hyperlink
       - excel.Excel.Range.insert
       - excel.Excel.Range.insert_1
       - excel.Excel.Range.isEntireColumn
       - excel.Excel.Range.isEntireRow
+      - excel.Excel.Range.left
       - excel.Excel.Range.linkedDataTypeState
       - excel.Excel.Range.load
       - excel.Excel.Range.load_1
@@ -107,11 +109,13 @@ items:
       - excel.Excel.Range.style
       - excel.Excel.Range.text
       - excel.Excel.Range.toJSON
+      - excel.Excel.Range.top
       - excel.Excel.Range.track
       - excel.Excel.Range.unmerge
       - excel.Excel.Range.untrack
       - excel.Excel.Range.values
       - excel.Excel.Range.valueTypes
+      - excel.Excel.Range.width
       - excel.Excel.Range.worksheet
   - uid: excel.Excel.Range.address
     summary: >-
@@ -2063,6 +2067,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Range.height
+    summary: >-
+      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.hidden
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
@@ -2217,6 +2239,25 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Range.left
+    summary: >-
+      Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
+      Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.linkedDataTypeState
     summary: >-
       Represents the data type state of each cell. Read-only.
@@ -2724,9 +2765,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setCellProperties(cellPropertiesData: SettableCellProperties[][] |
-        OfficeExtension.ClientResult<SettableCellProperties[][]>): void;
+      content: 'setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;'
       return:
         type:
           - void
@@ -2735,7 +2774,7 @@ items:
         - id: cellPropertiesData
           description: ''
           type:
-            - 'SettableCellProperties[][] | OfficeExtension.ClientResult<SettableCellProperties[][]>'
+            - 'SettableCellProperties[][]'
   - uid: excel.Excel.Range.setColumnProperties
     summary: >-
       Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill,
@@ -2751,9 +2790,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setColumnProperties(columnPropertiesData: SettableColumnProperties[] |
-        OfficeExtension.ClientResult<SettableColumnProperties[]>): void;
+      content: 'setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;'
       return:
         type:
           - void
@@ -2762,7 +2799,7 @@ items:
         - id: columnPropertiesData
           description: ''
           type:
-            - 'SettableColumnProperties[] | OfficeExtension.ClientResult<SettableColumnProperties[]>'
+            - 'SettableColumnProperties[]'
   - uid: excel.Excel.Range.setDirty
     summary: >-
       Set a range to be recalculated when the next recalculation occurs.
@@ -2797,9 +2834,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setRowProperties(rowPropertiesData: SettableRowProperties[] |
-        OfficeExtension.ClientResult<SettableRowProperties[]>): void;
+      content: 'setRowProperties(rowPropertiesData: SettableRowProperties[]): void;'
       return:
         type:
           - void
@@ -2808,7 +2843,7 @@ items:
         - id: rowPropertiesData
           description: ''
           type:
-            - 'SettableRowProperties[] | OfficeExtension.ClientResult<SettableRowProperties[]>'
+            - 'SettableRowProperties[]'
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.
@@ -2910,6 +2945,24 @@ items:
         type:
           - excel.Excel.Interfaces.RangeData
         description: ''
+  - uid: excel.Excel.Range.top
+    summary: >-
+      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.track
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
@@ -3034,6 +3087,24 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
+  - uid: excel.Excel.Range.width
+    summary: >-
+      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.worksheet
     summary: |-
       The worksheet containing the current range. Read-only.
