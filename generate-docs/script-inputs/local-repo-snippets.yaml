@@ -2328,6 +2328,19 @@ Excel.Worksheet.onSelectionChanged:
         });
         return context.sync();
     });
+Excel.WorksheetChangedEventArgs.details:
+  - |-
+    Excel.run(function (context) {
+        var details = eventArgs.details;
+        var address = eventArgs.address;
+
+        console.log(
+            `Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}), now is ${
+                details.valueAfter
+            }(${details.valueTypeAfter})`
+        );
+        return context.sync();
+    });
 Excel.WorksheetCollection.add:
   - |-
     Excel.run(function (ctx) { 

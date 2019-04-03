@@ -113,6 +113,23 @@ items:
       return:
         type:
           - excel.Excel.ChangedEventDetail
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (context) {
+              var details = eventArgs.details;
+              var address = eventArgs.address;
+
+              console.log(
+                  `Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}), now is ${
+                      details.valueAfter
+                  }(${details.valueTypeAfter})`
+              );
+              return context.sync();
+          });
+          ```
   - uid: excel.Excel.WorksheetChangedEventArgs.source
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
