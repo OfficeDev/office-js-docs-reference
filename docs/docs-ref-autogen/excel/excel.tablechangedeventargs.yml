@@ -114,6 +114,21 @@ items:
       return:
         type:
           - excel.Excel.ChangedEventDetail
+        description: |-
+
+          #### Examples
+
+          ```typescript
+          async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
+              await Excel.run(async (context) => {
+                  const details = eventArgs.details;
+                  const address = eventArgs.address;
+
+                  console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+                    + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+              });
+          }
+          ```
   - uid: excel.Excel.TableChangedEventArgs.source
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
