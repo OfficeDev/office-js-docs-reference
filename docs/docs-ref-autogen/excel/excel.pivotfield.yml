@@ -238,19 +238,19 @@ items:
 
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: sortByLabels(sortby)
-    fullName: sortByLabels(sortby)
+    name: sortByLabels(sortBy)
+    fullName: sortByLabels(sortBy)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'sortByLabels(sortby: SortBy): void;'
+      content: 'sortByLabels(sortBy: SortBy): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: sortby
+        - id: sortBy
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
             - SortBy
@@ -263,26 +263,26 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
-    fullName: 'sortByValues(sortby, valuesHierarchy, pivotItemScope)'
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        sortByValues(sortby: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
+        sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem |
         string>): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: sortby
+        - id: sortBy
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
             - excel.Excel.SortBy
         - id: valuesHierarchy
-          description: Specifies the values to be used for sorting.
+          description: Specifies the values hierarchy on the data axis to be used for sorting.
           type:
             - excel.Excel.DataPivotHierarchy
         - id: pivotItemScope
@@ -302,26 +302,26 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'sortByValues(sortbyString, valuesHierarchy, pivotItemScope)'
-    fullName: 'sortByValues(sortbyString, valuesHierarchy, pivotItemScope)'
+    name: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        sortByValues(sortbyString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
+        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
         pivotItemScope?: Array<PivotItem | string>): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: sortbyString
+        - id: sortByString
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
             - '"Ascending" | "Descending"'
         - id: valuesHierarchy
-          description: Specifies the values to be used for sorting.
+          description: Specifies the values hierarchy on the data axis to be used for sorting.
           type:
             - excel.Excel.DataPivotHierarchy
         - id: pivotItemScope

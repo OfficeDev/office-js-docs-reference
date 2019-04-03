@@ -3036,6 +3036,14 @@ export declare namespace Excel {
         readonly hasSpill: boolean;
         /**
          *
+         * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly height: number;
+        /**
+         *
          * Represents if all cells of the current range are hidden. Read-only.
          *
          * [Api set: ExcelApi 1.2]
@@ -3062,6 +3070,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         readonly isEntireRow: boolean;
+        /**
+         *
+         * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly left: number;
         /**
          *
          * Represents the data type state of each cell. Read-only.
@@ -3125,6 +3141,14 @@ export declare namespace Excel {
         readonly text: string[][];
         /**
          *
+         * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly top: number;
+        /**
+         *
          * Represents the type of data of each cell. Read-only.
          *
          * [Api set: ExcelApi 1.1]
@@ -3138,6 +3162,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.1]
          */
         values: any[][];
+        /**
+         *
+         * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly width: number;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          *
          * @remarks
@@ -3674,7 +3706,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        setCellProperties(cellPropertiesData: SettableCellProperties[][] | OfficeExtension.ClientResult<SettableCellProperties[][]>): void;
+        setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;
         /**
          *
          * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
@@ -3682,7 +3714,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        setColumnProperties(columnPropertiesData: SettableColumnProperties[] | OfficeExtension.ClientResult<SettableColumnProperties[]>): void;
+        setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;
         /**
          *
          * Set a range to be recalculated when the next recalculation occurs.
@@ -3698,7 +3730,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          */
-        setRowProperties(rowPropertiesData: SettableRowProperties[] | OfficeExtension.ClientResult<SettableRowProperties[]>): void;
+        setRowProperties(rowPropertiesData: SettableRowProperties[]): void;
         /**
          *
          * Displays the card for an active cell if it has rich value content.
@@ -13017,7 +13049,7 @@ export declare namespace Excel {
         readonly worksheet: Excel.Worksheet;
         /**
          *
-         * True if the PivotTable should use custom lists when sorting.
+         * Specifies whether the PivotTable allows values in the data body to be edited by the user.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -13039,7 +13071,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * True if the PivotTable should use custom lists when sorting.
+         * Specifies whether the PivotTable uses custom lists when sorting.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -13116,7 +13148,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+         * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -13124,7 +13156,7 @@ export declare namespace Excel {
         autoFormat: boolean;
         /**
          *
-         * True if the field list should be shown or hidden from the UI.
+         * Specifies whether the field list can be shown in the UI.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -13139,7 +13171,7 @@ export declare namespace Excel {
         layoutType: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
         /**
          *
-         * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+         * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -13147,14 +13179,14 @@ export declare namespace Excel {
         preserveFormatting: boolean;
         /**
          *
-         * True if the PivotTable report shows grand totals for columns.
+         * Specifies whether the PivotTable report shows grand totals for columns.
          *
          * [Api set: ExcelApi 1.8]
          */
         showColumnGrandTotals: boolean;
         /**
          *
-         * True if the PivotTable report shows grand totals for rows.
+         * Specifies whether the PivotTable report shows grand totals for rows.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13182,7 +13214,7 @@ export declare namespace Excel {
         set(properties: Excel.PivotLayout): void;
         /**
          *
-         * Gets the cell in the PivotTable's data body that contains the value for the intersection of the specified dataHierarchy, rowItems, and columnItems.
+         * Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies. The returned cell is the intersection of the given row and column that contains the data from the given hierarchy. This method is the inverse of calling getPivotItems and getDataHierarchy on a particular cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -13214,7 +13246,7 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param cell - A single cell within the PivotTable data body to get the data hieararchy for.
+         * @param cell - A single cell within the PivotTable data body.
          * @returns The DataPivotHierarchy object used to calculate the value in the specified cell.
          */
         getDataHierarchy(cell: Range | string): Excel.DataPivotHierarchy;
@@ -13232,8 +13264,8 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param axis - The axis to get the PivotItems from. Must be either "row" or "column."
-         * @param cell - A single cell within the PivotTable's data body to get the PivotItems for.
+         * @param axis - The axis from which to get the PivotItems. Must be either "row" or "column."
+         * @param cell - A single cell within the PivotTable's data body.
          * @returns A collection of PivotItems that are used to calculate the values in the specified row.
          */
         getPivotItems(axis: Excel.PivotAxis, cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;
@@ -13243,8 +13275,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          *
-         * @param axisString - The axis to get the PivotItems from. Must be either "row" or "column."
-         * @param cell - A single cell within the PivotTable's data body to get the PivotItems for.
+         * @param axisString - The axis from which to get the PivotItems. Must be either "row" or "column."
+         * @param cell - A single cell within the PivotTable's data body.
          * @returns A collection of PivotItems that are used to calculate the values in the specified row.
          */
         getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string): OfficeExtension.ClientResult<Excel.PivotItem[]>;
@@ -13264,25 +13296,25 @@ export declare namespace Excel {
         getRowLabelRange(): Excel.Range;
         /**
          *
-         * Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
+         * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param cell - A single cell to use get the criteria from for applying the autosort.
-         * @param sortby - The direction of the sort.
+         * @param sortBy - The direction of the sort.
          */
-        setAutosortOnCell(cell: Range | string, sortby: Excel.SortBy): void;
+        setAutoSortOnCell(cell: Range | string, sortBy: Excel.SortBy): void;
         /**
          *
-         * Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
+         * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          *
          * @param cell - A single cell to use get the criteria from for applying the autosort.
-         * @param sortbyString - The direction of the sort.
+         * @param sortByString - The direction of the sort.
          */
-        setAutosortOnCell(cell: Range | string, sortbyString: "Ascending" | "Descending"): void;
+        setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" | "Descending"): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -14143,9 +14175,9 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param sortby - Represents whether the sorting is done in an ascending or descending order.
+         * @param sortBy - Represents whether the sorting is done in an ascending or descending order.
          */
-        sortByLabels(sortby: SortBy): void;
+        sortByLabels(sortBy: SortBy): void;
         /**
          *
          * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
@@ -14154,14 +14186,14 @@ export declare namespace Excel {
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param sortby - Represents whether the sorting is done in an ascending or descending order.
-         * @param valuesHierarchy - Specifies the values to be used for sorting.
+         * @param sortBy - Represents whether the sorting is done in an ascending or descending order.
+         * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
             items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
             the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
             you want to sort on, this can be empty.
          */
-        sortByValues(sortby: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
+        sortByValues(sortBy: Excel.SortBy, valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
          *
          * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
@@ -14169,14 +14201,14 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          *
-         * @param sortbyString - Represents whether the sorting is done in an ascending or descending order.
-         * @param valuesHierarchy - Specifies the values to be used for sorting.
+         * @param sortByString - Represents whether the sorting is done in an ascending or descending order.
+         * @param valuesHierarchy - Specifies the values hierarchy on the data axis to be used for sorting.
          * @param pivotItemScope - The items that should be used for the scope of the sorting. These will be the
             items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
             the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
             you want to sort on, this can be empty.
          */
-        sortByValues(sortbyString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
+        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?: Array<PivotItem | string>): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -30631,7 +30663,7 @@ export declare namespace Excel {
         export interface PivotTableUpdateData {
             /**
              *
-             * True if the PivotTable should use custom lists when sorting.
+             * Specifies whether the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -30646,7 +30678,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * True if the PivotTable should use custom lists when sorting.
+             * Specifies whether the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -30657,7 +30689,7 @@ export declare namespace Excel {
         export interface PivotLayoutUpdateData {
             /**
              *
-             * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+             * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -30665,7 +30697,7 @@ export declare namespace Excel {
             autoFormat?: boolean;
             /**
              *
-             * True if the field list should be shown or hidden from the UI.
+             * Specifies whether the field list can be shown in the UI.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -30680,7 +30712,7 @@ export declare namespace Excel {
             layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
             /**
              *
-             * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+             * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -30688,14 +30720,14 @@ export declare namespace Excel {
             preserveFormatting?: boolean;
             /**
              *
-             * True if the PivotTable report shows grand totals for columns.
+             * Specifies whether the PivotTable report shows grand totals for columns.
              *
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
             /**
              *
-             * True if the PivotTable report shows grand totals for rows.
+             * Specifies whether the PivotTable report shows grand totals for rows.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -33124,6 +33156,14 @@ export declare namespace Excel {
             hasSpill?: boolean;
             /**
              *
+             * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: number;
+            /**
+             *
              * Represents if all cells of the current range are hidden. Read-only.
              *
              * [Api set: ExcelApi 1.2]
@@ -33150,6 +33190,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
+            /**
+             *
+             * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: number;
             /**
              *
              * Represents the data type state of each cell. Read-only.
@@ -33213,6 +33261,14 @@ export declare namespace Excel {
             text?: string[][];
             /**
              *
+             * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: number;
+            /**
+             *
              * Represents the type of data of each cell. Read-only.
              *
              * [Api set: ExcelApi 1.1]
@@ -33226,6 +33282,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: any[][];
+            /**
+             *
+             * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: number;
         }
         /** An interface describing the data returned by calling "rangeAreas.toJSON()". */
         export interface RangeAreasData {
@@ -36397,7 +36461,7 @@ export declare namespace Excel {
             rowHierarchies?: Excel.Interfaces.RowColumnPivotHierarchyData[];
             /**
              *
-             * True if the PivotTable should use custom lists when sorting.
+             * Specifies whether the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -36419,7 +36483,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * True if the PivotTable should use custom lists when sorting.
+             * Specifies whether the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -36430,7 +36494,7 @@ export declare namespace Excel {
         export interface PivotLayoutData {
             /**
              *
-             * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+             * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -36438,7 +36502,7 @@ export declare namespace Excel {
             autoFormat?: boolean;
             /**
              *
-             * True if the field list should be shown or hidden from the UI.
+             * Specifies whether the field list can be shown in the UI.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -36453,7 +36517,7 @@ export declare namespace Excel {
             layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";
             /**
              *
-             * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+             * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -36461,14 +36525,14 @@ export declare namespace Excel {
             preserveFormatting?: boolean;
             /**
              *
-             * True if the PivotTable report shows grand totals for columns.
+             * Specifies whether the PivotTable report shows grand totals for columns.
              *
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
             /**
              *
-             * True if the PivotTable report shows grand totals for rows.
+             * Specifies whether the PivotTable report shows grand totals for rows.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -39393,6 +39457,14 @@ export declare namespace Excel {
             hasSpill?: boolean;
             /**
              *
+             * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
              * Represents if all cells of the current range are hidden. Read-only.
              *
              * [Api set: ExcelApi 1.2]
@@ -39419,6 +39491,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
+            /**
+             *
+             * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
             /**
              *
              * Represents the data type state of each cell. Read-only.
@@ -39482,6 +39562,14 @@ export declare namespace Excel {
             text?: boolean;
             /**
              *
+             * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
              * Represents the type of data of each cell. Read-only.
              *
              * [Api set: ExcelApi 1.1]
@@ -39495,6 +39583,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            /**
+             *
+             * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
         }
         /**
          *
@@ -44305,7 +44401,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting.
+             * For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44327,7 +44423,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting.
+             * For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44358,7 +44454,7 @@ export declare namespace Excel {
             worksheet?: Excel.Interfaces.WorksheetLoadOptions;
             /**
              *
-             * True if the PivotTable should use custom lists when sorting.
+             * Specifies whether the PivotTable allows values in the data body to be edited by the user.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44380,7 +44476,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * True if the PivotTable should use custom lists when sorting.
+             * Specifies whether the PivotTable uses custom lists when sorting.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44397,7 +44493,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+             * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44405,7 +44501,7 @@ export declare namespace Excel {
             autoFormat?: boolean;
             /**
              *
-             * True if the field list should be shown or hidden from the UI.
+             * Specifies whether the field list can be shown in the UI.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44420,7 +44516,7 @@ export declare namespace Excel {
             layoutType?: boolean;
             /**
              *
-             * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+             * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44428,14 +44524,14 @@ export declare namespace Excel {
             preserveFormatting?: boolean;
             /**
              *
-             * True if the PivotTable report shows grand totals for columns.
+             * Specifies whether the PivotTable report shows grand totals for columns.
              *
              * [Api set: ExcelApi 1.8]
              */
             showColumnGrandTotals?: boolean;
             /**
              *
-             * True if the PivotTable report shows grand totals for rows.
+             * Specifies whether the PivotTable report shows grand totals for rows.
              *
              * [Api set: ExcelApi 1.8]
              */
@@ -46845,6 +46941,14 @@ export declare namespace Excel {
             hasSpill?: boolean;
             /**
              *
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            height?: boolean;
+            /**
+             *
              * For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
              *
              * [Api set: ExcelApi 1.2]
@@ -46871,6 +46975,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.7]
              */
             isEntireRow?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            left?: boolean;
             /**
              *
              * For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
@@ -46934,6 +47046,14 @@ export declare namespace Excel {
             text?: boolean;
             /**
              *
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            top?: boolean;
+            /**
+             *
              * For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
              *
              * [Api set: ExcelApi 1.1]
@@ -46947,6 +47067,14 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             values?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            width?: boolean;
         }
         /**
          *

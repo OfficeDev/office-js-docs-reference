@@ -32,7 +32,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.enableDataValueEditing
     summary: >-
-      For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting.
+      For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by
+      the user.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -95,7 +96,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.useCustomSortLists
     summary: >-
-      For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting.
+      For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

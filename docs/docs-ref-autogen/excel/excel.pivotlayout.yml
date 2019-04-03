@@ -33,15 +33,15 @@ items:
       - excel.Excel.PivotLayout.preserveFormatting
       - excel.Excel.PivotLayout.set
       - excel.Excel.PivotLayout.set_1
-      - excel.Excel.PivotLayout.setAutosortOnCell
-      - excel.Excel.PivotLayout.setAutosortOnCell_1
+      - excel.Excel.PivotLayout.setAutoSortOnCell
+      - excel.Excel.PivotLayout.setAutoSortOnCell_1
       - excel.Excel.PivotLayout.showColumnGrandTotals
       - excel.Excel.PivotLayout.showRowGrandTotals
       - excel.Excel.PivotLayout.subtotalLocation
       - excel.Excel.PivotLayout.toJSON
   - uid: excel.Excel.PivotLayout.autoFormat
     summary: >-
-      True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+      Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -73,7 +73,7 @@ items:
           - RequestContext
   - uid: excel.Excel.PivotLayout.enableFieldList
     summary: >-
-      True if the field list should be shown or hidden from the UI.
+      Specifies whether the field list can be shown in the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -91,8 +91,9 @@ items:
           - boolean
   - uid: excel.Excel.PivotLayout.getCell
     summary: >-
-      Gets the cell in the PivotTable's data body that contains the value for the intersection of the specified
-      dataHierarchy, rowItems, and columnItems.
+      Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective
+      hierarchies. The returned cell is the intersection of the given row and column that contains the data from the
+      given hierarchy. This method is the inverse of calling getPivotItems and getDataHierarchy on a particular cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -198,7 +199,7 @@ items:
         description: The DataPivotHierarchy object used to calculate the value in the specified cell.
       parameters:
         - id: cell
-          description: A single cell within the PivotTable data body to get the data hieararchy for.
+          description: A single cell within the PivotTable data body.
           type:
             - Range | string
   - uid: excel.Excel.PivotLayout.getFilterAxisRange
@@ -238,11 +239,11 @@ items:
         description: A collection of PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axis
-          description: The axis to get the PivotItems from. Must be either "row" or "column."
+          description: The axis from which to get the PivotItems. Must be either "row" or "column."
           type:
             - excel.Excel.PivotAxis
         - id: cell
-          description: A single cell within the PivotTable's data body to get the PivotItems for.
+          description: A single cell within the PivotTable's data body.
           type:
             - Range | string
   - uid: excel.Excel.PivotLayout.getPivotItems_1
@@ -268,11 +269,11 @@ items:
         description: A collection of PivotItems that are used to calculate the values in the specified row.
       parameters:
         - id: axisString
-          description: The axis to get the PivotItems from. Must be either "row" or "column."
+          description: The axis from which to get the PivotItems. Must be either "row" or "column."
           type:
             - '"Unknown" | "Row" | "Column" | "Data" | "Filter"'
         - id: cell
-          description: A single cell within the PivotTable's data body to get the PivotItems for.
+          description: A single cell within the PivotTable's data body.
           type:
             - Range | string
   - uid: excel.Excel.PivotLayout.getRange
@@ -406,8 +407,8 @@ items:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.PivotLayout.preserveFormatting
     summary: >-
-      True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting,
-      sorting, or changing page field items.
+      Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
+      pivoting, sorting, or changing page field items.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -471,21 +472,22 @@ items:
           description: ''
           type:
             - excel.Excel.PivotLayout
-  - uid: excel.Excel.PivotLayout.setAutosortOnCell
+  - uid: excel.Excel.PivotLayout.setAutoSortOnCell
     summary: >-
-      Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
+      Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria
+      and context. This behaves identically to applying an autosort from the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'setAutosortOnCell(cell, sortby)'
-    fullName: 'setAutosortOnCell(cell, sortby)'
+    name: 'setAutoSortOnCell(cell, sortBy)'
+    fullName: 'setAutoSortOnCell(cell, sortBy)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAutosortOnCell(cell: Range | string, sortby: Excel.SortBy): void;'
+      content: 'setAutoSortOnCell(cell: Range | string, sortBy: Excel.SortBy): void;'
       return:
         type:
           - void
@@ -495,25 +497,26 @@ items:
           description: A single cell to use get the criteria from for applying the autosort.
           type:
             - Range | string
-        - id: sortby
+        - id: sortBy
           description: The direction of the sort.
           type:
             - excel.Excel.SortBy
-  - uid: excel.Excel.PivotLayout.setAutosortOnCell_1
+  - uid: excel.Excel.PivotLayout.setAutoSortOnCell_1
     summary: >-
-      Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
+      Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria
+      and context. This behaves identically to applying an autosort from the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'setAutosortOnCell(cell, sortbyString)'
-    fullName: 'setAutosortOnCell(cell, sortbyString)'
+    name: 'setAutoSortOnCell(cell, sortByString)'
+    fullName: 'setAutoSortOnCell(cell, sortByString)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAutosortOnCell(cell: Range | string, sortbyString: "Ascending" | "Descending"): void;'
+      content: 'setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" | "Descending"): void;'
       return:
         type:
           - void
@@ -523,13 +526,13 @@ items:
           description: A single cell to use get the criteria from for applying the autosort.
           type:
             - Range | string
-        - id: sortbyString
+        - id: sortByString
           description: The direction of the sort.
           type:
             - '"Ascending" | "Descending"'
   - uid: excel.Excel.PivotLayout.showColumnGrandTotals
     summary: |-
-      True if the PivotTable report shows grand totals for columns.
+      Specifies whether the PivotTable report shows grand totals for columns.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
@@ -544,7 +547,7 @@ items:
           - boolean
   - uid: excel.Excel.PivotLayout.showRowGrandTotals
     summary: |-
-      True if the PivotTable report shows grand totals for rows.
+      Specifies whether the PivotTable report shows grand totals for rows.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals
