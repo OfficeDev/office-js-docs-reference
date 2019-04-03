@@ -2467,11 +2467,8 @@ Excel.WorksheetChangedEventArgs.details:
         var details = eventArgs.details;
         var address = eventArgs.address;
 
-        console.log(
-            `Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}), now is ${
-                details.valueAfter
-            }(${details.valueTypeAfter})`
-        );
+        console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+          + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
         return context.sync();
     });
 Excel.WorksheetCollection.add:
@@ -17996,6 +17993,17 @@ Excel.WorksheetFreezePanes.unfreeze:
 
         await context.sync();
     });
+Excel.TableChangedEventArgs.details:
+  - |-
+    async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
+        await Excel.run(async (context) => {
+            const details = eventArgs.details;
+            const address = eventArgs.address;
+
+            console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+              + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+        });
+    }
 Word.InlinePicture.getBase64ImageSrc:
   - |-
     await Word.run(async (context) => {
