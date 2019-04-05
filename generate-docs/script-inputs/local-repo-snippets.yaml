@@ -2328,6 +2328,20 @@ Excel.Worksheet.onSelectionChanged:
         });
         return context.sync();
     });
+Excel.WorksheetChangedEventArgs.details:
+  - |-
+    // This function would be used as an event handler for the Worksheet.onChanged event.
+    function onWorksheetChanged(eventArgs) {
+        Excel.run(function (context) {
+            var details = eventArgs.details;
+            var address = eventArgs.address;
+
+            // Print the before and after types and values to the console.
+            console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+                + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+            return context.sync();
+        });
+    }
 Excel.WorksheetCollection.add:
   - |-
     Excel.run(function (ctx) { 
