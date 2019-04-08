@@ -103,7 +103,7 @@ tryCatch(async () => {
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
 
     // let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
-    // let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
+    let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     // let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
     let customFunctionsRoot = {"name": "Custom Functions - Preview", "uid": "", "items": [] as any};
@@ -126,7 +126,7 @@ tryCatch(async () => {
     outlookFilter = outlookFilter.concat(outlookFolders);
     let excelFilter: string[] = ["Interfaces"];
     //excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter).concat(excelInterfaceFilter);
-    excelFilter = excelFilter.concat(excelEnumFilter);
+    excelFilter = excelFilter.concat(excelEnumFilter).concat(excelIconSetFilter);
     let wordFilter: string[] = ["Interfaces"];
     wordFilter = wordFilter.concat(wordEnumFilter);
     let oneNoteFilter: string[] = ["Interfaces"];
@@ -194,11 +194,16 @@ tryCatch(async () => {
                         let enumList = membersToMove.items.filter(item => {
                              return excelEnumFilter.indexOf(item.name) >= 0;
                          });
+                        let iconSetList = membersToMove.items.filter(item => {
+                              return excelIconSetFilter.indexOf(item.name) >= 0;
+                        });
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                        let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                        primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
 
                         if (packageName === 'Excel') { // The version without a suffix is the preview version
