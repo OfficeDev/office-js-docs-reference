@@ -3007,6 +3007,35 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "categories",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "categories",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "end",
                   "docComment": "/**\n * Gets or sets the date and time that the appointment is to end.\n *\n * The end property is an {@link Office.Time} object expressed as a Coordinated Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to the client's local date and time.\n *\n * When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to convert the local time on the client to UTC for the server.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr> </table>\n */\n",
                   "excerptTokens": [
@@ -5166,6 +5195,35 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "categories",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "categories",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "dateTimeCreated",
                   "docComment": "/**\n * Gets the date and time that an item was created.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr> </table>\n */\n",
                   "excerptTokens": [
@@ -7231,6 +7289,803 @@
                     }
                   ],
                   "name": "setSelectedDataAsync"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(Categories:interface)",
+              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Categories"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "Categories",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(addAsync:0)",
+                  "docComment": "/**\n * Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a unique name but multiple categories can use the same color.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> <tr><td>Errors</td><td>InvalidCategory - Invalid categories were provided.</td></tr> </table>\n *\n * @param categories - The categories to be added to the item.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "addAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 22,
+                    "endIndex": 23
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 11
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 14,
+                        "endIndex": 21
+                      }
+                    }
+                  ],
+                  "name": "addAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(addAsync:1)",
+                  "docComment": "/**\n * Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a unique name but multiple categories can use the same color.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> <tr><td>Errors</td><td>InvalidCategory - Invalid categories were provided.</td></tr> </table>\n *\n * @param categories - The categories to be added to the item.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "addAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 17
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 15
+                      }
+                    }
+                  ],
+                  "name": "addAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getAsync:0)",
+                  "docComment": "/**\n * Gets an item's categories.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 20,
+                    "endIndex": 21
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 19
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getAsync:1)",
+                  "docComment": "/**\n * Gets an item's categories.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeAsync:0)",
+                  "docComment": "/**\n * Removes categories from an item.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @param categories - The categories to be removed from the item.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 22,
+                    "endIndex": 23
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 11
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 14,
+                        "endIndex": 21
+                      }
+                    }
+                  ],
+                  "name": "removeAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeAsync:1)",
+                  "docComment": "/**\n * Removes categories from an item.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @param categories - The categories to be removed from the item.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 17
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 15
+                      }
+                    }
+                  ],
+                  "name": "removeAsync"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(CategoryDetails:interface)",
+              "docComment": "/**\n * Represents an item's category details like name and associated color.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CategoryDetails"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "CategoryDetails",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "color",
+                  "docComment": "/**\n * The color of the category.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "color"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryColor"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "color",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 7
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "displayName",
+                  "docComment": "/**\n * The name of the category. Maximum length is 255 characters.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "displayName"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "displayName",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
                 }
               ],
               "extendsTokenRanges": []
@@ -11465,6 +12320,35 @@
                   ],
                   "releaseTag": "Public",
                   "name": "body",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "categories",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "categories",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -17774,6 +18658,471 @@
                       "initializerTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
+                      }
+                    }
+                  ]
+                },
+                {
+                  "kind": "Enum",
+                  "canonicalReference": "(CategoryColor:enum)",
+                  "docComment": "/**\n * Specifies the category color.\n *\n * **Note**: The actual color depends on how the Outlook client renders it. In this case, the colors noted on each preset are for the Outlook desktop client.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "enum "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryColor"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "CategoryColor",
+                  "members": [
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "None",
+                      "docComment": "/**\n * Default color or no color mapped\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "None"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "None",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset0",
+                      "docComment": "/**\n * Red\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset0"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset0",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset1",
+                      "docComment": "/**\n * Orange\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset1"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset1",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset10",
+                      "docComment": "/**\n * Steel\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset10"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset10",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset11",
+                      "docComment": "/**\n * DarkSteel\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset11"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset11",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset12",
+                      "docComment": "/**\n * Gray\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset12"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset12",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset13",
+                      "docComment": "/**\n * DarkGray\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset13"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset13",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset14",
+                      "docComment": "/**\n * Black\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset14"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset14",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset15",
+                      "docComment": "/**\n * DarkRed\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset15"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset15",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset16",
+                      "docComment": "/**\n * DarkOrange\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset16"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset16",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset17",
+                      "docComment": "/**\n * DarkBrown\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset17"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset17",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset18",
+                      "docComment": "/**\n * DarkYellow\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset18"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset18",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset19",
+                      "docComment": "/**\n * DarkGreen\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset19"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset19",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset2",
+                      "docComment": "/**\n * Brown\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset2"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset2",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset20",
+                      "docComment": "/**\n * DarkTeal\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset20"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset20",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset21",
+                      "docComment": "/**\n * DarkOlive\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset21"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset21",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset22",
+                      "docComment": "/**\n * DarkBlue\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset22"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset22",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset23",
+                      "docComment": "/**\n * DarkPurple\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset23"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset23",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset24",
+                      "docComment": "/**\n * DarkCranberry\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset24"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset24",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset3",
+                      "docComment": "/**\n * Yellow\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset3"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset3",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset4",
+                      "docComment": "/**\n * Green\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset4"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset4",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset5",
+                      "docComment": "/**\n * Teal\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset5"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset5",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset6",
+                      "docComment": "/**\n * Olive\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset6"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset6",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset7",
+                      "docComment": "/**\n * Blue\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset7"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset7",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset8",
+                      "docComment": "/**\n * Purple\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset8"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset8",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
+                      }
+                    },
+                    {
+                      "kind": "EnumMember",
+                      "canonicalReference": "Preset9",
+                      "docComment": "/**\n * Cranberry\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "Preset9"
+                        }
+                      ],
+                      "releaseTag": "Beta",
+                      "name": "Preset9",
+                      "initializerTokenRange": {
+                        "startIndex": 0,
+                        "endIndex": 0
                       }
                     }
                   ]
@@ -26410,6 +27759,35 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "categories",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "categories",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "cc",
                   "docComment": "/**\n * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the current item.\n *\n * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of the message.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr> </table>\n */\n",
                   "excerptTokens": [
@@ -28203,6 +29581,35 @@
                   ],
                   "releaseTag": "Public",
                   "name": "body",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "categories",
+                  "docComment": "/**\n * Gets an object that provides methods for managing the item's categories.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "categories",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3

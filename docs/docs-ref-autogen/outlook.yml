@@ -14,6 +14,8 @@ items:
       - outlook.Office.AttachmentContent
       - outlook.Office.AttachmentDetails
       - outlook.Office.Body
+      - outlook.Office.Categories
+      - outlook.Office.CategoryDetails
       - outlook.Office.CoercionTypeOptions
       - outlook.Office.Contact
       - outlook.Office.CustomProperties
@@ -35,6 +37,7 @@ items:
       - outlook.Office.MailboxEnums.AttachmentContentFormat
       - outlook.Office.MailboxEnums.AttachmentStatus
       - outlook.Office.MailboxEnums.AttachmentType
+      - outlook.Office.MailboxEnums.CategoryColor
       - outlook.Office.MailboxEnums.Days
       - outlook.Office.MailboxEnums.DelegatePermissions
       - outlook.Office.MailboxEnums.EntityType
@@ -86,6 +89,10 @@ references:
     name: Office.AttachmentDetails
   - uid: outlook.Office.Body
     name: Office.Body
+  - uid: outlook.Office.Categories
+    name: Office.Categories
+  - uid: outlook.Office.CategoryDetails
+    name: Office.CategoryDetails
   - uid: outlook.Office.CoercionTypeOptions
     name: Office.CoercionTypeOptions
   - uid: outlook.Office.Contact
@@ -128,6 +135,8 @@ references:
     name: Office.MailboxEnums.AttachmentStatus
   - uid: outlook.Office.MailboxEnums.AttachmentType
     name: Office.MailboxEnums.AttachmentType
+  - uid: outlook.Office.MailboxEnums.CategoryColor
+    name: Office.MailboxEnums.CategoryColor
   - uid: outlook.Office.MailboxEnums.Days
     name: Office.MailboxEnums.Days
   - uid: outlook.Office.MailboxEnums.DelegatePermissions

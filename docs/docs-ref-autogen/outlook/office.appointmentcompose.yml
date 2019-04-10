@@ -44,6 +44,7 @@ items:
       - outlook.Office.AppointmentCompose.setSelectedDataAsync
       - outlook.Office.AppointmentCompose.setSelectedDataAsync_1
       - outlook.Office.AppointmentCompose.body
+      - outlook.Office.AppointmentCompose.categories
       - outlook.Office.AppointmentCompose.end
       - outlook.Office.AppointmentCompose.enhancedLocation
       - outlook.Office.AppointmentCompose.itemType
@@ -1500,6 +1501,28 @@ items:
       return:
         type:
           - Body
+  - uid: outlook.Office.AppointmentCompose.categories
+    summary: |-
+      Gets an object that provides methods for managing the item's categories.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
+      </table>
+    isPreview: true
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categories: Categories;'
+      return:
+        type:
+          - outlook.Office.Categories
   - uid: outlook.Office.AppointmentCompose.end
     summary: >-
       Gets or sets the date and time that the appointment is to end.
