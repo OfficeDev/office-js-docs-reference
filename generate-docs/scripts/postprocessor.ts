@@ -102,16 +102,16 @@ tryCatch(async () => {
     let excelRootPushed = false;
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
 
-    let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
+    // let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
-    let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
+    // let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
     let customFunctionsRoot = {"name": "Custom Functions - Preview", "uid": "", "items": [] as any};
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
     let oneNoteEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-onenote/onenote.d.ts").toString());
-    let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
+    //let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
     let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
@@ -121,14 +121,17 @@ tryCatch(async () => {
     let sharedEnumFilter : string [] = ["ActiveView", "AsyncResultStatus", "BindingType", "CoercionType", "CustomXMLNodeType", "DocumentMode", "EventType", "FileType", "FilterType", "GoToType", "HostType", "InitializationReason", "PlatformType", "ProjectProjectFields", "ProjectResourceFields", "ProjectTaskFields", "ProjectViewTypes", "SelectionMode", "Table", "ValueFormat"];
 
     // create filter lists for types we shouldn't expose
-    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
+    //let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
+    let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'ItemCompose', 'ItemRead', 'Message'];
     outlookFilter = outlookFilter.concat(outlookFolders);
     let excelFilter: string[] = ["Interfaces"];
-    excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter).concat(excelInterfaceFilter);
+    //excelFilter = excelFilter.concat(excelIconSetFilter).concat(excelEnumFilter).concat(excelEventArgsFilter).concat(excelInterfaceFilter);
+    excelFilter = excelFilter.concat(excelEnumFilter).concat(excelIconSetFilter);
     let wordFilter: string[] = ["Interfaces"];
     wordFilter = wordFilter.concat(wordEnumFilter);
     let oneNoteFilter: string[] = ["Interfaces"];
-    oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter).concat(oneNoteInterfaceFilter);
+    //oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter).concat(oneNoteInterfaceFilter);
+    oneNoteFilter = oneNoteFilter.concat(oneNoteEnumFilter);
     let visioFilter: string[] = ["Interfaces"];
 
     // process all packages except 'office' (Common "Shared" API)
@@ -191,11 +194,16 @@ tryCatch(async () => {
                         let enumList = membersToMove.items.filter(item => {
                              return excelEnumFilter.indexOf(item.name) >= 0;
                          });
+                        let iconSetList = membersToMove.items.filter(item => {
+                              return excelIconSetFilter.indexOf(item.name) >= 0;
+                        });
                         let primaryList = membersToMove.items.filter(item => {
                             return excelFilter.indexOf(item.name) < 0;
                         });
 
                         let excelEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
+                        let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
+                        primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
 
                         if (packageName === 'Excel') { // The version without a suffix is the preview version
