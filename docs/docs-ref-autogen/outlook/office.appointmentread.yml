@@ -37,6 +37,7 @@ items:
       - outlook.Office.AppointmentRead.removeHandlerAsync_1
       - outlook.Office.AppointmentRead.attachments
       - outlook.Office.AppointmentRead.body
+      - outlook.Office.AppointmentRead.categories
       - outlook.Office.AppointmentRead.dateTimeCreated
       - outlook.Office.AppointmentRead.dateTimeModified
       - outlook.Office.AppointmentRead.end
@@ -1186,6 +1187,28 @@ items:
       return:
         type:
           - Body
+  - uid: outlook.Office.AppointmentRead.categories
+    summary: |-
+      Gets an object that provides methods for managing the item's categories.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook
+      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
+      </table>
+    isPreview: true
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categories: Categories;'
+      return:
+        type:
+          - outlook.Office.Categories
   - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created.

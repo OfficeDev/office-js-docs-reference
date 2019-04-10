@@ -37,6 +37,7 @@ items:
       - outlook.Office.MessageRead.removeHandlerAsync_1
       - outlook.Office.MessageRead.attachments
       - outlook.Office.MessageRead.body
+      - outlook.Office.MessageRead.categories
       - outlook.Office.MessageRead.cc
       - outlook.Office.MessageRead.conversationId
       - outlook.Office.MessageRead.dateTimeCreated
@@ -1198,6 +1199,27 @@ items:
       return:
         type:
           - Body
+  - uid: outlook.Office.MessageRead.categories
+    summary: |-
+      Gets an object that provides methods for managing the item's categories.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
+      Read</td></tr> </table>
+    isPreview: true
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categories: Categories;'
+      return:
+        type:
+          - outlook.Office.Categories
   - uid: outlook.Office.MessageRead.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
