@@ -1526,6 +1526,8 @@ items:
                     uid: outlook.Office.MailboxEnums.AttachmentStatus
                   - name: AttachmentType
                     uid: outlook.Office.MailboxEnums.AttachmentType
+                  - name: CategoryColor
+                    uid: outlook.Office.MailboxEnums.CategoryColor
                   - name: Days
                     uid: outlook.Office.MailboxEnums.Days
                   - name: DelegatePermissions
@@ -1564,6 +1566,10 @@ items:
                 uid: outlook.Office.AttachmentDetails
               - name: Body
                 uid: outlook.Office.Body
+              - name: Categories
+                uid: outlook.Office.Categories
+              - name: CategoryDetails
+                uid: outlook.Office.CategoryDetails
               - name: CoercionTypeOptions
                 uid: outlook.Office.CoercionTypeOptions
               - name: Contact

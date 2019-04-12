@@ -1,0 +1,253 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.Categories
+    summary: >-
+      Represents the categories on an item.
+
+
+      In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines
+      categories in a master list on their mailbox. They can then apply one or more categories to an item.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: Office.Categories
+    fullName: Office.Categories
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.Categories.addAsync
+      - outlook.Office.Categories.addAsync_1
+      - outlook.Office.Categories.getAsync
+      - outlook.Office.Categories.getAsync_1
+      - outlook.Office.Categories.removeAsync
+      - outlook.Office.Categories.removeAsync_1
+  - uid: outlook.Office.Categories.addAsync
+    summary: >-
+      Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
+      unique name but multiple categories can use the same color.
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> <tr><td>Errors</td><td>InvalidCategory - Invalid categories were provided.</td></tr> </table>
+    isPreview: true
+    name: 'addAsync(categories, options, callback)'
+    fullName: 'addAsync(categories, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addAsync(categories: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: categories
+          description: The categories to be added to the item.
+          type:
+            - 'string[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult.
+
+
+            \[Api set: Mailbox Preview\]
+          type:
+            - '(asyncResult: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.Categories.addAsync_1
+    summary: >-
+      Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
+      unique name but multiple categories can use the same color.
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> <tr><td>Errors</td><td>InvalidCategory - Invalid categories were provided.</td></tr> </table>
+    isPreview: true
+    name: 'addAsync(categories, callback)'
+    fullName: 'addAsync(categories, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addAsync(categories: string[], callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: categories
+          description: The categories to be added to the item.
+          type:
+            - 'string[]'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error
+            code.
+
+
+            \[Api set: Mailbox Preview\]
+          type:
+            - '(asyncResult: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.Categories.getAsync
+    summary: Gets an item's categories.
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: 'getAsync(options, callback)'
+    fullName: 'getAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<CategoryDetails[]>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error
+            code.
+
+
+            \[Api set: Mailbox Preview\]
+          type:
+            - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
+  - uid: outlook.Office.Categories.getAsync_1
+    summary: Gets an item's categories.
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: getAsync(callback)
+    fullName: getAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback: (asyncResult: Office.AsyncResult<CategoryDetails[]>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
+
+
+            \[Api set: Mailbox Preview\]
+          type:
+            - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
+  - uid: outlook.Office.Categories.removeAsync
+    summary: Removes categories from an item.
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: 'removeAsync(categories, options, callback)'
+    fullName: 'removeAsync(categories, options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        removeAsync(categories: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: categories
+          description: The categories to be removed from the item.
+          type:
+            - 'string[]'
+        - id: options
+          description: >-
+            Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
+            can provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            Optional. When the method completes, the function passed in the callback parameter is called with a single
+            parameter of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will
+            contain an error code.
+
+
+            \[Api set: Mailbox Preview\]
+          type:
+            - '(asyncResult: Office.AsyncResult<void>) => void'
+  - uid: outlook.Office.Categories.removeAsync_1
+    summary: Removes categories from an item.
+    remarks: >-
+      <table> <tr><td>[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
+      Read</td></tr> </table>
+    isPreview: true
+    name: 'removeAsync(categories, callback)'
+    fullName: 'removeAsync(categories, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'removeAsync(categories: string[], callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: categories
+          description: The categories to be removed from the item.
+          type:
+            - 'string[]'
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an
+            error code.
+
+
+            \[Api set: Mailbox Preview\]
+          type:
+            - '(asyncResult: Office.AsyncResult<void>) => void'
