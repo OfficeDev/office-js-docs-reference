@@ -2,24 +2,7 @@
 items:
   - uid: office.Office.CustomXmlPrefixMappings
     summary: Represents a collection of CustomXmlPart objects.
-    remarks: >-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this interface.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+    remarks: '**Hosts**: Word'
     name: Office.CustomXmlPrefixMappings
     fullName: Office.CustomXmlPrefixMappings
     langs:
@@ -35,7 +18,12 @@ items:
       - office.Office.CustomXmlPrefixMappings.getPrefixAsync_1
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
-    remarks: 'If no namespace is assigned to the requested prefix, the method returns an empty string ("").'
+    remarks: >-
+      **Requirement set**:
+      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+
+
+      If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     name: 'addNamespaceAsync(prefix, ns, options, callback)'
     fullName: 'addNamespaceAsync(prefix, ns, options, callback)'
     langs:
@@ -70,7 +58,12 @@ items:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.CustomXmlPrefixMappings.addNamespaceAsync_1
     summary: Asynchronously adds a prefix to namespace mapping to use when querying an item.
-    remarks: 'If no namespace is assigned to the requested prefix, the method returns an empty string ("").'
+    remarks: >-
+      **Requirement set**:
+      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+
+
+      If no namespace is assigned to the requested prefix, the method returns an empty string ("").
     name: 'addNamespaceAsync(prefix, ns, callback)'
     fullName: 'addNamespaceAsync(prefix, ns, callback)'
     langs:
@@ -100,6 +93,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
+      **Requirement set**:
+      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+
+
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
       except when the prefix is one added or used by the data store internally, in which case it will return an error.
     name: 'getNamespaceAsync(prefix, options, callback)'
@@ -134,6 +131,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getNamespaceAsync_1
     summary: Asynchronously gets the namespace mapped to the specified prefix.
     remarks: >-
+      **Requirement set**:
+      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+
+
       If the prefix already exists in the namespace manager, this method will overwrite the mapping of that prefix
       except when the prefix is one added or used by the data store internally, in which case it will return an error.
     name: 'getNamespaceAsync(prefix, callback)'
@@ -162,6 +163,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
+      **Requirement set**:
+      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+
+
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are
       multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the
       supplied namespace.
@@ -197,6 +202,10 @@ items:
   - uid: office.Office.CustomXmlPrefixMappings.getPrefixAsync_1
     summary: Asynchronously gets the prefix for the specified namespace.
     remarks: >-
+      **Requirement set**:
+      [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
+
+
       If no prefix is assigned to the requested namespace, the method returns an empty string (""). If there are
       multiple prefixes specified in the namespace manager, the method returns the first prefix that matches the
       supplied namespace.
