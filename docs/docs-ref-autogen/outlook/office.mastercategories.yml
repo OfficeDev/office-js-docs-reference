@@ -1,43 +1,45 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Categories
+  - uid: outlook.Office.MasterCategories
     summary: >-
-      Represents the categories on an item.
+      Represents the categories master list on the mailbox.
 
 
-      In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines 
-      on their mailbox. They can then apply one or more categories to an item.
+      In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines
+      categories in a master list on their mailbox. They can then apply one or more categories to an item.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       Read</td></tr> </table>
     isPreview: true
-    name: Office.Categories
-    fullName: Office.Categories
+    name: Office.MasterCategories
+    fullName: Office.MasterCategories
     langs:
       - typeScript
     type: interface
     package: outlook
     children:
-      - outlook.Office.Categories.addAsync
-      - outlook.Office.Categories.addAsync_1
-      - outlook.Office.Categories.getAsync
-      - outlook.Office.Categories.getAsync_1
-      - outlook.Office.Categories.removeAsync
-      - outlook.Office.Categories.removeAsync_1
-  - uid: outlook.Office.Categories.addAsync
+      - outlook.Office.MasterCategories.addAsync
+      - outlook.Office.MasterCategories.addAsync_1
+      - outlook.Office.MasterCategories.getAsync
+      - outlook.Office.MasterCategories.getAsync_1
+      - outlook.Office.MasterCategories.removeAsync
+      - outlook.Office.MasterCategories.removeAsync_1
+  - uid: outlook.Office.MasterCategories.addAsync
     summary: >-
-      Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
-      unique name but multiple categories can use the same color.
+      Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
+      use the same color.
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>InvalidCategory - Invalid categories were provided.</td></tr> </table>
+      Read</td></tr> <tr><td>Errors</td><td>DuplicateCategory - One of the categories provided is already in the master
+      category list.</td></tr> <tr><td></td><td>PermissionDenied - The user does not have permission to perform this
+      action.</td></tr> </table>
     isPreview: true
     name: 'addAsync(categories, options, callback)'
     fullName: 'addAsync(categories, options, callback)'
@@ -46,7 +48,7 @@ items:
     type: method
     syntax:
       content: >-
-        addAsync(categories: string[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
+        addAsync(categories: CategoryDetails[], options?: Office.AsyncContextOptions, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -54,9 +56,9 @@ items:
         description: ''
       parameters:
         - id: categories
-          description: The categories to be added to the item.
+          description: The categories to be added to the master list on the mailbox.
           type:
-            - 'string[]'
+            - 'CategoryDetails[]'
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -72,15 +74,17 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Categories.addAsync_1
+  - uid: outlook.Office.MasterCategories.addAsync_1
     summary: >-
-      Adds categories to an item. Each category must be in the categories master list on that mailbox and so must have a
-      unique name but multiple categories can use the same color.
+      Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
+      use the same color.
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>InvalidCategory - Invalid categories were provided.</td></tr> </table>
+      Read</td></tr> <tr><td>Errors</td><td>DuplicateCategory - One of the categories provided is already in the master
+      category list.</td></tr> <tr><td></td><td>PermissionDenied - The user does not have permission to perform this
+      action.</td></tr> </table>
     isPreview: true
     name: 'addAsync(categories, callback)'
     fullName: 'addAsync(categories, callback)'
@@ -88,16 +92,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'addAsync(categories: string[], callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
+      content: 'addAsync(categories: CategoryDetails[], callback: (asyncResult: Office.AsyncResult<void>) => void): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: categories
-          description: The categories to be added to the item.
+          description: The categories to be added to the master list on the mailbox.
           type:
-            - 'string[]'
+            - 'CategoryDetails[]'
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -108,11 +112,11 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Categories.getAsync
-    summary: Gets an item's categories.
+  - uid: outlook.Office.MasterCategories.getAsync
+    summary: Gets the master list of categories on a mailbox.
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       Read</td></tr> </table>
     isPreview: true
@@ -146,11 +150,11 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-  - uid: outlook.Office.Categories.getAsync_1
-    summary: Gets an item's categories.
+  - uid: outlook.Office.MasterCategories.getAsync_1
+    summary: Gets the master list of categories on a mailbox.
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
       Read</td></tr> </table>
     isPreview: true
@@ -175,13 +179,14 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-  - uid: outlook.Office.Categories.removeAsync
-    summary: Removes categories from an item.
+  - uid: outlook.Office.MasterCategories.removeAsync
+    summary: Removes categories from the master list on a mailbox.
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
+      Read</td></tr> <tr><td>Errors</td><td>PermissionDenied - The user does not have permission to perform this
+      action.</td></tr> </table>
     isPreview: true
     name: 'removeAsync(categories, options, callback)'
     fullName: 'removeAsync(categories, options, callback)'
@@ -198,7 +203,7 @@ items:
         description: ''
       parameters:
         - id: categories
-          description: The categories to be removed from the item.
+          description: The categories to be removed from the master list on the mailbox.
           type:
             - 'string[]'
         - id: options
@@ -217,13 +222,14 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Categories.removeAsync_1
-    summary: Removes categories from an item.
+  - uid: outlook.Office.MasterCategories.removeAsync_1
+    summary: Removes categories from the master list on a mailbox.
     remarks: >-
       <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteItem</td></tr>
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
+      Read</td></tr> <tr><td>Errors</td><td>PermissionDenied - The user does not have permission to perform this
+      action.</td></tr> </table>
     isPreview: true
     name: 'removeAsync(categories, callback)'
     fullName: 'removeAsync(categories, callback)'
@@ -238,7 +244,7 @@ items:
         description: ''
       parameters:
         - id: categories
-          description: The categories to be removed from the item.
+          description: The categories to be removed from the master list on the mailbox.
           type:
             - 'string[]'
         - id: callback

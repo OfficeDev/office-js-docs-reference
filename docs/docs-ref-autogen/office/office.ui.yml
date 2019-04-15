@@ -23,8 +23,8 @@ items:
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
-      <table><tr><td>Hosts</td><td>Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox
-      1.5)</td></tr></table>
+      **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5) **Requirement set**:
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
 
 
       The behavior of this method is specified by the following:
@@ -52,8 +52,10 @@ items:
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      <table> <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr> <tr><td>Requirement
-      sets</td><td>DialogAPI, Mailbox 1.4</td></tr> </table>
+      **Hosts**: Word, Excel, Outlook, PowerPoint **Requirement sets**:
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)<!--
+      -->, [Mailbox
+      1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
       This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
@@ -165,8 +167,10 @@ items:
   - uid: office.Office.UI.displayDialogAsync_1
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      <table> <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr> <tr><td>Requirement
-      sets</td><td>DialogAPI, Mailbox 1.4</td></tr> </table>
+      **Hosts**: Excel, Outlook, PowerPoint, Word **Requirement sets**:
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)<!--
+      -->, [Mailbox
+      1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
       This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the
@@ -271,6 +275,9 @@ items:
     summary: >-
       Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
       domain as the parent.
+    remarks: >-
+      **Requirement set**:
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
     name: messageParent(message)
     fullName: messageParent(message)
     langs:

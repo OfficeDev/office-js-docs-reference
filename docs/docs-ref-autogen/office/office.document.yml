@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Document
     summary: An abstract class that represents the document the add-in is interacting with.
-    remarks: '<table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr></table>'
+    remarks: '**Hosts**: Access, Excel, PowerPoint, Project, Word'
     name: Office.Document
     fullName: Office.Document
     langs:
@@ -62,30 +62,12 @@ items:
   - uid: office.Office.Document.addHandlerAsync
     summary: Adds an event handler for a Document object event.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
+      **Requirement set**:
+      [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td>
-      </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong>
-      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -127,30 +109,12 @@ items:
   - uid: office.Office.Document.addHandlerAsync_1
     summary: Adds an event handler for a Document object event.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
+      **Requirement set**:
+      [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
 
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td>
-      </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong>
-      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -481,26 +445,11 @@ items:
   - uid: office.Office.Document.getActiveViewAsync
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>ActiveView</td></tr></table>
+      **Requirement set**:
+      [ActiveView](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview)
 
 
       Can trigger an event when the view changes.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: 'getActiveViewAsync(options, callback)'
     fullName: 'getActiveViewAsync(options, callback)'
     langs:
@@ -531,26 +480,11 @@ items:
   - uid: office.Office.Document.getActiveViewAsync_1
     summary: Returns the state of the current view of the presentation (edit or read).
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>ActiveView</td></tr></table>
+      **Requirement set**:
+      [ActiveView](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#activeview)
 
 
       Can trigger an event when the view changes.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> PowerPoint
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -597,7 +531,13 @@ items:
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
+      **Requirement sets**:
+      [CompressedFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile)
+      (when using `Office.FileType.Compressed`<!-- -->),
+      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)<!--
+      -->,
+      [TextFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile)
+      (when using `Office.FileType.Text`<!-- -->)
 
 
       For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports
@@ -621,24 +561,6 @@ items:
 
       Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`<!-- -->,
       `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> </table>
 
       #### Examples
 
@@ -772,7 +694,13 @@ items:
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>File</td></tr></table>
+      **Requirement sets**:
+      [CompressedFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile)
+      (when using `Office.FileType.Compressed`<!-- -->),
+      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)<!--
+      -->,
+      [TextFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile)
+      (when using `Office.FileType.Text`<!-- -->)
 
 
       For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports
@@ -796,24 +724,6 @@ items:
 
       Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`<!-- -->,
       `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> </table>
     name: 'getFileAsync(fileType, callback)'
     fullName: 'getFileAsync(fileType, callback)'
     langs:
@@ -840,28 +750,11 @@ items:
   - uid: office.Office.Document.getFilePropertiesAsync
     summary: Gets file properties of the current document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+      **Requirement sets**: [Not in a
+      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> </table>
     name: 'getFilePropertiesAsync(options, callback)'
     fullName: 'getFilePropertiesAsync(options, callback)'
     langs:
@@ -890,28 +783,11 @@ items:
   - uid: office.Office.Document.getFilePropertiesAsync_1
     summary: Gets file properties of the current document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+      **Requirement sets**: [Not in a
+      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> </table>
 
       #### Examples
 
@@ -966,20 +842,6 @@ items:
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getMaxResourceIndexAsync(options, callback)'
     fullName: 'getMaxResourceIndexAsync(options, callback)'
     langs:
@@ -1010,109 +872,6 @@ items:
       Project documents only. Get the maximum index of the collection of resources in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
-
-      // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
-
-      // method to get each resource GUID. The example assumes that your add-in has a reference to the 
-
-      // jQuery library and that the following page controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-          var resourceGuids = ;
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  app.initialize();
-                  $('#get-info').click(getResourceInfo);
-              });
-          };
-
-          // Get the maximum resource index, and then get the resource GUIDs.
-          function getResourceInfo() {
-              getMaxResourceIndex().then(
-                  function (data) {
-                      getResourceGuids(data);
-                  }
-              );
-          }
-
-          // Get the maximum index of the resources for the current project.
-          function getMaxResourceIndex() {
-              var defer = $.Deferred();
-              Office.context.document.getMaxResourceIndexAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get each resource GUID, and then display the GUIDs in the add-in.
-          // There is no 0 index for resources, so start with index 1.
-          function getResourceGuids(maxResourceIndex) {
-              var defer = $.Deferred();
-              for (var i = 1; i <= maxResourceIndex; i++) {
-                  getResourceGuid(i);
-              }
-              return defer.promise();
-              function getResourceGuid(index) {
-                  Office.context.document.getResourceByIndexAsync(index,
-                      function (result) {
-                          if (result.status === Office.AsyncResultStatus.Succeeded) {
-                              resourceGuids.push(result.value);
-                              if (index == maxResourceIndex) {
-                                  defer.resolve();
-                                  $('#message').html(resourceGuids.toString());
-                              }
-                          }
-                          else {
-                              onError(result.error);
-                          }
-                      }
-                  );
-              }
-          }
-          function onError(error) {
-              app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: getMaxResourceIndexAsync(callback)
     fullName: getMaxResourceIndexAsync(callback)
     langs:
@@ -1123,7 +882,87 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getResourceTaskIndexAsync to get the maximum index of the collection 
+          // of resources in the current project. Then it uses the returned value and the getResourceByIndexAsync
+          // method to get each resource GUID. The example assumes that your add-in has a reference to the 
+          // jQuery library and that the following page controls are defined in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+              var resourceGuids = ;
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      app.initialize();
+                      $('#get-info').click(getResourceInfo);
+                  });
+              };
+
+              // Get the maximum resource index, and then get the resource GUIDs.
+              function getResourceInfo() {
+                  getMaxResourceIndex().then(
+                      function (data) {
+                          getResourceGuids(data);
+                      }
+                  );
+              }
+
+              // Get the maximum index of the resources for the current project.
+              function getMaxResourceIndex() {
+                  var defer = $.Deferred();
+                  Office.context.document.getMaxResourceIndexAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get each resource GUID, and then display the GUIDs in the add-in.
+              // There is no 0 index for resources, so start with index 1.
+              function getResourceGuids(maxResourceIndex) {
+                  var defer = $.Deferred();
+                  for (var i = 1; i <= maxResourceIndex; i++) {
+                      getResourceGuid(i);
+                  }
+                  return defer.promise();
+                  function getResourceGuid(index) {
+                      Office.context.document.getResourceByIndexAsync(index,
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  resourceGuids.push(result.value);
+                                  if (index == maxResourceIndex) {
+                                      defer.resolve();
+                                      $('#message').html(resourceGuids.toString());
+                                  }
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+              function onError(error) {
+                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: callback
           description: >-
@@ -1137,20 +976,6 @@ items:
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getMaxTaskIndexAsync(options, callback)'
     fullName: 'getMaxTaskIndexAsync(options, callback)'
     langs:
@@ -1181,110 +1006,6 @@ items:
       Project documents only. Get the maximum index of the collection of tasks in the current project.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getMaxTaskIndexAsync to get the maximum index
-
-      // of the collection of tasks in the current project. Then it uses the returned value
-
-      // with the getTaskByIndexAsync method to get each task GUID.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the
-
-      // following page controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-          var taskGuids = ;
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  app.initialize();
-                  $('#get-info').click(getTaskInfo);
-              });
-          };
-
-          // Get the maximum task index, and then get the task GUIDs.
-          function getTaskInfo() {
-              getMaxTaskIndex().then(
-                  function (data) {
-                      getTaskGuids(data);
-                  }
-              );
-          }
-
-          // Get the maximum index of the tasks for the current project.
-          function getMaxTaskIndex() {
-              var defer = $.Deferred();
-              Office.context.document.getMaxTaskIndexAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get each task GUID, and then display the GUIDs in the add-in.
-          function getTaskGuids(maxTaskIndex) {
-              var defer = $.Deferred();
-              for (var i = 0; i <= maxTaskIndex; i++) {
-                  getTaskGuid(i);
-              }
-              return defer.promise();
-              function getTaskGuid(index) {
-                  Office.context.document.getTaskByIndexAsync(index,
-                      function (result) {
-                          if (result.status === Office.AsyncResultStatus.Succeeded) {
-                              taskGuids.push(result.value);
-                              if (index == maxTaskIndex) {
-                                  defer.resolve();
-                                  $('#message').html(taskGuids.toString());
-                              }
-                          }
-                          else {
-                              onError(result.error);
-                          }
-                      }
-                  );
-              }
-          }
-          function onError(error) {
-              app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: getMaxTaskIndexAsync(callback)
     fullName: getMaxTaskIndexAsync(callback)
     langs:
@@ -1295,7 +1016,87 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getMaxTaskIndexAsync to get the maximum index
+          // of the collection of tasks in the current project. Then it uses the returned value
+          // with the getTaskByIndexAsync method to get each task GUID.
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+              var taskGuids = ;
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      app.initialize();
+                      $('#get-info').click(getTaskInfo);
+                  });
+              };
+
+              // Get the maximum task index, and then get the task GUIDs.
+              function getTaskInfo() {
+                  getMaxTaskIndex().then(
+                      function (data) {
+                          getTaskGuids(data);
+                      }
+                  );
+              }
+
+              // Get the maximum index of the tasks for the current project.
+              function getMaxTaskIndex() {
+                  var defer = $.Deferred();
+                  Office.context.document.getMaxTaskIndexAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get each task GUID, and then display the GUIDs in the add-in.
+              function getTaskGuids(maxTaskIndex) {
+                  var defer = $.Deferred();
+                  for (var i = 0; i <= maxTaskIndex; i++) {
+                      getTaskGuid(i);
+                  }
+                  return defer.promise();
+                  function getTaskGuid(index) {
+                      Office.context.document.getTaskByIndexAsync(index,
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  taskGuids.push(result.value);
+                                  if (index == maxTaskIndex) {
+                                      defer.resolve();
+                                      $('#message').html(taskGuids.toString());
+                                  }
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+              function onError(error) {
+                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: callback
           description: >-
@@ -1306,20 +1107,6 @@ items:
             - '(result: AsyncResult<number>) => void'
   - uid: office.Office.Document.getProjectFieldAsync
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getProjectFieldAsync(fieldId, options, callback)'
     fullName: 'getProjectFieldAsync(fieldId, options, callback)'
     langs:
@@ -1351,97 +1138,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getProjectFieldAsync_1
     summary: Project documents only. Get Project field (Ex. ProjectWebAccessURL).
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example gets the values of three specified fields for the active project, 
-
-      // and then displays the values in the add-in.
-
-      // The example calls getProjectFieldAsync recursively, after the previous call returns successfully.
-
-      // It also tracks the calls to determine when all calls are sent.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the 
-
-      // following page control is defined in the content div in the page body:
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // Get information for the active project.
-                  getProjectInformation();
-              });
-          };
-
-          // Get the specified fields for the active project.
-          function getProjectInformation() {
-              var fields =
-                  [Office.ProjectProjectFields.Start, 
-                   Office.ProjectProjectFields.Finish, 
-                   Office.ProjectProjectFields.GUID];
-              var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
-              var index = 0; 
-              getField();
-
-              // Get each field, and then display the field values in the add-in.
-              function getField() {
-                  if (index == fields.length) {
-                      var output = '';
-                      for (var i = 0; i < fieldValues.length; i++) {
-                          output += fieldValues[i] + '<br />';
-                      }
-                      $('#message').html(output);
-                  }
-                  else {
-                      Office.context.document.getProjectFieldAsync(
-                          fields[index],
-                          function (result) {
-
-                              // If the call is successful, get the field value and then get the next field.
-                              if (result.status === Office.AsyncResultStatus.Succeeded) {
-                                  fieldValues[index] += result.value.fieldValue;
-                                  getField(index++);
-                              }
-                              else {
-                                  onError(result.error);
-                              }
-                          }
-                      );
-                  }
-              }
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'getProjectFieldAsync(fieldId, callback)'
     fullName: 'getProjectFieldAsync(fieldId, callback)'
     langs:
@@ -1452,7 +1148,74 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example gets the values of three specified fields for the active project, 
+          // and then displays the values in the add-in.
+          // The example calls getProjectFieldAsync recursively, after the previous call returns successfully.
+          // It also tracks the calls to determine when all calls are sent.
+          // The example assumes your add-in has a reference to the jQuery library and that the 
+          // following page control is defined in the content div in the page body:
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // Get information for the active project.
+                      getProjectInformation();
+                  });
+              };
+
+              // Get the specified fields for the active project.
+              function getProjectInformation() {
+                  var fields =
+                      [Office.ProjectProjectFields.Start, 
+                       Office.ProjectProjectFields.Finish, 
+                       Office.ProjectProjectFields.GUID];
+                  var fieldValues = ['Start: ', 'Finish: ', 'GUID: '];
+                  var index = 0; 
+                  getField();
+
+                  // Get each field, and then display the field values in the add-in.
+                  function getField() {
+                      if (index == fields.length) {
+                          var output = '';
+                          for (var i = 0; i < fieldValues.length; i++) {
+                              output += fieldValues[i] + '<br />';
+                          }
+                          $('#message').html(output);
+                      }
+                      else {
+                          Office.context.document.getProjectFieldAsync(
+                              fields[index],
+                              function (result) {
+
+                                  // If the call is successful, get the field value and then get the next field.
+                                  if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                      fieldValues[index] += result.value.fieldValue;
+                                      getField(index++);
+                                  }
+                                  else {
+                                      onError(result.error);
+                                  }
+                              }
+                          );
+                      }
+                  }
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: fieldId
           description: Project level fields.
@@ -1470,20 +1233,6 @@ items:
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getResourceByIndexAsync(resourceIndex, options, callback)'
     fullName: 'getResourceByIndexAsync(resourceIndex, options, callback)'
     langs:
@@ -1518,109 +1267,6 @@ items:
       Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's resource
-
-      // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
-
-      // The example assumes that your add-in has a reference to the jQuery library and that the following 
-
-      // page controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-          var resourceGuids = ;
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  app.initialize();
-                  $('#get-info').click(getResourceInfo);
-              });
-          };
-
-          // Get the maximum resource index, and then get the resource GUIDs.
-          function getResourceInfo() {
-              getMaxResourceIndex().then(
-                  function (data) {
-                      getResourceGuids(data);
-                  }
-              );
-          }
-
-          // Get the maximum index of the resources for the current project.
-          function getMaxResourceIndex() {
-              var defer = $.Deferred();
-              Office.context.document.getMaxResourceIndexAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get each resource GUID, and then display the GUIDs in the add-in.
-          // There is no 0 index for resources, so start with index 1.
-          function getResourceGuids(maxResourceIndex) {
-              var defer = $.Deferred();
-              for (var i = 1; i <= maxResourceIndex; i++) {
-                  getResourceGuid(i);
-              }
-              return defer.promise();
-              function getResourceGuid(index) {
-                  Office.context.document.getResourceByIndexAsync(index,
-                      function (result) {
-                          if (result.status === Office.AsyncResultStatus.Succeeded) {
-                              resourceGuids.push(result.value);
-                              if (index == maxResourceIndex) {
-                                  defer.resolve();
-                                  $('#message').html(resourceGuids.toString());
-                              }
-                          }
-                          else {
-                              onError(result.error);
-                          }
-                      }
-                  );
-              }
-          }
-          function onError(error) {
-              app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'getResourceByIndexAsync(resourceIndex, callback)'
     fullName: 'getResourceByIndexAsync(resourceIndex, callback)'
     langs:
@@ -1631,7 +1277,97 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // The following code example calls getMaxResourceIndexAsync to get the maximum index in the project's
+          resource
+
+          // collection, and then calls getResourceByIndexAsync to get the GUID for each resource.
+
+          // The example assumes that your add-in has a reference to the jQuery library and that the following 
+
+          // page controls are defined in the content div in the page body:
+
+          // <input id="get-info" type="button" value="Get info" /><br />
+
+          // <span id="message"></span>
+
+
+          (function () {
+              "use strict";
+              var resourceGuids = ;
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      app.initialize();
+                      $('#get-info').click(getResourceInfo);
+                  });
+              };
+
+              // Get the maximum resource index, and then get the resource GUIDs.
+              function getResourceInfo() {
+                  getMaxResourceIndex().then(
+                      function (data) {
+                          getResourceGuids(data);
+                      }
+                  );
+              }
+
+              // Get the maximum index of the resources for the current project.
+              function getMaxResourceIndex() {
+                  var defer = $.Deferred();
+                  Office.context.document.getMaxResourceIndexAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get each resource GUID, and then display the GUIDs in the add-in.
+              // There is no 0 index for resources, so start with index 1.
+              function getResourceGuids(maxResourceIndex) {
+                  var defer = $.Deferred();
+                  for (var i = 1; i <= maxResourceIndex; i++) {
+                      getResourceGuid(i);
+                  }
+                  return defer.promise();
+                  function getResourceGuid(index) {
+                      Office.context.document.getResourceByIndexAsync(index,
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  resourceGuids.push(result.value);
+                                  if (index == maxResourceIndex) {
+                                      defer.resolve();
+                                      $('#message').html(resourceGuids.toString());
+                                  }
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+              function onError(error) {
+                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+
+          ```
       parameters:
         - id: resourceIndex
           description: The index of the resource in the collection of resources for the project.
@@ -1646,20 +1382,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getResourceFieldAsync
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
     fullName: 'getResourceFieldAsync(resourceId, fieldId, options, callback)'
     langs:
@@ -1695,123 +1417,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getResourceFieldAsync_1
     summary: Project documents only. Get resource field for provided resource Id. (Ex.ResourceName)
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedResourceAsync to get the GUID of the resource
-
-      // that's currently selected in a resource view. Then it gets three resource field values by calling 
-
-      // getResourceFieldAsync recursively.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the following 
-
-      // page controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getResourceInfo);
-              });
-          };
-
-          // Get the GUID of the resource and then get the resource fields.
-          function getResourceInfo() {
-              getResourceGuid().then(
-                  function (data) {
-                      getResourceFields(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected resource.
-          function getResourceGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedResourceAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get the specified fields for the selected resource.
-          function getResourceFields(resourceGuid) {
-              var targetFields =
-                  [Office.ProjectResourceFields.Name,
-                   Office.ProjectResourceFields.Units, 
-                   Office.ProjectResourceFields.BaseCalendar];
-              var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
-              var index = 0; 
-              getField();
-
-              // Get each field, and then display the field values in the add-in.
-              function getField() {
-                  if (index == targetFields.length) {
-                      var output = '';
-                      for (var i = 0; i < fieldValues.length; i++) {
-                          output += fieldValues[i] + '<br />';
-                      }
-                      $('#message').html(output);
-                  }
-
-                  // If the call is successful, get the field value and then get the next field.
-                  else {
-                      Office.context.document.getResourceFieldAsync(
-                          resourceGuid,
-                          targetFields[index],
-                          function (result) {
-                              if (result.status === Office.AsyncResultStatus.Succeeded) {
-                                  fieldValues[index] += result.value.fieldValue;
-                                  getField(index++);
-                              }
-                              else {
-                                  onError(result.error);
-                              }
-                          }
-                      );
-                  }
-              }
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'getResourceFieldAsync(resourceId, fieldId, callback)'
     fullName: 'getResourceFieldAsync(resourceId, fieldId, callback)'
     langs:
@@ -1824,7 +1429,100 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getSelectedResourceAsync to get the GUID of the resource
+          // that's currently selected in a resource view. Then it gets three resource field values by calling 
+          // getResourceFieldAsync recursively.
+          // The example assumes your add-in has a reference to the jQuery library and that the following 
+          // page controls are defined in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      $('#get-info').click(getResourceInfo);
+                  });
+              };
+
+              // Get the GUID of the resource and then get the resource fields.
+              function getResourceInfo() {
+                  getResourceGuid().then(
+                      function (data) {
+                          getResourceFields(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected resource.
+              function getResourceGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedResourceAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get the specified fields for the selected resource.
+              function getResourceFields(resourceGuid) {
+                  var targetFields =
+                      [Office.ProjectResourceFields.Name,
+                       Office.ProjectResourceFields.Units, 
+                       Office.ProjectResourceFields.BaseCalendar];
+                  var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+                  var index = 0; 
+                  getField();
+
+                  // Get each field, and then display the field values in the add-in.
+                  function getField() {
+                      if (index == targetFields.length) {
+                          var output = '';
+                          for (var i = 0; i < fieldValues.length; i++) {
+                              output += fieldValues[i] + '<br />';
+                          }
+                          $('#message').html(output);
+                      }
+
+                      // If the call is successful, get the field value and then get the next field.
+                      else {
+                          Office.context.document.getResourceFieldAsync(
+                              resourceGuid,
+                              targetFields[index],
+                              function (result) {
+                                  if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                      fieldValues[index] += result.value.fieldValue;
+                                      getField(index++);
+                                  }
+                                  else {
+                                      onError(result.error);
+                                  }
+                              }
+                          );
+                      }
+                  }
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -1844,7 +1542,19 @@ items:
   - uid: office.Office.Document.getSelectedDataAsync
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
+      (when using `Office.CoercionType.Html`<!-- -->),
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the
@@ -1869,24 +1579,6 @@ items:
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td>
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -2044,7 +1736,19 @@ items:
   - uid: office.Office.Document.getSelectedDataAsync_1
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
+      (when using `Office.CoercionType.Html`<!-- -->),
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       In the callback function that is passed to the getSelectedDataAsync method, you can use the properties of the
@@ -2069,24 +1773,6 @@ items:
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td>
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: 'getSelectedDataAsync(coercionType, callback)'
     langs:
@@ -2113,20 +1799,6 @@ items:
             - '(result: AsyncResult<T>) => void'
   - uid: office.Office.Document.getSelectedResourceAsync
     summary: Project documents only. Get the current selected Resource's Id.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getSelectedResourceAsync(options, callback)'
     fullName: 'getSelectedResourceAsync(options, callback)'
     langs:
@@ -2154,123 +1826,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedResourceAsync_1
     summary: Project documents only. Get the current selected Resource's Id.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
-
-      // currently selected in a resource view. Then it gets three resource field values by calling 
-
-      // getResourceFieldAsync recursively.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the following page controls are
-
-      // defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getResourceInfo);
-              });
-          };
-
-          // Get the GUID of the resource and then get the resource fields.
-          function getResourceInfo() {
-              getResourceGuid().then(
-                  function (data) {
-                      getResourceFields(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected resource.
-          function getResourceGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedResourceAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get the specified fields for the selected resource.
-          function getResourceFields(resourceGuid) {
-              var targetFields =
-                  [Office.ProjectResourceFields.Name,
-                   Office.ProjectResourceFields.Units, 
-                   Office.ProjectResourceFields.BaseCalendar];
-              var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
-              var index = 0; 
-              getField();
-
-              // Get each field, and then display the field values in the add-in.
-              function getField() {
-                  if (index == targetFields.length) {
-                      var output = '';
-                      for (var i = 0; i < fieldValues.length; i++) {
-                          output += fieldValues[i] + '<br />';
-                      }
-                      $('#message').html(output);
-                  }
-
-                  // If the call is successful, get the field value and then get the next field.
-                  else {
-                      Office.context.document.getResourceFieldAsync(
-                          resourceGuid,
-                          targetFields[index],
-                          function (result) {
-                              if (result.status === Office.AsyncResultStatus.Succeeded) {
-                                  fieldValues[index] += result.value.fieldValue;
-                                  getField(index++);
-                              }
-                              else {
-                                  onError(result.error);
-                              }
-                          }
-                      );
-                  }
-              }
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: getSelectedResourceAsync(callback)
     fullName: getSelectedResourceAsync(callback)
     langs:
@@ -2281,7 +1836,111 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: >-
+
+          #### Examples
+
+
+          ```javascript
+
+          // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's 
+
+          // currently selected in a resource view. Then it gets three resource field values by calling 
+
+          // getResourceFieldAsync recursively.
+
+          // The example assumes your add-in has a reference to the jQuery library and that the following page controls
+          are
+
+          // defined in the content div in the page body:
+
+          // <input id="get-info" type="button" value="Get info" /><br />
+
+          // <span id="message"></span>
+
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      $('#get-info').click(getResourceInfo);
+                  });
+              };
+
+              // Get the GUID of the resource and then get the resource fields.
+              function getResourceInfo() {
+                  getResourceGuid().then(
+                      function (data) {
+                          getResourceFields(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected resource.
+              function getResourceGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedResourceAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get the specified fields for the selected resource.
+              function getResourceFields(resourceGuid) {
+                  var targetFields =
+                      [Office.ProjectResourceFields.Name,
+                       Office.ProjectResourceFields.Units, 
+                       Office.ProjectResourceFields.BaseCalendar];
+                  var fieldValues = ['Name: ', 'Units: ', 'Base calendar: '];
+                  var index = 0; 
+                  getField();
+
+                  // Get each field, and then display the field values in the add-in.
+                  function getField() {
+                      if (index == targetFields.length) {
+                          var output = '';
+                          for (var i = 0; i < fieldValues.length; i++) {
+                              output += fieldValues[i] + '<br />';
+                          }
+                          $('#message').html(output);
+                      }
+
+                      // If the call is successful, get the field value and then get the next field.
+                      else {
+                          Office.context.document.getResourceFieldAsync(
+                              resourceGuid,
+                              targetFields[index],
+                              function (result) {
+                                  if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                      fieldValues[index] += result.value.fieldValue;
+                                      getField(index++);
+                                  }
+                                  else {
+                                      onError(result.error);
+                                  }
+                              }
+                          );
+                      }
+                  }
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+
+          ```
       parameters:
         - id: callback
           description: >-
@@ -2292,20 +1951,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedTaskAsync
     summary: Project documents only. Get the current selected Task's Id.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getSelectedTaskAsync(options, callback)'
     fullName: 'getSelectedTaskAsync(options, callback)'
     langs:
@@ -2333,101 +1978,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedTaskAsync_1
     summary: Project documents only. Get the current selected Task's Id.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
-
-      // selected in a task view. Then it gets task properties by calling getTaskAsync.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the following page
-
-      // controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getTaskInfo);
-              });
-          };
-
-          // // Get the GUID of the task, and then get local task properties.
-          function getTaskInfo() {
-              getTaskGuid().then(
-                  function (data) {
-                      getTaskProperties(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected task.
-          function getTaskGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedTaskAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get local properties for the selected task, and then display it in the add-in.
-          function getTaskProperties(taskGuid) {
-              Office.context.document.getTaskAsync(
-                  taskGuid,
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          var taskInfo = result.value;
-                          var output = String.format(
-                              'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
-                              taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
-                          $('#message').html(output);
-                      }
-                  }
-              );
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: getSelectedTaskAsync(callback)
     fullName: getSelectedTaskAsync(callback)
     langs:
@@ -2438,7 +1988,79 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
+          // selected in a task view. Then it gets task properties by calling getTaskAsync.
+          // The example assumes your add-in has a reference to the jQuery library and that the following page
+          // controls are defined in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      $('#get-info').click(getTaskInfo);
+                  });
+              };
+
+              // // Get the GUID of the task, and then get local task properties.
+              function getTaskInfo() {
+                  getTaskGuid().then(
+                      function (data) {
+                          getTaskProperties(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected task.
+              function getTaskGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedTaskAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get local properties for the selected task, and then display it in the add-in.
+              function getTaskProperties(taskGuid) {
+                  Office.context.document.getTaskAsync(
+                      taskGuid,
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              var taskInfo = result.value;
+                              var output = String.format(
+                                  'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
+                                  taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
+                              $('#message').html(output);
+                          }
+                      }
+                  );
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: callback
           description: >-
@@ -2449,20 +2071,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getSelectedViewAsync
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getSelectedViewAsync(options, callback)'
     fullName: 'getSelectedViewAsync(options, callback)'
     langs:
@@ -2489,75 +2097,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getSelectedViewAsync_1
     summary: Project documents only. Get the current selected View Type (Ex. Gantt) and View Name.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls adds a ViewSelectionChanged event handler that
-
-      // calls getSelectedViewAsync to get the name and type of the active view in the document.
-
-      // The example assumes your add-in has a reference to the jQuery library and that
-
-      // the following page control is defined in the content div in the page body:
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  Office.context.document.addHandlerAsync(
-                      Office.EventType.ViewSelectionChanged,
-                      getActiveView);
-                  getActiveView();
-              });
-          };
-
-          // Get the active view's name and type.
-          function getActiveView() {
-              Office.context.document.getSelectedViewAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          var output = String.format(
-                              'View name: {0}<br/>View type: {1}',
-                              result.value.viewName, viewType);
-                          $('#message').html(output);
-                      }
-                  }
-              );
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: getSelectedViewAsync(callback)
     fullName: getSelectedViewAsync(callback)
     langs:
@@ -2568,7 +2107,54 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls adds a ViewSelectionChanged event handler that
+          // calls getSelectedViewAsync to get the name and type of the active view in the document.
+          // The example assumes your add-in has a reference to the jQuery library and that
+          // the following page control is defined in the content div in the page body:
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      Office.context.document.addHandlerAsync(
+                          Office.EventType.ViewSelectionChanged,
+                          getActiveView);
+                      getActiveView();
+                  });
+              };
+
+              // Get the active view's name and type.
+              function getActiveView() {
+                  Office.context.document.getSelectedViewAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              var output = String.format(
+                                  'View name: {0}<br/>View type: {1}',
+                                  result.value.viewName, viewType);
+                              $('#message').html(output);
+                          }
+                      }
+                  );
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: callback
           description: >-
@@ -2580,20 +2166,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskAsync
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getTaskAsync(taskId, options, callback)'
     fullName: 'getTaskAsync(taskId, options, callback)'
     langs:
@@ -2627,103 +2199,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskAsync_1
     summary: 'Project documents only. Get the Task Name, WSS Task Id, and ResourceNames for given taskId.'
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
-
-      // selected task. Then it calls getTaskAsync to get the properties for the task that are
-
-      // available from the JavaScript API for Office.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the
-
-      // following page controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getTaskInfo);
-              });
-          };
-
-          // Get the GUID of the task, and then get local task properties.
-          function getTaskInfo() {
-              getTaskGuid().then(
-                  function (data) {
-                      getTaskProperties(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected task.
-          function getTaskGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedTaskAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get local properties for the selected task, and then display it in the add-in.
-          function getTaskProperties(taskGuid) {
-              Office.context.document.getTaskAsync(
-                  taskGuid,
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          var taskInfo = result.value;
-                          var output = String.format(
-                              'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
-                              taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
-                          $('#message').html(output);
-                      }
-                  }
-              );
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'getTaskAsync(taskId, callback)'
     fullName: 'getTaskAsync(taskId, callback)'
     langs:
@@ -2734,7 +2209,80 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getSelectedTaskAsync to get the task GUID of the currently
+          // selected task. Then it calls getTaskAsync to get the properties for the task that are
+          // available from the JavaScript API for Office.
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      $('#get-info').click(getTaskInfo);
+                  });
+              };
+
+              // Get the GUID of the task, and then get local task properties.
+              function getTaskInfo() {
+                  getTaskGuid().then(
+                      function (data) {
+                          getTaskProperties(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected task.
+              function getTaskGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedTaskAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get local properties for the selected task, and then display it in the add-in.
+              function getTaskProperties(taskGuid) {
+                  Office.context.document.getTaskAsync(
+                      taskGuid,
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              var taskInfo = result.value;
+                              var output = String.format(
+                                  'Name: {0}<br/>GUID: {1}<br/>SharePoint task ID: {2}<br/>Resource names: {3}',
+                                  taskInfo.taskName, taskGuid, taskInfo.wssTaskId, taskInfo.resourceNames);
+                              $('#message').html(output);
+                          }
+                      }
+                  );
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -2754,20 +2302,6 @@ items:
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getTaskByIndexAsync(taskIndex, options, callback)'
     fullName: 'getTaskByIndexAsync(taskIndex, options, callback)'
     langs:
@@ -2802,112 +2336,6 @@ items:
       Project documents only. Get the GUID of the task that has the specified index in the task collection.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getMaxTaskIndexAsync to get the
-
-      // maximum index in the project's task collection, and then
-
-      // calls getTaskByIndexAsync to get the GUID for each task.
-
-      // The example assumes that your add-in has a reference to the
-
-      // jQuery library and that the following page controls are defined
-
-      // in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-          var taskGuids = ;
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  app.initialize();
-                  $('#get-info').click(getTaskInfo);
-              });
-          };
-
-          // Get the maximum task index, and then get the task GUIDs.
-          function getTaskInfo() {
-              getMaxTaskIndex().then(
-                  function (data) {
-                      getTaskGuids(data);
-                  }
-              );
-          }
-
-          // Get the maximum index of the tasks for the current project.
-          function getMaxTaskIndex() {
-              var defer = $.Deferred();
-              Office.context.document.getMaxTaskIndexAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get each task GUID, and then display the GUIDs in the add-in.
-          function getTaskGuids(maxTaskIndex) {
-              var defer = $.Deferred();
-              for (var i = 0; i <= maxTaskIndex; i++) {
-                  getTaskGuid(i);
-              }
-              return defer.promise();
-              function getTaskGuid(index) {
-                  Office.context.document.getTaskByIndexAsync(index,
-                      function (result) {
-                          if (result.status === Office.AsyncResultStatus.Succeeded) {
-                              taskGuids.push(result.value);
-                              if (index == maxTaskIndex) {
-                                  defer.resolve();
-                                  $('#message').html(taskGuids.toString());
-                              }
-                          }
-                          else {
-                              onError(result.error);
-                          }
-                      }
-                  );
-              }
-          }
-          function onError(error) {
-              app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'getTaskByIndexAsync(taskIndex, callback)'
     fullName: 'getTaskByIndexAsync(taskIndex, callback)'
     langs:
@@ -2918,7 +2346,88 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getMaxTaskIndexAsync to get the
+          // maximum index in the project's task collection, and then
+          // calls getTaskByIndexAsync to get the GUID for each task.
+          // The example assumes that your add-in has a reference to the
+          // jQuery library and that the following page controls are defined
+          // in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+              var taskGuids = ;
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      app.initialize();
+                      $('#get-info').click(getTaskInfo);
+                  });
+              };
+
+              // Get the maximum task index, and then get the task GUIDs.
+              function getTaskInfo() {
+                  getMaxTaskIndex().then(
+                      function (data) {
+                          getTaskGuids(data);
+                      }
+                  );
+              }
+
+              // Get the maximum index of the tasks for the current project.
+              function getMaxTaskIndex() {
+                  var defer = $.Deferred();
+                  Office.context.document.getMaxTaskIndexAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get each task GUID, and then display the GUIDs in the add-in.
+              function getTaskGuids(maxTaskIndex) {
+                  var defer = $.Deferred();
+                  for (var i = 0; i <= maxTaskIndex; i++) {
+                      getTaskGuid(i);
+                  }
+                  return defer.promise();
+                  function getTaskGuid(index) {
+                      Office.context.document.getTaskByIndexAsync(index,
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  taskGuids.push(result.value);
+                                  if (index == maxTaskIndex) {
+                                      defer.resolve();
+                                      $('#message').html(taskGuids.toString());
+                                  }
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+              }
+              function onError(error) {
+                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: taskIndex
           description: The index of the task in the collection of tasks for the project.
@@ -2933,20 +2442,6 @@ items:
             - '(result: AsyncResult<string>) => void'
   - uid: office.Office.Document.getTaskFieldAsync
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
     fullName: 'getTaskFieldAsync(taskId, fieldId, options, callback)'
     langs:
@@ -2982,118 +2477,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getTaskFieldAsync_1
     summary: Project documents only. Get task field for provided task Id. (Ex. StartDate).
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
-
-      // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the following page
-
-      // controls are defined in the content div in the page body:
-
-      // <input id="get-info" type="button" value="Get info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-                  
-                  // After the DOM is loaded, add-in-specific code can run.
-                  $('#get-info').click(getTaskInfo);
-              });
-          };
-
-          // Get the GUID of the task, and then get the task fields.
-          function getTaskInfo() {
-              getTaskGuid().then(
-                  function (data) {
-                      getTaskFields(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected task.
-          function getTaskGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedTaskAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Get the specified fields for the selected task.
-          function getTaskFields(taskGuid) {
-              var output = '';
-              var targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
-              var fieldValues = ['Priority: ', '% Complete: '];
-              var index = 0;
-              getField();
-
-              // Get each field, and then display the field values in the add-in.
-              function getField() {
-                  if (index == targetFields.length) {
-                      for (var i = 0; i < fieldValues.length; i++) {
-                          output += fieldValues[i] + '<br />';
-                      }
-                      $('#message').html(output);
-                  }
-
-                  // Get the field value. If the call is successful, then get the next field.
-                  else {
-                      Office.context.document.getTaskFieldAsync(
-                          taskGuid,
-                          targetFields[index],
-                          function (result) {
-                              if (result.status === Office.AsyncResultStatus.Succeeded) {
-                                  fieldValues[index] += result.value.fieldValue;
-                                  getField(index++);
-                              }
-                              else {
-                                  onError(result.error);
-                              }
-                          }
-                      );
-                  }
-              }
-          }
-
-          function onError(error) {
-              $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'getTaskFieldAsync(taskId, fieldId, callback)'
     fullName: 'getTaskFieldAsync(taskId, fieldId, callback)'
     langs:
@@ -3104,7 +2487,96 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getSelectedTaskAsync to get the GUID of the task that's currently
+          // selected in a task view. Then it gets two task field values by calling getTaskFieldAsync recursively.
+          // The example assumes your add-in has a reference to the jQuery library and that the following page
+          // controls are defined in the content div in the page body:
+          // <input id="get-info" type="button" value="Get info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+                      
+                      // After the DOM is loaded, add-in-specific code can run.
+                      $('#get-info').click(getTaskInfo);
+                  });
+              };
+
+              // Get the GUID of the task, and then get the task fields.
+              function getTaskInfo() {
+                  getTaskGuid().then(
+                      function (data) {
+                          getTaskFields(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected task.
+              function getTaskGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedTaskAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Get the specified fields for the selected task.
+              function getTaskFields(taskGuid) {
+                  var output = '';
+                  var targetFields = [Office.ProjectTaskFields.Priority, Office.ProjectTaskFields.PercentComplete];
+                  var fieldValues = ['Priority: ', '% Complete: '];
+                  var index = 0;
+                  getField();
+
+                  // Get each field, and then display the field values in the add-in.
+                  function getField() {
+                      if (index == targetFields.length) {
+                          for (var i = 0; i < fieldValues.length; i++) {
+                              output += fieldValues[i] + '<br />';
+                          }
+                          $('#message').html(output);
+                      }
+
+                      // Get the field value. If the call is successful, then get the next field.
+                      else {
+                          Office.context.document.getTaskFieldAsync(
+                              taskGuid,
+                              targetFields[index],
+                              function (result) {
+                                  if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                      fieldValues[index] += result.value.fieldValue;
+                                      getField(index++);
+                                  }
+                                  else {
+                                      onError(result.error);
+                                  }
+                              }
+                          );
+                      }
+                  }
+              }
+
+              function onError(error) {
+                  $('#message').html(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -3123,20 +2595,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getWSSUrlAsync
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'getWSSUrlAsync(options, callback)'
     fullName: 'getWSSUrlAsync(options, callback)'
     langs:
@@ -3163,20 +2621,6 @@ items:
             - '(result: AsyncResult<any>) => void'
   - uid: office.Office.Document.getWSSUrlAsync_1
     summary: 'Project documents only. Get the WSS Url and list name for the Tasks List, the MPP is synced too.'
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: getWSSUrlAsync(callback)
     fullName: getWSSUrlAsync(callback)
     langs:
@@ -3200,7 +2644,8 @@ items:
   - uid: office.Office.Document.goToByIdAsync
     summary: Goes to the specified object or location in the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
+      **Requirement set**: [Not in a
+      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       PowerPoint doesn't support the goToByIdAsync method in Master Views.
@@ -3221,24 +2666,6 @@ items:
       In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td><td> Y
-      </td></tr> </table>
     name: 'goToByIdAsync(id, goToType, options, callback)'
     fullName: 'goToByIdAsync(id, goToType, options, callback)'
     langs:
@@ -3275,7 +2702,8 @@ items:
   - uid: office.Office.Document.goToByIdAsync_1
     summary: Goes to the specified object or location in the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>not in a set</td></tr></table>
+      **Requirement set**: [Not in a
+      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       PowerPoint doesn't support the goToByIdAsync method in Master Views.
@@ -3296,24 +2724,6 @@ items:
       In Word: `Office.SelectionMode.Selected` selects all content in the binding. Office.SelectionMode.None for text
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td><td> Y
-      </td></tr> </table>
 
       #### Examples
 
@@ -3481,26 +2891,8 @@ items:
   - uid: office.Office.Document.removeHandlerAsync
     summary: Removes an event handler for the specified event type.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td>
-      </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong>
-      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+      **Requirement set**:
+      [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
@@ -3532,26 +2924,8 @@ items:
   - uid: office.Office.Document.removeHandlerAsync_1
     summary: Removes an event handler for the specified event type.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>DocumentEvents</td></tr></table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td>
-      </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong>
-      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
+      **Requirement set**:
+      [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
 
       #### Examples
 
@@ -3670,20 +3044,6 @@ items:
       Project documents only. Set resource field for specified resource Id.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
     fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, options, callback)'
     langs:
@@ -3725,115 +3085,6 @@ items:
       Project documents only. Set resource field for specified resource Id.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
-
-      // currently selected in a resource view. Then it sets two resource field values by calling
-
-      // setResourceFieldAsync recursively.
-
-      // The getSelectedTaskAsync method used in the example requires that a task view
-
-      // (for example, Task Usage) is the active view and that a task is selected. See the addHandlerAsync
-
-      // method for an example that activates a button based on the active view type.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the
-
-      // following page controls are defined in the content div in the page body:
-
-      // <input id="set-info" type="button" value="Set info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // After the DOM is loaded, add-in-specific code can run.
-                  app.initialize();
-                  $('#set-info').click(setResourceInfo);
-              });
-          };
-
-          // Get the GUID of the resource, and then get the resource fields.
-          function setResourceInfo() {
-              getResourceGuid().then(
-                  function (data) {
-                      setResourceFields(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected resource.
-          function getResourceGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedResourceAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Set the specified fields for the selected resource.
-          function setResourceFields(resourceGuid) {
-              var targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
-              var fieldValues = [.28, 'Notes for the resource.'];
-
-              // Set the field value. If the call is successful, set the next field.
-              for (var i = 0; i < targetFields.length; i++) {
-                  Office.context.document.setResourceFieldAsync(
-                      resourceGuid,
-                      targetFields[i],
-                      fieldValues[i],
-                      function (result) {
-                          if (result.status === Office.AsyncResultStatus.Succeeded) {
-                              i++;
-                          }
-                          else {
-                              onError(result.error);
-                          }
-                      }
-                  );
-              }
-              $('#message').html('Field values set');
-          }
-
-          function onError(error) {
-              app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
     fullName: 'setResourceFieldAsync(resourceId, fieldId, fieldValue, callback)'
     langs:
@@ -3846,7 +3097,89 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getSelectedResourceAsync to get the GUID of the resource that's
+          // currently selected in a resource view. Then it sets two resource field values by calling
+          // setResourceFieldAsync recursively.
+          // The getSelectedTaskAsync method used in the example requires that a task view
+          // (for example, Task Usage) is the active view and that a task is selected. See the addHandlerAsync
+          // method for an example that activates a button based on the active view type.
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
+          // <input id="set-info" type="button" value="Set info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // After the DOM is loaded, add-in-specific code can run.
+                      app.initialize();
+                      $('#set-info').click(setResourceInfo);
+                  });
+              };
+
+              // Get the GUID of the resource, and then get the resource fields.
+              function setResourceInfo() {
+                  getResourceGuid().then(
+                      function (data) {
+                          setResourceFields(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected resource.
+              function getResourceGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedResourceAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Set the specified fields for the selected resource.
+              function setResourceFields(resourceGuid) {
+                  var targetFields = [Office.ProjectResourceFields.StandardRate, Office.ProjectResourceFields.Notes];
+                  var fieldValues = [.28, 'Notes for the resource.'];
+
+                  // Set the field value. If the call is successful, set the next field.
+                  for (var i = 0; i < targetFields.length; i++) {
+                      Office.context.document.setResourceFieldAsync(
+                          resourceGuid,
+                          targetFields[i],
+                          fieldValues[i],
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  i++;
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+                  $('#message').html('Field values set');
+              }
+
+              function onError(error) {
+                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: resourceId
           description: Either a string or value of the Resource Id.
@@ -3869,7 +3202,21 @@ items:
   - uid: office.Office.Document.setSelectedDataAsync
     summary: Writes the specified data into the current selection.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)<!--
+      -->, (when using `Office.CoercionType.Html`<!-- -->),
+      [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion)
+      (when using `Office.CoercionType.Image`<!-- -->),
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       **Application-specific behaviors**
@@ -3934,24 +3281,6 @@ items:
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td>
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -4169,7 +3498,21 @@ items:
   - uid: office.Office.Document.setSelectedDataAsync_1
     summary: Writes the specified data into the current selection.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Selection</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)<!--
+      -->, (when using `Office.CoercionType.Html`<!-- -->),
+      [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion)
+      (when using `Office.CoercionType.Image`<!-- -->),
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       **Application-specific behaviors**
@@ -4234,24 +3577,6 @@ items:
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Excel </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y
-      </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td><td> </td><td>
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
@@ -4316,20 +3641,6 @@ items:
       Project documents only. Set task field for specified task Id.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
     name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
     fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, options, callback)'
     langs:
@@ -4371,115 +3682,6 @@ items:
       Project documents only. Set task field for specified task Id.
 
       **Important**: This API works only in Project 2016 on Windows desktop.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser)</th></tr> <tr><td><strong> Project </strong></td><td> Y </td><td> </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code example calls getSelectedTaskAsync to get the GUID of the task that's
-
-      // currently selected in a task view. Then it sets two task field values by calling
-
-      // setTaskFieldAsync recursively.
-
-      // The getSelectedTaskAsync method used in the example requires that a task view
-
-      // (for example, Task Usage) is the active view and that a task is selected. See the
-
-      // addHandlerAsync method for an example that activates a button based on the active view type.
-
-      // The example assumes your add-in has a reference to the jQuery library and that the
-
-      // following page controls are defined in the content div in the page body:
-
-      // <input id="set-info" type="button" value="Set info" /><br />
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-                  
-                  // After the DOM is loaded, add-in-specific code can run.
-                  app.initialize();
-                  $('#set-info').click(setTaskInfo);
-              });
-          };
-
-          // Get the GUID of the task, and then get the task fields.
-          function setTaskInfo() {
-              getTaskGuid().then(
-                  function (data) {
-                      setTaskFields(data);
-                  }
-              );
-          }
-
-          // Get the GUID of the selected task.
-          function getTaskGuid() {
-              var defer = $.Deferred();
-              Office.context.document.getSelectedTaskAsync(
-                  function (result) {
-                      if (result.status === Office.AsyncResultStatus.Failed) {
-                          onError(result.error);
-                      }
-                      else {
-                          defer.resolve(result.value);
-                      }
-                  }
-              );
-              return defer.promise();
-          }
-
-          // Set the specified fields for the selected task.
-          function setTaskFields(taskGuid) {
-              var targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
-              var fieldValues = [true, 'Notes for the task.'];
-
-              // Set the field value. If the call is successful, set the next field.
-              for (var i = 0; i < targetFields.length; i++) {
-                  Office.context.document.setTaskFieldAsync(
-                      taskGuid,
-                      targetFields[i],
-                      fieldValues[i],
-                      function (result) {
-                          if (result.status === Office.AsyncResultStatus.Succeeded) {
-                              i++;
-                          }
-                          else {
-                              onError(result.error);
-                          }
-                      }
-                  );
-              }
-              $('#message').html('Field values set');
-          }
-
-          function onError(error) {
-              app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
-          }
-      })();
-
-      ```
     name: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
     fullName: 'setTaskFieldAsync(taskId, fieldId, fieldValue, callback)'
     langs:
@@ -4492,7 +3694,89 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          // The following code example calls getSelectedTaskAsync to get the GUID of the task that's
+          // currently selected in a task view. Then it sets two task field values by calling
+          // setTaskFieldAsync recursively.
+          // The getSelectedTaskAsync method used in the example requires that a task view
+          // (for example, Task Usage) is the active view and that a task is selected. See the
+          // addHandlerAsync method for an example that activates a button based on the active view type.
+          // The example assumes your add-in has a reference to the jQuery library and that the
+          // following page controls are defined in the content div in the page body:
+          // <input id="set-info" type="button" value="Set info" /><br />
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+                      
+                      // After the DOM is loaded, add-in-specific code can run.
+                      app.initialize();
+                      $('#set-info').click(setTaskInfo);
+                  });
+              };
+
+              // Get the GUID of the task, and then get the task fields.
+              function setTaskInfo() {
+                  getTaskGuid().then(
+                      function (data) {
+                          setTaskFields(data);
+                      }
+                  );
+              }
+
+              // Get the GUID of the selected task.
+              function getTaskGuid() {
+                  var defer = $.Deferred();
+                  Office.context.document.getSelectedTaskAsync(
+                      function (result) {
+                          if (result.status === Office.AsyncResultStatus.Failed) {
+                              onError(result.error);
+                          }
+                          else {
+                              defer.resolve(result.value);
+                          }
+                      }
+                  );
+                  return defer.promise();
+              }
+
+              // Set the specified fields for the selected task.
+              function setTaskFields(taskGuid) {
+                  var targetFields = [Office.ProjectTaskFields.Active, Office.ProjectTaskFields.Notes];
+                  var fieldValues = [true, 'Notes for the task.'];
+
+                  // Set the field value. If the call is successful, set the next field.
+                  for (var i = 0; i < targetFields.length; i++) {
+                      Office.context.document.setTaskFieldAsync(
+                          taskGuid,
+                          targetFields[i],
+                          fieldValues[i],
+                          function (result) {
+                              if (result.status === Office.AsyncResultStatus.Succeeded) {
+                                  i++;
+                              }
+                              else {
+                                  onError(result.error);
+                              }
+                          }
+                      );
+                  }
+                  $('#message').html('Field values set');
+              }
+
+              function onError(error) {
+                  app.showNotification(error.name + ' ' + error.code + ': ' + error.message);
+              }
+          })();
+          ```
       parameters:
         - id: taskId
           description: Either a string or value of the Task Id.
@@ -4517,24 +3801,6 @@ items:
     remarks: >-
       You don't instantiate the Document object directly in your script. To call members of the Document object to
       interact with the current document or worksheet, use `Office.context.document` in your script.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td>
-      Y </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
 
       #### Examples
 
@@ -4571,41 +3837,6 @@ items:
           - office.Office.Bindings
   - uid: office.Office.Document.customXmlParts
     summary: Gets an object that represents the custom XML parts in the document.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function getCustomXmlParts(){
-          Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
-              write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: customXmlParts
     fullName: customXmlParts
     langs:
@@ -4616,86 +3847,24 @@ items:
       return:
         type:
           - office.Office.CustomXmlParts
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function getCustomXmlParts(){
+              Office.context.document.customXmlParts.getByNamespaceAsync('http://tempuri.org', function (asyncResult) {
+                  write('Retrieved ' + asyncResult.value.length + ' custom XML parts');
+              });
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
   - uid: office.Office.Document.mode
     summary: Gets the mode the document is in.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y
-      </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayDocumentMode() {
-          write(Office.context.document.mode);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-
-      ```javascript
-
-      // The following example initializes the add-in and then gets properties of the
-
-      // Document object that are available in the context of a Project document.
-
-      // A Project document is the opened, active project. To access members of the
-
-      // ProjectDocument object, use the Office.context.document object as shown in
-
-      // the code examples for ProjectDocument methods and events.
-
-      // The example assumes your add-in has a reference to the jQuery library and
-
-      // that the following page control is defined in the content div in the page body:
-
-      // <span id="message"></span>
-
-
-      (function () {
-          "use strict";
-
-          // The initialize function must be run each time a new page is loaded.
-          Office.initialize = function (reason) {
-              $(document).ready(function () {
-
-                  // Get information about the document.
-                  showDocumentProperties();
-              });
-          };
-
-          // Get the document mode and the URL of the active project.
-          function showDocumentProperties() {
-              var output = String.format(
-                  'The document mode is {0}.<br/>The URL of the active project is {1}.',
-                  Office.context.document.mode,
-                  Office.context.document.url);
-              $('#message').html(output);
-          }
-      })();
-
-      ```
     name: mode
     fullName: mode
     langs:
@@ -4706,28 +3875,56 @@ items:
       return:
         type:
           - office.Office.DocumentMode
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function displayDocumentMode() {
+              write(Office.context.document.mode);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```
+          ```javascript
+          // The following example initializes the add-in and then gets properties of the
+          // Document object that are available in the context of a Project document.
+          // A Project document is the opened, active project. To access members of the
+          // ProjectDocument object, use the Office.context.document object as shown in
+          // the code examples for ProjectDocument methods and events.
+          // The example assumes your add-in has a reference to the jQuery library and
+          // that the following page control is defined in the content div in the page body:
+          // <span id="message"></span>
+
+          (function () {
+              "use strict";
+
+              // The initialize function must be run each time a new page is loaded.
+              Office.initialize = function (reason) {
+                  $(document).ready(function () {
+
+                      // Get information about the document.
+                      showDocumentProperties();
+                  });
+              };
+
+              // Get the document mode and the URL of the active project.
+              function showDocumentProperties() {
+                  var output = String.format(
+                      'The document mode is {0}.<br/>The URL of the active project is {1}.',
+                      Office.context.document.mode,
+                      Office.context.document.url);
+                  $('#message').html(output);
+              }
+          })();
+          ```
   - uid: office.Office.Document.settings
     summary: >-
       Gets an object that represents the saved custom settings of the content or task pane add-in for the current
       document.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> OneNote </strong></td><td> </td><td> Y </td><td> </td><td> </td></tr>
-      <tr><td><strong> PowerPoint </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong>
-      Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr> </table>
     name: settings
     fullName: settings
     langs:
@@ -4740,41 +3937,6 @@ items:
           - office.Office.Settings
   - uid: office.Office.Document.url
     summary: Gets the URL of the document that the host application currently has open. Returns null if the URL is unavailable.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
-      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong>
-      PowerPoint </strong></td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
-      </td><td> Y </td><td> Y </td></tr> </table>
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayDocumentUrl() {
-          write(Office.context.document.url);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: url
     fullName: url
     langs:
@@ -4785,3 +3947,17 @@ items:
       return:
         type:
           - string
+        description: |-
+
+          #### Examples
+
+          ```javascript
+          function displayDocumentUrl() {
+              write(Office.context.document.url);
+          }
+
+          // Function that writes to a div with id='message' on the page.
+          function write(message){
+              document.getElementById('message').innerText += message; 
+          }
+          ```

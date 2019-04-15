@@ -3142,7 +3142,7 @@ Office.Context.officeTheme:
         // Get office theme colors.
         var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply body background color to a CSS class.
@@ -4461,7 +4461,7 @@ Office.OfficeTheme:
         // Get office theme colors.
         var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply body background color to a CSS class.

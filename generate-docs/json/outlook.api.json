@@ -7296,7 +7296,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(Categories:interface)",
-              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents the categories on an item.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines {@link MasterCategories | categories in a master list} on their mailbox. They can then apply one or more categories to an item.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -18288,6 +18288,35 @@
                 },
                 {
                   "kind": "PropertySignature",
+                  "canonicalReference": "masterCategories",
+                  "docComment": "/**\n * Gets an object that provides methods to manage the categories master list associated with a mailbox.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "masterCategories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MasterCategories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "masterCategories",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
                   "canonicalReference": "restUrl",
                   "docComment": "/**\n * Gets the URL of the REST endpoint for this email account.\n *\n * Your app must have the ReadItem permission specified in its manifest to call the restUrl member in read mode.\n *\n * In compose mode you must call the saveAsync method before you can use the restUrl member. Your app must have ReadWriteItem permissions to call the saveAsync method.\n *\n * [Api set: Mailbox 1.5]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * The restUrl value can be used to make {@link https://docs.microsoft.com/outlook/rest/ | REST API} calls to the user's mailbox.\n */\n",
                   "excerptTokens": [
@@ -24525,6 +24554,713 @@
                   ]
                 }
               ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(MasterCategories:interface)",
+              "docComment": "/**\n * Represents the categories master list on the mailbox.\n *\n * In Outlook, a user can group messages and appointments by using a category to color-code them. The user defines categories in a master list on their mailbox. They can then apply one or more categories to an item.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @beta\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "MasterCategories"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Beta",
+              "name": "MasterCategories",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(addAsync:0)",
+                  "docComment": "/**\n * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> <tr><td>Errors</td><td>DuplicateCategory - One of the categories provided is already in the master category list.</td></tr> <tr><td></td><td>PermissionDenied - The user does not have permission to perform this action.</td></tr> </table>\n *\n * @param categories - The categories to be added to the master list on the mailbox.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "addAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 23,
+                    "endIndex": 24
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 6
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 9,
+                        "endIndex": 12
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 15,
+                        "endIndex": 22
+                      }
+                    }
+                  ],
+                  "name": "addAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(addAsync:1)",
+                  "docComment": "/**\n * Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can use the same color.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> <tr><td>Errors</td><td>DuplicateCategory - One of the categories provided is already in the master category list.</td></tr> <tr><td></td><td>PermissionDenied - The user does not have permission to perform this action.</td></tr> </table>\n *\n * @param categories - The categories to be added to the master list on the mailbox.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "addAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 17,
+                    "endIndex": 18
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 6
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 9,
+                        "endIndex": 16
+                      }
+                    }
+                  ],
+                  "name": "addAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getAsync:0)",
+                  "docComment": "/**\n * Gets the master list of categories on a mailbox.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If adding categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 20,
+                    "endIndex": 21
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 10,
+                        "endIndex": 19
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getAsync:1)",
+                  "docComment": "/**\n * Gets the master list of categories on a mailbox.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> </table>\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<"
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CategoryDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 14,
+                    "endIndex": 15
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 13
+                      }
+                    }
+                  ],
+                  "name": "getAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeAsync:0)",
+                  "docComment": "/**\n * Removes categories from the master list on a mailbox.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> <tr><td>Errors</td><td>PermissionDenied - The user does not have permission to perform this action.</td></tr> </table>\n *\n * @param categories - The categories to be removed from the master list on the mailbox.\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "options"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncContextOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 22,
+                    "endIndex": 23
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "options",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 11
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 14,
+                        "endIndex": 21
+                      }
+                    }
+                  ],
+                  "name": "removeAsync"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeAsync:1)",
+                  "docComment": "/**\n * Removes categories from the master list on a mailbox.\n *\n * @remarks\n *\n * <table> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteMailbox</td></tr> <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr> <tr><td>Errors</td><td>PermissionDenied - The user does not have permission to perform this action.</td></tr> </table>\n *\n * @param categories - The categories to be removed from the master list on the mailbox.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. If removing categories fails, the asyncResult.error property will contain an error code.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeAsync"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "categories"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "callback"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "asyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AsyncResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>) => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 16,
+                    "endIndex": 17
+                  },
+                  "releaseTag": "Beta",
+                  "overloadIndex": 1,
+                  "parameters": [
+                    {
+                      "parameterName": "categories",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "callback",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 15
+                      }
+                    }
+                  ],
+                  "name": "removeAsync"
+                }
+              ],
+              "extendsTokenRanges": []
             },
             {
               "kind": "Interface",

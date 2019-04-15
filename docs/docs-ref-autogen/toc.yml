@@ -1602,6 +1602,8 @@ items:
                 uid: outlook.Office.LocationIdentifier
               - name: Mailbox
                 uid: outlook.Office.Mailbox
+              - name: MasterCategories
+                uid: outlook.Office.MasterCategories
               - name: MeetingSuggestion
                 uid: outlook.Office.MeetingSuggestion
               - name: MessageCompose
