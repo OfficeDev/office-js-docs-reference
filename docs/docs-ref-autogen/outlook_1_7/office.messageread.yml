@@ -175,6 +175,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -318,6 +319,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -444,6 +446,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -490,6 +493,7 @@ items:
       <td>MeetingSuggestion</td> <td>MeetingSuggestion</td> <td>ReadItem</td> </tr> <tr> <td>PhoneNumber</td>
       <td>PhoneNumber</td> <td>Restricted</td> </tr> <tr> <td>TaskSuggestion</td> <td>TaskSuggestion</td>
       <td>ReadItem</td> </tr> <tr> <td>URL</td> <td>String</td> <td>Restricted</td> </tr> </table>
+
 
       #### Examples
 
@@ -603,6 +607,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -690,6 +695,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -762,6 +768,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -812,6 +819,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1024,6 +1032,7 @@ items:
       Outlook](https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519)<!--
       -->.
 
+
       #### Examples
 
 
@@ -1073,6 +1082,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1124,6 +1134,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1163,6 +1174,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1193,6 +1205,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1227,6 +1240,7 @@ items:
 
 
       **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+
 
       #### Examples
 
@@ -1270,6 +1284,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1300,6 +1315,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1350,6 +1366,7 @@ items:
       <td>IPM.Note,IPM.Schedule.Meeting.Request,IPM.Schedule.Meeting.Neg,IPM.Schedule.Meeting.Pos,IPM.Schedule.Meeting.Tent,IPM.Schedule.Meeting.Canceled</td>
       </tr> </table>
 
+
       #### Examples
 
 
@@ -1393,6 +1410,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1442,6 +1460,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1480,6 +1499,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1510,6 +1530,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1560,6 +1581,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1598,6 +1620,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1647,6 +1670,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 
@@ -1698,6 +1722,7 @@ items:
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
 
+
       #### Examples
 
 
@@ -1748,6 +1773,7 @@ items:
       level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
       <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Message
       Read</td></tr> </table>
+
 
       #### Examples
 

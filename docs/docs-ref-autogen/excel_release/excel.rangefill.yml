@@ -40,6 +40,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -142,6 +143,7 @@ items:
         type:
           - excel.Excel.RangeFill
         description: |-
+
 
           #### Examples
 

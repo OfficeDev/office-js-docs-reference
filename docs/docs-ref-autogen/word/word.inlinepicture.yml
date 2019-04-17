@@ -136,6 +136,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -168,6 +169,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 
@@ -215,6 +217,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 

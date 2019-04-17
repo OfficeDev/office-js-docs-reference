@@ -72,6 +72,7 @@ items:
           - onenote.OneNote.PageCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -227,6 +228,7 @@ items:
         type:
           - onenote.OneNote.PageCollection
         description: |-
+
 
           #### Examples
 

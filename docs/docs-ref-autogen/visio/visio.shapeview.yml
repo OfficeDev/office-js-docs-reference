@@ -44,6 +44,7 @@ items:
           - OfficeExtension.ClientResult<number>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -144,6 +145,7 @@ items:
         type:
           - visio.Visio.Highlight
         description: |-
+
 
           #### Examples
 
@@ -256,6 +258,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

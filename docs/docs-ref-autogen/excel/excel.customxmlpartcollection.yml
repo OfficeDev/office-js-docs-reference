@@ -42,6 +42,7 @@ items:
           - excel.Excel.CustomXmlPart
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -100,6 +101,7 @@ items:
         type:
           - excel.Excel.CustomXmlPartScopedCollection
         description: |-
+
 
           #### Examples
 
@@ -169,6 +171,7 @@ items:
         type:
           - excel.Excel.CustomXmlPart
         description: |-
+
 
           #### Examples
 

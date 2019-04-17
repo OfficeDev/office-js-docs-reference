@@ -11,10 +11,12 @@ items:
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
     isPreview: true
     name: Office.MasterCategories
     fullName: Office.MasterCategories
@@ -34,12 +36,22 @@ items:
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>DuplicateCategory - One of the categories provided is already in the master
-      category list.</td></tr> <tr><td></td><td>PermissionDenied - The user does not have permission to perform this
-      action.</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
+      ReadWriteMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      **Errors**:
+
+
+      - DuplicateCategory: One of the categories provided is already in the master category list.
+
+
+      - PermissionDenied: The user does not have permission to perform this action.
     isPreview: true
     name: 'addAsync(categories, options, callback)'
     fullName: 'addAsync(categories, options, callback)'
@@ -79,12 +91,22 @@ items:
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>DuplicateCategory - One of the categories provided is already in the master
-      category list.</td></tr> <tr><td></td><td>PermissionDenied - The user does not have permission to perform this
-      action.</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
+      ReadWriteMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      **Errors**:
+
+
+      - DuplicateCategory: One of the categories provided is already in the master category list.
+
+
+      - PermissionDenied: The user does not have permission to perform this action.
     isPreview: true
     name: 'addAsync(categories, callback)'
     fullName: 'addAsync(categories, callback)'
@@ -115,10 +137,12 @@ items:
   - uid: outlook.Office.MasterCategories.getAsync
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
     isPreview: true
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
@@ -153,10 +177,12 @@ items:
   - uid: outlook.Office.MasterCategories.getAsync_1
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
     isPreview: true
     name: getAsync(callback)
     fullName: getAsync(callback)
@@ -182,11 +208,19 @@ items:
   - uid: outlook.Office.MasterCategories.removeAsync
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>PermissionDenied - The user does not have permission to perform this
-      action.</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
+      ReadWriteMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      **Errors**:
+
+
+      - PermissionDenied: The user does not have permission to perform this action.
     isPreview: true
     name: 'removeAsync(categories, options, callback)'
     fullName: 'removeAsync(categories, options, callback)'
@@ -225,11 +259,19 @@ items:
   - uid: outlook.Office.MasterCategories.removeAsync_1
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadWriteMailbox</td></tr>
-      <tr><td>[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Compose or
-      Read</td></tr> <tr><td>Errors</td><td>PermissionDenied - The user does not have permission to perform this
-      action.</td></tr> </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**:
+      ReadWriteMailbox
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
+      **Errors**:
+
+
+      - PermissionDenied: The user does not have permission to perform this action.
     isPreview: true
     name: 'removeAsync(categories, callback)'
     fullName: 'removeAsync(categories, callback)'

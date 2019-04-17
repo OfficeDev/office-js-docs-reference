@@ -94,6 +94,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -206,6 +207,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -271,6 +273,7 @@ items:
         type:
           - excel.Excel.Chart
         description: |-
+
 
           #### Examples
 
@@ -384,6 +387,7 @@ items:
           - excel.Excel.ChartCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -457,6 +461,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -487,6 +492,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -519,6 +525,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -549,6 +556,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>
         description: |-
+
 
           #### Examples
 

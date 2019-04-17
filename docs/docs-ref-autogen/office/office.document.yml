@@ -116,6 +116,7 @@ items:
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
 
+
       #### Examples
 
 
@@ -486,6 +487,7 @@ items:
 
       Can trigger an event when the view changes.
 
+
       #### Examples
 
 
@@ -561,6 +563,7 @@ items:
 
       Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`<!-- -->,
       `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
+
 
       #### Examples
 
@@ -789,6 +792,7 @@ items:
 
       You get the file's URL with the url property `asyncResult.value.url`<!-- -->.
 
+
       #### Examples
 
 
@@ -883,6 +887,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -1018,6 +1023,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1150,6 +1156,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1278,6 +1285,7 @@ items:
         type:
           - void
         description: >-
+
 
           #### Examples
 
@@ -1431,6 +1439,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1579,6 +1588,7 @@ items:
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+
 
       #### Examples
 
@@ -1838,6 +1848,7 @@ items:
           - void
         description: >-
 
+
           #### Examples
 
 
@@ -1990,6 +2001,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -2109,6 +2121,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -2210,6 +2223,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -2347,6 +2361,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -2488,6 +2503,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -2725,6 +2741,7 @@ items:
       bindings, moves the cursor to the beginning of the text; for matrix bindings and table bindings, selects the first
       data cell (not first cell in header row for tables).
 
+
       #### Examples
 
 
@@ -2927,6 +2944,7 @@ items:
       **Requirement set**:
       [DocumentEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#documentevents)
 
+
       #### Examples
 
 
@@ -3098,6 +3116,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -3281,6 +3300,7 @@ items:
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
+
 
       #### Examples
 
@@ -3696,6 +3716,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -3802,6 +3823,7 @@ items:
       You don't instantiate the Document object directly in your script. To call members of the Document object to
       interact with the current document or worksheet, use `Office.context.document` in your script.
 
+
       #### Examples
 
 
@@ -3849,6 +3871,7 @@ items:
           - office.Office.CustomXmlParts
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -3876,6 +3899,7 @@ items:
         type:
           - office.Office.DocumentMode
         description: |-
+
 
           #### Examples
 
@@ -3948,6 +3972,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

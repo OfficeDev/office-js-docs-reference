@@ -30,6 +30,7 @@ items:
           - number
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -56,6 +57,7 @@ items:
         type:
           - number
         description: |-
+
 
           #### Examples
 

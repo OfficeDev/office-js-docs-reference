@@ -38,6 +38,7 @@ items:
           - OfficeExtension.ClientResult<number>
         description: |-
 
+
           #### Examples
 
           ```javascript

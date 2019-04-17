@@ -60,6 +60,7 @@ items:
           - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
         description: |-
 
+
           #### Examples
 
           ```typescript

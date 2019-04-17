@@ -16,6 +16,7 @@ items:
     package: office
     remarks: |-
 
+
       #### Examples
 
       ```javascript
@@ -66,6 +67,7 @@ items:
         type:
           - any
         description: |-
+
 
           #### Examples
 
@@ -129,6 +131,7 @@ items:
           - office.Office.Error
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -161,6 +164,7 @@ items:
           - office.Office.AsyncResultStatus
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -190,6 +194,7 @@ items:
       **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and
       context of that method. To determine what is returned by the value property for an "Async" method, refer to the
       "Callback value" section of the method's topic.
+
 
       #### Examples
 

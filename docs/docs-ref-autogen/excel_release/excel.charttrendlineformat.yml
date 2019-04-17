@@ -53,6 +53,7 @@ items:
           - excel.Excel.ChartLineFormat
         description: |-
 
+
           #### Examples
 
           ```typescript

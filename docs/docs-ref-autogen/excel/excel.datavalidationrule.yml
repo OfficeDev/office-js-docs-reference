@@ -83,6 +83,7 @@ items:
           - excel.Excel.ListDataValidation
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -154,6 +155,7 @@ items:
         type:
           - excel.Excel.BasicDataValidation
         description: |-
+
 
           #### Examples
 

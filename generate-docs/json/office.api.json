@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.0.13",
+    "toolVersion": "7.1.0",
     "schemaVersion": 1000
   },
   "kind": "Package",
@@ -36354,7 +36354,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `TableData` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -36416,7 +36416,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,1)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `TableData` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -37161,7 +37161,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `ClientRequestContext` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38150,7 +38150,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `EmbeddedSession` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -38950,7 +38950,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `EventHandlerResult` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -39165,7 +39165,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `EventHandlers` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

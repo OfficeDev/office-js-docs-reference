@@ -12,6 +12,7 @@ items:
       **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
 
       `OfficeTheme` is only supported on Office for Windows desktop.
+
       #### Examples
 
       ```javascript

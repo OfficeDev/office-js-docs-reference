@@ -109,6 +109,7 @@ items:
           - boolean
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -139,6 +140,7 @@ items:
         type:
           - boolean
         description: |-
+
 
           #### Examples
 
@@ -492,6 +494,7 @@ items:
           - Excel.PageOrientation | "Portrait" | "Landscape"
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -710,6 +713,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -825,6 +829,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

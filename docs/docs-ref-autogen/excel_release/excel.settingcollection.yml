@@ -44,6 +44,7 @@ items:
           - excel.Excel.Setting
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -131,6 +132,7 @@ items:
         type:
           - excel.Excel.Setting
         description: |-
+
 
           #### Examples
 
@@ -262,6 +264,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
         description: |-
+
 
           #### Examples
 

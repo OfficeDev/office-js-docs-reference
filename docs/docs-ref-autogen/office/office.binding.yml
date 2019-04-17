@@ -106,6 +106,7 @@ items:
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
 
+
       #### Examples
 
 
@@ -269,6 +270,7 @@ items:
       if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a
       contiguous and valid range).
 
+
       #### Examples
 
 
@@ -413,6 +415,7 @@ items:
     remarks: >-
       **Requirement set**:
       [BindingEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents)
+
 
       #### Examples
 
@@ -685,6 +688,7 @@ items:
       <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
       without being altered.</td> </tr> </table>
 
+
       #### Examples
 
 
@@ -848,6 +852,7 @@ items:
           - office.Office.Document
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -876,6 +881,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -901,6 +907,7 @@ items:
         type:
           - Office.BindingType
         description: |-
+
 
           #### Examples
 

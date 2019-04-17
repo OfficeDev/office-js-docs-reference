@@ -113,6 +113,7 @@ items:
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
 
+
       #### Examples
 
 
@@ -180,6 +181,7 @@ items:
       **Requirement set**:
       [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
 
+
       #### Examples
 
 
@@ -239,6 +241,7 @@ items:
       information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of
       any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>
 
+
       #### Examples
 
 
@@ -291,6 +294,7 @@ items:
 
       null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
       property bag.
+
 
       #### Examples
 
@@ -380,6 +384,7 @@ items:
 
       In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult
       object to return the following information.
+
 
       #### Examples
 
@@ -499,6 +504,7 @@ items:
       <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
       without being altered.</td> </tr> </table>
 
+
       #### Examples
 
 
@@ -553,6 +559,7 @@ items:
       setting of the specified name in the in-memory copy of the settings property bag. After you call the
       Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data
       type. A maximum of 2MB is available for the settings of each add-in.
+
 
       #### Examples
 

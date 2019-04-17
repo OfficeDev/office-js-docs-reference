@@ -170,6 +170,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -293,6 +294,7 @@ items:
         type:
           - excel.Excel.ShowAsRule
         description: |-
+
 
           #### Examples
 

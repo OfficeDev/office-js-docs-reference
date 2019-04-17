@@ -144,6 +144,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -243,6 +244,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -328,6 +330,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -382,6 +385,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -573,6 +577,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -728,6 +733,7 @@ items:
         type:
           - Word.Range
         description: |-
+
 
           #### Examples
 
@@ -890,6 +896,7 @@ items:
           - Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -991,6 +998,7 @@ items:
         type:
           - Word.Paragraph
         description: |-
+
 
           #### Examples
 
@@ -1167,6 +1175,7 @@ items:
           - Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1287,6 +1296,7 @@ items:
         type:
           - word.Word.ContentControl
         description: |-
+
 
           #### Examples
 
@@ -1572,6 +1582,7 @@ items:
           - Word.RangeCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1678,6 +1689,7 @@ items:
       This method has the following additional signature:
 
       `set(properties: Word.ContentControl): void`
+
       #### Examples
 
       ```typescript
@@ -1950,6 +1962,7 @@ items:
         type:
           - string
         description: >-
+
 
           #### Examples
 

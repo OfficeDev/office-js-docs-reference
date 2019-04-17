@@ -155,6 +155,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -356,6 +357,7 @@ items:
           - excel.Excel.ChartSeries
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -417,6 +419,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -465,6 +468,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -512,6 +516,7 @@ items:
         type:
           - number
         description: |-
+
 
           #### Examples
 
@@ -564,6 +569,7 @@ items:
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
         description: |-
+
 
           #### Examples
 
@@ -760,6 +766,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

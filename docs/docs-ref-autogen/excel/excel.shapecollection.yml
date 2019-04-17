@@ -54,6 +54,7 @@ items:
           - excel.Excel.Shape
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -180,6 +181,7 @@ items:
           - excel.Excel.Shape
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -221,6 +223,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -268,6 +271,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -387,6 +391,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 

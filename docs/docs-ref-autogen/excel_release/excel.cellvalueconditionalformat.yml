@@ -54,6 +54,7 @@ items:
           - excel.Excel.ConditionalRangeFormat
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -164,6 +165,7 @@ items:
         type:
           - excel.Excel.ConditionalCellValueRule
         description: |-
+
 
           #### Examples
 
