@@ -9300,6 +9300,15 @@ Office.AppointmentCompose.body:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.AppointmentCompose.categories:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
 Office.AppointmentCompose.end:
   - >-
     // The following example sets the end time of an appointment in compose mode
@@ -9606,6 +9615,15 @@ Office.AppointmentRead.body:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.AppointmentRead.categories:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
 Office.AppointmentRead.dateTimeCreated:
   - |-
     var dateTimeCreated = Office.context.mailbox.item.dateTimeCreated;
@@ -10093,6 +10111,219 @@ Office.Body.setSelectedDataAsync:
         '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
         {coercionType: Office.CoercionType.Html},
         callback);
+Office.Categories.addAsync_1:
+  - >-
+    var masterCategories = [
+        {
+            "displayName": "Urgent!",
+            "color": Office.MailboxEnums.CategoryColor.Preset0
+        }
+    ];
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.addAsync(masterCategories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully added categories to master list");
+        } else {
+            console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    var categories = ["urgent!"];
+
+
+    Office.context.mailbox.item.categories.getAsync(getItemCategoriesCallback);
+
+
+    Office.context.mailbox.item.categories.addAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully added categories");
+        } else {
+            console.log("categories.addAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.item.categories.getAsync(getItemCategoriesCallback);
+
+
+    Office.context.mailbox.item.categories.removeAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully removed categories");
+        } else {
+            console.log("categories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.item.categories.getAsync(getItemCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.removeAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully removed categories from master list");
+        } else {
+            console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    function getItemCategoriesCallback (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("categories.getAsync call failed with error: " + asyncResult.error.message);
+        } else {
+            var categories = asyncResult.value;
+            console.log("Categories:");
+            categories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    }
+
+
+    function getMasterCategoriesCallback (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("masterCategories.getAsync failed with error: " + asyncResult.error.message);
+        } else {
+            var masterCategories = asyncResult.value;
+            console.log("Master categories:");
+            masterCategories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    }
+Office.Categories.getAsync_1:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
+Office.Categories.removeAsync_1:
+  - >-
+    var masterCategories = [
+        {
+            "displayName": "Urgent!",
+            "color": Office.MailboxEnums.CategoryColor.Preset0
+        }
+    ];
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.addAsync(masterCategories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully added categories to master list");
+        } else {
+            console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    var categories = ["urgent!"];
+
+
+    Office.context.mailbox.item.categories.getAsync(getItemCategoriesCallback);
+
+
+    Office.context.mailbox.item.categories.addAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully added categories");
+        } else {
+            console.log("categories.addAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.item.categories.getAsync(getItemCategoriesCallback);
+
+
+    Office.context.mailbox.item.categories.removeAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully removed categories");
+        } else {
+            console.log("categories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.item.categories.getAsync(getItemCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.removeAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully removed categories from master list");
+        } else {
+            console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    function getItemCategoriesCallback (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("categories.getAsync call failed with error: " + asyncResult.error.message);
+        } else {
+            var categories = asyncResult.value;
+            console.log("Categories:");
+            categories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    }
+
+
+    function getMasterCategoriesCallback (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("masterCategories.getAsync failed with error: " + asyncResult.error.message);
+        } else {
+            var masterCategories = asyncResult.value;
+            console.log("Master categories:");
+            masterCategories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    }
+Office.CategoryDetails:
+  - |-
+    var categories = [
+        {
+            "displayName": "Urgent",
+            "color": Office.MailboxEnums.CategoryColor.Preset0
+        }
+    ];
 Office.Contact:
   - >-
     var item = Office.context.mailbox.item;
@@ -10346,6 +10577,15 @@ Office.Item.getAttachmentContentAsync:
             // Handle attachment formats that are not supported.
         }
     }
+Office.Item.categories:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
 Office.Item.getInitializationContextAsync_1:
   - |-
     // Get the initialization context (if present).
@@ -10641,6 +10881,130 @@ Office.Mailbox.makeEwsRequestAsync:
 
         // Process the returned response here.
     }
+Office.Mailbox.masterCategories:
+  - |-
+    Office.context.mailbox.masterCategories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Master categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
+Office.MasterCategories.addAsync_1:
+  - >-
+    var masterCategories = [
+        {
+            "displayName": "Urgent!",
+            "color": Office.MailboxEnums.CategoryColor.Preset0
+        }
+    ];
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.addAsync(masterCategories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully added categories to master list");
+        } else {
+            console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    var categories = ["urgent!"];
+
+
+    Office.context.mailbox.masterCategories.removeAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully removed categories from master list");
+        } else {
+            console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    function getMasterCategoriesCallback (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("masterCategories.getAsync failed with error: " + asyncResult.error.message);
+        } else {
+            var masterCategories = asyncResult.value;
+            console.log("Master categories:");
+            masterCategories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    }
+Office.MasterCategories.getAsync_1:
+  - |-
+    Office.context.mailbox.masterCategories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Master categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
+Office.MasterCategories.removeAsync_1:
+  - >-
+    var masterCategories = [
+        {
+            "displayName": "Urgent!",
+            "color": Office.MailboxEnums.CategoryColor.Preset0
+        }
+    ];
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    Office.context.mailbox.masterCategories.addAsync(masterCategories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully added categories to master list");
+        } else {
+            console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    var categories = ["urgent!"];
+
+
+    Office.context.mailbox.masterCategories.removeAsync(categories, function
+    (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            console.log("Successfully removed categories from master list");
+        } else {
+            console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
+        }
+    });
+
+
+    Office.context.mailbox.masterCategories.getAsync(getMasterCategoriesCallback);
+
+
+    function getMasterCategoriesCallback (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("masterCategories.getAsync failed with error: " + asyncResult.error.message);
+        } else {
+            var masterCategories = asyncResult.value;
+            console.log("Master categories:");
+            masterCategories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    }
 Office.MeetingSuggestion:
   - >-
     var item = Office.context.mailbox.item;
@@ -10769,6 +11133,15 @@ Office.MessageCompose.body:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.MessageCompose.categories:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
 Office.MessageCompose.cc:
   - >-
     Office.context.mailbox.item.cc.setAsync( ['alice@contoso.com',
@@ -10964,6 +11337,15 @@ Office.MessageRead.body:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.MessageRead.categories:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            console.log("Categories: " + JSON.stringify(asyncResult.value));
+        }
+    });
 Office.MessageRead.cc:
   - console.log(JSON.stringify(Office.context.mailbox.item.cc));
 Office.MessageRead.conversationId:
