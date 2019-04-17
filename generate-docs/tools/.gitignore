@@ -3,4 +3,3 @@ tool-inputs
 tool-outputs
 *.js
 *.js.map
-package-lock.json
