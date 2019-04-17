@@ -52,6 +52,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -146,6 +147,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -184,6 +186,7 @@ items:
         type:
           - excel.Excel.Table
         description: |-
+
 
           #### Examples
 
@@ -295,6 +298,7 @@ items:
           - excel.Excel.TableCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -386,6 +390,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
         description: |-
+
 
           #### Examples
 

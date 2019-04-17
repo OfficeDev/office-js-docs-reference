@@ -14,6 +14,7 @@ items:
       - office.Office.TableData.headers
       - office.Office.TableData.rows
   - uid: office.Office.TableData.(constructor)
+    summary: Constructs a new instance of the `TableData` class
     name: '(constructor)(rows, headers)'
     fullName: '(constructor)(rows, headers)'
     langs:
@@ -31,6 +32,7 @@ items:
           type:
             - 'any[]'
   - uid: office.Office.TableData.(constructor)_1
+    summary: Constructs a new instance of the `TableData` class
     name: (constructor)()
     fullName: (constructor)()
     langs:
@@ -54,6 +56,7 @@ items:
 
 
       - If you overwrite or update an existing table, the existing headers are not altered.
+
 
       #### Examples
 
@@ -98,6 +101,7 @@ items:
 
 
       - If you overwrite or update an existing table, the existing rows are not altered.
+
 
       #### Examples
 

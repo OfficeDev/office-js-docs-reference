@@ -20,10 +20,16 @@ items:
       - typeScript
     type: property
     syntax:
-      content: "format?: Excel.CellPropertiesFormat & {\r\n            rowHeight?: number;\r\n        };"
+      content: |-
+        format?: Excel.CellPropertiesFormat & {
+                    rowHeight?: number;
+                };
       return:
         type:
-          - "Excel.CellPropertiesFormat & {\r\n            rowHeight?: number;\r\n        }"
+          - |-
+            Excel.CellPropertiesFormat & {
+                        rowHeight?: number;
+                    }
   - uid: excel_release.Excel.SettableRowProperties.rowHidden
     name: rowHidden
     fullName: rowHidden

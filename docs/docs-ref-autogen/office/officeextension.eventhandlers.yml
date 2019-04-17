@@ -12,6 +12,7 @@ items:
       - office.OfficeExtension.EventHandlers.add
       - office.OfficeExtension.EventHandlers.remove
   - uid: office.OfficeExtension.EventHandlers.(constructor)
+    summary: Constructs a new instance of the `EventHandlers` class
     name: '(constructor)(context, parentObject, name, eventInfo)'
     fullName: '(constructor)(context, parentObject, name, eventInfo)'
     langs:

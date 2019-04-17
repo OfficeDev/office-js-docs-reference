@@ -67,6 +67,7 @@ items:
           - 'string[]'
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -86,6 +87,7 @@ items:
         type:
           - 'Contact[]'
         description: |-
+
 
           #### Examples
 
@@ -107,6 +109,7 @@ items:
           - 'string[]'
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -126,6 +129,7 @@ items:
         type:
           - 'MeetingSuggestion[]'
         description: |-
+
 
           #### Examples
 
@@ -147,6 +151,7 @@ items:
           - 'PhoneNumber[]'
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -167,6 +172,7 @@ items:
           - 'string[]'
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -186,6 +192,7 @@ items:
         type:
           - 'string[]'
         description: |-
+
 
           #### Examples
 

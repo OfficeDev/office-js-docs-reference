@@ -1,23 +1,21 @@
 {
-  "$schema": "https://raw.githubusercontent.com/OfficeDev/office-js-docs-reference/master/generate-docs/schemas/api-extractor.schema.json",
-  "compiler" : {
-    "configType": "tsconfig",
-    "rootFolder": "."
-  },
-  "policies": {
-    "namespaceSupport": "permissive"
-  },
-  "validationRules": {
-    "missingReleaseTags": "allow"
-  },
-  "project": {
-    "entryPointSourceFile": "Outlook_1_7.d.ts"
-  },
-  "apiReviewFile": {
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "mainEntryPointFilePath": "Outlook_1_7.d.ts",
+  "apiReport": {
     "enabled": false
   },
-  "apiJsonFile": {
+  "docModel": {
     "enabled": true,
-    "outputFolder": "../../json"
+    "apiJsonFilePath": "../json/<unscopedPackageName>.api.json"
+  },
+  "dtsRollup": {
+    "enabled": false
+  },
+  "messages": {
+    "extractorMessageReporting": {
+      "ae-missing-release-tag": {
+        "logLevel": "none"
+      }
+    },
   }
 }

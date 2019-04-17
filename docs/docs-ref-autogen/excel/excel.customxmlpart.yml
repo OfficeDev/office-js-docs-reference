@@ -55,6 +55,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -103,6 +104,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -142,6 +144,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 
@@ -277,6 +280,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

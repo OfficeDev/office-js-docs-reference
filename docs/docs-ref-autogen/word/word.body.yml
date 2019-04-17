@@ -81,6 +81,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -156,6 +157,7 @@ items:
           - word.Word.Font
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -210,6 +212,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -251,6 +254,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -353,6 +357,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -431,6 +436,7 @@ items:
           - word.Word.ContentControl
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -474,6 +480,7 @@ items:
         type:
           - Word.Range
         description: |-
+
 
           #### Examples
 
@@ -556,6 +563,7 @@ items:
           - Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -634,6 +642,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 
@@ -769,6 +778,7 @@ items:
           - Word.Paragraph
         description: >-
 
+
           #### Examples
 
 
@@ -894,6 +904,7 @@ items:
           - Word.Table
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -980,6 +991,7 @@ items:
         type:
           - Word.Range
         description: |-
+
 
           #### Examples
 
@@ -1154,6 +1166,7 @@ items:
           - Word.ParagraphCollection
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -1326,6 +1339,7 @@ items:
           - Word.RangeCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1484,6 +1498,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -1714,6 +1729,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

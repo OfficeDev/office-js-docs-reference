@@ -43,6 +43,7 @@ items:
           - excel.Excel.ConditionalFormat
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -125,6 +126,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -186,6 +188,7 @@ items:
           - OfficeExtension.ClientResult<number>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -224,6 +227,7 @@ items:
           - excel.Excel.ConditionalFormat
         description: |-
           Conditional Format object.
+
           #### Examples
 
           ```javascript
@@ -264,6 +268,7 @@ items:
         type:
           - excel.Excel.ConditionalFormat
         description: |-
+
 
           #### Examples
 

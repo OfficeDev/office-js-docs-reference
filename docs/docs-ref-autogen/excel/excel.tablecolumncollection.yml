@@ -48,6 +48,7 @@ items:
           - excel.Excel.TableColumn
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -143,6 +144,7 @@ items:
           - excel.Excel.TableColumn
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -180,6 +182,7 @@ items:
         type:
           - excel.Excel.TableColumn
         description: |-
+
 
           #### Examples
 
@@ -290,6 +293,7 @@ items:
         type:
           - excel.Excel.TableColumnCollection
         description: |-
+
 
           #### Examples
 

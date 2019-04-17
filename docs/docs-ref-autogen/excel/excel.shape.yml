@@ -153,6 +153,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -187,6 +188,7 @@ items:
         type:
           - excel.Excel.ShapeFill
         description: |-
+
 
           #### Examples
 
@@ -325,6 +327,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -391,6 +394,7 @@ items:
         type:
           - excel.Excel.ShapeGroup
         description: |-
+
 
           #### Examples
 
@@ -480,6 +484,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -519,6 +524,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -555,6 +561,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -631,6 +638,7 @@ items:
         type:
           - excel.Excel.Line
         description: |-
+
 
           #### Examples
 
@@ -770,6 +778,7 @@ items:
           - boolean
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -891,6 +900,7 @@ items:
           - number
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -927,6 +937,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -1143,6 +1154,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

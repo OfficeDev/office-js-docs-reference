@@ -54,6 +54,7 @@ items:
           - excel.Excel.ConditionalColorScaleCriteria
         description: |-
 
+
           #### Examples
 
           ```typescript

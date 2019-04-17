@@ -68,6 +68,7 @@ items:
           - onenote.OneNote.Notebook
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -113,6 +114,7 @@ items:
         type:
           - onenote.OneNote.Notebook
         description: |-
+
 
           #### Examples
 
@@ -161,6 +163,7 @@ items:
           - onenote.OneNote.Outline
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -203,6 +206,7 @@ items:
         type:
           - onenote.OneNote.Outline
         description: |-
+
 
           #### Examples
 
@@ -247,6 +251,7 @@ items:
         type:
           - onenote.OneNote.Page
         description: |-
+
 
           #### Examples
 
@@ -293,6 +298,7 @@ items:
         type:
           - onenote.OneNote.Page
         description: |-
+
 
           #### Examples
 
@@ -373,6 +379,7 @@ items:
           - onenote.OneNote.Section
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -418,6 +425,7 @@ items:
         type:
           - onenote.OneNote.Section
         description: |-
+
 
           #### Examples
 
@@ -586,6 +594,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -640,6 +649,7 @@ items:
         type:
           - onenote.OneNote.Page
         description: |-
+
 
           #### Examples
 

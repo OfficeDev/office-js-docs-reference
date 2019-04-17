@@ -118,6 +118,7 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
 
+
       #### Examples
 
 
@@ -191,6 +192,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
 
       #### Examples
 
@@ -289,6 +291,7 @@ items:
       API](https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations) or
       the [Microsoft Graph](https://graph.microsoft.io/)<!-- -->. The convertToRestId method converts an EWS-formatted
       ID into the proper format for REST.
+
 
       #### Examples
 
@@ -393,6 +396,7 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
 
+
       #### Examples
 
 
@@ -450,6 +454,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
 
       #### Examples
 
@@ -509,6 +514,7 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
+
 
       #### Examples
 
@@ -572,6 +578,7 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
+
 
       #### Examples
 
@@ -702,6 +709,7 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
 
+
       #### Examples
 
 
@@ -783,6 +791,7 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
 
+
       #### Examples
 
 
@@ -840,6 +849,7 @@ items:
 
       The getUserIdentityTokenAsync method returns a token that you can use to identify and [authenticate the add-in and
       user with a third-party system](https://docs.microsoft.com/outlook/add-ins/authentication)<!-- -->.
+
 
       #### Examples
 
@@ -948,6 +958,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
 
       #### Examples
 

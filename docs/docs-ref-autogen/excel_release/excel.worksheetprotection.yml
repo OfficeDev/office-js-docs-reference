@@ -151,6 +151,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -258,6 +259,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

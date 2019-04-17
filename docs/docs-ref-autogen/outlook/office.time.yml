@@ -83,6 +83,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
 
+
       #### Examples
 
 
@@ -143,6 +144,7 @@ items:
 
 
       - InvalidEndTime: The appointment end time is before the appointment start time.
+
 
       #### Examples
 

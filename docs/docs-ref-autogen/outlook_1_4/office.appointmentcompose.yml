@@ -66,6 +66,7 @@ items:
       <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
       </table>
 
+
       #### Examples
 
 
@@ -214,6 +215,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many
       attachments.</td></tr> </table>
+
 
       #### Examples
 
@@ -396,6 +398,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
 
+
       #### Examples
 
 
@@ -567,6 +570,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
+
 
       #### Examples
 
@@ -763,6 +767,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
 
+
       #### Examples
 
 
@@ -824,6 +829,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
+
 
       #### Examples
 
@@ -888,6 +894,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr> </table>
 
+
       #### Examples
 
 
@@ -931,6 +938,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 
@@ -987,6 +995,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
 
+
       #### Examples
 
 
@@ -1040,6 +1049,7 @@ items:
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
 
+
       #### Examples
 
 
@@ -1075,6 +1085,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 
@@ -1113,6 +1124,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 
@@ -1153,6 +1165,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 
@@ -1196,6 +1209,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 
@@ -1246,6 +1260,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 
@@ -1298,6 +1313,7 @@ items:
       <tr><td>[Applicable Outlook
       mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Organizer</td></tr>
       </table>
+
 
       #### Examples
 

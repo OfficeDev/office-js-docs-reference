@@ -34,6 +34,7 @@ items:
       sign-in with Organizational Accounts and Microsoft Accounts. Microsoft Azure returns tokens intended for both user
       account types to access resources in the Microsoft Graph.
 
+
       #### Examples
 
 

@@ -99,6 +99,7 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
 
+
       #### Examples
 
 
@@ -225,6 +226,7 @@ items:
 
 
       - InvalidEndTime: The appointment end time is before its start time.
+
 
       #### Examples
 

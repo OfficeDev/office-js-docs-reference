@@ -81,6 +81,7 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
 
+
       #### Examples
 
 
@@ -189,6 +190,7 @@ items:
 
 
       - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
+
 
       #### Examples
 

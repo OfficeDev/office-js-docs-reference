@@ -51,6 +51,7 @@ items:
           - excel.Excel.RowColumnPivotHierarchyCollection
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -103,6 +104,7 @@ items:
           - excel.Excel.DataPivotHierarchyCollection
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -130,6 +132,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -174,6 +177,7 @@ items:
         type:
           - excel.Excel.FilterPivotHierarchyCollection
         description: |-
+
 
           #### Examples
 
@@ -240,6 +244,7 @@ items:
         type:
           - excel.Excel.PivotLayout
         description: |-
+
 
           #### Examples
 

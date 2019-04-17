@@ -19,6 +19,7 @@ items:
       - excel_release.Excel.RequestContext.runtime
       - excel_release.Excel.RequestContext.workbook
   - uid: excel_release.Excel.RequestContext.(constructor)
+    summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
     langs:

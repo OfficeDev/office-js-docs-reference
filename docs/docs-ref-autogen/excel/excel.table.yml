@@ -148,6 +148,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -180,6 +181,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -211,6 +213,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -247,6 +250,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -282,6 +286,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -316,6 +321,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -451,6 +457,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -563,6 +570,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -608,6 +616,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
         description: |-
+
 
           #### Examples
 

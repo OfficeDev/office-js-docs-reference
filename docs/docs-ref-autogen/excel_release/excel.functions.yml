@@ -10249,10 +10249,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "toJSON(): {\r\n            [key: string]: string;\r\n        };"
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
-          - "{\r\n            [key: string]: string;\r\n        }"
+          - |-
+            {
+                        [key: string]: string;
+                    }
         description: ''
   - uid: excel_release.Excel.Functions.trim
     summary: |-

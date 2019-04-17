@@ -195,6 +195,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -259,6 +260,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -438,6 +440,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -499,6 +502,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -536,6 +540,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -566,6 +571,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -768,6 +774,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -811,6 +818,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
