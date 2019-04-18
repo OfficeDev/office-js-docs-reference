@@ -12,8 +12,17 @@ items:
     type: enum
     package: visio
     children:
+      - visio.Visio.OverlayType.html
       - visio.Visio.OverlayType.image
       - visio.Visio.OverlayType.text
+  - uid: visio.Visio.OverlayType.html
+    summary: html
+    name: html
+    fullName: html
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Html"'
   - uid: visio.Visio.OverlayType.image
     summary: image
     name: image

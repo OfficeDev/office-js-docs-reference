@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CellProperties
-    summary: Represents the returned properties of getCellProperties.
+    summary: >-
+      Represents the returned properties of getCellProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellProperties
     fullName: Excel.CellProperties
     langs:
@@ -15,6 +20,12 @@ items:
       - excel.Excel.CellProperties.addressLocal
       - excel.Excel.CellProperties.hidden
   - uid: excel.Excel.CellProperties.address
+    summary: >-
+      Represents the `address` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -26,6 +37,12 @@ items:
         type:
           - string
   - uid: excel.Excel.CellProperties.addressLocal
+    summary: >-
+      Represents the `addressLocal` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -37,6 +54,12 @@ items:
         type:
           - string
   - uid: excel.Excel.CellProperties.hidden
+    summary: >-
+      Represents the `hidden` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
     fullName: hidden
     langs:

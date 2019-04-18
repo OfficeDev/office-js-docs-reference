@@ -859,6 +859,7 @@ items:
       - excel.Excel.WorksheetCalculatedEventArgs
       - excel.Excel.WorksheetChangedEventArgs
       - excel.Excel.WorksheetCollection
+      - excel.Excel.WorksheetColumnSortedEventArgs
       - excel.Excel.WorksheetDeactivatedEventArgs
       - excel.Excel.WorksheetDeletedEventArgs
       - excel.Excel.WorksheetFilteredEventArgs
@@ -867,6 +868,7 @@ items:
       - excel.Excel.WorksheetPositionType
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
+      - excel.Excel.WorksheetRowSortedEventArgs
       - excel.Excel.WorksheetSearchCriteria
       - excel.Excel.WorksheetSelectionChangedEventArgs
   - uid: excel.Excel.createWorkbook
@@ -2807,6 +2809,8 @@ references:
     name: Excel.WorksheetChangedEventArgs
   - uid: excel.Excel.WorksheetCollection
     name: Excel.WorksheetCollection
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs
+    name: Excel.WorksheetColumnSortedEventArgs
   - uid: excel.Excel.WorksheetDeactivatedEventArgs
     name: Excel.WorksheetDeactivatedEventArgs
   - uid: excel.Excel.WorksheetDeletedEventArgs
@@ -2823,6 +2827,8 @@ references:
     name: Excel.WorksheetProtection
   - uid: excel.Excel.WorksheetProtectionOptions
     name: Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.WorksheetRowSortedEventArgs
+    name: Excel.WorksheetRowSortedEventArgs
   - uid: excel.Excel.WorksheetSearchCriteria
     name: Excel.WorksheetSearchCriteria
   - uid: excel.Excel.WorksheetSelectionChangedEventArgs

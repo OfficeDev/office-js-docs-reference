@@ -47,9 +47,11 @@ items:
       - excel.Excel.Worksheet.onActivated
       - excel.Excel.Worksheet.onCalculated
       - excel.Excel.Worksheet.onChanged
+      - excel.Excel.Worksheet.onColumnSorted
       - excel.Excel.Worksheet.onDeactivated
       - excel.Excel.Worksheet.onFiltered
       - excel.Excel.Worksheet.onFormatChanged
+      - excel.Excel.Worksheet.onRowSorted
       - excel.Excel.Worksheet.onSelectionChanged
       - excel.Excel.Worksheet.pageLayout
       - excel.Excel.Worksheet.pivotTables
@@ -1098,6 +1100,24 @@ items:
               console.log("A handler has been registered for the onChanged event.");
           });
           ```
+  - uid: excel.Excel.Worksheet.onColumnSorted
+    summary: >-
+      Occurs when sorting on columns.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onColumnSorted
+    fullName: onColumnSorted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onColumnSorted: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
   - uid: excel.Excel.Worksheet.onDeactivated
     summary: |-
       Occurs when the worksheet is deactivated.
@@ -1166,6 +1186,24 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
+  - uid: excel.Excel.Worksheet.onRowSorted
+    summary: >-
+      Occurs when sorting on rows.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onRowSorted
+    fullName: onRowSorted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
   - uid: excel.Excel.Worksheet.onSelectionChanged
     summary: |-
       Occurs when the selection changes on a specific worksheet.

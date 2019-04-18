@@ -2,8 +2,9 @@
 items:
   - uid: excel.Excel.CellPropertiesFont
     summary: >-
-      Represents the returned format.font properties of getCell/Row/ColumnProperties or format.font input parameter of
-      setCell/Row/ColumnProperties.
+      Represents the `format.font` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+      `getColumnProperties` or the `format.font` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!--
+      -->, and `setColumnProperties`<!-- -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -27,6 +28,12 @@ items:
       - excel.Excel.CellPropertiesFont.tintAndShade
       - excel.Excel.CellPropertiesFont.underline
   - uid: excel.Excel.CellPropertiesFont.bold
+    summary: >-
+      Represents the `format.font.bold` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: bold
     fullName: bold
@@ -39,6 +46,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFont.color
+    summary: >-
+      Represents the `format.font.color` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: color
     fullName: color
@@ -51,6 +64,12 @@ items:
         type:
           - string
   - uid: excel.Excel.CellPropertiesFont.italic
+    summary: >-
+      Represents the `format.font.italic` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: italic
     fullName: italic
@@ -63,6 +82,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFont.name
+    summary: >-
+      Represents the `format.font.name` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name
     fullName: name
@@ -75,6 +100,12 @@ items:
         type:
           - string
   - uid: excel.Excel.CellPropertiesFont.size
+    summary: >-
+      Represents the `format.font.size` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: size
     fullName: size
@@ -87,6 +118,12 @@ items:
         type:
           - number
   - uid: excel.Excel.CellPropertiesFont.strikethrough
+    summary: >-
+      Represents the `format.font.strikethrough` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: strikethrough
     fullName: strikethrough
@@ -99,6 +136,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFont.subscript
+    summary: >-
+      Represents the `format.font.subscript` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: subscript
     fullName: subscript
@@ -111,6 +154,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFont.superscript
+    summary: >-
+      Represents the `format.font.superscript` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: superscript
     fullName: superscript
@@ -123,6 +172,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFont.tintAndShade
+    summary: >-
+      Represents the `format.font.tintAndShade` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
     fullName: tintAndShade
@@ -135,6 +190,12 @@ items:
         type:
           - number
   - uid: excel.Excel.CellPropertiesFont.underline
+    summary: >-
+      Represents the `format.font.underline` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: underline
     fullName: underline

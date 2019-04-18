@@ -10,7 +10,6 @@ items:
     package: word
     children:
       - word.Word.Interfaces.ParagraphData.alignment
-      - word.Word.Interfaces.ParagraphData.contentControls
       - word.Word.Interfaces.ParagraphData.firstLineIndent
       - word.Word.Interfaces.ParagraphData.font
       - word.Word.Interfaces.ParagraphData.inlinePictures
@@ -20,18 +19,9 @@ items:
       - word.Word.Interfaces.ParagraphData.lineSpacing
       - word.Word.Interfaces.ParagraphData.lineUnitAfter
       - word.Word.Interfaces.ParagraphData.lineUnitBefore
-      - word.Word.Interfaces.ParagraphData.list
       - word.Word.Interfaces.ParagraphData.listItem
       - word.Word.Interfaces.ParagraphData.listItemOrNullObject
-      - word.Word.Interfaces.ParagraphData.listOrNullObject
       - word.Word.Interfaces.ParagraphData.outlineLevel
-      - word.Word.Interfaces.ParagraphData.parentBody
-      - word.Word.Interfaces.ParagraphData.parentContentControl
-      - word.Word.Interfaces.ParagraphData.parentContentControlOrNullObject
-      - word.Word.Interfaces.ParagraphData.parentTable
-      - word.Word.Interfaces.ParagraphData.parentTableCell
-      - word.Word.Interfaces.ParagraphData.parentTableCellOrNullObject
-      - word.Word.Interfaces.ParagraphData.parentTableOrNullObject
       - word.Word.Interfaces.ParagraphData.rightIndent
       - word.Word.Interfaces.ParagraphData.spaceAfter
       - word.Word.Interfaces.ParagraphData.spaceBefore
@@ -54,21 +44,6 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.ParagraphData.contentControls
-    summary: |-
-      Gets the collection of content control objects in the paragraph. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: contentControls
-    fullName: contentControls
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'contentControls?: Word.Interfaces.ContentControlData[];'
-      return:
-        type:
-          - 'Word.Interfaces.ContentControlData[]'
   - uid: word.Word.Interfaces.ParagraphData.firstLineIndent
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
@@ -212,21 +187,6 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.list
-    summary: |-
-      Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: list
-    fullName: list
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'list?: Word.Interfaces.ListData;'
-      return:
-        type:
-          - word.Word.Interfaces.ListData
   - uid: word.Word.Interfaces.ParagraphData.listItem
     summary: |-
       Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.
@@ -257,21 +217,6 @@ items:
       return:
         type:
           - word.Word.Interfaces.ListItemData
-  - uid: word.Word.Interfaces.ParagraphData.listOrNullObject
-    summary: |-
-      Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: listOrNullObject
-    fullName: listOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'listOrNullObject?: Word.Interfaces.ListData;'
-      return:
-        type:
-          - word.Word.Interfaces.ListData
   - uid: word.Word.Interfaces.ParagraphData.outlineLevel
     summary: |-
       Gets or sets the outline level for the paragraph.
@@ -287,115 +232,6 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.parentBody
-    summary: |-
-      Gets the parent body of the paragraph. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentBody
-    fullName: parentBody
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentBody?: Word.Interfaces.BodyData;'
-      return:
-        type:
-          - word.Word.Interfaces.BodyData
-  - uid: word.Word.Interfaces.ParagraphData.parentContentControl
-    summary: |-
-      Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
-    fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
-      return:
-        type:
-          - word.Word.Interfaces.ContentControlData
-  - uid: word.Word.Interfaces.ParagraphData.parentContentControlOrNullObject
-    summary: >-
-      Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content
-      control. Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControlOrNullObject
-    fullName: parentContentControlOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlData;'
-      return:
-        type:
-          - word.Word.Interfaces.ContentControlData
-  - uid: word.Word.Interfaces.ParagraphData.parentTable
-    summary: |-
-      Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentTable
-    fullName: parentTable
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTable?: Word.Interfaces.TableData;'
-      return:
-        type:
-          - Word.Interfaces.TableData
-  - uid: word.Word.Interfaces.ParagraphData.parentTableCell
-    summary: |-
-      Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentTableCell
-    fullName: parentTableCell
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTableCell?: Word.Interfaces.TableCellData;'
-      return:
-        type:
-          - Word.Interfaces.TableCellData
-  - uid: word.Word.Interfaces.ParagraphData.parentTableCellOrNullObject
-    summary: >-
-      Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentTableCellOrNullObject
-    fullName: parentTableCellOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellData;'
-      return:
-        type:
-          - Word.Interfaces.TableCellData
-  - uid: word.Word.Interfaces.ParagraphData.parentTableOrNullObject
-    summary: |-
-      Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentTableOrNullObject
-    fullName: parentTableOrNullObject
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTableOrNullObject?: Word.Interfaces.TableData;'
-      return:
-        type:
-          - Word.Interfaces.TableData
   - uid: word.Word.Interfaces.ParagraphData.rightIndent
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.

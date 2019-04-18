@@ -5134,7 +5134,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "attachments",
-                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
+                  "docComment": "/**\n * Gets the item's attachments as an array.\n *\n * [Api set: Mailbox 1.0]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee\n *\n * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. For more information, see {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7995,7 +7995,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(CategoryDetails:interface)",
-              "docComment": "/**\n * Represents an item's category details like name and associated color.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
+              "docComment": "/**\n * Represents a category's details like name and associated color.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

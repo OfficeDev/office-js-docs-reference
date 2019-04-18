@@ -2,7 +2,8 @@
 items:
   - uid: excel.Excel.AutoFilter
     summary: >-
-      Represents the AutoFilter object.
+      Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the
+      cell contents.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -33,7 +34,7 @@ items:
       - excel.Excel.AutoFilter.toJSON
   - uid: excel.Excel.AutoFilter.apply
     summary: >-
-      Applies AutoFilter on a range and filters the column if column index and filter criteria are specified.
+      Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -66,11 +67,11 @@ items:
           ```
       parameters:
         - id: range
-          description: The range where the AutoFilter will apply on.
+          description: The range over which the AutoFilter will apply on.
           type:
             - Range | string
         - id: columnIndex
-          description: 'The column index which the AutoFilter will apply on, start from 0.'
+          description: The zero-based column index to which the AutoFilter is applied.
           type:
             - number
         - id: criteria
@@ -79,7 +80,7 @@ items:
             - excel.Excel.FilterCriteria
   - uid: excel.Excel.AutoFilter.clearCriteria
     summary: >-
-      Clears the criteria if AutoFilter has filters
+      Clears the filter criteria of the AutoFilter.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -113,7 +114,7 @@ items:
           - RequestContext
   - uid: excel.Excel.AutoFilter.criteria
     summary: >-
-      Array that holds all filter criterias in an autofiltered range. Read-Only.
+      An array that holds all the filter criteria in the autofiltered range. Read-Only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -168,8 +169,8 @@ items:
         description: ''
   - uid: excel.Excel.AutoFilter.getRangeOrNullObject
     summary: >-
-      If there is Range object associated with the AutoFilter, this method returns it. Otherwise, this method returns a
-      null object.
+      Returns the Range object that represents the range to which the AutoFilter applies. If there is no Range object
+      associated with the AutoFilter, this method returns a null object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

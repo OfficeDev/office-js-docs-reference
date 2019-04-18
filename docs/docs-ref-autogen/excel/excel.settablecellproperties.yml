@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.SettableCellProperties
-    summary: Represents the input parameter of setCellProperties.
+    summary: >-
+      Represents the input parameter of setCellProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettableCellProperties
     fullName: Excel.SettableCellProperties
     langs:
@@ -13,6 +18,12 @@ items:
       - excel.Excel.SettableCellProperties.hyperlink
       - excel.Excel.SettableCellProperties.style
   - uid: excel.Excel.SettableCellProperties.format
+    summary: >-
+      Represents the `format` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -24,6 +35,12 @@ items:
         type:
           - excel.Excel.CellPropertiesFormat
   - uid: excel.Excel.SettableCellProperties.hyperlink
+    summary: >-
+      Represents the `hyperlink` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -35,6 +52,12 @@ items:
         type:
           - excel.Excel.RangeHyperlink
   - uid: excel.Excel.SettableCellProperties.style
+    summary: >-
+      Represents the `style` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:

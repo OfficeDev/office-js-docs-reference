@@ -2,7 +2,7 @@
 items:
   - uid: outlook.Office.CategoryDetails
     summary: |-
-      Represents an item's category details like name and associated color.
+      Represents a category's details like name and associated color.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
