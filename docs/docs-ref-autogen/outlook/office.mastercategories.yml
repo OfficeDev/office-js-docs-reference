@@ -107,6 +107,30 @@ items:
 
 
       - PermissionDenied: The user does not have permission to perform this action.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var masterCategoriesToAdd = [
+          {
+              "displayName": "Urgent!",
+              "color": Office.MailboxEnums.CategoryColor.Preset0
+          }
+      ];
+
+
+      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("Successfully added categories to master list");
+          } else {
+              console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
+          }
+      });
+
+      ```
     isPreview: true
     name: 'addAsync(categories, callback)'
     fullName: 'addAsync(categories, callback)'
@@ -183,6 +207,26 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.masterCategories.getAsync(function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          } else {
+              var masterCategories = asyncResult.value;
+              console.log("Master categories:");
+              masterCategories.forEach(function (item) {
+                  console.log("-- " + JSON.stringify(item));
+              });
+          }
+      });
+
+      ```
     isPreview: true
     name: getAsync(callback)
     fullName: getAsync(callback)
@@ -272,6 +316,25 @@ items:
 
 
       - PermissionDenied: The user does not have permission to perform this action.
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var masterCategoriesToRemove = ["Urgent!"];
+
+
+      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+              console.log("Successfully removed categories from master list");
+          } else {
+              console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
+          }
+      });
+
+      ```
     isPreview: true
     name: 'removeAsync(categories, callback)'
     fullName: 'removeAsync(categories, callback)'

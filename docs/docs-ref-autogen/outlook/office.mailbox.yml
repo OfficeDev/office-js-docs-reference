@@ -1236,6 +1236,26 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.masterCategories.getAsync(function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          } else {
+              var masterCategories = asyncResult.value;
+              console.log("Master categories:");
+              masterCategories.forEach(function (item) {
+                  console.log("-- " + JSON.stringify(item));
+              });
+          }
+      });
+
+      ```
     isPreview: true
     name: masterCategories
     fullName: masterCategories
