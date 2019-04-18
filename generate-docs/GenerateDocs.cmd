@@ -14,8 +14,6 @@ call npm run build
 call node preprocessor.js
 popd
 
-del package-lock.json
-
 cd api-extractor-inputs-office
 
 call ..\node_modules\.bin\api-extractor run
