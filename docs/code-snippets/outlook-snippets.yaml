@@ -1013,6 +1013,19 @@ Office.Item.body:
         "status": "succeeded",
         "asyncContext": "This is passed to the callback"
     }
+Office.Item.categories:
+  - |-
+    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            console.log("Action failed with error: " + asyncResult.error.message);
+        } else {
+            var categories = asyncResult.value;
+            console.log("Categories:");
+            categories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
+        }
+    });
 Office.Item.getAttachmentContentAsync:
   - |-
     var item = Office.context.mailbox.item;
@@ -1042,15 +1055,6 @@ Office.Item.getAttachmentContentAsync:
             // Handle attachment formats that are not supported.
         }
     }
-Office.Item.categories:
-  - |-
-    Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
-        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-            console.log("Action failed with error: " + asyncResult.error.message);
-        } else {
-            console.log("Categories: " + JSON.stringify(asyncResult.value));
-        }
-    });
 Office.Item.getInitializationContextAsync_1:
   - |-
     // Get the initialization context (if present).
@@ -1326,7 +1330,11 @@ Office.Mailbox.masterCategories:
         if (asyncResult.status === Office.AsyncResultStatus.Failed) {
             console.log("Action failed with error: " + asyncResult.error.message);
         } else {
-            console.log("Master categories: " + JSON.stringify(asyncResult.value));
+            var masterCategories = asyncResult.value;
+            console.log("Master categories:");
+            masterCategories.forEach(function (item) {
+                console.log("-- " + JSON.stringify(item));
+            });
         }
     });
 Office.MasterCategories.addAsync_1:

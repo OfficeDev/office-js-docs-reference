@@ -1247,7 +1247,11 @@ items:
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
               console.log("Action failed with error: " + asyncResult.error.message);
           } else {
-              console.log("Master categories: " + JSON.stringify(asyncResult.value));
+              var masterCategories = asyncResult.value;
+              console.log("Master categories:");
+              masterCategories.forEach(function (item) {
+                  console.log("-- " + JSON.stringify(item));
+              });
           }
       });
 

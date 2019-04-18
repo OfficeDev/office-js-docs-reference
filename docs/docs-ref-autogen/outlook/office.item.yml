@@ -768,7 +768,11 @@ items:
           if (asyncResult.status === Office.AsyncResultStatus.Failed) {
               console.log("Action failed with error: " + asyncResult.error.message);
           } else {
-              console.log("Categories: " + JSON.stringify(asyncResult.value));
+              var categories = asyncResult.value;
+              console.log("Categories:");
+              categories.forEach(function (item) {
+                  console.log("-- " + JSON.stringify(item));
+              });
           }
       });
 
