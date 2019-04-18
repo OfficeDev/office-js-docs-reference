@@ -175,6 +175,7 @@ items:
             "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -327,6 +328,7 @@ items:
         type:
           - excel.Excel.ChartAxis
         description: |-
+
 
           #### Examples
 
@@ -804,6 +806,7 @@ items:
         type:
           - boolean
         description: |-
+
 
           #### Examples
 

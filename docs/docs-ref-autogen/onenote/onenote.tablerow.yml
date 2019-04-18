@@ -122,6 +122,7 @@ items:
           - OneNote.TableRow
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -253,6 +254,7 @@ items:
         type:
           - OneNote.TableRow
         description: |-
+
 
           #### Examples
 

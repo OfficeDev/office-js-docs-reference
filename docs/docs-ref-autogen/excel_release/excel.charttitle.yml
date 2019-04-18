@@ -82,6 +82,7 @@ items:
           - excel.Excel.ChartFormatString
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -205,6 +206,7 @@ items:
         type:
           - excel.Excel.ChartTitle
         description: |-
+
 
           #### Examples
 
@@ -418,6 +420,7 @@ items:
         type:
           - number
         description: |-
+
 
           #### Examples
 

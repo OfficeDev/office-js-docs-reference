@@ -1,9 +1,8 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.Binding
-    summary: Represents a binding to a section of the document.
-    remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+    summary: >-
+      Represents a binding to a section of the document.
 
 
       The Binding object exposes the functionality possessed by all bindings regardless of type.
@@ -17,24 +16,16 @@ items:
       also inherit the id and type properties for querying those property values. Additionally, the MatrixBinding and
       TableBinding objects expose additional methods for matrix- and table-specific features, such as counting the
       number of rows and columns.
+    remarks: >-
+      **Hosts**: Access, Excel, Word
 
 
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this interface is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this interface.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
     name: Office.Binding
     fullName: Office.Binding
     langs:
@@ -59,6 +50,10 @@ items:
       Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!--
       -->.
     remarks: >-
+      **Requirement set**:
+      [BindingEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents)
+
+
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
     name: 'addHandlerAsync(eventType, handler, options, callback)'
@@ -104,8 +99,13 @@ items:
       Supported EventTypes are `Office.EventType.BindingDataChanged` and `Office.EventType.BindingSelectionChanged`<!--
       -->.
     remarks: >-
+      **Requirement set**:
+      [BindingEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents)
+
+
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
+
 
       #### Examples
 
@@ -198,7 +198,23 @@ items:
   - uid: office.Office.Binding.getDataAsync
     summary: Returns the data contained within the binding.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
+      (when using `Office.CoercionType.Html`<!-- -->),
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
+      -->,
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values
@@ -231,12 +247,29 @@ items:
   - uid: office.Office.Binding.getDataAsync_1
     summary: Returns the data contained within the binding.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
+      (when using `Office.CoercionType.Html`<!-- -->),
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
+      -->,
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       When called from a MatrixBinding or TableBinding, the getDataAsync method will return a subset of the bound values
       if the optional startRow, startColumn, rowCount, and columnCount parameters are specified (and they specify a
       contiguous and valid range).
+
 
       #### Examples
 
@@ -344,7 +377,9 @@ items:
             - '(result: AsyncResult<T>) => void'
   - uid: office.Office.Binding.removeHandlerAsync
     summary: Removes the specified handler from the binding for the specified event type.
-    remarks: <table><tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
+    remarks: >-
+      **Requirement set**:
+      [BindingEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents)
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
@@ -377,15 +412,21 @@ items:
             - '(result: AsyncResult<void>) => void'
   - uid: office.Office.Binding.removeHandlerAsync_1
     summary: Removes the specified handler from the binding for the specified event type.
-    remarks: |-
-      <table><tr><td>Requirement Sets</td><td>BindingEvents</td></tr></table>
+    remarks: >-
+      **Requirement set**:
+      [BindingEvents](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#bindingevents)
+
+
       #### Examples
 
+
       ```javascript
+
       function removeEventHandlerFromBinding() {
           Office.select("bindings#MyBinding").removeHandlerAsync(
               Office.EventType.BindingDataChanged, {handler:onBindingDataChanged});
       }
+
       ```
     name: 'removeHandlerAsync(eventType, callback)'
     fullName: 'removeHandlerAsync(eventType, callback)'
@@ -414,7 +455,23 @@ items:
   - uid: office.Office.Binding.setDataAsync
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
+      (when using `Office.CoercionType.Html`<!-- -->),
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
+      -->,
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       The value passed for data contains the data to be written in the binding. The kind of value passed determines what
@@ -535,7 +592,23 @@ items:
   - uid: office.Office.Binding.setDataAsync_1
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
+      (when using `Office.CoercionType.Html`<!-- -->),
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
+      (when using `Office.CoercionType.Matrix`<!-- -->),
+      [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
+      (when using `Office.CoercionType.Ooxml`<!-- -->),
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
+      (when using `Office.CoercionType.Table`<!-- -->),
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
+      -->,
+      [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
+      (when using `Office.CoercionType.Text`<!-- -->)
 
 
       The value passed for data contains the data to be written in the binding. The kind of value passed determines what
@@ -614,6 +687,7 @@ items:
       Error object that provides error information if the operation failed.</td> </tr> <tr>
       <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
       without being altered.</td> </tr> </table>
+
 
       #### Examples
 
@@ -778,6 +852,7 @@ items:
           - office.Office.Document
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -806,6 +881,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -831,6 +907,7 @@ items:
         type:
           - Office.BindingType
         description: |-
+
 
           #### Examples
 

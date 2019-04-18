@@ -43,7 +43,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: "format?: Excel.CellPropertiesFormatLoadOptions & {\r\n            columnWidth?: boolean;\r\n        };"
+      content: |-
+        format?: Excel.CellPropertiesFormatLoadOptions & {
+                    columnWidth?: boolean;
+                };
       return:
         type:
-          - "Excel.CellPropertiesFormatLoadOptions & {\r\n            columnWidth?: boolean;\r\n        }"
+          - |-
+            Excel.CellPropertiesFormatLoadOptions & {
+                        columnWidth?: boolean;
+                    }

@@ -116,6 +116,7 @@ items:
           - excel.Excel.ChangedEventDetail
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -160,6 +161,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 
@@ -209,6 +211,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

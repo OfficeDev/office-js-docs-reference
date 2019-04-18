@@ -168,6 +168,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -297,6 +298,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -429,6 +431,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -465,6 +468,7 @@ items:
         type:
           - excel.Excel.RangeAreas
         description: |-
+
 
           #### Examples
 
@@ -707,6 +711,7 @@ items:
           - excel.Excel.DocumentProperties
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -784,6 +789,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

@@ -115,6 +115,7 @@ items:
           - excel.Excel.ChangedEventDetail
         description: |-
 
+
           #### Examples
 
           ```javascript

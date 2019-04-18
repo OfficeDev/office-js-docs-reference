@@ -52,6 +52,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -86,6 +87,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -119,6 +121,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -174,6 +177,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -204,10 +208,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "toJSON(): {\r\n            [key: string]: string;\r\n        };"
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
-          - "{\r\n            [key: string]: string;\r\n        }"
+          - |-
+            {
+                        [key: string]: string;
+                    }
         description: ''
   - uid: excel_release.Excel.WorksheetFreezePanes.unfreeze
     summary: |-
@@ -225,6 +235,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

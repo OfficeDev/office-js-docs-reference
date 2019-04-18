@@ -94,6 +94,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -186,6 +187,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -296,6 +298,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -416,6 +419,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -500,6 +504,7 @@ items:
         type:
           - Word.RangeCollection
         description: |-
+
 
           #### Examples
 
@@ -623,6 +628,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -674,6 +680,7 @@ items:
         type:
           - word.Word.ContentControl
         description: |-
+
 
           #### Examples
 
@@ -747,6 +754,7 @@ items:
         type:
           - Word.Range
         description: |-
+
 
           #### Examples
 
@@ -831,6 +839,7 @@ items:
         type:
           - Word.Range
         description: |-
+
 
           #### Examples
 
@@ -971,6 +980,7 @@ items:
           - Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1052,6 +1062,7 @@ items:
         type:
           - Word.Paragraph
         description: |-
+
 
           #### Examples
 
@@ -1207,6 +1218,7 @@ items:
         type:
           - Word.Range
         description: |-
+
 
           #### Examples
 
@@ -1611,6 +1623,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

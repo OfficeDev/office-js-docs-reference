@@ -64,6 +64,7 @@ items:
           - excel.Excel.CellValueConditionalFormat
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -113,6 +114,7 @@ items:
         type:
           - excel.Excel.ColorScaleConditionalFormat
         description: |-
+
 
           #### Examples
 
@@ -180,6 +182,7 @@ items:
           - excel.Excel.CustomConditionalFormat
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -224,6 +227,7 @@ items:
         type:
           - excel.Excel.DataBarConditionalFormat
         description: |-
+
 
           #### Examples
 
@@ -287,6 +291,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -370,6 +375,7 @@ items:
         type:
           - excel.Excel.IconSetConditionalFormat
         description: |-
+
 
           #### Examples
 
@@ -540,6 +546,7 @@ items:
           - excel.Excel.PresetCriteriaConditionalFormat
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -673,6 +680,7 @@ items:
           - excel.Excel.TextConditionalFormat
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -776,6 +784,7 @@ items:
             Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" |
             "PresetCriteria" | "ContainsText" | "CellValue"
         description: |-
+
 
           #### Examples
 

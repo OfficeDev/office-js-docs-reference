@@ -89,6 +89,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -151,6 +152,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -291,6 +293,7 @@ items:
         type:
           - excel.Excel.Comment
         description: |-
+
 
           #### Examples
 

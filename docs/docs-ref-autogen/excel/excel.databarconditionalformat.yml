@@ -78,6 +78,7 @@ items:
           - Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft"
         description: |-
 
+
           #### Examples
 
           ```typescript

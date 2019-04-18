@@ -59,6 +59,7 @@ items:
           - 'Excel.ConditionalIconCriterion[]'
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -285,6 +286,7 @@ items:
             "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" |
             "LinkedEntityMapIcon"
         description: |-
+
 
           #### Examples
 

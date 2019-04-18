@@ -25,7 +25,12 @@ items:
   - uid: office.Office.Bindings.addFromNamedItemAsync
     summary: Creates a binding against a named object in the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       For Excel, the itemName parameter can refer to a named range or a table.
@@ -54,23 +59,6 @@ items:
       you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
       the operation will fail.
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
 
       #### Examples
 
@@ -185,7 +173,11 @@ items:
   - uid: office.Office.Bindings.addFromNamedItemAsync_1
     summary: Creates a binding against a named object in the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       For Excel, the itemName parameter can refer to a named range or a table.
@@ -213,24 +205,6 @@ items:
       **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
       you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
       the operation will fail.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
     name: 'addFromNamedItemAsync(itemName, bindingType, callback)'
     fullName: 'addFromNamedItemAsync(itemName, bindingType, callback)'
     langs:
@@ -265,28 +239,13 @@ items:
   - uid: office.Office.Bindings.addFromPromptAsync
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+      **Requirement set**: [Not in a
+      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
       id. The method fails if the specified selection cannot be bound.
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> </table>
 
       #### Examples
 
@@ -343,28 +302,12 @@ items:
   - uid: office.Office.Bindings.addFromPromptAsync_1
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+      **Requirement set**: [Not in a
+      set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
 
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
       id. The method fails if the specified selection cannot be bound.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> </table>
     name: 'addFromPromptAsync(bindingType, callback)'
     fullName: 'addFromPromptAsync(bindingType, callback)'
     langs:
@@ -393,7 +336,12 @@ items:
   - uid: office.Office.Bindings.addFromSelectionAsync
     summary: Create a binding based on the user's current selection.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
@@ -406,23 +354,6 @@ items:
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
 
       #### Examples
 
@@ -478,7 +409,12 @@ items:
   - uid: office.Office.Bindings.addFromSelectionAsync_1
     summary: Create a binding based on the user's current selection.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       Adds the specified type of binding object to the Bindings collection, which will be identified with the supplied
@@ -490,24 +426,6 @@ items:
       bindingType parameter. If you need to use an existing id and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
     name: 'addFromSelectionAsync(bindingType, callback)'
     fullName: 'addFromSelectionAsync(bindingType, callback)'
     langs:
@@ -536,25 +454,12 @@ items:
   - uid: office.Office.Bindings.getAllAsync
     summary: Gets all bindings that were previously created.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
     name: 'getAllAsync(options, callback)'
     fullName: 'getAllAsync(options, callback)'
     langs:
@@ -581,25 +486,13 @@ items:
   - uid: office.Office.Bindings.getAllAsync_1
     summary: Gets all bindings that were previously created.
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
 
       #### Examples
 
@@ -645,29 +538,15 @@ items:
   - uid: office.Office.Bindings.getByIdAsync
     summary: Retrieves a binding based on its Name
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings,
-      TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified id does not exist.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
     name: 'getByIdAsync(id, options, callback)'
     fullName: 'getByIdAsync(id, options, callback)'
     langs:
@@ -700,29 +579,16 @@ items:
   - uid: office.Office.Bindings.getByIdAsync_1
     summary: Retrieves a binding based on its Name
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>CustomXmlParts, MatrixBindings, TableBindings,
-      TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified id does not exist.
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
 
       #### Examples
 
@@ -768,28 +634,15 @@ items:
   - uid: office.Office.Bindings.releaseByIdAsync
     summary: Removes the binding from the document
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified id does not exist.
-
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
     name: 'releaseByIdAsync(id, options, callback)'
     fullName: 'releaseByIdAsync(id, options, callback)'
     langs:
@@ -821,28 +674,16 @@ items:
   - uid: office.Office.Bindings.releaseByIdAsync_1
     summary: Removes the binding from the document
     remarks: >-
-      <table><tr><td>Requirement Sets</td><td>MatrixBindings, TableBindings, TextBindings</td></tr></table>
+      **Requirement sets**:
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
+      -->,
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
+      -->,
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
       Fails if the specified id does not exist.
 
-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this method is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this method.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
 
       #### Examples
 
@@ -886,23 +727,6 @@ items:
     summary: >-
       Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
       set of bindings.
-    remarks: >-
-      **Support details**
-
-
-      A capital Y in the following matrix indicates that this property is supported in the corresponding Office host
-      application. An empty cell indicates that the Office host application doesn't support this property.
-
-
-      For more information about Office host application and server requirements, see [Requirements for running Office
-      Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
-
-
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> Office for Mac </th></tr> <tr><td><strong> Access </strong></td><td>
-      </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y
-      </td><td> Y </td></tr> <tr><td><strong> Word </strong></td><td> Y </td><td> Y </td><td> Y </td><td> Y </td></tr>
-      </table>
     name: document
     fullName: document
     langs:

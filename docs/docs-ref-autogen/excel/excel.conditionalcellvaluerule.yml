@@ -32,6 +32,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -81,6 +82,7 @@ items:
             Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
             "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
         description: |-
+
 
           #### Examples
 

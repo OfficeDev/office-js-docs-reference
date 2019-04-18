@@ -39,6 +39,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -98,6 +99,7 @@ items:
         type:
           - excel.Excel.Style
         description: |-
+
 
           #### Examples
 

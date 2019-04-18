@@ -51,6 +51,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -106,6 +107,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -159,6 +161,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -251,6 +254,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -353,6 +357,7 @@ items:
           - excel.Excel.WorksheetCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -412,6 +417,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -439,6 +445,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -482,6 +489,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
         description: |-
+
 
           #### Examples
 

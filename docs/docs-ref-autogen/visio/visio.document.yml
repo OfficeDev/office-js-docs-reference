@@ -64,6 +64,7 @@ items:
           - Visio.Page
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -268,6 +269,7 @@ items:
           - Visio.PageCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -349,6 +351,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -385,6 +388,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

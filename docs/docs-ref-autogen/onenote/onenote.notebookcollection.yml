@@ -72,6 +72,7 @@ items:
           - onenote.OneNote.NotebookCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -218,6 +219,7 @@ items:
         type:
           - onenote.OneNote.NotebookCollection
         description: |-
+
 
           #### Examples
 

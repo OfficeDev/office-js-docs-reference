@@ -58,6 +58,7 @@ items:
           - OfficeExtension.ClientResult<number>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -129,6 +130,7 @@ items:
           - excel.Excel.CustomXmlPart
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -181,6 +183,7 @@ items:
         type:
           - excel.Excel.CustomXmlPart
         description: |-
+
 
           #### Examples
 

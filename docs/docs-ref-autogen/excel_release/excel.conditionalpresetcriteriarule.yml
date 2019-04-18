@@ -40,6 +40,7 @@ items:
             "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"
         description: |-
 
+
           #### Examples
 
           ```typescript

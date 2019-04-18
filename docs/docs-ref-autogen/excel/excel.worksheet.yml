@@ -86,6 +86,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -119,6 +120,21 @@ items:
       return:
         type:
           - excel.Excel.AutoFilter
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const farmData = sheet.getUsedRange();
+
+              // This filter will only show the rows with the top 25% of values in column 3.
+              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.calculate
     summary: |-
       Calculates all cells on a worksheet.
@@ -204,6 +220,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -273,6 +290,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -362,6 +380,7 @@ items:
           A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are
           no matches, this function will return a null object.
 
+
           #### Examples
 
 
@@ -427,6 +446,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -472,6 +492,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -546,6 +567,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -614,6 +636,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -715,6 +738,7 @@ items:
           - excel.Excel.RangeAreas
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -752,6 +776,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -890,6 +915,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -996,6 +1022,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1026,6 +1053,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -1058,6 +1086,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -1085,6 +1114,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -1152,6 +1182,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -1347,6 +1378,7 @@ items:
           - boolean
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -1443,6 +1475,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

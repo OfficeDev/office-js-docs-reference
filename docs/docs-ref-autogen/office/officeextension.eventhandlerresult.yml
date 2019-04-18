@@ -12,6 +12,7 @@ items:
       - office.OfficeExtension.EventHandlerResult.context
       - office.OfficeExtension.EventHandlerResult.remove
   - uid: office.OfficeExtension.EventHandlerResult.(constructor)
+    summary: Constructs a new instance of the `EventHandlerResult` class
     name: '(constructor)(context, handlers, handler)'
     fullName: '(constructor)(context, handlers, handler)'
     langs:

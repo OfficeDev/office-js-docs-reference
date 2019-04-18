@@ -3520,7 +3520,7 @@ Office.Context.officeTheme:
         // Get office theme colors.
         var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply body background color to a CSS class.
@@ -5086,7 +5086,7 @@ Office.OfficeTheme:
         // Get office theme colors.
         var bodyBackgroundColor = Office.context.officeTheme.bodyBackgroundColor;
         var bodyForegroundColor = Office.context.officeTheme.bodyForegroundColor;
-        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor
+        var controlBackgroundColor = Office.context.officeTheme.controlBackgroundColor;
         var controlForegroundColor = Office.context.officeTheme.controlForegroundColor;
 
         // Apply body background color to a CSS class.
@@ -12691,7 +12691,7 @@ Word.Body.search:
   - |-
     await Word.run(async (context) => {
       let results = context.document.body.search("Online");
-      results.load("font/highlightColor");
+      results.load("length");
 
       await context.sync();
 
@@ -12707,7 +12707,7 @@ Word.Body.search:
       // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
       // (i.e. use wildcards).
       let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
-      results.load("font/highlightColor, font/color");
+      results.load("length");
 
       await context.sync();
 
@@ -18010,7 +18010,7 @@ Excel.TableChangedEventArgs.details:
               + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
         });
     }
-Excel.Worksheet.autofilter:
+Excel.Worksheet.autoFilter:
   - |-
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getActiveWorksheet();
@@ -18153,8 +18153,8 @@ Word.ContentControl.set:
       // Gets the complete sentence (as range) associated with the insertion point.
       let evenContentControls = context.document.contentControls.getByTag("even");
       let oddContentControls = context.document.contentControls.getByTag("odd");
-      evenContentControls.load("color,title,appearance");
-      oddContentControls.load("color,title,appearance");
+      evenContentControls.load("length");
+      oddContentControls.load("length");
 
       await context.sync();
 

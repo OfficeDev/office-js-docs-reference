@@ -52,6 +52,7 @@ items:
       - outlook.Office.MailboxEnums.ResponseType
       - outlook.Office.MailboxEnums.RestVersion
       - outlook.Office.MailboxEnums.WeekNumber
+      - outlook.Office.MasterCategories
       - outlook.Office.MeetingSuggestion
       - outlook.Office.Message
       - outlook.Office.MessageCompose
@@ -165,6 +166,8 @@ references:
     name: Office.MailboxEnums.RestVersion
   - uid: outlook.Office.MailboxEnums.WeekNumber
     name: Office.MailboxEnums.WeekNumber
+  - uid: outlook.Office.MasterCategories
+    name: Office.MasterCategories
   - uid: outlook.Office.MeetingSuggestion
     name: Office.MeetingSuggestion
   - uid: outlook.Office.Message

@@ -31,7 +31,13 @@ items:
       - typeScript
     type: property
     syntax:
-      content: "format?: Excel.CellPropertiesFormat & {\r\n            columnWidth?: number;\r\n        };"
+      content: |-
+        format?: Excel.CellPropertiesFormat & {
+                    columnWidth?: number;
+                };
       return:
         type:
-          - "Excel.CellPropertiesFormat & {\r\n            columnWidth?: number;\r\n        }"
+          - |-
+            Excel.CellPropertiesFormat & {
+                        columnWidth?: number;
+                    }
