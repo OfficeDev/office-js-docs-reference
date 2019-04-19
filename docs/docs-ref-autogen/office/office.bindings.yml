@@ -26,10 +26,17 @@ items:
     summary: Creates a binding against a named object in the document.
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -337,10 +344,17 @@ items:
     summary: Create a binding based on the user's current selection.
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -410,10 +424,17 @@ items:
     summary: Create a binding based on the user's current selection.
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -455,10 +476,17 @@ items:
     summary: Gets all bindings that were previously created.
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
     name: 'getAllAsync(options, callback)'
     fullName: 'getAllAsync(options, callback)'
@@ -487,10 +515,17 @@ items:
     summary: Gets all bindings that were previously created.
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -539,10 +574,17 @@ items:
     summary: Retrieves a binding based on its Name
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -580,10 +622,17 @@ items:
     summary: Retrieves a binding based on its Name
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -635,10 +684,17 @@ items:
     summary: Removes the binding from the document
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
@@ -675,10 +731,17 @@ items:
     summary: Removes the binding from the document
     remarks: >-
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
 
 
