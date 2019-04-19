@@ -1225,6 +1225,22 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Attendee
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
+          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+              console.log("Action failed with error: " + asyncResult.error.message);
+          } else {
+              console.log("Categories: " + JSON.stringify(asyncResult.value));
+          }
+      });
+
+      ```
     isPreview: true
     name: categories
     fullName: categories
