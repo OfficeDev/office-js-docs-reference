@@ -2,8 +2,9 @@
 items:
   - uid: excel.Excel.CellBorder
     summary: >-
-      Represents the returned single border properties of getCell/Row/ColumnProperties or border property input
-      parameter of setCell/Row/ColumnProperties.
+      Represents the properties of a single border returned by `getCellProperties`<!-- -->, `getRowProperties`<!-- -->,
+      and `getColumnProperties` or the border property input parameter of `setCellProperties`<!-- -->,
+      `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -21,6 +22,12 @@ items:
       - excel.Excel.CellBorder.tintAndShade
       - excel.Excel.CellBorder.weight
   - uid: excel.Excel.CellBorder.color
+    summary: >-
+      Represents the `color` property of a single border.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: color
     fullName: color
@@ -33,6 +40,12 @@ items:
         type:
           - string
   - uid: excel.Excel.CellBorder.style
+    summary: >-
+      Represents the `style` property of a single border.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style
     fullName: style
@@ -49,6 +62,12 @@ items:
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
   - uid: excel.Excel.CellBorder.tintAndShade
+    summary: >-
+      Represents the `tintAndShade` property of a single border.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
     fullName: tintAndShade
@@ -61,6 +80,12 @@ items:
         type:
           - number
   - uid: excel.Excel.CellBorder.weight
+    summary: >-
+      Represents the `weight` property of a single border.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: weight
     fullName: weight

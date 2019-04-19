@@ -26,7 +26,10 @@ items:
 
       Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: >-
-      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word **Requirement set**:
+      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+
+
+      **Requirement set**:
       [IdentityAPI](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
 
 
@@ -85,7 +88,10 @@ items:
 
       Important: In Outlook, this API is not supported if the add-in is loaded in an Outlook.com or Gmail mailbox.
     remarks: >-
-      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word **Requirement set**:
+      **Hosts**: Excel, OneNote, Outlook, PowerPoint, Word
+
+
+      **Requirement set**:
       [IdentityAPI](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/requirement-sets/identity-api-requirement-sets)
 
 

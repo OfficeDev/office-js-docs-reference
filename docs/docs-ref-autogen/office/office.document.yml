@@ -534,10 +534,18 @@ items:
       "Internal Error" failure.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [CompressedFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile)
-      (when using `Office.FileType.Compressed`<!-- -->),
-      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)<!--
-      -->,
+      (when using `Office.FileType.Compressed`<!-- -->)
+
+
+      -
+      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)
+
+
+      -
       [TextFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile)
       (when using `Office.FileType.Text`<!-- -->)
 
@@ -698,10 +706,18 @@ items:
       "Internal Error" failure.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [CompressedFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#compressedfile)
-      (when using `Office.FileType.Compressed`<!-- -->),
-      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)<!--
-      -->,
+      (when using `Office.FileType.Compressed`<!-- -->)
+
+
+      -
+      [File](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#file)
+
+
+      -
       [TextFile](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile)
       (when using `Office.FileType.Text`<!-- -->)
 
@@ -1552,16 +1568,33 @@ items:
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->),
+      (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -1747,16 +1780,33 @@ items:
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->),
+      (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -3222,18 +3272,38 @@ items:
     summary: Writes the specified data into the current selection.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)<!--
-      -->, (when using `Office.CoercionType.Html`<!-- -->),
+      -->, (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
       [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion)
-      (when using `Office.CoercionType.Image`<!-- -->),
+      (when using `Office.CoercionType.Image`<!-- -->)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -3519,18 +3589,38 @@ items:
     summary: Writes the specified data into the current selection.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)<!--
-      -->, (when using `Office.CoercionType.Html`<!-- -->),
+      -->, (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
       [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion)
-      (when using `Office.CoercionType.Image`<!-- -->),
+      (when using `Office.CoercionType.Image`<!-- -->)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [Selection](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#selection)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 

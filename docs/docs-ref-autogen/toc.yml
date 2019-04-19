@@ -825,6 +825,8 @@ items:
                 uid: excel.Excel.WorksheetChangedEventArgs
               - name: WorksheetCollection
                 uid: excel.Excel.WorksheetCollection
+              - name: WorksheetColumnSortedEventArgs
+                uid: excel.Excel.WorksheetColumnSortedEventArgs
               - name: WorksheetDeactivatedEventArgs
                 uid: excel.Excel.WorksheetDeactivatedEventArgs
               - name: WorksheetDeletedEventArgs
@@ -839,6 +841,8 @@ items:
                 uid: excel.Excel.WorksheetProtection
               - name: WorksheetProtectionOptions
                 uid: excel.Excel.WorksheetProtectionOptions
+              - name: WorksheetRowSortedEventArgs
+                uid: excel.Excel.WorksheetRowSortedEventArgs
               - name: WorksheetSearchCriteria
                 uid: excel.Excel.WorksheetSearchCriteria
               - name: WorksheetSelectionChangedEventArgs

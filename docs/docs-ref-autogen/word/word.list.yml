@@ -453,7 +453,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: any[]): void;'
+      content: >-
+        setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: Array<string | number>):
+        void;
       return:
         type:
           - void
@@ -474,7 +476,7 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - 'any[]'
+            - Array<string | number>
   - uid: word.Word.List.setLevelNumbering_1
     summary: |-
       Sets the numbering format at the specified level in the list.
@@ -488,7 +490,7 @@ items:
     syntax:
       content: >-
         setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" |
-        "UpperLetter" | "LowerLetter", formatString?: any[]): void;
+        "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
       return:
         type:
           - void
@@ -509,7 +511,7 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - 'any[]'
+            - Array<string | number>
   - uid: word.Word.List.setLevelStartingNumber
     summary: |-
       Sets the starting number at the specified level in the list. Default value is 1.
@@ -536,6 +538,12 @@ items:
           type:
             - number
   - uid: word.Word.List.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.List object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ListData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

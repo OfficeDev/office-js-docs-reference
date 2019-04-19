@@ -14,10 +14,37 @@ items:
     type: enum
     package: word
     children:
+      - word.Word.EventType.annotationAdded
+      - word.Word.EventType.annotationChanged
+      - word.Word.EventType.annotationDeleted
       - word.Word.EventType.contentControlAdded
       - word.Word.EventType.contentControlDataChanged
       - word.Word.EventType.contentControlDeleted
       - word.Word.EventType.contentControlSelectionChanged
+  - uid: word.Word.EventType.annotationAdded
+    summary: AnnotationAdded represents the event an annotation has been added to the document.
+    name: annotationAdded
+    fullName: annotationAdded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AnnotationAdded"'
+  - uid: word.Word.EventType.annotationChanged
+    summary: AnnotationAdded represents the event an annotation has been updated in the document.
+    name: annotationChanged
+    fullName: annotationChanged
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AnnotationChanged"'
+  - uid: word.Word.EventType.annotationDeleted
+    summary: AnnotationAdded represents the event an annotation has been deleted from the document.
+    name: annotationDeleted
+    fullName: annotationDeleted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AnnotationDeleted"'
   - uid: word.Word.EventType.contentControlAdded
     summary: ContentControlAdded represents the event a content control has been added to the document.
     name: contentControlAdded

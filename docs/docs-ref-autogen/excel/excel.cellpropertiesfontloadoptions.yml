@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.CellPropertiesFontLoadOptions
     summary: >-
-      Represents which properties to load on the format.font object.
+      Specifies which properties to load on the `format.font` object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -26,6 +26,12 @@ items:
       - excel.Excel.CellPropertiesFontLoadOptions.tintAndShade
       - excel.Excel.CellPropertiesFontLoadOptions.underline
   - uid: excel.Excel.CellPropertiesFontLoadOptions.bold
+    summary: >-
+      Specifies whether to load on the `bold` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: bold
     fullName: bold
@@ -38,6 +44,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.color
+    summary: >-
+      Specifies whether to load on the `color` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: color
     fullName: color
@@ -50,6 +62,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.italic
+    summary: >-
+      Specifies whether to load on the `italic` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: italic
     fullName: italic
@@ -62,6 +80,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.name
+    summary: >-
+      Specifies whether to load on the `name` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: name
     fullName: name
@@ -74,6 +98,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.size
+    summary: >-
+      Specifies whether to load on the `size` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: size
     fullName: size
@@ -86,6 +116,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.strikethrough
+    summary: >-
+      Specifies whether to load on the `strikethrough` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: strikethrough
     fullName: strikethrough
@@ -98,6 +134,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.subscript
+    summary: >-
+      Specifies whether to load on the `subscript` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: subscript
     fullName: subscript
@@ -110,6 +152,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.superscript
+    summary: >-
+      Specifies whether to load on the `superscript` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: superscript
     fullName: superscript
@@ -122,6 +170,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.tintAndShade
+    summary: >-
+      Specifies whether to load on the `tintAndShade` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
     fullName: tintAndShade
@@ -134,6 +188,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFontLoadOptions.underline
+    summary: >-
+      Specifies whether to load on the `underline` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: underline
     fullName: underline

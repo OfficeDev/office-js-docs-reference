@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs
+    summary: >-
+      Provides information about the worksheet that raised the ColumnSorted event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.WorksheetColumnSortedEventArgs
+    fullName: Excel.WorksheetColumnSortedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetColumnSortedEventArgs.address
+      - excel.Excel.WorksheetColumnSortedEventArgs.source
+      - excel.Excel.WorksheetColumnSortedEventArgs.type
+      - excel.Excel.WorksheetColumnSortedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs.address
+    summary: >-
+      Gets the range address that represents the sorted areas of a specific worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs.source
+    summary: >-
+      Gets the source of the event. See Excel.EventSource for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type:
+          - Excel.EventSource | "Local" | "Remote"
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs.type
+    summary: >-
+      Gets the type of the event. See Excel.EventType for details.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetColumnSorted";'
+      return:
+        type:
+          - '"WorksheetColumnSorted"'
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs.worksheetId
+    summary: >-
+      Gets the id of the worksheet in which the sorting happened.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

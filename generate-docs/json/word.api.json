@@ -418,7 +418,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3636,7 +3636,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8963,7 +8963,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10071,7 +10071,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11170,7 +11170,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.CustomProperty object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12025,7 +12025,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.CustomPropertyCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomPropertyCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12884,7 +12884,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -13735,7 +13735,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.DocumentCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentCreatedData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14904,7 +14904,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.DocumentProperties object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15328,6 +15328,81 @@
               "releaseTag": "Public",
               "name": "EventType",
               "members": [
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationAdded",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been added to the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationAdded"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationAdded\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationAdded",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationChanged",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been updated in the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationChanged"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationChanged\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationChanged",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationDeleted",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been deleted from the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationDeleted"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationDeleted\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationDeleted",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "contentControlAdded",
@@ -16281,7 +16356,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -19541,7 +19616,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -20139,7 +20214,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -20700,276 +20775,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentBody",
-                      "docComment": "/**\n * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there isn't a parent body. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentBody"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "BodyData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentBody",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentBodyOrNullObject",
-                      "docComment": "/**\n * Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null object if there isn't a parent body. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentBodyOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "BodyData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentBodyOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControlOrNullObject",
-                      "docComment": "/**\n * Gets the content control that contains the body. Returns a null object if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControlOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControlOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentSection",
-                      "docComment": "/**\n * Gets the parent section of the body. Throws if there isn't a parent section. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentSection"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "SectionData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentSection",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentSectionOrNullObject",
-                      "docComment": "/**\n * Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentSectionOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "SectionData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentSectionOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -23251,321 +23056,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentBody",
-                      "docComment": "/**\n * Gets the parent body of the content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentBody"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "BodyData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentBody",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControlOrNullObject",
-                      "docComment": "/**\n * Gets the content control that contains the content control. Returns a null object if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControlOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControlOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCell",
-                      "docComment": "/**\n * Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCell"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCell",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCellOrNullObject",
-                      "docComment": "/**\n * Gets the table cell that contains the content control. Returns a null object if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCellOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCellOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableOrNullObject",
-                      "docComment": "/**\n * Gets the table that contains the content control. Returns a null object if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -30139,321 +29629,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "paragraph",
-                      "docComment": "/**\n * Gets the parent paragraph that contains the inline image. Read-only.\n *\n * [Api set: WordApi 1.2]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "paragraph"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ParagraphData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "paragraph",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControlOrNullObject",
-                      "docComment": "/**\n * Gets the content control that contains the inline image. Returns a null object if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControlOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControlOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets the table that contains the inline image. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCell",
-                      "docComment": "/**\n * Gets the table cell that contains the inline image. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCell"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCell",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCellOrNullObject",
-                      "docComment": "/**\n * Gets the table cell that contains the inline image. Returns a null object if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCellOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCellOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableOrNullObject",
-                      "docComment": "/**\n * Gets the table that contains the inline image. Returns a null object if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "width",
                       "docComment": "/**\n * Gets or sets a number that describes the width of the inline image.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -33393,55 +32568,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "contentControls",
-                      "docComment": "/**\n * Gets the collection of content control objects in the paragraph. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "contentControls"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "contentControls",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "firstLineIndent",
                       "docComment": "/**\n * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -33739,51 +32865,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "list",
-                      "docComment": "/**\n * Gets the List to which this paragraph belongs. Throws if the paragraph is not in a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "list"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ListData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "list",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "listItem",
                       "docComment": "/**\n * Gets the ListItem for the paragraph. Throws if the paragraph is not part of a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
@@ -33874,51 +32955,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "listOrNullObject",
-                      "docComment": "/**\n * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "listOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ListData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "listOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "outlineLevel",
                       "docComment": "/**\n * Gets or sets the outline level for the paragraph.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -33944,321 +32980,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentBody",
-                      "docComment": "/**\n * Gets the parent body of the paragraph. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentBody"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "BodyData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentBody",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControlOrNullObject",
-                      "docComment": "/**\n * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControlOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControlOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets the table that contains the paragraph. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCell",
-                      "docComment": "/**\n * Gets the table cell that contains the paragraph. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCell"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCell",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCellOrNullObject",
-                      "docComment": "/**\n * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCellOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCellOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableOrNullObject",
-                      "docComment": "/**\n * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -36794,55 +35515,6 @@
                   "members": [
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "contentControls",
-                      "docComment": "/**\n * Gets the collection of content control objects in the range. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "contentControls"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "contentControls",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "font",
                       "docComment": "/**\n * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -36995,419 +35667,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "lists",
-                      "docComment": "/**\n * Gets the collection of list objects in the range. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "lists"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ListData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "lists",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "paragraphs",
-                      "docComment": "/**\n * Gets the collection of paragraph objects in the range. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "paragraphs"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ParagraphData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "paragraphs",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentBody",
-                      "docComment": "/**\n * Gets the parent body of the range. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentBody"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "BodyData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentBody",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControlOrNullObject",
-                      "docComment": "/**\n * Gets the content control that contains the range. Returns a null object if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControlOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControlOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets the table that contains the range. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCell",
-                      "docComment": "/**\n * Gets the table cell that contains the range. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCell"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCell",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCellOrNullObject",
-                      "docComment": "/**\n * Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCellOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCellOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableOrNullObject",
-                      "docComment": "/**\n * Gets the table that contains the range. Returns a null object if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "style",
                       "docComment": "/**\n * Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the \"styleBuiltIn\" property.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -37474,55 +35733,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 6
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "tables",
-                      "docComment": "/**\n * Gets the collection of table objects in the range. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "tables"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "tables",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
                       }
                     },
                     {
@@ -40592,96 +38802,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "parentRow",
-                      "docComment": "/**\n * Gets the parent row of the cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentRow"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableRowData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentRow",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets the parent table of the cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "rowIndex",
                       "docComment": "/**\n * Gets the index of the cell's row in the table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
@@ -42783,321 +40903,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentBody",
-                      "docComment": "/**\n * Gets the parent body of the table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentBody"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "BodyData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentBody",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControlOrNullObject",
-                      "docComment": "/**\n * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControlOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControlOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCell",
-                      "docComment": "/**\n * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCell"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCell",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableCellOrNullObject",
-                      "docComment": "/**\n * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableCellOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableCellData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableCellOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTableOrNullObject",
-                      "docComment": "/**\n * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTableOrNullObject"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTableOrNullObject",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -45212,51 +43017,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentTable",
-                      "docComment": "/**\n * Gets parent table. Read-only.\n *\n * [Api set: WordApi 1.3]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentTable"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "TableData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentTable",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -47906,8 +45666,12 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Array"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any[]"
+                      "text": "<string | number>"
                     },
                     {
                       "kind": "Content",
@@ -47924,8 +45688,8 @@
                   ],
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 16,
-                    "endIndex": 17
+                    "startIndex": 17,
+                    "endIndex": 18
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -47948,7 +45712,7 @@
                       "parameterName": "formatString",
                       "parameterTypeTokenRange": {
                         "startIndex": 14,
-                        "endIndex": 15
+                        "endIndex": 16
                       }
                     }
                   ],
@@ -48008,8 +45772,12 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Array"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any[]"
+                      "text": "<string | number>"
                     },
                     {
                       "kind": "Content",
@@ -48026,8 +45794,8 @@
                   ],
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 14,
-                    "endIndex": 15
+                    "startIndex": 15,
+                    "endIndex": 16
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -48050,7 +45818,7 @@
                       "parameterName": "formatString",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
-                        "endIndex": 13
+                        "endIndex": 14
                       }
                     }
                   ],
@@ -48138,7 +45906,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.List object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -49096,7 +46864,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.ListCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -49971,7 +47739,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.ListItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ListItemData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -54967,7 +52735,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -55615,7 +53383,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -59873,7 +57641,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -60441,7 +58209,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -62089,7 +59857,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -62988,7 +60756,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -63556,7 +61324,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -71343,7 +69111,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Table object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -72060,7 +69828,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.TableBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableBorderData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -74043,7 +71811,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.TableCell object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -74717,7 +72485,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.TableCellCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCellCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -75285,7 +73053,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.TableCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -77293,7 +75061,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -77933,7 +75701,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.TableRowCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.TableRowCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
