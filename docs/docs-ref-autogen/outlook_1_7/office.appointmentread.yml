@@ -62,11 +62,12 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
     name: 'addHandlerAsync(eventType, handler, options, callback)'
     fullName: 'addHandlerAsync(eventType, handler, options, callback)'
     langs:
@@ -74,8 +75,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: any, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -96,7 +97,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - any
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -114,11 +115,12 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
     name: 'addHandlerAsync(eventType, handler, callback)'
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
@@ -172,11 +174,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -317,11 +320,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -445,11 +449,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -482,11 +487,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>Restricted</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: Restricted
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access,
@@ -561,11 +567,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
     name: getFilteredEntitiesByName(name)
     fullName: getFilteredEntitiesByName(name)
     langs:
@@ -609,11 +616,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -698,11 +706,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -772,11 +781,12 @@ items:
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -825,11 +835,12 @@ items:
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -882,11 +893,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
     name: 'loadCustomPropertiesAsync(callback, userContext)'
     fullName: 'loadCustomPropertiesAsync(callback, userContext)'
     langs:
@@ -924,11 +936,12 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
     name: 'removeHandlerAsync(eventType, options, callback)'
     fullName: 'removeHandlerAsync(eventType, options, callback)'
     langs:
@@ -936,8 +949,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: any, callback?: (asyncResult:
-        Office.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -952,7 +965,7 @@ items:
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
             can provide any object they wish to access in the callback method.
           type:
-            - any
+            - Office.AsyncContextOptions
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -970,11 +983,12 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
     name: 'removeHandlerAsync(eventType, callback)'
     fullName: 'removeHandlerAsync(eventType, callback)'
     langs:
@@ -1005,11 +1019,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not
@@ -1063,11 +1078,12 @@ items:
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1109,11 +1125,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1142,11 +1159,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
@@ -1187,11 +1205,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1225,11 +1244,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       The itemClass property specifies the message class of the selected item. The following are the default message
@@ -1284,11 +1304,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1334,11 +1355,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1371,11 +1393,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1409,11 +1432,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1442,11 +1466,12 @@ items:
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1486,11 +1511,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1519,11 +1545,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1567,11 +1594,12 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1607,11 +1635,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1656,11 +1685,12 @@ items:
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1705,11 +1735,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
@@ -1746,11 +1777,12 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
-      <table> <tr><td>[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)</td><td>ReadItem</td></tr>
-      <tr><td>[Applicable Outlook
-      mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)</td><td>Appointment Attendee</td></tr>
-      </table>
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Attendee
 
 
       #### Examples
