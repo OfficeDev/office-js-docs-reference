@@ -73,6 +73,36 @@
               "name": "Application",
               "members": [
                 {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,0)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
@@ -684,7 +714,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -937,6 +967,36 @@
                   ],
                   "releaseTag": "Public",
                   "name": "author",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -1389,7 +1449,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Comment object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.CommentData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1478,6 +1538,36 @@
               "releaseTag": "Public",
               "name": "CommentCollection",
               "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -1875,7 +1965,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Visio.CommentCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.CommentCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2093,6 +2183,36 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
                   },
                   "isStatic": false
                 },
@@ -3024,7 +3144,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3210,6 +3330,36 @@
               "members": [
                 {
                   "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
                   "canonicalReference": "(disableHyperlinks:instance)",
                   "docComment": "/**\n * Disable Hyperlinks.\n *\n * [Api set: 1.1]\n */\n",
                   "excerptTokens": [
@@ -3262,6 +3412,36 @@
                   ],
                   "releaseTag": "Public",
                   "name": "disablePan",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(disablePanZoomWindow:instance)",
+                  "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "disablePanZoomWindow"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "disablePanZoomWindow",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -3714,7 +3894,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.DocumentView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.DocumentViewData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -4094,6 +4274,36 @@
                 },
                 {
                   "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
                   "canonicalReference": "(description:instance)",
                   "docComment": "/**\n * Gets the description of a hyperlink. Read-only.\n *\n * [Api set: 1.1]\n */\n",
                   "excerptTokens": [
@@ -4421,7 +4631,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Hyperlink object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -4510,6 +4720,36 @@
               "releaseTag": "Public",
               "name": "HyperlinkCollection",
               "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -4907,7 +5147,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Visio.HyperlinkCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.HyperlinkCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6486,6 +6726,35 @@
                     },
                     {
                       "kind": "PropertySignature",
+                      "canonicalReference": "disablePanZoomWindow",
+                      "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "disablePanZoomWindow"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "disablePanZoomWindow",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
                       "canonicalReference": "disableZoom",
                       "docComment": "/**\n * Disable Zoom.\n *\n * [Api set: 1.1]\n */\n",
                       "excerptTokens": [
@@ -6655,6 +6924,35 @@
                     },
                     {
                       "kind": "PropertySignature",
+                      "canonicalReference": "disablePanZoomWindow",
+                      "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "disablePanZoomWindow"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "disablePanZoomWindow",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
                       "canonicalReference": "disableZoom",
                       "docComment": "/**\n * Disable Zoom.\n *\n * [Api set: 1.1]\n */\n",
                       "excerptTokens": [
@@ -6788,6 +7086,35 @@
                       ],
                       "releaseTag": "Public",
                       "name": "disablePan",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 3
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "disablePanZoomWindow",
+                      "docComment": "/**\n * Disable PanZoomWindow.\n *\n * [Api set: 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "disablePanZoomWindow"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "disablePanZoomWindow",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
@@ -10805,6 +11132,31 @@
               "members": [
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "html",
+                  "docComment": "/**\n * html\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "html"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"Html\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "html",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "image",
                   "docComment": "/**\n * image\n */\n",
                   "excerptTokens": [
@@ -11103,6 +11455,36 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
                   },
                   "isStatic": false
                 },
@@ -11670,7 +12052,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Page object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11835,6 +12217,36 @@
               "releaseTag": "Public",
               "name": "PageCollection",
               "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -12232,7 +12644,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Visio.PageCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12540,6 +12952,36 @@
                     }
                   ],
                   "name": "centerViewportOnShape"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
                 },
                 {
                   "kind": "Method",
@@ -13199,7 +13641,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.PageView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.PageViewData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14119,6 +14561,36 @@
               "name": "Selection",
               "members": [
                 {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
+                {
                   "kind": "Method",
                   "canonicalReference": "(load:instance,0)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
@@ -14307,7 +14779,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Selection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.SelectionData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -14517,6 +14989,36 @@
                   "propertyTypeTokenRange": {
                     "startIndex": 3,
                     "endIndex": 6
+                  },
+                  "isStatic": false
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
                   },
                   "isStatic": false
                 },
@@ -15224,7 +15726,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15355,6 +15857,36 @@
               "releaseTag": "Public",
               "name": "ShapeCollection",
               "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -15752,7 +16284,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Visio.ShapeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15841,6 +16373,36 @@
               "releaseTag": "Public",
               "name": "ShapeDataItem",
               "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
                 {
                   "kind": "Property",
                   "canonicalReference": "(format:instance)",
@@ -16170,7 +16732,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.ShapeDataItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeDataItemData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -16293,6 +16855,36 @@
               "releaseTag": "Public",
               "name": "ShapeDataItemCollection",
               "members": [
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
+                },
                 {
                   "kind": "Method",
                   "canonicalReference": "(getCount:instance,0)",
@@ -16690,7 +17282,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Visio.ShapeDataItemCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeDataItemCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17173,7 +17765,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "\"Text\" | \"Image\""
+                      "text": "\"Text\" | \"Image\" | \"Html\""
                     },
                     {
                       "kind": "Content",
@@ -17332,6 +17924,36 @@
                     }
                   ],
                   "name": "addOverlay"
+                },
+                {
+                  "kind": "Property",
+                  "canonicalReference": "(context:instance)",
+                  "docComment": "/**\n * The request context associated with the object. This connects the add-in's process to the Office host application's process.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "context"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RequestContext"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "context",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  },
+                  "isStatic": false
                 },
                 {
                   "kind": "Property",
@@ -17813,7 +18435,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Visio.ShapeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Visio.Interfaces.ShapeViewData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",

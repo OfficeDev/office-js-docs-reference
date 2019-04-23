@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.CellPropertiesFillLoadOptions
     summary: >-
-      Represents which properties to load on the format.fill object.
+      Specifies which properties to load on the `format.fill` object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -21,6 +21,12 @@ items:
       - excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
       - excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
   - uid: excel.Excel.CellPropertiesFillLoadOptions.color
+    summary: >-
+      Specifies whether to load on the `color` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: color
     fullName: color
@@ -33,6 +39,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.pattern
+    summary: >-
+      Specifies whether to load on the `pattern` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: pattern
     fullName: pattern
@@ -45,6 +57,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.patternColor
+    summary: >-
+      Specifies whether to load on the `patternColor` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: patternColor
     fullName: patternColor
@@ -57,6 +75,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
+    summary: >-
+      Specifies whether to load on the `patternTintAndShade` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: patternTintAndShade
     fullName: patternTintAndShade
@@ -69,6 +93,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
+    summary: >-
+      Specifies whether to load on the `tintAndShade` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
     fullName: tintAndShade

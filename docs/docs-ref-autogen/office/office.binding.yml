@@ -21,10 +21,17 @@ items:
 
 
       **Requirement sets**:
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
     name: Office.Binding
     fullName: Office.Binding
@@ -199,20 +206,41 @@ items:
     summary: Returns the data contained within the binding.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
       (when using `Office.CoercionType.Html`<!-- -->),
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
-      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -248,20 +276,41 @@ items:
     summary: Returns the data contained within the binding.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->),
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
-      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -456,20 +505,41 @@ items:
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->),
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
-      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -482,9 +552,8 @@ items:
       that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td>
       <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can
       pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`<!-- -->. To write a single
-      column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`<!-- -->.</td> </tr> <tr> <td>An
-      [Office.TableData](xref:office.Office.TableData) object</td> <td>A table with headers will be written.</td> </tr>
-      </table>
+      column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`<!-- -->.</td> </tr> <tr> <td>A
+      `TableData` object</td> <td>A table with headers will be written.</td> </tr> </table>
 
 
       Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified
@@ -492,11 +561,10 @@ items:
 
 
       <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is
-      written.</td> </tr> <tr> <td>An array of arrays ("matrix") or an [Office.TableData](xref:office.Office.TableData)
-      object</td> <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any
-      of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and
-      will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is
-      written.</td> </tr> </table>
+      written.</td> </tr> <tr> <td>An array of arrays ("matrix") or a `TableData` object</td> <td>A Word table is
+      written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any of the HTML you write is invalid,
+      Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.</td>
+      </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is written.</td> </tr> </table>
 
 
       For Excel, the specified data is written to the binding as follows:
@@ -513,13 +581,13 @@ items:
       cells. For example, setting data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding
       that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas
       (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data
-      displayed in the bound cells.</td> </tr> <tr> <td>An [Office.TableData](xref:office.Office.TableData) object, and
-      the shape of the table matches the bound table.</td> <td>The specified set of rows and/or headers are written, if
-      no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object
-      you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
-      feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
-      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a
-      TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
+      displayed in the bound cells.</td> </tr> <tr> <td>A `TableData` object, and the shape of the table matches the
+      bound table.</td> <td>The specified set of rows and/or headers are written, if no other data in surrounding cells
+      will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter,
+      you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically
+      duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a
+      bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the
+      *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
 
 
       For Excel Online:
@@ -593,20 +661,41 @@ items:
     summary: Writes data to the bound section of the document represented by the specified binding object.
     remarks: >-
       **Requirement sets**:
+
+
+      -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->),
-      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Html`<!-- -->)
+
+
+      -
+      [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)
+
+
+      -
       [MatrixCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion)
-      (when using `Office.CoercionType.Matrix`<!-- -->),
+      (when using `Office.CoercionType.Matrix`<!-- -->)
+
+
+      -
       [OoxmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#ooxmlcoercion)
-      (when using `Office.CoercionType.Ooxml`<!-- -->),
-      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)<!--
-      -->,
+      (when using `Office.CoercionType.Ooxml`<!-- -->)
+
+
+      -
+      [TableBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablebindings)
+
+
+      -
       [TableCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion)
-      (when using `Office.CoercionType.Table`<!-- -->),
-      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)<!--
-      -->,
+      (when using `Office.CoercionType.Table`<!-- -->)
+
+
+      -
+      [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
+
+
+      -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
 
@@ -619,9 +708,8 @@ items:
       that can be coerced to a string will be written.</td> </tr> <tr> <td>An array of arrays ("matrix")</td>
       <td>Tabular data without headers will be written. For example, to write data to three rows in two columns, you can
       pass an array like this: `[["R1C1", "R1C2"], ["R2C1", "R2C2"], ["R3C1", "R3C2"]]`<!-- -->. To write a single
-      column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`<!-- -->.</td> </tr> <tr> <td>An
-      [Office.TableData](xref:office.Office.TableData) object</td> <td>A table with headers will be written.</td> </tr>
-      </table>
+      column of three rows, pass an array like this: `[["R1C1"], ["R2C1"], ["R3C1"]]`<!-- -->.</td> </tr> <tr> <td>A
+      `TableData` object</td> <td>A table with headers will be written.</td> </tr> </table>
 
 
       Additionally, these application-specific actions apply when writing data to a binding. For Word, the specified
@@ -629,11 +717,10 @@ items:
 
 
       <table> <tr> <th>`data` value</th> <th>Data written</th> </tr> <tr> <td>A string</td> <td>The specified text is
-      written.</td> </tr> <tr> <td>An array of arrays ("matrix") or an [Office.TableData](xref:office.Office.TableData)
-      object</td> <td>A Word table is written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any
-      of the HTML you write is invalid, Word will not raise an error. Word will write as much of the HTML as it can and
-      will omit any invalid data.</td> </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is
-      written.</td> </tr> </table>
+      written.</td> </tr> <tr> <td>An array of arrays ("matrix") or a `TableData` object</td> <td>A Word table is
+      written.</td> </tr> <tr> <td>HTML</td> <td>The specified HTML is written. If any of the HTML you write is invalid,
+      Word will not raise an error. Word will write as much of the HTML as it can and will omit any invalid data.</td>
+      </tr> <tr> <td>Office Open XML ("Open XML")</td> <td>The specified the XML is written.</td> </tr> </table>
 
 
       For Excel, the specified data is written to the binding as follows:
@@ -650,13 +737,13 @@ items:
       cells. For example, setting data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding
       that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas
       (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data
-      displayed in the bound cells.</td> </tr> <tr> <td>An [Office.TableData](xref:office.Office.TableData) object, and
-      the shape of the table matches the bound table.</td> <td>The specified set of rows and/or headers are written, if
-      no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object
-      you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns"
-      feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to
-      write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a
-      TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
+      displayed in the bound cells.</td> </tr> <tr> <td>An `TableData` object, and the shape of the table matches the
+      bound table.</td> <td>The specified set of rows and/or headers are written, if no other data in surrounding cells
+      will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter,
+      you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically
+      duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a
+      bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the
+      *coercionType* as Microsoft.Office.Matrix or "matrix".</td> </tr> </table>
 
 
       For Excel Online:
@@ -825,7 +912,7 @@ items:
 
             array of arrays: Excel and Word only
 
-            [Office.TableData](xref:office.Office.TableData)<!-- -->: Access, Excel, and Word only
+            `TableData`<!-- -->: Access, Excel, and Word only
 
             HTML: Word and Word Online only
 

@@ -299,7 +299,7 @@ items:
 
           ```typescript
           await Excel.run(async (context) => {
-              const comment = context.workbook.comments.getItemByCell("Comments!A1");
+              const comment = context.workbook.comments.getItemByCell("Comments!A2");
               comment.load(["authorEmail", "authorName", "creationDate"]);
               await context.sync();
 

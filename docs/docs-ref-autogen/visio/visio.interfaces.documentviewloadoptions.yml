@@ -15,6 +15,7 @@ items:
       - visio.Visio.Interfaces.DocumentViewLoadOptions.$all
       - visio.Visio.Interfaces.DocumentViewLoadOptions.disableHyperlinks
       - visio.Visio.Interfaces.DocumentViewLoadOptions.disablePan
+      - visio.Visio.Interfaces.DocumentViewLoadOptions.disablePanZoomWindow
       - visio.Visio.Interfaces.DocumentViewLoadOptions.disableZoom
       - visio.Visio.Interfaces.DocumentViewLoadOptions.hideDiagramBoundary
   - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.$all
@@ -55,6 +56,21 @@ items:
     type: property
     syntax:
       content: 'disablePan?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions.disablePanZoomWindow
+    summary: |-
+      Disable PanZoomWindow.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: disablePanZoomWindow
+    fullName: disablePanZoomWindow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'disablePanZoomWindow?: boolean;'
       return:
         type:
           - boolean

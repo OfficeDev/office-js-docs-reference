@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.CellPropertiesBorderLoadOptions
     summary: >-
-      Represents which properties to load on the format.borders object.
+      Specifies which properties to load on the `format.borders` object.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -20,6 +20,12 @@ items:
       - excel.Excel.CellPropertiesBorderLoadOptions.tintAndShade
       - excel.Excel.CellPropertiesBorderLoadOptions.weight
   - uid: excel.Excel.CellPropertiesBorderLoadOptions.color
+    summary: >-
+      Specifies whether to load on the `color` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: color
     fullName: color
@@ -32,6 +38,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesBorderLoadOptions.style
+    summary: >-
+      Specifies whether to load on the `style` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: style
     fullName: style
@@ -44,6 +56,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesBorderLoadOptions.tintAndShade
+    summary: >-
+      Specifies whether to load on the `tintAndShade` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: tintAndShade
     fullName: tintAndShade
@@ -56,6 +74,12 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesBorderLoadOptions.weight
+    summary: >-
+      Specifies whether to load on the `weight` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
     name: weight
     fullName: weight

@@ -2285,6 +2285,12 @@ items:
           });
           ```
   - uid: word.Word.Paragraph.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.ParagraphData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

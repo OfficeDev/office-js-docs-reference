@@ -1,7 +1,12 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ColumnProperties
-    summary: Represents the returned properties of getColumnProperties.
+    summary: >-
+      Represents the returned properties of getColumnProperties.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ColumnProperties
     fullName: Excel.ColumnProperties
     langs:
@@ -15,6 +20,12 @@ items:
       - excel.Excel.ColumnProperties.addressLocal
       - excel.Excel.ColumnProperties.columnIndex
   - uid: excel.Excel.ColumnProperties.address
+    summary: >-
+      Represents the `address` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -26,6 +37,12 @@ items:
         type:
           - string
   - uid: excel.Excel.ColumnProperties.addressLocal
+    summary: >-
+      Represents the `addressLocal` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -37,6 +54,12 @@ items:
         type:
           - string
   - uid: excel.Excel.ColumnProperties.columnIndex
+    summary: >-
+      Represents the `columnIndex` property.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
     fullName: columnIndex
     langs:

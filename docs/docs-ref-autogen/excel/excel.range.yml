@@ -946,10 +946,10 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<CellProperties[][]>'
-        description: ''
+        description: A 2D array where each item represents the requested properties of the corresponding cell.
       parameters:
         - id: cellPropertiesLoadOptions
-          description: ''
+          description: An object that represents which cell properties to load.
           type:
             - CellPropertiesLoadOptions
   - uid: excel.Excel.Range.getColumn
@@ -1015,10 +1015,10 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<ColumnProperties[]>'
-        description: ''
+        description: An array where each item represents the requested properties of the corresponding column.
       parameters:
         - id: columnPropertiesLoadOptions
-          description: ''
+          description: An object that represents which column properties to load.
           type:
             - ColumnPropertiesLoadOptions
   - uid: excel.Excel.Range.getColumnsAfter
@@ -1548,10 +1548,10 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<RowProperties[]>'
-        description: ''
+        description: An array where each item represents the requested properties of the corresponding row.
       parameters:
         - id: rowPropertiesLoadOptions
-          description: ''
+          description: An object that represents which row properties to load.
           type:
             - RowPropertiesLoadOptions
   - uid: excel.Excel.Range.getRowsAbove
@@ -2799,7 +2799,7 @@ items:
         description: ''
       parameters:
         - id: cellPropertiesData
-          description: ''
+          description: A 2D array that represents which properties to set in each cell.
           type:
             - 'SettableCellProperties[][]'
   - uid: excel.Excel.Range.setColumnProperties
@@ -2824,7 +2824,7 @@ items:
         description: ''
       parameters:
         - id: columnPropertiesData
-          description: ''
+          description: An array that represents which properties to set in each column.
           type:
             - 'SettableColumnProperties[]'
   - uid: excel.Excel.Range.setDirty
@@ -2868,7 +2868,7 @@ items:
         description: ''
       parameters:
         - id: rowPropertiesData
-          description: ''
+          description: An array that represents which properties to set in each row.
           type:
             - 'SettableRowProperties[]'
   - uid: excel.Excel.Range.showCard

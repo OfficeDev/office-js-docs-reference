@@ -160,6 +160,12 @@ items:
           type:
             - office.OfficeExtension.LoadOption
   - uid: word.Word.RangeCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON()
     langs:

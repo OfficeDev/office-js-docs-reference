@@ -23,7 +23,10 @@ items:
   - uid: office.Office.UI.closeContainer
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
-      **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5) **Requirement set**:
+      **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
+
+
+      **Requirement set**:
       [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
 
 
@@ -52,9 +55,17 @@ items:
   - uid: office.Office.UI.displayDialogAsync
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      **Hosts**: Word, Excel, Outlook, PowerPoint **Requirement sets**:
-      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)<!--
-      -->, [Mailbox
+      **Hosts**: Word, Excel, Outlook, PowerPoint
+
+
+      **Requirement sets**:
+
+
+      -
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+
+
+      - [Mailbox
       1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
@@ -167,9 +178,17 @@ items:
   - uid: office.Office.UI.displayDialogAsync_1
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
-      **Hosts**: Excel, Outlook, PowerPoint, Word **Requirement sets**:
-      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)<!--
-      -->, [Mailbox
+      **Hosts**: Excel, Outlook, PowerPoint, Word
+
+
+      **Requirement sets**:
+
+
+      -
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+
+
+      - [Mailbox
       1.4](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
 
 
