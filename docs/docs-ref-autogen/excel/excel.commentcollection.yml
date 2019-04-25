@@ -57,6 +57,8 @@ items:
           ```typescript
           await Excel.run(async (context) => {
               const sheet = context.workbook.worksheets.getItem("Comments");
+
+              // Note that an InvalidArgument error will be thrown if multiple cells passed to `comment.add`.
               sheet.comments.add("TODO: add data.", "A2");
               await context.sync();
           });
