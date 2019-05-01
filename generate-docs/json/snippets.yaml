@@ -13323,7 +13323,7 @@ Word.ContentControl.tag:
         myContentControl.tag = 'Customer-Address';
         myContentControl.title = ' has t';
         myContentControl.style = 'Heading 2';
-        myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'replace');
+        myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'Replace');
         myContentControl.cannotEdit = true;
         
         // Queue a command to load the id property for the content control you created.
@@ -14748,7 +14748,7 @@ Word.Range.insertContentControl:
         myContentControl.tag = "Customer-Address";
         myContentControl.title = "Enter Customer Address Here:";
         myContentControl.style = "Normal";
-        myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'replace');
+        myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'Replace');
         myContentControl.cannotEdit = true;
 
         // Synchronize the document state by executing the queued commands,
