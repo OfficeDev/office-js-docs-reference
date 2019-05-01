@@ -38,7 +38,7 @@ items:
           - RequestContext
   - uid: excel.Excel.ChartErrorBarsFormat.line
     summary: |-
-      Represents chart line formatting.
+      Represents the chart line formatting.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line

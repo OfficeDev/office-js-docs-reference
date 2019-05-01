@@ -16,7 +16,7 @@ items:
       - excel.Excel.Interfaces.ChartMapOptionsUpdateData.projectionType
   - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.labelStrategy
     summary: |-
-      Returns or sets series map labels strategy of a region map chart. Read/Write.
+      Returns or sets the series map labels strategy of a region map chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: labelStrategy
@@ -31,7 +31,7 @@ items:
           - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
   - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.level
     summary: |-
-      Returns or sets series map area of a region map chart. Read/Write.
+      Returns or sets the series mapping level of a region map chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
@@ -50,7 +50,7 @@ items:
             "World"
   - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData.projectionType
     summary: |-
-      Returns or sets series projection type of a region map chart. Read/Write.
+      Returns or sets the series projection type of a region map chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: projectionType

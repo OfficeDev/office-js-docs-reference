@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.ChartErrorBarsInclude
     summary: |-
-      Represents which error-bar parts to include.
+      Represents which parts of the error bar to include.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartErrorBarsInclude

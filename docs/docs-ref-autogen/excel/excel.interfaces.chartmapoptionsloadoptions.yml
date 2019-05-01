@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions
     summary: |-
-      Encapsulates the properties for Map chart.
+      Encapsulates the properties for a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartMapOptionsLoadOptions
@@ -29,7 +29,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
     summary: |-
-      Returns or sets series map labels strategy of a region map chart. Read/Write.
+      Returns or sets the series map labels strategy of a region map chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: labelStrategy
@@ -44,7 +44,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.level
     summary: |-
-      Returns or sets series map area of a region map chart. Read/Write.
+      Returns or sets the series mapping level of a region map chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
@@ -59,7 +59,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
     summary: |-
-      Returns or sets series projection type of a region map chart. Read/Write.
+      Returns or sets the series projection type of a region map chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: projectionType

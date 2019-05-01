@@ -70,7 +70,7 @@ items:
           - Excel.ChartAxisGroup | "Primary" | "Secondary"
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.binOptions
     summary: |-
-      Encapsulates the bin options only for histogram chart and pareto chart.
+      Encapsulates the bin options for histogram charts and pareto charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binOptions
@@ -85,7 +85,7 @@ items:
           - excel.Excel.Interfaces.ChartBinOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.boxwhiskerOptions
     summary: |-
-      Encapsulates the options for the Box &amp; Whisker chart.
+      Encapsulates the options for the box and whisker charts.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: boxwhiskerOptions
@@ -100,8 +100,8 @@ items:
           - excel.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.bubbleScale
     summary: >-
-      Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero)
-      to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
+      This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property
+      only applies to bubble charts. Read/Write.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -274,7 +274,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.gradientMaximumColor
     summary: |-
-      Returns or sets the Color for maximum value of a region map chart series. Read/Write.
+      Returns or sets the color for maximum value of a region map chart series. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumColor
@@ -319,7 +319,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.gradientMidpointColor
     summary: |-
-      Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
+      Returns or sets the color for midpoint value of a region map chart series. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointColor
@@ -364,7 +364,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.gradientMinimumColor
     summary: |-
-      Returns or sets the Color for minimum value of a region map chart series. Read/Write.
+      Returns or sets the color for minimum value of a region map chart series. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumColor
@@ -469,7 +469,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.mapOptions
     summary: |-
-      Encapsulates the options for the Map chart.
+      Encapsulates the options for a region map chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: mapOptions
@@ -580,7 +580,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.parentLabelStrategy
     summary: |-
-      Returns or sets series parent label strategy area of a treemap chart. Read/Write.
+      Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: parentLabelStrategy
@@ -627,7 +627,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.showConnectorLines
     summary: |-
-      Returns or sets if connector lines show in a waterfall chart. Read/Write.
+      Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showConnectorLines
@@ -642,7 +642,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.showLeaderLines
     summary: |-
-      True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
+      Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLeaderLines
@@ -704,7 +704,7 @@ items:
           - Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.splitValue
     summary: >-
-      Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie
+      Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie
       chart. Read/Write.
 
 
@@ -738,7 +738,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.xErrorBars
     summary: |-
-      Represents the error bar object for a chart series.
+      Represents the error bar object of a chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: xErrorBars
@@ -753,7 +753,7 @@ items:
           - excel.Excel.Interfaces.ChartErrorBarsUpdateData
   - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.yErrorBars
     summary: |-
-      Represents the error bar object for a chart series.
+      Represents the error bar object of a chart series.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: yErrorBars

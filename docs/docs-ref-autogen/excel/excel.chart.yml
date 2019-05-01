@@ -56,7 +56,7 @@ items:
       - excel.Excel.Chart.worksheet
   - uid: excel.Excel.Chart.activate
     summary: |-
-      Activate the chart in the Excel UI.
+      Activates the chart in the Excel UI.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: activate()
@@ -586,7 +586,7 @@ items:
           ```
   - uid: excel.Excel.Chart.pivotOptions
     summary: |-
-      Encapsulates the options for the pivot chart. Read-only.
+      Encapsulates the options for a pivot chart. Read-only.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotOptions

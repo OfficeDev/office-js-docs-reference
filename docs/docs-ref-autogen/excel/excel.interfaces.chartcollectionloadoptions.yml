@@ -217,7 +217,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions.pivotOptions
     summary: |-
-      For EACH ITEM in the collection: Encapsulates the options for the pivot chart.
+      For EACH ITEM in the collection: Encapsulates the options for a pivot chart.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotOptions

@@ -20,6 +20,7 @@ items:
       - excel.Excel.Shape.altTextTitle
       - excel.Excel.Shape.connectionSiteCount
       - excel.Excel.Shape.context
+      - excel.Excel.Shape.copyTo
       - excel.Excel.Shape.delete
       - excel.Excel.Shape.fill
       - excel.Excel.Shape.geometricShape
@@ -121,6 +122,30 @@ items:
       return:
         type:
           - RequestContext
+  - uid: excel.Excel.Shape.copyTo
+    summary: >-
+      Copies and pastes a Shape object. The pasted shape is copied to the same pixel location as this shape.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: copyTo(destinationSheet)
+    fullName: copyTo(destinationSheet)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'copyTo(destinationSheet?: Worksheet | string): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: destinationSheet
+          description: The sheet to which the shape object will be pasted. The default value is the copied Shape's worksheet.
+          type:
+            - Worksheet | string
   - uid: excel.Excel.Shape.delete
     summary: |-
       Removes the shape from the worksheet.

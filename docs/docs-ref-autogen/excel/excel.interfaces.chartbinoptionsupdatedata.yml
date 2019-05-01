@@ -20,7 +20,7 @@ items:
       - excel.Excel.Interfaces.ChartBinOptionsUpdateData.width
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.allowOverflow
     summary: |-
-      Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
+      Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowOverflow
@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.allowUnderflow
     summary: |-
-      Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.
+      Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowUnderflow
@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.count
     summary: |-
-      Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.
+      Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
@@ -65,7 +65,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.overflowValue
     summary: |-
-      Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.
+      Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overflowValue
@@ -80,7 +80,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.type
     summary: |-
-      Returns or sets bin type of a histogram chart or pareto chart. Read/Write.
+      Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -95,7 +95,7 @@ items:
           - Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.underflowValue
     summary: |-
-      Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.
+      Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underflowValue
@@ -110,7 +110,7 @@ items:
           - number
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.width
     summary: |-
-      Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.
+      Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width

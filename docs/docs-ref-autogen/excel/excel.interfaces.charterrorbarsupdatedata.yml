@@ -18,7 +18,7 @@ items:
       - excel.Excel.Interfaces.ChartErrorBarsUpdateData.visible
   - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData.endStyleCap
     summary: |-
-      Represents whether have the end style cap for the error bars.
+      Specifies whether or not the error bars have an end style cap.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endStyleCap
@@ -33,7 +33,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData.format
     summary: |-
-      Represents the formatting of chart ErrorBars.
+      Specifies the formatting type of the error bars.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
@@ -48,7 +48,7 @@ items:
           - excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
   - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData.include
     summary: |-
-      Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
+      Specifies which parts of the error bars to include.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: include
@@ -63,7 +63,7 @@ items:
           - Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
   - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData.type
     summary: |-
-      Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
+      The type of range marked by the error bars.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
@@ -78,7 +78,7 @@ items:
           - Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
   - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData.visible
     summary: |-
-      Represents whether shown error bars.
+      Specifies whether or not the error bars are displayed.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
