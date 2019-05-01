@@ -1,6 +1,6 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
-  "mainEntryPointFilePath": "excel_release.d.ts",
+  "mainEntryPointFilePath": "excel.d.ts",
   "apiReport": {
     "enabled": false
   },

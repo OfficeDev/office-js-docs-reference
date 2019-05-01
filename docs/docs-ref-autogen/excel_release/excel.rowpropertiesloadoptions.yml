@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RowPropertiesLoadOptions
-    summary: 'Represents which row properties to load, when used as part of a "range.getRowProperties" method.'
+    summary: |-
+      Represents which row properties to load, when used as part of a "range.getRowProperties" method.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowPropertiesLoadOptions
     fullName: Excel.RowPropertiesLoadOptions
     langs:
@@ -15,6 +18,10 @@ items:
       - excel_release.Excel.RowPropertiesLoadOptions.rowHidden
       - excel_release.Excel.RowPropertiesLoadOptions.rowIndex
   - uid: excel_release.Excel.RowPropertiesLoadOptions.format
+    summary: |-
+      Specifies whether to load on the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -32,6 +39,10 @@ items:
                         rowHeight?: boolean;
                     }
   - uid: excel_release.Excel.RowPropertiesLoadOptions.rowHidden
+    summary: |-
+      Specifies whether to load on the `rowHidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHidden
     fullName: rowHidden
     langs:
@@ -43,6 +54,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.RowPropertiesLoadOptions.rowIndex
+    summary: |-
+      Specifies whether to load on the `rowIndex` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:

@@ -29,8 +29,11 @@ items:
       - excel_release.Excel.WorksheetCollection.onActivated
       - excel_release.Excel.WorksheetCollection.onAdded
       - excel_release.Excel.WorksheetCollection.onCalculated
+      - excel_release.Excel.WorksheetCollection.onChanged
       - excel_release.Excel.WorksheetCollection.onDeactivated
       - excel_release.Excel.WorksheetCollection.onDeleted
+      - excel_release.Excel.WorksheetCollection.onFormatChanged
+      - excel_release.Excel.WorksheetCollection.onSelectionChanged
       - excel_release.Excel.WorksheetCollection.toJSON
   - uid: excel_release.Excel.WorksheetCollection.add
     summary: >-
@@ -473,6 +476,21 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
+  - uid: excel_release.Excel.WorksheetCollection.onChanged
+    summary: |-
+      Occurs when any worksheet in the workbook is changed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onChanged
+    fullName: onChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onChanged: OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
   - uid: excel_release.Excel.WorksheetCollection.onDeactivated
     summary: |-
       Occurs when any worksheet in the workbook is deactivated.
@@ -517,6 +535,36 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeletedEventArgs>
+  - uid: excel_release.Excel.WorksheetCollection.onFormatChanged
+    summary: |-
+      Occurs when any worksheet in the workbook has format changed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onFormatChanged
+    fullName: onFormatChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
+  - uid: excel_release.Excel.WorksheetCollection.onSelectionChanged
+    summary: |-
+      Occurs when the selection changes on any worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onSelectionChanged
+    fullName: onSelectionChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
   - uid: excel_release.Excel.WorksheetCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

@@ -26,6 +26,7 @@ items:
       - excel_release.Excel.ConditionalFormat.delete
       - excel_release.Excel.ConditionalFormat.getRange
       - excel_release.Excel.ConditionalFormat.getRangeOrNullObject
+      - excel_release.Excel.ConditionalFormat.getRanges
       - excel_release.Excel.ConditionalFormat.iconSet
       - excel_release.Excel.ConditionalFormat.iconSetOrNullObject
       - excel_release.Excel.ConditionalFormat.id
@@ -338,6 +339,22 @@ items:
       return:
         type:
           - excel.Excel.Range
+        description: ''
+  - uid: excel_release.Excel.ConditionalFormat.getRanges
+    summary: |-
+      Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRanges()
+    fullName: getRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRanges(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
         description: ''
   - uid: excel_release.Excel.ConditionalFormat.iconSet
     summary: |-

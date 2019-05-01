@@ -18,6 +18,7 @@ items:
       - excel_release.Excel.SortField.icon
       - excel_release.Excel.SortField.key
       - excel_release.Excel.SortField.sortOn
+      - excel_release.Excel.SortField.subField
   - uid: excel_release.Excel.SortField.ascending
     summary: |-
       Represents whether the sorting is done in an ascending fashion.
@@ -110,3 +111,18 @@ items:
       return:
         type:
           - Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
+  - uid: excel_release.Excel.SortField.subField
+    summary: |-
+      Represents the subfield that is the target property name of a rich value to sort on.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subField
+    fullName: subField
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subField?: string;'
+      return:
+        type:
+          - string

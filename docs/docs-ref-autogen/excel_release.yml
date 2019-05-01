@@ -9,6 +9,11 @@ items:
     children:
       - excel_release.Excel.AggregationFunction
       - excel_release.Excel.Application
+      - excel_release.Excel.ArrowheadLength
+      - excel_release.Excel.ArrowheadStyle
+      - excel_release.Excel.ArrowheadWidth
+      - excel_release.Excel.AutoFillType
+      - excel_release.Excel.AutoFilter
       - excel_release.Excel.BasicDataValidation
       - excel_release.Excel.Binding
       - excel_release.Excel.BindingCollection
@@ -20,12 +25,22 @@ items:
       - excel_release.Excel.BorderWeight
       - excel_release.Excel.BuiltInStyle
       - excel_release.Excel.CalculationMode
+      - excel_release.Excel.CalculationState
       - excel_release.Excel.CalculationType
+      - excel_release.Excel.CellBorder
+      - excel_release.Excel.CellBorderCollection
       - excel_release.Excel.CellProperties
+      - excel_release.Excel.CellPropertiesBorderLoadOptions
+      - excel_release.Excel.CellPropertiesFill
+      - excel_release.Excel.CellPropertiesFillLoadOptions
+      - excel_release.Excel.CellPropertiesFont
+      - excel_release.Excel.CellPropertiesFontLoadOptions
       - excel_release.Excel.CellPropertiesFormat
       - excel_release.Excel.CellPropertiesFormatLoadOptions
       - excel_release.Excel.CellPropertiesLoadOptions
+      - excel_release.Excel.CellPropertiesProtection
       - excel_release.Excel.CellValueConditionalFormat
+      - excel_release.Excel.ChangedEventDetail
       - excel_release.Excel.Chart
       - excel_release.Excel.ChartActivatedEventArgs
       - excel_release.Excel.ChartAddedEventArgs
@@ -44,7 +59,11 @@ items:
       - excel_release.Excel.ChartAxisTitle
       - excel_release.Excel.ChartAxisTitleFormat
       - excel_release.Excel.ChartAxisType
+      - excel_release.Excel.ChartBinOptions
+      - excel_release.Excel.ChartBinType
       - excel_release.Excel.ChartBorder
+      - excel_release.Excel.ChartBoxQuartileCalculation
+      - excel_release.Excel.ChartBoxwhiskerOptions
       - excel_release.Excel.ChartCollection
       - excel_release.Excel.ChartColorScheme
       - excel_release.Excel.ChartDataLabel
@@ -54,9 +73,15 @@ items:
       - excel_release.Excel.ChartDeactivatedEventArgs
       - excel_release.Excel.ChartDeletedEventArgs
       - excel_release.Excel.ChartDisplayBlanksAs
+      - excel_release.Excel.ChartErrorBars
+      - excel_release.Excel.ChartErrorBarsFormat
+      - excel_release.Excel.ChartErrorBarsInclude
+      - excel_release.Excel.ChartErrorBarsType
       - excel_release.Excel.ChartFill
       - excel_release.Excel.ChartFont
       - excel_release.Excel.ChartFormatString
+      - excel_release.Excel.ChartGradientStyle
+      - excel_release.Excel.ChartGradientStyleType
       - excel_release.Excel.ChartGridlines
       - excel_release.Excel.ChartGridlinesFormat
       - excel_release.Excel.ChartLegend
@@ -66,7 +91,13 @@ items:
       - excel_release.Excel.ChartLegendPosition
       - excel_release.Excel.ChartLineFormat
       - excel_release.Excel.ChartLineStyle
+      - excel_release.Excel.ChartMapAreaLevel
+      - excel_release.Excel.ChartMapLabelStrategy
+      - excel_release.Excel.ChartMapOptions
+      - excel_release.Excel.ChartMapProjectionType
       - excel_release.Excel.ChartMarkerStyle
+      - excel_release.Excel.ChartParentLabelStrategy
+      - excel_release.Excel.ChartPivotOptions
       - excel_release.Excel.ChartPlotArea
       - excel_release.Excel.ChartPlotAreaFormat
       - excel_release.Excel.ChartPlotAreaPosition
@@ -94,6 +125,7 @@ items:
       - excel_release.Excel.ChartType
       - excel_release.Excel.ChartUnderlineStyle
       - excel_release.Excel.ClearApplyTo
+      - excel_release.Excel.CloseBehavior
       - excel_release.Excel.ColorScaleConditionalFormat
       - excel_release.Excel.ColumnProperties
       - excel_release.Excel.ColumnPropertiesLoadOptions
@@ -130,12 +162,10 @@ items:
       - excel_release.Excel.ConditionalTextOperator
       - excel_release.Excel.ConditionalTopBottomCriterionType
       - excel_release.Excel.ConditionalTopBottomRule
+      - excel_release.Excel.ConnectorType
       - excel_release.Excel.createWorkbook
       - excel_release.Excel.CustomConditionalFormat
       - excel_release.Excel.CustomDataValidation
-      - excel_release.Excel.CustomFunctionEventArgs
-      - excel_release.Excel.CustomFunctionMetadataFormat
-      - excel_release.Excel.CustomFunctionType
       - excel_release.Excel.CustomProperty
       - excel_release.Excel.CustomPropertyCollection
       - excel_release.Excel.CustomXmlPart
@@ -162,6 +192,7 @@ items:
       - excel_release.Excel.ErrorCodes
       - excel_release.Excel.EventSource
       - excel_release.Excel.EventType
+      - excel_release.Excel.FillPattern
       - excel_release.Excel.Filter
       - excel_release.Excel.FilterCriteria
       - excel_release.Excel.FilterDatetime
@@ -183,18 +214,26 @@ items:
       - excel_release.Excel.FourTrafficLightsSet
       - excel_release.Excel.FunctionResult
       - excel_release.Excel.Functions
+      - excel_release.Excel.GeometricShape
+      - excel_release.Excel.GeometricShapeType
       - excel_release.Excel.getDataCommonPostprocess
+      - excel_release.Excel.GroupShapeCollection
+      - excel_release.Excel.HeaderFooter
+      - excel_release.Excel.HeaderFooterGroup
+      - excel_release.Excel.HeaderFooterState
       - excel_release.Excel.HorizontalAlignment
       - excel_release.Excel.Icon
       - excel_release.Excel.IconCollections
       - excel_release.Excel.IconSet
       - excel_release.Excel.IconSetConditionalFormat
+      - excel_release.Excel.Image
       - excel_release.Excel.ImageFittingMode
       - excel_release.Excel.InsertShiftDirection
       - excel_release.Excel.Interfaces.ApplicationData
       - excel_release.Excel.Interfaces.ApplicationLoadOptions
       - excel_release.Excel.Interfaces.ApplicationUpdateData
       - excel_release.Excel.Interfaces.AutoFilterData
+      - excel_release.Excel.Interfaces.AutoFilterLoadOptions
       - excel_release.Excel.Interfaces.BindingCollectionData
       - excel_release.Excel.Interfaces.BindingCollectionLoadOptions
       - excel_release.Excel.Interfaces.BindingCollectionUpdateData
@@ -222,11 +261,13 @@ items:
       - excel_release.Excel.Interfaces.ChartAxisTitleUpdateData
       - excel_release.Excel.Interfaces.ChartAxisUpdateData
       - excel_release.Excel.Interfaces.ChartBinOptionsData
+      - excel_release.Excel.Interfaces.ChartBinOptionsLoadOptions
       - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData
       - excel_release.Excel.Interfaces.ChartBorderData
       - excel_release.Excel.Interfaces.ChartBorderLoadOptions
       - excel_release.Excel.Interfaces.ChartBorderUpdateData
       - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsData
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
       - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
       - excel_release.Excel.Interfaces.ChartCollectionData
       - excel_release.Excel.Interfaces.ChartCollectionLoadOptions
@@ -243,7 +284,9 @@ items:
       - excel_release.Excel.Interfaces.ChartDataLabelUpdateData
       - excel_release.Excel.Interfaces.ChartErrorBarsData
       - excel_release.Excel.Interfaces.ChartErrorBarsFormatData
+      - excel_release.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
       - excel_release.Excel.Interfaces.ChartErrorBarsFormatUpdateData
+      - excel_release.Excel.Interfaces.ChartErrorBarsLoadOptions
       - excel_release.Excel.Interfaces.ChartErrorBarsUpdateData
       - excel_release.Excel.Interfaces.ChartFontData
       - excel_release.Excel.Interfaces.ChartFontLoadOptions
@@ -274,8 +317,10 @@ items:
       - excel_release.Excel.Interfaces.ChartLineFormatUpdateData
       - excel_release.Excel.Interfaces.ChartLoadOptions
       - excel_release.Excel.Interfaces.ChartMapOptionsData
+      - excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions
       - excel_release.Excel.Interfaces.ChartMapOptionsUpdateData
       - excel_release.Excel.Interfaces.ChartPivotOptionsData
+      - excel_release.Excel.Interfaces.ChartPivotOptionsLoadOptions
       - excel_release.Excel.Interfaces.ChartPivotOptionsUpdateData
       - excel_release.Excel.Interfaces.ChartPlotAreaData
       - excel_release.Excel.Interfaces.ChartPlotAreaFormatData
@@ -327,14 +372,6 @@ items:
       - excel_release.Excel.Interfaces.ColorScaleConditionalFormatData
       - excel_release.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
       - excel_release.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
-      - excel_release.Excel.Interfaces.CommentCollectionData
-      - excel_release.Excel.Interfaces.CommentCollectionUpdateData
-      - excel_release.Excel.Interfaces.CommentData
-      - excel_release.Excel.Interfaces.CommentReplyCollectionData
-      - excel_release.Excel.Interfaces.CommentReplyCollectionUpdateData
-      - excel_release.Excel.Interfaces.CommentReplyData
-      - excel_release.Excel.Interfaces.CommentReplyUpdateData
-      - excel_release.Excel.Interfaces.CommentUpdateData
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatData
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
       - excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatUpdateData
@@ -411,19 +448,26 @@ items:
       - excel_release.Excel.Interfaces.FunctionResultData
       - excel_release.Excel.Interfaces.FunctionResultLoadOptions
       - excel_release.Excel.Interfaces.GeometricShapeData
+      - excel_release.Excel.Interfaces.GeometricShapeLoadOptions
       - excel_release.Excel.Interfaces.GroupShapeCollectionData
+      - excel_release.Excel.Interfaces.GroupShapeCollectionLoadOptions
       - excel_release.Excel.Interfaces.GroupShapeCollectionUpdateData
       - excel_release.Excel.Interfaces.HeaderFooterData
       - excel_release.Excel.Interfaces.HeaderFooterGroupData
+      - excel_release.Excel.Interfaces.HeaderFooterGroupLoadOptions
       - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions
       - excel_release.Excel.Interfaces.HeaderFooterUpdateData
       - excel_release.Excel.Interfaces.IconSetConditionalFormatData
       - excel_release.Excel.Interfaces.IconSetConditionalFormatLoadOptions
       - excel_release.Excel.Interfaces.IconSetConditionalFormatUpdateData
       - excel_release.Excel.Interfaces.ImageData
+      - excel_release.Excel.Interfaces.ImageLoadOptions
       - excel_release.Excel.Interfaces.IterativeCalculationData
+      - excel_release.Excel.Interfaces.IterativeCalculationLoadOptions
       - excel_release.Excel.Interfaces.IterativeCalculationUpdateData
       - excel_release.Excel.Interfaces.LineData
+      - excel_release.Excel.Interfaces.LineLoadOptions
       - excel_release.Excel.Interfaces.LineUpdateData
       - excel_release.Excel.Interfaces.NamedItemArrayValuesData
       - excel_release.Excel.Interfaces.NamedItemArrayValuesLoadOptions
@@ -434,9 +478,12 @@ items:
       - excel_release.Excel.Interfaces.NamedItemLoadOptions
       - excel_release.Excel.Interfaces.NamedItemUpdateData
       - excel_release.Excel.Interfaces.PageBreakCollectionData
+      - excel_release.Excel.Interfaces.PageBreakCollectionLoadOptions
       - excel_release.Excel.Interfaces.PageBreakCollectionUpdateData
       - excel_release.Excel.Interfaces.PageBreakData
+      - excel_release.Excel.Interfaces.PageBreakLoadOptions
       - excel_release.Excel.Interfaces.PageLayoutData
+      - excel_release.Excel.Interfaces.PageLayoutLoadOptions
       - excel_release.Excel.Interfaces.PageLayoutUpdateData
       - excel_release.Excel.Interfaces.PivotFieldCollectionData
       - excel_release.Excel.Interfaces.PivotFieldCollectionLoadOptions
@@ -469,6 +516,7 @@ items:
       - excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
       - excel_release.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
       - excel_release.Excel.Interfaces.RangeAreasData
+      - excel_release.Excel.Interfaces.RangeAreasLoadOptions
       - excel_release.Excel.Interfaces.RangeAreasUpdateData
       - excel_release.Excel.Interfaces.RangeBorderCollectionData
       - excel_release.Excel.Interfaces.RangeBorderCollectionLoadOptions
@@ -477,6 +525,7 @@ items:
       - excel_release.Excel.Interfaces.RangeBorderLoadOptions
       - excel_release.Excel.Interfaces.RangeBorderUpdateData
       - excel_release.Excel.Interfaces.RangeCollectionData
+      - excel_release.Excel.Interfaces.RangeCollectionLoadOptions
       - excel_release.Excel.Interfaces.RangeCollectionUpdateData
       - excel_release.Excel.Interfaces.RangeData
       - excel_release.Excel.Interfaces.RangeFillData
@@ -497,6 +546,7 @@ items:
       - excel_release.Excel.Interfaces.RangeViewLoadOptions
       - excel_release.Excel.Interfaces.RangeViewUpdateData
       - excel_release.Excel.Interfaces.RemoveDuplicatesResultData
+      - excel_release.Excel.Interfaces.RemoveDuplicatesResultLoadOptions
       - excel_release.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
       - excel_release.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
       - excel_release.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
@@ -513,24 +563,22 @@ items:
       - excel_release.Excel.Interfaces.SettingLoadOptions
       - excel_release.Excel.Interfaces.SettingUpdateData
       - excel_release.Excel.Interfaces.ShapeCollectionData
+      - excel_release.Excel.Interfaces.ShapeCollectionLoadOptions
       - excel_release.Excel.Interfaces.ShapeCollectionUpdateData
       - excel_release.Excel.Interfaces.ShapeData
       - excel_release.Excel.Interfaces.ShapeFillData
+      - excel_release.Excel.Interfaces.ShapeFillLoadOptions
       - excel_release.Excel.Interfaces.ShapeFillUpdateData
       - excel_release.Excel.Interfaces.ShapeFontData
+      - excel_release.Excel.Interfaces.ShapeFontLoadOptions
       - excel_release.Excel.Interfaces.ShapeFontUpdateData
       - excel_release.Excel.Interfaces.ShapeGroupData
+      - excel_release.Excel.Interfaces.ShapeGroupLoadOptions
       - excel_release.Excel.Interfaces.ShapeLineFormatData
+      - excel_release.Excel.Interfaces.ShapeLineFormatLoadOptions
       - excel_release.Excel.Interfaces.ShapeLineFormatUpdateData
+      - excel_release.Excel.Interfaces.ShapeLoadOptions
       - excel_release.Excel.Interfaces.ShapeUpdateData
-      - excel_release.Excel.Interfaces.SlicerCollectionData
-      - excel_release.Excel.Interfaces.SlicerCollectionUpdateData
-      - excel_release.Excel.Interfaces.SlicerData
-      - excel_release.Excel.Interfaces.SlicerItemCollectionData
-      - excel_release.Excel.Interfaces.SlicerItemCollectionUpdateData
-      - excel_release.Excel.Interfaces.SlicerItemData
-      - excel_release.Excel.Interfaces.SlicerItemUpdateData
-      - excel_release.Excel.Interfaces.SlicerUpdateData
       - excel_release.Excel.Interfaces.StyleCollectionData
       - excel_release.Excel.Interfaces.StyleCollectionLoadOptions
       - excel_release.Excel.Interfaces.StyleCollectionUpdateData
@@ -555,6 +603,7 @@ items:
       - excel_release.Excel.Interfaces.TableRowLoadOptions
       - excel_release.Excel.Interfaces.TableRowUpdateData
       - excel_release.Excel.Interfaces.TableScopedCollectionData
+      - excel_release.Excel.Interfaces.TableScopedCollectionLoadOptions
       - excel_release.Excel.Interfaces.TableScopedCollectionUpdateData
       - excel_release.Excel.Interfaces.TableSortData
       - excel_release.Excel.Interfaces.TableSortLoadOptions
@@ -563,8 +612,10 @@ items:
       - excel_release.Excel.Interfaces.TextConditionalFormatLoadOptions
       - excel_release.Excel.Interfaces.TextConditionalFormatUpdateData
       - excel_release.Excel.Interfaces.TextFrameData
+      - excel_release.Excel.Interfaces.TextFrameLoadOptions
       - excel_release.Excel.Interfaces.TextFrameUpdateData
       - excel_release.Excel.Interfaces.TextRangeData
+      - excel_release.Excel.Interfaces.TextRangeLoadOptions
       - excel_release.Excel.Interfaces.TextRangeUpdateData
       - excel_release.Excel.Interfaces.TopBottomConditionalFormatData
       - excel_release.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
@@ -583,15 +634,27 @@ items:
       - excel_release.Excel.Interfaces.WorksheetProtectionData
       - excel_release.Excel.Interfaces.WorksheetProtectionLoadOptions
       - excel_release.Excel.Interfaces.WorksheetUpdateData
+      - excel_release.Excel.IterativeCalculation
+      - excel_release.Excel.Line
+      - excel_release.Excel.LinkedDataTypeState
       - excel_release.Excel.ListDataValidation
       - excel_release.Excel.NamedItem
       - excel_release.Excel.NamedItemArrayValues
       - excel_release.Excel.NamedItemCollection
       - excel_release.Excel.NamedItemScope
       - excel_release.Excel.NamedItemType
+      - excel_release.Excel.PageBreak
+      - excel_release.Excel.PageBreakCollection
+      - excel_release.Excel.PageLayout
+      - excel_release.Excel.PageLayoutMarginOptions
+      - excel_release.Excel.PageLayoutZoomOptions
       - excel_release.Excel.PageOrientation
+      - excel_release.Excel.PaperType
+      - excel_release.Excel.PictureFormat
+      - excel_release.Excel.PivotAxis
       - excel_release.Excel.PivotField
       - excel_release.Excel.PivotFieldCollection
+      - excel_release.Excel.PivotFilterTopBottomCriterion
       - excel_release.Excel.PivotHierarchy
       - excel_release.Excel.PivotHierarchyCollection
       - excel_release.Excel.PivotItem
@@ -600,12 +663,20 @@ items:
       - excel_release.Excel.PivotLayoutType
       - excel_release.Excel.PivotTable
       - excel_release.Excel.PivotTableCollection
+      - excel_release.Excel.Placement
       - excel_release.Excel.postprocessBindingDescriptor
       - excel_release.Excel.PresetCriteriaConditionalFormat
+      - excel_release.Excel.PrintComments
+      - excel_release.Excel.PrintErrorType
+      - excel_release.Excel.PrintMarginUnit
+      - excel_release.Excel.PrintOrder
       - excel_release.Excel.ProtectionSelectionMode
       - excel_release.Excel.Range
+      - excel_release.Excel.RangeAreas
       - excel_release.Excel.RangeBorder
       - excel_release.Excel.RangeBorderCollection
+      - excel_release.Excel.RangeCollection
+      - excel_release.Excel.RangeCopyType
       - excel_release.Excel.RangeFill
       - excel_release.Excel.RangeFont
       - excel_release.Excel.RangeFormat
@@ -617,7 +688,10 @@ items:
       - excel_release.Excel.RangeView
       - excel_release.Excel.RangeViewCollection
       - excel_release.Excel.ReadingOrder
+      - excel_release.Excel.RemoveDuplicatesResult
+      - excel_release.Excel.ReplaceCriteria
       - excel_release.Excel.RequestContext
+      - excel_release.Excel.RibbonTab
       - excel_release.Excel.RowColumnPivotHierarchy
       - excel_release.Excel.RowColumnPivotHierarchyCollection
       - excel_release.Excel.RowProperties
@@ -629,6 +703,9 @@ items:
       - excel_release.Excel.run_4
       - excel_release.Excel.RunOptions
       - excel_release.Excel.Runtime
+      - excel_release.Excel.SaveBehavior
+      - excel_release.Excel.SearchCriteria
+      - excel_release.Excel.SearchDirection
       - excel_release.Excel.SelectionChangedEventArgs
       - excel_release.Excel.Session
       - excel_release.Excel.SettableCellProperties
@@ -637,6 +714,29 @@ items:
       - excel_release.Excel.Setting
       - excel_release.Excel.SettingCollection
       - excel_release.Excel.SettingsChangedEventArgs
+      - excel_release.Excel.Shape
+      - excel_release.Excel.ShapeActivatedEventArgs
+      - excel_release.Excel.ShapeAutoSize
+      - excel_release.Excel.ShapeCollection
+      - excel_release.Excel.ShapeDeactivatedEventArgs
+      - excel_release.Excel.ShapeFill
+      - excel_release.Excel.ShapeFillType
+      - excel_release.Excel.ShapeFont
+      - excel_release.Excel.ShapeFontUnderlineStyle
+      - excel_release.Excel.ShapeGroup
+      - excel_release.Excel.ShapeLineDashStyle
+      - excel_release.Excel.ShapeLineFormat
+      - excel_release.Excel.ShapeLineStyle
+      - excel_release.Excel.ShapeScaleFrom
+      - excel_release.Excel.ShapeScaleType
+      - excel_release.Excel.ShapeTextHorizontalAlignment
+      - excel_release.Excel.ShapeTextHorizontalOverflow
+      - excel_release.Excel.ShapeTextOrientation
+      - excel_release.Excel.ShapeTextReadingOrder
+      - excel_release.Excel.ShapeTextVerticalAlignment
+      - excel_release.Excel.ShapeTextVerticalOverflow
+      - excel_release.Excel.ShapeType
+      - excel_release.Excel.ShapeZOrder
       - excel_release.Excel.SheetVisibility
       - excel_release.Excel.ShowAsCalculation
       - excel_release.Excel.ShowAsRule
@@ -646,20 +746,27 @@ items:
       - excel_release.Excel.SortMethod
       - excel_release.Excel.SortOn
       - excel_release.Excel.SortOrientation
+      - excel_release.Excel.SpecialCellType
+      - excel_release.Excel.SpecialCellValueType
       - excel_release.Excel.Style
       - excel_release.Excel.StyleCollection
       - excel_release.Excel.SubtotalLocationType
       - excel_release.Excel.Subtotals
       - excel_release.Excel.Table
+      - excel_release.Excel.TableAddedEventArgs
       - excel_release.Excel.TableChangedEventArgs
       - excel_release.Excel.TableCollection
       - excel_release.Excel.TableColumn
       - excel_release.Excel.TableColumnCollection
+      - excel_release.Excel.TableDeletedEventArgs
       - excel_release.Excel.TableRow
       - excel_release.Excel.TableRowCollection
+      - excel_release.Excel.TableScopedCollection
       - excel_release.Excel.TableSelectionChangedEventArgs
       - excel_release.Excel.TableSort
       - excel_release.Excel.TextConditionalFormat
+      - excel_release.Excel.TextFrame
+      - excel_release.Excel.TextRange
       - excel_release.Excel.ThreeArrowsGraySet
       - excel_release.Excel.ThreeArrowsSet
       - excel_release.Excel.ThreeFlagsSet
@@ -673,6 +780,7 @@ items:
       - excel_release.Excel.TopBottomConditionalFormat
       - excel_release.Excel.VerticalAlignment
       - excel_release.Excel.Workbook
+      - excel_release.Excel.WorkbookAutoSaveSettingChangedEventArgs
       - excel_release.Excel.WorkbookCreated
       - excel_release.Excel.WorkbookProtection
       - excel_release.Excel.Worksheet
@@ -683,10 +791,12 @@ items:
       - excel_release.Excel.WorksheetCollection
       - excel_release.Excel.WorksheetDeactivatedEventArgs
       - excel_release.Excel.WorksheetDeletedEventArgs
+      - excel_release.Excel.WorksheetFormatChangedEventArgs
       - excel_release.Excel.WorksheetFreezePanes
       - excel_release.Excel.WorksheetPositionType
       - excel_release.Excel.WorksheetProtection
       - excel_release.Excel.WorksheetProtectionOptions
+      - excel_release.Excel.WorksheetSearchCriteria
       - excel_release.Excel.WorksheetSelectionChangedEventArgs
   - uid: excel_release.Excel.createWorkbook
     summary: |-
@@ -942,6 +1052,16 @@ references:
     name: Excel.AggregationFunction
   - uid: excel_release.Excel.Application
     name: Excel.Application
+  - uid: excel_release.Excel.ArrowheadLength
+    name: Excel.ArrowheadLength
+  - uid: excel_release.Excel.ArrowheadStyle
+    name: Excel.ArrowheadStyle
+  - uid: excel_release.Excel.ArrowheadWidth
+    name: Excel.ArrowheadWidth
+  - uid: excel_release.Excel.AutoFillType
+    name: Excel.AutoFillType
+  - uid: excel_release.Excel.AutoFilter
+    name: Excel.AutoFilter
   - uid: excel_release.Excel.BasicDataValidation
     name: Excel.BasicDataValidation
   - uid: excel_release.Excel.Binding
@@ -964,18 +1084,38 @@ references:
     name: Excel.BuiltInStyle
   - uid: excel_release.Excel.CalculationMode
     name: Excel.CalculationMode
+  - uid: excel_release.Excel.CalculationState
+    name: Excel.CalculationState
   - uid: excel_release.Excel.CalculationType
     name: Excel.CalculationType
+  - uid: excel_release.Excel.CellBorder
+    name: Excel.CellBorder
+  - uid: excel_release.Excel.CellBorderCollection
+    name: Excel.CellBorderCollection
   - uid: excel_release.Excel.CellProperties
     name: Excel.CellProperties
+  - uid: excel_release.Excel.CellPropertiesBorderLoadOptions
+    name: Excel.CellPropertiesBorderLoadOptions
+  - uid: excel_release.Excel.CellPropertiesFill
+    name: Excel.CellPropertiesFill
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions
+    name: Excel.CellPropertiesFillLoadOptions
+  - uid: excel_release.Excel.CellPropertiesFont
+    name: Excel.CellPropertiesFont
+  - uid: excel_release.Excel.CellPropertiesFontLoadOptions
+    name: Excel.CellPropertiesFontLoadOptions
   - uid: excel_release.Excel.CellPropertiesFormat
     name: Excel.CellPropertiesFormat
   - uid: excel_release.Excel.CellPropertiesFormatLoadOptions
     name: Excel.CellPropertiesFormatLoadOptions
   - uid: excel_release.Excel.CellPropertiesLoadOptions
     name: Excel.CellPropertiesLoadOptions
+  - uid: excel_release.Excel.CellPropertiesProtection
+    name: Excel.CellPropertiesProtection
   - uid: excel_release.Excel.CellValueConditionalFormat
     name: Excel.CellValueConditionalFormat
+  - uid: excel_release.Excel.ChangedEventDetail
+    name: Excel.ChangedEventDetail
   - uid: excel_release.Excel.Chart
     name: Excel.Chart
   - uid: excel_release.Excel.ChartActivatedEventArgs
@@ -1012,8 +1152,16 @@ references:
     name: Excel.ChartAxisTitleFormat
   - uid: excel_release.Excel.ChartAxisType
     name: Excel.ChartAxisType
+  - uid: excel_release.Excel.ChartBinOptions
+    name: Excel.ChartBinOptions
+  - uid: excel_release.Excel.ChartBinType
+    name: Excel.ChartBinType
   - uid: excel_release.Excel.ChartBorder
     name: Excel.ChartBorder
+  - uid: excel_release.Excel.ChartBoxQuartileCalculation
+    name: Excel.ChartBoxQuartileCalculation
+  - uid: excel_release.Excel.ChartBoxwhiskerOptions
+    name: Excel.ChartBoxwhiskerOptions
   - uid: excel_release.Excel.ChartCollection
     name: Excel.ChartCollection
   - uid: excel_release.Excel.ChartColorScheme
@@ -1032,12 +1180,24 @@ references:
     name: Excel.ChartDeletedEventArgs
   - uid: excel_release.Excel.ChartDisplayBlanksAs
     name: Excel.ChartDisplayBlanksAs
+  - uid: excel_release.Excel.ChartErrorBars
+    name: Excel.ChartErrorBars
+  - uid: excel_release.Excel.ChartErrorBarsFormat
+    name: Excel.ChartErrorBarsFormat
+  - uid: excel_release.Excel.ChartErrorBarsInclude
+    name: Excel.ChartErrorBarsInclude
+  - uid: excel_release.Excel.ChartErrorBarsType
+    name: Excel.ChartErrorBarsType
   - uid: excel_release.Excel.ChartFill
     name: Excel.ChartFill
   - uid: excel_release.Excel.ChartFont
     name: Excel.ChartFont
   - uid: excel_release.Excel.ChartFormatString
     name: Excel.ChartFormatString
+  - uid: excel_release.Excel.ChartGradientStyle
+    name: Excel.ChartGradientStyle
+  - uid: excel_release.Excel.ChartGradientStyleType
+    name: Excel.ChartGradientStyleType
   - uid: excel_release.Excel.ChartGridlines
     name: Excel.ChartGridlines
   - uid: excel_release.Excel.ChartGridlinesFormat
@@ -1056,8 +1216,20 @@ references:
     name: Excel.ChartLineFormat
   - uid: excel_release.Excel.ChartLineStyle
     name: Excel.ChartLineStyle
+  - uid: excel_release.Excel.ChartMapAreaLevel
+    name: Excel.ChartMapAreaLevel
+  - uid: excel_release.Excel.ChartMapLabelStrategy
+    name: Excel.ChartMapLabelStrategy
+  - uid: excel_release.Excel.ChartMapOptions
+    name: Excel.ChartMapOptions
+  - uid: excel_release.Excel.ChartMapProjectionType
+    name: Excel.ChartMapProjectionType
   - uid: excel_release.Excel.ChartMarkerStyle
     name: Excel.ChartMarkerStyle
+  - uid: excel_release.Excel.ChartParentLabelStrategy
+    name: Excel.ChartParentLabelStrategy
+  - uid: excel_release.Excel.ChartPivotOptions
+    name: Excel.ChartPivotOptions
   - uid: excel_release.Excel.ChartPlotArea
     name: Excel.ChartPlotArea
   - uid: excel_release.Excel.ChartPlotAreaFormat
@@ -1112,6 +1284,8 @@ references:
     name: Excel.ChartUnderlineStyle
   - uid: excel_release.Excel.ClearApplyTo
     name: Excel.ClearApplyTo
+  - uid: excel_release.Excel.CloseBehavior
+    name: Excel.CloseBehavior
   - uid: excel_release.Excel.ColorScaleConditionalFormat
     name: Excel.ColorScaleConditionalFormat
   - uid: excel_release.Excel.ColumnProperties
@@ -1184,16 +1358,12 @@ references:
     name: Excel.ConditionalTopBottomCriterionType
   - uid: excel_release.Excel.ConditionalTopBottomRule
     name: Excel.ConditionalTopBottomRule
+  - uid: excel_release.Excel.ConnectorType
+    name: Excel.ConnectorType
   - uid: excel_release.Excel.CustomConditionalFormat
     name: Excel.CustomConditionalFormat
   - uid: excel_release.Excel.CustomDataValidation
     name: Excel.CustomDataValidation
-  - uid: excel_release.Excel.CustomFunctionEventArgs
-    name: Excel.CustomFunctionEventArgs
-  - uid: excel_release.Excel.CustomFunctionMetadataFormat
-    name: Excel.CustomFunctionMetadataFormat
-  - uid: excel_release.Excel.CustomFunctionType
-    name: Excel.CustomFunctionType
   - uid: excel_release.Excel.CustomProperty
     name: Excel.CustomProperty
   - uid: excel_release.Excel.CustomPropertyCollection
@@ -1246,6 +1416,8 @@ references:
     name: Excel.EventSource
   - uid: excel_release.Excel.EventType
     name: Excel.EventType
+  - uid: excel_release.Excel.FillPattern
+    name: Excel.FillPattern
   - uid: excel_release.Excel.Filter
     name: Excel.Filter
   - uid: excel_release.Excel.FilterCriteria
@@ -1288,6 +1460,18 @@ references:
     name: Excel.FunctionResult
   - uid: excel_release.Excel.Functions
     name: Excel.Functions
+  - uid: excel_release.Excel.GeometricShape
+    name: Excel.GeometricShape
+  - uid: excel_release.Excel.GeometricShapeType
+    name: Excel.GeometricShapeType
+  - uid: excel_release.Excel.GroupShapeCollection
+    name: Excel.GroupShapeCollection
+  - uid: excel_release.Excel.HeaderFooter
+    name: Excel.HeaderFooter
+  - uid: excel_release.Excel.HeaderFooterGroup
+    name: Excel.HeaderFooterGroup
+  - uid: excel_release.Excel.HeaderFooterState
+    name: Excel.HeaderFooterState
   - uid: excel_release.Excel.HorizontalAlignment
     name: Excel.HorizontalAlignment
   - uid: excel_release.Excel.Icon
@@ -1298,6 +1482,8 @@ references:
     name: Excel.IconSet
   - uid: excel_release.Excel.IconSetConditionalFormat
     name: Excel.IconSetConditionalFormat
+  - uid: excel_release.Excel.Image
+    name: Excel.Image
   - uid: excel_release.Excel.ImageFittingMode
     name: Excel.ImageFittingMode
   - uid: excel_release.Excel.InsertShiftDirection
@@ -1310,6 +1496,8 @@ references:
     name: Excel.Interfaces.ApplicationUpdateData
   - uid: excel_release.Excel.Interfaces.AutoFilterData
     name: Excel.Interfaces.AutoFilterData
+  - uid: excel_release.Excel.Interfaces.AutoFilterLoadOptions
+    name: Excel.Interfaces.AutoFilterLoadOptions
   - uid: excel_release.Excel.Interfaces.BindingCollectionData
     name: Excel.Interfaces.BindingCollectionData
   - uid: excel_release.Excel.Interfaces.BindingCollectionLoadOptions
@@ -1364,6 +1552,8 @@ references:
     name: Excel.Interfaces.ChartAxisUpdateData
   - uid: excel_release.Excel.Interfaces.ChartBinOptionsData
     name: Excel.Interfaces.ChartBinOptionsData
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsLoadOptions
+    name: Excel.Interfaces.ChartBinOptionsLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData
     name: Excel.Interfaces.ChartBinOptionsUpdateData
   - uid: excel_release.Excel.Interfaces.ChartBorderData
@@ -1374,6 +1564,8 @@ references:
     name: Excel.Interfaces.ChartBorderUpdateData
   - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsData
     name: Excel.Interfaces.ChartBoxwhiskerOptionsData
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
     name: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
   - uid: excel_release.Excel.Interfaces.ChartCollectionData
@@ -1406,8 +1598,12 @@ references:
     name: Excel.Interfaces.ChartErrorBarsData
   - uid: excel_release.Excel.Interfaces.ChartErrorBarsFormatData
     name: Excel.Interfaces.ChartErrorBarsFormatData
+  - uid: excel_release.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartErrorBarsFormatUpdateData
     name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartErrorBarsLoadOptions
+    name: Excel.Interfaces.ChartErrorBarsLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartErrorBarsUpdateData
     name: Excel.Interfaces.ChartErrorBarsUpdateData
   - uid: excel_release.Excel.Interfaces.ChartFontData
@@ -1468,10 +1664,14 @@ references:
     name: Excel.Interfaces.ChartLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartMapOptionsData
     name: Excel.Interfaces.ChartMapOptionsData
+  - uid: excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions
+    name: Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartMapOptionsUpdateData
     name: Excel.Interfaces.ChartMapOptionsUpdateData
   - uid: excel_release.Excel.Interfaces.ChartPivotOptionsData
     name: Excel.Interfaces.ChartPivotOptionsData
+  - uid: excel_release.Excel.Interfaces.ChartPivotOptionsLoadOptions
+    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartPivotOptionsUpdateData
     name: Excel.Interfaces.ChartPivotOptionsUpdateData
   - uid: excel_release.Excel.Interfaces.ChartPlotAreaData
@@ -1574,22 +1774,6 @@ references:
     name: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
   - uid: excel_release.Excel.Interfaces.ColorScaleConditionalFormatUpdateData
     name: Excel.Interfaces.ColorScaleConditionalFormatUpdateData
-  - uid: excel_release.Excel.Interfaces.CommentCollectionData
-    name: Excel.Interfaces.CommentCollectionData
-  - uid: excel_release.Excel.Interfaces.CommentCollectionUpdateData
-    name: Excel.Interfaces.CommentCollectionUpdateData
-  - uid: excel_release.Excel.Interfaces.CommentData
-    name: Excel.Interfaces.CommentData
-  - uid: excel_release.Excel.Interfaces.CommentReplyCollectionData
-    name: Excel.Interfaces.CommentReplyCollectionData
-  - uid: excel_release.Excel.Interfaces.CommentReplyCollectionUpdateData
-    name: Excel.Interfaces.CommentReplyCollectionUpdateData
-  - uid: excel_release.Excel.Interfaces.CommentReplyData
-    name: Excel.Interfaces.CommentReplyData
-  - uid: excel_release.Excel.Interfaces.CommentReplyUpdateData
-    name: Excel.Interfaces.CommentReplyUpdateData
-  - uid: excel_release.Excel.Interfaces.CommentUpdateData
-    name: Excel.Interfaces.CommentUpdateData
   - uid: excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatData
     name: Excel.Interfaces.ConditionalDataBarNegativeFormatData
   - uid: excel_release.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
@@ -1742,16 +1926,24 @@ references:
     name: Excel.Interfaces.FunctionResultLoadOptions
   - uid: excel_release.Excel.Interfaces.GeometricShapeData
     name: Excel.Interfaces.GeometricShapeData
+  - uid: excel_release.Excel.Interfaces.GeometricShapeLoadOptions
+    name: Excel.Interfaces.GeometricShapeLoadOptions
   - uid: excel_release.Excel.Interfaces.GroupShapeCollectionData
     name: Excel.Interfaces.GroupShapeCollectionData
+  - uid: excel_release.Excel.Interfaces.GroupShapeCollectionLoadOptions
+    name: Excel.Interfaces.GroupShapeCollectionLoadOptions
   - uid: excel_release.Excel.Interfaces.GroupShapeCollectionUpdateData
     name: Excel.Interfaces.GroupShapeCollectionUpdateData
   - uid: excel_release.Excel.Interfaces.HeaderFooterData
     name: Excel.Interfaces.HeaderFooterData
   - uid: excel_release.Excel.Interfaces.HeaderFooterGroupData
     name: Excel.Interfaces.HeaderFooterGroupData
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupLoadOptions
+    name: Excel.Interfaces.HeaderFooterGroupLoadOptions
   - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData
     name: Excel.Interfaces.HeaderFooterGroupUpdateData
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions
+    name: Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel_release.Excel.Interfaces.HeaderFooterUpdateData
     name: Excel.Interfaces.HeaderFooterUpdateData
   - uid: excel_release.Excel.Interfaces.IconSetConditionalFormatData
@@ -1762,12 +1954,18 @@ references:
     name: Excel.Interfaces.IconSetConditionalFormatUpdateData
   - uid: excel_release.Excel.Interfaces.ImageData
     name: Excel.Interfaces.ImageData
+  - uid: excel_release.Excel.Interfaces.ImageLoadOptions
+    name: Excel.Interfaces.ImageLoadOptions
   - uid: excel_release.Excel.Interfaces.IterativeCalculationData
     name: Excel.Interfaces.IterativeCalculationData
+  - uid: excel_release.Excel.Interfaces.IterativeCalculationLoadOptions
+    name: Excel.Interfaces.IterativeCalculationLoadOptions
   - uid: excel_release.Excel.Interfaces.IterativeCalculationUpdateData
     name: Excel.Interfaces.IterativeCalculationUpdateData
   - uid: excel_release.Excel.Interfaces.LineData
     name: Excel.Interfaces.LineData
+  - uid: excel_release.Excel.Interfaces.LineLoadOptions
+    name: Excel.Interfaces.LineLoadOptions
   - uid: excel_release.Excel.Interfaces.LineUpdateData
     name: Excel.Interfaces.LineUpdateData
   - uid: excel_release.Excel.Interfaces.NamedItemArrayValuesData
@@ -1788,12 +1986,18 @@ references:
     name: Excel.Interfaces.NamedItemUpdateData
   - uid: excel_release.Excel.Interfaces.PageBreakCollectionData
     name: Excel.Interfaces.PageBreakCollectionData
+  - uid: excel_release.Excel.Interfaces.PageBreakCollectionLoadOptions
+    name: Excel.Interfaces.PageBreakCollectionLoadOptions
   - uid: excel_release.Excel.Interfaces.PageBreakCollectionUpdateData
     name: Excel.Interfaces.PageBreakCollectionUpdateData
   - uid: excel_release.Excel.Interfaces.PageBreakData
     name: Excel.Interfaces.PageBreakData
+  - uid: excel_release.Excel.Interfaces.PageBreakLoadOptions
+    name: Excel.Interfaces.PageBreakLoadOptions
   - uid: excel_release.Excel.Interfaces.PageLayoutData
     name: Excel.Interfaces.PageLayoutData
+  - uid: excel_release.Excel.Interfaces.PageLayoutLoadOptions
+    name: Excel.Interfaces.PageLayoutLoadOptions
   - uid: excel_release.Excel.Interfaces.PageLayoutUpdateData
     name: Excel.Interfaces.PageLayoutUpdateData
   - uid: excel_release.Excel.Interfaces.PivotFieldCollectionData
@@ -1858,6 +2062,8 @@ references:
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
   - uid: excel_release.Excel.Interfaces.RangeAreasData
     name: Excel.Interfaces.RangeAreasData
+  - uid: excel_release.Excel.Interfaces.RangeAreasLoadOptions
+    name: Excel.Interfaces.RangeAreasLoadOptions
   - uid: excel_release.Excel.Interfaces.RangeAreasUpdateData
     name: Excel.Interfaces.RangeAreasUpdateData
   - uid: excel_release.Excel.Interfaces.RangeBorderCollectionData
@@ -1874,6 +2080,8 @@ references:
     name: Excel.Interfaces.RangeBorderUpdateData
   - uid: excel_release.Excel.Interfaces.RangeCollectionData
     name: Excel.Interfaces.RangeCollectionData
+  - uid: excel_release.Excel.Interfaces.RangeCollectionLoadOptions
+    name: Excel.Interfaces.RangeCollectionLoadOptions
   - uid: excel_release.Excel.Interfaces.RangeCollectionUpdateData
     name: Excel.Interfaces.RangeCollectionUpdateData
   - uid: excel_release.Excel.Interfaces.RangeData
@@ -1914,6 +2122,8 @@ references:
     name: Excel.Interfaces.RangeViewUpdateData
   - uid: excel_release.Excel.Interfaces.RemoveDuplicatesResultData
     name: Excel.Interfaces.RemoveDuplicatesResultData
+  - uid: excel_release.Excel.Interfaces.RemoveDuplicatesResultLoadOptions
+    name: Excel.Interfaces.RemoveDuplicatesResultLoadOptions
   - uid: excel_release.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
   - uid: excel_release.Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions
@@ -1946,42 +2156,38 @@ references:
     name: Excel.Interfaces.SettingUpdateData
   - uid: excel_release.Excel.Interfaces.ShapeCollectionData
     name: Excel.Interfaces.ShapeCollectionData
+  - uid: excel_release.Excel.Interfaces.ShapeCollectionLoadOptions
+    name: Excel.Interfaces.ShapeCollectionLoadOptions
   - uid: excel_release.Excel.Interfaces.ShapeCollectionUpdateData
     name: Excel.Interfaces.ShapeCollectionUpdateData
   - uid: excel_release.Excel.Interfaces.ShapeData
     name: Excel.Interfaces.ShapeData
   - uid: excel_release.Excel.Interfaces.ShapeFillData
     name: Excel.Interfaces.ShapeFillData
+  - uid: excel_release.Excel.Interfaces.ShapeFillLoadOptions
+    name: Excel.Interfaces.ShapeFillLoadOptions
   - uid: excel_release.Excel.Interfaces.ShapeFillUpdateData
     name: Excel.Interfaces.ShapeFillUpdateData
   - uid: excel_release.Excel.Interfaces.ShapeFontData
     name: Excel.Interfaces.ShapeFontData
+  - uid: excel_release.Excel.Interfaces.ShapeFontLoadOptions
+    name: Excel.Interfaces.ShapeFontLoadOptions
   - uid: excel_release.Excel.Interfaces.ShapeFontUpdateData
     name: Excel.Interfaces.ShapeFontUpdateData
   - uid: excel_release.Excel.Interfaces.ShapeGroupData
     name: Excel.Interfaces.ShapeGroupData
+  - uid: excel_release.Excel.Interfaces.ShapeGroupLoadOptions
+    name: Excel.Interfaces.ShapeGroupLoadOptions
   - uid: excel_release.Excel.Interfaces.ShapeLineFormatData
     name: Excel.Interfaces.ShapeLineFormatData
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatLoadOptions
+    name: Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: excel_release.Excel.Interfaces.ShapeLineFormatUpdateData
     name: Excel.Interfaces.ShapeLineFormatUpdateData
+  - uid: excel_release.Excel.Interfaces.ShapeLoadOptions
+    name: Excel.Interfaces.ShapeLoadOptions
   - uid: excel_release.Excel.Interfaces.ShapeUpdateData
     name: Excel.Interfaces.ShapeUpdateData
-  - uid: excel_release.Excel.Interfaces.SlicerCollectionData
-    name: Excel.Interfaces.SlicerCollectionData
-  - uid: excel_release.Excel.Interfaces.SlicerCollectionUpdateData
-    name: Excel.Interfaces.SlicerCollectionUpdateData
-  - uid: excel_release.Excel.Interfaces.SlicerData
-    name: Excel.Interfaces.SlicerData
-  - uid: excel_release.Excel.Interfaces.SlicerItemCollectionData
-    name: Excel.Interfaces.SlicerItemCollectionData
-  - uid: excel_release.Excel.Interfaces.SlicerItemCollectionUpdateData
-    name: Excel.Interfaces.SlicerItemCollectionUpdateData
-  - uid: excel_release.Excel.Interfaces.SlicerItemData
-    name: Excel.Interfaces.SlicerItemData
-  - uid: excel_release.Excel.Interfaces.SlicerItemUpdateData
-    name: Excel.Interfaces.SlicerItemUpdateData
-  - uid: excel_release.Excel.Interfaces.SlicerUpdateData
-    name: Excel.Interfaces.SlicerUpdateData
   - uid: excel_release.Excel.Interfaces.StyleCollectionData
     name: Excel.Interfaces.StyleCollectionData
   - uid: excel_release.Excel.Interfaces.StyleCollectionLoadOptions
@@ -2030,6 +2236,8 @@ references:
     name: Excel.Interfaces.TableRowUpdateData
   - uid: excel_release.Excel.Interfaces.TableScopedCollectionData
     name: Excel.Interfaces.TableScopedCollectionData
+  - uid: excel_release.Excel.Interfaces.TableScopedCollectionLoadOptions
+    name: Excel.Interfaces.TableScopedCollectionLoadOptions
   - uid: excel_release.Excel.Interfaces.TableScopedCollectionUpdateData
     name: Excel.Interfaces.TableScopedCollectionUpdateData
   - uid: excel_release.Excel.Interfaces.TableSortData
@@ -2046,10 +2254,14 @@ references:
     name: Excel.Interfaces.TextConditionalFormatUpdateData
   - uid: excel_release.Excel.Interfaces.TextFrameData
     name: Excel.Interfaces.TextFrameData
+  - uid: excel_release.Excel.Interfaces.TextFrameLoadOptions
+    name: Excel.Interfaces.TextFrameLoadOptions
   - uid: excel_release.Excel.Interfaces.TextFrameUpdateData
     name: Excel.Interfaces.TextFrameUpdateData
   - uid: excel_release.Excel.Interfaces.TextRangeData
     name: Excel.Interfaces.TextRangeData
+  - uid: excel_release.Excel.Interfaces.TextRangeLoadOptions
+    name: Excel.Interfaces.TextRangeLoadOptions
   - uid: excel_release.Excel.Interfaces.TextRangeUpdateData
     name: Excel.Interfaces.TextRangeUpdateData
   - uid: excel_release.Excel.Interfaces.TopBottomConditionalFormatData
@@ -2086,6 +2298,12 @@ references:
     name: Excel.Interfaces.WorksheetProtectionLoadOptions
   - uid: excel_release.Excel.Interfaces.WorksheetUpdateData
     name: Excel.Interfaces.WorksheetUpdateData
+  - uid: excel_release.Excel.IterativeCalculation
+    name: Excel.IterativeCalculation
+  - uid: excel_release.Excel.Line
+    name: Excel.Line
+  - uid: excel_release.Excel.LinkedDataTypeState
+    name: Excel.LinkedDataTypeState
   - uid: excel_release.Excel.ListDataValidation
     name: Excel.ListDataValidation
   - uid: excel_release.Excel.NamedItem
@@ -2098,12 +2316,30 @@ references:
     name: Excel.NamedItemScope
   - uid: excel_release.Excel.NamedItemType
     name: Excel.NamedItemType
+  - uid: excel_release.Excel.PageBreak
+    name: Excel.PageBreak
+  - uid: excel_release.Excel.PageBreakCollection
+    name: Excel.PageBreakCollection
+  - uid: excel_release.Excel.PageLayout
+    name: Excel.PageLayout
+  - uid: excel_release.Excel.PageLayoutMarginOptions
+    name: Excel.PageLayoutMarginOptions
+  - uid: excel_release.Excel.PageLayoutZoomOptions
+    name: Excel.PageLayoutZoomOptions
   - uid: excel_release.Excel.PageOrientation
     name: Excel.PageOrientation
+  - uid: excel_release.Excel.PaperType
+    name: Excel.PaperType
+  - uid: excel_release.Excel.PictureFormat
+    name: Excel.PictureFormat
+  - uid: excel_release.Excel.PivotAxis
+    name: Excel.PivotAxis
   - uid: excel_release.Excel.PivotField
     name: Excel.PivotField
   - uid: excel_release.Excel.PivotFieldCollection
     name: Excel.PivotFieldCollection
+  - uid: excel_release.Excel.PivotFilterTopBottomCriterion
+    name: Excel.PivotFilterTopBottomCriterion
   - uid: excel_release.Excel.PivotHierarchy
     name: Excel.PivotHierarchy
   - uid: excel_release.Excel.PivotHierarchyCollection
@@ -2120,16 +2356,32 @@ references:
     name: Excel.PivotTable
   - uid: excel_release.Excel.PivotTableCollection
     name: Excel.PivotTableCollection
+  - uid: excel_release.Excel.Placement
+    name: Excel.Placement
   - uid: excel_release.Excel.PresetCriteriaConditionalFormat
     name: Excel.PresetCriteriaConditionalFormat
+  - uid: excel_release.Excel.PrintComments
+    name: Excel.PrintComments
+  - uid: excel_release.Excel.PrintErrorType
+    name: Excel.PrintErrorType
+  - uid: excel_release.Excel.PrintMarginUnit
+    name: Excel.PrintMarginUnit
+  - uid: excel_release.Excel.PrintOrder
+    name: Excel.PrintOrder
   - uid: excel_release.Excel.ProtectionSelectionMode
     name: Excel.ProtectionSelectionMode
   - uid: excel_release.Excel.Range
     name: Excel.Range
+  - uid: excel_release.Excel.RangeAreas
+    name: Excel.RangeAreas
   - uid: excel_release.Excel.RangeBorder
     name: Excel.RangeBorder
   - uid: excel_release.Excel.RangeBorderCollection
     name: Excel.RangeBorderCollection
+  - uid: excel_release.Excel.RangeCollection
+    name: Excel.RangeCollection
+  - uid: excel_release.Excel.RangeCopyType
+    name: Excel.RangeCopyType
   - uid: excel_release.Excel.RangeFill
     name: Excel.RangeFill
   - uid: excel_release.Excel.RangeFont
@@ -2152,8 +2404,14 @@ references:
     name: Excel.RangeViewCollection
   - uid: excel_release.Excel.ReadingOrder
     name: Excel.ReadingOrder
+  - uid: excel_release.Excel.RemoveDuplicatesResult
+    name: Excel.RemoveDuplicatesResult
+  - uid: excel_release.Excel.ReplaceCriteria
+    name: Excel.ReplaceCriteria
   - uid: excel_release.Excel.RequestContext
     name: Excel.RequestContext
+  - uid: excel_release.Excel.RibbonTab
+    name: Excel.RibbonTab
   - uid: excel_release.Excel.RowColumnPivotHierarchy
     name: Excel.RowColumnPivotHierarchy
   - uid: excel_release.Excel.RowColumnPivotHierarchyCollection
@@ -2166,6 +2424,12 @@ references:
     name: Excel.RunOptions
   - uid: excel_release.Excel.Runtime
     name: Excel.Runtime
+  - uid: excel_release.Excel.SaveBehavior
+    name: Excel.SaveBehavior
+  - uid: excel_release.Excel.SearchCriteria
+    name: Excel.SearchCriteria
+  - uid: excel_release.Excel.SearchDirection
+    name: Excel.SearchDirection
   - uid: excel_release.Excel.SelectionChangedEventArgs
     name: Excel.SelectionChangedEventArgs
   - uid: excel_release.Excel.Session
@@ -2182,6 +2446,52 @@ references:
     name: Excel.SettingCollection
   - uid: excel_release.Excel.SettingsChangedEventArgs
     name: Excel.SettingsChangedEventArgs
+  - uid: excel_release.Excel.Shape
+    name: Excel.Shape
+  - uid: excel_release.Excel.ShapeActivatedEventArgs
+    name: Excel.ShapeActivatedEventArgs
+  - uid: excel_release.Excel.ShapeAutoSize
+    name: Excel.ShapeAutoSize
+  - uid: excel_release.Excel.ShapeCollection
+    name: Excel.ShapeCollection
+  - uid: excel_release.Excel.ShapeDeactivatedEventArgs
+    name: Excel.ShapeDeactivatedEventArgs
+  - uid: excel_release.Excel.ShapeFill
+    name: Excel.ShapeFill
+  - uid: excel_release.Excel.ShapeFillType
+    name: Excel.ShapeFillType
+  - uid: excel_release.Excel.ShapeFont
+    name: Excel.ShapeFont
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle
+    name: Excel.ShapeFontUnderlineStyle
+  - uid: excel_release.Excel.ShapeGroup
+    name: Excel.ShapeGroup
+  - uid: excel_release.Excel.ShapeLineDashStyle
+    name: Excel.ShapeLineDashStyle
+  - uid: excel_release.Excel.ShapeLineFormat
+    name: Excel.ShapeLineFormat
+  - uid: excel_release.Excel.ShapeLineStyle
+    name: Excel.ShapeLineStyle
+  - uid: excel_release.Excel.ShapeScaleFrom
+    name: Excel.ShapeScaleFrom
+  - uid: excel_release.Excel.ShapeScaleType
+    name: Excel.ShapeScaleType
+  - uid: excel_release.Excel.ShapeTextHorizontalAlignment
+    name: Excel.ShapeTextHorizontalAlignment
+  - uid: excel_release.Excel.ShapeTextHorizontalOverflow
+    name: Excel.ShapeTextHorizontalOverflow
+  - uid: excel_release.Excel.ShapeTextOrientation
+    name: Excel.ShapeTextOrientation
+  - uid: excel_release.Excel.ShapeTextReadingOrder
+    name: Excel.ShapeTextReadingOrder
+  - uid: excel_release.Excel.ShapeTextVerticalAlignment
+    name: Excel.ShapeTextVerticalAlignment
+  - uid: excel_release.Excel.ShapeTextVerticalOverflow
+    name: Excel.ShapeTextVerticalOverflow
+  - uid: excel_release.Excel.ShapeType
+    name: Excel.ShapeType
+  - uid: excel_release.Excel.ShapeZOrder
+    name: Excel.ShapeZOrder
   - uid: excel_release.Excel.SheetVisibility
     name: Excel.SheetVisibility
   - uid: excel_release.Excel.ShowAsCalculation
@@ -2200,6 +2510,10 @@ references:
     name: Excel.SortOn
   - uid: excel_release.Excel.SortOrientation
     name: Excel.SortOrientation
+  - uid: excel_release.Excel.SpecialCellType
+    name: Excel.SpecialCellType
+  - uid: excel_release.Excel.SpecialCellValueType
+    name: Excel.SpecialCellValueType
   - uid: excel_release.Excel.Style
     name: Excel.Style
   - uid: excel_release.Excel.StyleCollection
@@ -2210,6 +2524,8 @@ references:
     name: Excel.Subtotals
   - uid: excel_release.Excel.Table
     name: Excel.Table
+  - uid: excel_release.Excel.TableAddedEventArgs
+    name: Excel.TableAddedEventArgs
   - uid: excel_release.Excel.TableChangedEventArgs
     name: Excel.TableChangedEventArgs
   - uid: excel_release.Excel.TableCollection
@@ -2218,16 +2534,24 @@ references:
     name: Excel.TableColumn
   - uid: excel_release.Excel.TableColumnCollection
     name: Excel.TableColumnCollection
+  - uid: excel_release.Excel.TableDeletedEventArgs
+    name: Excel.TableDeletedEventArgs
   - uid: excel_release.Excel.TableRow
     name: Excel.TableRow
   - uid: excel_release.Excel.TableRowCollection
     name: Excel.TableRowCollection
+  - uid: excel_release.Excel.TableScopedCollection
+    name: Excel.TableScopedCollection
   - uid: excel_release.Excel.TableSelectionChangedEventArgs
     name: Excel.TableSelectionChangedEventArgs
   - uid: excel_release.Excel.TableSort
     name: Excel.TableSort
   - uid: excel_release.Excel.TextConditionalFormat
     name: Excel.TextConditionalFormat
+  - uid: excel_release.Excel.TextFrame
+    name: Excel.TextFrame
+  - uid: excel_release.Excel.TextRange
+    name: Excel.TextRange
   - uid: excel_release.Excel.ThreeArrowsGraySet
     name: Excel.ThreeArrowsGraySet
   - uid: excel_release.Excel.ThreeArrowsSet
@@ -2254,6 +2578,8 @@ references:
     name: Excel.VerticalAlignment
   - uid: excel_release.Excel.Workbook
     name: Excel.Workbook
+  - uid: excel_release.Excel.WorkbookAutoSaveSettingChangedEventArgs
+    name: Excel.WorkbookAutoSaveSettingChangedEventArgs
   - uid: excel_release.Excel.WorkbookCreated
     name: Excel.WorkbookCreated
   - uid: excel_release.Excel.WorkbookProtection
@@ -2274,6 +2600,8 @@ references:
     name: Excel.WorksheetDeactivatedEventArgs
   - uid: excel_release.Excel.WorksheetDeletedEventArgs
     name: Excel.WorksheetDeletedEventArgs
+  - uid: excel_release.Excel.WorksheetFormatChangedEventArgs
+    name: Excel.WorksheetFormatChangedEventArgs
   - uid: excel_release.Excel.WorksheetFreezePanes
     name: Excel.WorksheetFreezePanes
   - uid: excel_release.Excel.WorksheetPositionType
@@ -2282,5 +2610,7 @@ references:
     name: Excel.WorksheetProtection
   - uid: excel_release.Excel.WorksheetProtectionOptions
     name: Excel.WorksheetProtectionOptions
+  - uid: excel_release.Excel.WorksheetSearchCriteria
+    name: Excel.WorksheetSearchCriteria
   - uid: excel_release.Excel.WorksheetSelectionChangedEventArgs
     name: Excel.WorksheetSelectionChangedEventArgs

@@ -1,0 +1,103 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.CellPropertiesFill
+    summary: >-
+      Represents the `format.fill` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
+      `getColumnProperties` or the `format.fill` input parameter of `setCellProperties`<!-- -->, `setRowProperties`<!--
+      -->, and `setColumnProperties`<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFill
+    fullName: Excel.CellPropertiesFill
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.CellPropertiesFill.color
+      - excel_release.Excel.CellPropertiesFill.pattern
+      - excel_release.Excel.CellPropertiesFill.patternColor
+      - excel_release.Excel.CellPropertiesFill.patternTintAndShade
+      - excel_release.Excel.CellPropertiesFill.tintAndShade
+  - uid: excel_release.Excel.CellPropertiesFill.color
+    summary: |-
+      Represents the `format.fill.color` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.CellPropertiesFill.pattern
+    summary: |-
+      Represents the `format.fill.pattern` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        pattern?: Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" |
+        "Down" | "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" |
+        "Grid" | "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient";
+      return:
+        type:
+          - >-
+            Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
+            "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
+            "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
+  - uid: excel_release.Excel.CellPropertiesFill.patternColor
+    summary: |-
+      Represents the `format.fill.patternColor` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.CellPropertiesFill.patternTintAndShade
+    summary: |-
+      Represents the `format.fill.patternTintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.CellPropertiesFill.tintAndShade
+    summary: |-
+      Represents the `format.fill.tintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: number;'
+      return:
+        type:
+          - number

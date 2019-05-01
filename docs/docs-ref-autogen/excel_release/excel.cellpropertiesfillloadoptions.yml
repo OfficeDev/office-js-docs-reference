@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions
+    summary: |-
+      Specifies which properties to load on the `format.fill` object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CellPropertiesFillLoadOptions
+    fullName: Excel.CellPropertiesFillLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.CellPropertiesFillLoadOptions.color
+      - excel_release.Excel.CellPropertiesFillLoadOptions.pattern
+      - excel_release.Excel.CellPropertiesFillLoadOptions.patternColor
+      - excel_release.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
+      - excel_release.Excel.CellPropertiesFillLoadOptions.tintAndShade
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions.color
+    summary: |-
+      Specifies whether to load on the `color` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions.pattern
+    summary: |-
+      Specifies whether to load on the `pattern` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pattern?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions.patternColor
+    summary: |-
+      Specifies whether to load on the `patternColor` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: patternColor
+    fullName: patternColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
+    summary: |-
+      Specifies whether to load on the `patternTintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: patternTintAndShade
+    fullName: patternTintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'patternTintAndShade?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.CellPropertiesFillLoadOptions.tintAndShade
+    summary: |-
+      Specifies whether to load on the `tintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade?: boolean;'
+      return:
+        type:
+          - boolean

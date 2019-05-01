@@ -16,7 +16,9 @@ items:
     children:
       - excel_release.Excel.StyleCollection.add
       - excel_release.Excel.StyleCollection.context
+      - excel_release.Excel.StyleCollection.getCount
       - excel_release.Excel.StyleCollection.getItem
+      - excel_release.Excel.StyleCollection.getItemAt
       - excel_release.Excel.StyleCollection.items
       - excel_release.Excel.StyleCollection.load
       - excel_release.Excel.StyleCollection.load_1
@@ -83,6 +85,22 @@ items:
       return:
         type:
           - RequestContext
+  - uid: excel_release.Excel.StyleCollection.getCount
+    summary: |-
+      Gets the number of styles in the collection.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
   - uid: excel_release.Excel.StyleCollection.getItem
     summary: |-
       Gets a style by name.
@@ -130,6 +148,27 @@ items:
           description: Name of the style to be retrieved.
           type:
             - string
+  - uid: excel_release.Excel.StyleCollection.getItemAt
+    summary: |-
+      Gets a style based on its position in the collection.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Style;'
+      return:
+        type:
+          - excel.Excel.Style
+        description: ''
+      parameters:
+        - id: index
+          description: Index value of the style object to be retrieved. Zero-indexed.
+          type:
+            - number
   - uid: excel_release.Excel.StyleCollection.items
     summary: Gets the loaded child items in this collection.
     name: items

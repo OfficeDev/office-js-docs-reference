@@ -17,6 +17,8 @@ items:
       - excel_release.Excel.DataValidation.clear
       - excel_release.Excel.DataValidation.context
       - excel_release.Excel.DataValidation.errorAlert
+      - excel_release.Excel.DataValidation.getInvalidCells
+      - excel_release.Excel.DataValidation.getInvalidCellsOrNullObject
       - excel_release.Excel.DataValidation.ignoreBlanks
       - excel_release.Excel.DataValidation.load
       - excel_release.Excel.DataValidation.load_1
@@ -107,6 +109,42 @@ items:
               await context.sync();
           });
           ```
+  - uid: excel_release.Excel.DataValidation.getInvalidCells
+    summary: >-
+      Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are
+      valid, this function will throw an ItemNotFound error.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getInvalidCells()
+    fullName: getInvalidCells()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInvalidCells(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: ''
+  - uid: excel_release.Excel.DataValidation.getInvalidCellsOrNullObject
+    summary: >-
+      Returns a RangeAreas, comprising one or more rectangular ranges, with invalid cell values. If all cell values are
+      valid, this function will return null.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getInvalidCellsOrNullObject()
+    fullName: getInvalidCellsOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getInvalidCellsOrNullObject(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: ''
   - uid: excel_release.Excel.DataValidation.ignoreBlanks
     summary: |-
       Ignore blanks: no data validation will be performed on blank cells, it defaults to true.

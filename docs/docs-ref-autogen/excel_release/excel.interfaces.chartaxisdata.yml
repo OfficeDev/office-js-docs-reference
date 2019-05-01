@@ -19,6 +19,7 @@ items:
       - excel_release.Excel.Interfaces.ChartAxisData.height
       - excel_release.Excel.Interfaces.ChartAxisData.isBetweenCategories
       - excel_release.Excel.Interfaces.ChartAxisData.left
+      - excel_release.Excel.Interfaces.ChartAxisData.linkNumberFormat
       - excel_release.Excel.Interfaces.ChartAxisData.logBase
       - excel_release.Excel.Interfaces.ChartAxisData.majorGridlines
       - excel_release.Excel.Interfaces.ChartAxisData.majorTickMark
@@ -205,6 +206,23 @@ items:
       return:
         type:
           - number
+  - uid: excel_release.Excel.Interfaces.ChartAxisData.linkNumberFormat
+    summary: >-
+      Represents whether or not the number format is linked to the cells. If true, the number format will change in the
+      labels when it changes in the cells.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartAxisData.logBase
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.

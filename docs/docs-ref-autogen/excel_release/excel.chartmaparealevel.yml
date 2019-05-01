@@ -1,0 +1,78 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartMapAreaLevel
+    summary: |-
+      Represents the mapping level of a chart series. This only applies to region map charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartMapAreaLevel
+    fullName: Excel.ChartMapAreaLevel
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartMapAreaLevel.automatic
+      - excel_release.Excel.ChartMapAreaLevel.city
+      - excel_release.Excel.ChartMapAreaLevel.continent
+      - excel_release.Excel.ChartMapAreaLevel.country
+      - excel_release.Excel.ChartMapAreaLevel.county
+      - excel_release.Excel.ChartMapAreaLevel.dataOnly
+      - excel_release.Excel.ChartMapAreaLevel.state
+      - excel_release.Excel.ChartMapAreaLevel.world
+  - uid: excel_release.Excel.ChartMapAreaLevel.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.city
+    name: city
+    fullName: city
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"City"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.continent
+    name: continent
+    fullName: continent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Continent"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.country
+    name: country
+    fullName: country
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Country"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.county
+    name: county
+    fullName: county
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"County"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.dataOnly
+    name: dataOnly
+    fullName: dataOnly
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DataOnly"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.state
+    name: state
+    fullName: state
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"State"'
+  - uid: excel_release.Excel.ChartMapAreaLevel.world
+    name: world
+    fullName: world
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"World"'

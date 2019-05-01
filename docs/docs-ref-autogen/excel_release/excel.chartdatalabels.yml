@@ -18,6 +18,7 @@ items:
       - excel_release.Excel.ChartDataLabels.context
       - excel_release.Excel.ChartDataLabels.format
       - excel_release.Excel.ChartDataLabels.horizontalAlignment
+      - excel_release.Excel.ChartDataLabels.linkNumberFormat
       - excel_release.Excel.ChartDataLabels.load
       - excel_release.Excel.ChartDataLabels.load_1
       - excel_release.Excel.ChartDataLabels.load_2
@@ -98,6 +99,23 @@ items:
       return:
         type:
           - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
+  - uid: excel_release.Excel.ChartDataLabels.linkNumberFormat
+    summary: >-
+      Represents whether or not the number format is linked to the cells. If true, the number format will change in the
+      labels when it changes in the cells
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: linkNumberFormat
+    fullName: linkNumberFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkNumberFormat: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.ChartDataLabels.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

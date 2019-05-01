@@ -16,6 +16,7 @@ items:
       - excel_release.Excel.WorksheetChangedEventArgs.getRangeOrNullObject
       - excel_release.Excel.WorksheetChangedEventArgs.address
       - excel_release.Excel.WorksheetChangedEventArgs.changeType
+      - excel_release.Excel.WorksheetChangedEventArgs.details
       - excel_release.Excel.WorksheetChangedEventArgs.source
       - excel_release.Excel.WorksheetChangedEventArgs.type
       - excel_release.Excel.WorksheetChangedEventArgs.worksheetId
@@ -95,6 +96,40 @@ items:
           - >-
             Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
             "ColumnDeleted" | "CellInserted" | "CellDeleted"
+  - uid: excel_release.Excel.WorksheetChangedEventArgs.details
+    summary: |-
+      Represents the information about the change detail
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: details
+    fullName: details
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'details: Excel.ChangedEventDetail;'
+      return:
+        type:
+          - excel.Excel.ChangedEventDetail
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // This function would be used as an event handler for the Worksheet.onChanged event.
+          function onWorksheetChanged(eventArgs) {
+              Excel.run(function (context) {
+                  var details = eventArgs.details;
+                  var address = eventArgs.address;
+
+                  // Print the before and after types and values to the console.
+                  console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+                      + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+                  return context.sync();
+              });
+          }
+          ```
   - uid: excel_release.Excel.WorksheetChangedEventArgs.source
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
