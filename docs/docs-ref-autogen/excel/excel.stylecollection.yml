@@ -86,13 +86,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.StyleCollection.getCount
-    summary: >-
+    summary: |-
       Gets the number of styles in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -152,13 +149,10 @@ items:
           type:
             - string
   - uid: excel.Excel.StyleCollection.getItemAt
-    summary: >-
+    summary: |-
       Gets a style based on its position in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt(index)
     langs:

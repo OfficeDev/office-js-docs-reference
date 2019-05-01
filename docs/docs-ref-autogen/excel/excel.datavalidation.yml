@@ -115,9 +115,7 @@ items:
       valid, this function will throw an ItemNotFound error.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getInvalidCells()
     fullName: getInvalidCells()
     langs:
@@ -135,9 +133,7 @@ items:
       valid, this function will return null.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getInvalidCellsOrNullObject()
     fullName: getInvalidCellsOrNullObject()
     langs:

@@ -13,13 +13,10 @@ items:
       - excel.Excel.Interfaces.AutoFilterData.enabled
       - excel.Excel.Interfaces.AutoFilterData.isDataFiltered
   - uid: excel.Excel.Interfaces.AutoFilterData.criteria
-    summary: >-
+    summary: |-
       An array that holds all the filter criteria in the autofiltered range. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: criteria
     langs:
@@ -31,13 +28,10 @@ items:
         type:
           - 'Excel.FilterCriteria[]'
   - uid: excel.Excel.Interfaces.AutoFilterData.enabled
-    summary: >-
+    summary: |-
       Indicates if the AutoFilter is enabled or not. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enabled
     fullName: enabled
     langs:
@@ -49,13 +43,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.AutoFilterData.isDataFiltered
-    summary: >-
+    summary: |-
       Indicates if the AutoFilter has filter criteria. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDataFiltered
     fullName: isDataFiltered
     langs:

@@ -349,13 +349,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.RangeLoadOptions.linkedDataTypeState
-    summary: >-
+    summary: |-
       Represents the data type state of each cell. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
     fullName: linkedDataTypeState
     langs:

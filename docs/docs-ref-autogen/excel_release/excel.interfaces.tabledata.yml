@@ -9,6 +9,7 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.TableData.autoFilter
       - excel_release.Excel.Interfaces.TableData.columns
       - excel_release.Excel.Interfaces.TableData.highlightFirstColumn
       - excel_release.Excel.Interfaces.TableData.highlightLastColumn
@@ -23,6 +24,21 @@ items:
       - excel_release.Excel.Interfaces.TableData.showTotals
       - excel_release.Excel.Interfaces.TableData.sort
       - excel_release.Excel.Interfaces.TableData.style
+  - uid: excel_release.Excel.Interfaces.TableData.autoFilter
+    summary: |-
+      Represents the AutoFilter object of the table. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFilter?: Excel.Interfaces.AutoFilterData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.AutoFilterData
   - uid: excel_release.Excel.Interfaces.TableData.columns
     summary: |-
       Represents a collection of all the columns in the table. Read-only.

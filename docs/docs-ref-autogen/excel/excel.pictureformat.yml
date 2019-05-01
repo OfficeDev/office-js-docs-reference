@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PictureFormat
-    summary: >-
+    summary: |-
       The format of the image.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PictureFormat
     fullName: Excel.PictureFormat
     langs:
@@ -23,7 +20,6 @@ items:
       - excel.Excel.PictureFormat.unknown
   - uid: excel.Excel.PictureFormat.bmp
     summary: Bitmap image.
-    isPreview: true
     name: bmp
     fullName: bmp
     langs:
@@ -32,7 +28,6 @@ items:
     numericValue: '"BMP"'
   - uid: excel.Excel.PictureFormat.gif
     summary: Graphics Interchange Format.
-    isPreview: true
     name: gif
     fullName: gif
     langs:
@@ -41,7 +36,6 @@ items:
     numericValue: '"GIF"'
   - uid: excel.Excel.PictureFormat.jpeg
     summary: Joint Photographic Experts Group.
-    isPreview: true
     name: jpeg
     fullName: jpeg
     langs:
@@ -50,7 +44,6 @@ items:
     numericValue: '"JPEG"'
   - uid: excel.Excel.PictureFormat.png
     summary: Portable Network Graphics.
-    isPreview: true
     name: png
     fullName: png
     langs:
@@ -59,7 +52,6 @@ items:
     numericValue: '"PNG"'
   - uid: excel.Excel.PictureFormat.svg
     summary: Scalable Vector Graphic.
-    isPreview: true
     name: svg
     fullName: svg
     langs:
@@ -67,7 +59,6 @@ items:
     type: field
     numericValue: '"SVG"'
   - uid: excel.Excel.PictureFormat.unknown
-    isPreview: true
     name: unknown
     fullName: unknown
     langs:

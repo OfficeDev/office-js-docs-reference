@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ShapeTextReadingOrder
+    summary: |-
+      Specifies the reading order for the text frame in a shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeTextReadingOrder
+    fullName: Excel.ShapeTextReadingOrder
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ShapeTextReadingOrder.leftToRight
+      - excel_release.Excel.ShapeTextReadingOrder.rightToLeft
+  - uid: excel_release.Excel.ShapeTextReadingOrder.leftToRight
+    name: leftToRight
+    fullName: leftToRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftToRight"'
+  - uid: excel_release.Excel.ShapeTextReadingOrder.rightToLeft
+    name: rightToLeft
+    fullName: rightToLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightToLeft"'

@@ -13,13 +13,10 @@ items:
       - excel.Excel.Interfaces.IterativeCalculationData.maxChange
       - excel.Excel.Interfaces.IterativeCalculationData.maxIteration
   - uid: excel.Excel.Interfaces.IterativeCalculationData.enabled
-    summary: >-
+    summary: |-
       True if Excel will use iteration to resolve circular references.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enabled
     fullName: enabled
     langs:
@@ -31,13 +28,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.IterativeCalculationData.maxChange
-    summary: >-
+    summary: |-
       Returns or sets the maximum amount of change between each iteration as Excel resolves circular references.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maxChange
     fullName: maxChange
     langs:
@@ -49,13 +43,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.IterativeCalculationData.maxIteration
-    summary: >-
+    summary: |-
       Returns or sets the maximum number of iterations that Excel can use to resolve a circular reference.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: maxIteration
     fullName: maxIteration
     langs:

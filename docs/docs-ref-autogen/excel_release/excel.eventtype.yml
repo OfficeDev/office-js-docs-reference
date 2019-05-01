@@ -14,6 +14,7 @@ items:
       - excel_release.Excel.EventType.chartAdded
       - excel_release.Excel.EventType.chartDeactivated
       - excel_release.Excel.EventType.chartDeleted
+      - excel_release.Excel.EventType.ribbonCommandExecuted
       - excel_release.Excel.EventType.shapeActivated
       - excel_release.Excel.EventType.shapeDeactivated
       - excel_release.Excel.EventType.tableAdded
@@ -29,11 +30,14 @@ items:
       - excel_release.Excel.EventType.worksheetAdded
       - excel_release.Excel.EventType.worksheetCalculated
       - excel_release.Excel.EventType.worksheetChanged
+      - excel_release.Excel.EventType.worksheetColumnSorted
       - excel_release.Excel.EventType.worksheetDeactivated
       - excel_release.Excel.EventType.worksheetDeleted
       - excel_release.Excel.EventType.worksheetFiltered
       - excel_release.Excel.EventType.worksheetFormatChanged
+      - excel_release.Excel.EventType.worksheetRowSorted
       - excel_release.Excel.EventType.worksheetSelectionChanged
+      - excel_release.Excel.EventType.worksheetSingleClicked
   - uid: excel_release.Excel.EventType.agaveVisualUpdate
     summary: >-
       AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data
@@ -84,6 +88,14 @@ items:
       - typeScript
     type: field
     numericValue: '"ChartDeleted"'
+  - uid: excel_release.Excel.EventType.ribbonCommandExecuted
+    summary: 'RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon'
+    name: ribbonCommandExecuted
+    fullName: ribbonCommandExecuted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RibbonCommandExecuted"'
   - uid: excel_release.Excel.EventType.shapeActivated
     summary: 'ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.'
     name: shapeActivated
@@ -219,6 +231,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetChanged"'
+  - uid: excel_release.Excel.EventType.worksheetColumnSorted
+    summary: >-
+      WorksheetColumnSorted represents the type of event registered on worksheet, and occurs when there is a sorting on
+      columns happened.
+    name: worksheetColumnSorted
+    fullName: worksheetColumnSorted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetColumnSorted"'
   - uid: excel_release.Excel.EventType.worksheetDeactivated
     summary: >-
       WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
@@ -259,6 +281,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetFormatChanged"'
+  - uid: excel_release.Excel.EventType.worksheetRowSorted
+    summary: >-
+      WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on
+      rows happened.
+    name: worksheetRowSorted
+    fullName: worksheetRowSorted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetRowSorted"'
   - uid: excel_release.Excel.EventType.worksheetSelectionChanged
     summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
     name: worksheetSelectionChanged
@@ -267,3 +299,13 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetSelectionChanged"'
+  - uid: excel_release.Excel.EventType.worksheetSingleClicked
+    summary: >-
+      WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is
+      left-clicked/tapped.
+    name: worksheetSingleClicked
+    fullName: worksheetSingleClicked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetSingleClicked"'

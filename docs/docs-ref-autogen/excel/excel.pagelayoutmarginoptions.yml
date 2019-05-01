@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PageLayoutMarginOptions
-    summary: >-
+    summary: |-
       Represents the options in page layout margins.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PageLayoutMarginOptions
     fullName: Excel.PageLayoutMarginOptions
     langs:
@@ -22,13 +19,10 @@ items:
       - excel.Excel.PageLayoutMarginOptions.right
       - excel.Excel.PageLayoutMarginOptions.top
   - uid: excel.Excel.PageLayoutMarginOptions.bottom
-    summary: >-
+    summary: |-
       Represents the page layout bottom margin in the unit specified to use for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
     fullName: bottom
     langs:
@@ -40,13 +34,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.footer
-    summary: >-
+    summary: |-
       Represents the page layout footer margin in the unit specified to use for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: footer
     fullName: footer
     langs:
@@ -58,13 +49,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.header
-    summary: >-
+    summary: |-
       Represents the page layout header margin in the unit specified to use for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: header
     fullName: header
     langs:
@@ -76,13 +64,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.left
-    summary: >-
+    summary: |-
       Represents the page layout left margin in the unit specified to use for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -94,13 +79,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.right
-    summary: >-
+    summary: |-
       Represents the page layout right margin in the unit specified to use for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
     fullName: right
     langs:
@@ -112,13 +94,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayoutMarginOptions.top
-    summary: >-
+    summary: |-
       Represents the page layout top margin in the unit specified to use for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:

@@ -27,7 +27,9 @@ items:
       - excel_release.Excel.TableCollection.load
       - excel_release.Excel.TableCollection.load_1
       - excel_release.Excel.TableCollection.load_2
+      - excel_release.Excel.TableCollection.onAdded
       - excel_release.Excel.TableCollection.onChanged
+      - excel_release.Excel.TableCollection.onDeleted
       - excel_release.Excel.TableCollection.toJSON
   - uid: excel_release.Excel.TableCollection.add
     summary: >-
@@ -353,6 +355,21 @@ items:
           description: ''
           type:
             - office.OfficeExtension.LoadOption
+  - uid: excel_release.Excel.TableCollection.onAdded
+    summary: |-
+      Occurs when new table is added in a workbook.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onAdded
+    fullName: onAdded
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onAdded: OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>
   - uid: excel_release.Excel.TableCollection.onChanged
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.
@@ -382,6 +399,21 @@ items:
               console.log("A handler has been registered for the table collection onChanged event");
           });
           ```
+  - uid: excel_release.Excel.TableCollection.onDeleted
+    summary: |-
+      Occurs when the specified table is deleted in a workbook.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onDeleted
+    fullName: onDeleted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onDeleted: OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>
   - uid: excel_release.Excel.TableCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

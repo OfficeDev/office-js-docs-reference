@@ -12,7 +12,9 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.border
+      - excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.colorScheme
       - excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.font
+      - excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.roundedCorners
   - uid: excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.border
     summary: |-
       Represents the border format of chart area, which includes color, linestyle, and weight.
@@ -28,6 +30,31 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartBorderUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.colorScheme
+    summary: |-
+      Returns or sets color scheme of the chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: colorScheme
+    fullName: colorScheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        colorScheme?: Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" |
+        "ColorfulPalette4" | "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" |
+        "MonochromaticPalette4" | "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" |
+        "MonochromaticPalette8" | "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" |
+        "MonochromaticPalette12" | "MonochromaticPalette13";
+      return:
+        type:
+          - >-
+            Excel.ChartColorScheme | "ColorfulPalette1" | "ColorfulPalette2" | "ColorfulPalette3" | "ColorfulPalette4" |
+            "MonochromaticPalette1" | "MonochromaticPalette2" | "MonochromaticPalette3" | "MonochromaticPalette4" |
+            "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" |
+            "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" |
+            "MonochromaticPalette13"
   - uid: excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.font
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object.
@@ -43,3 +70,18 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartFontUpdateData
+  - uid: excel_release.Excel.Interfaces.ChartAreaFormatUpdateData.roundedCorners
+    summary: |-
+      Specifies whether or not chart area of the chart has rounded corners. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: roundedCorners
+    fullName: roundedCorners
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'roundedCorners?: boolean;'
+      return:
+        type:
+          - boolean

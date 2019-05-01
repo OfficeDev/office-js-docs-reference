@@ -8,3 +8,370 @@ items:
       - typeScript
     type: interface
     package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ShapeData.altTextDescription
+      - excel_release.Excel.Interfaces.ShapeData.altTextTitle
+      - excel_release.Excel.Interfaces.ShapeData.connectionSiteCount
+      - excel_release.Excel.Interfaces.ShapeData.fill
+      - excel_release.Excel.Interfaces.ShapeData.geometricShapeType
+      - excel_release.Excel.Interfaces.ShapeData.height
+      - excel_release.Excel.Interfaces.ShapeData.id
+      - excel_release.Excel.Interfaces.ShapeData.left
+      - excel_release.Excel.Interfaces.ShapeData.level
+      - excel_release.Excel.Interfaces.ShapeData.lineFormat
+      - excel_release.Excel.Interfaces.ShapeData.lockAspectRatio
+      - excel_release.Excel.Interfaces.ShapeData.name
+      - excel_release.Excel.Interfaces.ShapeData.rotation
+      - excel_release.Excel.Interfaces.ShapeData.top
+      - excel_release.Excel.Interfaces.ShapeData.type
+      - excel_release.Excel.Interfaces.ShapeData.visible
+      - excel_release.Excel.Interfaces.ShapeData.width
+      - excel_release.Excel.Interfaces.ShapeData.zOrderPosition
+  - uid: excel_release.Excel.Interfaces.ShapeData.altTextDescription
+    summary: |-
+      Returns or sets the alternative description text for a Shape object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: altTextDescription
+    fullName: altTextDescription
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextDescription?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ShapeData.altTextTitle
+    summary: |-
+      Returns or sets the alternative title text for a Shape object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: altTextTitle
+    fullName: altTextTitle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'altTextTitle?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ShapeData.connectionSiteCount
+    summary: |-
+      Returns the number of connection sites on this shape. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: connectionSiteCount
+    fullName: connectionSiteCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectionSiteCount?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.fill
+    summary: |-
+      Returns the fill formatting of this shape. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.Interfaces.ShapeFillData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeFillData
+  - uid: excel_release.Excel.Interfaces.ShapeData.geometricShapeType
+    summary: >-
+      Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
+      null if the shape type is not "GeometricShape".
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: geometricShapeType
+    fullName: geometricShapeType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        geometricShapeType?: Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus";
+      return:
+        type:
+          - >-
+            Excel.GeometricShapeType | "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" |
+            "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" |
+            "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" |
+            "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+            "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+            "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie"
+            | "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" |
+            "StripedRightArrow" | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow"
+            | "LeftRightUpArrow" | "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" |
+            "DownArrowCallout" | "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" |
+            "UturnArrow" | "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" |
+            "CurvedLeftArrow" | "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" |
+            "Heart" | "Sun" | "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" |
+            "Frame" | "HalfFrame" | "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" |
+            "LeftBrace" | "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" |
+            "AccentCallout1" | "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" |
+            "BorderCallout3" | "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" |
+            "WedgeRectCallout" | "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" |
+            "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" |
+            "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
+            "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument" |
+            "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
+            "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
+            "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+            "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+            "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
+            "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+            "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
+            "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+            "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
+            "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
+            "ChartStar" | "ChartPlus"
+  - uid: excel_release.Excel.Interfaces.ShapeData.height
+    summary: >-
+      Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
+      value or zero as input.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.id
+    summary: |-
+      Represents the shape identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ShapeData.left
+    summary: >-
+      The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.level
+    summary: >-
+      Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any
+      groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
+      sub-group of the top level.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.lineFormat
+    summary: |-
+      Returns the line formatting of this shape. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lineFormat
+    fullName: lineFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeLineFormatData
+  - uid: excel_release.Excel.Interfaces.ShapeData.lockAspectRatio
+    summary: |-
+      Specifies whether or not the aspect ratio of this shape is locked.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: lockAspectRatio
+    fullName: lockAspectRatio
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'lockAspectRatio?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ShapeData.name
+    summary: |-
+      Represents the name of the shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ShapeData.rotation
+    summary: |-
+      Represents the rotation, in degrees, of the shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rotation
+    fullName: rotation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rotation?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.top
+    summary: >-
+      The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
+      argument exception when set with a negative value as input.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.type
+    summary: |-
+      Returns the type of this shape. See Excel.ShapeType for details. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line";'
+      return:
+        type:
+          - Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
+  - uid: excel_release.Excel.Interfaces.ShapeData.visible
+    summary: |-
+      Represents the visibility of this shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ShapeData.width
+    summary: >-
+      Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
+      or zero as input.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeData.zOrderPosition
+    summary: >-
+      Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
+      Read-only.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zOrderPosition
+    fullName: zOrderPosition
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zOrderPosition?: number;'
+      return:
+        type:
+          - number

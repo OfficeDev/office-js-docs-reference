@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions
-    summary: >-
-      This object represents the attributes for chart error bars object.
+    summary: |-
+      This object represents the attributes for a chart's error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartErrorBarsLoadOptions
     fullName: Excel.Interfaces.ChartErrorBarsLoadOptions
     langs:
@@ -22,7 +19,6 @@ items:
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
       - excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -34,13 +30,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.endStyleCap
-    summary: >-
-      Represents whether have the end style cap for the error bars.
+    summary: |-
+      Specifies whether or not the error bars have an end style cap.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endStyleCap
     fullName: endStyleCap
     langs:
@@ -52,13 +45,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.format
-    summary: >-
-      Represents the formatting of chart ErrorBars.
+    summary: |-
+      Specifies the formatting type of the error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -70,13 +60,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.include
-    summary: >-
-      Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
+    summary: |-
+      Specifies which parts of the error bars to include.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: include
     fullName: include
     langs:
@@ -88,13 +75,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.type
-    summary: >-
-      Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
+    summary: |-
+      The type of range marked by the error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -106,13 +90,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsLoadOptions.visible
-    summary: >-
-      Represents whether shown error bars.
+    summary: |-
+      Specifies whether or not the error bars are displayed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

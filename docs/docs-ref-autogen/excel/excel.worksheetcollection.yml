@@ -597,13 +597,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onChanged
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook is changed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: onChanged
     langs:
@@ -695,13 +692,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
   - uid: excel.Excel.WorksheetCollection.onFormatChanged
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook has format changed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onFormatChanged
     fullName: onFormatChanged
     langs:
@@ -731,13 +725,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onSelectionChanged
-    summary: >-
+    summary: |-
       Occurs when the selection changes on any worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:

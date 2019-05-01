@@ -11,11 +11,13 @@ items:
     children:
       - excel_release.Excel.Interfaces.PivotTableData.columnHierarchies
       - excel_release.Excel.Interfaces.PivotTableData.dataHierarchies
+      - excel_release.Excel.Interfaces.PivotTableData.enableDataValueEditing
       - excel_release.Excel.Interfaces.PivotTableData.filterHierarchies
       - excel_release.Excel.Interfaces.PivotTableData.hierarchies
       - excel_release.Excel.Interfaces.PivotTableData.id
       - excel_release.Excel.Interfaces.PivotTableData.name
       - excel_release.Excel.Interfaces.PivotTableData.rowHierarchies
+      - excel_release.Excel.Interfaces.PivotTableData.useCustomSortLists
   - uid: excel_release.Excel.Interfaces.PivotTableData.columnHierarchies
     summary: |-
       The Column Pivot Hierarchies of the PivotTable.
@@ -46,6 +48,21 @@ items:
       return:
         type:
           - 'Excel.Interfaces.DataPivotHierarchyData[]'
+  - uid: excel_release.Excel.Interfaces.PivotTableData.enableDataValueEditing
+    summary: |-
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.PivotTableData.filterHierarchies
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
@@ -121,3 +138,18 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
+  - uid: excel_release.Excel.Interfaces.PivotTableData.useCustomSortLists
+    summary: |-
+      Specifies whether the PivotTable uses custom lists when sorting.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists?: boolean;'
+      return:
+        type:
+          - boolean

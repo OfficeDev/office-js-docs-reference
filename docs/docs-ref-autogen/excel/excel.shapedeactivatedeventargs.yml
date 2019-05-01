@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeDeactivatedEventArgs
-    summary: >-
+    summary: |-
       Provides information about the shape that raised the Deactivated event.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeDeactivatedEventArgs
     fullName: Excel.ShapeDeactivatedEventArgs
     langs:
@@ -19,13 +16,10 @@ items:
       - excel.Excel.ShapeDeactivatedEventArgs.type
       - excel.Excel.ShapeDeactivatedEventArgs.worksheetId
   - uid: excel.Excel.ShapeDeactivatedEventArgs.shapeId
-    summary: >-
+    summary: |-
       Gets the id of the shape deactivated shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapeId
     fullName: shapeId
     langs:
@@ -37,13 +31,10 @@ items:
         type:
           - string
   - uid: excel.Excel.ShapeDeactivatedEventArgs.type
-    summary: >-
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -55,13 +46,10 @@ items:
         type:
           - '"ShapeDeactivated"'
   - uid: excel.Excel.ShapeDeactivatedEventArgs.worksheetId
-    summary: >-
+    summary: |-
       Gets the id of the worksheet in which the shape is deactivated.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

@@ -25,7 +25,6 @@ items:
       - excel.Excel.Comment.delete
       - excel.Excel.Comment.getLocation
       - excel.Excel.Comment.id
-      - excel.Excel.Comment.isParent
       - excel.Excel.Comment.load
       - excel.Excel.Comment.load_1
       - excel.Excel.Comment.load_2
@@ -199,24 +198,6 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Comment.isParent
-    summary: >-
-      Represents whether it is a comment thread or reply. Always return true here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: isParent
-    fullName: isParent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly isParent: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Comment.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading

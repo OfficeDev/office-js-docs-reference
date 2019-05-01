@@ -13,7 +13,10 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.Interfaces.ApplicationLoadOptions.$all
+      - excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationEngineVersion
       - excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationMode
+      - excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationState
+      - excel_release.Excel.Interfaces.ApplicationLoadOptions.iterativeCalculation
   - uid: excel_release.Excel.Interfaces.ApplicationLoadOptions.$all
     name: $all
     fullName: $all
@@ -22,6 +25,21 @@ items:
     type: property
     syntax:
       content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationEngineVersion
+    summary: |-
+      Returns the Excel calculation engine version used for the last full recalculation. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationEngineVersion?: boolean;'
       return:
         type:
           - boolean
@@ -45,3 +63,35 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.ApplicationLoadOptions.calculationState
+    summary: |-
+      Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationState
+    fullName: calculationState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationState?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ApplicationLoadOptions.iterativeCalculation
+    summary: >-
+      Returns the Iterative Calculation settings. On Excel for Windows and Excel for Mac, the settings will apply to the
+      Excel Application. On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: iterativeCalculation
+    fullName: iterativeCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'iterativeCalculation?: Excel.Interfaces.IterativeCalculationLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.IterativeCalculationLoadOptions

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeTextHorizontalAlignment
-    summary: >-
+    summary: |-
       Specifies the horizontal alignment for the text frame in a shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeTextHorizontalAlignment
     fullName: Excel.ShapeTextHorizontalAlignment
     langs:
@@ -23,7 +20,6 @@ items:
       - excel.Excel.ShapeTextHorizontalAlignment.right
       - excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
   - uid: excel.Excel.ShapeTextHorizontalAlignment.center
-    isPreview: true
     name: center
     fullName: center
     langs:
@@ -31,7 +27,6 @@ items:
     type: field
     numericValue: '"Center"'
   - uid: excel.Excel.ShapeTextHorizontalAlignment.distributed
-    isPreview: true
     name: distributed
     fullName: distributed
     langs:
@@ -39,7 +34,6 @@ items:
     type: field
     numericValue: '"Distributed"'
   - uid: excel.Excel.ShapeTextHorizontalAlignment.justify
-    isPreview: true
     name: justify
     fullName: justify
     langs:
@@ -47,7 +41,6 @@ items:
     type: field
     numericValue: '"Justify"'
   - uid: excel.Excel.ShapeTextHorizontalAlignment.justifyLow
-    isPreview: true
     name: justifyLow
     fullName: justifyLow
     langs:
@@ -55,7 +48,6 @@ items:
     type: field
     numericValue: '"JustifyLow"'
   - uid: excel.Excel.ShapeTextHorizontalAlignment.left
-    isPreview: true
     name: left
     fullName: left
     langs:
@@ -63,7 +55,6 @@ items:
     type: field
     numericValue: '"Left"'
   - uid: excel.Excel.ShapeTextHorizontalAlignment.right
-    isPreview: true
     name: right
     fullName: right
     langs:
@@ -71,7 +62,6 @@ items:
     type: field
     numericValue: '"Right"'
   - uid: excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
-    isPreview: true
     name: thaiDistributed
     fullName: thaiDistributed
     langs:

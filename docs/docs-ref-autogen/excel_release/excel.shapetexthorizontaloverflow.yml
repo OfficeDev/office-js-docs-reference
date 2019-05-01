@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ShapeTextHorizontalOverflow
+    summary: |-
+      Specifies the horizontal overflow for the text frame in a shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeTextHorizontalOverflow
+    fullName: Excel.ShapeTextHorizontalOverflow
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ShapeTextHorizontalOverflow.clip
+      - excel_release.Excel.ShapeTextHorizontalOverflow.overflow
+  - uid: excel_release.Excel.ShapeTextHorizontalOverflow.clip
+    name: clip
+    fullName: clip
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Clip"'
+  - uid: excel_release.Excel.ShapeTextHorizontalOverflow.overflow
+    name: overflow
+    fullName: overflow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Overflow"'

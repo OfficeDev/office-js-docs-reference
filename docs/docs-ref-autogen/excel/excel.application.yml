@@ -87,14 +87,10 @@ items:
           type:
             - '"Recalculate" | "Full" | "FullRebuild"'
   - uid: excel.Excel.Application.calculationEngineVersion
-    summary: >-
-      Returns a number about the version of Excel Calculation Engine that the workbook was last fully recalculated by.
-      Read-only.
+    summary: |-
+      Returns the Excel calculation engine version used for the last full recalculation. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
     fullName: calculationEngineVersion
     langs:
@@ -126,14 +122,10 @@ items:
         type:
           - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
   - uid: excel.Excel.Application.calculationState
-    summary: >-
-      Returns a CalculationState that indicates the calculation state of the application. See Excel.CalculationState for
-      details. Read-only.
+    summary: |-
+      Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationState
     fullName: calculationState
     langs:
@@ -164,9 +156,7 @@ items:
       Excel Application. On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: iterativeCalculation
     fullName: iterativeCalculation
     langs:
@@ -342,13 +332,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Application.suspendScreenUpdatingUntilNextSync
-    summary: >-
+    summary: |-
       Suspends sceen updating until the next "context.sync()" is called.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: suspendScreenUpdatingUntilNextSync()
     fullName: suspendScreenUpdatingUntilNextSync()
     langs:

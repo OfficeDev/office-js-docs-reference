@@ -25,6 +25,7 @@ items:
       - excel_release.Excel.Interfaces.RangeData.hyperlink
       - excel_release.Excel.Interfaces.RangeData.isEntireColumn
       - excel_release.Excel.Interfaces.RangeData.isEntireRow
+      - excel_release.Excel.Interfaces.RangeData.linkedDataTypeState
       - excel_release.Excel.Interfaces.RangeData.numberFormat
       - excel_release.Excel.Interfaces.RangeData.numberFormatLocal
       - excel_release.Excel.Interfaces.RangeData.rowCount
@@ -288,6 +289,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.RangeData.linkedDataTypeState
+    summary: |-
+      Represents the data type state of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: linkedDataTypeState
+    fullName: linkedDataTypeState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkedDataTypeState?: Excel.LinkedDataTypeState[][];'
+      return:
+        type:
+          - 'Excel.LinkedDataTypeState[][]'
   - uid: excel_release.Excel.Interfaces.RangeData.numberFormat
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value

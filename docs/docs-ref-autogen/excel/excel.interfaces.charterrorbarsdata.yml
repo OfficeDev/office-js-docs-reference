@@ -15,13 +15,10 @@ items:
       - excel.Excel.Interfaces.ChartErrorBarsData.type
       - excel.Excel.Interfaces.ChartErrorBarsData.visible
   - uid: excel.Excel.Interfaces.ChartErrorBarsData.endStyleCap
-    summary: >-
-      Represents whether have the end style cap for the error bars.
+    summary: |-
+      Specifies whether or not the error bars have an end style cap.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endStyleCap
     fullName: endStyleCap
     langs:
@@ -33,13 +30,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsData.format
-    summary: >-
-      Represents the formatting of chart ErrorBars.
+    summary: |-
+      Specifies the formatting type of the error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -51,13 +45,10 @@ items:
         type:
           - excel.Excel.Interfaces.ChartErrorBarsFormatData
   - uid: excel.Excel.Interfaces.ChartErrorBarsData.include
-    summary: >-
-      Represents which error-bar parts to include. See Excel.ChartErrorBarsInclude for details.
+    summary: |-
+      Specifies which parts of the error bars to include.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: include
     fullName: include
     langs:
@@ -69,13 +60,10 @@ items:
         type:
           - Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
   - uid: excel.Excel.Interfaces.ChartErrorBarsData.type
-    summary: >-
-      Represents the range marked by error bars. See Excel.ChartErrorBarsType for details.
+    summary: |-
+      The type of range marked by the error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -87,13 +75,10 @@ items:
         type:
           - Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
   - uid: excel.Excel.Interfaces.ChartErrorBarsData.visible
-    summary: >-
-      Represents whether shown error bars.
+    summary: |-
+      Specifies whether or not the error bars are displayed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:

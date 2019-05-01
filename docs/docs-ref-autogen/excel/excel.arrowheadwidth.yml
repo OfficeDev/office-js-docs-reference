@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ArrowheadWidth
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ArrowheadWidth
     fullName: Excel.ArrowheadWidth
     langs:
@@ -16,7 +13,6 @@ items:
       - excel.Excel.ArrowheadWidth.narrow
       - excel.Excel.ArrowheadWidth.wide
   - uid: excel.Excel.ArrowheadWidth.medium
-    isPreview: true
     name: medium
     fullName: medium
     langs:
@@ -24,7 +20,6 @@ items:
     type: field
     numericValue: '"Medium"'
   - uid: excel.Excel.ArrowheadWidth.narrow
-    isPreview: true
     name: narrow
     fullName: narrow
     langs:
@@ -32,7 +27,6 @@ items:
     type: field
     numericValue: '"Narrow"'
   - uid: excel.Excel.ArrowheadWidth.wide
-    isPreview: true
     name: wide
     fullName: wide
     langs:

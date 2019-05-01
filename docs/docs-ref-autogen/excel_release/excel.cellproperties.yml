@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.CellProperties
-    summary: Represents the returned properties of getCellProperties.
+    summary: |-
+      Represents the returned properties of getCellProperties.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellProperties
     fullName: Excel.CellProperties
     langs:
@@ -13,9 +16,12 @@ items:
     children:
       - excel_release.Excel.CellProperties.address
       - excel_release.Excel.CellProperties.addressLocal
-      - excel_release.Excel.CellProperties.hasSpill
       - excel_release.Excel.CellProperties.hidden
   - uid: excel_release.Excel.CellProperties.address
+    summary: |-
+      Represents the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -27,6 +33,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.CellProperties.addressLocal
+    summary: |-
+      Represents the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -37,18 +47,11 @@ items:
       return:
         type:
           - string
-  - uid: excel_release.Excel.CellProperties.hasSpill
-    name: hasSpill
-    fullName: hasSpill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasSpill?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel_release.Excel.CellProperties.hidden
+    summary: |-
+      Represents the `hidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
     fullName: hidden
     langs:

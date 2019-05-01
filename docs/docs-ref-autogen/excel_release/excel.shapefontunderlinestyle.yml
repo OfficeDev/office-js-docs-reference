@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle
+    summary: |-
+      The type of underline applied to a font.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeFontUnderlineStyle
+    fullName: Excel.ShapeFontUnderlineStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ShapeFontUnderlineStyle.dash
+      - excel_release.Excel.ShapeFontUnderlineStyle.dashHeavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.dashLong
+      - excel_release.Excel.ShapeFontUnderlineStyle.dashLongHeavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.dotDash
+      - excel_release.Excel.ShapeFontUnderlineStyle.dotDashHeavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.dotDotDash
+      - excel_release.Excel.ShapeFontUnderlineStyle.dotDotDashHeavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.dotted
+      - excel_release.Excel.ShapeFontUnderlineStyle.dottedHeavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.double
+      - excel_release.Excel.ShapeFontUnderlineStyle.heavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.none
+      - excel_release.Excel.ShapeFontUnderlineStyle.single
+      - excel_release.Excel.ShapeFontUnderlineStyle.wavy
+      - excel_release.Excel.ShapeFontUnderlineStyle.wavyDouble
+      - excel_release.Excel.ShapeFontUnderlineStyle.wavyHeavy
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dash
+    name: dash
+    fullName: dash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dash"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dashHeavy
+    name: dashHeavy
+    fullName: dashHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashHeavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dashLong
+    name: dashLong
+    fullName: dashLong
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLong"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dashLongHeavy
+    name: dashLongHeavy
+    fullName: dashLongHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashLongHeavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dotDash
+    name: dotDash
+    fullName: dotDash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDash"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dotDashHeavy
+    name: dotDashHeavy
+    fullName: dotDashHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDashHeavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dotDotDash
+    name: dotDotDash
+    fullName: dotDotDash
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDotDash"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dotDotDashHeavy
+    name: dotDotDashHeavy
+    fullName: dotDotDashHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDotDashHeavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dotted
+    name: dotted
+    fullName: dotted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dotted"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.dottedHeavy
+    name: dottedHeavy
+    fullName: dottedHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DottedHeavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.double
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.heavy
+    name: heavy
+    fullName: heavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.single
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.wavy
+    name: wavy
+    fullName: wavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wavy"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.wavyDouble
+    name: wavyDouble
+    fullName: wavyDouble
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WavyDouble"'
+  - uid: excel_release.Excel.ShapeFontUnderlineStyle.wavyHeavy
+    name: wavyHeavy
+    fullName: wavyHeavy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WavyHeavy"'

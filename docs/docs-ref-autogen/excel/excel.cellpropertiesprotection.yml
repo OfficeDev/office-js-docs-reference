@@ -7,9 +7,7 @@ items:
       `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellPropertiesProtection
     fullName: Excel.CellPropertiesProtection
     langs:
@@ -20,13 +18,10 @@ items:
       - excel.Excel.CellPropertiesProtection.formulaHidden
       - excel.Excel.CellPropertiesProtection.locked
   - uid: excel.Excel.CellPropertiesProtection.formulaHidden
-    summary: >-
+    summary: |-
       Represents the `format.protection.formulaHidden` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: formulaHidden
     fullName: formulaHidden
     langs:
@@ -38,13 +33,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesProtection.locked
-    summary: >-
+    summary: |-
       Represents the `format.protection.locked` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: locked
     fullName: locked
     langs:

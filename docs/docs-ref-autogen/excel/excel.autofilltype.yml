@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.AutoFillType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.AutoFillType
     fullName: Excel.AutoFillType
     langs:
@@ -25,7 +22,6 @@ items:
       - excel.Excel.AutoFillType.growthTrend
       - excel.Excel.AutoFillType.linearTrend
   - uid: excel.Excel.AutoFillType.fillCopy
-    isPreview: true
     name: fillCopy
     fullName: fillCopy
     langs:
@@ -33,7 +29,6 @@ items:
     type: field
     numericValue: '"FillCopy"'
   - uid: excel.Excel.AutoFillType.fillDays
-    isPreview: true
     name: fillDays
     fullName: fillDays
     langs:
@@ -41,7 +36,6 @@ items:
     type: field
     numericValue: '"FillDays"'
   - uid: excel.Excel.AutoFillType.fillDefault
-    isPreview: true
     name: fillDefault
     fullName: fillDefault
     langs:
@@ -49,7 +43,6 @@ items:
     type: field
     numericValue: '"FillDefault"'
   - uid: excel.Excel.AutoFillType.fillFormats
-    isPreview: true
     name: fillFormats
     fullName: fillFormats
     langs:
@@ -57,7 +50,6 @@ items:
     type: field
     numericValue: '"FillFormats"'
   - uid: excel.Excel.AutoFillType.fillMonths
-    isPreview: true
     name: fillMonths
     fullName: fillMonths
     langs:
@@ -65,7 +57,6 @@ items:
     type: field
     numericValue: '"FillMonths"'
   - uid: excel.Excel.AutoFillType.fillSeries
-    isPreview: true
     name: fillSeries
     fullName: fillSeries
     langs:
@@ -73,7 +64,6 @@ items:
     type: field
     numericValue: '"FillSeries"'
   - uid: excel.Excel.AutoFillType.fillValues
-    isPreview: true
     name: fillValues
     fullName: fillValues
     langs:
@@ -81,7 +71,6 @@ items:
     type: field
     numericValue: '"FillValues"'
   - uid: excel.Excel.AutoFillType.fillWeekdays
-    isPreview: true
     name: fillWeekdays
     fullName: fillWeekdays
     langs:
@@ -89,7 +78,6 @@ items:
     type: field
     numericValue: '"FillWeekdays"'
   - uid: excel.Excel.AutoFillType.fillYears
-    isPreview: true
     name: fillYears
     fullName: fillYears
     langs:
@@ -97,7 +85,6 @@ items:
     type: field
     numericValue: '"FillYears"'
   - uid: excel.Excel.AutoFillType.flashFill
-    isPreview: true
     name: flashFill
     fullName: flashFill
     langs:
@@ -105,7 +92,6 @@ items:
     type: field
     numericValue: '"FlashFill"'
   - uid: excel.Excel.AutoFillType.growthTrend
-    isPreview: true
     name: growthTrend
     fullName: growthTrend
     langs:
@@ -113,7 +99,6 @@ items:
     type: field
     numericValue: '"GrowthTrend"'
   - uid: excel.Excel.AutoFillType.linearTrend
-    isPreview: true
     name: linearTrend
     fullName: linearTrend
     langs:

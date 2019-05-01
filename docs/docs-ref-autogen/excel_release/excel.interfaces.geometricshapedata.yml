@@ -8,3 +8,20 @@ items:
       - typeScript
     type: interface
     package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.GeometricShapeData.id
+  - uid: excel_release.Excel.Interfaces.GeometricShapeData.id
+    summary: |-
+      Returns the shape identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string

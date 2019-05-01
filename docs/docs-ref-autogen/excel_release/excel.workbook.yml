@@ -15,20 +15,30 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.Workbook.application
+      - excel_release.Excel.Workbook.autoSave
       - excel_release.Excel.Workbook.bindings
+      - excel_release.Excel.Workbook.calculationEngineVersion
+      - excel_release.Excel.Workbook.chartDataPointTrack
       - excel_release.Excel.Workbook.context
       - excel_release.Excel.Workbook.customXmlParts
       - excel_release.Excel.Workbook.dataConnections
       - excel_release.Excel.Workbook.functions
       - excel_release.Excel.Workbook.getActiveCell
+      - excel_release.Excel.Workbook.getActiveChart
+      - excel_release.Excel.Workbook.getActiveChartOrNullObject
+      - excel_release.Excel.Workbook.getIsActiveCollabSession
       - excel_release.Excel.Workbook.getSelectedRange
+      - excel_release.Excel.Workbook.getSelectedRanges
+      - excel_release.Excel.Workbook.isDirty
       - excel_release.Excel.Workbook.load
       - excel_release.Excel.Workbook.load_1
       - excel_release.Excel.Workbook.load_2
       - excel_release.Excel.Workbook.name
       - excel_release.Excel.Workbook.names
+      - excel_release.Excel.Workbook.onAutoSaveSettingChanged
       - excel_release.Excel.Workbook.onSelectionChanged
       - excel_release.Excel.Workbook.pivotTables
+      - excel_release.Excel.Workbook.previouslySaved
       - excel_release.Excel.Workbook.properties
       - excel_release.Excel.Workbook.protection
       - excel_release.Excel.Workbook.readOnly
@@ -38,6 +48,7 @@ items:
       - excel_release.Excel.Workbook.styles
       - excel_release.Excel.Workbook.tables
       - excel_release.Excel.Workbook.toJSON
+      - excel_release.Excel.Workbook.usePrecisionAsDisplayed
       - excel_release.Excel.Workbook.worksheets
   - uid: excel_release.Excel.Workbook.application
     summary: |-
@@ -54,6 +65,21 @@ items:
       return:
         type:
           - excel.Excel.Application
+  - uid: excel_release.Excel.Workbook.autoSave
+    summary: |-
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSave
+    fullName: autoSave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoSave: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Workbook.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
@@ -69,6 +95,38 @@ items:
       return:
         type:
           - excel.Excel.BindingCollection
+  - uid: excel_release.Excel.Workbook.calculationEngineVersion
+    summary: |-
+      Returns a number about the version of Excel Calculation Engine. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Workbook.chartDataPointTrack
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Workbook.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -160,6 +218,58 @@ items:
               console.log("The active cell is " + activeCell.address);
           });
           ```
+  - uid: excel_release.Excel.Workbook.getActiveChart
+    summary: >-
+      Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke
+      this statement
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+  - uid: excel_release.Excel.Workbook.getActiveChartOrNullObject
+    summary: |-
+      Gets the currently active chart in the workbook. If there is no active chart, will return null object
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getActiveChartOrNullObject()
+    fullName: getActiveChartOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChartOrNullObject(): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+  - uid: excel_release.Excel.Workbook.getIsActiveCollabSession
+    summary: >-
+      True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
+      between when the workbook status changes and when the changes are reflected on the result of the method.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getIsActiveCollabSession()
+    fullName: getIsActiveCollabSession()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<boolean>
+        description: ''
   - uid: excel_release.Excel.Workbook.getSelectedRange
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
@@ -196,6 +306,54 @@ items:
               }
           });
           ```
+  - uid: excel_release.Excel.Workbook.getSelectedRanges
+    summary: >-
+      Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
+      RangeAreas object that represents all the selected ranges.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getSelectedRanges()
+    fullName: getSelectedRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRanges(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const selectedRanges = context.workbook.getSelectedRanges();
+              selectedRanges.format.fill.color = "lightblue";
+
+              await context.sync();
+          })
+          ```
+  - uid: excel_release.Excel.Workbook.isDirty
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Workbook.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -306,6 +464,21 @@ items:
       return:
         type:
           - excel.Excel.NamedItemCollection
+  - uid: excel_release.Excel.Workbook.onAutoSaveSettingChanged
+    summary: |-
+      Occurs when the autoSave setting is changed on the workbook.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onAutoSaveSettingChanged
+    fullName: onAutoSaveSettingChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
   - uid: excel_release.Excel.Workbook.onSelectionChanged
     summary: |-
       Occurs when the selection in the document is changed.
@@ -336,6 +509,21 @@ items:
       return:
         type:
           - excel.Excel.PivotTableCollection
+  - uid: excel_release.Excel.Workbook.previouslySaved
+    summary: |-
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: previouslySaved
+    fullName: previouslySaved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly previouslySaved: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Workbook.properties
     summary: |-
       Gets the workbook properties. Read-only.
@@ -523,6 +711,23 @@ items:
         type:
           - excel.Excel.Interfaces.WorkbookData
         description: ''
+  - uid: excel_release.Excel.Workbook.usePrecisionAsDisplayed
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Workbook.worksheets
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.

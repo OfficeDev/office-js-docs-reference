@@ -9,18 +9,39 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.WorkbookData.autoSave
       - excel_release.Excel.Interfaces.WorkbookData.bindings
+      - excel_release.Excel.Interfaces.WorkbookData.calculationEngineVersion
+      - excel_release.Excel.Interfaces.WorkbookData.chartDataPointTrack
       - excel_release.Excel.Interfaces.WorkbookData.customXmlParts
+      - excel_release.Excel.Interfaces.WorkbookData.isDirty
       - excel_release.Excel.Interfaces.WorkbookData.name
       - excel_release.Excel.Interfaces.WorkbookData.names
       - excel_release.Excel.Interfaces.WorkbookData.pivotTables
+      - excel_release.Excel.Interfaces.WorkbookData.previouslySaved
       - excel_release.Excel.Interfaces.WorkbookData.properties
       - excel_release.Excel.Interfaces.WorkbookData.protection
       - excel_release.Excel.Interfaces.WorkbookData.readOnly
       - excel_release.Excel.Interfaces.WorkbookData.settings
       - excel_release.Excel.Interfaces.WorkbookData.styles
       - excel_release.Excel.Interfaces.WorkbookData.tables
+      - excel_release.Excel.Interfaces.WorkbookData.usePrecisionAsDisplayed
       - excel_release.Excel.Interfaces.WorkbookData.worksheets
+  - uid: excel_release.Excel.Interfaces.WorkbookData.autoSave
+    summary: |-
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSave
+    fullName: autoSave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoSave?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookData.bindings
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
@@ -36,6 +57,38 @@ items:
       return:
         type:
           - 'Excel.Interfaces.BindingData[]'
+  - uid: excel_release.Excel.Interfaces.WorkbookData.calculationEngineVersion
+    summary: |-
+      Returns a number about the version of Excel Calculation Engine. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'calculationEngineVersion?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.WorkbookData.chartDataPointTrack
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookData.customXmlParts
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
@@ -51,6 +104,23 @@ items:
       return:
         type:
           - 'Excel.Interfaces.CustomXmlPartData[]'
+  - uid: excel_release.Excel.Interfaces.WorkbookData.isDirty
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookData.name
     summary: |-
       Gets the workbook name. Read-only.
@@ -96,6 +166,21 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotTableData[]'
+  - uid: excel_release.Excel.Interfaces.WorkbookData.previouslySaved
+    summary: |-
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: previouslySaved
+    fullName: previouslySaved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'previouslySaved?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookData.properties
     summary: |-
       Gets the workbook properties. Read-only.
@@ -186,6 +271,23 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableData[]'
+  - uid: excel_release.Excel.Interfaces.WorkbookData.usePrecisionAsDisplayed
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorkbookData.worksheets
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.

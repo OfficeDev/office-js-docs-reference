@@ -16,6 +16,7 @@ items:
       - excel_release.Excel.TableChangedEventArgs.getRangeOrNullObject
       - excel_release.Excel.TableChangedEventArgs.address
       - excel_release.Excel.TableChangedEventArgs.changeType
+      - excel_release.Excel.TableChangedEventArgs.details
       - excel_release.Excel.TableChangedEventArgs.source
       - excel_release.Excel.TableChangedEventArgs.tableId
       - excel_release.Excel.TableChangedEventArgs.type
@@ -96,6 +97,37 @@ items:
           - >-
             Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
             "ColumnDeleted" | "CellInserted" | "CellDeleted"
+  - uid: excel_release.Excel.TableChangedEventArgs.details
+    summary: |-
+      Represents the information about the change detail
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: details
+    fullName: details
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'details: Excel.ChangedEventDetail;'
+      return:
+        type:
+          - excel.Excel.ChangedEventDetail
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          async function onTableChanged(eventArgs: Excel.TableChangedEventArgs) {
+              await Excel.run(async (context) => {
+                  const details = eventArgs.details;
+                  const address = eventArgs.address;
+
+                  console.log(`Change at ${address}: was ${details.valueBefore}(${details.valueTypeBefore}),`
+                    + ` now is ${details.valueAfter}(${details.valueTypeAfter})`);
+              });
+          }
+          ```
   - uid: excel_release.Excel.TableChangedEventArgs.source
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.

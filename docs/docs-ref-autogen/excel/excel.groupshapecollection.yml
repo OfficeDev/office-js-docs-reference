@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.GroupShapeCollection
-    summary: >-
+    summary: |-
       Represents the shape collection inside a shape group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.GroupShapeCollection
     fullName: Excel.GroupShapeCollection
     langs:
@@ -30,7 +27,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -42,13 +38,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.GroupShapeCollection.getCount
-    summary: >-
+    summary: |-
       Returns the number of shapes in the shape group. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -61,37 +54,31 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.GroupShapeCollection.getItem
-    summary: >-
-      Gets a shape using its name.
+    summary: |-
+      Gets a shape using its Name or ID.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: getItem(name)
-    fullName: getItem(name)
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(name: string): Excel.Shape;'
+      content: 'getItem(key: string): Excel.Shape;'
       return:
         type:
           - excel.Excel.Shape
         description: ''
       parameters:
-        - id: name
-          description: The name of the shape to be retrieved.
+        - id: key
+          description: The Name or ID of the shape to be retrieved.
           type:
             - string
   - uid: excel.Excel.GroupShapeCollection.getItemAt
-    summary: >-
+    summary: |-
       Gets a shape based on its position in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt(index)
     langs:
@@ -110,7 +97,6 @@ items:
             - number
   - uid: excel.Excel.GroupShapeCollection.items
     summary: Gets the loaded child items in this collection.
-    isPreview: true
     name: items
     fullName: items
     langs:
@@ -143,7 +129,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -166,7 +151,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -184,7 +168,6 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.GroupShapeCollection.load_2
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -208,7 +191,6 @@ items:
       passed to it.) Whereas the original `Excel.GroupShapeCollection` object is an API object, the `toJSON` method
       returns a plain JavaScript object (typed as `Excel.Interfaces.GroupShapeCollectionData`<!-- -->) that contains an
       "items" array with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

@@ -21,7 +21,6 @@ items:
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
       - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.isParent
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
     isPreview: true
     name: $all
@@ -121,25 +120,6 @@ items:
     type: property
     syntax:
       content: 'id?: boolean;'
-      return:
-        type:
-          - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.isParent
-    summary: >-
-      For EACH ITEM in the collection: Represents whether it is a comment thread or reply. Always return false here.
-      Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: isParent
-    fullName: isParent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isParent?: boolean;'
       return:
         type:
           - boolean

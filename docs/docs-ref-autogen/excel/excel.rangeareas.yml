@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RangeAreas
-    summary: >-
+    summary: |-
       RangeAreas represents a collection of one or more rectangular ranges in the same worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RangeAreas
     fullName: Excel.RangeAreas
     langs:
@@ -64,9 +61,7 @@ items:
       block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -78,13 +73,10 @@ items:
         type:
           - string
   - uid: excel.Excel.RangeAreas.addressLocal
-    summary: >-
+    summary: |-
       Returns the RageAreas reference in the user locale. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -96,13 +88,10 @@ items:
         type:
           - string
   - uid: excel.Excel.RangeAreas.areaCount
-    summary: >-
+    summary: |-
       Returns the number of rectangular ranges that comprise this RangeAreas object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: areaCount
     fullName: areaCount
     langs:
@@ -114,13 +103,10 @@ items:
         type:
           - number
   - uid: excel.Excel.RangeAreas.areas
-    summary: >-
+    summary: |-
       Returns a collection of rectangular ranges that comprise this RangeAreas object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: areas
     fullName: areas
     langs:
@@ -132,13 +118,10 @@ items:
         type:
           - excel.Excel.RangeCollection
   - uid: excel.Excel.RangeAreas.calculate
-    summary: >-
+    summary: |-
       Calculates all cells in the RangeAreas.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculate()
     fullName: calculate()
     langs:
@@ -156,9 +139,7 @@ items:
       rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: cellCount
     fullName: cellCount
     langs:
@@ -170,13 +151,10 @@ items:
         type:
           - number
   - uid: excel.Excel.RangeAreas.clear
-    summary: >-
+    summary: |-
       Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear(applyTo)
     fullName: clear(applyTo)
     langs:
@@ -194,13 +172,10 @@ items:
           type:
             - excel.Excel.ClearApplyTo
   - uid: excel.Excel.RangeAreas.clear_1
-    summary: >-
+    summary: |-
       Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear(applyToString)
     fullName: clear(applyToString)
     langs:
@@ -218,13 +193,10 @@ items:
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
   - uid: excel.Excel.RangeAreas.conditionalFormats
-    summary: >-
+    summary: |-
       Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: conditionalFormats
     fullName: conditionalFormats
     langs:
@@ -239,7 +211,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -251,13 +222,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.RangeAreas.convertDataTypeToText
-    summary: >-
+    summary: |-
       Converts all cells in the RangeAreas with datatypes into text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertDataTypeToText()
     fullName: convertDataTypeToText()
     langs:
@@ -270,13 +238,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.RangeAreas.convertToLinkedDataType
-    summary: >-
+    summary: |-
       Converts all cells in the RangeAreas into linked datatype.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'convertToLinkedDataType(serviceID, languageCulture)'
     fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
     langs:
@@ -304,9 +269,7 @@ items:
       automatically if it is smaller than the source.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     langs:
@@ -346,9 +309,7 @@ items:
       automatically if it is smaller than the source.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     langs:
@@ -382,13 +343,10 @@ items:
           type:
             - boolean
   - uid: excel.Excel.RangeAreas.dataValidation
-    summary: >-
+    summary: |-
       Returns a dataValidation object for all ranges in the RangeAreas.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataValidation
     fullName: dataValidation
     langs:
@@ -405,9 +363,7 @@ items:
       ranges in the RangeAreas object. Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -424,9 +380,7 @@ items:
       RangeAreas represents cells "B4:E11, H2", it returns a RangeAreas that represents columns "B:E, H:H").
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireColumn()
     fullName: getEntireColumn()
     langs:
@@ -444,9 +398,7 @@ items:
       RangeAreas represents cells "B4:E11", it returns a RangeAreas that represents rows "4:11").
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getEntireRow()
     fullName: getEntireRow()
     langs:
@@ -464,9 +416,7 @@ items:
       intersection is found, an ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersection(anotherRange)
     fullName: getIntersection(anotherRange)
     langs:
@@ -489,9 +439,7 @@ items:
       intersection is found, a null object is returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIntersectionOrNullObject(anotherRange)
     fullName: getIntersectionOrNullObject(anotherRange)
     langs:
@@ -515,9 +463,7 @@ items:
       worksheet grid, an error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getOffsetRangeAreas(rowOffset, columnOffset)'
     fullName: 'getOffsetRangeAreas(rowOffset, columnOffset)'
     langs:
@@ -548,9 +494,7 @@ items:
       if no special cells are found that match the criteria.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCells(cellType, cellValueType)'
     fullName: 'getSpecialCells(cellType, cellValueType)'
     langs:
@@ -580,9 +524,7 @@ items:
       if no special cells are found that match the criteria.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCells(cellTypeString, cellValueType)'
     fullName: 'getSpecialCells(cellTypeString, cellValueType)'
     langs:
@@ -621,9 +563,7 @@ items:
       object if no special cells are found that match the criteria.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     langs:
@@ -655,9 +595,7 @@ items:
       object if no special cells are found that match the criteria.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     langs:
@@ -692,13 +630,10 @@ items:
               "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" |
               "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"
   - uid: excel.Excel.RangeAreas.getTables
-    summary: >-
+    summary: |-
       Returns a scoped collection of tables that overlap with any range in this RangeAreas object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTables(fullyContained)
     fullName: getTables(fullyContained)
     langs:
@@ -721,9 +656,7 @@ items:
       object. If there are no used cells within the RangeAreas, the ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeAreas(valuesOnly)
     fullName: getUsedRangeAreas(valuesOnly)
     langs:
@@ -746,9 +679,7 @@ items:
       object. If there are no used cells within the RangeAreas, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getUsedRangeAreasOrNullObject(valuesOnly)
     fullName: getUsedRangeAreasOrNullObject(valuesOnly)
     langs:
@@ -766,13 +697,10 @@ items:
           type:
             - boolean
   - uid: excel.Excel.RangeAreas.isEntireColumn
-    summary: >-
+    summary: |-
       Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireColumn
     fullName: isEntireColumn
     langs:
@@ -784,13 +712,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.RangeAreas.isEntireRow
-    summary: >-
+    summary: |-
       Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEntireRow
     fullName: isEntireRow
     langs:
@@ -823,7 +748,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -844,7 +768,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -865,7 +788,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -892,7 +814,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.RangeAreas): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -917,7 +838,6 @@ items:
             - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.RangeAreas.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -935,13 +855,10 @@ items:
           type:
             - excel.Excel.RangeAreas
   - uid: excel.Excel.RangeAreas.setDirty
-    summary: >-
+    summary: |-
       Sets the RangeAreas to be recalculated when the next recalculation occurs.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setDirty()
     fullName: setDirty()
     langs:
@@ -960,9 +877,7 @@ items:
       value in the BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -980,7 +895,6 @@ items:
       passed to it.) Whereas the original Excel.RangeAreas object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.RangeAreasData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:
@@ -999,7 +913,6 @@ items:
       sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
       method on the object, you needed to have added the object to the tracked object collection when the object was
       first created.
-    isPreview: true
     name: track()
     fullName: track()
     langs:
@@ -1017,7 +930,6 @@ items:
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
       remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
       the memory release takes effect.
-    isPreview: true
     name: untrack()
     fullName: untrack()
     langs:
@@ -1030,13 +942,10 @@ items:
           - excel.Excel.RangeAreas
         description: ''
   - uid: excel.Excel.RangeAreas.worksheet
-    summary: >-
+    summary: |-
       Returns the worksheet for the current RangeAreas. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheet
     fullName: worksheet
     langs:

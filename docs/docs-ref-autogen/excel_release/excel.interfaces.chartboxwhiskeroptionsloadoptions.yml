@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    summary: |-
+      Represents the properties of a box and whisker chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.$all
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.quartileCalculation
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showInnerPoints
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showMeanLine
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showMeanMarker
+      - excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showOutlierPoints
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.quartileCalculation
+    summary: |-
+      Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: quartileCalculation
+    fullName: quartileCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'quartileCalculation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showInnerPoints
+    summary: |-
+      Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showInnerPoints
+    fullName: showInnerPoints
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showInnerPoints?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showMeanLine
+    summary: |-
+      Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showMeanLine
+    fullName: showMeanLine
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showMeanLine?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showMeanMarker
+    summary: |-
+      Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showMeanMarker
+    fullName: showMeanMarker
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showMeanMarker?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions.showOutlierPoints
+    summary: |-
+      Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showOutlierPoints
+    fullName: showOutlierPoints
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showOutlierPoints?: boolean;'
+      return:
+        type:
+          - boolean
