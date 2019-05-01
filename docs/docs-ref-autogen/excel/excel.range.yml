@@ -155,9 +155,7 @@ items:
       horizontally or vertically. Discontiguous ranges are not supported.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -186,9 +184,7 @@ items:
       horizontally or vertically. Discontiguous ranges are not supported.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillTypeString)'
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     langs:
@@ -383,13 +379,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.Range.convertDataTypeToText
-    summary: >-
+    summary: |-
       Converts the range cells with datatypes into text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertDataTypeToText()
     fullName: convertDataTypeToText()
     langs:
@@ -402,13 +395,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Range.convertToLinkedDataType
-    summary: >-
+    summary: |-
       Converts the range cells into linked datatype in the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'convertToLinkedDataType(serviceID, languageCulture)'
     fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
     langs:
@@ -436,9 +426,7 @@ items:
       smaller than the source.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     langs:
@@ -494,9 +482,7 @@ items:
       smaller than the source.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     langs:
@@ -610,9 +596,7 @@ items:
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'find(text, criteria)'
     fullName: 'find(text, criteria)'
     langs:
@@ -665,9 +649,7 @@ items:
       there are no matches, this function will return a null object.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'findOrNullObject(text, criteria)'
     fullName: 'findOrNullObject(text, criteria)'
     langs:
@@ -719,9 +701,7 @@ items:
       must be single column range and have data around in order to find pattern.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: flashFill()
     fullName: flashFill()
     langs:
@@ -927,13 +907,10 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getCellProperties
-    summary: >-
+    summary: |-
       Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCellProperties(cellPropertiesLoadOptions)
     fullName: getCellProperties(cellPropertiesLoadOptions)
     langs:
@@ -1000,9 +977,7 @@ items:
       returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnProperties(columnPropertiesLoadOptions)
     fullName: getColumnProperties(columnPropertiesLoadOptions)
     langs:
@@ -1533,9 +1508,7 @@ items:
       returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowProperties(rowPropertiesLoadOptions)
     fullName: getRowProperties(rowPropertiesLoadOptions)
     langs:
@@ -1608,9 +1581,7 @@ items:
       the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCells(cellType, cellValueType)'
     fullName: 'getSpecialCells(cellType, cellValueType)'
     langs:
@@ -1658,9 +1629,7 @@ items:
       the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCells(cellTypeString, cellValueType)'
     fullName: 'getSpecialCells(cellTypeString, cellValueType)'
     langs:
@@ -1699,9 +1668,7 @@ items:
       type and value. If no special cells are found, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     langs:
@@ -1733,9 +1700,7 @@ items:
       type and value. If no special cells are found, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     langs:
@@ -1868,13 +1833,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.Range.getTables
-    summary: >-
+    summary: |-
       Gets a scoped collection of tables that overlap with the range.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTables(fullyContained)
     fullName: getTables(fullyContained)
     langs:
@@ -2281,13 +2243,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Range.linkedDataTypeState
-    summary: >-
+    summary: |-
       Represents the data type state of each cell. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
     fullName: linkedDataTypeState
     langs:
@@ -2531,13 +2490,10 @@ items:
         type:
           - 'any[][]'
   - uid: excel.Excel.Range.removeDuplicates
-    summary: >-
+    summary: |-
       Removes duplicate values from the range specified by the columns.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'removeDuplicates(columns, includesHeader)'
     fullName: 'removeDuplicates(columns, includesHeader)'
     langs:
@@ -2578,13 +2534,10 @@ items:
           type:
             - boolean
   - uid: excel.Excel.Range.replaceAll
-    summary: >-
+    summary: |-
       Finds and replaces the given string based on the criteria specified within the current range.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'replaceAll(text, replacement, criteria)'
     fullName: 'replaceAll(text, replacement, criteria)'
     langs:
@@ -2783,9 +2736,7 @@ items:
       alignment, and so forth.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCellProperties(cellPropertiesData)
     fullName: setCellProperties(cellPropertiesData)
     langs:
@@ -2808,9 +2759,7 @@ items:
       borders, alignment, and so forth.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setColumnProperties(columnPropertiesData)
     fullName: setColumnProperties(columnPropertiesData)
     langs:
@@ -2828,13 +2777,10 @@ items:
           type:
             - 'SettableColumnProperties[]'
   - uid: excel.Excel.Range.setDirty
-    summary: >-
+    summary: |-
       Set a range to be recalculated when the next recalculation occurs.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setDirty()
     fullName: setDirty()
     langs:
@@ -2852,9 +2798,7 @@ items:
       borders, alignment, and so forth.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setRowProperties(rowPropertiesData)
     fullName: setRowProperties(rowPropertiesData)
     langs:

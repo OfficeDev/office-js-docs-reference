@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PageBreak
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.PageBreak
     fullName: Excel.PageBreak
     langs:
@@ -24,13 +21,10 @@ items:
       - excel.Excel.PageBreak.rowIndex
       - excel.Excel.PageBreak.toJSON
   - uid: excel.Excel.PageBreak.columnIndex
-    summary: >-
+    summary: |-
       Represents the column index for the page break
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnIndex
     fullName: columnIndex
     langs:
@@ -45,7 +39,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -57,13 +50,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PageBreak.delete
-    summary: >-
+    summary: |-
       Deletes a page break object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete()
     langs:
@@ -76,13 +66,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.PageBreak.getCellAfterBreak
-    summary: >-
+    summary: |-
       Gets the first cell after the page break.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCellAfterBreak()
     fullName: getCellAfterBreak()
     langs:
@@ -116,7 +103,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -137,7 +123,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -158,7 +143,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -178,13 +162,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.PageBreak.rowIndex
-    summary: >-
+    summary: |-
       Represents the row index for the page break
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -202,7 +183,6 @@ items:
       passed to it.) Whereas the original Excel.PageBreak object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.PageBreakData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

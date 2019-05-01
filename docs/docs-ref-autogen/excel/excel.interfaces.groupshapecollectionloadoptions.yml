@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions
-    summary: >-
+    summary: |-
       Represents the shape collection inside a shape group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.GroupShapeCollectionLoadOptions
     fullName: Excel.Interfaces.GroupShapeCollectionLoadOptions
     langs:
@@ -40,9 +37,8 @@ items:
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.type
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.visible
       - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.width
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zorderPosition
+      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zOrderPosition
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -54,13 +50,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextDescription
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns or sets the alternative description text for a Shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextDescription
     fullName: altTextDescription
     langs:
@@ -72,13 +65,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextTitle
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns or sets the alternative title text for a Shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextTitle
     fullName: altTextTitle
     langs:
@@ -90,13 +80,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.connectionSiteCount
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns the number of connection sites on this shape. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: connectionSiteCount
     fullName: connectionSiteCount
     langs:
@@ -108,13 +95,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.fill
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns the fill formatting of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -131,9 +115,7 @@ items:
       the shape type is not "GeometricShape".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: geometricShape
     fullName: geometricShape
     langs:
@@ -150,9 +132,7 @@ items:
       Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: geometricShapeType
     fullName: geometricShapeType
     langs:
@@ -169,9 +149,7 @@ items:
       shape type is not "GroupShape".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: group
     fullName: group
     langs:
@@ -188,9 +166,7 @@ items:
       exception when set with a negative value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -202,13 +178,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.id
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the shape identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -225,9 +198,7 @@ items:
       type is not "Image".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: image
     fullName: image
     langs:
@@ -244,9 +215,7 @@ items:
       worksheet. Throws an invalid argument exception when set with a negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -264,9 +233,7 @@ items:
       means the shape is part of a sub-group of the top level.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
     fullName: level
     langs:
@@ -283,9 +250,7 @@ items:
       type is not "Line".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:
@@ -297,13 +262,10 @@ items:
         type:
           - excel.Excel.Interfaces.LineLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lineFormat
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns the line formatting of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineFormat
     fullName: lineFormat
     langs:
@@ -315,13 +277,10 @@ items:
         type:
           - excel.Excel.Interfaces.ShapeLineFormatLoadOptions
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lockAspectRatio
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Specifies whether or not the aspect ratio of this shape is locked.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lockAspectRatio
     fullName: lockAspectRatio
     langs:
@@ -333,13 +292,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.name
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the name of the shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -351,13 +307,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the parent group of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: parentGroup
     fullName: parentGroup
     langs:
@@ -387,13 +340,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.rotation
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rotation
     fullName: rotation
     langs:
@@ -405,13 +355,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textFrame
     fullName: textFrame
     langs:
@@ -428,9 +375,7 @@ items:
       worksheet. Throws an invalid argument exception when set with a negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -442,13 +387,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.type
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -460,13 +402,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.visible
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Represents the visibility of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:
@@ -483,9 +422,7 @@ items:
       exception when set with a negative value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:
@@ -496,22 +433,20 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zorderPosition
+  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zOrderPosition
     summary: >-
       For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing
       the bottom of the order stack. Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: zorderPosition
-    fullName: zorderPosition
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zOrderPosition
+    fullName: zOrderPosition
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'zorderPosition?: boolean;'
+      content: 'zOrderPosition?: boolean;'
       return:
         type:
           - boolean

@@ -1,12 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CellPropertiesFormatLoadOptions
-    summary: >-
+    summary: |-
       Represents which properties to load on the format object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellPropertiesFormatLoadOptions
     fullName: Excel.CellPropertiesFormatLoadOptions
     langs:
@@ -29,12 +27,10 @@ items:
       - excel.Excel.CellPropertiesFormatLoadOptions.verticalAlignment
       - excel.Excel.CellPropertiesFormatLoadOptions.wrapText
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.autoIndent
-    summary: >-
+    summary: |-
       Specifies whether to load on the `autoIndent` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
     fullName: autoIndent
     langs:
@@ -46,12 +42,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.borders
-    summary: >-
+    summary: |-
       Specifies whether to load on the `borders` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: borders
     fullName: borders
     langs:
@@ -63,12 +57,10 @@ items:
         type:
           - excel.Excel.CellPropertiesBorderLoadOptions
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.fill
-    summary: >-
+    summary: |-
       Specifies whether to load on the `fill` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -80,12 +72,10 @@ items:
         type:
           - excel.Excel.CellPropertiesFillLoadOptions
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.font
-    summary: >-
+    summary: |-
       Specifies whether to load on the `font` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: font
     fullName: font
     langs:
@@ -97,12 +87,10 @@ items:
         type:
           - excel.Excel.CellPropertiesFontLoadOptions
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.horizontalAlignment
-    summary: >-
+    summary: |-
       Specifies whether to load on the `horizontalAlignment` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -114,12 +102,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.indentLevel
-    summary: >-
+    summary: |-
       Specifies whether to load on the `indentLevel` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: indentLevel
     fullName: indentLevel
     langs:
@@ -131,12 +117,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.protection
-    summary: >-
+    summary: |-
       Specifies whether to load on the `protection` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: protection
     fullName: protection
     langs:
@@ -148,12 +132,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.readingOrder
-    summary: >-
+    summary: |-
       Specifies whether to load on the `readingOrder` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: readingOrder
     langs:
@@ -165,12 +147,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.shrinkToFit
-    summary: >-
+    summary: |-
       Specifies whether to load on the `shrinkToFit` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
     fullName: shrinkToFit
     langs:
@@ -182,12 +162,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.textOrientation
-    summary: >-
+    summary: |-
       Specifies whether to load on the `textOrientation` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -199,12 +177,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.useStandardHeight
-    summary: >-
+    summary: |-
       Specifies whether to load on the `useStandardHeight` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardHeight
     fullName: useStandardHeight
     langs:
@@ -216,12 +192,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.useStandardWidth
-    summary: >-
+    summary: |-
       Specifies whether to load on the `useStandardWidth` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardWidth
     fullName: useStandardWidth
     langs:
@@ -233,12 +207,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.verticalAlignment
-    summary: >-
+    summary: |-
       Specifies whether to load on the `verticalAlignment` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -250,12 +222,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFormatLoadOptions.wrapText
-    summary: >-
+    summary: |-
       Specifies whether to load on the `wrapText` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
     fullName: wrapText
     langs:

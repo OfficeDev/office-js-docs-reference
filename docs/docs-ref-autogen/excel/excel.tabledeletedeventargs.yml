@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TableDeletedEventArgs
-    summary: >-
+    summary: |-
       Provides information about the table that raised the OnDeleted event.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TableDeletedEventArgs
     fullName: Excel.TableDeletedEventArgs
     langs:
@@ -21,13 +18,10 @@ items:
       - excel.Excel.TableDeletedEventArgs.type
       - excel.Excel.TableDeletedEventArgs.worksheetId
   - uid: excel.Excel.TableDeletedEventArgs.source
-    summary: >-
+    summary: |-
       Specifies the source of the event. See Excel.EventSource for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
@@ -39,13 +33,10 @@ items:
         type:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.TableDeletedEventArgs.tableId
-    summary: >-
+    summary: |-
       Specifies the id of the table that is deleted.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableId
     fullName: tableId
     langs:
@@ -57,13 +48,10 @@ items:
         type:
           - string
   - uid: excel.Excel.TableDeletedEventArgs.tableName
-    summary: >-
+    summary: |-
       Specifies the name of the table that is deleted.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tableName
     fullName: tableName
     langs:
@@ -75,13 +63,10 @@ items:
         type:
           - string
   - uid: excel.Excel.TableDeletedEventArgs.type
-    summary: >-
+    summary: |-
       Specifies the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -93,13 +78,10 @@ items:
         type:
           - '"TableDeleted"'
   - uid: excel.Excel.TableDeletedEventArgs.worksheetId
-    summary: >-
+    summary: |-
       Specifies the id of the worksheet in which the table is deleted.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

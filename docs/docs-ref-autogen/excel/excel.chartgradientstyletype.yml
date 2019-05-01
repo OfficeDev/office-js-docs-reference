@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartGradientStyleType
-    summary: >-
+    summary: |-
       Represents the Gradient Style of chart series, only applicable in RegionMap chart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGradientStyleType
     fullName: Excel.ChartGradientStyleType
     langs:
@@ -19,7 +16,6 @@ items:
       - excel.Excel.ChartGradientStyleType.number
       - excel.Excel.ChartGradientStyleType.percent
   - uid: excel.Excel.ChartGradientStyleType.extremeValue
-    isPreview: true
     name: extremeValue
     fullName: extremeValue
     langs:
@@ -27,7 +23,6 @@ items:
     type: field
     numericValue: '"ExtremeValue"'
   - uid: excel.Excel.ChartGradientStyleType.number
-    isPreview: true
     name: number
     fullName: number
     langs:
@@ -35,7 +30,6 @@ items:
     type: field
     numericValue: '"Number"'
   - uid: excel.Excel.ChartGradientStyleType.percent
-    isPreview: true
     name: percent
     fullName: percent
     langs:

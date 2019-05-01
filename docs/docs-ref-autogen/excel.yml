@@ -871,6 +871,7 @@ items:
       - excel.Excel.WorksheetRowSortedEventArgs
       - excel.Excel.WorksheetSearchCriteria
       - excel.Excel.WorksheetSelectionChangedEventArgs
+      - excel.Excel.WorksheetSingleClickedEventArgs
   - uid: excel.Excel.createWorkbook
     summary: |-
       Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
@@ -2833,3 +2834,5 @@ references:
     name: Excel.WorksheetSearchCriteria
   - uid: excel.Excel.WorksheetSelectionChangedEventArgs
     name: Excel.WorksheetSelectionChangedEventArgs
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs
+    name: Excel.WorksheetSingleClickedEventArgs

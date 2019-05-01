@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotAxis
-    summary: >-
+    summary: |-
       The ShowAs Calculation function for the Data Pivot Field.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotAxis
     fullName: Excel.PivotAxis
     langs:
@@ -22,7 +19,6 @@ items:
       - excel.Excel.PivotAxis.unknown
   - uid: excel.Excel.PivotAxis.column
     summary: The column axis.
-    isPreview: true
     name: column
     fullName: column
     langs:
@@ -31,7 +27,6 @@ items:
     numericValue: '"Column"'
   - uid: excel.Excel.PivotAxis.data
     summary: The data axis.
-    isPreview: true
     name: data
     fullName: data
     langs:
@@ -40,7 +35,6 @@ items:
     numericValue: '"Data"'
   - uid: excel.Excel.PivotAxis.filter
     summary: The filter axis.
-    isPreview: true
     name: filter
     fullName: filter
     langs:
@@ -49,7 +43,6 @@ items:
     numericValue: '"Filter"'
   - uid: excel.Excel.PivotAxis.row
     summary: The row axis.
-    isPreview: true
     name: row
     fullName: row
     langs:
@@ -58,7 +51,6 @@ items:
     numericValue: '"Row"'
   - uid: excel.Excel.PivotAxis.unknown
     summary: The axis or region is unknown or unsupported.
-    isPreview: true
     name: unknown
     fullName: unknown
     langs:

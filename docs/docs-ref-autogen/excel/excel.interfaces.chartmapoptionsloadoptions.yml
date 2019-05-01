@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions
-    summary: >-
+    summary: |-
       Encapsulates the properties for Map chart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartMapOptionsLoadOptions
     fullName: Excel.Interfaces.ChartMapOptionsLoadOptions
     langs:
@@ -20,7 +17,6 @@ items:
       - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.level
       - excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -32,13 +28,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
-    summary: >-
+    summary: |-
       Returns or sets series map labels strategy of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: labelStrategy
     fullName: labelStrategy
     langs:
@@ -50,13 +43,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.level
-    summary: >-
+    summary: |-
       Returns or sets series map area of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
     fullName: level
     langs:
@@ -68,13 +58,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
-    summary: >-
+    summary: |-
       Returns or sets series projection type of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: projectionType
     fullName: projectionType
     langs:

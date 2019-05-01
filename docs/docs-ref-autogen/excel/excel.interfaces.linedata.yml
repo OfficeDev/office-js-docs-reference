@@ -22,13 +22,10 @@ items:
       - excel.Excel.Interfaces.LineData.isBeginConnected
       - excel.Excel.Interfaces.LineData.isEndConnected
   - uid: excel.Excel.Interfaces.LineData.beginArrowheadLength
-    summary: >-
+    summary: |-
       Represents the length of the arrowhead at the beginning of the specified line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: beginArrowheadLength
     fullName: beginArrowheadLength
     langs:
@@ -40,13 +37,10 @@ items:
         type:
           - Excel.ArrowheadLength | "Short" | "Medium" | "Long"
   - uid: excel.Excel.Interfaces.LineData.beginArrowheadStyle
-    summary: >-
+    summary: |-
       Represents the style of the arrowhead at the beginning of the specified line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: beginArrowheadStyle
     fullName: beginArrowheadStyle
     langs:
@@ -58,13 +52,10 @@ items:
         type:
           - Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
   - uid: excel.Excel.Interfaces.LineData.beginArrowheadWidth
-    summary: >-
+    summary: |-
       Represents the width of the arrowhead at the beginning of the specified line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: beginArrowheadWidth
     fullName: beginArrowheadWidth
     langs:
@@ -81,9 +72,7 @@ items:
       the beginning of the line is not attached to any shape.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: beginConnectedSite
     fullName: beginConnectedSite
     langs:
@@ -95,13 +84,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.LineData.connectorType
-    summary: >-
+    summary: |-
       Represents the connector type for the line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: connectorType
     fullName: connectorType
     langs:
@@ -113,13 +99,10 @@ items:
         type:
           - Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
   - uid: excel.Excel.Interfaces.LineData.endArrowheadLength
-    summary: >-
+    summary: |-
       Represents the length of the arrowhead at the end of the specified line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endArrowheadLength
     fullName: endArrowheadLength
     langs:
@@ -131,13 +114,10 @@ items:
         type:
           - Excel.ArrowheadLength | "Short" | "Medium" | "Long"
   - uid: excel.Excel.Interfaces.LineData.endArrowheadStyle
-    summary: >-
+    summary: |-
       Represents the style of the arrowhead at the end of the specified line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endArrowheadStyle
     fullName: endArrowheadStyle
     langs:
@@ -149,13 +129,10 @@ items:
         type:
           - Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
   - uid: excel.Excel.Interfaces.LineData.endArrowheadWidth
-    summary: >-
+    summary: |-
       Represents the width of the arrowhead at the end of the specified line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endArrowheadWidth
     fullName: endArrowheadWidth
     langs:
@@ -172,9 +149,7 @@ items:
       of the line is not attached to any shape.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: endConnectedSite
     fullName: endConnectedSite
     langs:
@@ -186,13 +161,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.LineData.id
-    summary: >-
+    summary: |-
       Represents the shape identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -204,13 +176,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.LineData.isBeginConnected
-    summary: >-
+    summary: |-
       Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isBeginConnected
     fullName: isBeginConnected
     langs:
@@ -222,13 +191,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.LineData.isEndConnected
-    summary: >-
+    summary: |-
       Specifies whether or not the end of the specified line is connected to a shape. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isEndConnected
     fullName: isEndConnected
     langs:

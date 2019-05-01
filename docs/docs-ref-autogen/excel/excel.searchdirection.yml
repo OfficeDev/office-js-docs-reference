@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.SearchDirection
-    summary: >-
+    summary: |-
       Specifies the search direction.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SearchDirection
     fullName: Excel.SearchDirection
     langs:
@@ -19,7 +16,6 @@ items:
       - excel.Excel.SearchDirection.forward
   - uid: excel.Excel.SearchDirection.backwards
     summary: Search in reverse order.
-    isPreview: true
     name: backwards
     fullName: backwards
     langs:
@@ -28,7 +24,6 @@ items:
     numericValue: '"Backwards"'
   - uid: excel.Excel.SearchDirection.forward
     summary: Search in forward order.
-    isPreview: true
     name: forward
     fullName: forward
     langs:

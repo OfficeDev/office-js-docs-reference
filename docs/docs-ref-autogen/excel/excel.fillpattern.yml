@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.FillPattern
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FillPattern
     fullName: Excel.FillPattern
     langs:
@@ -34,7 +31,6 @@ items:
       - excel.Excel.FillPattern.up
       - excel.Excel.FillPattern.vertical
   - uid: excel.Excel.FillPattern.checker
-    isPreview: true
     name: checker
     fullName: checker
     langs:
@@ -42,7 +38,6 @@ items:
     type: field
     numericValue: '"Checker"'
   - uid: excel.Excel.FillPattern.crissCross
-    isPreview: true
     name: crissCross
     fullName: crissCross
     langs:
@@ -50,7 +45,6 @@ items:
     type: field
     numericValue: '"CrissCross"'
   - uid: excel.Excel.FillPattern.down
-    isPreview: true
     name: down
     fullName: down
     langs:
@@ -58,7 +52,6 @@ items:
     type: field
     numericValue: '"Down"'
   - uid: excel.Excel.FillPattern.gray16
-    isPreview: true
     name: gray16
     fullName: gray16
     langs:
@@ -66,7 +59,6 @@ items:
     type: field
     numericValue: '"Gray16"'
   - uid: excel.Excel.FillPattern.gray25
-    isPreview: true
     name: gray25
     fullName: gray25
     langs:
@@ -74,7 +66,6 @@ items:
     type: field
     numericValue: '"Gray25"'
   - uid: excel.Excel.FillPattern.gray50
-    isPreview: true
     name: gray50
     fullName: gray50
     langs:
@@ -82,7 +73,6 @@ items:
     type: field
     numericValue: '"Gray50"'
   - uid: excel.Excel.FillPattern.gray75
-    isPreview: true
     name: gray75
     fullName: gray75
     langs:
@@ -90,7 +80,6 @@ items:
     type: field
     numericValue: '"Gray75"'
   - uid: excel.Excel.FillPattern.gray8
-    isPreview: true
     name: gray8
     fullName: gray8
     langs:
@@ -98,7 +87,6 @@ items:
     type: field
     numericValue: '"Gray8"'
   - uid: excel.Excel.FillPattern.grid
-    isPreview: true
     name: grid
     fullName: grid
     langs:
@@ -106,7 +94,6 @@ items:
     type: field
     numericValue: '"Grid"'
   - uid: excel.Excel.FillPattern.horizontal
-    isPreview: true
     name: horizontal
     fullName: horizontal
     langs:
@@ -114,7 +101,6 @@ items:
     type: field
     numericValue: '"Horizontal"'
   - uid: excel.Excel.FillPattern.lightDown
-    isPreview: true
     name: lightDown
     fullName: lightDown
     langs:
@@ -122,7 +108,6 @@ items:
     type: field
     numericValue: '"LightDown"'
   - uid: excel.Excel.FillPattern.lightHorizontal
-    isPreview: true
     name: lightHorizontal
     fullName: lightHorizontal
     langs:
@@ -130,7 +115,6 @@ items:
     type: field
     numericValue: '"LightHorizontal"'
   - uid: excel.Excel.FillPattern.lightUp
-    isPreview: true
     name: lightUp
     fullName: lightUp
     langs:
@@ -138,7 +122,6 @@ items:
     type: field
     numericValue: '"LightUp"'
   - uid: excel.Excel.FillPattern.lightVertical
-    isPreview: true
     name: lightVertical
     fullName: lightVertical
     langs:
@@ -146,7 +129,6 @@ items:
     type: field
     numericValue: '"LightVertical"'
   - uid: excel.Excel.FillPattern.linearGradient
-    isPreview: true
     name: linearGradient
     fullName: linearGradient
     langs:
@@ -154,7 +136,6 @@ items:
     type: field
     numericValue: '"LinearGradient"'
   - uid: excel.Excel.FillPattern.none
-    isPreview: true
     name: none
     fullName: none
     langs:
@@ -162,7 +143,6 @@ items:
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.FillPattern.rectangularGradient
-    isPreview: true
     name: rectangularGradient
     fullName: rectangularGradient
     langs:
@@ -170,7 +150,6 @@ items:
     type: field
     numericValue: '"RectangularGradient"'
   - uid: excel.Excel.FillPattern.semiGray75
-    isPreview: true
     name: semiGray75
     fullName: semiGray75
     langs:
@@ -178,7 +157,6 @@ items:
     type: field
     numericValue: '"SemiGray75"'
   - uid: excel.Excel.FillPattern.solid
-    isPreview: true
     name: solid
     fullName: solid
     langs:
@@ -186,7 +164,6 @@ items:
     type: field
     numericValue: '"Solid"'
   - uid: excel.Excel.FillPattern.up
-    isPreview: true
     name: up
     fullName: up
     langs:
@@ -194,7 +171,6 @@ items:
     type: field
     numericValue: '"Up"'
   - uid: excel.Excel.FillPattern.vertical
-    isPreview: true
     name: vertical
     fullName: vertical
     langs:

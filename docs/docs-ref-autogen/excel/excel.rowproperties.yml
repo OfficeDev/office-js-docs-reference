@@ -1,12 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RowProperties
-    summary: >-
+    summary: |-
       Represents the returned properties of getRowProperties.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowProperties
     fullName: Excel.RowProperties
     langs:
@@ -20,12 +18,10 @@ items:
       - excel.Excel.RowProperties.addressLocal
       - excel.Excel.RowProperties.rowIndex
   - uid: excel.Excel.RowProperties.address
-    summary: >-
+    summary: |-
       Represents the `address` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -37,12 +33,10 @@ items:
         type:
           - string
   - uid: excel.Excel.RowProperties.addressLocal
-    summary: >-
+    summary: |-
       Represents the `addressLocal` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -54,12 +48,10 @@ items:
         type:
           - string
   - uid: excel.Excel.RowProperties.rowIndex
-    summary: >-
+    summary: |-
       Represents the `rowIndex` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:

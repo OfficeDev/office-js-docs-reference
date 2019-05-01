@@ -42,13 +42,10 @@ items:
         type:
           - excel.Excel.ChartBorder
   - uid: excel.Excel.ChartAreaFormat.colorScheme
-    summary: >-
+    summary: |-
       Returns or sets an integer that represents the color scheme for the chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: colorScheme
     fullName: colorScheme
     langs:
@@ -194,13 +191,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartAreaFormat.roundedCorners
-    summary: >-
+    summary: |-
       True if the chart area of the chart has rounded corners. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: roundedCorners
     fullName: roundedCorners
     langs:

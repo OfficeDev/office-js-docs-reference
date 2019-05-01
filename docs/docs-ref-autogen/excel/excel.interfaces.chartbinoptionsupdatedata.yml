@@ -19,13 +19,10 @@ items:
       - excel.Excel.Interfaces.ChartBinOptionsUpdateData.underflowValue
       - excel.Excel.Interfaces.ChartBinOptionsUpdateData.width
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.allowOverflow
-    summary: >-
+    summary: |-
       Returns or sets if bin overflow enabled in a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowOverflow
     fullName: allowOverflow
     langs:
@@ -37,13 +34,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.allowUnderflow
-    summary: >-
+    summary: |-
       Returns or sets if bin underflow enabled in a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: allowUnderflow
     fullName: allowUnderflow
     langs:
@@ -55,13 +49,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.count
-    summary: >-
+    summary: |-
       Returns or sets count of bin of a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: count
     fullName: count
     langs:
@@ -73,13 +64,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.overflowValue
-    summary: >-
+    summary: |-
       Returns or sets bin overflow value of a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: overflowValue
     fullName: overflowValue
     langs:
@@ -91,13 +79,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.type
-    summary: >-
+    summary: |-
       Returns or sets bin type of a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -109,13 +94,10 @@ items:
         type:
           - Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.underflowValue
-    summary: >-
+    summary: |-
       Returns or sets bin underflow value of a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: underflowValue
     fullName: underflowValue
     langs:
@@ -127,13 +109,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData.width
-    summary: >-
+    summary: |-
       Returns or sets bin width value of a histogram chart or pareto chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:

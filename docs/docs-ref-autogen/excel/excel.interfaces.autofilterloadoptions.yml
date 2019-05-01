@@ -6,9 +6,7 @@ items:
       cell contents.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.AutoFilterLoadOptions
     fullName: Excel.Interfaces.AutoFilterLoadOptions
     langs:
@@ -21,7 +19,6 @@ items:
       - excel.Excel.Interfaces.AutoFilterLoadOptions.enabled
       - excel.Excel.Interfaces.AutoFilterLoadOptions.isDataFiltered
   - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -33,13 +30,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.criteria
-    summary: >-
+    summary: |-
       An array that holds all the filter criteria in the autofiltered range. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: criteria
     fullName: criteria
     langs:
@@ -51,13 +45,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.enabled
-    summary: >-
+    summary: |-
       Indicates if the AutoFilter is enabled or not. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enabled
     fullName: enabled
     langs:
@@ -69,13 +60,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.AutoFilterLoadOptions.isDataFiltered
-    summary: >-
+    summary: |-
       Indicates if the AutoFilter has filter criteria. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDataFiltered
     fullName: isDataFiltered
     langs:

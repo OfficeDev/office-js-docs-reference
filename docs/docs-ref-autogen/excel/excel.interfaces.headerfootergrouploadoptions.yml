@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.Interfaces.HeaderFooterGroupLoadOptions
     fullName: Excel.Interfaces.HeaderFooterGroupLoadOptions
     langs:
@@ -21,7 +18,6 @@ items:
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.useSheetMargins
       - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.useSheetScale
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -33,13 +29,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.defaultForAllPages
-    summary: >-
+    summary: |-
       The general header/footer, used for all pages unless even/odd or first page is specified.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: defaultForAllPages
     fullName: defaultForAllPages
     langs:
@@ -51,13 +44,10 @@ items:
         type:
           - excel.Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.evenPages
-    summary: >-
+    summary: |-
       The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: evenPages
     fullName: evenPages
     langs:
@@ -69,13 +59,10 @@ items:
         type:
           - excel.Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.firstPage
-    summary: >-
+    summary: |-
       The first page header/footer, for all other pages general or even/odd is used.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: firstPage
     fullName: firstPage
     langs:
@@ -87,13 +74,10 @@ items:
         type:
           - excel.Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.oddPages
-    summary: >-
+    summary: |-
       The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: oddPages
     fullName: oddPages
     langs:
@@ -105,13 +89,10 @@ items:
         type:
           - excel.Excel.Interfaces.HeaderFooterLoadOptions
   - uid: excel.Excel.Interfaces.HeaderFooterGroupLoadOptions.state
-    summary: >-
+    summary: |-
       Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: state
     fullName: state
     langs:
@@ -128,9 +109,7 @@ items:
       for the worksheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useSheetMargins
     fullName: useSheetMargins
     langs:
@@ -147,9 +126,7 @@ items:
       layout options for the worksheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useSheetScale
     fullName: useSheetScale
     langs:

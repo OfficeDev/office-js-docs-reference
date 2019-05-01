@@ -6,9 +6,7 @@ items:
       etc.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Shape
     fullName: Excel.Shape
     langs:
@@ -63,15 +61,12 @@ items:
       - excel.Excel.Shape.type
       - excel.Excel.Shape.visible
       - excel.Excel.Shape.width
-      - excel.Excel.Shape.zorderPosition
+      - excel.Excel.Shape.zOrderPosition
   - uid: excel.Excel.Shape.altTextDescription
-    summary: >-
+    summary: |-
       Returns or sets the alternative description text for a Shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextDescription
     fullName: altTextDescription
     langs:
@@ -83,13 +78,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Shape.altTextTitle
-    summary: >-
+    summary: |-
       Returns or sets the alternative title text for a Shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: altTextTitle
     fullName: altTextTitle
     langs:
@@ -101,13 +93,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Shape.connectionSiteCount
-    summary: >-
+    summary: |-
       Returns the number of connection sites on this shape. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: connectionSiteCount
     fullName: connectionSiteCount
     langs:
@@ -122,7 +111,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -134,13 +122,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.Shape.delete
-    summary: >-
+    summary: |-
       Removes the shape from the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
     fullName: delete()
     langs:
@@ -170,13 +155,10 @@ items:
           });
           ```
   - uid: excel.Excel.Shape.fill
-    summary: >-
+    summary: |-
       Returns the fill formatting of this shape. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: fill
     fullName: fill
     langs:
@@ -210,9 +192,7 @@ items:
       "GeometricShape".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: geometricShape
     fullName: geometricShape
     langs:
@@ -229,9 +209,7 @@ items:
       null if the shape type is not "GeometricShape".
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: geometricShapeType
     fullName: geometricShapeType
     langs:
@@ -312,9 +290,7 @@ items:
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getAsImage(format)
     fullName: getAsImage(format)
     langs:
@@ -354,9 +330,7 @@ items:
       -->, and `Excel.PictureFormat.GIF`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getAsImage(formatString)
     fullName: getAsImage(formatString)
     langs:
@@ -376,13 +350,10 @@ items:
           type:
             - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
   - uid: excel.Excel.Shape.group
-    summary: >-
+    summary: |-
       Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: group
     fullName: group
     langs:
@@ -415,9 +386,7 @@ items:
       value or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: height
     fullName: height
     langs:
@@ -429,13 +398,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Shape.id
-    summary: >-
+    summary: |-
       Represents the shape identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -447,13 +413,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Shape.image
-    summary: >-
+    summary: |-
       Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: image
     fullName: image
     langs:
@@ -465,13 +428,10 @@ items:
         type:
           - excel.Excel.Image
   - uid: excel.Excel.Shape.incrementLeft
-    summary: >-
+    summary: |-
       Moves the shape horizontally by the specified number of points.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: incrementLeft(increment)
     fullName: incrementLeft(increment)
     langs:
@@ -509,9 +469,7 @@ items:
       set the absolute rotation of the shape.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: incrementRotation(increment)
     fullName: incrementRotation(increment)
     langs:
@@ -543,13 +501,10 @@ items:
           type:
             - number
   - uid: excel.Excel.Shape.incrementTop
-    summary: >-
+    summary: |-
       Moves the shape vertically by the specified number of points.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: incrementTop(increment)
     fullName: incrementTop(increment)
     langs:
@@ -586,9 +541,7 @@ items:
       argument exception when set with a negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -606,9 +559,7 @@ items:
       sub-group of the top level.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
     fullName: level
     langs:
@@ -620,13 +571,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Shape.line
-    summary: >-
+    summary: |-
       Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:
@@ -658,13 +606,10 @@ items:
           });
           ```
   - uid: excel.Excel.Shape.lineFormat
-    summary: >-
+    summary: |-
       Returns the line formatting of this shape. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lineFormat
     fullName: lineFormat
     langs:
@@ -697,7 +642,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -718,7 +662,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -739,7 +682,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -759,13 +701,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.Shape.lockAspectRatio
-    summary: >-
+    summary: |-
       Specifies whether or not the aspect ratio of this shape is locked.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: lockAspectRatio
     fullName: lockAspectRatio
     langs:
@@ -791,13 +730,10 @@ items:
           });
           ```
   - uid: excel.Excel.Shape.name
-    summary: >-
+    summary: |-
       Represents the name of the shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: name
     fullName: name
     langs:
@@ -809,13 +745,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Shape.onActivated
-    summary: >-
+    summary: |-
       Occurs when the shape is activated.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onActivated
     fullName: onActivated
     langs:
@@ -827,13 +760,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
   - uid: excel.Excel.Shape.onDeactivated
-    summary: >-
+    summary: |-
       Occurs when the shape is deactivated.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeactivated
     fullName: onDeactivated
     langs:
@@ -845,13 +775,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>
   - uid: excel.Excel.Shape.parentGroup
-    summary: >-
+    summary: |-
       Represents the parent group of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: parentGroup
     fullName: parentGroup
     langs:
@@ -881,13 +808,10 @@ items:
         type:
           - Excel.Placement | "TwoCell" | "OneCell" | "Absolute"
   - uid: excel.Excel.Shape.rotation
-    summary: >-
+    summary: |-
       Represents the rotation, in degrees, of the shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rotation
     fullName: rotation
     langs:
@@ -923,9 +847,7 @@ items:
       current height.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
     fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
     langs:
@@ -974,9 +896,7 @@ items:
       current height.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
     fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
     langs:
@@ -1014,9 +934,7 @@ items:
       current width.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
     fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
     langs:
@@ -1052,9 +970,7 @@ items:
       current width.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
     fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
     langs:
@@ -1093,7 +1009,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.Shape): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -1118,7 +1033,6 @@ items:
             - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.Shape.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -1136,13 +1050,10 @@ items:
           type:
             - excel.Excel.Shape
   - uid: excel.Excel.Shape.setZOrder
-    summary: >-
+    summary: |-
       Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setZOrder(position)
     fullName: setZOrder(position)
     langs:
@@ -1174,13 +1085,10 @@ items:
           type:
             - excel.Excel.ShapeZOrder
   - uid: excel.Excel.Shape.setZOrder_1
-    summary: >-
+    summary: |-
       Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setZOrder(positionString)
     fullName: setZOrder(positionString)
     langs:
@@ -1200,13 +1108,10 @@ items:
           type:
             - '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
   - uid: excel.Excel.Shape.textFrame
-    summary: >-
+    summary: |-
       Returns the text frame object of this shape. Read only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textFrame
     fullName: textFrame
     langs:
@@ -1224,7 +1129,6 @@ items:
       passed to it.) Whereas the original Excel.Shape object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.ShapeData`<!-- -->) that contains shallow copies of any loaded child
       properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:
@@ -1242,9 +1146,7 @@ items:
       argument exception when set with a negative value as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -1256,13 +1158,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Shape.type
-    summary: >-
+    summary: |-
       Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -1274,13 +1173,10 @@ items:
         type:
           - Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
   - uid: excel.Excel.Shape.visible
-    summary: >-
+    summary: |-
       Represents the visibility of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: visible
     fullName: visible
     langs:
@@ -1297,9 +1193,7 @@ items:
       or zero as input.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: width
     fullName: width
     langs:
@@ -1310,22 +1204,20 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.zorderPosition
+  - uid: excel.Excel.Shape.zOrderPosition
     summary: >-
       Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
       Read-only.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: zorderPosition
-    fullName: zorderPosition
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zOrderPosition
+    fullName: zOrderPosition
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly zorderPosition: number;'
+      content: 'readonly zOrderPosition: number;'
       return:
         type:
           - number

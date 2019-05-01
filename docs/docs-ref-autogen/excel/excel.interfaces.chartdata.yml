@@ -229,13 +229,10 @@ items:
         type:
           - string
   - uid: excel.Excel.Interfaces.ChartData.pivotOptions
-    summary: >-
+    summary: |-
       Encapsulates the options for the pivot chart. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotOptions
     fullName: pivotOptions
     langs:

@@ -15,13 +15,10 @@ items:
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanMarker
       - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showOutlierPoints
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.quartileCalculation
-    summary: >-
+    summary: |-
       Returns or sets quartile calculation type of a Box &amp; whisker chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: quartileCalculation
     fullName: quartileCalculation
     langs:
@@ -33,13 +30,10 @@ items:
         type:
           - Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive"
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showInnerPoints
-    summary: >-
+    summary: |-
       Returns or sets if inner points showed in a Box &amp; whisker chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showInnerPoints
     fullName: showInnerPoints
     langs:
@@ -51,13 +45,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanLine
-    summary: >-
+    summary: |-
       Returns or sets if mean line showed in a Box &amp; whisker chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showMeanLine
     fullName: showMeanLine
     langs:
@@ -69,13 +60,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanMarker
-    summary: >-
+    summary: |-
       Returns or sets if mean marker showed in a Box &amp; whisker chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showMeanMarker
     fullName: showMeanMarker
     langs:
@@ -87,13 +75,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showOutlierPoints
-    summary: >-
+    summary: |-
       Returns or sets if outlier points showed in a Box &amp; whisker chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showOutlierPoints
     fullName: showOutlierPoints
     langs:

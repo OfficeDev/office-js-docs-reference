@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartGradientStyle
-    summary: >-
+    summary: |-
       Represents the Gradient Style of chart series, only applicable in RegionMap chart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartGradientStyle
     fullName: Excel.ChartGradientStyle
     langs:
@@ -18,7 +15,6 @@ items:
       - excel.Excel.ChartGradientStyle.threePhaseColor
       - excel.Excel.ChartGradientStyle.twoPhaseColor
   - uid: excel.Excel.ChartGradientStyle.threePhaseColor
-    isPreview: true
     name: threePhaseColor
     fullName: threePhaseColor
     langs:
@@ -26,7 +22,6 @@ items:
     type: field
     numericValue: '"ThreePhaseColor"'
   - uid: excel.Excel.ChartGradientStyle.twoPhaseColor
-    isPreview: true
     name: twoPhaseColor
     fullName: twoPhaseColor
     langs:

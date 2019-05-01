@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeTextVerticalOverflow
-    summary: >-
+    summary: |-
       Specifies the vertical overflow for the text frame in a shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeTextVerticalOverflow
     fullName: Excel.ShapeTextVerticalOverflow
     langs:
@@ -20,7 +17,6 @@ items:
       - excel.Excel.ShapeTextVerticalOverflow.overflow
   - uid: excel.Excel.ShapeTextVerticalOverflow.clip
     summary: Hide text that does not fit vertically within the text frame.
-    isPreview: true
     name: clip
     fullName: clip
     langs:
@@ -31,7 +27,6 @@ items:
     summary: >-
       Hide text that does not fit vertically within the text frame, and add an ellipsis (...) at the end of the visible
       text.
-    isPreview: true
     name: ellipsis
     fullName: ellipsis
     langs:
@@ -42,7 +37,6 @@ items:
     summary: >-
       Allow text to overflow the text frame vertically (can be from the top, bottom, or both depending on the text
       alignment).
-    isPreview: true
     name: overflow
     fullName: overflow
     langs:

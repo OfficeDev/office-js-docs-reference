@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CalculationState
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: |-
+      Represents the state of calculation across the entire Excel application.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CalculationState
     fullName: Excel.CalculationState
     langs:
@@ -16,7 +16,7 @@ items:
       - excel.Excel.CalculationState.done
       - excel.Excel.CalculationState.pending
   - uid: excel.Excel.CalculationState.calculating
-    isPreview: true
+    summary: Calculations in progress.
     name: calculating
     fullName: calculating
     langs:
@@ -24,7 +24,7 @@ items:
     type: field
     numericValue: '"Calculating"'
   - uid: excel.Excel.CalculationState.done
-    isPreview: true
+    summary: Calculations complete.
     name: done
     fullName: done
     langs:
@@ -32,7 +32,7 @@ items:
     type: field
     numericValue: '"Done"'
   - uid: excel.Excel.CalculationState.pending
-    isPreview: true
+    summary: 'Changes that trigger calculation have been made, but a recalculation has not yet been performed.'
     name: pending
     fullName: pending
     langs:

@@ -32,13 +32,10 @@ items:
       - excel.Excel.Interfaces.WorksheetData.verticalPageBreaks
       - excel.Excel.Interfaces.WorksheetData.visibility
   - uid: excel.Excel.Interfaces.WorksheetData.autoFilter
-    summary: >-
+    summary: |-
       Represents the AutoFilter object of the worksheet. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
     fullName: autoFilter
     langs:
@@ -88,9 +85,7 @@ items:
       necessary. False if Excel doesn't recalculate the sheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableCalculation
     fullName: enableCalculation
     langs:
@@ -102,13 +97,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorksheetData.horizontalPageBreaks
-    summary: >-
+    summary: |-
       Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalPageBreaks
     fullName: horizontalPageBreaks
     langs:
@@ -167,13 +159,10 @@ items:
         type:
           - 'Excel.Interfaces.NamedItemData[]'
   - uid: excel.Excel.Interfaces.WorksheetData.pageLayout
-    summary: >-
+    summary: |-
       Gets the PageLayout object of the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pageLayout
     fullName: pageLayout
     langs:
@@ -230,13 +219,10 @@ items:
         type:
           - excel.Excel.Interfaces.WorksheetProtectionData
   - uid: excel.Excel.Interfaces.WorksheetData.shapes
-    summary: >-
+    summary: |-
       Returns the collection of all the Shape objects on the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapes
     fullName: shapes
     langs:
@@ -363,13 +349,10 @@ items:
         type:
           - 'Excel.Interfaces.TableData[]'
   - uid: excel.Excel.Interfaces.WorksheetData.verticalPageBreaks
-    summary: >-
+    summary: |-
       Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalPageBreaks
     fullName: verticalPageBreaks
     langs:

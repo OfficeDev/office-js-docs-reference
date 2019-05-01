@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Placement
-    summary: >-
+    summary: |-
       Specifies the way that an object is attached to its underlying cells.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Placement
     fullName: Excel.Placement
     langs:
@@ -20,7 +17,6 @@ items:
       - excel.Excel.Placement.twoCell
   - uid: excel.Excel.Placement.absolute
     summary: The object is free floating.
-    isPreview: true
     name: absolute
     fullName: absolute
     langs:
@@ -29,7 +25,6 @@ items:
     numericValue: '"Absolute"'
   - uid: excel.Excel.Placement.oneCell
     summary: The object is moved and sized with the cells.
-    isPreview: true
     name: oneCell
     fullName: oneCell
     langs:
@@ -38,7 +33,6 @@ items:
     numericValue: '"OneCell"'
   - uid: excel.Excel.Placement.twoCell
     summary: The object is moved with the cells.
-    isPreview: true
     name: twoCell
     fullName: twoCell
     langs:

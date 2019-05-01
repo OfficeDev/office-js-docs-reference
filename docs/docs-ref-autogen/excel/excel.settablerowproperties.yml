@@ -1,12 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.SettableRowProperties
-    summary: >-
+    summary: |-
       Represents the input parameter of setRowProperties.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettableRowProperties
     fullName: Excel.SettableRowProperties
     langs:
@@ -19,12 +17,10 @@ items:
       - excel.Excel.SettableRowProperties.format
       - excel.Excel.SettableRowProperties.rowHidden
   - uid: excel.Excel.SettableRowProperties.format
-    summary: >-
+    summary: |-
       Represents the `format` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -42,12 +38,10 @@ items:
                         rowHeight?: number;
                     }
   - uid: excel.Excel.SettableRowProperties.rowHidden
-    summary: >-
+    summary: |-
       Represents the `rowHidden` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowHidden
     fullName: rowHidden
     langs:

@@ -22,9 +22,7 @@ items:
       when a PivotChart is selected.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showAxisFieldButtons
     fullName: showAxisFieldButtons
     langs:
@@ -36,13 +34,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsUpdateData.showLegendFieldButtons
-    summary: >-
+    summary: |-
       Represents whether to display legend field buttons on a PivotChart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLegendFieldButtons
     fullName: showLegendFieldButtons
     langs:
@@ -54,13 +49,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsUpdateData.showReportFilterFieldButtons
-    summary: >-
+    summary: |-
       Represents whether to display report filter field buttons on a PivotChart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showReportFilterFieldButtons
     fullName: showReportFilterFieldButtons
     langs:
@@ -72,13 +64,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartPivotOptionsUpdateData.showValueFieldButtons
-    summary: >-
+    summary: |-
       Represents whether to display show value field buttons on a PivotChart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showValueFieldButtons
     fullName: showValueFieldButtons
     langs:

@@ -847,6 +847,8 @@ items:
                 uid: excel.Excel.WorksheetSearchCriteria
               - name: WorksheetSelectionChangedEventArgs
                 uid: excel.Excel.WorksheetSelectionChangedEventArgs
+              - name: WorksheetSingleClickedEventArgs
+                uid: excel.Excel.WorksheetSingleClickedEventArgs
           - name: Excel - Release
             uid: excel_release
             items:

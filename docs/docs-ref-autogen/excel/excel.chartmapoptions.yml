@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartMapOptions
-    summary: >-
+    summary: |-
       Encapsulates the properties for Map chart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartMapOptions
     fullName: Excel.ChartMapOptions
     langs:
@@ -31,7 +28,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -43,13 +39,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.ChartMapOptions.labelStrategy
-    summary: >-
+    summary: |-
       Returns or sets series map labels strategy of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: labelStrategy
     fullName: labelStrategy
     langs:
@@ -61,13 +54,10 @@ items:
         type:
           - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
   - uid: excel.Excel.ChartMapOptions.level
-    summary: >-
+    summary: |-
       Returns or sets series map area of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: level
     fullName: level
     langs:
@@ -104,7 +94,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -125,7 +114,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -146,7 +134,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -166,13 +153,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartMapOptions.projectionType
-    summary: >-
+    summary: |-
       Returns or sets series projection type of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: projectionType
     fullName: projectionType
     langs:
@@ -191,7 +175,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.ChartMapOptions): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -216,7 +199,6 @@ items:
             - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ChartMapOptions.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -240,7 +222,6 @@ items:
       passed to it.) Whereas the original Excel.ChartMapOptions object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Excel.Interfaces.ChartMapOptionsData`<!-- -->) that contains shallow copies of
       any loaded child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

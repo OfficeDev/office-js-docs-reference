@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeFill
-    summary: >-
+    summary: |-
       Represents the fill formatting of a shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeFill
     fullName: Excel.ShapeFill
     langs:
@@ -30,13 +27,10 @@ items:
       - excel.Excel.ShapeFill.transparency
       - excel.Excel.ShapeFill.type
   - uid: excel.Excel.ShapeFill.clear
-    summary: >-
+    summary: |-
       Clears the fill formatting of this shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: clear()
     fullName: clear()
     langs:
@@ -52,7 +46,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -69,9 +62,7 @@ items:
       named HTML color (e.g. "orange")
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: foregroundColor
     fullName: foregroundColor
     langs:
@@ -104,7 +95,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -125,7 +115,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -146,7 +135,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -173,7 +161,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.ShapeFill): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -198,7 +185,6 @@ items:
             - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.ShapeFill.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -216,13 +202,10 @@ items:
           type:
             - excel.Excel.ShapeFill
   - uid: excel.Excel.ShapeFill.setSolidColor
-    summary: >-
+    summary: |-
       Sets the fill formatting of the shape to a uniform color. This changes the fill type to "Solid".
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setSolidColor(color)
     fullName: setSolidColor(color)
     langs:
@@ -248,7 +231,6 @@ items:
       passed to it.) Whereas the original Excel.ShapeFill object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.ShapeFillData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:
@@ -267,9 +249,7 @@ items:
       a gradient fill type.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: transparency
     fullName: transparency
     langs:
@@ -281,13 +261,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ShapeFill.type
-    summary: >-
+    summary: |-
       Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

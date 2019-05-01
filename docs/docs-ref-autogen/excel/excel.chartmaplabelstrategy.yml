@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartMapLabelStrategy
-    summary: >-
+    summary: |-
       Represents the region label strategy of chart series layout, only applicable in RegionMap chart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartMapLabelStrategy
     fullName: Excel.ChartMapLabelStrategy
     langs:
@@ -19,7 +16,6 @@ items:
       - excel.Excel.ChartMapLabelStrategy.none
       - excel.Excel.ChartMapLabelStrategy.showAll
   - uid: excel.Excel.ChartMapLabelStrategy.bestFit
-    isPreview: true
     name: bestFit
     fullName: bestFit
     langs:
@@ -27,7 +23,6 @@ items:
     type: field
     numericValue: '"BestFit"'
   - uid: excel.Excel.ChartMapLabelStrategy.none
-    isPreview: true
     name: none
     fullName: none
     langs:
@@ -35,7 +30,6 @@ items:
     type: field
     numericValue: '"None"'
   - uid: excel.Excel.ChartMapLabelStrategy.showAll
-    isPreview: true
     name: showAll
     fullName: showAll
     langs:

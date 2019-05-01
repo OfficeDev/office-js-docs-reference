@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PageLayout
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.PageLayout
     fullName: Excel.PageLayout
     langs:
@@ -53,13 +50,10 @@ items:
       - excel.Excel.PageLayout.topMargin
       - excel.Excel.PageLayout.zoom
   - uid: excel.Excel.PageLayout.blackAndWhite
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's black and white print option.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: blackAndWhite
     fullName: blackAndWhite
     langs:
@@ -71,13 +65,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.PageLayout.bottomMargin
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's bottom page margin to use for printing in points.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottomMargin
     fullName: bottomMargin
     langs:
@@ -94,9 +85,7 @@ items:
       horizontally when it's printed.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: centerHorizontally
     fullName: centerHorizontally
     langs:
@@ -126,9 +115,7 @@ items:
       vertically when it's printed.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: centerVertically
     fullName: centerVertically
     langs:
@@ -156,7 +143,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -168,13 +154,10 @@ items:
         type:
           - RequestContext
   - uid: excel.Excel.PageLayout.draftMode
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: draftMode
     fullName: draftMode
     langs:
@@ -186,13 +169,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.PageLayout.firstPageNumber
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: firstPageNumber
     fullName: firstPageNumber
     langs:
@@ -204,13 +184,10 @@ items:
         type:
           - number | ""
   - uid: excel.Excel.PageLayout.footerMargin
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's footer margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: footerMargin
     fullName: footerMargin
     langs:
@@ -227,9 +204,7 @@ items:
       worksheet. If there is no print area, an ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrintArea()
     fullName: getPrintArea()
     langs:
@@ -247,9 +222,7 @@ items:
       worksheet. If there is no print area, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrintAreaOrNullObject()
     fullName: getPrintAreaOrNullObject()
     langs:
@@ -262,13 +235,10 @@ items:
           - excel.Excel.RangeAreas
         description: ''
   - uid: excel.Excel.PageLayout.getPrintTitleColumns
-    summary: >-
+    summary: |-
       Gets the range object representing the title columns.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrintTitleColumns()
     fullName: getPrintTitleColumns()
     langs:
@@ -281,13 +251,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.PageLayout.getPrintTitleColumnsOrNullObject
-    summary: >-
+    summary: |-
       Gets the range object representing the title columns. If not set, this will return a null object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrintTitleColumnsOrNullObject()
     fullName: getPrintTitleColumnsOrNullObject()
     langs:
@@ -300,13 +267,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.PageLayout.getPrintTitleRows
-    summary: >-
+    summary: |-
       Gets the range object representing the title rows.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrintTitleRows()
     fullName: getPrintTitleRows()
     langs:
@@ -319,13 +283,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.PageLayout.getPrintTitleRowsOrNullObject
-    summary: >-
+    summary: |-
       Gets the range object representing the title rows. If not set, this will return a null object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getPrintTitleRowsOrNullObject()
     fullName: getPrintTitleRowsOrNullObject()
     langs:
@@ -338,13 +299,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.PageLayout.headerMargin
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's header margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: headerMargin
     fullName: headerMargin
     langs:
@@ -356,13 +314,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayout.headersFooters
-    summary: >-
+    summary: |-
       Header and footer configuration for the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: headersFooters
     fullName: headersFooters
     langs:
@@ -374,13 +329,10 @@ items:
         type:
           - excel.Excel.HeaderFooterGroup
   - uid: excel.Excel.PageLayout.leftMargin
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's left margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: leftMargin
     fullName: leftMargin
     langs:
@@ -413,7 +365,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -434,7 +385,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -455,7 +405,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -475,13 +424,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.PageLayout.orientation
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's orientation of the page.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: orientation
     fullName: orientation
     langs:
@@ -505,13 +451,10 @@ items:
           });
           ```
   - uid: excel.Excel.PageLayout.paperSize
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's paper size of the page.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: paperSize
     fullName: paperSize
     langs:
@@ -535,13 +478,10 @@ items:
             "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" |
             "FanfoldStdGerman" | "FanfoldLegalGerman"
   - uid: excel.Excel.PageLayout.printComments
-    summary: >-
+    summary: |-
       Gets or sets whether the worksheet's comments should be displayed when printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: printComments
     fullName: printComments
     langs:
@@ -553,13 +493,10 @@ items:
         type:
           - Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
   - uid: excel.Excel.PageLayout.printErrors
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's print errors option.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: printErrors
     fullName: printErrors
     langs:
@@ -571,13 +508,10 @@ items:
         type:
           - Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
   - uid: excel.Excel.PageLayout.printGridlines
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: printGridlines
     fullName: printGridlines
     langs:
@@ -589,13 +523,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.PageLayout.printHeadings
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: printHeadings
     fullName: printHeadings
     langs:
@@ -612,9 +543,7 @@ items:
       number printed.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: printOrder
     fullName: printOrder
     langs:
@@ -626,13 +555,10 @@ items:
         type:
           - Excel.PrintOrder | "DownThenOver" | "OverThenDown"
   - uid: excel.Excel.PageLayout.rightMargin
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's right margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rightMargin
     fullName: rightMargin
     langs:
@@ -651,7 +577,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.PageLayout): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -676,7 +601,6 @@ items:
             - office.OfficeExtension.UpdateOptions
   - uid: excel.Excel.PageLayout.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -694,13 +618,10 @@ items:
           type:
             - excel.Excel.PageLayout
   - uid: excel.Excel.PageLayout.setPrintArea
-    summary: >-
+    summary: |-
       Sets the worksheet's print area.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPrintArea(printArea)
     fullName: setPrintArea(printArea)
     langs:
@@ -729,13 +650,10 @@ items:
           type:
             - Range | RangeAreas | string
   - uid: excel.Excel.PageLayout.setPrintMargins
-    summary: >-
+    summary: |-
       Sets the worksheet's page margins with units.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'setPrintMargins(unit, marginOptions)'
     fullName: 'setPrintMargins(unit, marginOptions)'
     langs:
@@ -757,13 +675,10 @@ items:
           type:
             - excel.Excel.PageLayoutMarginOptions
   - uid: excel.Excel.PageLayout.setPrintMargins_1
-    summary: >-
+    summary: |-
       Sets the worksheet's page margins with units.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'setPrintMargins(unitString, marginOptions)'
     fullName: 'setPrintMargins(unitString, marginOptions)'
     langs:
@@ -787,13 +702,10 @@ items:
           type:
             - excel.Excel.PageLayoutMarginOptions
   - uid: excel.Excel.PageLayout.setPrintTitleColumns
-    summary: >-
+    summary: |-
       Sets the columns that contain the cells to be repeated at the left of each page of the worksheet for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPrintTitleColumns(printTitleColumns)
     fullName: setPrintTitleColumns(printTitleColumns)
     langs:
@@ -811,13 +723,10 @@ items:
           type:
             - Range | string
   - uid: excel.Excel.PageLayout.setPrintTitleRows
-    summary: >-
+    summary: |-
       Sets the rows that contain the cells to be repeated at the top of each page of the worksheet for printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setPrintTitleRows(printTitleRows)
     fullName: setPrintTitleRows(printTitleRows)
     langs:
@@ -852,7 +761,6 @@ items:
       passed to it.) Whereas the original Excel.PageLayout object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.PageLayoutData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:
@@ -865,13 +773,10 @@ items:
           - excel.Excel.Interfaces.PageLayoutData
         description: ''
   - uid: excel.Excel.PageLayout.topMargin
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's top margin, in points, for use when printing.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topMargin
     fullName: topMargin
     langs:
@@ -883,13 +788,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayout.zoom
-    summary: >-
+    summary: |-
       Gets or sets the worksheet's print zoom options.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: zoom
     fullName: zoom
     langs:

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartBoxQuartileCalculation
-    summary: >-
+    summary: |-
       Represents the quartile calculation type of chart series layout, only applicable in Box &amp; Whisker chart.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartBoxQuartileCalculation
     fullName: Excel.ChartBoxQuartileCalculation
     langs:
@@ -18,7 +15,6 @@ items:
       - excel.Excel.ChartBoxQuartileCalculation.exclusive
       - excel.Excel.ChartBoxQuartileCalculation.inclusive
   - uid: excel.Excel.ChartBoxQuartileCalculation.exclusive
-    isPreview: true
     name: exclusive
     fullName: exclusive
     langs:
@@ -26,7 +22,6 @@ items:
     type: field
     numericValue: '"Exclusive"'
   - uid: excel.Excel.ChartBoxQuartileCalculation.inclusive
-    isPreview: true
     name: inclusive
     fullName: inclusive
     langs:

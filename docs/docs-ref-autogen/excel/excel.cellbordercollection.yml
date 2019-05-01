@@ -7,9 +7,7 @@ items:
       `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellBorderCollection
     fullName: Excel.CellBorderCollection
     langs:
@@ -26,13 +24,10 @@ items:
       - excel.Excel.CellBorderCollection.top
       - excel.Excel.CellBorderCollection.vertical
   - uid: excel.Excel.CellBorderCollection.bottom
-    summary: >-
+    summary: |-
       Represents the `format.borders.bottom` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottom
     fullName: bottom
     langs:
@@ -44,13 +39,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.diagonalDown
-    summary: >-
+    summary: |-
       Represents the `format.borders.diagonalDown` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: diagonalDown
     fullName: diagonalDown
     langs:
@@ -62,13 +54,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.diagonalUp
-    summary: >-
+    summary: |-
       Represents the `format.borders.diagonalUp` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: diagonalUp
     fullName: diagonalUp
     langs:
@@ -80,13 +69,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.horizontal
-    summary: >-
+    summary: |-
       Represents the `format.borders.horizontal` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontal
     fullName: horizontal
     langs:
@@ -98,13 +84,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.left
-    summary: >-
+    summary: |-
       Represents the `format.borders.left` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: left
     fullName: left
     langs:
@@ -116,13 +99,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.right
-    summary: >-
+    summary: |-
       Represents the `format.borders.right` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: right
     fullName: right
     langs:
@@ -134,13 +114,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.top
-    summary: >-
+    summary: |-
       Represents the `format.borders.top` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: top
     fullName: top
     langs:
@@ -152,13 +129,10 @@ items:
         type:
           - excel.Excel.CellBorder
   - uid: excel.Excel.CellBorderCollection.vertical
-    summary: >-
+    summary: |-
       Represents the `format.borders.vertical` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: vertical
     fullName: vertical
     langs:

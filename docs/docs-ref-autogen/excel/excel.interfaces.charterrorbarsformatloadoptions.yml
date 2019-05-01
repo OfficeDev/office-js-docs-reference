@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
-    summary: >-
+    summary: |-
       Encapsulates the format properties for chart error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
     fullName: Excel.Interfaces.ChartErrorBarsFormatLoadOptions
     langs:
@@ -18,7 +15,6 @@ items:
       - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.$all
       - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -30,13 +26,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
-    summary: >-
+    summary: |-
       Represents chart line formatting.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:
