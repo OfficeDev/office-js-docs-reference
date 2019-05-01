@@ -15,12 +15,16 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.Worksheet.activate
+      - excel_release.Excel.Worksheet.autoFilter
       - excel_release.Excel.Worksheet.calculate
       - excel_release.Excel.Worksheet.charts
       - excel_release.Excel.Worksheet.context
       - excel_release.Excel.Worksheet.copy
       - excel_release.Excel.Worksheet.copy_1
       - excel_release.Excel.Worksheet.delete
+      - excel_release.Excel.Worksheet.enableCalculation
+      - excel_release.Excel.Worksheet.findAll
+      - excel_release.Excel.Worksheet.findAllOrNullObject
       - excel_release.Excel.Worksheet.freezePanes
       - excel_release.Excel.Worksheet.getCell
       - excel_release.Excel.Worksheet.getNext
@@ -29,8 +33,10 @@ items:
       - excel_release.Excel.Worksheet.getPreviousOrNullObject
       - excel_release.Excel.Worksheet.getRange
       - excel_release.Excel.Worksheet.getRangeByIndexes
+      - excel_release.Excel.Worksheet.getRanges
       - excel_release.Excel.Worksheet.getUsedRange
       - excel_release.Excel.Worksheet.getUsedRangeOrNullObject
+      - excel_release.Excel.Worksheet.horizontalPageBreaks
       - excel_release.Excel.Worksheet.id
       - excel_release.Excel.Worksheet.load
       - excel_release.Excel.Worksheet.load_1
@@ -41,12 +47,16 @@ items:
       - excel_release.Excel.Worksheet.onCalculated
       - excel_release.Excel.Worksheet.onChanged
       - excel_release.Excel.Worksheet.onDeactivated
+      - excel_release.Excel.Worksheet.onFormatChanged
       - excel_release.Excel.Worksheet.onSelectionChanged
+      - excel_release.Excel.Worksheet.pageLayout
       - excel_release.Excel.Worksheet.pivotTables
       - excel_release.Excel.Worksheet.position
       - excel_release.Excel.Worksheet.protection
+      - excel_release.Excel.Worksheet.replaceAll
       - excel_release.Excel.Worksheet.set
       - excel_release.Excel.Worksheet.set_1
+      - excel_release.Excel.Worksheet.shapes
       - excel_release.Excel.Worksheet.showGridlines
       - excel_release.Excel.Worksheet.showHeadings
       - excel_release.Excel.Worksheet.standardHeight
@@ -54,6 +64,7 @@ items:
       - excel_release.Excel.Worksheet.tabColor
       - excel_release.Excel.Worksheet.tables
       - excel_release.Excel.Worksheet.toJSON
+      - excel_release.Excel.Worksheet.verticalPageBreaks
       - excel_release.Excel.Worksheet.visibility
   - uid: excel_release.Excel.Worksheet.activate
     summary: |-
@@ -86,6 +97,36 @@ items:
               if (error instanceof OfficeExtension.Error) {
                   console.log("Debug info: " + JSON.stringify(error.debugInfo));
               }
+          });
+          ```
+  - uid: excel_release.Excel.Worksheet.autoFilter
+    summary: |-
+      Represents the AutoFilter object of the worksheet. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoFilter: Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const farmData = sheet.getUsedRange();
+
+              // This filter will only show the rows with the top 25% of values in column 3.
+              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+              await context.sync();
           });
           ```
   - uid: excel_release.Excel.Worksheet.calculate
@@ -210,8 +251,10 @@ items:
           type:
             - excel.Excel.Worksheet
   - uid: excel_release.Excel.Worksheet.delete
-    summary: |-
-      Deletes the worksheet from the workbook.
+    summary: >-
+      Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
+      delete operation will fail with a GeneralException.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
@@ -242,6 +285,105 @@ items:
               }
           });
           ```
+  - uid: excel_release.Excel.Worksheet.enableCalculation
+    summary: >-
+      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableCalculation
+    fullName: enableCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableCalculation: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Worksheet.findAll
+    summary: >-
+      Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object,
+      comprising one or more rectangular ranges.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'findAll(text, criteria)'
+    fullName: 'findAll(text, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: >-
+          A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells
+          meet this criteria, an ItemNotFound error will be thrown.
+      parameters:
+        - id: text
+          description: String to find.
+          type:
+            - string
+        - id: criteria
+          description: Additional Criteria.
+          type:
+            - excel.Excel.WorksheetSearchCriteria
+  - uid: excel_release.Excel.Worksheet.findAllOrNullObject
+    summary: >-
+      Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object,
+      comprising one or more rectangular ranges.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'findAllOrNullObject(text, criteria)'
+    fullName: 'findAllOrNullObject(text, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: >-
+          A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are
+          no matches, this function will return a null object.
+
+
+          #### Examples
+
+
+          ```typescript
+
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Sample");
+              const foundRanges = sheet.findAllOrNullObject("Complete", {
+                  completeMatch: true,
+                  matchCase: false
+              });
+
+              await context.sync();
+
+              if (foundRanges.isNullObject) {
+                  console.log("No complete projects");
+              } else {
+                  foundRanges.format.fill.color = "green"
+              }
+          });
+
+          ```
+      parameters:
+        - id: text
+          description: String to find.
+          type:
+            - string
+        - id: criteria
+          description: Additional Criteria.
+          type:
+            - excel.Excel.WorksheetSearchCriteria
   - uid: excel_release.Excel.Worksheet.freezePanes
     summary: |-
       Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
@@ -547,6 +689,45 @@ items:
           description: Number of columns to include in the range.
           type:
             - number
+  - uid: excel_release.Excel.Worksheet.getRanges
+    summary: >-
+      Gets the RangeAreas object, representing one or more blocks of rectangular ranges, specified by the address or
+      name.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRanges(address)
+    fullName: getRanges(address)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRanges(address?: string): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const specifiedRanges = sheet.getRanges("D3:D5, G3:G5");
+              specifiedRanges.format.fill.color = "pink";
+
+              await context.sync();
+          })
+          ```
+      parameters:
+        - id: address
+          description: >-
+            Optional. A string containing the comma-separated addresses or names of the individual ranges. For example,
+            "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
+          type:
+            - string
   - uid: excel_release.Excel.Worksheet.getUsedRange
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
@@ -615,6 +796,21 @@ items:
           description: Optional. Considers only cells with values as used cells.
           type:
             - boolean
+  - uid: excel_release.Excel.Worksheet.horizontalPageBreaks
+    summary: |-
+      Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalPageBreaks
+    fullName: horizontalPageBreaks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly horizontalPageBreaks: Excel.PageBreakCollection;'
+      return:
+        type:
+          - excel.Excel.PageBreakCollection
   - uid: excel_release.Excel.Worksheet.id
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
@@ -901,6 +1097,21 @@ items:
               return context.sync();
           });
           ```
+  - uid: excel_release.Excel.Worksheet.onFormatChanged
+    summary: |-
+      Occurs when format changed on a specific worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onFormatChanged
+    fullName: onFormatChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
   - uid: excel_release.Excel.Worksheet.onSelectionChanged
     summary: |-
       Occurs when the selection changes on a specific worksheet.
@@ -933,6 +1144,21 @@ items:
               return context.sync();
           });
           ```
+  - uid: excel_release.Excel.Worksheet.pageLayout
+    summary: |-
+      Gets the PageLayout object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pageLayout: Excel.PageLayout;'
+      return:
+        type:
+          - excel.Excel.PageLayout
   - uid: excel_release.Excel.Worksheet.pivotTables
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.
@@ -978,6 +1204,37 @@ items:
       return:
         type:
           - excel.Excel.WorksheetProtection
+  - uid: excel_release.Excel.Worksheet.replaceAll
+    summary: |-
+      Finds and replaces the given string based on the criteria specified within the current worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'replaceAll(text, replacement, criteria)'
+    fullName: 'replaceAll(text, replacement, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria):
+        OfficeExtension.ClientResult<number>;
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: The number of replacements performed.
+      parameters:
+        - id: text
+          description: String to find.
+          type:
+            - string
+        - id: replacement
+          description: String to replace the original with.
+          type:
+            - string
+        - id: criteria
+          description: Additional Replace Criteria.
+          type:
+            - excel.Excel.ReplaceCriteria
   - uid: excel_release.Excel.Worksheet.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
@@ -1026,6 +1283,21 @@ items:
           description: ''
           type:
             - excel.Excel.Worksheet
+  - uid: excel_release.Excel.Worksheet.shapes
+    summary: |-
+      Returns the collection of all the Shape objects on the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shapes
+    fullName: shapes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly shapes: Excel.ShapeCollection;'
+      return:
+        type:
+          - excel.Excel.ShapeCollection
   - uid: excel_release.Excel.Worksheet.showGridlines
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
@@ -1167,6 +1439,21 @@ items:
         type:
           - excel.Excel.Interfaces.WorksheetData
         description: ''
+  - uid: excel_release.Excel.Worksheet.verticalPageBreaks
+    summary: |-
+      Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalPageBreaks
+    fullName: verticalPageBreaks
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly verticalPageBreaks: Excel.PageBreakCollection;'
+      return:
+        type:
+          - excel.Excel.PageBreakCollection
   - uid: excel_release.Excel.Worksheet.visibility
     summary: >-
       The Visibility of the worksheet.

@@ -357,13 +357,10 @@ items:
           type:
             - office.OfficeExtension.LoadOption
   - uid: excel.Excel.TableCollection.onAdded
-    summary: >-
+    summary: |-
       Occurs when new table is added in a workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
     fullName: onAdded
     langs:
@@ -404,13 +401,10 @@ items:
           });
           ```
   - uid: excel.Excel.TableCollection.onDeleted
-    summary: >-
+    summary: |-
       Occurs when the specified table is deleted in a workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
     fullName: onDeleted
     langs:

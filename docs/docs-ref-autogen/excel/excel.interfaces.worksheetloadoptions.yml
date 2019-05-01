@@ -40,13 +40,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorksheetLoadOptions.autoFilter
-    summary: >-
+    summary: |-
       Represents the AutoFilter object of the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
     fullName: autoFilter
     langs:
@@ -78,9 +75,7 @@ items:
       necessary. False if Excel doesn't recalculate the sheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableCalculation
     fullName: enableCalculation
     langs:
@@ -124,13 +119,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.WorksheetLoadOptions.pageLayout
-    summary: >-
+    summary: |-
       Gets the PageLayout object of the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pageLayout
     fullName: pageLayout
     langs:

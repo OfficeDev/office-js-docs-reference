@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.RowProperties
-    summary: Represents the returned properties of getRowProperties.
+    summary: |-
+      Represents the returned properties of getRowProperties.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.RowProperties
     fullName: Excel.RowProperties
     langs:
@@ -13,9 +16,12 @@ items:
     children:
       - excel_release.Excel.RowProperties.address
       - excel_release.Excel.RowProperties.addressLocal
-      - excel_release.Excel.RowProperties.hasSpill
       - excel_release.Excel.RowProperties.rowIndex
   - uid: excel_release.Excel.RowProperties.address
+    summary: |-
+      Represents the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -27,6 +33,10 @@ items:
         type:
           - string
   - uid: excel_release.Excel.RowProperties.addressLocal
+    summary: |-
+      Represents the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -37,18 +47,11 @@ items:
       return:
         type:
           - string
-  - uid: excel_release.Excel.RowProperties.hasSpill
-    name: hasSpill
-    fullName: hasSpill
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasSpill?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel_release.Excel.RowProperties.rowIndex
+    summary: |-
+      Represents the `rowIndex` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rowIndex
     fullName: rowIndex
     langs:

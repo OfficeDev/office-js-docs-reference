@@ -13,9 +13,11 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.Interfaces.PivotTableLoadOptions.$all
+      - excel_release.Excel.Interfaces.PivotTableLoadOptions.enableDataValueEditing
       - excel_release.Excel.Interfaces.PivotTableLoadOptions.id
       - excel_release.Excel.Interfaces.PivotTableLoadOptions.layout
       - excel_release.Excel.Interfaces.PivotTableLoadOptions.name
+      - excel_release.Excel.Interfaces.PivotTableLoadOptions.useCustomSortLists
       - excel_release.Excel.Interfaces.PivotTableLoadOptions.worksheet
   - uid: excel_release.Excel.Interfaces.PivotTableLoadOptions.$all
     name: $all
@@ -25,6 +27,21 @@ items:
     type: property
     syntax:
       content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableLoadOptions.enableDataValueEditing
+    summary: |-
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing?: boolean;'
       return:
         type:
           - boolean
@@ -70,6 +87,21 @@ items:
     type: property
     syntax:
       content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableLoadOptions.useCustomSortLists
+    summary: |-
+      Specifies whether the PivotTable uses custom lists when sorting.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists?: boolean;'
       return:
         type:
           - boolean

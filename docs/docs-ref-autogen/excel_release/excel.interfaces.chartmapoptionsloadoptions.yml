@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions
+    summary: |-
+      Encapsulates the properties for a region map chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartMapOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartMapOptionsLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.$all
+      - excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
+      - excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.level
+      - excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
+  - uid: excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.labelStrategy
+    summary: |-
+      Returns or sets the series map labels strategy of a region map chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: labelStrategy
+    fullName: labelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'labelStrategy?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.level
+    summary: |-
+      Returns or sets the series mapping level of a region map chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartMapOptionsLoadOptions.projectionType
+    summary: |-
+      Returns or sets the series projection type of a region map chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: projectionType
+    fullName: projectionType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'projectionType?: boolean;'
+      return:
+        type:
+          - boolean

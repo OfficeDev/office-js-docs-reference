@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ShapeAutoSize
+    summary: |-
+      Determines the type of automatic sizing allowed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeAutoSize
+    fullName: Excel.ShapeAutoSize
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ShapeAutoSize.autoSizeMixed
+      - excel_release.Excel.ShapeAutoSize.autoSizeNone
+      - excel_release.Excel.ShapeAutoSize.autoSizeShapeToFitText
+      - excel_release.Excel.ShapeAutoSize.autoSizeTextToFitShape
+  - uid: excel_release.Excel.ShapeAutoSize.autoSizeMixed
+    summary: A combination of automatic sizing schemes are used.
+    name: autoSizeMixed
+    fullName: autoSizeMixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutoSizeMixed"'
+  - uid: excel_release.Excel.ShapeAutoSize.autoSizeNone
+    summary: No autosizing.
+    name: autoSizeNone
+    fullName: autoSizeNone
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutoSizeNone"'
+  - uid: excel_release.Excel.ShapeAutoSize.autoSizeShapeToFitText
+    summary: The shape is adjusted to fit the text.
+    name: autoSizeShapeToFitText
+    fullName: autoSizeShapeToFitText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutoSizeShapeToFitText"'
+  - uid: excel_release.Excel.ShapeAutoSize.autoSizeTextToFitShape
+    summary: The text is adjusted to fit the shape.
+    name: autoSizeTextToFitShape
+    fullName: autoSizeTextToFitShape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AutoSizeTextToFitShape"'

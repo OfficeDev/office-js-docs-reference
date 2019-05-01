@@ -1,0 +1,146 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.SpecialCellValueType
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.SpecialCellValueType
+    fullName: Excel.SpecialCellValueType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.SpecialCellValueType.all
+      - excel_release.Excel.SpecialCellValueType.errors
+      - excel_release.Excel.SpecialCellValueType.errorsLogical
+      - excel_release.Excel.SpecialCellValueType.errorsLogicalNumber
+      - excel_release.Excel.SpecialCellValueType.errorsLogicalText
+      - excel_release.Excel.SpecialCellValueType.errorsNumbers
+      - excel_release.Excel.SpecialCellValueType.errorsNumberText
+      - excel_release.Excel.SpecialCellValueType.errorsText
+      - excel_release.Excel.SpecialCellValueType.logical
+      - excel_release.Excel.SpecialCellValueType.logicalNumbers
+      - excel_release.Excel.SpecialCellValueType.logicalNumbersText
+      - excel_release.Excel.SpecialCellValueType.logicalText
+      - excel_release.Excel.SpecialCellValueType.numbers
+      - excel_release.Excel.SpecialCellValueType.numbersText
+      - excel_release.Excel.SpecialCellValueType.text
+  - uid: excel_release.Excel.SpecialCellValueType.all
+    summary: 'Cells that have errors, true/false, numeric, or a string value.'
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"All"'
+  - uid: excel_release.Excel.SpecialCellValueType.errors
+    summary: Cells that have errors.
+    name: errors
+    fullName: errors
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Errors"'
+  - uid: excel_release.Excel.SpecialCellValueType.errorsLogical
+    summary: 'Cells that have errors, or a true/false value.'
+    name: errorsLogical
+    fullName: errorsLogical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ErrorsLogical"'
+  - uid: excel_release.Excel.SpecialCellValueType.errorsLogicalNumber
+    summary: 'Cells that have errors, true/false, or a numeric value.'
+    name: errorsLogicalNumber
+    fullName: errorsLogicalNumber
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ErrorsLogicalNumber"'
+  - uid: excel_release.Excel.SpecialCellValueType.errorsLogicalText
+    summary: 'Cells that have errors, true/false, or a string value.'
+    name: errorsLogicalText
+    fullName: errorsLogicalText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ErrorsLogicalText"'
+  - uid: excel_release.Excel.SpecialCellValueType.errorsNumbers
+    summary: 'Cells that have errors, or a numeric value.'
+    name: errorsNumbers
+    fullName: errorsNumbers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ErrorsNumbers"'
+  - uid: excel_release.Excel.SpecialCellValueType.errorsNumberText
+    summary: 'Cells that have errors, numeric, or a string value.'
+    name: errorsNumberText
+    fullName: errorsNumberText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ErrorsNumberText"'
+  - uid: excel_release.Excel.SpecialCellValueType.errorsText
+    summary: 'Cells that have errors, or a string value.'
+    name: errorsText
+    fullName: errorsText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ErrorsText"'
+  - uid: excel_release.Excel.SpecialCellValueType.logical
+    summary: Cells that have a true/false value.
+    name: logical
+    fullName: logical
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Logical"'
+  - uid: excel_release.Excel.SpecialCellValueType.logicalNumbers
+    summary: 'Cells that have a true/false, or a numeric value.'
+    name: logicalNumbers
+    fullName: logicalNumbers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LogicalNumbers"'
+  - uid: excel_release.Excel.SpecialCellValueType.logicalNumbersText
+    summary: 'Cells that have a true/false, numeric, or a string value.'
+    name: logicalNumbersText
+    fullName: logicalNumbersText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LogicalNumbersText"'
+  - uid: excel_release.Excel.SpecialCellValueType.logicalText
+    summary: 'Cells that have a true/false, or a string value.'
+    name: logicalText
+    fullName: logicalText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LogicalText"'
+  - uid: excel_release.Excel.SpecialCellValueType.numbers
+    summary: Cells that have a numeric value.
+    name: numbers
+    fullName: numbers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Numbers"'
+  - uid: excel_release.Excel.SpecialCellValueType.numbersText
+    summary: 'Cells that have a numeric, or a string value.'
+    name: numbersText
+    fullName: numbersText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NumbersText"'
+  - uid: excel_release.Excel.SpecialCellValueType.text
+    summary: Cells that have a string value.
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Text"'

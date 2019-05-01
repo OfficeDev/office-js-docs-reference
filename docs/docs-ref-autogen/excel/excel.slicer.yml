@@ -77,7 +77,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.clearFilters();
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Slicer.context
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
@@ -111,7 +122,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.slicers.getItemAt(0).delete();
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Slicer.getSelectedItems
     summary: >-
       Returns an array of selected items' keys. Read-only.
@@ -343,7 +365,18 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.selectItems(["Lemon", "Lime", "Orange"]);
+              await context.sync();
+          });
+          ```
       parameters:
         - id: items
           description: Optional. The specified slicer item names to be selected.
@@ -455,6 +488,18 @@ items:
       return:
         type:
           - string
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.style = "SlicerStyleLight6";
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Slicer.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

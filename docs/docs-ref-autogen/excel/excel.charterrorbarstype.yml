@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ChartErrorBarsType
-    summary: >-
+    summary: |-
       Represents the range type for error bars.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ChartErrorBarsType
     fullName: Excel.ChartErrorBarsType
     langs:
@@ -21,7 +18,6 @@ items:
       - excel.Excel.ChartErrorBarsType.stDev
       - excel.Excel.ChartErrorBarsType.stError
   - uid: excel.Excel.ChartErrorBarsType.custom
-    isPreview: true
     name: custom
     fullName: custom
     langs:
@@ -29,7 +25,6 @@ items:
     type: field
     numericValue: '"Custom"'
   - uid: excel.Excel.ChartErrorBarsType.fixedValue
-    isPreview: true
     name: fixedValue
     fullName: fixedValue
     langs:
@@ -37,7 +32,6 @@ items:
     type: field
     numericValue: '"FixedValue"'
   - uid: excel.Excel.ChartErrorBarsType.percent
-    isPreview: true
     name: percent
     fullName: percent
     langs:
@@ -45,7 +39,6 @@ items:
     type: field
     numericValue: '"Percent"'
   - uid: excel.Excel.ChartErrorBarsType.stDev
-    isPreview: true
     name: stDev
     fullName: stDev
     langs:
@@ -53,7 +46,6 @@ items:
     type: field
     numericValue: '"StDev"'
   - uid: excel.Excel.ChartErrorBarsType.stError
-    isPreview: true
     name: stError
     fullName: stError
     langs:

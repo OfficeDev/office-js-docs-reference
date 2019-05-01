@@ -52,9 +52,7 @@ items:
       not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pattern
     fullName: pattern
     langs:
@@ -72,9 +70,7 @@ items:
       \#RRGGBB (e.g. "FFA500").
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternColor
     fullName: patternColor
     langs:
@@ -92,9 +88,7 @@ items:
       will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternTintAndShade
     fullName: patternTintAndShade
     langs:
@@ -111,9 +105,7 @@ items:
       (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tintAndShade
     fullName: tintAndShade
     langs:

@@ -16,19 +16,23 @@ items:
     children:
       - excel_release.Excel.RangeFormat.autofitColumns
       - excel_release.Excel.RangeFormat.autofitRows
+      - excel_release.Excel.RangeFormat.autoIndent
       - excel_release.Excel.RangeFormat.borders
       - excel_release.Excel.RangeFormat.columnWidth
       - excel_release.Excel.RangeFormat.context
       - excel_release.Excel.RangeFormat.fill
       - excel_release.Excel.RangeFormat.font
       - excel_release.Excel.RangeFormat.horizontalAlignment
+      - excel_release.Excel.RangeFormat.indentLevel
       - excel_release.Excel.RangeFormat.load
       - excel_release.Excel.RangeFormat.load_1
       - excel_release.Excel.RangeFormat.load_2
       - excel_release.Excel.RangeFormat.protection
+      - excel_release.Excel.RangeFormat.readingOrder
       - excel_release.Excel.RangeFormat.rowHeight
       - excel_release.Excel.RangeFormat.set
       - excel_release.Excel.RangeFormat.set_1
+      - excel_release.Excel.RangeFormat.shrinkToFit
       - excel_release.Excel.RangeFormat.textOrientation
       - excel_release.Excel.RangeFormat.toJSON
       - excel_release.Excel.RangeFormat.useStandardHeight
@@ -71,6 +75,21 @@ items:
         type:
           - void
         description: ''
+  - uid: excel_release.Excel.RangeFormat.autoIndent
+    summary: |-
+      Indicates if text is automatically indented when text alignment is set to equal distribution.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoIndent
+    fullName: autoIndent
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoIndent: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.RangeFormat.borders
     summary: |-
       Collection of border objects that apply to the overall range. Read-only.
@@ -166,6 +185,21 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
+  - uid: excel_release.Excel.RangeFormat.indentLevel
+    summary: |-
+      An integer from 0 to 250 that indicates the indent level.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: indentLevel
+    fullName: indentLevel
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'indentLevel: number;'
+      return:
+        type:
+          - number
   - uid: excel_release.Excel.RangeFormat.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -322,6 +356,21 @@ items:
       return:
         type:
           - excel.Excel.FormatProtection
+  - uid: excel_release.Excel.RangeFormat.readingOrder
+    summary: |-
+      The reading order for the range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
   - uid: excel_release.Excel.RangeFormat.rowHeight
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
@@ -385,6 +434,21 @@ items:
           description: ''
           type:
             - excel.Excel.RangeFormat
+  - uid: excel_release.Excel.RangeFormat.shrinkToFit
+    summary: |-
+      Indicates if text automatically shrinks to fit in the available column width.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shrinkToFit
+    fullName: shrinkToFit
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shrinkToFit: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.RangeFormat.textOrientation
     summary: >-
       Gets or sets the text orientation of all the cells within the range. The text orientation should be an integer

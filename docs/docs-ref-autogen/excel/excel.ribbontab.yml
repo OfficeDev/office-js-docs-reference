@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.RibbonTab
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.RibbonTab
     fullName: Excel.RibbonTab
     langs:
@@ -25,7 +22,6 @@ items:
       - excel.Excel.RibbonTab.review
       - excel.Excel.RibbonTab.view
   - uid: excel.Excel.RibbonTab.addIns
-    isPreview: true
     name: addIns
     fullName: addIns
     langs:
@@ -33,7 +29,6 @@ items:
     type: field
     numericValue: '"AddIns"'
   - uid: excel.Excel.RibbonTab.data
-    isPreview: true
     name: data
     fullName: data
     langs:
@@ -41,7 +36,6 @@ items:
     type: field
     numericValue: '"Data"'
   - uid: excel.Excel.RibbonTab.developer
-    isPreview: true
     name: developer
     fullName: developer
     langs:
@@ -49,7 +43,6 @@ items:
     type: field
     numericValue: '"Developer"'
   - uid: excel.Excel.RibbonTab.draw
-    isPreview: true
     name: draw
     fullName: draw
     langs:
@@ -57,7 +50,6 @@ items:
     type: field
     numericValue: '"Draw"'
   - uid: excel.Excel.RibbonTab.formulas
-    isPreview: true
     name: formulas
     fullName: formulas
     langs:
@@ -65,7 +57,6 @@ items:
     type: field
     numericValue: '"Formulas"'
   - uid: excel.Excel.RibbonTab.help
-    isPreview: true
     name: help
     fullName: help
     langs:
@@ -73,7 +64,6 @@ items:
     type: field
     numericValue: '"Help"'
   - uid: excel.Excel.RibbonTab.home
-    isPreview: true
     name: home
     fullName: home
     langs:
@@ -81,7 +71,6 @@ items:
     type: field
     numericValue: '"Home"'
   - uid: excel.Excel.RibbonTab.insert
-    isPreview: true
     name: insert
     fullName: insert
     langs:
@@ -89,7 +78,6 @@ items:
     type: field
     numericValue: '"Insert"'
   - uid: excel.Excel.RibbonTab.others
-    isPreview: true
     name: others
     fullName: others
     langs:
@@ -97,7 +85,6 @@ items:
     type: field
     numericValue: '"Others"'
   - uid: excel.Excel.RibbonTab.pageLayout
-    isPreview: true
     name: pageLayout
     fullName: pageLayout
     langs:
@@ -105,7 +92,6 @@ items:
     type: field
     numericValue: '"PageLayout"'
   - uid: excel.Excel.RibbonTab.review
-    isPreview: true
     name: review
     fullName: review
     langs:
@@ -113,7 +99,6 @@ items:
     type: field
     numericValue: '"Review"'
   - uid: excel.Excel.RibbonTab.view
-    isPreview: true
     name: view
     fullName: view
     langs:

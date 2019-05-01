@@ -8,3 +8,36 @@ items:
       - typeScript
     type: interface
     package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.TextRangeUpdateData.font
+      - excel_release.Excel.Interfaces.TextRangeUpdateData.text
+  - uid: excel_release.Excel.Interfaces.TextRangeUpdateData.font
+    summary: |-
+      Returns a ShapeFont object that represents the font attributes for the text range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.Interfaces.ShapeFontUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeFontUpdateData
+  - uid: excel_release.Excel.Interfaces.TextRangeUpdateData.text
+    summary: |-
+      Represents the plain text content of the text range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string

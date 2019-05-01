@@ -699,7 +699,7 @@ items:
               myContentControl.tag = "Customer-Address";
               myContentControl.title = "Enter Customer Address Here:";
               myContentControl.style = "Normal";
-              myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'replace');
+              myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'Replace');
               myContentControl.cannotEdit = true;
 
               // Synchronize the document state by executing the queued commands,

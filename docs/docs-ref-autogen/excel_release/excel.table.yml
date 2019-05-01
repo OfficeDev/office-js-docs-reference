@@ -14,6 +14,7 @@ items:
       - office.OfficeExtension.ClientObject
     package: excel_release
     children:
+      - excel_release.Excel.Table.autoFilter
       - excel_release.Excel.Table.clearFilters
       - excel_release.Excel.Table.columns
       - excel_release.Excel.Table.context
@@ -46,6 +47,21 @@ items:
       - excel_release.Excel.Table.style
       - excel_release.Excel.Table.toJSON
       - excel_release.Excel.Table.worksheet
+  - uid: excel_release.Excel.Table.autoFilter
+    summary: |-
+      Represents the AutoFilter object of the table. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoFilter: Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
   - uid: excel_release.Excel.Table.clearFilters
     summary: |-
       Clears all the filters currently applied on the table.

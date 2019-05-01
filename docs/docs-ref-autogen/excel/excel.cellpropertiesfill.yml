@@ -7,9 +7,7 @@ items:
       -->, and `setColumnProperties`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellPropertiesFill
     fullName: Excel.CellPropertiesFill
     langs:
@@ -23,13 +21,10 @@ items:
       - excel.Excel.CellPropertiesFill.patternTintAndShade
       - excel.Excel.CellPropertiesFill.tintAndShade
   - uid: excel.Excel.CellPropertiesFill.color
-    summary: >-
+    summary: |-
       Represents the `format.fill.color` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -41,13 +36,10 @@ items:
         type:
           - string
   - uid: excel.Excel.CellPropertiesFill.pattern
-    summary: >-
+    summary: |-
       Represents the `format.fill.pattern` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pattern
     fullName: pattern
     langs:
@@ -65,13 +57,10 @@ items:
             "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
             "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
   - uid: excel.Excel.CellPropertiesFill.patternColor
-    summary: >-
+    summary: |-
       Represents the `format.fill.patternColor` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternColor
     fullName: patternColor
     langs:
@@ -83,13 +72,10 @@ items:
         type:
           - string
   - uid: excel.Excel.CellPropertiesFill.patternTintAndShade
-    summary: >-
+    summary: |-
       Represents the `format.fill.patternTintAndShade` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternTintAndShade
     fullName: patternTintAndShade
     langs:
@@ -101,13 +87,10 @@ items:
         type:
           - number
   - uid: excel.Excel.CellPropertiesFill.tintAndShade
-    summary: >-
+    summary: |-
       Represents the `format.fill.tintAndShade` property.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tintAndShade
     fullName: tintAndShade
     langs:

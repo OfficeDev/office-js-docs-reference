@@ -14,6 +14,9 @@ items:
     children:
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.$all
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.axisGroup
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.binOptions
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.boxwhiskerOptions
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.bubbleScale
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.chartType
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.dataLabels
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.doughnutHoleSize
@@ -22,21 +25,39 @@ items:
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.firstSliceAngle
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.format
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gapWidth
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMaximumColor
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMaximumType
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMaximumValue
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMidpointColor
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMidpointType
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMidpointValue
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMinimumColor
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMinimumType
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMinimumValue
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientStyle
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.hasDataLabels
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.invertColor
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.invertIfNegative
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.mapOptions
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.markerBackgroundColor
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.markerForegroundColor
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.markerSize
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.markerStyle
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.name
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.overlap
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.parentLabelStrategy
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.plotOrder
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.points
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.secondPlotSize
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.showConnectorLines
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.showLeaderLines
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.showShadow
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.smooth
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.splitType
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.splitValue
       - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars
+      - excel_release.Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars
   - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.$all
     name: $all
     fullName: $all
@@ -60,6 +81,53 @@ items:
     type: property
     syntax:
       content: 'axisGroup?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.binOptions
+    summary: |-
+      Encapsulates the bin options for histogram charts and pareto charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: binOptions
+    fullName: binOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'binOptions?: Excel.Interfaces.ChartBinOptionsLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBinOptionsLoadOptions
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.boxwhiskerOptions
+    summary: |-
+      Encapsulates the options for the box and whisker charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: boxwhiskerOptions
+    fullName: boxwhiskerOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.bubbleScale
+    summary: >-
+      This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property
+      only applies to bubble charts. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bubbleScale
+    fullName: bubbleScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bubbleScale?: boolean;'
       return:
         type:
           - boolean
@@ -191,6 +259,156 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMaximumColor
+    summary: |-
+      Returns or sets the color for maximum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMaximumColor
+    fullName: gradientMaximumColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMaximumColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMaximumType
+    summary: |-
+      Returns or sets the type for maximum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMaximumType
+    fullName: gradientMaximumType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMaximumType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMaximumValue
+    summary: |-
+      Returns or sets the maximum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMaximumValue
+    fullName: gradientMaximumValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMaximumValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMidpointColor
+    summary: |-
+      Returns or sets the color for midpoint value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMidpointColor
+    fullName: gradientMidpointColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMidpointColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMidpointType
+    summary: |-
+      Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMidpointType
+    fullName: gradientMidpointType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMidpointType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMidpointValue
+    summary: |-
+      Returns or sets the midpoint value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMidpointValue
+    fullName: gradientMidpointValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMidpointValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMinimumColor
+    summary: |-
+      Returns or sets the color for minimum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMinimumColor
+    fullName: gradientMinimumColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMinimumColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMinimumType
+    summary: |-
+      Returns or sets the type for minimum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMinimumType
+    fullName: gradientMinimumType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMinimumType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientMinimumValue
+    summary: |-
+      Returns or sets the minimum value of a region map chart series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientMinimumValue
+    fullName: gradientMinimumValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientMinimumValue?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.gradientStyle
+    summary: |-
+      Returns or sets series gradient style of a region map chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gradientStyle
+    fullName: gradientStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gradientStyle?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.hasDataLabels
     summary: |-
       Boolean value representing if the series has data labels or not.
@@ -203,6 +421,21 @@ items:
     type: property
     syntax:
       content: 'hasDataLabels?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.invertColor
+    summary: |-
+      Returns or sets the fill color for negative data points in a series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: invertColor
+    fullName: invertColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'invertColor?: boolean;'
       return:
         type:
           - boolean
@@ -221,6 +454,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.mapOptions
+    summary: |-
+      Encapsulates the options for a region map chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: mapOptions
+    fullName: mapOptions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartMapOptionsLoadOptions
   - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.markerBackgroundColor
     summary: |-
       Represents markers background color of a chart series.
@@ -313,6 +561,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.parentLabelStrategy
+    summary: |-
+      Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: parentLabelStrategy
+    fullName: parentLabelStrategy
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentLabelStrategy?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.plotOrder
     summary: |-
       Represents the plot order of a chart series within the chart group.
@@ -357,6 +620,36 @@ items:
     type: property
     syntax:
       content: 'secondPlotSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.showConnectorLines
+    summary: |-
+      Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showConnectorLines
+    fullName: showConnectorLines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showConnectorLines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.showLeaderLines
+    summary: |-
+      Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLeaderLines
+    fullName: showLeaderLines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLeaderLines?: boolean;'
       return:
         type:
           - boolean
@@ -405,6 +698,23 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.splitValue
+    summary: >-
+      Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie
+      chart. Read/Write.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: splitValue
+    fullName: splitValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'splitValue?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.varyByCategories
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
@@ -422,3 +732,33 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.xErrorBars
+    summary: |-
+      Represents the error bar object of a chart series.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: xErrorBars
+    fullName: xErrorBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'xErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
+  - uid: excel_release.Excel.Interfaces.ChartSeriesLoadOptions.yErrorBars
+    summary: |-
+      Represents the error bar object of a chart series.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: yErrorBars
+    fullName: yErrorBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartErrorBarsLoadOptions

@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.CellPropertiesFormat
-    summary: Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
+    summary: |-
+      Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellPropertiesFormat
     fullName: Excel.CellPropertiesFormat
     langs:
@@ -10,8 +13,12 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.CellPropertiesFormat.autoIndent
+      - excel_release.Excel.CellPropertiesFormat.borders
+      - excel_release.Excel.CellPropertiesFormat.fill
+      - excel_release.Excel.CellPropertiesFormat.font
       - excel_release.Excel.CellPropertiesFormat.horizontalAlignment
       - excel_release.Excel.CellPropertiesFormat.indentLevel
+      - excel_release.Excel.CellPropertiesFormat.protection
       - excel_release.Excel.CellPropertiesFormat.readingOrder
       - excel_release.Excel.CellPropertiesFormat.shrinkToFit
       - excel_release.Excel.CellPropertiesFormat.textOrientation
@@ -20,6 +27,10 @@ items:
       - excel_release.Excel.CellPropertiesFormat.verticalAlignment
       - excel_release.Excel.CellPropertiesFormat.wrapText
   - uid: excel_release.Excel.CellPropertiesFormat.autoIndent
+    summary: |-
+      Represents the `autoIndent` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
     fullName: autoIndent
     langs:
@@ -30,7 +41,56 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.CellPropertiesFormat.borders
+    summary: |-
+      Represents the `borders` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.CellBorderCollection;'
+      return:
+        type:
+          - excel.Excel.CellBorderCollection
+  - uid: excel_release.Excel.CellPropertiesFormat.fill
+    summary: |-
+      Represents the `fill` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fill?: Excel.CellPropertiesFill;'
+      return:
+        type:
+          - excel.Excel.CellPropertiesFill
+  - uid: excel_release.Excel.CellPropertiesFormat.font
+    summary: |-
+      Represents the `font` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Excel.CellPropertiesFont;'
+      return:
+        type:
+          - excel.Excel.CellPropertiesFont
   - uid: excel_release.Excel.CellPropertiesFormat.horizontalAlignment
+    summary: |-
+      Represents the `horizontalAlignment` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -46,6 +106,10 @@ items:
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
   - uid: excel_release.Excel.CellPropertiesFormat.indentLevel
+    summary: |-
+      Represents the `indentLevel` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: indentLevel
     fullName: indentLevel
     langs:
@@ -56,7 +120,26 @@ items:
       return:
         type:
           - number
+  - uid: excel_release.Excel.CellPropertiesFormat.protection
+    summary: |-
+      Represents the `protection` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'protection?: Excel.CellPropertiesProtection;'
+      return:
+        type:
+          - excel.Excel.CellPropertiesProtection
   - uid: excel_release.Excel.CellPropertiesFormat.readingOrder
+    summary: |-
+      Represents the `readingOrder` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: readingOrder
     langs:
@@ -68,6 +151,10 @@ items:
         type:
           - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
   - uid: excel_release.Excel.CellPropertiesFormat.shrinkToFit
+    summary: |-
+      Represents the `shrinkToFit` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
     fullName: shrinkToFit
     langs:
@@ -79,6 +166,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.CellPropertiesFormat.textOrientation
+    summary: |-
+      Represents the `textOrientation` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textOrientation
     fullName: textOrientation
     langs:
@@ -90,6 +181,10 @@ items:
         type:
           - number
   - uid: excel_release.Excel.CellPropertiesFormat.useStandardHeight
+    summary: |-
+      Represents the `useStandardHeight` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardHeight
     fullName: useStandardHeight
     langs:
@@ -101,6 +196,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.CellPropertiesFormat.useStandardWidth
+    summary: |-
+      Represents the `useStandardWidth` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useStandardWidth
     fullName: useStandardWidth
     langs:
@@ -112,6 +211,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.CellPropertiesFormat.verticalAlignment
+    summary: |-
+      Represents the `verticalAlignment` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -123,6 +226,10 @@ items:
         type:
           - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
   - uid: excel_release.Excel.CellPropertiesFormat.wrapText
+    summary: |-
+      Represents the `wrapText` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: wrapText
     fullName: wrapText
     langs:

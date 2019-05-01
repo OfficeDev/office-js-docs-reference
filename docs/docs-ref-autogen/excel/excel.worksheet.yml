@@ -53,6 +53,7 @@ items:
       - excel.Excel.Worksheet.onFormatChanged
       - excel.Excel.Worksheet.onRowSorted
       - excel.Excel.Worksheet.onSelectionChanged
+      - excel.Excel.Worksheet.onSingleClicked
       - excel.Excel.Worksheet.pageLayout
       - excel.Excel.Worksheet.pivotTables
       - excel.Excel.Worksheet.position
@@ -105,13 +106,10 @@ items:
           });
           ```
   - uid: excel.Excel.Worksheet.autoFilter
-    summary: >-
+    summary: |-
       Represents the AutoFilter object of the worksheet. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
     fullName: autoFilter
     langs:
@@ -277,8 +275,10 @@ items:
           type:
             - excel.Excel.Worksheet
   - uid: excel.Excel.Worksheet.delete
-    summary: |-
-      Deletes the worksheet from the workbook.
+    summary: >-
+      Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
+      delete operation will fail with a GeneralException.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: delete()
@@ -315,9 +315,7 @@ items:
       necessary. False if Excel doesn't recalculate the sheet.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableCalculation
     fullName: enableCalculation
     langs:
@@ -334,9 +332,7 @@ items:
       comprising one or more rectangular ranges.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'findAll(text, criteria)'
     fullName: 'findAll(text, criteria)'
     langs:
@@ -365,9 +361,7 @@ items:
       comprising one or more rectangular ranges.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'findAllOrNullObject(text, criteria)'
     fullName: 'findAllOrNullObject(text, criteria)'
     langs:
@@ -725,9 +719,7 @@ items:
       name.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRanges(address)
     fullName: getRanges(address)
     langs:
@@ -829,13 +821,10 @@ items:
           type:
             - boolean
   - uid: excel.Excel.Worksheet.horizontalPageBreaks
-    summary: >-
+    summary: |-
       Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalPageBreaks
     fullName: horizontalPageBreaks
     langs:
@@ -1169,13 +1158,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
   - uid: excel.Excel.Worksheet.onFormatChanged
-    summary: >-
+    summary: |-
       Occurs when format changed on a specific worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onFormatChanged
     fullName: onFormatChanged
     langs:
@@ -1236,14 +1222,29 @@ items:
               return context.sync();
           });
           ```
-  - uid: excel.Excel.Worksheet.pageLayout
+  - uid: excel.Excel.Worksheet.onSingleClicked
     summary: >-
-      Gets the PageLayout object of the worksheet.
+      Occurs when left-clicked/tapped operation happens in the worksheet.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
+    name: onSingleClicked
+    fullName: onSingleClicked
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
+  - uid: excel.Excel.Worksheet.pageLayout
+    summary: |-
+      Gets the PageLayout object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pageLayout
     fullName: pageLayout
     langs:
@@ -1300,13 +1301,10 @@ items:
         type:
           - excel.Excel.WorksheetProtection
   - uid: excel.Excel.Worksheet.replaceAll
-    summary: >-
+    summary: |-
       Finds and replaces the given string based on the criteria specified within the current worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'replaceAll(text, replacement, criteria)'
     fullName: 'replaceAll(text, replacement, criteria)'
     langs:
@@ -1382,13 +1380,10 @@ items:
           type:
             - excel.Excel.Worksheet
   - uid: excel.Excel.Worksheet.shapes
-    summary: >-
+    summary: |-
       Returns the collection of all the Shape objects on the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapes
     fullName: shapes
     langs:
@@ -1460,6 +1455,22 @@ items:
       return:
         type:
           - excel.Excel.SlicerCollection
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Pivot");
+              const slicer = sheet.slicers.add(
+                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+              );
+              slicer.name = "Fruit Slicer";
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.standardHeight
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
@@ -1559,13 +1570,10 @@ items:
           - excel.Excel.Interfaces.WorksheetData
         description: ''
   - uid: excel.Excel.Worksheet.verticalPageBreaks
-    summary: >-
+    summary: |-
       Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalPageBreaks
     fullName: verticalPageBreaks
     langs:

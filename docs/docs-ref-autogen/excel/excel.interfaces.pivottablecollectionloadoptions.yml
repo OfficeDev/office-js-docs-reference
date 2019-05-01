@@ -36,9 +36,7 @@ items:
       the user.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableDataValueEditing
     fullName: enableDataValueEditing
     langs:
@@ -95,13 +93,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotTableCollectionLoadOptions.useCustomSortLists
-    summary: >-
+    summary: |-
       For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useCustomSortLists
     fullName: useCustomSortLists
     langs:

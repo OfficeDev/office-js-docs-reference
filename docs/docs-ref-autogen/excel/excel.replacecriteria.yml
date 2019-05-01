@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ReplaceCriteria
-    summary: >-
+    summary: |-
       Represents the replace criteria to be used.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ReplaceCriteria
     fullName: Excel.ReplaceCriteria
     langs:
@@ -18,13 +15,10 @@ items:
       - excel.Excel.ReplaceCriteria.completeMatch
       - excel.Excel.ReplaceCriteria.matchCase
   - uid: excel.Excel.ReplaceCriteria.completeMatch
-    summary: >-
+    summary: |-
       Specifies whether the match needs to be complete or partial. Default is false (partial).
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: completeMatch
     fullName: completeMatch
     langs:
@@ -36,13 +30,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.ReplaceCriteria.matchCase
-    summary: >-
+    summary: |-
       Specifies whether the match is case sensitive. Default is false (insensitive).
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: matchCase
     fullName: matchCase
     langs:

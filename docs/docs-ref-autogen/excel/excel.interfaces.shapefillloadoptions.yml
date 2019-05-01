@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.ShapeFillLoadOptions
-    summary: >-
+    summary: |-
       Represents the fill formatting of a shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.ShapeFillLoadOptions
     fullName: Excel.Interfaces.ShapeFillLoadOptions
     langs:
@@ -20,7 +17,6 @@ items:
       - excel.Excel.Interfaces.ShapeFillLoadOptions.transparency
       - excel.Excel.Interfaces.ShapeFillLoadOptions.type
   - uid: excel.Excel.Interfaces.ShapeFillLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -37,9 +33,7 @@ items:
       named HTML color (e.g. "orange")
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: foregroundColor
     fullName: foregroundColor
     langs:
@@ -57,9 +51,7 @@ items:
       a gradient fill type.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: transparency
     fullName: transparency
     langs:
@@ -71,13 +63,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.ShapeFillLoadOptions.type
-    summary: >-
+    summary: |-
       Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:

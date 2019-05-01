@@ -76,13 +76,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.RangeFormat.autoIndent
-    summary: >-
+    summary: |-
       Indicates if text is automatically indented when text alignment is set to equal distribution.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoIndent
     fullName: autoIndent
     langs:
@@ -189,13 +186,10 @@ items:
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
   - uid: excel.Excel.RangeFormat.indentLevel
-    summary: >-
+    summary: |-
       An integer from 0 to 250 that indicates the indent level.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: indentLevel
     fullName: indentLevel
     langs:
@@ -363,13 +357,10 @@ items:
         type:
           - excel.Excel.FormatProtection
   - uid: excel.Excel.RangeFormat.readingOrder
-    summary: >-
+    summary: |-
       The reading order for the range.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: readingOrder
     langs:
@@ -444,13 +435,10 @@ items:
           type:
             - excel.Excel.RangeFormat
   - uid: excel.Excel.RangeFormat.shrinkToFit
-    summary: >-
+    summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shrinkToFit
     fullName: shrinkToFit
     langs:

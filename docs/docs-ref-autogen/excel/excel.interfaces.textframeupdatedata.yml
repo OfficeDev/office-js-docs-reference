@@ -26,9 +26,7 @@ items:
       text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoSizeSetting
     fullName: autoSizeSetting
     langs:
@@ -42,13 +40,10 @@ items:
         type:
           - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
-    summary: >-
+    summary: |-
       Represents the bottom margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottomMargin
     fullName: bottomMargin
     langs:
@@ -60,13 +55,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
-    summary: >-
+    summary: |-
       Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -82,13 +74,10 @@ items:
             Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
             | "ThaiDistributed"
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
-    summary: >-
+    summary: |-
       Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalOverflow
     fullName: horizontalOverflow
     langs:
@@ -100,13 +89,10 @@ items:
         type:
           - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
-    summary: >-
+    summary: |-
       Represents the left margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: leftMargin
     fullName: leftMargin
     langs:
@@ -118,13 +104,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.orientation
-    summary: >-
+    summary: |-
       Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: orientation
     fullName: orientation
     langs:
@@ -145,9 +128,7 @@ items:
       Excel.ShapeTextReadingOrder for details.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: readingOrder
     langs:
@@ -159,13 +140,10 @@ items:
         type:
           - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
-    summary: >-
+    summary: |-
       Represents the right margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rightMargin
     fullName: rightMargin
     langs:
@@ -177,13 +155,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.topMargin
-    summary: >-
+    summary: |-
       Represents the top margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topMargin
     fullName: topMargin
     langs:
@@ -195,13 +170,10 @@ items:
         type:
           - number
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
-    summary: >-
+    summary: |-
       Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -215,13 +187,10 @@ items:
         type:
           - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
   - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
-    summary: >-
+    summary: |-
       Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalOverflow
     fullName: verticalOverflow
     langs:

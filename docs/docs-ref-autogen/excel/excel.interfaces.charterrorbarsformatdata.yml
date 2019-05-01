@@ -11,13 +11,10 @@ items:
     children:
       - excel.Excel.Interfaces.ChartErrorBarsFormatData.line
   - uid: excel.Excel.Interfaces.ChartErrorBarsFormatData.line
-    summary: >-
-      Represents chart line formatting.
+    summary: |-
+      Represents the chart line formatting.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: line
     fullName: line
     langs:

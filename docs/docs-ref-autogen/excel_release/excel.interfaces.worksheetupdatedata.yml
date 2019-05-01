@@ -9,13 +9,32 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.WorksheetUpdateData.enableCalculation
       - excel_release.Excel.Interfaces.WorksheetUpdateData.name
+      - excel_release.Excel.Interfaces.WorksheetUpdateData.pageLayout
       - excel_release.Excel.Interfaces.WorksheetUpdateData.position
       - excel_release.Excel.Interfaces.WorksheetUpdateData.showGridlines
       - excel_release.Excel.Interfaces.WorksheetUpdateData.showHeadings
       - excel_release.Excel.Interfaces.WorksheetUpdateData.standardWidth
       - excel_release.Excel.Interfaces.WorksheetUpdateData.tabColor
       - excel_release.Excel.Interfaces.WorksheetUpdateData.visibility
+  - uid: excel_release.Excel.Interfaces.WorksheetUpdateData.enableCalculation
+    summary: >-
+      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableCalculation
+    fullName: enableCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableCalculation?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorksheetUpdateData.name
     summary: |-
       The display name of the worksheet.
@@ -31,6 +50,21 @@ items:
       return:
         type:
           - string
+  - uid: excel_release.Excel.Interfaces.WorksheetUpdateData.pageLayout
+    summary: |-
+      Gets the PageLayout object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLayout?: Excel.Interfaces.PageLayoutUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PageLayoutUpdateData
   - uid: excel_release.Excel.Interfaces.WorksheetUpdateData.position
     summary: |-
       The zero-based position of the worksheet within the workbook.

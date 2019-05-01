@@ -13,9 +13,12 @@ items:
     package: excel_release
     children:
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.$all
+      - excel_release.Excel.Interfaces.WorksheetLoadOptions.autoFilter
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.charts
+      - excel_release.Excel.Interfaces.WorksheetLoadOptions.enableCalculation
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.id
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.name
+      - excel_release.Excel.Interfaces.WorksheetLoadOptions.pageLayout
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.position
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.protection
       - excel_release.Excel.Interfaces.WorksheetLoadOptions.showGridlines
@@ -36,6 +39,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.WorksheetLoadOptions.autoFilter
+    summary: |-
+      Represents the AutoFilter object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFilter
+    fullName: autoFilter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.AutoFilterLoadOptions
   - uid: excel_release.Excel.Interfaces.WorksheetLoadOptions.charts
     summary: |-
       Returns collection of charts that are part of the worksheet.
@@ -51,6 +69,23 @@ items:
       return:
         type:
           - excel.Excel.Interfaces.ChartCollectionLoadOptions
+  - uid: excel_release.Excel.Interfaces.WorksheetLoadOptions.enableCalculation
+    summary: >-
+      Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
+      necessary. False if Excel doesn't recalculate the sheet.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableCalculation
+    fullName: enableCalculation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableCalculation?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.WorksheetLoadOptions.id
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
@@ -83,6 +118,21 @@ items:
       return:
         type:
           - boolean
+  - uid: excel_release.Excel.Interfaces.WorksheetLoadOptions.pageLayout
+    summary: |-
+      Gets the PageLayout object of the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageLayout?: Excel.Interfaces.PageLayoutLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PageLayoutLoadOptions
   - uid: excel_release.Excel.Interfaces.WorksheetLoadOptions.position
     summary: |-
       The zero-based position of the worksheet within the workbook.

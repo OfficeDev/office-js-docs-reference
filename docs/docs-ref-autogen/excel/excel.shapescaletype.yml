@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeScaleType
-    summary: >-
+    summary: |-
       Specifies whether the shape is scaled relative to its original or current size.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeScaleType
     fullName: Excel.ShapeScaleType
     langs:
@@ -18,7 +15,6 @@ items:
       - excel.Excel.ShapeScaleType.currentSize
       - excel.Excel.ShapeScaleType.originalSize
   - uid: excel.Excel.ShapeScaleType.currentSize
-    isPreview: true
     name: currentSize
     fullName: currentSize
     langs:
@@ -26,7 +22,6 @@ items:
     type: field
     numericValue: '"CurrentSize"'
   - uid: excel.Excel.ShapeScaleType.originalSize
-    isPreview: true
     name: originalSize
     fullName: originalSize
     langs:

@@ -14,7 +14,6 @@ items:
       - excel.Excel.Interfaces.CommentReplyData.content
       - excel.Excel.Interfaces.CommentReplyData.creationDate
       - excel.Excel.Interfaces.CommentReplyData.id
-      - excel.Excel.Interfaces.CommentReplyData.isParent
   - uid: excel.Excel.Interfaces.CommentReplyData.authorEmail
     summary: >-
       Get author email of the comment reply.
@@ -105,21 +104,3 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentReplyData.isParent
-    summary: >-
-      Represents whether it is a comment thread or reply. Always return false here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: isParent
-    fullName: isParent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isParent?: boolean;'
-      return:
-        type:
-          - boolean

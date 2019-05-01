@@ -32,13 +32,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotLayoutLoadOptions.autoFormat
-    summary: >-
+    summary: |-
       Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFormat
     fullName: autoFormat
     langs:
@@ -90,9 +87,7 @@ items:
       pivoting, sorting, or changing page field items.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: preserveFormatting
     fullName: preserveFormatting
     langs:

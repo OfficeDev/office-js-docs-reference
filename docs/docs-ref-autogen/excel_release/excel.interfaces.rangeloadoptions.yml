@@ -28,6 +28,7 @@ items:
       - excel_release.Excel.Interfaces.RangeLoadOptions.hyperlink
       - excel_release.Excel.Interfaces.RangeLoadOptions.isEntireColumn
       - excel_release.Excel.Interfaces.RangeLoadOptions.isEntireRow
+      - excel_release.Excel.Interfaces.RangeLoadOptions.linkedDataTypeState
       - excel_release.Excel.Interfaces.RangeLoadOptions.numberFormat
       - excel_release.Excel.Interfaces.RangeLoadOptions.numberFormatLocal
       - excel_release.Excel.Interfaces.RangeLoadOptions.rowCount
@@ -283,6 +284,21 @@ items:
     type: property
     syntax:
       content: 'isEntireRow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.RangeLoadOptions.linkedDataTypeState
+    summary: |-
+      Represents the data type state of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: linkedDataTypeState
+    fullName: linkedDataTypeState
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'linkedDataTypeState?: boolean;'
       return:
         type:
           - boolean

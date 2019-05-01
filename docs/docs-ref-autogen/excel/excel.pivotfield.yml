@@ -260,9 +260,7 @@ items:
       sort when there are multiple values from the same DataPivotHierarchy.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
     fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
     langs:
@@ -299,9 +297,7 @@ items:
       sort when there are multiple values from the same DataPivotHierarchy.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
     fullName: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
     langs:

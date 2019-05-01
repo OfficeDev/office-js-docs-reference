@@ -99,7 +99,7 @@ tryCatch(async () => {
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
     );
 
-    console.log("\ncreate file: excel_release.d.ts");
+    console.log("\ncreate file: excel.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel-release/excel.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")

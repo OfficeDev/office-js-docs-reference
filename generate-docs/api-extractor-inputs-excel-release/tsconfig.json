@@ -18,5 +18,5 @@
       "dom"
     ]
   },
-  "include": [ "excel_release.d.ts" ]
+  "include": [ "excel.d.ts" ]
 }

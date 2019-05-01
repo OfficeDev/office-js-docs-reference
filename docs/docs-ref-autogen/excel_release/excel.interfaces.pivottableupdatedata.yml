@@ -9,7 +9,24 @@ items:
     type: interface
     package: excel_release
     children:
+      - excel_release.Excel.Interfaces.PivotTableUpdateData.enableDataValueEditing
       - excel_release.Excel.Interfaces.PivotTableUpdateData.name
+      - excel_release.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
+  - uid: excel_release.Excel.Interfaces.PivotTableUpdateData.enableDataValueEditing
+    summary: |-
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel_release.Excel.Interfaces.PivotTableUpdateData.name
     summary: |-
       Name of the PivotTable.
@@ -25,3 +42,18 @@ items:
       return:
         type:
           - string
+  - uid: excel_release.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
+    summary: |-
+      Specifies whether the PivotTable uses custom lists when sorting.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists?: boolean;'
+      return:
+        type:
+          - boolean

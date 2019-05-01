@@ -341,13 +341,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.ConditionalFormat.getRanges
-    summary: >-
+    summary: |-
       Returns the RangeAreas, comprising one or more rectangular ranges, the conditonal format is applied to. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRanges()
     fullName: getRanges()
     langs:

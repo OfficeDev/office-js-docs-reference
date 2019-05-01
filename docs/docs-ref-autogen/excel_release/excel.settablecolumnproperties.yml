@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel_release.Excel.SettableColumnProperties
-    summary: Represents the input parameter of setColumnProperties.
+    summary: |-
+      Represents the input parameter of setColumnProperties.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.SettableColumnProperties
     fullName: Excel.SettableColumnProperties
     langs:
@@ -14,6 +17,10 @@ items:
       - excel_release.Excel.SettableColumnProperties.columnHidden
       - excel_release.Excel.SettableColumnProperties.format
   - uid: excel_release.Excel.SettableColumnProperties.columnHidden
+    summary: |-
+      Represents the `columnHidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: columnHidden
     fullName: columnHidden
     langs:
@@ -25,6 +32,10 @@ items:
         type:
           - boolean
   - uid: excel_release.Excel.SettableColumnProperties.format
+    summary: |-
+      Represents the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:

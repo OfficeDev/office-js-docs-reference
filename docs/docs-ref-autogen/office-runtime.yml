@@ -11,26 +11,27 @@ items:
       - office-runtime.OfficeRuntime.Dialog
       - office-runtime.OfficeRuntime.displayWebDialog
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions
+      - office-runtime.OfficeRuntime.Storage
   - uid: office-runtime.OfficeRuntime.displayWebDialog
-    summary: Enables you to pop up a web dialog box.
+    summary: Method that enables a pop up web dialog box.
     name: OfficeRuntime.displayWebDialog
     fullName: OfficeRuntime.displayWebDialog
     langs:
       - typeScript
     type: function
     syntax:
-      content: 'export function displayWebDialog(url: string, options: DisplayWebDialogOptions): Promise<Dialog>;'
+      content: 'export function displayWebDialog(url: string, options?: DisplayWebDialogOptions): Promise<Dialog>;'
       return:
         type:
           - Promise<Dialog>
         description: ''
       parameters:
         - id: url
-          description: '*'
+          description: Must be a string.
           type:
             - string
         - id: options
-          description: ''
+          description: Optional parameter. Must be of type DisplayWebDialogOptions.
           type:
             - office-runtime.OfficeRuntime.DisplayWebDialogOptions
 references:
@@ -40,3 +41,5 @@ references:
     name: OfficeRuntime.Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
     name: OfficeRuntime.DisplayWebDialogOptions
+  - uid: office-runtime.OfficeRuntime.Storage
+    name: OfficeRuntime.Storage

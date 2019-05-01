@@ -23,6 +23,7 @@ items:
       - excel_release.Excel.RangeBorderCollection.load
       - excel_release.Excel.RangeBorderCollection.load_1
       - excel_release.Excel.RangeBorderCollection.load_2
+      - excel_release.Excel.RangeBorderCollection.tintAndShade
       - excel_release.Excel.RangeBorderCollection.toJSON
   - uid: excel_release.Excel.RangeBorderCollection.context
     summary: >-
@@ -300,6 +301,24 @@ items:
           description: ''
           type:
             - office.OfficeExtension.LoadOption
+  - uid: excel_release.Excel.RangeBorderCollection.tintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and
+      1 (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
+      uniform tintAndShade setting.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
   - uid: excel_release.Excel.RangeBorderCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs
-    summary: >-
+    summary: |-
       Provides information about the workbook's onAutoSaveSettingChanged event.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorkbookAutoSaveSettingChangedEventArgs
     fullName: Excel.WorkbookAutoSaveSettingChangedEventArgs
     langs:
@@ -17,13 +14,10 @@ items:
     children:
       - excel.Excel.WorkbookAutoSaveSettingChangedEventArgs.type
   - uid: excel.Excel.WorkbookAutoSaveSettingChangedEventArgs.type
-    summary: >-
+    summary: |-
       Represents the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
