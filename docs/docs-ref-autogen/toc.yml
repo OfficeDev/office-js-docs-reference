@@ -32,6 +32,8 @@ items:
                     uid: office-runtime.OfficeRuntime.Dialog
                   - name: DisplayWebDialogOptions
                     uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+                  - name: Storage
+                    uid: office-runtime.OfficeRuntime.Storage
           - name: Excel - Preview
             uid: excel
             items:

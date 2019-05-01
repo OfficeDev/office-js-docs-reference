@@ -1,14 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office-runtime.OfficeRuntime.AsyncStorage
-    summary: 'Asynchronous, global, and persistent key-value storage that can be used by Excel Custom Functions.'
-    remarks: |-
-      Each add-in instance has its own storage partition, unique to a user and their device.
-
-      The default amount of total storage allowed per add-in is 5MB.
-
-      Each method listed below returns a Promise object.
-    isPreview: true
+    summary: >-
+      Asynchronous, global, and persistent key-value storage. Storage limit is 10 MB per domain, which may be shared by
+      multiple add-ins.
+    remarks: 'Will be deprecated in the future, please use Office.Storage instead.'
     name: OfficeRuntime.AsyncStorage
     fullName: OfficeRuntime.AsyncStorage
     langs:
@@ -24,8 +20,7 @@ items:
       - office-runtime.OfficeRuntime.AsyncStorage.removeItem
       - office-runtime.OfficeRuntime.AsyncStorage.setItem
   - uid: office-runtime.OfficeRuntime.AsyncStorage.getAllKeys
-    summary: Returns a Promise with all keys.
-    isPreview: true
+    summary: Retrieves all keys and invokes a callback when finished. Returns a Promise.
     name: getAllKeys(callback)
     fullName: getAllKeys(callback)
     langs:
@@ -43,8 +38,7 @@ items:
           type:
             - '(error?: Error, keys?: string[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.getItem
-    summary: Retrieves an object based on a key and invokes a callback when finished. Returns a Promise.
-    isPreview: true
+    summary: 'Retrieves an item by key, then issues a callback. Returns a Promise.'
     name: 'getItem(key, callback)'
     fullName: 'getItem(key, callback)'
     langs:
@@ -58,16 +52,15 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The name of the key to retrieve. Must be a string.
           type:
             - string
         - id: callback
-          description: ''
+          description: Returned result is a string.
           type:
             - '(error?: Error, result?: string) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiGet
-    summary: 'Fetches a batch of keys, specified in the `keys` array. When a key doesn''t exist, returns null.'
-    isPreview: true
+    summary: Retrieves multiple items from storage and invokes a callback when finished. Returns a Promise.
     name: 'multiGet(keys, callback)'
     fullName: 'multiGet(keys, callback)'
     langs:
@@ -81,7 +74,7 @@ items:
         description: ''
       parameters:
         - id: keys
-          description: ''
+          description: Keys of the items to be retrieved. Must be an array of strings.
           type:
             - 'string[]'
         - id: callback
@@ -89,8 +82,7 @@ items:
           type:
             - '(errors?: Error[], result?: string[][]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiRemove
-    summary: 'Deletes a batch of keys, specified in the `keys` array.'
-    isPreview: true
+    summary: Removes multiple items from storage and invokes a callback when finished. Returns a Promise.
     name: 'multiRemove(keys, callback)'
     fullName: 'multiRemove(keys, callback)'
     langs:
@@ -104,7 +96,7 @@ items:
         description: ''
       parameters:
         - id: keys
-          description: ''
+          description: Keys of the items to be removed. Must be an array of strings.
           type:
             - 'string[]'
         - id: callback
@@ -112,8 +104,7 @@ items:
           type:
             - '(errors?: Error[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.multiSet
-    summary: 'Stores multiple key-value pairs in one batch. Returns a Promise. When a key doesn''t exist, returns null.'
-    isPreview: true
+    summary: Sets multiple key-value pairs and invokes a callback when finished. Returns a Promise.
     name: 'multiSet(keyValuePairs, callback)'
     fullName: 'multiSet(keyValuePairs, callback)'
     langs:
@@ -127,7 +118,7 @@ items:
         description: ''
       parameters:
         - id: keyValuePairs
-          description: ''
+          description: Must be arrays of strings.
           type:
             - 'string[][]'
         - id: callback
@@ -135,8 +126,9 @@ items:
           type:
             - '(errors?: Error[]) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.removeItem
-    summary: Removes an item for specified key and invokes a callback when finished. Returns a Promise.
-    isPreview: true
+    summary: >-
+      Removes items by key and invokes a callback when finished. It returns a Promise that resolves to an object
+      containing the keys and values requested.
     name: 'removeItem(key, callback)'
     fullName: 'removeItem(key, callback)'
     langs:
@@ -150,7 +142,7 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The key of the item to be removed. Must be a string.
           type:
             - string
         - id: callback
@@ -158,8 +150,7 @@ items:
           type:
             - '(error?: Error) => void'
   - uid: office-runtime.OfficeRuntime.AsyncStorage.setItem
-    summary: Assigns the value for a key-value pair and invokes a callback when finished. Returns a Promise.
-    isPreview: true
+    summary: Creates a new key-value pair in storage or updates an existing key with a new value. Returns a Promise.
     name: 'setItem(key, value, callback)'
     fullName: 'setItem(key, value, callback)'
     langs:
@@ -173,11 +164,11 @@ items:
         description: ''
       parameters:
         - id: key
-          description: ''
+          description: The name of the key for the key-value pair. Must be a string.
           type:
             - string
         - id: value
-          description: ''
+          description: The name of the value. Must be a string.
           type:
             - string
         - id: callback
