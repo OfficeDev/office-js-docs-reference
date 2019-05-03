@@ -7,7 +7,6 @@ items:
       - typeScript
     type: package
     children:
-      - office-runtime.OfficeRuntime.AsyncStorage
       - office-runtime.OfficeRuntime.Dialog
       - office-runtime.OfficeRuntime.displayWebDialog
       - office-runtime.OfficeRuntime.DisplayWebDialogOptions
@@ -35,8 +34,6 @@ items:
           type:
             - office-runtime.OfficeRuntime.DisplayWebDialogOptions
 references:
-  - uid: office-runtime.OfficeRuntime.AsyncStorage
-    name: OfficeRuntime.AsyncStorage
   - uid: office-runtime.OfficeRuntime.Dialog
     name: OfficeRuntime.Dialog
   - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
