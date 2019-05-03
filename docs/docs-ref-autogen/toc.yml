@@ -26,8 +26,6 @@ items:
               - name: Office runtime
                 uid: office-runtime
                 items:
-                  - name: AsyncStorage
-                    uid: office-runtime.OfficeRuntime.AsyncStorage
                   - name: Dialog
                     uid: office-runtime.OfficeRuntime.Dialog
                   - name: DisplayWebDialogOptions
