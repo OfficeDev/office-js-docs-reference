@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.0.13",
+    "toolVersion": "7.1.0",
     "schemaVersion": 1000
   },
   "kind": "Package",
@@ -10474,7 +10474,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": " | \"ContentControlDeleted\" | \"ContentControlSelectionChanged\" | \"ContentControlDataChanged\" | \"ContentControlAdded\""
+                      "text": " | \"ContentControlDeleted\" | \"ContentControlSelectionChanged\" | \"ContentControlDataChanged\" | \"ContentControlAdded\" | \"AnnotationAdded\" | \"AnnotationChanged\" | \"AnnotationDeleted\""
                     },
                     {
                       "kind": "Content",
@@ -19119,6 +19119,81 @@
               "members": [
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "annotationAdded",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been added to the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationAdded"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationAdded\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationAdded",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationChanged",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been updated in the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationChanged"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationChanged\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationChanged",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationDeleted",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been deleted from the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationDeleted"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationDeleted\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationDeleted",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "contentControlAdded",
                   "docComment": "/**\n * ContentControlAdded represents the event a content control has been added to the document.\n */\n",
                   "excerptTokens": [
@@ -19477,7 +19552,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "(highlightColor:instance)",
-                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -32465,7 +32540,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "highlightColor",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -32849,7 +32924,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "highlightColor",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -33192,7 +33267,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "highlightColor",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -51142,8 +51217,12 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Array"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any[]"
+                      "text": "<string | number>"
                     },
                     {
                       "kind": "Content",
@@ -51160,8 +51239,8 @@
                   ],
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 16,
-                    "endIndex": 17
+                    "startIndex": 17,
+                    "endIndex": 18
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -51184,7 +51263,7 @@
                       "parameterName": "formatString",
                       "parameterTypeTokenRange": {
                         "startIndex": 14,
-                        "endIndex": 15
+                        "endIndex": 16
                       }
                     }
                   ],
@@ -51244,8 +51323,12 @@
                       "text": "?: "
                     },
                     {
+                      "kind": "Reference",
+                      "text": "Array"
+                    },
+                    {
                       "kind": "Content",
-                      "text": "any[]"
+                      "text": "<string | number>"
                     },
                     {
                       "kind": "Content",
@@ -51262,8 +51345,8 @@
                   ],
                   "isStatic": false,
                   "returnTypeTokenRange": {
-                    "startIndex": 14,
-                    "endIndex": 15
+                    "startIndex": 15,
+                    "endIndex": 16
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -51286,7 +51369,7 @@
                       "parameterName": "formatString",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
-                        "endIndex": 13
+                        "endIndex": 14
                       }
                     }
                   ],
@@ -64248,7 +64331,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `RequestContext` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",

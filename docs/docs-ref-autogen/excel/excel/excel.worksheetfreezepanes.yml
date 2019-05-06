@@ -52,6 +52,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -86,6 +87,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -119,6 +121,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -173,6 +176,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -231,6 +235,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

@@ -55,13 +55,10 @@ items:
       - excel.Excel.Chart.width
       - excel.Excel.Chart.worksheet
   - uid: excel.Excel.Chart.activate
-    summary: >-
-      Activate the chart in the Excel UI.
+    summary: |-
+      Activates the chart in the Excel UI.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: activate()
     fullName: activate()
     langs:
@@ -195,6 +192,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -259,6 +257,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -438,6 +437,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -499,6 +499,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -536,6 +537,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -567,6 +569,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -582,13 +585,10 @@ items:
           });
           ```
   - uid: excel.Excel.Chart.pivotOptions
-    summary: >-
-      Encapsulates the options for the pivot chart. Read-only.
+    summary: |-
+      Encapsulates the options for a pivot chart. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pivotOptions
     fullName: pivotOptions
     langs:
@@ -768,6 +768,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -811,6 +812,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

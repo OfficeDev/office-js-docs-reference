@@ -50,6 +50,9 @@ items:
                 uid: excel.Excel.SheetVisibility
               - name: VerticalAlignment
                 uid: excel.Excel.VerticalAlignment
+          - name: Icon Sets
+            uid: ''
+            items: []
           - name: Application
             uid: excel.Excel.Application
           - name: Binding
@@ -124,6 +127,8 @@ items:
             uid: excel.Excel.RangeFormat
           - name: RequestContext
             uid: excel.Excel.RequestContext
+          - name: RunOptions
+            uid: excel.Excel.RunOptions
           - name: Session
             uid: excel.Excel.Session
           - name: Table

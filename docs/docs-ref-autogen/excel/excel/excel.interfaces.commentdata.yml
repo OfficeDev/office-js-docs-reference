@@ -14,7 +14,6 @@ items:
       - excel.Excel.Interfaces.CommentData.content
       - excel.Excel.Interfaces.CommentData.creationDate
       - excel.Excel.Interfaces.CommentData.id
-      - excel.Excel.Interfaces.CommentData.isParent
       - excel.Excel.Interfaces.CommentData.replies
   - uid: excel.Excel.Interfaces.CommentData.authorEmail
     summary: >-
@@ -107,24 +106,6 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CommentData.isParent
-    summary: >-
-      Represents whether it is a comment thread or reply. Always return true here. Read-only.
-
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: isParent
-    fullName: isParent
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'isParent?: boolean;'
-      return:
-        type:
-          - boolean
   - uid: excel.Excel.Interfaces.CommentData.replies
     summary: >-
       Represents a collection of reply objects associated with the comment. Read-only.

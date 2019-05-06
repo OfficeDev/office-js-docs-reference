@@ -93,6 +93,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -152,6 +153,7 @@ items:
           - OfficeExtension.ClientResult<number>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -210,6 +212,7 @@ items:
         type:
           - word.Word.Setting
         description: |-
+
 
           #### Examples
 

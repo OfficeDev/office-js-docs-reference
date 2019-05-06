@@ -55,6 +55,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -89,6 +90,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -122,6 +124,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -208,6 +211,7 @@ items:
         type:
           - excel.Excel.Binding
         description: |-
+
 
           #### Examples
 

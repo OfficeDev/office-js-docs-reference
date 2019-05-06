@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.SpecialCellType
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.SpecialCellType
     fullName: Excel.SpecialCellType
     langs:
@@ -22,7 +19,6 @@ items:
       - excel.Excel.SpecialCellType.visible
   - uid: excel.Excel.SpecialCellType.blanks
     summary: Cells with no content.
-    isPreview: true
     name: blanks
     fullName: blanks
     langs:
@@ -31,7 +27,6 @@ items:
     numericValue: '"Blanks"'
   - uid: excel.Excel.SpecialCellType.conditionalFormats
     summary: All cells with conditional formats
-    isPreview: true
     name: conditionalFormats
     fullName: conditionalFormats
     langs:
@@ -40,7 +35,6 @@ items:
     numericValue: '"ConditionalFormats"'
   - uid: excel.Excel.SpecialCellType.constants
     summary: Cells containing constants.
-    isPreview: true
     name: constants
     fullName: constants
     langs:
@@ -49,7 +43,6 @@ items:
     numericValue: '"Constants"'
   - uid: excel.Excel.SpecialCellType.dataValidations
     summary: Cells having validation criteria.
-    isPreview: true
     name: dataValidations
     fullName: dataValidations
     langs:
@@ -58,7 +51,6 @@ items:
     numericValue: '"DataValidations"'
   - uid: excel.Excel.SpecialCellType.formulas
     summary: Cells containing formulas.
-    isPreview: true
     name: formulas
     fullName: formulas
     langs:
@@ -67,7 +59,6 @@ items:
     numericValue: '"Formulas"'
   - uid: excel.Excel.SpecialCellType.sameConditionalFormat
     summary: Cells having the same conditional format as the first cell in the range.
-    isPreview: true
     name: sameConditionalFormat
     fullName: sameConditionalFormat
     langs:
@@ -76,7 +67,6 @@ items:
     numericValue: '"SameConditionalFormat"'
   - uid: excel.Excel.SpecialCellType.sameDataValidation
     summary: Cells having the same data validation criteria as the first cell in the range.
-    isPreview: true
     name: sameDataValidation
     fullName: sameDataValidation
     langs:
@@ -85,7 +75,6 @@ items:
     numericValue: '"SameDataValidation"'
   - uid: excel.Excel.SpecialCellType.visible
     summary: Cells that are visible.
-    isPreview: true
     name: visible
     fullName: visible
     langs:

@@ -81,6 +81,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -156,6 +157,7 @@ items:
           - word.Word.Font
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -210,6 +212,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -251,6 +254,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -353,6 +357,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -431,6 +436,7 @@ items:
           - word.Word.ContentControl
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -474,6 +480,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -556,6 +563,7 @@ items:
           - word.Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -634,6 +642,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 
@@ -769,6 +778,7 @@ items:
           - word.Word.Paragraph
         description: >-
 
+
           #### Examples
 
 
@@ -894,11 +904,12 @@ items:
           - word.Word.Table
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-            // We need a 2D array to hold the initial table values
+            // Use a two-dimensional array to hold the initial table values.
             let data = [
               ["Tokyo", "Beijing", "Seattle"],
               ["Apple", "Orange", "Pineapple"]
@@ -980,6 +991,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -1152,6 +1164,57 @@ items:
       return:
         type:
           - word.Word.ParagraphCollection
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+            let paragraphs = context.document.body.paragraphs;
+            paragraphs.load("text");
+            await context.sync();
+
+            let text = [];
+            paragraphs.items.forEach((item) => {
+              let paragraph = item.text.trim();
+              if (paragraph) {
+                paragraph.split(" ").forEach((term) => {
+                  let currentTerm = term.trim();
+                  if (currentTerm) {
+                    text.push(currentTerm);
+                  }
+                });
+              }
+            });
+
+            let makeTextDistinct = new Set(text);
+            let distinctText = Array.from(makeTextDistinct);
+            let allSearchResults = [];
+
+            for (let i = 0; i < distinctText.length; i++) {
+              let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+              results.load("text");
+
+              // Map search term with its results.
+              let correlatedResults = {
+                searchTerm: distinctText[i],
+                hits: results
+              };
+
+              allSearchResults.push(correlatedResults);
+            }
+
+            await context.sync();
+
+            // Display counts.
+            allSearchResults.forEach((result) => {
+              let length = result.hits.items.length;
+
+              console.log("Search term: " + result.searchTerm + " => Count: " + length);
+            });
+          });
+          ```
   - uid: word.Word.Body.parentBody
     summary: >-
       Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there
@@ -1276,6 +1339,7 @@ items:
           - word.Word.RangeCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1323,34 +1387,81 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              let results = context.document.body.search("Online");
-              results.load("font/highlightColor");
+            let results = context.document.body.search("Online");
+            results.load("length");
 
-              await context.sync();
+            await context.sync();
 
-              // Let's traverse the search results... and highlight...
-              for (let i = 0; i < results.items.length; i++) {
-                  results.items[i].font.highlightColor = "yellow";
-              }
+            // Let's traverse the search results... and highlight...
+            for (let i = 0; i < results.items.length; i++) {
+              results.items[i].font.highlightColor = "yellow";
+            }
 
-              await context.sync();
+            await context.sync();
           });
           ```
           ```typescript
           await Word.run(async (context) => {
-              // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes (i.e. we are using wildcards).
-              let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
-              results.load("font/highlightColor, font/color");
+            // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
+            // (i.e. use wildcards).
+            let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+            results.load("length");
 
-              await context.sync();
+            await context.sync();
 
-              // Let's traverse the search results... and highlight...
-              for (let i = 0; i < results.items.length; i++) {
-                  results.items[i].font.highlightColor = "red";
-                  results.items[i].font.color = "white";
+            // Let's traverse the search results... and highlight...
+            for (let i = 0; i < results.items.length; i++) {
+              results.items[i].font.highlightColor = "red";
+              results.items[i].font.color = "white";
+            }
+
+            await context.sync();
+          });
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+            let paragraphs = context.document.body.paragraphs;
+            paragraphs.load("text");
+            await context.sync();
+
+            let text = [];
+            paragraphs.items.forEach((item) => {
+              let paragraph = item.text.trim();
+              if (paragraph) {
+                paragraph.split(" ").forEach((term) => {
+                  let currentTerm = term.trim();
+                  if (currentTerm) {
+                    text.push(currentTerm);
+                  }
+                });
               }
+            });
 
-              await context.sync();
+            let makeTextDistinct = new Set(text);
+            let distinctText = Array.from(makeTextDistinct);
+            let allSearchResults = [];
+
+            for (let i = 0; i < distinctText.length; i++) {
+              let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+              results.load("text");
+
+              // Map search term with its results.
+              let correlatedResults = {
+                searchTerm: distinctText[i],
+                hits: results
+              };
+
+              allSearchResults.push(correlatedResults);
+            }
+
+            await context.sync();
+
+            // Display counts.
+            allSearchResults.forEach((result) => {
+              let length = result.hits.items.length;
+
+              console.log("Search term: " + result.searchTerm + " => Count: " + length);
+            });
           });
           ```
       parameters:
@@ -1387,6 +1498,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -1617,6 +1729,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

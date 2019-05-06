@@ -69,8 +69,8 @@ items:
       - excel.Excel.ChartSeries.toJSON
       - excel.Excel.ChartSeries.trendlines
       - excel.Excel.ChartSeries.varyByCategories
-      - excel.Excel.ChartSeries.xerrorBars
-      - excel.Excel.ChartSeries.yerrorBars
+      - excel.Excel.ChartSeries.xErrorBars
+      - excel.Excel.ChartSeries.yErrorBars
   - uid: excel.Excel.ChartSeries.axisGroup
     summary: |-
       Returns or sets the group for the specified series. Read/Write
@@ -87,13 +87,10 @@ items:
         type:
           - Excel.ChartAxisGroup | "Primary" | "Secondary"
   - uid: excel.Excel.ChartSeries.binOptions
-    summary: >-
-      Encapsulates the bin options only for histogram chart and pareto chart. Read-only.
+    summary: |-
+      Encapsulates the bin options for histogram charts and pareto charts. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: binOptions
     fullName: binOptions
     langs:
@@ -105,13 +102,10 @@ items:
         type:
           - excel.Excel.ChartBinOptions
   - uid: excel.Excel.ChartSeries.boxwhiskerOptions
-    summary: >-
-      Encapsulates the options for the Box &amp; Whisker chart. Read-only.
+    summary: |-
+      Encapsulates the options for the box and whisker charts. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: boxwhiskerOptions
     fullName: boxwhiskerOptions
     langs:
@@ -124,13 +118,11 @@ items:
           - excel.Excel.ChartBoxwhiskerOptions
   - uid: excel.Excel.ChartSeries.bubbleScale
     summary: >-
-      Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero)
-      to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
+      This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property
+      only applies to bubble charts. Read/Write.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bubbleScale
     fullName: bubbleScale
     langs:
@@ -230,6 +222,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -349,13 +342,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartSeries.gradientMaximumColor
-    summary: >-
-      Returns or sets the Color for maximum value of a region map chart series. Read/Write.
+    summary: |-
+      Returns or sets the color for maximum value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumColor
     fullName: gradientMaximumColor
     langs:
@@ -367,13 +357,10 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartSeries.gradientMaximumType
-    summary: >-
+    summary: |-
       Returns or sets the type for maximum value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumType
     fullName: gradientMaximumType
     langs:
@@ -385,13 +372,10 @@ items:
         type:
           - Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
   - uid: excel.Excel.ChartSeries.gradientMaximumValue
-    summary: >-
+    summary: |-
       Returns or sets the maximum value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMaximumValue
     fullName: gradientMaximumValue
     langs:
@@ -403,13 +387,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartSeries.gradientMidpointColor
-    summary: >-
-      Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
+    summary: |-
+      Returns or sets the color for midpoint value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointColor
     fullName: gradientMidpointColor
     langs:
@@ -421,13 +402,10 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartSeries.gradientMidpointType
-    summary: >-
+    summary: |-
       Returns or sets the type for midpoint value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointType
     fullName: gradientMidpointType
     langs:
@@ -439,13 +417,10 @@ items:
         type:
           - Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
   - uid: excel.Excel.ChartSeries.gradientMidpointValue
-    summary: >-
+    summary: |-
       Returns or sets the midpoint value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMidpointValue
     fullName: gradientMidpointValue
     langs:
@@ -457,13 +432,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartSeries.gradientMinimumColor
-    summary: >-
-      Returns or sets the Color for minimum value of a region map chart series. Read/Write.
+    summary: |-
+      Returns or sets the color for minimum value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumColor
     fullName: gradientMinimumColor
     langs:
@@ -475,13 +447,10 @@ items:
         type:
           - string
   - uid: excel.Excel.ChartSeries.gradientMinimumType
-    summary: >-
+    summary: |-
       Returns or sets the type for minimum value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumType
     fullName: gradientMinimumType
     langs:
@@ -493,13 +462,10 @@ items:
         type:
           - Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
   - uid: excel.Excel.ChartSeries.gradientMinimumValue
-    summary: >-
+    summary: |-
       Returns or sets the minimum value of a region map chart series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientMinimumValue
     fullName: gradientMinimumValue
     langs:
@@ -511,13 +477,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartSeries.gradientStyle
-    summary: >-
+    summary: |-
       Returns or sets series gradient style of a region map chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: gradientStyle
     fullName: gradientStyle
     langs:
@@ -544,13 +507,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.ChartSeries.invertColor
-    summary: >-
+    summary: |-
       Returns or sets the fill color for negative data points in a series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: invertColor
     fullName: invertColor
     langs:
@@ -630,6 +590,7 @@ items:
           - excel.Excel.ChartSeries
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -675,13 +636,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ChartSeries.mapOptions
-    summary: >-
-      Encapsulates the options for the Map chart. Read-only.
+    summary: |-
+      Encapsulates the options for a region map chart. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: mapOptions
     fullName: mapOptions
     langs:
@@ -708,6 +666,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 
@@ -757,6 +716,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -804,6 +764,7 @@ items:
         type:
           - number
         description: |-
+
 
           #### Examples
 
@@ -856,6 +817,7 @@ items:
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
         description: |-
+
 
           #### Examples
 
@@ -921,13 +883,10 @@ items:
         type:
           - number
   - uid: excel.Excel.ChartSeries.parentLabelStrategy
-    summary: >-
-      Returns or sets series parent label strategy area of a treemap chart. Read/Write.
+    summary: |-
+      Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: parentLabelStrategy
     fullName: parentLabelStrategy
     langs:
@@ -1071,6 +1030,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -1116,13 +1076,10 @@ items:
           type:
             - excel.Excel.Range
   - uid: excel.Excel.ChartSeries.showConnectorLines
-    summary: >-
-      Returns or sets if connector lines show in a waterfall chart. Read/Write.
+    summary: |-
+      Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showConnectorLines
     fullName: showConnectorLines
     langs:
@@ -1134,13 +1091,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.ChartSeries.showLeaderLines
-    summary: >-
-      True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
+    summary: |-
+      Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showLeaderLines
     fullName: showLeaderLines
     langs:
@@ -1200,13 +1154,11 @@ items:
           - Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
   - uid: excel.Excel.ChartSeries.splitValue
     summary: >-
-      Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie
+      Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie
       chart. Read/Write.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: splitValue
     fullName: splitValue
     langs:
@@ -1267,39 +1219,33 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.xerrorBars
-    summary: >-
-      Represents the error bar object for a chart series.
+  - uid: excel.Excel.ChartSeries.xErrorBars
+    summary: |-
+      Represents the error bar object of a chart series.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: xerrorBars
-    fullName: xerrorBars
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: xErrorBars
+    fullName: xErrorBars
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly xerrorBars: Excel.ChartErrorBars;'
+      content: 'readonly xErrorBars: Excel.ChartErrorBars;'
       return:
         type:
           - excel.Excel.ChartErrorBars
-  - uid: excel.Excel.ChartSeries.yerrorBars
-    summary: >-
-      Represents the error bar object for a chart series.
+  - uid: excel.Excel.ChartSeries.yErrorBars
+    summary: |-
+      Represents the error bar object of a chart series.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: yerrorBars
-    fullName: yerrorBars
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: yErrorBars
+    fullName: yErrorBars
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'readonly yerrorBars: Excel.ChartErrorBars;'
+      content: 'readonly yErrorBars: Excel.ChartErrorBars;'
       return:
         type:
           - excel.Excel.ChartErrorBars

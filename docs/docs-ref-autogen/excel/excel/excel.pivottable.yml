@@ -51,6 +51,7 @@ items:
           - excel.Excel.RowColumnPivotHierarchyCollection
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -103,6 +104,7 @@ items:
           - excel.Excel.DataPivotHierarchyCollection
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -131,6 +133,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -141,13 +144,10 @@ items:
           });
           ```
   - uid: excel.Excel.PivotTable.enableDataValueEditing
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
+    summary: |-
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableDataValueEditing
     fullName: enableDataValueEditing
     langs:
@@ -174,6 +174,7 @@ items:
         type:
           - excel.Excel.FilterPivotHierarchyCollection
         description: |-
+
 
           #### Examples
 
@@ -240,6 +241,7 @@ items:
         type:
           - excel.Excel.PivotLayout
         description: |-
+
 
           #### Examples
 
@@ -454,13 +456,10 @@ items:
           - excel.Excel.Interfaces.PivotTableData
         description: ''
   - uid: excel.Excel.PivotTable.useCustomSortLists
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
+    summary: |-
+      Specifies whether the PivotTable uses custom lists when sorting.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useCustomSortLists
     fullName: useCustomSortLists
     langs:

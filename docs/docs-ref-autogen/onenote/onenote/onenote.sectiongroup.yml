@@ -49,6 +49,7 @@ items:
           - onenote.OneNote.Section
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -102,6 +103,7 @@ items:
         type:
           - onenote.OneNote.SectionGroup
         description: |-
+
 
           #### Examples
 
@@ -260,6 +262,7 @@ items:
         type:
           - onenote.OneNote.SectionGroup
         description: |-
+
 
           #### Examples
 

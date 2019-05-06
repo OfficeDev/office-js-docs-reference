@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.TextFrame
-    summary: >-
+    summary: |-
       Represents the text frame of a shape object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.TextFrame
     fullName: Excel.TextFrame
     langs:
@@ -44,9 +41,7 @@ items:
       text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoSizeSetting
     fullName: autoSizeSetting
     langs:
@@ -60,13 +55,10 @@ items:
         type:
           - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
   - uid: excel.Excel.TextFrame.bottomMargin
-    summary: >-
+    summary: |-
       Represents the bottom margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: bottomMargin
     fullName: bottomMargin
     langs:
@@ -81,7 +73,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -93,13 +84,10 @@ items:
         type:
           - excel.Excel.RequestContext
   - uid: excel.Excel.TextFrame.deleteText
-    summary: >-
+    summary: |-
       Deletes all the text in the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: deleteText()
     fullName: deleteText()
     langs:
@@ -112,6 +100,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -123,13 +112,10 @@ items:
           });
           ```
   - uid: excel.Excel.TextFrame.hasText
-    summary: >-
+    summary: |-
       Specifies whether the text frame contains text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hasText
     fullName: hasText
     langs:
@@ -141,13 +127,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.TextFrame.horizontalAlignment
-    summary: >-
+    summary: |-
       Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalAlignment
     fullName: horizontalAlignment
     langs:
@@ -163,13 +146,10 @@ items:
             Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
             | "ThaiDistributed"
   - uid: excel.Excel.TextFrame.horizontalOverflow
-    summary: >-
+    summary: |-
       Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: horizontalOverflow
     fullName: horizontalOverflow
     langs:
@@ -181,13 +161,10 @@ items:
         type:
           - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
   - uid: excel.Excel.TextFrame.leftMargin
-    summary: >-
+    summary: |-
       Represents the left margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: leftMargin
     fullName: leftMargin
     langs:
@@ -220,7 +197,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -241,7 +217,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -262,7 +237,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -282,13 +256,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.TextFrame.orientation
-    summary: >-
+    summary: |-
       Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: orientation
     fullName: orientation
     langs:
@@ -309,9 +280,7 @@ items:
       Excel.ShapeTextReadingOrder for details.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: readingOrder
     fullName: readingOrder
     langs:
@@ -323,13 +292,10 @@ items:
         type:
           - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
   - uid: excel.Excel.TextFrame.rightMargin
-    summary: >-
+    summary: |-
       Represents the right margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rightMargin
     fullName: rightMargin
     langs:
@@ -348,7 +314,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.TextFrame): void`
-    isPreview: true
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -373,7 +338,6 @@ items:
             - OfficeExtension.UpdateOptions
   - uid: excel.Excel.TextFrame.set_1
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
-    isPreview: true
     name: set(properties)
     fullName: set(properties)
     langs:
@@ -396,9 +360,7 @@ items:
       text. See Excel.TextRange for details.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: textRange
     fullName: textRange
     langs:
@@ -416,7 +378,6 @@ items:
       passed to it.) Whereas the original Excel.TextFrame object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.TextFrameData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:
@@ -429,13 +390,10 @@ items:
           - excel.Excel.Interfaces.TextFrameData
         description: ''
   - uid: excel.Excel.TextFrame.topMargin
-    summary: >-
+    summary: |-
       Represents the top margin, in points, of the text frame.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: topMargin
     fullName: topMargin
     langs:
@@ -447,13 +405,10 @@ items:
         type:
           - number
   - uid: excel.Excel.TextFrame.verticalAlignment
-    summary: >-
+    summary: |-
       Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalAlignment
     fullName: verticalAlignment
     langs:
@@ -465,13 +420,10 @@ items:
         type:
           - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
   - uid: excel.Excel.TextFrame.verticalOverflow
-    summary: >-
+    summary: |-
       Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: verticalOverflow
     fullName: verticalOverflow
     langs:

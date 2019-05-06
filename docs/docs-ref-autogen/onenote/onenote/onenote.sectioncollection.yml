@@ -72,6 +72,7 @@ items:
           - onenote.OneNote.SectionCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -222,6 +223,7 @@ items:
         type:
           - onenote.OneNote.SectionCollection
         description: |-
+
 
           #### Examples
 

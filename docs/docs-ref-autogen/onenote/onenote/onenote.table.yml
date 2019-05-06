@@ -55,6 +55,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -110,6 +111,7 @@ items:
         type:
           - onenote.OneNote.TableRow
         description: |-
+
 
           #### Examples
 
@@ -227,6 +229,7 @@ items:
           - onenote.OneNote.TableCell
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -302,6 +305,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -363,6 +367,7 @@ items:
         type:
           - onenote.OneNote.TableRow
         description: |-
+
 
           #### Examples
 
@@ -460,6 +465,7 @@ items:
         type:
           - onenote.OneNote.Table
         description: |-
+
 
           #### Examples
 

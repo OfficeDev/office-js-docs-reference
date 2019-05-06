@@ -51,6 +51,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -137,6 +138,7 @@ items:
         type:
           - onenote.OneNote.RichText
         description: |-
+
 
           #### Examples
 
@@ -319,6 +321,7 @@ items:
         type:
           - onenote.OneNote.TableCell
         description: |-
+
 
           #### Examples
 

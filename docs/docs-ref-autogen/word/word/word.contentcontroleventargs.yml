@@ -51,9 +51,10 @@ items:
     syntax:
       content: >-
         eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" |
-        "ContentControlDataChanged" | "ContentControlAdded";
+        "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" |
+        "AnnotationDeleted";
       return:
         type:
           - >-
             Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" |
-            "ContentControlAdded"
+            "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted"

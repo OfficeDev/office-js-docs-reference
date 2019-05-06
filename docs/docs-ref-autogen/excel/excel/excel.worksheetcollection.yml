@@ -32,10 +32,12 @@ items:
       - excel.Excel.WorksheetCollection.onAdded
       - excel.Excel.WorksheetCollection.onCalculated
       - excel.Excel.WorksheetCollection.onChanged
+      - excel.Excel.WorksheetCollection.onColumnSorted
       - excel.Excel.WorksheetCollection.onDeactivated
       - excel.Excel.WorksheetCollection.onDeleted
       - excel.Excel.WorksheetCollection.onFiltered
       - excel.Excel.WorksheetCollection.onFormatChanged
+      - excel.Excel.WorksheetCollection.onRowSorted
       - excel.Excel.WorksheetCollection.onSelectionChanged
       - excel.Excel.WorksheetCollection.toJSON
   - uid: excel.Excel.WorksheetCollection.add
@@ -56,6 +58,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -103,6 +106,7 @@ items:
           - 'OfficeExtension.ClientResult<string[]>'
         description: |-
           An array of ids corresponding to each newly inserted worksheet.
+
           #### Examples
 
           ```javascript
@@ -226,6 +230,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -279,6 +284,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -371,6 +377,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -473,6 +480,7 @@ items:
           - excel.Excel.WorksheetCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -532,6 +540,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -560,6 +569,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetAddedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -587,13 +597,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onChanged
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook is changed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onChanged
     fullName: onChanged
     langs:
@@ -604,6 +611,24 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onColumnSorted
+    summary: >-
+      Occurs when sorting on columns.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onColumnSorted
+    fullName: onColumnSorted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onColumnSorted: OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onDeactivated
     summary: |-
       Occurs when any worksheet in the workbook is deactivated.
@@ -620,6 +645,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -666,13 +692,10 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
   - uid: excel.Excel.WorksheetCollection.onFormatChanged
-    summary: >-
+    summary: |-
       Occurs when any worksheet in the workbook has format changed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onFormatChanged
     fullName: onFormatChanged
     langs:
@@ -683,14 +706,29 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
-  - uid: excel.Excel.WorksheetCollection.onSelectionChanged
+  - uid: excel.Excel.WorksheetCollection.onRowSorted
     summary: >-
-      Occurs when the selection changes on any worksheet.
+      Occurs when sorting on rows.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
+    name: onRowSorted
+    fullName: onRowSorted
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onRowSorted: OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onSelectionChanged
+    summary: |-
+      Occurs when the selection changes on any worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onSelectionChanged
     fullName: onSelectionChanged
     langs:

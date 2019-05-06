@@ -78,6 +78,7 @@ items:
           - word.Word.Body
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -109,6 +110,7 @@ items:
         type:
           - word.Word.Body
         description: |-
+
 
           #### Examples
 
@@ -172,6 +174,7 @@ items:
           - word.Word.Body
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -203,6 +206,7 @@ items:
         type:
           - word.Word.Body
         description: |-
+
 
           #### Examples
 
@@ -410,6 +414,12 @@ items:
           type:
             - word.Word.Section
   - uid: word.Word.Section.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.SectionData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

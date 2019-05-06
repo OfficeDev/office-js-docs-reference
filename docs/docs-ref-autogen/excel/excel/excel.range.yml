@@ -77,12 +77,14 @@ items:
       - excel.Excel.Range.getUsedRangeOrNullObject
       - excel.Excel.Range.getVisibleView
       - excel.Excel.Range.hasSpill
+      - excel.Excel.Range.height
       - excel.Excel.Range.hidden
       - excel.Excel.Range.hyperlink
       - excel.Excel.Range.insert
       - excel.Excel.Range.insert_1
       - excel.Excel.Range.isEntireColumn
       - excel.Excel.Range.isEntireRow
+      - excel.Excel.Range.left
       - excel.Excel.Range.linkedDataTypeState
       - excel.Excel.Range.load
       - excel.Excel.Range.load_1
@@ -107,11 +109,13 @@ items:
       - excel.Excel.Range.style
       - excel.Excel.Range.text
       - excel.Excel.Range.toJSON
+      - excel.Excel.Range.top
       - excel.Excel.Range.track
       - excel.Excel.Range.unmerge
       - excel.Excel.Range.untrack
       - excel.Excel.Range.values
       - excel.Excel.Range.valueTypes
+      - excel.Excel.Range.width
       - excel.Excel.Range.worksheet
   - uid: excel.Excel.Range.address
     summary: >-
@@ -151,9 +155,7 @@ items:
       horizontally or vertically. Discontiguous ranges are not supported.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillType)'
     fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
@@ -182,9 +184,7 @@ items:
       horizontally or vertically. Discontiguous ranges are not supported.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'autoFill(destinationRange, autoFillTypeString)'
     fullName: 'autoFill(destinationRange, autoFillTypeString)'
     langs:
@@ -259,6 +259,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -378,13 +379,10 @@ items:
         type:
           - excel.Excel.RequestContext
   - uid: excel.Excel.Range.convertDataTypeToText
-    summary: >-
+    summary: |-
       Converts the range cells with datatypes into text.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: convertDataTypeToText()
     fullName: convertDataTypeToText()
     langs:
@@ -397,13 +395,10 @@ items:
           - void
         description: ''
   - uid: excel.Excel.Range.convertToLinkedDataType
-    summary: >-
+    summary: |-
       Converts the range cells into linked datatype in the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'convertToLinkedDataType(serviceID, languageCulture)'
     fullName: 'convertToLinkedDataType(serviceID, languageCulture)'
     langs:
@@ -431,9 +426,7 @@ items:
       smaller than the source.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     langs:
@@ -447,6 +440,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -488,9 +482,7 @@ items:
       smaller than the source.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
     langs:
@@ -576,6 +568,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -603,9 +596,7 @@ items:
       the search will be limited to that range, else the search will cover the entire sheet starting after that cell.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'find(text, criteria)'
     fullName: 'find(text, criteria)'
     langs:
@@ -618,6 +609,7 @@ items:
           - excel.Excel.Range
         description: |-
           The Range which matched the search criteria.
+
           #### Examples
 
           ```typescript
@@ -657,9 +649,7 @@ items:
       there are no matches, this function will return a null object.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'findOrNullObject(text, criteria)'
     fullName: 'findOrNullObject(text, criteria)'
     langs:
@@ -672,6 +662,7 @@ items:
           - excel.Excel.Range
         description: |-
           The Range which matched the search criteria.
+
           #### Examples
 
           ```typescript
@@ -710,9 +701,7 @@ items:
       must be single column range and have data around in order to find pattern.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: flashFill()
     fullName: flashFill()
     langs:
@@ -842,6 +831,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -886,6 +876,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -916,13 +907,10 @@ items:
           type:
             - number
   - uid: excel.Excel.Range.getCellProperties
-    summary: >-
+    summary: |-
       Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCellProperties(cellPropertiesLoadOptions)
     fullName: getCellProperties(cellPropertiesLoadOptions)
     langs:
@@ -935,10 +923,10 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<CellProperties[][]>'
-        description: ''
+        description: A 2D array where each item represents the requested properties of the corresponding cell.
       parameters:
         - id: cellPropertiesLoadOptions
-          description: ''
+          description: An object that represents which cell properties to load.
           type:
             - excel.Excel.CellPropertiesLoadOptions
   - uid: excel.Excel.Range.getColumn
@@ -957,6 +945,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -988,9 +977,7 @@ items:
       returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getColumnProperties(columnPropertiesLoadOptions)
     fullName: getColumnProperties(columnPropertiesLoadOptions)
     langs:
@@ -1003,10 +990,10 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<ColumnProperties[]>'
-        description: ''
+        description: An array where each item represents the requested properties of the corresponding column.
       parameters:
         - id: columnPropertiesLoadOptions
-          description: ''
+          description: An object that represents which column properties to load.
           type:
             - excel.Excel.ColumnPropertiesLoadOptions
   - uid: excel.Excel.Range.getColumnsAfter
@@ -1076,6 +1063,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1115,6 +1103,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -1171,6 +1160,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1213,6 +1203,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -1294,6 +1285,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1329,6 +1321,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1363,6 +1356,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -1401,6 +1395,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -1482,6 +1477,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1512,9 +1508,7 @@ items:
       returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRowProperties(rowPropertiesLoadOptions)
     fullName: getRowProperties(rowPropertiesLoadOptions)
     langs:
@@ -1527,10 +1521,10 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<RowProperties[]>'
-        description: ''
+        description: An array where each item represents the requested properties of the corresponding row.
       parameters:
         - id: rowPropertiesLoadOptions
-          description: ''
+          description: An object that represents which row properties to load.
           type:
             - excel.Excel.RowPropertiesLoadOptions
   - uid: excel.Excel.Range.getRowsAbove
@@ -1587,9 +1581,7 @@ items:
       the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCells(cellType, cellValueType)'
     fullName: 'getSpecialCells(cellType, cellValueType)'
     langs:
@@ -1601,6 +1593,7 @@ items:
         type:
           - excel.Excel.RangeAreas
         description: |-
+
 
           #### Examples
 
@@ -1636,9 +1629,7 @@ items:
       the specified type and value. If no special cells are found, an ItemNotFound error will be thrown.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCells(cellTypeString, cellValueType)'
     fullName: 'getSpecialCells(cellTypeString, cellValueType)'
     langs:
@@ -1677,9 +1668,7 @@ items:
       type and value. If no special cells are found, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     langs:
@@ -1711,9 +1700,7 @@ items:
       type and value. If no special cells are found, a null object will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
     langs:
@@ -1846,13 +1833,10 @@ items:
           - excel.Excel.Range
         description: ''
   - uid: excel.Excel.Range.getTables
-    summary: >-
+    summary: |-
       Gets a scoped collection of tables that overlap with the range.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getTables(fullyContained)
     fullName: getTables(fullyContained)
     langs:
@@ -1887,6 +1871,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -1987,6 +1972,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -2063,6 +2049,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Range.height
+    summary: >-
+      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly height: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.hidden
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
@@ -2094,6 +2098,7 @@ items:
         type:
           - excel.Excel.RangeHyperlink
         description: |-
+
 
           #### Examples
 
@@ -2141,6 +2146,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -2217,14 +2223,30 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.linkedDataTypeState
+  - uid: excel.Excel.Range.left
     summary: >-
-      Represents the data type state of each cell. Read-only.
+      Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
+      Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly left: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Range.linkedDataTypeState
+    summary: |-
+      Represents the data type state of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
     fullName: linkedDataTypeState
     langs:
@@ -2288,6 +2310,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -2392,6 +2415,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -2466,13 +2490,10 @@ items:
         type:
           - 'any[][]'
   - uid: excel.Excel.Range.removeDuplicates
-    summary: >-
+    summary: |-
       Removes duplicate values from the range specified by the columns.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'removeDuplicates(columns, includesHeader)'
     fullName: 'removeDuplicates(columns, includesHeader)'
     langs:
@@ -2485,6 +2506,7 @@ items:
           - excel.Excel.RemoveDuplicatesResult
         description: |-
           The resulting object that contains the number of rows removed and the number of remaining unique rows.
+
           #### Examples
 
           ```typescript
@@ -2512,13 +2534,10 @@ items:
           type:
             - boolean
   - uid: excel.Excel.Range.replaceAll
-    summary: >-
+    summary: |-
       Finds and replaces the given string based on the criteria specified within the current range.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'replaceAll(text, replacement, criteria)'
     fullName: 'replaceAll(text, replacement, criteria)'
     langs:
@@ -2607,6 +2626,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -2631,6 +2651,7 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.Range): void`
+
       #### Examples
 
       ```typescript
@@ -2715,62 +2736,51 @@ items:
       alignment, and so forth.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setCellProperties(cellPropertiesData)
     fullName: setCellProperties(cellPropertiesData)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setCellProperties(cellPropertiesData: SettableCellProperties[][] |
-        OfficeExtension.ClientResult<SettableCellProperties[][]>): void;
+      content: 'setCellProperties(cellPropertiesData: SettableCellProperties[][]): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: cellPropertiesData
-          description: ''
+          description: A 2D array that represents which properties to set in each cell.
           type:
-            - 'SettableCellProperties[][] | OfficeExtension.ClientResult<SettableCellProperties[][]>'
+            - 'SettableCellProperties[][]'
   - uid: excel.Excel.Range.setColumnProperties
     summary: >-
       Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill,
       borders, alignment, and so forth.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setColumnProperties(columnPropertiesData)
     fullName: setColumnProperties(columnPropertiesData)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setColumnProperties(columnPropertiesData: SettableColumnProperties[] |
-        OfficeExtension.ClientResult<SettableColumnProperties[]>): void;
+      content: 'setColumnProperties(columnPropertiesData: SettableColumnProperties[]): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: columnPropertiesData
-          description: ''
+          description: An array that represents which properties to set in each column.
           type:
-            - 'SettableColumnProperties[] | OfficeExtension.ClientResult<SettableColumnProperties[]>'
+            - 'SettableColumnProperties[]'
   - uid: excel.Excel.Range.setDirty
-    summary: >-
+    summary: |-
       Set a range to be recalculated when the next recalculation occurs.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setDirty()
     fullName: setDirty()
     langs:
@@ -2788,27 +2798,23 @@ items:
       borders, alignment, and so forth.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: setRowProperties(rowPropertiesData)
     fullName: setRowProperties(rowPropertiesData)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setRowProperties(rowPropertiesData: SettableRowProperties[] |
-        OfficeExtension.ClientResult<SettableRowProperties[]>): void;
+      content: 'setRowProperties(rowPropertiesData: SettableRowProperties[]): void;'
       return:
         type:
           - void
         description: ''
       parameters:
         - id: rowPropertiesData
-          description: ''
+          description: An array that represents which properties to set in each row.
           type:
-            - 'SettableRowProperties[] | OfficeExtension.ClientResult<SettableRowProperties[]>'
+            - 'SettableRowProperties[]'
   - uid: excel.Excel.Range.showCard
     summary: |-
       Displays the card for an active cell if it has rich value content.
@@ -2860,6 +2866,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -2910,6 +2917,24 @@ items:
         type:
           - excel.Excel.Interfaces.RangeData
         description: ''
+  - uid: excel.Excel.Range.top
+    summary: >-
+      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly top: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.track
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
@@ -2945,6 +2970,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -2978,6 +3004,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -3034,6 +3061,24 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
+  - uid: excel.Excel.Range.width
+    summary: >-
+      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly width: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Range.worksheet
     summary: |-
       The worksheet containing the current range. Read-only.

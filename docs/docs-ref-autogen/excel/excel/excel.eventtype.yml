@@ -30,11 +30,14 @@ items:
       - excel.Excel.EventType.worksheetAdded
       - excel.Excel.EventType.worksheetCalculated
       - excel.Excel.EventType.worksheetChanged
+      - excel.Excel.EventType.worksheetColumnSorted
       - excel.Excel.EventType.worksheetDeactivated
       - excel.Excel.EventType.worksheetDeleted
       - excel.Excel.EventType.worksheetFiltered
       - excel.Excel.EventType.worksheetFormatChanged
+      - excel.Excel.EventType.worksheetRowSorted
       - excel.Excel.EventType.worksheetSelectionChanged
+      - excel.Excel.EventType.worksheetSingleClicked
   - uid: excel.Excel.EventType.agaveVisualUpdate
     summary: >-
       AgaveVisualUpdate represents the type of an event that is associated with an agave visual, and carries a new data
@@ -228,6 +231,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetChanged"'
+  - uid: excel.Excel.EventType.worksheetColumnSorted
+    summary: >-
+      WorksheetColumnSorted represents the type of event registered on worksheet, and occurs when there is a sorting on
+      columns happened.
+    name: worksheetColumnSorted
+    fullName: worksheetColumnSorted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetColumnSorted"'
   - uid: excel.Excel.EventType.worksheetDeactivated
     summary: >-
       WorksheetDeactivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when
@@ -268,6 +281,16 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetFormatChanged"'
+  - uid: excel.Excel.EventType.worksheetRowSorted
+    summary: >-
+      WorksheetRowSorted represents the type of event registered on worksheet, and occurs when there is a sorting on
+      rows happened.
+    name: worksheetRowSorted
+    fullName: worksheetRowSorted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetRowSorted"'
   - uid: excel.Excel.EventType.worksheetSelectionChanged
     summary: 'WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.'
     name: worksheetSelectionChanged
@@ -276,3 +299,13 @@ items:
       - typeScript
     type: field
     numericValue: '"WorksheetSelectionChanged"'
+  - uid: excel.Excel.EventType.worksheetSingleClicked
+    summary: >-
+      WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is
+      left-clicked/tapped.
+    name: worksheetSingleClicked
+    fullName: worksheetSingleClicked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WorksheetSingleClicked"'

@@ -71,6 +71,7 @@ items:
           - excel.Excel.RangeBorder
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -138,6 +139,7 @@ items:
         type:
           - excel.Excel.RangeBorder
         description: |-
+
 
           #### Examples
 
@@ -232,6 +234,7 @@ items:
           - excel.Excel.RangeBorderCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -305,9 +308,7 @@ items:
       uniform tintAndShade setting.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tintAndShade
     fullName: tintAndShade
     langs:

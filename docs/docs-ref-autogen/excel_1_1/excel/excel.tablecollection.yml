@@ -46,6 +46,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -124,6 +125,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -162,6 +164,7 @@ items:
         type:
           - excel.Excel.Table
         description: |-
+
 
           #### Examples
 
@@ -251,6 +254,7 @@ items:
         type:
           - excel.Excel.TableCollection
         description: |-
+
 
           #### Examples
 

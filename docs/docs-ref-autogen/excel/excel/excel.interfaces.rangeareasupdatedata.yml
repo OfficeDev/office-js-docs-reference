@@ -13,13 +13,10 @@ items:
       - excel.Excel.Interfaces.RangeAreasUpdateData.format
       - excel.Excel.Interfaces.RangeAreasUpdateData.style
   - uid: excel.Excel.Interfaces.RangeAreasUpdateData.dataValidation
-    summary: >-
+    summary: |-
       Returns a dataValidation object for all ranges in the RangeAreas.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: dataValidation
     fullName: dataValidation
     langs:
@@ -36,9 +33,7 @@ items:
       ranges in the RangeAreas object.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -56,9 +51,7 @@ items:
       value in the BuiltInStyle enum will be returned.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:

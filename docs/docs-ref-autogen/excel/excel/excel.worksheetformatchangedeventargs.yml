@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.WorksheetFormatChangedEventArgs
-    summary: >-
+    summary: |-
       Provides information about the worksheet format change event.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.WorksheetFormatChangedEventArgs
     fullName: Excel.WorksheetFormatChangedEventArgs
     langs:
@@ -22,13 +19,10 @@ items:
       - excel.Excel.WorksheetFormatChangedEventArgs.type
       - excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRange
-    summary: >-
+    summary: |-
       Gets the range that represents the changed area of a specific worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRange(ctx)
     fullName: getRange(ctx)
     langs:
@@ -46,13 +40,10 @@ items:
           type:
             - excel.Excel.RequestContext
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.getRangeOrNullObject
-    summary: >-
+    summary: |-
       Gets the range that represents the changed area of a specific worksheet. It might return null object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getRangeOrNullObject(ctx)
     fullName: getRangeOrNullObject(ctx)
     langs:
@@ -70,13 +61,10 @@ items:
           type:
             - excel.Excel.RequestContext
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.address
-    summary: >-
+    summary: |-
       Gets the range address that represents the changed area of a specific worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -88,13 +76,10 @@ items:
         type:
           - string
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.source
-    summary: >-
+    summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: source
     fullName: source
     langs:
@@ -106,13 +91,10 @@ items:
         type:
           - Excel.EventSource | "Local" | "Remote"
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.type
-    summary: >-
+    summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: type
     fullName: type
     langs:
@@ -124,13 +106,10 @@ items:
         type:
           - '"WorksheetFormatChanged"'
   - uid: excel.Excel.WorksheetFormatChangedEventArgs.worksheetId
-    summary: >-
+    summary: |-
       Gets the id of the worksheet in which the data changed.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: worksheetId
     fullName: worksheetId
     langs:

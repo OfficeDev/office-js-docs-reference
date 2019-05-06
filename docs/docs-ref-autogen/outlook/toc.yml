@@ -13,6 +13,8 @@ items:
                 uid: outlook.Office.MailboxEnums.AttachmentStatus
               - name: AttachmentType
                 uid: outlook.Office.MailboxEnums.AttachmentType
+              - name: CategoryColor
+                uid: outlook.Office.MailboxEnums.CategoryColor
               - name: Days
                 uid: outlook.Office.MailboxEnums.Days
               - name: DelegatePermissions
@@ -51,10 +53,18 @@ items:
             uid: outlook.Office.AttachmentDetails
           - name: Body
             uid: outlook.Office.Body
+          - name: Categories
+            uid: outlook.Office.Categories
+          - name: CategoryDetails
+            uid: outlook.Office.CategoryDetails
+          - name: CoercionTypeOptions
+            uid: outlook.Office.CoercionTypeOptions
           - name: Contact
             uid: outlook.Office.Contact
           - name: CustomProperties
             uid: outlook.Office.CustomProperties
+          - name: Diagnostics
+            uid: outlook.Office.Diagnostics
           - name: EmailAddressDetails
             uid: outlook.Office.EmailAddressDetails
           - name: EmailUser
@@ -79,6 +89,8 @@ items:
             uid: outlook.Office.LocationIdentifier
           - name: Mailbox
             uid: outlook.Office.Mailbox
+          - name: MasterCategories
+            uid: outlook.Office.MasterCategories
           - name: MeetingSuggestion
             uid: outlook.Office.MeetingSuggestion
           - name: MessageCompose
@@ -101,6 +113,10 @@ items:
             uid: outlook.Office.RecurrenceProperties
           - name: RecurrenceTimeZone
             uid: outlook.Office.RecurrenceTimeZone
+          - name: ReplyFormAttachment
+            uid: outlook.Office.ReplyFormAttachment
+          - name: ReplyFormData
+            uid: outlook.Office.ReplyFormData
           - name: RoamingSettings
             uid: outlook.Office.RoamingSettings
           - name: SeriesTime

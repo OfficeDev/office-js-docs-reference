@@ -55,6 +55,7 @@ items:
           - excel.Excel.TableRow
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -135,6 +136,7 @@ items:
         type:
           - excel.Excel.TableRow
         description: |-
+
 
           #### Examples
 
@@ -224,6 +226,7 @@ items:
         type:
           - excel.Excel.TableRowCollection
         description: |-
+
 
           #### Examples
 

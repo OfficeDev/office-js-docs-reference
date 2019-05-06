@@ -58,6 +58,7 @@ items:
           - onenote.OneNote.Outline
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -224,6 +225,7 @@ items:
           - onenote.OneNote.Page
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -304,6 +306,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -412,6 +415,7 @@ items:
           - onenote.OneNote.Page
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -501,6 +505,7 @@ items:
         type:
           - onenote.OneNote.Page
         description: |-
+
 
           #### Examples
 

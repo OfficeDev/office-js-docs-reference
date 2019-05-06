@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.Interfaces.HeaderFooterLoadOptions
     fullName: Excel.Interfaces.HeaderFooterLoadOptions
     langs:
@@ -20,7 +17,6 @@ items:
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.rightFooter
       - excel.Excel.Interfaces.HeaderFooterLoadOptions.rightHeader
   - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -37,9 +33,7 @@ items:
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: centerFooter
     fullName: centerFooter
     langs:
@@ -56,9 +50,7 @@ items:
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: centerHeader
     fullName: centerHeader
     langs:
@@ -75,9 +67,7 @@ items:
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: leftFooter
     fullName: leftFooter
     langs:
@@ -94,9 +84,7 @@ items:
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: leftHeader
     fullName: leftHeader
     langs:
@@ -113,9 +101,7 @@ items:
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rightFooter
     fullName: rightFooter
     langs:
@@ -132,9 +118,7 @@ items:
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: rightHeader
     fullName: rightHeader
     langs:

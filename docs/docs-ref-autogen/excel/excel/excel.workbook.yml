@@ -79,13 +79,10 @@ items:
         type:
           - excel.Excel.Application
   - uid: excel.Excel.Workbook.autoSave
-    summary: >-
+    summary: |-
       Specifies whether or not the workbook is in autosave mode. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoSave
     fullName: autoSave
     langs:
@@ -112,13 +109,10 @@ items:
         type:
           - excel.Excel.BindingCollection
   - uid: excel.Excel.Workbook.calculationEngineVersion
-    summary: >-
+    summary: |-
       Returns a number about the version of Excel Calculation Engine. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
     fullName: calculationEngineVersion
     langs:
@@ -135,9 +129,7 @@ items:
       charts track the index of the data points.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartDataPointTrack
     fullName: chartDataPointTrack
     langs:
@@ -167,6 +159,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -298,6 +291,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -318,9 +312,7 @@ items:
       this statement
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveChart()
     fullName: getActiveChart()
     langs:
@@ -333,13 +325,10 @@ items:
           - excel.Excel.Chart
         description: ''
   - uid: excel.Excel.Workbook.getActiveChartOrNullObject
-    summary: >-
+    summary: |-
       Gets the currently active chart in the workbook. If there is no active chart, will return null object
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveChartOrNullObject()
     fullName: getActiveChartOrNullObject()
     langs:
@@ -396,9 +385,7 @@ items:
       between when the workbook status changes and when the changes are reflected on the result of the method.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getIsActiveCollabSession()
     fullName: getIsActiveCollabSession()
     langs:
@@ -429,6 +416,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -451,9 +439,7 @@ items:
       RangeAreas object that represents all the selected ranges.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getSelectedRanges()
     fullName: getSelectedRanges()
     langs:
@@ -465,6 +451,7 @@ items:
         type:
           - excel.Excel.RangeAreas
         description: |-
+
 
           #### Examples
 
@@ -483,9 +470,7 @@ items:
       true if you want to close a modified workbook without either saving it or being prompted to save it.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDirty
     fullName: isDirty
     langs:
@@ -607,13 +592,10 @@ items:
         type:
           - excel.Excel.NamedItemCollection
   - uid: excel.Excel.Workbook.onAutoSaveSettingChanged
-    summary: >-
+    summary: |-
       Occurs when the autoSave setting is changed on the workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAutoSaveSettingChanged
     fullName: onAutoSaveSettingChanged
     langs:
@@ -673,13 +655,10 @@ items:
         type:
           - excel.Excel.PivotTableStyleCollection
   - uid: excel.Excel.Workbook.previouslySaved
-    summary: >-
+    summary: |-
       Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: previouslySaved
     fullName: previouslySaved
     langs:
@@ -706,6 +685,7 @@ items:
         type:
           - excel.Excel.DocumentProperties
         description: |-
+
 
           #### Examples
 
@@ -784,6 +764,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -1028,9 +1009,7 @@ items:
       Data will permanently lose accuracy when switching this property from false to true.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: usePrecisionAsDisplayed
     fullName: usePrecisionAsDisplayed
     langs:

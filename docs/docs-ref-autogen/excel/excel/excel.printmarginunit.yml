@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PrintMarginUnit
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.PrintMarginUnit
     fullName: Excel.PrintMarginUnit
     langs:
@@ -17,7 +14,6 @@ items:
       - excel.Excel.PrintMarginUnit.points
   - uid: excel.Excel.PrintMarginUnit.centimeters
     summary: Assign the page margins in centimeters.
-    isPreview: true
     name: centimeters
     fullName: centimeters
     langs:
@@ -26,7 +22,6 @@ items:
     numericValue: '"Centimeters"'
   - uid: excel.Excel.PrintMarginUnit.inches
     summary: Assign the page margins in inches.
-    isPreview: true
     name: inches
     fullName: inches
     langs:
@@ -35,7 +30,6 @@ items:
     numericValue: '"Inches"'
   - uid: excel.Excel.PrintMarginUnit.points
     summary: Assign the page margins in points. A point is 1/72 of an inch.
-    isPreview: true
     name: points
     fullName: points
     langs:

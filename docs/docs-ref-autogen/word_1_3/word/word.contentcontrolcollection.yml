@@ -67,6 +67,7 @@ items:
           - word.Word.ContentControl
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -143,6 +144,7 @@ items:
           - word.Word.ContentControl
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -193,6 +195,7 @@ items:
         type:
           - word.Word.ContentControlCollection
         description: |-
+
 
           #### Examples
 
@@ -264,6 +267,7 @@ items:
         type:
           - word.Word.ContentControlCollection
         description: |-
+
 
           #### Examples
 
@@ -343,6 +347,7 @@ items:
         type:
           - word.Word.ContentControl
         description: |-
+
 
           #### Examples
 
@@ -444,6 +449,7 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
+
 
       #### Examples
 
@@ -579,6 +585,12 @@ items:
           type:
             - OfficeExtension.LoadOption
   - uid: word.Word.ContentControlCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`<!-- -->) that contains
+      an "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON()
     langs:

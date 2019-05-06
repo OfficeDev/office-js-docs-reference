@@ -137,20 +137,21 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              const firstPicture = context.document.body.inlinePictures.getFirst();
-              firstPicture.load("width, height");
+            const firstPicture = context.document.body.inlinePictures.getFirst();
+            firstPicture.load("width, height");
 
-              await context.sync();
-              console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-              //To get the image encoded as base64:
-              const base64 = firstPicture.getBase64ImageSrc();
+            await context.sync();
+            console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
+            // Get the image encoded as base64.
+            const base64 = firstPicture.getBase64ImageSrc();
 
-              await context.sync();
-              console.log(base64.value);
+            await context.sync();
+            console.log(base64.value);
           });
           ```
   - uid: word.Word.InlinePicture.getNext
@@ -169,6 +170,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 
@@ -216,6 +218,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 

@@ -253,6 +253,7 @@ items:
           - excel.Excel.Binding
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -318,6 +319,7 @@ items:
         type:
           - excel.Excel.Binding
         description: |-
+
 
           #### Examples
 
@@ -408,6 +410,7 @@ items:
         type:
           - excel.Excel.BindingCollection
         description: |-
+
 
           #### Examples
 

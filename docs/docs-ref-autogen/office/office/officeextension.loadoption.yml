@@ -28,6 +28,7 @@ items:
       Note that if we don't specify the specific properties on the font object in the select statement, the expand
       statement by itself would indicate that all of the font properties are loaded.
 
+
       #### Examples
 
 
@@ -129,6 +130,7 @@ items:
         type:
           - number
         description: |-
+
 
           #### Examples
 

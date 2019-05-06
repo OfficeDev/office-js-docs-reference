@@ -78,15 +78,15 @@ items:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              // Centers last paragraph alignment
-              context.document.body.paragraphs
-                  .getLast().alignment = "Centered";
+            // Centers last paragraph alignment.
+            context.document.body.paragraphs.getLast().alignment = "Centered";
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.clear
@@ -105,6 +105,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -184,6 +185,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -273,6 +275,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -322,6 +325,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -392,22 +396,23 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```typescript
           Word.run(async (context) => {
-              context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
+            context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.line, "After");
 
-              await context.sync();
-              console.log("success");
+            await context.sync();
+            console.log("success");
           });
           ```
           ```typescript
           await Word.run(async (context) => {
-              context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
+            context.document.body.paragraphs.getFirst().insertBreak(Word.BreakType.page, "After");
 
-              await context.sync();
-              console.log("success");
+            await context.sync();
+            console.log("success");
           });
           ```
       parameters:
@@ -439,6 +444,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -502,6 +508,7 @@ items:
         type:
           - word.Word.ContentControl
         description: |-
+
 
           #### Examples
 
@@ -615,6 +622,7 @@ items:
           - word.Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -708,6 +716,7 @@ items:
         type:
           - word.Word.InlinePicture
         description: |-
+
 
           #### Examples
 
@@ -856,6 +865,7 @@ items:
           - word.Word.Paragraph
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -966,6 +976,7 @@ items:
           - word.Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1005,13 +1016,12 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              // Here we insert to replace text
-              let range = context.document.body.paragraphs
-                  .getLast().insertText("Just replaced the last paragraph!", "Replace");
-              range.font.highlightColor = "black";
-              range.font.color = "white";
+            // Replace the last paragraph.
+            let range = context.document.body.paragraphs.getLast().insertText("Just replaced the last paragraph!", "Replace");
+            range.font.highlightColor = "black";
+            range.font.color = "white";
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:
@@ -1067,15 +1077,15 @@ items:
           - number
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              // Indents the first paragraph
-              context.document.body.paragraphs.
-                  getFirst().leftIndent = 75; //units = points
+            // Indents the first paragraph.
+            context.document.body.paragraphs.getFirst().leftIndent = 75; //units = points
 
-              return context.sync();
+            return context.sync();
           });
           ```
   - uid: word.Word.Paragraph.lineSpacing
@@ -1097,15 +1107,15 @@ items:
           - number
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              // Adjusts line spacing 
-              context.document.body.paragraphs
-                  .getFirst().lineSpacing = 20;
+            // Adjusts line spacing.
+            context.document.body.paragraphs.getFirst().lineSpacing = 20;
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.lineUnitAfter
@@ -1276,7 +1286,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - word.Word.RangeCollection
@@ -1289,7 +1308,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.Paragraph.select
     summary: |-
       Selects and navigates the Word UI to the paragraph.
@@ -1306,6 +1334,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -1347,18 +1376,18 @@ items:
           ```
           ```typescript
           await Word.run(async (context) => {
-              // If select is called, with no parameters it selects the object.
-              context.document.body.paragraphs.getLast().select();
+            // If select is called with no parameters, it selects the object.
+            context.document.body.paragraphs.getLast().select();
 
-              await context.sync();
+            await context.sync();
           });
           ```
           ```typescript
           await Word.run(async (context) => {
-              //Select can be at the start or end of a range, this by definition moves the insertion point without selecting the range. 
-              context.document.body.paragraphs.getLast().select("End");
+            // Select can be at the start or end of a range; this by definition moves the insertion point without selecting the range.
+            context.document.body.paragraphs.getLast().select("End");
 
-              await context.sync();
+            await context.sync();
           });
           ```
       parameters:
@@ -1395,6 +1424,7 @@ items:
       This method has the following additional signature:
 
       `set(properties: Word.Paragraph): void`
+
       #### Examples
 
       ```typescript
@@ -1481,15 +1511,15 @@ items:
           - number
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              //Adjust space between paragraphs
-              context.document.body.paragraphs
-                  .getFirst().spaceAfter = 20;
+            // Adjust space between paragraphs.
+            context.document.body.paragraphs.getFirst().spaceAfter = 20;
 
-              await context.sync();
+            await context.sync();
           });
           ```
   - uid: word.Word.Paragraph.spaceBefore
@@ -1541,16 +1571,17 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              // The collection of paragraphs of the current selection returns the full paragraphs contanied on it. 
-              let paragraph = context.document.getSelection().paragraphs.getFirst();
-              paragraph.load("text");
+            // The collection of paragraphs of the current selection returns the full paragraphs contained in it.
+            let paragraph = context.document.getSelection().paragraphs.getFirst();
+            paragraph.load("text");
 
-              await context.sync();
-              console.log(paragraph.text);
+            await context.sync();
+            console.log(paragraph.text);
           });
           ```
   - uid: word.Word.Paragraph.toJSON

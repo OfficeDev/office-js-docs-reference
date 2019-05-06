@@ -52,6 +52,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -146,6 +147,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -184,6 +186,7 @@ items:
         type:
           - excel.Excel.Table
         description: |-
+
 
           #### Examples
 
@@ -295,6 +298,7 @@ items:
           - excel.Excel.TableCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -353,13 +357,10 @@ items:
           type:
             - OfficeExtension.LoadOption
   - uid: excel.Excel.TableCollection.onAdded
-    summary: >-
+    summary: |-
       Occurs when new table is added in a workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onAdded
     fullName: onAdded
     langs:
@@ -387,6 +388,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -399,13 +401,10 @@ items:
           });
           ```
   - uid: excel.Excel.TableCollection.onDeleted
-    summary: >-
+    summary: |-
       Occurs when the specified table is deleted in a workbook.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: onDeleted
     fullName: onDeleted
     langs:

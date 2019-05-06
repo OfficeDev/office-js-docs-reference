@@ -41,10 +41,14 @@ items:
             uid: Outlook.Office.AttachmentDetails
           - name: Body
             uid: Outlook.Office.Body
+          - name: CoercionTypeOptions
+            uid: Outlook.Office.CoercionTypeOptions
           - name: Contact
             uid: Outlook.Office.Contact
           - name: CustomProperties
             uid: Outlook.Office.CustomProperties
+          - name: Diagnostics
+            uid: Outlook.Office.Diagnostics
           - name: EmailAddressDetails
             uid: Outlook.Office.EmailAddressDetails
           - name: EmailUser
@@ -83,6 +87,10 @@ items:
             uid: Outlook.Office.RecurrenceProperties
           - name: RecurrenceTimeZone
             uid: Outlook.Office.RecurrenceTimeZone
+          - name: ReplyFormAttachment
+            uid: Outlook.Office.ReplyFormAttachment
+          - name: ReplyFormData
+            uid: Outlook.Office.ReplyFormData
           - name: RoamingSettings
             uid: Outlook.Office.RoamingSettings
           - name: SeriesTime

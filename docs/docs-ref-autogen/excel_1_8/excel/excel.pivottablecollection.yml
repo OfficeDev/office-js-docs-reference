@@ -42,6 +42,7 @@ items:
           - excel.Excel.PivotTable
         description: |-
           Returns the newly inserted PivotTable.
+
           #### Examples
 
           ```typescript

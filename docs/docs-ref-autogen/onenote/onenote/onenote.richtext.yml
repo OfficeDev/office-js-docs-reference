@@ -140,6 +140,7 @@ items:
           - onenote.OneNote.RichText
         description: |-
 
+
           #### Examples
 
           ```javascript

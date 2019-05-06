@@ -50,13 +50,10 @@ items:
       - excel.Excel.Table.toJSON
       - excel.Excel.Table.worksheet
   - uid: excel.Excel.Table.autoFilter
-    summary: >-
+    summary: |-
       Represents the AutoFilter object of the table. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
     fullName: autoFilter
     langs:
@@ -148,6 +145,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -180,6 +178,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -211,6 +210,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -247,6 +247,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -282,6 +283,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -316,6 +318,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -451,6 +454,7 @@ items:
           - excel.Excel.Table
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -563,6 +567,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -608,6 +613,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.TableSelectionChangedEventArgs>
         description: |-
+
 
           #### Examples
 

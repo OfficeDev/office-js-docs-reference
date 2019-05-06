@@ -13,6 +13,7 @@ items:
       - onenote.OneNote.RequestContext.(constructor)
       - onenote.OneNote.RequestContext.application
   - uid: onenote.OneNote.RequestContext.(constructor)
+    summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
     langs:

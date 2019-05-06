@@ -14,7 +14,6 @@ items:
       - word.Word.Interfaces.TableRowData.font
       - word.Word.Interfaces.TableRowData.horizontalAlignment
       - word.Word.Interfaces.TableRowData.isHeader
-      - word.Word.Interfaces.TableRowData.parentTable
       - word.Word.Interfaces.TableRowData.preferredHeight
       - word.Word.Interfaces.TableRowData.rowIndex
       - word.Word.Interfaces.TableRowData.shadingColor
@@ -99,21 +98,6 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowData.parentTable
-    summary: |-
-      Gets parent table. Read-only.
-
-      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentTable
-    fullName: parentTable
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentTable?: Word.Interfaces.TableData;'
-      return:
-        type:
-          - word.Word.Interfaces.TableData
   - uid: word.Word.Interfaces.TableRowData.preferredHeight
     summary: |-
       Gets and sets the preferred height of the row in points.

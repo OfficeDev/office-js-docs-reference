@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeFillType
-    summary: >-
+    summary: |-
       Specifies a shape's fill type.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeFillType
     fullName: Excel.ShapeFillType
     langs:
@@ -23,7 +20,6 @@ items:
       - excel.Excel.ShapeFillType.solid
   - uid: excel.Excel.ShapeFillType.gradient
     summary: Gradient fill.
-    isPreview: true
     name: gradient
     fullName: gradient
     langs:
@@ -32,7 +28,6 @@ items:
     numericValue: '"Gradient"'
   - uid: excel.Excel.ShapeFillType.mixed
     summary: Mixed fill.
-    isPreview: true
     name: mixed
     fullName: mixed
     langs:
@@ -41,7 +36,6 @@ items:
     numericValue: '"Mixed"'
   - uid: excel.Excel.ShapeFillType.noFill
     summary: No fill.
-    isPreview: true
     name: noFill
     fullName: noFill
     langs:
@@ -50,7 +44,6 @@ items:
     numericValue: '"NoFill"'
   - uid: excel.Excel.ShapeFillType.pattern
     summary: Pattern fill.
-    isPreview: true
     name: pattern
     fullName: pattern
     langs:
@@ -59,7 +52,6 @@ items:
     numericValue: '"Pattern"'
   - uid: excel.Excel.ShapeFillType.pictureAndTexture
     summary: Picture and texture fill.
-    isPreview: true
     name: pictureAndTexture
     fullName: pictureAndTexture
     langs:
@@ -68,7 +60,6 @@ items:
     numericValue: '"PictureAndTexture"'
   - uid: excel.Excel.ShapeFillType.solid
     summary: Solid fill.
-    isPreview: true
     name: solid
     fullName: solid
     langs:

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ShapeCollection
-    summary: >-
+    summary: |-
       Represents a collection of all the shapes in the worksheet.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeCollection
     fullName: Excel.ShapeCollection
     langs:
@@ -35,13 +32,10 @@ items:
       - excel.Excel.ShapeCollection.load_2
       - excel.Excel.ShapeCollection.toJSON
   - uid: excel.Excel.ShapeCollection.addGeometricShape
-    summary: >-
+    summary: |-
       Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addGeometricShape(geometricShapeType)
     fullName: addGeometricShape(geometricShapeType)
     langs:
@@ -53,6 +47,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -73,13 +68,10 @@ items:
           type:
             - excel.Excel.GeometricShapeType
   - uid: excel.Excel.ShapeCollection.addGeometricShape_1
-    summary: >-
+    summary: |-
       Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addGeometricShape(geometricShapeTypeString)
     fullName: addGeometricShape(geometricShapeTypeString)
     langs:
@@ -165,9 +157,7 @@ items:
       shapes.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addGroup(values)
     fullName: addGroup(values)
     langs:
@@ -179,6 +169,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -207,9 +198,7 @@ items:
       represents the new image.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addImage(base64ImageString)
     fullName: addImage(base64ImageString)
     langs:
@@ -221,6 +210,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -248,13 +238,10 @@ items:
           type:
             - string
   - uid: excel.Excel.ShapeCollection.addLine
-    summary: >-
+    summary: |-
       Adds a line to worksheet. Returns a Shape object that represents the new line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
     langs:
@@ -268,6 +255,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -301,13 +289,10 @@ items:
           type:
             - excel.Excel.ConnectorType
   - uid: excel.Excel.ShapeCollection.addLine_1
-    summary: >-
+    summary: |-
       Adds a line to worksheet. Returns a Shape object that represents the new line.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
     fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
     langs:
@@ -373,9 +358,7 @@ items:
       new text box.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addTextBox(text)
     fullName: addTextBox(text)
     langs:
@@ -387,6 +370,7 @@ items:
         type:
           - excel.Excel.Shape
         description: |-
+
 
           #### Examples
 
@@ -411,7 +395,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -423,13 +406,10 @@ items:
         type:
           - excel.Excel.RequestContext
   - uid: excel.Excel.ShapeCollection.getCount
-    summary: >-
+    summary: |-
       Returns the number of shapes in the worksheet. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
     fullName: getCount()
     langs:
@@ -442,37 +422,31 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
   - uid: excel.Excel.ShapeCollection.getItem
-    summary: >-
-      Gets a shape using its name.
+    summary: |-
+      Gets a shape using its Name or ID.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
-    name: getItem(name)
-    fullName: getItem(name)
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getItem(name: string): Excel.Shape;'
+      content: 'getItem(key: string): Excel.Shape;'
       return:
         type:
           - excel.Excel.Shape
         description: ''
       parameters:
-        - id: name
-          description: Name of the shape to be retrieved.
+        - id: key
+          description: Name or ID of the shape to be retrieved.
           type:
             - string
   - uid: excel.Excel.ShapeCollection.getItemAt
-    summary: >-
+    summary: |-
       Gets a shape using its position in the collection.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemAt(index)
     fullName: getItemAt(index)
     langs:
@@ -491,7 +465,6 @@ items:
             - number
   - uid: excel.Excel.ShapeCollection.items
     summary: Gets the loaded child items in this collection.
-    isPreview: true
     name: items
     fullName: items
     langs:
@@ -524,7 +497,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -547,7 +519,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -565,7 +536,6 @@ items:
           type:
             - 'string | string[]'
   - uid: excel.Excel.ShapeCollection.load_2
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -589,7 +559,6 @@ items:
       passed to it.) Whereas the original `Excel.ShapeCollection` object is an API object, the `toJSON` method returns a
       plain JavaScript object (typed as `Excel.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array
       with shallow copies of any loaded properties from the collection's items.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:

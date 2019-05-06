@@ -54,6 +54,7 @@ items:
           - excel.Excel.NamedItem
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -143,6 +144,7 @@ items:
         type:
           - excel.Excel.NamedItemCollection
         description: |-
+
 
           #### Examples
 

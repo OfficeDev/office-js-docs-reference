@@ -14,14 +14,14 @@ call npm run build
 call node preprocessor.js
 popd
 
-del package-lock.json
-
 cd api-extractor-inputs-office
 call ..\node_modules\.bin\api-extractor run
 
 cd ..\api-extractor-inputs-excel
 call ..\node_modules\.bin\api-extractor run
-cd ..\api-extractor-inputs-excel-release\excel_1_8
+cd ..\api-extractor-inputs-excel-release\excel_1_9
+call ..\..\node_modules\.bin\api-extractor run
+cd ..\excel_1_8
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\excel_1_7
 call ..\..\node_modules\.bin\api-extractor run
@@ -88,6 +88,7 @@ pushd scripts
 call node midprocessor.js
 popd
 
+
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office
 
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel --output-folder .\yaml\excel --office
@@ -99,6 +100,7 @@ call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_5 --o
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_6 --output-folder .\yaml\excel_1_6 --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_7 --output-folder .\yaml\excel_1_7 --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_8 --output-folder .\yaml\excel_1_8 --office
+call .\node_modules\.bin\api-documenter yaml --input-folder .\json\excel_1_9 --output-folder .\yaml\excel_1_9 --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\office --output-folder .\yaml\office --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook --output-folder .\yaml\outlook --office
 call .\node_modules\.bin\api-documenter yaml --input-folder .\json\outlook_1_1 --output-folder .\yaml\outlook_1_1 --office

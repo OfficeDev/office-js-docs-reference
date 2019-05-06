@@ -145,6 +145,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -177,6 +178,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -350,6 +352,7 @@ items:
         type:
           - excel.Excel.DocumentProperties
         description: |-
+
 
           #### Examples
 

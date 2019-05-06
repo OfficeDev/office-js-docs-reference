@@ -48,7 +48,22 @@ items:
       return:
         type:
           - excel.Excel.Slicer
-        description: The new slicer.
+        description: |-
+          The new slicer.
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Pivot");
+              const slicer = sheet.slicers.add(
+                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
+                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
+              );
+              slicer.name = "Fruit Slicer";
+              await context.sync();
+          });
+          ```
       parameters:
         - id: slicerSource
           description: >-
@@ -122,7 +137,22 @@ items:
       return:
         type:
           - excel.Excel.Slicer
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
+              slicer.caption = "Fruit Types";
+              slicer.left = 395;
+              slicer.top = 15;
+              slicer.height = 135;
+              slicer.width = 150;
+              await context.sync();
+          });
+          ```
       parameters:
         - id: key
           description: The name or id of the slicer.

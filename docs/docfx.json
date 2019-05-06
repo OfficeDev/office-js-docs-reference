@@ -1,6 +1,5 @@
 {
   "build": {
-    "markdownEngineName": "dfm",
     "content": [
       {
         "files": [
@@ -18,6 +17,7 @@
           "excel_1_6/**",
           "excel_1_7/**",
           "excel_1_8/**",
+          "excel_1_9/**",
           "office/**",
           "onenote/**",
           "outlook/**",
@@ -83,6 +83,8 @@
           "excel_1_7.yml",
           "excel_1_8/**",
           "excel_1_8.yml",
+          "excel_1_9/**",
+          "excel_1_9.yml",
           "office/**",
           "office.yml",
           "onenote/**",
@@ -763,6 +765,41 @@
       "src": "breadcrumb",
       "dest": "office_js_breadcrumb"
     },
+    
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.9",
+      "src": "docs-ref-autogen/excel_1_9",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "**/*.md",
+        "**/*.yml"
+      ],
+      "group": "excel-js-1.9",
+      "src": "docs-ref-autogen/office",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "excel_1_9.yml"
+      ],
+      "group": "excel-js-1.9",
+      "src": "docs-ref-autogen",
+      "dest": "api"
+    },
+    {
+      "files": [
+        "toc.yml"
+      ],
+      "group": "excel-js-1.9",
+      "src": "breadcrumb",
+      "dest": "office_js_breadcrumb"
+    },
 
     {
       "files": [
@@ -1116,6 +1153,10 @@
         "dest": "excel-js-1.8",
         "moniker_range": "excel-js-1.8"
       },
+      "excel-js-1.9": {
+        "dest": "excel-js-1.9",
+        "moniker_range": "excel-js-1.9"
+      },
       "onenote-js-1.1": {
         "dest": "onenote-js-1.1",
         "moniker_range": "onenote-js-1.1"
@@ -1214,6 +1255,9 @@
         "docs-ref-autogen/excel_1_8/**": [
           "excel 1.8"
         ],
+        "docs-ref-autogen/excel_1_9/**": [
+          "excel 1.9"
+        ],
         "docs-ref-autogen/onenote/**": [
           "onenote"
         ],
@@ -1263,7 +1307,15 @@
       "ms.prod": {
         "docs-ref-autogen/custom-functions-runtime/**": "excel",
         "docs-ref-autogen/excel/**": "excel",
-        "docs-ref-autogen/excel_release/**": "excel",
+        "docs-ref-autogen/excel_1_1/**": "excel",
+        "docs-ref-autogen/excel_1_2/**": "excel",
+        "docs-ref-autogen/excel_1_3/**": "excel",
+        "docs-ref-autogen/excel_1_4/**": "excel",
+        "docs-ref-autogen/excel_1_5/**": "excel",
+        "docs-ref-autogen/excel_1_6/**": "excel",
+        "docs-ref-autogen/excel_1_7/**": "excel",
+        "docs-ref-autogen/excel_1_8/**": "excel",
+        "docs-ref-autogen/excel_1_9/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
         "docs-ref-autogen/office-runtime/**": "non-product-specific",
         "docs-ref-autogen/onenote/**": "onenote",

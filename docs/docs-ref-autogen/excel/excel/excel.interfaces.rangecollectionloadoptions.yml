@@ -1,10 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions
-    summary: >-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.Interfaces.RangeCollectionLoadOptions
     fullName: Excel.Interfaces.RangeCollectionLoadOptions
     langs:
@@ -25,10 +22,12 @@ items:
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasLocal
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.formulasR1C1
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.hasSpill
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.height
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.hidden
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.hyperlink
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireColumn
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.isEntireRow
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.left
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.linkedDataTypeState
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormat
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.numberFormatLocal
@@ -37,11 +36,12 @@ items:
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.rowIndex
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.style
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.text
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.top
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.values
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.valueTypes
+      - excel.Excel.Interfaces.RangeCollectionLoadOptions.width
       - excel.Excel.Interfaces.RangeCollectionLoadOptions.worksheet
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.$all
-    isPreview: true
     name: $all
     fullName: $all
     langs:
@@ -59,7 +59,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: address
     fullName: address
     langs:
@@ -77,7 +76,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -95,7 +93,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: cellCount
     fullName: cellCount
     langs:
@@ -111,7 +108,6 @@ items:
       For EACH ITEM in the collection: Represents the total number of columns in the range. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: columnCount
     fullName: columnCount
     langs:
@@ -127,7 +123,6 @@ items:
       For EACH ITEM in the collection: Represents if all columns of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: columnHidden
     fullName: columnHidden
     langs:
@@ -145,7 +140,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: columnIndex
     fullName: columnIndex
     langs:
@@ -161,7 +155,6 @@ items:
       For EACH ITEM in the collection: Returns a data validation object.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: dataValidation
     fullName: dataValidation
     langs:
@@ -179,7 +172,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: format
     fullName: format
     langs:
@@ -198,7 +190,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: formulas
     fullName: formulas
     langs:
@@ -218,7 +209,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: formulasLocal
     fullName: formulasLocal
     langs:
@@ -237,7 +227,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: formulasR1C1
     fullName: formulasR1C1
     langs:
@@ -268,12 +257,30 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.height
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the range to
+      bottom edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.hidden
     summary: |-
       For EACH ITEM in the collection: Represents if all cells of the current range are hidden. Read-only.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: hidden
     fullName: hidden
     langs:
@@ -289,7 +296,6 @@ items:
       For EACH ITEM in the collection: Represents the hyperlink for the current range.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -305,7 +311,6 @@ items:
       For EACH ITEM in the collection: Represents if the current range is an entire column. Read-only.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: isEntireColumn
     fullName: isEntireColumn
     langs:
@@ -321,7 +326,6 @@ items:
       For EACH ITEM in the collection: Represents if the current range is an entire row. Read-only.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: isEntireRow
     fullName: isEntireRow
     langs:
@@ -332,14 +336,30 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.linkedDataTypeState
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.left
     summary: >-
-      For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the worksheet to
+      left edge of the range. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.linkedDataTypeState
+    summary: |-
+      For EACH ITEM in the collection: Represents the data type state of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
     fullName: linkedDataTypeState
     langs:
@@ -358,7 +378,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: numberFormat
     fullName: numberFormat
     langs:
@@ -378,7 +397,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: numberFormatLocal
     fullName: numberFormatLocal
     langs:
@@ -394,7 +412,6 @@ items:
       For EACH ITEM in the collection: Returns the total number of rows in the range. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: rowCount
     fullName: rowCount
     langs:
@@ -410,7 +427,6 @@ items:
       For EACH ITEM in the collection: Represents if all rows of the current range are hidden.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: rowHidden
     fullName: rowHidden
     langs:
@@ -426,7 +442,6 @@ items:
       For EACH ITEM in the collection: Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: rowIndex
     fullName: rowIndex
     langs:
@@ -445,7 +460,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: style
     fullName: style
     langs:
@@ -464,7 +478,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: text
     fullName: text
     langs:
@@ -472,6 +485,25 @@ items:
     type: property
     syntax:
       content: 'text?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.top
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from top edge of the worksheet to
+      top edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: boolean;'
       return:
         type:
           - boolean
@@ -484,7 +516,6 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: values
     fullName: values
     langs:
@@ -500,7 +531,6 @@ items:
       For EACH ITEM in the collection: Represents the type of data of each cell. Read-only.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: valueTypes
     fullName: valueTypes
     langs:
@@ -511,12 +541,30 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.width
+    summary: >-
+      For EACH ITEM in the collection: Returns the distance in points, for 100% zoom, from left edge of the range to
+      right edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Interfaces.RangeCollectionLoadOptions.worksheet
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
     name: worksheet
     fullName: worksheet
     langs:

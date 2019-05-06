@@ -25,13 +25,10 @@ items:
       - excel.Excel.Interfaces.TableData.sort
       - excel.Excel.Interfaces.TableData.style
   - uid: excel.Excel.Interfaces.TableData.autoFilter
-    summary: >-
+    summary: |-
       Represents the AutoFilter object of the table. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoFilter
     fullName: autoFilter
     langs:

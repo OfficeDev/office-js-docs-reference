@@ -69,6 +69,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -151,6 +152,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -223,6 +225,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -272,6 +275,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -317,6 +321,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -391,6 +396,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -459,6 +465,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -557,6 +564,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -677,6 +685,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -783,6 +792,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -814,6 +824,7 @@ items:
           - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -841,6 +852,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -872,6 +884,7 @@ items:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
         description: |-
+
 
           #### Examples
 
@@ -1033,6 +1046,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

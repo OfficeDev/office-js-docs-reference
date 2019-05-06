@@ -36,6 +36,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -104,6 +105,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -155,8 +157,14 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "toJSON(): {\r\n            [key: string]: string;\r\n        };"
+      content: |-
+        toJSON(): {
+                    [key: string]: string;
+                };
       return:
         type:
-          - "{\r\n            [key: string]: string;\r\n        }"
+          - |-
+            {
+                        [key: string]: string;
+                    }
         description: ''

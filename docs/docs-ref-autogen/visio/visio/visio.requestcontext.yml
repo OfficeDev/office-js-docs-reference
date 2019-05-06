@@ -17,6 +17,7 @@ items:
       - visio.Visio.RequestContext.(constructor)
       - visio.Visio.RequestContext.document
   - uid: visio.Visio.RequestContext.(constructor)
+    summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
     langs:

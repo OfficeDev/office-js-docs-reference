@@ -92,6 +92,7 @@ items:
           - onenote.OneNote.Paragraph
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -198,6 +199,7 @@ items:
         type:
           - onenote.OneNote.ParagraphCollection
         description: |-
+
 
           #### Examples
 

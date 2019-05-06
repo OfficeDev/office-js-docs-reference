@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CellPropertiesFillLoadOptions
-    summary: >-
-      Represents which properties to load on the format.fill object.
+    summary: |-
+      Specifies which properties to load on the `format.fill` object.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellPropertiesFillLoadOptions
     fullName: Excel.CellPropertiesFillLoadOptions
     langs:
@@ -21,7 +18,10 @@ items:
       - excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
       - excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
   - uid: excel.Excel.CellPropertiesFillLoadOptions.color
-    isPreview: true
+    summary: |-
+      Specifies whether to load on the `color` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -33,7 +33,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.pattern
-    isPreview: true
+    summary: |-
+      Specifies whether to load on the `pattern` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: pattern
     fullName: pattern
     langs:
@@ -45,7 +48,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.patternColor
-    isPreview: true
+    summary: |-
+      Specifies whether to load on the `patternColor` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternColor
     fullName: patternColor
     langs:
@@ -57,7 +63,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.patternTintAndShade
-    isPreview: true
+    summary: |-
+      Specifies whether to load on the `patternTintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: patternTintAndShade
     fullName: patternTintAndShade
     langs:
@@ -69,7 +78,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesFillLoadOptions.tintAndShade
-    isPreview: true
+    summary: |-
+      Specifies whether to load on the `tintAndShade` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tintAndShade
     fullName: tintAndShade
     langs:

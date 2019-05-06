@@ -88,13 +88,11 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.ChartDataLabelsLoadOptions.linkNumberFormat
     summary: >-
-      Represents whether the number format is linked to the cells (so that the number format changes in the labels when
-      it changes in the cells).
+      Represents whether or not the number format is linked to the cells. If true, the number format will change in the
+      labels when it changes in the cells
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkNumberFormat
     fullName: linkNumberFormat
     langs:

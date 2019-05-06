@@ -14,6 +14,7 @@ items:
       - 'OfficeExtension.ClientObject '
     package: visio
     children:
+      - visio.Visio.ShapeCollection.context
       - visio.Visio.ShapeCollection.getCount
       - visio.Visio.ShapeCollection.getItem
       - visio.Visio.ShapeCollection.items
@@ -21,6 +22,20 @@ items:
       - visio.Visio.ShapeCollection.load_1
       - visio.Visio.ShapeCollection.load_2
       - visio.Visio.ShapeCollection.toJSON
+  - uid: visio.Visio.ShapeCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - visio.Visio.RequestContext
   - uid: visio.Visio.ShapeCollection.getCount
     summary: |-
       Gets the number of Shapes in the collection.
@@ -37,6 +52,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: |-
+
 
           #### Examples
 
@@ -165,6 +181,12 @@ items:
           type:
             - OfficeExtension.LoadOption
   - uid: visio.Visio.ShapeCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Visio.ShapeCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Visio.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON()
     langs:

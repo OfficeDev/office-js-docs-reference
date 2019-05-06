@@ -30,6 +30,8 @@ items:
             uid: onenote.OneNote.FloatingInk
           - name: Image
             uid: onenote.OneNote.Image
+          - name: ImageOcrData
+            uid: onenote.OneNote.ImageOcrData
           - name: InkAnalysis
             uid: onenote.OneNote.InkAnalysis
           - name: InkAnalysisLine
@@ -48,6 +50,8 @@ items:
             uid: onenote.OneNote.InkStroke
           - name: InkStrokeCollection
             uid: onenote.OneNote.InkStrokeCollection
+          - name: InkStrokePointer
+            uid: onenote.OneNote.InkStrokePointer
           - name: InkWord
             uid: onenote.OneNote.InkWord
           - name: InkWordCollection
@@ -72,6 +76,8 @@ items:
             uid: onenote.OneNote.Paragraph
           - name: ParagraphCollection
             uid: onenote.OneNote.ParagraphCollection
+          - name: ParagraphInfo
+            uid: onenote.OneNote.ParagraphInfo
           - name: RequestContext
             uid: onenote.OneNote.RequestContext
           - name: RichText

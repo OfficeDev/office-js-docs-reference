@@ -31,13 +31,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotTableLoadOptions.enableDataValueEditing
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
+    summary: |-
+      Specifies whether the PivotTable allows values in the data body to be edited by the user.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: enableDataValueEditing
     fullName: enableDataValueEditing
     langs:
@@ -94,13 +91,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.Interfaces.PivotTableLoadOptions.useCustomSortLists
-    summary: >-
-      True if the PivotTable should use custom lists when sorting.
+    summary: |-
+      Specifies whether the PivotTable uses custom lists when sorting.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: useCustomSortLists
     fullName: useCustomSortLists
     langs:

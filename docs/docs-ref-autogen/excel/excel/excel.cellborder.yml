@@ -2,13 +2,12 @@
 items:
   - uid: excel.Excel.CellBorder
     summary: >-
-      Represents the returned single border properties of getCell/Row/ColumnProperties or border property input
-      parameter of setCell/Row/ColumnProperties.
+      Represents the properties of a single border returned by `getCellProperties`<!-- -->, `getRowProperties`<!-- -->,
+      and `getColumnProperties` or the border property input parameter of `setCellProperties`<!-- -->,
+      `setRowProperties`<!-- -->, and `setColumnProperties`<!-- -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellBorder
     fullName: Excel.CellBorder
     langs:
@@ -21,7 +20,10 @@ items:
       - excel.Excel.CellBorder.tintAndShade
       - excel.Excel.CellBorder.weight
   - uid: excel.Excel.CellBorder.color
-    isPreview: true
+    summary: |-
+      Represents the `color` property of a single border.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: color
     fullName: color
     langs:
@@ -33,7 +35,10 @@ items:
         type:
           - string
   - uid: excel.Excel.CellBorder.style
-    isPreview: true
+    summary: |-
+      Represents the `style` property of a single border.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:
@@ -49,7 +54,10 @@ items:
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
   - uid: excel.Excel.CellBorder.tintAndShade
-    isPreview: true
+    summary: |-
+      Represents the `tintAndShade` property of a single border.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: tintAndShade
     fullName: tintAndShade
     langs:
@@ -61,7 +69,10 @@ items:
         type:
           - number
   - uid: excel.Excel.CellBorder.weight
-    isPreview: true
+    summary: |-
+      Represents the `weight` property of a single border.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: weight
     fullName: weight
     langs:

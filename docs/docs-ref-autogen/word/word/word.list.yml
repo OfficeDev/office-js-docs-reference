@@ -535,7 +535,9 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: any[]): void;'
+      content: >-
+        setLevelNumbering(level: number, listNumbering: Word.ListNumbering, formatString?: Array<string | number>):
+        void;
       return:
         type:
           - void
@@ -556,7 +558,7 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - 'any[]'
+            - Array<string | number>
   - uid: word.Word.List.setLevelNumbering_1
     summary: |-
       Sets the numbering format at the specified level in the list.
@@ -570,7 +572,7 @@ items:
     syntax:
       content: >-
         setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" |
-        "UpperLetter" | "LowerLetter", formatString?: any[]): void;
+        "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
       return:
         type:
           - void
@@ -591,7 +593,7 @@ items:
             ".", level, ")"\] can define the format of "(2.c)", where 2 is the parent's item number and c is this
             level's item number.
           type:
-            - 'any[]'
+            - Array<string | number>
   - uid: word.Word.List.setLevelPicture
     summary: >-
       Sets the picture at the specified level in the list.

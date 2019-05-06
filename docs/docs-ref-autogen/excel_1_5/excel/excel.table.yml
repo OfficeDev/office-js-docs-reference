@@ -105,6 +105,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -137,6 +138,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -168,6 +170,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -204,6 +207,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -239,6 +243,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -273,6 +278,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -392,6 +398,7 @@ items:
         type:
           - excel.Excel.Table
         description: |-
+
 
           #### Examples
 

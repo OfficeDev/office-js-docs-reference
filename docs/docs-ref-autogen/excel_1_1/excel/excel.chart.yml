@@ -97,6 +97,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -225,6 +226,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -285,6 +287,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 
@@ -413,6 +416,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -456,6 +460,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

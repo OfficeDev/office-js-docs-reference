@@ -69,6 +69,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -141,6 +142,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -205,6 +207,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -247,6 +250,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -337,6 +341,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -389,6 +394,7 @@ items:
           - word.Word.ContentControl
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -406,7 +412,7 @@ items:
               myContentControl.tag = "Customer-Address";
               myContentControl.title = "Enter Customer Address Here:";
               myContentControl.style = "Normal";
-              myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'replace');
+              myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'Replace');
               myContentControl.cannotEdit = true;
 
               // Synchronize the document state by executing the queued commands,
@@ -427,7 +433,7 @@ items:
               let results = context.document.body.search("Contractor");
               results.load("font/bold");
 
-              // check to make sure we haven't added these content controls yet
+              // Check to make sure these content controls haven't been added yet.
               let customerContentControls = context.document.contentControls.getByTag("customer");
               customerContentControls.load("text");
               await context.sync();
@@ -461,6 +467,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -545,6 +552,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -685,6 +693,7 @@ items:
           - word.Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -767,6 +776,7 @@ items:
           - word.Word.Paragraph
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -847,6 +857,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -1033,7 +1044,16 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - word.Word.RangeCollection
@@ -1046,7 +1066,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.Range.select
     summary: |-
       Selects and navigates the Word UI to the range.
@@ -1063,6 +1092,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

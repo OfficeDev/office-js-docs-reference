@@ -15,6 +15,7 @@ items:
     package: word
     remarks: >-
 
+
       #### Examples
 
 
@@ -110,6 +111,7 @@ items:
       - word.Word.RequestContext.application
       - word.Word.RequestContext.document
   - uid: word.Word.RequestContext.(constructor)
+    summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
     langs:

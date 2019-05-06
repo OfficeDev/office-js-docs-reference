@@ -62,6 +62,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -135,6 +136,7 @@ items:
         type:
           - excel.Excel.NamedItem
         description: |-
+
 
           #### Examples
 

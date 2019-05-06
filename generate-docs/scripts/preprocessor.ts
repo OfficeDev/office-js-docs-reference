@@ -31,7 +31,7 @@ tryCatch(async () => {
         choices: [
             { name: "DefinitelyTyped (preview)", value: "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/types/office-js-preview/index.d.ts" },
             { name: "Beta CDN", value: "https://appsforoffice.officeapps.live.com/lib/beta/hosted/office.d.ts" },
-            { name: "Local file [generate-docs\\script-inputs\\office.d.ts]", value: "" }
+            { name: "Local file [generate-docs\\script-inputs\\office_preview.d.ts]", value: "" }
         ]
     });
 
@@ -73,7 +73,7 @@ tryCatch(async () => {
     }
 
     const localPreviewDtsPath = "../script-inputs/office_preview.d.ts";
-    if (urlToCopyOfficeJsFrom.length > 0) {
+    if (urlToCopyPreviewOfficeJsFrom.length > 0) {
         fsx.writeFileSync(localPreviewDtsPath, await fetchAndThrowOnError(urlToCopyPreviewOfficeJsFrom, "text"));
     }
 
@@ -99,9 +99,9 @@ tryCatch(async () => {
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
     );
 
-    console.log("\ncreate file: excel_1_8.d.ts");
+    console.log("\ncreate file: excel.d.ts");
     fsx.writeFileSync(
-        '../api-extractor-inputs-excel-release/excel_1_8/excel_1_8.d.ts',
+        '../api-extractor-inputs-excel-release/excel_1_9/excel.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true)
     );
 
@@ -114,7 +114,7 @@ tryCatch(async () => {
     console.log("create file: outlook.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook")
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook")
     );
 
     console.log("create file: powerpoint.d.ts");

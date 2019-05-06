@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.0.13",
+    "toolVersion": "7.1.0",
     "schemaVersion": 1000
   },
   "kind": "Package",
@@ -10396,7 +10396,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\r\n            ["
+                      "text": "{\n            ["
                     },
                     {
                       "kind": "Reference",
@@ -10404,7 +10404,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ": string]: string;\r\n        }"
+                      "text": ": string]: string;\n        }"
                     },
                     {
                       "kind": "Content",
@@ -53030,7 +53030,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `RequestContext` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -53974,7 +53974,7 @@
                 {
                   "kind": "Constructor",
                   "canonicalReference": "(:constructor,instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Constructs a new instance of the `Session` class\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -54006,7 +54006,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "{\r\n            ["
+                      "text": "{\n            ["
                     },
                     {
                       "kind": "Reference",
@@ -54014,7 +54014,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": ": string]: string;\r\n        }"
+                      "text": ": string]: string;\n        }"
                     },
                     {
                       "kind": "Content",

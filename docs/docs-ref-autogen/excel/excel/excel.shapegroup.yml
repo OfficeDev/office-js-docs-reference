@@ -6,9 +6,7 @@ items:
       -->.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ShapeGroup
     fullName: Excel.ShapeGroup
     langs:
@@ -31,7 +29,6 @@ items:
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
-    isPreview: true
     name: context
     fullName: context
     langs:
@@ -43,13 +40,10 @@ items:
         type:
           - excel.Excel.RequestContext
   - uid: excel.Excel.ShapeGroup.id
-    summary: >-
+    summary: |-
       Represents the shape identifier. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: id
     fullName: id
     langs:
@@ -82,7 +76,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-    isPreview: true
     name: load(option)
     fullName: load(option)
     langs:
@@ -103,7 +96,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNames)
     fullName: load(propertyNames)
     langs:
@@ -124,7 +116,6 @@ items:
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
-    isPreview: true
     name: load(propertyNamesAndPaths)
     fullName: load(propertyNamesAndPaths)
     langs:
@@ -144,13 +135,10 @@ items:
           type:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.ShapeGroup.shape
-    summary: >-
+    summary: |-
       Returns the Shape object associated with the group. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shape
     fullName: shape
     langs:
@@ -162,13 +150,10 @@ items:
         type:
           - excel.Excel.Shape
   - uid: excel.Excel.ShapeGroup.shapes
-    summary: >-
+    summary: |-
       Returns the collection of Shape objects. Read-only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: shapes
     fullName: shapes
     langs:
@@ -186,7 +171,6 @@ items:
       passed to it.) Whereas the original Excel.ShapeGroup object is an API object, the `toJSON` method returns a plain
       JavaScript object (typed as `Excel.Interfaces.ShapeGroupData`<!-- -->) that contains shallow copies of any loaded
       child properties from the original object.
-    isPreview: true
     name: toJSON()
     fullName: toJSON()
     langs:
@@ -199,13 +183,10 @@ items:
           - excel.Excel.Interfaces.ShapeGroupData
         description: ''
   - uid: excel.Excel.ShapeGroup.ungroup
-    summary: >-
+    summary: |-
       Ungroups any grouped shapes in the specified shape group.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: ungroup()
     fullName: ungroup()
     langs:
@@ -217,6 +198,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 

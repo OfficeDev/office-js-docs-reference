@@ -128,6 +128,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -227,6 +228,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -312,6 +314,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -366,6 +369,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -486,6 +490,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -642,6 +647,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -804,6 +810,7 @@ items:
           - word.Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -906,6 +913,7 @@ items:
           - word.Word.Paragraph
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1002,6 +1010,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -1108,6 +1117,7 @@ items:
         type:
           - word.Word.ContentControl
         description: |-
+
 
           #### Examples
 
@@ -1282,11 +1292,21 @@ items:
       - typeScript
     type: method
     syntax:
-      content: "search(searchText: string, searchOptions?: Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }): Word.RangeCollection;"
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
       return:
         type:
           - word.Word.RangeCollection
         description: |-
+
 
           #### Examples
 
@@ -1334,7 +1354,16 @@ items:
         - id: searchOptions
           description: Optional. Options for the search.
           type:
-            - "Word.SearchOptions | {\r\n            ignorePunct?: boolean;\r\n            ignoreSpace?: boolean;\r\n            matchCase?: boolean;\r\n            matchPrefix?: boolean;\r\n            matchSuffix?: boolean;\r\n            matchWholeWord?: boolean;\r\n            matchWildcards?: boolean;\r\n        }"
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
   - uid: word.Word.ContentControl.select
     summary: |-
       Selects the content control. This causes Word to scroll to the selection.
@@ -1385,40 +1414,41 @@ items:
       This method has the following additional signature:
 
       `set(properties: Word.ContentControl): void`
+
       #### Examples
 
       ```typescript
       // Adds title and colors to odd and even content controls and changes their appearance.
       await Word.run(async (context) => {
-          // Gets the complete sentence  (as range) associated with the insertion point.
-          let evenContentControls = context.document.contentControls.getByTag("even");
-          let oddContentControls = context.document.contentControls.getByTag("odd");
-          evenContentControls.load("color,title,appearance");
-          oddContentControls.load("color,title,appearance");
+        // Gets the complete sentence (as range) associated with the insertion point.
+        let evenContentControls = context.document.contentControls.getByTag("even");
+        let oddContentControls = context.document.contentControls.getByTag("odd");
+        evenContentControls.load("length");
+        oddContentControls.load("length");
 
-          await context.sync();
+        await context.sync();
 
-          for (let i = 0; i < evenContentControls.items.length; i++) {
-              // Change a few properties and append a paragraph
-              evenContentControls.items[i].set({
-                  color: 'red',
-                  title: 'Odd ContentControl #' + (i + 1),
-                  appearance: 'Tags'
-              });
-              evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
-          }
+        for (let i = 0; i < evenContentControls.items.length; i++) {
+          // Change a few properties and append a paragraph
+          evenContentControls.items[i].set({
+            color: "red",
+            title: "Odd ContentControl #" + (i + 1),
+            appearance: "Tags"
+          });
+          evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
+        }
 
-          for (let j = 0; j < oddContentControls.items.length; j++) {
-              // Change a few properties and append a paragraph
-              oddContentControls.items[j].set({
-                  color: 'green',
-                  title: 'Even ContentControl #' + (j + 1),
-                  appearance: 'Tags'
-              });
-              oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
-          }
+        for (let j = 0; j < oddContentControls.items.length; j++) {
+          // Change a few properties and append a paragraph
+          oddContentControls.items[j].set({
+            color: "green",
+            title: "Even ContentControl #" + (j + 1),
+            appearance: "Tags"
+          });
+          oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
+        }
 
-          await context.sync();
+        await context.sync();
       });
       ```
     name: 'set(properties, options)'
@@ -1493,12 +1523,16 @@ items:
       return:
         type:
           - string
-        description: |-
+        description: >-
+
 
           #### Examples
 
+
           ```javascript
+
           // Run a batch operation against the Word object model.
+
           Word.run(function (context) {
               
               // Create a proxy range object for the current selection.
@@ -1509,7 +1543,7 @@ items:
               myContentControl.tag = 'Customer-Address';
               myContentControl.title = ' has t';
               myContentControl.style = 'Heading 2';
-              myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'replace');
+              myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'Replace');
               myContentControl.cannotEdit = true;
               
               // Queue a command to load the id property for the content control you created.
@@ -1521,35 +1555,39 @@ items:
                   console.log('Created content control with id: ' + myContentControl.id);
               });  
           })
+
           .catch(function (error) {
               console.log('Error: ' + JSON.stringify(error));
               if (error instanceof OfficeExtension.Error) {
                   console.log('Debug info: ' + JSON.stringify(error.debugInfo));
               }
           });
+
           ```
+
           ```typescript
-          // Traverses each paragraph of the document and wraps a content control on each with either a even or odd tags
+
+          // Traverses each paragraph of the document and wraps a content control on each with either a even or odd
+          tags.
+
           await Word.run(async (context) => {
-              let paragraphs = context.document.body.paragraphs;
-              paragraphs.load("$none"); //Don't need any properties, we'll just wrap each paragraph with a content control
+            let paragraphs = context.document.body.paragraphs;
+            paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
 
-              await context.sync();
+            await context.sync();
 
-              for (let i = 0; i < paragraphs.items.length; i++) {
-                  let contentControl = paragraphs.items[i].insertContentControl();
-                  // For even we tag "even"
-                  if (i % 2 === 0) {
-                      contentControl.tag = "even";
-                  }
-
-                  else {
-                      contentControl.tag = "odd";
-                  }
+            for (let i = 0; i < paragraphs.items.length; i++) {
+              let contentControl = paragraphs.items[i].insertContentControl();
+              // For even, tag "even".
+              if (i % 2 === 0) {
+                contentControl.tag = "even";
+              } else {
+                contentControl.tag = "odd";
               }
-              console.log("Content controls inserted: " + paragraphs.items.length)
+            }
+            console.log("Content controls inserted: " + paragraphs.items.length);
 
-              await context.sync();
+            await context.sync();
           });
 
           ```

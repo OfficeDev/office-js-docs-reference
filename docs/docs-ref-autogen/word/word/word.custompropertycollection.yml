@@ -44,6 +44,7 @@ items:
           - word.Word.CustomProperty
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -174,6 +175,7 @@ items:
         type:
           - 'Word.CustomProperty[]'
         description: |-
+
 
           #### Examples
 

@@ -62,6 +62,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -167,6 +168,7 @@ items:
         type:
           - excel.Excel.Application
         description: |-
+
 
           #### Examples
 

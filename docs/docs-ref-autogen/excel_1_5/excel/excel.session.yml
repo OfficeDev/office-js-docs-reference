@@ -12,13 +12,17 @@ items:
       - excel.Excel.Session.(constructor)
       - excel.Excel.Session.close
   - uid: excel.Excel.Session.(constructor)
+    summary: Constructs a new instance of the `Session` class
     name: '(constructor)(workbookUrl, requestHeaders, persisted)'
     fullName: '(constructor)(workbookUrl, requestHeaders, persisted)'
     langs:
       - typeScript
     type: constructor
     syntax:
-      content: "constructor(workbookUrl?: string, requestHeaders?: {\r\n            [name: string]: string;\r\n        }, persisted?: boolean);"
+      content: |-
+        constructor(workbookUrl?: string, requestHeaders?: {
+                    [name: string]: string;
+                }, persisted?: boolean);
       parameters:
         - id: workbookUrl
           description: ''
@@ -27,7 +31,10 @@ items:
         - id: requestHeaders
           description: ''
           type:
-            - "{\r\n            [name: string]: string;\r\n        }"
+            - |-
+              {
+                          [name: string]: string;
+                      }
         - id: persisted
           description: ''
           type:

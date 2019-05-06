@@ -859,6 +859,7 @@ items:
       - excel.Excel.WorksheetCalculatedEventArgs
       - excel.Excel.WorksheetChangedEventArgs
       - excel.Excel.WorksheetCollection
+      - excel.Excel.WorksheetColumnSortedEventArgs
       - excel.Excel.WorksheetDeactivatedEventArgs
       - excel.Excel.WorksheetDeletedEventArgs
       - excel.Excel.WorksheetFilteredEventArgs
@@ -867,8 +868,10 @@ items:
       - excel.Excel.WorksheetPositionType
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
+      - excel.Excel.WorksheetRowSortedEventArgs
       - excel.Excel.WorksheetSearchCriteria
       - excel.Excel.WorksheetSelectionChangedEventArgs
+      - excel.Excel.WorksheetSingleClickedEventArgs
   - uid: excel.Excel.createWorkbook
     summary: |-
       Creates and opens a new workbook. Optionally, the workbook can be pre-populated with a base64-encoded .xlsx file.
@@ -885,6 +888,7 @@ items:
         type:
           - Promise<void>
         description: |-
+
 
           #### Examples
 
@@ -2806,6 +2810,8 @@ references:
     name: Excel.WorksheetChangedEventArgs
   - uid: excel.Excel.WorksheetCollection
     name: Excel.WorksheetCollection
+  - uid: excel.Excel.WorksheetColumnSortedEventArgs
+    name: Excel.WorksheetColumnSortedEventArgs
   - uid: excel.Excel.WorksheetDeactivatedEventArgs
     name: Excel.WorksheetDeactivatedEventArgs
   - uid: excel.Excel.WorksheetDeletedEventArgs
@@ -2822,7 +2828,11 @@ references:
     name: Excel.WorksheetProtection
   - uid: excel.Excel.WorksheetProtectionOptions
     name: Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.WorksheetRowSortedEventArgs
+    name: Excel.WorksheetRowSortedEventArgs
   - uid: excel.Excel.WorksheetSearchCriteria
     name: Excel.WorksheetSearchCriteria
   - uid: excel.Excel.WorksheetSelectionChangedEventArgs
     name: Excel.WorksheetSelectionChangedEventArgs
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs
+    name: Excel.WorksheetSingleClickedEventArgs

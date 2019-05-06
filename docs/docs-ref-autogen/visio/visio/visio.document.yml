@@ -15,6 +15,7 @@ items:
     package: visio
     children:
       - visio.Visio.Document.application
+      - visio.Visio.Document.context
       - visio.Visio.Document.getActivePage
       - visio.Visio.Document.load
       - visio.Visio.Document.load_1
@@ -47,6 +48,20 @@ items:
       return:
         type:
           - visio.Visio.Application
+  - uid: visio.Visio.Document.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - visio.Visio.RequestContext
   - uid: visio.Visio.Document.getActivePage
     summary: |-
       Returns the Active Page of the document.
@@ -63,6 +78,7 @@ items:
         type:
           - visio.Visio.Page
         description: |-
+
 
           #### Examples
 
@@ -268,6 +284,7 @@ items:
           - visio.Visio.PageCollection
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -349,6 +366,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -386,6 +404,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -401,6 +420,12 @@ items:
           });
           ```
   - uid: visio.Visio.Document.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Visio.Document object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Visio.Interfaces.DocumentData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

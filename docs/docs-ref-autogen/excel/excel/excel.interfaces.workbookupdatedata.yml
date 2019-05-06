@@ -20,9 +20,7 @@ items:
       charts track the index of the data points.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartDataPointTrack
     fullName: chartDataPointTrack
     langs:
@@ -39,9 +37,7 @@ items:
       true if you want to close a modified workbook without either saving it or being prompted to save it.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDirty
     fullName: isDirty
     langs:
@@ -91,9 +87,7 @@ items:
       Data will permanently lose accuracy when switching this property from false to true.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: usePrecisionAsDisplayed
     fullName: usePrecisionAsDisplayed
     langs:

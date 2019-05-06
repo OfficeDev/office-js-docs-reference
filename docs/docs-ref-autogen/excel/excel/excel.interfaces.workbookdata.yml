@@ -35,13 +35,10 @@ items:
       - excel.Excel.Interfaces.WorkbookData.usePrecisionAsDisplayed
       - excel.Excel.Interfaces.WorkbookData.worksheets
   - uid: excel.Excel.Interfaces.WorkbookData.autoSave
-    summary: >-
+    summary: |-
       Specifies whether or not the workbook is in autosave mode. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: autoSave
     fullName: autoSave
     langs:
@@ -68,13 +65,10 @@ items:
         type:
           - 'Excel.Interfaces.BindingData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.calculationEngineVersion
-    summary: >-
+    summary: |-
       Returns a number about the version of Excel Calculation Engine. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: calculationEngineVersion
     fullName: calculationEngineVersion
     langs:
@@ -91,9 +85,7 @@ items:
       charts track the index of the data points.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: chartDataPointTrack
     fullName: chartDataPointTrack
     langs:
@@ -143,9 +135,7 @@ items:
       true if you want to close a modified workbook without either saving it or being prompted to save it.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: isDirty
     fullName: isDirty
     langs:
@@ -220,13 +210,10 @@ items:
         type:
           - 'Excel.Interfaces.PivotTableStyleData[]'
   - uid: excel.Excel.Interfaces.WorkbookData.previouslySaved
-    summary: >-
+    summary: |-
       Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: previouslySaved
     fullName: previouslySaved
     langs:
@@ -423,9 +410,7 @@ items:
       Data will permanently lose accuracy when switching this property from false to true.
 
 
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: usePrecisionAsDisplayed
     fullName: usePrecisionAsDisplayed
     langs:

@@ -1,13 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.PivotFilterTopBottomCriterion
-    summary: >-
+    summary: |-
       Represents the criteria for the top/bottom values filter.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    isPreview: true
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotFilterTopBottomCriterion
     fullName: Excel.PivotFilterTopBottomCriterion
     langs:
@@ -23,7 +20,6 @@ items:
       - excel.Excel.PivotFilterTopBottomCriterion.topPercent
       - excel.Excel.PivotFilterTopBottomCriterion.topSum
   - uid: excel.Excel.PivotFilterTopBottomCriterion.bottomItems
-    isPreview: true
     name: bottomItems
     fullName: bottomItems
     langs:
@@ -31,7 +27,6 @@ items:
     type: field
     numericValue: '"BottomItems"'
   - uid: excel.Excel.PivotFilterTopBottomCriterion.bottomPercent
-    isPreview: true
     name: bottomPercent
     fullName: bottomPercent
     langs:
@@ -39,7 +34,6 @@ items:
     type: field
     numericValue: '"BottomPercent"'
   - uid: excel.Excel.PivotFilterTopBottomCriterion.bottomSum
-    isPreview: true
     name: bottomSum
     fullName: bottomSum
     langs:
@@ -47,7 +41,6 @@ items:
     type: field
     numericValue: '"BottomSum"'
   - uid: excel.Excel.PivotFilterTopBottomCriterion.invalid
-    isPreview: true
     name: invalid
     fullName: invalid
     langs:
@@ -55,7 +48,6 @@ items:
     type: field
     numericValue: '"Invalid"'
   - uid: excel.Excel.PivotFilterTopBottomCriterion.topItems
-    isPreview: true
     name: topItems
     fullName: topItems
     langs:
@@ -63,7 +55,6 @@ items:
     type: field
     numericValue: '"TopItems"'
   - uid: excel.Excel.PivotFilterTopBottomCriterion.topPercent
-    isPreview: true
     name: topPercent
     fullName: topPercent
     langs:
@@ -71,7 +62,6 @@ items:
     type: field
     numericValue: '"TopPercent"'
   - uid: excel.Excel.PivotFilterTopBottomCriterion.topSum
-    isPreview: true
     name: topSum
     fullName: topSum
     langs:

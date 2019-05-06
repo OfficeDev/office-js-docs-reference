@@ -22,10 +22,12 @@ items:
       - excel.Excel.Interfaces.RangeData.formulasLocal
       - excel.Excel.Interfaces.RangeData.formulasR1C1
       - excel.Excel.Interfaces.RangeData.hasSpill
+      - excel.Excel.Interfaces.RangeData.height
       - excel.Excel.Interfaces.RangeData.hidden
       - excel.Excel.Interfaces.RangeData.hyperlink
       - excel.Excel.Interfaces.RangeData.isEntireColumn
       - excel.Excel.Interfaces.RangeData.isEntireRow
+      - excel.Excel.Interfaces.RangeData.left
       - excel.Excel.Interfaces.RangeData.linkedDataTypeState
       - excel.Excel.Interfaces.RangeData.numberFormat
       - excel.Excel.Interfaces.RangeData.numberFormatLocal
@@ -34,8 +36,10 @@ items:
       - excel.Excel.Interfaces.RangeData.rowIndex
       - excel.Excel.Interfaces.RangeData.style
       - excel.Excel.Interfaces.RangeData.text
+      - excel.Excel.Interfaces.RangeData.top
       - excel.Excel.Interfaces.RangeData.values
       - excel.Excel.Interfaces.RangeData.valueTypes
+      - excel.Excel.Interfaces.RangeData.width
   - uid: excel.Excel.Interfaces.RangeData.address
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
@@ -249,6 +253,24 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Interfaces.RangeData.height
+    summary: >-
+      Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Interfaces.RangeData.hidden
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
@@ -309,14 +331,30 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.linkedDataTypeState
+  - uid: excel.Excel.Interfaces.RangeData.left
     summary: >-
-      Represents the data type state of each cell. Read-only.
+      Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range.
+      Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'left?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.RangeData.linkedDataTypeState
+    summary: |-
+      Represents the data type state of each cell. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: linkedDataTypeState
     fullName: linkedDataTypeState
     langs:
@@ -443,6 +481,24 @@ items:
       return:
         type:
           - 'string[][]'
+  - uid: excel.Excel.Interfaces.RangeData.top
+    summary: >-
+      Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'top?: number;'
+      return:
+        type:
+          - number
   - uid: excel.Excel.Interfaces.RangeData.values
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
@@ -477,3 +533,21 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
+  - uid: excel.Excel.Interfaces.RangeData.width
+    summary: >-
+      Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

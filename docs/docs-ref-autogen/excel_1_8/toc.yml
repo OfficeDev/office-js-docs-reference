@@ -180,6 +180,51 @@ items:
                 uid: excel.Excel.VerticalAlignment
               - name: WorksheetPositionType
                 uid: excel.Excel.WorksheetPositionType
+          - name: Icon Sets
+            uid: ''
+            items:
+              - name: FiveArrowsGraySet
+                uid: excel.Excel.FiveArrowsGraySet
+              - name: FiveArrowsSet
+                uid: excel.Excel.FiveArrowsSet
+              - name: FiveBoxesSet
+                uid: excel.Excel.FiveBoxesSet
+              - name: FiveQuartersSet
+                uid: excel.Excel.FiveQuartersSet
+              - name: FiveRatingSet
+                uid: excel.Excel.FiveRatingSet
+              - name: FourArrowsGraySet
+                uid: excel.Excel.FourArrowsGraySet
+              - name: FourArrowsSet
+                uid: excel.Excel.FourArrowsSet
+              - name: FourRatingSet
+                uid: excel.Excel.FourRatingSet
+              - name: FourRedToBlackSet
+                uid: excel.Excel.FourRedToBlackSet
+              - name: FourTrafficLightsSet
+                uid: excel.Excel.FourTrafficLightsSet
+              - name: IconCollections
+                uid: excel.Excel.IconCollections
+              - name: ThreeArrowsGraySet
+                uid: excel.Excel.ThreeArrowsGraySet
+              - name: ThreeArrowsSet
+                uid: excel.Excel.ThreeArrowsSet
+              - name: ThreeFlagsSet
+                uid: excel.Excel.ThreeFlagsSet
+              - name: ThreeSignsSet
+                uid: excel.Excel.ThreeSignsSet
+              - name: ThreeStarsSet
+                uid: excel.Excel.ThreeStarsSet
+              - name: ThreeSymbols2Set
+                uid: excel.Excel.ThreeSymbols2Set
+              - name: ThreeSymbolsSet
+                uid: excel.Excel.ThreeSymbolsSet
+              - name: ThreeTrafficLights1Set
+                uid: excel.Excel.ThreeTrafficLights1Set
+              - name: ThreeTrafficLights2Set
+                uid: excel.Excel.ThreeTrafficLights2Set
+              - name: ThreeTrianglesSet
+                uid: excel.Excel.ThreeTrianglesSet
           - name: Application
             uid: excel.Excel.Application
           - name: BasicDataValidation
@@ -188,10 +233,18 @@ items:
             uid: excel.Excel.Binding
           - name: BindingCollection
             uid: excel.Excel.BindingCollection
+          - name: BindingDataChangedEventArgs
+            uid: excel.Excel.BindingDataChangedEventArgs
+          - name: BindingSelectionChangedEventArgs
+            uid: excel.Excel.BindingSelectionChangedEventArgs
           - name: CellValueConditionalFormat
             uid: excel.Excel.CellValueConditionalFormat
           - name: Chart
             uid: excel.Excel.Chart
+          - name: ChartActivatedEventArgs
+            uid: excel.Excel.ChartActivatedEventArgs
+          - name: ChartAddedEventArgs
+            uid: excel.Excel.ChartAddedEventArgs
           - name: ChartAreaFormat
             uid: excel.Excel.ChartAreaFormat
           - name: ChartAxes
@@ -214,6 +267,10 @@ items:
             uid: excel.Excel.ChartDataLabelFormat
           - name: ChartDataLabels
             uid: excel.Excel.ChartDataLabels
+          - name: ChartDeactivatedEventArgs
+            uid: excel.Excel.ChartDeactivatedEventArgs
+          - name: ChartDeletedEventArgs
+            uid: excel.Excel.ChartDeletedEventArgs
           - name: ChartFill
             uid: excel.Excel.ChartFill
           - name: ChartFont
@@ -266,16 +323,28 @@ items:
             uid: excel.Excel.ChartTrendlineLabelFormat
           - name: ColorScaleConditionalFormat
             uid: excel.Excel.ColorScaleConditionalFormat
+          - name: ConditionalCellValueRule
+            uid: excel.Excel.ConditionalCellValueRule
+          - name: ConditionalColorScaleCriteria
+            uid: excel.Excel.ConditionalColorScaleCriteria
+          - name: ConditionalColorScaleCriterion
+            uid: excel.Excel.ConditionalColorScaleCriterion
           - name: ConditionalDataBarNegativeFormat
             uid: excel.Excel.ConditionalDataBarNegativeFormat
           - name: ConditionalDataBarPositiveFormat
             uid: excel.Excel.ConditionalDataBarPositiveFormat
+          - name: ConditionalDataBarRule
+            uid: excel.Excel.ConditionalDataBarRule
           - name: ConditionalFormat
             uid: excel.Excel.ConditionalFormat
           - name: ConditionalFormatCollection
             uid: excel.Excel.ConditionalFormatCollection
           - name: ConditionalFormatRule
             uid: excel.Excel.ConditionalFormatRule
+          - name: ConditionalIconCriterion
+            uid: excel.Excel.ConditionalIconCriterion
+          - name: ConditionalPresetCriteriaRule
+            uid: excel.Excel.ConditionalPresetCriteriaRule
           - name: ConditionalRangeBorder
             uid: excel.Excel.ConditionalRangeBorder
           - name: ConditionalRangeBorderCollection
@@ -286,6 +355,10 @@ items:
             uid: excel.Excel.ConditionalRangeFont
           - name: ConditionalRangeFormat
             uid: excel.Excel.ConditionalRangeFormat
+          - name: ConditionalTextComparisonRule
+            uid: excel.Excel.ConditionalTextComparisonRule
+          - name: ConditionalTopBottomRule
+            uid: excel.Excel.ConditionalTopBottomRule
           - name: CustomConditionalFormat
             uid: excel.Excel.CustomConditionalFormat
           - name: CustomDataValidation
@@ -324,6 +397,8 @@ items:
             uid: excel.Excel.Filter
           - name: FilterCriteria
             uid: excel.Excel.FilterCriteria
+          - name: FilterDatetime
+            uid: excel.Excel.FilterDatetime
           - name: FilterPivotHierarchy
             uid: excel.Excel.FilterPivotHierarchy
           - name: FilterPivotHierarchyCollection
@@ -334,6 +409,8 @@ items:
             uid: excel.Excel.FunctionResult
           - name: Functions
             uid: excel.Excel.Functions
+          - name: Icon
+            uid: excel.Excel.Icon
           - name: IconSetConditionalFormat
             uid: excel.Excel.IconSetConditionalFormat
           - name: ListDataValidation
@@ -376,6 +453,10 @@ items:
             uid: excel.Excel.RangeFont
           - name: RangeFormat
             uid: excel.Excel.RangeFormat
+          - name: RangeHyperlink
+            uid: excel.Excel.RangeHyperlink
+          - name: RangeReference
+            uid: excel.Excel.RangeReference
           - name: RangeSort
             uid: excel.Excel.RangeSort
           - name: RangeView
@@ -388,16 +469,24 @@ items:
             uid: excel.Excel.RowColumnPivotHierarchy
           - name: RowColumnPivotHierarchyCollection
             uid: excel.Excel.RowColumnPivotHierarchyCollection
+          - name: RunOptions
+            uid: excel.Excel.RunOptions
           - name: Runtime
             uid: excel.Excel.Runtime
+          - name: SelectionChangedEventArgs
+            uid: excel.Excel.SelectionChangedEventArgs
           - name: Session
             uid: excel.Excel.Session
           - name: Setting
             uid: excel.Excel.Setting
           - name: SettingCollection
             uid: excel.Excel.SettingCollection
+          - name: SettingsChangedEventArgs
+            uid: excel.Excel.SettingsChangedEventArgs
           - name: ShowAsRule
             uid: excel.Excel.ShowAsRule
+          - name: SortField
+            uid: excel.Excel.SortField
           - name: Style
             uid: excel.Excel.Style
           - name: StyleCollection
@@ -406,6 +495,8 @@ items:
             uid: excel.Excel.Subtotals
           - name: Table
             uid: excel.Excel.Table
+          - name: TableChangedEventArgs
+            uid: excel.Excel.TableChangedEventArgs
           - name: TableCollection
             uid: excel.Excel.TableCollection
           - name: TableColumn
@@ -416,6 +507,8 @@ items:
             uid: excel.Excel.TableRow
           - name: TableRowCollection
             uid: excel.Excel.TableRowCollection
+          - name: TableSelectionChangedEventArgs
+            uid: excel.Excel.TableSelectionChangedEventArgs
           - name: TableSort
             uid: excel.Excel.TableSort
           - name: TextConditionalFormat
@@ -430,12 +523,28 @@ items:
             uid: excel.Excel.WorkbookProtection
           - name: Worksheet
             uid: excel.Excel.Worksheet
+          - name: WorksheetActivatedEventArgs
+            uid: excel.Excel.WorksheetActivatedEventArgs
+          - name: WorksheetAddedEventArgs
+            uid: excel.Excel.WorksheetAddedEventArgs
+          - name: WorksheetCalculatedEventArgs
+            uid: excel.Excel.WorksheetCalculatedEventArgs
+          - name: WorksheetChangedEventArgs
+            uid: excel.Excel.WorksheetChangedEventArgs
           - name: WorksheetCollection
             uid: excel.Excel.WorksheetCollection
+          - name: WorksheetDeactivatedEventArgs
+            uid: excel.Excel.WorksheetDeactivatedEventArgs
+          - name: WorksheetDeletedEventArgs
+            uid: excel.Excel.WorksheetDeletedEventArgs
           - name: WorksheetFreezePanes
             uid: excel.Excel.WorksheetFreezePanes
           - name: WorksheetProtection
             uid: excel.Excel.WorksheetProtection
+          - name: WorksheetProtectionOptions
+            uid: excel.Excel.WorksheetProtectionOptions
+          - name: WorksheetSelectionChangedEventArgs
+            uid: excel.Excel.WorksheetSelectionChangedEventArgs
       - name: Common API
         uid: office
         items:

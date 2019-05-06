@@ -11,6 +11,7 @@ items:
       - office.OfficeExtension.EmbeddedSession.(constructor)
       - office.OfficeExtension.EmbeddedSession.init
   - uid: office.OfficeExtension.EmbeddedSession.(constructor)
+    summary: Constructs a new instance of the `EmbeddedSession` class
     name: '(constructor)(url, options)'
     fullName: '(constructor)(url, options)'
     langs:

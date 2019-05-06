@@ -12,6 +12,7 @@ items:
       - excel.Excel.Session.(constructor)
       - excel.Excel.Session.close
   - uid: excel.Excel.Session.(constructor)
+    summary: Constructs a new instance of the `Session` class
     name: '(constructor)(workbookUrl, requestHeaders, persisted)'
     fullName: '(constructor)(workbookUrl, requestHeaders, persisted)'
     langs:

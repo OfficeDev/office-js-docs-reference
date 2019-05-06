@@ -112,12 +112,10 @@ items:
         type:
           - Excel.SortOn | "Value" | "CellColor" | "FontColor" | "Icon"
   - uid: excel.Excel.SortField.subField
-    summary: >-
+    summary: |-
       Represents the subfield that is the target property name of a rich value to sort on.
 
-
-      \[ [API set: ExcelApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: subField
     fullName: subField
     langs:

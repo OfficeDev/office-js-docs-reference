@@ -46,6 +46,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -101,6 +102,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -154,6 +156,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -246,6 +249,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -347,6 +351,7 @@ items:
         type:
           - excel.Excel.WorksheetCollection
         description: |-
+
 
           #### Examples
 

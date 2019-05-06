@@ -20,6 +20,7 @@ items:
       - office.OfficeExtension.ClientRequestContext.trace
       - office.OfficeExtension.ClientRequestContext.trackedObjects
   - uid: office.OfficeExtension.ClientRequestContext.(constructor)
+    summary: Constructs a new instance of the `ClientRequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
     langs:

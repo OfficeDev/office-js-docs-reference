@@ -84,6 +84,7 @@ items:
           - string
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -132,6 +133,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 

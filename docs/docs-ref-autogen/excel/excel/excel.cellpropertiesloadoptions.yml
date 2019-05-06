@@ -1,7 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.CellPropertiesLoadOptions
-    summary: 'Represents which cell properties to load, when used as part of a "range.getCellProperties" method.'
+    summary: |-
+      Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.CellPropertiesLoadOptions
     fullName: Excel.CellPropertiesLoadOptions
     langs:
@@ -16,6 +19,10 @@ items:
       - excel.Excel.CellPropertiesLoadOptions.hyperlink
       - excel.Excel.CellPropertiesLoadOptions.style
   - uid: excel.Excel.CellPropertiesLoadOptions.address
+    summary: |-
+      Specifies whether to load on the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: address
     fullName: address
     langs:
@@ -27,6 +34,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesLoadOptions.addressLocal
+    summary: |-
+      Specifies whether to load on the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: addressLocal
     fullName: addressLocal
     langs:
@@ -38,6 +49,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesLoadOptions.format
+    summary: |-
+      Specifies whether to load on the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: format
     fullName: format
     langs:
@@ -49,6 +64,10 @@ items:
         type:
           - excel.Excel.CellPropertiesFormatLoadOptions
   - uid: excel.Excel.CellPropertiesLoadOptions.hidden
+    summary: |-
+      Specifies whether to load on the `hidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hidden
     fullName: hidden
     langs:
@@ -60,6 +79,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesLoadOptions.hyperlink
+    summary: |-
+      Specifies whether to load on the `hyperlink` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: hyperlink
     fullName: hyperlink
     langs:
@@ -71,6 +94,10 @@ items:
         type:
           - boolean
   - uid: excel.Excel.CellPropertiesLoadOptions.style
+    summary: |-
+      Specifies whether to load on the `style` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: style
     fullName: style
     langs:

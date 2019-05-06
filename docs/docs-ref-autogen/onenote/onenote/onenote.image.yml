@@ -80,6 +80,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -214,6 +215,7 @@ items:
         type:
           - onenote.OneNote.Image
         description: |-
+
 
           #### Examples
 
@@ -377,6 +379,7 @@ items:
         type:
           - onenote.OneNote.ImageOcrData
         description: |-
+
 
           #### Examples
 

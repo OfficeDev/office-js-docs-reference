@@ -94,6 +94,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -186,6 +187,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
@@ -296,6 +298,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -416,6 +419,7 @@ items:
           - OfficeExtension.ClientResult<string>
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -501,28 +505,34 @@ items:
           - word.Word.RangeCollection
         description: |-
 
+
           #### Examples
 
           ```typescript
           await Word.run(async (context) => {
-              // Gets the complete sentence (as range) associated with the insertion point.
-              let sentences = context.document.getSelection().getTextRanges(
-                  ["."] /* Using the "." as delimiter */,
-                  false /*means without trimming spaces*/);
-              sentences.load("$none");
-              await context.sync();
+            // Gets the complete sentence (as range) associated with the insertion point.
+            let sentences = context.document
+              .getSelection()
+              .getTextRanges(["."] /* Using the "." as delimiter */, false /*means without trimming spaces*/);
+            sentences.load("$none");
+            await context.sync();
 
-              // Expands the range to the end of the paragraph to get all the complete sentences.
-              let sentencesToTheEndOfParagraph = sentences.items[0].getRange().expandTo(
-                  context.document.getSelection().paragraphs.getFirst().getRange("End")).getTextRanges(
-                      ["."],
-                       false /* Don't trim spaces*/);
-              sentencesToTheEndOfParagraph.load("text");
-              await context.sync();
-              
-              for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
-                  console.log(sentencesToTheEndOfParagraph.items[i].text);
-              }
+            // Expands the range to the end of the paragraph to get all the complete sentences.
+            let sentencesToTheEndOfParagraph = sentences.items[0]
+              .getRange()
+              .expandTo(
+                context.document
+                  .getSelection()
+                  .paragraphs.getFirst()
+                  .getRange("End")
+              )
+              .getTextRanges(["."], false /* Don't trim spaces*/);
+            sentencesToTheEndOfParagraph.load("text");
+            await context.sync();
+
+            for (let i = 0; i < sentencesToTheEndOfParagraph.items.length; i++) {
+              console.log(sentencesToTheEndOfParagraph.items[i].text);
+            }
           });
           ```
       parameters:
@@ -618,6 +628,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -670,6 +681,7 @@ items:
           - word.Word.ContentControl
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -687,7 +699,7 @@ items:
               myContentControl.tag = "Customer-Address";
               myContentControl.title = "Enter Customer Address Here:";
               myContentControl.style = "Normal";
-              myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'replace');
+              myContentControl.insertText("One Microsoft Way, Redmond, WA 98052", 'Replace');
               myContentControl.cannotEdit = true;
 
               // Synchronize the document state by executing the queued commands,
@@ -708,7 +720,7 @@ items:
               let results = context.document.body.search("Contractor");
               results.load("font/bold");
 
-              // check to make sure we haven't added these content controls yet
+              // Check to make sure these content controls haven't been added yet.
               let customerContentControls = context.document.contentControls.getByTag("customer");
               customerContentControls.load("text");
               await context.sync();
@@ -742,6 +754,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -826,6 +839,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -966,6 +980,7 @@ items:
           - word.Word.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1047,6 +1062,7 @@ items:
         type:
           - word.Word.Paragraph
         description: |-
+
 
           #### Examples
 
@@ -1202,6 +1218,7 @@ items:
         type:
           - word.Word.Range
         description: |-
+
 
           #### Examples
 
@@ -1607,6 +1624,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -1881,6 +1899,12 @@ items:
         type:
           - string
   - uid: word.Word.Range.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.RangeData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

@@ -57,6 +57,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -120,6 +121,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -153,6 +155,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -199,6 +202,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 
@@ -273,6 +277,7 @@ items:
           - excel.Excel.Worksheet
         description: |-
 
+
           #### Examples
 
           ```typescript
@@ -342,6 +347,7 @@ items:
           - excel.Excel.Range
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -404,6 +410,7 @@ items:
         type:
           - excel.Excel.Range
         description: |-
+
 
           #### Examples
 
@@ -523,6 +530,7 @@ items:
         type:
           - excel.Excel.Worksheet
         description: |-
+
 
           #### Examples
 

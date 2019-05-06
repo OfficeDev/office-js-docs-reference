@@ -88,6 +88,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -184,6 +185,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -249,6 +251,7 @@ items:
         type:
           - excel.Excel.Chart
         description: |-
+
 
           #### Examples
 
@@ -338,6 +341,7 @@ items:
         type:
           - excel.Excel.ChartCollection
         description: |-
+
 
           #### Examples
 

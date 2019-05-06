@@ -100,6 +100,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -149,6 +150,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: |-
+
 
           #### Examples
 
@@ -313,6 +315,7 @@ items:
           - excel.Excel.Chart
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -373,6 +376,7 @@ items:
         type:
           - string
         description: |-
+
 
           #### Examples
 
@@ -501,6 +505,7 @@ items:
           - void
         description: |-
 
+
           #### Examples
 
           ```javascript
@@ -544,6 +549,7 @@ items:
         type:
           - void
         description: |-
+
 
           #### Examples
 
