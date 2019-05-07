@@ -231,7 +231,7 @@ tryCatch(async () => {
 
                         let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
-                        if (packageName === 'Excel') { // The version without a suffix is the preview version
+                        if (packageName === 'Word') { // The version without a suffix is the preview version
                             newToc.items[0].items.push({
                                 "name": packageName + " - Preview",
                                 "uid": packageItem.uid,

@@ -2494,7 +2494,7 @@ items:
             uid: visio.Visio.ShapeView
           - name: ToolBarType
             uid: visio.Visio.ToolBarType
-      - name: Word
+      - name: Word - Preview
         uid: word
         items:
           - name: Enums
