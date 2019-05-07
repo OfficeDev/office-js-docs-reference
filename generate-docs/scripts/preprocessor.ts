@@ -53,15 +53,6 @@ tryCatch(async () => {
         ]
     });
 
-    console.log('\n');
-    const includeScriptLabSnippets = await promptFromList({
-        message: `Do you want to include Script Lab code snippets in the generated docs?`,
-        choices: [
-            { name: "Yes", value: "y" },
-            { name: "No", value: "n" }
-        ]
-    });
-
     console.log("\nStarting preprocessor script...");
 
     // ----
@@ -177,10 +168,8 @@ tryCatch(async () => {
 
     console.log("\nCreating snippets file...");
 
-    if (includeScriptLabSnippets === "y") {
-        console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
-        fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
-    }
+    console.log("\nReading from: https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml");
+    fsx.writeFileSync("../script-inputs/script-lab-snippets.yaml", await fetchAndThrowOnError("https://raw.githubusercontent.com/OfficeDev/office-js-snippets/master/snippet-extractor-output/snippets.yaml", "text"));
 
     console.log("\nReading from files: " + path.resolve("../../docs/code-snippets"));
 
@@ -197,17 +186,14 @@ tryCatch(async () => {
     // Parse the YAML into an object/hash set.
     let snippets: Object = yaml.load(localCodeSnippetsString);
 
-    // If including Script Lab snippets, add them to the set. If a duplicate key exists, merge the Script Lab example(s)
-    // into the item with the existing key.
-    if (includeScriptLabSnippets === "y") {
-        let scriptLabSnippets: Object = yaml.load(fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString());
-        for (const key of Object.keys(scriptLabSnippets)) {
-            if (snippets[key]) {
-                console.log("Combining local and Script Lab snippets for: " + key);
-                snippets[key] = snippets[key].concat(scriptLabSnippets[key]);
-            } else {
-                snippets[key] = scriptLabSnippets[key];
-            }
+    // If a duplicate key exists, merge the Script Lab example(s) into the item with the existing key.
+    let scriptLabSnippets: Object = yaml.load(fsx.readFileSync(`../script-inputs/script-lab-snippets.yaml`).toString());
+    for (const key of Object.keys(scriptLabSnippets)) {
+        if (snippets[key]) {
+            console.log("Combining local and Script Lab snippets for: " + key);
+            snippets[key] = snippets[key].concat(scriptLabSnippets[key]);
+        } else {
+            snippets[key] = scriptLabSnippets[key];
         }
     }
 
