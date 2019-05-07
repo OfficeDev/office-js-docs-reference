@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.TapObjectType
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.TapObjectType
+    fullName: Word.TapObjectType
+    langs:
+      - typeScript
+    type: enum
+    package: word_release
+    children:
+      - word_release.Word.TapObjectType.chart
+      - word_release.Word.TapObjectType.image
+      - word_release.Word.TapObjectType.ole
+      - word_release.Word.TapObjectType.slide
+      - word_release.Word.TapObjectType.smartArt
+      - word_release.Word.TapObjectType.table
+      - word_release.Word.TapObjectType.text
+  - uid: word_release.Word.TapObjectType.chart
+    name: chart
+    fullName: chart
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Chart"'
+  - uid: word_release.Word.TapObjectType.image
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: word_release.Word.TapObjectType.ole
+    name: ole
+    fullName: ole
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OLE"'
+  - uid: word_release.Word.TapObjectType.slide
+    name: slide
+    fullName: slide
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Slide"'
+  - uid: word_release.Word.TapObjectType.smartArt
+    name: smartArt
+    fullName: smartArt
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SmartArt"'
+  - uid: word_release.Word.TapObjectType.table
+    name: table
+    fullName: table
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Table"'
+  - uid: word_release.Word.TapObjectType.text
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Text"'

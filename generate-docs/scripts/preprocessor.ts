@@ -93,13 +93,13 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OfficeExtension runtime", "End OfficeExtension runtime"), "Common API")
     );
 
-    console.log("\ncreate file: excel.d.ts");
+    console.log("\ncreate file: excel.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
     );
 
-    console.log("\ncreate file: excel.d.ts");
+    console.log("\ncreate file: excel.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel-release/excel.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
@@ -129,9 +129,15 @@ tryCatch(async () => {
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other")
     );
 
-    console.log("create file: word.d.ts");
+    console.log("create file: word.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+    );
+
+    console.log("\ncreate file: word.d.ts (release)");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-word-release/word.d.ts',
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
     );
 

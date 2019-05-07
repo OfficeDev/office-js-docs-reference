@@ -231,11 +231,21 @@ tryCatch(async () => {
 
                         let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
-                        newToc.items[0].items.push({
-                            "name": packageName,
-                            "uid": packageItem.uid,
-                            "items":  primaryList as any
-                        });
+                        if (packageName === 'Excel') { // The version without a suffix is the preview version
+                            newToc.items[0].items.push({
+                                "name": packageName + " - Preview",
+                                "uid": packageItem.uid,
+                                "items": primaryList as any
+                            });
+                        }
+                        else {
+                            let packageNameVersionFormated = packageName.replace('_r', ' - R');
+                            newToc.items[0].items.push({
+                                "name": packageNameVersionFormated,
+                                "uid": packageItem.uid,
+                                "items": primaryList as any
+                            });
+                        }
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;

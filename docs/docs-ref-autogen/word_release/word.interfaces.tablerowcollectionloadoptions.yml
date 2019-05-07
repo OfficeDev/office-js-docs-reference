@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions
+    summary: |-
+      Contains the collection of the document's TableRow objects.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.TableRowCollectionLoadOptions
+    fullName: Word.Interfaces.TableRowCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word_release
+    children:
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.$all
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.cellCount
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.font
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.horizontalAlignment
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.isHeader
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.parentTable
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.preferredHeight
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.rowIndex
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.shadingColor
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.values
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions.verticalAlignment
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.cellCount
+    summary: |-
+      For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.font
+    summary: >-
+      For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other
+      properties.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.FontLoadOptions
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.horizontalAlignment
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be
+      'Left', 'Centered', 'Right', or 'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.isHeader
+    summary: >-
+      For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header
+      rows, use HeaderRowCount on the Table object.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isHeader
+    fullName: isHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isHeader?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.parentTable
+    summary: |-
+      For EACH ITEM in the collection: Gets parent table.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentTable
+    fullName: parentTable
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
+      return:
+        type:
+          - Word.Interfaces.TableLoadOptions
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.preferredHeight
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: preferredHeight
+    fullName: preferredHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preferredHeight?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.rowIndex
+    summary: |-
+      For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.shadingColor
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by
+      using the color name.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
+    fullName: shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.values
+    summary: |-
+      For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions.verticalAlignment
+    summary: >-
+      For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be
+      'Top', 'Center', or 'Bottom'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
