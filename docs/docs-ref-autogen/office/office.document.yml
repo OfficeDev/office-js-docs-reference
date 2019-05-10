@@ -559,7 +559,7 @@ items:
       text values. But the possible values vary with the host:
 
 
-      Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+      Excel for Windows desktop and Excel Online: `Office.FileType.Compressed`
 
 
       Excel for Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
@@ -731,7 +731,7 @@ items:
       text values. But the possible values vary with the host:
 
 
-      Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+      Excel for Windows desktop and Excel Online: `Office.FileType.Compressed`
 
 
       Excel for Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
