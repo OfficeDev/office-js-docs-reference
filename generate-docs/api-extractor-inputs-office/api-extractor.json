@@ -15,7 +15,27 @@
     "extractorMessageReporting": {
       "ae-missing-release-tag": {
         "logLevel": "none"
+      },
+      "ae-forgotten-export": {
+        "logLevel": "none"
+      },
+      "ae-unresolved-link": {
+        "logLevel": "none"
       }
     },
+    "tsdocMessageReporting": {
+      "tsdoc-escape-right-brace": {
+        "logLevel": "none"
+      },
+      "tsdoc-escape-greater-than": {
+        "logLevel": "none"
+      },
+      "tsdoc-malformed-inline-tag": {
+        "logLevel": "none"
+      },
+      "tsdoc-unnecessary-backslash": {
+        "logLevel": "none"
+      }
+    }
   }
 }
