@@ -183,7 +183,7 @@ items:
             - '{ select?: string; expand?: string; }'
   - uid: excel.Excel.SlicerItem.name
     summary: >-
-      Represents the value displayed on UI.
+      Represents the value displayed in the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
