@@ -307,10 +307,8 @@ items:
           });
           ```
   - uid: excel.Excel.Workbook.getActiveChart
-    summary: >-
-      Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke
-      this statement
-
+    summary: |-
+      Gets the currently active chart in the workbook. If there is no active chart, an exception is thrown.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveChart()
@@ -326,7 +324,7 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.getActiveChartOrNullObject
     summary: |-
-      Gets the currently active chart in the workbook. If there is no active chart, will return null object
+      Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveChartOrNullObject()
@@ -342,8 +340,7 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.getActiveSlicer
     summary: >-
-      Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke
-      this statement.
+      Gets the currently active slicer in the workbook. If there is no active slicer, an exception is thrown.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -362,7 +359,7 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.getActiveSlicerOrNullObject
     summary: >-
-      Gets the currently active slicer in the workbook. If there is no active slicer, will return null object
+      Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

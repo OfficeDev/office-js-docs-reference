@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerStyleCollectionLoadOptions.readOnly
     summary: >-
-      For EACH ITEM in the collection: True means that this SlicerStyle object is read-only. Read-only.
+      For EACH ITEM in the collection: Specifies if this SlicerStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

@@ -3445,21 +3445,6 @@ Office.Bindings.releaseByIdAsync_1:
     function write(message){ 
         document.getElementById('message').innerText += message;  
     }
-Office.cast.item:
-  - >-
-    // The following example uses the toMessageCompose method to cast the
-    Office.context.mailbox.item
-
-    // property so that it will only show IntelliSense for the Message object in
-    compose mode.
-
-    // After the cast, the message variable will only display IntelliSense for
-    methods and properties
-
-    // that can be used in compose mode.
-
-    var message =
-    Office.cast.item.toMessageCompose(Office.context.mailbox.item);
 Office.Context.contentLanguage:
   - |-
     function sayHelloWithContentLanguage() {
@@ -17169,19 +17154,6 @@ Excel.Range.style:
 
         await context.sync();
     });
-Excel.RangeAreas.format:
-  - |-
-    await Excel.run(async (context) => {
-
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-        const usedRange = sheet.getUsedRange();
-
-        // Find the ranges with formulas
-        const formulaRanges = usedRange.getSpecialCells("Formulas");
-        formulaRanges.format.fill.color = "lightgreen";
-
-        await context.sync();
-    });
 Excel.RangeFormat.textOrientation:
   - |-
     await Excel.run(async (context) => {
@@ -18261,6 +18233,19 @@ Excel.WorksheetFreezePanes.unfreeze:
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.freezePanes.unfreeze();
+
+        await context.sync();
+    });
+Excel.RangeAreas.format:
+  - |-
+    await Excel.run(async (context) => {
+
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const usedRange = sheet.getUsedRange();
+
+        // Find the ranges with formulas
+        const formulaRanges = usedRange.getSpecialCells("Formulas");
+        formulaRanges.format.fill.color = "lightgreen";
 
         await context.sync();
     });
