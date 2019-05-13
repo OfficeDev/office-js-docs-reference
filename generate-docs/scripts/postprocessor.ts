@@ -114,6 +114,8 @@ tryCatch(async () => {
     //let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
+    let wordRoot = {"name": "Word", "uid": "", "items": [] as any};
+    let wordRootPushed = false;
     let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
 
     // create folders for common (shared) API subcategories
@@ -222,6 +224,10 @@ tryCatch(async () => {
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
+                        if (!wordRootPushed) { // add root in alphabetical order
+                            newToc.items[0].items.push(wordRoot);
+                            wordRootPushed = true;
+                        }
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
                         });
@@ -232,18 +238,18 @@ tryCatch(async () => {
                         let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
                         if (packageName === 'Word') { // The version without a suffix is the preview version
-                            newToc.items[0].items.push({
+                            wordRoot.items.push({
                                 "name": packageName + " - Preview",
                                 "uid": packageItem.uid,
-                                "items": primaryList as any
+                                "items": primaryList
                             });
                         }
                         else {
                             let packageNameVersionFormated = packageName.replace('_r', ' - R');
-                            newToc.items[0].items.push({
+                            wordRoot.items.push({
                                 "name": packageNameVersionFormated,
                                 "uid": packageItem.uid,
-                                "items": primaryList as any
+                                "items": primaryList
                             });
                         }
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {

@@ -40,8 +40,8 @@ items:
           - string
   - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetX
     summary: >-
-      It is a double value that represents the distance, in points, from the left-clicked/tapped point to the left(right
-      for RTL) gridline edge of the left-clicked/tapped cell.
+      The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the
+      left-clicked/tapped cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -59,8 +59,8 @@ items:
           - number
   - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetY
     summary: >-
-      It is a double value that represents the distance, in points, from the left-clicked/tapped point to the top
-      gridline edge of the left-clicked/tapped cell.
+      The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped
+      cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
