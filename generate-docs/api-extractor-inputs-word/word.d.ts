@@ -965,6 +965,36 @@ export declare namespace Word {
          */
         load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.ContentControl;
         /**
+         *
+         * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onDataChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        /**
+         *
+         * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onDeleted: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        /**
+         *
+         * Occurs when selection within the content control is changed.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onSelectionChanged: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
         track(): Word.ContentControl;
@@ -1275,6 +1305,372 @@ export declare namespace Word {
     }
     /**
      *
+     * Represents a custom XML part.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPart extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /**
+         *
+         * Gets the ID of the custom XML part. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly id: string;
+        /**
+         *
+         * Gets the namespace URI of the custom XML part. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly namespaceUri: string;
+        /**
+         *
+         * Deletes the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         *
+         * Deletes an attribute with the given name from the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. Absolute path to the single element in XPath notation.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param name - Required. Name of the attribute.
+         */
+        deleteAttribute(xpath: string, namespaceMappings: any, name: string): void;
+        /**
+         *
+         * Deletes the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. Absolute path to the single element in XPath notation.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         */
+        deleteElement(xpath: string, namespaceMappings: any): void;
+        /**
+         *
+         * Gets the full XML content of the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getXml(): OfficeExtension.ClientResult<string>;
+        /**
+         *
+         * Inserts an attribute with the given name and value to the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. Absolute path to the single element in XPath notation.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param name - Required. Name of the attribute.
+         * @param value - Required. Value of the attribute.
+         */
+        insertAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;
+        /**
+         *
+         * Inserts the given XML under the parent element identified by xpath at child position index.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. Absolute path to the single parent element in XPath notation.
+         * @param xml - Required. XML content to be inserted.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param index - Optional. Zero-based position at which the new XML to be inserted. If omitted, the XML will be appended as the last child of this parent.
+         */
+        insertElement(xpath: string, xml: string, namespaceMappings: any, index?: number): void;
+        /**
+         *
+         * Queries the XML content of the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. An XPath query.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @returns An array where each item represents an entry matched by the XPath query.
+         */
+        query(xpath: string, namespaceMappings: any): OfficeExtension.ClientResult<string[]>;
+        /**
+         *
+         * Sets the full XML content of the custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - Required. XML content to be set.
+         */
+        setXml(xml: string): void;
+        /**
+         *
+         * Updates the value of an attribute with the given name of the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. Absolute path to the single element in XPath notation.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         * @param name - Required. Name of the attribute.
+         * @param value - Required. New value of the attribute.
+         */
+        updateAttribute(xpath: string, namespaceMappings: any, name: string, value: string): void;
+        /**
+         *
+         * Updates the XML of the element identified by xpath.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xpath - Required. Absolute path to the single element in XPath notation.
+         * @param xml - Required. New XML content to be stored.
+         * @param namespaceMappings - Required. An object whose properties represent namespace aliases and the values are the actual namespace URIs.
+         */
+        updateElement(xpath: string, xml: string, namespaceMappings: any): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Word.CustomXmlPart` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPart` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomXmlPart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Word.Interfaces.CustomXmlPartLoadOptions): Word.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.CustomXmlPart;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.CustomXmlPart;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlPart;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.CustomXmlPart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.CustomXmlPartData;
+    }
+    /**
+     *
+     * Contains the collection of {@link Word.CustomXmlPart} objects.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPartCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CustomXmlPart[];
+        /**
+         *
+         * Adds a new custom XML part to the document.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param xml - Required. XML content. Must be a valid XML fragment.
+         */
+        add(xml: string): Word.CustomXmlPart;
+        /**
+         *
+         * Gets a new scoped collection of custom XML parts whose namespaces match the given namespace.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param namespaceUri - Required. The namespace URI.
+         */
+        getByNamespace(namespaceUri: string): Word.CustomXmlPartScopedCollection;
+        /**
+         *
+         * Gets the number of items in the collection.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a custom XML part based on its ID. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID or index of the custom XML part to be retrieved.
+         */
+        getItem(id: string): Word.CustomXmlPart;
+        /**
+         *
+         * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - Required. ID of the object to be retrieved.
+         */
+        getItemOrNullObject(id: string): Word.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Word.CustomXmlPartCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPartCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomXmlPartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Word.Interfaces.CustomXmlPartCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPartCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlPartCollection;
+        load(option?: OfficeExtension.LoadOption): Word.CustomXmlPartCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.CustomXmlPartCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlPartCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.CustomXmlPartCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.CustomXmlPartCollectionData;
+    }
+    /**
+     *
+     * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.CustomXmlPart[];
+        /**
+         *
+         * Gets the number of items in the collection.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a custom XML part based on its ID. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - ID of the custom XML part to be retrieved.
+         */
+        getItem(id: string): Word.CustomXmlPart;
+        /**
+         *
+         * Gets a custom XML part based on its ID. Returns a null object if the CustomXmlPart does not exist in the collection.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param id - Required. ID of the object to be retrieved.
+         */
+        getItemOrNullObject(id: string): Word.CustomXmlPart;
+        /**
+         *
+         * If the collection contains exactly one item, this method returns it. Otherwise, this method produces an error.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getOnlyItem(): Word.CustomXmlPart;
+        /**
+         *
+         * If the collection contains exactly one item, this method returns it. Otherwise, this method returns a null object.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getOnlyItemOrNullObject(): Word.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Word.CustomXmlPartScopedCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.CustomXmlPartScopedCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.CustomXmlPartScopedCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.CustomXmlPartScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.CustomXmlPartScopedCollection;
+        load(option?: OfficeExtension.LoadOption): Word.CustomXmlPartScopedCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.CustomXmlPartScopedCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+         */
+        untrack(): Word.CustomXmlPartScopedCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.CustomXmlPartScopedCollectionData;
+    }
+    /**
+     *
      * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
      *
      * [Api set: WordApi 1.1]
@@ -1298,6 +1694,14 @@ export declare namespace Word {
         readonly contentControls: Word.ContentControlCollection;
         /**
          *
+         * Gets the custom XML parts in the document. Read-only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly customXmlParts: Word.CustomXmlPartCollection;
+        /**
+         *
          * Gets the properties of the document. Read-only.
          *
          * [Api set: WordApi 1.3]
@@ -1310,6 +1714,14 @@ export declare namespace Word {
          * [Api set: WordApi 1.1]
          */
         readonly sections: Word.SectionCollection;
+        /**
+         *
+         * Gets the add-in's settings in the document. Read-only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly settings: Word.SettingCollection;
         /**
          *
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
@@ -1331,6 +1743,36 @@ export declare namespace Word {
         set(properties: Interfaces.DocumentUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
         set(properties: Word.Document): void;
+        /**
+         *
+         * Deletes a bookmark, if exists, from the document.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive.
+         */
+        deleteBookmark(name: string): void;
+        /**
+         *
+         * Gets a bookmark's range. Throws if the bookmark does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive.
+         */
+        getBookmarkRange(name: string): Word.Range;
+        /**
+         *
+         * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive.
+         */
+        getBookmarkRangeOrNullObject(name: string): Word.Range;
         /**
          *
          * Gets the current selection of the document. Multiple selections are not supported.
@@ -1372,6 +1814,16 @@ export declare namespace Word {
          */
         load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Document;
         /**
+         *
+         * Occurs when a content control is added. Run context.sync() in the handler to get the new content control's properties.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;
+        /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
         track(): Word.Document;
@@ -1399,6 +1851,7 @@ export declare namespace Word {
          * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
          *
          * [Api set: WordApiHiddenDocument 1.3]
+         * @beta
          */
         readonly body: Word.Body;
         /**
@@ -1406,13 +1859,23 @@ export declare namespace Word {
          * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
          *
          * [Api set: WordApiHiddenDocument 1.3]
+         * @beta
          */
         readonly contentControls: Word.ContentControlCollection;
+        /**
+         *
+         * Gets the custom XML parts in the document. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
+         * @beta
+         */
+        readonly customXmlParts: Word.CustomXmlPartCollection;
         /**
          *
          * Gets the properties of the document. Read-only.
          *
          * [Api set: WordApiHiddenDocument 1.3]
+         * @beta
          */
         readonly properties: Word.DocumentProperties;
         /**
@@ -1420,13 +1883,23 @@ export declare namespace Word {
          * Gets the collection of section objects in the document. Read-only.
          *
          * [Api set: WordApiHiddenDocument 1.3]
+         * @beta
          */
         readonly sections: Word.SectionCollection;
+        /**
+         *
+         * Gets the add-in's settings in the document. Read-only.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
+         * @beta
+         */
+        readonly settings: Word.SettingCollection;
         /**
          *
          * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
          *
          * [Api set: WordApiHiddenDocument 1.3]
+         * @beta
          */
         readonly saved: boolean;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
@@ -1445,6 +1918,36 @@ export declare namespace Word {
         set(properties: Word.DocumentCreated): void;
         /**
          *
+         * Deletes a bookmark, if exists, from the document.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive.
+         */
+        deleteBookmark(name: string): void;
+        /**
+         *
+         * Gets a bookmark's range. Throws if the bookmark does not exist.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive.
+         */
+        getBookmarkRange(name: string): Word.Range;
+        /**
+         *
+         * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
+         *
+         * [Api set: WordApiHiddenDocument 1.4]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive.
+         */
+        getBookmarkRangeOrNullObject(name: string): Word.Range;
+        /**
+         *
          * Opens the document.
          *
          * [Api set: WordApi 1.3]
@@ -1455,6 +1958,7 @@ export declare namespace Word {
          * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
          *
          * [Api set: WordApiHiddenDocument 1.3]
+         * @beta
          */
         save(): void;
         /**
@@ -1918,6 +2422,14 @@ export declare namespace Word {
         hyperlink: string;
         /**
          *
+         * Gets the format of the inline image. Read-only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
+        /**
+         *
          * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
          *
          * [Api set: WordApi 1.1]
@@ -2295,6 +2807,16 @@ export declare namespace Word {
         readonly levelTypes: Word.ListLevelType[];
         /**
          *
+         * Gets the font of the bullet, number or picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param level - Required. The level in the list.
+         */
+        getLevelFont(level: number): Word.Font;
+        /**
+         *
          * Gets the paragraphs that occur at the specified level in the list.
          *
          * [Api set: WordApi 1.3]
@@ -2302,6 +2824,16 @@ export declare namespace Word {
          * @param level - Required. The level in the list.
          */
         getLevelParagraphs(level: number): Word.ParagraphCollection;
+        /**
+         *
+         * Gets the base64 encoded string representation of the picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param level - Required. The level in the list.
+         */
+        getLevelPicture(level: number): OfficeExtension.ClientResult<string>;
         /**
          *
          * Gets the bullet, number or picture at the specified level as a string.
@@ -2331,6 +2863,17 @@ export declare namespace Word {
          * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'.
          */
         insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Paragraph;
+        /**
+         *
+         * Resets the font of the bullet, number or picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param level - Required. The level in the list.
+         * @param resetFontName - Optional. Indicates whether to reset the font name. Default is false that indicates the font name is kept unchanged.
+         */
+        resetLevelFont(level: number, resetFontName?: boolean): void;
         /**
          *
          * Sets the alignment of the bullet, number or picture at the specified level in the list.
@@ -2408,6 +2951,17 @@ export declare namespace Word {
          * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of ["(", level - 1, ".", level, ")"] can define the format of "(2.c)", where 2 is the parent's item number and c is this level's item number.
          */
         setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
+        /**
+         *
+         * Sets the picture at the specified level in the list.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param level - Required. The level in the list.
+         * @param base64EncodedImage - Optional. The base64 encoded image to be set. If not given, the default picture is set.
+         */
+        setLevelPicture(level: number, base64EncodedImage?: string): void;
         /**
          *
          * Sets the starting number at the specified level in the list. Default value is 1.
@@ -3523,6 +4077,17 @@ export declare namespace Word {
         expandToOrNullObject(range: Word.Range): Word.Range;
         /**
          *
+         * Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the underscore character.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param includeHidden - Optional. Indicates whether to include hidden bookmarks. Default is false which indicates that the hidden bookmarks are excluded.
+         * @param includeAdjacent - Optional. Indicates whether to include bookmarks that are adjacent to the range. Default is false which indicates that the adjacent bookmarks are excluded.
+         */
+        getBookmarks(includeHidden?: boolean, includeAdjacent?: boolean): OfficeExtension.ClientResult<string[]>;
+        /**
+         *
          * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
@@ -3590,6 +4155,16 @@ export declare namespace Word {
          * @param trimSpacing - Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
          */
         getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;
+        /**
+         *
+         * Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param name - Required. The bookmark name, which is case-insensitive. If the name starts with an underscore character, the bookmark is an hidden one.
+         */
+        insertBookmark(name: string): void;
         /**
          *
          * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
@@ -4220,6 +4795,193 @@ export declare namespace Word {
     }
     /**
      *
+     * Represents a setting of the add-in.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class Setting extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        private static DateJSONPrefix;
+        private static DateJSONSuffix;
+        private static replaceStringDateWithDate(value);
+        static _replaceDateWithStringDate(value: any): any;
+        /**
+         *
+         * Gets the key of the setting. Read only.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly key: string;
+        /**
+         *
+         * Gets or sets the value of the setting.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        value: any;
+        /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+         *
+         * @remarks
+         *
+         * This method has the following additional signature:
+         *
+         * `set(properties: Word.Setting): void`
+         *
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         */
+        set(properties: Interfaces.SettingUpdateData, options?: OfficeExtension.UpdateOptions): void;
+        /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+        set(properties: Word.Setting): void;
+        /**
+         *
+         * Deletes the setting.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        delete(): void;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Word.Setting` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.Setting` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Setting` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Word.Interfaces.SettingLoadOptions): Word.Setting;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.Setting;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Setting;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.Setting;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+         */
+        untrack(): Word.Setting;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original Word.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
+        */
+        toJSON(): Word.Interfaces.SettingData;
+    }
+    /**
+     *
+     * Contains the collection of {@link Word.Setting} objects.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export class SettingCollection extends OfficeExtension.ClientObject {
+        /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+        context: RequestContext; 
+        /** Gets the loaded child items in this collection. */
+        readonly items: Word.Setting[];
+        /**
+         *
+         * Creates a new setting or sets an existing setting.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - Required. The setting's key, which is case-sensitive.
+         * @param value - Required. The setting's value.
+         */
+        add(key: string, value: any): Word.Setting;
+        /**
+         *
+         * Deletes all settings in this add-in.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        deleteAll(): void;
+        /**
+         *
+         * Gets the count of settings.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        getCount(): OfficeExtension.ClientResult<number>;
+        /**
+         *
+         * Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - The key that identifies the setting object.
+         */
+        getItem(key: string): Word.Setting;
+        /**
+         *
+         * Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param key - Required. The key that identifies the setting object.
+         */
+        getItemOrNullObject(key: string): Word.Setting;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+         *
+         * @remarks
+         *
+         * In addition to this signature, this method has the following signatures:
+         *
+         * `load(option?: string | string[]): Word.SettingCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; }): Word.SettingCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+         *
+         * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SettingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+         *
+         * @param options - Provides options for which properties of the object to load.
+         */
+        load(option?: Word.Interfaces.SettingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions): Word.SettingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Word.SettingCollection;
+        load(option?: OfficeExtension.LoadOption): Word.SettingCollection;
+        /**
+         * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+         */
+        track(): Word.SettingCollection;
+        /**
+         * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+         */
+        untrack(): Word.SettingCollection;
+        /**
+        * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+        * Whereas the original `Word.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+        */
+        toJSON(): Word.Interfaces.SettingCollectionData;
+    }
+    /**
+     *
      * Represents a table in a Word document.
      *
      * [Api set: WordApi 1.3]
@@ -4691,6 +5453,19 @@ export declare namespace Word {
         insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", values?: string[][]): Word.Table;
         /**
          *
+         * Merges the cells bounded inclusively by a first and last cell.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param topRow - Required. The row of the first cell
+         * @param firstCell - Required. The index of the first cell in its row
+         * @param bottomRow - Required. The row of the last cell
+         * @param lastCell - Required. The index of the last cell in its row
+         */
+        mergeCells(topRow: number, firstCell: number, bottomRow: number, lastCell: number): Word.TableCell;
+        /**
+         *
          * Performs a search with the specified SearchOptions on the scope of the table object. The search results are a collection of range objects.
          *
          * [Api set: WordApi 1.3]
@@ -5012,6 +5787,14 @@ export declare namespace Word {
         getNextOrNullObject(): Word.TableRow;
         /**
          *
+         * Inserts a content control on the row.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        insertContentControl(): Word.ContentControl;
+        /**
+         *
          * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
          *
          * [Api set: WordApi 1.3]
@@ -5032,6 +5815,14 @@ export declare namespace Word {
          * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.
          */
         insertRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?: string[][]): Word.TableRowCollection;
+        /**
+         *
+         * Merges the row into one cell.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        merge(): Word.TableCell;
         /**
          *
          * Performs a search with the specified SearchOptions on the scope of the row. The search results are a collection of range objects.
@@ -5418,6 +6209,17 @@ export declare namespace Word {
          */
         setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;
         /**
+         *
+         * Splits the cell into the specified number of rows and columns.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param rowCount - Required. The number of rows to split into. Must be a divisor of the number of underlying rows.
+         * @param columnCount - Required. The number of columns to split into.
+         */
+        split(rowCount: number, columnCount: number): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
          * @remarks
@@ -5651,6 +6453,31 @@ export declare namespace Word {
          *
          */
         annotationDeleted = "AnnotationDeleted",
+    }
+    /**
+     *
+     * Provides information about the content control that raised an event.
+     *
+     * [Api set: WordApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface ContentControlEventArgs {
+        /**
+         *
+         * The object that raised the event. Load this object to get its properties.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        contentControl: Word.ContentControl;
+        /**
+         *
+         * The event type. See Word.EventType for details.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        eventType: Word.EventType | "ContentControlDeleted" | "ContentControlSelectionChanged" | "ContentControlDataChanged" | "ContentControlAdded" | "AnnotationAdded" | "AnnotationChanged" | "AnnotationDeleted";
     }
     /**
      *
@@ -6601,6 +7428,14 @@ export declare namespace Word {
         export interface CustomPropertyCollectionUpdateData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
+        /** An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({ ... })". */
+        export interface CustomXmlPartCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in "customXmlPartScopedCollection.set({ ... })". */
+        export interface CustomXmlPartScopedCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
         /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
         export interface DocumentUpdateData {
             /**
@@ -6625,6 +7460,7 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
@@ -6632,6 +7468,7 @@ export declare namespace Word {
             * Gets the properties of the document.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
@@ -7060,6 +7897,21 @@ export declare namespace Word {
         /** An interface for updating data on the SectionCollection object, for use in "sectionCollection.set({ ... })". */
         export interface SectionCollectionUpdateData {
             items?: Word.Interfaces.SectionData[];
+        }
+        /** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
+        export interface SettingUpdateData {
+            /**
+             *
+             * Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: any;
+        }
+        /** An interface for updating data on the SettingCollection object, for use in "settingCollection.set({ ... })". */
+        export interface SettingCollectionUpdateData {
+            items?: Word.Interfaces.SettingData[];
         }
         /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
         export interface TableUpdateData {
@@ -7543,6 +8395,33 @@ export declare namespace Word {
         export interface CustomPropertyCollectionData {
             items?: Word.Interfaces.CustomPropertyData[];
         }
+        /** An interface describing the data returned by calling "customXmlPart.toJSON()". */
+        export interface CustomXmlPartData {
+            /**
+             *
+             * Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: string;
+            /**
+             *
+             * Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: string;
+        }
+        /** An interface describing the data returned by calling "customXmlPartCollection.toJSON()". */
+        export interface CustomXmlPartCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()". */
+        export interface CustomXmlPartScopedCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
         /** An interface describing the data returned by calling "document.toJSON()". */
         export interface DocumentData {
             /**
@@ -7561,6 +8440,14 @@ export declare namespace Word {
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
             *
+            * Gets the custom XML parts in the document. Read-only.
+            *
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            customXmlParts?: Word.Interfaces.CustomXmlPartData[];
+            /**
+            *
             * Gets the properties of the document. Read-only.
             *
             * [Api set: WordApi 1.3]
@@ -7573,6 +8460,14 @@ export declare namespace Word {
             * [Api set: WordApi 1.1]
             */
             sections?: Word.Interfaces.SectionData[];
+            /**
+            *
+            * Gets the add-in's settings in the document. Read-only.
+            *
+            * [Api set: WordApi BETA (PREVIEW ONLY)]
+            * @beta
+            */
+            settings?: Word.Interfaces.SettingData[];
             /**
              *
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
@@ -7588,6 +8483,7 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             body?: Word.Interfaces.BodyData;
             /**
@@ -7595,13 +8491,23 @@ export declare namespace Word {
             * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             contentControls?: Word.Interfaces.ContentControlData[];
+            /**
+            *
+            * Gets the custom XML parts in the document. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.4]
+            * @beta
+            */
+            customXmlParts?: Word.Interfaces.CustomXmlPartData[];
             /**
             *
             * Gets the properties of the document. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
@@ -7609,13 +8515,23 @@ export declare namespace Word {
             * Gets the collection of section objects in the document. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             sections?: Word.Interfaces.SectionData[];
+            /**
+            *
+            * Gets the add-in's settings in the document. Read-only.
+            *
+            * [Api set: WordApiHiddenDocument 1.4]
+            * @beta
+            */
+            settings?: Word.Interfaces.SettingData[];
             /**
              *
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
              * [Api set: WordApiHiddenDocument 1.3]
+             * @beta
              */
             saved?: boolean;
         }
@@ -7862,6 +8778,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: string;
+            /**
+             *
+             * Gets the format of the inline image. Read-only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
             /**
              *
              * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
@@ -8208,6 +9132,29 @@ export declare namespace Word {
         /** An interface describing the data returned by calling "sectionCollection.toJSON()". */
         export interface SectionCollectionData {
             items?: Word.Interfaces.SectionData[];
+        }
+        /** An interface describing the data returned by calling "setting.toJSON()". */
+        export interface SettingData {
+            /**
+             *
+             * Gets the key of the setting. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: string;
+            /**
+             *
+             * Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: any;
+        }
+        /** An interface describing the data returned by calling "settingCollection.toJSON()". */
+        export interface SettingCollectionData {
+            items?: Word.Interfaces.SettingData[];
         }
         /** An interface describing the data returned by calling "table.toJSON()". */
         export interface TableData {
@@ -9001,6 +9948,84 @@ export declare namespace Word {
         }
         /**
          *
+         * Represents a custom XML part.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPartLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         *
+         * Contains the collection of {@link Word.CustomXmlPart} objects.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPartCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         *
+         * Contains the collection of {@link Word.CustomXmlPart} objects with a specific namespace.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface CustomXmlPartScopedCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the ID of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the namespace URI of the custom XML part. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            namespaceUri?: boolean;
+        }
+        /**
+         *
          * The Document object is the top level object. A Document object contains one or more sections, content controls, and the body that contains the contents of the document.
          *
          * [Api set: WordApi 1.1]
@@ -9049,6 +10074,7 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
@@ -9056,6 +10082,7 @@ export declare namespace Word {
             * Gets the properties of the document.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
@@ -9063,6 +10090,7 @@ export declare namespace Word {
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
              * [Api set: WordApiHiddenDocument 1.3]
+             * @beta
              */
             saved?: boolean;
         }
@@ -9371,6 +10399,14 @@ export declare namespace Word {
             hyperlink?: boolean;
             /**
              *
+             * Gets the format of the inline image. Read-only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imageFormat?: boolean;
+            /**
+             *
              * Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
              *
              * [Api set: WordApi 1.1]
@@ -9469,6 +10505,14 @@ export declare namespace Word {
              * [Api set: WordApi 1.1]
              */
             hyperlink?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the format of the inline image. Read-only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            imageFormat?: boolean;
             /**
              *
              * For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
@@ -10273,6 +11317,58 @@ export declare namespace Word {
             * [Api set: WordApi 1.1]
             */
             body?: Word.Interfaces.BodyLoadOptions;
+        }
+        /**
+         *
+         * Represents a setting of the add-in.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SettingLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * Gets the key of the setting. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             *
+             * Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
+        }
+        /**
+         *
+         * Contains the collection of {@link Word.Setting} objects.
+         *
+         * [Api set: WordApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        export interface SettingCollectionLoadOptions {
+            $all?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets the key of the setting. Read only.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            key?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the value of the setting.
+             *
+             * [Api set: WordApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            value?: boolean;
         }
         /**
          *

@@ -351,11 +351,11 @@ tryCatch(async () => {
     const hostName = await promptFromList({
         message: "Which host is being generated?",
         choices: [
-            { name: "Excel", value: "excel" },
-            { name: "OneNote", value: "onenote" },
-            { name: "Outlook", value: "outlook" },
-            { name: "Visio", value: "visio" },
-            { name: "Word", value: "word" }
+            { name: "Excel", value: "Excel" },
+            { name: "OneNote", value: "OneNote" },
+            { name: "Outlook", value: "Mailbox" },
+            { name: "Visio", value: "Visio" },
+            { name: "Word", value: "Word" }
         ]
     });
     const releaseHostFileName: string = './tool-inputs/' + hostName + '-release.d.ts';

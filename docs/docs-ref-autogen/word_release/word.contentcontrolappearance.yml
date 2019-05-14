@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.ContentControlAppearance
+    summary: |-
+      ContentControl appearance
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.ContentControlAppearance
+    fullName: Word.ContentControlAppearance
+    langs:
+      - typeScript
+    type: enum
+    package: word_release
+    children:
+      - word_release.Word.ContentControlAppearance.boundingBox
+      - word_release.Word.ContentControlAppearance.hidden
+      - word_release.Word.ContentControlAppearance.tags
+  - uid: word_release.Word.ContentControlAppearance.boundingBox
+    summary: Represents a content control shown as a shaded rectangle or bounding box (with optional title).
+    name: boundingBox
+    fullName: boundingBox
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BoundingBox"'
+  - uid: word_release.Word.ContentControlAppearance.hidden
+    summary: Represents a content control that is not shown.
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hidden"'
+  - uid: word_release.Word.ContentControlAppearance.tags
+    summary: Represents a content control shown as start and end markers.
+    name: tags
+    fullName: tags
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Tags"'
