@@ -3741,7 +3741,7 @@ export declare namespace Office {
          * More information is under {@link Office.UserProfile}
          */
         userProfile: UserProfile;
-        
+
         /**
          * Gets a dictionary containing time information in local client time.
          *
@@ -4251,7 +4251,8 @@ export declare namespace Office {
      * **Important**: The RoamingSettings object is initialized from the persisted storage only when the add-in is first loaded. 
      * For task panes, this means that it is only initialized when the task pane first opens. 
      * If the task pane navigates to another page or reloads the current page, the in-memory object is reset to its initial values, even if 
-     * your add-in has persisted changes. The persisted changes will not be available until the task pane is closed and reopened.
+     * your add-in has persisted changes.
+     * The persisted changes will not be available until the task pane (or item in the case of UI-less add-ins) is closed and reopened.
      *
      * [Api set: Mailbox 1.0]
      *
