@@ -1,0 +1,225 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.Interfaces.FontLoadOptions
+    summary: |-
+      Represents a font.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.FontLoadOptions
+    fullName: Word.Interfaces.FontLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word_release
+    children:
+      - word_release.Word.Interfaces.FontLoadOptions.$all
+      - word_release.Word.Interfaces.FontLoadOptions.bold
+      - word_release.Word.Interfaces.FontLoadOptions.color
+      - word_release.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
+      - word_release.Word.Interfaces.FontLoadOptions.highlightColor
+      - word_release.Word.Interfaces.FontLoadOptions.italic
+      - word_release.Word.Interfaces.FontLoadOptions.name
+      - word_release.Word.Interfaces.FontLoadOptions.size
+      - word_release.Word.Interfaces.FontLoadOptions.strikeThrough
+      - word_release.Word.Interfaces.FontLoadOptions.subscript
+      - word_release.Word.Interfaces.FontLoadOptions.superscript
+      - word_release.Word.Interfaces.FontLoadOptions.underline
+  - uid: word_release.Word.Interfaces.FontLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.bold
+    summary: >-
+      Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
+      false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.color
+    summary: >-
+      Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
+      name.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.doubleStrikeThrough
+    summary: >-
+      Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
+      double strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: doubleStrikeThrough
+    fullName: doubleStrikeThrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doubleStrikeThrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.highlightColor
+    summary: >-
+      Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
+      remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
+      string for mixed highlight colors, or null for no highlight color.
+
+
+      **Note**: Only the default highlight colors are available in Office for Windows Desktop. These are "Yellow",
+      "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray",
+      "LightGray", and "Black". When the add-in runs in Office for Windows Desktop, any other color is converted to the
+      closest color when applied to the font.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: highlightColor
+    fullName: highlightColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'highlightColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.italic
+    summary: >-
+      Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
+      false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.name
+    summary: |-
+      Gets or sets a value that represents the name of the font.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.size
+    summary: |-
+      Gets or sets a value that represents the font size in points.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.strikeThrough
+    summary: >-
+      Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
+      strikethrough text, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: strikeThrough
+    fullName: strikeThrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikeThrough?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.subscript
+    summary: >-
+      Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
+      otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.superscript
+    summary: >-
+      Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
+      superscript, otherwise, false.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.FontLoadOptions.underline
+    summary: |-
+      Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline?: boolean;'
+      return:
+        type:
+          - boolean

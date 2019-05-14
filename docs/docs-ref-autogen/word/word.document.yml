@@ -19,16 +19,22 @@ items:
       - word.Word.Document.body
       - word.Word.Document.contentControls
       - word.Word.Document.context
+      - word.Word.Document.customXmlParts
+      - word.Word.Document.deleteBookmark
+      - word.Word.Document.getBookmarkRange
+      - word.Word.Document.getBookmarkRangeOrNullObject
       - word.Word.Document.getSelection
       - word.Word.Document.load
       - word.Word.Document.load_1
       - word.Word.Document.load_2
+      - word.Word.Document.onContentControlAdded
       - word.Word.Document.properties
       - word.Word.Document.save
       - word.Word.Document.saved
       - word.Word.Document.sections
       - word.Word.Document.set
       - word.Word.Document.set_1
+      - word.Word.Document.settings
       - word.Word.Document.toJSON
       - word.Word.Document.track
       - word.Word.Document.untrack
@@ -80,6 +86,96 @@ items:
       return:
         type:
           - RequestContext
+  - uid: word.Word.Document.customXmlParts
+    summary: >-
+      Gets the custom XML parts in the document. Read-only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
+      return:
+        type:
+          - Word.CustomXmlPartCollection
+  - uid: word.Word.Document.deleteBookmark
+    summary: >-
+      Deletes a bookmark, if exists, from the document.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: deleteBookmark(name)
+    fullName: deleteBookmark(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteBookmark(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type:
+            - string
+  - uid: word.Word.Document.getBookmarkRange
+    summary: >-
+      Gets a bookmark's range. Throws if the bookmark does not exist.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: getBookmarkRange(name)
+    fullName: getBookmarkRange(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBookmarkRange(name: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type:
+            - string
+  - uid: word.Word.Document.getBookmarkRangeOrNullObject
+    summary: >-
+      Gets a bookmark's range. Returns a null object if the bookmark does not exist.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: getBookmarkRangeOrNullObject(name)
+    fullName: getBookmarkRangeOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
+      return:
+        type:
+          - Word.Range
+        description: ''
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type:
+            - string
   - uid: word.Word.Document.getSelection
     summary: |-
       Gets the current selection of the document. Multiple selections are not supported.
@@ -249,6 +345,25 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
+  - uid: word.Word.Document.onContentControlAdded
+    summary: >-
+      Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
+      properties.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: onContentControlAdded
+    fullName: onContentControlAdded
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onContentControlAdded: OfficeExtension.EventHandlers<Word.ContentControlEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
   - uid: word.Word.Document.properties
     summary: |-
       Gets the properties of the document. Read-only.
@@ -415,6 +530,24 @@ items:
           description: ''
           type:
             - Word.Document
+  - uid: word.Word.Document.settings
+    summary: >-
+      Gets the add-in's settings in the document. Read-only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: settings
+    fullName: settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly settings: Word.SettingCollection;'
+      return:
+        type:
+          - Word.SettingCollection
   - uid: word.Word.Document.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
