@@ -364,11 +364,11 @@ tryCatch(async () => {
     const dtsBuilder = new DtsBuilder();
     fsx.writeFileSync(
         './tool-inputs/' + hostName + '-release.d.ts',
-        dtsBuilder.extractDtsSection(wholeRelease, "Begin Excel APIs", "End Excel APIs")
+        dtsBuilder.extractDtsSection(wholeRelease, "Begin " + hostName + " APIs", "End " + hostName + " APIs")
     );
     fsx.writeFileSync(
         './tool-inputs/' + hostName + '-preview.d.ts',
-        dtsBuilder.extractDtsSection(wholePreview, "Begin Excel APIs", "End Excel APIs")
+        dtsBuilder.extractDtsSection(wholePreview, "Begin " + hostName + " APIs", "End " + hostName + " APIs")
     );
 
     const releaseAPI: APISet = new APISet();
