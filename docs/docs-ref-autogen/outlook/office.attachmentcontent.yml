@@ -53,10 +53,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'format: MailboxEnums.AttachmentContentFormat;'
+      content: 'format: MailboxEnums.AttachmentContentFormat | string;'
       return:
         type:
-          - MailboxEnums.AttachmentContentFormat
+          - MailboxEnums.AttachmentContentFormat | string
         description: |-
 
 

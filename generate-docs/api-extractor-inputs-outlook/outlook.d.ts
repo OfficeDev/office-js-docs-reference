@@ -1154,7 +1154,7 @@ export declare namespace Office {
         }
     }
     export interface CoercionTypeOptions {
-        coercionType?: CommonAPI.CoercionType;
+        coercionType?: CommonAPI.CoercionType | string;
     }
     enum SourceProperty {
         /**
@@ -1365,7 +1365,7 @@ export declare namespace Office {
          * 
          * For cloud attachments, the formatting is a URL string.
          */
-        format: MailboxEnums.AttachmentContentFormat;
+        format: MailboxEnums.AttachmentContentFormat | string;
     }
     /**
      * Represents an attachment on an item from the server. Read mode only.
@@ -1384,7 +1384,7 @@ export declare namespace Office {
         /**
          * Gets a value that indicates the type of an attachment.
          */
-        attachmentType: MailboxEnums.AttachmentType;
+        attachmentType: MailboxEnums.AttachmentType | string;
         /**
          * Gets the MIME content type of the attachment.
          */
@@ -1448,7 +1448,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
          *                  The body is provided in the requested format in the asyncResult.value property.
          */
-        getAsync(coercionType: CommonAPI.CoercionType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getAsync(coercionType: CommonAPI.CoercionType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Returns the current body in a specified format.
          *
@@ -1470,7 +1470,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
          *                  The body is provided in the requested format in the asyncResult.value property.
          */
-        getAsync(coercionType: CommonAPI.CoercionType, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getAsync(coercionType: CommonAPI.CoercionType | string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Gets a value that indicates whether the content is in HTML or text format.
          *
@@ -1908,11 +1908,11 @@ export declare namespace Office {
          * This property applies to only an attendee of an appointment, as represented by the optionalAttendees or requiredAttendees property. 
          * This property returns undefined in other scenarios.
          */
-        appointmentResponse: MailboxEnums.ResponseType;
+        appointmentResponse: MailboxEnums.ResponseType | string;
         /**
          * Gets the email address type of a recipient.
          */
-        recipientType: MailboxEnums.RecipientType;
+        recipientType: MailboxEnums.RecipientType | string;
     }
     /**
      * Represents an email account on an Exchange Server.
@@ -2389,7 +2389,7 @@ export declare namespace Office {
         /**
          * The location's type.
          */
-        type: MailboxEnums.LocationType;
+        type: MailboxEnums.LocationType | string;
     }
 
     /**
@@ -2527,7 +2527,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are 
          * used to get and set the location of the appointment.
@@ -2825,7 +2825,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for a supported event.
          * 
@@ -2847,7 +2847,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -3044,7 +3044,7 @@ export declare namespace Office {
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
          /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -3070,7 +3070,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -3173,7 +3173,7 @@ export declare namespace Office {
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
         *                asyncResult, which is an Office.AsyncResult object.
         */
-       removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+       removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
        /**
         * Removes the event handlers for a supported event type.
         * 
@@ -3193,7 +3193,7 @@ export declare namespace Office {
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
         *                asyncResult, which is an Office.AsyncResult object.
         */
-       removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+       removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Asynchronously saves an item.
          *
@@ -3509,7 +3509,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets the location of an appointment.
          *
@@ -3691,7 +3691,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for a supported event.
          * 
@@ -3713,7 +3713,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
          * selected appointment.
@@ -3895,7 +3895,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
          *
@@ -4067,7 +4067,7 @@ export declare namespace Office {
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
         *                asyncResult, which is an Office.AsyncResult object.
         */
-       removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+       removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
        /**
         * Removes the event handlers for a supported event type.
         * 
@@ -4087,7 +4087,7 @@ export declare namespace Office {
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
         *                asyncResult, which is an Office.AsyncResult object.
         */
-       removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void; 
+       removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void; 
     }
 
     /**
@@ -4142,7 +4142,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets the notification messages for an item.
          *
@@ -4203,7 +4203,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
 
         /**
          * Adds an event handler for a supported event.
@@ -4226,7 +4226,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
 
         /**
          * Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
@@ -4428,7 +4428,7 @@ export declare namespace Office {
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
         *                asyncResult, which is an Office.AsyncResult object.
         */
-       removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+       removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
 
        /**
         * Removes the event handlers for a supported event type.
@@ -4449,7 +4449,7 @@ export declare namespace Office {
         * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
         *                asyncResult, which is an Office.AsyncResult object.
         */
-       removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+       removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -4817,7 +4817,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -4843,7 +4843,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -5336,7 +5336,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
          *
@@ -5617,7 +5617,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets the notification messages for an item.
          *
@@ -5841,7 +5841,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for a supported event.
          * 
@@ -5863,7 +5863,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -6069,7 +6069,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -6095,7 +6095,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -6198,7 +6198,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Removes the event handlers for a supported event type.
          * 
@@ -6218,7 +6218,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Asynchronously saves an item.
          *
@@ -6585,7 +6585,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
          *
@@ -6732,7 +6732,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for a supported event.
          * 
@@ -6754,7 +6754,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: any, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
          * selected appointment.
@@ -6940,7 +6940,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
          *
@@ -7111,7 +7111,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Removes the event handlers for a supported event type.
          * 
@@ -7131,7 +7131,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
          *                asyncResult, which is an Office.AsyncResult object.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
 
     /**
@@ -7415,7 +7415,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: (type: CommonAPI.EventType) => void, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: (type: CommonAPI.EventType) => void, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Adds an event handler for a supported event.
          *
@@ -7436,7 +7436,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        addHandlerAsync(eventType: CommonAPI.EventType, handler: (type: CommonAPI.EventType) => void, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: CommonAPI.EventType | string, handler: (type: CommonAPI.EventType) => void, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Converts an item ID formatted for REST into EWS format.
          *
@@ -7456,7 +7456,7 @@ export declare namespace Office {
          * @param itemId - An item ID formatted for the Outlook REST APIs.
          * @param restVersion - A value indicating the version of the Outlook REST API used to retrieve the item ID.
          */
-        convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion): string;
+        convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;
         /**
          * Gets a dictionary containing time information in local client time.
          *
@@ -7501,7 +7501,7 @@ export declare namespace Office {
          * @param itemId - An item ID formatted for Exchange Web Services (EWS)
          * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with.
          */
-        convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion): string;
+        convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;
         /**
          * Gets a Date object from a dictionary containing time information.
          *
@@ -7814,7 +7814,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, options?: CommonAPI.AsyncContextOptions, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
         /**
          * Removes the event handlers for a supported event type.
          *
@@ -7833,7 +7833,7 @@ export declare namespace Office {
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        removeHandlerAsync(eventType: CommonAPI.EventType, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
 
     /**
@@ -7999,7 +7999,7 @@ export declare namespace Office {
         /**
          * The color of the category.
          */
-        color: MailboxEnums.CategoryColor;
+        color: MailboxEnums.CategoryColor | string;
     }
 
     /**
@@ -8219,7 +8219,7 @@ export declare namespace Office {
          * Including them will result in an ArgumentException. 
          * If type is ProgressIndicator, the developer should remove or replace the progress indicator when the action is complete.
          */
-        type: MailboxEnums.ItemNotificationMessageType;
+        type: MailboxEnums.ItemNotificationMessageType | string;
         /**
          * A reference to an icon that is defined in the manifest in the Resources section. It appears in the infobar area. 
          * It is only applicable if the type is InformationalMessage. Specifying this parameter for an unsupported type results in an exception.
@@ -8696,7 +8696,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
-        recurrenceType: MailboxEnums.RecurrenceType;
+        recurrenceType: MailboxEnums.RecurrenceType | string;
 
         /**
          * The {@link Office.SeriesTime} object enables you to manage the start and end dates of the recurring appointment series and the usual start 
@@ -8825,24 +8825,24 @@ export declare namespace Office {
         /**
          * Represents the day of the week or type of day, for example, weekend day vs weekday.
          */
-        dayOfWeek: MailboxEnums.Days;
+        dayOfWeek: MailboxEnums.Days | string;
         /**
          * Represents the set of days for this recurrence. Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
          */
-        days: MailboxEnums.Days[];
+        days: MailboxEnums.Days[] | string[];
         /**
          * Represents the number of the week in the selected month e.g. 'first' for first week of the month.
          */
-        weekNumber: MailboxEnums.WeekNumber;
+        weekNumber: MailboxEnums.WeekNumber | string;
         /**
          * Represents the month.
          */
-        month: MailboxEnums.Month;
+        month: MailboxEnums.Month | string;
         /**
          * Represents your chosen first day of the week otherwise the default is the value in the current user's settings. 
          * Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
          */
-        firstDayOfWeek: MailboxEnums.Days;
+        firstDayOfWeek: MailboxEnums.Days | string;
     }
 
     /**
@@ -8860,7 +8860,7 @@ export declare namespace Office {
         /**
          * Represents the name of the recurrence time zone.
          */
-        name: MailboxEnums.RecurrenceTimeZone;
+        name: MailboxEnums.RecurrenceTimeZone | string;
 
         /**
          * Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began.
