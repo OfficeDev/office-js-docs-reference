@@ -204,10 +204,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType | string;'
       return:
         type:
-          - MailboxEnums.ItemType
+          - MailboxEnums.ItemType | string
   - uid: Outlook_1_4.Office.Item.notificationMessages
     summary: |-
       Gets the notification messages for an item.

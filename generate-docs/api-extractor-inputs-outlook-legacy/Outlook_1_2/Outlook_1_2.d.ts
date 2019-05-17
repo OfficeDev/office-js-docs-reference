@@ -159,7 +159,7 @@ export declare namespace Office {
         }
     }
     export interface CoercionTypeOptions {
-        coercionType?: CommonAPI.CoercionType;
+        coercionType?: CommonAPI.CoercionType | string;
     }
     enum SourceProperty {
         /**
@@ -358,7 +358,7 @@ export declare namespace Office {
         /**
          * Gets a value that indicates the type of an attachment.
          */
-        attachmentType: MailboxEnums.AttachmentType;
+        attachmentType: MailboxEnums.AttachmentType | string;
         /**
          * Gets the MIME content type of the attachment.
          */
@@ -768,11 +768,11 @@ export declare namespace Office {
          * This property applies to only an attendee of an appointment, as represented by the optionalAttendees or requiredAttendees property. 
          * This property returns undefined in other scenarios.
          */
-        appointmentResponse: MailboxEnums.ResponseType;
+        appointmentResponse: MailboxEnums.ResponseType | string;
         /**
          * Gets the email address type of a recipient.
          */
-        recipientType: MailboxEnums.RecipientType;
+        recipientType: MailboxEnums.RecipientType | string;
     }
     /**
      * Represents an email account on an Exchange Server.
@@ -916,7 +916,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets or sets the {@link Office.Location} of an appointment. The location property returns a Location object that provides methods that are 
          * used to get and set the location of the appointment.
@@ -1147,7 +1147,7 @@ export declare namespace Office {
          *        asyncContext: Developers can provide any object they wish to access in the callback method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
          /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -1173,7 +1173,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -1466,7 +1466,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets the location of an appointment.
          *
@@ -1704,7 +1704,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
          *
@@ -1848,7 +1848,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         
        /**
         * Asynchronously loads custom properties for this add-in on the selected item.
@@ -2062,7 +2062,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -2088,7 +2088,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Removes an attachment from a message or appointment.
          *
@@ -2454,7 +2454,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
          *
@@ -2644,7 +2644,8 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
+        
         /**
          * Gets or sets the description that appears in the subject field of an item.
          *
@@ -2811,6 +2812,7 @@ export declare namespace Office {
          *                 the error.
          */
         addItemAttachmentAsync(itemId: any, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -2838,7 +2840,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, options: CommonAPI.AsyncContextOptions, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -2864,7 +2866,7 @@ export declare namespace Office {
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
          */
-        getSelectedDataAsync(coercionType: CommonAPI.CoercionType, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: CommonAPI.CoercionType | string, callback: (asyncResult: CommonAPI.AsyncResult<any>) => void): void;
         /**
          * Asynchronously loads custom properties for this add-in on the selected item.
          *
@@ -2946,6 +2948,8 @@ export declare namespace Office {
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         /**
          * Asynchronously inserts data into the body or subject of a message.
          *
@@ -3206,7 +3210,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          */
-        itemType: MailboxEnums.ItemType;
+        itemType: MailboxEnums.ItemType | string;
         /**
          * Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
          *
@@ -3223,6 +3227,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          */
         normalizedSubject: string;
+        
         /**
          * Gets the email address of the sender of an email message.
          *
@@ -3408,7 +3413,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          */
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[];
         /**
          * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
          *
@@ -3741,7 +3746,7 @@ export declare namespace Office {
          * More information is under {@link Office.UserProfile}
          */
         userProfile: UserProfile;
-
+        
         /**
          * Gets a dictionary containing time information in local client time.
          *
