@@ -75,7 +75,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions,
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options?: Office.AsyncContextOptions,
         callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -85,7 +85,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -128,7 +128,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (asyncResult:
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -138,7 +138,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -538,8 +538,8 @@ items:
     type: method
     syntax:
       content: >-
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber |
-        TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion)[];
       return:
         type:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
@@ -552,7 +552,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - MailboxEnums.EntityType
+            - MailboxEnums.EntityType | string
   - uid: Outlook_1_7.Office.AppointmentRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -949,7 +949,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?:
+        removeHandlerAsync(eventType: Office.EventType | string, options?: Office.AsyncContextOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -959,7 +959,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -996,8 +996,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1006,7 +1006,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -1381,10 +1381,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType | string;'
       return:
         type:
-          - MailboxEnums.ItemType
+          - MailboxEnums.ItemType | string
   - uid: Outlook_1_7.Office.AppointmentRead.location
     summary: |-
       Gets the location of an appointment.

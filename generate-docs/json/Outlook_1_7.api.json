@@ -436,6 +436,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -528,8 +532,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 28,
-                    "endIndex": 29
+                    "startIndex": 29,
+                    "endIndex": 30
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -538,28 +542,28 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 17
+                        "startIndex": 15,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 27
+                        "startIndex": 21,
+                        "endIndex": 28
                       }
                     }
                   ],
@@ -597,6 +601,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -668,8 +676,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 23,
+                    "endIndex": 24
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -678,21 +686,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 15,
+                        "endIndex": 22
                       }
                     }
                   ],
@@ -1045,6 +1053,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -1121,8 +1133,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -1131,21 +1143,21 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -1183,6 +1195,10 @@
                     {
                       "kind": "Reference",
                       "text": "CoercionType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -1238,8 +1254,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1248,14 +1264,14 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -1641,6 +1657,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -1717,8 +1737,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -1727,21 +1747,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -1779,6 +1799,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -1834,8 +1858,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -1844,14 +1868,14 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -2374,6 +2398,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -2381,7 +2409,7 @@
                   "name": "itemType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -3001,6 +3029,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -3093,8 +3125,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 28,
-                    "endIndex": 29
+                    "startIndex": 29,
+                    "endIndex": 30
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -3103,28 +3135,28 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 17
+                        "startIndex": 15,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 27
+                        "startIndex": 21,
+                        "endIndex": 28
                       }
                     }
                   ],
@@ -3162,6 +3194,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -3233,8 +3269,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 23,
+                    "endIndex": 24
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -3243,21 +3279,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 15,
+                        "endIndex": 22
                       }
                     }
                   ],
@@ -3541,6 +3577,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -3585,8 +3625,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 17
+                    "startIndex": 9,
+                    "endIndex": 18
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -3595,7 +3635,7 @@
                       "parameterName": "entityType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     }
                   ],
@@ -3981,6 +4021,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -4057,8 +4101,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -4067,21 +4111,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -4119,6 +4163,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -4174,8 +4222,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -4184,14 +4232,14 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -4431,6 +4479,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -4438,7 +4490,7 @@
                   "name": "itemType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -4799,6 +4851,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -4806,7 +4862,7 @@
                   "name": "attachmentType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -5013,6 +5069,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -5089,8 +5149,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -5099,21 +5159,21 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -5151,6 +5211,10 @@
                     {
                       "kind": "Reference",
                       "text": "CoercionType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -5206,8 +5270,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -5216,14 +5280,14 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -6230,6 +6294,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -6237,7 +6305,7 @@
                   "name": "coercionType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 }
               ],
@@ -6930,6 +6998,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -6937,7 +7009,7 @@
                   "name": "appointmentResponse",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -7025,6 +7097,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -7032,7 +7108,7 @@
                   "name": "recipientType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 }
               ],
@@ -7644,6 +7720,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -7736,8 +7816,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 28,
-                    "endIndex": 29
+                    "startIndex": 29,
+                    "endIndex": 30
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -7746,28 +7826,28 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 17
+                        "startIndex": 15,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 27
+                        "startIndex": 21,
+                        "endIndex": 28
                       }
                     }
                   ],
@@ -7805,6 +7885,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -7876,8 +7960,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 23,
+                    "endIndex": 24
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -7886,21 +7970,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 15,
+                        "endIndex": 22
                       }
                     }
                   ],
@@ -8051,6 +8135,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -8127,8 +8215,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -8137,21 +8225,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -8189,6 +8277,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -8244,8 +8336,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -8254,14 +8346,14 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -8323,6 +8415,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -8330,7 +8426,7 @@
                   "name": "itemType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -9063,6 +9159,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -9139,8 +9239,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -9149,21 +9249,21 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -9201,6 +9301,10 @@
                     {
                       "kind": "Reference",
                       "text": "CoercionType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -9256,8 +9360,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -9266,14 +9370,14 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -10290,6 +10394,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -10334,8 +10442,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 17
+                    "startIndex": 9,
+                    "endIndex": 18
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -10344,7 +10452,7 @@
                       "parameterName": "entityType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     }
                   ],
@@ -11502,6 +11610,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -11618,8 +11730,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 34,
-                    "endIndex": 35
+                    "startIndex": 35,
+                    "endIndex": 36
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -11628,28 +11740,28 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 23
+                        "startIndex": 21,
+                        "endIndex": 24
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 26,
-                        "endIndex": 33
+                        "startIndex": 27,
+                        "endIndex": 34
                       }
                     }
                   ],
@@ -11687,6 +11799,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -11782,8 +11898,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 28,
-                    "endIndex": 29
+                    "startIndex": 29,
+                    "endIndex": 30
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -11792,21 +11908,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 27
+                        "startIndex": 21,
+                        "endIndex": 28
                       }
                     }
                   ],
@@ -11863,6 +11979,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -11875,8 +11995,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 13,
+                    "endIndex": 14
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -11892,7 +12012,7 @@
                       "parameterName": "restVersion",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
-                        "endIndex": 11
+                        "endIndex": 12
                       }
                     }
                   ],
@@ -12004,6 +12124,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -12016,8 +12140,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 12,
-                    "endIndex": 13
+                    "startIndex": 13,
+                    "endIndex": 14
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -12033,7 +12157,7 @@
                       "parameterName": "restVersion",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
-                        "endIndex": 11
+                        "endIndex": 12
                       }
                     }
                   ],
@@ -12800,6 +12924,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -12876,8 +13004,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -12886,21 +13014,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -12938,6 +13066,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -12993,8 +13125,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -13003,14 +13135,14 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -19117,6 +19249,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -19209,8 +19345,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 28,
-                    "endIndex": 29
+                    "startIndex": 29,
+                    "endIndex": 30
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -19219,28 +19355,28 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 17
+                        "startIndex": 15,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 27
+                        "startIndex": 21,
+                        "endIndex": 28
                       }
                     }
                   ],
@@ -19278,6 +19414,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -19349,8 +19489,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 23,
+                    "endIndex": 24
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -19359,21 +19499,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 15,
+                        "endIndex": 22
                       }
                     }
                   ],
@@ -19726,6 +19866,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -19802,8 +19946,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -19812,21 +19956,21 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -19864,6 +20008,10 @@
                     {
                       "kind": "Reference",
                       "text": "CoercionType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -19919,8 +20067,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -19929,14 +20077,14 @@
                       "parameterName": "coercionType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -20322,6 +20470,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -20398,8 +20550,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -20408,21 +20560,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -20460,6 +20612,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -20515,8 +20671,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -20525,14 +20681,14 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -21142,6 +21298,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -21149,7 +21309,7 @@
                   "name": "itemType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -21352,6 +21512,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -21444,8 +21608,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 28,
-                    "endIndex": 29
+                    "startIndex": 29,
+                    "endIndex": 30
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -21454,28 +21618,28 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 17
+                        "startIndex": 15,
+                        "endIndex": 18
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 20,
-                        "endIndex": 27
+                        "startIndex": 21,
+                        "endIndex": 28
                       }
                     }
                   ],
@@ -21513,6 +21677,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -21584,8 +21752,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 22,
-                    "endIndex": 23
+                    "startIndex": 23,
+                    "endIndex": 24
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -21594,21 +21762,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "handler",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 11
+                        "startIndex": 11,
+                        "endIndex": 12
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 14,
-                        "endIndex": 21
+                        "startIndex": 15,
+                        "endIndex": 22
                       }
                     }
                   ],
@@ -21892,6 +22060,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": "): "
                     },
                     {
@@ -21936,8 +22108,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 17
+                    "startIndex": 9,
+                    "endIndex": 18
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -21946,7 +22118,7 @@
                       "parameterName": "entityType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     }
                   ],
@@ -22332,6 +22504,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ", "
                     },
                     {
@@ -22408,8 +22584,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 24,
-                    "endIndex": 25
+                    "startIndex": 25,
+                    "endIndex": 26
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 0,
@@ -22418,21 +22594,21 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "options",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 13
+                        "startIndex": 11,
+                        "endIndex": 14
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 16,
-                        "endIndex": 23
+                        "startIndex": 17,
+                        "endIndex": 24
                       }
                     }
                   ],
@@ -22470,6 +22646,10 @@
                     {
                       "kind": "Reference",
                       "text": "EventType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
                     },
                     {
                       "kind": "Content",
@@ -22525,8 +22705,8 @@
                     }
                   ],
                   "returnTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 19,
+                    "endIndex": 20
                   },
                   "releaseTag": "Public",
                   "overloadIndex": 1,
@@ -22535,14 +22715,14 @@
                       "parameterName": "eventType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
-                        "endIndex": 7
+                        "endIndex": 8
                       }
                     },
                     {
                       "parameterName": "callback",
                       "parameterTypeTokenRange": {
-                        "startIndex": 10,
-                        "endIndex": 17
+                        "startIndex": 11,
+                        "endIndex": 18
                       }
                     }
                   ],
@@ -22873,6 +23053,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -22880,7 +23064,7 @@
                   "name": "itemType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -23266,6 +23450,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -23273,7 +23461,7 @@
                   "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 }
               ],
@@ -25954,6 +26142,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -25961,7 +26153,7 @@
                   "name": "recurrenceType",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -26073,6 +26265,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -26080,7 +26276,7 @@
                   "name": "dayOfWeek",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -26110,7 +26306,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "[]"
+                      "text": "[] | string[]"
                     },
                     {
                       "kind": "Content",
@@ -26151,6 +26347,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -26158,7 +26358,7 @@
                   "name": "firstDayOfWeek",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -26217,6 +26417,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -26224,7 +26428,7 @@
                   "name": "month",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {
@@ -26254,6 +26458,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -26261,7 +26469,7 @@
                   "name": "weekNumber",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 }
               ],
@@ -26315,6 +26523,10 @@
                     },
                     {
                       "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
                       "text": ";"
                     }
                   ],
@@ -26322,7 +26534,7 @@
                   "name": "name",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
-                    "endIndex": 5
+                    "endIndex": 6
                   }
                 },
                 {

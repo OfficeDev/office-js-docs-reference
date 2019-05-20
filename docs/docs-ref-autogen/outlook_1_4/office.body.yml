@@ -85,8 +85,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(coercionType: Office.CoercionType, options?: Office.AsyncContextOptions, callback?: (asyncResult:
-        Office.AsyncResult<string>) => void): void;
+        getAsync(coercionType: Office.CoercionType | string, options?: Office.AsyncContextOptions, callback?:
+        (asyncResult: Office.AsyncResult<string>) => void): void;
       return:
         type:
           - void
@@ -95,7 +95,7 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType
+            - Office.CoercionType | string
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties: asyncContext: Developers
@@ -138,8 +138,8 @@ items:
     type: method
     syntax:
       content: >-
-        getAsync(coercionType: Office.CoercionType, callback?: (asyncResult: Office.AsyncResult<string>) => void):
-        void;
+        getAsync(coercionType: Office.CoercionType | string, callback?: (asyncResult: Office.AsyncResult<string>)
+        => void): void;
       return:
         type:
           - void
@@ -148,7 +148,7 @@ items:
         - id: coercionType
           description: The format for the returned body.
           type:
-            - Office.CoercionType
+            - Office.CoercionType | string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single

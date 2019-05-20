@@ -93,7 +93,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type: MailboxEnums.ItemNotificationMessageType;'
+      content: 'type: MailboxEnums.ItemNotificationMessageType | string;'
       return:
         type:
-          - MailboxEnums.ItemNotificationMessageType
+          - MailboxEnums.ItemNotificationMessageType | string
