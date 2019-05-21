@@ -46,10 +46,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'color: MailboxEnums.CategoryColor;'
+      content: 'color: MailboxEnums.CategoryColor | string;'
       return:
         type:
-          - MailboxEnums.CategoryColor
+          - MailboxEnums.CategoryColor | string
   - uid: outlook.Office.CategoryDetails.displayName
     summary: The name of the category. Maximum length is 255 characters.
     isPreview: true

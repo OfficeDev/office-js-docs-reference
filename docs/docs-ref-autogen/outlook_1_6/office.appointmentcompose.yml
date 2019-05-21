@@ -470,8 +470,8 @@ items:
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: Office.CoercionType, options: Office.AsyncContextOptions, callback:
-        (asyncResult: Office.AsyncResult<any>) => void): void;
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, options: Office.AsyncContextOptions,
+        callback: (asyncResult: Office.AsyncResult<any>) => void): void;
       return:
         type:
           - void
@@ -482,7 +482,7 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - Office.CoercionType
+            - Office.CoercionType | string
         - id: options
           description: >-
             An object literal that contains one or more of the following properties. asyncContext: Developers can
@@ -524,7 +524,7 @@ items:
     type: method
     syntax:
       content: >-
-        getSelectedDataAsync(coercionType: Office.CoercionType, callback: (asyncResult:
+        getSelectedDataAsync(coercionType: Office.CoercionType | string, callback: (asyncResult:
         Office.AsyncResult<string>) => void): void;
       return:
         type:
@@ -536,7 +536,7 @@ items:
             Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML
             tags present. If HTML, the method returns the selected text, whether it is plaintext or HTML.
           type:
-            - Office.CoercionType
+            - Office.CoercionType | string
         - id: callback
           description: >-
             When the method completes, the function passed in the callback parameter is called with a single parameter
@@ -1161,10 +1161,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType | string;'
       return:
         type:
-          - MailboxEnums.ItemType
+          - MailboxEnums.ItemType | string
   - uid: Outlook_1_6.Office.AppointmentCompose.location
     summary: >-
       Gets or sets the [Office.Location](xref:Outlook_1_6.Office.Location) of an appointment. The location property

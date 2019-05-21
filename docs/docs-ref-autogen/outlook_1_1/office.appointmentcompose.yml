@@ -694,10 +694,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType | string;'
       return:
         type:
-          - MailboxEnums.ItemType
+          - MailboxEnums.ItemType | string
   - uid: Outlook_1_1.Office.AppointmentCompose.location
     summary: >-
       Gets or sets the [Office.Location](xref:Outlook_1_1.Office.Location) of an appointment. The location property

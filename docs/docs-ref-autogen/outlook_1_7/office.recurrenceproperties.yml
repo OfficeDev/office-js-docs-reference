@@ -85,10 +85,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'dayOfWeek: MailboxEnums.Days;'
+      content: 'dayOfWeek: MailboxEnums.Days | string;'
       return:
         type:
-          - MailboxEnums.Days
+          - MailboxEnums.Days | string
   - uid: Outlook_1_7.Office.RecurrenceProperties.days
     summary: >-
       Represents the set of days for this recurrence. Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and
@@ -99,10 +99,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'days: MailboxEnums.Days[];'
+      content: 'days: MailboxEnums.Days[] | string[];'
       return:
         type:
-          - 'MailboxEnums.Days[]'
+          - 'MailboxEnums.Days[] | string[]'
   - uid: Outlook_1_7.Office.RecurrenceProperties.firstDayOfWeek
     summary: >-
       Represents your chosen first day of the week otherwise the default is the value in the current user's settings.
@@ -113,10 +113,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'firstDayOfWeek: MailboxEnums.Days;'
+      content: 'firstDayOfWeek: MailboxEnums.Days | string;'
       return:
         type:
-          - MailboxEnums.Days
+          - MailboxEnums.Days | string
   - uid: Outlook_1_7.Office.RecurrenceProperties.interval
     summary: Represents the period between instances of the same recurring series.
     name: interval
@@ -137,10 +137,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'month: MailboxEnums.Month;'
+      content: 'month: MailboxEnums.Month | string;'
       return:
         type:
-          - MailboxEnums.Month
+          - MailboxEnums.Month | string
   - uid: Outlook_1_7.Office.RecurrenceProperties.weekNumber
     summary: Represents the number of the week in the selected month e.g. 'first' for first week of the month.
     name: weekNumber
@@ -149,7 +149,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'weekNumber: MailboxEnums.WeekNumber;'
+      content: 'weekNumber: MailboxEnums.WeekNumber | string;'
       return:
         type:
-          - MailboxEnums.WeekNumber
+          - MailboxEnums.WeekNumber | string
