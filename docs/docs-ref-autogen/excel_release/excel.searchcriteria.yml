@@ -16,8 +16,10 @@ items:
       - excel_release.Excel.SearchCriteria.matchCase
       - excel_release.Excel.SearchCriteria.searchDirection
   - uid: excel_release.Excel.SearchCriteria.completeMatch
-    summary: |-
-      Specifies whether the match needs to be complete or partial. Default is false (partial).
+    summary: >-
+      Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the
+      cell. Default is false (partial).
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: completeMatch
