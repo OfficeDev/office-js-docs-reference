@@ -348,11 +348,13 @@ items:
           meet this criteria, an ItemNotFound error will be thrown.
       parameters:
         - id: text
-          description: String to find.
+          description: The string to find.
           type:
             - string
         - id: criteria
-          description: Additional Criteria.
+          description: >-
+            Additional search criteria, including whether the search needs to match the entire cell or be case
+            sensitive.
           type:
             - excel.Excel.WorksheetSearchCriteria
   - uid: excel.Excel.Worksheet.findAllOrNullObject
@@ -401,11 +403,13 @@ items:
           ```
       parameters:
         - id: text
-          description: String to find.
+          description: The string to find.
           type:
             - string
         - id: criteria
-          description: Additional Criteria.
+          description: >-
+            Additional search criteria, including whether the search needs to match the entire cell or be case
+            sensitive.
           type:
             - excel.Excel.WorksheetSearchCriteria
   - uid: excel.Excel.Worksheet.freezePanes
