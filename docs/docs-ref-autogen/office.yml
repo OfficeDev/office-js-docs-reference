@@ -12,6 +12,7 @@ items:
       - office.Office.AddBindingFromPromptOptions
       - office.Office.AddBindingFromSelectionOptions
       - office.Office.AddinCommands.Event
+      - office.Office.AddinCommands.EventCompletedOptions
       - office.Office.AddinCommands.Source
       - office.Office.AsyncContextOptions
       - office.Office.AsyncResult
@@ -365,6 +366,8 @@ references:
     name: Office.AddBindingFromSelectionOptions
   - uid: office.Office.AddinCommands.Event
     name: Office.AddinCommands.Event
+  - uid: office.Office.AddinCommands.EventCompletedOptions
+    name: Office.AddinCommands.EventCompletedOptions
   - uid: office.Office.AddinCommands.Source
     name: Office.AddinCommands.Source
   - uid: office.Office.AsyncContextOptions

@@ -442,7 +442,7 @@
                     {
                       "kind": "MethodSignature",
                       "canonicalReference": "(completed:0)",
-                      "docComment": "/**\n * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.\n *\n * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook will warn that a function is still executing.\n *\n * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter)\n *\n * @param options - Optional. An object literal that contains one or more of the following properties. allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.\n */\n",
+                      "docComment": "/**\n * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.\n *\n * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook will warn that a function is still executing.\n *\n * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter.\n *\n * @param options - Optional. An object that specifies behavior options for when the event is completed.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -461,16 +461,8 @@
                           "text": "?: "
                         },
                         {
-                          "kind": "Content",
-                          "text": "{ "
-                        },
-                        {
                           "kind": "Reference",
-                          "text": "allowEvent"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ": boolean }"
+                          "text": "EventCompletedOptions"
                         },
                         {
                           "kind": "Content",
@@ -486,8 +478,8 @@
                         }
                       ],
                       "returnTypeTokenRange": {
-                        "startIndex": 8,
-                        "endIndex": 9
+                        "startIndex": 6,
+                        "endIndex": 7
                       },
                       "releaseTag": "Public",
                       "overloadIndex": 0,
@@ -496,7 +488,7 @@
                           "parameterName": "options",
                           "parameterTypeTokenRange": {
                             "startIndex": 4,
-                            "endIndex": 7
+                            "endIndex": 5
                           }
                         }
                       ],
@@ -526,6 +518,59 @@
                       ],
                       "releaseTag": "Public",
                       "name": "source",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 3
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(EventCompletedOptions:interface)",
+                  "docComment": "/**\n * Specifies the behavior for when the event is completed.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "EventCompletedOptions"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "EventCompletedOptions",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "allowEvent",
+                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent = false` to cancel sending of the message.\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "allowEvent"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ": "
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "boolean"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "allowEvent",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
