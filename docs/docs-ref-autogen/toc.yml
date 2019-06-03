@@ -2771,6 +2771,8 @@ items:
                     uid: office.Office.GoToType
                   - name: HostType
                     uid: office.Office.HostType
+                  - name: Index
+                    uid: office.Office.Index
                   - name: InitializationReason
                     uid: office.Office.InitializationReason
                   - name: PlatformType
@@ -2853,8 +2855,6 @@ items:
                 uid: office.Office.GetSelectedDataOptions
               - name: GoToByIdOptions
                 uid: office.Office.GoToByIdOptions
-              - name: Index
-                uid: office.Office.Index
               - name: IPromiseConstructor
                 uid: office.Office.IPromiseConstructor
               - name: MatrixBinding
