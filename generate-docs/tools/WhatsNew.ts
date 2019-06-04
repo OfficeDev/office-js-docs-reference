@@ -154,24 +154,27 @@ class APISet {
                     + relativePath + className.toLowerCase() + ")|";
                 let first: boolean = true;
                 clas.fields.forEach((field) => {
-                    if (first) {
-                        first = false;
-                    } else {
-                        output += "||";
-                    }
+                    // ignore `load`, `set`, and `toJSON` methods and the `context` property, since they're uninteresting
+                    if (field.name !== "load" && field.name !== "toJSON" && field.name !== "context") {
+                        if (first) {
+                            first = false;
+                        } else {
+                            output += "||";
+                        }
 
-                    // remove unnecessary parts of the declaration string
-                    let newItemText = field.declarationString.replace(/;/g, "");
-                    newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
-                    newItemText = newItemText.replace(/\|/g, "\\|");
-                    if (field.type === FieldType.Property) {
-                        newItemText = newItemText.replace("?", "");
-                    }
+                        // remove unnecessary parts of the declaration string
+                        let newItemText = field.declarationString.replace(/;/g, "");
+                        newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
+                        newItemText = newItemText.replace(/\|/g, "\\|");
+                        if (field.type === FieldType.Property) {
+                            newItemText = newItemText.replace("?", "");
+                        }
 
-                    let tableLine = "[" + newItemText + "]("
-                        + buildFieldLink(relativePath, className, field) + ")|";
-                    tableLine += extractFirstSentenceFromComment(field.comment);
-                    output += tableLine + "|\n";
+                        let tableLine = "[" + newItemText + "]("
+                            + buildFieldLink(relativePath, className, field) + ")|";
+                        tableLine += extractFirstSentenceFromComment(field.comment);
+                        output += tableLine + "|\n";
+                    }
                 });
             }
         });
@@ -230,20 +233,6 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
     }
 
     return fieldLink.toLowerCase();
-}
-
-function fixDTS(definitions: string): string {
-    // remove undesirable content, like load, set, data classes, and toJSON
-    return definitions
-        .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?;/gm, '')
-        .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
-        .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
-        .replace(/interface .*?Data \{[^}]*?}/gm, '')
-        .replace(/load\(option\?\: string \| string\[\]\)\: .*\;/gm, '')
-        .replace(/toJSON\(\)\:.*\;/gm, '')
-        .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
-        .replace(/context\: RequestContext\;/gm, "")
-        .replace(/\/\*\* The request context associated with the object\. This connects the add\-in\'s process to the Office host application\'s process\. \*\//gm, "");
 }
 
 function parseDTS(node: ts.Node, allClasses: APISet): void {
@@ -376,12 +365,12 @@ tryCatch(async () => {
 
     const releaseFile: ts.SourceFile = ts.createSourceFile(
         "Release",
-        fixDTS(readFileSync(releaseHostFileName).toString()),
+        readFileSync(releaseHostFileName).toString(),
         ts.ScriptTarget.ES2015,
         true);
     const previewFile: ts.SourceFile = ts.createSourceFile(
         "Preview",
-        fixDTS(readFileSync(previewHostFileName).toString()),
+        readFileSync(previewHostFileName).toString(),
         ts.ScriptTarget.ES2015,
         true);
 

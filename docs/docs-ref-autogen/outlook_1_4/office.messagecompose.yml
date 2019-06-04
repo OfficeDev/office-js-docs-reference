@@ -768,8 +768,8 @@ items:
       **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
 
 
-      - Outlook for Mac does not support saveAsync on a meeting in compose mode. As such, calling saveAsync in that
-      scenario returns an error. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
+      - Outlook for Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in
+      compose mode. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
       API](https://support.microsoft.com/help/4505745) for a workaround.
 
 
@@ -841,8 +841,8 @@ items:
       **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
 
 
-      - Outlook for Mac does not support saveAsync on a meeting in compose mode. As such, calling saveAsync in that
-      scenario returns an error. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
+      - Outlook for Mac does not support saving a meeting. The saveAsync method fails when called from a meeting in
+      compose mode. See [Cannot save a meeting as a draft in Outlook for Mac by using Office JS
       API](https://support.microsoft.com/help/4505745) for a workaround.
 
 
