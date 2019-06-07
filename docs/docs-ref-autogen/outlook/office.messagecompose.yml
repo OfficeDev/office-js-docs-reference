@@ -32,6 +32,8 @@ items:
       - outlook.Office.MessageCompose.getAttachmentsAsync_1
       - outlook.Office.MessageCompose.getInitializationContextAsync
       - outlook.Office.MessageCompose.getInitializationContextAsync_1
+      - outlook.Office.MessageCompose.getItemIdAsync
+      - outlook.Office.MessageCompose.getItemIdAsync_1
       - outlook.Office.MessageCompose.getSelectedDataAsync
       - outlook.Office.MessageCompose.getSelectedDataAsync_1
       - outlook.Office.MessageCompose.loadCustomPropertiesAsync
@@ -913,6 +915,104 @@ items:
             asyncResult.value property as a string. If there is no initialization context, the asyncResult object will
             contain an Error object with its code property set to 9020 and its name property set to
             GenericResponseError.
+          type:
+            - '(asyncResult: Office.AsyncResult<string>) => void'
+  - uid: outlook.Office.MessageCompose.getItemIdAsync
+    summary: >-
+      Asynchronously gets the ID of a saved item.
+
+
+      When invoked, this method returns the item ID via the callback method.
+
+
+      **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with
+      EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
+      synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      **Errors**:
+
+
+      - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+    name: 'getItemIdAsync(options, callback)'
+    fullName: 'getItemIdAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getItemIdAsync(options: Office.AsyncContextOptions, callback: (asyncResult: Office.AsyncResult<string>) =>
+        void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
+          type:
+            - '(asyncResult: Office.AsyncResult<string>) => void'
+  - uid: outlook.Office.MessageCompose.getItemIdAsync_1
+    summary: >-
+      Asynchronously gets the ID of a saved item.
+
+
+      When invoked, this method returns the item ID via the callback method.
+
+
+      **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with
+      EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is
+      synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message
+      Compose
+
+
+      **Errors**:
+
+
+      - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+    name: getItemIdAsync(callback)
+    fullName: getItemIdAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemIdAsync(callback: (asyncResult: Office.AsyncResult<string>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter
+            of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
   - uid: outlook.Office.MessageCompose.getSelectedDataAsync
