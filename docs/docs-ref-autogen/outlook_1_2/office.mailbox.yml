@@ -367,7 +367,7 @@ items:
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
         - id: userContext
-          description: Optional. Any state data that is passed to the asynchronous method.\|
+          description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
   - uid: Outlook_1_2.Office.Mailbox.makeEwsRequestAsync
