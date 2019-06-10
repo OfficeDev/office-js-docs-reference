@@ -16,7 +16,9 @@ items:
       - office.Office.Error.message
       - office.Office.Error.name
   - uid: office.Office.Error.code
-    summary: Gets the numeric code of the error.
+    summary: >-
+      Gets the numeric code of the error. For a list of error codes, see [JavaScript API for Office error
+      codes](https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
     name: code
     fullName: code
     langs:
