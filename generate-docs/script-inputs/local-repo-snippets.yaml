@@ -11291,7 +11291,7 @@ Visio.ShapeView.addOverlay:
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-        var overlayId=shape.view.addOverlay("Image", "Visio Online", "Center", "Center", 50, 50);
+        var overlayId=shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
