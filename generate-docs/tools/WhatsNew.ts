@@ -379,7 +379,7 @@ tryCatch(async () => {
 
     const diffAPI: APISet = previewAPI.diff(releaseAPI);
 
-    const relativePath: string = "javascript/api/" + hostName + "/" + hostName + ".";
+    const relativePath: string = "javascript/api/" + hostName.toLowerCase() + "/" + hostName.toLowerCase() + ".";
     fsx.writeFileSync("./tool-outputs/WhatsNew.d.ts", diffAPI.getAsDTS());
     fsx.writeFileSync("./tool-outputs/WhatsNew.md", diffAPI.getAsMarkdown(relativePath));
 });
