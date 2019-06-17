@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.PivotField
     summary: |-
-      Represents the Excel PivotField.
+      Represents a single pivot field within a PivotHierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotField
@@ -60,7 +60,7 @@ items:
           - string
   - uid: excel.Excel.PivotField.items
     summary: |-
-      Returns the PivotFields associated with the PivotField.
+      Returns the PivotItems that comprise the PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: items
