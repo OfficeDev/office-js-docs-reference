@@ -2,7 +2,7 @@
 items:
   - uid: excel_release.Excel.PivotHierarchy
     summary: |-
-      Represents the Excel PivotHierarchy.
+      Represents a single pivot hierarchy within a PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotHierarchy
