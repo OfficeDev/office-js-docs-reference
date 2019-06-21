@@ -121,8 +121,7 @@ items:
           var hyperlinks = shape.hyperlinks;
           shapeHyperlinks.load();
               ctx.sync().then(function () {
-                  for(var i=0; i<shapeHyperlinks.items.length;i++)
-                  {
+                  for (var i = 0; i < shapeHyperlinks.items.length; i++) {
                       var hyperlink = shapeHyperlinks.items[i];
                       console.log(
                           "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
