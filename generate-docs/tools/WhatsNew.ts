@@ -147,15 +147,31 @@ class APISet {
         // table header
         let output: string = "| Class | Fields | Description |\n|:---|:---|:---|\n";
         this.api.forEach((clas) => {
-            // ignore enums
-            if (clas.type !== ClassType.Enum) {
+            // Ignore the following:
+            // - Enums.
+            // - LoadOptions interfaces
+            // - *Data classes for set/load methods
+            if (clas.type !== ClassType.Enum &&
+                !clas.getClassName().endsWith("LoadOptions") &&
+                !clas.getClassName().endsWith("Data")) {
                 const className = clas.getClassName();
                 output += "|[" + className + "](/"
                     + relativePath + className.toLowerCase() + ")|";
                 let first: boolean = true;
                 clas.fields.forEach((field) => {
-                    // ignore `load`, `set`, and `toJSON` methods and the `context` property, since they're uninteresting
-                    if (field.name !== "load" && field.name !== "toJSON" && field.name !== "context") {
+                    // Ignore the following:
+                    // - String literal overloads.
+                    // - `load`, `set`, `track`, `untrack`, and `toJSON` methods
+                    // - The `context` property.
+                    // - Static fields.
+                    if (field.declarationString.search(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g) < 0 &&
+                        field.name !== "load" && 
+                        field.name !== "set" && 
+                        field.name !== "toJSON" &&
+                        field.name !== "context" && 
+                        field.name !== "track" && 
+                        field.name !== "untrack" &&
+                        !field.declarationString.includes("static ")) {
                         if (first) {
                             first = false;
                         } else {
@@ -285,7 +301,6 @@ function parseDTSTopLevelItem(
     node: ts.InterfaceDeclaration | ts.ClassDeclaration | ts.EnumDeclaration,
     allClasses: APISet,
     type: ClassType): void {
-    //console.log("Creating " + node.name.text);
     topClass = new ClassStruct("export " + type.toLowerCase() + " " + node.name.text, "", type);
     allClasses.addClass(topClass);
     lastItem = topClass;
@@ -294,10 +309,9 @@ function parseDTSTopLevelItem(
 function parseDTSFieldItem(
     node: ts.PropertySignature | ts.PropertyDeclaration | ts.EnumMember | ts.MethodSignature | ts.MethodDeclaration,
     type: FieldType): void {
+    // checking for and ignoring mid-method parameters for load()
     if (node.getText().indexOf("expand?") < 0 && node.getText().indexOf("select?") < 0) {
-        // checking for and ignoring mid-method parameters for load()
         const newField: FieldStruct = new FieldStruct(node.getText(), "", type, node.name.getText());
-        //console.log("Adding " + newField.name + " to " + topClass.getClassName());
         topClass.fields.push(newField);
         lastItem = newField;
     }
