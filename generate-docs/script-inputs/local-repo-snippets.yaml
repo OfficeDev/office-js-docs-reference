@@ -10853,7 +10853,7 @@ Visio.Comment.load:
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
         var shapeComments= shape.comments;
-        shapeComments.load();
+        shapeComments.load(["author", "text"]);
         return ctx.sync().then(function () {
             for(var i = 0; i < shapeComments.items.length; i++)
             {
@@ -10876,7 +10876,7 @@ Visio.CommentCollection.load:
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
         var shapeComments= shape.comments;
-        shapeComments.load();
+        shapeComments.load(["author", "text"]);
         return ctx.sync().then(function () {
             for(var i = 0; i < shapeComments.items.length; i++)
             {
@@ -11034,7 +11034,7 @@ Visio.HyperlinkCollection.load:
         var shapeName = "Manager Belt";
         var shape = activePage.shapes.getItem(shapeName);
         var hyperlinks = shape.hyperlinks;
-        shapeHyperlinks.load();
+        shapeHyperlinks.load(["description", "address", "subAddress"]);
             ctx.sync().then(function () {
                 for (var i = 0; i < shapeHyperlinks.items.length; i++) {
                     var hyperlink = shapeHyperlinks.items[i];
@@ -11207,7 +11207,7 @@ Visio.ShapeDataItem.load:
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var shapeDataItem = shape.shapeDataItems.getItem(0);
-        shapeDataItem.load();
+        shapeDataItem.load(["label", "value"]);
             return ctx.sync().then(function() {
                 console.log(shapeDataItem.label);
                 console.log(shapeDataItem.value);
@@ -11224,7 +11224,7 @@ Visio.ShapeDataItemCollection.load:
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var shapeDataItems = shape.shapeDataItems;
-        shapeDataItems.load();
+        shapeDataItems.load(["label", "value"]);
         return ctx.sync().then(function() {
             for (var i = 0; i < shapeDataItems.items.length; i++) {
                 console.log(shapeDataItems.items[i].label);

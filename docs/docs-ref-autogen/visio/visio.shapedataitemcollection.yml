@@ -118,7 +118,7 @@ items:
           var activePage = ctx.document.getActivePage();
           var shape = activePage.shapes.getItem(0);
           var shapeDataItems = shape.shapeDataItems;
-          shapeDataItems.load();
+          shapeDataItems.load(["label", "value"]);
           return ctx.sync().then(function() {
               for (var i = 0; i < shapeDataItems.items.length; i++) {
                   console.log(shapeDataItems.items[i].label);

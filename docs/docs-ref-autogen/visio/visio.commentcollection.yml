@@ -119,7 +119,7 @@ items:
           var shapeName = "Position Belt.41";
           var shape = activePage.shapes.getItem(shapeName);
           var shapeComments= shape.comments;
-          shapeComments.load();
+          shapeComments.load(["author", "text"]);
           return ctx.sync().then(function () {
               for(var i = 0; i < shapeComments.items.length; i++)
               {

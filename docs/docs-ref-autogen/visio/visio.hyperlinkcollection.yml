@@ -119,7 +119,7 @@ items:
           var shapeName = "Manager Belt";
           var shape = activePage.shapes.getItem(shapeName);
           var hyperlinks = shape.hyperlinks;
-          shapeHyperlinks.load();
+          shapeHyperlinks.load(["description", "address", "subAddress"]);
               ctx.sync().then(function () {
                   for (var i = 0; i < shapeHyperlinks.items.length; i++) {
                       var hyperlink = shapeHyperlinks.items[i];
