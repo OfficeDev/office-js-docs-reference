@@ -86,7 +86,7 @@ items:
           Visio.run(session, function (ctx) {
               var document = ctx.document;
               var activePage = document.getActivePage();
-              activePage.load();
+              activePage.load("name");
               return ctx.sync().then(function () {
                   console.log("pageName: " +activePage.name);
               });   

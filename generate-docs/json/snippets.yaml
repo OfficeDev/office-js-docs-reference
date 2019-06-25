@@ -11994,12 +11994,12 @@ Visio.Comment.load:
         var activePage = ctx.document.getActivePage();
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
-        var shapecomments= shape.comments;
-        shapecomments.load();
+        var shapeComments= shape.comments;
+        shapeComments.load(["author", "text"]);
         return ctx.sync().then(function () {
-            for(var i=0; i<shapecomments.items.length;i++)
+            for(var i = 0; i < shapeComments.items.length; i++)
             {
-                var comment= shapecomments.items[i];
+                var comment = shapeComments.items[i];
                 console.log("comment Author: " + comment.author);
                 console.log("Comment Text: " + comment.text);
                 console.log("Date " + comment.date);
@@ -12017,12 +12017,12 @@ Visio.CommentCollection.load:
         var activePage = ctx.document.getActivePage();
         var shapeName = "Position Belt.41";
         var shape = activePage.shapes.getItem(shapeName);
-        var shapecomments= shape.comments;
-        shapecomments.load();
+        var shapeComments= shape.comments;
+        shapeComments.load(["author", "text"]);
         return ctx.sync().then(function () {
-            for(var i=0; i<shapecomments.items.length;i++)
+            for(var i = 0; i < shapeComments.items.length; i++)
             {
-                var comment= shapecomments.items[i];
+                var comment = shapeComments.items[i];
                 console.log("comment Author: " + comment.author);
                 console.log("Comment Text: " + comment.text);
                 console.log("Date " + comment.date);
@@ -12037,7 +12037,7 @@ Visio.CommentCollection.load:
 Visio.DataRefreshCompleteEventArgs:
   - |-
     Visio.run(session, function (ctx) {
-        var document1= ctx.document;
+        var document1 = ctx.document;
         eventResult1 = document1.onDataRefreshComplete.add(
             function (args){
                 console.log("Data Refresh Result: "+args.success);
@@ -12057,7 +12057,7 @@ Visio.Document.getActivePage:
     Visio.run(session, function (ctx) {
         var document = ctx.document;
         var activePage = document.getActivePage();
-        activePage.load();
+        activePage.load("name");
         return ctx.sync().then(function () {
             console.log("pageName: " +activePage.name);
         });   
@@ -12176,10 +12176,9 @@ Visio.HyperlinkCollection.load:
         var shapeName = "Manager Belt";
         var shape = activePage.shapes.getItem(shapeName);
         var hyperlinks = shape.hyperlinks;
-        shapeHyperlinks.load();
+        shapeHyperlinks.load(["description", "address", "subAddress"]);
             ctx.sync().then(function () {
-                for(var i=0; i<shapeHyperlinks.items.length;i++)
-                {
+                for (var i = 0; i < shapeHyperlinks.items.length; i++) {
                     var hyperlink = shapeHyperlinks.items[i];
                     console.log(
                         "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
@@ -12304,18 +12303,18 @@ Visio.SelectionChangedEventArgs:
             }
         });
     }
-Visio.Shape.load:
+Visio.Shape.load_1:
   - |-
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shapeName = "Sample Name";
         var shape = activePage.shapes.getItem(shapeName);
-        shape.load();
+        shape.load(["name", "id", "text", "select"]);
         return ctx.sync().then(function () {
-            console.log(shape.name );
-            console.log(shape.id );
-            console.log(shape.Text );
-            console.log(shape.Select );
+            console.log(shape.name);
+            console.log(shape.id);
+            console.log(shape.text);
+            console.log(shape.select);
         });
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -12355,7 +12354,7 @@ Visio.ShapeDataItem.load:
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var shapeDataItem = shape.shapeDataItems.getItem(0);
-        shapeDataItem.load();
+        shapeDataItem.load(["label", "value"]);
             return ctx.sync().then(function() {
                 console.log(shapeDataItem.label);
                 console.log(shapeDataItem.value);
@@ -12372,10 +12371,9 @@ Visio.ShapeDataItemCollection.load:
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
         var shapeDataItems = shape.shapeDataItems;
-        shapeDataItems.load();
+        shapeDataItems.load(["label", "value"]);
         return ctx.sync().then(function() {
-            for (var i = 0; i < shapeDataItems.items.length; i++)
-            {
+            for (var i = 0; i < shapeDataItems.items.length; i++) {
                 console.log(shapeDataItems.items[i].label);
                 console.log(shapeDataItems.items[i].value);
             }
@@ -12438,7 +12436,7 @@ Visio.ShapeView.addOverlay:
     Visio.run(session, function (ctx) {
         var activePage = ctx.document.getActivePage();
         var shape = activePage.shapes.getItem(0);
-        var overlayId=shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
+        var overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
         return ctx.sync();
     }).catch(function(error) {
         console.log("Error: " + error);
@@ -16483,6 +16481,62 @@ Excel.DataPivotHierarchy.showAs:
         wholesaleDataHierarchy.showAs = wholesaleShowAs;
         await context.sync();
     });
+Excel.DataValidation.prompt:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Decision");
+        const rankingRange = sheet.tables.getItem("NameOptionsTable").columns.getItem("Ranking").getDataBodyRange();
+
+        // When you are developing, it is a good practice to
+        // clear the dataValidation object with each run of your code.
+        rankingRange.dataValidation.clear();
+
+        let greaterThanZeroRule = {
+            wholeNumber: {
+                formula1: 0,
+                operator: Excel.DataValidationOperator.greaterThan
+            }
+        };
+        rankingRange.dataValidation.rule = greaterThanZeroRule;
+
+        rankingRange.dataValidation.prompt = {
+            message: "Please enter a positive number.",
+            showPrompt: true,
+            title: "Positive numbers only."
+        };
+
+        rankingRange.dataValidation.errorAlert = {
+            message: "Sorry, only positive numbers are allowed",
+            showAlert: true,
+            style: "Stop",
+            title: "Negative Number Entered"
+        };
+
+        await context.sync();
+    });
+Excel.DataValidation.rule:
+  - |-
+    await Excel.run(async (context) => {
+        const sheet = context.workbook.worksheets.getItem("Decision");
+        const nameRange = 
+            sheet.tables.getItem("NameOptionsTable").columns.getItem("Baby Name").getDataBodyRange();
+
+        // When you are developing, it is a good practice to
+        // clear the dataValidation object with each run of your code.
+        nameRange.dataValidation.clear();
+
+        const nameSourceRange = context.workbook.worksheets.getItem("Names").getRange("A1:A3");
+
+        let approvedListRule = {
+            list: {
+                inCellDropDown: true,
+                source: nameSourceRange
+            }
+        };
+        nameRange.dataValidation.rule = approvedListRule;
+
+        await context.sync();
+    });
 Excel.DataValidation.errorAlert:
   - |-
     await Excel.run(async (context) => {
@@ -16788,6 +16842,13 @@ Excel.PageLayout.setPrintTitleRows:
     await Excel.run(async (context) => {
         const farmSheet = context.workbook.worksheets.getItem("Print");
         farmSheet.pageLayout.setPrintTitleRows("$1:$1");
+        await context.sync();
+    });
+Excel.PageLayout.zoom:
+  - |-
+    await Excel.run(async (context) => {
+        const farmSheet = context.workbook.worksheets.getItem("Print");
+        farmSheet.pageLayout.zoom = { scale: 200 };
         await context.sync();
     });
 Excel.PivotLayout.getDataBodyRange:
@@ -17154,6 +17215,19 @@ Excel.Range.style:
 
         await context.sync();
     });
+Excel.RangeAreas.format:
+  - |-
+    await Excel.run(async (context) => {
+
+        const sheet = context.workbook.worksheets.getActiveWorksheet();
+        const usedRange = sheet.getUsedRange();
+
+        // Find the ranges with formulas.
+        const formulaRanges = usedRange.getSpecialCells("Formulas");
+        formulaRanges.format.fill.color = "lightgreen";
+
+        await context.sync();
+    });
 Excel.RangeFormat.textOrientation:
   - |-
     await Excel.run(async (context) => {
@@ -17357,7 +17431,9 @@ Excel.SettingCollection.onSettingsChanged:
 Excel.Shape.delete:
   - |-
     await Excel.run(async (context) => {
-        const sheet = context.workbook.worksheets.getItem("Shapes");
+        context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
+        const sheet = context.workbook.worksheets.add("Shapes");
+
         const shapes = sheet.shapes;
 
         // load all the shapes in the collection without loading their properties
@@ -18233,19 +18309,6 @@ Excel.WorksheetFreezePanes.unfreeze:
     await Excel.run(async (context) => {
         const sheet = context.workbook.worksheets.getItem("Sample");
         sheet.freezePanes.unfreeze();
-
-        await context.sync();
-    });
-Excel.RangeAreas.format:
-  - |-
-    await Excel.run(async (context) => {
-
-        const sheet = context.workbook.worksheets.getActiveWorksheet();
-        const usedRange = sheet.getUsedRange();
-
-        // Find the ranges with formulas
-        const formulaRanges = usedRange.getSpecialCells("Formulas");
-        formulaRanges.format.fill.color = "lightgreen";
 
         await context.sync();
     });
