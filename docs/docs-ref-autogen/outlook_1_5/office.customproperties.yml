@@ -9,7 +9,7 @@ items:
       properties.
 
 
-      Because Outlook for Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot
+      Because Outlook on Mac doesn't cache custom properties, if the user's network goes down, mail add-ins cannot
       access their custom properties.
 
 
