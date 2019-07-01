@@ -1460,7 +1460,7 @@ items:
           - EmailAddressDetails
   - uid: outlook.Office.MessageRead.internetHeaders
     summary: >-
-      Gets the internet headers of a message.
+      Gets or sets the custom internet headers of a message.
 
 
       The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet
@@ -1854,7 +1854,7 @@ items:
 
 
       In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the
+      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
       parent item.
 
 

@@ -1547,7 +1547,7 @@ items:
 
 
       In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the
+      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
       parent item.
 
 
