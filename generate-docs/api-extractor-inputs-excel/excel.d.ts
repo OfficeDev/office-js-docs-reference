@@ -1786,8 +1786,8 @@ export declare namespace Excel {
         /**
          *
          * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -22044,14 +22044,14 @@ export declare namespace Excel {
     }
     /**
      *
-     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
      *
      * [Api set: ExcelApi 1.1]
      */
     enum ChartSeriesBy {
         /**
          *
-         * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+         * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
          *
          */
         auto = "Auto",
@@ -28235,8 +28235,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -32855,8 +32855,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -38918,8 +38918,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */

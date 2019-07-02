@@ -5,7 +5,7 @@ items:
       Represents custom settings for a task pane or content add-in that are stored in the host document as name/value
       pairs.
     remarks: >-
-      **Hosts**: Access, Excel, PowerPoint, Word
+      **Hosts**: Excel, PowerPoint, Word
 
 
       The settings created by using the methods of the Settings object are saved per add-in and per document. That is,
@@ -45,8 +45,8 @@ items:
 
       **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running
       with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in
-      Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the
-      settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+      Excel on the web, and more than one user is editing the spreadsheet (coauthoring). Therefore, effectively the
+      settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
     remarks: >-
       **Requirement set**: [Not in a
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
@@ -103,8 +103,8 @@ items:
 
       **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running
       with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet that is opened in
-      Excel Online, and more than one user is editing the spreadsheet (co-authoring). Therefore, effectively the
-      settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+      Excel on the web, and more than one user is editing the spreadsheet (coauthoring). Therefore, effectively the
+      settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
     remarks: >-
       **Requirement set**: [Not in a
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set)
