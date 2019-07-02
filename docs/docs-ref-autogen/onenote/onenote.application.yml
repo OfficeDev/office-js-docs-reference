@@ -691,8 +691,8 @@ items:
             - string
   - uid: onenote.OneNote.Application.notebooks
     summary: >-
-      Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one
-      notebook at a time is open in the application instance. Read-only.
+      Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only
+      one notebook at a time is open in the application instance. Read-only.
 
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]

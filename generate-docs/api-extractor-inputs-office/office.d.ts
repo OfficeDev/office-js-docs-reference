@@ -232,7 +232,6 @@ export declare namespace Office {
      * *Supported hosts, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -268,7 +267,6 @@ export declare namespace Office {
      * *Supported hosts, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -306,7 +304,6 @@ export declare namespace Office {
      * *Supported hosts, by platform*
      *  <table>
      *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
      *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
      *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
      *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -378,6 +375,10 @@ export declare namespace Office {
         Project,
         /**
          * The Office host is Microsoft Access.
+         * 
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
          */
         Access
     }
@@ -466,7 +467,7 @@ export declare namespace Office {
      * The current context exists as a property of Office. It is accessed using `Office.context`.
      *
      * @remarks 
-     * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+     * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
      */     
     export interface Context {
         /**
@@ -495,8 +496,6 @@ export declare namespace Office {
         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File \> Options \> Language** in the Office host 
         * application.
         * 
-        * In content add-ins for Access web apps, the `contentLanguage` property gets the add-in culture (e.g., "en-GB").
-        * 
         * **Support details**
         * 
         * A capital Y in the following matrix indicates that this property is supported in the corresponding Office host application. 
@@ -508,7 +507,6 @@ export declare namespace Office {
         * *Supported hosts, by platform*
         *  <table>
         *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td>                   </td><td> Y                     </td><td>                </td><td>                           </td><td>               </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
         *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -531,8 +529,6 @@ export declare namespace Office {
         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File \> Options \> Language** in the Office 
         * host application.
         * 
-        * In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
-        * 
         * When using in Outlook, the applicable modes are Compose or Read.
         * 
         * **Support details**
@@ -546,7 +542,6 @@ export declare namespace Office {
         * *Supported hosts, by platform*
         *  <table>
         *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
         *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
         *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
         *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
@@ -1186,10 +1181,18 @@ export declare namespace Office {
         coercionType?: Office.CoercionType | string
         /**
         * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
+        * 
+        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+        * to build no-code business solutions for web and mobile devices.
         */
         columns?: string[]
         /**
         * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
+        * 
+        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+        * to build no-code business solutions for web and mobile devices.
         */
         rows?: string
         /**
@@ -1281,8 +1284,13 @@ export declare namespace Office {
         promptText?: string
         /**
          * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. 
-         * The headers provided in the TableData object specify the labels used in the field selection UI. 
+         * The headers provided in the TableData object specify the labels used in the field selection UI.
+         * 
          * **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
+         * 
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
          */
         sampleData?: Office.TableData
         /**
@@ -1499,7 +1507,6 @@ export declare namespace Office {
      * *Supported hosts, by platform*
      *  <table>
      *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
-     *   <tr><td><strong> Access </strong></td><td>                   </td><td> Y                     </td><td>                </td></tr>
      *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
      *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
      *  </table>
@@ -1563,7 +1570,7 @@ export declare namespace Office {
         /**
          * Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
          * 
-         * **Note**: Only applies to data in Access, Excel, and Word.
+         * **Note**: Only applies to data in Excel and Word.
          */
         Table,
         /**
@@ -1655,7 +1662,7 @@ export declare namespace Office {
      * 
      * @remarks
      * 
-     * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Access, Excel, Word.
+     * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
      * 
      */
     enum EventType {
@@ -1686,7 +1693,7 @@ export declare namespace Office {
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
          * 
          * @remarks 
-         * **Hosts**: Access, Excel, Word
+         * **Hosts**: Excel, Word
          */
         BindingDataChanged,
         /**
@@ -1694,7 +1701,7 @@ export declare namespace Office {
          * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
          * 
          * @remarks 
-         * **Hosts**: Access, Excel, Word 
+         * **Hosts**: Excel, Word 
          */
         BindingSelectionChanged,
         /**
@@ -1764,7 +1771,7 @@ export declare namespace Office {
          * A Settings.settingsChanged event was raised.
          * 
          * @remarks 
-         * **Hosts**: Access, Excel, PowerPoint, Word
+         * **Hosts**: Excel, PowerPoint, Word
          */
         SettingsChanged,
         /**
@@ -1905,7 +1912,7 @@ export declare namespace Office {
     * and table-specific features, such as counting the number of rows and columns.
     *
     * @remarks
-    * **Hosts**: Access, Excel, Word
+    * **Hosts**: Excel, Word
     * 
     * **Requirement sets**: 
     * 
@@ -2181,7 +2188,7 @@ export declare namespace Office {
          *
          *        array of arrays: Excel and Word only
          *
-         *        {@link Office.TableData}: Access, Excel, and Word only
+         *        {@link Office.TableData}: Excel and Word only
          *
          *        HTML: Word on the web and Windows only
          *
@@ -2328,7 +2335,7 @@ export declare namespace Office {
          *
          *        array of arrays: Excel and Word only
          *
-         *        `TableData`: Access, Excel, and Word only
+         *        `TableData`: Excel and Word only
          *
          *        HTML: Word on the web and Windows only
          *
@@ -3238,7 +3245,7 @@ export declare namespace Office {
      * An abstract class that represents the document the add-in is interacting with.
      *
      * @remarks
-     * **Hosts**: Access, Excel, PowerPoint, Project, Word
+     * **Hosts**: Excel, PowerPoint, Project, Word
      */
     export interface Document {
         /**
@@ -3478,7 +3485,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3570,7 +3577,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3802,7 +3809,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3987,7 +3994,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -4456,7 +4463,7 @@ export declare namespace Office {
      * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
      *
      * @remarks
-     * **Hosts**: Access, Excel, PowerPoint, Word
+     * **Hosts**: Excel, PowerPoint, Word
      * 
      * The settings created by using the methods of the Settings object are saved per add-in and per document. 
      * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
@@ -4844,8 +4851,6 @@ export declare namespace Office {
         *
         * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
         * strings.
-        *
-        * In content add-ins for Access, for performance reasons the rowCount property always returns -1.
         */
         rowCount: number;
         /**

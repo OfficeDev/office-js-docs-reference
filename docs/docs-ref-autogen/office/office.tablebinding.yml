@@ -1017,9 +1017,6 @@ items:
       row contains all empty strings.
 
 
-      In content add-ins for Access, for performance reasons the rowCount property always returns -1.
-
-
       #### Examples
 
 
