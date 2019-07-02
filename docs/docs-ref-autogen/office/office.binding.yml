@@ -17,7 +17,7 @@ items:
       TableBinding objects expose additional methods for matrix- and table-specific features, such as counting the
       number of rows and columns.
     remarks: >-
-      **Hosts**: Access, Excel, Word
+      **Hosts**: Excel, Word
 
 
       **Requirement sets**:
@@ -640,7 +640,7 @@ items:
 
             array of arrays: Excel and Word only
 
-            [Office.TableData](xref:office.Office.TableData)<!-- -->: Access, Excel, and Word only
+            [Office.TableData](xref:office.Office.TableData)<!-- -->: Excel and Word only
 
             HTML: Word on the web and Windows only
 
@@ -912,7 +912,7 @@ items:
 
             array of arrays: Excel and Word only
 
-            `TableData`<!-- -->: Access, Excel, and Word only
+            `TableData`<!-- -->: Excel and Word only
 
             HTML: Word on the web and Windows only
 

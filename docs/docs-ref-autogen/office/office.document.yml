@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Document
     summary: An abstract class that represents the document the add-in is interacting with.
-    remarks: '**Hosts**: Access, Excel, PowerPoint, Project, Word'
+    remarks: '**Hosts**: Excel, PowerPoint, Project, Word'
     name: Office.Document
     fullName: Office.Document
     langs:
@@ -1614,7 +1614,7 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
@@ -1826,7 +1826,7 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
@@ -3363,7 +3363,7 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
@@ -3680,7 +3680,7 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
       XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
