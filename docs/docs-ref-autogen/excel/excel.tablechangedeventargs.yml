@@ -98,8 +98,11 @@ items:
             Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" |
             "ColumnDeleted" | "CellInserted" | "CellDeleted"
   - uid: excel.Excel.TableChangedEventArgs.details
-    summary: |-
-      Represents the information about the change detail
+    summary: >-
+      Represents the information about the change detail. This property can be retrieved when the Changed event is
+      triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be
+      retrieved.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: details

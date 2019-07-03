@@ -97,7 +97,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.isFilterCleared
     summary: >-
-      True if all filters currently applied on the slicer is cleared.
+      True if all filters currently applied on the slicer are cleared.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -152,7 +152,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.nameInFormula
     summary: >-
-      Represents the name used in the formula.
+      Represents the slicer name used in the formula.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -188,9 +188,9 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerLoadOptions.style
     summary: >-
-      Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 through SlicerStyleLight6,
-      TableStyleOther1 through TableStyleOther2, SlicerStyleDark1 through SlicerStyleDark6. A custom user-defined style
-      present in the workbook can also be specified.
+      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
+      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      A custom user-defined style present in the workbook can also be specified.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

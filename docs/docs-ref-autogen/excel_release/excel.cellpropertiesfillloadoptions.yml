@@ -32,6 +32,36 @@ items:
       return:
         type:
           - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const cell = context.workbook.getActiveCell();
+
+              // Define the cell properties to get by setting the matching LoadOptions to true.
+              const propertiesToGet = cell.getCellProperties({
+                  address: true,
+                  format: {
+                      fill: {
+                          color: true
+                      },
+                      font: {
+                          color: true
+                      }
+                  },
+                  style: true
+              });
+
+              // Sync to get the data from the workbook
+              await context.sync();
+              const cellProperies = propertiesToGet.value[0][0];
+              console.log(
+                  `Address: ${cellProperies.address}\nStyle: ${cellProperies.style}\nFill Color: ${cellProperies.format.fill.color}\nFont Color: ${cellProperies.format.font.color}`);
+          });
+          ```
   - uid: excel_release.Excel.CellPropertiesFillLoadOptions.pattern
     summary: |-
       Specifies whether to load on the `pattern` property.

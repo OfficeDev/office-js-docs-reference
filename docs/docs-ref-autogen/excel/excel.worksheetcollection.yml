@@ -37,8 +37,10 @@ items:
       - excel.Excel.WorksheetCollection.onDeleted
       - excel.Excel.WorksheetCollection.onFiltered
       - excel.Excel.WorksheetCollection.onFormatChanged
+      - excel.Excel.WorksheetCollection.onRowHiddenChanged
       - excel.Excel.WorksheetCollection.onRowSorted
       - excel.Excel.WorksheetCollection.onSelectionChanged
+      - excel.Excel.WorksheetCollection.onSingleClicked
       - excel.Excel.WorksheetCollection.toJSON
   - uid: excel.Excel.WorksheetCollection.add
     summary: >-
@@ -706,6 +708,24 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onRowHiddenChanged
+    summary: >-
+      Occurs when any worksheet in the workbook has row hidden state changed.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onRowHiddenChanged
+    fullName: onRowHiddenChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>
   - uid: excel.Excel.WorksheetCollection.onRowSorted
     summary: >-
       Occurs when sorting on rows.
@@ -739,6 +759,24 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
+  - uid: excel.Excel.WorksheetCollection.onSingleClicked
+    summary: >-
+      Occurs when left-clicked/tapped operation happens in the worksheet collection.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onSingleClicked
+    fullName: onSingleClicked
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
   - uid: excel.Excel.WorksheetCollection.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

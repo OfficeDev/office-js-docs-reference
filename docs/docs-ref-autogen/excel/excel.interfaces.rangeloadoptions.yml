@@ -37,6 +37,7 @@ items:
       - excel.Excel.Interfaces.RangeLoadOptions.rowCount
       - excel.Excel.Interfaces.RangeLoadOptions.rowHidden
       - excel.Excel.Interfaces.RangeLoadOptions.rowIndex
+      - excel.Excel.Interfaces.RangeLoadOptions.savedAsArray
       - excel.Excel.Interfaces.RangeLoadOptions.style
       - excel.Excel.Interfaces.RangeLoadOptions.text
       - excel.Excel.Interfaces.RangeLoadOptions.top
@@ -441,6 +442,26 @@ items:
     type: property
     syntax:
       content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.RangeLoadOptions.savedAsArray
+    summary: >-
+      Represents if ALL the cells would be saved as an array formula. Returns true if ALL cells would be saved as an
+      array, or false if ALL cells would NOT be saved as an array formula. Returns null if there is a mixture of cells
+      that would and would not be saved as an array formula.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: savedAsArray
+    fullName: savedAsArray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'savedAsArray?: boolean;'
       return:
         type:
           - boolean

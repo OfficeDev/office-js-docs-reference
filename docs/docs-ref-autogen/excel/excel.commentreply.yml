@@ -70,7 +70,7 @@ items:
           - string
   - uid: excel.Excel.CommentReply.content
     summary: >-
-      Gets or sets the comment's content.
+      Gets or sets the comment reply's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

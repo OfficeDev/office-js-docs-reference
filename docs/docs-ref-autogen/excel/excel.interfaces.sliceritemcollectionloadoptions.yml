@@ -90,7 +90,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerItemCollectionLoadOptions.name
     summary: >-
-      For EACH ITEM in the collection: Represents the value displayed on UI.
+      For EACH ITEM in the collection: Represents the title displayed in the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
