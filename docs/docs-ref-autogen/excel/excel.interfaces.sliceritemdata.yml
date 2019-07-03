@@ -70,7 +70,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerItemData.name
     summary: >-
-      Represents the value displayed on UI.
+      Represents the title displayed in the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

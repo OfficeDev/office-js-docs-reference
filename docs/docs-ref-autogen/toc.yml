@@ -260,6 +260,8 @@ items:
                     uid: excel.Excel.ReadingOrder
                   - name: RibbonTab
                     uid: excel.Excel.RibbonTab
+                  - name: RowHiddenChangeType
+                    uid: excel.Excel.RowHiddenChangeType
                   - name: SaveBehavior
                     uid: excel.Excel.SaveBehavior
                   - name: SearchDirection
@@ -555,8 +557,6 @@ items:
                 uid: excel.Excel.CustomConditionalFormat
               - name: CustomDataValidation
                 uid: excel.Excel.CustomDataValidation
-              - name: CustomFunctionEventArgs
-                uid: excel.Excel.CustomFunctionEventArgs
               - name: CustomProperty
                 uid: excel.Excel.CustomProperty
               - name: CustomPropertyCollection
@@ -841,6 +841,8 @@ items:
                 uid: excel.Excel.WorksheetProtection
               - name: WorksheetProtectionOptions
                 uid: excel.Excel.WorksheetProtectionOptions
+              - name: WorksheetRowHiddenChangedEventArgs
+                uid: excel.Excel.WorksheetRowHiddenChangedEventArgs
               - name: WorksheetRowSortedEventArgs
                 uid: excel.Excel.WorksheetRowSortedEventArgs
               - name: WorksheetSearchCriteria

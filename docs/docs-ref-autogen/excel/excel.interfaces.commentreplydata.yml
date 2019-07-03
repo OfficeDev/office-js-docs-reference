@@ -16,7 +16,7 @@ items:
       - excel.Excel.Interfaces.CommentReplyData.id
   - uid: excel.Excel.Interfaces.CommentReplyData.authorEmail
     summary: >-
-      Get author email of the comment reply.
+      Gets the email of the comment reply's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -34,7 +34,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.CommentReplyData.authorName
     summary: >-
-      Get author name of the comment reply.
+      Gets the name of the comment reply's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -52,7 +52,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.CommentReplyData.content
     summary: >-
-      Get or set the content.
+      Gets or sets the comment reply's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -70,7 +70,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.CommentReplyData.creationDate
     summary: >-
-      Get creation time of the comment reply.
+      Gets the creation time of the comment reply.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

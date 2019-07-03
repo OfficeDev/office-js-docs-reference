@@ -89,7 +89,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerItemLoadOptions.name
     summary: >-
-      Represents the value displayed on UI.
+      Represents the title displayed in the UI.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

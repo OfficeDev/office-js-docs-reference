@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
     summary: >-
-      For EACH ITEM in the collection: Get author email of the comment reply.
+      For EACH ITEM in the collection: Gets the email of the comment reply's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -53,7 +53,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
     summary: >-
-      For EACH ITEM in the collection: Get author name of the comment reply.
+      For EACH ITEM in the collection: Gets the name of the comment reply's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -71,7 +71,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
     summary: >-
-      For EACH ITEM in the collection: Get or set the content.
+      For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -89,7 +89,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
     summary: >-
-      For EACH ITEM in the collection: Get creation time of the comment reply.
+      For EACH ITEM in the collection: Gets the creation time of the comment reply.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
