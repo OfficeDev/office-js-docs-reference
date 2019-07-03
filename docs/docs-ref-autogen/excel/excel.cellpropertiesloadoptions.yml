@@ -56,11 +56,11 @@ items:
                   style: true
               });
 
-              // Sync to get the data from the workbook
+              // Sync to get the data from the workbook.
               await context.sync();
-              const cellProperies = propertiesToGet.value[0][0];
+              const cellProperties = propertiesToGet.value[0][0];
               console.log(
-                  `Address: ${cellProperies.address}\nStyle: ${cellProperies.style}\nFill Color: ${cellProperies.format.fill.color}\nFont Color: ${cellProperies.format.font.color}`);
+                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
           });
           ```
   - uid: excel.Excel.CellPropertiesLoadOptions.addressLocal
