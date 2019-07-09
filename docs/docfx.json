@@ -205,7 +205,8 @@
         "docs-ref-autogen/outlook*.yml": "outlook",
         "docs-ref-autogen/powerpoint.yml": "powerpoint",
         "docs-ref-autogen/visio.yml": "visio",
-        "docs-ref-autogen/word.yml": "word"
+        "docs-ref-autogen/word.yml": "word",
+        "docs-ref-autogen/word_release.yml": "word"
       }
     },
     "template": [],
