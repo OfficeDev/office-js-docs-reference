@@ -809,35 +809,6 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "id",
-                  "docComment": "/**\n * Gets the the GUID of the CustomXmlPart, when T (the type of the value property) is {@link Office.CustomXmlPart}.\n */\n",
-                  "excerptTokens": [
-                    {
-                      "kind": "Reference",
-                      "text": "id"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "?: "
-                    },
-                    {
-                      "kind": "Content",
-                      "text": "string"
-                    },
-                    {
-                      "kind": "Content",
-                      "text": ";"
-                    }
-                  ],
-                  "releaseTag": "Public",
-                  "name": "id",
-                  "propertyTypeTokenRange": {
-                    "startIndex": 2,
-                    "endIndex": 3
-                  }
-                },
-                {
-                  "kind": "PropertySignature",
                   "canonicalReference": "status",
                   "docComment": "/**\n * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.\n */\n",
                   "excerptTokens": [

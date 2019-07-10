@@ -447,10 +447,6 @@ export declare namespace Office {
         */
         error: Office.Error;
         /**
-        * Gets the the GUID of the CustomXmlPart, when T (the type of the value property) is {@link Office.CustomXmlPart}.
-        */
-        id?: string;
-        /**
         * Gets the {@link Office.AsyncResultStatus} of the asynchronous operation.
         */
         status: AsyncResultStatus;
