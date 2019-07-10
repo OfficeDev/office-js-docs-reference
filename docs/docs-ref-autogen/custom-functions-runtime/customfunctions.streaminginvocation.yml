@@ -7,7 +7,6 @@ items:
 
 
       Call `setResult()` one or more times to provide the result instead of returning a result from the function.
-    isPreview: true
     name: CustomFunctions.StreamingInvocation
     fullName: CustomFunctions.StreamingInvocation
     langs:
@@ -20,7 +19,6 @@ items:
       - custom-functions-runtime.CustomFunctions.StreamingInvocation.setResult
   - uid: custom-functions-runtime.CustomFunctions.StreamingInvocation.setResult
     summary: Set the result for the custom function. May be called more than once.
-    isPreview: true
     name: setResult
     fullName: setResult
     langs:

@@ -5,21 +5,17 @@ items:
       - name: Excel
         uid: ''
         items:
-          - name: Custom Functions - Preview
+          - name: Custom Functions
             uid: ''
             items:
               - name: Custom functions runtime
                 uid: custom-functions-runtime
                 items:
-                  - name: CancelableHandler
-                    uid: custom-functions-runtime.CustomFunctions.CancelableHandler
                   - name: CancelableInvocation
                     uid: >-
                       custom-functions-runtime.CustomFunctions.CancelableInvocation
                   - name: Invocation
                     uid: custom-functions-runtime.CustomFunctions.Invocation
-                  - name: StreamingHandler
-                    uid: custom-functions-runtime.CustomFunctions.StreamingHandler
                   - name: StreamingInvocation
                     uid: >-
                       custom-functions-runtime.CustomFunctions.StreamingInvocation
