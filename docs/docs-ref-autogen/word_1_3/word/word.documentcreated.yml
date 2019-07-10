@@ -19,6 +19,10 @@ items:
       - word.Word.DocumentCreated.body
       - word.Word.DocumentCreated.contentControls
       - word.Word.DocumentCreated.context
+      - word.Word.DocumentCreated.customXmlParts
+      - word.Word.DocumentCreated.deleteBookmark
+      - word.Word.DocumentCreated.getBookmarkRange
+      - word.Word.DocumentCreated.getBookmarkRangeOrNullObject
       - word.Word.DocumentCreated.load
       - word.Word.DocumentCreated.load_1
       - word.Word.DocumentCreated.load_2
@@ -29,6 +33,7 @@ items:
       - word.Word.DocumentCreated.sections
       - word.Word.DocumentCreated.set
       - word.Word.DocumentCreated.set_1
+      - word.Word.DocumentCreated.settings
       - word.Word.DocumentCreated.toJSON
       - word.Word.DocumentCreated.track
       - word.Word.DocumentCreated.untrack
@@ -40,6 +45,7 @@ items:
 
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
+    isPreview: true
     name: body
     fullName: body
     langs:
@@ -58,6 +64,7 @@ items:
 
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
+    isPreview: true
     name: contentControls
     fullName: contentControls
     langs:
@@ -82,6 +89,96 @@ items:
       return:
         type:
           - word.Word.RequestContext
+  - uid: word.Word.DocumentCreated.customXmlParts
+    summary: >-
+      Gets the custom XML parts in the document. Read-only.
+
+
+      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    isPreview: true
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
+      return:
+        type:
+          - word.Word.CustomXmlPartCollection
+  - uid: word.Word.DocumentCreated.deleteBookmark
+    summary: >-
+      Deletes a bookmark, if exists, from the document.
+
+
+      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    isPreview: true
+    name: deleteBookmark(name)
+    fullName: deleteBookmark(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteBookmark(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type:
+            - string
+  - uid: word.Word.DocumentCreated.getBookmarkRange
+    summary: >-
+      Gets a bookmark's range. Throws if the bookmark does not exist.
+
+
+      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    isPreview: true
+    name: getBookmarkRange(name)
+    fullName: getBookmarkRange(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBookmarkRange(name: string): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type:
+            - string
+  - uid: word.Word.DocumentCreated.getBookmarkRangeOrNullObject
+    summary: >-
+      Gets a bookmark's range. Returns a null object if the bookmark does not exist.
+
+
+      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    isPreview: true
+    name: getBookmarkRangeOrNullObject(name)
+    fullName: getBookmarkRangeOrNullObject(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: name
+          description: 'Required. The bookmark name, which is case-insensitive.'
+          type:
+            - string
   - uid: word.Word.DocumentCreated.load
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
@@ -185,6 +282,7 @@ items:
 
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
+    isPreview: true
     name: properties
     fullName: properties
     langs:
@@ -203,6 +301,7 @@ items:
 
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
+    isPreview: true
     name: save()
     fullName: save()
     langs:
@@ -222,6 +321,7 @@ items:
 
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
+    isPreview: true
     name: saved
     fullName: saved
     langs:
@@ -239,6 +339,7 @@ items:
 
       \[ [API set: WordApiHiddenDocument 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
       \]
+    isPreview: true
     name: sections
     fullName: sections
     langs:
@@ -297,6 +398,24 @@ items:
           description: ''
           type:
             - word.Word.DocumentCreated
+  - uid: word.Word.DocumentCreated.settings
+    summary: >-
+      Gets the add-in's settings in the document. Read-only.
+
+
+      \[ [API set: WordApiHiddenDocument 1.4](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets)
+      \]
+    isPreview: true
+    name: settings
+    fullName: settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly settings: Word.SettingCollection;'
+      return:
+        type:
+          - word.Word.SettingCollection
   - uid: word.Word.DocumentCreated.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to

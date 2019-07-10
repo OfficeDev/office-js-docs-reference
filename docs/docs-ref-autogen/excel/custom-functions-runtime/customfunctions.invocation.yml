@@ -2,7 +2,6 @@
 items:
   - uid: custom-functions-runtime.CustomFunctions.Invocation
     summary: Provides information about the invocation of a custom function.
-    isPreview: true
     name: CustomFunctions.Invocation
     fullName: CustomFunctions.Invocation
     langs:
@@ -21,7 +20,6 @@ items:
 
 
       If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`<!-- -->.
-    isPreview: true
     name: address
     fullName: address
     langs:

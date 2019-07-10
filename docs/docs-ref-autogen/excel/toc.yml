@@ -2,20 +2,16 @@ items:
   - name: API reference
     href: api-ref-office-js.md
     items:
-      - name: Custom Functions - Preview
+      - name: Custom Functions
         uid: ''
         items:
           - name: Custom functions runtime
             uid: custom-functions-runtime
             items:
-              - name: CancelableHandler
-                uid: custom-functions-runtime.CustomFunctions.CancelableHandler
               - name: CancelableInvocation
                 uid: custom-functions-runtime.CustomFunctions.CancelableInvocation
               - name: Invocation
                 uid: custom-functions-runtime.CustomFunctions.Invocation
-              - name: StreamingHandler
-                uid: custom-functions-runtime.CustomFunctions.StreamingHandler
               - name: StreamingInvocation
                 uid: custom-functions-runtime.CustomFunctions.StreamingInvocation
           - name: Office runtime
@@ -255,6 +251,8 @@ items:
                 uid: excel.Excel.ReadingOrder
               - name: RibbonTab
                 uid: excel.Excel.RibbonTab
+              - name: RowHiddenChangeType
+                uid: excel.Excel.RowHiddenChangeType
               - name: SaveBehavior
                 uid: excel.Excel.SaveBehavior
               - name: SearchDirection
@@ -550,8 +548,6 @@ items:
             uid: excel.Excel.CustomConditionalFormat
           - name: CustomDataValidation
             uid: excel.Excel.CustomDataValidation
-          - name: CustomFunctionEventArgs
-            uid: excel.Excel.CustomFunctionEventArgs
           - name: CustomProperty
             uid: excel.Excel.CustomProperty
           - name: CustomPropertyCollection
@@ -836,6 +832,8 @@ items:
             uid: excel.Excel.WorksheetProtection
           - name: WorksheetProtectionOptions
             uid: excel.Excel.WorksheetProtectionOptions
+          - name: WorksheetRowHiddenChangedEventArgs
+            uid: excel.Excel.WorksheetRowHiddenChangedEventArgs
           - name: WorksheetRowSortedEventArgs
             uid: excel.Excel.WorksheetRowSortedEventArgs
           - name: WorksheetSearchCriteria
@@ -904,6 +902,8 @@ items:
                 items:
                   - name: Event
                     uid: office.Office.AddinCommands.Event
+                  - name: EventCompletedOptions
+                    uid: office.Office.AddinCommands.EventCompletedOptions
                   - name: Source
                     uid: office.Office.AddinCommands.Source
               - name: AsyncContextOptions

@@ -69,7 +69,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, options?:
+        addHandlerAsync(eventType: Office.EventType | string, handler: (type: Office.EventType) => void, options?:
         Office.AsyncContextOptions, callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -79,7 +79,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -141,8 +141,8 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: (type: Office.EventType) => void, callback?:
-        (asyncResult: Office.AsyncResult<void>) => void): void;
+        addHandlerAsync(eventType: Office.EventType | string, handler: (type: Office.EventType) => void,
+        callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -151,7 +151,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -174,7 +174,7 @@ items:
       the proper format for EWS.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -208,7 +208,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion): string;'
+      content: 'convertToEwsId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;'
       return:
         type:
           - string
@@ -221,22 +221,22 @@ items:
         - id: restVersion
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
           type:
-            - MailboxEnums.RestVersion
+            - MailboxEnums.RestVersion | string
   - uid: Outlook.Office.Mailbox.convertToLocalClientTime
     summary: >-
       Gets a dictionary containing time information in local client time.
 
 
-      The dates and times used by a mail app for Outlook or Outlook Web App can use different time zones. Outlook uses
-      the client computer time zone; Outlook Web App uses the time zone set on the Exchange Admin Center (EAC). You
-      should handle date and time values so that the values you display on the user interface are always consistent with
-      the time zone that the user expects.
+      The dates and times used by a mail app for Outlook on the web or desktop clients can use different time zones.
+      Outlook uses the client computer time zone; Outlook on the web uses the time zone set on the Exchange Admin Center
+      (EAC). You should handle date and time values so that the values you display on the user interface are always
+      consistent with the time zone that the user expects.
 
 
-      If the mail app is running in Outlook, the convertToLocalClientTime method will return a dictionary object with
-      the values set to the client computer time zone. If the mail app is running in Outlook Web App, the
-      convertToLocalClientTime method will return a dictionary object with the values set to the time zone specified in
-      the EAC.
+      If the mail app is running in Outlook on desktop clients, the convertToLocalClientTime method will return a
+      dictionary object with the values set to the client computer time zone. If the mail app is running in Outlook on
+      the web, the convertToLocalClientTime method will return a dictionary object with the values set to the time zone
+      specified in the EAC.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -267,7 +267,7 @@ items:
     summary: |-
       Converts an item ID formatted for EWS into REST format.
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -307,7 +307,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion): string;'
+      content: 'convertToRestId(itemId: string, restVersion: MailboxEnums.RestVersion | string): string;'
       return:
         type:
           - string
@@ -320,7 +320,7 @@ items:
         - id: restVersion
           description: A value indicating the version of the Outlook REST API that the converted ID will be used with.
           type:
-            - MailboxEnums.RestVersion
+            - MailboxEnums.RestVersion | string
   - uid: Outlook.Office.Mailbox.convertToUtcClientTime
     summary: >-
       Gets a Date object from a dictionary containing time information.
@@ -363,13 +363,12 @@ items:
       dialog box on mobile devices.
 
 
-      In Outlook for Mac, you can use this method to display a single appointment that is not part of a recurring
-      series, or the master appointment of a recurring series, but you cannot display an instance of the series. This is
-      because in Outlook for Mac, you cannot access the properties (including the item ID) of instances of a recurring
-      series.
+      In Outlook on Mac, you can use this method to display a single appointment that is not part of a recurring series,
+      or the master appointment of a recurring series, but you cannot display an instance of the series. This is because
+      in Outlook on Mac, you cannot access the properties (including the item ID) of instances of a recurring series.
 
 
-      In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to
+      In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to
       32KB number of characters.
 
 
@@ -377,7 +376,7 @@ items:
       computer or device, and no error message will be returned.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -423,8 +422,8 @@ items:
       mobile devices.
 
 
-      In Outlook Web App, this method opens the specified form only if the body of the form is less than or equal to 32
-      KB number of characters.
+      In Outlook on the web, this method opens the specified form only if the body of the form is less than or equal to
+      32 KB number of characters.
 
 
       If the specified item identifier does not identify an existing message, no message will be displayed on the client
@@ -436,7 +435,7 @@ items:
       appointment.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -483,9 +482,9 @@ items:
       parameters.
 
 
-      In Outlook Web App and OWA for Devices, this method always displays a form with an attendees field. If you do not
-      specify any attendees as input arguments, the method displays a form with a Save button. If you have specified
-      attendees, the form would include the attendees and a Send button.
+      In Outlook on the web, this method always displays a form with an attendees field. If you do not specify any
+      attendees as input arguments, the method displays a form with a Save button. If you have specified attendees, the
+      form would include the attendees and a Send button.
 
 
       In the Outlook rich client and Outlook RT, if you specify any attendees or resources in the requiredAttendees,
@@ -497,7 +496,7 @@ items:
       exception is thrown.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -882,7 +881,7 @@ items:
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
         - id: userContext
-          description: Optional. Any state data that is passed to the asynchronous method.\|
+          description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
   - uid: Outlook.Office.Mailbox.makeEwsRequestAsync
@@ -916,7 +915,7 @@ items:
       **Note**: This method is not supported in the following scenarios:
 
 
-      - In Outlook for iOS or Outlook for Android.
+      - In Outlook on iOS or Android.
 
 
       - When the add-in is loaded in a Gmail mailbox.
@@ -1051,7 +1050,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?:
+        removeHandlerAsync(eventType: Office.EventType | string, options?: Office.AsyncContextOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -1061,7 +1060,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: options
           description: 'Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
@@ -1093,8 +1092,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1103,7 +1102,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -1123,14 +1122,14 @@ items:
 
 
       - hostVersion (string): A string that represents the version of either the host application or the Exchange
-      Server. If the mail add-in is running on the Outlook desktop client or Outlook for iOS, the hostVersion property
-      returns the version of the host application, Outlook. In Outlook Web App, the property returns the version of the
-      Exchange Server. An example is the string 15.0.468.0.
+      Server. If the mail add-in is running in Outlook on desktop clients or iOS, the hostVersion property returns the
+      version of the host application, Outlook. In Outlook on the web, the property returns the version of the Exchange
+      Server. An example is the string 15.0.468.0.
 
 
       - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of
-      Outlook Web App. If the host application is not Outlook Web App, then accessing this property results in
-      undefined. Outlook Web App has three views (OneColumn - displayed when the screen is narrow, TwoColumns -
+      Outlook on the web. If the host application is not Outlook on the web, then accessing this property results in
+      undefined. Outlook on the web has three views (OneColumn - displayed when the screen is narrow, TwoColumns -
       displayed when the screen is wider, and ThreeColumns - displayed when the screen is wide) that correspond to the
       width of the screen and the window, and the number of columns that can be displayed.
 
@@ -1183,7 +1182,7 @@ items:
       item](https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item)<!-- -->.
 
 
-      **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This member is not supported in Outlook on iOS or Android.
     name: ewsUrl
     fullName: ewsUrl
     langs:

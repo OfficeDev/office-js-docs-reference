@@ -64,7 +64,7 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'type: MailboxEnums.LocationType;'
+      content: 'type: MailboxEnums.LocationType | string;'
       return:
         type:
-          - MailboxEnums.LocationType
+          - MailboxEnums.LocationType | string

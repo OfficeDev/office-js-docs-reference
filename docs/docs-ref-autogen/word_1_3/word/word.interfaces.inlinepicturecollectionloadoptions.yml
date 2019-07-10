@@ -17,6 +17,7 @@ items:
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
+      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.imageFormat
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.paragraph
       - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
@@ -98,6 +99,24 @@ items:
     type: property
     syntax:
       content: 'hyperlink?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.imageFormat
+    summary: >-
+      For EACH ITEM in the collection: Gets the format of the inline image. Read-only.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: imageFormat
+    fullName: imageFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'imageFormat?: boolean;'
       return:
         type:
           - boolean

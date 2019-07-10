@@ -83,7 +83,7 @@ items:
       optional headers.
 
 
-      **Note**: Only applies to data in Access, Excel, and Word.
+      **Note**: Only applies to data in Excel and Word.
     name: Table
     fullName: Table
     langs:

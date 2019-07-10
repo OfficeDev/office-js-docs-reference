@@ -147,31 +147,50 @@ class APISet {
         // table header
         let output: string = "| Class | Fields | Description |\n|:---|:---|:---|\n";
         this.api.forEach((clas) => {
-            // ignore enums
-            if (clas.type !== ClassType.Enum) {
+            // Ignore the following:
+            // - Enums.
+            // - LoadOptions interfaces
+            // - *Data classes for set/load methods
+            if (clas.type !== ClassType.Enum &&
+                !clas.getClassName().endsWith("LoadOptions") &&
+                !clas.getClassName().endsWith("Data")) {
                 const className = clas.getClassName();
                 output += "|[" + className + "](/"
                     + relativePath + className.toLowerCase() + ")|";
                 let first: boolean = true;
                 clas.fields.forEach((field) => {
-                    if (first) {
-                        first = false;
-                    } else {
-                        output += "||";
-                    }
+                    // Ignore the following:
+                    // - String literal overloads.
+                    // - `load`, `set`, `track`, `untrack`, and `toJSON` methods
+                    // - The `context` property.
+                    // - Static fields.
+                    if (field.declarationString.search(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g) < 0 &&
+                        field.name !== "load" && 
+                        field.name !== "set" && 
+                        field.name !== "toJSON" &&
+                        field.name !== "context" && 
+                        field.name !== "track" && 
+                        field.name !== "untrack" &&
+                        !field.declarationString.includes("static ")) {
+                        if (first) {
+                            first = false;
+                        } else {
+                            output += "||";
+                        }
 
-                    // remove unnecessary parts of the declaration string
-                    let newItemText = field.declarationString.replace(/;/g, "");
-                    newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
-                    newItemText = newItemText.replace(/\|/g, "\\|");
-                    if (field.type === FieldType.Property) {
-                        newItemText = newItemText.replace("?", "");
-                    }
+                        // remove unnecessary parts of the declaration string
+                        let newItemText = field.declarationString.replace(/;/g, "");
+                        newItemText = newItemText.substring(0, newItemText.lastIndexOf(":")).replace("readonly ", "");
+                        newItemText = newItemText.replace(/\|/g, "\\|");
+                        if (field.type === FieldType.Property) {
+                            newItemText = newItemText.replace("?", "");
+                        }
 
-                    let tableLine = "[" + newItemText + "]("
-                        + buildFieldLink(relativePath, className, field) + ")|";
-                    tableLine += extractFirstSentenceFromComment(field.comment);
-                    output += tableLine + "|\n";
+                        let tableLine = "[" + newItemText + "]("
+                            + buildFieldLink(relativePath, className, field) + ")|";
+                        tableLine += extractFirstSentenceFromComment(field.comment);
+                        output += tableLine + "|\n";
+                    }
                 });
             }
         });
@@ -232,20 +251,6 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
     return fieldLink.toLowerCase();
 }
 
-function fixDTS(definitions: string): string {
-    // remove undesirable content, like load, set, data classes, and toJSON
-    return definitions
-        .replace(/\s*load\(option\?: (Excel|Word|OneNote|Visio)\.Interfaces\.\S*LoadOptions.*\): \S*?;/gm, '')
-        .replace(/\*\s*?`load\(option\?: string \| string\[\]\): (Excel|Word|OneNote|Visio)\..*?` - Where option is a comma-delimited string or an array of strings that specify the properties to load\./g, '')
-        .replace(/interface .*?LoadOptions \{[^}]*?}/gm, '')
-        .replace(/interface .*?Data \{[^}]*?}/gm, '')
-        .replace(/load\(option\?\: string \| string\[\]\)\: .*\;/gm, '')
-        .replace(/toJSON\(\)\:.*\;/gm, '')
-        .replace(/\/\*\* Sets multiple properties.*\s*\*\s*\*.@remarks\s*\*\s*\* This method has the following additional signature:\s*\*\s*\* \`set\(properties:.*\s*\*\s*\* @param.*\s*\*.*\s*\*\/\s*set\(properties:.*\s*\/\*\* Sets multiple properties.*\s*set\(properties:.*;/gm, '')
-        .replace(/context\: RequestContext\;/gm, "")
-        .replace(/\/\*\* The request context associated with the object\. This connects the add\-in\'s process to the Office host application\'s process\. \*\//gm, "");
-}
-
 function parseDTS(node: ts.Node, allClasses: APISet): void {
     switch (node.kind) {
         case ts.SyntaxKind.InterfaceDeclaration:
@@ -296,7 +301,6 @@ function parseDTSTopLevelItem(
     node: ts.InterfaceDeclaration | ts.ClassDeclaration | ts.EnumDeclaration,
     allClasses: APISet,
     type: ClassType): void {
-    //console.log("Creating " + node.name.text);
     topClass = new ClassStruct("export " + type.toLowerCase() + " " + node.name.text, "", type);
     allClasses.addClass(topClass);
     lastItem = topClass;
@@ -305,10 +309,9 @@ function parseDTSTopLevelItem(
 function parseDTSFieldItem(
     node: ts.PropertySignature | ts.PropertyDeclaration | ts.EnumMember | ts.MethodSignature | ts.MethodDeclaration,
     type: FieldType): void {
+    // checking for and ignoring mid-method parameters for load()
     if (node.getText().indexOf("expand?") < 0 && node.getText().indexOf("select?") < 0) {
-        // checking for and ignoring mid-method parameters for load()
         const newField: FieldStruct = new FieldStruct(node.getText(), "", type, node.name.getText());
-        //console.log("Adding " + newField.name + " to " + topClass.getClassName());
         topClass.fields.push(newField);
         lastItem = newField;
     }
@@ -351,11 +354,11 @@ tryCatch(async () => {
     const hostName = await promptFromList({
         message: "Which host is being generated?",
         choices: [
-            { name: "Excel", value: "excel" },
-            { name: "OneNote", value: "onenote" },
-            { name: "Outlook", value: "outlook" },
-            { name: "Visio", value: "visio" },
-            { name: "Word", value: "word" }
+            { name: "Excel", value: "Excel" },
+            { name: "OneNote", value: "OneNote" },
+            { name: "Outlook", value: "Mailbox" },
+            { name: "Visio", value: "Visio" },
+            { name: "Word", value: "Word" }
         ]
     });
     const releaseHostFileName: string = './tool-inputs/' + hostName + '-release.d.ts';
@@ -364,11 +367,11 @@ tryCatch(async () => {
     const dtsBuilder = new DtsBuilder();
     fsx.writeFileSync(
         './tool-inputs/' + hostName + '-release.d.ts',
-        dtsBuilder.extractDtsSection(wholeRelease, "Begin Excel APIs", "End Excel APIs")
+        dtsBuilder.extractDtsSection(wholeRelease, "Begin " + hostName + " APIs", "End " + hostName + " APIs")
     );
     fsx.writeFileSync(
         './tool-inputs/' + hostName + '-preview.d.ts',
-        dtsBuilder.extractDtsSection(wholePreview, "Begin Excel APIs", "End Excel APIs")
+        dtsBuilder.extractDtsSection(wholePreview, "Begin " + hostName + " APIs", "End " + hostName + " APIs")
     );
 
     const releaseAPI: APISet = new APISet();
@@ -376,12 +379,12 @@ tryCatch(async () => {
 
     const releaseFile: ts.SourceFile = ts.createSourceFile(
         "Release",
-        fixDTS(readFileSync(releaseHostFileName).toString()),
+        readFileSync(releaseHostFileName).toString(),
         ts.ScriptTarget.ES2015,
         true);
     const previewFile: ts.SourceFile = ts.createSourceFile(
         "Preview",
-        fixDTS(readFileSync(previewHostFileName).toString()),
+        readFileSync(previewHostFileName).toString(),
         ts.ScriptTarget.ES2015,
         true);
 
@@ -390,7 +393,7 @@ tryCatch(async () => {
 
     const diffAPI: APISet = previewAPI.diff(releaseAPI);
 
-    const relativePath: string = "javascript/api/" + hostName + "/" + hostName + ".";
+    const relativePath: string = "javascript/api/" + hostName.toLowerCase() + "/" + hostName.toLowerCase() + ".";
     fsx.writeFileSync("./tool-outputs/WhatsNew.d.ts", diffAPI.getAsDTS());
     fsx.writeFileSync("./tool-outputs/WhatsNew.md", diffAPI.getAsMarkdown(relativePath));
 });

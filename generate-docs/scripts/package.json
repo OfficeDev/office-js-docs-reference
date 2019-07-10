@@ -24,7 +24,7 @@
   "dependencies": {
     "fs-extra": "3.0.1",
     "inquirer": "3.1.0",
-    "js-yaml": "3.7.0",
+    "js-yaml": "3.13.1",
     "lodash": "4.17.11",
     "isomorphic-fetch": "2.2.1"
   }

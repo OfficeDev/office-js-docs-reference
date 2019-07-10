@@ -2,11 +2,14 @@
 items:
   - uid: outlook.Office.InternetHeaders
     summary: >-
-      The InternetHeaders object represents properties that are preserved after the message item leaves Exchange and is
-      converted to a MIME message. These properties are stored as x-headers in the MIME message.
+      The InternetHeaders object represents custom internet headers that are preserved after the message item leaves
+      Exchange and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
 
 
       InternetHeaders are stored as key/value pairs on a per-item basis.
+
+
+      **Note**: This object is intended for you to set and get your custom headers on a message item.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -36,6 +39,9 @@ items:
       Given an array of internet header names, this method returns a dictionary containing those internet headers and
       their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
       results.
+
+
+      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -82,6 +88,9 @@ items:
       Given an array of internet header names, this method returns a dictionary containing those internet headers and
       their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
       results.
+
+
+      **Note**: This method is intended to return the values of the custom headers you set using the `setAsync` method.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -137,6 +146,9 @@ items:
       collection.
 
 
+      **Note**: This method is intended to remove the custom headers you set using the `setAsync` method.
+
+
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
       **[Minimum permission
@@ -180,6 +192,9 @@ items:
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
       collection.
+
+
+      **Note**: This method is intended to remove your custom headers you set using the `setAsync` method.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -228,8 +243,11 @@ items:
       Sets the specified internet headers to the specified values.
 
 
-      The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing
+      The setAsync method creates a new header if the specified header doesn't already exist; otherwise, the existing
       value is replaced with the new value.
+
+
+      **Note**: This method is intended to set the values of your custom headers.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -279,8 +297,11 @@ items:
       Sets the specified internet headers to the specified values.
 
 
-      The setAsync method creates a new header if the specified header does not already exist; otherwise, the existing
+      The setAsync method creates a new header if the specified header doesn't already exist; otherwise, the existing
       value is replaced with the new value.
+
+
+      **Note**: This method is intended to set the values of your custom headers.
 
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]

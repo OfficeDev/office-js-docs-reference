@@ -179,7 +179,7 @@ export declare namespace Word {
         clear(): void;
         /**
          *
-         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -686,7 +686,7 @@ export declare namespace Word {
         delete(keepContent: boolean): void;
         /**
          *
-         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -1118,7 +1118,7 @@ export declare namespace Word {
         readonly type: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean";
         /**
          *
-         * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+         * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
          *
          * [Api set: WordApi 1.3]
          */
@@ -1720,9 +1720,9 @@ export declare namespace Word {
          *
          * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
          *
-         * **Note**: Only the default highlight colors are available in Office for Windows Desktop. 
+         * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
          * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-         * When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+         * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
          * 
          * [Api set: WordApi 1.1]
          */
@@ -2923,7 +2923,7 @@ export declare namespace Word {
         detachFromList(): void;
         /**
          *
-         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -3523,7 +3523,7 @@ export declare namespace Word {
         expandToOrNullObject(range: Word.Range): Word.Range;
         /**
          *
-         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+         * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
          *
          * [Api set: WordApi 1.1]
          */
@@ -6591,7 +6591,7 @@ export declare namespace Word {
         export interface CustomPropertyUpdateData {
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
              *
              * [Api set: WordApi 1.3]
              */
@@ -6728,9 +6728,9 @@ export declare namespace Word {
              *
              * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
              *
-             * **Note**: Only the default highlight colors are available in Office for Windows Desktop. 
+             * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
              * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-             * When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
              * 
              * [Api set: WordApi 1.1]
              */
@@ -7533,7 +7533,7 @@ export declare namespace Word {
             type?: Word.DocumentPropertyType | "String" | "Number" | "Date" | "Boolean";
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
              *
              * [Api set: WordApi 1.3]
              */
@@ -7775,9 +7775,9 @@ export declare namespace Word {
              *
              * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
              *
-             * **Note**: Only the default highlight colors are available in Office for Windows Desktop. 
+             * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
              * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-             * When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
              * 
              * [Api set: WordApi 1.1]
              */
@@ -8963,7 +8963,7 @@ export declare namespace Word {
             type?: boolean;
             /**
              *
-             * Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             * Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
              *
              * [Api set: WordApi 1.3]
              */
@@ -8993,7 +8993,7 @@ export declare namespace Word {
             type?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word Online and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
+             * For EACH ITEM in the collection: Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255 16-bit chars (possibly creating invalid unicode by breaking up a surrogate pair).
              *
              * [Api set: WordApi 1.3]
              */
@@ -9227,9 +9227,9 @@ export declare namespace Word {
              *
              * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.
              *
-             * **Note**: Only the default highlight colors are available in Office for Windows Desktop. 
+             * **Note**: Only the default highlight colors are available in Office on Windows Desktop. 
              * These are "Yellow", "Lime", "Turquoise", "Pink", "Blue", "Red", "DarkBlue", "Teal", "Green", "Purple", "DarkRed", "Olive", "Gray", "LightGray", and "Black".
-             * When the add-in runs in Office for Windows Desktop, any other color is converted to the closest color when applied to the font.
+             * When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.
              * 
              * [Api set: WordApi 1.1]
              */

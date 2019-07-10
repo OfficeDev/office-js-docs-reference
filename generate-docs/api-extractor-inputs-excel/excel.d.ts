@@ -898,7 +898,7 @@ export declare namespace Excel {
         changeType: Excel.DataChangeType | "Unknown" | "RangeEdited" | "RowInserted" | "RowDeleted" | "ColumnInserted" | "ColumnDeleted" | "CellInserted" | "CellDeleted";
         /**
          *
-         * Represents the information about the change detail
+         * Represents the information about the change detail. This property can be retrieved when the Changed event is triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -991,6 +991,55 @@ export declare namespace Excel {
     }
     /**
      *
+     * Provides information about the worksheet row hidden change event.
+     *
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    export interface WorksheetRowHiddenChangedEventArgs {
+        /**
+         *
+         * Gets the range address that represents the changed area of a specific worksheet.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        address: string;
+        /**
+         *
+         * Gets the change type that represents how the Changed event is triggered. See Excel.RowHiddenChangeType for details.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        changeType: Excel.RowHiddenChangeType | "Unhidden" | "Hidden";
+        /**
+         *
+         * Gets the source of the event. See Excel.EventSource for details.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        source: Excel.EventSource | "Local" | "Remote";
+        /**
+         *
+         * Gets the type of the event. See Excel.EventType for details.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        type: "WorksheetRowHiddenChanged";
+        /**
+         *
+         * Gets the id of the worksheet in which the data changed.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        worksheetId: string;
+    }
+    /**
+     *
      * Provides information about the table that raised the Changed event.
      *
      * [Api set: ExcelApi 1.7]
@@ -1040,7 +1089,7 @@ export declare namespace Excel {
         worksheetId: string;
         /**
          *
-         * Represents the information about the change detail
+         * Represents the information about the change detail. This property can be retrieved when the Changed event is triggered on a single cell. If the Changed event is triggered on multiple cells, this property cannot be retrieved.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -1196,7 +1245,7 @@ export declare namespace Excel {
         type: "WorksheetRowSorted";
         /**
          *
-         * Gets the id of the worksheet in which the sorting happened.
+         * Gets the id of the worksheet where the sorting happened.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1237,7 +1286,7 @@ export declare namespace Excel {
         type: "WorksheetColumnSorted";
         /**
          *
-         * Gets the id of the worksheet in which the sorting happened.
+         * Gets the id of the worksheet where the sorting happened.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1291,7 +1340,7 @@ export declare namespace Excel {
         address: string;
         /**
          *
-         * It is a double value that represents the distance, in points, from the left-clicked/tapped point to the left(right for RTL) gridline edge of the left-clicked/tapped cell.
+         * The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the left-clicked/tapped cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1299,7 +1348,7 @@ export declare namespace Excel {
         offsetX: number;
         /**
          *
-         * It is a double value that represents the distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped cell.
+         * The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1786,8 +1835,8 @@ export declare namespace Excel {
         /**
          *
          * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -2224,21 +2273,21 @@ export declare namespace Excel {
         getActiveCell(): Excel.Range;
         /**
          *
-         * Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke this statement
+         * Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is thrown.
          *
          * [Api set: ExcelApi 1.9]
          */
         getActiveChart(): Excel.Chart;
         /**
          *
-         * Gets the currently active chart in the workbook. If there is no active chart, will return null object
+         * Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
          *
          * [Api set: ExcelApi 1.9]
          */
         getActiveChartOrNullObject(): Excel.Chart;
         /**
          *
-         * Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke this statement.
+         * Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is thrown.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -2246,7 +2295,7 @@ export declare namespace Excel {
         getActiveSlicer(): Excel.Slicer;
         /**
          *
-         * Gets the currently active slicer in the workbook. If there is no active slicer, will return null object
+         * Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -2688,7 +2737,7 @@ export declare namespace Excel {
         copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          *
-         * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
+         * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden or visible before deleting it.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -2699,8 +2748,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case sensitive.
          * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells meet this criteria, an ItemNotFound error will be thrown.
          */
         findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
@@ -2710,8 +2759,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case sensitive.
          * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, this function will return a null object.
          */
         findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
@@ -2912,6 +2961,16 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
+        /**
+         *
+         * Occurs when row hidden state changed on a specific worksheet.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
         /**
          *
          * Occurs when sorting on rows.
@@ -3153,6 +3212,16 @@ export declare namespace Excel {
         readonly onFormatChanged: OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>;
         /**
          *
+         * Occurs when any worksheet in the workbook has row hidden state changed.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;
+        /**
+         *
          * Occurs when sorting on rows.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -3170,6 +3239,16 @@ export declare namespace Excel {
          * @eventproperty
          */
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
+        /**
+         *
+         * Occurs when left-clicked/tapped operation happens in the worksheet collection.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @eventproperty
+         * @beta
+         */
+        readonly onSingleClicked: OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original `Excel.WorksheetCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
@@ -3632,6 +3711,16 @@ export declare namespace Excel {
         readonly rowIndex: number;
         /**
          *
+         * Represents if ALL the cells would be saved as an array formula.
+            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly savedAsArray: boolean;
+        /**
+         *
          * Represents the style of the current range.
             If the styles of the cells are inconsistent, null will be returned.
             For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
@@ -3806,8 +3895,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
          * @returns The Range which matched the search criteria.
          */
         find(text: string, criteria: Excel.SearchCriteria): Excel.Range;
@@ -3819,8 +3908,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
          * @returns The Range which matched the search criteria.
          */
         findOrNullObject(text: string, criteria: Excel.SearchCriteria): Excel.Range;
@@ -4683,7 +4772,7 @@ export declare namespace Excel {
     export interface SearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -4712,7 +4801,7 @@ export declare namespace Excel {
     export interface WorksheetSearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6353,7 +6442,7 @@ export declare namespace Excel {
         showTotals: boolean;
         /**
          *
-         * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+         * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
          *
          * [Api set: ExcelApi 1.1]
          */
@@ -15989,6 +16078,7 @@ export declare namespace Excel {
         /**
          *
          * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+         * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -16003,6 +16093,7 @@ export declare namespace Excel {
         /**
          *
          * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+         * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17418,14 +17509,6 @@ export declare namespace Excel {
         toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;
     }
     /**
-     * [Api set: CustomFunctions 1.1]
-     * @beta
-     */
-    export interface CustomFunctionEventArgs {
-        higherTicks: number;
-        lowerTicks: number;
-    }
-    /**
      *
      * An object encapsulating a style's format and other properties.
      *
@@ -17842,7 +17925,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * True means that this TableStyle object is read-only. Read-only.
+         * Specifies if this TableStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18032,7 +18115,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * True means that this PivotTableStyle object is read-only. Read-only.
+         * Specifies if this PivotTableStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18222,7 +18305,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * True means that this SlicerStyle object is read-only. Read-only.
+         * Specifies if this SlicerStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18412,7 +18495,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * True means that this TimelineStyle object is read-only. Read-only.
+         * Specifies if this TimelineStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18623,6 +18706,7 @@ export declare namespace Excel {
         /**
          *
          * Gets or sets the worksheet's print zoom options.
+         * The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -19266,26 +19350,26 @@ export declare namespace Excel {
         readonly items: Excel.Comment[];
         /**
          *
-         * Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if the location is larger than one cell.
+         * Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param content - The comment content.
-         * @param cellAddress - Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-         * @param contentType - Optional. Type of the comment content
+         * @param cellAddress - The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
+         * @param contentType - Optional. The type of the comment content
          */
         add(content: string, cellAddress: Range | string, contentType?: Excel.ContentType): Excel.Comment;
         /**
          *
-         * Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if the location is larger than one cell.
+         * Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
          * @param content - The comment content.
-         * @param cellAddress - Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-         * @param contentTypeString - Optional. Type of the comment content
+         * @param cellAddress - The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
+         * @param contentTypeString - Optional. The type of the comment content
          */
         add(content: string, cellAddress: Range | string, contentTypeString?: "Plain"): Excel.Comment;
         /**
@@ -19298,7 +19382,7 @@ export declare namespace Excel {
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Returns a comment identified by its ID. Read-only.
+         * Gets a comment from the collection based on its ID. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19308,7 +19392,7 @@ export declare namespace Excel {
         getItem(commentId: string): Excel.Comment;
         /**
          *
-         * Gets a comment based on its position in the collection.
+         * Gets a comment from the collection based on its position.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19318,12 +19402,12 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Comment;
         /**
          *
-         * Gets a comment on the specific cell in the collection.
+         * Gets the comment from the specified cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
          *
-         * @param cellAddress - Cell which the comment is on. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         * @param cellAddress - The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is larger than one cell.
          */
         getItemByCell(cellAddress: Range | string): Excel.Comment;
         /**
@@ -19384,7 +19468,7 @@ export declare namespace Excel {
         readonly replies: Excel.CommentReplyCollection;
         /**
          *
-         * Get author email of the comment.
+         * Gets the email of the comment's author.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19392,7 +19476,7 @@ export declare namespace Excel {
         readonly authorEmail: string;
         /**
          *
-         * Get author name of the comment.
+         * Gets the name of the comment's author.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19400,7 +19484,7 @@ export declare namespace Excel {
         readonly authorName: string;
         /**
          *
-         * Get or set the content.
+         * Gets or sets the comment's content. The string is plain text.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19408,7 +19492,7 @@ export declare namespace Excel {
         content: string;
         /**
          *
-         * Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+         * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19446,7 +19530,7 @@ export declare namespace Excel {
         delete(): void;
         /**
          *
-         * Get location of the comment.
+         * Gets the cell where this comment is located.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19586,7 +19670,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Get author email of the comment reply.
+         * Gets the email of the comment reply's author.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19594,7 +19678,7 @@ export declare namespace Excel {
         readonly authorEmail: string;
         /**
          *
-         * Get author name of the comment reply.
+         * Gets the name of the comment reply's author.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19602,7 +19686,7 @@ export declare namespace Excel {
         readonly authorName: string;
         /**
          *
-         * Get or set the content.
+         * Gets or sets the comment reply's content. The string is plain text.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19610,7 +19694,7 @@ export declare namespace Excel {
         content: string;
         /**
          *
-         * Get creation time of the comment reply.
+         * Gets the creation time of the comment reply.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19648,7 +19732,7 @@ export declare namespace Excel {
         delete(): void;
         /**
          *
-         * Get location of the comment reply.
+         * Gets the cell where this comment reply is located.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19656,7 +19740,7 @@ export declare namespace Excel {
         getLocation(): Excel.Range;
         /**
          *
-         * Get its parent comment of this reply.
+         * Gets the parent comment of this reply.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -21233,7 +21317,7 @@ export declare namespace Excel {
         readonly id: string;
         /**
          *
-         * True if all filters currently applied on the slicer is cleared.
+         * True if all filters currently applied on the slicer are cleared.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -21258,7 +21342,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Represents the name used in the formula.
+         * Represents the slicer name used in the formula.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -21274,7 +21358,7 @@ export declare namespace Excel {
         sortBy: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
         /**
          *
-         * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+         * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -21508,7 +21592,7 @@ export declare namespace Excel {
         readonly key: string;
         /**
          *
-         * Represents the value displayed on UI.
+         * Represents the title displayed in the UI.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -22040,14 +22124,14 @@ export declare namespace Excel {
     }
     /**
      *
-     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
      *
      * [Api set: ExcelApi 1.1]
      */
     enum ChartSeriesBy {
         /**
          *
-         * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+         * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
          *
          */
         auto = "Auto",
@@ -23242,6 +23326,24 @@ export declare namespace Excel {
         cellDeleted = "CellDeleted"
     }
     /**
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum RowHiddenChangeType {
+        /**
+         *
+         * Unhidden indicates the row is not hidden.
+         *
+         */
+        unhidden = "Unhidden",
+        /**
+         *
+         * Hidden indicates the row is hidden.
+         *
+         */
+        hidden = "Hidden"
+    }
+    /**
      * [Api set: ExcelApi 1.7]
      */
     enum EventType {
@@ -23413,7 +23515,13 @@ export declare namespace Excel {
          * WorksheetSingleClicked represents the type of event registered on worksheet, and occurs when cell is left-clicked/tapped.
          *
          */
-        worksheetSingleClicked = "WorksheetSingleClicked"
+        worksheetSingleClicked = "WorksheetSingleClicked",
+        /**
+         *
+         * WorksheetRowHiddenChanged represents the type of event registered on worksheet, and occurs when a row's hidden state is changed.
+         *
+         */
+        worksheetRowHiddenChanged = "WorksheetRowHiddenChanged"
     }
     /**
      * [Api set: ExcelApi 1.7]
@@ -28231,8 +28339,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -28664,7 +28772,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -32336,7 +32444,7 @@ export declare namespace Excel {
         export interface CommentUpdateData {
             /**
              *
-             * Get or set the content.
+             * Gets or sets the comment's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -32351,7 +32459,7 @@ export declare namespace Excel {
         export interface CommentReplyUpdateData {
             /**
              *
-             * Get or set the content.
+             * Gets or sets the comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -32774,7 +32882,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Represents the name used in the formula.
+             * Represents the slicer name used in the formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -32790,7 +32898,7 @@ export declare namespace Excel {
             sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
             /**
              *
-             * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -32851,8 +32959,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -33479,6 +33587,16 @@ export declare namespace Excel {
             rowIndex?: number;
             /**
              *
+             * Represents if ALL the cells would be saved as an array formula.
+            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            savedAsArray?: boolean;
+            /**
+             *
              * Represents the style of the current range.
             If the styles of the cells are inconsistent, null will be returned.
             For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
@@ -33930,7 +34048,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -37767,7 +37885,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * True means that this TableStyle object is read-only. Read-only.
+             * Specifies if this TableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37790,7 +37908,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * True means that this PivotTableStyle object is read-only. Read-only.
+             * Specifies if this PivotTableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37813,7 +37931,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * True means that this SlicerStyle object is read-only. Read-only.
+             * Specifies if this SlicerStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37836,7 +37954,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * True means that this TimelineStyle object is read-only. Read-only.
+             * Specifies if this TimelineStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38130,7 +38248,7 @@ export declare namespace Excel {
             replies?: Excel.Interfaces.CommentReplyData[];
             /**
              *
-             * Get author email of the comment.
+             * Gets the email of the comment's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38138,7 +38256,7 @@ export declare namespace Excel {
             authorEmail?: string;
             /**
              *
-             * Get author name of the comment.
+             * Gets the name of the comment's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38146,7 +38264,7 @@ export declare namespace Excel {
             authorName?: string;
             /**
              *
-             * Get or set the content.
+             * Gets or sets the comment's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38154,7 +38272,7 @@ export declare namespace Excel {
             content?: string;
             /**
              *
-             * Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+             * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38177,7 +38295,7 @@ export declare namespace Excel {
         export interface CommentReplyData {
             /**
              *
-             * Get author email of the comment reply.
+             * Gets the email of the comment reply's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38185,7 +38303,7 @@ export declare namespace Excel {
             authorEmail?: string;
             /**
              *
-             * Get author name of the comment reply.
+             * Gets the name of the comment reply's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38193,7 +38311,7 @@ export declare namespace Excel {
             authorName?: string;
             /**
              *
-             * Get or set the content.
+             * Gets or sets the comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38201,7 +38319,7 @@ export declare namespace Excel {
             content?: string;
             /**
              *
-             * Get creation time of the comment reply.
+             * Gets the creation time of the comment reply.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38759,7 +38877,7 @@ export declare namespace Excel {
             id?: string;
             /**
              *
-             * True if all filters currently applied on the slicer is cleared.
+             * True if all filters currently applied on the slicer are cleared.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38784,7 +38902,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Represents the name used in the formula.
+             * Represents the slicer name used in the formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38800,7 +38918,7 @@ export declare namespace Excel {
             sortBy?: Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending";
             /**
              *
-             * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38859,7 +38977,7 @@ export declare namespace Excel {
             key?: string;
             /**
              *
-             * Represents the value displayed on UI.
+             * Represents the title displayed in the UI.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38914,8 +39032,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -39555,6 +39673,16 @@ export declare namespace Excel {
              * [Api set: ExcelApi 1.1]
              */
             rowIndex?: boolean;
+            /**
+             *
+             * Represents if ALL the cells would be saved as an array formula.
+            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            savedAsArray?: boolean;
             /**
              *
              * Represents the style of the current range.
@@ -40244,7 +40372,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40365,7 +40493,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -40486,7 +40614,7 @@ export declare namespace Excel {
             showTotals?: boolean;
             /**
              *
-             * Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleStyleDark1" through "TableStyleStyleDark11". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi 1.1]
              */
@@ -46198,7 +46326,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True means that this TableStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this TableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46224,7 +46352,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * True means that this TableStyle object is read-only. Read-only.
+             * Specifies if this TableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46250,7 +46378,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True means that this PivotTableStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this PivotTableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46276,7 +46404,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * True means that this PivotTableStyle object is read-only. Read-only.
+             * Specifies if this PivotTableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46302,7 +46430,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True means that this SlicerStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this SlicerStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46328,7 +46456,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * True means that this SlicerStyle object is read-only. Read-only.
+             * Specifies if this SlicerStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46354,7 +46482,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True means that this TimelineStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46380,7 +46508,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * True means that this TimelineStyle object is read-only. Read-only.
+             * Specifies if this TimelineStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46874,6 +47002,16 @@ export declare namespace Excel {
             rowIndex?: boolean;
             /**
              *
+             * For EACH ITEM in the collection: Represents if ALL the cells would be saved as an array formula.
+            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            savedAsArray?: boolean;
+            /**
+             *
              * For EACH ITEM in the collection: Represents the style of the current range.
             If the styles of the cells are inconsistent, null will be returned.
             For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
@@ -46931,7 +47069,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get author email of the comment.
+             * For EACH ITEM in the collection: Gets the email of the comment's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46939,7 +47077,7 @@ export declare namespace Excel {
             authorEmail?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get author name of the comment.
+             * For EACH ITEM in the collection: Gets the name of the comment's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46947,7 +47085,7 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get or set the content.
+             * For EACH ITEM in the collection: Gets or sets the comment's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46955,7 +47093,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+             * For EACH ITEM in the collection: Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46981,7 +47119,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Get author email of the comment.
+             * Gets the email of the comment's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46989,7 +47127,7 @@ export declare namespace Excel {
             authorEmail?: boolean;
             /**
              *
-             * Get author name of the comment.
+             * Gets the name of the comment's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46997,7 +47135,7 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * Get or set the content.
+             * Gets or sets the comment's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47005,7 +47143,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              *
-             * Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+             * Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment does not have a creation date.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47031,7 +47169,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get author email of the comment reply.
+             * For EACH ITEM in the collection: Gets the email of the comment reply's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47039,7 +47177,7 @@ export declare namespace Excel {
             authorEmail?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get author name of the comment reply.
+             * For EACH ITEM in the collection: Gets the name of the comment reply's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47047,7 +47185,7 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get or set the content.
+             * For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47055,7 +47193,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Get creation time of the comment reply.
+             * For EACH ITEM in the collection: Gets the creation time of the comment reply.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47081,7 +47219,7 @@ export declare namespace Excel {
             $all?: boolean;
             /**
              *
-             * Get author email of the comment reply.
+             * Gets the email of the comment reply's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47089,7 +47227,7 @@ export declare namespace Excel {
             authorEmail?: boolean;
             /**
              *
-             * Get author name of the comment reply.
+             * Gets the name of the comment reply's author.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47097,7 +47235,7 @@ export declare namespace Excel {
             authorName?: boolean;
             /**
              *
-             * Get or set the content.
+             * Gets or sets the comment reply's content. The string is plain text.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47105,7 +47243,7 @@ export declare namespace Excel {
             content?: boolean;
             /**
              *
-             * Get creation time of the comment reply.
+             * Gets the creation time of the comment reply.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48176,7 +48314,7 @@ export declare namespace Excel {
             id?: boolean;
             /**
              *
-             * True if all filters currently applied on the slicer is cleared.
+             * True if all filters currently applied on the slicer are cleared.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48201,7 +48339,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Represents the name used in the formula.
+             * Represents the slicer name used in the formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48217,7 +48355,7 @@ export declare namespace Excel {
             sortBy?: boolean;
             /**
              *
-             * Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+             * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48286,7 +48424,7 @@ export declare namespace Excel {
             id?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: True if all filters currently applied on the slicer is cleared.
+             * For EACH ITEM in the collection: True if all filters currently applied on the slicer are cleared.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48311,7 +48449,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the name used in the formula.
+             * For EACH ITEM in the collection: Represents the slicer name used in the formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48327,7 +48465,7 @@ export declare namespace Excel {
             sortBy?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6, TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style present in the workbook can also be specified.
+             * For EACH ITEM in the collection: Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48389,7 +48527,7 @@ export declare namespace Excel {
             key?: boolean;
             /**
              *
-             * Represents the value displayed on UI.
+             * Represents the title displayed in the UI.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -48433,7 +48571,7 @@ export declare namespace Excel {
             key?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Represents the value displayed on UI.
+             * For EACH ITEM in the collection: Represents the title displayed in the UI.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta

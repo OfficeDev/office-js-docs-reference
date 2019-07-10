@@ -34,7 +34,7 @@ items:
       - excel.Excel.CommentReply.toJSON
   - uid: excel.Excel.CommentReply.authorEmail
     summary: >-
-      Get author email of the comment reply.
+      Gets the email of the comment reply's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -52,7 +52,7 @@ items:
           - string
   - uid: excel.Excel.CommentReply.authorName
     summary: >-
-      Get author name of the comment reply.
+      Gets the name of the comment reply's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -70,7 +70,7 @@ items:
           - string
   - uid: excel.Excel.CommentReply.content
     summary: >-
-      Get or set the content.
+      Gets or sets the comment reply's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -115,7 +115,7 @@ items:
           - excel.Excel.RequestContext
   - uid: excel.Excel.CommentReply.creationDate
     summary: >-
-      Get creation time of the comment reply.
+      Gets the creation time of the comment reply.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -166,7 +166,7 @@ items:
           ```
   - uid: excel.Excel.CommentReply.getLocation
     summary: >-
-      Get location of the comment reply.
+      Gets the cell where this comment reply is located.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -185,7 +185,7 @@ items:
         description: ''
   - uid: excel.Excel.CommentReply.getParentComment
     summary: >-
-      Get its parent comment of this reply.
+      Gets the parent comment of this reply.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

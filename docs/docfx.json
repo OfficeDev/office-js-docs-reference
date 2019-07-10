@@ -1331,6 +1331,7 @@
         "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
+        "docs-ref-autogen/word_release/**": "word",
         "docs-ref-autogen/custom-functions-runtime.yml": "excel",
         "docs-ref-autogen/excel.yml": "excel",
         "docs-ref-autogen/excel_release.yml": "excel",
@@ -1340,7 +1341,8 @@
         "docs-ref-autogen/outlook*.yml": "outlook",
         "docs-ref-autogen/powerpoint.yml": "powerpoint",
         "docs-ref-autogen/visio.yml": "visio",
-        "docs-ref-autogen/word.yml": "word"
+        "docs-ref-autogen/word.yml": "word",
+        "docs-ref-autogen/word_release.yml": "word"
       }
     },
     "template": [],

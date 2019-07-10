@@ -6,6 +6,10 @@ IF EXIST "scripts\node_modules" (
     rmdir "scripts\node_modules" /s /q
 )
 
+IF NOT EXIST "yaml" (
+    call md yaml
+)
+
 call npm install
 
 pushd scripts
@@ -38,6 +42,10 @@ call ..\..\node_modules\.bin\api-extractor run
 cd ..\excel_1_1
 call ..\..\node_modules\.bin\api-extractor run
 cd ..
+
+cd ..\api-extractor-inputs-word-release
+
+call ..\node_modules\.bin\api-extractor run
 
 cd ..\api-extractor-inputs-onenote
 call ..\node_modules\.bin\api-extractor run

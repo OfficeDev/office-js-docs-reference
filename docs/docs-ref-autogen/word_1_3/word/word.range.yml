@@ -22,6 +22,7 @@ items:
       - word.Word.Range.expandTo
       - word.Word.Range.expandToOrNullObject
       - word.Word.Range.font
+      - word.Word.Range.getBookmarks
       - word.Word.Range.getHtml
       - word.Word.Range.getHyperlinkRanges
       - word.Word.Range.getNextTextRange
@@ -32,6 +33,7 @@ items:
       - word.Word.Range.getTextRanges
       - word.Word.Range.hyperlink
       - word.Word.Range.inlinePictures
+      - word.Word.Range.insertBookmark
       - word.Word.Range.insertBreak
       - word.Word.Range.insertBreak_1
       - word.Word.Range.insertContentControl
@@ -278,12 +280,45 @@ items:
       return:
         type:
           - word.Word.Font
+  - uid: word.Word.Range.getBookmarks
+    summary: >-
+      Gets the names all bookmarks in or overlapping the range. A bookmark is hidden if its name starts with the
+      underscore character.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: 'getBookmarks(includeHidden, includeAdjacent)'
+    fullName: 'getBookmarks(includeHidden, includeAdjacent)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getBookmarks(includeHidden?: boolean, includeAdjacent?: boolean): OfficeExtension.ClientResult<string[]>;'
+      return:
+        type:
+          - 'OfficeExtension.ClientResult<string[]>'
+        description: ''
+      parameters:
+        - id: includeHidden
+          description: >-
+            Optional. Indicates whether to include hidden bookmarks. Default is false which indicates that the hidden
+            bookmarks are excluded.
+          type:
+            - boolean
+        - id: includeAdjacent
+          description: >-
+            Optional. Indicates whether to include bookmarks that are adjacent to the range. Default is false which
+            indicates that the adjacent bookmarks are excluded.
+          type:
+            - boolean
   - uid: word.Word.Range.getHtml
     summary: >-
       Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will
-      be a close, but not exact, match for of the formatting of the document. This method does not return the exact same
-      HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity,
-      or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
+      be a close, but not exact, match to the formatting of the document. This method does not return the exact same
+      HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency
+      across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -580,6 +615,32 @@ items:
       return:
         type:
           - word.Word.InlinePictureCollection
+  - uid: word.Word.Range.insertBookmark
+    summary: >-
+      Inserts a bookmark on the range. If a bookmark of the same name exists somewhere, it is deleted first.
+
+
+      \[ [API set: WordApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    isPreview: true
+    name: insertBookmark(name)
+    fullName: insertBookmark(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBookmark(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: >-
+            Required. The bookmark name, which is case-insensitive. If the name starts with an underscore character, the
+            bookmark is an hidden one.
+          type:
+            - string
   - uid: word.Word.Range.insertBreak
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or

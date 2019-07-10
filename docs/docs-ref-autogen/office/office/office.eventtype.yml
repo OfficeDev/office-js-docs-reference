@@ -7,7 +7,7 @@ items:
 
       Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`<!-- -->,
       `Office.EventType.TaskSelectionChanged`<!-- -->, and `Office.EventType.ViewSelectionChanged` event types.
-    remarks: '**`BindingDataChanged` and `BindingSelectionChanged` hosts**: Access, Excel, Word.'
+    remarks: '**`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.'
     name: Office.EventType
     fullName: Office.EventType
     langs:
@@ -69,7 +69,7 @@ items:
       Occurs when data within the binding is changed. To add an event handler for the BindingDataChanged event of a
       binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument of type
       [Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs)<!-- -->.
-    remarks: '**Hosts**: Access, Excel, Word'
+    remarks: '**Hosts**: Excel, Word'
     name: BindingDataChanged
     fullName: BindingDataChanged
     langs:
@@ -80,7 +80,7 @@ items:
       Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged
       event of a binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument
       of type [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
-    remarks: '**Hosts**: Access, Excel, Word'
+    remarks: '**Hosts**: Excel, Word'
     name: BindingSelectionChanged
     fullName: BindingSelectionChanged
     langs:
@@ -189,7 +189,7 @@ items:
     type: field
   - uid: office.Office.EventType.SettingsChanged
     summary: A Settings.settingsChanged event was raised.
-    remarks: '**Hosts**: Access, Excel, PowerPoint, Word'
+    remarks: '**Hosts**: Excel, PowerPoint, Word'
     name: SettingsChanged
     fullName: SettingsChanged
     langs:

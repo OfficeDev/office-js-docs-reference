@@ -12,7 +12,7 @@ items:
       - excel.Excel.Interfaces.CommentUpdateData.content
   - uid: excel.Excel.Interfaces.CommentUpdateData.content
     summary: >-
-      Get or set the content.
+      Gets or sets the comment's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

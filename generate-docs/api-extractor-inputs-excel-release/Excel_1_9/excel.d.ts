@@ -1597,8 +1597,8 @@ export declare namespace Excel {
         /**
          *
          * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -2375,8 +2375,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case sensitive.
          * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells meet this criteria, an ItemNotFound error will be thrown.
          */
         findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
@@ -2386,8 +2386,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including whether the search needs to match the entire cell or be case sensitive.
          * @returns A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are no matches, this function will return a null object.
          */
         findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;
@@ -3343,8 +3343,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
          * @returns The Range which matched the search criteria.
          */
         find(text: string, criteria: Excel.SearchCriteria): Excel.Range;
@@ -3356,8 +3356,8 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.9]
          *
-         * @param text - String to find.
-         * @param criteria - Additional Criteria.
+         * @param text - The string to find.
+         * @param criteria - Additional search criteria, including the search direction and whether the search needs to match the entire cell or be case sensitive.
          * @returns The Range which matched the search criteria.
          */
         findOrNullObject(text: string, criteria: Excel.SearchCriteria): Excel.Range;
@@ -4186,7 +4186,7 @@ export declare namespace Excel {
     export interface SearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -4215,7 +4215,7 @@ export declare namespace Excel {
     export interface WorksheetSearchCriteria {
         /**
          *
-         * Specifies whether the match needs to be complete or partial. Default is false (partial).
+         * Specifies whether the match needs to be complete or partial. A complete match matches the entire contents of the cell. Default is false (partial).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -6387,7 +6387,8 @@ export declare namespace Excel {
         ignoreBlanks: boolean;
         /**
          *
-         * Prompt when users select a cell.
+         * Prompt when users select a cell. 
+         * The `DataValidationPrompt` object must be set as a JSON object (use `x.prompt = {...}` instead of `x.prompt.message = ...`).
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -13504,7 +13505,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents the Excel PivotHierarchy.
+     * Represents a single pivot hierarchy within a PivotTable.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14140,7 +14141,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+     * A collection of PivotField objects within a PivotHierarchy.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14151,14 +14152,14 @@ export declare namespace Excel {
         readonly items: Excel.PivotField[];
         /**
          *
-         * Gets the number of pivot hierarchies in the collection.
+         * Gets the number of pivot fields in the collection.
          *
          * [Api set: ExcelApi 1.8]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a PivotHierarchy by its name or id.
+         * Gets a PivotField by its name or id.
          *
          * [Api set: ExcelApi 1.8]
          *
@@ -14167,11 +14168,11 @@ export declare namespace Excel {
         getItem(name: string): Excel.PivotField;
         /**
          *
-         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+         * Gets a PivotField by name. If the PivotField does not exist, will return a null object.
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotHierarchy to be retrieved.
+         * @param name - Name of the PivotField to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotField;
         /**
@@ -14204,7 +14205,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents the Excel PivotField.
+     * Represents a single pivot field within a PivotHierarchy.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14213,7 +14214,7 @@ export declare namespace Excel {
         context: RequestContext; 
         /**
          *
-         * Returns the PivotFields associated with the PivotField.
+         * Returns the PivotItems that comprise with the PivotField.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -14333,7 +14334,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents a collection of all the Pivot Items related to their parent PivotField.
+     * Represents a collection of all the PivotItem objects related to their parent PivotField.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14344,14 +14345,14 @@ export declare namespace Excel {
         readonly items: Excel.PivotItem[];
         /**
          *
-         * Gets the number of pivot hierarchies in the collection.
+         * Gets the number of pivot items in the collection.
          *
          * [Api set: ExcelApi 1.8]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a PivotHierarchy by its name or id.
+         * Gets a PivotItem by its name or id.
          *
          * [Api set: ExcelApi 1.8]
          *
@@ -14360,11 +14361,11 @@ export declare namespace Excel {
         getItem(name: string): Excel.PivotItem;
         /**
          *
-         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+         * Gets a PivotItem by name. If the PivotItem does not exist, will return a null object.
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotHierarchy to be retrieved.
+         * @param name - Name of the PivotItem to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotItem;
         /**
@@ -15442,7 +15443,8 @@ export declare namespace Excel {
         barDirection: Excel.ConditionalDataBarDirection | "Context" | "LeftToRight" | "RightToLeft";
         /**
          *
-         * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar.
+         * The rule for what consistutes the lower bound (and how to calculate it, if applicable) for a data bar. 
+         * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.lowerBoundRule = {...}` instead of `x.lowerBoundRule.formula = ...`).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -15456,7 +15458,8 @@ export declare namespace Excel {
         showDataBarOnly: boolean;
         /**
          *
-         * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar.
+         * The rule for what constitutes the upper bound (and how to calculate it, if applicable) for a data bar. 
+         * The `ConditionalDataBarRule` object must be set as a JSON object (use `x.upperBoundRule = {...}` instead of `x.upperBoundRule.formula = ...`).
          *
          * [Api set: ExcelApi 1.6]
          */
@@ -17309,6 +17312,7 @@ export declare namespace Excel {
         /**
          *
          * Gets or sets the worksheet's print zoom options.
+         * The `PageLayoutZoomOptions` object must be set as a JSON object (use `x.zoom = {...}` instead of `x.zoom.scale = ...`).
          *
          * [Api set: ExcelApi 1.9]
          */
@@ -19797,14 +19801,14 @@ export declare namespace Excel {
     }
     /**
      *
-     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+     * Specifies whether the series are by rows or by columns. On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
      *
      * [Api set: ExcelApi 1.1]
      */
     enum ChartSeriesBy {
         /**
          *
-         * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, "auto" will simply default to "columns".
+         * On Desktop, the "auto" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, "auto" will simply default to "columns".
          *
          */
         auto = "Auto",
@@ -25950,8 +25954,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -30348,8 +30352,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */
@@ -35931,8 +35935,8 @@ export declare namespace Excel {
             /**
             *
             * Returns the Iterative Calculation settings.
-            On Excel for Windows and Excel for Mac, the settings will apply to the Excel Application.
-            On Excel Online and Excel for other platforms, the settings will apply to the active workbook.
+            In Excel on Windows and Mac, the settings will apply to the Excel Application.
+            In Excel on the web and other platforms, the settings will apply to the active workbook.
             *
             * [Api set: ExcelApi 1.9]
             */

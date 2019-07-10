@@ -79,7 +79,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerData.isFilterCleared
     summary: >-
-      True if all filters currently applied on the slicer is cleared.
+      True if all filters currently applied on the slicer are cleared.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -134,7 +134,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerData.nameInFormula
     summary: >-
-      Represents the name used in the formula.
+      Represents the slicer name used in the formula.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -188,9 +188,9 @@ items:
           - Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
   - uid: excel.Excel.Interfaces.SlicerData.style
     summary: >-
-      Constant value that represents the Slicer style. Possible values are: SlicerStyleLight1 thru SlicerStyleLight6,
-      TableStyleOther1 thru TableStyleOther2, SlicerStyleDark1 thru SlicerStyleDark6. A custom user-defined style
-      present in the workbook can also be specified.
+      Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
+      "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
+      A custom user-defined style present in the workbook can also be specified.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

@@ -184,7 +184,7 @@ items:
           - string
   - uid: excel.Excel.TableStyle.readOnly
     summary: >-
-      True means that this TableStyle object is read-only. Read-only.
+      Specifies if this TableStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

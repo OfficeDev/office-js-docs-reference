@@ -196,7 +196,7 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
     let excelIconSetFilter : string [] = ["FiveArrowsGraySet", "FiveArrowsSet", "FiveBoxesSet", "FiveQuartersSet", "FiveRatingSet", "FourArrowsGraySet", "FourArrowsSet", "FourRatingSet", "FourRedToBlackSet", "FourTrafficLightsSet", "IconCollections", "ThreeArrowsGraySet", "ThreeArrowsSet", "ThreeFlagsSet",  "ThreeSignsSet", "ThreeStarsSet",  "ThreeSymbols2Set", "ThreeSymbolsSet", "ThreeTrafficLights1Set", "ThreeTrafficLights2Set", "ThreeTrianglesSet"];
     // let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
-    let customFunctionsRoot = {"name": "Custom Functions - Preview", "uid": "", "items": [] as any};
+    let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
     let customFunctionsRootPushed = false;
 
     // create folders for OneNote subcategories
@@ -293,7 +293,7 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
-                            "items":  primaryList as any
+                            "items": primaryList as any
                         });
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {

@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.SlicerStyleLoadOptions.readOnly
     summary: >-
-      True means that this SlicerStyle object is read-only. Read-only.
+      Specifies if this SlicerStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

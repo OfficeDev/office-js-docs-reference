@@ -66,10 +66,18 @@ items:
             uid: word.Word.ContentControl
           - name: ContentControlCollection
             uid: word.Word.ContentControlCollection
+          - name: ContentControlEventArgs
+            uid: word.Word.ContentControlEventArgs
           - name: CustomProperty
             uid: word.Word.CustomProperty
           - name: CustomPropertyCollection
             uid: word.Word.CustomPropertyCollection
+          - name: CustomXmlPart
+            uid: word.Word.CustomXmlPart
+          - name: CustomXmlPartCollection
+            uid: word.Word.CustomXmlPartCollection
+          - name: CustomXmlPartScopedCollection
+            uid: word.Word.CustomXmlPartScopedCollection
           - name: Document
             uid: word.Word.Document
           - name: DocumentCreated
@@ -104,6 +112,10 @@ items:
             uid: word.Word.Section
           - name: SectionCollection
             uid: word.Word.SectionCollection
+          - name: Setting
+            uid: word.Word.Setting
+          - name: SettingCollection
+            uid: word.Word.SettingCollection
           - name: Table
             uid: word.Word.Table
           - name: TableBorder
@@ -178,6 +190,8 @@ items:
                 items:
                   - name: Event
                     uid: office.Office.AddinCommands.Event
+                  - name: EventCompletedOptions
+                    uid: office.Office.AddinCommands.EventCompletedOptions
                   - name: Source
                     uid: office.Office.AddinCommands.Source
               - name: AsyncContextOptions

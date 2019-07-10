@@ -351,10 +351,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'recurrenceType: MailboxEnums.RecurrenceType;'
+      content: 'recurrenceType: MailboxEnums.RecurrenceType | string;'
       return:
         type:
-          - MailboxEnums.RecurrenceType
+          - MailboxEnums.RecurrenceType | string
   - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
       The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of

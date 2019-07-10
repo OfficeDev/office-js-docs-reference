@@ -12,6 +12,7 @@ items:
       - office.Office.AddBindingFromPromptOptions
       - office.Office.AddBindingFromSelectionOptions
       - office.Office.AddinCommands.Event
+      - office.Office.AddinCommands.EventCompletedOptions
       - office.Office.AddinCommands.Source
       - office.Office.AsyncContextOptions
       - office.Office.AsyncResult
@@ -130,10 +131,9 @@ items:
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
       </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
       </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
       </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
@@ -231,10 +231,9 @@ items:
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th></tr> <tr><td><strong> Access </strong></td><td> </td><td> Y </td><td>
-      </td></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr> <tr><td><strong> Word
-      </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th></tr> <tr><td><strong> Excel </strong></td><td> Y </td><td> Y </td><td> Y </td></tr>
+      <tr><td><strong> Word </strong></td><td> Y </td><td> </td><td> Y </td></tr> </table>
 
 
       #### Examples
@@ -294,10 +293,9 @@ items:
       Add-ins](https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins)<!-- -->.
 
 
-      *Supported hosts, by platform* <table> <tr><th> </th><th> Office for Windows desktop </th><th> Office Online (in
-      browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr> <tr><td><strong>
-      Access </strong></td><td> </td><td> Y </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Excel
-      </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
+      *Supported hosts, by platform* <table> <tr><th> </th><th> Office on Windows </th><th> Office in web browser
+      </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr> <tr><td><strong>
+      Excel </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Outlook
       </strong></td><td> Y </td><td> Y </td><td> </td><td> Y </td><td> Y </td></tr> <tr><td><strong> PowerPoint
       </strong></td><td> Y </td><td> Y </td><td> Y </td><td> </td><td> </td></tr> <tr><td><strong> Project
       </strong></td><td> Y </td><td> </td><td> </td><td> </td><td> </td></tr> <tr><td><strong> Word </strong></td><td> Y
@@ -365,6 +363,8 @@ references:
     name: Office.AddBindingFromSelectionOptions
   - uid: office.Office.AddinCommands.Event
     name: Office.AddinCommands.Event
+  - uid: office.Office.AddinCommands.EventCompletedOptions
+    name: Office.AddinCommands.EventCompletedOptions
   - uid: office.Office.AddinCommands.Source
     name: Office.AddinCommands.Source
   - uid: office.Office.AsyncContextOptions

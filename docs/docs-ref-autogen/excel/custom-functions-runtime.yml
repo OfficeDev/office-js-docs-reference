@@ -9,14 +9,11 @@ items:
     children:
       - custom-functions-runtime.CustomFunctions.associate
       - custom-functions-runtime.CustomFunctions.associate_1
-      - custom-functions-runtime.CustomFunctions.CancelableHandler
       - custom-functions-runtime.CustomFunctions.CancelableInvocation
       - custom-functions-runtime.CustomFunctions.Invocation
-      - custom-functions-runtime.CustomFunctions.StreamingHandler
       - custom-functions-runtime.CustomFunctions.StreamingInvocation
   - uid: custom-functions-runtime.CustomFunctions.associate
     summary: Associates the JavaScript function to the name given by the "id" property in the metadata JSON file.
-    isPreview: true
     name: CustomFunctions.associate
     fullName: CustomFunctions.associate
     langs:
@@ -39,7 +36,6 @@ items:
             - Function
   - uid: custom-functions-runtime.CustomFunctions.associate_1
     summary: Associates the JavaScript functions to the names given by the "id" properties in the metadata JSON file.
-    isPreview: true
     name: CustomFunctions.associate_1
     fullName: CustomFunctions.associate_1
     langs:
@@ -57,13 +53,9 @@ items:
           type:
             - '{ [key: string]: Function }'
 references:
-  - uid: custom-functions-runtime.CustomFunctions.CancelableHandler
-    name: CustomFunctions.CancelableHandler
   - uid: custom-functions-runtime.CustomFunctions.CancelableInvocation
     name: CustomFunctions.CancelableInvocation
   - uid: custom-functions-runtime.CustomFunctions.Invocation
     name: CustomFunctions.Invocation
-  - uid: custom-functions-runtime.CustomFunctions.StreamingHandler
-    name: CustomFunctions.StreamingHandler
   - uid: custom-functions-runtime.CustomFunctions.StreamingInvocation
     name: CustomFunctions.StreamingInvocation

@@ -37,7 +37,7 @@ items:
       - typeScript
     type: field
   - uid: office.Office.PlatformType.OfficeOnline
-    summary: The platform is Office Online.
+    summary: The platform is Office on the web (in a browser).
     name: OfficeOnline
     fullName: OfficeOnline
     langs:

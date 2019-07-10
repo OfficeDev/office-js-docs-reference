@@ -65,6 +65,8 @@ items:
                 items:
                   - name: Event
                     uid: office.Office.AddinCommands.Event
+                  - name: EventCompletedOptions
+                    uid: office.Office.AddinCommands.EventCompletedOptions
                   - name: Source
                     uid: office.Office.AddinCommands.Source
               - name: AsyncContextOptions

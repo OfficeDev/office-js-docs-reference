@@ -97,6 +97,7 @@ items:
       - excel.Excel.Range.rowCount
       - excel.Excel.Range.rowHidden
       - excel.Excel.Range.rowIndex
+      - excel.Excel.Range.savedAsArray
       - excel.Excel.Range.select
       - excel.Excel.Range.set
       - excel.Excel.Range.set_1
@@ -635,11 +636,13 @@ items:
           ```
       parameters:
         - id: text
-          description: String to find.
+          description: The string to find.
           type:
             - string
         - id: criteria
-          description: Additional Criteria.
+          description: >-
+            Additional search criteria, including the search direction and whether the search needs to match the entire
+            cell or be case sensitive.
           type:
             - excel.Excel.SearchCriteria
   - uid: excel.Excel.Range.findOrNullObject
@@ -688,11 +691,13 @@ items:
           ```
       parameters:
         - id: text
-          description: String to find.
+          description: The string to find.
           type:
             - string
         - id: criteria
-          description: Additional Criteria.
+          description: >-
+            Additional search criteria, including the search direction and whether the search needs to match the entire
+            cell or be case sensitive.
           type:
             - excel.Excel.SearchCriteria
   - uid: excel.Excel.Range.flashFill
@@ -923,7 +928,36 @@ items:
       return:
         type:
           - 'OfficeExtension.ClientResult<CellProperties[][]>'
-        description: A 2D array where each item represents the requested properties of the corresponding cell.
+        description: |-
+          A 2D array where each item represents the requested properties of the corresponding cell.
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const cell = context.workbook.getActiveCell();
+
+              // Define the cell properties to get by setting the matching LoadOptions to true.
+              const propertiesToGet = cell.getCellProperties({
+                  address: true,
+                  format: {
+                      fill: {
+                          color: true
+                      },
+                      font: {
+                          color: true
+                      }
+                  },
+                  style: true
+              });
+
+              // Sync to get the data from the workbook.
+              await context.sync();
+              const cellProperties = propertiesToGet.value[0][0];
+              console.log(
+                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
+          });
+          ```
       parameters:
         - id: cellPropertiesLoadOptions
           description: An object that represents which cell properties to load.
@@ -1603,8 +1637,7 @@ items:
               const sheet = context.workbook.worksheets.getActiveWorksheet();
               const usedRange = sheet.getUsedRange();
 
-              // Find the ranges with either text or logical (boolean)
-              // values
+              // Find the ranges with either text or logical (boolean) values.
               const formulaRanges = usedRange.getSpecialCells("Constants", "LogicalText");
               formulaRanges.format.fill.color = "orange";
 
@@ -2609,6 +2642,26 @@ items:
       return:
         type:
           - number
+  - uid: excel.Excel.Range.savedAsArray
+    summary: >-
+      Represents if ALL the cells would be saved as an array formula. Returns true if ALL cells would be saved as an
+      array, or false if ALL cells would NOT be saved as an array formula. Returns null if there is a mixture of cells
+      that would and would not be saved as an array formula.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: savedAsArray
+    fullName: savedAsArray
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly savedAsArray: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Range.select
     summary: |-
       Selects the specified range in the Excel UI.
@@ -2747,7 +2800,83 @@ items:
       return:
         type:
           - void
-        description: ''
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+
+              // Creating the SettableCellProperties objects to use for the range.
+              // In your add-in, these should be created once, outside the function.
+              const topHeaderProps: Excel.SettableCellProperties = {
+                  // The style property takes a string matching the name of an Excel style.
+                  // Note that a style will overwrite any formatting,
+                  // so do not use the format property with the style property.
+                  style: "Heading1"
+              };
+
+              const headerProps: Excel.SettableCellProperties = {
+                  // Any subproperties of format that are not set will not be changed when these cell properties are set.
+                  format: {
+                      fill: {
+                          color: "Blue"
+                      },
+                      font: {
+                          color: "White",
+                          bold: true
+                      }
+                  }
+              };
+
+              const nonApplicableProps: Excel.SettableCellProperties = {
+                  format: {
+                      fill: {
+                          pattern: Excel.FillPattern.gray25
+                      },
+                      font: {
+                          color: "Gray",
+                          italic: true
+                      }
+                  }
+              };
+
+              const matchupScoreProps: Excel.SettableCellProperties = {
+                  format: {
+                      borders: {
+                          bottom: {
+                              style: Excel.BorderLineStyle.continuous
+                          },
+                          left: {
+                              style: Excel.BorderLineStyle.continuous
+                          },
+                          right: {
+                              style: Excel.BorderLineStyle.continuous
+                          },
+                          top: {
+                              style: Excel.BorderLineStyle.continuous
+                          }
+                      }
+                  }
+              };
+
+              const range = sheet.getRange("A1:E5");
+
+              // You can use empty JSON objects to avoid changing a cell's properties.
+              range.setCellProperties([
+                  [topHeaderProps, {}, {}, {}, {}],
+                  [{}, {}, headerProps, headerProps, headerProps],
+                  [{}, headerProps, nonApplicableProps, matchupScoreProps, matchupScoreProps],
+                  [{}, headerProps, matchupScoreProps, nonApplicableProps, matchupScoreProps],
+                  [{}, headerProps, matchupScoreProps, matchupScoreProps, nonApplicableProps]
+              ]);
+
+              sheet.getUsedRange().format.autofitColumns();
+              await context.sync();
+          });
+          ```
       parameters:
         - id: cellPropertiesData
           description: A 2D array that represents which properties to set in each cell.

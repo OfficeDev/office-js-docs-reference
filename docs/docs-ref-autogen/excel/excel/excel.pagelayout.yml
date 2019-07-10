@@ -788,8 +788,10 @@ items:
         type:
           - number
   - uid: excel.Excel.PageLayout.zoom
-    summary: |-
-      Gets or sets the worksheet's print zoom options.
+    summary: >-
+      Gets or sets the worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object
+      (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: zoom
@@ -802,3 +804,15 @@ items:
       return:
         type:
           - excel.Excel.PageLayoutZoomOptions
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.zoom = { scale: 200 };
+              await context.sync();
+          });
+          ```

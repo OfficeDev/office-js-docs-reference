@@ -79,7 +79,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, options?: Office.AsyncContextOptions,
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, options?: Office.AsyncContextOptions,
         callback?: (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -89,7 +89,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -132,7 +132,7 @@ items:
     type: method
     syntax:
       content: >-
-        addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (asyncResult:
+        addHandlerAsync(eventType: Office.EventType | string, handler: any, callback?: (asyncResult:
         Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -142,7 +142,7 @@ items:
         - id: eventType
           description: The event that should invoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: handler
           description: >-
             The function to handle the event. The function must accept a single parameter, which is an object literal.
@@ -161,19 +161,19 @@ items:
       attendees of the selected appointment.
 
 
-      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
-      or 1-column view.
+      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
+      2- or 1-column view.
 
 
       If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
 
 
-      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
-      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
-      in the form UI. If this isn't possible, then no error message is thrown.
+      When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients
+      attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an
+      error is shown in the form UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -306,19 +306,19 @@ items:
       appointment.
 
 
-      In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2-
-      or 1-column view.
+      In Outlook on the web, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the
+      2- or 1-column view.
 
 
       If any of the string parameters exceed their limits, displayReplyForm throws an exception.
 
 
-      When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to
-      download all attachments and attach them to the reply form. If any attachments fail to be added, an error is shown
-      in the form UI. If this isn't possible, then no error message is thrown.
+      When attachments are specified in the formData.attachments parameter, Outlook on the web and desktop clients
+      attempt to download all attachments and attach them to the reply form. If any attachments fail to be added, an
+      error is shown in the form UI. If this isn't possible, then no error message is thrown.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -447,7 +447,7 @@ items:
     summary: |-
       Gets the entities found in the selected item's body.
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -484,7 +484,7 @@ items:
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -538,8 +538,8 @@ items:
     type: method
     syntax:
       content: >-
-        getEntitiesByType(entityType: MailboxEnums.EntityType): (string | Contact | MeetingSuggestion | PhoneNumber |
-        TaskSuggestion)[];
+        getEntitiesByType(entityType: MailboxEnums.EntityType | string): (string | Contact | MeetingSuggestion |
+        PhoneNumber | TaskSuggestion)[];
       return:
         type:
           - '(string | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion)[]'
@@ -552,7 +552,7 @@ items:
         - id: entityType
           description: One of the EntityType enumeration values.
           type:
-            - MailboxEnums.EntityType
+            - MailboxEnums.EntityType | string
   - uid: outlook.Office.MessageRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
@@ -562,7 +562,7 @@ items:
       ItemHasKnownEntity rule element in the manifest XML file with the specified FilterName element value.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -599,7 +599,7 @@ items:
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than
       16.0.8413.1000) and Outlook on the web for Office 365.
 
 
@@ -646,7 +646,7 @@ items:
       message](https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message)<!-- -->.
 
 
-      **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than
+      **Note**: This method is only supported by Outlook 2016 or later on Windows (Click-to-Run versions greater than
       16.0.8413.1000) and Outlook on the web for Office 365.
 
 
@@ -696,7 +696,7 @@ items:
       use the Body.getAsync method to retrieve the entire body.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -785,7 +785,7 @@ items:
       expression such as .* to obtain the entire body of an item does not always return the expected results.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -859,7 +859,7 @@ items:
       add-ins.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -912,7 +912,7 @@ items:
       use the Body.getAsync method to retrieve the entire body.
 
 
-      **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This method is not supported in Outlook on iOS or Android.
 
 
       \[ [API set: Mailbox 1.6](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -1059,7 +1059,7 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, options?: Office.AsyncContextOptions, callback?:
+        removeHandlerAsync(eventType: Office.EventType | string, options?: Office.AsyncContextOptions, callback?:
         (asyncResult: Office.AsyncResult<void>) => void): void;
       return:
         type:
@@ -1069,7 +1069,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -1106,8 +1106,8 @@ items:
     type: method
     syntax:
       content: >-
-        removeHandlerAsync(eventType: Office.EventType, callback?: (asyncResult: Office.AsyncResult<void>) =>
-        void): void;
+        removeHandlerAsync(eventType: Office.EventType | string, callback?: (asyncResult:
+        Office.AsyncResult<void>) => void): void;
       return:
         type:
           - void
@@ -1116,7 +1116,7 @@ items:
         - id: eventType
           description: The event that should revoke the handler.
           type:
-            - Office.EventType
+            - Office.EventType | string
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
@@ -1391,7 +1391,7 @@ items:
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Message Read
 
 
-      **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+      **Note**: This member is not supported in Outlook on iOS or Android.
 
 
       #### Examples
@@ -1460,7 +1460,7 @@ items:
           - outlook.Office.EmailAddressDetails
   - uid: outlook.Office.MessageRead.internetHeaders
     summary: >-
-      Gets the internet headers of a message.
+      Gets or sets the custom internet headers of a message.
 
 
       The internetHeaders property returns an InternetHeaders object that provides methods to manage the internet
@@ -1679,10 +1679,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType | string;'
       return:
         type:
-          - MailboxEnums.ItemType
+          - MailboxEnums.ItemType | string
   - uid: outlook.Office.MessageRead.normalizedSubject
     summary: >-
       Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
@@ -1853,8 +1853,9 @@ items:
       Gets the id of the series that an instance belongs to.
 
 
-      In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this
-      item belongs to. However, in iOS and Android, the seriesId returns the REST ID of the parent item.
+      In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent
+      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
+      parent item.
 
 
       **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item

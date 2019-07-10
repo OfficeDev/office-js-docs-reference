@@ -1034,26 +1034,26 @@ Office.AttachmentContent.format:
   - |-
     var item = Office.context.mailbox.item;
     var listOfAttachments = [];
-    item.getAttachmentsAsync(callback);
+    var options = {asyncContext: {currentItem: item}};
+    item.getAttachmentsAsync(options, callback);
 
     function callback(result) {
         if (result.value.length > 0) {
             for (i = 0 ; i < result.value.length ; i++) {
-                var options = {asyncContext: {type: result.value[i].attachmentType}};
-                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
+                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
             }
         }
     }
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-        if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
+        if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
             // Handle file attachment.
-        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
             // Handle email item attachment.
-        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
             // Handle .icalender attachment.
-        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
             // Handle cloud attachment.
         } else {
             // Handle attachment formats that are not supported.
@@ -4688,26 +4688,26 @@ Office.Item.getAttachmentContentAsync:
   - |-
     var item = Office.context.mailbox.item;
     var listOfAttachments = [];
-    item.getAttachmentsAsync(callback);
+    var options = {asyncContext: {currentItem: item}};
+    item.getAttachmentsAsync(options, callback);
 
     function callback(result) {
         if (result.value.length > 0) {
             for (i = 0 ; i < result.value.length ; i++) {
-                var options = {asyncContext: {type: result.value[i].attachmentType}};
-                getAttachmentContentAsync(result.value[i].id, options, handleAttachmentsCallback);
+                result.asyncContext.currentItem.getAttachmentContentAsync(result.value[i].id, handleAttachmentsCallback);
             }
         }
     }
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-        if (result.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
+        if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
             // Handle file attachment.
-        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
+        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
             // Handle email item attachment.
-        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
+        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
             // Handle .icalender attachment.
-        } else if (result.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
+        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
             // Handle cloud attachment.
         } else {
             // Handle attachment formats that are not supported.
@@ -6547,21 +6547,6 @@ Office.UserProfile.timeZone:
   - |-
     // Example: Pacific Standard Time
     console.log(Office.context.mailbox.userProfile.timeZone);
-Office.cast.item:
-  - >-
-    // The following example uses the toMessageCompose method to cast the
-    Office.context.mailbox.item
-
-    // property so that it will only show IntelliSense for the Message object in
-    compose mode.
-
-    // After the cast, the message variable will only display IntelliSense for
-    methods and properties
-
-    // that can be used in compose mode.
-
-    var message =
-    Office.cast.item.toMessageCompose(Office.context.mailbox.item);
 Office.initialize:
   - >-
     // You can use the value of the InitializationEnumeration to implement

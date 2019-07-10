@@ -32,8 +32,8 @@ items:
       - excel.Excel.CommentCollection.toJSON
   - uid: excel.Excel.CommentCollection.add
     summary: >-
-      Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if
-      the location is larger than one cell.
+      Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is
+      thrown if the provided range is larger than one cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -70,18 +70,19 @@ items:
             - string
         - id: cellAddress
           description: >-
-            Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full
-            address, including the sheet name
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type:
             - Range | string
         - id: contentType
-          description: Optional. Type of the comment content
+          description: Optional. The type of the comment content
           type:
             - excel.Excel.ContentType
   - uid: excel.Excel.CommentCollection.add_1
     summary: >-
-      Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if
-      the location is larger than one cell.
+      Creates a new comment (comment thread) with the given content on the given cell. An `InvalidArgument` error is
+      thrown if the provided range is larger than one cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -105,12 +106,13 @@ items:
             - string
         - id: cellAddress
           description: >-
-            Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full
-            address, including the sheet name
+            The cell to which the comment is added. This can be a Range object or a string. If it's a string, it must
+            contain the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided
+            range is larger than one cell.
           type:
             - Range | string
         - id: contentTypeString
-          description: Optional. Type of the comment content
+          description: Optional. The type of the comment content
           type:
             - '"Plain"'
   - uid: excel.Excel.CommentCollection.context
@@ -149,7 +151,7 @@ items:
         description: ''
   - uid: excel.Excel.CommentCollection.getItem
     summary: >-
-      Returns a comment identified by its ID. Read-only.
+      Gets a comment from the collection based on its ID. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -173,7 +175,7 @@ items:
             - string
   - uid: excel.Excel.CommentCollection.getItemAt
     summary: >-
-      Gets a comment based on its position in the collection.
+      Gets a comment from the collection based on its position.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -197,7 +199,7 @@ items:
             - number
   - uid: excel.Excel.CommentCollection.getItemByCell
     summary: >-
-      Gets a comment on the specific cell in the collection.
+      Gets the comment from the specified cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -217,8 +219,9 @@ items:
       parameters:
         - id: cellAddress
           description: >-
-            Cell which the comment is on. May be an Excel Range object, or a string. If string, must contain the full
-            address, including the sheet name
+            The cell which the comment is on. This can be a Range object or a string. If it's a string, it must contain
+            the full address, including the sheet name. An `InvalidArgument` error is thrown if the provided range is
+            larger than one cell.
           type:
             - Range | string
   - uid: excel.Excel.CommentCollection.getItemByReplyId

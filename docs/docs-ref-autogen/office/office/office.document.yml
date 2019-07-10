@@ -2,7 +2,7 @@
 items:
   - uid: office.Office.Document
     summary: An abstract class that represents the document the add-in is interacting with.
-    remarks: '**Hosts**: Access, Excel, PowerPoint, Project, Word'
+    remarks: '**Hosts**: Excel, PowerPoint, Project, Word'
     name: Office.Document
     fullName: Office.Document
     langs:
@@ -529,7 +529,7 @@ items:
             - '(result: AsyncResult<"edit" | "read">) => void'
   - uid: office.Office.Document.getFileAsync
     summary: >-
-      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is
+      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >-
@@ -550,27 +550,26 @@ items:
       (when using `Office.FileType.Text`<!-- -->)
 
 
-      For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports
-      getting files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the
-      getFileAsync method supports getting files in slices of up to 65536 (64 KB).
+      For add-ins running in Office host applications other than Office on iOS, the getFileAsync method supports getting
+      files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office apps on iOS, the getFileAsync method
+      supports getting files in slices of up to 65536 (64 KB).
 
 
       The fileType parameter can be specified by using the [Office.FileType](xref:office.Office.FileType) enumeration or
       text values. But the possible values vary with the host:
 
 
-      Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+      Excel on the web and Windows desktop: `Office.FileType.Compressed`
 
 
-      Excel for Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
+      Excel on Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
 
 
-      PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`<!-- -->,
-      `Office.FileType.Pdf`
+      PowerPoint on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
 
 
-      Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`<!-- -->,
-      `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
+      Word on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`<!--
+      -->, `Office.FileType.Text`
 
 
       #### Examples
@@ -701,7 +700,7 @@ items:
             - '(result: AsyncResult<Office.File>) => void'
   - uid: office.Office.Document.getFileAsync_1
     summary: >-
-      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is
+      Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is
       supported up to 65536 (64 KB). Note that specifying file slice size of above permitted limit will result in an
       "Internal Error" failure.
     remarks: >-
@@ -722,27 +721,26 @@ items:
       (when using `Office.FileType.Text`<!-- -->)
 
 
-      For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports
-      getting files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the
-      getFileAsync method supports getting files in slices of up to 65536 (64 KB).
+      For add-ins running in Office host applications other than Office on iOS, the getFileAsync method supports getting
+      files in slices of up to 4194304 bytes (4 MB). For add-ins running in Office on iOS apps, the getFileAsync method
+      supports getting files in slices of up to 65536 (64 KB).
 
 
       The fileType parameter can be specified by using the [Office.FileType](xref:office.Office.FileType) enumeration or
       text values. But the possible values vary with the host:
 
 
-      Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+      Excel on the web and Windows desktop: `Office.FileType.Compressed`
 
 
-      Excel for Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
+      Excel on Mac: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
 
 
-      PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`<!-- -->,
-      `Office.FileType.Pdf`
+      PowerPoint on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`
 
 
-      Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`<!-- -->,
-      `Office.FileType.Pdf`<!-- -->, `Office.FileType.Text`
+      Word on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`<!-- -->, `Office.FileType.Pdf`<!--
+      -->, `Office.FileType.Text`
     name: 'getFileAsync(fileType, callback)'
     fullName: 'getFileAsync(fileType, callback)'
     langs:
@@ -1616,10 +1614,10 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
@@ -1828,10 +1826,10 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
     name: 'getSelectedDataAsync(coercionType, callback)'
     fullName: 'getSelectedDataAsync(coercionType, callback)'
@@ -3344,8 +3342,8 @@ items:
       ratio.</td> </tr> <tr> <td></td> <td>All other cases</td> <td>An error is returned.</td> </tr>
 
 
-      <tr> <td>Excel Online</td> <td>In addition to the behaviors described for Excel above, these limits apply when
-      writing data in Excel Online</td> <td>The total number of cells you can write to a worksheet with the `data`
+      <tr> <td>Excel on the web</td> <td>In addition to the behaviors described for Excel above, these limits apply when
+      writing data in Excel on the web</td> <td>The total number of cells you can write to a worksheet with the `data`
       parameter can't exceed 20,000 in a single call to this method.</td> </tr> <tr> <td></td> <td></td> <td>The number
       of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of
       a set of formatting applied to a specified range of cells.</td> </tr>
@@ -3365,10 +3363,10 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
 
 
@@ -3661,8 +3659,8 @@ items:
       ratio.</td> </tr> <tr> <td></td> <td>All other cases</td> <td>An error is returned.</td> </tr>
 
 
-      <tr> <td>Excel Online</td> <td>In addition to the behaviors described for Excel above, these limits apply when
-      writing data in Excel Online</td> <td>The total number of cells you can write to a worksheet with the `data`
+      <tr> <td>Excel on the web</td> <td>In addition to the behaviors described for Excel above, these limits apply when
+      writing data in Excel on the web</td> <td>The total number of cells you can write to a worksheet with the `data`
       parameter can't exceed 20,000 in a single call to this method.</td> </tr> <tr> <td></td> <td></td> <td>The number
       of formatting groups passed to the `cellFormat` parameter can't exceed 100. A single formatting group consists of
       a set of formatting applied to a specified range of cells.</td> </tr>
@@ -3682,10 +3680,10 @@ items:
 
       <table> <tr> <th>Host</th> <th>Supported coercionType</th> </tr> <tr> <td>Excel, PowerPoint, Project, and
       Word</td> <td>`Office.CoercionType.Text` (string)</td> </tr> <tr> <td>Excel and Word</td>
-      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Access, Excel, and Word</td>
+      <td>`Office.CoercionType.Matrix` (array of arrays)</td> </tr> <tr> <td>Excel and Word</td>
       <td>`Office.CoercionType.Table` (TableData object)</td> </tr> <tr> <td>Word</td>
       <td>`Office.CoercionType.Html`</td> </tr> <tr> <td>Word</td> <td>`Office.CoercionType.Ooxml` (Office Open
-      XML)</td> </tr> <tr> <td>PowerPoint and PowerPoint Online</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
+      XML)</td> </tr> <tr> <td>PowerPoint on the web and Windows</td> <td>`Office.CoercionType.SlideRange`</td> </tr>
       <tr> <td>Excel, PowerPoint, and Word</td> <td>`Office.CoercionType.XmlSvg`</td> </tr> </table>
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'

@@ -34,7 +34,7 @@ items:
       - excel.Excel.Comment.toJSON
   - uid: excel.Excel.Comment.authorEmail
     summary: >-
-      Get author email of the comment.
+      Gets the email of the comment's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -52,7 +52,7 @@ items:
           - string
   - uid: excel.Excel.Comment.authorName
     summary: >-
-      Get author name of the comment.
+      Gets the name of the comment's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -70,7 +70,7 @@ items:
           - string
   - uid: excel.Excel.Comment.content
     summary: >-
-      Get or set the content.
+      Gets or sets the comment's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -115,8 +115,8 @@ items:
           - excel.Excel.RequestContext
   - uid: excel.Excel.Comment.creationDate
     summary: >-
-      Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the
-      comment will not has created date.
+      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      does not have a creation date.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -163,7 +163,7 @@ items:
           ```
   - uid: excel.Excel.Comment.getLocation
     summary: >-
-      Get location of the comment.
+      Gets the cell where this comment is located.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

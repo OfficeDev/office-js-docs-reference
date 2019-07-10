@@ -240,8 +240,8 @@ items:
       session.
 
 
-      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
-      other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office add-in is running in Outlook on the web, the addItemAttachmentAsync method can attach items to
+      items other than the item that you are editing; however, this is not supported and is not recommended.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -343,8 +343,8 @@ items:
       session.
 
 
-      If your Office add-in is running in Outlook Web App, the addItemAttachmentAsync method can attach items to items
-      other than the item that you are editing; however, this is not supported and is not recommended.
+      If your Office add-in is running in Outlook on the web, the addItemAttachmentAsync method can attach items to
+      items other than the item that you are editing; however, this is not supported and is not recommended.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -451,7 +451,7 @@ items:
 
       The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
+      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
       inline form then subsequently pops out the form to continue in a separate window.
 
@@ -528,7 +528,7 @@ items:
 
       The removeAttachmentAsync method removes the attachment with the specified identifier from the item. As a best
       practice, you should use the attachment identifier to remove an attachment only if the same mail app has added
-      that attachment in the same session. In Outlook Web App and OWA for Devices, the attachment identifier is valid
+      that attachment in the same session. In Outlook on the web and mobile devices, the attachment identifier is valid
       only within the same session. A session is over when the user closes the app, or if the user starts composing an
       inline form then subsequently pops out the form to continue in a separate window.
 
@@ -791,10 +791,10 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'itemType: MailboxEnums.ItemType;'
+      content: 'itemType: MailboxEnums.ItemType | string;'
       return:
         type:
-          - MailboxEnums.ItemType
+          - MailboxEnums.ItemType | string
   - uid: Outlook.Office.MessageCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.

@@ -231,13 +231,12 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
      *  </table>
      */
     var context: Context;
@@ -267,13 +266,12 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
      *  </table>
      * 
      * @param reason - Indicates how the app was initialized.
@@ -305,13 +303,12 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-     *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-     *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-     *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+     *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+     *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+     *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+     *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
      *  </table>
      * 
      * @param useShortNamespace - True to use the shortcut alias; otherwise false to disable it. The default is true.
@@ -378,6 +375,10 @@ export declare namespace Office {
         Project,
         /**
          * The Office host is Microsoft Access.
+         * 
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
          */
         Access
     }
@@ -390,7 +391,7 @@ export declare namespace Office {
          */
         PC,
         /**
-         * The platform is Office Online.
+         * The platform is Office on the web (in a browser).
          */
         OfficeOnline,
         /**
@@ -440,8 +441,8 @@ export declare namespace Office {
         *   <tr><td><strong>InternalServerError</strong></td><td>The Exchange server returned an error. Please look at the diagnostics object for more information.</td><td>The error message from the Exchange server in a JSON object e.g., `{"ErrorText": "The mailbox database is temporarily unavailable"}`</td></tr>
         * </table>
         */
-       diagnostics: any;
-       /**
+        diagnostics: any;
+        /**
         * Gets an {@link Office.Error} object that provides a description of the error, if any error occurred.
         */
         error: Office.Error;
@@ -466,7 +467,7 @@ export declare namespace Office {
      * The current context exists as a property of Office. It is accessed using `Office.context`.
      *
      * @remarks 
-     * **Hosts**: Access, Excel, Outlook, PowerPoint, Project, Word
+     * **Hosts**: Excel, Outlook, PowerPoint, Project, Word
      */     
     export interface Context {
         /**
@@ -481,10 +482,10 @@ export declare namespace Office {
         * @remarks
         * **Hosts**: Excel, Word
         * 
-        * `commerceAllowed` is only supported on Office for iPad.
+        * `commerceAllowed` is only supported in Office on iPad.
         * 
-        * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running on 
-        * the Windows desktop or for Office Online in the browser do allow such links. If you want the UI of your add-in to provide a link to an 
+        * The iOS App Store doesn't support apps with add-ins that provide links to additional payment systems. However, Office Add-ins running in 
+        * Office on the Windows desktop or in the browser do allow such links. If you want the UI of your add-in to provide a link to an 
         * external payment system on platforms other than iOS, you can use the commerceAllowed property to control when that link is displayed.
         */
         commerceAllowed: boolean;
@@ -494,8 +495,6 @@ export declare namespace Office {
         * @remarks
         * The `contentLanguage` value reflects the **Editing Language** setting specified with **File \> Options \> Language** in the Office host 
         * application.
-        * 
-        * In content add-ins for Access web apps, the `contentLanguage` property gets the add-in culture (e.g., "en-GB").
         * 
         * **Support details**
         * 
@@ -507,13 +506,12 @@ export declare namespace Office {
         *  
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td>                            </td><td> Y                          </td><td>                 </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-        *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
+        *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+        *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+        *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+        *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+        *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+        *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
         *  </table>
         */
         contentLanguage: string;
@@ -531,8 +529,6 @@ export declare namespace Office {
         * The `displayLanguage` value reflects the current **Display Language** setting specified with **File \> Options \> Language** in the Office 
         * host application.
         * 
-        * In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
-        * 
         * When using in Outlook, the applicable modes are Compose or Read.
         * 
         * **Support details**
@@ -545,13 +541,12 @@ export declare namespace Office {
         * 
         * *Supported hosts, by platform*
         *  <table>
-        *   <tr><th>                             </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th><th> OWA for Devices </th><th> Office for Mac </th></tr>
-        *   <tr><td><strong> Access     </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Excel      </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Outlook    </strong></td><td> Y                          </td><td> Y                          </td><td>                 </td><td> Y               </td><td> Y              </td></tr>
-        *   <tr><td><strong> PowerPoint </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Project    </strong></td><td> Y                          </td><td>                            </td><td>                 </td><td>                 </td><td>                </td></tr>
-        *   <tr><td><strong> Word       </strong></td><td> Y                          </td><td>                            </td><td> Y               </td><td>                 </td><td>                </td></tr>
+        *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
+        *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+        *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
+        *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+        *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+        *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td>                       </td><td> Y              </td><td>                           </td><td>               </td></tr>
         *  </table>
         */
         displayLanguage: string;
@@ -575,6 +570,7 @@ export declare namespace Office {
          * @remarks
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          * 
          * 
@@ -610,6 +606,7 @@ export declare namespace Office {
          * @remarks
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         roamingSettings: Outlook.RoamingSettings;
@@ -620,7 +617,7 @@ export declare namespace Office {
         * @remarks
         * **Hosts**: Excel, PowerPoint, Word
         * 
-        * `touchEnabled` is only supported on Office for iPad.
+        * `touchEnabled` is only supported in Office on iPad.
         * 
         * Use the touchEnabled property to determine when your add-in is running on a touch device and if necessary, adjust the kind of controls, and 
         * size and spacing of elements in your add-in's UI to accommodate touch interactions.
@@ -640,7 +637,7 @@ export declare namespace Office {
      */
     export interface Error {
         /**
-         * Gets the numeric code of the error.
+         * Gets the numeric code of the error. For a list of error codes, see {@link https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes | JavaScript API for Office error codes}.
          */
         code: number;
         /**
@@ -661,6 +658,7 @@ export declare namespace Office {
          * See {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/add-in-commands-requirement-sets | Add-in commands requirement sets} for more support information.
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         export interface Event {
@@ -688,16 +686,26 @@ export declare namespace Office {
              * @remarks
              * 
              * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
+             * 
              * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
              * 
-             * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter)
+             * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter.
              * 
-             * @param options - Optional. An object literal that contains one or more of the following properties.
-             *        allowEvent: A boolean value. When the completed method is used to signal completion of an event handler, 
-             *                    this value indicates of the handled event should continue execution or be canceled. 
-             *                    For example, an add-in that handles the ItemSend event can set allowEvent = false to cancel sending of the message.
+             * @param options - Optional. An object that specifies behavior options for when the event is completed.
              */
-            completed(options?: { allowEvent: boolean }): void;
+            completed(options?: EventCompletedOptions): void;
+        }
+
+        /**
+         * Specifies the behavior for when the event is completed.
+         */
+        export interface EventCompletedOptions {
+            /**
+             * A boolean value. When the completed method is used to signal completion of an event handler, 
+             * this value indicates of the handled event should continue execution or be canceled. 
+             * For example, an add-in that handles the `ItemSend` event can set `allowEvent = false` to cancel sending of the message.
+             */
+            allowEvent: boolean;
         }
 
         /**
@@ -983,7 +991,7 @@ export declare namespace Office {
          */
         width?: number,
         /**
-         * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office Online clients, and is 
+         * Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office on the web, and is 
          * ignored by other platforms. If false (default), the dialog will be displayed as a new browser window (pop-up). Recommended for 
          * authentication pages that cannot be displayed in an IFrame. If true, the dialog will be displayed as a floating overlay with an IFrame. 
          * This is best for user experience and performance.
@@ -1173,10 +1181,18 @@ export declare namespace Office {
         coercionType?: Office.CoercionType | string
         /**
         * Only for table bindings in content add-ins for Access. Array of strings. Specifies the column names.
+        * 
+        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+        * to build no-code business solutions for web and mobile devices.
         */
         columns?: string[]
         /**
         * Only for table bindings in content add-ins for Access. Specifies the pre-defined string "thisRow" to get data in the currently selected row.
+        * 
+        * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+        * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+        * to build no-code business solutions for web and mobile devices.
         */
         rows?: string
         /**
@@ -1268,8 +1284,13 @@ export declare namespace Office {
         promptText?: string
         /**
          * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. 
-         * The headers provided in the TableData object specify the labels used in the field selection UI. 
+         * The headers provided in the TableData object specify the labels used in the field selection UI.
+         * 
          * **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
+         * 
+         * **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint.
+         * As an alternative, we recommend that you use {@link https://powerapps.microsoft.com/ | Microsoft PowerApps}
+         * to build no-code business solutions for web and mobile devices.
          */
         sampleData?: Office.TableData
         /**
@@ -1421,7 +1442,7 @@ export declare namespace Office {
      * @remarks
      * **Hosts**: Excel, Outlook (in preview), PowerPoint, Word
      * 
-     * `OfficeTheme` is only supported on Office for Windows desktop.
+     * `OfficeTheme` is only supported in Office on Windows.
      */
     export interface OfficeTheme {
         /**
@@ -1485,10 +1506,9 @@ export declare namespace Office {
      * 
      * *Supported hosts, by platform*
      *  <table>
-     *   <tr><th>                         </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th><th> Office for iPad </th></tr>
-     *   <tr><td><strong> Access </strong></td><td>                            </td><td> Y                          </td><td>                 </td></tr>
-     *   <tr><td><strong> Excel  </strong></td><td> Y                          </td><td> Y                          </td><td> Y               </td></tr>
-     *   <tr><td><strong> Word   </strong></td><td> Y                          </td><td>                            </td><td> Y               </td></tr>
+     *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
+     *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
+     *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
      *  </table>
      */
     export function select(expression: string, callback?: (result: AsyncResult<any>) => void): Binding;
@@ -1550,7 +1570,7 @@ export declare namespace Office {
         /**
          * Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with optional headers.
          * 
-         * **Note**: Only applies to data in Access, Excel, and Word.
+         * **Note**: Only applies to data in Excel and Word.
          */
         Table,
         /**
@@ -1642,7 +1662,7 @@ export declare namespace Office {
      * 
      * @remarks
      * 
-     * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Access, Excel, Word.
+     * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
      * 
      */
     enum EventType {
@@ -1673,7 +1693,7 @@ export declare namespace Office {
          * The event handler receives an argument of type {@link Office.BindingDataChangedEventArgs}.
          * 
          * @remarks 
-         * **Hosts**: Access, Excel, Word
+         * **Hosts**: Excel, Word
          */
         BindingDataChanged,
         /**
@@ -1681,7 +1701,7 @@ export declare namespace Office {
          * the addHandlerAsync method of the Binding object. The event handler receives an argument of type {@link Office.BindingSelectionChangedEventArgs}.
          * 
          * @remarks 
-         * **Hosts**: Access, Excel, Word 
+         * **Hosts**: Excel, Word 
          */
         BindingSelectionChanged,
         /**
@@ -1751,7 +1771,7 @@ export declare namespace Office {
          * A Settings.settingsChanged event was raised.
          * 
          * @remarks 
-         * **Hosts**: Access, Excel, PowerPoint, Word
+         * **Hosts**: Excel, PowerPoint, Word
          */
         SettingsChanged,
         /**
@@ -1767,7 +1787,7 @@ export declare namespace Office {
      * Specifies the format in which to return the document.
      *
      * @remarks
-     * `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word for Windows, Word for Mac, Word Online, and PowerPoint.
+     * `FileType.Text` is only supported in Word, `FileType.Pdf` is only supported in Word on the web, Windows, and Mac, and PowerPoint.
      */
     enum FileType {
         /**
@@ -1892,7 +1912,7 @@ export declare namespace Office {
     * and table-specific features, such as counting the number of rows and columns.
     *
     * @remarks
-    * **Hosts**: Access, Excel, Word
+    * **Hosts**: Excel, Word
     * 
     * **Requirement sets**: 
     * 
@@ -2124,7 +2144,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * For Excel Online:
+         * For Excel on the web:
          * 
          *  - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method.
          * 
@@ -2164,13 +2184,13 @@ export declare namespace Office {
          *
          * @param data - The data to be set in the current selection. Possible data types by host:
          *
-         *        string: Excel, Excel Online, Word, and Word Online only
+         *        string: Excel on the web and Windows, and Word on the web and Windows only
          *
          *        array of arrays: Excel and Word only
          *
-         *        {@link Office.TableData}: Access, Excel, and Word only
+         *        {@link Office.TableData}: Excel and Word only
          *
-         *        HTML: Word and Word Online only
+         *        HTML: Word on the web and Windows only
          *
          *        Office Open XML: Word only
          *
@@ -2271,7 +2291,7 @@ export declare namespace Office {
          *   </tr>
          * </table>
          * 
-         * For Excel Online:
+         * For Excel on the web:
          * 
          *  - The total number of cells in the value passed to the data parameter can't exceed 20,000 in a single call to this method.
          * 
@@ -2311,13 +2331,13 @@ export declare namespace Office {
          *
          * @param data - The data to be set in the current selection. Possible data types by host:
          *
-         *        string: Excel, Excel Online, Word, and Word Online only
+         *        string: Excel on the web and Windows, and Word on the web and Windows only
          *
          *        array of arrays: Excel and Word only
          *
-         *        `TableData`: Access, Excel, and Word only
+         *        `TableData`: Excel and Word only
          *
-         *        HTML: Word and Word Online only
+         *        HTML: Word on the web and Windows only
          *
          *        Office Open XML: Word only
          *
@@ -3225,7 +3245,7 @@ export declare namespace Office {
      * An abstract class that represents the document the add-in is interacting with.
      *
      * @remarks
-     * **Hosts**: Access, Excel, PowerPoint, Project, Word
+     * **Hosts**: Excel, PowerPoint, Project, Word
      */
     export interface Document {
         /**
@@ -3311,7 +3331,7 @@ export declare namespace Office {
          */
         getActiveViewAsync(callback?: (result: AsyncResult<"edit" | "read">) => void): void;
         /**
-         * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is supported up to 65536 (64 KB). 
+         * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is supported up to 65536 (64 KB). 
          * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
          *
          * @remarks
@@ -3324,20 +3344,20 @@ export declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          *
-         * For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports getting files in slices of up 
-         * to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the getFileAsync method supports getting files in slices of up to 
+         * For add-ins running in Office host applications other than Office on iOS, the getFileAsync method supports getting files in slices of up 
+         * to 4194304 bytes (4 MB). For add-ins running in Office apps on iOS, the getFileAsync method supports getting files in slices of up to 
          * 65536 (64 KB).
          *
          * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
          * the host:
          *
-         * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+         * Excel on the web and Windows desktop: `Office.FileType.Compressed`
          * 
-         * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+         * Excel on Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
          *
-         * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+         * PowerPoint on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`, `Office.FileType.Pdf`
          *
-         * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
+         * Word on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
          *
          * @param fileType - The format in which the file will be returned
          * @param options - Provides options for setting the size of slices that the document will be divided into.
@@ -3346,7 +3366,7 @@ export declare namespace Office {
          */
         getFileAsync(fileType: FileType, options?: GetFileOptions, callback?: (result: AsyncResult<Office.File>) => void): void;
         /**
-         * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins for iOS, file slice is supported up to 65536 (64 KB). 
+         * Returns the entire document file in slices of up to 4194304 bytes (4 MB). For add-ins on iOS, file slice is supported up to 65536 (64 KB). 
          * Note that specifying file slice size of above permitted limit will result in an "Internal Error" failure.
          *
          * @remarks
@@ -3359,20 +3379,20 @@ export declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textfile | TextFile} (when using `Office.FileType.Text`)
          * 
-         * For add-ins running in Office host applications other than Office for iOS, the getFileAsync method supports getting files in slices of up 
-         * to 4194304 bytes (4 MB). For add-ins running in Office for iOS apps, the getFileAsync method supports getting files in slices of up to 
+         * For add-ins running in Office host applications other than Office on iOS, the getFileAsync method supports getting files in slices of up 
+         * to 4194304 bytes (4 MB). For add-ins running in Office on iOS apps, the getFileAsync method supports getting files in slices of up to 
          * 65536 (64 KB).
          *
          * The fileType parameter can be specified by using the {@link Office.FileType} enumeration or text values. But the possible values vary with 
          * the host:
          *
-         * Excel for Windows desktop, iPad, and Excel Online: `Office.FileType.Compressed`
+         * Excel on the web and Windows desktop: `Office.FileType.Compressed`
          * 
-         * Excel for Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+         * Excel on Mac: `Office.FileType.Compressed`, `Office.FileType.Pdf`
          *
-         * PowerPoint for Windows desktop, Mac, iPad, and PowerPoint Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`
+         * PowerPoint on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`, `Office.FileType.Pdf`
          *
-         * Word for Windows desktop, Mac, iPad, and Word Online: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
+         * Word on the web, Windows desktop, Mac, and iPad: `Office.FileType.Compressed`, `Office.FileType.Pdf`, `Office.FileType.Text`
          *
          * @param fileType - The format in which the file will be returned
          * @param callback - Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -3465,7 +3485,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3477,7 +3497,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint and PowerPoint Online</td>
+         *     <td>PowerPoint on the web and Windows</td>
          *     <td>`Office.CoercionType.SlideRange`</td>
          *   </tr>
          *   <tr>
@@ -3557,7 +3577,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3569,7 +3589,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint and PowerPoint Online</td>
+         *     <td>PowerPoint on the web and Windows</td>
          *     <td>`Office.CoercionType.SlideRange`</td>
          *   </tr>
          *   <tr>
@@ -3756,8 +3776,8 @@ export declare namespace Office {
          *   </tr>
          * 
          *   <tr>
-         *     <td>Excel Online</td>
-         *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td>
+         *     <td>Excel on the web</td>
+         *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
          *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
          *   </tr>
          *   <tr>
@@ -3789,7 +3809,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3801,7 +3821,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint and PowerPoint Online</td>
+         *     <td>PowerPoint on the web and Windows</td>
          *     <td>`Office.CoercionType.SlideRange`</td>
          *   </tr>
          *   <tr>
@@ -3941,8 +3961,8 @@ export declare namespace Office {
          *   </tr>
          * 
          *   <tr>
-         *     <td>Excel Online</td>
-         *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel Online</td>
+         *     <td>Excel on the web</td>
+         *     <td>In addition to the behaviors described for Excel above, these limits apply when writing data in Excel on the web</td>
          *     <td>The total number of cells you can write to a worksheet with the `data` parameter can't exceed 20,000 in a single call to this method.</td>
          *   </tr>
          *   <tr>
@@ -3974,7 +3994,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Matrix` (array of arrays)</td>
          *   </tr>
          *   <tr>
-         *     <td>Access, Excel, and Word</td>
+         *     <td>Excel and Word</td>
          *     <td>`Office.CoercionType.Table` (TableData object)</td>
          *   </tr>
          *   <tr>
@@ -3986,7 +4006,7 @@ export declare namespace Office {
          *     <td>`Office.CoercionType.Ooxml` (Office Open XML)</td>
          *   </tr>
          *   <tr>
-         *     <td>PowerPoint and PowerPoint Online</td>
+         *     <td>PowerPoint on the web and Windows</td>
          *     <td>`Office.CoercionType.SlideRange`</td>
          *   </tr>
          *   <tr>
@@ -4443,7 +4463,7 @@ export declare namespace Office {
      * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
      *
      * @remarks
-     * **Hosts**: Access, Excel, PowerPoint, Word
+     * **Hosts**: Excel, PowerPoint, Word
      * 
      * The settings created by using the methods of the Settings object are saved per add-in and per document. 
      * That is, they are available only to the add-in that created them, and only from the document in which they are saved.
@@ -4460,8 +4480,8 @@ export declare namespace Office {
          * Adds an event handler for the settingsChanged event.
          *
          * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
-         * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the 
-         * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+         * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel on the web, and more than one user is editing the 
+         * spreadsheet (coauthoring). Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
          *
          * @remarks
          * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
@@ -4501,8 +4521,8 @@ export declare namespace Office {
          * Adds an event handler for the settingsChanged event.
          *
          * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
-         * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the 
-         * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+         * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel on the web, and more than one user is editing the 
+         * spreadsheet (coauthoring). Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
          *
          * @remarks
          * **Requirement set**: {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#methods-that-arent-part-of-a-requirement-set | Not in a set}
@@ -4757,12 +4777,12 @@ export declare namespace Office {
      * Settings.set or Settings.remove methods are called.
      * 
      * The settingsChanged event was designed to let you to handle potential conflicts when two or more users are 
-     * attempting to save settings at the same time when your add-in is used in a shared (co-authored) document.
+     * attempting to save settings at the same time when your add-in is used in a shared (coauthored) document.
      * 
      * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in 
      * is running with any Excel client, but the event will fire only when the add-in is loaded with a spreadsheet 
-     * that is opened in Excel Online, and more than one user is editing the spreadsheet (co-authoring). 
-     * Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
+     * that is opened in Excel on the web, and more than one user is editing the spreadsheet (coauthoring). 
+     * Therefore, effectively the settingsChanged event is supported only in Excel on the web in coauthoring scenarios.
      */
     export interface SettingsChangedEventArgs {
         /**
@@ -4820,19 +4840,17 @@ export declare namespace Office {
         * Gets the number of rows in the TableBinding, as an integer value.
         *
         * @remarks
-        * When you insert an empty table by selecting a single row in Excel 2013 and Excel Online (using Table on the Insert tab), both Office host 
+        * When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the Insert tab), both Office host 
         * applications create a single row of headers followed by a single blank row. However, if your add-in's script creates a binding for this 
         * newly inserted table (for example, by using the {@link Office.Bindings}.addFromSelectionAsync method), and then checks the value of the 
-        * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel Online.
+        * rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or Excel on the web.
         * 
         * - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
         *
-        * - In Excel Online, rowCount will return 1 (the blank row following the headers is counted).
+        * - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
         *
         * You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the row contains all empty 
         * strings.
-        *
-        * In content add-ins for Access, for performance reasons the rowCount property always returns -1.
         */
         rowCount: number;
         /**
@@ -4854,7 +4872,7 @@ export declare namespace Office {
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
          *
-         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+         * Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
          * a single call to this method.
          *
          * @param tableData - An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the table. Required.
@@ -4881,7 +4899,7 @@ export declare namespace Office {
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
          *
-         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+         * Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
          * a single call to this method.
          *
          * @param tableData - An array of arrays ("matrix") or a TableData object that contains one or more columns of data to add to the table. Required.
@@ -4904,7 +4922,7 @@ export declare namespace Office {
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
          *
-         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+         * Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
          * a single call to this method.
          *
          * @param rows - An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the table. Required.
@@ -4928,7 +4946,7 @@ export declare namespace Office {
          *
          *  - If you pass a TableData object as the data argument, the number of header rows must match that of the table being updated.
          *
-         * Additional remark for Excel Online: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
+         * Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data parameter can't exceed 20,000 in 
          * a single call to this method.
          *
          * @param rows - An array of arrays ("matrix") or a TableData object that contains one or more rows of data to add to the table. Required.
@@ -7779,7 +7797,7 @@ export declare namespace OfficeExtension {
 
     /**
      * A Promise object that represents a deferred interaction with the host Office application. 
-     * The publicly-consumable {@link Office.OfficeExtension.Promise} is available starting in ExcelApi 1.2 and WordApi 1.2. 
+     * The publicly-consumable OfficeExtension.Promise is available starting in ExcelApi 1.2 and WordApi 1.2. 
      * Promises can be chained via ".then", and errors can be caught via ".catch". 
      * Remember to always use a ".catch" on the outer promise, and to return intermediary promises so as not to break the promise chain. 
      * When a browser-provided native Promise implementation is available, OfficeExtension.Promise will switch to use the native Promise instead.

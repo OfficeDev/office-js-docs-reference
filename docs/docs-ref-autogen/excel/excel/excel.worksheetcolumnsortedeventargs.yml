@@ -75,7 +75,7 @@ items:
           - '"WorksheetColumnSorted"'
   - uid: excel.Excel.WorksheetColumnSortedEventArgs.worksheetId
     summary: >-
-      Gets the id of the worksheet in which the sorting happened.
+      Gets the id of the worksheet where the sorting happened.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
