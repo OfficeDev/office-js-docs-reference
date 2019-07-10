@@ -51,6 +51,7 @@ items:
       - excel.Excel.Worksheet.onDeactivated
       - excel.Excel.Worksheet.onFiltered
       - excel.Excel.Worksheet.onFormatChanged
+      - excel.Excel.Worksheet.onRowHiddenChanged
       - excel.Excel.Worksheet.onRowSorted
       - excel.Excel.Worksheet.onSelectionChanged
       - excel.Excel.Worksheet.onSingleClicked
@@ -277,7 +278,8 @@ items:
   - uid: excel.Excel.Worksheet.delete
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
-      delete operation will fail with a GeneralException.
+      delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
+      or visible before deleting it.
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -1176,6 +1178,24 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
+  - uid: excel.Excel.Worksheet.onRowHiddenChanged
+    summary: >-
+      Occurs when row hidden state changed on a specific worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: onRowHiddenChanged
+    fullName: onRowHiddenChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onRowHiddenChanged: OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>
   - uid: excel.Excel.Worksheet.onRowSorted
     summary: >-
       Occurs when sorting on rows.

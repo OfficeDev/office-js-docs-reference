@@ -35,7 +35,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentLoadOptions.authorEmail
     summary: >-
-      Get author email of the comment.
+      Gets the email of the comment's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -53,7 +53,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentLoadOptions.authorName
     summary: >-
-      Get author name of the comment.
+      Gets the name of the comment's author.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -71,7 +71,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentLoadOptions.content
     summary: >-
-      Get or set the content.
+      Gets or sets the comment's content. The string is plain text.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -89,8 +89,8 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.CommentLoadOptions.creationDate
     summary: >-
-      Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the
-      comment will not has created date.
+      Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
+      does not have a creation date.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

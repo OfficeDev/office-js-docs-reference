@@ -307,8 +307,10 @@ items:
           });
           ```
   - uid: excel.Excel.Workbook.getActiveChart
-    summary: |-
-      Gets the currently active chart in the workbook. If there is no active chart, an exception is thrown.
+    summary: >-
+      Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is
+      thrown.
+
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getActiveChart()
@@ -340,7 +342,8 @@ items:
         description: ''
   - uid: excel.Excel.Workbook.getActiveSlicer
     summary: >-
-      Gets the currently active slicer in the workbook. If there is no active slicer, an exception is thrown.
+      Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is
+      thrown.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

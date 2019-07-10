@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RowHiddenChangeType
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.RowHiddenChangeType
+    fullName: Excel.RowHiddenChangeType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.RowHiddenChangeType.hidden
+      - excel.Excel.RowHiddenChangeType.unhidden
+  - uid: excel.Excel.RowHiddenChangeType.hidden
+    summary: Hidden indicates the row is hidden.
+    isPreview: true
+    name: hidden
+    fullName: hidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hidden"'
+  - uid: excel.Excel.RowHiddenChangeType.unhidden
+    summary: Unhidden indicates the row is not hidden.
+    isPreview: true
+    name: unhidden
+    fullName: unhidden
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unhidden"'

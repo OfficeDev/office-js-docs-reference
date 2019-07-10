@@ -171,7 +171,6 @@ items:
       - excel.Excel.createWorkbook
       - excel.Excel.CustomConditionalFormat
       - excel.Excel.CustomDataValidation
-      - excel.Excel.CustomFunctionEventArgs
       - excel.Excel.CustomFunctionMetadataFormat
       - excel.Excel.CustomFunctionType
       - excel.Excel.CustomProperty
@@ -752,6 +751,7 @@ items:
       - excel.Excel.RibbonTab
       - excel.Excel.RowColumnPivotHierarchy
       - excel.Excel.RowColumnPivotHierarchyCollection
+      - excel.Excel.RowHiddenChangeType
       - excel.Excel.RowProperties
       - excel.Excel.RowPropertiesLoadOptions
       - excel.Excel.run
@@ -868,6 +868,7 @@ items:
       - excel.Excel.WorksheetPositionType
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
+      - excel.Excel.WorksheetRowHiddenChangedEventArgs
       - excel.Excel.WorksheetRowSortedEventArgs
       - excel.Excel.WorksheetSearchCriteria
       - excel.Excel.WorksheetSelectionChangedEventArgs
@@ -1448,8 +1449,6 @@ references:
     name: Excel.CustomConditionalFormat
   - uid: excel.Excel.CustomDataValidation
     name: Excel.CustomDataValidation
-  - uid: excel.Excel.CustomFunctionEventArgs
-    name: Excel.CustomFunctionEventArgs
   - uid: excel.Excel.CustomFunctionMetadataFormat
     name: Excel.CustomFunctionMetadataFormat
   - uid: excel.Excel.CustomFunctionType
@@ -2606,6 +2605,8 @@ references:
     name: Excel.RowColumnPivotHierarchy
   - uid: excel.Excel.RowColumnPivotHierarchyCollection
     name: Excel.RowColumnPivotHierarchyCollection
+  - uid: excel.Excel.RowHiddenChangeType
+    name: Excel.RowHiddenChangeType
   - uid: excel.Excel.RowProperties
     name: Excel.RowProperties
   - uid: excel.Excel.RowPropertiesLoadOptions
@@ -2828,6 +2829,8 @@ references:
     name: Excel.WorksheetProtection
   - uid: excel.Excel.WorksheetProtectionOptions
     name: Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.WorksheetRowHiddenChangedEventArgs
+    name: Excel.WorksheetRowHiddenChangedEventArgs
   - uid: excel.Excel.WorksheetRowSortedEventArgs
     name: Excel.WorksheetRowSortedEventArgs
   - uid: excel.Excel.WorksheetSearchCriteria
