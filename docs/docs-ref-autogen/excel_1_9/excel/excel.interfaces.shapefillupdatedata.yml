@@ -1,0 +1,48 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ShapeFillUpdateData
+    summary: 'An interface for updating data on the ShapeFill object, for use in "shapeFill.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.ShapeFillUpdateData
+    fullName: Excel.Interfaces.ShapeFillUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ShapeFillUpdateData.foregroundColor
+      - excel.Excel.Interfaces.ShapeFillUpdateData.transparency
+  - uid: excel.Excel.Interfaces.ShapeFillUpdateData.foregroundColor
+    summary: >-
+      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
+      named HTML color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: foregroundColor
+    fullName: foregroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'foregroundColor?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ShapeFillUpdateData.transparency
+    summary: >-
+      Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns
+      null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with
+      a gradient fill type.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency?: number;'
+      return:
+        type:
+          - number

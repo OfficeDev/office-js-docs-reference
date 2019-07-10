@@ -3,7 +3,7 @@ import * as path from "path";
 import yaml = require('js-yaml');
 import * as colors from 'colors';
 
-const CURRENT_EXCEL_RELEASE = 8;
+const CURRENT_EXCEL_RELEASE = 9;
 const CURRENT_OUTLOOK_RELEASE = 7;
 const CURRENT_WORD_RELEASE = 3;
 

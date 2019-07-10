@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.LinkedDataTypeState
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.LinkedDataTypeState
+    fullName: Excel.LinkedDataTypeState
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.LinkedDataTypeState.brokenLinkedData
+      - excel.Excel.LinkedDataTypeState.disambiguationNeeded
+      - excel.Excel.LinkedDataTypeState.fetchingData
+      - excel.Excel.LinkedDataTypeState.none
+      - excel.Excel.LinkedDataTypeState.validLinkedData
+  - uid: excel.Excel.LinkedDataTypeState.brokenLinkedData
+    name: brokenLinkedData
+    fullName: brokenLinkedData
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BrokenLinkedData"'
+  - uid: excel.Excel.LinkedDataTypeState.disambiguationNeeded
+    name: disambiguationNeeded
+    fullName: disambiguationNeeded
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DisambiguationNeeded"'
+  - uid: excel.Excel.LinkedDataTypeState.fetchingData
+    name: fetchingData
+    fullName: fetchingData
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FetchingData"'
+  - uid: excel.Excel.LinkedDataTypeState.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel.Excel.LinkedDataTypeState.validLinkedData
+    name: validLinkedData
+    fullName: validLinkedData
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ValidLinkedData"'

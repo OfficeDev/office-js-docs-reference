@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.AutoFillType
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.AutoFillType
+    fullName: Excel.AutoFillType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.AutoFillType.fillCopy
+      - excel.Excel.AutoFillType.fillDays
+      - excel.Excel.AutoFillType.fillDefault
+      - excel.Excel.AutoFillType.fillFormats
+      - excel.Excel.AutoFillType.fillMonths
+      - excel.Excel.AutoFillType.fillSeries
+      - excel.Excel.AutoFillType.fillValues
+      - excel.Excel.AutoFillType.fillWeekdays
+      - excel.Excel.AutoFillType.fillYears
+      - excel.Excel.AutoFillType.flashFill
+      - excel.Excel.AutoFillType.growthTrend
+      - excel.Excel.AutoFillType.linearTrend
+  - uid: excel.Excel.AutoFillType.fillCopy
+    name: fillCopy
+    fullName: fillCopy
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillCopy"'
+  - uid: excel.Excel.AutoFillType.fillDays
+    name: fillDays
+    fullName: fillDays
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillDays"'
+  - uid: excel.Excel.AutoFillType.fillDefault
+    name: fillDefault
+    fullName: fillDefault
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillDefault"'
+  - uid: excel.Excel.AutoFillType.fillFormats
+    name: fillFormats
+    fullName: fillFormats
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillFormats"'
+  - uid: excel.Excel.AutoFillType.fillMonths
+    name: fillMonths
+    fullName: fillMonths
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillMonths"'
+  - uid: excel.Excel.AutoFillType.fillSeries
+    name: fillSeries
+    fullName: fillSeries
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillSeries"'
+  - uid: excel.Excel.AutoFillType.fillValues
+    name: fillValues
+    fullName: fillValues
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillValues"'
+  - uid: excel.Excel.AutoFillType.fillWeekdays
+    name: fillWeekdays
+    fullName: fillWeekdays
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillWeekdays"'
+  - uid: excel.Excel.AutoFillType.fillYears
+    name: fillYears
+    fullName: fillYears
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FillYears"'
+  - uid: excel.Excel.AutoFillType.flashFill
+    name: flashFill
+    fullName: flashFill
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlashFill"'
+  - uid: excel.Excel.AutoFillType.growthTrend
+    name: growthTrend
+    fullName: growthTrend
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GrowthTrend"'
+  - uid: excel.Excel.AutoFillType.linearTrend
+    name: linearTrend
+    fullName: linearTrend
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LinearTrend"'

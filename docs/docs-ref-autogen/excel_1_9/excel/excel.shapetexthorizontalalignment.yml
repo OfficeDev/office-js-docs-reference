@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeTextHorizontalAlignment
+    summary: |-
+      Specifies the horizontal alignment for the text frame in a shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeTextHorizontalAlignment
+    fullName: Excel.ShapeTextHorizontalAlignment
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeTextHorizontalAlignment.center
+      - excel.Excel.ShapeTextHorizontalAlignment.distributed
+      - excel.Excel.ShapeTextHorizontalAlignment.justify
+      - excel.Excel.ShapeTextHorizontalAlignment.justifyLow
+      - excel.Excel.ShapeTextHorizontalAlignment.left
+      - excel.Excel.ShapeTextHorizontalAlignment.right
+      - excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.center
+    name: center
+    fullName: center
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Center"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.distributed
+    name: distributed
+    fullName: distributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Distributed"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.justify
+    name: justify
+    fullName: justify
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Justify"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.justifyLow
+    name: justifyLow
+    fullName: justifyLow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"JustifyLow"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.left
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.right
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: excel.Excel.ShapeTextHorizontalAlignment.thaiDistributed
+    name: thaiDistributed
+    fullName: thaiDistributed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThaiDistributed"'

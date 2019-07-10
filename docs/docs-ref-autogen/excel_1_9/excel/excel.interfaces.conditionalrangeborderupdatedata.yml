@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData
+    summary: >-
+      An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set(<!--
+      -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.ConditionalRangeBorderUpdateData
+    fullName: Excel.Interfaces.ConditionalRangeBorderUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.color
+      - excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.style
+  - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.color
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ConditionalRangeBorderUpdateData.style
+    summary: >-
+      One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
+      details.
+
+
+      \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" |
+        "Dot";
+      return:
+        type:
+          - Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
