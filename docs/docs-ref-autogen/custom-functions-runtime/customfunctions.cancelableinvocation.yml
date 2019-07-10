@@ -11,7 +11,6 @@ items:
 
 
       If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`<!-- -->.
-    isPreview: true
     name: CustomFunctions.CancelableInvocation
     fullName: CustomFunctions.CancelableInvocation
     langs:
@@ -24,7 +23,6 @@ items:
       - custom-functions-runtime.CustomFunctions.CancelableInvocation.onCanceled
   - uid: custom-functions-runtime.CustomFunctions.CancelableInvocation.onCanceled
     summary: Event handler called when the custom function is canceled.
-    isPreview: true
     name: onCanceled
     fullName: onCanceled
     langs:

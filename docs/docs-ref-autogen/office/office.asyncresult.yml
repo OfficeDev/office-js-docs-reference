@@ -48,7 +48,6 @@ items:
       - office.Office.AsyncResult.asyncContext
       - office.Office.AsyncResult.diagnostics
       - office.Office.AsyncResult.error
-      - office.Office.AsyncResult.id
       - office.Office.AsyncResult.status
       - office.Office.AsyncResult.value
   - uid: office.Office.AsyncResult.asyncContext
@@ -151,20 +150,6 @@ items:
               document.getElementById('message').innerText += message; 
           }
           ```
-  - uid: office.Office.AsyncResult.id
-    summary: >-
-      Gets the the GUID of the CustomXmlPart, when T (the type of the value property) is
-      [Office.CustomXmlPart](xref:office.Office.CustomXmlPart)<!-- -->.
-    name: id
-    fullName: id
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'id?: string;'
-      return:
-        type:
-          - string
   - uid: office.Office.AsyncResult.status
     summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
     name: status
