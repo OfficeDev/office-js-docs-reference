@@ -1,5 +1,5 @@
-import { OfficeExtension } from "../../api-extractor-inputs-office/office"
-import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
+import { OfficeExtension } from "../api-extractor-inputs-office/office"
+import { Office as Outlook} from "../api-extractor-inputs-outlook/outlook"
 ////////////////////////////////////////////////////////////////
 /////////////////////// Begin Word APIs ////////////////////////
 ////////////////////////////////////////////////////////////////

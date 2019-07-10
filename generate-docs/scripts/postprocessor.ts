@@ -87,7 +87,7 @@ tryCatch(async () => {
     // fix all the individual TOC files
     const commonTocFolder = path.resolve("../yaml/office");
     const commonToc = scrubAndWriteToc(commonTocFolder);
-    const hostVersionMap = [{host: "excel", versions: 9},
+    const hostVersionMap = [{host: "excel", versions: 10},
                             {host: "onenote", versions: 1},
                             {host: "outlook", versions: 8},
                             {host: "powerpoint", versions: 1},
