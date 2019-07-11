@@ -1774,6 +1774,8 @@ items:
             coercionType parameter. (See Remarks for more information about data coercion.)
           type:
             - '(result: AsyncResult<T>) => void'
+      typeParameters:
+        - id: T
   - uid: office.Office.Document.getSelectedDataAsync_1
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
@@ -1855,6 +1857,8 @@ items:
             coercionType parameter. (See Remarks for more information about data coercion.)
           type:
             - '(result: AsyncResult<T>) => void'
+      typeParameters:
+        - id: T
   - uid: office.Office.Document.getSelectedResourceAsync
     summary: Project documents only. Get the current selected Resource's Id.
     name: 'getSelectedResourceAsync(options, callback)'

@@ -272,6 +272,8 @@ items:
             the data is returned in the format described in the CoercionType enumeration topic.
           type:
             - '(result: AsyncResult<T>) => void'
+      typeParameters:
+        - id: T
   - uid: office.Office.Binding.getDataAsync_1
     summary: Returns the data contained within the binding.
     remarks: >-
@@ -424,6 +426,8 @@ items:
             the data is returned in the format described in the CoercionType enumeration topic.
           type:
             - '(result: AsyncResult<T>) => void'
+      typeParameters:
+        - id: T
   - uid: office.Office.Binding.removeHandlerAsync
     summary: Removes the specified handler from the binding for the specified event type.
     remarks: >-

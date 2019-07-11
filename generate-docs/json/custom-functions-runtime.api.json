@@ -1,8 +1,9 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.1.0",
-    "schemaVersion": 1000
+    "toolVersion": "7.3.1",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
   "canonicalReference": "custom-functions-runtime",
@@ -37,7 +38,7 @@
           "members": [
             {
               "kind": "Function",
-              "canonicalReference": "(associate:0)",
+              "canonicalReference": "(associate:1)",
               "docComment": "/**\n * Associates the JavaScript function to the name given by the \"id\" property in the metadata JSON file.\n */\n",
               "excerptTokens": [
                 {
@@ -98,7 +99,7 @@
                 "endIndex": 12
               },
               "releaseTag": "Public",
-              "overloadIndex": 0,
+              "overloadIndex": 1,
               "parameters": [
                 {
                   "parameterName": "id",
@@ -119,7 +120,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "(associate:1)",
+              "canonicalReference": "(associate:2)",
               "docComment": "/**\n * Associates the JavaScript functions to the names given by the \"id\" properties in the metadata JSON file.\n */\n",
               "excerptTokens": [
                 {
@@ -180,7 +181,7 @@
                 "endIndex": 12
               },
               "releaseTag": "Public",
-              "overloadIndex": 1,
+              "overloadIndex": 2,
               "parameters": [
                 {
                   "parameterName": "mappings",
@@ -346,6 +347,19 @@
                 }
               ],
               "releaseTag": "Public",
+              "typeParameters": [
+                {
+                  "typeParameterName": "ResultType",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "StreamingInvocation",
               "members": [
                 {

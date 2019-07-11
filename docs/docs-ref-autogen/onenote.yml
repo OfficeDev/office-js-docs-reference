@@ -172,6 +172,8 @@ items:
             access to the OneNote object model from the add-in.
           type:
             - '(context: OneNote.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: onenote.OneNote.run_1
     summary: >-
       Executes a batch script that performs actions on the OneNote object model, using the request context of a
@@ -203,6 +205,8 @@ items:
             during execution will be released.
           type:
             - '(context: OneNote.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: onenote.OneNote.run_2
     summary: >-
       Executes a batch script that performs actions on the OneNote object model, using the request context of
@@ -232,6 +236,8 @@ items:
             during execution will be released.
           type:
             - '(context: OneNote.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
 references:
   - uid: onenote.OneNote.Application
     name: OneNote.Application
