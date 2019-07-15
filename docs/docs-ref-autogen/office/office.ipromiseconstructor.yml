@@ -9,6 +9,7 @@ items:
     package: office
     children:
       - office.Office.IPromiseConstructor.all
+      - office.Office.IPromiseConstructor.all_9
       - office.Office.IPromiseConstructor.all_1
       - office.Office.IPromiseConstructor.all_2
       - office.Office.IPromiseConstructor.all_3
@@ -17,8 +18,8 @@ items:
       - office.Office.IPromiseConstructor.all_6
       - office.Office.IPromiseConstructor.all_7
       - office.Office.IPromiseConstructor.all_8
-      - office.Office.IPromiseConstructor.all_9
       - office.Office.IPromiseConstructor.race
+      - office.Office.IPromiseConstructor.race_9
       - office.Office.IPromiseConstructor.race_1
       - office.Office.IPromiseConstructor.race_2
       - office.Office.IPromiseConstructor.race_3
@@ -27,7 +28,6 @@ items:
       - office.Office.IPromiseConstructor.race_6
       - office.Office.IPromiseConstructor.race_7
       - office.Office.IPromiseConstructor.race_8
-      - office.Office.IPromiseConstructor.race_9
       - office.Office.IPromiseConstructor.reject
       - office.Office.IPromiseConstructor.reject_1
       - office.Office.IPromiseConstructor.resolve
@@ -60,6 +60,39 @@ items:
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>,
               T10 | PromiseLike<T10>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
+        - id: T8
+        - id: T9
+        - id: T10
+  - uid: office.Office.IPromiseConstructor.all_9
+    summary: >-
+      Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
+      when any Promise is rejected.
+    name: all(values)
+    fullName: all(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'all<T>(values: (T | PromiseLike<T>)[]): Promise<T[]>;'
+      return:
+        type:
+          - 'Promise<T[]>'
+        description: A new Promise.
+      parameters:
+        - id: values
+          description: An array of Promises.
+          type:
+            - '(T | PromiseLike<T>)[]'
+      typeParameters:
+        - id: T
   - uid: office.Office.IPromiseConstructor.all_1
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -85,6 +118,16 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
+        - id: T8
+        - id: T9
   - uid: office.Office.IPromiseConstructor.all_2
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -110,6 +153,15 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
+        - id: T8
   - uid: office.Office.IPromiseConstructor.all_3
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -135,6 +187,14 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
   - uid: office.Office.IPromiseConstructor.all_4
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -159,6 +219,13 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
   - uid: office.Office.IPromiseConstructor.all_5
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -183,6 +250,12 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
   - uid: office.Office.IPromiseConstructor.all_6
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -205,6 +278,11 @@ items:
           description: An array of Promises.
           type:
             - '[T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>]'
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
   - uid: office.Office.IPromiseConstructor.all_7
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -227,6 +305,10 @@ items:
           description: An array of Promises.
           type:
             - '[T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>]'
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
   - uid: office.Office.IPromiseConstructor.all_8
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
@@ -247,26 +329,9 @@ items:
           description: An array of Promises.
           type:
             - '[T1 | PromiseLike<T1>, T2 | PromiseLike<T2>]'
-  - uid: office.Office.IPromiseConstructor.all_9
-    summary: >-
-      Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
-      when any Promise is rejected.
-    name: all(values)
-    fullName: all(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'all<T>(values: (T | PromiseLike<T>)[]): Promise<T[]>;'
-      return:
-        type:
-          - 'Promise<T[]>'
-        description: A new Promise.
-      parameters:
-        - id: values
-          description: An array of Promises.
-          type:
-            - '(T | PromiseLike<T>)[]'
+      typeParameters:
+        - id: T1
+        - id: T2
   - uid: office.Office.IPromiseConstructor.race
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -292,6 +357,37 @@ items:
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>,
               T10 | PromiseLike<T10>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
+        - id: T8
+        - id: T9
+        - id: T10
+  - uid: office.Office.IPromiseConstructor.race_9
+    summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
+    name: race(values)
+    fullName: race(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'race<T>(values: (T | PromiseLike<T>)[]): Promise<T>;'
+      return:
+        type:
+          - Promise<T>
+        description: A new Promise.
+      parameters:
+        - id: values
+          description: An array of Promises.
+          type:
+            - '(T | PromiseLike<T>)[]'
+      typeParameters:
+        - id: T
   - uid: office.Office.IPromiseConstructor.race_1
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -315,6 +411,16 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>, T9 | PromiseLike<T9>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
+        - id: T8
+        - id: T9
   - uid: office.Office.IPromiseConstructor.race_2
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -338,6 +444,15 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>, T8 | PromiseLike<T8>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
+        - id: T8
   - uid: office.Office.IPromiseConstructor.race_3
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -361,6 +476,14 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>, T7 | PromiseLike<T7>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
+        - id: T7
   - uid: office.Office.IPromiseConstructor.race_4
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -383,6 +506,13 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>, T6 | PromiseLike<T6>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
+        - id: T6
   - uid: office.Office.IPromiseConstructor.race_5
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -405,6 +535,12 @@ items:
             - >-
               [T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>, T5 |
               PromiseLike<T5>]
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
+        - id: T5
   - uid: office.Office.IPromiseConstructor.race_6
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -425,6 +561,11 @@ items:
           description: An array of Promises.
           type:
             - '[T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>, T4 | PromiseLike<T4>]'
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
+        - id: T4
   - uid: office.Office.IPromiseConstructor.race_7
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -445,6 +586,10 @@ items:
           description: An array of Promises.
           type:
             - '[T1 | PromiseLike<T1>, T2 | PromiseLike<T2>, T3 | PromiseLike<T3>]'
+      typeParameters:
+        - id: T1
+        - id: T2
+        - id: T3
   - uid: office.Office.IPromiseConstructor.race_8
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
@@ -463,24 +608,9 @@ items:
           description: An array of Promises.
           type:
             - '[T1 | PromiseLike<T1>, T2 | PromiseLike<T2>]'
-  - uid: office.Office.IPromiseConstructor.race_9
-    summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
-    name: race(values)
-    fullName: race(values)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'race<T>(values: (T | PromiseLike<T>)[]): Promise<T>;'
-      return:
-        type:
-          - Promise<T>
-        description: A new Promise.
-      parameters:
-        - id: values
-          description: An array of Promises.
-          type:
-            - '(T | PromiseLike<T>)[]'
+      typeParameters:
+        - id: T1
+        - id: T2
   - uid: office.Office.IPromiseConstructor.reject
     summary: Creates a new rejected promise for the provided reason.
     name: reject(reason)
@@ -517,6 +647,8 @@ items:
           description: The reason the promise was rejected.
           type:
             - any
+      typeParameters:
+        - id: T
   - uid: office.Office.IPromiseConstructor.resolve
     summary: Creates a new resolved promise for the provided value.
     name: resolve(value)
@@ -535,6 +667,8 @@ items:
           description: A promise.
           type:
             - T | PromiseLike<T>
+      typeParameters:
+        - id: T
   - uid: office.Office.IPromiseConstructor.resolve_1
     summary: Creates a new resolved promise.
     name: resolve()

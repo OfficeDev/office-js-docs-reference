@@ -112,6 +112,8 @@ items:
             access to the Visio object model from the add-in.
           type:
             - '(context: Visio.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: visio.Visio.run_1
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the request context of a
@@ -143,6 +145,8 @@ items:
             during execution will be released.
           type:
             - '(context: Visio.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: visio.Visio.run_2
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the request context of
@@ -175,6 +179,8 @@ items:
             during execution will be released.
           type:
             - '(context: Visio.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: visio.Visio.run_3
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the RequestContext of a
@@ -222,6 +228,8 @@ items:
             access to the Visio object model from the add-in.
           type:
             - '(context: Visio.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
 references:
   - uid: visio.Visio.Application
     name: Visio.Application

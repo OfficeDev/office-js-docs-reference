@@ -1,8 +1,9 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.1.0",
-    "schemaVersion": 1000
+    "toolVersion": "7.3.1",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
   "canonicalReference": "visio",
@@ -104,7 +105,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -170,7 +171,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -184,7 +185,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -234,7 +235,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -248,7 +249,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -314,7 +315,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -328,7 +329,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.Application): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -402,7 +403,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -423,7 +424,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -473,7 +474,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -517,7 +518,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(showToolbar:instance,0)",
+                  "canonicalReference": "(showToolbar:instance,1)",
                   "docComment": "/**\n * Sets the visibility of a specific toolbar in the application.\n *\n * [Api set: 1.1]\n *\n * @param id - The type of the Toolbar\n *\n * @param show - Whether the toolbar is visibile or not.\n */\n",
                   "excerptTokens": [
                     {
@@ -583,7 +584,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "id",
@@ -604,7 +605,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(showToolbar:instance,1)",
+                  "canonicalReference": "(showToolbar:instance,2)",
                   "docComment": "/**\n * Sets the visibility of a specific toolbar in the application.\n *\n * [Api set: 1.1]\n *\n * @param idString - The type of the Toolbar\n *\n * @param show - Whether the toolbar is visibile or not.\n */\n",
                   "excerptTokens": [
                     {
@@ -662,7 +663,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "idString",
@@ -1035,7 +1036,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Comment` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Comment` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Comment` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1101,7 +1102,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -1115,7 +1116,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1165,7 +1166,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -1179,7 +1180,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1245,7 +1246,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -1259,7 +1260,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.Comment): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -1333,7 +1334,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -1354,7 +1355,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -1404,7 +1405,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -1724,7 +1725,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.CommentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.CommentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.CommentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1814,7 +1815,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -1828,7 +1829,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1878,7 +1879,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -1892,7 +1893,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -1950,7 +1951,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -2258,7 +2259,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2324,7 +2325,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -2338,7 +2339,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2388,7 +2389,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -2402,7 +2403,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2468,7 +2469,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -2896,7 +2897,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.Document): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -2970,7 +2971,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -2991,7 +2992,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -3041,7 +3042,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -3510,7 +3511,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.DocumentView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.DocumentView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.DocumentView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -3576,7 +3577,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -3590,7 +3591,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -3640,7 +3641,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -3654,7 +3655,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -3720,7 +3721,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -3734,7 +3735,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.DocumentView): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -3808,7 +3809,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -3829,7 +3830,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -3879,7 +3880,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -4372,7 +4373,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Hyperlink` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Hyperlink` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Hyperlink` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4438,7 +4439,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -4452,7 +4453,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4502,7 +4503,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -4516,7 +4517,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4582,7 +4583,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -4906,7 +4907,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.HyperlinkCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.HyperlinkCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.HyperlinkCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4996,7 +4997,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -5010,7 +5011,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5060,7 +5061,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -5074,7 +5075,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -5132,7 +5133,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -11592,7 +11593,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Page` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11658,7 +11659,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -11672,7 +11673,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11722,7 +11723,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -11736,7 +11737,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11802,7 +11803,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -11850,7 +11851,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.Page): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -11924,7 +11925,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -11945,7 +11946,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -11995,7 +11996,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -12403,7 +12404,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -12493,7 +12494,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -12507,7 +12508,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -12557,7 +12558,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -12571,7 +12572,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -12629,7 +12630,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -13193,7 +13194,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.PageView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.PageView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.PageView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -13259,7 +13260,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -13273,7 +13274,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -13323,7 +13324,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -13337,7 +13338,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -13403,7 +13404,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -13417,7 +13418,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.PageView): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -13491,7 +13492,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -13512,7 +13513,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -13562,7 +13563,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -13844,7 +13845,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "(:constructor,instance,0)",
+                  "canonicalReference": "(:constructor,0)",
                   "docComment": "/**\n * Constructs a new instance of the `RequestContext` class\n */\n",
                   "excerptTokens": [
                     {
@@ -13880,7 +13881,6 @@
                       "text": ");"
                     }
                   ],
-                  "isStatic": false,
                   "releaseTag": "Public",
                   "overloadIndex": 0,
                   "parameters": [
@@ -13936,7 +13936,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:0)",
+              "canonicalReference": "(run:1)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Visio object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the request context is required to get access to the Visio object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
@@ -14041,7 +14041,7 @@
                 "endIndex": 23
               },
               "releaseTag": "Public",
-              "overloadIndex": 0,
+              "overloadIndex": 1,
               "parameters": [
                 {
                   "parameterName": "batch",
@@ -14051,11 +14051,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:1)",
+              "canonicalReference": "(run:2)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Visio object model, using the request context of a previously-created API object.\n *\n * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in an Visio.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n */\n",
               "excerptTokens": [
                 {
@@ -14200,7 +14213,7 @@
                 "endIndex": 33
               },
               "releaseTag": "Public",
-              "overloadIndex": 1,
+              "overloadIndex": 2,
               "parameters": [
                 {
                   "parameterName": "object",
@@ -14217,11 +14230,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:2)",
+              "canonicalReference": "(run:3)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Visio object model, using the request context of previously-created API objects.\n *\n * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in a Visio.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n */\n",
               "excerptTokens": [
                 {
@@ -14354,7 +14380,7 @@
                 "endIndex": 30
               },
               "releaseTag": "Public",
-              "overloadIndex": 2,
+              "overloadIndex": 3,
               "parameters": [
                 {
                   "parameterName": "objects",
@@ -14371,11 +14397,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:3)",
+              "canonicalReference": "(run:4)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Visio object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @remarks\n *\n * In addition to this signature, the method also has the following signatures:\n *\n * `run<T>(batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`\n *\n * `run<T>(object: OfficeExtension.ClientObject | OfficeExtension.EmbeddedSession, batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`\n *\n * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>): Promise<T>;`\n *\n * @param contextObject - A previously-created Visio.RequestContext. This context will get re-used by the batch function (instead of having a new context created). This means that the batch will be able to pick up changes made to existing API objects, if those objects were derived from this same context.\n *\n * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Visio application. Since the Office add-in and the Visio application run in two different processes, the RequestContext is required to get access to the Visio object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
@@ -14504,7 +14543,7 @@
                 "endIndex": 29
               },
               "releaseTag": "Public",
-              "overloadIndex": 3,
+              "overloadIndex": 4,
               "parameters": [
                 {
                   "parameterName": "contextObject",
@@ -14518,6 +14557,19 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 13,
                     "endIndex": 24
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
                   }
                 }
               ],
@@ -14592,7 +14644,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -14642,7 +14694,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -14656,7 +14708,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -14722,7 +14774,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -15160,7 +15212,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.Shape` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.Shape` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.Shape` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -15226,7 +15278,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -15240,7 +15292,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -15290,7 +15342,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -15304,7 +15356,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -15370,7 +15422,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -15448,7 +15500,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.Shape): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -15522,7 +15574,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -15543,7 +15595,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -15593,7 +15645,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -16043,7 +16095,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.ShapeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.ShapeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -16133,7 +16185,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -16147,7 +16199,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -16197,7 +16249,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -16211,7 +16263,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -16269,7 +16321,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -16507,7 +16559,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.ShapeDataItem` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItem` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -16573,7 +16625,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -16587,7 +16639,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -16637,7 +16689,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -16651,7 +16703,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -16717,7 +16769,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -17041,7 +17093,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.ShapeDataItemCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.ShapeDataItemCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeDataItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -17131,7 +17183,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -17145,7 +17197,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -17195,7 +17247,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -17209,7 +17261,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -17267,7 +17319,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -17537,7 +17589,7 @@
               "members": [
                 {
                   "kind": "Method",
-                  "canonicalReference": "(addOverlay:instance,0)",
+                  "canonicalReference": "(addOverlay:instance,1)",
                   "docComment": "/**\n * Adds an overlay on top of the shape.\n *\n * [Api set: 1.1]\n *\n * @param OverlayType - An Overlay Type. Can be 'Text' or 'Image'.\n *\n * @param Content - Content of Overlay.\n *\n * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.\n *\n * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.\n *\n * @param Width - Overlay Width.\n *\n * @param Height - Overlay Height.\n */\n",
                   "excerptTokens": [
                     {
@@ -17695,7 +17747,7 @@
                     "endIndex": 36
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "OverlayType",
@@ -17744,7 +17796,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(addOverlay:instance,1)",
+                  "canonicalReference": "(addOverlay:instance,2)",
                   "docComment": "/**\n * Adds an overlay on top of the shape.\n *\n * [Api set: 1.1]\n *\n * @param OverlayTypeString - An Overlay Type. Can be 'Text' or 'Image'.\n *\n * @param Content - Content of Overlay.\n *\n * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.\n *\n * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.\n *\n * @param Width - Overlay Width.\n *\n * @param Height - Overlay Height.\n */\n",
                   "excerptTokens": [
                     {
@@ -17878,7 +17930,7 @@
                     "endIndex": 30
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "OverlayTypeString",
@@ -17995,7 +18047,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Visio.ShapeView` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Visio.ShapeView` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Visio.ShapeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -18061,7 +18113,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -18075,7 +18127,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -18125,7 +18177,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -18139,7 +18191,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -18205,7 +18257,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -18275,7 +18327,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Visio.ShapeView): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -18349,7 +18401,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -18370,7 +18422,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -18420,7 +18472,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",

@@ -13,6 +13,9 @@ items:
     langs:
       - typeScript
     type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: office
     remarks: |-
 
