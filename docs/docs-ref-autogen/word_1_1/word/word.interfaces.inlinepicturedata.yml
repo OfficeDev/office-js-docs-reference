@@ -14,7 +14,6 @@ items:
       - word.Word.Interfaces.InlinePictureData.height
       - word.Word.Interfaces.InlinePictureData.hyperlink
       - word.Word.Interfaces.InlinePictureData.lockAspectRatio
-      - word.Word.Interfaces.InlinePictureData.parentContentControl
       - word.Word.Interfaces.InlinePictureData.width
   - uid: word.Word.Interfaces.InlinePictureData.altTextDescription
     summary: |-
@@ -91,23 +90,6 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureData.parentContentControl
-    summary: >-
-      Gets the content control that contains the inline image. Throws if there isn't a parent content control.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
-    fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
-      return:
-        type:
-          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.InlinePictureData.width
     summary: |-
       Gets or sets a number that describes the width of the inline image.

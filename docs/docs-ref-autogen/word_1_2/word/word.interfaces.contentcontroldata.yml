@@ -18,7 +18,6 @@ items:
       - word.Word.Interfaces.ContentControlData.id
       - word.Word.Interfaces.ContentControlData.inlinePictures
       - word.Word.Interfaces.ContentControlData.paragraphs
-      - word.Word.Interfaces.ContentControlData.parentContentControl
       - word.Word.Interfaces.ContentControlData.placeholderText
       - word.Word.Interfaces.ContentControlData.removeWhenEdited
       - word.Word.Interfaces.ContentControlData.style
@@ -167,23 +166,6 @@ items:
       return:
         type:
           - 'Word.Interfaces.ParagraphData[]'
-  - uid: word.Word.Interfaces.ContentControlData.parentContentControl
-    summary: >-
-      Gets the content control that contains the content control. Throws if there isn't a parent content control.
-      Read-only.
-
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
-    fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
-      return:
-        type:
-          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.ContentControlData.placeholderText
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control

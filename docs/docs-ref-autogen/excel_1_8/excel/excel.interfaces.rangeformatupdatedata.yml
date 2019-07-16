@@ -9,6 +9,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.RangeFormatUpdateData.borders
       - excel.Excel.Interfaces.RangeFormatUpdateData.columnWidth
       - excel.Excel.Interfaces.RangeFormatUpdateData.fill
       - excel.Excel.Interfaces.RangeFormatUpdateData.font
@@ -20,6 +21,21 @@ items:
       - excel.Excel.Interfaces.RangeFormatUpdateData.useStandardWidth
       - excel.Excel.Interfaces.RangeFormatUpdateData.verticalAlignment
       - excel.Excel.Interfaces.RangeFormatUpdateData.wrapText
+  - uid: excel.Excel.Interfaces.RangeFormatUpdateData.borders
+    summary: |-
+      Collection of border objects that apply to the overall range.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.Interfaces.RangeBorderCollectionUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.RangeBorderCollectionUpdateData
   - uid: excel.Excel.Interfaces.RangeFormatUpdateData.columnWidth
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be

@@ -1,8 +1,10 @@
+import { OfficeExtension } from "../../api-extractor-inputs-office/office"
+import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 ////////////////////////////////////////////////////////////////
 /////////////////////// Begin Excel APIs ///////////////////////
 ////////////////////////////////////////////////////////////////
 
-declare namespace Excel {
+export declare namespace Excel {
     
     
     
@@ -20,93 +22,93 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      *
-     * @param base64File Optional. The base64 encoded .xlsx file. The default value is null.
+     * @param base64File - Optional. The base64 encoded .xlsx file. The default value is null.
      */
-    function createWorkbook(base64?: string): Promise<void>;
-    interface ThreeArrowsSet {
+    export function createWorkbook(base64?: string): Promise<void>;
+    export interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowSideArrow: Icon;
         greenUpArrow: Icon;
     }
-    interface ThreeArrowsGraySet {
+    export interface ThreeArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         graySideArrow: Icon;
         grayUpArrow: Icon;
     }
-    interface ThreeFlagsSet {
+    export interface ThreeFlagsSet {
         [index: number]: Icon;
         redFlag: Icon;
         yellowFlag: Icon;
         greenFlag: Icon;
     }
-    interface ThreeTrafficLights1Set {
+    export interface ThreeTrafficLights1Set {
         [index: number]: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    interface ThreeTrafficLights2Set {
+    export interface ThreeTrafficLights2Set {
         [index: number]: Icon;
         redTrafficLight: Icon;
         yellowTrafficLight: Icon;
         greenTrafficLight: Icon;
     }
-    interface ThreeSignsSet {
+    export interface ThreeSignsSet {
         [index: number]: Icon;
         redDiamond: Icon;
         yellowTriangle: Icon;
         greenCircle: Icon;
     }
-    interface ThreeSymbolsSet {
+    export interface ThreeSymbolsSet {
         [index: number]: Icon;
         redCrossSymbol: Icon;
         yellowExclamationSymbol: Icon;
         greenCheckSymbol: Icon;
     }
-    interface ThreeSymbols2Set {
+    export interface ThreeSymbols2Set {
         [index: number]: Icon;
         redCross: Icon;
         yellowExclamation: Icon;
         greenCheck: Icon;
     }
-    interface FourArrowsSet {
+    export interface FourArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    interface FourArrowsGraySet {
+    export interface FourArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    interface FourRedToBlackSet {
+    export interface FourRedToBlackSet {
         [index: number]: Icon;
         blackCircle: Icon;
         grayCircle: Icon;
         pinkCircle: Icon;
         redCircle: Icon;
     }
-    interface FourRatingSet {
+    export interface FourRatingSet {
         [index: number]: Icon;
         oneBar: Icon;
         twoBars: Icon;
         threeBars: Icon;
         fourBars: Icon;
     }
-    interface FourTrafficLightsSet {
+    export interface FourTrafficLightsSet {
         [index: number]: Icon;
         blackCircleWithBorder: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    interface FiveArrowsSet {
+    export interface FiveArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
@@ -114,7 +116,7 @@ declare namespace Excel {
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    interface FiveArrowsGraySet {
+    export interface FiveArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
@@ -122,7 +124,7 @@ declare namespace Excel {
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    interface FiveRatingSet {
+    export interface FiveRatingSet {
         [index: number]: Icon;
         noBars: Icon;
         oneBar: Icon;
@@ -130,7 +132,7 @@ declare namespace Excel {
         threeBars: Icon;
         fourBars: Icon;
     }
-    interface FiveQuartersSet {
+    export interface FiveQuartersSet {
         [index: number]: Icon;
         whiteCircleAllWhiteQuarters: Icon;
         circleWithThreeWhiteQuarters: Icon;
@@ -138,19 +140,19 @@ declare namespace Excel {
         circleWithOneWhiteQuarter: Icon;
         blackCircle: Icon;
     }
-    interface ThreeStarsSet {
+    export interface ThreeStarsSet {
         [index: number]: Icon;
         silverStar: Icon;
         halfGoldStar: Icon;
         goldStar: Icon;
     }
-    interface ThreeTrianglesSet {
+    export interface ThreeTrianglesSet {
         [index: number]: Icon;
         redDownTriangle: Icon;
         yellowDash: Icon;
         greenUpTriangle: Icon;
     }
-    interface FiveBoxesSet {
+    export interface FiveBoxesSet {
         [index: number]: Icon;
         noFilledBoxes: Icon;
         oneFilledBox: Icon;
@@ -158,7 +160,7 @@ declare namespace Excel {
         threeFilledBoxes: Icon;
         fourFilledBoxes: Icon;
     }
-    interface IconCollections {
+    export interface IconCollections {
         threeArrows: ThreeArrowsSet;
         threeArrowsGray: ThreeArrowsGraySet;
         threeFlags: ThreeFlagsSet;
@@ -184,7 +186,7 @@ declare namespace Excel {
     /**
      * Provides connection session for a remote workbook.
      */
-    class Session {
+    export class Session {
         private static WorkbookSessionIdHeaderName;
         private static WorkbookSessionIdHeaderNameLower;
         constructor(workbookUrl?: string, requestHeaders?: {
@@ -198,13 +200,13 @@ declare namespace Excel {
     /**
      * The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the request context is required to get access to the Excel object model from the add-in.
      */
-    class RequestContext extends OfficeCore.RequestContext {
+    export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;
         readonly runtime: Runtime;
     }
-    interface RunOptions extends OfficeExtension.RunOptions<Session> {
+    export interface RunOptions extends OfficeExtension.RunOptions<Session> {
         /**
          * Determines whether Excel will delay the batch request until the user exits cell edit mode.
          *
@@ -217,25 +219,25 @@ declare namespace Excel {
      * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      * @param object - A previously-created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of previously-created API objects.
      * @param objects - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
     * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param options - The additional options for this Excel.run which specify previous objects, whether to delay the request for cell edit, session info, etc.
     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
     */
-    function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function run<T>(options: Excel.RunOptions, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
     /**
      * Executes a batch script that performs actions on the Excel object model, using the RequestContext of a previously-created object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
      *
@@ -254,16 +256,16 @@ declare namespace Excel {
      * @param context - A previously-created object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
      * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
      */
-    function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
-    function postprocessBindingDescriptor(response: any): any;
-    function getDataCommonPostprocess(response: any, callArgs: any): any;
+    export function run<T>(context: OfficeExtension.ClientRequestContext, batch: (context: Excel.RequestContext) => Promise<T>): Promise<T>;
+    export function postprocessBindingDescriptor(response: any): any;
+    export function getDataCommonPostprocess(response: any, callArgs: any): any;
     /**
      *
      * Provides information about the binding that raised the SelectionChanged event.
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface BindingSelectionChangedEventArgs {
+    export interface BindingSelectionChangedEventArgs {
         /**
          *
          * Gets the Binding object that represents the binding that raised the SelectionChanged event.
@@ -306,7 +308,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface BindingDataChangedEventArgs {
+    export interface BindingDataChangedEventArgs {
         /**
          *
          * Gets the Binding object that represents the binding that raised the DataChanged event.
@@ -321,7 +323,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface SelectionChangedEventArgs {
+    export interface SelectionChangedEventArgs {
         /**
          *
          * Gets the workbook object that raised the SelectionChanged event.
@@ -336,7 +338,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.4]
      */
-    interface SettingsChangedEventArgs {
+    export interface SettingsChangedEventArgs {
         /**
          *
          * Gets the Setting object that represents the binding that raised the SettingsChanged event
@@ -353,7 +355,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface WorksheetChangedEventArgs {
+    export interface WorksheetChangedEventArgs {
         /**
          *
          * Gets the range address that represents the changed area of a specific worksheet.
@@ -412,7 +414,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface TableChangedEventArgs {
+    export interface TableChangedEventArgs {
         /**
          *
          * Gets the address that represents the changed area of a table on a specific worksheet.
@@ -477,7 +479,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface WorksheetActivatedEventArgs {
+    export interface WorksheetActivatedEventArgs {
         /**
          *
          * Gets the type of the event. See Excel.EventType for details.
@@ -499,7 +501,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface WorksheetDeactivatedEventArgs {
+    export interface WorksheetDeactivatedEventArgs {
         /**
          *
          * Gets the type of the event. See Excel.EventType for details.
@@ -521,7 +523,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface WorksheetSelectionChangedEventArgs {
+    export interface WorksheetSelectionChangedEventArgs {
         /**
          *
          * Gets the range address that represents the selected area of a specific worksheet.
@@ -550,7 +552,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface TableSelectionChangedEventArgs {
+    export interface TableSelectionChangedEventArgs {
         /**
          *
          * Gets the range address that represents the selected area of the table on a specific worksheet.
@@ -593,7 +595,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface WorksheetAddedEventArgs {
+    export interface WorksheetAddedEventArgs {
         /**
          *
          * Gets the source of the event. See Excel.EventSource for details.
@@ -622,7 +624,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface WorksheetDeletedEventArgs {
+    export interface WorksheetDeletedEventArgs {
         /**
          *
          * Gets the source of the event. See Excel.EventSource for details.
@@ -651,7 +653,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface ChartAddedEventArgs {
+    export interface ChartAddedEventArgs {
         /**
          *
          * Gets the id of the chart that is added to the worksheet.
@@ -687,7 +689,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface ChartActivatedEventArgs {
+    export interface ChartActivatedEventArgs {
         /**
          *
          * Gets the id of the chart that is activated.
@@ -716,7 +718,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface ChartDeactivatedEventArgs {
+    export interface ChartDeactivatedEventArgs {
         /**
          *
          * Gets the id of the chart that is deactivated.
@@ -745,7 +747,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface ChartDeletedEventArgs {
+    export interface ChartDeletedEventArgs {
         /**
          *
          * Gets the id of the chart that is deleted from the worksheet.
@@ -781,7 +783,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface WorksheetCalculatedEventArgs {
+    export interface WorksheetCalculatedEventArgs {
         /**
          *
          * Gets the type of the event. See Excel.EventType for details.
@@ -807,7 +809,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class Runtime extends OfficeExtension.ClientObject {
+    export class Runtime extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -825,8 +827,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Runtime): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RuntimeUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -844,14 +846,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Runtime` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RuntimeLoadOptions): Excel.Runtime;
-        load(option?: string | string[]): Excel.Runtime;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Runtime;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Runtime;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Runtime;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Runtime object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RuntimeData`) that contains shallow copies of any loaded child properties from the original object.
@@ -864,7 +871,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Application extends OfficeExtension.ClientObject {
+    export class Application extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         
@@ -885,8 +892,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Application): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ApplicationUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -897,7 +904,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationType Specifies the calculation type to use. See Excel.CalculationType for details.
+         * @param calculationType - Specifies the calculation type to use. See Excel.CalculationType for details.
          */
         calculate(calculationType: Excel.CalculationType): void;
         /**
@@ -906,9 +913,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param calculationType Specifies the calculation type to use. See Excel.CalculationType for details.
+         * @param calculationTypeString - Specifies the calculation type to use. See Excel.CalculationType for details.
          */
-        calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;
+        calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;
         /**
          *
          * Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to re-calc the workbook, to ensure that any dependencies are propagated.
@@ -930,14 +937,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;
-        load(option?: string | string[]): Excel.Application;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Application;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Application;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Application;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -951,7 +963,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Workbook extends OfficeExtension.ClientObject {
+    export class Workbook extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -1073,8 +1085,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Workbook): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -1110,14 +1122,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Workbook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;
-        load(option?: string | string[]): Excel.Workbook;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Workbook;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Workbook;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;
         
         /**
          *
@@ -1140,7 +1157,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class WorkbookProtection extends OfficeExtension.ClientObject {
+    export class WorkbookProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -1156,7 +1173,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param password workbook protection password.
+         * @param password - workbook protection password.
          */
         protect(password?: string): void;
         /**
@@ -1165,7 +1182,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param password workbook protection password.
+         * @param password - workbook protection password.
          */
         unprotect(password?: string): void;
         /**
@@ -1181,14 +1198,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.WorkbookProtectionLoadOptions): Excel.WorkbookProtection;
-        load(option?: string | string[]): Excel.WorkbookProtection;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.WorkbookProtection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.WorkbookProtection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorkbookProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1201,7 +1223,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class WorkbookCreated extends OfficeExtension.ClientObject {
+    export class WorkbookCreated extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -1217,13 +1239,18 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorkbookCreated` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
-        load(option?: string | string[]): Excel.WorkbookCreated;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.WorkbookCreated;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.WorkbookCreated;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorkbookCreated;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorkbookCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookCreatedData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1236,7 +1263,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Worksheet extends OfficeExtension.ClientObject {
+    export class Worksheet extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         
@@ -1363,8 +1390,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Worksheet): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.WorksheetUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -1382,7 +1409,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param markAllDirty True, to mark all as dirty.
+         * @param markAllDirty - True, to mark all as dirty.
          */
         calculate(markAllDirty: boolean): void;
         /**
@@ -1391,8 +1418,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param positionType Optional.
-         * @param relativeTo Optional.
+         * @param positionType - Optional.
+         * @param relativeTo - Optional.
          */
         copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
@@ -1401,10 +1428,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param positionType Optional.
-         * @param relativeTo Optional.
+         * @param positionTypeString - Optional.
+         * @param relativeTo - Optional.
          */
-        copy(positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
+        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet): Excel.Worksheet;
         /**
          *
          * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
@@ -1420,8 +1447,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param row The row number of the cell to be retrieved. Zero-indexed.
-         * @param column the column number of the cell to be retrieved. Zero-indexed.
+         * @param row - The row number of the cell to be retrieved. Zero-indexed.
+         * @param column - the column number of the cell to be retrieved. Zero-indexed.
          */
         getCell(row: number, column: number): Excel.Range;
         /**
@@ -1430,7 +1457,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getNext(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -1439,7 +1466,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -1448,7 +1475,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getPrevious(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -1457,7 +1484,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -1466,7 +1493,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param address Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
+         * @param address - Optional. The string representing the address or name of the range. For example, "A1:B2". If not specified, the entire worksheet range is returned.
          */
         getRange(address?: string): Excel.Range;
         /**
@@ -1475,10 +1502,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param startRow Start row (zero-indexed).
-         * @param startColumn Start column (zero-indexed).
-         * @param rowCount Number of rows to include in the range.
-         * @param columnCount Number of columns to include in the range.
+         * @param startRow - Start row (zero-indexed).
+         * @param startColumn - Start column (zero-indexed).
+         * @param rowCount - Number of rows to include in the range.
+         * @param columnCount - Number of columns to include in the range.
          */
         getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number): Excel.Range;
         
@@ -1488,7 +1515,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param valuesOnly Optional. If true, considers only cells with values as used cells (ignoring formatting). [Api set: ExcelApi 1.2]
+         * @param valuesOnly - Optional. If true, considers only cells with values as used cells (ignoring formatting). [Api set: ExcelApi 1.2]
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
@@ -1497,7 +1524,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param valuesOnly Optional. Considers only cells with values as used cells.
+         * @param valuesOnly - Optional. Considers only cells with values as used cells.
          */
         getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;
         
@@ -1514,14 +1541,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Worksheet` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;
-        load(option?: string | string[]): Excel.Worksheet;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Worksheet;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Worksheet;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;
         /**
          *
          * Occurs when the worksheet is activated.
@@ -1580,7 +1612,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class WorksheetCollection extends OfficeExtension.ClientObject {
+    export class WorksheetCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -1591,7 +1623,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param name Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.
+         * @param name - Optional. The name of the worksheet to be added. If specified, name should be unqiue. If not specified, Excel determines the name of the new worksheet.
          */
         add(name?: string): Excel.Worksheet;
         /**
@@ -1607,7 +1639,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getCount(visibleOnly?: boolean): OfficeExtension.ClientResult<number>;
         /**
@@ -1616,7 +1648,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getFirst(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -1625,7 +1657,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param key The Name or ID of the worksheet.
+         * @param key - The Name or ID of the worksheet.
          */
         getItem(key: string): Excel.Worksheet;
         /**
@@ -1634,7 +1666,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key The Name or ID of the worksheet.
+         * @param key - The Name or ID of the worksheet.
          */
         getItemOrNullObject(key: string): Excel.Worksheet;
         /**
@@ -1643,7 +1675,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param visibleOnly Optional. If true, considers only visible worksheets, skipping over any hidden ones.
+         * @param visibleOnly - Optional. If true, considers only visible worksheets, skipping over any hidden ones.
          */
         getLast(visibleOnly?: boolean): Excel.Worksheet;
         /**
@@ -1659,10 +1691,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.WorksheetCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.WorksheetCollection;
-        load(option?: string | string[]): Excel.WorksheetCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.WorksheetCollection;
         load(option?: OfficeExtension.LoadOption): Excel.WorksheetCollection;
         /**
          *
@@ -1724,7 +1760,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class WorksheetProtection extends OfficeExtension.ClientObject {
+    export class WorksheetProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -1747,8 +1783,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2 for options; 1.7 for password]
          *
-         * @param options Optional. Sheet protection options.
-         * @param password Optional. Sheet protection password.
+         * @param options - Optional. Sheet protection options.
+         * @param password - Optional. Sheet protection password.
          */
         protect(options?: Excel.WorksheetProtectionOptions, password?: string): void;
         /**
@@ -1757,7 +1793,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7 for password]
          *
-         * @param password sheet protection password.
+         * @param password - sheet protection password.
          */
         unprotect(password?: string): void;
         /**
@@ -1773,14 +1809,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.WorksheetProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;
-        load(option?: string | string[]): Excel.WorksheetProtection;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.WorksheetProtection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.WorksheetProtection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorksheetProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -1793,7 +1834,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface WorksheetProtectionOptions {
+    export interface WorksheetProtectionOptions {
         /**
          *
          * Represents the worksheet protection option of allowing using auto filter feature.
@@ -1896,7 +1937,7 @@ declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.7]
      */
-    class WorksheetFreezePanes extends OfficeExtension.ClientObject {
+    export class WorksheetFreezePanes extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -1906,7 +1947,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param frozenRange A range that represents the cells to be frozen, or null to remove all frozen panes.
+         * @param frozenRange - A range that represents the cells to be frozen, or null to remove all frozen panes.
          */
         freezeAt(frozenRange: Range | string): void;
         /**
@@ -1915,7 +1956,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param count Optional number of columns to freeze, or zero to unfreeze all columns
+         * @param count - Optional number of columns to freeze, or zero to unfreeze all columns
          */
         freezeColumns(count?: number): void;
         /**
@@ -1924,7 +1965,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param count Optional number of rows to freeze, or zero to unfreeze all rows
+         * @param count - Optional number of rows to freeze, or zero to unfreeze all rows
          */
         freezeRows(count?: number): void;
         /**
@@ -1965,7 +2006,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Range extends OfficeExtension.ClientObject {
+    export class Range extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -2174,8 +2215,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Range): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RangeUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -2195,7 +2236,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyTo Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+         * @param applyTo - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
          */
         clear(applyTo?: Excel.ClearApplyTo): void;
         /**
@@ -2204,9 +2245,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param applyTo Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
+         * @param applyToString - Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
          */
-        clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
+        clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;
         
         
         
@@ -2217,7 +2258,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+         * @param shift - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
          */
         delete(shift: Excel.DeleteShiftDirection): void;
         /**
@@ -2226,9 +2267,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
+         * @param shiftString - Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
          */
-        delete(shift: "Up" | "Left"): void;
+        delete(shiftString: "Up" | "Left"): void;
         
         
         
@@ -2238,8 +2279,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param numRows The number of rows of the new range size.
-         * @param numColumns The number of columns of the new range size.
+         * @param numRows - The number of rows of the new range size.
+         * @param numColumns - The number of columns of the new range size.
          */
         getAbsoluteResizedRange(numRows: number, numColumns: number): Excel.Range;
         /**
@@ -2248,7 +2289,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param anotherRange The range object or address or range name.
+         * @param anotherRange - The range object or address or range name.
          */
         getBoundingRect(anotherRange: Range | string): Excel.Range;
         /**
@@ -2257,8 +2298,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param row Row number of the cell to be retrieved. Zero-indexed.
-         * @param column Column number of the cell to be retrieved. Zero-indexed.
+         * @param row - Row number of the cell to be retrieved. Zero-indexed.
+         * @param column - Column number of the cell to be retrieved. Zero-indexed.
          */
         getCell(row: number, column: number): Excel.Range;
         
@@ -2268,7 +2309,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param column Column number of the range to be retrieved. Zero-indexed.
+         * @param column - Column number of the range to be retrieved. Zero-indexed.
          */
         getColumn(column: number): Excel.Range;
         
@@ -2278,7 +2319,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsAfter(count?: number): Excel.Range;
         /**
@@ -2287,7 +2328,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - Optional. The number of columns to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getColumnsBefore(count?: number): Excel.Range;
         /**
@@ -2317,7 +2358,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param anotherRange The range object or range address that will be used to determine the intersection of ranges.
+         * @param anotherRange - The range object or range address that will be used to determine the intersection of ranges.
          */
         getIntersection(anotherRange: Range | string): Excel.Range;
         /**
@@ -2326,7 +2367,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param anotherRange The range object or range address that will be used to determine the intersection of ranges.
+         * @param anotherRange - The range object or range address that will be used to determine the intersection of ranges.
          */
         getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;
         /**
@@ -2356,8 +2397,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param rowOffset The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
-         * @param columnOffset The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
+         * @param rowOffset - The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.
+         * @param columnOffset - The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.
          */
         getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;
         /**
@@ -2366,8 +2407,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param deltaRows The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
-         * @param deltaColumns The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+         * @param deltaRows - The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
+         * @param deltaColumns - The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.
          */
         getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;
         /**
@@ -2376,7 +2417,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param row Row number of the range to be retrieved. Zero-indexed.
+         * @param row - Row number of the range to be retrieved. Zero-indexed.
          */
         getRow(row: number): Excel.Range;
         
@@ -2386,7 +2427,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getRowsAbove(count?: number): Excel.Range;
         /**
@@ -2395,7 +2436,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
+         * @param count - Optional. The number of rows to include in the resulting range. In general, use a positive number to create a range outside the current range. You can also use a negative number to create a range within the current range. The default value is 1.
          */
         getRowsBelow(count?: number): Excel.Range;
         
@@ -2416,7 +2457,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param valuesOnly Considers only cells with values as used cells. [Api set: ExcelApi 1.2]
+         * @param valuesOnly - Considers only cells with values as used cells. [Api set: ExcelApi 1.2]
          */
         getUsedRange(valuesOnly?: boolean): Excel.Range;
         /**
@@ -2425,7 +2466,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param valuesOnly Considers only cells with values as used cells.
+         * @param valuesOnly - Considers only cells with values as used cells.
          */
         getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;
         /**
@@ -2441,7 +2482,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+         * @param shift - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
          */
         insert(shift: Excel.InsertShiftDirection): Excel.Range;
         /**
@@ -2450,16 +2491,16 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param shift Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
+         * @param shiftString - Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
          */
-        insert(shift: "Down" | "Right"): Excel.Range;
+        insert(shiftString: "Down" | "Right"): Excel.Range;
         /**
          *
          * Merge the range cells into one region in the worksheet.
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param across Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.
+         * @param across - Optional. Set true to merge cells in each row of the specified range as separate merged cells. The default value is false.
          */
         merge(across?: boolean): void;
         
@@ -2502,14 +2543,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;
-        load(option?: string | string[]): Excel.Range;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Range;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;
         /**
          * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
          */
@@ -2530,7 +2576,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface RangeReference {
+    export interface RangeReference {
         /**
          *
          * Gets or sets the address of the range; for example 'SheetName!A1:B5'.
@@ -2545,7 +2591,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    interface RangeHyperlink {
+    export interface RangeHyperlink {
         /**
          *
          * Represents the url target for the hyperlink.
@@ -2593,7 +2639,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class RangeView extends OfficeExtension.ClientObject {
+    export class RangeView extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -2688,8 +2734,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.RangeView): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RangeViewUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -2714,14 +2760,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeView` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;
-        load(option?: string | string[]): Excel.RangeView;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeView;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeView;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeView object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeViewData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2734,7 +2785,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class RangeViewCollection extends OfficeExtension.ClientObject {
+    export class RangeViewCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -2752,7 +2803,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param index Index of the visible row.
+         * @param index - Index of the visible row.
          */
         getItemAt(index: number): Excel.RangeView;
         /**
@@ -2768,10 +2819,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeViewCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeViewCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeViewCollection;
-        load(option?: string | string[]): Excel.RangeViewCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeViewCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeViewCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -2785,7 +2840,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.4]
      */
-    class SettingCollection extends OfficeExtension.ClientObject {
+    export class SettingCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -2796,8 +2851,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key The Key of the new setting.
-         * @param value The Value for the new setting.
+         * @param key - The Key of the new setting.
+         * @param value - The Value for the new setting.
          */
         add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;
         /**
@@ -2813,7 +2868,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key Key of the setting.
+         * @param key - Key of the setting.
          */
         getItem(key: string): Excel.Setting;
         /**
@@ -2822,7 +2877,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key The key of the setting.
+         * @param key - The key of the setting.
          */
         getItemOrNullObject(key: string): Excel.Setting;
         /**
@@ -2838,10 +2893,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.SettingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.SettingCollection;
-        load(option?: string | string[]): Excel.SettingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.SettingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;
         /**
          *
@@ -2864,7 +2923,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.4]
      */
-    class Setting extends OfficeExtension.ClientObject {
+    export class Setting extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         private static DateJSONPrefix;
@@ -2892,8 +2951,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Setting): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.SettingUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -2918,14 +2977,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Setting` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.SettingLoadOptions): Excel.Setting;
-        load(option?: string | string[]): Excel.Setting;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Setting;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Setting;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Setting;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Setting object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingData`) that contains shallow copies of any loaded child properties from the original object.
@@ -2938,7 +3002,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class NamedItemCollection extends OfficeExtension.ClientObject {
+    export class NamedItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -2949,9 +3013,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name The name of the named item.
-         * @param reference The formula or the range that the name will refer to.
-         * @param comment Optional. The comment associated with the named item.
+         * @param name - The name of the named item.
+         * @param reference - The formula or the range that the name will refer to.
+         * @param comment - Optional. The comment associated with the named item.
          * @returns
          */
         add(name: string, reference: Range | string, comment?: string): Excel.NamedItem;
@@ -2961,9 +3025,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name The "name" of the named item.
-         * @param formula The formula in the user's locale that the name will refer to.
-         * @param comment Optional. The comment associated with the named item.
+         * @param name - The "name" of the named item.
+         * @param formula - The formula in the user's locale that the name will refer to.
+         * @param comment - Optional. The comment associated with the named item.
          * @returns
          */
         addFormulaLocal(name: string, formula: string, comment?: string): Excel.NamedItem;
@@ -2980,7 +3044,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param name Nameditem name.
+         * @param name - Nameditem name.
          */
         getItem(name: string): Excel.NamedItem;
         /**
@@ -2989,7 +3053,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name Nameditem name.
+         * @param name - Nameditem name.
          */
         getItemOrNullObject(name: string): Excel.NamedItem;
         /**
@@ -3005,10 +3069,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.NamedItemCollection;
-        load(option?: string | string[]): Excel.NamedItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.NamedItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -3022,7 +3090,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class NamedItem extends OfficeExtension.ClientObject {
+    export class NamedItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -3103,8 +3171,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.NamedItem): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.NamedItemUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -3143,14 +3211,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;
-        load(option?: string | string[]): Excel.NamedItem;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.NamedItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.NamedItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.NamedItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3163,7 +3236,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class NamedItemArrayValues extends OfficeExtension.ClientObject {
+    export class NamedItemArrayValues extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -3193,14 +3266,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.NamedItemArrayValues` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.NamedItemArrayValuesLoadOptions): Excel.NamedItemArrayValues;
-        load(option?: string | string[]): Excel.NamedItemArrayValues;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.NamedItemArrayValues;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.NamedItemArrayValues;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItemArrayValues;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.NamedItemArrayValues object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemArrayValuesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3213,7 +3291,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Binding extends OfficeExtension.ClientObject {
+    export class Binding extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -3271,14 +3349,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Binding` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;
-        load(option?: string | string[]): Excel.Binding;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Binding;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Binding;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Binding;
         /**
          *
          * Occurs when data or formatting within the binding is changed.
@@ -3309,7 +3392,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class BindingCollection extends OfficeExtension.ClientObject {
+    export class BindingCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -3327,9 +3410,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param range Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param range - Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
         add(range: Range | string, bindingType: Excel.BindingType, id: string): Excel.Binding;
         /**
@@ -3338,11 +3421,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param range Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param range - Range to bind the binding to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+         * @param bindingTypeString - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
-        add(range: Range | string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        add(range: Range | string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          *
          * Add a new binding based on a named item in the workbook.
@@ -3350,9 +3433,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param name Name from which to create binding.
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param name - Name from which to create binding.
+         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
         addFromNamedItem(name: string, bindingType: Excel.BindingType, id: string): Excel.Binding;
         /**
@@ -3362,11 +3445,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param name Name from which to create binding.
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param name - Name from which to create binding.
+         * @param bindingTypeString - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
-        addFromNamedItem(name: string, bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromNamedItem(name: string, bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          *
          * Add a new binding based on the current selection.
@@ -3374,8 +3457,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param bindingType - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
         addFromSelection(bindingType: Excel.BindingType, id: string): Excel.Binding;
         /**
@@ -3385,10 +3468,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param bindingType Type of binding. See Excel.BindingType.
-         * @param id Name of binding.
+         * @param bindingTypeString - Type of binding. See Excel.BindingType.
+         * @param id - Name of binding.
          */
-        addFromSelection(bindingType: "Range" | "Table" | "Text", id: string): Excel.Binding;
+        addFromSelection(bindingTypeString: "Range" | "Table" | "Text", id: string): Excel.Binding;
         /**
          *
          * Gets the number of bindings in the collection.
@@ -3402,7 +3485,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param id Id of the binding object to be retrieved.
+         * @param id - Id of the binding object to be retrieved.
          */
         getItem(id: string): Excel.Binding;
         /**
@@ -3411,7 +3494,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Binding;
         /**
@@ -3420,7 +3503,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param id Id of the binding object to be retrieved.
+         * @param id - Id of the binding object to be retrieved.
          */
         getItemOrNullObject(id: string): Excel.Binding;
         /**
@@ -3436,10 +3519,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.BindingCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.BindingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.BindingCollection;
-        load(option?: string | string[]): Excel.BindingCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.BindingCollection;
         load(option?: OfficeExtension.LoadOption): Excel.BindingCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -3453,7 +3540,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableCollection extends OfficeExtension.ClientObject {
+    export class TableCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -3471,8 +3558,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param address A Range object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
-         * @param hasHeaders Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.
+         * @param address - A Range object, or a string address or name of the range representing the data source. If the address does not contain a sheet name, the currently-active sheet is used. [Api set: ExcelApi 1.1 / 1.3.  Prior to ExcelApi 1.3, this parameter must be a string. Starting with Excel Api 1.3, this parameter may be a Range object or a string.]
+         * @param hasHeaders - Boolean value that indicates whether the data being imported has column labels. If the source does not contain headers (i.e,. when this property set to false), Excel will automatically generate header shifting the data down by one row.
          */
         add(address: Range | string, hasHeaders: boolean): Excel.Table;
         /**
@@ -3488,7 +3575,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param key Name or ID of the table to be retrieved.
+         * @param key - Name or ID of the table to be retrieved.
          */
         getItem(key: string): Excel.Table;
         /**
@@ -3497,7 +3584,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Table;
         /**
@@ -3506,7 +3593,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key Name or ID of the table to be retrieved.
+         * @param key - Name or ID of the table to be retrieved.
          */
         getItemOrNullObject(key: string): Excel.Table;
         /**
@@ -3522,10 +3609,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableCollection;
-        load(option?: string | string[]): Excel.TableCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableCollection;
         
         /**
@@ -3551,7 +3642,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Table extends OfficeExtension.ClientObject {
+    export class Table extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         
@@ -3668,8 +3759,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Table): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.TableUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -3743,14 +3834,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableLoadOptions): Excel.Table;
-        load(option?: string | string[]): Excel.Table;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Table;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Table;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Table;
         /**
          *
          * Occurs when data in cells changes on a specific table.
@@ -3781,7 +3877,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableColumnCollection extends OfficeExtension.ClientObject {
+    export class TableColumnCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -3799,9 +3895,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1 requires an index smaller than the total column count; 1.4 allows index to be optional (null or -1) and will append a column at the end; 1.4 allows name parameter at creation time.]
          *
-         * @param index Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
-         * @param values Optional. A 2-dimensional array of unformatted values of the table column.
-         * @param name Optional. Specifies the name of the new column. If null, the default name will be used.
+         * @param index - Optional. Specifies the relative position of the new column. If null or -1, the addition happens at the end. Columns with a higher index will be shifted to the side. Zero-indexed.
+         * @param values - Optional. A 2-dimensional array of unformatted values of the table column.
+         * @param name - Optional. Specifies the name of the new column. If null, the default name will be used.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number, name?: string): Excel.TableColumn;
         /**
@@ -3817,7 +3913,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param key Column Name or ID.
+         * @param key - Column Name or ID.
          */
         getItem(key: number | string): Excel.TableColumn;
         /**
@@ -3826,7 +3922,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.TableColumn;
         /**
@@ -3835,7 +3931,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param key Column Name or ID.
+         * @param key - Column Name or ID.
          */
         getItemOrNullObject(key: number | string): Excel.TableColumn;
         /**
@@ -3851,10 +3947,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumnCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableColumnCollection;
-        load(option?: string | string[]): Excel.TableColumnCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableColumnCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -3868,7 +3968,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableColumn extends OfficeExtension.ClientObject {
+    export class TableColumn extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -3914,8 +4014,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.TableColumn): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.TableColumnUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -3968,14 +4068,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableColumn` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;
-        load(option?: string | string[]): Excel.TableColumn;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TableColumn;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableColumn;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableColumn;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableColumn object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableColumnData`) that contains shallow copies of any loaded child properties from the original object.
@@ -3993,7 +4098,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableRowCollection extends OfficeExtension.ClientObject {
+    export class TableRowCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -4016,8 +4121,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1 for adding a single row; 1.4 allows adding of multiple rows.]
          *
-         * @param index Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
-         * @param values Optional. A 2-dimensional array of unformatted values of the table row.
+         * @param index - Optional. Specifies the relative position of the new row. If null or -1, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.
+         * @param values - Optional. A 2-dimensional array of unformatted values of the table row.
          */
         add(index?: number, values?: Array<Array<boolean | string | number>> | boolean | string | number): Excel.TableRow;
         /**
@@ -4038,7 +4143,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.TableRow;
         /**
@@ -4054,10 +4159,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.TableRowCollection;
-        load(option?: string | string[]): Excel.TableRowCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableRowCollection;
         load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -4076,7 +4185,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class TableRow extends OfficeExtension.ClientObject {
+    export class TableRow extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4101,8 +4210,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.TableRow): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.TableRowUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -4134,14 +4243,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableRowLoadOptions): Excel.TableRow;
-        load(option?: string | string[]): Excel.TableRow;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TableRow;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableRow;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableRow;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableRow object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableRowData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4154,7 +4268,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class DataValidation extends OfficeExtension.ClientObject {
+    export class DataValidation extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4210,8 +4324,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.DataValidation): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.DataValidationUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -4238,14 +4352,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataValidation` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.DataValidationLoadOptions): Excel.DataValidation;
-        load(option?: string | string[]): Excel.DataValidation;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DataValidation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DataValidation;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataValidation;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DataValidation object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataValidationData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4258,7 +4377,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface DataValidationRule {
+    export interface DataValidationRule {
         /**
          *
          * Custom data validation criteria.
@@ -4316,7 +4435,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface BasicDataValidation {
+    export interface BasicDataValidation {
         /**
          *
          * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
@@ -4350,7 +4469,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface DateTimeDataValidation {
+    export interface DateTimeDataValidation {
         /**
          *
          * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
@@ -4383,7 +4502,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface ListDataValidation {
+    export interface ListDataValidation {
         /**
          *
          * Displays the list in cell drop down or not, it defaults to true.
@@ -4406,7 +4525,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface CustomDataValidation {
+    export interface CustomDataValidation {
         /**
          *
          * A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the total in a range of cells.
@@ -4421,7 +4540,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface DataValidationErrorAlert {
+    export interface DataValidationErrorAlert {
         /**
          *
          * Represents error alert message.
@@ -4457,7 +4576,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface DataValidationPrompt {
+    export interface DataValidationPrompt {
         /**
          *
          * Represents the message of the prompt.
@@ -4486,7 +4605,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeFormat extends OfficeExtension.ClientObject {
+    export class RangeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4593,8 +4712,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.RangeFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -4626,14 +4745,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeFormatLoadOptions): Excel.RangeFormat;
-        load(option?: string | string[]): Excel.RangeFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4646,7 +4770,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class FormatProtection extends OfficeExtension.ClientObject {
+    export class FormatProtection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4671,8 +4795,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.FormatProtection): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.FormatProtectionUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -4690,14 +4814,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FormatProtection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.FormatProtectionLoadOptions): Excel.FormatProtection;
-        load(option?: string | string[]): Excel.FormatProtection;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.FormatProtection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.FormatProtection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FormatProtection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.FormatProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FormatProtectionData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4710,7 +4839,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeFill extends OfficeExtension.ClientObject {
+    export class RangeFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4732,8 +4861,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.RangeFill): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RangeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -4758,14 +4887,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;
-        load(option?: string | string[]): Excel.RangeFill;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFillData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4778,7 +4912,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeBorder extends OfficeExtension.ClientObject {
+    export class RangeBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4818,8 +4952,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.RangeBorder): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -4837,14 +4971,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;
-        load(option?: string | string[]): Excel.RangeBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -4857,7 +4996,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeBorderCollection extends OfficeExtension.ClientObject {
+    export class RangeBorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -4876,7 +5015,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+         * @param index - Index value of the border object to be retrieved. See Excel.BorderIndex for details.
          */
         getItem(index: Excel.BorderIndex): Excel.RangeBorder;
         /**
@@ -4885,16 +5024,16 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the border object to be retrieved. See Excel.BorderIndex for details.
+         * @param indexString - Index value of the border object to be retrieved. See Excel.BorderIndex for details.
          */
-        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
         /**
          *
          * Gets a border object using its index.
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.RangeBorder;
         /**
@@ -4910,10 +5049,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RangeBorderCollection;
-        load(option?: string | string[]): Excel.RangeBorderCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -4927,7 +5070,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class RangeFont extends OfficeExtension.ClientObject {
+    export class RangeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -4984,8 +5127,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.RangeFont): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -5003,14 +5146,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;
-        load(option?: string | string[]): Excel.RangeFont;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RangeFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RangeFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5023,7 +5171,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartCollection extends OfficeExtension.ClientObject {
+    export class ChartCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -5041,9 +5189,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param type Represents the type of a chart. See Excel.ChartType for details.
-         * @param sourceData The Range object corresponding to the source data.
-         * @param seriesBy Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
+         * @param type - Represents the type of a chart. See Excel.ChartType for details.
+         * @param sourceData - The Range object corresponding to the source data.
+         * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
          */
         add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;
         /**
@@ -5052,11 +5200,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param type Represents the type of a chart. See Excel.ChartType for details.
-         * @param sourceData The Range object corresponding to the source data.
-         * @param seriesBy Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
+         * @param typeString - Represents the type of a chart. See Excel.ChartType for details.
+         * @param sourceData - The Range object corresponding to the source data.
+         * @param seriesBy - Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy for details.
          */
-        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
+        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" | "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" | "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" | "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" | "XYScatterSmoothNoMarkers" | "XYScatterLines" | "XYScatterLinesNoMarkers" | "AreaStacked" | "AreaStacked100" | "3DAreaStacked" | "3DAreaStacked100" | "DoughnutExploded" | "RadarMarkers" | "RadarFilled" | "Surface" | "SurfaceWireframe" | "SurfaceTopView" | "SurfaceTopViewWireframe" | "Bubble" | "Bubble3DEffect" | "StockHLC" | "StockOHLC" | "StockVHLC" | "StockVOHLC" | "CylinderColClustered" | "CylinderColStacked" | "CylinderColStacked100" | "CylinderBarClustered" | "CylinderBarStacked" | "CylinderBarStacked100" | "CylinderCol" | "ConeColClustered" | "ConeColStacked" | "ConeColStacked100" | "ConeBarClustered" | "ConeBarStacked" | "ConeBarStacked100" | "ConeCol" | "PyramidColClustered" | "PyramidColStacked" | "PyramidColStacked100" | "PyramidBarClustered" | "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" | "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" | "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel", sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
         /**
          *
          * Returns the number of charts in the worksheet.
@@ -5070,7 +5218,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param name Name of the chart to be retrieved.
+         * @param name - Name of the chart to be retrieved.
          */
         getItem(name: string): Excel.Chart;
         /**
@@ -5079,7 +5227,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.Chart;
         /**
@@ -5089,7 +5237,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name Name of the chart to be retrieved.
+         * @param name - Name of the chart to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.Chart;
         /**
@@ -5105,10 +5253,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartCollection;
-        load(option?: string | string[]): Excel.ChartCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;
         /**
          *
@@ -5158,7 +5310,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class Chart extends OfficeExtension.ClientObject {
+    export class Chart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -5335,8 +5487,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Chart): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -5356,9 +5508,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param height (Optional) The desired height of the resulting image.
-         * @param width (Optional) The desired width of the resulting image.
-         * @param fittingMode (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
+         * @param height - (Optional) The desired height of the resulting image.
+         * @param width - (Optional) The desired width of the resulting image.
+         * @param fittingMode - (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
          */
         getImage(width?: number, height?: number, fittingMode?: Excel.ImageFittingMode): OfficeExtension.ClientResult<string>;
         /**
@@ -5368,19 +5520,19 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param height (Optional) The desired height of the resulting image.
-         * @param width (Optional) The desired width of the resulting image.
-         * @param fittingMode (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
+         * @param height - (Optional) The desired height of the resulting image.
+         * @param width - (Optional) The desired width of the resulting image.
+         * @param fittingModeString - (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
          */
-        getImage(width?: number, height?: number, fittingMode?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
+        getImage(width?: number, height?: number, fittingModeString?: "Fit" | "FitAndCenter" | "Fill"): OfficeExtension.ClientResult<string>;
         /**
          *
          * Resets the source data for the chart.
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param sourceData The range object corresponding to the source data.
-         * @param seriesBy Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
+         * @param sourceData - The range object corresponding to the source data.
+         * @param seriesBy - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
          */
         setData(sourceData: Range, seriesBy?: Excel.ChartSeriesBy): void;
         /**
@@ -5389,18 +5541,18 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param sourceData The range object corresponding to the source data.
-         * @param seriesBy Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
+         * @param sourceData - The range object corresponding to the source data.
+         * @param seriesByString - Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
          */
-        setData(sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): void;
+        setData(sourceData: Range, seriesByString?: "Auto" | "Columns" | "Rows"): void;
         /**
          *
          * Positions the chart relative to cells on the worksheet.
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param startCell The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.
-         * @param endCell (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.
+         * @param startCell - The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.
+         * @param endCell - (Optional) The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.
          */
         setPosition(startCell: Range | string, endCell?: Range | string): void;
         /**
@@ -5416,14 +5568,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Chart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;
-        load(option?: string | string[]): Excel.Chart;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Chart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Chart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Chart;
         /**
          *
          * Occurs when the chart is activated.
@@ -5455,7 +5612,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAreaFormat extends OfficeExtension.ClientObject {
+    export class ChartAreaFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -5489,8 +5646,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartAreaFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartAreaFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -5508,14 +5665,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAreaFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartAreaFormatLoadOptions): Excel.ChartAreaFormat;
-        load(option?: string | string[]): Excel.ChartAreaFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAreaFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartAreaFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAreaFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5528,7 +5690,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartSeriesCollection extends OfficeExtension.ClientObject {
+    export class ChartSeriesCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -5546,8 +5708,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param name Optional. Name of the series.
-         * @param index Optional. Index value of the series to be added. Zero-indexed.
+         * @param name - Optional. Name of the series.
+         * @param index - Optional. Index value of the series to be added. Zero-indexed.
          */
         add(name?: string, index?: number): Excel.ChartSeries;
         /**
@@ -5563,7 +5725,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.ChartSeries;
         /**
@@ -5579,10 +5741,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartSeriesCollection;
-        load(option?: string | string[]): Excel.ChartSeriesCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartSeriesCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -5596,7 +5762,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartSeries extends OfficeExtension.ClientObject {
+    export class ChartSeries extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         
@@ -5805,8 +5971,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartSeries): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartSeriesUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -5824,7 +5990,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param sourceData The Range object corresponding to the source data.
+         * @param sourceData - The Range object corresponding to the source data.
          */
         setBubbleSizes(sourceData: Range): void;
         /**
@@ -5833,7 +5999,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param sourceData The Range object corresponding to the source data.
+         * @param sourceData - The Range object corresponding to the source data.
          */
         setValues(sourceData: Range): void;
         /**
@@ -5842,7 +6008,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param sourceData The Range object corresponding to the source data.
+         * @param sourceData - The Range object corresponding to the source data.
          */
         setXAxisValues(sourceData: Range): void;
         /**
@@ -5858,14 +6024,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;
-        load(option?: string | string[]): Excel.ChartSeries;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartSeries;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartSeries;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5878,7 +6049,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartSeriesFormat extends OfficeExtension.ClientObject {
+    export class ChartSeriesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -5903,8 +6074,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartSeriesFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartSeriesFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -5922,14 +6093,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeriesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartSeriesFormatLoadOptions): Excel.ChartSeriesFormat;
-        load(option?: string | string[]): Excel.ChartSeriesFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartSeriesFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartSeriesFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeriesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartSeriesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -5942,7 +6118,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartPointsCollection extends OfficeExtension.ClientObject {
+    export class ChartPointsCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -5967,7 +6143,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.ChartPoint;
         /**
@@ -5983,10 +6159,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointsCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartPointsCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartPointsCollection;
-        load(option?: string | string[]): Excel.ChartPointsCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartPointsCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartPointsCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -6000,7 +6180,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartPoint extends OfficeExtension.ClientObject {
+    export class ChartPoint extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6067,8 +6247,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartPoint): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartPointUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6086,14 +6266,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPoint` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;
-        load(option?: string | string[]): Excel.ChartPoint;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartPoint;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartPoint;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPoint;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPoint object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6106,7 +6291,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartPointFormat extends OfficeExtension.ClientObject {
+    export class ChartPointFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6131,8 +6316,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartPointFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartPointFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6150,14 +6335,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPointFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartPointFormatLoadOptions): Excel.ChartPointFormat;
-        load(option?: string | string[]): Excel.ChartPointFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartPointFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartPointFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPointFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPointFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPointFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6170,7 +6360,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxes extends OfficeExtension.ClientObject {
+    export class ChartAxes extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6202,8 +6392,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartAxes): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartAxesUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6214,8 +6404,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param type Specifies the axis type. See Excel.ChartAxisType for details.
-         * @param group Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+         * @param type - Specifies the axis type. See Excel.ChartAxisType for details.
+         * @param group - Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
          */
         getItem(type: Excel.ChartAxisType, group?: Excel.ChartAxisGroup): Excel.ChartAxis;
         /**
@@ -6224,10 +6414,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param type Specifies the axis type. See Excel.ChartAxisType for details.
-         * @param group Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
+         * @param typeString - Specifies the axis type. See Excel.ChartAxisType for details.
+         * @param group - Optional. Specifies the axis group. See Excel.ChartAxisGroup for details.
          */
-        getItem(type: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;
+        getItem(typeString: "Invalid" | "Category" | "Value" | "Series", group?: "Primary" | "Secondary"): Excel.ChartAxis;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -6241,14 +6431,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxes` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;
-        load(option?: string | string[]): Excel.ChartAxes;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxes;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartAxes;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxes;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxes object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6261,7 +6456,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxis extends OfficeExtension.ClientObject {
+    export class ChartAxis extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6539,8 +6734,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartAxis): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartAxisUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6551,7 +6746,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param sourceData The Range object corresponding to the source data.
+         * @param sourceData - The Range object corresponding to the source data.
          */
         setCategoryNames(sourceData: Range): void;
         /**
@@ -6560,7 +6755,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param value Custom value of the display unit.
+         * @param value - Custom value of the display unit.
          */
         setCustomDisplayUnit(value: number): void;
         /**
@@ -6569,7 +6764,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param value Custom value of the crosses at
+         * @param value - Custom value of the crosses at
          */
         setPositionAt(value: number): void;
         /**
@@ -6585,14 +6780,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;
-        load(option?: string | string[]): Excel.ChartAxis;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxis;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartAxis;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxis object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6605,7 +6805,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxisFormat extends OfficeExtension.ClientObject {
+    export class ChartAxisFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6637,8 +6837,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartAxisFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartAxisFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6656,14 +6856,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartAxisFormatLoadOptions): Excel.ChartAxisFormat;
-        load(option?: string | string[]): Excel.ChartAxisFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxisFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartAxisFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6676,7 +6881,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxisTitle extends OfficeExtension.ClientObject {
+    export class ChartAxisTitle extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6708,8 +6913,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartAxisTitle): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartAxisTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6720,7 +6925,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param formula a string that present the formula to set
+         * @param formula - a string that present the formula to set
          */
         setFormula(formula: string): void;
         /**
@@ -6736,14 +6941,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;
-        load(option?: string | string[]): Excel.ChartAxisTitle;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxisTitle;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartAxisTitle;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6756,7 +6966,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartAxisTitleFormat extends OfficeExtension.ClientObject {
+    export class ChartAxisTitleFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6788,8 +6998,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartAxisTitleFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartAxisTitleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6807,14 +7017,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartAxisTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions): Excel.ChartAxisTitleFormat;
-        load(option?: string | string[]): Excel.ChartAxisTitleFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartAxisTitleFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartAxisTitleFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartAxisTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6827,7 +7042,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartDataLabels extends OfficeExtension.ClientObject {
+    export class ChartDataLabels extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -6939,8 +7154,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartDataLabels): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartDataLabelsUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -6958,14 +7173,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabels` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartDataLabelsLoadOptions): Excel.ChartDataLabels;
-        load(option?: string | string[]): Excel.ChartDataLabels;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartDataLabels;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartDataLabels;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabels;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
@@ -6978,7 +7198,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartDataLabel extends OfficeExtension.ClientObject {
+    export class ChartDataLabel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7132,8 +7352,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartDataLabel): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartDataLabelUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7151,14 +7371,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabel` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartDataLabelLoadOptions): Excel.ChartDataLabel;
-        load(option?: string | string[]): Excel.ChartDataLabel;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartDataLabel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartDataLabel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabel;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabel object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7171,7 +7396,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartDataLabelFormat extends OfficeExtension.ClientObject {
+    export class ChartDataLabelFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7203,8 +7428,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartDataLabelFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartDataLabelFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7222,14 +7447,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartDataLabelFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartDataLabelFormatLoadOptions): Excel.ChartDataLabelFormat;
-        load(option?: string | string[]): Excel.ChartDataLabelFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartDataLabelFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartDataLabelFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartDataLabelFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartDataLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7244,7 +7474,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartGridlines extends OfficeExtension.ClientObject {
+    export class ChartGridlines extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7269,8 +7499,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartGridlines): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartGridlinesUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7288,14 +7518,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlines` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartGridlinesLoadOptions): Excel.ChartGridlines;
-        load(option?: string | string[]): Excel.ChartGridlines;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartGridlines;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartGridlines;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlines;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartGridlines object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7308,7 +7543,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartGridlinesFormat extends OfficeExtension.ClientObject {
+    export class ChartGridlinesFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7326,8 +7561,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartGridlinesFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartGridlinesFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7345,14 +7580,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartGridlinesFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartGridlinesFormatLoadOptions): Excel.ChartGridlinesFormat;
-        load(option?: string | string[]): Excel.ChartGridlinesFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartGridlinesFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartGridlinesFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartGridlinesFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartGridlinesFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartGridlinesFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7365,7 +7605,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartLegend extends OfficeExtension.ClientObject {
+    export class ChartLegend extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7446,8 +7686,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartLegend): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartLegendUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7465,14 +7705,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegend` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartLegendLoadOptions): Excel.ChartLegend;
-        load(option?: string | string[]): Excel.ChartLegend;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLegend;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartLegend;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegend;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7485,7 +7730,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartLegendEntry extends OfficeExtension.ClientObject {
+    export class ChartLegendEntry extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7538,8 +7783,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartLegendEntry): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartLegendEntryUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7557,14 +7802,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendEntry` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartLegendEntryLoadOptions): Excel.ChartLegendEntry;
-        load(option?: string | string[]): Excel.ChartLegendEntry;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLegendEntry;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartLegendEntry;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendEntry;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegendEntry object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7577,7 +7827,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartLegendEntryCollection extends OfficeExtension.ClientObject {
+    export class ChartLegendEntryCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -7595,7 +7845,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param index Index of the legendEntry to be retrieved.
+         * @param index - Index of the legendEntry to be retrieved.
          */
         getItemAt(index: number): Excel.ChartLegendEntry;
         /**
@@ -7611,10 +7861,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendEntryCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartLegendEntryCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartLegendEntryCollection;
-        load(option?: string | string[]): Excel.ChartLegendEntryCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartLegendEntryCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartLegendEntryCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -7628,7 +7882,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartLegendFormat extends OfficeExtension.ClientObject {
+    export class ChartLegendFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7660,8 +7914,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartLegendFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartLegendFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7679,14 +7933,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLegendFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartLegendFormatLoadOptions): Excel.ChartLegendFormat;
-        load(option?: string | string[]): Excel.ChartLegendFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLegendFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartLegendFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLegendFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLegendFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7700,7 +7959,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartTitle extends OfficeExtension.ClientObject {
+    export class ChartTitle extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7802,8 +8061,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartTitle): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartTitleUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7814,8 +8073,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param start Start position of substring to be retrieved. Position start with 0.
-         * @param length Length of substring to be retrieved.
+         * @param start - Start position of substring to be retrieved. Position start with 0.
+         * @param length - Length of substring to be retrieved.
          */
         getSubstring(start: number, length: number): Excel.ChartFormatString;
         /**
@@ -7824,7 +8083,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param formula A string that represents the formula to set.
+         * @param formula - A string that represents the formula to set.
          */
         setFormula(formula: string): void;
         /**
@@ -7840,14 +8099,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitle` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;
-        load(option?: string | string[]): Excel.ChartTitle;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTitle;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTitle;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitle;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7860,7 +8124,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartFormatString extends OfficeExtension.ClientObject {
+    export class ChartFormatString extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7878,8 +8142,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartFormatString): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartFormatStringUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7897,14 +8161,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFormatString` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartFormatStringLoadOptions): Excel.ChartFormatString;
-        load(option?: string | string[]): Excel.ChartFormatString;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartFormatString;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartFormatString;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartFormatString;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartFormatString object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFormatStringData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7917,7 +8186,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartTitleFormat extends OfficeExtension.ClientObject {
+    export class ChartTitleFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -7949,8 +8218,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartTitleFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartTitleFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -7968,14 +8237,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTitleFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTitleFormatLoadOptions): Excel.ChartTitleFormat;
-        load(option?: string | string[]): Excel.ChartTitleFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTitleFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTitleFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitleFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTitleFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTitleFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -7988,7 +8262,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartFill extends OfficeExtension.ClientObject {
+    export class ChartFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8008,7 +8282,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          *
-         * @param color HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
+         * @param color - HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
          */
         setSolidColor(color: string): void;
         /**
@@ -8025,7 +8299,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartBorder extends OfficeExtension.ClientObject {
+    export class ChartBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8057,8 +8331,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartBorder): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8083,14 +8357,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;
-        load(option?: string | string[]): Excel.ChartBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8105,7 +8384,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartLineFormat extends OfficeExtension.ClientObject {
+    export class ChartLineFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8137,8 +8416,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartLineFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartLineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8163,14 +8442,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartLineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;
-        load(option?: string | string[]): Excel.ChartLineFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartLineFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartLineFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartLineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLineFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8183,7 +8467,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.1]
      */
-    class ChartFont extends OfficeExtension.ClientObject {
+    export class ChartFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8236,8 +8520,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartFont): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartFontUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8255,14 +8539,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartFontLoadOptions): Excel.ChartFont;
-        load(option?: string | string[]): Excel.ChartFont;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8275,7 +8564,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartTrendline extends OfficeExtension.ClientObject {
+    export class ChartTrendline extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8363,8 +8652,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartTrendline): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartTrendlineUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8389,14 +8678,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTrendlineLoadOptions): Excel.ChartTrendline;
-        load(option?: string | string[]): Excel.ChartTrendline;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTrendline;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTrendline;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendline;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendline object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8409,7 +8703,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartTrendlineCollection extends OfficeExtension.ClientObject {
+    export class ChartTrendlineCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -8420,7 +8714,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param type Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+         * @param type - Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
          */
         add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;
         /**
@@ -8429,9 +8723,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param type Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
+         * @param typeString - Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
          */
-        add(type?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
+        add(typeString?: "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"): Excel.ChartTrendline;
         /**
          *
          * Returns the number of trendlines in the collection.
@@ -8445,7 +8739,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param index Represents the insertion order in items array.
+         * @param index - Represents the insertion order in items array.
          */
         getItem(index: number): Excel.ChartTrendline;
         /**
@@ -8461,10 +8755,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ChartTrendlineCollection;
-        load(option?: string | string[]): Excel.ChartTrendlineCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTrendlineCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -8478,7 +8776,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class ChartTrendlineFormat extends OfficeExtension.ClientObject {
+    export class ChartTrendlineFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8496,8 +8794,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartTrendlineFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartTrendlineFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8515,14 +8813,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;
-        load(option?: string | string[]): Excel.ChartTrendlineFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTrendlineFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTrendlineFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendlineFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8535,7 +8838,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class ChartTrendlineLabel extends OfficeExtension.ClientObject {
+    export class ChartTrendlineLabel extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8633,8 +8936,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartTrendlineLabel): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartTrendlineLabelUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8652,14 +8955,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineLabel` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTrendlineLabelLoadOptions): Excel.ChartTrendlineLabel;
-        load(option?: string | string[]): Excel.ChartTrendlineLabel;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTrendlineLabel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTrendlineLabel;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabel;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendlineLabel object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8672,7 +8980,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class ChartTrendlineLabelFormat extends OfficeExtension.ClientObject {
+    export class ChartTrendlineLabelFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8704,8 +9012,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartTrendlineLabelFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartTrendlineLabelFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8723,14 +9031,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartTrendlineLabelFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartTrendlineLabelFormatLoadOptions): Excel.ChartTrendlineLabelFormat;
-        load(option?: string | string[]): Excel.ChartTrendlineLabelFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartTrendlineLabelFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartTrendlineLabelFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineLabelFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartTrendlineLabelFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartTrendlineLabelFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8743,7 +9056,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class ChartPlotArea extends OfficeExtension.ClientObject {
+    export class ChartPlotArea extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8824,8 +9137,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartPlotArea): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartPlotAreaUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8843,14 +9156,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPlotArea` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartPlotAreaLoadOptions): Excel.ChartPlotArea;
-        load(option?: string | string[]): Excel.ChartPlotArea;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartPlotArea;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartPlotArea;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPlotArea;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPlotArea object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8863,7 +9181,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class ChartPlotAreaFormat extends OfficeExtension.ClientObject {
+    export class ChartPlotAreaFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8888,8 +9206,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ChartPlotAreaFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ChartPlotAreaFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -8907,14 +9225,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartPlotAreaFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions): Excel.ChartPlotAreaFormat;
-        load(option?: string | string[]): Excel.ChartPlotAreaFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ChartPlotAreaFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ChartPlotAreaFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPlotAreaFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ChartPlotAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartPlotAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8927,7 +9250,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class RangeSort extends OfficeExtension.ClientObject {
+    export class RangeSort extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -8936,11 +9259,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fields The list of conditions to sort on.
-         * @param matchCase Optional. Whether to have the casing impact string ordering.
-         * @param hasHeaders Optional. Whether the range has a header.
-         * @param orientation Optional. Whether the operation is sorting rows or columns.
-         * @param method Optional. The ordering method used for Chinese characters.
+         * @param fields - The list of conditions to sort on.
+         * @param matchCase - Optional. Whether to have the casing impact string ordering.
+         * @param hasHeaders - Optional. Whether the range has a header.
+         * @param orientation - Optional. Whether the operation is sorting rows or columns.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
         apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: Excel.SortOrientation, method?: Excel.SortMethod): void;
         /**
@@ -8949,13 +9272,13 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fields The list of conditions to sort on.
-         * @param matchCase Optional. Whether to have the casing impact string ordering.
-         * @param hasHeaders Optional. Whether the range has a header.
-         * @param orientation Optional. Whether the operation is sorting rows or columns.
-         * @param method Optional. The ordering method used for Chinese characters.
+         * @param fields - The list of conditions to sort on.
+         * @param matchCase - Optional. Whether to have the casing impact string ordering.
+         * @param hasHeaders - Optional. Whether the range has a header.
+         * @param orientationString - Optional. Whether the operation is sorting rows or columns.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: "Rows" | "Columns", method?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" | "Columns", method?: "PinYin" | "StrokeCount"): void;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RangeSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -8970,7 +9293,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class TableSort extends OfficeExtension.ClientObject {
+    export class TableSort extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -9000,9 +9323,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fields The list of conditions to sort on.
-         * @param matchCase Optional. Whether to have the casing impact string ordering.
-         * @param method Optional. The ordering method used for Chinese characters.
+         * @param fields - The list of conditions to sort on.
+         * @param matchCase - Optional. Whether to have the casing impact string ordering.
+         * @param method - Optional. The ordering method used for Chinese characters.
          */
         apply(fields: Excel.SortField[], matchCase?: boolean, method?: Excel.SortMethod): void;
         /**
@@ -9011,11 +9334,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fields The list of conditions to sort on.
-         * @param matchCase Optional. Whether to have the casing impact string ordering.
-         * @param method Optional. The ordering method used for Chinese characters.
+         * @param fields - The list of conditions to sort on.
+         * @param matchCase - Optional. Whether to have the casing impact string ordering.
+         * @param methodString - Optional. The ordering method used for Chinese characters.
          */
-        apply(fields: Excel.SortField[], matchCase?: boolean, method?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, methodString?: "PinYin" | "StrokeCount"): void;
         /**
          *
          * Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the state of the header buttons.
@@ -9043,14 +9366,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TableSort` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;
-        load(option?: string | string[]): Excel.TableSort;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TableSort;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TableSort;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableSort;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TableSort object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TableSortData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9063,7 +9391,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface SortField {
+    export interface SortField {
         /**
          *
          * Represents whether the sorting is done in an ascending fashion.
@@ -9114,7 +9442,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class Filter extends OfficeExtension.ClientObject {
+    export class Filter extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -9130,7 +9458,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria The criteria to apply.
+         * @param criteria - The criteria to apply.
          */
         apply(criteria: Excel.FilterCriteria): void;
         /**
@@ -9139,7 +9467,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of elements from the bottom to show.
+         * @param count - The number of elements from the bottom to show.
          */
         applyBottomItemsFilter(count: number): void;
         /**
@@ -9148,7 +9476,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param percent The percentage of elements from the bottom to show.
+         * @param percent - The percentage of elements from the bottom to show.
          */
         applyBottomPercentFilter(percent: number): void;
         /**
@@ -9157,7 +9485,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param color The background color of the cells to show.
+         * @param color - The background color of the cells to show.
          */
         applyCellColorFilter(color: string): void;
         /**
@@ -9166,9 +9494,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria1 The first criteria string.
-         * @param criteria2 Optional. The second criteria string.
-         * @param oper Optional. The operator that describes how the two criteria are joined.
+         * @param criteria1 - The first criteria string.
+         * @param criteria2 - Optional. The second criteria string.
+         * @param oper - Optional. The operator that describes how the two criteria are joined.
          */
         applyCustomFilter(criteria1: string, criteria2?: string, oper?: Excel.FilterOperator): void;
         /**
@@ -9177,18 +9505,18 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria1 The first criteria string.
-         * @param criteria2 Optional. The second criteria string.
-         * @param oper Optional. The operator that describes how the two criteria are joined.
+         * @param criteria1 - The first criteria string.
+         * @param criteria2 - Optional. The second criteria string.
+         * @param operString - Optional. The operator that describes how the two criteria are joined.
          */
-        applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" | "Or"): void;
+        applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;
         /**
          *
          * Apply a "Dynamic" filter to the column.
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria The dynamic criteria to apply.
+         * @param criteria - The dynamic criteria to apply.
          */
         applyDynamicFilter(criteria: Excel.DynamicFilterCriteria): void;
         /**
@@ -9197,16 +9525,16 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param criteria The dynamic criteria to apply.
+         * @param criteriaString - The dynamic criteria to apply.
          */
-        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
+        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
         /**
          *
          * Apply a "Font Color" filter to the column for the given color.
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param color The font color of the cells to show.
+         * @param color - The font color of the cells to show.
          */
         applyFontColorFilter(color: string): void;
         /**
@@ -9215,7 +9543,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param icon The icons of the cells to show.
+         * @param icon - The icons of the cells to show.
          */
         applyIconFilter(icon: Excel.Icon): void;
         /**
@@ -9224,7 +9552,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param count The number of elements from the top to show.
+         * @param count - The number of elements from the top to show.
          */
         applyTopItemsFilter(count: number): void;
         /**
@@ -9233,7 +9561,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param percent The percentage of elements from the top to show.
+         * @param percent - The percentage of elements from the top to show.
          */
         applyTopPercentFilter(percent: number): void;
         /**
@@ -9242,7 +9570,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values The list of values to show. This must be an array of strings or an array of Excel.FilterDateTime objects.
+         * @param values - The list of values to show. This must be an array of strings or an array of Excel.FilterDateTime objects.
          */
         applyValuesFilter(values: Array<string | FilterDatetime>): void;
         /**
@@ -9265,14 +9593,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Filter` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.FilterLoadOptions): Excel.Filter;
-        load(option?: string | string[]): Excel.Filter;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Filter;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Filter;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Filter;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Filter object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9285,7 +9618,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface FilterCriteria {
+    export interface FilterCriteria {
         /**
          *
          * The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
@@ -9353,7 +9686,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface FilterDatetime {
+    export interface FilterDatetime {
         /**
          *
          * The date in ISO8601 format used to filter data.
@@ -9376,7 +9709,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    interface Icon {
+    export interface Icon {
         /**
          *
          * Represents the index of the icon in the given set.
@@ -9400,7 +9733,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
+    export class CustomXmlPartScopedCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -9418,7 +9751,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItem(id: string): Excel.CustomXmlPart;
         /**
@@ -9428,7 +9761,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItemOrNullObject(id: string): Excel.CustomXmlPart;
         /**
@@ -9460,10 +9793,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPartScopedCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CustomXmlPartScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartScopedCollection;
-        load(option?: string | string[]): Excel.CustomXmlPartScopedCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomXmlPartScopedCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartScopedCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -9477,7 +9814,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class CustomXmlPartCollection extends OfficeExtension.ClientObject {
+    export class CustomXmlPartCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -9488,7 +9825,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param xml XML content. Must be a valid XML fragment.
+         * @param xml - XML content. Must be a valid XML fragment.
          */
         add(xml: string): Excel.CustomXmlPart;
         /**
@@ -9497,7 +9834,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param namespaceUri This must be a fully qualified schema URI; for example, "http://schemas.contoso.com/review/1.0".
+         * @param namespaceUri - This must be a fully qualified schema URI; for example, "http://schemas.contoso.com/review/1.0".
          */
         getByNamespace(namespaceUri: string): Excel.CustomXmlPartScopedCollection;
         /**
@@ -9513,7 +9850,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItem(id: string): Excel.CustomXmlPart;
         /**
@@ -9523,7 +9860,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param id ID of the object to be retrieved.
+         * @param id - ID of the object to be retrieved.
          */
         getItemOrNullObject(id: string): Excel.CustomXmlPart;
         /**
@@ -9539,10 +9876,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPartCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CustomXmlPartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomXmlPartCollection;
-        load(option?: string | string[]): Excel.CustomXmlPartCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomXmlPartCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomXmlPartCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -9556,7 +9897,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.5]
      */
-    class CustomXmlPart extends OfficeExtension.ClientObject {
+    export class CustomXmlPart extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -9593,7 +9934,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          *
-         * @param xml XML content for the part.
+         * @param xml - XML content for the part.
          */
         setXml(xml: string): void;
         /**
@@ -9609,14 +9950,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomXmlPart` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CustomXmlPartLoadOptions): Excel.CustomXmlPart;
-        load(option?: string | string[]): Excel.CustomXmlPart;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomXmlPart;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomXmlPart;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CustomXmlPart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9629,7 +9975,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class PivotTableCollection extends OfficeExtension.ClientObject {
+    export class PivotTableCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -9640,9 +9986,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name The name of the new PivotTable.
-         * @param source The source data for the new PivotTable, this can either be a range (or string address including the worksheet name) or a table.
-         * @param destination The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).
+         * @param name - The name of the new PivotTable.
+         * @param source - The source data for the new PivotTable, this can either be a range (or string address including the worksheet name) or a table.
+         * @param destination - The cell in the upper-left corner of the PivotTable report's destination range (the range on the worksheet where the resulting report will be placed).
          * @returns Returns the newly inserted PivotTable.
          */
         add(name: string, source: Range | string | Table, destination: Range | string): Excel.PivotTable;
@@ -9659,7 +10005,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.PivotTable;
         /**
@@ -9668,7 +10014,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotTable;
         /**
@@ -9691,10 +10037,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTableCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotTableCollection;
-        load(option?: string | string[]): Excel.PivotTableCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotTableCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -9708,7 +10058,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.3]
      */
-    class PivotTable extends OfficeExtension.ClientObject {
+    export class PivotTable extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -9784,8 +10134,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.PivotTable): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.PivotTableUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -9817,14 +10167,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotTable` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;
-        load(option?: string | string[]): Excel.PivotTable;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PivotTable;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotTable;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotTable;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotTable object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotTableData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9837,7 +10192,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotLayout extends OfficeExtension.ClientObject {
+    export class PivotLayout extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         
@@ -9878,8 +10233,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.PivotLayout): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.PivotLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -9937,14 +10292,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotLayout` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotLayoutLoadOptions): Excel.PivotLayout;
-        load(option?: string | string[]): Excel.PivotLayout;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PivotLayout;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotLayout;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotLayout;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`) that contains shallow copies of any loaded child properties from the original object.
@@ -9957,7 +10317,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotHierarchyCollection extends OfficeExtension.ClientObject {
+    export class PivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -9975,7 +10335,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.PivotHierarchy;
         /**
@@ -9984,7 +10344,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotHierarchy to be retrieved.
+         * @param name - Name of the PivotHierarchy to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotHierarchy;
         /**
@@ -10000,10 +10360,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotHierarchyCollection;
-        load(option?: string | string[]): Excel.PivotHierarchyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotHierarchyCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -10017,7 +10381,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotHierarchy extends OfficeExtension.ClientObject {
+    export class PivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -10049,8 +10413,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.PivotHierarchy): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.PivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -10068,14 +10432,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;
-        load(option?: string | string[]): Excel.PivotHierarchy;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10088,7 +10457,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class RowColumnPivotHierarchyCollection extends OfficeExtension.ClientObject {
+    export class RowColumnPivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -10114,7 +10483,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.RowColumnPivotHierarchy;
         /**
@@ -10123,7 +10492,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the RowColumnPivotHierarchy to be retrieved.
+         * @param name - Name of the RowColumnPivotHierarchy to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.RowColumnPivotHierarchy;
         /**
@@ -10146,10 +10515,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RowColumnPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.RowColumnPivotHierarchyCollection;
-        load(option?: string | string[]): Excel.RowColumnPivotHierarchyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.RowColumnPivotHierarchyCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -10163,7 +10536,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class RowColumnPivotHierarchy extends OfficeExtension.ClientObject {
+    export class RowColumnPivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -10202,8 +10575,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.RowColumnPivotHierarchy): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.RowColumnPivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -10228,14 +10601,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RowColumnPivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions): Excel.RowColumnPivotHierarchy;
-        load(option?: string | string[]): Excel.RowColumnPivotHierarchy;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.RowColumnPivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.RowColumnPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10248,7 +10626,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class FilterPivotHierarchyCollection extends OfficeExtension.ClientObject {
+    export class FilterPivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -10274,7 +10652,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.FilterPivotHierarchy;
         /**
@@ -10283,7 +10661,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the FilterPivotHierarchy to be retrieved.
+         * @param name - Name of the FilterPivotHierarchy to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.FilterPivotHierarchy;
         /**
@@ -10306,10 +10684,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FilterPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.FilterPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.FilterPivotHierarchyCollection;
-        load(option?: string | string[]): Excel.FilterPivotHierarchyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.FilterPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.FilterPivotHierarchyCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -10323,7 +10705,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class FilterPivotHierarchy extends OfficeExtension.ClientObject {
+    export class FilterPivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -10369,8 +10751,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.FilterPivotHierarchy): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.FilterPivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -10395,14 +10777,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.FilterPivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.FilterPivotHierarchyLoadOptions): Excel.FilterPivotHierarchy;
-        load(option?: string | string[]): Excel.FilterPivotHierarchy;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.FilterPivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.FilterPivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.FilterPivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.FilterPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FilterPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10415,7 +10802,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class DataPivotHierarchyCollection extends OfficeExtension.ClientObject {
+    export class DataPivotHierarchyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -10440,7 +10827,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.DataPivotHierarchy;
         /**
@@ -10449,7 +10836,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the DataPivotHierarchy to be retrieved.
+         * @param name - Name of the DataPivotHierarchy to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.DataPivotHierarchy;
         /**
@@ -10472,10 +10859,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataPivotHierarchyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.DataPivotHierarchyCollection;
-        load(option?: string | string[]): Excel.DataPivotHierarchyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DataPivotHierarchyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.DataPivotHierarchyCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -10489,7 +10880,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class DataPivotHierarchy extends OfficeExtension.ClientObject {
+    export class DataPivotHierarchy extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -10549,8 +10940,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.DataPivotHierarchy): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.DataPivotHierarchyUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -10575,14 +10966,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataPivotHierarchy` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.DataPivotHierarchyLoadOptions): Excel.DataPivotHierarchy;
-        load(option?: string | string[]): Excel.DataPivotHierarchy;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DataPivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DataPivotHierarchy;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataPivotHierarchy;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DataPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10592,7 +10988,7 @@ declare namespace Excel {
     /**
      * [Api set: ExcelApi 1.8]
      */
-    interface ShowAsRule {
+    export interface ShowAsRule {
         /**
          *
          * The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
@@ -10621,7 +11017,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotFieldCollection extends OfficeExtension.ClientObject {
+    export class PivotFieldCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -10639,7 +11035,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.PivotField;
         /**
@@ -10648,7 +11044,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotField to be retrieved.
+         * @param name - Name of the PivotField to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotField;
         /**
@@ -10664,10 +11060,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotFieldCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotFieldCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotFieldCollection;
-        load(option?: string | string[]): Excel.PivotFieldCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotFieldCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotFieldCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -10681,7 +11081,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotField extends OfficeExtension.ClientObject {
+    export class PivotField extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -10727,8 +11127,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.PivotField): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.PivotFieldUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -10739,7 +11139,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+         * @param sortBy - Represents whether the sorting is done in an ascending or descending order.
          */
         sortByLabels(sortBy: SortBy): void;
         
@@ -10757,14 +11157,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotField` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotFieldLoadOptions): Excel.PivotField;
-        load(option?: string | string[]): Excel.PivotField;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PivotField;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotField;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotField;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotField object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotFieldData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10777,7 +11182,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotItemCollection extends OfficeExtension.ClientObject {
+    export class PivotItemCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -10795,7 +11200,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotTable to be retrieved.
          */
         getItem(name: string): Excel.PivotItem;
         /**
@@ -10804,7 +11209,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name Name of the PivotItem to be retrieved.
+         * @param name - Name of the PivotItem to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotItem;
         /**
@@ -10820,10 +11225,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotItemCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.PivotItemCollection;
-        load(option?: string | string[]): Excel.PivotItemCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotItemCollection;
         load(option?: OfficeExtension.LoadOption): Excel.PivotItemCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -10837,7 +11246,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    class PivotItem extends OfficeExtension.ClientObject {
+    export class PivotItem extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -10876,8 +11285,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.PivotItem): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.PivotItemUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -10895,14 +11304,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PivotItem` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PivotItemLoadOptions): Excel.PivotItem;
-        load(option?: string | string[]): Excel.PivotItem;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PivotItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PivotItem;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotItem;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PivotItem object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotItemData`) that contains shallow copies of any loaded child properties from the original object.
@@ -10915,7 +11329,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.8]
      */
-    interface Subtotals {
+    export interface Subtotals {
         /**
          *
          * If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
@@ -11154,7 +11568,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class DocumentProperties extends OfficeExtension.ClientObject {
+    export class DocumentProperties extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -11249,8 +11663,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.DocumentProperties): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.DocumentPropertiesUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -11268,14 +11682,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DocumentProperties` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.DocumentPropertiesLoadOptions): Excel.DocumentProperties;
-        load(option?: string | string[]): Excel.DocumentProperties;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DocumentProperties;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DocumentProperties;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DocumentProperties;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DocumentProperties object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11288,7 +11707,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class CustomProperty extends OfficeExtension.ClientObject {
+    export class CustomProperty extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -11320,8 +11739,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.CustomProperty): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.CustomPropertyUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -11346,14 +11765,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomProperty` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CustomPropertyLoadOptions): Excel.CustomProperty;
-        load(option?: string | string[]): Excel.CustomProperty;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomProperty;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomProperty;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CustomProperty object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomPropertyData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11366,7 +11790,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class CustomPropertyCollection extends OfficeExtension.ClientObject {
+    export class CustomPropertyCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -11377,8 +11801,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param key Required. The custom property's key, which is case-insensitive.
-         * @param value Required. The custom property's value.
+         * @param key - Required. The custom property's key, which is case-insensitive.
+         * @param value - Required. The custom property's value.
          */
         add(key: string, value: any): Excel.CustomProperty;
         /**
@@ -11401,7 +11825,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param key The key that identifies the custom property object.
+         * @param key - The key that identifies the custom property object.
          */
         getItem(key: string): Excel.CustomProperty;
         /**
@@ -11410,7 +11834,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param key Required. The key that identifies the custom property object.
+         * @param key - Required. The key that identifies the custom property object.
          */
         getItemOrNullObject(key: string): Excel.CustomProperty;
         /**
@@ -11426,10 +11850,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomPropertyCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.CustomPropertyCollection;
-        load(option?: string | string[]): Excel.CustomPropertyCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomPropertyCollection;
         load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -11443,7 +11871,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalFormatCollection extends OfficeExtension.ClientObject {
+    export class ConditionalFormatCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -11454,7 +11882,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param type The type of conditional format being added. See Excel.ConditionalFormatType for details.
+         * @param type - The type of conditional format being added. See Excel.ConditionalFormatType for details.
          */
         add(type: Excel.ConditionalFormatType): Excel.ConditionalFormat;
         /**
@@ -11463,9 +11891,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param type The type of conditional format being added. See Excel.ConditionalFormatType for details.
+         * @param typeString - The type of conditional format being added. See Excel.ConditionalFormatType for details.
          */
-        add(type: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
+        add(typeString: "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue"): Excel.ConditionalFormat;
         /**
          *
          * Clears all conditional formats active on the current specified range.
@@ -11486,7 +11914,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param id The id of the conditional format.
+         * @param id - The id of the conditional format.
          * @returns Conditional Format object.
          */
         getItem(id: string): Excel.ConditionalFormat;
@@ -11496,7 +11924,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param index Index of the conditional formats to be retrieved.
+         * @param index - Index of the conditional formats to be retrieved.
          */
         getItemAt(index: number): Excel.ConditionalFormat;
         /**
@@ -11512,10 +11940,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormatCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalFormatCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalFormatCollection;
-        load(option?: string | string[]): Excel.ConditionalFormatCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalFormatCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalFormatCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -11529,7 +11961,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalFormat extends OfficeExtension.ClientObject {
+    export class ConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -11691,8 +12123,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -11732,14 +12164,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalFormatLoadOptions): Excel.ConditionalFormat;
-        load(option?: string | string[]): Excel.ConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11752,7 +12189,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class DataBarConditionalFormat extends OfficeExtension.ClientObject {
+    export class DataBarConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -11822,8 +12259,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.DataBarConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.DataBarConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -11841,14 +12278,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.DataBarConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.DataBarConditionalFormatLoadOptions): Excel.DataBarConditionalFormat;
-        load(option?: string | string[]): Excel.DataBarConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.DataBarConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.DataBarConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.DataBarConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.DataBarConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DataBarConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11861,7 +12303,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalDataBarPositiveFormat extends OfficeExtension.ClientObject {
+    export class ConditionalDataBarPositiveFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -11894,8 +12336,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalDataBarPositiveFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalDataBarPositiveFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -11913,14 +12355,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalDataBarPositiveFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions): Excel.ConditionalDataBarPositiveFormat;
-        load(option?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalDataBarPositiveFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalDataBarPositiveFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalDataBarPositiveFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarPositiveFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -11933,7 +12380,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalDataBarNegativeFormat extends OfficeExtension.ClientObject {
+    export class ConditionalDataBarNegativeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -11973,8 +12420,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalDataBarNegativeFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalDataBarNegativeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -11992,14 +12439,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalDataBarNegativeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions): Excel.ConditionalDataBarNegativeFormat;
-        load(option?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalDataBarNegativeFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalDataBarNegativeFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalDataBarNegativeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalDataBarNegativeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12012,7 +12464,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalDataBarRule {
+    export interface ConditionalDataBarRule {
         /**
          *
          * The formula, if required, to evaluate the databar rule on.
@@ -12034,7 +12486,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class CustomConditionalFormat extends OfficeExtension.ClientObject {
+    export class CustomConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12059,8 +12511,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.CustomConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.CustomConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12078,14 +12530,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CustomConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;
-        load(option?: string | string[]): Excel.CustomConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CustomConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CustomConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CustomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12098,7 +12555,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalFormatRule extends OfficeExtension.ClientObject {
+    export class ConditionalFormatRule extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12130,8 +12587,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalFormatRule): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalFormatRuleUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12149,14 +12606,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalFormatRule` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalFormatRuleLoadOptions): Excel.ConditionalFormatRule;
-        load(option?: string | string[]): Excel.ConditionalFormatRule;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalFormatRule;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalFormatRule;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalFormatRule;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalFormatRule object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalFormatRuleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12169,7 +12631,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class IconSetConditionalFormat extends OfficeExtension.ClientObject {
+    export class IconSetConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12208,8 +12670,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.IconSetConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.IconSetConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12227,14 +12689,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.IconSetConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.IconSetConditionalFormatLoadOptions): Excel.IconSetConditionalFormat;
-        load(option?: string | string[]): Excel.IconSetConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.IconSetConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.IconSetConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.IconSetConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.IconSetConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.IconSetConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12247,7 +12714,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalIconCriterion {
+    export interface ConditionalIconCriterion {
         /**
          *
          * The custom icon for the current criterion if different from the default IconSet, else null will be returned.
@@ -12283,7 +12750,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ColorScaleConditionalFormat extends OfficeExtension.ClientObject {
+    export class ColorScaleConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12308,8 +12775,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ColorScaleConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ColorScaleConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12327,14 +12794,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ColorScaleConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ColorScaleConditionalFormatLoadOptions): Excel.ColorScaleConditionalFormat;
-        load(option?: string | string[]): Excel.ColorScaleConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ColorScaleConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ColorScaleConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ColorScaleConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ColorScaleConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ColorScaleConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12347,7 +12819,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalColorScaleCriteria {
+    export interface ConditionalColorScaleCriteria {
         /**
          *
          * The maximum point Color Scale Criterion.
@@ -12376,7 +12848,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalColorScaleCriterion {
+    export interface ConditionalColorScaleCriterion {
         /**
          *
          * HTML color code representation of the color scale color. E.g. #FF0000 represents Red.
@@ -12405,7 +12877,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class TopBottomConditionalFormat extends OfficeExtension.ClientObject {
+    export class TopBottomConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12430,8 +12902,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.TopBottomConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.TopBottomConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12449,14 +12921,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TopBottomConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;
-        load(option?: string | string[]): Excel.TopBottomConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TopBottomConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TopBottomConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TopBottomConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TopBottomConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12469,7 +12946,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalTopBottomRule {
+    export interface ConditionalTopBottomRule {
         /**
          *
          * The rank between 1 and 1000 for numeric ranks or 1 and 100 for percent ranks.
@@ -12491,7 +12968,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class PresetCriteriaConditionalFormat extends OfficeExtension.ClientObject {
+    export class PresetCriteriaConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12516,8 +12993,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.PresetCriteriaConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.PresetCriteriaConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12535,14 +13012,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PresetCriteriaConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions): Excel.PresetCriteriaConditionalFormat;
-        load(option?: string | string[]): Excel.PresetCriteriaConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.PresetCriteriaConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.PresetCriteriaConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PresetCriteriaConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.PresetCriteriaConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PresetCriteriaConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12555,7 +13037,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalPresetCriteriaRule {
+    export interface ConditionalPresetCriteriaRule {
         /**
          *
          * The criterion of the conditional format.
@@ -12570,7 +13052,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class TextConditionalFormat extends OfficeExtension.ClientObject {
+    export class TextConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12595,8 +13077,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.TextConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.TextConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12614,14 +13096,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.TextConditionalFormatLoadOptions): Excel.TextConditionalFormat;
-        load(option?: string | string[]): Excel.TextConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.TextConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.TextConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.TextConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.TextConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12634,7 +13121,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalTextComparisonRule {
+    export interface ConditionalTextComparisonRule {
         /**
          *
          * The operator of the text conditional format.
@@ -12656,7 +13143,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class CellValueConditionalFormat extends OfficeExtension.ClientObject {
+    export class CellValueConditionalFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12681,8 +13168,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.CellValueConditionalFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.CellValueConditionalFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12700,14 +13187,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.CellValueConditionalFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.CellValueConditionalFormatLoadOptions): Excel.CellValueConditionalFormat;
-        load(option?: string | string[]): Excel.CellValueConditionalFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.CellValueConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.CellValueConditionalFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CellValueConditionalFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.CellValueConditionalFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CellValueConditionalFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12720,7 +13212,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    interface ConditionalCellValueRule {
+    export interface ConditionalCellValueRule {
         /**
          *
          * The formula, if required, to evaluate the conditional format rule on.
@@ -12749,7 +13241,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalRangeFormat extends OfficeExtension.ClientObject {
+    export class ConditionalRangeFormat extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12788,8 +13280,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalRangeFormat): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalRangeFormatUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12807,14 +13299,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFormat` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;
-        load(option?: string | string[]): Excel.ConditionalRangeFormat;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalRangeFormat;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12827,7 +13324,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalRangeFont extends OfficeExtension.ClientObject {
+    export class ConditionalRangeFont extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12873,8 +13370,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalRangeFont): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalRangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12899,14 +13396,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFont` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;
-        load(option?: string | string[]): Excel.ConditionalRangeFont;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalRangeFont;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFontData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12919,7 +13421,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalRangeFill extends OfficeExtension.ClientObject {
+    export class ConditionalRangeFill extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -12937,8 +13439,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalRangeFill): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalRangeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -12963,14 +13465,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeFill` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalRangeFillLoadOptions): Excel.ConditionalRangeFill;
-        load(option?: string | string[]): Excel.ConditionalRangeFill;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalRangeFill;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFill;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeFill object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFillData`) that contains shallow copies of any loaded child properties from the original object.
@@ -12983,7 +13490,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalRangeBorder extends OfficeExtension.ClientObject {
+    export class ConditionalRangeBorder extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -13015,8 +13522,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.ConditionalRangeBorder): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.ConditionalRangeBorderUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -13034,14 +13541,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeBorder` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;
-        load(option?: string | string[]): Excel.ConditionalRangeBorder;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.ConditionalRangeBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalRangeBorder;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.ConditionalRangeBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13054,7 +13566,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.6]
      */
-    class ConditionalRangeBorderCollection extends OfficeExtension.ClientObject {
+    export class ConditionalRangeBorderCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -13100,7 +13612,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param index Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+         * @param index - Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
          */
         getItem(index: Excel.ConditionalRangeBorderIndex): Excel.ConditionalRangeBorder;
         /**
@@ -13109,16 +13621,16 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param index Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
+         * @param indexString - Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
          */
-        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
+        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;
         /**
          *
          * Gets a border object using its index.
          *
          * [Api set: ExcelApi 1.6]
          *
-         * @param index Index value of the object to be retrieved. Zero-indexed.
+         * @param index - Index value of the object to be retrieved. Zero-indexed.
          */
         getItemAt(index: number): Excel.ConditionalRangeBorder;
         /**
@@ -13134,10 +13646,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ConditionalRangeBorderCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
-        load(option?: string | string[]): Excel.ConditionalRangeBorderCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.ConditionalRangeBorderCollection;
         load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -13151,7 +13667,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class Style extends OfficeExtension.ClientObject {
+    export class Style extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -13323,8 +13839,8 @@ declare namespace Excel {
          *
          * `set(properties: Excel.Style): void`
          *
-         * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-         * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+         * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+         * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.
          */
         set(properties: Interfaces.StyleUpdateData, options?: OfficeExtension.UpdateOptions): void;
         /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -13349,14 +13865,19 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Style` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;
-        load(option?: string | string[]): Excel.Style;
-        load(option?: {
-            select?: string;
-            expand?: string;
-        }): Excel.Style;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.Style;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+         */
+        load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Style;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
         * Whereas the original Excel.Style object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleData`) that contains shallow copies of any loaded child properties from the original object.
@@ -13369,7 +13890,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class StyleCollection extends OfficeExtension.ClientObject {
+    export class StyleCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /** Gets the loaded child items in this collection. */
@@ -13380,7 +13901,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param name Name of the style to be added.
+         * @param name - Name of the style to be added.
          */
         add(name: string): void;
         
@@ -13390,7 +13911,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          *
-         * @param name Name of the style to be retrieved.
+         * @param name - Name of the style to be retrieved.
          */
         getItem(name: string): Excel.Style;
         
@@ -13407,10 +13928,14 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.StyleCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions): Excel.StyleCollection;
-        load(option?: string | string[]): Excel.StyleCollection;
+        /**
+         * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
+         * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.
+         */
+        load(propertyNames?: string | string[]): Excel.StyleCollection;
         load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;
         /**
         * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -13431,7 +13956,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.7]
      */
-    class DataConnectionCollection extends OfficeExtension.ClientObject {
+    export class DataConnectionCollection extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -15063,7 +15588,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class FunctionResult<T> extends OfficeExtension.ClientObject {
+    export class FunctionResult<T> extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -15093,7 +15618,7 @@ declare namespace Excel {
          *
          * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): FunctionResult<T>` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
          *
-         * @param options Provides options for which properties of the object to load.
+         * @param options - Provides options for which properties of the object to load.
          */
         load(option?: Excel.Interfaces.FunctionResultLoadOptions): FunctionResult<T>;
         load(option?: string | string[]): FunctionResult<T>;
@@ -15113,7 +15638,7 @@ declare namespace Excel {
      *
      * [Api set: ExcelApi 1.2]
      */
-    class Functions extends OfficeExtension.ClientObject {
+    export class Functions extends OfficeExtension.ClientObject {
         /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
         context: RequestContext; 
         /**
@@ -15122,7 +15647,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the real number for which you want the absolute value.
+         * @param number - Is the real number for which you want the absolute value.
          */
         abs(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15131,14 +15656,14 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param firstInterest Is the security's first interest date, expressed as a serial date number.
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param par Is the security's par value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
-         * @param calcMethod Is a logical value: to accrued interest from issue date = TRUE or omitted; to calculate from last coupon payment date = FALSE.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param firstInterest - Is the security's first interest date, expressed as a serial date number.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param par - Is the security's par value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
+         * @param calcMethod - Is a logical value: to accrued interest from issue date = TRUE or omitted; to calculate from last coupon payment date = FALSE.
          */
         accrInt(issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, calcMethod?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15147,11 +15672,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param settlement Is the security's maturity date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param par Is the security's par value.
-         * @param basis Is the type of day count basis to use.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param settlement - Is the security's maturity date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param par - Is the security's par value.
+         * @param basis - Is the type of day count basis to use.
          */
         accrIntM(issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, par: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15160,7 +15685,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the cosine of the angle you want and must be from -1 to 1.
+         * @param number - Is the cosine of the angle you want and must be from -1 to 1.
          */
         acos(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15169,7 +15694,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number equal to or greater than 1.
+         * @param number - Is any real number equal to or greater than 1.
          */
         acosh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15178,7 +15703,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the cotangent of the angle you want.
+         * @param number - Is the cotangent of the angle you want.
          */
         acot(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15187,7 +15712,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hyperbolic cotangent of the angle that you want.
+         * @param number - Is the hyperbolic cotangent of the angle that you want.
          */
         acoth(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15196,13 +15721,13 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the cost of the asset.
-         * @param datePurchased Is the date the asset is purchased.
-         * @param firstPeriod Is the date of the end of the first period.
-         * @param salvage Is the salvage value at the end of life of the asset.
-         * @param period Is the period.
-         * @param rate Is the rate of depreciation.
-         * @param basis Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
+         * @param cost - Is the cost of the asset.
+         * @param datePurchased - Is the date the asset is purchased.
+         * @param firstPeriod - Is the date of the end of the first period.
+         * @param salvage - Is the salvage value at the end of life of the asset.
+         * @param period - Is the period.
+         * @param rate - Is the rate of depreciation.
+         * @param basis - Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
          */
         amorDegrc(cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15211,13 +15736,13 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the cost of the asset.
-         * @param datePurchased Is the date the asset is purchased.
-         * @param firstPeriod Is the date of the end of the first period.
-         * @param salvage Is the salvage value at the end of life of the asset.
-         * @param period Is the period.
-         * @param rate Is the rate of depreciation.
-         * @param basis Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
+         * @param cost - Is the cost of the asset.
+         * @param datePurchased - Is the date the asset is purchased.
+         * @param firstPeriod - Is the date of the end of the first period.
+         * @param salvage - Is the salvage value at the end of life of the asset.
+         * @param period - Is the period.
+         * @param rate - Is the rate of depreciation.
+         * @param basis - Year_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.
          */
         amorLinc(cost: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, datePurchased: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15226,7 +15751,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
+         * @param values - List of parameters, whose elements are 1 to 255 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
         and(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -15235,7 +15760,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the Roman numeral you want to convert.
+         * @param text - Is the Roman numeral you want to convert.
          */
         arabic(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15244,7 +15769,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param reference Is a reference to a cell or range of cells and can refer to multiple areas.
+         * @param reference - Is a reference to a cell or range of cells and can refer to multiple areas.
          */
         areas(reference: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15253,7 +15778,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is a text, or a reference to a cell containing a text.
+         * @param text - Is a text, or a reference to a cell containing a text.
          */
         asc(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -15262,7 +15787,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the sine of the angle you want and must be from -1 to 1.
+         * @param number - Is the sine of the angle you want and must be from -1 to 1.
          */
         asin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15271,7 +15796,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number equal to or greater than 1.
+         * @param number - Is any real number equal to or greater than 1.
          */
         asinh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15280,7 +15805,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the tangent of the angle you want.
+         * @param number - Is the tangent of the angle you want.
          */
         atan(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15289,8 +15814,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param xNum Is the x-coordinate of the point.
-         * @param yNum Is the y-coordinate of the point.
+         * @param xNum - Is the x-coordinate of the point.
+         * @param yNum - Is the y-coordinate of the point.
          */
         atan2(xNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15299,7 +15824,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number between -1 and 1 excluding -1 and 1.
+         * @param number - Is any real number between -1 and 1 excluding -1 and 1.
          */
         atanh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15308,7 +15833,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments for which you want the average of the absolute deviations.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments for which you want the average of the absolute deviations.
          */
         aveDev(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -15317,7 +15842,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.
          */
         average(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -15326,7 +15851,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments for which you want the average.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments for which you want the average.
          */
         averageA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -15335,9 +15860,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range of cells you want evaluated.
-         * @param criteria Is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
-         * @param averageRange Are the actual cells to be used to find the average. If omitted, the cells in range are used.
+         * @param range - Is the range of cells you want evaluated.
+         * @param criteria - Is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
+         * @param averageRange - Are the actual cells to be used to find the average. If omitted, the cells in range are used.
          */
         averageIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, averageRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15346,8 +15871,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param averageRange Are the actual cells to be used to find the average.
-         * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
+         * @param averageRange - Are the actual cells to be used to find the average.
+         * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be used to find the average.
          */
         averageIfs(averageRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
@@ -15356,7 +15881,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number that you want to convert.
+         * @param number - Is a number that you want to convert.
          */
         bahtText(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -15365,9 +15890,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number that you want to convert.
-         * @param radix Is the base Radix that you want to convert the number into.
-         * @param minLength Is the minimum length of the returned string.  If omitted leading zeros are not added.
+         * @param number - Is the number that you want to convert.
+         * @param radix - Is the base Radix that you want to convert the number into.
+         * @param minLength - Is the minimum length of the returned string.  If omitted leading zeros are not added.
          */
         base(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, minLength?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -15376,8 +15901,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the Bessel function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the Bessel function.
          */
         besselI(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15386,8 +15911,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the Bessel function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the Bessel function.
          */
         besselJ(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15396,8 +15921,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the function.
          */
         besselK(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15406,8 +15931,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function.
-         * @param n Is the order of the function.
+         * @param x - Is the value at which to evaluate the function.
+         * @param n - Is the order of the function.
          */
         besselY(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15416,12 +15941,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value between A and B at which to evaluate the function.
-         * @param alpha Is a parameter to the distribution and must be greater than 0.
-         * @param beta Is a parameter to the distribution and must be greater than 0.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
-         * @param A Is an optional lower bound to the interval of x. If omitted, A = 0.
-         * @param B Is an optional upper bound to the interval of x. If omitted, B = 1.
+         * @param x - Is the value between A and B at which to evaluate the function.
+         * @param alpha - Is a parameter to the distribution and must be greater than 0.
+         * @param beta - Is a parameter to the distribution and must be greater than 0.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
+         * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
         beta_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15430,11 +15955,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the beta distribution.
-         * @param alpha Is a parameter to the distribution and must be greater than 0.
-         * @param beta Is a parameter to the distribution and must be greater than 0.
-         * @param A Is an optional lower bound to the interval of x. If omitted, A = 0.
-         * @param B Is an optional upper bound to the interval of x. If omitted, B = 1.
+         * @param probability - Is a probability associated with the beta distribution.
+         * @param alpha - Is a parameter to the distribution and must be greater than 0.
+         * @param beta - Is a parameter to the distribution and must be greater than 0.
+         * @param A - Is an optional lower bound to the interval of x. If omitted, A = 0.
+         * @param B - Is an optional upper bound to the interval of x. If omitted, B = 1.
          */
         beta_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, A?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, B?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15443,7 +15968,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the binary number you want to convert.
+         * @param number - Is the binary number you want to convert.
          */
         bin2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15452,8 +15977,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the binary number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the binary number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         bin2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15462,8 +15987,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the binary number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the binary number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         bin2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15472,10 +15997,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param numberS Is the number of successes in trials.
-         * @param trials Is the number of independent trials.
-         * @param probabilityS Is the probability of success on each trial.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
+         * @param numberS - Is the number of successes in trials.
+         * @param trials - Is the number of independent trials.
+         * @param probabilityS - Is the probability of success on each trial.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
         binom_Dist(numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15484,10 +16009,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param trials Is the number of independent trials.
-         * @param probabilityS Is the probability of success on each trial.
-         * @param numberS Is the number of successes in trials.
-         * @param numberS2 If provided this function returns the probability that the number of successful trials shall lie between numberS and numberS2.
+         * @param trials - Is the number of independent trials.
+         * @param probabilityS - Is the probability of success on each trial.
+         * @param numberS - Is the number of successes in trials.
+         * @param numberS2 - If provided this function returns the probability that the number of successful trials shall lie between numberS and numberS2.
          */
         binom_Dist_Range(trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS2?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15496,9 +16021,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param trials Is the number of Bernoulli trials.
-         * @param probabilityS Is the probability of success on each trial, a number between 0 and 1 inclusive.
-         * @param alpha Is the criterion value, a number between 0 and 1 inclusive.
+         * @param trials - Is the number of Bernoulli trials.
+         * @param probabilityS - Is the probability of success on each trial, a number between 0 and 1 inclusive.
+         * @param alpha - Is the criterion value, a number between 0 and 1 inclusive.
          */
         binom_Inv(trials: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15507,8 +16032,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the decimal representation of the binary number you want to evaluate.
-         * @param number2 Is the decimal representation of the binary number you want to evaluate.
+         * @param number1 - Is the decimal representation of the binary number you want to evaluate.
+         * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
         bitand(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15517,8 +16042,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal representation of the binary number you want to evaluate.
-         * @param shiftAmount Is the number of bits that you want to shift Number left by.
+         * @param number - Is the decimal representation of the binary number you want to evaluate.
+         * @param shiftAmount - Is the number of bits that you want to shift Number left by.
          */
         bitlshift(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15527,8 +16052,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the decimal representation of the binary number you want to evaluate.
-         * @param number2 Is the decimal representation of the binary number you want to evaluate.
+         * @param number1 - Is the decimal representation of the binary number you want to evaluate.
+         * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
         bitor(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15537,8 +16062,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal representation of the binary number you want to evaluate.
-         * @param shiftAmount Is the number of bits that you want to shift Number right by.
+         * @param number - Is the decimal representation of the binary number you want to evaluate.
+         * @param shiftAmount - Is the number of bits that you want to shift Number right by.
          */
         bitrshift(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, shiftAmount: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15547,8 +16072,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the decimal representation of the binary number you want to evaluate.
-         * @param number2 Is the decimal representation of the binary number you want to evaluate.
+         * @param number1 - Is the decimal representation of the binary number you want to evaluate.
+         * @param number2 - Is the decimal representation of the binary number you want to evaluate.
          */
         bitxor(number1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15557,9 +16082,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
-         * @param mode When given and nonzero this function will round away from zero.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
+         * @param mode - When given and nonzero this function will round away from zero.
          */
         ceiling_Math(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15568,8 +16093,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
          */
         ceiling_Precise(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15578,7 +16103,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number between 1 and 255 specifying which character you want.
+         * @param number - Is a number between 1 and 255 specifying which character you want.
          */
         char(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -15587,9 +16112,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which you want to evaluate the distribution, a nonnegative number.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         chiSq_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15598,8 +16123,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which you want to evaluate the distribution, a nonnegative number.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15608,8 +16133,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15618,8 +16143,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
-         * @param degFreedom Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the chi-squared distribution, a value between 0 and 1 inclusive.
+         * @param degFreedom - Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         chiSq_Inv_RT(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15628,8 +16153,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param indexNum Specifies which value argument is selected. indexNum must be between 1 and 254, or a formula or a reference to a number between 1 and 254.
-         * @param values List of parameters, whose elements are 1 to 254 numbers, cell references, defined names, formulas, functions, or text arguments from which CHOOSE selects.
+         * @param indexNum - Specifies which value argument is selected. indexNum must be between 1 and 254, or a formula or a reference to a number between 1 and 254.
+         * @param values - List of parameters, whose elements are 1 to 254 numbers, cell references, defined names, formulas, functions, or text arguments from which CHOOSE selects.
          */
         choose(indexNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number | string | boolean>;
         /**
@@ -15638,7 +16163,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is any worksheet information from which you want to remove nonprintable characters.
+         * @param text - Is any worksheet information from which you want to remove nonprintable characters.
          */
         clean(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -15647,7 +16172,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text for which you want the code of the first character.
+         * @param text - Is the text for which you want the code of the first character.
          */
         code(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15656,7 +16181,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is an array or array formula, or a reference to a range of cells for which you want the number of columns.
+         * @param array - Is an array or array formula, or a reference to a range of cells for which you want the number of columns.
          */
         columns(array: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15665,8 +16190,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of items.
-         * @param numberChosen Is the number of items in each combination.
+         * @param number - Is the total number of items.
+         * @param numberChosen - Is the number of items in each combination.
          */
         combin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15675,8 +16200,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of items.
-         * @param numberChosen Is the number of items in each combination.
+         * @param number - Is the total number of items.
+         * @param numberChosen - Is the number of items in each combination.
          */
         combina(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15685,9 +16210,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param realNum Is the real coefficient of the complex number.
-         * @param iNum Is the imaginary coefficient of the complex number.
-         * @param suffix Is the suffix for the imaginary component of the complex number.
+         * @param realNum - Is the real coefficient of the complex number.
+         * @param iNum - Is the imaginary coefficient of the complex number.
+         * @param suffix - Is the suffix for the imaginary component of the complex number.
          */
         complex(realNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, iNum: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, suffix?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15696,7 +16221,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 text strings to be joined into a single text string and can be text strings, numbers, or single-cell references.
+         * @param values - List of parameters, whose elements are 1 to 255 text strings to be joined into a single text string and can be text strings, numbers, or single-cell references.
          */
         concatenate(...values: Array<string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<string>;
         /**
@@ -15705,9 +16230,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param alpha Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
-         * @param standardDev Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
-         * @param size Is the sample size.
+         * @param alpha - Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
+         * @param standardDev - Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
+         * @param size - Is the sample size.
          */
         confidence_Norm(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15716,9 +16241,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param alpha Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
-         * @param standardDev Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
-         * @param size Is the sample size.
+         * @param alpha - Is the significance level used to compute the confidence level, a number greater than 0 and less than 1.
+         * @param standardDev - Is the population standard deviation for the data range and is assumed to be known. standardDev must be greater than 0.
+         * @param size - Is the sample size.
          */
         confidence_T(alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, size: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15727,9 +16252,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value in from_units to convert.
-         * @param fromUnit Is the units for number.
-         * @param toUnit Is the units for the result.
+         * @param number - Is the value in from_units to convert.
+         * @param fromUnit - Is the units for number.
+         * @param toUnit - Is the units for the result.
          */
         convert(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fromUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, toUnit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15738,7 +16263,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the cosine.
+         * @param number - Is the angle in radians for which you want the cosine.
          */
         cos(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15747,7 +16272,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         cosh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15756,7 +16281,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the cotangent.
+         * @param number - Is the angle in radians for which you want the cotangent.
          */
         cot(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15765,7 +16290,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the hyperbolic cotangent.
+         * @param number - Is the angle in radians for which you want the hyperbolic cotangent.
          */
         coth(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15774,7 +16299,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments that can contain or refer to a variety of different types of data, but only numbers are counted.
          */
         count(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -15783,7 +16308,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments representing the values and cells you want to count. Values can be any type of information.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments representing the values and cells you want to count. Values can be any type of information.
          */
         countA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -15792,7 +16317,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range from which you want to count the empty cells.
+         * @param range - Is the range from which you want to count the empty cells.
          */
         countBlank(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15801,8 +16326,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range of cells from which you want to count nonblank cells.
-         * @param criteria Is the condition in the form of a number, expression, or text that defines which cells will be counted.
+         * @param range - Is the range of cells from which you want to count nonblank cells.
+         * @param criteria - Is the condition in the form of a number, expression, or text that defines which cells will be counted.
          */
         countIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15811,7 +16336,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition in the form of a number, expression, or text that defines which cells will be counted.
+         * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition in the form of a number, expression, or text that defines which cells will be counted.
          */
         countIfs(...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
@@ -15820,10 +16345,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupDayBs(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15832,10 +16357,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupDays(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15844,10 +16369,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupDaysNc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15856,10 +16381,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupNcd(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15868,10 +16393,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupNum(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15880,10 +16405,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         coupPcd(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15892,7 +16417,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the cosecant.
+         * @param number - Is the angle in radians for which you want the cosecant.
          */
         csc(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15901,7 +16426,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the hyperbolic cosecant.
+         * @param number - Is the angle in radians for which you want the hyperbolic cosecant.
          */
         csch(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15910,12 +16435,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate.
-         * @param nper Is the total number of payment periods.
-         * @param pv Is the present value.
-         * @param startPeriod Is the first period in the calculation.
-         * @param endPeriod Is the last period in the calculation.
-         * @param type Is the timing of the payment.
+         * @param rate - Is the interest rate.
+         * @param nper - Is the total number of payment periods.
+         * @param pv - Is the present value.
+         * @param startPeriod - Is the first period in the calculation.
+         * @param endPeriod - Is the last period in the calculation.
+         * @param type - Is the timing of the payment.
          */
         cumIPmt(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15924,12 +16449,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate.
-         * @param nper Is the total number of payment periods.
-         * @param pv Is the present value.
-         * @param startPeriod Is the first period in the calculation.
-         * @param endPeriod Is the last period in the calculation.
-         * @param type Is the timing of the payment.
+         * @param rate - Is the interest rate.
+         * @param nper - Is the total number of payment periods.
+         * @param pv - Is the present value.
+         * @param startPeriod - Is the first period in the calculation.
+         * @param endPeriod - Is the last period in the calculation.
+         * @param type - Is the timing of the payment.
          */
         cumPrinc(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15938,9 +16463,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         daverage(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15949,9 +16474,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dcount(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15960,9 +16485,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dcountA(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15971,9 +16496,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dget(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | boolean | string>;
         /**
@@ -15982,9 +16507,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dmax(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -15993,9 +16518,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dmin(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16004,9 +16529,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dproduct(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16015,9 +16540,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dstDev(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16026,9 +16551,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dstDevP(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16037,9 +16562,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dsum(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16048,9 +16573,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dvar(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16059,9 +16584,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param database Is the range of cells that makes up the list or database. A database is a list of related data.
-         * @param field Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
-         * @param criteria Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
+         * @param database - Is the range of cells that makes up the list or database. A database is a list of related data.
+         * @param field - Is either the label of the column in double quotation marks or a number that represents the column's position in the list.
+         * @param criteria - Is the range of cells that contains the conditions you specify. The range includes a column label and one cell below the label for a condition.
          */
         dvarP(database: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, field: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16070,9 +16595,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param year Is a number from 1900 or 1904 (depending on the workbook's date system) to 9999.
-         * @param month Is a number from 1 to 12 representing the month of the year.
-         * @param day Is a number from 1 to 31 representing the day of the month.
+         * @param year - Is a number from 1900 or 1904 (depending on the workbook's date system) to 9999.
+         * @param month - Is a number from 1 to 12 representing the month of the year.
+         * @param day - Is a number from 1 to 31 representing the day of the month.
          */
         date(year: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, month: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, day: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16081,7 +16606,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param dateText Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
+         * @param dateText - Is text that represents a date in a Microsoft Excel date format, between 1/1/1900 or 1/1/1904 (depending on the workbook's date system) and 12/31/9999.
          */
         datevalue(dateText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16090,7 +16615,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
         day(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16099,8 +16624,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param endDate startDate and endDate are the two dates between which you want to know the number of days.
-         * @param startDate startDate and endDate are the two dates between which you want to know the number of days.
+         * @param endDate - startDate and endDate are the two dates between which you want to know the number of days.
+         * @param startDate - startDate and endDate are the two dates between which you want to know the number of days.
          */
         days(endDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startDate: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16109,9 +16634,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate startDate and endDate are the two dates between which you want to know the number of days.
-         * @param endDate startDate and endDate are the two dates between which you want to know the number of days.
-         * @param method Is a logical value specifying the calculation method: U.S. (NASD) = FALSE or omitted; European = TRUE.
+         * @param startDate - startDate and endDate are the two dates between which you want to know the number of days.
+         * @param endDate - startDate and endDate are the two dates between which you want to know the number of days.
+         * @param method - Is a logical value specifying the calculation method: U.S. (NASD) = FALSE or omitted; European = TRUE.
          */
         days360(startDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, method?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16120,11 +16645,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param period Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
-         * @param month Is the number of months in the first year. If month is omitted, it is assumed to be 12.
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param period - Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
+         * @param month - Is the number of months in the first year. If month is omitted, it is assumed to be 12.
          */
         db(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, month?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16133,7 +16658,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is a text, or a reference to a cell containing a text.
+         * @param text - Is a text, or a reference to a cell containing a text.
          */
         dbcs(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -16142,11 +16667,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param period Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
-         * @param factor Is the rate at which the balance declines. If Factor is omitted, it is assumed to be 2 (the double-declining balance method).
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param period - Is the period for which you want to calculate the depreciation. Period must use the same units as Life.
+         * @param factor - Is the rate at which the balance declines. If Factor is omitted, it is assumed to be 2 (the double-declining balance method).
          */
         ddb(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, period: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16155,8 +16680,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal integer you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the decimal integer you want to convert.
+         * @param places - Is the number of characters to use.
          */
         dec2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16165,8 +16690,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal integer you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the decimal integer you want to convert.
+         * @param places - Is the number of characters to use.
          */
         dec2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16175,8 +16700,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the decimal integer you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the decimal integer you want to convert.
+         * @param places - Is the number of characters to use.
          */
         dec2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16185,8 +16710,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number that you want to convert.
-         * @param radix Is the base Radix of the number you are converting.
+         * @param number - Is the number that you want to convert.
+         * @param radix - Is the base Radix of the number you are converting.
          */
         decimal(number: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, radix: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16195,7 +16720,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param angle Is the angle in radians that you want to convert.
+         * @param angle - Is the angle in radians that you want to convert.
          */
         degrees(angle: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16204,8 +16729,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number1 Is the first number.
-         * @param number2 Is the second number.
+         * @param number1 - Is the first number.
+         * @param number2 - Is the second number.
          */
         delta(number1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number2?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16214,7 +16739,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 arguments, or an array or array reference, on which you want DEVSQ to calculate.
+         * @param values - List of parameters, whose elements are 1 to 255 arguments, or an array or array reference, on which you want DEVSQ to calculate.
          */
         devSq(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -16223,11 +16748,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param pr Is the security's price per $100 face value.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param pr - Is the security's price per $100 face value.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         disc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16236,8 +16761,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
-         * @param decimals Is the number of digits to the right of the decimal point. The number is rounded as necessary; if omitted, Decimals = 2.
+         * @param number - Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
+         * @param decimals - Is the number of digits to the right of the decimal point. The number is rounded as necessary; if omitted, Decimals = 2.
          */
         dollar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -16246,8 +16771,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param fractionalDollar Is a number expressed as a fraction.
-         * @param fraction Is the integer to use in the denominator of the fraction.
+         * @param fractionalDollar - Is a number expressed as a fraction.
+         * @param fraction - Is the integer to use in the denominator of the fraction.
          */
         dollarDe(fractionalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16256,8 +16781,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param decimalDollar Is a decimal number.
-         * @param fraction Is the integer to use in the denominator of a fraction.
+         * @param decimalDollar - Is a decimal number.
+         * @param fraction - Is the integer to use in the denominator of a fraction.
          */
         dollarFr(decimalDollar: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fraction: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16266,12 +16791,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param coupon Is the security's annual coupon rate.
-         * @param yld Is the security's annual yield.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param coupon - Is the security's annual coupon rate.
+         * @param yld - Is the security's annual yield.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         duration(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16280,8 +16805,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
          */
         ecma_Ceiling(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16290,8 +16815,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param months Is the number of months before or after startDate.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param months - Is the number of months before or after startDate.
          */
         edate(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16300,8 +16825,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param nominalRate Is the nominal interest rate.
-         * @param npery Is the number of compounding periods per year.
+         * @param nominalRate - Is the nominal interest rate.
+         * @param npery - Is the number of compounding periods per year.
          */
         effect(nominalRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16310,8 +16835,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param months Is the number of months before or after the startDate.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param months - Is the number of months before or after the startDate.
          */
         eoMonth(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, months: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16320,8 +16845,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lowerLimit Is the lower bound for integrating ERF.
-         * @param upperLimit Is the upper bound for integrating ERF.
+         * @param lowerLimit - Is the lower bound for integrating ERF.
+         * @param upperLimit - Is the upper bound for integrating ERF.
          */
         erf(lowerLimit: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, upperLimit?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16330,7 +16855,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the lower bound for integrating ERF.
+         * @param x - Is the lower bound for integrating ERF.
          */
         erfC(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16339,7 +16864,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param X Is the lower bound for integrating ERFC.PRECISE.
+         * @param X - Is the lower bound for integrating ERFC.PRECISE.
          */
         erfC_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16348,7 +16873,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param X Is the lower bound for integrating ERF.PRECISE.
+         * @param X - Is the lower bound for integrating ERF.PRECISE.
          */
         erf_Precise(X: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16357,7 +16882,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param errorVal Is the error value for which you want the identifying number, and can be an actual error value or a reference to a cell containing an error value.
+         * @param errorVal - Is the error value for which you want the identifying number, and can be an actual error value or a reference to a cell containing an error value.
          */
         error_Type(errorVal: string | number | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16366,7 +16891,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to round.
+         * @param number - Is the value to round.
          */
         even(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16375,8 +16900,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text1 Is the first text string.
-         * @param text2 Is the second text string.
+         * @param text1 - Is the first text string.
+         * @param text2 - Is the second text string.
          */
         exact(text1: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, text2: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -16385,7 +16910,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.
+         * @param number - Is the exponent applied to the base e. The constant e equals 2.71828182845904, the base of the natural logarithm.
          */
         exp(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16394,9 +16919,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value of the function, a nonnegative number.
-         * @param lambda Is the parameter value, a positive number.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param x - Is the value of the function, a nonnegative number.
+         * @param lambda - Is the parameter value, a positive number.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         expon_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lambda: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16405,8 +16930,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param principal Is the present value.
-         * @param schedule Is an array of interest rates to apply.
+         * @param principal - Is the present value.
+         * @param schedule - Is an array of interest rates to apply.
          */
         fvschedule(principal: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, schedule: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16415,10 +16940,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a nonnegative number.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param x - Is the value at which to evaluate the function, a nonnegative number.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         f_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16427,9 +16952,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a nonnegative number.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param x - Is the value at which to evaluate the function, a nonnegative number.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         f_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16438,9 +16963,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         f_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16449,9 +16974,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom1 Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
-         * @param degFreedom2 Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param probability - Is a probability associated with the F cumulative distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom1 - Is the numerator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
+         * @param degFreedom2 - Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.
          */
         f_Inv_RT(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom1: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom2: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16460,7 +16985,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the nonnegative number you want the factorial of.
+         * @param number - Is the nonnegative number you want the factorial of.
          */
         fact(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16469,7 +16994,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value for which to return the double factorial.
+         * @param number - Is the value for which to return the double factorial.
          */
         factDouble(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16485,9 +17010,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param findText Is the text you want to find. Use double quotes (empty text) to match the first character in withinText; wildcard characters not allowed.
-         * @param withinText Is the text containing the text you want to find.
-         * @param startNum Specifies the character at which to start the search. The first character in withinText is character number 1. If omitted, startNum = 1.
+         * @param findText - Is the text you want to find. Use double quotes (empty text) to match the first character in withinText; wildcard characters not allowed.
+         * @param withinText - Is the text containing the text you want to find.
+         * @param startNum - Specifies the character at which to start the search. The first character in withinText is character number 1. If omitted, startNum = 1.
          */
         find(findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16496,9 +17021,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param findText Is the text you want to find.
-         * @param withinText Is the text containing the text you want to find.
-         * @param startNum Specifies the character at which to start the search.
+         * @param findText - Is the text you want to find.
+         * @param withinText - Is the text containing the text you want to find.
+         * @param startNum - Specifies the character at which to start the search.
          */
         findB(findText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, withinText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16507,7 +17032,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want the transformation, a number between -1 and 1, excluding -1 and 1.
+         * @param x - Is the value for which you want the transformation, a number between -1 and 1, excluding -1 and 1.
          */
         fisher(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16516,7 +17041,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param y Is the value for which you want to perform the inverse of the transformation.
+         * @param y - Is the value for which you want to perform the inverse of the transformation.
          */
         fisherInv(y: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16525,9 +17050,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number you want to round and convert to text.
-         * @param decimals Is the number of digits to the right of the decimal point. If omitted, Decimals = 2.
-         * @param noCommas Is a logical value: do not display commas in the returned text = TRUE; do display commas in the returned text = FALSE or omitted.
+         * @param number - Is the number you want to round and convert to text.
+         * @param decimals - Is the number of digits to the right of the decimal point. If omitted, Decimals = 2.
+         * @param noCommas - Is a logical value: do not display commas in the returned text = TRUE; do display commas in the returned text = FALSE or omitted.
          */
         fixed(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, noCommas?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -16536,9 +17061,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the multiple to which you want to round.
-         * @param mode When given and nonzero this function will round towards zero.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the multiple to which you want to round.
+         * @param mode - When given and nonzero this function will round towards zero.
          */
         floor_Math(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mode?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16547,8 +17072,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the numeric value you want to round.
-         * @param significance Is the multiple to which you want to round.
+         * @param number - Is the numeric value you want to round.
+         * @param significance - Is the multiple to which you want to round.
          */
         floor_Precise(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16557,11 +17082,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param nper Is the total number of payment periods in the investment.
-         * @param pmt Is the payment made each period; it cannot change over the life of the investment.
-         * @param pv Is the present value, or the lump-sum amount that a series of future payments is worth now. If omitted, Pv = 0.
-         * @param type Is a value representing the timing of payment: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param nper - Is the total number of payment periods in the investment.
+         * @param pmt - Is the payment made each period; it cannot change over the life of the investment.
+         * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now. If omitted, Pv = 0.
+         * @param type - Is a value representing the timing of payment: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         fv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16570,7 +17095,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want to calculate Gamma.
+         * @param x - Is the value for which you want to calculate Gamma.
          */
         gamma(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16579,7 +17104,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want to calculate GAMMALN, a positive number.
+         * @param x - Is the value for which you want to calculate GAMMALN, a positive number.
          */
         gammaLn(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16588,7 +17113,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.
+         * @param x - Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.
          */
         gammaLn_Precise(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16597,10 +17122,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which you want to evaluate the distribution, a nonnegative number.
-         * @param alpha Is a parameter to the distribution, a positive number.
-         * @param beta Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
-         * @param cumulative Is a logical value: return the cumulative distribution function = TRUE; return the probability mass function = FALSE or omitted.
+         * @param x - Is the value at which you want to evaluate the distribution, a nonnegative number.
+         * @param alpha - Is a parameter to the distribution, a positive number.
+         * @param beta - Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.DIST returns the standard gamma distribution.
+         * @param cumulative - Is a logical value: return the cumulative distribution function = TRUE; return the probability mass function = FALSE or omitted.
          */
         gamma_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16609,9 +17134,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is the probability associated with the gamma distribution, a number between 0 and 1, inclusive.
-         * @param alpha Is a parameter to the distribution, a positive number.
-         * @param beta Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.INV returns the inverse of the standard gamma distribution.
+         * @param probability - Is the probability associated with the gamma distribution, a number between 0 and 1, inclusive.
+         * @param alpha - Is a parameter to the distribution, a positive number.
+         * @param beta - Is a parameter to the distribution, a positive number. If beta = 1, GAMMA.INV returns the inverse of the standard gamma distribution.
          */
         gamma_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16620,7 +17145,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want the distribution.
+         * @param x - Is the value for which you want the distribution.
          */
         gauss(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16629,7 +17154,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values.
+         * @param values - List of parameters, whose elements are 1 to 255 values.
          */
         gcd(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -16638,8 +17163,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to test against step.
-         * @param step Is the threshold value.
+         * @param number - Is the value to test against step.
+         * @param step - Is the threshold value.
          */
         geStep(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, step?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16648,7 +17173,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the mean.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the mean.
          */
         geoMean(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -16657,10 +17182,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is the value to be found in the first row of the table and can be a value, a reference, or a text string.
-         * @param tableArray Is a table of text, numbers, or logical values in which data is looked up. tableArray can be a reference to a range or a range name.
-         * @param rowIndexNum Is the row number in tableArray from which the matching value should be returned. The first row of values in the table is row 1.
-         * @param rangeLookup Is a logical value: to find the closest match in the top row (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
+         * @param lookupValue - Is the value to be found in the first row of the table and can be a value, a reference, or a text string.
+         * @param tableArray - Is a table of text, numbers, or logical values in which data is looked up. tableArray can be a reference to a range or a range name.
+         * @param rowIndexNum - Is the row number in tableArray from which the matching value should be returned. The first row of values in the table is row 1.
+         * @param rangeLookup - Is a logical value: to find the closest match in the top row (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
          */
         hlookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rowIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -16669,7 +17194,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the harmonic mean.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the harmonic mean.
          */
         harMean(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -16678,8 +17203,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hexadecimal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the hexadecimal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         hex2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16688,7 +17213,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hexadecimal number you want to convert.
+         * @param number - Is the hexadecimal number you want to convert.
          */
         hex2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16697,8 +17222,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the hexadecimal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the hexadecimal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         hex2Oct(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16707,7 +17232,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel, or text in time format, such as 16:48:00 or 4:48:00 PM.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel, or text in time format, such as 16:48:00 or 4:48:00 PM.
          */
         hour(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16716,11 +17241,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param sampleS Is the number of successes in the sample.
-         * @param numberSample Is the size of the sample.
-         * @param populationS Is the number of successes in the population.
-         * @param numberPop Is the population size.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param sampleS - Is the number of successes in the sample.
+         * @param numberSample - Is the size of the sample.
+         * @param populationS - Is the number of successes in the population.
+         * @param numberPop - Is the population size.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         hypGeom_Dist(sampleS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberSample: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, populationS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberPop: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16729,8 +17254,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param linkLocation Is the text giving the path and file name to the document to be opened, a hard drive location, UNC address, or URL path.
-         * @param friendlyName Is text or a number that is displayed in the cell. If omitted, the cell displays the linkLocation text.
+         * @param linkLocation - Is the text giving the path and file name to the document to be opened, a hard drive location, UNC address, or URL path.
+         * @param friendlyName - Is text or a number that is displayed in the cell. If omitted, the cell displays the linkLocation text.
          */
         hyperlink(linkLocation: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, friendlyName?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -16739,8 +17264,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value you want to round.
-         * @param significance Is the optional multiple to which you want to round.
+         * @param number - Is the value you want to round.
+         * @param significance - Is the optional multiple to which you want to round.
          */
         iso_Ceiling(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16749,9 +17274,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param logicalTest Is any value or expression that can be evaluated to TRUE or FALSE.
-         * @param valueIfTrue Is the value that is returned if logicalTest is TRUE. If omitted, TRUE is returned. You can nest up to seven IF functions.
-         * @param valueIfFalse Is the value that is returned if logicalTest is FALSE. If omitted, FALSE is returned.
+         * @param logicalTest - Is any value or expression that can be evaluated to TRUE or FALSE.
+         * @param valueIfTrue - Is the value that is returned if logicalTest is TRUE. If omitted, TRUE is returned. You can nest up to seven IF functions.
+         * @param valueIfFalse - Is the value that is returned if logicalTest is FALSE. If omitted, FALSE is returned.
          */
         if(logicalTest: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, valueIfTrue?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>, valueIfFalse?: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -16760,7 +17285,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the absolute value.
+         * @param inumber - Is a complex number for which you want the absolute value.
          */
         imAbs(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16769,7 +17294,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the argument.
+         * @param inumber - Is a complex number for which you want the argument.
          */
         imArgument(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16778,7 +17303,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the conjugate.
+         * @param inumber - Is a complex number for which you want the conjugate.
          */
         imConjugate(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16787,7 +17312,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the cosine.
+         * @param inumber - Is a complex number for which you want the cosine.
          */
         imCos(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16796,7 +17321,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic cosine.
+         * @param inumber - Is a complex number for which you want the hyperbolic cosine.
          */
         imCosh(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16805,7 +17330,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the cotangent.
+         * @param inumber - Is a complex number for which you want the cotangent.
          */
         imCot(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16814,7 +17339,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the cosecant.
+         * @param inumber - Is a complex number for which you want the cosecant.
          */
         imCsc(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16823,7 +17348,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic cosecant.
+         * @param inumber - Is a complex number for which you want the hyperbolic cosecant.
          */
         imCsch(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16832,8 +17357,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber1 Is the complex numerator or dividend.
-         * @param inumber2 Is the complex denominator or divisor.
+         * @param inumber1 - Is the complex numerator or dividend.
+         * @param inumber2 - Is the complex denominator or divisor.
          */
         imDiv(inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16842,7 +17367,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the exponential.
+         * @param inumber - Is a complex number for which you want the exponential.
          */
         imExp(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16851,7 +17376,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the natural logarithm.
+         * @param inumber - Is a complex number for which you want the natural logarithm.
          */
         imLn(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16860,7 +17385,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the common logarithm.
+         * @param inumber - Is a complex number for which you want the common logarithm.
          */
         imLog10(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16869,7 +17394,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the base-2 logarithm.
+         * @param inumber - Is a complex number for which you want the base-2 logarithm.
          */
         imLog2(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16878,8 +17403,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number you want to raise to a power.
-         * @param number Is the power to which you want to raise the complex number.
+         * @param inumber - Is a complex number you want to raise to a power.
+         * @param number - Is the power to which you want to raise the complex number.
          */
         imPower(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16888,7 +17413,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.
+         * @param values - Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.
          */
         imProduct(...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -16897,7 +17422,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the real coefficient.
+         * @param inumber - Is a complex number for which you want the real coefficient.
          */
         imReal(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16906,7 +17431,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the secant.
+         * @param inumber - Is a complex number for which you want the secant.
          */
         imSec(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16915,7 +17440,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic secant.
+         * @param inumber - Is a complex number for which you want the hyperbolic secant.
          */
         imSech(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16924,7 +17449,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the sine.
+         * @param inumber - Is a complex number for which you want the sine.
          */
         imSin(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16933,7 +17458,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the hyperbolic sine.
+         * @param inumber - Is a complex number for which you want the hyperbolic sine.
          */
         imSinh(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16942,7 +17467,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the square root.
+         * @param inumber - Is a complex number for which you want the square root.
          */
         imSqrt(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16951,8 +17476,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber1 Is the complex number from which to subtract inumber2.
-         * @param inumber2 Is the complex number to subtract from inumber1.
+         * @param inumber1 - Is the complex number from which to subtract inumber2.
+         * @param inumber2 - Is the complex number to subtract from inumber1.
          */
         imSub(inumber1: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, inumber2: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16961,7 +17486,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are from 1 to 255 complex numbers to add.
+         * @param values - List of parameters, whose elements are from 1 to 255 complex numbers to add.
          */
         imSum(...values: Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -16970,7 +17495,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the tangent.
+         * @param inumber - Is a complex number for which you want the tangent.
          */
         imTan(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16979,7 +17504,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param inumber Is a complex number for which you want the imaginary coefficient.
+         * @param inumber - Is a complex number for which you want the imaginary coefficient.
          */
         imaginary(inumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16988,7 +17513,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the real number you want to round down to an integer.
+         * @param number - Is the real number you want to round down to an integer.
          */
         int(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -16997,11 +17522,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param investment Is the amount invested in the security.
-         * @param redemption Is the amount to be received at maturity.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param investment - Is the amount invested in the security.
+         * @param redemption - Is the amount to be received at maturity.
+         * @param basis - Is the type of day count basis to use.
          */
         intRate(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17010,12 +17535,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param per Is the period for which you want to find the interest and must be in the range 1 to Nper.
-         * @param nper Is the total number of payment periods in an investment.
-         * @param pv Is the present value, or the lump-sum amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, Fv = 0.
-         * @param type Is a logical value representing the timing of payment: at the end of the period = 0 or omitted, at the beginning of the period = 1.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param per - Is the period for which you want to find the interest and must be in the range 1 to Nper.
+         * @param nper - Is the total number of payment periods in an investment.
+         * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, Fv = 0.
+         * @param type - Is a logical value representing the timing of payment: at the end of the period = 0 or omitted, at the beginning of the period = 1.
          */
         ipmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17024,8 +17549,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Is an array or a reference to cells that contain numbers for which you want to calculate the internal rate of return.
-         * @param guess Is a number that you guess is close to the result of IRR; 0.1 (10 percent) if omitted.
+         * @param values - Is an array or a reference to cells that contain numbers for which you want to calculate the internal rate of return.
+         * @param guess - Is a number that you guess is close to the result of IRR; 0.1 (10 percent) if omitted.
          */
         irr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17034,7 +17559,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isErr(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17043,7 +17568,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isError(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17052,7 +17577,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to test.
+         * @param number - Is the value to test.
          */
         isEven(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17061,7 +17586,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param reference Is a reference to the cell you want to test.  Reference can be a cell reference, a formula, or name that refers to a cell.
+         * @param reference - Is a reference to the cell you want to test.  Reference can be a cell reference, a formula, or name that refers to a cell.
          */
         isFormula(reference: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17070,7 +17595,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isLogical(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17079,7 +17604,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isNA(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17088,7 +17613,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want tested: a cell; a formula; or a name referring to a cell, formula, or value.
+         * @param value - Is the value you want tested: a cell; a formula; or a name referring to a cell, formula, or value.
          */
         isNonText(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17097,7 +17622,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isNumber(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17106,7 +17631,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to test.
+         * @param number - Is the value to test.
          */
         isOdd(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17115,7 +17640,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isText(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17124,7 +17649,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param date Is the date-time code used by Microsoft Excel for date and time calculation.
+         * @param date - Is the date-time code used by Microsoft Excel for date and time calculation.
          */
         isoWeekNum(date: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17133,10 +17658,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param per Period for which you want to find the interest.
-         * @param nper Number of payment periods in an investment.
-         * @param pv Lump sum amount that a series of future payments is right now.
+         * @param rate - Interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param per - Period for which you want to find the interest.
+         * @param nper - Number of payment periods in an investment.
+         * @param pv - Lump sum amount that a series of future payments is right now.
          */
         ispmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17145,7 +17670,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
+         * @param value - Is the value you want to test. Value can refer to a cell, a formula, or a name that refers to a cell, formula, or value.
          */
         isref(value: Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17154,7 +17679,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the kurtosis.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the kurtosis.
          */
         kurt(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17163,8 +17688,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data for which you want to determine the k-th largest value.
-         * @param k Is the position (from the largest) in the array or cell range of the value to return.
+         * @param array - Is the array or range of data for which you want to determine the k-th largest value.
+         * @param k - Is the position (from the largest) in the array or cell range of the value to return.
          */
         large(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17173,7 +17698,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.
+         * @param values - List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.
          */
         lcm(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17182,8 +17707,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param numChars Specifies how many characters you want LEFT to extract; 1 if omitted.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param numChars - Specifies how many characters you want LEFT to extract; 1 if omitted.
          */
         left(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -17192,8 +17717,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param numBytes Specifies how many characters you want LEFT to return.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param numBytes - Specifies how many characters you want LEFT to return.
          */
         leftb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -17202,7 +17727,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text whose length you want to find. Spaces count as characters.
+         * @param text - Is the text whose length you want to find. Spaces count as characters.
          */
         len(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17211,7 +17736,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text whose length you want to find.
+         * @param text - Is the text whose length you want to find.
          */
         lenb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17220,7 +17745,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the positive real number for which you want the natural logarithm.
+         * @param number - Is the positive real number for which you want the natural logarithm.
          */
         ln(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17229,8 +17754,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the positive real number for which you want the logarithm.
-         * @param base Is the base of the logarithm; 10 if omitted.
+         * @param number - Is the positive real number for which you want the logarithm.
+         * @param base - Is the base of the logarithm; 10 if omitted.
          */
         log(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, base?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17239,7 +17764,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the positive real number for which you want the base-10 logarithm.
+         * @param number - Is the positive real number for which you want the base-10 logarithm.
          */
         log10(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17248,10 +17773,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a positive number.
-         * @param mean Is the mean of ln(x).
-         * @param standardDev Is the standard deviation of ln(x), a positive number.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param x - Is the value at which to evaluate the function, a positive number.
+         * @param mean - Is the mean of ln(x).
+         * @param standardDev - Is the standard deviation of ln(x), a positive number.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         logNorm_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17260,9 +17785,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability associated with the lognormal distribution, a number between 0 and 1, inclusive.
-         * @param mean Is the mean of ln(x).
-         * @param standardDev Is the standard deviation of ln(x), a positive number.
+         * @param probability - Is a probability associated with the lognormal distribution, a number between 0 and 1, inclusive.
+         * @param mean - Is the mean of ln(x).
+         * @param standardDev - Is the standard deviation of ln(x), a positive number.
          */
         logNorm_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17271,9 +17796,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is a value that LOOKUP searches for in lookupVector and can be a number, text, a logical value, or a name or reference to a value.
-         * @param lookupVector Is a range that contains only one row or one column of text, numbers, or logical values, placed in ascending order.
-         * @param resultVector Is a range that contains only one row or column, the same size as lookupVector.
+         * @param lookupValue - Is a value that LOOKUP searches for in lookupVector and can be a number, text, a logical value, or a name or reference to a value.
+         * @param lookupVector - Is a range that contains only one row or one column of text, numbers, or logical values, placed in ascending order.
+         * @param resultVector - Is a range that contains only one row or column, the same size as lookupVector.
          */
         lookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lookupVector: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, resultVector?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -17282,7 +17807,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text you want to convert to lowercase. Characters in Text that are not letters are not changed.
+         * @param text - Is the text you want to convert to lowercase. Characters in Text that are not letters are not changed.
          */
         lower(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -17291,12 +17816,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param coupon Is the security's annual coupon rate.
-         * @param yld Is the security's annual yield.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param coupon - Is the security's annual coupon rate.
+         * @param yld - Is the security's annual yield.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         mduration(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17305,9 +17830,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Is an array or a reference to cells that contain numbers that represent a series of payments (negative) and income (positive) at regular periods.
-         * @param financeRate Is the interest rate you pay on the money used in the cash flows.
-         * @param reinvestRate Is the interest rate you receive on the cash flows as you reinvest them.
+         * @param values - Is an array or a reference to cells that contain numbers that represent a series of payments (negative) and income (positive) at regular periods.
+         * @param financeRate - Is the interest rate you pay on the money used in the cash flows.
+         * @param reinvestRate - Is the interest rate you receive on the cash flows as you reinvest them.
          */
         mirr(values: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, financeRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, reinvestRate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17316,8 +17841,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to round.
-         * @param multiple Is the multiple to which you want to round number.
+         * @param number - Is the value to round.
+         * @param multiple - Is the multiple to which you want to round number.
          */
         mround(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, multiple: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17326,9 +17851,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is the value you use to find the value you want in the array, a number, text, or logical value, or a reference to one of these.
-         * @param lookupArray Is a contiguous range of cells containing possible lookup values, an array of values, or a reference to an array.
-         * @param matchType Is a number 1, 0, or -1 indicating which value to return.
+         * @param lookupValue - Is the value you use to find the value you want in the array, a number, text, or logical value, or a reference to one of these.
+         * @param lookupArray - Is a contiguous range of cells containing possible lookup values, an array of values, or a reference to an array.
+         * @param matchType - Is a number 1, 0, or -1 indicating which value to return.
          */
         match(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lookupArray: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, matchType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17337,7 +17862,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
          */
         max(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17346,7 +17871,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the maximum.
          */
         maxA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17355,7 +17880,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the median.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the median.
          */
         median(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17364,9 +17889,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string from which you want to extract the characters.
-         * @param startNum Is the position of the first character you want to extract. The first character in Text is 1.
-         * @param numChars Specifies how many characters to return from Text.
+         * @param text - Is the text string from which you want to extract the characters.
+         * @param startNum - Is the position of the first character you want to extract. The first character in Text is 1.
+         * @param numChars - Specifies how many characters to return from Text.
          */
         mid(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -17375,9 +17900,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param startNum Is the position of the first character you want to extract in text.
-         * @param numBytes Specifies how many characters to return from text.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param startNum - Is the position of the first character you want to extract in text.
+         * @param numBytes - Specifies how many characters to return from text.
          */
         midb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -17386,7 +17911,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
          */
         min(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17395,7 +17920,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, empty cells, logical values, or text numbers for which you want the minimum.
          */
         minA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17404,7 +17929,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:00 or 4:48:00 PM.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:00 or 4:48:00 PM.
          */
         minute(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17413,8 +17938,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want to find the remainder after the division is performed.
-         * @param divisor Is the number by which you want to divide Number.
+         * @param number - Is the number for which you want to find the remainder after the division is performed.
+         * @param divisor - Is the number by which you want to divide Number.
          */
         mod(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, divisor: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17423,7 +17948,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
         month(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17432,7 +17957,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values for which you want the multinomial.
+         * @param values - List of parameters, whose elements are 1 to 255 values for which you want the multinomial.
          */
         multiNomial(...values: Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17441,7 +17966,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value you want converted.
+         * @param value - Is the value you want converted.
          */
         n(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17450,11 +17975,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param pmt Is the payment made each period; it cannot change over the life of the investment.
-         * @param pv Is the present value, or the lump-sum amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, zero is used.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param pmt - Is the payment made each period; it cannot change over the life of the investment.
+         * @param pv - Is the present value, or the lump-sum amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, zero is used.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         nper(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17470,10 +17995,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param numberF Is the number of failures.
-         * @param numberS Is the threshold number of successes.
-         * @param probabilityS Is the probability of a success; a number between 0 and 1.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
+         * @param numberF - Is the number of failures.
+         * @param numberS - Is the threshold number of successes.
+         * @param probabilityS - Is the probability of a success; a number between 0 and 1.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
         negBinom_Dist(numberF: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, probabilityS: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17482,9 +18007,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param endDate Is a serial date number that represents the end date.
-         * @param holidays Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param endDate - Is a serial date number that represents the end date.
+         * @param holidays - Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         networkDays(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17493,10 +18018,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param endDate Is a serial date number that represents the end date.
-         * @param weekend Is a number or string specifying when weekends occur.
-         * @param holidays Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param endDate - Is a serial date number that represents the end date.
+         * @param weekend - Is a number or string specifying when weekends occur.
+         * @param holidays - Is an optional set of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         networkDays_Intl(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17505,8 +18030,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param effectRate Is the effective interest rate.
-         * @param npery Is the number of compounding periods per year.
+         * @param effectRate - Is the effective interest rate.
+         * @param npery - Is the number of compounding periods per year.
          */
         nominal(effectRate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, npery: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17515,10 +18040,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value for which you want the distribution.
-         * @param mean Is the arithmetic mean of the distribution.
-         * @param standardDev Is the standard deviation of the distribution, a positive number.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param x - Is the value for which you want the distribution.
+         * @param mean - Is the arithmetic mean of the distribution.
+         * @param standardDev - Is the standard deviation of the distribution, a positive number.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         norm_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17527,9 +18052,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
-         * @param mean Is the arithmetic mean of the distribution.
-         * @param standardDev Is the standard deviation of the distribution, a positive number.
+         * @param probability - Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
+         * @param mean - Is the arithmetic mean of the distribution.
+         * @param standardDev - Is the standard deviation of the distribution, a positive number.
          */
         norm_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17538,8 +18063,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param z Is the value for which you want the distribution.
-         * @param cumulative Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
+         * @param z - Is the value for which you want the distribution.
+         * @param cumulative - Is a logical value for the function to return: the cumulative distribution function = TRUE; the probability density function = FALSE.
          */
         norm_S_Dist(z: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17548,7 +18073,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
+         * @param probability - Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.
          */
         norm_S_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17557,7 +18082,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param logical Is a value or expression that can be evaluated to TRUE or FALSE.
+         * @param logical - Is a value or expression that can be evaluated to TRUE or FALSE.
          */
         not(logical: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<boolean>;
         /**
@@ -17573,8 +18098,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the rate of discount over the length of one period.
-         * @param values List of parameters, whose elements are 1 to 254 payments and income, equally spaced in time and occurring at the end of each period.
+         * @param rate - Is the rate of discount over the length of one period.
+         * @param values - List of parameters, whose elements are 1 to 254 payments and income, equally spaced in time and occurring at the end of each period.
          */
         npv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17583,9 +18108,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the string representing the number you want to convert.
-         * @param decimalSeparator Is the character used as the decimal separator in the string.
-         * @param groupSeparator Is the character used as the group separator in the string.
+         * @param text - Is the string representing the number you want to convert.
+         * @param decimalSeparator - Is the character used as the decimal separator in the string.
+         * @param groupSeparator - Is the character used as the group separator in the string.
          */
         numberValue(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimalSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, groupSeparator?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17594,8 +18119,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the octal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the octal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         oct2Bin(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17604,7 +18129,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the octal number you want to convert.
+         * @param number - Is the octal number you want to convert.
          */
         oct2Dec(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17613,8 +18138,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the octal number you want to convert.
-         * @param places Is the number of characters to use.
+         * @param number - Is the octal number you want to convert.
+         * @param places - Is the number of characters to use.
          */
         oct2Hex(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, places?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17623,7 +18148,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the value to round.
+         * @param number - Is the value to round.
          */
         odd(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17632,15 +18157,15 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param firstCoupon Is the security's first coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param yld Is the security's annual yield.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param firstCoupon - Is the security's first coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param yld - Is the security's annual yield.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddFPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17649,15 +18174,15 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param firstCoupon Is the security's first coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param pr Is the security's price.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param firstCoupon - Is the security's first coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param pr - Is the security's price.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddFYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, firstCoupon: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17666,14 +18191,14 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param lastInterest Is the security's last coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param yld Is the security's annual yield.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param lastInterest - Is the security's last coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param yld - Is the security's annual yield.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddLPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17682,14 +18207,14 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param lastInterest Is the security's last coupon date, expressed as a serial date number.
-         * @param rate Is the security's interest rate.
-         * @param pr Is the security's price.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param lastInterest - Is the security's last coupon date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate.
+         * @param pr - Is the security's price.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         oddLYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, lastInterest: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17698,7 +18223,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 conditions that you want to test that can be either TRUE or FALSE.
+         * @param values - List of parameters, whose elements are 1 to 255 conditions that you want to test that can be either TRUE or FALSE.
          */
         or(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -17707,9 +18232,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period.
-         * @param pv Is the present value of the investment.
-         * @param fv Is the desired future value of the investment.
+         * @param rate - Is the interest rate per period.
+         * @param pv - Is the present value of the investment.
+         * @param fv - Is the desired future value of the investment.
          */
         pduration(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17718,9 +18243,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data with numeric values that defines relative standing.
-         * @param x Is the value for which you want to know the rank.
-         * @param significance Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
+         * @param array - Is the array or range of data with numeric values that defines relative standing.
+         * @param x - Is the value for which you want to know the rank.
+         * @param significance - Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
         percentRank_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17729,9 +18254,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data with numeric values that defines relative standing.
-         * @param x Is the value for which you want to know the rank.
-         * @param significance Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
+         * @param array - Is the array or range of data with numeric values that defines relative standing.
+         * @param x - Is the value for which you want to know the rank.
+         * @param significance - Is an optional value that identifies the number of significant digits for the returned percentage, three digits if omitted (0.xxx%).
          */
         percentRank_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, significance?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17740,8 +18265,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data that defines relative standing.
-         * @param k Is the percentile value that is between 0 through 1, inclusive.
+         * @param array - Is the array or range of data that defines relative standing.
+         * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
         percentile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17750,8 +18275,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data that defines relative standing.
-         * @param k Is the percentile value that is between 0 through 1, inclusive.
+         * @param array - Is the array or range of data that defines relative standing.
+         * @param k - Is the percentile value that is between 0 through 1, inclusive.
          */
         percentile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17760,8 +18285,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of objects.
-         * @param numberChosen Is the number of objects in each permutation.
+         * @param number - Is the total number of objects.
+         * @param numberChosen - Is the number of objects in each permutation.
          */
         permut(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17770,8 +18295,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the total number of objects.
-         * @param numberChosen Is the number of objects in each permutation.
+         * @param number - Is the total number of objects.
+         * @param numberChosen - Is the number of objects in each permutation.
          */
         permutationa(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberChosen: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17780,7 +18305,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the number for which you want the density of the standard normal distribution.
+         * @param x - Is the number for which you want the density of the standard normal distribution.
          */
         phi(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17796,11 +18321,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period for the loan. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param nper Is the total number of payments for the loan.
-         * @param pv Is the present value: the total amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made, 0 (zero) if omitted.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period for the loan. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param nper - Is the total number of payments for the loan.
+         * @param pv - Is the present value: the total amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made, 0 (zero) if omitted.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         pmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17809,9 +18334,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the number of events.
-         * @param mean Is the expected numeric value, a positive number.
-         * @param cumulative Is a logical value: for the cumulative Poisson probability, use TRUE; for the Poisson probability mass function, use FALSE.
+         * @param x - Is the number of events.
+         * @param mean - Is the expected numeric value, a positive number.
+         * @param cumulative - Is a logical value: for the cumulative Poisson probability, use TRUE; for the Poisson probability mass function, use FALSE.
          */
         poisson_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17820,8 +18345,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the base number, any real number.
-         * @param power Is the exponent, to which the base number is raised.
+         * @param number - Is the base number, any real number.
+         * @param power - Is the exponent, to which the base number is raised.
          */
         power(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, power: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17830,12 +18355,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param per Specifies the period and must be in the range 1 to nper.
-         * @param nper Is the total number of payment periods in an investment.
-         * @param pv Is the present value: the total amount that a series of future payments is worth now.
-         * @param fv Is the future value, or cash balance you want to attain after the last payment is made.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param per - Specifies the period and must be in the range 1 to nper.
+         * @param nper - Is the total number of payment periods in an investment.
+         * @param pv - Is the present value: the total amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or cash balance you want to attain after the last payment is made.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         ppmt(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17844,13 +18369,13 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param yld Is the security's annual yield.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param yld - Is the security's annual yield.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         price(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17859,11 +18384,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param discount Is the security's discount rate.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param discount - Is the security's discount rate.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         priceDisc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17872,12 +18397,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param rate Is the security's interest rate at date of issue.
-         * @param yld Is the security's annual yield.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate at date of issue.
+         * @param yld - Is the security's annual yield.
+         * @param basis - Is the type of day count basis to use.
          */
         priceMat(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, yld: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17886,7 +18411,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, logical values, or text representations of numbers that you want to multiply.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, logical values, or text representations of numbers that you want to multiply.
          */
         product(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -17895,7 +18420,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is text enclosed in quotation marks, a formula that returns text, or a reference to a cell containing text to partially capitalize.
+         * @param text - Is text enclosed in quotation marks, a formula that returns text, or a reference to a cell containing text to partially capitalize.
          */
         proper(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -17904,11 +18429,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
-         * @param nper Is the total number of payment periods in an investment.
-         * @param pmt Is the payment made each period and cannot change over the life of the investment.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param rate - Is the interest rate per period. For example, use 6%/4 for quarterly payments at 6% APR.
+         * @param nper - Is the total number of payment periods in an investment.
+         * @param pmt - Is the payment made each period and cannot change over the life of the investment.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
          */
         pv(rate: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17917,8 +18442,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or cell range of numeric values for which you want the quartile value.
-         * @param quart Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
+         * @param array - Is the array or cell range of numeric values for which you want the quartile value.
+         * @param quart - Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
          */
         quartile_Exc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17927,8 +18452,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or cell range of numeric values for which you want the quartile value.
-         * @param quart Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
+         * @param array - Is the array or cell range of numeric values for which you want the quartile value.
+         * @param quart - Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.
          */
         quartile_Inc(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, quart: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17937,8 +18462,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param numerator Is the dividend.
-         * @param denominator Is the divisor.
+         * @param numerator - Is the dividend.
+         * @param denominator - Is the divisor.
          */
         quotient(numerator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, denominator: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17947,7 +18472,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param angle Is an angle in degrees that you want to convert.
+         * @param angle - Is an angle in degrees that you want to convert.
          */
         radians(angle: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17963,8 +18488,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param bottom Is the smallest integer RANDBETWEEN will return.
-         * @param top Is the largest integer RANDBETWEEN will return.
+         * @param bottom - Is the smallest integer RANDBETWEEN will return.
+         * @param top - Is the largest integer RANDBETWEEN will return.
          */
         randBetween(bottom: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, top: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17973,9 +18498,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want to find the rank.
-         * @param ref Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
-         * @param order Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
+         * @param number - Is the number for which you want to find the rank.
+         * @param ref - Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
+         * @param order - Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
          */
         rank_Avg(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17984,9 +18509,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want to find the rank.
-         * @param ref Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
-         * @param order Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
+         * @param number - Is the number for which you want to find the rank.
+         * @param ref - Is an array of, or a reference to, a list of numbers. Nonnumeric values are ignored.
+         * @param order - Is a number: rank in the list sorted descending = 0 or omitted; rank in the list sorted ascending = any nonzero value.
          */
         rank_Eq(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ref: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, order?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -17995,12 +18520,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param nper Is the total number of payment periods for the loan or investment.
-         * @param pmt Is the payment made each period and cannot change over the life of the loan or investment.
-         * @param pv Is the present value: the total amount that a series of future payments is worth now.
-         * @param fv Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, uses Fv = 0.
-         * @param type Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
-         * @param guess Is your guess for what the rate will be; if omitted, Guess = 0.1 (10 percent).
+         * @param nper - Is the total number of payment periods for the loan or investment.
+         * @param pmt - Is the payment made each period and cannot change over the life of the loan or investment.
+         * @param pv - Is the present value: the total amount that a series of future payments is worth now.
+         * @param fv - Is the future value, or a cash balance you want to attain after the last payment is made. If omitted, uses Fv = 0.
+         * @param type - Is a logical value: payment at the beginning of the period = 1; payment at the end of the period = 0 or omitted.
+         * @param guess - Is your guess for what the rate will be; if omitted, Guess = 0.1 (10 percent).
          */
         rate(nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pmt: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, type?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18009,11 +18534,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param investment Is the amount invested in the security.
-         * @param discount Is the security's discount rate.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param investment - Is the amount invested in the security.
+         * @param discount - Is the security's discount rate.
+         * @param basis - Is the type of day count basis to use.
          */
         received(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, investment: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18022,10 +18547,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param oldText Is text in which you want to replace some characters.
-         * @param startNum Is the position of the character in oldText that you want to replace with newText.
-         * @param numChars Is the number of characters in oldText that you want to replace.
-         * @param newText Is the text that will replace characters in oldText.
+         * @param oldText - Is text in which you want to replace some characters.
+         * @param startNum - Is the position of the character in oldText that you want to replace with newText.
+         * @param numChars - Is the number of characters in oldText that you want to replace.
+         * @param newText - Is the text that will replace characters in oldText.
          */
         replace(oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18034,10 +18559,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param oldText Is text in which you want to replace some characters.
-         * @param startNum Is the position of the character in oldText that you want to replace with newText.
-         * @param numBytes Is the number of characters in oldText that you want to replace with newText.
-         * @param newText Is the text that will replace characters in oldText.
+         * @param oldText - Is text in which you want to replace some characters.
+         * @param startNum - Is the position of the character in oldText that you want to replace with newText.
+         * @param numBytes - Is the number of characters in oldText that you want to replace with newText.
+         * @param newText - Is the text that will replace characters in oldText.
          */
         replaceB(oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18046,8 +18571,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text you want to repeat.
-         * @param numberTimes Is a positive number specifying the number of times to repeat text.
+         * @param text - Is the text you want to repeat.
+         * @param numberTimes - Is a positive number specifying the number of times to repeat text.
          */
         rept(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numberTimes: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18056,8 +18581,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string that contains the characters you want to extract.
-         * @param numChars Specifies how many characters you want to extract, 1 if omitted.
+         * @param text - Is the text string that contains the characters you want to extract.
+         * @param numChars - Specifies how many characters you want to extract, 1 if omitted.
          */
         right(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numChars?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18066,8 +18591,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text string containing the characters you want to extract.
-         * @param numBytes Specifies how many characters you want to extract.
+         * @param text - Is the text string containing the characters you want to extract.
+         * @param numBytes - Specifies how many characters you want to extract.
          */
         rightb(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numBytes?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18076,8 +18601,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the Arabic numeral you want to convert.
-         * @param form Is the number specifying the type of Roman numeral you want.
+         * @param number - Is the Arabic numeral you want to convert.
+         * @param form - Is the number specifying the type of Roman numeral you want.
          */
         roman(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, form?: boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18086,8 +18611,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number you want to round.
-         * @param numDigits Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.
+         * @param number - Is the number you want to round.
+         * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero to the nearest integer.
          */
         round(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18096,8 +18621,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number that you want rounded down.
-         * @param numDigits Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
+         * @param number - Is any real number that you want rounded down.
+         * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
          */
         roundDown(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18106,8 +18631,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number that you want rounded up.
-         * @param numDigits Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
+         * @param number - Is any real number that you want rounded up.
+         * @param numDigits - Is the number of digits to which you want to round. Negative rounds to the left of the decimal point; zero or omitted, to the nearest integer.
          */
         roundUp(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18116,7 +18641,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is an array, an array formula, or a reference to a range of cells for which you want the number of rows.
+         * @param array - Is an array, an array formula, or a reference to a range of cells for which you want the number of rows.
          */
         rows(array: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18125,9 +18650,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param nper Is the number of periods for the investment.
-         * @param pv Is the present value of the investment.
-         * @param fv Is the future value of the investment.
+         * @param nper - Is the number of periods for the investment.
+         * @param pv - Is the present value of the investment.
+         * @param fv - Is the future value of the investment.
          */
         rri(nper: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, fv: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18136,7 +18661,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the secant.
+         * @param number - Is the angle in radians for which you want the secant.
          */
         sec(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18145,7 +18670,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the hyperbolic secant.
+         * @param number - Is the angle in radians for which you want the hyperbolic secant.
          */
         sech(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18154,7 +18679,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:23 or 4:48:47 PM.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel or text in time format, such as 16:48:23 or 4:48:47 PM.
          */
         second(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18163,10 +18688,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the input value to the power series.
-         * @param n Is the initial power to which you want to raise x.
-         * @param m Is the step by which to increase n for each term in the series.
-         * @param coefficients Is a set of coefficients by which each successive power of x is multiplied.
+         * @param x - Is the input value to the power series.
+         * @param n - Is the initial power to which you want to raise x.
+         * @param m - Is the step by which to increase n for each term in the series.
+         * @param coefficients - Is a set of coefficients by which each successive power of x is multiplied.
          */
         seriesSum(x: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, n: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, m: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, coefficients: Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18175,7 +18700,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the name of a sheet or a reference that you want the sheet number of.  If omitted the number of the sheet containing the function is returned.
+         * @param value - Is the name of a sheet or a reference that you want the sheet number of.  If omitted the number of the sheet containing the function is returned.
          */
         sheet(value?: Excel.Range | string | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18184,7 +18709,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param reference Is a reference for which you want to know the number of sheets it contains.  If omitted the number of sheets in the workbook containing the function is returned.
+         * @param reference - Is a reference for which you want to know the number of sheets it contains.  If omitted the number of sheets in the workbook containing the function is returned.
          */
         sheets(reference?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18193,7 +18718,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         sign(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18202,7 +18727,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
+         * @param number - Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
          */
         sin(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18211,7 +18736,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         sinh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18220,7 +18745,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the skewness.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers or names, arrays, or references that contain numbers for which you want the skewness.
          */
         skew(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18229,7 +18754,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 254 numbers or names, arrays, or references that contain numbers for which you want the population skewness.
+         * @param values - List of parameters, whose elements are 1 to 254 numbers or names, arrays, or references that contain numbers for which you want the population skewness.
          */
         skew_p(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18238,9 +18763,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
          */
         sln(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18249,8 +18774,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is an array or range of numerical data for which you want to determine the k-th smallest value.
-         * @param k Is the position (from the smallest) in the array or range of the value to return.
+         * @param array - Is an array or range of numerical data for which you want to determine the k-th smallest value.
+         * @param k - Is the position (from the smallest) in the array or range of the value to return.
          */
         small(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, k: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18259,7 +18784,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number for which you want the square root.
+         * @param number - Is the number for which you want the square root.
          */
         sqrt(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18268,7 +18793,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number by which p is multiplied.
+         * @param number - Is the number by which p is multiplied.
          */
         sqrtPi(number: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18277,7 +18802,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values corresponding to a sample of a population and can be values or names or references to values.
+         * @param values - List of parameters, whose elements are 1 to 255 values corresponding to a sample of a population and can be values or names or references to values.
          */
         stDevA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18286,7 +18811,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 values corresponding to a population and can be values, names, arrays, or references that contain values.
+         * @param values - List of parameters, whose elements are 1 to 255 values corresponding to a population and can be values, names, arrays, or references that contain values.
          */
         stDevPA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18295,7 +18820,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers corresponding to a population and can be numbers or references that contain numbers.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers corresponding to a population and can be numbers or references that contain numbers.
          */
         stDev_P(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18304,7 +18829,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers corresponding to a sample of a population and can be numbers or references that contain numbers.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers corresponding to a sample of a population and can be numbers or references that contain numbers.
          */
         stDev_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18313,9 +18838,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value you want to normalize.
-         * @param mean Is the arithmetic mean of the distribution.
-         * @param standardDev Is the standard deviation of the distribution, a positive number.
+         * @param x - Is the value you want to normalize.
+         * @param mean - Is the arithmetic mean of the distribution.
+         * @param standardDev - Is the standard deviation of the distribution, a positive number.
          */
         standardize(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, mean: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, standardDev: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18324,10 +18849,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text or the reference to a cell containing text in which you want to substitute characters.
-         * @param oldText Is the existing text you want to replace. If the case of oldText does not match the case of text, SUBSTITUTE will not replace the text.
-         * @param newText Is the text you want to replace oldText with.
-         * @param instanceNum Specifies which occurrence of oldText you want to replace. If omitted, every instance of oldText is replaced.
+         * @param text - Is the text or the reference to a cell containing text in which you want to substitute characters.
+         * @param oldText - Is the existing text you want to replace. If the case of oldText does not match the case of text, SUBSTITUTE will not replace the text.
+         * @param newText - Is the text you want to replace oldText with.
+         * @param instanceNum - Specifies which occurrence of oldText you want to replace. If omitted, every instance of oldText is replaced.
          */
         substitute(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, oldText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, newText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, instanceNum?: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18336,8 +18861,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param functionNum Is the number 1 to 11 that specifies the summary function for the subtotal.
-         * @param values List of parameters, whose elements are 1 to 254 ranges or references for which you want the subtotal.
+         * @param functionNum - Is the number 1 to 11 that specifies the summary function for the subtotal.
+         * @param values - List of parameters, whose elements are 1 to 254 ranges or references for which you want the subtotal.
          */
         subtotal(functionNum: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18346,7 +18871,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers to sum. Logical values and text are ignored in cells, included if typed as arguments.
          */
         sum(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18355,9 +18880,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param range Is the range of cells you want evaluated.
-         * @param criteria Is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
-         * @param sumRange Are the actual cells to sum. If omitted, the cells in range are used.
+         * @param range - Is the range of cells you want evaluated.
+         * @param criteria - Is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
+         * @param sumRange - Are the actual cells to sum. If omitted, the cells in range are used.
          */
         sumIf(range: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, criteria: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sumRange?: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18366,8 +18891,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param sumRange Are the actual cells to sum.
-         * @param values List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
+         * @param sumRange - Are the actual cells to sum.
+         * @param values - List of parameters, where the first element of each pair is the Is the range of cells you want evaluated for the particular condition , and the second element is is the condition or criteria in the form of a number, expression, or text that defines which cells will be added.
          */
         sumIfs(sumRange: Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, ...values: Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>): FunctionResult<number>;
         /**
@@ -18376,7 +18901,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numbers, arrays, names, or references to arrays for which you want the sum of the squares.
+         * @param values - List of parameters, whose elements are 1 to 255 numbers, arrays, names, or references to arrays for which you want the sum of the squares.
          */
         sumSq(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18385,10 +18910,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param per Is the period and must use the same units as Life.
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param per - Is the period and must use the same units as Life.
          */
         syd(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, per: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18397,7 +18922,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is the value to test.
+         * @param value - Is the value to test.
          */
         t(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18406,9 +18931,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the Treasury bill's settlement date, expressed as a serial date number.
-         * @param maturity Is the Treasury bill's maturity date, expressed as a serial date number.
-         * @param discount Is the Treasury bill's discount rate.
+         * @param settlement - Is the Treasury bill's settlement date, expressed as a serial date number.
+         * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
+         * @param discount - Is the Treasury bill's discount rate.
          */
         tbillEq(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18417,9 +18942,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the Treasury bill's settlement date, expressed as a serial date number.
-         * @param maturity Is the Treasury bill's maturity date, expressed as a serial date number.
-         * @param discount Is the Treasury bill's discount rate.
+         * @param settlement - Is the Treasury bill's settlement date, expressed as a serial date number.
+         * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
+         * @param discount - Is the Treasury bill's discount rate.
          */
         tbillPrice(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, discount: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18428,9 +18953,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the Treasury bill's settlement date, expressed as a serial date number.
-         * @param maturity Is the Treasury bill's maturity date, expressed as a serial date number.
-         * @param pr Is the Treasury Bill's price per $100 face value.
+         * @param settlement - Is the Treasury bill's settlement date, expressed as a serial date number.
+         * @param maturity - Is the Treasury bill's maturity date, expressed as a serial date number.
+         * @param pr - Is the Treasury Bill's price per $100 face value.
          */
         tbillYield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18439,9 +18964,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the numeric value at which to evaluate the distribution.
-         * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
+         * @param x - Is the numeric value at which to evaluate the distribution.
+         * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability density function, use FALSE.
          */
         t_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18450,8 +18975,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the numeric value at which to evaluate the distribution.
-         * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
+         * @param x - Is the numeric value at which to evaluate the distribution.
+         * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
         t_Dist_2T(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18460,8 +18985,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the numeric value at which to evaluate the distribution.
-         * @param degFreedom Is an integer indicating the number of degrees of freedom that characterize the distribution.
+         * @param x - Is the numeric value at which to evaluate the distribution.
+         * @param degFreedom - Is an integer indicating the number of degrees of freedom that characterize the distribution.
          */
         t_Dist_RT(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18470,8 +18995,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
+         * @param probability - Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom - Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
          */
         t_Inv(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18480,8 +19005,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param probability Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
-         * @param degFreedom Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
+         * @param probability - Is the probability associated with the two-tailed Student's t-distribution, a number between 0 and 1 inclusive.
+         * @param degFreedom - Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
          */
         t_Inv_2T(probability: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, degFreedom: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18490,7 +19015,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
+         * @param number - Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
          */
         tan(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18499,7 +19024,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is any real number.
+         * @param number - Is any real number.
          */
         tanh(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18508,8 +19033,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Is a number, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.
-         * @param formatText Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not General).
+         * @param value - Is a number, a formula that evaluates to a numeric value, or a reference to a cell containing a numeric value.
+         * @param formatText - Is a number format in text form from the Category box on the Number tab in the Format Cells dialog box (not General).
          */
         text(value: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, formatText: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18518,9 +19043,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param hour Is a number from 0 to 23 representing the hour.
-         * @param minute Is a number from 0 to 59 representing the minute.
-         * @param second Is a number from 0 to 59 representing the second.
+         * @param hour - Is a number from 0 to 23 representing the hour.
+         * @param minute - Is a number from 0 to 59 representing the minute.
+         * @param second - Is a number from 0 to 59 representing the second.
          */
         time(hour: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, minute: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, second: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18529,7 +19054,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param timeText Is a text string that gives a time in any one of the Microsoft Excel time formats (date information in the string is ignored).
+         * @param timeText - Is a text string that gives a time in any one of the Microsoft Excel time formats (date information in the string is ignored).
          */
         timevalue(timeText: string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18545,7 +19070,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text from which you want spaces removed.
+         * @param text - Is the text from which you want spaces removed.
          */
         trim(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18554,8 +19079,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the range or array of values to trim and average.
-         * @param percent Is the fractional number of data points to exclude from the top and bottom of the data set.
+         * @param array - Is the range or array of values to trim and average.
+         * @param percent - Is the fractional number of data points to exclude from the top and bottom of the data set.
          */
         trimMean(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, percent: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18571,8 +19096,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the number you want to truncate.
-         * @param numDigits Is a number specifying the precision of the truncation, 0 (zero) if omitted.
+         * @param number - Is the number you want to truncate.
+         * @param numDigits - Is a number specifying the precision of the truncation, 0 (zero) if omitted.
          */
         trunc(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, numDigits?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18581,7 +19106,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param value Can be any value.
+         * @param value - Can be any value.
          */
         type(value: boolean | string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18590,8 +19115,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
-         * @param decimals Is the number of digits to the right of the decimal point.
+         * @param number - Is a number, a reference to a cell containing a number, or a formula that evaluates to a number.
+         * @param decimals - Is the number of digits to the right of the decimal point.
          */
         usdollar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, decimals?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18600,7 +19125,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param number Is the Unicode number representing a character.
+         * @param number - Is the Unicode number representing a character.
          */
         unichar(number: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18609,7 +19134,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the character that you want the Unicode value of.
+         * @param text - Is the character that you want the Unicode value of.
          */
         unicode(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18618,7 +19143,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text you want converted to uppercase, a reference or a text string.
+         * @param text - Is the text you want converted to uppercase, a reference or a text string.
          */
         upper(text: string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<string>;
         /**
@@ -18627,10 +19152,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param lookupValue Is the value to be found in the first column of the table, and can be a value, a reference, or a text string.
-         * @param tableArray Is a table of text, numbers, or logical values, in which data is retrieved. tableArray can be a reference to a range or a range name.
-         * @param colIndexNum Is the column number in tableArray from which the matching value should be returned. The first column of values in the table is column 1.
-         * @param rangeLookup Is a logical value: to find the closest match in the first column (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
+         * @param lookupValue - Is the value to be found in the first column of the table, and can be a value, a reference, or a text string.
+         * @param tableArray - Is a table of text, numbers, or logical values, in which data is retrieved. tableArray can be a reference to a range or a range name.
+         * @param colIndexNum - Is the column number in tableArray from which the matching value should be returned. The first column of values in the table is column 1.
+         * @param rangeLookup - Is a logical value: to find the closest match in the first column (sorted in ascending order) = TRUE or omitted; find an exact match = FALSE.
          */
         vlookup(lookupValue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, tableArray: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, colIndexNum: Excel.Range | number | Excel.RangeReference | Excel.FunctionResult<any>, rangeLookup?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number | string | boolean>;
         /**
@@ -18639,7 +19164,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param text Is the text enclosed in quotation marks or a reference to a cell containing the text you want to convert.
+         * @param text - Is the text enclosed in quotation marks or a reference to a cell containing the text you want to convert.
          */
         value(text: string | boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18648,7 +19173,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.
+         * @param values - List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.
          */
         varA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18657,7 +19182,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.
+         * @param values - List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.
          */
         varPA(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18666,7 +19191,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.
          */
         var_P(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18675,7 +19200,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
+         * @param values - List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.
          */
         var_S(...values: Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<number>;
         /**
@@ -18684,13 +19209,13 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param cost Is the initial cost of the asset.
-         * @param salvage Is the salvage value at the end of the life of the asset.
-         * @param life Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
-         * @param startPeriod Is the starting period for which you want to calculate the depreciation, in the same units as Life.
-         * @param endPeriod Is the ending period for which you want to calculate the depreciation, in the same units as Life.
-         * @param factor Is the rate at which the balance declines, 2 (double-declining balance) if omitted.
-         * @param noSwitch Switch to straight-line depreciation when depreciation is greater than the declining balance = FALSE or omitted; do not switch = TRUE.
+         * @param cost - Is the initial cost of the asset.
+         * @param salvage - Is the salvage value at the end of the life of the asset.
+         * @param life - Is the number of periods over which the asset is being depreciated (sometimes called the useful life of the asset).
+         * @param startPeriod - Is the starting period for which you want to calculate the depreciation, in the same units as Life.
+         * @param endPeriod - Is the ending period for which you want to calculate the depreciation, in the same units as Life.
+         * @param factor - Is the rate at which the balance declines, 2 (double-declining balance) if omitted.
+         * @param noSwitch - Switch to straight-line depreciation when depreciation is greater than the declining balance = FALSE or omitted; do not switch = TRUE.
          */
         vdb(cost: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, salvage: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, life: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, startPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endPeriod: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, factor?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, noSwitch?: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18699,8 +19224,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is the date-time code used by Microsoft Excel for date and time calculation.
-         * @param returnType Is a number (1 or 2) that determines the type of the return value.
+         * @param serialNumber - Is the date-time code used by Microsoft Excel for date and time calculation.
+         * @param returnType - Is a number (1 or 2) that determines the type of the return value.
          */
         weekNum(serialNumber: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, returnType?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18709,8 +19234,8 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number that represents a date.
-         * @param returnType Is a number: for Sunday=1 through Saturday=7, use 1; for Monday=1 through Sunday=7, use 2; for Monday=0 through Sunday=6, use 3.
+         * @param serialNumber - Is a number that represents a date.
+         * @param returnType - Is a number: for Sunday=1 through Saturday=7, use 1; for Monday=1 through Sunday=7, use 2; for Monday=0 through Sunday=6, use 3.
          */
         weekday(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, returnType?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18719,10 +19244,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param x Is the value at which to evaluate the function, a nonnegative number.
-         * @param alpha Is a parameter to the distribution, a positive number.
-         * @param beta Is a parameter to the distribution, a positive number.
-         * @param cumulative Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
+         * @param x - Is the value at which to evaluate the function, a nonnegative number.
+         * @param alpha - Is a parameter to the distribution, a positive number.
+         * @param beta - Is a parameter to the distribution, a positive number.
+         * @param cumulative - Is a logical value: for the cumulative distribution function, use TRUE; for the probability mass function, use FALSE.
          */
         weibull_Dist(x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, alpha: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, beta: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, cumulative: boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18731,9 +19256,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param days Is the number of nonweekend and non-holiday days before or after startDate.
-         * @param holidays Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param days - Is the number of nonweekend and non-holiday days before or after startDate.
+         * @param holidays - Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         workDay(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18742,10 +19267,10 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param days Is the number of nonweekend and non-holiday days before or after startDate.
-         * @param weekend Is a number or string specifying when weekends occur.
-         * @param holidays Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param days - Is the number of nonweekend and non-holiday days before or after startDate.
+         * @param weekend - Is a number or string specifying when weekends occur.
+         * @param holidays - Is an optional array of one or more serial date numbers to exclude from the working calendar, such as state and federal holidays and floating holidays.
          */
         workDay_Intl(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, days: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, weekend?: number | string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, holidays?: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18754,9 +19279,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values Is a series of cash flows that correspond to a schedule of payments in dates.
-         * @param dates Is a schedule of payment dates that corresponds to the cash flow payments.
-         * @param guess Is a number that you guess is close to the result of XIRR.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
+         * @param guess - Is a number that you guess is close to the result of XIRR.
          */
         xirr(values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, guess?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18765,9 +19290,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param rate Is the discount rate to apply to the cash flows.
-         * @param values Is a series of cash flows that correspond to a schedule of payments in dates.
-         * @param dates Is a schedule of payment dates that corresponds to the cash flow payments.
+         * @param rate - Is the discount rate to apply to the cash flows.
+         * @param values - Is a series of cash flows that correspond to a schedule of payments in dates.
+         * @param dates - Is a schedule of payment dates that corresponds to the cash flow payments.
          */
         xnpv(rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, values: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>, dates: number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18776,7 +19301,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param values List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
+         * @param values - List of parameters, whose elements are 1 to 254 conditions you want to test that can be either TRUE or FALSE and can be logical values, arrays, or references.
          */
         xor(...values: Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>): FunctionResult<boolean>;
         /**
@@ -18785,7 +19310,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param serialNumber Is a number in the date-time code used by Microsoft Excel.
+         * @param serialNumber - Is a number in the date-time code used by Microsoft Excel.
          */
         year(serialNumber: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18794,9 +19319,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param startDate Is a serial date number that represents the start date.
-         * @param endDate Is a serial date number that represents the end date.
-         * @param basis Is the type of day count basis to use.
+         * @param startDate - Is a serial date number that represents the start date.
+         * @param endDate - Is a serial date number that represents the end date.
+         * @param basis - Is the type of day count basis to use.
          */
         yearFrac(startDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, endDate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18805,13 +19330,13 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param rate Is the security's annual coupon rate.
-         * @param pr Is the security's price per $100 face value.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param frequency Is the number of coupon payments per year.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param rate - Is the security's annual coupon rate.
+         * @param pr - Is the security's price per $100 face value.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param frequency - Is the number of coupon payments per year.
+         * @param basis - Is the type of day count basis to use.
          */
         yield(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, frequency: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18820,11 +19345,11 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param pr Is the security's price per $100 face value.
-         * @param redemption Is the security's redemption value per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param pr - Is the security's price per $100 face value.
+         * @param redemption - Is the security's redemption value per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         yieldDisc(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, redemption: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18833,12 +19358,12 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param settlement Is the security's settlement date, expressed as a serial date number.
-         * @param maturity Is the security's maturity date, expressed as a serial date number.
-         * @param issue Is the security's issue date, expressed as a serial date number.
-         * @param rate Is the security's interest rate at date of issue.
-         * @param pr Is the security's price per $100 face value.
-         * @param basis Is the type of day count basis to use.
+         * @param settlement - Is the security's settlement date, expressed as a serial date number.
+         * @param maturity - Is the security's maturity date, expressed as a serial date number.
+         * @param issue - Is the security's issue date, expressed as a serial date number.
+         * @param rate - Is the security's interest rate at date of issue.
+         * @param pr - Is the security's price per $100 face value.
+         * @param basis - Is the type of day count basis to use.
          */
         yieldMat(settlement: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, maturity: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, issue: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, rate: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, pr: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, basis?: number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18847,9 +19372,9 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          *
-         * @param array Is the array or range of data against which to test X.
-         * @param x Is the value to test.
-         * @param sigma Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
+         * @param array - Is the array or range of data against which to test X.
+         * @param x - Is the value to test.
+         * @param sigma - Is the population (known) standard deviation. If omitted, the sample standard deviation is used.
          */
         z_Test(array: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, x: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>, sigma?: number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>): FunctionResult<number>;
         /**
@@ -18878,11 +19403,11 @@ declare namespace Excel {
         unsupportedOperation = "UnsupportedOperation",
         invalidOperationInCellEditMode = "InvalidOperationInCellEditMode"
     }
-    module Interfaces {
+    export module Interfaces {
         /**
         * Provides ways to load properties of only a subset of members of a collection.
         */
-        interface CollectionLoadOptions {
+        export interface CollectionLoadOptions {
             /**
             * Specify the number of items in the queried collection to be included in the result.
             */
@@ -18893,7 +19418,7 @@ declare namespace Excel {
             $skip?: number;
         }
         /** An interface for updating data on the Runtime object, for use in "runtime.set({ ... })". */
-        interface RuntimeUpdateData {
+        export interface RuntimeUpdateData {
             /**
              *
              * Toggle JavaScript events in the current task pane or content add-in.
@@ -18903,7 +19428,7 @@ declare namespace Excel {
             enableEvents?: boolean;
         }
         /** An interface for updating data on the Application object, for use in "application.set({ ... })". */
-        interface ApplicationUpdateData {
+        export interface ApplicationUpdateData {
             
             /**
              *
@@ -18914,13 +19439,13 @@ declare namespace Excel {
             calculationMode?: Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual";
         }
         /** An interface for updating data on the IterativeCalculation object, for use in "iterativeCalculation.set({ ... })". */
-        interface IterativeCalculationUpdateData {
+        export interface IterativeCalculationUpdateData {
             
             
             
         }
         /** An interface for updating data on the Workbook object, for use in "workbook.set({ ... })". */
-        interface WorkbookUpdateData {
+        export interface WorkbookUpdateData {
             /**
             *
             * Gets the workbook properties.
@@ -18933,7 +19458,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the Worksheet object, for use in "worksheet.set({ ... })". */
-        interface WorksheetUpdateData {
+        export interface WorksheetUpdateData {
             
             
             /**
@@ -18992,11 +19517,11 @@ declare namespace Excel {
             visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         }
         /** An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set({ ... })". */
-        interface WorksheetCollectionUpdateData {
+        export interface WorksheetCollectionUpdateData {
             items?: Excel.Interfaces.WorksheetData[];
         }
         /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
-        interface RangeUpdateData {
+        export interface RangeUpdateData {
             /**
             *
             * Returns a data validation object.
@@ -19091,13 +19616,13 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface for updating data on the RangeAreas object, for use in "rangeAreas.set({ ... })". */
-        interface RangeAreasUpdateData {
+        export interface RangeAreasUpdateData {
             
             
             
         }
         /** An interface for updating data on the RangeView object, for use in "rangeView.set({ ... })". */
-        interface RangeViewUpdateData {
+        export interface RangeViewUpdateData {
             /**
              *
              * Represents the formula in A1-style notation.
@@ -19135,15 +19660,15 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface for updating data on the RangeViewCollection object, for use in "rangeViewCollection.set({ ... })". */
-        interface RangeViewCollectionUpdateData {
+        export interface RangeViewCollectionUpdateData {
             items?: Excel.Interfaces.RangeViewData[];
         }
         /** An interface for updating data on the SettingCollection object, for use in "settingCollection.set({ ... })". */
-        interface SettingCollectionUpdateData {
+        export interface SettingCollectionUpdateData {
             items?: Excel.Interfaces.SettingData[];
         }
         /** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
-        interface SettingUpdateData {
+        export interface SettingUpdateData {
             /**
              *
              * Represents the value stored for this setting.
@@ -19153,11 +19678,11 @@ declare namespace Excel {
             value?: any;
         }
         /** An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set({ ... })". */
-        interface NamedItemCollectionUpdateData {
+        export interface NamedItemCollectionUpdateData {
             items?: Excel.Interfaces.NamedItemData[];
         }
         /** An interface for updating data on the NamedItem object, for use in "namedItem.set({ ... })". */
-        interface NamedItemUpdateData {
+        export interface NamedItemUpdateData {
             /**
              *
              * Represents the comment associated with this name.
@@ -19181,19 +19706,19 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the BindingCollection object, for use in "bindingCollection.set({ ... })". */
-        interface BindingCollectionUpdateData {
+        export interface BindingCollectionUpdateData {
             items?: Excel.Interfaces.BindingData[];
         }
         /** An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })". */
-        interface TableCollectionUpdateData {
+        export interface TableCollectionUpdateData {
             items?: Excel.Interfaces.TableData[];
         }
         /** An interface for updating data on the TableScopedCollection object, for use in "tableScopedCollection.set({ ... })". */
-        interface TableScopedCollectionUpdateData {
+        export interface TableScopedCollectionUpdateData {
             items?: Excel.Interfaces.TableData[];
         }
         /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
-        interface TableUpdateData {
+        export interface TableUpdateData {
             /**
              *
              * Indicates whether the first column contains special formatting.
@@ -19259,11 +19784,11 @@ declare namespace Excel {
             style?: string;
         }
         /** An interface for updating data on the TableColumnCollection object, for use in "tableColumnCollection.set({ ... })". */
-        interface TableColumnCollectionUpdateData {
+        export interface TableColumnCollectionUpdateData {
             items?: Excel.Interfaces.TableColumnData[];
         }
         /** An interface for updating data on the TableColumn object, for use in "tableColumn.set({ ... })". */
-        interface TableColumnUpdateData {
+        export interface TableColumnUpdateData {
             /**
              *
              * Represents the name of the table column.
@@ -19280,11 +19805,11 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set({ ... })". */
-        interface TableRowCollectionUpdateData {
+        export interface TableRowCollectionUpdateData {
             items?: Excel.Interfaces.TableRowData[];
         }
         /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
-        interface TableRowUpdateData {
+        export interface TableRowUpdateData {
             /**
              *
              * Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cells that contain an error will return the error string.
@@ -19294,7 +19819,7 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface for updating data on the DataValidation object, for use in "dataValidation.set({ ... })". */
-        interface DataValidationUpdateData {
+        export interface DataValidationUpdateData {
             /**
              *
              * Error alert when user enters invalid data.
@@ -19325,7 +19850,7 @@ declare namespace Excel {
             rule?: Excel.DataValidationRule;
         }
         /** An interface for updating data on the RangeFormat object, for use in "rangeFormat.set({ ... })". */
-        interface RangeFormatUpdateData {
+        export interface RangeFormatUpdateData {
             /**
             *
             * Collection of border objects that apply to the overall range.
@@ -19424,7 +19949,7 @@ declare namespace Excel {
             wrapText?: boolean;
         }
         /** An interface for updating data on the FormatProtection object, for use in "formatProtection.set({ ... })". */
-        interface FormatProtectionUpdateData {
+        export interface FormatProtectionUpdateData {
             /**
              *
              * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
@@ -19441,7 +19966,7 @@ declare namespace Excel {
             locked?: boolean;
         }
         /** An interface for updating data on the RangeFill object, for use in "rangeFill.set({ ... })". */
-        interface RangeFillUpdateData {
+        export interface RangeFillUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
@@ -19455,7 +19980,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the RangeBorder object, for use in "rangeBorder.set({ ... })". */
-        interface RangeBorderUpdateData {
+        export interface RangeBorderUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -19480,12 +20005,12 @@ declare namespace Excel {
             weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
         }
         /** An interface for updating data on the RangeBorderCollection object, for use in "rangeBorderCollection.set({ ... })". */
-        interface RangeBorderCollectionUpdateData {
+        export interface RangeBorderCollectionUpdateData {
             
             items?: Excel.Interfaces.RangeBorderData[];
         }
         /** An interface for updating data on the RangeFont object, for use in "rangeFont.set({ ... })". */
-        interface RangeFontUpdateData {
+        export interface RangeFontUpdateData {
             /**
              *
              * Represents the bold status of font.
@@ -19534,11 +20059,11 @@ declare namespace Excel {
             underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
         /** An interface for updating data on the ChartCollection object, for use in "chartCollection.set({ ... })". */
-        interface ChartCollectionUpdateData {
+        export interface ChartCollectionUpdateData {
             items?: Excel.Interfaces.ChartData[];
         }
         /** An interface for updating data on the Chart object, for use in "chart.set({ ... })". */
-        interface ChartUpdateData {
+        export interface ChartUpdateData {
             /**
             *
             * Represents chart axes.
@@ -19686,14 +20211,14 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface for updating data on the ChartPivotOptions object, for use in "chartPivotOptions.set({ ... })". */
-        interface ChartPivotOptionsUpdateData {
+        export interface ChartPivotOptionsUpdateData {
             
             
             
             
         }
         /** An interface for updating data on the ChartAreaFormat object, for use in "chartAreaFormat.set({ ... })". */
-        interface ChartAreaFormatUpdateData {
+        export interface ChartAreaFormatUpdateData {
             /**
             *
             * Represents the border format of chart area, which includes color, linestyle, and weight.
@@ -19712,11 +20237,11 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the ChartSeriesCollection object, for use in "chartSeriesCollection.set({ ... })". */
-        interface ChartSeriesCollectionUpdateData {
+        export interface ChartSeriesCollectionUpdateData {
             items?: Excel.Interfaces.ChartSeriesData[];
         }
         /** An interface for updating data on the ChartSeries object, for use in "chartSeries.set({ ... })". */
-        interface ChartSeriesUpdateData {
+        export interface ChartSeriesUpdateData {
             
             
             /**
@@ -19903,7 +20428,7 @@ declare namespace Excel {
             varyByCategories?: boolean;
         }
         /** An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set({ ... })". */
-        interface ChartSeriesFormatUpdateData {
+        export interface ChartSeriesFormatUpdateData {
             /**
             *
             * Represents line formatting.
@@ -19913,11 +20438,11 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set({ ... })". */
-        interface ChartPointsCollectionUpdateData {
+        export interface ChartPointsCollectionUpdateData {
             items?: Excel.Interfaces.ChartPointData[];
         }
         /** An interface for updating data on the ChartPoint object, for use in "chartPoint.set({ ... })". */
-        interface ChartPointUpdateData {
+        export interface ChartPointUpdateData {
             /**
             *
             * Returns the data label of a chart point.
@@ -19969,7 +20494,7 @@ declare namespace Excel {
             markerStyle?: Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star" | "Dot" | "Dash" | "Circle" | "Plus" | "Picture";
         }
         /** An interface for updating data on the ChartPointFormat object, for use in "chartPointFormat.set({ ... })". */
-        interface ChartPointFormatUpdateData {
+        export interface ChartPointFormatUpdateData {
             /**
             *
             * Represents the border format of a chart data point, which includes color, style, and weight information.
@@ -19979,7 +20504,7 @@ declare namespace Excel {
             border?: Excel.Interfaces.ChartBorderUpdateData;
         }
         /** An interface for updating data on the ChartAxes object, for use in "chartAxes.set({ ... })". */
-        interface ChartAxesUpdateData {
+        export interface ChartAxesUpdateData {
             /**
             *
             * Represents the category axis in a chart.
@@ -20003,7 +20528,7 @@ declare namespace Excel {
             valueAxis?: Excel.Interfaces.ChartAxisUpdateData;
         }
         /** An interface for updating data on the ChartAxis object, for use in "chartAxis.set({ ... })". */
-        interface ChartAxisUpdateData {
+        export interface ChartAxisUpdateData {
             /**
             *
             * Represents the formatting of a chart object, which includes line and font formatting.
@@ -20217,7 +20742,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartAxisFormat object, for use in "chartAxisFormat.set({ ... })". */
-        interface ChartAxisFormatUpdateData {
+        export interface ChartAxisFormatUpdateData {
             /**
             *
             * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
@@ -20234,7 +20759,7 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set({ ... })". */
-        interface ChartAxisTitleUpdateData {
+        export interface ChartAxisTitleUpdateData {
             /**
             *
             * Represents the formatting of chart axis title.
@@ -20258,7 +20783,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartAxisTitleFormat object, for use in "chartAxisTitleFormat.set({ ... })". */
-        interface ChartAxisTitleFormatUpdateData {
+        export interface ChartAxisTitleFormatUpdateData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight.
@@ -20275,7 +20800,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartDataLabels object, for use in "chartDataLabels.set({ ... })". */
-        interface ChartDataLabelsUpdateData {
+        export interface ChartDataLabelsUpdateData {
             /**
             *
             * Represents the format of chart data labels, which includes fill and font formatting.
@@ -20379,7 +20904,7 @@ declare namespace Excel {
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         }
         /** An interface for updating data on the ChartDataLabel object, for use in "chartDataLabel.set({ ... })". */
-        interface ChartDataLabelUpdateData {
+        export interface ChartDataLabelUpdateData {
             /**
             *
             * Represents the format of chart data label.
@@ -20511,7 +21036,7 @@ declare namespace Excel {
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         }
         /** An interface for updating data on the ChartDataLabelFormat object, for use in "chartDataLabelFormat.set({ ... })". */
-        interface ChartDataLabelFormatUpdateData {
+        export interface ChartDataLabelFormatUpdateData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight.
@@ -20528,7 +21053,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartErrorBars object, for use in "chartErrorBars.set({ ... })". */
-        interface ChartErrorBarsUpdateData {
+        export interface ChartErrorBarsUpdateData {
             
             
             
@@ -20536,11 +21061,11 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set({ ... })". */
-        interface ChartErrorBarsFormatUpdateData {
+        export interface ChartErrorBarsFormatUpdateData {
             
         }
         /** An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set({ ... })". */
-        interface ChartGridlinesUpdateData {
+        export interface ChartGridlinesUpdateData {
             /**
             *
             * Represents the formatting of chart gridlines.
@@ -20557,7 +21082,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartGridlinesFormat object, for use in "chartGridlinesFormat.set({ ... })". */
-        interface ChartGridlinesFormatUpdateData {
+        export interface ChartGridlinesFormatUpdateData {
             /**
             *
             * Represents chart line formatting.
@@ -20567,7 +21092,7 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartLegend object, for use in "chartLegend.set({ ... })". */
-        interface ChartLegendUpdateData {
+        export interface ChartLegendUpdateData {
             /**
             *
             * Represents the formatting of a chart legend, which includes fill and font formatting.
@@ -20633,7 +21158,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface for updating data on the ChartLegendEntry object, for use in "chartLegendEntry.set({ ... })". */
-        interface ChartLegendEntryUpdateData {
+        export interface ChartLegendEntryUpdateData {
             /**
              *
              * Represents the visible of a chart legend entry.
@@ -20643,11 +21168,11 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartLegendEntryCollection object, for use in "chartLegendEntryCollection.set({ ... })". */
-        interface ChartLegendEntryCollectionUpdateData {
+        export interface ChartLegendEntryCollectionUpdateData {
             items?: Excel.Interfaces.ChartLegendEntryData[];
         }
         /** An interface for updating data on the ChartLegendFormat object, for use in "chartLegendFormat.set({ ... })". */
-        interface ChartLegendFormatUpdateData {
+        export interface ChartLegendFormatUpdateData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight.
@@ -20664,13 +21189,13 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartMapOptions object, for use in "chartMapOptions.set({ ... })". */
-        interface ChartMapOptionsUpdateData {
+        export interface ChartMapOptionsUpdateData {
             
             
             
         }
         /** An interface for updating data on the ChartTitle object, for use in "chartTitle.set({ ... })". */
-        interface ChartTitleUpdateData {
+        export interface ChartTitleUpdateData {
             /**
             *
             * Represents the formatting of a chart title, which includes fill and font formatting.
@@ -20750,7 +21275,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the ChartFormatString object, for use in "chartFormatString.set({ ... })". */
-        interface ChartFormatStringUpdateData {
+        export interface ChartFormatStringUpdateData {
             /**
             *
             * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
@@ -20760,7 +21285,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartTitleFormat object, for use in "chartTitleFormat.set({ ... })". */
-        interface ChartTitleFormatUpdateData {
+        export interface ChartTitleFormatUpdateData {
             /**
             *
             * Represents the border format of chart title, which includes color, linestyle, and weight.
@@ -20777,7 +21302,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartBorder object, for use in "chartBorder.set({ ... })". */
-        interface ChartBorderUpdateData {
+        export interface ChartBorderUpdateData {
             /**
              *
              * HTML color code representing the color of borders in the chart.
@@ -20801,7 +21326,7 @@ declare namespace Excel {
             weight?: number;
         }
         /** An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set({ ... })". */
-        interface ChartBinOptionsUpdateData {
+        export interface ChartBinOptionsUpdateData {
             
             
             
@@ -20811,7 +21336,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the ChartBoxwhiskerOptions object, for use in "chartBoxwhiskerOptions.set({ ... })". */
-        interface ChartBoxwhiskerOptionsUpdateData {
+        export interface ChartBoxwhiskerOptionsUpdateData {
             
             
             
@@ -20819,7 +21344,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the ChartLineFormat object, for use in "chartLineFormat.set({ ... })". */
-        interface ChartLineFormatUpdateData {
+        export interface ChartLineFormatUpdateData {
             /**
              *
              * HTML color code representing the color of lines in the chart.
@@ -20843,7 +21368,7 @@ declare namespace Excel {
             weight?: number;
         }
         /** An interface for updating data on the ChartFont object, for use in "chartFont.set({ ... })". */
-        interface ChartFontUpdateData {
+        export interface ChartFontUpdateData {
             /**
              *
              * Represents the bold status of font.
@@ -20888,7 +21413,7 @@ declare namespace Excel {
             underline?: Excel.ChartUnderlineStyle | "None" | "Single";
         }
         /** An interface for updating data on the ChartTrendline object, for use in "chartTrendline.set({ ... })". */
-        interface ChartTrendlineUpdateData {
+        export interface ChartTrendlineUpdateData {
             /**
             *
             * Represents the formatting of a chart trendline.
@@ -20968,11 +21493,11 @@ declare namespace Excel {
             type?: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power";
         }
         /** An interface for updating data on the ChartTrendlineCollection object, for use in "chartTrendlineCollection.set({ ... })". */
-        interface ChartTrendlineCollectionUpdateData {
+        export interface ChartTrendlineCollectionUpdateData {
             items?: Excel.Interfaces.ChartTrendlineData[];
         }
         /** An interface for updating data on the ChartTrendlineFormat object, for use in "chartTrendlineFormat.set({ ... })". */
-        interface ChartTrendlineFormatUpdateData {
+        export interface ChartTrendlineFormatUpdateData {
             /**
             *
             * Represents chart line formatting.
@@ -20982,7 +21507,7 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatUpdateData;
         }
         /** An interface for updating data on the ChartTrendlineLabel object, for use in "chartTrendlineLabel.set({ ... })". */
-        interface ChartTrendlineLabelUpdateData {
+        export interface ChartTrendlineLabelUpdateData {
             /**
             *
             * Represents the format of chart trendline label.
@@ -21058,7 +21583,7 @@ declare namespace Excel {
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         }
         /** An interface for updating data on the ChartTrendlineLabelFormat object, for use in "chartTrendlineLabelFormat.set({ ... })". */
-        interface ChartTrendlineLabelFormatUpdateData {
+        export interface ChartTrendlineLabelFormatUpdateData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight.
@@ -21075,7 +21600,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontUpdateData;
         }
         /** An interface for updating data on the ChartPlotArea object, for use in "chartPlotArea.set({ ... })". */
-        interface ChartPlotAreaUpdateData {
+        export interface ChartPlotAreaUpdateData {
             /**
             *
             * Represents the formatting of a chart plotArea.
@@ -21148,7 +21673,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface for updating data on the ChartPlotAreaFormat object, for use in "chartPlotAreaFormat.set({ ... })". */
-        interface ChartPlotAreaFormatUpdateData {
+        export interface ChartPlotAreaFormatUpdateData {
             /**
             *
             * Represents the border attributes of a chart plotArea.
@@ -21158,19 +21683,19 @@ declare namespace Excel {
             border?: Excel.Interfaces.ChartBorderUpdateData;
         }
         /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in "customXmlPartScopedCollection.set({ ... })". */
-        interface CustomXmlPartScopedCollectionUpdateData {
+        export interface CustomXmlPartScopedCollectionUpdateData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
         /** An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({ ... })". */
-        interface CustomXmlPartCollectionUpdateData {
+        export interface CustomXmlPartCollectionUpdateData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
         /** An interface for updating data on the PivotTableCollection object, for use in "pivotTableCollection.set({ ... })". */
-        interface PivotTableCollectionUpdateData {
+        export interface PivotTableCollectionUpdateData {
             items?: Excel.Interfaces.PivotTableData[];
         }
         /** An interface for updating data on the PivotTable object, for use in "pivotTable.set({ ... })". */
-        interface PivotTableUpdateData {
+        export interface PivotTableUpdateData {
             
             /**
              *
@@ -21182,7 +21707,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the PivotLayout object, for use in "pivotLayout.set({ ... })". */
-        interface PivotLayoutUpdateData {
+        export interface PivotLayoutUpdateData {
             
             /**
              *
@@ -21215,11 +21740,11 @@ declare namespace Excel {
             subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";
         }
         /** An interface for updating data on the PivotHierarchyCollection object, for use in "pivotHierarchyCollection.set({ ... })". */
-        interface PivotHierarchyCollectionUpdateData {
+        export interface PivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.PivotHierarchyData[];
         }
         /** An interface for updating data on the PivotHierarchy object, for use in "pivotHierarchy.set({ ... })". */
-        interface PivotHierarchyUpdateData {
+        export interface PivotHierarchyUpdateData {
             /**
              *
              * Name of the PivotHierarchy.
@@ -21229,11 +21754,11 @@ declare namespace Excel {
             name?: string;
         }
         /** An interface for updating data on the RowColumnPivotHierarchyCollection object, for use in "rowColumnPivotHierarchyCollection.set({ ... })". */
-        interface RowColumnPivotHierarchyCollectionUpdateData {
+        export interface RowColumnPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.RowColumnPivotHierarchyData[];
         }
         /** An interface for updating data on the RowColumnPivotHierarchy object, for use in "rowColumnPivotHierarchy.set({ ... })". */
-        interface RowColumnPivotHierarchyUpdateData {
+        export interface RowColumnPivotHierarchyUpdateData {
             /**
              *
              * Name of the RowColumnPivotHierarchy.
@@ -21250,11 +21775,11 @@ declare namespace Excel {
             position?: number;
         }
         /** An interface for updating data on the FilterPivotHierarchyCollection object, for use in "filterPivotHierarchyCollection.set({ ... })". */
-        interface FilterPivotHierarchyCollectionUpdateData {
+        export interface FilterPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.FilterPivotHierarchyData[];
         }
         /** An interface for updating data on the FilterPivotHierarchy object, for use in "filterPivotHierarchy.set({ ... })". */
-        interface FilterPivotHierarchyUpdateData {
+        export interface FilterPivotHierarchyUpdateData {
             /**
              *
              * Determines whether to allow multiple filter items.
@@ -21278,11 +21803,11 @@ declare namespace Excel {
             position?: number;
         }
         /** An interface for updating data on the DataPivotHierarchyCollection object, for use in "dataPivotHierarchyCollection.set({ ... })". */
-        interface DataPivotHierarchyCollectionUpdateData {
+        export interface DataPivotHierarchyCollectionUpdateData {
             items?: Excel.Interfaces.DataPivotHierarchyData[];
         }
         /** An interface for updating data on the DataPivotHierarchy object, for use in "dataPivotHierarchy.set({ ... })". */
-        interface DataPivotHierarchyUpdateData {
+        export interface DataPivotHierarchyUpdateData {
             /**
             *
             * Returns the PivotFields associated with the DataPivotHierarchy.
@@ -21327,11 +21852,11 @@ declare namespace Excel {
             summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
         }
         /** An interface for updating data on the PivotFieldCollection object, for use in "pivotFieldCollection.set({ ... })". */
-        interface PivotFieldCollectionUpdateData {
+        export interface PivotFieldCollectionUpdateData {
             items?: Excel.Interfaces.PivotFieldData[];
         }
         /** An interface for updating data on the PivotField object, for use in "pivotField.set({ ... })". */
-        interface PivotFieldUpdateData {
+        export interface PivotFieldUpdateData {
             /**
              *
              * Name of the PivotField.
@@ -21355,11 +21880,11 @@ declare namespace Excel {
             subtotals?: Excel.Subtotals;
         }
         /** An interface for updating data on the PivotItemCollection object, for use in "pivotItemCollection.set({ ... })". */
-        interface PivotItemCollectionUpdateData {
+        export interface PivotItemCollectionUpdateData {
             items?: Excel.Interfaces.PivotItemData[];
         }
         /** An interface for updating data on the PivotItem object, for use in "pivotItem.set({ ... })". */
-        interface PivotItemUpdateData {
+        export interface PivotItemUpdateData {
             /**
              *
              * Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
@@ -21383,7 +21908,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })". */
-        interface DocumentPropertiesUpdateData {
+        export interface DocumentPropertiesUpdateData {
             /**
              *
              * Gets or sets the author of the workbook.
@@ -21449,7 +21974,7 @@ declare namespace Excel {
             title?: string;
         }
         /** An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })". */
-        interface CustomPropertyUpdateData {
+        export interface CustomPropertyUpdateData {
             /**
              *
              * Gets or sets the value of the custom property.
@@ -21459,15 +21984,15 @@ declare namespace Excel {
             value?: any;
         }
         /** An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({ ... })". */
-        interface CustomPropertyCollectionUpdateData {
+        export interface CustomPropertyCollectionUpdateData {
             items?: Excel.Interfaces.CustomPropertyData[];
         }
         /** An interface for updating data on the ConditionalFormatCollection object, for use in "conditionalFormatCollection.set({ ... })". */
-        interface ConditionalFormatCollectionUpdateData {
+        export interface ConditionalFormatCollectionUpdateData {
             items?: Excel.Interfaces.ConditionalFormatData[];
         }
         /** An interface for updating data on the ConditionalFormat object, for use in "conditionalFormat.set({ ... })". */
-        interface ConditionalFormatUpdateData {
+        export interface ConditionalFormatUpdateData {
             /**
             *
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
@@ -21607,7 +22132,7 @@ declare namespace Excel {
             stopIfTrue?: boolean;
         }
         /** An interface for updating data on the DataBarConditionalFormat object, for use in "dataBarConditionalFormat.set({ ... })". */
-        interface DataBarConditionalFormatUpdateData {
+        export interface DataBarConditionalFormatUpdateData {
             /**
             *
             * Representation of all values to the left of the axis in an Excel data bar.
@@ -21667,7 +22192,7 @@ declare namespace Excel {
             upperBoundRule?: Excel.ConditionalDataBarRule;
         }
         /** An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in "conditionalDataBarPositiveFormat.set({ ... })". */
-        interface ConditionalDataBarPositiveFormatUpdateData {
+        export interface ConditionalDataBarPositiveFormatUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -21692,7 +22217,7 @@ declare namespace Excel {
             gradientFill?: boolean;
         }
         /** An interface for updating data on the ConditionalDataBarNegativeFormat object, for use in "conditionalDataBarNegativeFormat.set({ ... })". */
-        interface ConditionalDataBarNegativeFormatUpdateData {
+        export interface ConditionalDataBarNegativeFormatUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -21724,7 +22249,7 @@ declare namespace Excel {
             matchPositiveFillColor?: boolean;
         }
         /** An interface for updating data on the CustomConditionalFormat object, for use in "customConditionalFormat.set({ ... })". */
-        interface CustomConditionalFormatUpdateData {
+        export interface CustomConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -21741,7 +22266,7 @@ declare namespace Excel {
             rule?: Excel.Interfaces.ConditionalFormatRuleUpdateData;
         }
         /** An interface for updating data on the ConditionalFormatRule object, for use in "conditionalFormatRule.set({ ... })". */
-        interface ConditionalFormatRuleUpdateData {
+        export interface ConditionalFormatRuleUpdateData {
             /**
              *
              * The formula, if required, to evaluate the conditional format rule on.
@@ -21765,7 +22290,7 @@ declare namespace Excel {
             formulaR1C1?: string;
         }
         /** An interface for updating data on the IconSetConditionalFormat object, for use in "iconSetConditionalFormat.set({ ... })". */
-        interface IconSetConditionalFormatUpdateData {
+        export interface IconSetConditionalFormatUpdateData {
             /**
              *
              * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
@@ -21796,7 +22321,7 @@ declare namespace Excel {
             style?: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon";
         }
         /** An interface for updating data on the ColorScaleConditionalFormat object, for use in "colorScaleConditionalFormat.set({ ... })". */
-        interface ColorScaleConditionalFormatUpdateData {
+        export interface ColorScaleConditionalFormatUpdateData {
             /**
              *
              * The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -21806,7 +22331,7 @@ declare namespace Excel {
             criteria?: Excel.ConditionalColorScaleCriteria;
         }
         /** An interface for updating data on the TopBottomConditionalFormat object, for use in "topBottomConditionalFormat.set({ ... })". */
-        interface TopBottomConditionalFormatUpdateData {
+        export interface TopBottomConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -21823,7 +22348,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalTopBottomRule;
         }
         /** An interface for updating data on the PresetCriteriaConditionalFormat object, for use in "presetCriteriaConditionalFormat.set({ ... })". */
-        interface PresetCriteriaConditionalFormatUpdateData {
+        export interface PresetCriteriaConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -21840,7 +22365,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalPresetCriteriaRule;
         }
         /** An interface for updating data on the TextConditionalFormat object, for use in "textConditionalFormat.set({ ... })". */
-        interface TextConditionalFormatUpdateData {
+        export interface TextConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -21857,7 +22382,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalTextComparisonRule;
         }
         /** An interface for updating data on the CellValueConditionalFormat object, for use in "cellValueConditionalFormat.set({ ... })". */
-        interface CellValueConditionalFormatUpdateData {
+        export interface CellValueConditionalFormatUpdateData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -21874,7 +22399,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalCellValueRule;
         }
         /** An interface for updating data on the ConditionalRangeFormat object, for use in "conditionalRangeFormat.set({ ... })". */
-        interface ConditionalRangeFormatUpdateData {
+        export interface ConditionalRangeFormatUpdateData {
             /**
             *
             * Collection of border objects that apply to the overall conditional format range.
@@ -21905,7 +22430,7 @@ declare namespace Excel {
             numberFormat?: any;
         }
         /** An interface for updating data on the ConditionalRangeFont object, for use in "conditionalRangeFont.set({ ... })". */
-        interface ConditionalRangeFontUpdateData {
+        export interface ConditionalRangeFontUpdateData {
             /**
              *
              * Represents the bold status of font.
@@ -21943,7 +22468,7 @@ declare namespace Excel {
             underline?: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";
         }
         /** An interface for updating data on the ConditionalRangeFill object, for use in "conditionalRangeFill.set({ ... })". */
-        interface ConditionalRangeFillUpdateData {
+        export interface ConditionalRangeFillUpdateData {
             /**
              *
              * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -21953,7 +22478,7 @@ declare namespace Excel {
             color?: string;
         }
         /** An interface for updating data on the ConditionalRangeBorder object, for use in "conditionalRangeBorder.set({ ... })". */
-        interface ConditionalRangeBorderUpdateData {
+        export interface ConditionalRangeBorderUpdateData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -21970,7 +22495,7 @@ declare namespace Excel {
             style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot";
         }
         /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in "conditionalRangeBorderCollection.set({ ... })". */
-        interface ConditionalRangeBorderCollectionUpdateData {
+        export interface ConditionalRangeBorderCollectionUpdateData {
             /**
             *
             * Gets the bottom border.
@@ -22002,7 +22527,7 @@ declare namespace Excel {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
         /** An interface for updating data on the Style object, for use in "style.set({ ... })". */
-        interface StyleUpdateData {
+        export interface StyleUpdateData {
             /**
             *
             * A Border collection of four Border objects that represent the style of the four borders.
@@ -22152,11 +22677,11 @@ declare namespace Excel {
             wrapText?: boolean;
         }
         /** An interface for updating data on the StyleCollection object, for use in "styleCollection.set({ ... })". */
-        interface StyleCollectionUpdateData {
+        export interface StyleCollectionUpdateData {
             items?: Excel.Interfaces.StyleData[];
         }
         /** An interface for updating data on the PageLayout object, for use in "pageLayout.set({ ... })". */
-        interface PageLayoutUpdateData {
+        export interface PageLayoutUpdateData {
             
             
             
@@ -22179,7 +22704,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the HeaderFooter object, for use in "headerFooter.set({ ... })". */
-        interface HeaderFooterUpdateData {
+        export interface HeaderFooterUpdateData {
             
             
             
@@ -22188,7 +22713,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the HeaderFooterGroup object, for use in "headerFooterGroup.set({ ... })". */
-        interface HeaderFooterGroupUpdateData {
+        export interface HeaderFooterGroupUpdateData {
             
             
             
@@ -22198,19 +22723,19 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the PageBreakCollection object, for use in "pageBreakCollection.set({ ... })". */
-        interface PageBreakCollectionUpdateData {
+        export interface PageBreakCollectionUpdateData {
             items?: Excel.Interfaces.PageBreakData[];
         }
         /** An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })". */
-        interface RangeCollectionUpdateData {
+        export interface RangeCollectionUpdateData {
             items?: Excel.Interfaces.RangeData[];
         }
         /** An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set({ ... })". */
-        interface ShapeCollectionUpdateData {
+        export interface ShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the Shape object, for use in "shape.set({ ... })". */
-        interface ShapeUpdateData {
+        export interface ShapeUpdateData {
             
             
             
@@ -22226,11 +22751,11 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the GroupShapeCollection object, for use in "groupShapeCollection.set({ ... })". */
-        interface GroupShapeCollectionUpdateData {
+        export interface GroupShapeCollectionUpdateData {
             items?: Excel.Interfaces.ShapeData[];
         }
         /** An interface for updating data on the Line object, for use in "line.set({ ... })". */
-        interface LineUpdateData {
+        export interface LineUpdateData {
             
             
             
@@ -22240,12 +22765,12 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the ShapeFill object, for use in "shapeFill.set({ ... })". */
-        interface ShapeFillUpdateData {
+        export interface ShapeFillUpdateData {
             
             
         }
         /** An interface for updating data on the ShapeLineFormat object, for use in "shapeLineFormat.set({ ... })". */
-        interface ShapeLineFormatUpdateData {
+        export interface ShapeLineFormatUpdateData {
             
             
             
@@ -22254,7 +22779,7 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the TextFrame object, for use in "textFrame.set({ ... })". */
-        interface TextFrameUpdateData {
+        export interface TextFrameUpdateData {
             
             
             
@@ -22268,12 +22793,12 @@ declare namespace Excel {
             
         }
         /** An interface for updating data on the TextRange object, for use in "textRange.set({ ... })". */
-        interface TextRangeUpdateData {
+        export interface TextRangeUpdateData {
             
             
         }
         /** An interface for updating data on the ShapeFont object, for use in "shapeFont.set({ ... })". */
-        interface ShapeFontUpdateData {
+        export interface ShapeFontUpdateData {
             
             
             
@@ -22282,7 +22807,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "runtime.toJSON()". */
-        interface RuntimeData {
+        export interface RuntimeData {
             /**
              *
              * Toggle JavaScript events in the current task pane or content add-in.
@@ -22292,7 +22817,7 @@ declare namespace Excel {
             enableEvents?: boolean;
         }
         /** An interface describing the data returned by calling "application.toJSON()". */
-        interface ApplicationData {
+        export interface ApplicationData {
             
             
             /**
@@ -22305,13 +22830,13 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "iterativeCalculation.toJSON()". */
-        interface IterativeCalculationData {
+        export interface IterativeCalculationData {
             
             
             
         }
         /** An interface describing the data returned by calling "workbook.toJSON()". */
-        interface WorkbookData {
+        export interface WorkbookData {
             /**
             *
             * Represents a collection of bindings that are part of the workbook. Read-only.
@@ -22404,7 +22929,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "workbookProtection.toJSON()". */
-        interface WorkbookProtectionData {
+        export interface WorkbookProtectionData {
             /**
              *
              * Indicates if the workbook is protected. Read-Only.
@@ -22414,10 +22939,10 @@ declare namespace Excel {
             protected?: boolean;
         }
         /** An interface describing the data returned by calling "workbookCreated.toJSON()". */
-        interface WorkbookCreatedData {
+        export interface WorkbookCreatedData {
         }
         /** An interface describing the data returned by calling "worksheet.toJSON()". */
-        interface WorksheetData {
+        export interface WorksheetData {
             
             /**
             *
@@ -22529,11 +23054,11 @@ declare namespace Excel {
             visibility?: Excel.SheetVisibility | "Visible" | "Hidden" | "VeryHidden";
         }
         /** An interface describing the data returned by calling "worksheetCollection.toJSON()". */
-        interface WorksheetCollectionData {
+        export interface WorksheetCollectionData {
             items?: Excel.Interfaces.WorksheetData[];
         }
         /** An interface describing the data returned by calling "worksheetProtection.toJSON()". */
-        interface WorksheetProtectionData {
+        export interface WorksheetProtectionData {
             /**
              *
              * Sheet protection options. Read-only.
@@ -22550,7 +23075,7 @@ declare namespace Excel {
             protected?: boolean;
         }
         /** An interface describing the data returned by calling "range.toJSON()". */
-        interface RangeData {
+        export interface RangeData {
             /**
             *
             * Collection of ConditionalFormats that intersect the range. Read-only.
@@ -22737,7 +23262,7 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface describing the data returned by calling "rangeAreas.toJSON()". */
-        interface RangeAreasData {
+        export interface RangeAreasData {
             
             
             
@@ -22751,7 +23276,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "rangeView.toJSON()". */
-        interface RangeViewData {
+        export interface RangeViewData {
             /**
             *
             * Represents a collection of range views associated with the range. Read-only.
@@ -22838,15 +23363,15 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface describing the data returned by calling "rangeViewCollection.toJSON()". */
-        interface RangeViewCollectionData {
+        export interface RangeViewCollectionData {
             items?: Excel.Interfaces.RangeViewData[];
         }
         /** An interface describing the data returned by calling "settingCollection.toJSON()". */
-        interface SettingCollectionData {
+        export interface SettingCollectionData {
             items?: Excel.Interfaces.SettingData[];
         }
         /** An interface describing the data returned by calling "setting.toJSON()". */
-        interface SettingData {
+        export interface SettingData {
             /**
              *
              * Returns the key that represents the id of the Setting. Read-only.
@@ -22863,11 +23388,11 @@ declare namespace Excel {
             value?: any;
         }
         /** An interface describing the data returned by calling "namedItemCollection.toJSON()". */
-        interface NamedItemCollectionData {
+        export interface NamedItemCollectionData {
             items?: Excel.Interfaces.NamedItemData[];
         }
         /** An interface describing the data returned by calling "namedItem.toJSON()". */
-        interface NamedItemData {
+        export interface NamedItemData {
             /**
             *
             * Returns an object containing values and types of the named item. Read-only.
@@ -22926,7 +23451,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface describing the data returned by calling "namedItemArrayValues.toJSON()". */
-        interface NamedItemArrayValuesData {
+        export interface NamedItemArrayValuesData {
             /**
              *
              * Represents the types for each item in the named item array
@@ -22943,7 +23468,7 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface describing the data returned by calling "binding.toJSON()". */
-        interface BindingData {
+        export interface BindingData {
             /**
              *
              * Represents binding identifier. Read-only.
@@ -22960,19 +23485,19 @@ declare namespace Excel {
             type?: Excel.BindingType | "Range" | "Table" | "Text";
         }
         /** An interface describing the data returned by calling "bindingCollection.toJSON()". */
-        interface BindingCollectionData {
+        export interface BindingCollectionData {
             items?: Excel.Interfaces.BindingData[];
         }
         /** An interface describing the data returned by calling "tableCollection.toJSON()". */
-        interface TableCollectionData {
+        export interface TableCollectionData {
             items?: Excel.Interfaces.TableData[];
         }
         /** An interface describing the data returned by calling "tableScopedCollection.toJSON()". */
-        interface TableScopedCollectionData {
+        export interface TableScopedCollectionData {
             items?: Excel.Interfaces.TableData[];
         }
         /** An interface describing the data returned by calling "table.toJSON()". */
-        interface TableData {
+        export interface TableData {
             
             /**
             *
@@ -23074,11 +23599,11 @@ declare namespace Excel {
             style?: string;
         }
         /** An interface describing the data returned by calling "tableColumnCollection.toJSON()". */
-        interface TableColumnCollectionData {
+        export interface TableColumnCollectionData {
             items?: Excel.Interfaces.TableColumnData[];
         }
         /** An interface describing the data returned by calling "tableColumn.toJSON()". */
-        interface TableColumnData {
+        export interface TableColumnData {
             /**
             *
             * Retrieve the filter applied to the column. Read-only.
@@ -23116,11 +23641,11 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface describing the data returned by calling "tableRowCollection.toJSON()". */
-        interface TableRowCollectionData {
+        export interface TableRowCollectionData {
             items?: Excel.Interfaces.TableRowData[];
         }
         /** An interface describing the data returned by calling "tableRow.toJSON()". */
-        interface TableRowData {
+        export interface TableRowData {
             /**
              *
              * Returns the index number of the row within the rows collection of the table. Zero-indexed. Read-only.
@@ -23137,7 +23662,7 @@ declare namespace Excel {
             values?: any[][];
         }
         /** An interface describing the data returned by calling "dataValidation.toJSON()". */
-        interface DataValidationData {
+        export interface DataValidationData {
             /**
              *
              * Error alert when user enters invalid data.
@@ -23184,12 +23709,12 @@ declare namespace Excel {
             valid?: boolean;
         }
         /** An interface describing the data returned by calling "removeDuplicatesResult.toJSON()". */
-        interface RemoveDuplicatesResultData {
+        export interface RemoveDuplicatesResultData {
             
             
         }
         /** An interface describing the data returned by calling "rangeFormat.toJSON()". */
-        interface RangeFormatData {
+        export interface RangeFormatData {
             /**
             *
             * Collection of border objects that apply to the overall range. Read-only.
@@ -23288,7 +23813,7 @@ declare namespace Excel {
             wrapText?: boolean;
         }
         /** An interface describing the data returned by calling "formatProtection.toJSON()". */
-        interface FormatProtectionData {
+        export interface FormatProtectionData {
             /**
              *
              * Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.
@@ -23305,7 +23830,7 @@ declare namespace Excel {
             locked?: boolean;
         }
         /** An interface describing the data returned by calling "rangeFill.toJSON()". */
-        interface RangeFillData {
+        export interface RangeFillData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
@@ -23319,7 +23844,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "rangeBorder.toJSON()". */
-        interface RangeBorderData {
+        export interface RangeBorderData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -23351,11 +23876,11 @@ declare namespace Excel {
             weight?: Excel.BorderWeight | "Hairline" | "Thin" | "Medium" | "Thick";
         }
         /** An interface describing the data returned by calling "rangeBorderCollection.toJSON()". */
-        interface RangeBorderCollectionData {
+        export interface RangeBorderCollectionData {
             items?: Excel.Interfaces.RangeBorderData[];
         }
         /** An interface describing the data returned by calling "rangeFont.toJSON()". */
-        interface RangeFontData {
+        export interface RangeFontData {
             /**
              *
              * Represents the bold status of font.
@@ -23404,11 +23929,11 @@ declare namespace Excel {
             underline?: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";
         }
         /** An interface describing the data returned by calling "chartCollection.toJSON()". */
-        interface ChartCollectionData {
+        export interface ChartCollectionData {
             items?: Excel.Interfaces.ChartData[];
         }
         /** An interface describing the data returned by calling "chart.toJSON()". */
-        interface ChartData {
+        export interface ChartData {
             /**
             *
             * Represents chart axes. Read-only.
@@ -23570,14 +24095,14 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartPivotOptions.toJSON()". */
-        interface ChartPivotOptionsData {
+        export interface ChartPivotOptionsData {
             
             
             
             
         }
         /** An interface describing the data returned by calling "chartAreaFormat.toJSON()". */
-        interface ChartAreaFormatData {
+        export interface ChartAreaFormatData {
             /**
             *
             * Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
@@ -23596,11 +24121,11 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "chartSeriesCollection.toJSON()". */
-        interface ChartSeriesCollectionData {
+        export interface ChartSeriesCollectionData {
             items?: Excel.Interfaces.ChartSeriesData[];
         }
         /** An interface describing the data returned by calling "chartSeries.toJSON()". */
-        interface ChartSeriesData {
+        export interface ChartSeriesData {
             
             
             /**
@@ -23801,7 +24326,7 @@ declare namespace Excel {
             varyByCategories?: boolean;
         }
         /** An interface describing the data returned by calling "chartSeriesFormat.toJSON()". */
-        interface ChartSeriesFormatData {
+        export interface ChartSeriesFormatData {
             /**
             *
             * Represents line formatting. Read-only.
@@ -23811,11 +24336,11 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling "chartPointsCollection.toJSON()". */
-        interface ChartPointsCollectionData {
+        export interface ChartPointsCollectionData {
             items?: Excel.Interfaces.ChartPointData[];
         }
         /** An interface describing the data returned by calling "chartPoint.toJSON()". */
-        interface ChartPointData {
+        export interface ChartPointData {
             /**
             *
             * Returns the data label of a chart point. Read-only.
@@ -23874,7 +24399,7 @@ declare namespace Excel {
             value?: any;
         }
         /** An interface describing the data returned by calling "chartPointFormat.toJSON()". */
-        interface ChartPointFormatData {
+        export interface ChartPointFormatData {
             /**
             *
             * Represents the border format of a chart data point, which includes color, style, and weight information. Read-only.
@@ -23884,7 +24409,7 @@ declare namespace Excel {
             border?: Excel.Interfaces.ChartBorderData;
         }
         /** An interface describing the data returned by calling "chartAxes.toJSON()". */
-        interface ChartAxesData {
+        export interface ChartAxesData {
             /**
             *
             * Represents the category axis in a chart. Read-only.
@@ -23908,7 +24433,7 @@ declare namespace Excel {
             valueAxis?: Excel.Interfaces.ChartAxisData;
         }
         /** An interface describing the data returned by calling "chartAxis.toJSON()". */
-        interface ChartAxisData {
+        export interface ChartAxisData {
             /**
             *
             * Represents the formatting of a chart object, which includes line and font formatting. Read-only.
@@ -24178,7 +24703,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartAxisFormat.toJSON()". */
-        interface ChartAxisFormatData {
+        export interface ChartAxisFormatData {
             /**
             *
             * Represents the font attributes (font name, font size, color, etc.) for a chart axis element. Read-only.
@@ -24195,7 +24720,7 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling "chartAxisTitle.toJSON()". */
-        interface ChartAxisTitleData {
+        export interface ChartAxisTitleData {
             /**
             *
             * Represents the formatting of chart axis title. Read-only.
@@ -24219,7 +24744,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface describing the data returned by calling "chartAxisTitleFormat.toJSON()". */
-        interface ChartAxisTitleFormatData {
+        export interface ChartAxisTitleFormatData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight.
@@ -24236,7 +24761,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling "chartDataLabels.toJSON()". */
-        interface ChartDataLabelsData {
+        export interface ChartDataLabelsData {
             /**
             *
             * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
@@ -24340,7 +24865,7 @@ declare namespace Excel {
             verticalAlignment?: Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed";
         }
         /** An interface describing the data returned by calling "chartDataLabel.toJSON()". */
-        interface ChartDataLabelData {
+        export interface ChartDataLabelData {
             /**
             *
             * Represents the format of chart data label.
@@ -24486,7 +25011,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartDataLabelFormat.toJSON()". */
-        interface ChartDataLabelFormatData {
+        export interface ChartDataLabelFormatData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight. Read-only.
@@ -24503,7 +25028,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling "chartErrorBars.toJSON()". */
-        interface ChartErrorBarsData {
+        export interface ChartErrorBarsData {
             
             
             
@@ -24511,11 +25036,11 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "chartErrorBarsFormat.toJSON()". */
-        interface ChartErrorBarsFormatData {
+        export interface ChartErrorBarsFormatData {
             
         }
         /** An interface describing the data returned by calling "chartGridlines.toJSON()". */
-        interface ChartGridlinesData {
+        export interface ChartGridlinesData {
             /**
             *
             * Represents the formatting of chart gridlines. Read-only.
@@ -24532,7 +25057,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface describing the data returned by calling "chartGridlinesFormat.toJSON()". */
-        interface ChartGridlinesFormatData {
+        export interface ChartGridlinesFormatData {
             /**
             *
             * Represents chart line formatting. Read-only.
@@ -24542,7 +25067,7 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling "chartLegend.toJSON()". */
-        interface ChartLegendData {
+        export interface ChartLegendData {
             /**
             *
             * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
@@ -24615,7 +25140,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartLegendEntry.toJSON()". */
-        interface ChartLegendEntryData {
+        export interface ChartLegendEntryData {
             /**
              *
              * Represents the height of the legendEntry on the chart legend.
@@ -24660,11 +25185,11 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartLegendEntryCollection.toJSON()". */
-        interface ChartLegendEntryCollectionData {
+        export interface ChartLegendEntryCollectionData {
             items?: Excel.Interfaces.ChartLegendEntryData[];
         }
         /** An interface describing the data returned by calling "chartLegendFormat.toJSON()". */
-        interface ChartLegendFormatData {
+        export interface ChartLegendFormatData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight. Read-only.
@@ -24681,13 +25206,13 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling "chartMapOptions.toJSON()". */
-        interface ChartMapOptionsData {
+        export interface ChartMapOptionsData {
             
             
             
         }
         /** An interface describing the data returned by calling "chartTitle.toJSON()". */
-        interface ChartTitleData {
+        export interface ChartTitleData {
             /**
             *
             * Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
@@ -24781,7 +25306,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartFormatString.toJSON()". */
-        interface ChartFormatStringData {
+        export interface ChartFormatStringData {
             /**
             *
             * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
@@ -24791,7 +25316,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling "chartTitleFormat.toJSON()". */
-        interface ChartTitleFormatData {
+        export interface ChartTitleFormatData {
             /**
             *
             * Represents the border format of chart title, which includes color, linestyle, and weight. Read-only.
@@ -24808,7 +25333,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling "chartBorder.toJSON()". */
-        interface ChartBorderData {
+        export interface ChartBorderData {
             /**
              *
              * HTML color code representing the color of borders in the chart.
@@ -24832,7 +25357,7 @@ declare namespace Excel {
             weight?: number;
         }
         /** An interface describing the data returned by calling "chartBinOptions.toJSON()". */
-        interface ChartBinOptionsData {
+        export interface ChartBinOptionsData {
             
             
             
@@ -24842,7 +25367,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "chartBoxwhiskerOptions.toJSON()". */
-        interface ChartBoxwhiskerOptionsData {
+        export interface ChartBoxwhiskerOptionsData {
             
             
             
@@ -24850,7 +25375,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "chartLineFormat.toJSON()". */
-        interface ChartLineFormatData {
+        export interface ChartLineFormatData {
             /**
              *
              * HTML color code representing the color of lines in the chart.
@@ -24874,7 +25399,7 @@ declare namespace Excel {
             weight?: number;
         }
         /** An interface describing the data returned by calling "chartFont.toJSON()". */
-        interface ChartFontData {
+        export interface ChartFontData {
             /**
              *
              * Represents the bold status of font.
@@ -24919,7 +25444,7 @@ declare namespace Excel {
             underline?: Excel.ChartUnderlineStyle | "None" | "Single";
         }
         /** An interface describing the data returned by calling "chartTrendline.toJSON()". */
-        interface ChartTrendlineData {
+        export interface ChartTrendlineData {
             /**
             *
             * Represents the formatting of a chart trendline.
@@ -24999,11 +25524,11 @@ declare namespace Excel {
             type?: Excel.ChartTrendlineType | "Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power";
         }
         /** An interface describing the data returned by calling "chartTrendlineCollection.toJSON()". */
-        interface ChartTrendlineCollectionData {
+        export interface ChartTrendlineCollectionData {
             items?: Excel.Interfaces.ChartTrendlineData[];
         }
         /** An interface describing the data returned by calling "chartTrendlineFormat.toJSON()". */
-        interface ChartTrendlineFormatData {
+        export interface ChartTrendlineFormatData {
             /**
             *
             * Represents chart line formatting. Read-only.
@@ -25013,7 +25538,7 @@ declare namespace Excel {
             line?: Excel.Interfaces.ChartLineFormatData;
         }
         /** An interface describing the data returned by calling "chartTrendlineLabel.toJSON()". */
-        interface ChartTrendlineLabelData {
+        export interface ChartTrendlineLabelData {
             /**
             *
             * Represents the format of chart trendline label.
@@ -25103,7 +25628,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartTrendlineLabelFormat.toJSON()". */
-        interface ChartTrendlineLabelFormatData {
+        export interface ChartTrendlineLabelFormatData {
             /**
             *
             * Represents the border format, which includes color, linestyle, and weight.
@@ -25120,7 +25645,7 @@ declare namespace Excel {
             font?: Excel.Interfaces.ChartFontData;
         }
         /** An interface describing the data returned by calling "chartPlotArea.toJSON()". */
-        interface ChartPlotAreaData {
+        export interface ChartPlotAreaData {
             /**
             *
             * Represents the formatting of a chart plotArea.
@@ -25193,7 +25718,7 @@ declare namespace Excel {
             width?: number;
         }
         /** An interface describing the data returned by calling "chartPlotAreaFormat.toJSON()". */
-        interface ChartPlotAreaFormatData {
+        export interface ChartPlotAreaFormatData {
             /**
             *
             * Represents the border attributes of a chart plotArea.
@@ -25203,7 +25728,7 @@ declare namespace Excel {
             border?: Excel.Interfaces.ChartBorderData;
         }
         /** An interface describing the data returned by calling "tableSort.toJSON()". */
-        interface TableSortData {
+        export interface TableSortData {
             /**
              *
              * Represents the current conditions used to last sort the table. Read-only.
@@ -25227,7 +25752,7 @@ declare namespace Excel {
             method?: Excel.SortMethod | "PinYin" | "StrokeCount";
         }
         /** An interface describing the data returned by calling "filter.toJSON()". */
-        interface FilterData {
+        export interface FilterData {
             /**
              *
              * The currently applied filter on the given column. Read-only.
@@ -25237,21 +25762,21 @@ declare namespace Excel {
             criteria?: Excel.FilterCriteria;
         }
         /** An interface describing the data returned by calling "autoFilter.toJSON()". */
-        interface AutoFilterData {
+        export interface AutoFilterData {
             
             
             
         }
         /** An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()". */
-        interface CustomXmlPartScopedCollectionData {
+        export interface CustomXmlPartScopedCollectionData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
         /** An interface describing the data returned by calling "customXmlPartCollection.toJSON()". */
-        interface CustomXmlPartCollectionData {
+        export interface CustomXmlPartCollectionData {
             items?: Excel.Interfaces.CustomXmlPartData[];
         }
         /** An interface describing the data returned by calling "customXmlPart.toJSON()". */
-        interface CustomXmlPartData {
+        export interface CustomXmlPartData {
             /**
              *
              * The custom XML part's ID. Read-only.
@@ -25268,11 +25793,11 @@ declare namespace Excel {
             namespaceUri?: string;
         }
         /** An interface describing the data returned by calling "pivotTableCollection.toJSON()". */
-        interface PivotTableCollectionData {
+        export interface PivotTableCollectionData {
             items?: Excel.Interfaces.PivotTableData[];
         }
         /** An interface describing the data returned by calling "pivotTable.toJSON()". */
-        interface PivotTableData {
+        export interface PivotTableData {
             /**
             *
             * The Column Pivot Hierarchies of the PivotTable.
@@ -25326,7 +25851,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "pivotLayout.toJSON()". */
-        interface PivotLayoutData {
+        export interface PivotLayoutData {
             
             /**
              *
@@ -25359,11 +25884,11 @@ declare namespace Excel {
             subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";
         }
         /** An interface describing the data returned by calling "pivotHierarchyCollection.toJSON()". */
-        interface PivotHierarchyCollectionData {
+        export interface PivotHierarchyCollectionData {
             items?: Excel.Interfaces.PivotHierarchyData[];
         }
         /** An interface describing the data returned by calling "pivotHierarchy.toJSON()". */
-        interface PivotHierarchyData {
+        export interface PivotHierarchyData {
             /**
             *
             * Returns the PivotFields associated with the PivotHierarchy.
@@ -25387,11 +25912,11 @@ declare namespace Excel {
             name?: string;
         }
         /** An interface describing the data returned by calling "rowColumnPivotHierarchyCollection.toJSON()". */
-        interface RowColumnPivotHierarchyCollectionData {
+        export interface RowColumnPivotHierarchyCollectionData {
             items?: Excel.Interfaces.RowColumnPivotHierarchyData[];
         }
         /** An interface describing the data returned by calling "rowColumnPivotHierarchy.toJSON()". */
-        interface RowColumnPivotHierarchyData {
+        export interface RowColumnPivotHierarchyData {
             /**
             *
             * Returns the PivotFields associated with the RowColumnPivotHierarchy.
@@ -25422,11 +25947,11 @@ declare namespace Excel {
             position?: number;
         }
         /** An interface describing the data returned by calling "filterPivotHierarchyCollection.toJSON()". */
-        interface FilterPivotHierarchyCollectionData {
+        export interface FilterPivotHierarchyCollectionData {
             items?: Excel.Interfaces.FilterPivotHierarchyData[];
         }
         /** An interface describing the data returned by calling "filterPivotHierarchy.toJSON()". */
-        interface FilterPivotHierarchyData {
+        export interface FilterPivotHierarchyData {
             /**
             *
             * Returns the PivotFields associated with the FilterPivotHierarchy.
@@ -25464,11 +25989,11 @@ declare namespace Excel {
             position?: number;
         }
         /** An interface describing the data returned by calling "dataPivotHierarchyCollection.toJSON()". */
-        interface DataPivotHierarchyCollectionData {
+        export interface DataPivotHierarchyCollectionData {
             items?: Excel.Interfaces.DataPivotHierarchyData[];
         }
         /** An interface describing the data returned by calling "dataPivotHierarchy.toJSON()". */
-        interface DataPivotHierarchyData {
+        export interface DataPivotHierarchyData {
             /**
             *
             * Returns the PivotFields associated with the DataPivotHierarchy.
@@ -25520,11 +26045,11 @@ declare namespace Excel {
             summarizeBy?: Excel.AggregationFunction | "Unknown" | "Automatic" | "Sum" | "Count" | "Average" | "Max" | "Min" | "Product" | "CountNumbers" | "StandardDeviation" | "StandardDeviationP" | "Variance" | "VarianceP";
         }
         /** An interface describing the data returned by calling "pivotFieldCollection.toJSON()". */
-        interface PivotFieldCollectionData {
+        export interface PivotFieldCollectionData {
             items?: Excel.Interfaces.PivotFieldData[];
         }
         /** An interface describing the data returned by calling "pivotField.toJSON()". */
-        interface PivotFieldData {
+        export interface PivotFieldData {
             /**
             *
             * Returns the PivotFields associated with the PivotField.
@@ -25562,11 +26087,11 @@ declare namespace Excel {
             subtotals?: Excel.Subtotals;
         }
         /** An interface describing the data returned by calling "pivotItemCollection.toJSON()". */
-        interface PivotItemCollectionData {
+        export interface PivotItemCollectionData {
             items?: Excel.Interfaces.PivotItemData[];
         }
         /** An interface describing the data returned by calling "pivotItem.toJSON()". */
-        interface PivotItemData {
+        export interface PivotItemData {
             /**
              *
              * Id of the PivotItem.
@@ -25597,7 +26122,7 @@ declare namespace Excel {
             visible?: boolean;
         }
         /** An interface describing the data returned by calling "documentProperties.toJSON()". */
-        interface DocumentPropertiesData {
+        export interface DocumentPropertiesData {
             /**
             *
             * Gets the collection of custom properties of the workbook. Read only.
@@ -25684,7 +26209,7 @@ declare namespace Excel {
             title?: string;
         }
         /** An interface describing the data returned by calling "customProperty.toJSON()". */
-        interface CustomPropertyData {
+        export interface CustomPropertyData {
             /**
              *
              * Gets the key of the custom property. Read only.
@@ -25708,15 +26233,15 @@ declare namespace Excel {
             value?: any;
         }
         /** An interface describing the data returned by calling "customPropertyCollection.toJSON()". */
-        interface CustomPropertyCollectionData {
+        export interface CustomPropertyCollectionData {
             items?: Excel.Interfaces.CustomPropertyData[];
         }
         /** An interface describing the data returned by calling "conditionalFormatCollection.toJSON()". */
-        interface ConditionalFormatCollectionData {
+        export interface ConditionalFormatCollectionData {
             items?: Excel.Interfaces.ConditionalFormatData[];
         }
         /** An interface describing the data returned by calling "conditionalFormat.toJSON()". */
-        interface ConditionalFormatData {
+        export interface ConditionalFormatData {
             /**
             *
             * Returns the cell value conditional format properties if the current conditional format is a CellValue type.
@@ -25870,7 +26395,7 @@ declare namespace Excel {
             type?: Excel.ConditionalFormatType | "Custom" | "DataBar" | "ColorScale" | "IconSet" | "TopBottom" | "PresetCriteria" | "ContainsText" | "CellValue";
         }
         /** An interface describing the data returned by calling "dataBarConditionalFormat.toJSON()". */
-        interface DataBarConditionalFormatData {
+        export interface DataBarConditionalFormatData {
             /**
             *
             * Representation of all values to the left of the axis in an Excel data bar. Read-only.
@@ -25930,7 +26455,7 @@ declare namespace Excel {
             upperBoundRule?: Excel.ConditionalDataBarRule;
         }
         /** An interface describing the data returned by calling "conditionalDataBarPositiveFormat.toJSON()". */
-        interface ConditionalDataBarPositiveFormatData {
+        export interface ConditionalDataBarPositiveFormatData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -25955,7 +26480,7 @@ declare namespace Excel {
             gradientFill?: boolean;
         }
         /** An interface describing the data returned by calling "conditionalDataBarNegativeFormat.toJSON()". */
-        interface ConditionalDataBarNegativeFormatData {
+        export interface ConditionalDataBarNegativeFormatData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -25987,7 +26512,7 @@ declare namespace Excel {
             matchPositiveFillColor?: boolean;
         }
         /** An interface describing the data returned by calling "customConditionalFormat.toJSON()". */
-        interface CustomConditionalFormatData {
+        export interface CustomConditionalFormatData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -26004,7 +26529,7 @@ declare namespace Excel {
             rule?: Excel.Interfaces.ConditionalFormatRuleData;
         }
         /** An interface describing the data returned by calling "conditionalFormatRule.toJSON()". */
-        interface ConditionalFormatRuleData {
+        export interface ConditionalFormatRuleData {
             /**
              *
              * The formula, if required, to evaluate the conditional format rule on.
@@ -26028,7 +26553,7 @@ declare namespace Excel {
             formulaR1C1?: string;
         }
         /** An interface describing the data returned by calling "iconSetConditionalFormat.toJSON()". */
-        interface IconSetConditionalFormatData {
+        export interface IconSetConditionalFormatData {
             /**
              *
              * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
@@ -26059,7 +26584,7 @@ declare namespace Excel {
             style?: Excel.IconSet | "Invalid" | "ThreeArrows" | "ThreeArrowsGray" | "ThreeFlags" | "ThreeTrafficLights1" | "ThreeTrafficLights2" | "ThreeSigns" | "ThreeSymbols" | "ThreeSymbols2" | "FourArrows" | "FourArrowsGray" | "FourRedToBlack" | "FourRating" | "FourTrafficLights" | "FiveArrows" | "FiveArrowsGray" | "FiveRating" | "FiveQuarters" | "ThreeStars" | "ThreeTriangles" | "FiveBoxes" | "LinkedEntityFinanceIcon" | "LinkedEntityMapIcon";
         }
         /** An interface describing the data returned by calling "colorScaleConditionalFormat.toJSON()". */
-        interface ColorScaleConditionalFormatData {
+        export interface ColorScaleConditionalFormatData {
             /**
              *
              * The criteria of the color scale. Midpoint is optional when using a two point color scale.
@@ -26076,7 +26601,7 @@ declare namespace Excel {
             threeColorScale?: boolean;
         }
         /** An interface describing the data returned by calling "topBottomConditionalFormat.toJSON()". */
-        interface TopBottomConditionalFormatData {
+        export interface TopBottomConditionalFormatData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -26093,7 +26618,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalTopBottomRule;
         }
         /** An interface describing the data returned by calling "presetCriteriaConditionalFormat.toJSON()". */
-        interface PresetCriteriaConditionalFormatData {
+        export interface PresetCriteriaConditionalFormatData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -26110,7 +26635,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalPresetCriteriaRule;
         }
         /** An interface describing the data returned by calling "textConditionalFormat.toJSON()". */
-        interface TextConditionalFormatData {
+        export interface TextConditionalFormatData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
@@ -26127,7 +26652,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalTextComparisonRule;
         }
         /** An interface describing the data returned by calling "cellValueConditionalFormat.toJSON()". */
-        interface CellValueConditionalFormatData {
+        export interface CellValueConditionalFormatData {
             /**
             *
             * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
@@ -26144,7 +26669,7 @@ declare namespace Excel {
             rule?: Excel.ConditionalCellValueRule;
         }
         /** An interface describing the data returned by calling "conditionalRangeFormat.toJSON()". */
-        interface ConditionalRangeFormatData {
+        export interface ConditionalRangeFormatData {
             /**
             *
             * Collection of border objects that apply to the overall conditional format range. Read-only.
@@ -26175,7 +26700,7 @@ declare namespace Excel {
             numberFormat?: any;
         }
         /** An interface describing the data returned by calling "conditionalRangeFont.toJSON()". */
-        interface ConditionalRangeFontData {
+        export interface ConditionalRangeFontData {
             /**
              *
              * Represents the bold status of font.
@@ -26213,7 +26738,7 @@ declare namespace Excel {
             underline?: Excel.ConditionalRangeFontUnderlineStyle | "None" | "Single" | "Double";
         }
         /** An interface describing the data returned by calling "conditionalRangeFill.toJSON()". */
-        interface ConditionalRangeFillData {
+        export interface ConditionalRangeFillData {
             /**
              *
              * HTML color code representing the color of the fill, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -26223,7 +26748,7 @@ declare namespace Excel {
             color?: string;
         }
         /** An interface describing the data returned by calling "conditionalRangeBorder.toJSON()". */
-        interface ConditionalRangeBorderData {
+        export interface ConditionalRangeBorderData {
             /**
              *
              * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
@@ -26247,11 +26772,11 @@ declare namespace Excel {
             style?: Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot";
         }
         /** An interface describing the data returned by calling "conditionalRangeBorderCollection.toJSON()". */
-        interface ConditionalRangeBorderCollectionData {
+        export interface ConditionalRangeBorderCollectionData {
             items?: Excel.Interfaces.ConditionalRangeBorderData[];
         }
         /** An interface describing the data returned by calling "style.toJSON()". */
-        interface StyleData {
+        export interface StyleData {
             /**
             *
             * A Border collection of four Border objects that represent the style of the four borders.
@@ -26415,11 +26940,11 @@ declare namespace Excel {
             wrapText?: boolean;
         }
         /** An interface describing the data returned by calling "styleCollection.toJSON()". */
-        interface StyleCollectionData {
+        export interface StyleCollectionData {
             items?: Excel.Interfaces.StyleData[];
         }
         /** An interface describing the data returned by calling "pageLayout.toJSON()". */
-        interface PageLayoutData {
+        export interface PageLayoutData {
             
             
             
@@ -26442,7 +26967,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "headerFooter.toJSON()". */
-        interface HeaderFooterData {
+        export interface HeaderFooterData {
             
             
             
@@ -26451,7 +26976,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "headerFooterGroup.toJSON()". */
-        interface HeaderFooterGroupData {
+        export interface HeaderFooterGroupData {
             
             
             
@@ -26461,24 +26986,24 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "pageBreak.toJSON()". */
-        interface PageBreakData {
+        export interface PageBreakData {
             
             
         }
         /** An interface describing the data returned by calling "pageBreakCollection.toJSON()". */
-        interface PageBreakCollectionData {
+        export interface PageBreakCollectionData {
             items?: Excel.Interfaces.PageBreakData[];
         }
         /** An interface describing the data returned by calling "rangeCollection.toJSON()". */
-        interface RangeCollectionData {
+        export interface RangeCollectionData {
             items?: Excel.Interfaces.RangeData[];
         }
         /** An interface describing the data returned by calling "shapeCollection.toJSON()". */
-        interface ShapeCollectionData {
+        export interface ShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling "shape.toJSON()". */
-        interface ShapeData {
+        export interface ShapeData {
             
             
             
@@ -26499,25 +27024,25 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "geometricShape.toJSON()". */
-        interface GeometricShapeData {
+        export interface GeometricShapeData {
             
         }
         /** An interface describing the data returned by calling "image.toJSON()". */
-        interface ImageData {
+        export interface ImageData {
             
             
         }
         /** An interface describing the data returned by calling "shapeGroup.toJSON()". */
-        interface ShapeGroupData {
+        export interface ShapeGroupData {
             
             
         }
         /** An interface describing the data returned by calling "groupShapeCollection.toJSON()". */
-        interface GroupShapeCollectionData {
+        export interface GroupShapeCollectionData {
             items?: Excel.Interfaces.ShapeData[];
         }
         /** An interface describing the data returned by calling "line.toJSON()". */
-        interface LineData {
+        export interface LineData {
             
             
             
@@ -26532,13 +27057,13 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "shapeFill.toJSON()". */
-        interface ShapeFillData {
+        export interface ShapeFillData {
             
             
             
         }
         /** An interface describing the data returned by calling "shapeLineFormat.toJSON()". */
-        interface ShapeLineFormatData {
+        export interface ShapeLineFormatData {
             
             
             
@@ -26547,7 +27072,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "textFrame.toJSON()". */
-        interface TextFrameData {
+        export interface TextFrameData {
             
             
             
@@ -26562,12 +27087,12 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "textRange.toJSON()". */
-        interface TextRangeData {
+        export interface TextRangeData {
             
             
         }
         /** An interface describing the data returned by calling "shapeFont.toJSON()". */
-        interface ShapeFontData {
+        export interface ShapeFontData {
             
             
             
@@ -26576,7 +27101,7 @@ declare namespace Excel {
             
         }
         /** An interface describing the data returned by calling "functionResult.toJSON()". */
-        interface FunctionResultData<T> {
+        export interface FunctionResultData<T> {
             /**
              *
              * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
@@ -26598,7 +27123,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        interface RuntimeLoadOptions {
+        export interface RuntimeLoadOptions {
             $all?: boolean;
             /**
              *
@@ -26614,7 +27139,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ApplicationLoadOptions {
+        export interface ApplicationLoadOptions {
             $all?: boolean;
             
             
@@ -26634,7 +27159,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface WorkbookLoadOptions {
+        export interface WorkbookLoadOptions {
             $all?: boolean;
             /**
             *
@@ -26698,7 +27223,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface WorkbookProtectionLoadOptions {
+        export interface WorkbookProtectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -26714,7 +27239,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface WorksheetLoadOptions {
+        export interface WorksheetLoadOptions {
             $all?: boolean;
             
             /**
@@ -26815,7 +27340,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface WorksheetCollectionLoadOptions {
+        export interface WorksheetCollectionLoadOptions {
             $all?: boolean;
             
             /**
@@ -26916,7 +27441,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          */
-        interface WorksheetProtectionLoadOptions {
+        export interface WorksheetProtectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -26939,7 +27464,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface RangeLoadOptions {
+        export interface RangeLoadOptions {
             $all?: boolean;
             /**
             *
@@ -27133,7 +27658,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          */
-        interface RangeViewLoadOptions {
+        export interface RangeViewLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27219,7 +27744,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          */
-        interface RangeViewCollectionLoadOptions {
+        export interface RangeViewCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27305,7 +27830,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          */
-        interface SettingCollectionLoadOptions {
+        export interface SettingCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27328,7 +27853,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.4]
          */
-        interface SettingLoadOptions {
+        export interface SettingLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27351,7 +27876,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface NamedItemCollectionLoadOptions {
+        export interface NamedItemCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -27430,7 +27955,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface NamedItemLoadOptions {
+        export interface NamedItemLoadOptions {
             $all?: boolean;
             /**
             *
@@ -27509,7 +28034,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface NamedItemArrayValuesLoadOptions {
+        export interface NamedItemArrayValuesLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27532,7 +28057,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface BindingLoadOptions {
+        export interface BindingLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27555,7 +28080,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface BindingCollectionLoadOptions {
+        export interface BindingCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27578,7 +28103,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface TableCollectionLoadOptions {
+        export interface TableCollectionLoadOptions {
             $all?: boolean;
             
             /**
@@ -27694,7 +28219,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface TableLoadOptions {
+        export interface TableLoadOptions {
             $all?: boolean;
             
             /**
@@ -27809,7 +28334,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface TableColumnCollectionLoadOptions {
+        export interface TableColumnCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -27853,7 +28378,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface TableColumnLoadOptions {
+        export interface TableColumnLoadOptions {
             $all?: boolean;
             /**
             *
@@ -27902,7 +28427,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface TableRowCollectionLoadOptions {
+        export interface TableRowCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27930,7 +28455,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface TableRowLoadOptions {
+        export interface TableRowLoadOptions {
             $all?: boolean;
             /**
              *
@@ -27953,7 +28478,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface DataValidationLoadOptions {
+        export interface DataValidationLoadOptions {
             $all?: boolean;
             /**
              *
@@ -28007,7 +28532,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface RangeFormatLoadOptions {
+        export interface RangeFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -28112,7 +28637,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          */
-        interface FormatProtectionLoadOptions {
+        export interface FormatProtectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -28135,7 +28660,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface RangeFillLoadOptions {
+        export interface RangeFillLoadOptions {
             $all?: boolean;
             /**
              *
@@ -28155,7 +28680,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface RangeBorderLoadOptions {
+        export interface RangeBorderLoadOptions {
             $all?: boolean;
             /**
              *
@@ -28193,7 +28718,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface RangeBorderCollectionLoadOptions {
+        export interface RangeBorderCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -28231,7 +28756,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface RangeFontLoadOptions {
+        export interface RangeFontLoadOptions {
             $all?: boolean;
             /**
              *
@@ -28286,7 +28811,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartCollectionLoadOptions {
+        export interface ChartCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -28461,7 +28986,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartLoadOptions {
+        export interface ChartLoadOptions {
             $all?: boolean;
             /**
             *
@@ -28637,7 +29162,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartAreaFormatLoadOptions {
+        export interface ChartAreaFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -28662,7 +29187,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartSeriesCollectionLoadOptions {
+        export interface ChartSeriesCollectionLoadOptions {
             $all?: boolean;
             
             
@@ -28862,7 +29387,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartSeriesLoadOptions {
+        export interface ChartSeriesLoadOptions {
             $all?: boolean;
             
             
@@ -29062,7 +29587,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartSeriesFormatLoadOptions {
+        export interface ChartSeriesFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29078,7 +29603,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartPointsCollectionLoadOptions {
+        export interface ChartPointsCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29143,7 +29668,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartPointLoadOptions {
+        export interface ChartPointLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29208,7 +29733,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartPointFormatLoadOptions {
+        export interface ChartPointFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29224,7 +29749,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartAxesLoadOptions {
+        export interface ChartAxesLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29254,7 +29779,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartAxisLoadOptions {
+        export interface ChartAxisLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29544,7 +30069,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartAxisFormatLoadOptions {
+        export interface ChartAxisFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29567,7 +30092,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartAxisTitleLoadOptions {
+        export interface ChartAxisTitleLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29597,7 +30122,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartAxisTitleFormatLoadOptions {
+        export interface ChartAxisTitleFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29620,7 +30145,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartDataLabelsLoadOptions {
+        export interface ChartDataLabelsLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29730,7 +30255,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartDataLabelLoadOptions {
+        export interface ChartDataLabelLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29882,7 +30407,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartDataLabelFormatLoadOptions {
+        export interface ChartDataLabelFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29907,7 +30432,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartGridlinesLoadOptions {
+        export interface ChartGridlinesLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29930,7 +30455,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartGridlinesFormatLoadOptions {
+        export interface ChartGridlinesFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -29946,7 +30471,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartLegendLoadOptions {
+        export interface ChartLegendLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30018,7 +30543,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartLegendEntryLoadOptions {
+        export interface ChartLegendEntryLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30069,7 +30594,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartLegendEntryCollectionLoadOptions {
+        export interface ChartLegendEntryCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30120,7 +30645,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartLegendFormatLoadOptions {
+        export interface ChartLegendFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30144,7 +30669,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartTitleLoadOptions {
+        export interface ChartTitleLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30244,7 +30769,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartFormatStringLoadOptions {
+        export interface ChartFormatStringLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30260,7 +30785,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartTitleFormatLoadOptions {
+        export interface ChartTitleFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30283,7 +30808,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartBorderLoadOptions {
+        export interface ChartBorderLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30315,7 +30840,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartLineFormatLoadOptions {
+        export interface ChartLineFormatLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30345,7 +30870,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.1]
          */
-        interface ChartFontLoadOptions {
+        export interface ChartFontLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30396,7 +30921,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartTrendlineLoadOptions {
+        export interface ChartTrendlineLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30482,7 +31007,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartTrendlineCollectionLoadOptions {
+        export interface ChartTrendlineCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30568,7 +31093,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface ChartTrendlineFormatLoadOptions {
+        export interface ChartTrendlineFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30584,7 +31109,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface ChartTrendlineLabelLoadOptions {
+        export interface ChartTrendlineLabelLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30680,7 +31205,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface ChartTrendlineLabelFormatLoadOptions {
+        export interface ChartTrendlineLabelFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30703,7 +31228,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface ChartPlotAreaLoadOptions {
+        export interface ChartPlotAreaLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30782,7 +31307,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface ChartPlotAreaFormatLoadOptions {
+        export interface ChartPlotAreaFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30798,7 +31323,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          */
-        interface TableSortLoadOptions {
+        export interface TableSortLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30828,7 +31353,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          */
-        interface FilterLoadOptions {
+        export interface FilterLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30847,7 +31372,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        interface CustomXmlPartScopedCollectionLoadOptions {
+        export interface CustomXmlPartScopedCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30870,7 +31395,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        interface CustomXmlPartCollectionLoadOptions {
+        export interface CustomXmlPartCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30893,7 +31418,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.5]
          */
-        interface CustomXmlPartLoadOptions {
+        export interface CustomXmlPartLoadOptions {
             $all?: boolean;
             /**
              *
@@ -30916,7 +31441,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          */
-        interface PivotTableCollectionLoadOptions {
+        export interface PivotTableCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30955,7 +31480,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.3]
          */
-        interface PivotTableLoadOptions {
+        export interface PivotTableLoadOptions {
             $all?: boolean;
             /**
             *
@@ -30994,7 +31519,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotLayoutLoadOptions {
+        export interface PivotLayoutLoadOptions {
             $all?: boolean;
             
             /**
@@ -31033,7 +31558,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotHierarchyCollectionLoadOptions {
+        export interface PivotHierarchyCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31056,7 +31581,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotHierarchyLoadOptions {
+        export interface PivotHierarchyLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31079,7 +31604,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface RowColumnPivotHierarchyCollectionLoadOptions {
+        export interface RowColumnPivotHierarchyCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31109,7 +31634,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface RowColumnPivotHierarchyLoadOptions {
+        export interface RowColumnPivotHierarchyLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31139,7 +31664,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface FilterPivotHierarchyCollectionLoadOptions {
+        export interface FilterPivotHierarchyCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31176,7 +31701,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface FilterPivotHierarchyLoadOptions {
+        export interface FilterPivotHierarchyLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31213,7 +31738,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface DataPivotHierarchyCollectionLoadOptions {
+        export interface DataPivotHierarchyCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -31271,7 +31796,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface DataPivotHierarchyLoadOptions {
+        export interface DataPivotHierarchyLoadOptions {
             $all?: boolean;
             /**
             *
@@ -31329,7 +31854,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotFieldCollectionLoadOptions {
+        export interface PivotFieldCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31366,7 +31891,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotFieldLoadOptions {
+        export interface PivotFieldLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31403,7 +31928,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotItemCollectionLoadOptions {
+        export interface PivotItemCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31440,7 +31965,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          */
-        interface PivotItemLoadOptions {
+        export interface PivotItemLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31477,7 +32002,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface DocumentPropertiesLoadOptions {
+        export interface DocumentPropertiesLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31563,7 +32088,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface CustomPropertyLoadOptions {
+        export interface CustomPropertyLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31593,7 +32118,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface CustomPropertyCollectionLoadOptions {
+        export interface CustomPropertyCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -31623,7 +32148,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalFormatCollectionLoadOptions {
+        export interface ConditionalFormatCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -31783,7 +32308,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalFormatLoadOptions {
+        export interface ConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -31943,7 +32468,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface DataBarConditionalFormatLoadOptions {
+        export interface DataBarConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32009,7 +32534,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalDataBarPositiveFormatLoadOptions {
+        export interface ConditionalDataBarPositiveFormatLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32040,7 +32565,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalDataBarNegativeFormatLoadOptions {
+        export interface ConditionalDataBarNegativeFormatLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32078,7 +32603,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface CustomConditionalFormatLoadOptions {
+        export interface CustomConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32101,7 +32626,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalFormatRuleLoadOptions {
+        export interface ConditionalFormatRuleLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32131,7 +32656,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface IconSetConditionalFormatLoadOptions {
+        export interface IconSetConditionalFormatLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32168,7 +32693,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ColorScaleConditionalFormatLoadOptions {
+        export interface ColorScaleConditionalFormatLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32191,7 +32716,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface TopBottomConditionalFormatLoadOptions {
+        export interface TopBottomConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32214,7 +32739,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface PresetCriteriaConditionalFormatLoadOptions {
+        export interface PresetCriteriaConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32237,7 +32762,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface TextConditionalFormatLoadOptions {
+        export interface TextConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32260,7 +32785,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface CellValueConditionalFormatLoadOptions {
+        export interface CellValueConditionalFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32283,7 +32808,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalRangeFormatLoadOptions {
+        export interface ConditionalRangeFormatLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32320,7 +32845,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalRangeFontLoadOptions {
+        export interface ConditionalRangeFontLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32364,7 +32889,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalRangeFillLoadOptions {
+        export interface ConditionalRangeFillLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32380,7 +32905,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalRangeBorderLoadOptions {
+        export interface ConditionalRangeBorderLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32410,7 +32935,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.6]
          */
-        interface ConditionalRangeBorderCollectionLoadOptions {
+        export interface ConditionalRangeBorderCollectionLoadOptions {
             $all?: boolean;
             /**
              *
@@ -32440,7 +32965,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface StyleLoadOptions {
+        export interface StyleLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32610,7 +33135,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.7]
          */
-        interface StyleCollectionLoadOptions {
+        export interface StyleCollectionLoadOptions {
             $all?: boolean;
             /**
             *
@@ -32798,7 +33323,7 @@ declare namespace Excel {
          *
          * [Api set: ExcelApi 1.2]
          */
-        interface FunctionResultLoadOptions {
+        export interface FunctionResultLoadOptions {
             $all?: boolean;
             /**
              *

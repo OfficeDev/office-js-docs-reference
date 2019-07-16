@@ -395,7 +395,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(getHtml:instance,0)",
-                  "docComment": "/**\n * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2455,7 +2455,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.BodyData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -4326,7 +4326,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(getHtml:instance,0)",
-                  "docComment": "/**\n * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6500,7 +6500,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7388,7 +7388,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.ContentControlCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8653,7 +8653,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Document object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -9079,6 +9079,81 @@
               "members": [
                 {
                   "kind": "EnumMember",
+                  "canonicalReference": "annotationAdded",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been added to the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationAdded"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationAdded\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationAdded",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationChanged",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been updated in the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationChanged"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationChanged\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationChanged",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
+                  "canonicalReference": "annotationDeleted",
+                  "docComment": "/**\n * AnnotationAdded represents the event an annotation has been deleted from the document.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "annotationDeleted"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " = "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"AnnotationDeleted\""
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "annotationDeleted",
+                  "initializerTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "EnumMember",
                   "canonicalReference": "contentControlAdded",
                   "docComment": "/**\n * ContentControlAdded represents the event a content control has been added to the document.\n */\n",
                   "excerptTokens": [
@@ -9437,7 +9512,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "(highlightColor:instance)",
-                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -10030,7 +10105,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Font object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.FontData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11404,7 +11479,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.InlinePicture object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -11922,7 +11997,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.InlinePictureCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.InlinePictureCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -12434,51 +12509,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -13928,51 +13958,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the content control. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -16151,7 +16136,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "highlightColor",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -16535,7 +16520,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "highlightColor",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -16878,7 +16863,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "highlightColor",
-                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                      "docComment": "/**\n * Gets or sets the highlight color. To set it, use a value either in the '#RRGGBB' format or the color name. To remove highlight color, set it to null. The returned highlight color can be in the '#RRGGBB' format, an empty string for mixed highlight colors, or null for no highlight color.\n *\n * **Note**: Only the default highlight colors are available in Office on Windows Desktop. These are \"Yellow\", \"Lime\", \"Turquoise\", \"Pink\", \"Blue\", \"Red\", \"DarkBlue\", \"Teal\", \"Green\", \"Purple\", \"DarkRed\", \"Olive\", \"Gray\", \"LightGray\", and \"Black\". When the add-in runs in Office on Windows Desktop, any other color is converted to the closest color when applied to the font.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -17704,51 +17689,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the inline image. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -19169,55 +19109,6 @@
                     },
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "contentControls",
-                      "docComment": "/**\n * Gets the collection of content control objects in the paragraph. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "contentControls"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "contentControls",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "firstLineIndent",
                       "docComment": "/**\n * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -19482,51 +19373,6 @@
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 3
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
                       }
                     },
                     {
@@ -20938,55 +20784,6 @@
                   "members": [
                     {
                       "kind": "PropertySignature",
-                      "canonicalReference": "contentControls",
-                      "docComment": "/**\n * Gets the collection of content control objects in the range. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "contentControls"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "contentControls",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
                       "canonicalReference": "font",
                       "docComment": "/**\n * Gets the text format of the range. Use this to get and set font name, size, color, and other properties. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -21025,100 +20822,6 @@
                       ],
                       "releaseTag": "Public",
                       "name": "font",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 7
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "paragraphs",
-                      "docComment": "/**\n * Gets the collection of paragraph objects in the range. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "paragraphs"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ParagraphData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "[]"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "paragraphs",
-                      "propertyTypeTokenRange": {
-                        "startIndex": 2,
-                        "endIndex": 8
-                      }
-                    },
-                    {
-                      "kind": "PropertySignature",
-                      "canonicalReference": "parentContentControl",
-                      "docComment": "/**\n * Gets the content control that contains the range. Throws if there isn't a parent content control. Read-only.\n *\n * [Api set: WordApi 1.1]\n */\n",
-                      "excerptTokens": [
-                        {
-                          "kind": "Reference",
-                          "text": "parentContentControl"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "?: "
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Word"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "Interfaces"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": "."
-                        },
-                        {
-                          "kind": "Reference",
-                          "text": "ContentControlData"
-                        },
-                        {
-                          "kind": "Content",
-                          "text": ";"
-                        }
-                      ],
-                      "releaseTag": "Public",
-                      "name": "parentContentControl",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
                         "endIndex": 7
@@ -24430,7 +24133,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(getHtml:instance,0)",
-                  "docComment": "/**\n * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -26870,7 +26573,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -27358,7 +27061,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -27708,7 +27411,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(getHtml:instance,0)",
-                  "docComment": "/**\n * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
+                  "docComment": "/**\n * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.\n *\n * [Api set: WordApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -29726,7 +29429,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Range object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -30214,7 +29917,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.RangeCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.RangeCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -31866,7 +31569,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -32685,7 +32388,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original Word.Section object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionData`) that contains shallow copies of any loaded child properties from the original object.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -33173,7 +32876,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(toJSON:instance,0)",
-                  "docComment": "",
+                  "docComment": "/**\n * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.) Whereas the original `Word.SectionCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SectionCollectionData`) that contains an \"items\" array with shallow copies of any loaded properties from the collection's items.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",

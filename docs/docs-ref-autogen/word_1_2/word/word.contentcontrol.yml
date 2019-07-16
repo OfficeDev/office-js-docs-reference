@@ -295,10 +295,9 @@ items:
   - uid: word.Word.ContentControl.getHtml
     summary: >-
       Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
-      formatting will be a close, but not exact, match for of the formatting of the document. This method does not
-      return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you
-      need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML
-      to HTML.
+      formatting will be a close, but not exact, match to the formatting of the document. This method does not return
+      the exact same HTML for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity,
+      or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
 
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
@@ -1622,6 +1621,12 @@ items:
         type:
           - string
   - uid: word.Word.ContentControl.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Word.Interfaces.ContentControlData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
     name: toJSON()
     fullName: toJSON()
     langs:

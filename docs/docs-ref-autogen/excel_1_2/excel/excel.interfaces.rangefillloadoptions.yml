@@ -27,7 +27,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.RangeFillLoadOptions.color
     summary: >-
-      HTML color code representing the color of the background, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
 
 

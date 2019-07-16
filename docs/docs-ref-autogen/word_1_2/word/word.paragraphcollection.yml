@@ -167,6 +167,12 @@ items:
           type:
             - OfficeExtension.LoadOption
   - uid: word.Word.ParagraphCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Word.ParagraphCollection` object is an API object, the `toJSON` method
+      returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphCollectionData`<!-- -->) that contains an
+      "items" array with shallow copies of any loaded properties from the collection's items.
     name: toJSON()
     fullName: toJSON()
     langs:

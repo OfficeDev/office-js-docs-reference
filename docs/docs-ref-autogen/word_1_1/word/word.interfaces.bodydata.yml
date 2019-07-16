@@ -13,7 +13,6 @@ items:
       - word.Word.Interfaces.BodyData.font
       - word.Word.Interfaces.BodyData.inlinePictures
       - word.Word.Interfaces.BodyData.paragraphs
-      - word.Word.Interfaces.BodyData.parentContentControl
       - word.Word.Interfaces.BodyData.style
       - word.Word.Interfaces.BodyData.text
   - uid: word.Word.Interfaces.BodyData.contentControls
@@ -78,21 +77,6 @@ items:
       return:
         type:
           - 'Word.Interfaces.ParagraphData[]'
-  - uid: word.Word.Interfaces.BodyData.parentContentControl
-    summary: |-
-      Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
-    fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
-      return:
-        type:
-          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.BodyData.style
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use

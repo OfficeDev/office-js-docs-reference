@@ -293,7 +293,7 @@ items:
             - excel.Excel.PivotLayout
   - uid: excel.Excel.PivotLayout.showColumnGrandTotals
     summary: |-
-      True if the PivotTable report shows grand totals for columns.
+      Specifies whether the PivotTable report shows grand totals for columns.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showColumnGrandTotals
@@ -308,7 +308,7 @@ items:
           - boolean
   - uid: excel.Excel.PivotLayout.showRowGrandTotals
     summary: |-
-      True if the PivotTable report shows grand totals for rows.
+      Specifies whether the PivotTable report shows grand totals for rows.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: showRowGrandTotals

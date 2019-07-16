@@ -10329,7 +10329,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "(setSolidColor:instance,0)",
-                  "docComment": "/**\n * Sets the fill formatting of a chart element to a uniform color.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param color - HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\").\n */\n",
+                  "docComment": "/**\n * Sets the fill formatting of a chart element to a uniform color.\n *\n * [Api set: ExcelApi 1.1]\n *\n * @param color - HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -16509,7 +16509,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "(ChartSeriesBy:enum)",
-              "docComment": "/**\n * Specifies whether the series are by rows or by columns. On Desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, \"auto\" will simply default to \"columns\".\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Specifies whether the series are by rows or by columns. On Desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, \"auto\" will simply default to \"columns\".\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -16530,7 +16530,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "auto",
-                  "docComment": "/**\n * On Desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns; on Excel Online, \"auto\" will simply default to \"columns\".\n */\n",
+                  "docComment": "/**\n * On Desktop, the \"auto\" option will inspect the source data shape to automatically guess whether the data is by rows or columns; in Excel on the web, \"auto\" will simply default to \"columns\".\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -21716,6 +21716,88 @@
               ]
             },
             {
+              "kind": "Function",
+              "canonicalReference": "(getDataCommonPostprocess:0)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "getDataCommonPostprocess"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "response"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "callArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 0,
+              "parameters": [
+                {
+                  "parameterName": "response",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "callArgs",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  }
+                }
+              ],
+              "name": "getDataCommonPostprocess"
+            },
+            {
               "kind": "Enum",
               "canonicalReference": "(HorizontalAlignment:enum)",
               "docComment": "/**\n * [Api set: ExcelApi 1.1]\n */\n",
@@ -22242,6 +22324,29 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(AutoFilterData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"autoFilter.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AutoFilterData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "AutoFilterData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -25502,6 +25607,52 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(ChartBinOptionsData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"chartBinOptions.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartBinOptionsData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartBinOptionsData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartBinOptionsUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ChartBinOptions object, for use in \"chartBinOptions.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartBinOptionsUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartBinOptionsUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(ChartBorderData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"chartBorder.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -25543,6 +25694,52 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ChartBorderUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartBoxwhiskerOptionsData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"chartBoxwhiskerOptions.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartBoxwhiskerOptionsData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartBoxwhiskerOptionsData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartBoxwhiskerOptionsUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ChartBoxwhiskerOptions object, for use in \"chartBoxwhiskerOptions.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartBoxwhiskerOptionsUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartBoxwhiskerOptionsUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -27838,6 +28035,98 @@
                   ],
                   "releaseTag": "Public",
                   "name": "ChartDataLabelUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartErrorBarsData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"chartErrorBars.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartErrorBarsData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartErrorBarsData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartErrorBarsFormatData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"chartErrorBarsFormat.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartErrorBarsFormatData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartErrorBarsFormatData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartErrorBarsFormatUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ChartErrorBarsFormat object, for use in \"chartErrorBarsFormat.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartErrorBarsFormatUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartErrorBarsFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartErrorBarsUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ChartErrorBars object, for use in \"chartErrorBars.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartErrorBarsUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartErrorBarsUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -30696,6 +30985,98 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartMapOptionsData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"chartMapOptions.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartMapOptionsData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartMapOptionsData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartMapOptionsUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ChartMapOptions object, for use in \"chartMapOptions.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartMapOptionsUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartMapOptionsUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartPivotOptionsData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"chartPivotOptions.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartPivotOptionsData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartPivotOptionsData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ChartPivotOptionsUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ChartPivotOptions object, for use in \"chartPivotOptions.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ChartPivotOptionsUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ChartPivotOptionsUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -35862,6 +36243,267 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(GeometricShapeData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"geometricShape.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "GeometricShapeData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "GeometricShapeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(GroupShapeCollectionData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"groupShapeCollection.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "GroupShapeCollectionData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "GroupShapeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "ShapeData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(GroupShapeCollectionUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the GroupShapeCollection object, for use in \"groupShapeCollection.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "GroupShapeCollectionUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "GroupShapeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "ShapeData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(HeaderFooterData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"headerFooter.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "HeaderFooterData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "HeaderFooterData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(HeaderFooterGroupData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"headerFooterGroup.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "HeaderFooterGroupData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "HeaderFooterGroupData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(HeaderFooterGroupUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the HeaderFooterGroup object, for use in \"headerFooterGroup.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "HeaderFooterGroupUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "HeaderFooterGroupUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(HeaderFooterUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the HeaderFooter object, for use in \"headerFooter.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "HeaderFooterUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "HeaderFooterUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(IconSetConditionalFormatData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"iconSetConditionalFormat.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -35903,6 +36545,121 @@
                   ],
                   "releaseTag": "Public",
                   "name": "IconSetConditionalFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ImageData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"image.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ImageData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ImageData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(IterativeCalculationData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"iterativeCalculation.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "IterativeCalculationData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "IterativeCalculationData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(IterativeCalculationUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the IterativeCalculation object, for use in \"iterativeCalculation.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "IterativeCalculationUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "IterativeCalculationUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(LineData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"line.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "LineData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "LineData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(LineUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the Line object, for use in \"line.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "LineUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "LineUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -36616,6 +37373,221 @@
                       }
                     }
                   ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(PageBreakCollectionData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"pageBreakCollection.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PageBreakCollectionData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PageBreakCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PageBreakData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(PageBreakCollectionUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the PageBreakCollection object, for use in \"pageBreakCollection.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PageBreakCollectionUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PageBreakCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "PageBreakData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(PageBreakData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"pageBreak.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PageBreakData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PageBreakData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(PageLayoutData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"pageLayout.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PageLayoutData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PageLayoutData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(PageLayoutUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the PageLayout object, for use in \"pageLayout.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "PageLayoutUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "PageLayoutUpdateData",
+                  "members": [],
                   "extendsTokenRanges": []
                 },
                 {
@@ -37480,6 +38452,52 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(RangeAreasData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"rangeAreas.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RangeAreasData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RangeAreasData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(RangeAreasUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the RangeAreas object, for use in \"rangeAreas.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RangeAreasUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RangeAreasUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(RangeBorderCollectionData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"rangeBorderCollection.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -38275,6 +39293,152 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(RangeCollectionData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"rangeCollection.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RangeCollectionData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RangeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "RangeData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(RangeCollectionUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the RangeCollection object, for use in \"rangeCollection.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RangeCollectionUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RangeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "RangeData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(RangeData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"range.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -38755,7 +39919,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "color",
-                      "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -38837,7 +40001,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "color",
-                      "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -38890,7 +40054,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "color",
-                      "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -40138,6 +41302,51 @@
                   "members": [
                     {
                       "kind": "PropertySignature",
+                      "canonicalReference": "borders",
+                      "docComment": "/**\n * Collection of border objects that apply to the overall range.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "borders"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "RangeBorderCollectionUpdateData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "borders",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 7
+                      }
+                    },
+                    {
+                      "kind": "PropertySignature",
                       "canonicalReference": "fill",
                       "docComment": "/**\n * Returns the fill object defined on the overall range.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                       "excerptTokens": [
@@ -41239,6 +42448,29 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(RemoveDuplicatesResultData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"removeDuplicatesResult.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RemoveDuplicatesResultData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RemoveDuplicatesResultData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(RowColumnPivotHierarchyCollectionData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"rowColumnPivotHierarchyCollection.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -41431,6 +42663,52 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(RuntimeData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"runtime.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RuntimeData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RuntimeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(RuntimeUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the Runtime object, for use in \"runtime.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RuntimeUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "RuntimeUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(SettingCollectionData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"settingCollection.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -41618,6 +42896,359 @@
                   ],
                   "releaseTag": "Public",
                   "name": "SettingUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeCollectionData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"shapeCollection.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeCollectionData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "ShapeData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeCollectionUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ShapeCollection object, for use in \"shapeCollection.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeCollectionUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "ShapeData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"shape.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeFillData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"shapeFill.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeFillData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFillData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeFillUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ShapeFill object, for use in \"shapeFill.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeFillUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFillUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeFontData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"shapeFont.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeFontData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFontData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeFontUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ShapeFont object, for use in \"shapeFont.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeFontUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeFontUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeGroupData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"shapeGroup.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeGroupData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeGroupData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeLineFormatData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"shapeLineFormat.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeLineFormatData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeLineFormatData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeLineFormatUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the ShapeLineFormat object, for use in \"shapeLineFormat.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeLineFormatUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeLineFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(ShapeUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the Shape object, for use in \"shape.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ShapeUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "ShapeUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -44013,6 +45644,152 @@
                 },
                 {
                   "kind": "Interface",
+                  "canonicalReference": "(TableScopedCollectionData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"tableScopedCollection.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableScopedCollectionData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TableScopedCollectionData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "TableData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(TableScopedCollectionUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the TableScopedCollection object, for use in \"tableScopedCollection.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TableScopedCollectionUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TableScopedCollectionUpdateData",
+                  "members": [
+                    {
+                      "kind": "PropertySignature",
+                      "canonicalReference": "items",
+                      "docComment": "",
+                      "excerptTokens": [
+                        {
+                          "kind": "Reference",
+                          "text": "items"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "?: "
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Excel"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "Interfaces"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "."
+                        },
+                        {
+                          "kind": "Reference",
+                          "text": "TableData"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": "[]"
+                        },
+                        {
+                          "kind": "Content",
+                          "text": ";"
+                        }
+                      ],
+                      "releaseTag": "Public",
+                      "name": "items",
+                      "propertyTypeTokenRange": {
+                        "startIndex": 2,
+                        "endIndex": 8
+                      }
+                    }
+                  ],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
                   "canonicalReference": "(TableSortData:interface)",
                   "docComment": "/**\n * An interface describing the data returned by calling \"tableSort.toJSON()\".\n */\n",
                   "excerptTokens": [
@@ -44217,6 +45994,98 @@
                   ],
                   "releaseTag": "Public",
                   "name": "TextConditionalFormatUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(TextFrameData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"textFrame.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TextFrameData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextFrameData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(TextFrameUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the TextFrame object, for use in \"textFrame.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TextFrameUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextFrameUpdateData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(TextRangeData:interface)",
+                  "docComment": "/**\n * An interface describing the data returned by calling \"textRange.toJSON()\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TextRangeData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextRangeData",
+                  "members": [],
+                  "extendsTokenRanges": []
+                },
+                {
+                  "kind": "Interface",
+                  "canonicalReference": "(TextRangeUpdateData:interface)",
+                  "docComment": "/**\n * An interface for updating data on the TextRange object, for use in \"textRange.set({ ... })\".\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Content",
+                      "text": "export interface "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "TextRangeUpdateData"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " "
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "TextRangeUpdateData",
                   "members": [],
                   "extendsTokenRanges": []
                 },
@@ -47163,6 +49032,65 @@
                   }
                 }
               ]
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "(postprocessBindingDescriptor:0)",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "postprocessBindingDescriptor"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "response"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 0,
+              "parameters": [
+                {
+                  "parameterName": "response",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "postprocessBindingDescriptor"
             },
             {
               "kind": "Class",
@@ -50696,7 +52624,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "(color:instance)",
-                  "docComment": "/**\n * HTML color code representing the color of the background, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+                  "docComment": "/**\n * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. \"FFA500\") or as a named HTML color (e.g. \"orange\")\n *\n * [Api set: ExcelApi 1.1]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",

@@ -10,7 +10,6 @@ items:
     package: word
     children:
       - word.Word.Interfaces.ParagraphData.alignment
-      - word.Word.Interfaces.ParagraphData.contentControls
       - word.Word.Interfaces.ParagraphData.firstLineIndent
       - word.Word.Interfaces.ParagraphData.font
       - word.Word.Interfaces.ParagraphData.inlinePictures
@@ -19,7 +18,6 @@ items:
       - word.Word.Interfaces.ParagraphData.lineUnitAfter
       - word.Word.Interfaces.ParagraphData.lineUnitBefore
       - word.Word.Interfaces.ParagraphData.outlineLevel
-      - word.Word.Interfaces.ParagraphData.parentContentControl
       - word.Word.Interfaces.ParagraphData.rightIndent
       - word.Word.Interfaces.ParagraphData.spaceAfter
       - word.Word.Interfaces.ParagraphData.spaceBefore
@@ -40,21 +38,6 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.ParagraphData.contentControls
-    summary: |-
-      Gets the collection of content control objects in the paragraph. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: contentControls
-    fullName: contentControls
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'contentControls?: Word.Interfaces.ContentControlData[];'
-      return:
-        type:
-          - 'Word.Interfaces.ContentControlData[]'
   - uid: word.Word.Interfaces.ParagraphData.firstLineIndent
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
@@ -183,21 +166,6 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.parentContentControl
-    summary: |-
-      Gets the content control that contains the paragraph. Throws if there isn't a parent content control. Read-only.
-
-      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: parentContentControl
-    fullName: parentContentControl
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'parentContentControl?: Word.Interfaces.ContentControlData;'
-      return:
-        type:
-          - word.Word.Interfaces.ContentControlData
   - uid: word.Word.Interfaces.ParagraphData.rightIndent
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.

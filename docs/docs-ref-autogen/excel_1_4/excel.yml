@@ -71,6 +71,7 @@ items:
       - excel.Excel.FourTrafficLightsSet
       - excel.Excel.FunctionResult
       - excel.Excel.Functions
+      - excel.Excel.getDataCommonPostprocess
       - excel.Excel.HorizontalAlignment
       - excel.Excel.Icon
       - excel.Excel.IconCollections
@@ -80,6 +81,7 @@ items:
       - excel.Excel.Interfaces.ApplicationData
       - excel.Excel.Interfaces.ApplicationLoadOptions
       - excel.Excel.Interfaces.ApplicationUpdateData
+      - excel.Excel.Interfaces.AutoFilterData
       - excel.Excel.Interfaces.BindingCollectionData
       - excel.Excel.Interfaces.BindingCollectionLoadOptions
       - excel.Excel.Interfaces.BindingCollectionUpdateData
@@ -105,8 +107,12 @@ items:
       - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
       - excel.Excel.Interfaces.ChartAxisTitleUpdateData
       - excel.Excel.Interfaces.ChartAxisUpdateData
+      - excel.Excel.Interfaces.ChartBinOptionsData
+      - excel.Excel.Interfaces.ChartBinOptionsUpdateData
       - excel.Excel.Interfaces.ChartBorderData
       - excel.Excel.Interfaces.ChartBorderUpdateData
+      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData
+      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
       - excel.Excel.Interfaces.ChartCollectionData
       - excel.Excel.Interfaces.ChartCollectionLoadOptions
       - excel.Excel.Interfaces.ChartCollectionUpdateData
@@ -119,6 +125,10 @@ items:
       - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
       - excel.Excel.Interfaces.ChartDataLabelsUpdateData
       - excel.Excel.Interfaces.ChartDataLabelUpdateData
+      - excel.Excel.Interfaces.ChartErrorBarsData
+      - excel.Excel.Interfaces.ChartErrorBarsFormatData
+      - excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
+      - excel.Excel.Interfaces.ChartErrorBarsUpdateData
       - excel.Excel.Interfaces.ChartFontData
       - excel.Excel.Interfaces.ChartFontLoadOptions
       - excel.Excel.Interfaces.ChartFontUpdateData
@@ -144,6 +154,10 @@ items:
       - excel.Excel.Interfaces.ChartLineFormatLoadOptions
       - excel.Excel.Interfaces.ChartLineFormatUpdateData
       - excel.Excel.Interfaces.ChartLoadOptions
+      - excel.Excel.Interfaces.ChartMapOptionsData
+      - excel.Excel.Interfaces.ChartMapOptionsUpdateData
+      - excel.Excel.Interfaces.ChartPivotOptionsData
+      - excel.Excel.Interfaces.ChartPivotOptionsUpdateData
       - excel.Excel.Interfaces.ChartPlotAreaData
       - excel.Excel.Interfaces.ChartPlotAreaFormatData
       - excel.Excel.Interfaces.ChartPlotAreaFormatUpdateData
@@ -238,8 +252,20 @@ items:
       - excel.Excel.Interfaces.FormatProtectionUpdateData
       - excel.Excel.Interfaces.FunctionResultData
       - excel.Excel.Interfaces.FunctionResultLoadOptions
+      - excel.Excel.Interfaces.GeometricShapeData
+      - excel.Excel.Interfaces.GroupShapeCollectionData
+      - excel.Excel.Interfaces.GroupShapeCollectionUpdateData
+      - excel.Excel.Interfaces.HeaderFooterData
+      - excel.Excel.Interfaces.HeaderFooterGroupData
+      - excel.Excel.Interfaces.HeaderFooterGroupUpdateData
+      - excel.Excel.Interfaces.HeaderFooterUpdateData
       - excel.Excel.Interfaces.IconSetConditionalFormatData
       - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+      - excel.Excel.Interfaces.ImageData
+      - excel.Excel.Interfaces.IterativeCalculationData
+      - excel.Excel.Interfaces.IterativeCalculationUpdateData
+      - excel.Excel.Interfaces.LineData
+      - excel.Excel.Interfaces.LineUpdateData
       - excel.Excel.Interfaces.NamedItemArrayValuesData
       - excel.Excel.Interfaces.NamedItemCollectionData
       - excel.Excel.Interfaces.NamedItemCollectionLoadOptions
@@ -247,6 +273,11 @@ items:
       - excel.Excel.Interfaces.NamedItemData
       - excel.Excel.Interfaces.NamedItemLoadOptions
       - excel.Excel.Interfaces.NamedItemUpdateData
+      - excel.Excel.Interfaces.PageBreakCollectionData
+      - excel.Excel.Interfaces.PageBreakCollectionUpdateData
+      - excel.Excel.Interfaces.PageBreakData
+      - excel.Excel.Interfaces.PageLayoutData
+      - excel.Excel.Interfaces.PageLayoutUpdateData
       - excel.Excel.Interfaces.PivotFieldCollectionData
       - excel.Excel.Interfaces.PivotFieldCollectionUpdateData
       - excel.Excel.Interfaces.PivotFieldData
@@ -269,12 +300,16 @@ items:
       - excel.Excel.Interfaces.PivotTableUpdateData
       - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
       - excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+      - excel.Excel.Interfaces.RangeAreasData
+      - excel.Excel.Interfaces.RangeAreasUpdateData
       - excel.Excel.Interfaces.RangeBorderCollectionData
       - excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
       - excel.Excel.Interfaces.RangeBorderCollectionUpdateData
       - excel.Excel.Interfaces.RangeBorderData
       - excel.Excel.Interfaces.RangeBorderLoadOptions
       - excel.Excel.Interfaces.RangeBorderUpdateData
+      - excel.Excel.Interfaces.RangeCollectionData
+      - excel.Excel.Interfaces.RangeCollectionUpdateData
       - excel.Excel.Interfaces.RangeData
       - excel.Excel.Interfaces.RangeFillData
       - excel.Excel.Interfaces.RangeFillLoadOptions
@@ -293,16 +328,30 @@ items:
       - excel.Excel.Interfaces.RangeViewData
       - excel.Excel.Interfaces.RangeViewLoadOptions
       - excel.Excel.Interfaces.RangeViewUpdateData
+      - excel.Excel.Interfaces.RemoveDuplicatesResultData
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
       - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
       - excel.Excel.Interfaces.RowColumnPivotHierarchyData
       - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+      - excel.Excel.Interfaces.RuntimeData
+      - excel.Excel.Interfaces.RuntimeUpdateData
       - excel.Excel.Interfaces.SettingCollectionData
       - excel.Excel.Interfaces.SettingCollectionLoadOptions
       - excel.Excel.Interfaces.SettingCollectionUpdateData
       - excel.Excel.Interfaces.SettingData
       - excel.Excel.Interfaces.SettingLoadOptions
       - excel.Excel.Interfaces.SettingUpdateData
+      - excel.Excel.Interfaces.ShapeCollectionData
+      - excel.Excel.Interfaces.ShapeCollectionUpdateData
+      - excel.Excel.Interfaces.ShapeData
+      - excel.Excel.Interfaces.ShapeFillData
+      - excel.Excel.Interfaces.ShapeFillUpdateData
+      - excel.Excel.Interfaces.ShapeFontData
+      - excel.Excel.Interfaces.ShapeFontUpdateData
+      - excel.Excel.Interfaces.ShapeGroupData
+      - excel.Excel.Interfaces.ShapeLineFormatData
+      - excel.Excel.Interfaces.ShapeLineFormatUpdateData
+      - excel.Excel.Interfaces.ShapeUpdateData
       - excel.Excel.Interfaces.StyleCollectionData
       - excel.Excel.Interfaces.StyleCollectionUpdateData
       - excel.Excel.Interfaces.StyleData
@@ -324,11 +373,17 @@ items:
       - excel.Excel.Interfaces.TableRowData
       - excel.Excel.Interfaces.TableRowLoadOptions
       - excel.Excel.Interfaces.TableRowUpdateData
+      - excel.Excel.Interfaces.TableScopedCollectionData
+      - excel.Excel.Interfaces.TableScopedCollectionUpdateData
       - excel.Excel.Interfaces.TableSortData
       - excel.Excel.Interfaces.TableSortLoadOptions
       - excel.Excel.Interfaces.TableUpdateData
       - excel.Excel.Interfaces.TextConditionalFormatData
       - excel.Excel.Interfaces.TextConditionalFormatUpdateData
+      - excel.Excel.Interfaces.TextFrameData
+      - excel.Excel.Interfaces.TextFrameUpdateData
+      - excel.Excel.Interfaces.TextRangeData
+      - excel.Excel.Interfaces.TextRangeUpdateData
       - excel.Excel.Interfaces.TopBottomConditionalFormatData
       - excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData
       - excel.Excel.Interfaces.WorkbookCreatedData
@@ -350,6 +405,7 @@ items:
       - excel.Excel.NamedItemType
       - excel.Excel.PivotTable
       - excel.Excel.PivotTableCollection
+      - excel.Excel.postprocessBindingDescriptor
       - excel.Excel.Range
       - excel.Excel.RangeBorder
       - excel.Excel.RangeBorderCollection
@@ -403,6 +459,44 @@ items:
       - excel.Excel.WorksheetCollection
       - excel.Excel.WorksheetProtection
       - excel.Excel.WorksheetProtectionOptions
+  - uid: excel.Excel.getDataCommonPostprocess
+    name: Excel.getDataCommonPostprocess
+    fullName: Excel.getDataCommonPostprocess
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function getDataCommonPostprocess(response: any, callArgs: any): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: response
+          description: ''
+          type:
+            - any
+        - id: callArgs
+          description: ''
+          type:
+            - any
+  - uid: excel.Excel.postprocessBindingDescriptor
+    name: Excel.postprocessBindingDescriptor
+    fullName: Excel.postprocessBindingDescriptor
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function postprocessBindingDescriptor(response: any): any;'
+      return:
+        type:
+          - any
+        description: ''
+      parameters:
+        - id: response
+          description: ''
+          type:
+            - any
   - uid: excel.Excel.run
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the
@@ -731,6 +825,8 @@ references:
     name: Excel.Interfaces.ApplicationLoadOptions
   - uid: excel.Excel.Interfaces.ApplicationUpdateData
     name: Excel.Interfaces.ApplicationUpdateData
+  - uid: excel.Excel.Interfaces.AutoFilterData
+    name: Excel.Interfaces.AutoFilterData
   - uid: excel.Excel.Interfaces.BindingCollectionData
     name: Excel.Interfaces.BindingCollectionData
   - uid: excel.Excel.Interfaces.BindingCollectionLoadOptions
@@ -781,10 +877,18 @@ references:
     name: Excel.Interfaces.ChartAxisTitleUpdateData
   - uid: excel.Excel.Interfaces.ChartAxisUpdateData
     name: Excel.Interfaces.ChartAxisUpdateData
+  - uid: excel.Excel.Interfaces.ChartBinOptionsData
+    name: Excel.Interfaces.ChartBinOptionsData
+  - uid: excel.Excel.Interfaces.ChartBinOptionsUpdateData
+    name: Excel.Interfaces.ChartBinOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartBorderData
     name: Excel.Interfaces.ChartBorderData
   - uid: excel.Excel.Interfaces.ChartBorderUpdateData
     name: Excel.Interfaces.ChartBorderUpdateData
+  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsData
+  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
+    name: Excel.Interfaces.ChartBoxwhiskerOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartCollectionData
     name: Excel.Interfaces.ChartCollectionData
   - uid: excel.Excel.Interfaces.ChartCollectionLoadOptions
@@ -809,6 +913,14 @@ references:
     name: Excel.Interfaces.ChartDataLabelsUpdateData
   - uid: excel.Excel.Interfaces.ChartDataLabelUpdateData
     name: Excel.Interfaces.ChartDataLabelUpdateData
+  - uid: excel.Excel.Interfaces.ChartErrorBarsData
+    name: Excel.Interfaces.ChartErrorBarsData
+  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatData
+    name: Excel.Interfaces.ChartErrorBarsFormatData
+  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
+    name: Excel.Interfaces.ChartErrorBarsFormatUpdateData
+  - uid: excel.Excel.Interfaces.ChartErrorBarsUpdateData
+    name: Excel.Interfaces.ChartErrorBarsUpdateData
   - uid: excel.Excel.Interfaces.ChartFontData
     name: Excel.Interfaces.ChartFontData
   - uid: excel.Excel.Interfaces.ChartFontLoadOptions
@@ -859,6 +971,14 @@ references:
     name: Excel.Interfaces.ChartLineFormatUpdateData
   - uid: excel.Excel.Interfaces.ChartLoadOptions
     name: Excel.Interfaces.ChartLoadOptions
+  - uid: excel.Excel.Interfaces.ChartMapOptionsData
+    name: Excel.Interfaces.ChartMapOptionsData
+  - uid: excel.Excel.Interfaces.ChartMapOptionsUpdateData
+    name: Excel.Interfaces.ChartMapOptionsUpdateData
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsData
+    name: Excel.Interfaces.ChartPivotOptionsData
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsUpdateData
+    name: Excel.Interfaces.ChartPivotOptionsUpdateData
   - uid: excel.Excel.Interfaces.ChartPlotAreaData
     name: Excel.Interfaces.ChartPlotAreaData
   - uid: excel.Excel.Interfaces.ChartPlotAreaFormatData
@@ -1047,10 +1167,34 @@ references:
     name: Excel.Interfaces.FunctionResultData
   - uid: excel.Excel.Interfaces.FunctionResultLoadOptions
     name: Excel.Interfaces.FunctionResultLoadOptions
+  - uid: excel.Excel.Interfaces.GeometricShapeData
+    name: Excel.Interfaces.GeometricShapeData
+  - uid: excel.Excel.Interfaces.GroupShapeCollectionData
+    name: Excel.Interfaces.GroupShapeCollectionData
+  - uid: excel.Excel.Interfaces.GroupShapeCollectionUpdateData
+    name: Excel.Interfaces.GroupShapeCollectionUpdateData
+  - uid: excel.Excel.Interfaces.HeaderFooterData
+    name: Excel.Interfaces.HeaderFooterData
+  - uid: excel.Excel.Interfaces.HeaderFooterGroupData
+    name: Excel.Interfaces.HeaderFooterGroupData
+  - uid: excel.Excel.Interfaces.HeaderFooterGroupUpdateData
+    name: Excel.Interfaces.HeaderFooterGroupUpdateData
+  - uid: excel.Excel.Interfaces.HeaderFooterUpdateData
+    name: Excel.Interfaces.HeaderFooterUpdateData
   - uid: excel.Excel.Interfaces.IconSetConditionalFormatData
     name: Excel.Interfaces.IconSetConditionalFormatData
   - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
     name: Excel.Interfaces.IconSetConditionalFormatUpdateData
+  - uid: excel.Excel.Interfaces.ImageData
+    name: Excel.Interfaces.ImageData
+  - uid: excel.Excel.Interfaces.IterativeCalculationData
+    name: Excel.Interfaces.IterativeCalculationData
+  - uid: excel.Excel.Interfaces.IterativeCalculationUpdateData
+    name: Excel.Interfaces.IterativeCalculationUpdateData
+  - uid: excel.Excel.Interfaces.LineData
+    name: Excel.Interfaces.LineData
+  - uid: excel.Excel.Interfaces.LineUpdateData
+    name: Excel.Interfaces.LineUpdateData
   - uid: excel.Excel.Interfaces.NamedItemArrayValuesData
     name: Excel.Interfaces.NamedItemArrayValuesData
   - uid: excel.Excel.Interfaces.NamedItemCollectionData
@@ -1065,6 +1209,16 @@ references:
     name: Excel.Interfaces.NamedItemLoadOptions
   - uid: excel.Excel.Interfaces.NamedItemUpdateData
     name: Excel.Interfaces.NamedItemUpdateData
+  - uid: excel.Excel.Interfaces.PageBreakCollectionData
+    name: Excel.Interfaces.PageBreakCollectionData
+  - uid: excel.Excel.Interfaces.PageBreakCollectionUpdateData
+    name: Excel.Interfaces.PageBreakCollectionUpdateData
+  - uid: excel.Excel.Interfaces.PageBreakData
+    name: Excel.Interfaces.PageBreakData
+  - uid: excel.Excel.Interfaces.PageLayoutData
+    name: Excel.Interfaces.PageLayoutData
+  - uid: excel.Excel.Interfaces.PageLayoutUpdateData
+    name: Excel.Interfaces.PageLayoutUpdateData
   - uid: excel.Excel.Interfaces.PivotFieldCollectionData
     name: Excel.Interfaces.PivotFieldCollectionData
   - uid: excel.Excel.Interfaces.PivotFieldCollectionUpdateData
@@ -1109,6 +1263,10 @@ references:
     name: Excel.Interfaces.PresetCriteriaConditionalFormatData
   - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
     name: Excel.Interfaces.PresetCriteriaConditionalFormatUpdateData
+  - uid: excel.Excel.Interfaces.RangeAreasData
+    name: Excel.Interfaces.RangeAreasData
+  - uid: excel.Excel.Interfaces.RangeAreasUpdateData
+    name: Excel.Interfaces.RangeAreasUpdateData
   - uid: excel.Excel.Interfaces.RangeBorderCollectionData
     name: Excel.Interfaces.RangeBorderCollectionData
   - uid: excel.Excel.Interfaces.RangeBorderCollectionLoadOptions
@@ -1121,6 +1279,10 @@ references:
     name: Excel.Interfaces.RangeBorderLoadOptions
   - uid: excel.Excel.Interfaces.RangeBorderUpdateData
     name: Excel.Interfaces.RangeBorderUpdateData
+  - uid: excel.Excel.Interfaces.RangeCollectionData
+    name: Excel.Interfaces.RangeCollectionData
+  - uid: excel.Excel.Interfaces.RangeCollectionUpdateData
+    name: Excel.Interfaces.RangeCollectionUpdateData
   - uid: excel.Excel.Interfaces.RangeData
     name: Excel.Interfaces.RangeData
   - uid: excel.Excel.Interfaces.RangeFillData
@@ -1157,6 +1319,8 @@ references:
     name: Excel.Interfaces.RangeViewLoadOptions
   - uid: excel.Excel.Interfaces.RangeViewUpdateData
     name: Excel.Interfaces.RangeViewUpdateData
+  - uid: excel.Excel.Interfaces.RemoveDuplicatesResultData
+    name: Excel.Interfaces.RemoveDuplicatesResultData
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
     name: Excel.Interfaces.RowColumnPivotHierarchyCollectionData
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionUpdateData
@@ -1165,6 +1329,10 @@ references:
     name: Excel.Interfaces.RowColumnPivotHierarchyData
   - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
     name: Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+  - uid: excel.Excel.Interfaces.RuntimeData
+    name: Excel.Interfaces.RuntimeData
+  - uid: excel.Excel.Interfaces.RuntimeUpdateData
+    name: Excel.Interfaces.RuntimeUpdateData
   - uid: excel.Excel.Interfaces.SettingCollectionData
     name: Excel.Interfaces.SettingCollectionData
   - uid: excel.Excel.Interfaces.SettingCollectionLoadOptions
@@ -1177,6 +1345,28 @@ references:
     name: Excel.Interfaces.SettingLoadOptions
   - uid: excel.Excel.Interfaces.SettingUpdateData
     name: Excel.Interfaces.SettingUpdateData
+  - uid: excel.Excel.Interfaces.ShapeCollectionData
+    name: Excel.Interfaces.ShapeCollectionData
+  - uid: excel.Excel.Interfaces.ShapeCollectionUpdateData
+    name: Excel.Interfaces.ShapeCollectionUpdateData
+  - uid: excel.Excel.Interfaces.ShapeData
+    name: Excel.Interfaces.ShapeData
+  - uid: excel.Excel.Interfaces.ShapeFillData
+    name: Excel.Interfaces.ShapeFillData
+  - uid: excel.Excel.Interfaces.ShapeFillUpdateData
+    name: Excel.Interfaces.ShapeFillUpdateData
+  - uid: excel.Excel.Interfaces.ShapeFontData
+    name: Excel.Interfaces.ShapeFontData
+  - uid: excel.Excel.Interfaces.ShapeFontUpdateData
+    name: Excel.Interfaces.ShapeFontUpdateData
+  - uid: excel.Excel.Interfaces.ShapeGroupData
+    name: Excel.Interfaces.ShapeGroupData
+  - uid: excel.Excel.Interfaces.ShapeLineFormatData
+    name: Excel.Interfaces.ShapeLineFormatData
+  - uid: excel.Excel.Interfaces.ShapeLineFormatUpdateData
+    name: Excel.Interfaces.ShapeLineFormatUpdateData
+  - uid: excel.Excel.Interfaces.ShapeUpdateData
+    name: Excel.Interfaces.ShapeUpdateData
   - uid: excel.Excel.Interfaces.StyleCollectionData
     name: Excel.Interfaces.StyleCollectionData
   - uid: excel.Excel.Interfaces.StyleCollectionUpdateData
@@ -1219,6 +1409,10 @@ references:
     name: Excel.Interfaces.TableRowLoadOptions
   - uid: excel.Excel.Interfaces.TableRowUpdateData
     name: Excel.Interfaces.TableRowUpdateData
+  - uid: excel.Excel.Interfaces.TableScopedCollectionData
+    name: Excel.Interfaces.TableScopedCollectionData
+  - uid: excel.Excel.Interfaces.TableScopedCollectionUpdateData
+    name: Excel.Interfaces.TableScopedCollectionUpdateData
   - uid: excel.Excel.Interfaces.TableSortData
     name: Excel.Interfaces.TableSortData
   - uid: excel.Excel.Interfaces.TableSortLoadOptions
@@ -1229,6 +1423,14 @@ references:
     name: Excel.Interfaces.TextConditionalFormatData
   - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData
     name: Excel.Interfaces.TextConditionalFormatUpdateData
+  - uid: excel.Excel.Interfaces.TextFrameData
+    name: Excel.Interfaces.TextFrameData
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData
+    name: Excel.Interfaces.TextFrameUpdateData
+  - uid: excel.Excel.Interfaces.TextRangeData
+    name: Excel.Interfaces.TextRangeData
+  - uid: excel.Excel.Interfaces.TextRangeUpdateData
+    name: Excel.Interfaces.TextRangeUpdateData
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData
     name: Excel.Interfaces.TopBottomConditionalFormatData
   - uid: excel.Excel.Interfaces.TopBottomConditionalFormatUpdateData

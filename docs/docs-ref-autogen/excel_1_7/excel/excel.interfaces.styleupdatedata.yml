@@ -9,6 +9,7 @@ items:
     type: interface
     package: excel
     children:
+      - excel.Excel.Interfaces.StyleUpdateData.borders
       - excel.Excel.Interfaces.StyleUpdateData.fill
       - excel.Excel.Interfaces.StyleUpdateData.font
       - excel.Excel.Interfaces.StyleUpdateData.formulaHidden
@@ -27,6 +28,21 @@ items:
       - excel.Excel.Interfaces.StyleUpdateData.shrinkToFit
       - excel.Excel.Interfaces.StyleUpdateData.verticalAlignment
       - excel.Excel.Interfaces.StyleUpdateData.wrapText
+  - uid: excel.Excel.Interfaces.StyleUpdateData.borders
+    summary: |-
+      A Border collection of four Border objects that represent the style of the four borders.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: borders
+    fullName: borders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'borders?: Excel.Interfaces.RangeBorderCollectionUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.RangeBorderCollectionUpdateData
   - uid: excel.Excel.Interfaces.StyleUpdateData.fill
     summary: |-
       The Fill of the style.
