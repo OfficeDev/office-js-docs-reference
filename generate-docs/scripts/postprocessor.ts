@@ -432,6 +432,6 @@ function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?:
 
     addCrossHostTocStubs(latestToc, hostName);
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
-    fsx.copySync("../../docs/docs-ref-autogen/overview/api-ref-office-js.md", versionFolder + "/api-ref-office-js.md");
+    fsx.copySync("../../docs/docs-ref-autogen/overview/office.md", versionFolder + "/office.md");
     return latestToc;
 }
