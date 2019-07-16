@@ -15,9 +15,7 @@ items:
     package: word
     children:
       - word.Word.List.context
-      - word.Word.List.getLevelFont
       - word.Word.List.getLevelParagraphs
-      - word.Word.List.getLevelPicture
       - word.Word.List.getLevelString
       - word.Word.List.id
       - word.Word.List.insertParagraph
@@ -28,7 +26,6 @@ items:
       - word.Word.List.load_1
       - word.Word.List.load_2
       - word.Word.List.paragraphs
-      - word.Word.List.resetLevelFont
       - word.Word.List.setLevelAlignment
       - word.Word.List.setLevelAlignment_1
       - word.Word.List.setLevelBullet
@@ -36,7 +33,6 @@ items:
       - word.Word.List.setLevelIndents
       - word.Word.List.setLevelNumbering
       - word.Word.List.setLevelNumbering_1
-      - word.Word.List.setLevelPicture
       - word.Word.List.setLevelStartingNumber
       - word.Word.List.toJSON
       - word.Word.List.track
@@ -55,30 +51,6 @@ items:
       return:
         type:
           - word.Word.RequestContext
-  - uid: word.Word.List.getLevelFont
-    summary: >-
-      Gets the font of the bullet, number or picture at the specified level in the list.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: getLevelFont(level)
-    fullName: getLevelFont(level)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLevelFont(level: number): Word.Font;'
-      return:
-        type:
-          - word.Word.Font
-        description: ''
-      parameters:
-        - id: level
-          description: Required. The level in the list.
-          type:
-            - number
   - uid: word.Word.List.getLevelParagraphs
     summary: |-
       Gets the paragraphs that occur at the specified level in the list.
@@ -94,30 +66,6 @@ items:
       return:
         type:
           - word.Word.ParagraphCollection
-        description: ''
-      parameters:
-        - id: level
-          description: Required. The level in the list.
-          type:
-            - number
-  - uid: word.Word.List.getLevelPicture
-    summary: >-
-      Gets the base64 encoded string representation of the picture at the specified level in the list.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: getLevelPicture(level)
-    fullName: getLevelPicture(level)
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'getLevelPicture(level: number): OfficeExtension.ClientResult<string>;'
-      return:
-        type:
-          - OfficeExtension.ClientResult<string>
         description: ''
       parameters:
         - id: level
@@ -343,36 +291,6 @@ items:
       return:
         type:
           - word.Word.ParagraphCollection
-  - uid: word.Word.List.resetLevelFont
-    summary: >-
-      Resets the font of the bullet, number or picture at the specified level in the list.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: 'resetLevelFont(level, resetFontName)'
-    fullName: 'resetLevelFont(level, resetFontName)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'resetLevelFont(level: number, resetFontName?: boolean): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: level
-          description: Required. The level in the list.
-          type:
-            - number
-        - id: resetFontName
-          description: >-
-            Optional. Indicates whether to reset the font name. Default is false that indicates the font name is kept
-            unchanged.
-          type:
-            - boolean
   - uid: word.Word.List.setLevelAlignment
     summary: |-
       Sets the alignment of the bullet, number or picture at the specified level in the list.
@@ -594,34 +512,6 @@ items:
             level's item number.
           type:
             - Array<string | number>
-  - uid: word.Word.List.setLevelPicture
-    summary: >-
-      Sets the picture at the specified level in the list.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: 'setLevelPicture(level, base64EncodedImage)'
-    fullName: 'setLevelPicture(level, base64EncodedImage)'
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'setLevelPicture(level: number, base64EncodedImage?: string): void;'
-      return:
-        type:
-          - void
-        description: ''
-      parameters:
-        - id: level
-          description: Required. The level in the list.
-          type:
-            - number
-        - id: base64EncodedImage
-          description: 'Optional. The base64 encoded image to be set. If not given, the default picture is set.'
-          type:
-            - string
   - uid: word.Word.List.setLevelStartingNumber
     summary: |-
       Sets the starting number at the specified level in the list. Default value is 1.

@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook_1_7
+    name: Outlook_1_7
+    fullName: Outlook_1_7
+    langs:
+      - typeScript
+    type: package
+    children:
+      - Outlook_1_7.Office.Appointment
+      - Outlook_1_7.Office.AppointmentCompose
+      - Outlook_1_7.Office.AppointmentForm
+      - Outlook_1_7.Office.AppointmentRead
+      - Outlook_1_7.Office.AttachmentDetails
+      - Outlook_1_7.Office.Body
+      - Outlook_1_7.Office.CoercionTypeOptions
+      - Outlook_1_7.Office.Contact
+      - Outlook_1_7.Office.CustomProperties
+      - Outlook_1_7.Office.Diagnostics
+      - Outlook_1_7.Office.EmailAddressDetails
+      - Outlook_1_7.Office.EmailUser
+      - Outlook_1_7.Office.Entities
+      - Outlook_1_7.Office.From
+      - Outlook_1_7.Office.Item
+      - Outlook_1_7.Office.ItemCompose
+      - Outlook_1_7.Office.ItemRead
+      - Outlook_1_7.Office.LocalClientTime
+      - Outlook_1_7.Office.Location
+      - Outlook_1_7.Office.Mailbox
+      - Outlook_1_7.Office.MailboxEnums.AttachmentType
+      - Outlook_1_7.Office.MailboxEnums.Days
+      - Outlook_1_7.Office.MailboxEnums.EntityType
+      - Outlook_1_7.Office.MailboxEnums.ItemNotificationMessageType
+      - Outlook_1_7.Office.MailboxEnums.ItemType
+      - Outlook_1_7.Office.MailboxEnums.Month
+      - Outlook_1_7.Office.MailboxEnums.OWAView
+      - Outlook_1_7.Office.MailboxEnums.RecipientType
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceTimeZone
+      - Outlook_1_7.Office.MailboxEnums.RecurrenceType
+      - Outlook_1_7.Office.MailboxEnums.ResponseType
+      - Outlook_1_7.Office.MailboxEnums.RestVersion
+      - Outlook_1_7.Office.MailboxEnums.WeekNumber
+      - Outlook_1_7.Office.MeetingSuggestion
+      - Outlook_1_7.Office.Message
+      - Outlook_1_7.Office.MessageCompose
+      - Outlook_1_7.Office.MessageRead
+      - Outlook_1_7.Office.NotificationMessageDetails
+      - Outlook_1_7.Office.NotificationMessages
+      - Outlook_1_7.Office.Organizer
+      - Outlook_1_7.Office.PhoneNumber
+      - Outlook_1_7.Office.Recipients
+      - Outlook_1_7.Office.Recurrence
+      - Outlook_1_7.Office.RecurrenceProperties
+      - Outlook_1_7.Office.RecurrenceTimeZone
+      - Outlook_1_7.Office.ReplyFormAttachment
+      - Outlook_1_7.Office.ReplyFormData
+      - Outlook_1_7.Office.RoamingSettings
+      - Outlook_1_7.Office.SeriesTime
+      - Outlook_1_7.Office.SourceProperty
+      - Outlook_1_7.Office.Subject
+      - Outlook_1_7.Office.TaskSuggestion
+      - Outlook_1_7.Office.Time
+      - Outlook_1_7.Office.UserProfile
+references:
+  - uid: Outlook_1_7.Office.Appointment
+    name: Office.Appointment
+  - uid: Outlook_1_7.Office.AppointmentCompose
+    name: Office.AppointmentCompose
+  - uid: Outlook_1_7.Office.AppointmentForm
+    name: Office.AppointmentForm
+  - uid: Outlook_1_7.Office.AppointmentRead
+    name: Office.AppointmentRead
+  - uid: Outlook_1_7.Office.AttachmentDetails
+    name: Office.AttachmentDetails
+  - uid: Outlook_1_7.Office.Body
+    name: Office.Body
+  - uid: Outlook_1_7.Office.CoercionTypeOptions
+    name: Office.CoercionTypeOptions
+  - uid: Outlook_1_7.Office.Contact
+    name: Office.Contact
+  - uid: Outlook_1_7.Office.CustomProperties
+    name: Office.CustomProperties
+  - uid: Outlook_1_7.Office.Diagnostics
+    name: Office.Diagnostics
+  - uid: Outlook_1_7.Office.EmailAddressDetails
+    name: Office.EmailAddressDetails
+  - uid: Outlook_1_7.Office.EmailUser
+    name: Office.EmailUser
+  - uid: Outlook_1_7.Office.Entities
+    name: Office.Entities
+  - uid: Outlook_1_7.Office.From
+    name: Office.From
+  - uid: Outlook_1_7.Office.Item
+    name: Office.Item
+  - uid: Outlook_1_7.Office.ItemCompose
+    name: Office.ItemCompose
+  - uid: Outlook_1_7.Office.ItemRead
+    name: Office.ItemRead
+  - uid: Outlook_1_7.Office.LocalClientTime
+    name: Office.LocalClientTime
+  - uid: Outlook_1_7.Office.Location
+    name: Office.Location
+  - uid: Outlook_1_7.Office.Mailbox
+    name: Office.Mailbox
+  - uid: Outlook_1_7.Office.MailboxEnums.AttachmentType
+    name: Office.MailboxEnums.AttachmentType
+  - uid: Outlook_1_7.Office.MailboxEnums.Days
+    name: Office.MailboxEnums.Days
+  - uid: Outlook_1_7.Office.MailboxEnums.EntityType
+    name: Office.MailboxEnums.EntityType
+  - uid: Outlook_1_7.Office.MailboxEnums.ItemNotificationMessageType
+    name: Office.MailboxEnums.ItemNotificationMessageType
+  - uid: Outlook_1_7.Office.MailboxEnums.ItemType
+    name: Office.MailboxEnums.ItemType
+  - uid: Outlook_1_7.Office.MailboxEnums.Month
+    name: Office.MailboxEnums.Month
+  - uid: Outlook_1_7.Office.MailboxEnums.OWAView
+    name: Office.MailboxEnums.OWAView
+  - uid: Outlook_1_7.Office.MailboxEnums.RecipientType
+    name: Office.MailboxEnums.RecipientType
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceTimeZone
+    name: Office.MailboxEnums.RecurrenceTimeZone
+  - uid: Outlook_1_7.Office.MailboxEnums.RecurrenceType
+    name: Office.MailboxEnums.RecurrenceType
+  - uid: Outlook_1_7.Office.MailboxEnums.ResponseType
+    name: Office.MailboxEnums.ResponseType
+  - uid: Outlook_1_7.Office.MailboxEnums.RestVersion
+    name: Office.MailboxEnums.RestVersion
+  - uid: Outlook_1_7.Office.MailboxEnums.WeekNumber
+    name: Office.MailboxEnums.WeekNumber
+  - uid: Outlook_1_7.Office.MeetingSuggestion
+    name: Office.MeetingSuggestion
+  - uid: Outlook_1_7.Office.Message
+    name: Office.Message
+  - uid: Outlook_1_7.Office.MessageCompose
+    name: Office.MessageCompose
+  - uid: Outlook_1_7.Office.MessageRead
+    name: Office.MessageRead
+  - uid: Outlook_1_7.Office.NotificationMessageDetails
+    name: Office.NotificationMessageDetails
+  - uid: Outlook_1_7.Office.NotificationMessages
+    name: Office.NotificationMessages
+  - uid: Outlook_1_7.Office.Organizer
+    name: Office.Organizer
+  - uid: Outlook_1_7.Office.PhoneNumber
+    name: Office.PhoneNumber
+  - uid: Outlook_1_7.Office.Recipients
+    name: Office.Recipients
+  - uid: Outlook_1_7.Office.Recurrence
+    name: Office.Recurrence
+  - uid: Outlook_1_7.Office.RecurrenceProperties
+    name: Office.RecurrenceProperties
+  - uid: Outlook_1_7.Office.RecurrenceTimeZone
+    name: Office.RecurrenceTimeZone
+  - uid: Outlook_1_7.Office.ReplyFormAttachment
+    name: Office.ReplyFormAttachment
+  - uid: Outlook_1_7.Office.ReplyFormData
+    name: Office.ReplyFormData
+  - uid: Outlook_1_7.Office.RoamingSettings
+    name: Office.RoamingSettings
+  - uid: Outlook_1_7.Office.SeriesTime
+    name: Office.SeriesTime
+  - uid: Outlook_1_7.Office.SourceProperty
+    name: Office.SourceProperty
+  - uid: Outlook_1_7.Office.Subject
+    name: Office.Subject
+  - uid: Outlook_1_7.Office.TaskSuggestion
+    name: Office.TaskSuggestion
+  - uid: Outlook_1_7.Office.Time
+    name: Office.Time
+  - uid: Outlook_1_7.Office.UserProfile
+    name: Office.UserProfile

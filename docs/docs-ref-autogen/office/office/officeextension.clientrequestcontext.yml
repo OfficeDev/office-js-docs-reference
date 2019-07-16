@@ -137,6 +137,8 @@ items:
           description: ''
           type:
             - T
+      typeParameters:
+        - id: T
   - uid: office.OfficeExtension.ClientRequestContext.trace
     summary: >-
       Adds a trace message to the queue. If the promise returned by `context.sync()` is rejected due to an error, this

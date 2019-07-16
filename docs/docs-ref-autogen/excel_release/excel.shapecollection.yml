@@ -1,0 +1,546 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ShapeCollection
+    summary: |-
+      Represents a collection of all the shapes in the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeCollection
+    fullName: Excel.ShapeCollection
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: excel_release
+    children:
+      - excel_release.Excel.ShapeCollection.addGeometricShape
+      - excel_release.Excel.ShapeCollection.addGeometricShape_1
+      - excel_release.Excel.ShapeCollection.addGroup
+      - excel_release.Excel.ShapeCollection.addImage
+      - excel_release.Excel.ShapeCollection.addLine
+      - excel_release.Excel.ShapeCollection.addLine_1
+      - excel_release.Excel.ShapeCollection.addTextBox
+      - excel_release.Excel.ShapeCollection.context
+      - excel_release.Excel.ShapeCollection.getCount
+      - excel_release.Excel.ShapeCollection.getItem
+      - excel_release.Excel.ShapeCollection.getItemAt
+      - excel_release.Excel.ShapeCollection.items
+      - excel_release.Excel.ShapeCollection.load
+      - excel_release.Excel.ShapeCollection.load_1
+      - excel_release.Excel.ShapeCollection.load_2
+      - excel_release.Excel.ShapeCollection.toJSON
+  - uid: excel_release.Excel.ShapeCollection.addGeometricShape
+    summary: |-
+      Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addGeometricShape(geometricShapeType)
+    fullName: addGeometricShape(geometricShapeType)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addGeometricShape(geometricShapeType: Excel.GeometricShapeType): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
+              shape.left = 5;
+              shape.top = 5;
+              shape.height = 175;
+              shape.width = 200;
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: geometricShapeType
+          description: Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
+          type:
+            - excel.Excel.GeometricShapeType
+  - uid: excel_release.Excel.ShapeCollection.addGeometricShape_1
+    summary: |-
+      Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addGeometricShape(geometricShapeTypeString)
+    fullName: addGeometricShape(geometricShapeTypeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addGeometricShape(geometricShapeTypeString: "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" |
+        "Diamond" | "Parallelogram" | "Trapezoid" | "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" |
+        "Octagon" | "Decagon" | "Dodecagon" | "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" |
+        "Star16" | "Star24" | "Star32" | "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" |
+        "Round2DiagonalRectangle" | "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" |
+        "Snip2DiagonalRectangle" | "Plaque" | "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" |
+        "BlockArc" | "Donut" | "NoSmoking" | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow"
+        | "NotchedRightArrow" | "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" |
+        "QuadArrow" | "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" |
+        "LeftRightArrowCallout" | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" |
+        "CircularArrow" | "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" |
+        "CurvedUpArrow" | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" |
+        "Moon" | "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+        "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" | "RightBrace" |
+        "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" | "AccentCallout2" |
+        "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" | "AccentBorderCallout1" |
+        "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" | "WedgeRRectCallout" |
+        "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" | "EllipseRibbon" | "EllipseRibbon2" |
+        "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" | "DoubleWave" | "Plus" | "FlowChartProcess"
+        | "FlowChartDecision" | "FlowChartInputOutput" | "FlowChartPredefinedProcess" | "FlowChartInternalStorage" |
+        "FlowChartDocument" | "FlowChartMultidocument" | "FlowChartTerminator" | "FlowChartPreparation" |
+        "FlowChartManualInput" | "FlowChartManualOperation" | "FlowChartConnector" | "FlowChartPunchedCard" |
+        "FlowChartPunchedTape" | "FlowChartSummingJunction" | "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" |
+        "FlowChartExtract" | "FlowChartMerge" | "FlowChartOfflineStorage" | "FlowChartOnlineStorage" |
+        "FlowChartMagneticTape" | "FlowChartMagneticDisk" | "FlowChartMagneticDrum" | "FlowChartDisplay" |
+        "FlowChartDelay" | "FlowChartAlternateProcess" | "FlowChartOffpageConnector" | "ActionButtonBlank" |
+        "ActionButtonHome" | "ActionButtonHelp" | "ActionButtonInformation" | "ActionButtonForwardNext" |
+        "ActionButtonBackPrevious" | "ActionButtonEnd" | "ActionButtonBeginning" | "ActionButtonReturn" |
+        "ActionButtonDocument" | "ActionButtonSound" | "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" |
+        "MathMinus" | "MathMultiply" | "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" |
+        "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"): Excel.Shape;
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: geometricShapeTypeString
+          description: Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
+          type:
+            - >-
+              "LineInverse" | "Triangle" | "RightTriangle" | "Rectangle" | "Diamond" | "Parallelogram" | "Trapezoid" |
+              "NonIsoscelesTrapezoid" | "Pentagon" | "Hexagon" | "Heptagon" | "Octagon" | "Decagon" | "Dodecagon" |
+              "Star4" | "Star5" | "Star6" | "Star7" | "Star8" | "Star10" | "Star12" | "Star16" | "Star24" | "Star32" |
+              "RoundRectangle" | "Round1Rectangle" | "Round2SameRectangle" | "Round2DiagonalRectangle" |
+              "SnipRoundRectangle" | "Snip1Rectangle" | "Snip2SameRectangle" | "Snip2DiagonalRectangle" | "Plaque" |
+              "Ellipse" | "Teardrop" | "HomePlate" | "Chevron" | "PieWedge" | "Pie" | "BlockArc" | "Donut" | "NoSmoking"
+              | "RightArrow" | "LeftArrow" | "UpArrow" | "DownArrow" | "StripedRightArrow" | "NotchedRightArrow" |
+              "BentUpArrow" | "LeftRightArrow" | "UpDownArrow" | "LeftUpArrow" | "LeftRightUpArrow" | "QuadArrow" |
+              "LeftArrowCallout" | "RightArrowCallout" | "UpArrowCallout" | "DownArrowCallout" | "LeftRightArrowCallout"
+              | "UpDownArrowCallout" | "QuadArrowCallout" | "BentArrow" | "UturnArrow" | "CircularArrow" |
+              "LeftCircularArrow" | "LeftRightCircularArrow" | "CurvedRightArrow" | "CurvedLeftArrow" | "CurvedUpArrow"
+              | "CurvedDownArrow" | "SwooshArrow" | "Cube" | "Can" | "LightningBolt" | "Heart" | "Sun" | "Moon" |
+              "SmileyFace" | "IrregularSeal1" | "IrregularSeal2" | "FoldedCorner" | "Bevel" | "Frame" | "HalfFrame" |
+              "Corner" | "DiagonalStripe" | "Chord" | "Arc" | "LeftBracket" | "RightBracket" | "LeftBrace" |
+              "RightBrace" | "BracketPair" | "BracePair" | "Callout1" | "Callout2" | "Callout3" | "AccentCallout1" |
+              "AccentCallout2" | "AccentCallout3" | "BorderCallout1" | "BorderCallout2" | "BorderCallout3" |
+              "AccentBorderCallout1" | "AccentBorderCallout2" | "AccentBorderCallout3" | "WedgeRectCallout" |
+              "WedgeRRectCallout" | "WedgeEllipseCallout" | "CloudCallout" | "Cloud" | "Ribbon" | "Ribbon2" |
+              "EllipseRibbon" | "EllipseRibbon2" | "LeftRightRibbon" | "VerticalScroll" | "HorizontalScroll" | "Wave" |
+              "DoubleWave" | "Plus" | "FlowChartProcess" | "FlowChartDecision" | "FlowChartInputOutput" |
+              "FlowChartPredefinedProcess" | "FlowChartInternalStorage" | "FlowChartDocument" | "FlowChartMultidocument"
+              | "FlowChartTerminator" | "FlowChartPreparation" | "FlowChartManualInput" | "FlowChartManualOperation" |
+              "FlowChartConnector" | "FlowChartPunchedCard" | "FlowChartPunchedTape" | "FlowChartSummingJunction" |
+              "FlowChartOr" | "FlowChartCollate" | "FlowChartSort" | "FlowChartExtract" | "FlowChartMerge" |
+              "FlowChartOfflineStorage" | "FlowChartOnlineStorage" | "FlowChartMagneticTape" | "FlowChartMagneticDisk" |
+              "FlowChartMagneticDrum" | "FlowChartDisplay" | "FlowChartDelay" | "FlowChartAlternateProcess" |
+              "FlowChartOffpageConnector" | "ActionButtonBlank" | "ActionButtonHome" | "ActionButtonHelp" |
+              "ActionButtonInformation" | "ActionButtonForwardNext" | "ActionButtonBackPrevious" | "ActionButtonEnd" |
+              "ActionButtonBeginning" | "ActionButtonReturn" | "ActionButtonDocument" | "ActionButtonSound" |
+              "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
+              "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
+              "ChartStar" | "ChartPlus"
+  - uid: excel_release.Excel.ShapeCollection.addGroup
+    summary: >-
+      Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of
+      shapes.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addGroup(values)
+    fullName: addGroup(values)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addGroup(values: Array<string | Shape>): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getItem("Shapes");
+              const square = sheet.shapes.getItem("Square");
+              const pentagon = sheet.shapes.getItem("Pentagon");
+              const octagon = sheet.shapes.getItem("Octagon");
+
+              const shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
+              shapeGroup.name = "Group";
+              console.log("Shapes grouped");
+
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: values
+          description: An array of shape ID or shape objects.
+          type:
+            - Array<string | Shape>
+  - uid: excel_release.Excel.ShapeCollection.addImage
+    summary: >-
+      Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that
+      represents the new image.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addImage(base64ImageString)
+    fullName: addImage(base64ImageString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addImage(base64ImageString: string): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          const myFile = <HTMLInputElement>document.getElementById("selectedFile");
+          const reader = new FileReader();
+
+          reader.onload = (event) => {
+              Excel.run((context) => {
+                  const startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
+                  const mybase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
+                  const sheet = context.workbook.worksheets.getItem("Shapes");
+                  const image = sheet.shapes.addImage(mybase64);
+                  image.name = "Image";
+                  return context.sync();
+              });
+          };
+
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(myFile.files[0]);
+          ```
+      parameters:
+        - id: base64ImageString
+          description: A base64-encoded string representing an image in either JPEG or PNG format.
+          type:
+            - string
+  - uid: excel_release.Excel.ShapeCollection.addLine
+    summary: |-
+      Adds a line to worksheet. Returns a Shape object that represents the new line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorType)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorType?:
+        Excel.ConnectorType): Excel.Shape;
+      return:
+        type:
+          - excel.Excel.Shape
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
+              line.name = "StraightLine";
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: startLeft
+          description: 'The distance, in points, from the start of the line to the left side of the worksheet.'
+          type:
+            - number
+        - id: startTop
+          description: 'The distance, in points, from the start of the line to the top of the worksheet.'
+          type:
+            - number
+        - id: endLeft
+          description: 'The distance, in points, from the end of the line to the left of the worksheet.'
+          type:
+            - number
+        - id: endTop
+          description: 'The distance, in points, from the end of the line to the top of the worksheet.'
+          type:
+            - number
+        - id: connectorType
+          description: Represents the connector type. See Excel.ConnectorType for details.
+          type:
+            - excel.Excel.ConnectorType
+  - uid: excel_release.Excel.ShapeCollection.addLine_1
+    summary: |-
+      Adds a line to worksheet. Returns a Shape object that represents the new line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
+    fullName: 'addLine(startLeft, startTop, endLeft, endTop, connectorTypeString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        addLine(startLeft: number, startTop: number, endLeft: number, endTop: number, connectorTypeString?: "Straight" |
+        "Elbow" | "Curve"): Excel.Shape;
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: startLeft
+          description: 'The distance, in points, from the start of the line to the left side of the worksheet.'
+          type:
+            - number
+        - id: startTop
+          description: 'The distance, in points, from the start of the line to the top of the worksheet.'
+          type:
+            - number
+        - id: endLeft
+          description: 'The distance, in points, from the end of the line to the left of the worksheet.'
+          type:
+            - number
+        - id: endTop
+          description: 'The distance, in points, from the end of the line to the top of the worksheet.'
+          type:
+            - number
+        - id: connectorTypeString
+          description: Represents the connector type. See Excel.ConnectorType for details.
+          type:
+            - '"Straight" | "Elbow" | "Curve"'
+  - uid: excel_release.Excel.ShapeCollection.addTextBox
+    summary: >-
+      Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the
+      new text box.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addTextBox(text)
+    fullName: addTextBox(text)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addTextBox(text?: string): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const textbox = shapes.addTextBox("A box with text");
+              textbox.left = 100;
+              textbox.top = 100;
+              textbox.height = 20;
+              textbox.width = 175;
+              textbox.name = "Textbox";
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: text
+          description: Represents the text that will be shown in the created text box.
+          type:
+            - string
+  - uid: excel_release.Excel.ShapeCollection.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel_release.Excel.ShapeCollection.getCount
+    summary: |-
+      Returns the number of shapes in the worksheet. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getCount()
+    fullName: getCount()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getCount(): OfficeExtension.ClientResult<number>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<number>
+        description: ''
+  - uid: excel_release.Excel.ShapeCollection.getItem
+    summary: |-
+      Gets a shape using its Name or ID.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItem(key)
+    fullName: getItem(key)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItem(key: string): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: key
+          description: Name or ID of the shape to be retrieved.
+          type:
+            - string
+  - uid: excel_release.Excel.ShapeCollection.getItemAt
+    summary: |-
+      Gets a shape using its position in the collection.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getItemAt(index)
+    fullName: getItemAt(index)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getItemAt(index: number): Excel.Shape;'
+      return:
+        type:
+          - excel.Excel.Shape
+        description: ''
+      parameters:
+        - id: index
+          description: The zero-based index of the shape to be retrieved.
+          type:
+            - number
+  - uid: excel_release.Excel.ShapeCollection.items
+    summary: Gets the loaded child items in this collection.
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly items: Excel.Shape[];'
+      return:
+        type:
+          - 'Excel.Shape[]'
+  - uid: excel_release.Excel.ShapeCollection.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.ShapeCollection` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ShapeCollection` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeCollection` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        load(option?: Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions):
+        Excel.ShapeCollection;
+      return:
+        type:
+          - excel.Excel.ShapeCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
+  - uid: excel_release.Excel.ShapeCollection.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ShapeCollection;'
+      return:
+        type:
+          - excel.Excel.ShapeCollection
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.ShapeCollection.load_2
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OfficeExtension.LoadOption): Excel.ShapeCollection;'
+      return:
+        type:
+          - excel.Excel.ShapeCollection
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - office.OfficeExtension.LoadOption
+  - uid: excel_release.Excel.ShapeCollection.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original `Excel.ShapeCollection` object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ShapeCollectionData`<!-- -->) that contains an "items" array
+      with shallow copies of any loaded properties from the collection's items.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ShapeCollectionData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeCollectionData
+        description: ''

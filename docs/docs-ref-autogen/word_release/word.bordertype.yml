@@ -1,0 +1,203 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.BorderType
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.BorderType
+    fullName: Word.BorderType
+    langs:
+      - typeScript
+    type: enum
+    package: word_release
+    children:
+      - word_release.Word.BorderType.dashDotStroked
+      - word_release.Word.BorderType.dashed
+      - word_release.Word.BorderType.dashedSmall
+      - word_release.Word.BorderType.dot2Dashed
+      - word_release.Word.BorderType.dotDashed
+      - word_release.Word.BorderType.dotted
+      - word_release.Word.BorderType.double
+      - word_release.Word.BorderType.doubleWave
+      - word_release.Word.BorderType.mixed
+      - word_release.Word.BorderType.none
+      - word_release.Word.BorderType.single
+      - word_release.Word.BorderType.thickThinLarge
+      - word_release.Word.BorderType.thickThinMed
+      - word_release.Word.BorderType.thickThinSmall
+      - word_release.Word.BorderType.thinThickLarge
+      - word_release.Word.BorderType.thinThickMed
+      - word_release.Word.BorderType.thinThickSmall
+      - word_release.Word.BorderType.thinThickThinLarge
+      - word_release.Word.BorderType.thinThickThinMed
+      - word_release.Word.BorderType.thinThickThinSmall
+      - word_release.Word.BorderType.threeDEmboss
+      - word_release.Word.BorderType.threeDEngrave
+      - word_release.Word.BorderType.triple
+      - word_release.Word.BorderType.wave
+  - uid: word_release.Word.BorderType.dashDotStroked
+    name: dashDotStroked
+    fullName: dashDotStroked
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashDotStroked"'
+  - uid: word_release.Word.BorderType.dashed
+    name: dashed
+    fullName: dashed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dashed"'
+  - uid: word_release.Word.BorderType.dashedSmall
+    name: dashedSmall
+    fullName: dashedSmall
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DashedSmall"'
+  - uid: word_release.Word.BorderType.dot2Dashed
+    name: dot2Dashed
+    fullName: dot2Dashed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dot2Dashed"'
+  - uid: word_release.Word.BorderType.dotDashed
+    name: dotDashed
+    fullName: dotDashed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DotDashed"'
+  - uid: word_release.Word.BorderType.dotted
+    name: dotted
+    fullName: dotted
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dotted"'
+  - uid: word_release.Word.BorderType.double
+    name: double
+    fullName: double
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Double"'
+  - uid: word_release.Word.BorderType.doubleWave
+    name: doubleWave
+    fullName: doubleWave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DoubleWave"'
+  - uid: word_release.Word.BorderType.mixed
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: word_release.Word.BorderType.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: word_release.Word.BorderType.single
+    name: single
+    fullName: single
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Single"'
+  - uid: word_release.Word.BorderType.thickThinLarge
+    name: thickThinLarge
+    fullName: thickThinLarge
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThickThinLarge"'
+  - uid: word_release.Word.BorderType.thickThinMed
+    name: thickThinMed
+    fullName: thickThinMed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThickThinMed"'
+  - uid: word_release.Word.BorderType.thickThinSmall
+    name: thickThinSmall
+    fullName: thickThinSmall
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThickThinSmall"'
+  - uid: word_release.Word.BorderType.thinThickLarge
+    name: thinThickLarge
+    fullName: thinThickLarge
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThinThickLarge"'
+  - uid: word_release.Word.BorderType.thinThickMed
+    name: thinThickMed
+    fullName: thinThickMed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThinThickMed"'
+  - uid: word_release.Word.BorderType.thinThickSmall
+    name: thinThickSmall
+    fullName: thinThickSmall
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThinThickSmall"'
+  - uid: word_release.Word.BorderType.thinThickThinLarge
+    name: thinThickThinLarge
+    fullName: thinThickThinLarge
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThinThickThinLarge"'
+  - uid: word_release.Word.BorderType.thinThickThinMed
+    name: thinThickThinMed
+    fullName: thinThickThinMed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThinThickThinMed"'
+  - uid: word_release.Word.BorderType.thinThickThinSmall
+    name: thinThickThinSmall
+    fullName: thinThickThinSmall
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThinThickThinSmall"'
+  - uid: word_release.Word.BorderType.threeDEmboss
+    name: threeDEmboss
+    fullName: threeDEmboss
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeDEmboss"'
+  - uid: word_release.Word.BorderType.threeDEngrave
+    name: threeDEngrave
+    fullName: threeDEngrave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ThreeDEngrave"'
+  - uid: word_release.Word.BorderType.triple
+    name: triple
+    fullName: triple
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Triple"'
+  - uid: word_release.Word.BorderType.wave
+    name: wave
+    fullName: wave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wave"'

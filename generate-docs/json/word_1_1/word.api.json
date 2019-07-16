@@ -1,8 +1,9 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.1.0",
-    "schemaVersion": 1000
+    "toolVersion": "7.3.2",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
   "canonicalReference": "word",
@@ -523,7 +524,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,0)",
+                  "canonicalReference": "(insertBreak:instance,1)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -597,7 +598,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "breakType",
@@ -618,7 +619,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,1)",
+                  "canonicalReference": "(insertBreak:instance,2)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -676,7 +677,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "breakTypeString",
@@ -737,7 +738,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,0)",
+                  "canonicalReference": "(insertFileFromBase64:instance,1)",
                   "docComment": "/**\n * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -811,7 +812,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -832,7 +833,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,1)",
+                  "canonicalReference": "(insertFileFromBase64:instance,2)",
                   "docComment": "/**\n * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -898,7 +899,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -919,7 +920,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,0)",
+                  "canonicalReference": "(insertHtml:instance,1)",
                   "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -993,7 +994,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -1014,7 +1015,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,1)",
+                  "canonicalReference": "(insertHtml:instance,2)",
                   "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1080,7 +1081,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -1101,7 +1102,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,0)",
+                  "canonicalReference": "(insertOoxml:instance,1)",
                   "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1175,7 +1176,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -1196,7 +1197,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,1)",
+                  "canonicalReference": "(insertOoxml:instance,2)",
                   "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1262,7 +1263,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -1283,7 +1284,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,0)",
+                  "canonicalReference": "(insertParagraph:instance,1)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1357,7 +1358,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -1378,7 +1379,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,1)",
+                  "canonicalReference": "(insertParagraph:instance,2)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1444,7 +1445,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -1465,7 +1466,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,0)",
+                  "canonicalReference": "(insertText:instance,1)",
                   "docComment": "/**\n * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1539,7 +1540,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -1560,7 +1561,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,1)",
+                  "canonicalReference": "(insertText:instance,2)",
                   "docComment": "/**\n * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -1626,7 +1627,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -1647,7 +1648,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1713,7 +1714,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -1727,7 +1728,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1777,7 +1778,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -1791,7 +1792,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1857,7 +1858,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -2110,7 +2111,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,0)",
+                  "canonicalReference": "(select:instance,1)",
                   "docComment": "/**\n * Selects the body and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -2160,7 +2161,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "selectionMode",
@@ -2174,7 +2175,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,1)",
+                  "canonicalReference": "(select:instance,2)",
                   "docComment": "/**\n * Selects the body and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -2216,7 +2217,7 @@
                     "endIndex": 7
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "selectionModeString",
@@ -2230,7 +2231,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Body): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -2304,7 +2305,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -2325,7 +2326,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -2375,7 +2376,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -4488,7 +4489,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,0)",
+                  "canonicalReference": "(insertBreak:instance,1)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -4562,7 +4563,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "breakType",
@@ -4583,7 +4584,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,1)",
+                  "canonicalReference": "(insertBreak:instance,2)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -4641,7 +4642,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "breakTypeString",
@@ -4662,7 +4663,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,0)",
+                  "canonicalReference": "(insertFileFromBase64:instance,1)",
                   "docComment": "/**\n * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -4736,7 +4737,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -4757,7 +4758,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,1)",
+                  "canonicalReference": "(insertFileFromBase64:instance,2)",
                   "docComment": "/**\n * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -4823,7 +4824,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -4844,7 +4845,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,0)",
+                  "canonicalReference": "(insertHtml:instance,1)",
                   "docComment": "/**\n * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -4918,7 +4919,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -4939,7 +4940,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,1)",
+                  "canonicalReference": "(insertHtml:instance,2)",
                   "docComment": "/**\n * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5005,7 +5006,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -5026,7 +5027,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,0)",
+                  "canonicalReference": "(insertOoxml:instance,1)",
                   "docComment": "/**\n * Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5100,7 +5101,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -5121,7 +5122,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,1)",
+                  "canonicalReference": "(insertOoxml:instance,2)",
                   "docComment": "/**\n * Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5187,7 +5188,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -5208,7 +5209,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,0)",
+                  "canonicalReference": "(insertParagraph:instance,1)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5282,7 +5283,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -5303,7 +5304,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,1)",
+                  "canonicalReference": "(insertParagraph:instance,2)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5369,7 +5370,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -5390,7 +5391,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,0)",
+                  "canonicalReference": "(insertText:instance,1)",
                   "docComment": "/**\n * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5464,7 +5465,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -5485,7 +5486,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,1)",
+                  "canonicalReference": "(insertText:instance,2)",
                   "docComment": "/**\n * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
@@ -5551,7 +5552,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -5572,7 +5573,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.ContentControl` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.ContentControl` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControl` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5638,7 +5639,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -5652,7 +5653,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5702,7 +5703,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -5716,7 +5717,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5782,7 +5783,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -6095,7 +6096,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,0)",
+                  "canonicalReference": "(select:instance,1)",
                   "docComment": "/**\n * Selects the content control. This causes Word to scroll to the selection.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -6145,7 +6146,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "selectionMode",
@@ -6159,7 +6160,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,1)",
+                  "canonicalReference": "(select:instance,2)",
                   "docComment": "/**\n * Selects the content control. This causes Word to scroll to the selection.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -6201,7 +6202,7 @@
                     "endIndex": 7
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "selectionModeString",
@@ -6215,7 +6216,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.ContentControl): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -6289,7 +6290,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -6310,7 +6311,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -6360,7 +6361,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -7146,7 +7147,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.ContentControlCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.ContentControlCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ContentControlCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7236,7 +7237,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -7250,7 +7251,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7300,7 +7301,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -7314,7 +7315,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -7372,7 +7373,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -8160,7 +8161,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Document` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Document` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Document` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8226,7 +8227,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -8240,7 +8241,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8290,7 +8291,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -8304,7 +8305,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8370,7 +8371,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -8492,7 +8493,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Document): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -8566,7 +8567,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -8587,7 +8588,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -8637,7 +8638,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -9495,7 +9496,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Font` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Font` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Font` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -9561,7 +9562,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -9575,7 +9576,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -9625,7 +9626,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -9639,7 +9640,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -9705,7 +9706,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -9749,7 +9750,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Font): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -9823,7 +9824,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -9844,7 +9845,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -9894,7 +9895,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -10947,7 +10948,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.InlinePicture` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.InlinePicture` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePicture` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11013,7 +11014,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -11027,7 +11028,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11077,7 +11078,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -11091,7 +11092,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11157,7 +11158,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -11243,7 +11244,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.InlinePicture): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -11317,7 +11318,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -11338,7 +11339,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -11388,7 +11389,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -11680,7 +11681,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.InlinePictureCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.InlinePictureCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.InlinePictureCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11770,7 +11771,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -11784,7 +11785,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -11834,7 +11835,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -11848,7 +11849,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -11906,7 +11907,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -24558,7 +24559,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,0)",
+                  "canonicalReference": "(insertBreak:instance,1)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -24632,7 +24633,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "breakType",
@@ -24653,7 +24654,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,1)",
+                  "canonicalReference": "(insertBreak:instance,2)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -24711,7 +24712,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "breakTypeString",
@@ -24772,7 +24773,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,0)",
+                  "canonicalReference": "(insertFileFromBase64:instance,1)",
                   "docComment": "/**\n * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -24846,7 +24847,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -24867,7 +24868,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,1)",
+                  "canonicalReference": "(insertFileFromBase64:instance,2)",
                   "docComment": "/**\n * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -24933,7 +24934,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -24954,7 +24955,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,0)",
+                  "canonicalReference": "(insertHtml:instance,1)",
                   "docComment": "/**\n * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25028,7 +25029,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -25049,7 +25050,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,1)",
+                  "canonicalReference": "(insertHtml:instance,2)",
                   "docComment": "/**\n * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25115,7 +25116,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -25136,7 +25137,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertInlinePictureFromBase64:instance,0)",
+                  "canonicalReference": "(insertInlinePictureFromBase64:instance,1)",
                   "docComment": "/**\n * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25210,7 +25211,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "base64EncodedImage",
@@ -25231,7 +25232,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertInlinePictureFromBase64:instance,1)",
+                  "canonicalReference": "(insertInlinePictureFromBase64:instance,2)",
                   "docComment": "/**\n * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25297,7 +25298,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "base64EncodedImage",
@@ -25318,7 +25319,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,0)",
+                  "canonicalReference": "(insertOoxml:instance,1)",
                   "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25392,7 +25393,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -25413,7 +25414,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,1)",
+                  "canonicalReference": "(insertOoxml:instance,2)",
                   "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25479,7 +25480,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -25500,7 +25501,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,0)",
+                  "canonicalReference": "(insertParagraph:instance,1)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25574,7 +25575,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -25595,7 +25596,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,1)",
+                  "canonicalReference": "(insertParagraph:instance,2)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25661,7 +25662,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -25682,7 +25683,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,0)",
+                  "canonicalReference": "(insertText:instance,1)",
                   "docComment": "/**\n * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25756,7 +25757,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -25777,7 +25778,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,1)",
+                  "canonicalReference": "(insertText:instance,2)",
                   "docComment": "/**\n * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
@@ -25843,7 +25844,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -25984,7 +25985,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26050,7 +26051,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -26064,7 +26065,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26114,7 +26115,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -26128,7 +26129,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26194,7 +26195,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -26465,7 +26466,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,0)",
+                  "canonicalReference": "(select:instance,1)",
                   "docComment": "/**\n * Selects and navigates the Word UI to the paragraph.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -26515,7 +26516,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "selectionMode",
@@ -26529,7 +26530,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,1)",
+                  "canonicalReference": "(select:instance,2)",
                   "docComment": "/**\n * Selects and navigates the Word UI to the paragraph.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -26571,7 +26572,7 @@
                     "endIndex": 7
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "selectionModeString",
@@ -26585,7 +26586,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Paragraph): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -26659,7 +26660,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -26680,7 +26681,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -26730,7 +26731,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -27116,7 +27117,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -27206,7 +27207,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -27220,7 +27221,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -27270,7 +27271,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -27284,7 +27285,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -27342,7 +27343,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -27794,7 +27795,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,0)",
+                  "canonicalReference": "(insertBreak:instance,1)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -27868,7 +27869,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "breakType",
@@ -27889,7 +27890,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertBreak:instance,1)",
+                  "canonicalReference": "(insertBreak:instance,2)",
                   "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -27947,7 +27948,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "breakTypeString",
@@ -28008,7 +28009,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,0)",
+                  "canonicalReference": "(insertFileFromBase64:instance,1)",
                   "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28082,7 +28083,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -28103,7 +28104,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertFileFromBase64:instance,1)",
+                  "canonicalReference": "(insertFileFromBase64:instance,2)",
                   "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28169,7 +28170,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "base64File",
@@ -28190,7 +28191,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,0)",
+                  "canonicalReference": "(insertHtml:instance,1)",
                   "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28264,7 +28265,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -28285,7 +28286,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtml:instance,1)",
+                  "canonicalReference": "(insertHtml:instance,2)",
                   "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28351,7 +28352,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "html",
@@ -28372,7 +28373,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,0)",
+                  "canonicalReference": "(insertOoxml:instance,1)",
                   "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28446,7 +28447,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -28467,7 +28468,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertOoxml:instance,1)",
+                  "canonicalReference": "(insertOoxml:instance,2)",
                   "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28533,7 +28534,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "ooxml",
@@ -28554,7 +28555,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,0)",
+                  "canonicalReference": "(insertParagraph:instance,1)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28628,7 +28629,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -28649,7 +28650,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertParagraph:instance,1)",
+                  "canonicalReference": "(insertParagraph:instance,2)",
                   "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28715,7 +28716,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "paragraphText",
@@ -28736,7 +28737,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,0)",
+                  "canonicalReference": "(insertText:instance,1)",
                   "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28810,7 +28811,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -28831,7 +28832,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertText:instance,1)",
+                  "canonicalReference": "(insertText:instance,2)",
                   "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
@@ -28897,7 +28898,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "text",
@@ -28918,7 +28919,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Range` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Range` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Range` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -28984,7 +28985,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -28998,7 +28999,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -29048,7 +29049,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -29062,7 +29063,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -29128,7 +29129,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -29381,7 +29382,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,0)",
+                  "canonicalReference": "(select:instance,1)",
                   "docComment": "/**\n * Selects and navigates the Word UI to the range.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -29431,7 +29432,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "selectionMode",
@@ -29445,7 +29446,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(select:instance,1)",
+                  "canonicalReference": "(select:instance,2)",
                   "docComment": "/**\n * Selects and navigates the Word UI to the range.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
@@ -29487,7 +29488,7 @@
                     "endIndex": 7
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "selectionModeString",
@@ -29501,7 +29502,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Range): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -29575,7 +29576,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -29596,7 +29597,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -29646,7 +29647,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -29972,7 +29973,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.RangeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.RangeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.RangeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -30062,7 +30063,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -30076,7 +30077,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -30126,7 +30127,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -30140,7 +30141,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -30198,7 +30199,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -30557,7 +30558,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "(:constructor,instance,0)",
+                  "canonicalReference": "(:constructor,0)",
                   "docComment": "/**\n * Constructs a new instance of the `RequestContext` class\n */\n",
                   "excerptTokens": [
                     {
@@ -30581,7 +30582,6 @@
                       "text": ");"
                     }
                   ],
-                  "isStatic": false,
                   "releaseTag": "Public",
                   "overloadIndex": 0,
                   "parameters": [
@@ -30637,7 +30637,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:0)",
+              "canonicalReference": "(run:1)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.\n *\n * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
@@ -30770,7 +30770,7 @@
                 "endIndex": 30
               },
               "releaseTag": "Public",
-              "overloadIndex": 0,
+              "overloadIndex": 1,
               "parameters": [
                 {
                   "parameterName": "objects",
@@ -30787,11 +30787,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:1)",
+              "canonicalReference": "(run:2)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
@@ -30920,7 +30933,7 @@
                 "endIndex": 29
               },
               "releaseTag": "Public",
-              "overloadIndex": 1,
+              "overloadIndex": 2,
               "parameters": [
                 {
                   "parameterName": "object",
@@ -30937,11 +30950,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:2)",
+              "canonicalReference": "(run:3)",
               "docComment": "/**\n * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @remarks\n *\n * In addition to this signature, the method also has the following signatures, which allow you to resume using the request context of previously created objects:\n *\n * run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;\n *\n * run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;\n *\n * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
@@ -31046,13 +31072,26 @@
                 "endIndex": 23
               },
               "releaseTag": "Public",
-              "overloadIndex": 2,
+              "overloadIndex": 3,
               "parameters": [
                 {
                   "parameterName": "batch",
                   "parameterTypeTokenRange": {
                     "startIndex": 7,
                     "endIndex": 18
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
                   }
                 }
               ],
@@ -31187,7 +31226,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.SearchOptions` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.SearchOptions` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SearchOptions` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -31253,7 +31292,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -31267,7 +31306,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -31317,7 +31356,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -31331,7 +31370,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -31397,7 +31436,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -31667,7 +31706,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.SearchOptions): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -31741,7 +31780,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -31762,7 +31801,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -31812,7 +31851,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -31990,7 +32029,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(getFooter:instance,0)",
+                  "canonicalReference": "(getFooter:instance,1)",
                   "docComment": "/**\n * Gets one of the section's footers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
                   "excerptTokens": [
                     {
@@ -32048,7 +32087,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "type",
@@ -32062,7 +32101,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(getFooter:instance,1)",
+                  "canonicalReference": "(getFooter:instance,2)",
                   "docComment": "/**\n * Gets one of the section's footers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param typeString - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
                   "excerptTokens": [
                     {
@@ -32112,7 +32151,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "typeString",
@@ -32126,7 +32165,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(getHeader:instance,0)",
+                  "canonicalReference": "(getHeader:instance,1)",
                   "docComment": "/**\n * Gets one of the section's headers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
                   "excerptTokens": [
                     {
@@ -32184,7 +32223,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "type",
@@ -32198,7 +32237,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(getHeader:instance,1)",
+                  "canonicalReference": "(getHeader:instance,2)",
                   "docComment": "/**\n * Gets one of the section's headers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param typeString - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
                   "excerptTokens": [
                     {
@@ -32248,7 +32287,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "typeString",
@@ -32262,7 +32301,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -32328,7 +32367,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -32342,7 +32381,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -32392,7 +32431,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -32406,7 +32445,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -32472,7 +32511,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -32486,7 +32525,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: Word.Section): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -32560,7 +32599,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -32581,7 +32620,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -32631,7 +32670,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -32893,7 +32932,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): Word.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): Word.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -32983,7 +33022,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -32997,7 +33036,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -33047,7 +33086,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -33061,7 +33100,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -33119,7 +33158,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",

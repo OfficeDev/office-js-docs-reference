@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ThreeSignsSet
+    name: Excel.ThreeSignsSet
+    fullName: Excel.ThreeSignsSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.ThreeSignsSet.greenCircle
+      - excel_release.Excel.ThreeSignsSet.redDiamond
+      - excel_release.Excel.ThreeSignsSet.yellowTriangle
+  - uid: excel_release.Excel.ThreeSignsSet.greenCircle
+    name: greenCircle
+    fullName: greenCircle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'greenCircle: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.ThreeSignsSet.redDiamond
+    name: redDiamond
+    fullName: redDiamond
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'redDiamond: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.ThreeSignsSet.yellowTriangle
+    name: yellowTriangle
+    fullName: yellowTriangle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'yellowTriangle: Icon;'
+      return:
+        type:
+          - Icon

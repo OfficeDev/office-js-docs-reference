@@ -27,14 +27,12 @@ items:
       - word.Word.TableRow.getNext
       - word.Word.TableRow.getNextOrNullObject
       - word.Word.TableRow.horizontalAlignment
-      - word.Word.TableRow.insertContentControl
       - word.Word.TableRow.insertRows
       - word.Word.TableRow.insertRows_1
       - word.Word.TableRow.isHeader
       - word.Word.TableRow.load
       - word.Word.TableRow.load_1
       - word.Word.TableRow.load_2
-      - word.Word.TableRow.merge
       - word.Word.TableRow.parentTable
       - word.Word.TableRow.preferredHeight
       - word.Word.TableRow.rowIndex
@@ -279,25 +277,6 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.TableRow.insertContentControl
-    summary: >-
-      Inserts a content control on the row.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: insertContentControl()
-    fullName: insertContentControl()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'insertContentControl(): Word.ContentControl;'
-      return:
-        type:
-          - word.Word.ContentControl
-        description: ''
   - uid: word.Word.TableRow.insertRows
     summary: |-
       Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.
@@ -459,25 +438,6 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.TableRow.merge
-    summary: >-
-      Merges the row into one cell.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: merge()
-    fullName: merge()
-    langs:
-      - typeScript
-    type: method
-    syntax:
-      content: 'merge(): Word.TableCell;'
-      return:
-        type:
-          - word.Word.TableCell
-        description: ''
   - uid: word.Word.TableRow.parentTable
     summary: |-
       Gets parent table. Read-only.

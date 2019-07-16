@@ -13,7 +13,6 @@ items:
       - word.Word.Interfaces.InlinePictureData.altTextTitle
       - word.Word.Interfaces.InlinePictureData.height
       - word.Word.Interfaces.InlinePictureData.hyperlink
-      - word.Word.Interfaces.InlinePictureData.imageFormat
       - word.Word.Interfaces.InlinePictureData.lockAspectRatio
       - word.Word.Interfaces.InlinePictureData.width
   - uid: word.Word.Interfaces.InlinePictureData.altTextDescription
@@ -76,28 +75,6 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.InlinePictureData.imageFormat
-    summary: >-
-      Gets the format of the inline image. Read-only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: imageFormat
-    fullName: imageFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: >-
-        imageFormat?: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon"
-        | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
-      return:
-        type:
-          - >-
-            Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" |
-            "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
   - uid: word.Word.Interfaces.InlinePictureData.lockAspectRatio
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.

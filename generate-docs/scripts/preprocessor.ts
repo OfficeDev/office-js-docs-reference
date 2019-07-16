@@ -129,7 +129,7 @@ tryCatch(async () => {
     console.log("\ncreate file: word.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other", true)
     );
 
     // ----

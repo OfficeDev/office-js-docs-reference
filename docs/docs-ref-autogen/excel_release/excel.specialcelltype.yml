@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.SpecialCellType
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.SpecialCellType
+    fullName: Excel.SpecialCellType
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.SpecialCellType.blanks
+      - excel_release.Excel.SpecialCellType.conditionalFormats
+      - excel_release.Excel.SpecialCellType.constants
+      - excel_release.Excel.SpecialCellType.dataValidations
+      - excel_release.Excel.SpecialCellType.formulas
+      - excel_release.Excel.SpecialCellType.sameConditionalFormat
+      - excel_release.Excel.SpecialCellType.sameDataValidation
+      - excel_release.Excel.SpecialCellType.visible
+  - uid: excel_release.Excel.SpecialCellType.blanks
+    summary: Cells with no content.
+    name: blanks
+    fullName: blanks
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Blanks"'
+  - uid: excel_release.Excel.SpecialCellType.conditionalFormats
+    summary: All cells with conditional formats
+    name: conditionalFormats
+    fullName: conditionalFormats
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ConditionalFormats"'
+  - uid: excel_release.Excel.SpecialCellType.constants
+    summary: Cells containing constants.
+    name: constants
+    fullName: constants
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Constants"'
+  - uid: excel_release.Excel.SpecialCellType.dataValidations
+    summary: Cells having validation criteria.
+    name: dataValidations
+    fullName: dataValidations
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DataValidations"'
+  - uid: excel_release.Excel.SpecialCellType.formulas
+    summary: Cells containing formulas.
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formulas"'
+  - uid: excel_release.Excel.SpecialCellType.sameConditionalFormat
+    summary: Cells having the same conditional format as the first cell in the range.
+    name: sameConditionalFormat
+    fullName: sameConditionalFormat
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SameConditionalFormat"'
+  - uid: excel_release.Excel.SpecialCellType.sameDataValidation
+    summary: Cells having the same data validation criteria as the first cell in the range.
+    name: sameDataValidation
+    fullName: sameDataValidation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SameDataValidation"'
+  - uid: excel_release.Excel.SpecialCellType.visible
+    summary: Cells that are visible.
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Visible"'

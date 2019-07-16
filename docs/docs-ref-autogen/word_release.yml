@@ -1,0 +1,537 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release
+    name: word_release
+    fullName: word_release
+    langs:
+      - typeScript
+    type: package
+    children:
+      - word_release.Word.Alignment
+      - word_release.Word.Application
+      - word_release.Word.Body
+      - word_release.Word.BodyType
+      - word_release.Word.BorderLocation
+      - word_release.Word.BorderType
+      - word_release.Word.BreakType
+      - word_release.Word.CellPaddingLocation
+      - word_release.Word.ContentControl
+      - word_release.Word.ContentControlAppearance
+      - word_release.Word.ContentControlCollection
+      - word_release.Word.ContentControlType
+      - word_release.Word.CustomProperty
+      - word_release.Word.CustomPropertyCollection
+      - word_release.Word.Document
+      - word_release.Word.DocumentCreated
+      - word_release.Word.DocumentProperties
+      - word_release.Word.DocumentPropertyType
+      - word_release.Word.ErrorCodes
+      - word_release.Word.EventType
+      - word_release.Word.FileContentFormat
+      - word_release.Word.Font
+      - word_release.Word.HeaderFooterType
+      - word_release.Word.ImageFormat
+      - word_release.Word.InlinePicture
+      - word_release.Word.InlinePictureCollection
+      - word_release.Word.InsertLocation
+      - word_release.Word.Interfaces.BodyData
+      - word_release.Word.Interfaces.BodyLoadOptions
+      - word_release.Word.Interfaces.BodyUpdateData
+      - word_release.Word.Interfaces.CollectionLoadOptions
+      - word_release.Word.Interfaces.ContentControlCollectionData
+      - word_release.Word.Interfaces.ContentControlCollectionLoadOptions
+      - word_release.Word.Interfaces.ContentControlCollectionUpdateData
+      - word_release.Word.Interfaces.ContentControlData
+      - word_release.Word.Interfaces.ContentControlLoadOptions
+      - word_release.Word.Interfaces.ContentControlUpdateData
+      - word_release.Word.Interfaces.CustomPropertyCollectionData
+      - word_release.Word.Interfaces.CustomPropertyCollectionLoadOptions
+      - word_release.Word.Interfaces.CustomPropertyCollectionUpdateData
+      - word_release.Word.Interfaces.CustomPropertyData
+      - word_release.Word.Interfaces.CustomPropertyLoadOptions
+      - word_release.Word.Interfaces.CustomPropertyUpdateData
+      - word_release.Word.Interfaces.DocumentCreatedData
+      - word_release.Word.Interfaces.DocumentCreatedLoadOptions
+      - word_release.Word.Interfaces.DocumentCreatedUpdateData
+      - word_release.Word.Interfaces.DocumentData
+      - word_release.Word.Interfaces.DocumentLoadOptions
+      - word_release.Word.Interfaces.DocumentPropertiesData
+      - word_release.Word.Interfaces.DocumentPropertiesLoadOptions
+      - word_release.Word.Interfaces.DocumentPropertiesUpdateData
+      - word_release.Word.Interfaces.DocumentUpdateData
+      - word_release.Word.Interfaces.FontData
+      - word_release.Word.Interfaces.FontLoadOptions
+      - word_release.Word.Interfaces.FontUpdateData
+      - word_release.Word.Interfaces.InlinePictureCollectionData
+      - word_release.Word.Interfaces.InlinePictureCollectionLoadOptions
+      - word_release.Word.Interfaces.InlinePictureCollectionUpdateData
+      - word_release.Word.Interfaces.InlinePictureData
+      - word_release.Word.Interfaces.InlinePictureLoadOptions
+      - word_release.Word.Interfaces.InlinePictureUpdateData
+      - word_release.Word.Interfaces.ListCollectionData
+      - word_release.Word.Interfaces.ListCollectionLoadOptions
+      - word_release.Word.Interfaces.ListCollectionUpdateData
+      - word_release.Word.Interfaces.ListData
+      - word_release.Word.Interfaces.ListItemData
+      - word_release.Word.Interfaces.ListItemLoadOptions
+      - word_release.Word.Interfaces.ListItemUpdateData
+      - word_release.Word.Interfaces.ListLoadOptions
+      - word_release.Word.Interfaces.ParagraphCollectionData
+      - word_release.Word.Interfaces.ParagraphCollectionLoadOptions
+      - word_release.Word.Interfaces.ParagraphCollectionUpdateData
+      - word_release.Word.Interfaces.ParagraphData
+      - word_release.Word.Interfaces.ParagraphLoadOptions
+      - word_release.Word.Interfaces.ParagraphUpdateData
+      - word_release.Word.Interfaces.RangeCollectionData
+      - word_release.Word.Interfaces.RangeCollectionLoadOptions
+      - word_release.Word.Interfaces.RangeCollectionUpdateData
+      - word_release.Word.Interfaces.RangeData
+      - word_release.Word.Interfaces.RangeLoadOptions
+      - word_release.Word.Interfaces.RangeUpdateData
+      - word_release.Word.Interfaces.SearchOptionsData
+      - word_release.Word.Interfaces.SearchOptionsLoadOptions
+      - word_release.Word.Interfaces.SearchOptionsUpdateData
+      - word_release.Word.Interfaces.SectionCollectionData
+      - word_release.Word.Interfaces.SectionCollectionLoadOptions
+      - word_release.Word.Interfaces.SectionCollectionUpdateData
+      - word_release.Word.Interfaces.SectionData
+      - word_release.Word.Interfaces.SectionLoadOptions
+      - word_release.Word.Interfaces.SectionUpdateData
+      - word_release.Word.Interfaces.TableBorderData
+      - word_release.Word.Interfaces.TableBorderLoadOptions
+      - word_release.Word.Interfaces.TableBorderUpdateData
+      - word_release.Word.Interfaces.TableCellCollectionData
+      - word_release.Word.Interfaces.TableCellCollectionLoadOptions
+      - word_release.Word.Interfaces.TableCellCollectionUpdateData
+      - word_release.Word.Interfaces.TableCellData
+      - word_release.Word.Interfaces.TableCellLoadOptions
+      - word_release.Word.Interfaces.TableCellUpdateData
+      - word_release.Word.Interfaces.TableCollectionData
+      - word_release.Word.Interfaces.TableCollectionLoadOptions
+      - word_release.Word.Interfaces.TableCollectionUpdateData
+      - word_release.Word.Interfaces.TableData
+      - word_release.Word.Interfaces.TableLoadOptions
+      - word_release.Word.Interfaces.TableRowCollectionData
+      - word_release.Word.Interfaces.TableRowCollectionLoadOptions
+      - word_release.Word.Interfaces.TableRowCollectionUpdateData
+      - word_release.Word.Interfaces.TableRowData
+      - word_release.Word.Interfaces.TableRowLoadOptions
+      - word_release.Word.Interfaces.TableRowUpdateData
+      - word_release.Word.Interfaces.TableUpdateData
+      - word_release.Word.List
+      - word_release.Word.ListBullet
+      - word_release.Word.ListCollection
+      - word_release.Word.ListItem
+      - word_release.Word.ListLevelType
+      - word_release.Word.ListNumbering
+      - word_release.Word.LocationRelation
+      - word_release.Word.Paragraph
+      - word_release.Word.ParagraphCollection
+      - word_release.Word.Range
+      - word_release.Word.RangeCollection
+      - word_release.Word.RangeLocation
+      - word_release.Word.RequestContext
+      - word_release.Word.run
+      - word_release.Word.run_1
+      - word_release.Word.run_2
+      - word_release.Word.SearchOptions
+      - word_release.Word.Section
+      - word_release.Word.SectionCollection
+      - word_release.Word.SelectionMode
+      - word_release.Word.Style
+      - word_release.Word.Table
+      - word_release.Word.TableBorder
+      - word_release.Word.TableCell
+      - word_release.Word.TableCellCollection
+      - word_release.Word.TableCollection
+      - word_release.Word.TableRow
+      - word_release.Word.TableRowCollection
+      - word_release.Word.TapObjectType
+      - word_release.Word.UnderlineType
+      - word_release.Word.VerticalAlignment
+  - uid: word_release.Word.run
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using the RequestContext of previously
+      created API objects.
+    name: Word.run
+    fullName: Word.run
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: objects
+          description: >-
+            An array of previously created API objects. The array will be validated to make sure that all of the objects
+            share the same context. The batch will use this shared RequestContext, which means that any changes applied
+            to these objects will be picked up by "context.sync()".
+          type:
+            - 'OfficeExtension.ClientObject[]'
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type:
+            - '(context: Word.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
+  - uid: word_release.Word.run_1
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously
+      created API object. When the promise is resolved, any tracked objects that were automatically allocated during
+      execution will be released.
+    name: Word.run_1
+    fullName: Word.run_1
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: >-
+        export function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) =>
+        Promise<T>): Promise<T>;
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: object
+          description: >-
+            A previously created API object. The batch will use the same RequestContext as the passed-in object, which
+            means that any changes applied to the object will be picked up by "context.sync()".
+          type:
+            - office.OfficeExtension.ClientObject
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type:
+            - '(context: Word.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
+  - uid: word_release.Word.run_2
+    summary: >-
+      Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the
+      promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+    remarks: >-
+      In addition to this signature, the method also has the following signatures, which allow you to resume using the
+      request context of previously created objects:
+
+
+      run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) =<!-- -->&gt; Promise<T>):
+      Promise<T>;
+
+
+      run<T>(objects: OfficeExtension.ClientObject\[\], batch: (context: Word.RequestContext) =<!-- -->&gt; Promise<T>):
+      Promise<T>;
+    name: Word.run_2
+    fullName: Word.run_2
+    langs:
+      - typeScript
+    type: function
+    syntax:
+      content: 'export function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;'
+      return:
+        type:
+          - Promise<T>
+        description: ''
+      parameters:
+        - id: batch
+          description: >-
+            A function that takes in a RequestContext and returns a promise (typically, just the result of
+            "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office
+            add-in and the Word application run in two different processes, the RequestContext is required to get access
+            to the Word object model from the add-in.
+          type:
+            - '(context: Word.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
+references:
+  - uid: word_release.Word.Alignment
+    name: Word.Alignment
+  - uid: word_release.Word.Application
+    name: Word.Application
+  - uid: word_release.Word.Body
+    name: Word.Body
+  - uid: word_release.Word.BodyType
+    name: Word.BodyType
+  - uid: word_release.Word.BorderLocation
+    name: Word.BorderLocation
+  - uid: word_release.Word.BorderType
+    name: Word.BorderType
+  - uid: word_release.Word.BreakType
+    name: Word.BreakType
+  - uid: word_release.Word.CellPaddingLocation
+    name: Word.CellPaddingLocation
+  - uid: word_release.Word.ContentControl
+    name: Word.ContentControl
+  - uid: word_release.Word.ContentControlAppearance
+    name: Word.ContentControlAppearance
+  - uid: word_release.Word.ContentControlCollection
+    name: Word.ContentControlCollection
+  - uid: word_release.Word.ContentControlType
+    name: Word.ContentControlType
+  - uid: word_release.Word.CustomProperty
+    name: Word.CustomProperty
+  - uid: word_release.Word.CustomPropertyCollection
+    name: Word.CustomPropertyCollection
+  - uid: word_release.Word.Document
+    name: Word.Document
+  - uid: word_release.Word.DocumentCreated
+    name: Word.DocumentCreated
+  - uid: word_release.Word.DocumentProperties
+    name: Word.DocumentProperties
+  - uid: word_release.Word.DocumentPropertyType
+    name: Word.DocumentPropertyType
+  - uid: word_release.Word.ErrorCodes
+    name: Word.ErrorCodes
+  - uid: word_release.Word.EventType
+    name: Word.EventType
+  - uid: word_release.Word.FileContentFormat
+    name: Word.FileContentFormat
+  - uid: word_release.Word.Font
+    name: Word.Font
+  - uid: word_release.Word.HeaderFooterType
+    name: Word.HeaderFooterType
+  - uid: word_release.Word.ImageFormat
+    name: Word.ImageFormat
+  - uid: word_release.Word.InlinePicture
+    name: Word.InlinePicture
+  - uid: word_release.Word.InlinePictureCollection
+    name: Word.InlinePictureCollection
+  - uid: word_release.Word.InsertLocation
+    name: Word.InsertLocation
+  - uid: word_release.Word.Interfaces.BodyData
+    name: Word.Interfaces.BodyData
+  - uid: word_release.Word.Interfaces.BodyLoadOptions
+    name: Word.Interfaces.BodyLoadOptions
+  - uid: word_release.Word.Interfaces.BodyUpdateData
+    name: Word.Interfaces.BodyUpdateData
+  - uid: word_release.Word.Interfaces.CollectionLoadOptions
+    name: Word.Interfaces.CollectionLoadOptions
+  - uid: word_release.Word.Interfaces.ContentControlCollectionData
+    name: Word.Interfaces.ContentControlCollectionData
+  - uid: word_release.Word.Interfaces.ContentControlCollectionLoadOptions
+    name: Word.Interfaces.ContentControlCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.ContentControlCollectionUpdateData
+    name: Word.Interfaces.ContentControlCollectionUpdateData
+  - uid: word_release.Word.Interfaces.ContentControlData
+    name: Word.Interfaces.ContentControlData
+  - uid: word_release.Word.Interfaces.ContentControlLoadOptions
+    name: Word.Interfaces.ContentControlLoadOptions
+  - uid: word_release.Word.Interfaces.ContentControlUpdateData
+    name: Word.Interfaces.ContentControlUpdateData
+  - uid: word_release.Word.Interfaces.CustomPropertyCollectionData
+    name: Word.Interfaces.CustomPropertyCollectionData
+  - uid: word_release.Word.Interfaces.CustomPropertyCollectionLoadOptions
+    name: Word.Interfaces.CustomPropertyCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.CustomPropertyCollectionUpdateData
+    name: Word.Interfaces.CustomPropertyCollectionUpdateData
+  - uid: word_release.Word.Interfaces.CustomPropertyData
+    name: Word.Interfaces.CustomPropertyData
+  - uid: word_release.Word.Interfaces.CustomPropertyLoadOptions
+    name: Word.Interfaces.CustomPropertyLoadOptions
+  - uid: word_release.Word.Interfaces.CustomPropertyUpdateData
+    name: Word.Interfaces.CustomPropertyUpdateData
+  - uid: word_release.Word.Interfaces.DocumentCreatedData
+    name: Word.Interfaces.DocumentCreatedData
+  - uid: word_release.Word.Interfaces.DocumentCreatedLoadOptions
+    name: Word.Interfaces.DocumentCreatedLoadOptions
+  - uid: word_release.Word.Interfaces.DocumentCreatedUpdateData
+    name: Word.Interfaces.DocumentCreatedUpdateData
+  - uid: word_release.Word.Interfaces.DocumentData
+    name: Word.Interfaces.DocumentData
+  - uid: word_release.Word.Interfaces.DocumentLoadOptions
+    name: Word.Interfaces.DocumentLoadOptions
+  - uid: word_release.Word.Interfaces.DocumentPropertiesData
+    name: Word.Interfaces.DocumentPropertiesData
+  - uid: word_release.Word.Interfaces.DocumentPropertiesLoadOptions
+    name: Word.Interfaces.DocumentPropertiesLoadOptions
+  - uid: word_release.Word.Interfaces.DocumentPropertiesUpdateData
+    name: Word.Interfaces.DocumentPropertiesUpdateData
+  - uid: word_release.Word.Interfaces.DocumentUpdateData
+    name: Word.Interfaces.DocumentUpdateData
+  - uid: word_release.Word.Interfaces.FontData
+    name: Word.Interfaces.FontData
+  - uid: word_release.Word.Interfaces.FontLoadOptions
+    name: Word.Interfaces.FontLoadOptions
+  - uid: word_release.Word.Interfaces.FontUpdateData
+    name: Word.Interfaces.FontUpdateData
+  - uid: word_release.Word.Interfaces.InlinePictureCollectionData
+    name: Word.Interfaces.InlinePictureCollectionData
+  - uid: word_release.Word.Interfaces.InlinePictureCollectionLoadOptions
+    name: Word.Interfaces.InlinePictureCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.InlinePictureCollectionUpdateData
+    name: Word.Interfaces.InlinePictureCollectionUpdateData
+  - uid: word_release.Word.Interfaces.InlinePictureData
+    name: Word.Interfaces.InlinePictureData
+  - uid: word_release.Word.Interfaces.InlinePictureLoadOptions
+    name: Word.Interfaces.InlinePictureLoadOptions
+  - uid: word_release.Word.Interfaces.InlinePictureUpdateData
+    name: Word.Interfaces.InlinePictureUpdateData
+  - uid: word_release.Word.Interfaces.ListCollectionData
+    name: Word.Interfaces.ListCollectionData
+  - uid: word_release.Word.Interfaces.ListCollectionLoadOptions
+    name: Word.Interfaces.ListCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.ListCollectionUpdateData
+    name: Word.Interfaces.ListCollectionUpdateData
+  - uid: word_release.Word.Interfaces.ListData
+    name: Word.Interfaces.ListData
+  - uid: word_release.Word.Interfaces.ListItemData
+    name: Word.Interfaces.ListItemData
+  - uid: word_release.Word.Interfaces.ListItemLoadOptions
+    name: Word.Interfaces.ListItemLoadOptions
+  - uid: word_release.Word.Interfaces.ListItemUpdateData
+    name: Word.Interfaces.ListItemUpdateData
+  - uid: word_release.Word.Interfaces.ListLoadOptions
+    name: Word.Interfaces.ListLoadOptions
+  - uid: word_release.Word.Interfaces.ParagraphCollectionData
+    name: Word.Interfaces.ParagraphCollectionData
+  - uid: word_release.Word.Interfaces.ParagraphCollectionLoadOptions
+    name: Word.Interfaces.ParagraphCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.ParagraphCollectionUpdateData
+    name: Word.Interfaces.ParagraphCollectionUpdateData
+  - uid: word_release.Word.Interfaces.ParagraphData
+    name: Word.Interfaces.ParagraphData
+  - uid: word_release.Word.Interfaces.ParagraphLoadOptions
+    name: Word.Interfaces.ParagraphLoadOptions
+  - uid: word_release.Word.Interfaces.ParagraphUpdateData
+    name: Word.Interfaces.ParagraphUpdateData
+  - uid: word_release.Word.Interfaces.RangeCollectionData
+    name: Word.Interfaces.RangeCollectionData
+  - uid: word_release.Word.Interfaces.RangeCollectionLoadOptions
+    name: Word.Interfaces.RangeCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.RangeCollectionUpdateData
+    name: Word.Interfaces.RangeCollectionUpdateData
+  - uid: word_release.Word.Interfaces.RangeData
+    name: Word.Interfaces.RangeData
+  - uid: word_release.Word.Interfaces.RangeLoadOptions
+    name: Word.Interfaces.RangeLoadOptions
+  - uid: word_release.Word.Interfaces.RangeUpdateData
+    name: Word.Interfaces.RangeUpdateData
+  - uid: word_release.Word.Interfaces.SearchOptionsData
+    name: Word.Interfaces.SearchOptionsData
+  - uid: word_release.Word.Interfaces.SearchOptionsLoadOptions
+    name: Word.Interfaces.SearchOptionsLoadOptions
+  - uid: word_release.Word.Interfaces.SearchOptionsUpdateData
+    name: Word.Interfaces.SearchOptionsUpdateData
+  - uid: word_release.Word.Interfaces.SectionCollectionData
+    name: Word.Interfaces.SectionCollectionData
+  - uid: word_release.Word.Interfaces.SectionCollectionLoadOptions
+    name: Word.Interfaces.SectionCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.SectionCollectionUpdateData
+    name: Word.Interfaces.SectionCollectionUpdateData
+  - uid: word_release.Word.Interfaces.SectionData
+    name: Word.Interfaces.SectionData
+  - uid: word_release.Word.Interfaces.SectionLoadOptions
+    name: Word.Interfaces.SectionLoadOptions
+  - uid: word_release.Word.Interfaces.SectionUpdateData
+    name: Word.Interfaces.SectionUpdateData
+  - uid: word_release.Word.Interfaces.TableBorderData
+    name: Word.Interfaces.TableBorderData
+  - uid: word_release.Word.Interfaces.TableBorderLoadOptions
+    name: Word.Interfaces.TableBorderLoadOptions
+  - uid: word_release.Word.Interfaces.TableBorderUpdateData
+    name: Word.Interfaces.TableBorderUpdateData
+  - uid: word_release.Word.Interfaces.TableCellCollectionData
+    name: Word.Interfaces.TableCellCollectionData
+  - uid: word_release.Word.Interfaces.TableCellCollectionLoadOptions
+    name: Word.Interfaces.TableCellCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.TableCellCollectionUpdateData
+    name: Word.Interfaces.TableCellCollectionUpdateData
+  - uid: word_release.Word.Interfaces.TableCellData
+    name: Word.Interfaces.TableCellData
+  - uid: word_release.Word.Interfaces.TableCellLoadOptions
+    name: Word.Interfaces.TableCellLoadOptions
+  - uid: word_release.Word.Interfaces.TableCellUpdateData
+    name: Word.Interfaces.TableCellUpdateData
+  - uid: word_release.Word.Interfaces.TableCollectionData
+    name: Word.Interfaces.TableCollectionData
+  - uid: word_release.Word.Interfaces.TableCollectionLoadOptions
+    name: Word.Interfaces.TableCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.TableCollectionUpdateData
+    name: Word.Interfaces.TableCollectionUpdateData
+  - uid: word_release.Word.Interfaces.TableData
+    name: Word.Interfaces.TableData
+  - uid: word_release.Word.Interfaces.TableLoadOptions
+    name: Word.Interfaces.TableLoadOptions
+  - uid: word_release.Word.Interfaces.TableRowCollectionData
+    name: Word.Interfaces.TableRowCollectionData
+  - uid: word_release.Word.Interfaces.TableRowCollectionLoadOptions
+    name: Word.Interfaces.TableRowCollectionLoadOptions
+  - uid: word_release.Word.Interfaces.TableRowCollectionUpdateData
+    name: Word.Interfaces.TableRowCollectionUpdateData
+  - uid: word_release.Word.Interfaces.TableRowData
+    name: Word.Interfaces.TableRowData
+  - uid: word_release.Word.Interfaces.TableRowLoadOptions
+    name: Word.Interfaces.TableRowLoadOptions
+  - uid: word_release.Word.Interfaces.TableRowUpdateData
+    name: Word.Interfaces.TableRowUpdateData
+  - uid: word_release.Word.Interfaces.TableUpdateData
+    name: Word.Interfaces.TableUpdateData
+  - uid: word_release.Word.List
+    name: Word.List
+  - uid: word_release.Word.ListBullet
+    name: Word.ListBullet
+  - uid: word_release.Word.ListCollection
+    name: Word.ListCollection
+  - uid: word_release.Word.ListItem
+    name: Word.ListItem
+  - uid: word_release.Word.ListLevelType
+    name: Word.ListLevelType
+  - uid: word_release.Word.ListNumbering
+    name: Word.ListNumbering
+  - uid: word_release.Word.LocationRelation
+    name: Word.LocationRelation
+  - uid: word_release.Word.Paragraph
+    name: Word.Paragraph
+  - uid: word_release.Word.ParagraphCollection
+    name: Word.ParagraphCollection
+  - uid: word_release.Word.Range
+    name: Word.Range
+  - uid: word_release.Word.RangeCollection
+    name: Word.RangeCollection
+  - uid: word_release.Word.RangeLocation
+    name: Word.RangeLocation
+  - uid: word_release.Word.RequestContext
+    name: Word.RequestContext
+  - uid: word_release.Word.SearchOptions
+    name: Word.SearchOptions
+  - uid: word_release.Word.Section
+    name: Word.Section
+  - uid: word_release.Word.SectionCollection
+    name: Word.SectionCollection
+  - uid: word_release.Word.SelectionMode
+    name: Word.SelectionMode
+  - uid: word_release.Word.Style
+    name: Word.Style
+  - uid: word_release.Word.Table
+    name: Word.Table
+  - uid: word_release.Word.TableBorder
+    name: Word.TableBorder
+  - uid: word_release.Word.TableCell
+    name: Word.TableCell
+  - uid: word_release.Word.TableCellCollection
+    name: Word.TableCellCollection
+  - uid: word_release.Word.TableCollection
+    name: Word.TableCollection
+  - uid: word_release.Word.TableRow
+    name: Word.TableRow
+  - uid: word_release.Word.TableRowCollection
+    name: Word.TableRowCollection
+  - uid: word_release.Word.TapObjectType
+    name: Word.TapObjectType
+  - uid: word_release.Word.UnderlineType
+    name: Word.UnderlineType
+  - uid: word_release.Word.VerticalAlignment
+    name: Word.VerticalAlignment

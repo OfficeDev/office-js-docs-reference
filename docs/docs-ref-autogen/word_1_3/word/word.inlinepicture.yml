@@ -25,7 +25,6 @@ items:
       - word.Word.InlinePicture.getRange_1
       - word.Word.InlinePicture.height
       - word.Word.InlinePicture.hyperlink
-      - word.Word.InlinePicture.imageFormat
       - word.Word.InlinePicture.insertBreak
       - word.Word.InlinePicture.insertBreak_1
       - word.Word.InlinePicture.insertContentControl
@@ -322,28 +321,6 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.InlinePicture.imageFormat
-    summary: >-
-      Gets the format of the inline image. Read-only.
-
-
-      \[ [API set: WordApi BETA (PREVIEW
-      ONLY)](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    isPreview: true
-    name: imageFormat
-    fullName: imageFormat
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: >-
-        readonly imageFormat: Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" |
-        "Icon" | "Exif" | "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg";
-      return:
-        type:
-          - >-
-            Word.ImageFormat | "Unsupported" | "Undefined" | "Bmp" | "Jpeg" | "Gif" | "Tiff" | "Png" | "Icon" | "Exif" |
-            "Wmf" | "Emf" | "Pict" | "Pdf" | "Svg"
   - uid: word.Word.InlinePicture.insertBreak
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or

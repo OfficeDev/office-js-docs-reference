@@ -1774,6 +1774,8 @@ items:
             coercionType parameter. (See Remarks for more information about data coercion.)
           type:
             - '(result: AsyncResult<T>) => void'
+      typeParameters:
+        - id: T
   - uid: office.Office.Document.getSelectedDataAsync_1
     summary: Reads the data contained in the current selection in the document.
     remarks: >-
@@ -1855,6 +1857,8 @@ items:
             coercionType parameter. (See Remarks for more information about data coercion.)
           type:
             - '(result: AsyncResult<T>) => void'
+      typeParameters:
+        - id: T
   - uid: office.Office.Document.getSelectedResourceAsync
     summary: Project documents only. Get the current selected Resource's Id.
     name: 'getSelectedResourceAsync(options, callback)'
@@ -3277,8 +3281,8 @@ items:
       -->, (when using `Office.CoercionType.Html`<!-- -->)
 
 
-      -
-      [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion)
+      - [ImageCoercion
+      1.1](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets)
       (when using `Office.CoercionType.Image`<!-- -->)
 
 
@@ -3304,6 +3308,11 @@ items:
       -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
+
+
+      - [ImageCoercion
+      1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12)
+      (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 
       **Application-specific behaviors**
@@ -3595,7 +3604,7 @@ items:
 
 
       -
-      [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion)
+      [ImageCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets)
       (when using `Office.CoercionType.Image`<!-- -->)
 
 
@@ -3621,6 +3630,11 @@ items:
       -
       [TextCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion)
       (when using `Office.CoercionType.Text`<!-- -->)
+
+
+      - [ImageCoercion
+      1.2](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12)
+      (when using `Office.CoercionType.XmlSvg`<!-- -->)
 
 
       **Application-specific behaviors**

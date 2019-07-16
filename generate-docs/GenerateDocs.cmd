@@ -43,10 +43,6 @@ cd ..\excel_1_1
 call ..\..\node_modules\.bin\api-extractor run
 cd ..
 
-cd ..\api-extractor-inputs-word-release
-
-call ..\node_modules\.bin\api-extractor run
-
 cd ..\api-extractor-inputs-onenote
 call ..\node_modules\.bin\api-extractor run
 

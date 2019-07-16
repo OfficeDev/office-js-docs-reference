@@ -121,6 +121,7 @@ tryCatch(async () => {
 
     console.log(`Fixing top href`);
     fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf(".yml") < 0)
         .forEach(filename => {
             let subfolder = docsSource + '/' + filename;
             fsx.readdirSync(subfolder)
@@ -130,7 +131,7 @@ tryCatch(async () => {
                 });
         });
 
-    // moving common TOC to its own folder
+    console.log(`Moving common TOC to its own folder`);
     fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
     fsx.copySync(commonTocFolder + "/api-ref-office-js.md", "../yaml/common/api-ref-office-js.md");
 
@@ -138,7 +139,7 @@ tryCatch(async () => {
     fsx.removeSync(commonTocFolder + "/toc.yml");
     fsx.removeSync(commonTocFolder + "/api-ref-office-js.md");
 
-    // create global TOC
+    console.log(`Creating global TOC`);
     let globalToc = <INewToc>{};
     globalToc.items = [{"name": "Excel", "href": "/javascript/api/excel"},
                        {"name": "OneNote", "href": "/javascript/api/onenote"},
@@ -197,7 +198,6 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
     // let excelInterfaceFilter : string [] = ["CellPropertiesBorderLoadOptions", "CellPropertiesFillLoadOptions", "CellPropertiesFontLoadOptions", "CellPropertiesFormatLoadOptions", "CellPropertiesLoadOptions ", "ColumnPropertiesLoadOptions", "ConditionalCellValueRule", "ConditionalCellValueRule", "ConditionalColorScaleCriteria", "ConditionalColorScaleCriterion", "ConditionalDataBarRule", "ConditionalIconCriterion", "ConditionalPresetCriteriaRule", "ConditionalTextComparisonRule", "ConditionalTextComparisonRule", "ConditionalTopBottomRule", "FilterCrieteria", "FilterDatetime", "Icon", "IconCollections", "RangeHyperlink", "RangeReference", "RowPropertiesLoadOptions", "RunOptions", "SortField", "WorksheetProtectionOptions"];
 
     let customFunctionsRoot = {"name": "Custom Functions", "uid": "", "items": [] as any};
-    let customFunctionsRootPushed = false;
 
     // create folders for OneNote subcategories
     let oneNoteEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -324,22 +324,12 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
                             "uid": packageItem.uid,
                             "items":  membersToMove.items as any
                         });
-
-                        if (!customFunctionsRootPushed) {
-                            newToc.items[0].items.push(customFunctionsRoot);
-                            customFunctionsRootPushed = true;
-                        }
                     } else if (packageName.toLocaleLowerCase().includes('custom functions runtime')) {
                         customFunctionsRoot.items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
                             "items":  membersToMove.items as any
                         });
-
-                        if (!customFunctionsRootPushed) {
-                            newToc.items[0].items.push(customFunctionsRoot);
-                            customFunctionsRootPushed = true;
-                        }
                     } else {
                         if (membersToMove.items) {
                             newToc.items[0].items.push({

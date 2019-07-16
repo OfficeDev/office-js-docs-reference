@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.FiveRatingSet
+    name: Excel.FiveRatingSet
+    fullName: Excel.FiveRatingSet
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.FiveRatingSet.fourBars
+      - excel_release.Excel.FiveRatingSet.noBars
+      - excel_release.Excel.FiveRatingSet.oneBar
+      - excel_release.Excel.FiveRatingSet.threeBars
+      - excel_release.Excel.FiveRatingSet.twoBars
+  - uid: excel_release.Excel.FiveRatingSet.fourBars
+    name: fourBars
+    fullName: fourBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'fourBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.FiveRatingSet.noBars
+    name: noBars
+    fullName: noBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'noBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.FiveRatingSet.oneBar
+    name: oneBar
+    fullName: oneBar
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oneBar: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.FiveRatingSet.threeBars
+    name: threeBars
+    fullName: threeBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'threeBars: Icon;'
+      return:
+        type:
+          - Icon
+  - uid: excel_release.Excel.FiveRatingSet.twoBars
+    name: twoBars
+    fullName: twoBars
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'twoBars: Icon;'
+      return:
+        type:
+          - Icon

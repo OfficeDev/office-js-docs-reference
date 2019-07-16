@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.GeometricShapeLoadOptions
+    summary: >-
+      Represents a geometric shape inside a worksheet. A geometric shape can be a rectangle, block arrow, equation
+      symbol, flowchart item, star, banner, callout, or any other basic shape in Excel.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.GeometricShapeLoadOptions
+    fullName: Excel.Interfaces.GeometricShapeLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.GeometricShapeLoadOptions.$all
+      - excel_release.Excel.Interfaces.GeometricShapeLoadOptions.id
+      - excel_release.Excel.Interfaces.GeometricShapeLoadOptions.shape
+  - uid: excel_release.Excel.Interfaces.GeometricShapeLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.GeometricShapeLoadOptions.id
+    summary: |-
+      Returns the shape identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.GeometricShapeLoadOptions.shape
+    summary: |-
+      Returns the Shape object for the geometric shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: shape
+    fullName: shape
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeLoadOptions

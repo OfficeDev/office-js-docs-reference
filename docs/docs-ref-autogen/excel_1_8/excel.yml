@@ -668,6 +668,8 @@ items:
             access to the Excel object model from the add-in.
           type:
             - '(context: Excel.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: excel.Excel.run_1
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
@@ -701,6 +703,8 @@ items:
             access to the Excel object model from the add-in.
           type:
             - '(context: Excel.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: excel.Excel.run_2
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of
@@ -734,6 +738,8 @@ items:
             access to the Excel object model from the add-in.
           type:
             - '(context: Excel.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: excel.Excel.run_3
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
@@ -767,6 +773,8 @@ items:
             access to the Excel object model from the add-in.
           type:
             - '(context: Excel.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: excel.Excel.run_4
     summary: >-
       Executes a batch script that performs actions on the Excel object model, using the RequestContext of a
@@ -815,6 +823,8 @@ items:
             access to the Excel object model from the add-in.
           type:
             - '(context: Excel.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
 references:
   - uid: excel.Excel.AggregationFunction
     name: Excel.AggregationFunction

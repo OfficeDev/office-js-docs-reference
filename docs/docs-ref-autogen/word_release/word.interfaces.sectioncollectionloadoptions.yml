@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.Interfaces.SectionCollectionLoadOptions
+    summary: |-
+      Contains the collection of the document's [Word.Section](xref:word_release.Word.Section) objects.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.SectionCollectionLoadOptions
+    fullName: Word.Interfaces.SectionCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word_release
+    children:
+      - word_release.Word.Interfaces.SectionCollectionLoadOptions.$all
+      - word_release.Word.Interfaces.SectionCollectionLoadOptions.body
+  - uid: word_release.Word.Interfaces.SectionCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.SectionCollectionLoadOptions.body
+    summary: >-
+      For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and
+      other section metadata.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyLoadOptions

@@ -1,0 +1,207 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.LineData
+    summary: An interface describing the data returned by calling "line.toJSON()".
+    name: Excel.Interfaces.LineData
+    fullName: Excel.Interfaces.LineData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.LineData.beginArrowheadLength
+      - excel_release.Excel.Interfaces.LineData.beginArrowheadStyle
+      - excel_release.Excel.Interfaces.LineData.beginArrowheadWidth
+      - excel_release.Excel.Interfaces.LineData.beginConnectedSite
+      - excel_release.Excel.Interfaces.LineData.connectorType
+      - excel_release.Excel.Interfaces.LineData.endArrowheadLength
+      - excel_release.Excel.Interfaces.LineData.endArrowheadStyle
+      - excel_release.Excel.Interfaces.LineData.endArrowheadWidth
+      - excel_release.Excel.Interfaces.LineData.endConnectedSite
+      - excel_release.Excel.Interfaces.LineData.id
+      - excel_release.Excel.Interfaces.LineData.isBeginConnected
+      - excel_release.Excel.Interfaces.LineData.isEndConnected
+  - uid: excel_release.Excel.Interfaces.LineData.beginArrowheadLength
+    summary: |-
+      Represents the length of the arrowhead at the beginning of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginArrowheadLength
+    fullName: beginArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadLength?: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
+      return:
+        type:
+          - Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+  - uid: excel_release.Excel.Interfaces.LineData.beginArrowheadStyle
+    summary: |-
+      Represents the style of the arrowhead at the beginning of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginArrowheadStyle
+    fullName: beginArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadStyle?: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type:
+          - Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+  - uid: excel_release.Excel.Interfaces.LineData.beginArrowheadWidth
+    summary: |-
+      Represents the width of the arrowhead at the beginning of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginArrowheadWidth
+    fullName: beginArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type:
+          - Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+  - uid: excel_release.Excel.Interfaces.LineData.beginConnectedSite
+    summary: >-
+      Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when
+      the beginning of the line is not attached to any shape.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: beginConnectedSite
+    fullName: beginConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'beginConnectedSite?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.LineData.connectorType
+    summary: |-
+      Represents the connector type for the line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: connectorType
+    fullName: connectorType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'connectorType?: Excel.ConnectorType | "Straight" | "Elbow" | "Curve";'
+      return:
+        type:
+          - Excel.ConnectorType | "Straight" | "Elbow" | "Curve"
+  - uid: excel_release.Excel.Interfaces.LineData.endArrowheadLength
+    summary: |-
+      Represents the length of the arrowhead at the end of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endArrowheadLength
+    fullName: endArrowheadLength
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadLength?: Excel.ArrowheadLength | "Short" | "Medium" | "Long";'
+      return:
+        type:
+          - Excel.ArrowheadLength | "Short" | "Medium" | "Long"
+  - uid: excel_release.Excel.Interfaces.LineData.endArrowheadStyle
+    summary: |-
+      Represents the style of the arrowhead at the end of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endArrowheadStyle
+    fullName: endArrowheadStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadStyle?: Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open";'
+      return:
+        type:
+          - Excel.ArrowheadStyle | "None" | "Triangle" | "Stealth" | "Diamond" | "Oval" | "Open"
+  - uid: excel_release.Excel.Interfaces.LineData.endArrowheadWidth
+    summary: |-
+      Represents the width of the arrowhead at the end of the specified line.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endArrowheadWidth
+    fullName: endArrowheadWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endArrowheadWidth?: Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide";'
+      return:
+        type:
+          - Excel.ArrowheadWidth | "Narrow" | "Medium" | "Wide"
+  - uid: excel_release.Excel.Interfaces.LineData.endConnectedSite
+    summary: >-
+      Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end
+      of the line is not attached to any shape.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endConnectedSite
+    fullName: endConnectedSite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endConnectedSite?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.LineData.id
+    summary: |-
+      Represents the shape identifier. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.LineData.isBeginConnected
+    summary: |-
+      Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isBeginConnected
+    fullName: isBeginConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isBeginConnected?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.LineData.isEndConnected
+    summary: |-
+      Specifies whether or not the end of the specified line is connected to a shape. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isEndConnected
+    fullName: isEndConnected
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isEndConnected?: boolean;'
+      return:
+        type:
+          - boolean

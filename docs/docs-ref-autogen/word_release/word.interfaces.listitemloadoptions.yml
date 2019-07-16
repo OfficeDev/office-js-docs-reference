@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.Interfaces.ListItemLoadOptions
+    summary: |-
+      Represents the paragraph list item format.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.ListItemLoadOptions
+    fullName: Word.Interfaces.ListItemLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word_release
+    children:
+      - word_release.Word.Interfaces.ListItemLoadOptions.$all
+      - word_release.Word.Interfaces.ListItemLoadOptions.level
+      - word_release.Word.Interfaces.ListItemLoadOptions.listString
+      - word_release.Word.Interfaces.ListItemLoadOptions.siblingIndex
+  - uid: word_release.Word.Interfaces.ListItemLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.ListItemLoadOptions.level
+    summary: |-
+      Gets or sets the level of the item in the list.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: level
+    fullName: level
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'level?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.ListItemLoadOptions.listString
+    summary: |-
+      Gets the list item bullet, number, or picture as a string. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: listString
+    fullName: listString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'listString?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.ListItemLoadOptions.siblingIndex
+    summary: |-
+      Gets the list item order number in relation to its siblings. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: siblingIndex
+    fullName: siblingIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'siblingIndex?: boolean;'
+      return:
+        type:
+          - boolean

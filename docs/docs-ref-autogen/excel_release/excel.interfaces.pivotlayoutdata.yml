@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData
+    summary: An interface describing the data returned by calling "pivotLayout.toJSON()".
+    name: Excel.Interfaces.PivotLayoutData
+    fullName: Excel.Interfaces.PivotLayoutData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.PivotLayoutData.autoFormat
+      - excel_release.Excel.Interfaces.PivotLayoutData.layoutType
+      - excel_release.Excel.Interfaces.PivotLayoutData.preserveFormatting
+      - excel_release.Excel.Interfaces.PivotLayoutData.showColumnGrandTotals
+      - excel_release.Excel.Interfaces.PivotLayoutData.showRowGrandTotals
+      - excel_release.Excel.Interfaces.PivotLayoutData.subtotalLocation
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData.autoFormat
+    summary: |-
+      Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoFormat
+    fullName: autoFormat
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoFormat?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData.layoutType
+    summary: >-
+      This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
+      will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: layoutType
+    fullName: layoutType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layoutType?: Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline";'
+      return:
+        type:
+          - Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData.preserveFormatting
+    summary: >-
+      Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
+      pivoting, sorting, or changing page field items.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: preserveFormatting
+    fullName: preserveFormatting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preserveFormatting?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData.showColumnGrandTotals
+    summary: |-
+      Specifies whether the PivotTable report shows grand totals for columns.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showColumnGrandTotals
+    fullName: showColumnGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showColumnGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData.showRowGrandTotals
+    summary: |-
+      Specifies whether the PivotTable report shows grand totals for rows.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showRowGrandTotals
+    fullName: showRowGrandTotals
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showRowGrandTotals?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotLayoutData.subtotalLocation
+    summary: >-
+      This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
+      this will be null.
+
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subtotalLocation
+    fullName: subtotalLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subtotalLocation?: Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off";'
+      return:
+        type:
+          - Excel.SubtotalLocationType | "AtTop" | "AtBottom" | "Off"

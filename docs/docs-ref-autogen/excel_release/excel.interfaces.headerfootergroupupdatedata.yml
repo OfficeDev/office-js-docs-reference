@@ -1,0 +1,129 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData
+    summary: >-
+      An interface for updating data on the HeaderFooterGroup object, for use in "headerFooterGroup.set(<!-- -->{ ...
+      }<!-- -->)".
+    name: Excel.Interfaces.HeaderFooterGroupUpdateData
+    fullName: Excel.Interfaces.HeaderFooterGroupUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.defaultForAllPages
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.evenPages
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.firstPage
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.oddPages
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.state
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.useSheetMargins
+      - excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.useSheetScale
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.defaultForAllPages
+    summary: |-
+      The general header/footer, used for all pages unless even/odd or first page is specified.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: defaultForAllPages
+    fullName: defaultForAllPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'defaultForAllPages?: Excel.Interfaces.HeaderFooterUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.HeaderFooterUpdateData
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.evenPages
+    summary: |-
+      The header/footer to use for even pages, odd header/footer needs to be specified for odd pages.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: evenPages
+    fullName: evenPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'evenPages?: Excel.Interfaces.HeaderFooterUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.HeaderFooterUpdateData
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.firstPage
+    summary: |-
+      The first page header/footer, for all other pages general or even/odd is used.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPage
+    fullName: firstPage
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstPage?: Excel.Interfaces.HeaderFooterUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.HeaderFooterUpdateData
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.oddPages
+    summary: |-
+      The header/footer to use for odd pages, even header/footer needs to be specified for even pages.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: oddPages
+    fullName: oddPages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'oddPages?: Excel.Interfaces.HeaderFooterUpdateData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.HeaderFooterUpdateData
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.state
+    summary: |-
+      Gets or sets the state of which headers/footers are set. See Excel.HeaderFooterState for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: state
+    fullName: state
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'state?: Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven";'
+      return:
+        type:
+          - Excel.HeaderFooterState | "Default" | "FirstAndDefault" | "OddAndEven" | "FirstOddAndEven"
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.useSheetMargins
+    summary: >-
+      Gets or sets a flag indicating if headers/footers are aligned with the page margins set in the page layout options
+      for the worksheet.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSheetMargins
+    fullName: useSheetMargins
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSheetMargins?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterGroupUpdateData.useSheetScale
+    summary: >-
+      Gets or sets a flag indicating if headers/footers should be scaled by the page percentage scale set in the page
+      layout options for the worksheet.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useSheetScale
+    fullName: useSheetScale
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useSheetScale?: boolean;'
+      return:
+        type:
+          - boolean

@@ -202,6 +202,8 @@ items:
             to the Word object model from the add-in.
           type:
             - '(context: Word.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: word.Word.run_1
     summary: >-
       Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously
@@ -235,6 +237,8 @@ items:
             to the Word object model from the add-in.
           type:
             - '(context: Word.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
   - uid: word.Word.run_2
     summary: >-
       Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the
@@ -270,6 +274,8 @@ items:
             to the Word object model from the add-in.
           type:
             - '(context: Word.RequestContext) => Promise<T>'
+      typeParameters:
+        - id: T
 references:
   - uid: word.Word.Alignment
     name: Word.Alignment

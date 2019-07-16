@@ -19,9 +19,9 @@
       "ae-forgotten-export": {
         "logLevel": "none"
       },
-	  "ae-unresolved-link": {
-	    "logLevel": "none"
-	  }
+      "ae-unresolved-link": {
+        "logLevel": "none"
+      }
     },
     "tsdocMessageReporting": {
       "tsdoc-escape-right-brace": {

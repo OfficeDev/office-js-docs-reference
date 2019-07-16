@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ImageFittingMode
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ImageFittingMode
+    fullName: Excel.ImageFittingMode
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ImageFittingMode.fill
+      - excel_release.Excel.ImageFittingMode.fit
+      - excel_release.Excel.ImageFittingMode.fitAndCenter
+  - uid: excel_release.Excel.ImageFittingMode.fill
+    name: fill
+    fullName: fill
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fill"'
+  - uid: excel_release.Excel.ImageFittingMode.fit
+    name: fit
+    fullName: fit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Fit"'
+  - uid: excel_release.Excel.ImageFittingMode.fitAndCenter
+    name: fitAndCenter
+    fullName: fitAndCenter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FitAndCenter"'
