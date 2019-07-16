@@ -119,25 +119,25 @@ tryCatch(async () => {
             fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
         });
 
-    // console.log(`Fixing top href`);
-    // fsx.readdirSync(docsSource)
-    //     .filter(filename => filename.indexOf(".yml") < 0)
-    //     .forEach(filename => {
-    //         let subfolder = docsSource + '/' + filename;
-    //         fsx.readdirSync(subfolder)
-    //             .filter(subfilename => subfilename.indexOf("toc") >= 0)
-    //             .forEach(subfilename => {
-    //                 fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "api-ref-office-js.md"));
-    //             });
-    //     });
+    console.log(`Fixing top href`);
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename;
+            fsx.readdirSync(subfolder)
+                .filter(subfilename => subfilename.indexOf("toc") >= 0)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+                });
+        });
 
     console.log(`Moving common TOC to its own folder`);
     fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
-    //fsx.copySync(commonTocFolder + "/api-ref-office-js.md", "../yaml/common/api-ref-office-js.md");
+    fsx.copySync(commonTocFolder + "/overview.md", "../yaml/common/overview.md");
 
     // remove to prevent build errors
     fsx.removeSync(commonTocFolder + "/toc.yml");
-    //fsx.removeSync(commonTocFolder + "/api-ref-office-js.md");
+    fsx.removeSync(commonTocFolder + "/overview.md");
 
     console.log(`Creating global TOC`);
     let globalToc = <INewToc>{};
@@ -432,6 +432,6 @@ function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?:
 
     addCrossHostTocStubs(latestToc, hostName);
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
-    fsx.copySync("../../docs/docs-ref-autogen/overview/office.md", versionFolder + "/office.md");
+    fsx.copySync("../../docs/docs-ref-autogen/overview/overview.md", versionFolder + "/overview.md");
     return latestToc;
 }
