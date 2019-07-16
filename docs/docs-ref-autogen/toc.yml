@@ -1,15 +1,15 @@
 items:
   - name: Excel
-    href: /javascript/api/excel
+    href: /javascript/api/excel?view=excel-js-preview
   - name: OneNote
-    href: /javascript/api/onenote
+    href: /javascript/api/onenote?view=onenote-js-1.1
   - name: Outlook
-    href: /javascript/api/outlook
+    href: /javascript/api/outlook?view=outlook-js-preview
   - name: PowerPoint
-    href: /javascript/api/powerpoint
+    href: /javascript/api/powerpoint?view=powerpoint-js-1.1
   - name: Visio
-    href: /javascript/api/visio
+    href: /javascript/api/visio?view=visio-js-1.1
   - name: Word
-    href: /javascript/api/word
+    href: /javascript/api/word?view=word-js-preview
   - name: CommonAPI
-    href: /javascript/api/office
+    href: /javascript/api/office?view=common-js
