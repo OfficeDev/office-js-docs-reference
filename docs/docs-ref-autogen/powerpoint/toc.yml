@@ -1,6 +1,6 @@
 items:
   - name: API reference
-    href: api-ref-office-js.md
+    href: ~/docs-ref-autogen/overview/office.md
     items:
       - name: PowerPoint
         uid: powerpoint
