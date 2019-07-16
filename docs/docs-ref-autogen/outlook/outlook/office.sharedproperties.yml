@@ -22,7 +22,8 @@ items:
     children:
       - outlook.Office.SharedProperties.delegatePermissions
       - outlook.Office.SharedProperties.owner
-      - outlook.Office.SharedProperties.restUrl
+      - outlook.Office.SharedProperties.targetMailbox
+      - outlook.Office.SharedProperties.targetRestUrl
   - uid: outlook.Office.SharedProperties.delegatePermissions
     summary: The permissions that the delegate has on a shared folder.
     isPreview: true
@@ -45,20 +46,41 @@ items:
       - typeScript
     type: property
     syntax:
-      content: 'owner: String;'
+      content: 'owner: string;'
       return:
         type:
-          - String
-  - uid: outlook.Office.SharedProperties.restUrl
-    summary: The remote REST URL related to the owner’s mailbox.
+          - string
+  - uid: outlook.Office.SharedProperties.targetMailbox
+    summary: |-
+      The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.
+
+      Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     isPreview: true
-    name: restUrl
-    fullName: restUrl
+    name: targetMailbox
+    fullName: targetMailbox
     langs:
       - typeScript
     type: property
     syntax:
-      content: 'restUrl: String;'
+      content: 'targetMailbox: string;'
       return:
         type:
-          - String
+          - string
+  - uid: outlook.Office.SharedProperties.targetRestUrl
+    summary: >-
+      The REST API's base URL (currently https://outlook.office.com/api). Use with targetMailbox to construct REST
+      operation's URL.
+
+
+      Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
+    isPreview: true
+    name: targetRestUrl
+    fullName: targetRestUrl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'targetRestUrl: string;'
+      return:
+        type:
+          - string
