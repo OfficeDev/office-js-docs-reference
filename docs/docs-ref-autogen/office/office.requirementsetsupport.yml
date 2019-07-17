@@ -18,7 +18,7 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'isSetSupported(name: string, minVersion?: number): boolean;'
+      content: 'isSetSupported(name: string, minVersion?: string | number): boolean;'
       return:
         type:
           - boolean
@@ -29,6 +29,8 @@ items:
           type:
             - string
         - id: minVersion
-          description: 'The minimum required version; e.g., "1.4".'
+          description: >-
+            The minimum required version; e.g., "1.4". Note: String type is recommended data type for this parameter.
+            The use of number type is deprecated and will not be compatible with recent requirement sets.
           type:
-            - number
+            - string | number

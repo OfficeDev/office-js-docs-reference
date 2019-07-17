@@ -38,6 +38,26 @@ items:
       return:
         type:
           - string
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onSingleClicked.add((event) => {
+                  return Excel.run((context) => {
+                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
+                      return context.sync();
+                  });
+              });
+
+              console.log("The worksheet click handler is registered.");
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetX
     summary: >-
       The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the
