@@ -1,8 +1,9 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.1.0",
-    "schemaVersion": 1000
+    "toolVersion": "7.3.2",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
   "canonicalReference": "office-runtime",

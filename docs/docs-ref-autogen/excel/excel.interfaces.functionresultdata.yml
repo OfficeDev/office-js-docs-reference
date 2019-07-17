@@ -7,6 +7,9 @@ items:
     langs:
       - typeScript
     type: interface
+    syntax:
+      typeParameters:
+        - id: T
     package: excel
     children:
       - excel.Excel.Interfaces.FunctionResultData.error

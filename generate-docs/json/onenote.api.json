@@ -1,8 +1,9 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.1.0",
-    "schemaVersion": 1000
+    "toolVersion": "7.3.2",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
   "canonicalReference": "onenote",
@@ -648,7 +649,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Application` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Application` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Application` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -714,7 +715,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -728,7 +729,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -778,7 +779,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -792,7 +793,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -858,7 +859,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -1288,7 +1289,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.FloatingInk` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.FloatingInk` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.FloatingInk` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1354,7 +1355,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -1368,7 +1369,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1418,7 +1419,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -1432,7 +1433,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1498,7 +1499,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -1924,7 +1925,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Image` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Image` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Image` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -1990,7 +1991,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -2004,7 +2005,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2054,7 +2055,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -2068,7 +2069,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2134,7 +2135,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -2274,7 +2275,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.Image): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -2348,7 +2349,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -2369,7 +2370,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -2419,7 +2420,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -2781,7 +2782,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysis` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysis` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysis` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2847,7 +2848,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -2861,7 +2862,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2911,7 +2912,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -2925,7 +2926,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -2991,7 +2992,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -3047,7 +3048,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.InkAnalysis): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -3121,7 +3122,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -3142,7 +3143,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -3192,7 +3193,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -3442,7 +3443,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysisLine` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLine` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLine` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -3508,7 +3509,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -3522,7 +3523,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -3572,7 +3573,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -3586,7 +3587,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -3652,7 +3653,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -3708,7 +3709,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.InkAnalysisLine): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -3782,7 +3783,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -3803,7 +3804,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -3853,7 +3854,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -4319,7 +4320,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysisLineCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisLineCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisLineCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4409,7 +4410,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -4423,7 +4424,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4473,7 +4474,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -4487,7 +4488,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -4545,7 +4546,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -4879,7 +4880,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysisParagraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -4945,7 +4946,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -4959,7 +4960,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5009,7 +5010,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -5023,7 +5024,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5089,7 +5090,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -5103,7 +5104,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.InkAnalysisParagraph): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -5177,7 +5178,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -5198,7 +5199,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -5248,7 +5249,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -5672,7 +5673,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysisParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5762,7 +5763,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -5776,7 +5777,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -5826,7 +5827,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -5840,7 +5841,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -5898,7 +5899,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -6224,7 +6225,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysisWord` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -6290,7 +6291,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -6304,7 +6305,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -6354,7 +6355,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -6368,7 +6369,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -6434,7 +6435,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -6448,7 +6449,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.InkAnalysisWord): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -6522,7 +6523,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -6543,7 +6544,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -6593,7 +6594,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -7097,7 +7098,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkAnalysisWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWordCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7187,7 +7188,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -7201,7 +7202,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7251,7 +7252,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -7265,7 +7266,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -7323,7 +7324,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -7615,7 +7616,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkStroke` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkStroke` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStroke` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7681,7 +7682,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -7695,7 +7696,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7745,7 +7746,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -7759,7 +7760,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -7825,7 +7826,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -8249,7 +8250,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkStrokeCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkStrokeCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkStrokeCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8339,7 +8340,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -8353,7 +8354,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8403,7 +8404,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -8417,7 +8418,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -8475,7 +8476,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -8841,7 +8842,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkWord` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkWord` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWord` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8907,7 +8908,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -8921,7 +8922,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -8971,7 +8972,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -8985,7 +8986,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -9051,7 +9052,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -9551,7 +9552,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.InkWordCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.InkWordCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkWordCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -9641,7 +9642,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -9655,7 +9656,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -9705,7 +9706,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -9719,7 +9720,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -9777,7 +9778,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -25911,7 +25912,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Notebook` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Notebook` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Notebook` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -25977,7 +25978,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -25991,7 +25992,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26041,7 +26042,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -26055,7 +26056,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26121,7 +26122,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -26727,7 +26728,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.NotebookCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.NotebookCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NotebookCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26817,7 +26818,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -26831,7 +26832,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -26881,7 +26882,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -26895,7 +26896,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -26953,7 +26954,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -27203,7 +27204,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.NoteTag` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.NoteTag` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.NoteTag` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -27269,7 +27270,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -27283,7 +27284,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -27333,7 +27334,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -27347,7 +27348,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -27413,7 +27414,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -30233,7 +30234,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Outline` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Outline` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Outline` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -30299,7 +30300,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -30313,7 +30314,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -30363,7 +30364,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -30377,7 +30378,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -30443,7 +30444,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -31371,7 +31372,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertPageAsSibling:instance,0)",
+                  "canonicalReference": "(insertPageAsSibling:instance,1)",
                   "docComment": "/**\n * Inserts a new page before or after the current page.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param location - The location of the new page relative to the current page.\n *\n * @param title - The title of the new page.\n */\n",
                   "excerptTokens": [
                     {
@@ -31445,7 +31446,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "location",
@@ -31466,7 +31467,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertPageAsSibling:instance,1)",
+                  "canonicalReference": "(insertPageAsSibling:instance,2)",
                   "docComment": "/**\n * Inserts a new page before or after the current page.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param locationString - The location of the new page relative to the current page.\n *\n * @param title - The title of the new page.\n */\n",
                   "excerptTokens": [
                     {
@@ -31532,7 +31533,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "locationString",
@@ -31553,7 +31554,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Page` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Page` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Page` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -31619,7 +31620,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -31633,7 +31634,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -31683,7 +31684,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -31697,7 +31698,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -31763,7 +31764,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -31849,7 +31850,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.Page): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -31923,7 +31924,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -31944,7 +31945,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -31994,7 +31995,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -32546,7 +32547,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.PageCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.PageCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -32636,7 +32637,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -32650,7 +32651,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -32700,7 +32701,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -32714,7 +32715,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -32772,7 +32773,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -33168,7 +33169,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.PageContent` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.PageContent` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContent` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -33234,7 +33235,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -33248,7 +33249,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -33298,7 +33299,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -33312,7 +33313,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -33378,7 +33379,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -33476,7 +33477,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.PageContent): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -33550,7 +33551,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -33571,7 +33572,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -33621,7 +33622,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -34121,7 +34122,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.PageContentCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.PageContentCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.PageContentCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -34211,7 +34212,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -34225,7 +34226,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -34275,7 +34276,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -34289,7 +34290,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -34347,7 +34348,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -34656,7 +34657,7 @@
               "members": [
                 {
                   "kind": "Method",
-                  "canonicalReference": "(addNoteTag:instance,0)",
+                  "canonicalReference": "(addNoteTag:instance,1)",
                   "docComment": "/**\n * Add NoteTag to the paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param type - The type of the NoteTag.\n *\n * @param status - The status of the NoteTag.\n */\n",
                   "excerptTokens": [
                     {
@@ -34738,7 +34739,7 @@
                     "endIndex": 17
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "type",
@@ -34759,7 +34760,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(addNoteTag:instance,1)",
+                  "canonicalReference": "(addNoteTag:instance,2)",
                   "docComment": "/**\n * Add NoteTag to the paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param typeString - The type of the NoteTag.\n *\n * @param status - The status of the NoteTag.\n */\n",
                   "excerptTokens": [
                     {
@@ -34825,7 +34826,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "typeString",
@@ -35086,7 +35087,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtmlAsSibling:instance,0)",
+                  "canonicalReference": "(insertHtmlAsSibling:instance,1)",
                   "docComment": "/**\n * Inserts the specified HTML content\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of new contents relative to the current Paragraph.\n *\n * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.\n */\n",
                   "excerptTokens": [
                     {
@@ -35152,7 +35153,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "insertLocation",
@@ -35173,7 +35174,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertHtmlAsSibling:instance,1)",
+                  "canonicalReference": "(insertHtmlAsSibling:instance,2)",
                   "docComment": "/**\n * Inserts the specified HTML content\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of new contents relative to the current Paragraph.\n *\n * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.\n */\n",
                   "excerptTokens": [
                     {
@@ -35231,7 +35232,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "insertLocationString",
@@ -35252,7 +35253,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertImageAsSibling:instance,0)",
+                  "canonicalReference": "(insertImageAsSibling:instance,1)",
                   "docComment": "/**\n * Inserts the image at the specified insert location..\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of the table relative to the current Paragraph.\n *\n * @param base64EncodedImage - HTML string to append.\n *\n * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.\n *\n * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.\n */\n",
                   "excerptTokens": [
                     {
@@ -35358,7 +35359,7 @@
                     "endIndex": 23
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "insertLocation",
@@ -35393,7 +35394,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertImageAsSibling:instance,1)",
+                  "canonicalReference": "(insertImageAsSibling:instance,2)",
                   "docComment": "/**\n * Inserts the image at the specified insert location..\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of the table relative to the current Paragraph.\n *\n * @param base64EncodedImage - HTML string to append.\n *\n * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.\n *\n * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.\n */\n",
                   "excerptTokens": [
                     {
@@ -35491,7 +35492,7 @@
                     "endIndex": 21
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "insertLocationString",
@@ -35526,7 +35527,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertRichTextAsSibling:instance,0)",
+                  "canonicalReference": "(insertRichTextAsSibling:instance,1)",
                   "docComment": "/**\n * Inserts the paragraph text at the specifiec insert location.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of the table relative to the current Paragraph.\n *\n * @param paragraphText - HTML string to append.\n */\n",
                   "excerptTokens": [
                     {
@@ -35600,7 +35601,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "insertLocation",
@@ -35621,7 +35622,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertRichTextAsSibling:instance,1)",
+                  "canonicalReference": "(insertRichTextAsSibling:instance,2)",
                   "docComment": "/**\n * Inserts the paragraph text at the specifiec insert location.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of the table relative to the current Paragraph.\n *\n * @param paragraphText - HTML string to append.\n */\n",
                   "excerptTokens": [
                     {
@@ -35687,7 +35688,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "insertLocationString",
@@ -35708,7 +35709,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertTableAsSibling:instance,0)",
+                  "canonicalReference": "(insertTableAsSibling:instance,1)",
                   "docComment": "/**\n * Adds a table with the specified number of rows and columns before or after the current paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of the table relative to the current Paragraph.\n *\n * @param rowCount - The number of rows in the table.\n *\n * @param columnCount - The number of columns in the table.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
@@ -35814,7 +35815,7 @@
                     "endIndex": 23
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "insertLocation",
@@ -35849,7 +35850,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertTableAsSibling:instance,1)",
+                  "canonicalReference": "(insertTableAsSibling:instance,2)",
                   "docComment": "/**\n * Adds a table with the specified number of rows and columns before or after the current paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of the table relative to the current Paragraph.\n *\n * @param rowCount - The number of rows in the table.\n *\n * @param columnCount - The number of columns in the table.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
@@ -35947,7 +35948,7 @@
                     "endIndex": 21
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "insertLocationString",
@@ -35982,7 +35983,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -36048,7 +36049,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -36062,7 +36063,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -36112,7 +36113,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -36126,7 +36127,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -36192,7 +36193,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -36500,7 +36501,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.Paragraph): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -36574,7 +36575,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -36595,7 +36596,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -36645,7 +36646,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -37157,7 +37158,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.ParagraphCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.ParagraphCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.ParagraphCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -37247,7 +37248,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -37261,7 +37262,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -37311,7 +37312,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -37325,7 +37326,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -37383,7 +37384,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -37881,7 +37882,7 @@
               "members": [
                 {
                   "kind": "Constructor",
-                  "canonicalReference": "(:constructor,instance,0)",
+                  "canonicalReference": "(:constructor,0)",
                   "docComment": "/**\n * Constructs a new instance of the `RequestContext` class\n */\n",
                   "excerptTokens": [
                     {
@@ -37905,7 +37906,6 @@
                       "text": ");"
                     }
                   ],
-                  "isStatic": false,
                   "releaseTag": "Public",
                   "overloadIndex": 0,
                   "parameters": [
@@ -38140,7 +38140,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.RichText` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.RichText` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.RichText` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -38206,7 +38206,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -38220,7 +38220,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -38270,7 +38270,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -38284,7 +38284,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -38350,7 +38350,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -38575,7 +38575,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:0)",
+              "canonicalReference": "(run:1)",
               "docComment": "/**\n * Executes a batch script that performs actions on the OneNote object model, using a new request context. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n *\n * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). The context parameter facilitates requests to the OneNote application. Since the Office add-in and the OneNote application run in two different processes, the request context is required to get access to the OneNote object model from the add-in.\n */\n",
               "excerptTokens": [
                 {
@@ -38680,7 +38680,7 @@
                 "endIndex": 23
               },
               "releaseTag": "Public",
-              "overloadIndex": 0,
+              "overloadIndex": 1,
               "parameters": [
                 {
                   "parameterName": "batch",
@@ -38690,11 +38690,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:1)",
+              "canonicalReference": "(run:2)",
               "docComment": "/**\n * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.\n *\n * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n */\n",
               "excerptTokens": [
                 {
@@ -38823,7 +38836,7 @@
                 "endIndex": 29
               },
               "releaseTag": "Public",
-              "overloadIndex": 1,
+              "overloadIndex": 2,
               "parameters": [
                 {
                   "parameterName": "object",
@@ -38840,11 +38853,24 @@
                   }
                 }
               ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
               "name": "run"
             },
             {
               "kind": "Function",
-              "canonicalReference": "(run:2)",
+              "canonicalReference": "(run:3)",
               "docComment": "/**\n * Executes a batch script that performs actions on the OneNote object model, using the request context of previously-created API objects.\n *\n * @param object - An array of previously-created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared request context, which means that any changes applied to these objects will be picked up by \"context.sync()\".\n *\n * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of \"context.sync()\"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.\n */\n",
               "excerptTokens": [
                 {
@@ -38977,7 +39003,7 @@
                 "endIndex": 30
               },
               "releaseTag": "Public",
-              "overloadIndex": 2,
+              "overloadIndex": 3,
               "parameters": [
                 {
                   "parameterName": "objects",
@@ -38991,6 +39017,19 @@
                   "parameterTypeTokenRange": {
                     "startIndex": 14,
                     "endIndex": 25
+                  }
+                }
+              ],
+              "typeParameters": [
+                {
+                  "typeParameterName": "T",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
                   }
                 }
               ],
@@ -39385,7 +39424,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertSectionAsSibling:instance,0)",
+                  "canonicalReference": "(insertSectionAsSibling:instance,1)",
                   "docComment": "/**\n * Inserts a new section before or after the current section.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param location - The location of the new section relative to the current section.\n *\n * @param title - The name of the new section.\n */\n",
                   "excerptTokens": [
                     {
@@ -39459,7 +39498,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "location",
@@ -39480,7 +39519,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertSectionAsSibling:instance,1)",
+                  "canonicalReference": "(insertSectionAsSibling:instance,2)",
                   "docComment": "/**\n * Inserts a new section before or after the current section.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param locationString - The location of the new section relative to the current section.\n *\n * @param title - The name of the new section.\n */\n",
                   "excerptTokens": [
                     {
@@ -39546,7 +39585,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "locationString",
@@ -39635,7 +39674,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Section` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Section` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Section` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -39701,7 +39740,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -39715,7 +39754,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -39765,7 +39804,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -39779,7 +39818,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -39845,7 +39884,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -40569,7 +40608,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.SectionCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.SectionCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -40659,7 +40698,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -40673,7 +40712,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -40723,7 +40762,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -40737,7 +40776,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -40795,7 +40834,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -41251,7 +41290,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.SectionGroup` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroup` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroup` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -41317,7 +41356,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -41331,7 +41370,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -41381,7 +41420,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -41395,7 +41434,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -41461,7 +41500,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -42193,7 +42232,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.SectionGroupCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.SectionGroupCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.SectionGroupCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -42283,7 +42322,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -42297,7 +42336,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -42347,7 +42386,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -42361,7 +42400,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -42419,7 +42458,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -43138,7 +43177,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.Table` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.Table` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.Table` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -43204,7 +43243,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -43218,7 +43257,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -43268,7 +43307,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -43282,7 +43321,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -43348,7 +43387,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -43480,7 +43519,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.Table): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -43554,7 +43593,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -43575,7 +43614,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -43625,7 +43664,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -44337,7 +44376,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.TableCell` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.TableCell` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCell` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -44403,7 +44442,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -44417,7 +44456,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -44467,7 +44506,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -44481,7 +44520,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -44547,7 +44586,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -44679,7 +44718,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,0)",
+                  "canonicalReference": "(set:instance,1)",
                   "docComment": "/**\n * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.\n *\n * @remarks\n *\n * This method has the following additional signature:\n *\n * `set(properties: OneNote.TableCell): void`\n *\n * @param properties - A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.\n *\n * @param options - Provides an option to suppress errors if the properties object tries to set any read-only properties.\n */\n",
                   "excerptTokens": [
                     {
@@ -44753,7 +44792,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -44774,7 +44813,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(set:instance,1)",
+                  "canonicalReference": "(set:instance,2)",
                   "docComment": "/**\n * Sets multiple properties on the object at the same time, based on an existing loaded object.\n */\n",
                   "excerptTokens": [
                     {
@@ -44824,7 +44863,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "properties",
@@ -45278,7 +45317,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.TableCellCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.TableCellCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableCellCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -45368,7 +45407,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -45382,7 +45421,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -45432,7 +45471,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -45446,7 +45485,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -45504,7 +45543,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -45862,7 +45901,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertRowAsSibling:instance,0)",
+                  "canonicalReference": "(insertRowAsSibling:instance,1)",
                   "docComment": "/**\n * Inserts a row before or after the current row.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - Where the new rows should be inserted relative to the current row.\n *\n * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.\n */\n",
                   "excerptTokens": [
                     {
@@ -45936,7 +45975,7 @@
                     "endIndex": 15
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "insertLocation",
@@ -45957,7 +45996,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(insertRowAsSibling:instance,1)",
+                  "canonicalReference": "(insertRowAsSibling:instance,2)",
                   "docComment": "/**\n * Inserts a row before or after the current row.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - Where the new rows should be inserted relative to the current row.\n *\n * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.\n */\n",
                   "excerptTokens": [
                     {
@@ -46023,7 +46062,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "insertLocationString",
@@ -46044,7 +46083,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.TableRow` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.TableRow` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRow` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -46110,7 +46149,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -46124,7 +46163,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -46174,7 +46213,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -46188,7 +46227,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNamesAndPaths - Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -46254,7 +46293,7 @@
                     "endIndex": 13
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "propertyNamesAndPaths",
@@ -46810,7 +46849,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,0)",
+                  "canonicalReference": "(load:instance,1)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call \"context.sync()\" before reading the properties.\n *\n * @remarks\n *\n * In addition to this signature, this method has the following signatures:\n *\n * `load(option?: string | string[]): OneNote.TableRowCollection` - Where option is a comma-delimited string or an array of strings that specify the properties to load.\n *\n * `load(option?: { select?: string; expand?: string; }): OneNote.TableRowCollection` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.\n *\n * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.TableRowCollection` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.\n *\n * @param options - Provides options for which properties of the object to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -46900,7 +46939,7 @@
                     "endIndex": 19
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "option",
@@ -46914,7 +46953,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,1)",
+                  "canonicalReference": "(load:instance,2)",
                   "docComment": "/**\n * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.\n *\n * @param propertyNames - A comma-delimited string or an array of strings that specify the properties to load.\n */\n",
                   "excerptTokens": [
                     {
@@ -46964,7 +47003,7 @@
                     "endIndex": 9
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 1,
+                  "overloadIndex": 2,
                   "parameters": [
                     {
                       "parameterName": "propertyNames",
@@ -46978,7 +47017,7 @@
                 },
                 {
                   "kind": "Method",
-                  "canonicalReference": "(load:instance,2)",
+                  "canonicalReference": "(load:instance,3)",
                   "docComment": "",
                   "excerptTokens": [
                     {
@@ -47036,7 +47075,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 2,
+                  "overloadIndex": 3,
                   "parameters": [
                     {
                       "parameterName": "option",

@@ -977,9 +977,9 @@ declare namespace Office {
         /**
         * Check if the specified requirement set is supported by the host Office application.
         * @param name - Set name; e.g., "MatrixBindings".
-        * @param minVersion - The minimum required version; e.g., "1.4".
+        * @param minVersion - The minimum required version; e.g., "1.4". Note: String type is recommended data type for this parameter. The use of number type is deprecated and will not be compatible with recent requirement sets.
         */
-       isSetSupported(name: string, minVersion?: number): boolean;
+       isSetSupported(name: string, minVersion?: string | number): boolean;
     }
 
     /**
@@ -3614,7 +3614,7 @@ declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion | ImageCoercion} (when using `Office.CoercionType.Image`)
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion} (when using `Office.CoercionType.Image`)
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
@@ -3625,6 +3625,8 @@ declare namespace Office {
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * 
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
          * 
          * **Application-specific behaviors**
          * 
@@ -3800,7 +3802,7 @@ declare namespace Office {
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion | HtmlCoercion}, (when using `Office.CoercionType.Html`)
          * 
-         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#imagecoercion | ImageCoercion} (when using `Office.CoercionType.Image`)
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets | ImageCoercion} (when using `Office.CoercionType.Image`)
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixcoercion | MatrixCoercion} (when using `Office.CoercionType.Matrix`)
          * 
@@ -3811,6 +3813,8 @@ declare namespace Office {
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#tablecoercion | TableCoercion} (when using `Office.CoercionType.Table`)
          * 
          * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textcoercion | TextCoercion} (when using `Office.CoercionType.Text`)
+         * 
+         * - {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/image-coercion-requirement-sets#imagecoercion-12 | ImageCoercion 1.2} (when using `Office.CoercionType.XmlSvg`)
          * 
          * **Application-specific behaviors**
          * 
