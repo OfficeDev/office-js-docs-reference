@@ -36072,8 +36072,8 @@
                       "text": ": "
                     },
                     {
-                      "kind": "Reference",
-                      "text": "String"
+                      "kind": "Content",
+                      "text": "string"
                     },
                     {
                       "kind": "Content",
@@ -36089,20 +36089,20 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "restUrl",
-                  "docComment": "/**\n * The remote REST URL related to the owner’s mailbox.\n */\n",
+                  "canonicalReference": "targetMailbox",
+                  "docComment": "/**\n * The target/owner's mailbox. Use with targetRestUrl to construct REST operation's URL.\n *\n * Example usage: `targetRestUrl + \"/{api_version}/users/\" + targetMailbox + \"/{REST_operation}\"`\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
-                      "text": "restUrl"
+                      "text": "targetMailbox"
                     },
                     {
                       "kind": "Content",
                       "text": ": "
                     },
                     {
-                      "kind": "Reference",
-                      "text": "String"
+                      "kind": "Content",
+                      "text": "string"
                     },
                     {
                       "kind": "Content",
@@ -36110,7 +36110,36 @@
                     }
                   ],
                   "releaseTag": "Beta",
-                  "name": "restUrl",
+                  "name": "targetMailbox",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "targetRestUrl",
+                  "docComment": "/**\n * The REST API's base URL (currently https://outlook.office.com/api). Use with targetMailbox to construct REST operation's URL.\n *\n * Example usage: `targetRestUrl + \"/{api_version}/users/\" + targetMailbox + \"/{REST_operation}\"`\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "targetRestUrl"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Beta",
+                  "name": "targetRestUrl",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
