@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.3.1",
+    "toolVersion": "7.3.2",
     "schemaVersion": 1001,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -34028,7 +34028,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(isSetSupported:0)",
-                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\".\n */\n",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\". Note: String type is recommended data type for this parameter. The use of number type is deprecated and will not be compatible with recent requirement sets.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -34064,7 +34064,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "number"
+                      "text": "string | number"
                     },
                     {
                       "kind": "Content",
