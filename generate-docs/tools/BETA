@@ -1,0 +1,653 @@
+////////////////////////////////////////////////////////////////
+/////////////////////// Begin Word APIs ////////////////////////
+////////////////////////////////////////////////////////////////
+
+declare namespace Word {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    enum ErrorCodes {
+        accessDenied = "AccessDenied",
+        generalException = "GeneralException",
+        invalidArgument = "InvalidArgument",
+        itemNotFound = "ItemNotFound",
+        notImplemented = "NotImplemented",
+    }
+    module Interfaces {
+        /**
+        * Provides ways to load properties of only a subset of members of a collection.
+        */
+        interface CollectionLoadOptions {
+            /**
+            * Specify the number of items in the queried collection to be included in the result.
+            */
+            $top?: number;
+            /**
+            * Specify the number of items in the collection that are to be skipped and not included in the result. If top is specified, the selection of result will start after skipping the specified number of items.
+            */
+            $skip?: number;
+        }
+        /** An interface for updating data on the Body object, for use in "body.set({ ... })". */
+        interface BodyUpdateData {
+            
+            
+            
+        }
+        /** An interface for updating data on the ContentControl object, for use in "contentControl.set({ ... })". */
+        interface ContentControlUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the ContentControlCollection object, for use in "contentControlCollection.set({ ... })". */
+        interface ContentControlCollectionUpdateData {
+            items?: Word.Interfaces.ContentControlData[];
+        }
+        /** An interface for updating data on the CustomProperty object, for use in "customProperty.set({ ... })". */
+        interface CustomPropertyUpdateData {
+            
+        }
+        /** An interface for updating data on the CustomPropertyCollection object, for use in "customPropertyCollection.set({ ... })". */
+        interface CustomPropertyCollectionUpdateData {
+            items?: Word.Interfaces.CustomPropertyData[];
+        }
+        /** An interface for updating data on the CustomXmlPartCollection object, for use in "customXmlPartCollection.set({ ... })". */
+        interface CustomXmlPartCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the CustomXmlPartScopedCollection object, for use in "customXmlPartScopedCollection.set({ ... })". */
+        interface CustomXmlPartScopedCollectionUpdateData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface for updating data on the Document object, for use in "document.set({ ... })". */
+        interface DocumentUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the DocumentCreated object, for use in "documentCreated.set({ ... })". */
+        interface DocumentCreatedUpdateData {
+            
+            
+        }
+        /** An interface for updating data on the DocumentProperties object, for use in "documentProperties.set({ ... })". */
+        interface DocumentPropertiesUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the Font object, for use in "font.set({ ... })". */
+        interface FontUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the InlinePicture object, for use in "inlinePicture.set({ ... })". */
+        interface InlinePictureUpdateData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the InlinePictureCollection object, for use in "inlinePictureCollection.set({ ... })". */
+        interface InlinePictureCollectionUpdateData {
+            items?: Word.Interfaces.InlinePictureData[];
+        }
+        /** An interface for updating data on the ListCollection object, for use in "listCollection.set({ ... })". */
+        interface ListCollectionUpdateData {
+            items?: Word.Interfaces.ListData[];
+        }
+        /** An interface for updating data on the ListItem object, for use in "listItem.set({ ... })". */
+        interface ListItemUpdateData {
+            
+        }
+        /** An interface for updating data on the Paragraph object, for use in "paragraph.set({ ... })". */
+        interface ParagraphUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set({ ... })". */
+        interface ParagraphCollectionUpdateData {
+            items?: Word.Interfaces.ParagraphData[];
+        }
+        /** An interface for updating data on the Range object, for use in "range.set({ ... })". */
+        interface RangeUpdateData {
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the RangeCollection object, for use in "rangeCollection.set({ ... })". */
+        interface RangeCollectionUpdateData {
+            items?: Word.Interfaces.RangeData[];
+        }
+        /** An interface for updating data on the SearchOptions object, for use in "searchOptions.set({ ... })". */
+        interface SearchOptionsUpdateData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the Section object, for use in "section.set({ ... })". */
+        interface SectionUpdateData {
+            
+        }
+        /** An interface for updating data on the SectionCollection object, for use in "sectionCollection.set({ ... })". */
+        interface SectionCollectionUpdateData {
+            items?: Word.Interfaces.SectionData[];
+        }
+        /** An interface for updating data on the Setting object, for use in "setting.set({ ... })". */
+        interface SettingUpdateData {
+            
+        }
+        /** An interface for updating data on the SettingCollection object, for use in "settingCollection.set({ ... })". */
+        interface SettingCollectionUpdateData {
+            items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface for updating data on the Table object, for use in "table.set({ ... })". */
+        interface TableUpdateData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the TableCollection object, for use in "tableCollection.set({ ... })". */
+        interface TableCollectionUpdateData {
+            items?: Word.Interfaces.TableData[];
+        }
+        /** An interface for updating data on the TableRow object, for use in "tableRow.set({ ... })". */
+        interface TableRowUpdateData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set({ ... })". */
+        interface TableRowCollectionUpdateData {
+            items?: Word.Interfaces.TableRowData[];
+        }
+        /** An interface for updating data on the TableCell object, for use in "tableCell.set({ ... })". */
+        interface TableCellUpdateData {
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set({ ... })". */
+        interface TableCellCollectionUpdateData {
+            items?: Word.Interfaces.TableCellData[];
+        }
+        /** An interface for updating data on the TableBorder object, for use in "tableBorder.set({ ... })". */
+        interface TableBorderUpdateData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "body.toJSON()". */
+        interface BodyData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "contentControl.toJSON()". */
+        interface ContentControlData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "contentControlCollection.toJSON()". */
+        interface ContentControlCollectionData {
+            items?: Word.Interfaces.ContentControlData[];
+        }
+        /** An interface describing the data returned by calling "customProperty.toJSON()". */
+        interface CustomPropertyData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "customPropertyCollection.toJSON()". */
+        interface CustomPropertyCollectionData {
+            items?: Word.Interfaces.CustomPropertyData[];
+        }
+        /** An interface describing the data returned by calling "customXmlPart.toJSON()". */
+        interface CustomXmlPartData {
+            
+            
+        }
+        /** An interface describing the data returned by calling "customXmlPartCollection.toJSON()". */
+        interface CustomXmlPartCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()". */
+        interface CustomXmlPartScopedCollectionData {
+            items?: Word.Interfaces.CustomXmlPartData[];
+        }
+        /** An interface describing the data returned by calling "document.toJSON()". */
+        interface DocumentData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "documentCreated.toJSON()". */
+        interface DocumentCreatedData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "documentProperties.toJSON()". */
+        interface DocumentPropertiesData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "font.toJSON()". */
+        interface FontData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "inlinePicture.toJSON()". */
+        interface InlinePictureData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "inlinePictureCollection.toJSON()". */
+        interface InlinePictureCollectionData {
+            items?: Word.Interfaces.InlinePictureData[];
+        }
+        /** An interface describing the data returned by calling "list.toJSON()". */
+        interface ListData {
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "listCollection.toJSON()". */
+        interface ListCollectionData {
+            items?: Word.Interfaces.ListData[];
+        }
+        /** An interface describing the data returned by calling "listItem.toJSON()". */
+        interface ListItemData {
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "paragraph.toJSON()". */
+        interface ParagraphData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "paragraphCollection.toJSON()". */
+        interface ParagraphCollectionData {
+            items?: Word.Interfaces.ParagraphData[];
+        }
+        /** An interface describing the data returned by calling "range.toJSON()". */
+        interface RangeData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "rangeCollection.toJSON()". */
+        interface RangeCollectionData {
+            items?: Word.Interfaces.RangeData[];
+        }
+        /** An interface describing the data returned by calling "searchOptions.toJSON()". */
+        interface SearchOptionsData {
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "section.toJSON()". */
+        interface SectionData {
+            
+        }
+        /** An interface describing the data returned by calling "sectionCollection.toJSON()". */
+        interface SectionCollectionData {
+            items?: Word.Interfaces.SectionData[];
+        }
+        /** An interface describing the data returned by calling "setting.toJSON()". */
+        interface SettingData {
+            
+            
+        }
+        /** An interface describing the data returned by calling "settingCollection.toJSON()". */
+        interface SettingCollectionData {
+            items?: Word.Interfaces.SettingData[];
+        }
+        /** An interface describing the data returned by calling "table.toJSON()". */
+        interface TableData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "tableCollection.toJSON()". */
+        interface TableCollectionData {
+            items?: Word.Interfaces.TableData[];
+        }
+        /** An interface describing the data returned by calling "tableRow.toJSON()". */
+        interface TableRowData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "tableRowCollection.toJSON()". */
+        interface TableRowCollectionData {
+            items?: Word.Interfaces.TableRowData[];
+        }
+        /** An interface describing the data returned by calling "tableCell.toJSON()". */
+        interface TableCellData {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }
+        /** An interface describing the data returned by calling "tableCellCollection.toJSON()". */
+        interface TableCellCollectionData {
+            items?: Word.Interfaces.TableCellData[];
+        }
+        /** An interface describing the data returned by calling "tableBorder.toJSON()". */
+        interface TableBorderData {
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+}
+declare namespace Word {
+    /**
+     * The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the request context is required to get access to the Word object model from the add-in.
+     */
+    class RequestContext extends OfficeCore.RequestContext {
+        constructor(url?: string);
+        readonly document: Document;
+        readonly application: Application;
+    }
+    /**
+     * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.
+     * @param objects - An array of previously created API objects. The array will be validated to make sure that all of the objects share the same context. The batch will use this shared RequestContext, which means that any changes applied to these objects will be picked up by "context.sync()".
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     */
+    function run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    /**
+     * Executes a batch script that performs actions on the Word object model, using the RequestContext of a previously created API object. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param object - A previously created API object. The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     */
+    function run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+    /**
+     * Executes a batch script that performs actions on the Word object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
+     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Word application. Since the Office add-in and the Word application run in two different processes, the RequestContext is required to get access to the Word object model from the add-in.
+     *
+     * @remarks
+     *
+     * In addition to this signature, the method also has the following signatures, which allow you to resume using the request context of previously created objects:
+     *
+     * run<T>(object: OfficeExtension.ClientObject, batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+     *
+     * run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+     */
+    function run<T>(batch: (context: Word.RequestContext) => Promise<T>): Promise<T>;
+}
+
+
+////////////////////////////////////////////////////////////////
+//////////////////////// End Word APIs /////////////////////////
+////////////////////////////////////////////////////////////////
