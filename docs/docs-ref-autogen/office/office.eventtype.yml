@@ -7,6 +7,9 @@ items:
 
       Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`<!-- -->,
       `Office.EventType.TaskSelectionChanged`<!-- -->, and `Office.EventType.ViewSelectionChanged` event types.
+
+
+      Only task pane add-ins for Outlook support Mailbox API set event types.
     remarks: '**`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.'
     name: Office.EventType
     fullName: Office.EventType
@@ -44,8 +47,10 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.AppointmentTimeChanged
-    summary: |-
-      Triggers when any date or time of the selected appointment or series is changed in Outlook.
+    summary: >-
+      Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task
+      pane only.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: AppointmentTimeChanged
@@ -55,7 +60,7 @@ items:
     type: field
   - uid: office.Office.EventType.AttachmentsChanged
     summary: |-
-      Triggers when an attachment is added to or removed from an item.
+      Triggers when an attachment is added to or removed from an item. Supported with task pane only.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     isPreview: true
@@ -110,7 +115,7 @@ items:
     type: field
   - uid: office.Office.EventType.EnhancedLocationsChanged
     summary: |-
-      Triggers when the appointment location is changed in Outlook.
+      Triggers when the appointment location is changed in Outlook. Supported with task pane only.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: EnhancedLocationsChanged
@@ -119,8 +124,10 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.ItemChanged
-    summary: |-
-      Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
+    summary: >-
+      Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task
+      pane only.
+
 
       \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: ItemChanged
@@ -151,7 +158,7 @@ items:
     type: field
   - uid: office.Office.EventType.OfficeThemeChanged
     summary: |-
-      Triggers when the OfficeTheme is changed in Outlook.
+      Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     isPreview: true
@@ -161,8 +168,10 @@ items:
       - typeScript
     type: field
   - uid: office.Office.EventType.RecipientsChanged
-    summary: |-
-      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
+    summary: >-
+      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported
+      with task pane only.
+
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: RecipientsChanged
@@ -172,7 +181,7 @@ items:
     type: field
   - uid: office.Office.EventType.RecurrenceChanged
     summary: |-
-      Triggers when the recurrence pattern of the selected series is changed in Outlook.
+      Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: RecurrenceChanged
