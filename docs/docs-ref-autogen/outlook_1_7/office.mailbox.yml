@@ -50,7 +50,7 @@ items:
       - Outlook_1_7.Office.Mailbox.userProfile
   - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync
     summary: |-
-      Adds an event handler for a supported event.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
       Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
@@ -98,7 +98,7 @@ items:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.addHandlerAsync_1
     summary: |-
-      Adds an event handler for a supported event.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
       Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
@@ -1031,7 +1031,7 @@ items:
             - any
   - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync
     summary: |-
-      Removes the event handlers for a supported event type.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
       Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 
@@ -1073,7 +1073,7 @@ items:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.Mailbox.removeHandlerAsync_1
     summary: |-
-      Removes the event handlers for a supported event type.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
       Currently, the only supported event type is `Office.EventType.ItemChanged`<!-- -->.
 

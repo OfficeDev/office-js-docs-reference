@@ -53,7 +53,7 @@ items:
       - Outlook_1_7.Office.MessageRead.to
   - uid: Outlook_1_7.Office.MessageRead.addHandlerAsync
     summary: >-
-      Adds an event handler for a supported event.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -105,7 +105,7 @@ items:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageRead.addHandlerAsync_1
     summary: >-
-      Adds an event handler for a supported event.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -945,7 +945,7 @@ items:
             - any
   - uid: Outlook_1_7.Office.MessageRead.removeHandlerAsync
     summary: >-
-      Removes the event handlers for a supported event type.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -991,7 +991,7 @@ items:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: Outlook_1_7.Office.MessageRead.removeHandlerAsync_1
     summary: >-
-      Removes the event handlers for a supported event type.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
