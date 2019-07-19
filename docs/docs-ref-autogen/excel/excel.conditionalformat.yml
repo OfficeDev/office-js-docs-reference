@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.ConditionalFormat
-    summary: |-
-      An object encapsulating a conditional format's range, format, rule, and other properties.
+    summary: >-
+      An object encapsulating a conditional format's range, format, rule, and other properties. To learn more about the
+      conditional formatting object model, read [Apply conditional formatting to Excel
+      ranges](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-conditional-formatting)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.6](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.ConditionalFormat
