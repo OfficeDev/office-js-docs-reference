@@ -6,9 +6,11 @@ IF EXIST "scripts\node_modules" (
     rmdir "scripts\node_modules" /s /q
 )
 
-IF NOT EXIST "yaml" (
-    call md yaml
+IF EXIST "yaml" (
+    rmdir "yaml" /s /q
 )
+
+call md yaml
 
 call npm install
 
