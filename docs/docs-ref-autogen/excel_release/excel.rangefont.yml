@@ -1,0 +1,391 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.RangeFont
+    summary: |-
+      This object represents the font attributes (font name, font size, color, etc.) for an object.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.RangeFont
+    fullName: Excel.RangeFont
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - office.OfficeExtension.ClientObject
+    package: excel_release
+    children:
+      - excel_release.Excel.RangeFont.bold
+      - excel_release.Excel.RangeFont.color
+      - excel_release.Excel.RangeFont.context
+      - excel_release.Excel.RangeFont.italic
+      - excel_release.Excel.RangeFont.load
+      - excel_release.Excel.RangeFont.load_1
+      - excel_release.Excel.RangeFont.load_2
+      - excel_release.Excel.RangeFont.name
+      - excel_release.Excel.RangeFont.set
+      - excel_release.Excel.RangeFont.set_1
+      - excel_release.Excel.RangeFont.size
+      - excel_release.Excel.RangeFont.strikethrough
+      - excel_release.Excel.RangeFont.subscript
+      - excel_release.Excel.RangeFont.superscript
+      - excel_release.Excel.RangeFont.tintAndShade
+      - excel_release.Excel.RangeFont.toJSON
+      - excel_release.Excel.RangeFont.underline
+  - uid: excel_release.Excel.RangeFont.bold
+    summary: |-
+      Represents the bold status of font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.RangeFont.color
+    summary: |-
+      HTML color code representation of the text color. E.g. \#FF0000 represents Red.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.RangeFont.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - RequestContext
+  - uid: excel_release.Excel.RangeFont.italic
+    summary: |-
+      Represents the italic status of the font.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.RangeFont.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.RangeFont` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.RangeFont` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.RangeFont` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.RangeFontLoadOptions): Excel.RangeFont;'
+      return:
+        type:
+          - excel.Excel.RangeFont
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.RangeFontLoadOptions
+  - uid: excel_release.Excel.RangeFont.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.RangeFont;'
+      return:
+        type:
+          - excel.Excel.RangeFont
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var sheetName = "Sheet1";
+              var rangeAddress = "F:G";
+              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
+              var range = worksheet.getRange(rangeAddress);
+              var rangeFont = range.format.font;
+              rangeFont.load('name');
+              return ctx.sync().then(function() {
+                  console.log(rangeFont.name);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+          ```javascript
+          // The example below sets font name. 
+          Excel.run(function (ctx) { 
+              var sheetName = "Sheet1";
+              var rangeAddress = "F:G";
+              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
+              range.format.font.name = 'Times New Roman';
+              return ctx.sync(); 
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel_release.Excel.RangeFont.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFont;'
+      return:
+        type:
+          - excel.Excel.RangeFont
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel_release.Excel.RangeFont.name
+    summary: |-
+      Font name (e.g. "Calibri")
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.RangeFont.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.RangeFont): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.RangeFontUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.RangeFontUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - office.OfficeExtension.UpdateOptions
+  - uid: excel_release.Excel.RangeFont.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.RangeFont): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.RangeFont
+  - uid: excel_release.Excel.RangeFont.size
+    summary: |-
+      Font size.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.RangeFont.strikethrough
+    summary: >-
+      Represents the strikethrough status of font. A null value indicates that the entire range doesn't have uniform
+      Strikethrough setting.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: strikethrough
+    fullName: strikethrough
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'strikethrough: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.RangeFont.subscript
+    summary: >-
+      Represents the Subscript status of font. Returns True if all the fonts of the range are Subscript. Returns False
+      if all the fonts of the range are Superscript or normal (neither Superscript, nor Subscript). Returns Null
+      otherwise.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: subscript
+    fullName: subscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subscript: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.RangeFont.superscript
+    summary: >-
+      Represents the Superscript status of font. Returns True if all the fonts of the range are Superscript. Returns
+      False if all the fonts of the range are Subscript or normal (neither Superscript, nor Subscript). Returns Null
+      otherwise.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: superscript
+    fullName: superscript
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'superscript: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.RangeFont.tintAndShade
+    summary: >-
+      Returns or sets a double that lightens or darkens a color for Range Font, the value is between -1 (darkest) and 1
+      (brightest), with 0 for the original color. A null value indicates that the entire range doesn't have uniform font
+      tintAndShade setting.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tintAndShade
+    fullName: tintAndShade
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'tintAndShade: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.RangeFont.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.RangeFont object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.RangeFontData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.RangeFontData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.RangeFontData
+        description: ''
+  - uid: excel_release.Excel.RangeFont.underline
+    summary: |-
+      Type of underline applied to the font. See Excel.RangeUnderlineStyle for details.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underline: Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant";'
+      return:
+        type:
+          - Excel.RangeUnderlineStyle | "None" | "Single" | "Double" | "SingleAccountant" | "DoubleAccountant"

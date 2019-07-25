@@ -15040,7 +15040,7 @@
             {
               "kind": "Enum",
               "canonicalReference": "(EventType:enum)",
-              "docComment": "/**\n * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.\n *\n * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types.\n *\n * @remarks\n *\n * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.\n */\n",
+              "docComment": "/**\n * Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.\n *\n * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and `Office.EventType.ViewSelectionChanged` event types.\n *\n * Only task pane add-ins for Outlook support Mailbox API set event types.\n *\n * @remarks\n *\n * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -15078,7 +15078,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "AppointmentTimeChanged",
-                  "docComment": "/**\n * Triggers when any date or time of the selected appointment or series is changed in Outlook.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15095,7 +15095,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "AttachmentsChanged",
-                  "docComment": "/**\n * Triggers when an attachment is added to or removed from an item.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when an attachment is added to or removed from an item. Supported with task pane only.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15197,7 +15197,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "EnhancedLocationsChanged",
-                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox Preview]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15214,7 +15214,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "ItemChanged",
-                  "docComment": "/**\n * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.\n *\n * [Api set: Mailbox 1.5]\n */\n",
+                  "docComment": "/**\n * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.\n *\n * [Api set: Mailbox 1.5]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15282,7 +15282,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "OfficeThemeChanged",
-                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15299,7 +15299,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "RecipientsChanged",
-                  "docComment": "/**\n * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15316,7 +15316,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "RecurrenceChanged",
-                  "docComment": "/**\n * Triggers when the recurrence pattern of the selected series is changed in Outlook.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -34028,7 +34028,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(isSetSupported:0)",
-                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\".\n */\n",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\". Note: String type is recommended data type for this parameter. The use of number type is deprecated and will not be compatible with recent requirement sets.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -34064,7 +34064,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "number"
+                      "text": "string | number"
                     },
                     {
                       "kind": "Content",

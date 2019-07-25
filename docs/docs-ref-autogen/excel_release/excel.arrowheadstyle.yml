@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ArrowheadStyle
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ArrowheadStyle
+    fullName: Excel.ArrowheadStyle
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ArrowheadStyle.diamond
+      - excel_release.Excel.ArrowheadStyle.none
+      - excel_release.Excel.ArrowheadStyle.open
+      - excel_release.Excel.ArrowheadStyle.oval
+      - excel_release.Excel.ArrowheadStyle.stealth
+      - excel_release.Excel.ArrowheadStyle.triangle
+  - uid: excel_release.Excel.ArrowheadStyle.diamond
+    name: diamond
+    fullName: diamond
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Diamond"'
+  - uid: excel_release.Excel.ArrowheadStyle.none
+    name: none
+    fullName: none
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"None"'
+  - uid: excel_release.Excel.ArrowheadStyle.open
+    name: open
+    fullName: open
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Open"'
+  - uid: excel_release.Excel.ArrowheadStyle.oval
+    name: oval
+    fullName: oval
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Oval"'
+  - uid: excel_release.Excel.ArrowheadStyle.stealth
+    name: stealth
+    fullName: stealth
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Stealth"'
+  - uid: excel_release.Excel.ArrowheadStyle.triangle
+    name: triangle
+    fullName: triangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Triangle"'

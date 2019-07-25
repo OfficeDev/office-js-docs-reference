@@ -39,7 +39,7 @@ items:
       - outlook.Office.Item.seriesId
   - uid: outlook.Office.Item.addHandlerAsync
     summary: >-
-      Adds an event handler for a supported event.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -93,7 +93,7 @@ items:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.addHandlerAsync_1
     summary: >-
-      Adds an event handler for a supported event.
+      Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -611,7 +611,7 @@ items:
             - any
   - uid: outlook.Office.Item.removeHandlerAsync
     summary: >-
-      Removes the event handlers for a supported event type.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,
@@ -659,7 +659,7 @@ items:
             - '(asyncResult: Office.AsyncResult<void>) => void'
   - uid: outlook.Office.Item.removeHandlerAsync_1
     summary: >-
-      Removes the event handlers for a supported event type.
+      Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
 
       Currently the supported event types are `Office.EventType.AppointmentTimeChanged`<!-- -->,

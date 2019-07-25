@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData
+    summary: >-
+      An interface for updating data on the ChartBinOptions object, for use in "chartBinOptions.set(<!-- -->{ ... }<!--
+      -->)".
+    name: Excel.Interfaces.ChartBinOptionsUpdateData
+    fullName: Excel.Interfaces.ChartBinOptionsUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.allowOverflow
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.allowUnderflow
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.count
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.overflowValue
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.type
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.underflowValue
+      - excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.width
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.allowOverflow
+    summary: |-
+      Specifies whether or not the bin overflow is enabled in a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowOverflow
+    fullName: allowOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowOverflow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.allowUnderflow
+    summary: |-
+      Specifies whether or not the bin underflow is enabled in a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: allowUnderflow
+    fullName: allowUnderflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowUnderflow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.count
+    summary: |-
+      Returns or sets the bin count of a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: count
+    fullName: count
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'count?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.overflowValue
+    summary: |-
+      Returns or sets the bin overflow value of a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: overflowValue
+    fullName: overflowValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'overflowValue?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.type
+    summary: |-
+      Returns or sets the bin's type for a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type?: Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount";'
+      return:
+        type:
+          - Excel.ChartBinType | "Category" | "Auto" | "BinWidth" | "BinCount"
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.underflowValue
+    summary: |-
+      Returns or sets the bin underflow value of a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underflowValue
+    fullName: underflowValue
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'underflowValue?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ChartBinOptionsUpdateData.width
+    summary: |-
+      Returns or sets the bin width value of a histogram chart or pareto chart. Read/Write.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: number;'
+      return:
+        type:
+          - number

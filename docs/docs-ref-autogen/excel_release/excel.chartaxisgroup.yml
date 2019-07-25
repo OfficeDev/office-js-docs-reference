@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ChartAxisGroup
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartAxisGroup
+    fullName: Excel.ChartAxisGroup
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.ChartAxisGroup.primary
+      - excel_release.Excel.ChartAxisGroup.secondary
+  - uid: excel_release.Excel.ChartAxisGroup.primary
+    name: primary
+    fullName: primary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Primary"'
+  - uid: excel_release.Excel.ChartAxisGroup.secondary
+    name: secondary
+    fullName: secondary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Secondary"'

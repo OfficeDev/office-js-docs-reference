@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.HeaderFooterState
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.HeaderFooterState
+    fullName: Excel.HeaderFooterState
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.HeaderFooterState.default
+      - excel_release.Excel.HeaderFooterState.firstAndDefault
+      - excel_release.Excel.HeaderFooterState.firstOddAndEven
+      - excel_release.Excel.HeaderFooterState.oddAndEven
+  - uid: excel_release.Excel.HeaderFooterState.default
+    summary: Only one general header/footer is used for all pages printed.
+    name: default
+    fullName: default
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Default"'
+  - uid: excel_release.Excel.HeaderFooterState.firstAndDefault
+    summary: 'There is a separate first page header/footer, and a general header/footer used for all other pages.'
+    name: firstAndDefault
+    fullName: firstAndDefault
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FirstAndDefault"'
+  - uid: excel_release.Excel.HeaderFooterState.firstOddAndEven
+    summary: 'There is a separate first page header/footer, then there is a separate header/footer for odd and even pages.'
+    name: firstOddAndEven
+    fullName: firstOddAndEven
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FirstOddAndEven"'
+  - uid: excel_release.Excel.HeaderFooterState.oddAndEven
+    summary: There is a different header/footer for odd and even pages.
+    name: oddAndEven
+    fullName: oddAndEven
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OddAndEven"'

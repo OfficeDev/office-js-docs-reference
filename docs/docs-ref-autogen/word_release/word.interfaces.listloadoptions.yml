@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.Interfaces.ListLoadOptions
+    summary: |-
+      Contains a collection of [Word.Paragraph](xref:word_release.Word.Paragraph) objects.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.ListLoadOptions
+    fullName: Word.Interfaces.ListLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word_release
+    children:
+      - word_release.Word.Interfaces.ListLoadOptions.$all
+      - word_release.Word.Interfaces.ListLoadOptions.id
+      - word_release.Word.Interfaces.ListLoadOptions.levelExistences
+      - word_release.Word.Interfaces.ListLoadOptions.levelTypes
+  - uid: word_release.Word.Interfaces.ListLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.ListLoadOptions.id
+    summary: |-
+      Gets the list's id.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.ListLoadOptions.levelExistences
+    summary: >-
+      Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there
+      is at least one list item at that level. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: levelExistences
+    fullName: levelExistences
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'levelExistences?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word_release.Word.Interfaces.ListLoadOptions.levelTypes
+    summary: |-
+      Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: levelTypes
+    fullName: levelTypes
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'levelTypes?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData
+    summary: An interface describing the data returned by calling "shapeLineFormat.toJSON()".
+    name: Excel.Interfaces.ShapeLineFormatData
+    fullName: Excel.Interfaces.ShapeLineFormatData
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.ShapeLineFormatData.color
+      - excel_release.Excel.Interfaces.ShapeLineFormatData.dashStyle
+      - excel_release.Excel.Interfaces.ShapeLineFormatData.style
+      - excel_release.Excel.Interfaces.ShapeLineFormatData.transparency
+      - excel_release.Excel.Interfaces.ShapeLineFormatData.visible
+      - excel_release.Excel.Interfaces.ShapeLineFormatData.weight
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData.color
+    summary: >-
+      Represents the line color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color
+      (e.g. "orange").
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData.dashStyle
+    summary: >-
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash
+      styles. See Excel.ShapeLineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dashStyle
+    fullName: dashStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        dashStyle?: Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" |
+        "RoundDot" | "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot";
+      return:
+        type:
+          - >-
+            Excel.ShapeLineDashStyle | "Dash" | "DashDot" | "DashDotDot" | "LongDash" | "LongDashDot" | "RoundDot" |
+            "Solid" | "SquareDot" | "LongDashDotDot" | "SystemDash" | "SystemDot" | "SystemDashDot"
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData.style
+    summary: >-
+      Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent
+      styles. See Excel.ShapeLineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin";'
+      return:
+        type:
+          - Excel.ShapeLineStyle | "Single" | "ThickBetweenThin" | "ThickThin" | "ThinThick" | "ThinThin"
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData.transparency
+    summary: >-
+      Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear).
+      Returns null when the shape has inconsistent transparencies.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency?: number;'
+      return:
+        type:
+          - number
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData.visible
+    summary: >-
+      Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has
+      inconsistent visibilities.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.ShapeLineFormatData.weight
+    summary: >-
+      Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent
+      line weights.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: weight
+    fullName: weight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'weight?: number;'
+      return:
+        type:
+          - number

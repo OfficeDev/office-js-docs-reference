@@ -8,6 +8,8 @@ ms.date: 03/18/2019
 
 The JavaScript API for Office enables you to create web applications that interact with the object models in Office host applications. Use this section to learn more about the classes, methods, and other types available for building Office Add-ins.
 
+The following is a list of host-specific requirement sets, link
+
 - [Excel](/javascript/api/excel?view=excel-js-preview)
 - [OneNote](/javascript/api/onenote?view=onenote-js-1.1)
 - [Outlook](/javascript/api/outlook?view=outlook-js-preview)
@@ -18,3 +20,9 @@ The JavaScript API for Office enables you to create web applications that intera
 
 > [!TIP]
 > To view reference documentation only for APIs that are available in a specific requirement set (and earlier), select the Office host and requirement set from the list that appears above the table of contents and filter box on the left side of the page. Documentation for the Common API will be shown in addition to documentation for the selected host and requirement set.
+
+## See also
+
+- [About Office Add-ins](/office/dev/add-ins/overview)
+- [Office Add-in host and platform availability](/office/dev/add-ins/overview/office-add-in-availability)
+- [Office versions and requirement sets](/office/dev/add-ins/develop/office-versions-and-requirement-sets)

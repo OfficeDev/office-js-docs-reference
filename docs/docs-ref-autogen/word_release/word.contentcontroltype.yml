@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word_release.Word.ContentControlType
+    summary: |-
+      Specifies supported content control types and subtypes.
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.ContentControlType
+    fullName: Word.ContentControlType
+    langs:
+      - typeScript
+    type: enum
+    package: word_release
+    children:
+      - word_release.Word.ContentControlType.buildingBlockGallery
+      - word_release.Word.ContentControlType.checkBox
+      - word_release.Word.ContentControlType.comboBox
+      - word_release.Word.ContentControlType.datePicker
+      - word_release.Word.ContentControlType.dropDownList
+      - word_release.Word.ContentControlType.picture
+      - word_release.Word.ContentControlType.plainText
+      - word_release.Word.ContentControlType.plainTextInline
+      - word_release.Word.ContentControlType.plainTextParagraph
+      - word_release.Word.ContentControlType.repeatingSection
+      - word_release.Word.ContentControlType.richText
+      - word_release.Word.ContentControlType.richTextInline
+      - word_release.Word.ContentControlType.richTextParagraphs
+      - word_release.Word.ContentControlType.richTextTable
+      - word_release.Word.ContentControlType.richTextTableCell
+      - word_release.Word.ContentControlType.richTextTableRow
+      - word_release.Word.ContentControlType.unknown
+  - uid: word_release.Word.ContentControlType.buildingBlockGallery
+    name: buildingBlockGallery
+    fullName: buildingBlockGallery
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BuildingBlockGallery"'
+  - uid: word_release.Word.ContentControlType.checkBox
+    name: checkBox
+    fullName: checkBox
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CheckBox"'
+  - uid: word_release.Word.ContentControlType.comboBox
+    name: comboBox
+    fullName: comboBox
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ComboBox"'
+  - uid: word_release.Word.ContentControlType.datePicker
+    name: datePicker
+    fullName: datePicker
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DatePicker"'
+  - uid: word_release.Word.ContentControlType.dropDownList
+    name: dropDownList
+    fullName: dropDownList
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DropDownList"'
+  - uid: word_release.Word.ContentControlType.picture
+    name: picture
+    fullName: picture
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Picture"'
+  - uid: word_release.Word.ContentControlType.plainText
+    name: plainText
+    fullName: plainText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainText"'
+  - uid: word_release.Word.ContentControlType.plainTextInline
+    name: plainTextInline
+    fullName: plainTextInline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTextInline"'
+  - uid: word_release.Word.ContentControlType.plainTextParagraph
+    name: plainTextParagraph
+    fullName: plainTextParagraph
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlainTextParagraph"'
+  - uid: word_release.Word.ContentControlType.repeatingSection
+    name: repeatingSection
+    fullName: repeatingSection
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RepeatingSection"'
+  - uid: word_release.Word.ContentControlType.richText
+    summary: Identifies a rich text content control.
+    name: richText
+    fullName: richText
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichText"'
+  - uid: word_release.Word.ContentControlType.richTextInline
+    name: richTextInline
+    fullName: richTextInline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextInline"'
+  - uid: word_release.Word.ContentControlType.richTextParagraphs
+    name: richTextParagraphs
+    fullName: richTextParagraphs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextParagraphs"'
+  - uid: word_release.Word.ContentControlType.richTextTable
+    summary: Contains a whole table.
+    name: richTextTable
+    fullName: richTextTable
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextTable"'
+  - uid: word_release.Word.ContentControlType.richTextTableCell
+    summary: Contains a whole cell.
+    name: richTextTableCell
+    fullName: richTextTableCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextTableCell"'
+  - uid: word_release.Word.ContentControlType.richTextTableRow
+    summary: Contains a whole row.
+    name: richTextTableRow
+    fullName: richTextTableRow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RichTextTableRow"'
+  - uid: word_release.Word.ContentControlType.unknown
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

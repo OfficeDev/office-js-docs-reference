@@ -973,9 +973,9 @@ export declare namespace Office {
         /**
         * Check if the specified requirement set is supported by the host Office application.
         * @param name - Set name; e.g., "MatrixBindings".
-        * @param minVersion - The minimum required version; e.g., "1.4".
+        * @param minVersion - The minimum required version; e.g., "1.4". Note: String type is recommended data type for this parameter. The use of number type is deprecated and will not be compatible with recent requirement sets.
         */
-       isSetSupported(name: string, minVersion?: number): boolean;
+       isSetSupported(name: string, minVersion?: string | number): boolean;
     }
 
     /**
@@ -1660,6 +1660,8 @@ export declare namespace Office {
      * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
      * `Office.EventType.ViewSelectionChanged` event types.
      * 
+     * Only task pane add-ins for Outlook support Mailbox API set event types.
+     * 
      * @remarks
      * 
      * **`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.
@@ -1674,13 +1676,13 @@ export declare namespace Office {
          */
         ActiveViewChanged,
         /**
-         * Triggers when any date or time of the selected appointment or series is changed in Outlook.
+         * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
          * 
          * [Api set: Mailbox 1.7]
          */
         AppointmentTimeChanged,
         /**
-         * Triggers when an attachment is added to or removed from an item.
+         * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
          * 
          * [Api set: Mailbox Preview]
          * 
@@ -1720,13 +1722,13 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
-         * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
+         * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
          * 
          * [Api set: Mailbox 1.5]
          */
         ItemChanged,
         /**
-         * Triggers when the appointment location is changed in Outlook.
+         * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
          * 
          * [Api set: Mailbox Preview]
          */
@@ -1744,7 +1746,7 @@ export declare namespace Office {
          */
         NodeReplaced,
         /**
-         * Triggers when the OfficeTheme is changed in Outlook.
+         * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
          * 
          * [Api set: Mailbox Preview]
          * 
@@ -1752,13 +1754,13 @@ export declare namespace Office {
          */
         OfficeThemeChanged,
         /**
-         * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook.
+         * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
          * 
          * [Api set: Mailbox 1.7]
          */
         RecipientsChanged,
         /**
-         * Triggers when the recurrence pattern of the selected series is changed in Outlook.
+         * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
          * 
          * [Api set: Mailbox 1.7]
          */

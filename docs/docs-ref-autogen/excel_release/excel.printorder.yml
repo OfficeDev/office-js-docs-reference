@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.PrintOrder
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PrintOrder
+    fullName: Excel.PrintOrder
+    langs:
+      - typeScript
+    type: enum
+    package: excel_release
+    children:
+      - excel_release.Excel.PrintOrder.downThenOver
+      - excel_release.Excel.PrintOrder.overThenDown
+  - uid: excel_release.Excel.PrintOrder.downThenOver
+    summary: Process down the rows before processing across pages or page fields to the right.
+    name: downThenOver
+    fullName: downThenOver
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DownThenOver"'
+  - uid: excel_release.Excel.PrintOrder.overThenDown
+    summary: Process across pages or page fields to the right before moving down the rows.
+    name: overThenDown
+    fullName: overThenDown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OverThenDown"'

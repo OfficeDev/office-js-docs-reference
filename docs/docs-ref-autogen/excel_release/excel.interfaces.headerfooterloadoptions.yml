@@ -1,0 +1,131 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.Interfaces.HeaderFooterLoadOptions
+    fullName: Excel.Interfaces.HeaderFooterLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.$all
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.centerFooter
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.centerHeader
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.leftFooter
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.leftHeader
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.rightFooter
+      - excel_release.Excel.Interfaces.HeaderFooterLoadOptions.rightHeader
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.centerFooter
+    summary: >-
+      Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerFooter
+    fullName: centerFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerFooter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.centerHeader
+    summary: >-
+      Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerHeader
+    fullName: centerHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHeader?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.leftFooter
+    summary: >-
+      Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftFooter
+    fullName: leftFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftFooter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.leftHeader
+    summary: >-
+      Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftHeader
+    fullName: leftHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftHeader?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.rightFooter
+    summary: >-
+      Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightFooter
+    fullName: rightFooter
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightFooter?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.HeaderFooterLoadOptions.rightHeader
+    summary: >-
+      Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
+      codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightHeader
+    fullName: rightHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightHeader?: boolean;'
+      return:
+        type:
+          - boolean

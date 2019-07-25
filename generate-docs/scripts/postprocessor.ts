@@ -140,14 +140,15 @@ tryCatch(async () => {
     fsx.removeSync(commonTocFolder + "/overview.md");
 
     console.log(`Creating global TOC`);
-    let globalToc = <INewToc>{};
-    globalToc.items = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
-                       {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
-                       {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
-                       {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
-                       {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
-                       {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
-                       {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
+    let globalToc = <INewToc>{items: [{"name": "API Reference"}]};
+    globalToc.items[0].items = [{"name": "API Reference Overview", "href": "overview.md"},
+                                {"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
+                                {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
+                                {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
+                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
+                                {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
+                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
+                                {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
 
     console.log(`Copying docs output files to: ${docsDestination}`);
@@ -406,21 +407,6 @@ function fixCommonToc(tocPath: string): INewToc {
     return newToc;
 }
 
-function addCrossHostTocStubs(toc: INewToc, hostName: string): void {
-    const stubItems = [{"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
-                       {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
-                       {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
-                       {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
-                       {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
-                       {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"}];
-
-    stubItems
-        .filter(stub => !hostName || !hostName.toLowerCase().includes(stub.name.toLowerCase()))
-        .forEach((stubItem, stubIndex) => {
-            toc.items[0].items.push(stubItem as any);
-        });
-}
-
 function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?: string): INewToc {
     const tocPath = versionFolder + "/toc.yml";
     let latestToc;
@@ -430,7 +416,6 @@ function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?:
         latestToc = fixToc(tocPath, commonToc);
     }
 
-    addCrossHostTocStubs(latestToc, hostName);
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
     fsx.copySync("../../docs/docs-ref-autogen/overview/overview.md", versionFolder + "/overview.md");
     return latestToc;

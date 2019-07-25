@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions
+    summary: |-
+      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.PivotTableCollectionLoadOptions
+    fullName: Excel.Interfaces.PivotTableCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel_release
+    children:
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.$all
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.enableDataValueEditing
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.id
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.layout
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.name
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.useCustomSortLists
+      - excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.enableDataValueEditing
+    summary: >-
+      For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by
+      the user.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enableDataValueEditing
+    fullName: enableDataValueEditing
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enableDataValueEditing?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.id
+    summary: |-
+      For EACH ITEM in the collection: Id of the PivotTable. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.layout
+    summary: |-
+      For EACH ITEM in the collection: The PivotLayout describing the layout and visual structure of the PivotTable.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: layout
+    fullName: layout
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'layout?: Excel.Interfaces.PivotLayoutLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PivotLayoutLoadOptions
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: Name of the PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.useCustomSortLists
+    summary: |-
+      For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: useCustomSortLists
+    fullName: useCustomSortLists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'useCustomSortLists?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel_release.Excel.Interfaces.PivotTableCollectionLoadOptions.worksheet
+    summary: |-
+      For EACH ITEM in the collection: The worksheet containing the current PivotTable.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheet
+    fullName: worksheet
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorksheetLoadOptions

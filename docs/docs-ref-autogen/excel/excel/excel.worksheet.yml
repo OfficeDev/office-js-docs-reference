@@ -1,8 +1,11 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Worksheet
-    summary: |-
-      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+    summary: >-
+      An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
+      object model, read [Work with worksheets using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Worksheet
@@ -1264,6 +1267,26 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onSingleClicked.add((event) => {
+                  return Excel.run((context) => {
+                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
+                      return context.sync();
+                  });
+              });
+
+              console.log("The worksheet click handler is registered.");
+
+              await context.sync();
+          });
+          ```
   - uid: excel.Excel.Worksheet.pageLayout
     summary: |-
       Gets the PageLayout object of the worksheet.

@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel_release.Excel.ColumnProperties
+    summary: |-
+      Represents the returned properties of getColumnProperties.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ColumnProperties
+    fullName: Excel.ColumnProperties
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - 'SettableColumnProperties '
+    package: excel_release
+    children:
+      - excel_release.Excel.ColumnProperties.address
+      - excel_release.Excel.ColumnProperties.addressLocal
+      - excel_release.Excel.ColumnProperties.columnIndex
+  - uid: excel_release.Excel.ColumnProperties.address
+    summary: |-
+      Represents the `address` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.ColumnProperties.addressLocal
+    summary: |-
+      Represents the `addressLocal` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: addressLocal
+    fullName: addressLocal
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'addressLocal?: string;'
+      return:
+        type:
+          - string
+  - uid: excel_release.Excel.ColumnProperties.columnIndex
+    summary: |-
+      Represents the `columnIndex` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: number;'
+      return:
+        type:
+          - number
