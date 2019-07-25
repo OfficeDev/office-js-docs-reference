@@ -2,7 +2,6 @@ import { readFileSync } from "fs";
 import { promptFromList } from '../scripts/simple-prompts';
 import { fetchAndThrowOnError, DtsBuilder} from '../scripts/util';
 import * as fsx from "fs-extra";
-import * as ts from "typescript";
 import { APISet, parseDTS } from './dts-utilities';
 
 tryCatch(async () => {
@@ -58,23 +57,8 @@ tryCatch(async () => {
         dtsBuilder.extractDtsSection(wholePreview, "Begin " + hostName + " APIs", "End " + hostName + " APIs")
     );
 
-    const releaseAPI: APISet = new APISet();
-    const previewAPI: APISet = new APISet();
-
-    const releaseFile: ts.SourceFile = ts.createSourceFile(
-        "Release",
-        readFileSync(releaseHostFileName).toString(),
-        ts.ScriptTarget.ES2015,
-        true);
-    const previewFile: ts.SourceFile = ts.createSourceFile(
-        "Preview",
-        readFileSync(previewHostFileName).toString(),
-        ts.ScriptTarget.ES2015,
-        true);
-
-    parseDTS(releaseFile, releaseAPI);
-    parseDTS(previewFile, previewAPI);
-
+    const releaseAPI: APISet = parseDTS("Release", readFileSync(releaseHostFileName).toString());
+    const previewAPI: APISet = parseDTS("Preview", readFileSync(previewHostFileName).toString());
     const diffAPI: APISet = previewAPI.diff(releaseAPI);
 
     const relativePath: string = "javascript/api/" + hostName.toLowerCase() + "/" + hostName.toLowerCase() + ".";

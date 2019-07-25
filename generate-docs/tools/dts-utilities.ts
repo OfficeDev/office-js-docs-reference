@@ -251,13 +251,18 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
     return fieldLink.toLowerCase();
 }
 
-export function parseDTS(fileContents: string, allClasses: APISet): void {
+export function parseDTS(fileName: string, fileContents: string): APISet {
     const node : ts.Node = ts.createSourceFile(
-        "Release",
+        fileName,
         fileContents,
         ts.ScriptTarget.ES2015,
         true);
+    const allClasses: APISet = new APISet();
+    parseDTSInternal(node, allClasses);
+    return allClasses;
+}
 
+function parseDTSInternal(node: ts.Node, allClasses: APISet): void {
     switch (node.kind) {
         case ts.SyntaxKind.InterfaceDeclaration:
             parseDTSTopLevelItem(node as ts.InterfaceDeclaration, allClasses, ClassType.Interface);
@@ -299,7 +304,7 @@ export function parseDTS(fileContents: string, allClasses: APISet): void {
     }
 
     node.getChildren().forEach((element) => {
-        parseDTS(element, allClasses);
+        parseDTSInternal(element, allClasses);
     });
 }
 
