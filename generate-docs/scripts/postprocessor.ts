@@ -141,7 +141,7 @@ tryCatch(async () => {
 
     console.log(`Creating global TOC`);
     let globalToc = <INewToc>{items: [{"name": "API Reference"}]};
-    globalToc.items[0].items = [{"name": "API Reference Overview", "href": "overview.md"},
+    globalToc.items[0].items = [{"name": "API Reference Overview", "href": "/overview/overview.md"},
                                 {"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
                                 {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},

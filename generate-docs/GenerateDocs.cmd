@@ -6,6 +6,12 @@ IF EXIST "scripts\node_modules" (
     rmdir "scripts\node_modules" /s /q
 )
 
+IF EXIST "json" (
+    rmdir "json" /s /q
+)
+
+call md json
+
 IF EXIST "yaml" (
     rmdir "yaml" /s /q
 )
