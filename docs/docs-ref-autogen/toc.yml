@@ -2,7 +2,7 @@ items:
   - name: API Reference
     items:
       - name: API Reference Overview
-        href: overview/overview.md
+        href: /overview/overview.md
       - name: Excel
         href: /javascript/api/excel?view=excel-js-preview
       - name: OneNote

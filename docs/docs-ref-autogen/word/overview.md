@@ -1,6 +1,6 @@
 ---
 title: Office JavaScript API reference 
-description: ''
+description: 'The Office JavaScript APIs per host requirement set'
 ms.date: 07/25/2019
 ---
 
@@ -10,39 +10,52 @@ The JavaScript API for Office enables you to create web applications that intera
 
 The following is a list of host-specific requirement sets (and the cross-host Common APIs). Each item links to a version of the API reference documentation that is supported by that requirement set (e.g. ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common API).
 
-- Excel
-  - [ExcelApi Preview](/javascript/api/excel?view=excel-js-preview)
-  - [ExcelApi 1.9](/javascript/api/excel?view=excel-js-1.9)
-  - [ExcelApi 1.8](/javascript/api/excel?view=excel-js-1.8)
-  - [ExcelApi 1.7](/javascript/api/excel?view=excel-js-1.7)
-  - [ExcelApi 1.6](/javascript/api/excel?view=excel-js-1.6)
-  - [ExcelApi 1.5](/javascript/api/excel?view=excel-js-1.5)
-  - [ExcelApi 1.4](/javascript/api/excel?view=excel-js-1.4)
-  - [ExcelApi 1.3](/javascript/api/excel?view=excel-js-1.3)
-  - [ExcelApi 1.2](/javascript/api/excel?view=excel-js-1.2)
-  - [ExcelApi 1.1](/javascript/api/excel?view=excel-js-1.1)
-- OneNote
-  - [OneNote 1.1](/javascript/api/excel?view=onenote-js-1.1)
-- Outlook
-  - [Mailbox Preview](/javascript/api/outlook?view=outlook-js-preview)
-  - [Mailbox 1.7](/javascript/api/outlook?view=outlook-js-1.7)
-  - [Mailbox 1.6](/javascript/api/outlook?view=outlook-js-1.6)
-  - [Mailbox 1.5](/javascript/api/outlook?view=outlook-js-1.5)
-  - [Mailbox 1.4](/javascript/api/outlook?view=outlook-js-1.4)
-  - [Mailbox 1.3](/javascript/api/outlook?view=outlook-js-1.3)
-  - [Mailbox 1.2](/javascript/api/outlook?view=outlook-js-1.2)
-  - [Mailbox 1.1](/javascript/api/outlook?view=outlook-js-1.1)
-- PowerPoint
-  - [PowerPointApi 1.1](/javascript/api/powerpoint?view=powerpoint-js-1.1)
-- Visio
-  - [VisioApi 1.1](/javascript/api/visio?view=visio-js-1.1)
-- Word
-  - [Word Preview](/javascript/api/word?view=word-js-preview)
-  - [WordApi 1.3](/javascript/api/word?view=word-js-1.3)
-  - [WordApi 1.2](/javascript/api/word?view=word-js-1.2)
-  - [WordApi 1.1](/javascript/api/word?view=word-js-1.1)
-- Common API
-  - [Common API](/javascript/api/office?view=common-js)
+## Excel
+
+- [ExcelApi Preview](/javascript/api/excel?view=excel-js-preview)
+- [ExcelApi 1.9](/javascript/api/excel?view=excel-js-1.9)
+- [ExcelApi 1.8](/javascript/api/excel?view=excel-js-1.8)
+- [ExcelApi 1.7](/javascript/api/excel?view=excel-js-1.7)
+- [ExcelApi 1.6](/javascript/api/excel?view=excel-js-1.6)
+- [ExcelApi 1.5](/javascript/api/excel?view=excel-js-1.5)
+- [ExcelApi 1.4](/javascript/api/excel?view=excel-js-1.4)
+- [ExcelApi 1.3](/javascript/api/excel?view=excel-js-1.3)
+- [ExcelApi 1.2](/javascript/api/excel?view=excel-js-1.2)
+- [ExcelApi 1.1](/javascript/api/excel?view=excel-js-1.1)
+
+## OneNote
+
+- [OneNote 1.1](/javascript/api/excel?view=onenote-js-1.1)
+
+## Outlook
+
+- [Mailbox Preview](/javascript/api/outlook?view=outlook-js-preview)
+- [Mailbox 1.7](/javascript/api/outlook?view=outlook-js-1.7)
+- [Mailbox 1.6](/javascript/api/outlook?view=outlook-js-1.6)
+- [Mailbox 1.5](/javascript/api/outlook?view=outlook-js-1.5)
+- [Mailbox 1.4](/javascript/api/outlook?view=outlook-js-1.4)
+- [Mailbox 1.3](/javascript/api/outlook?view=outlook-js-1.3)
+- [Mailbox 1.2](/javascript/api/outlook?view=outlook-js-1.2)
+- [Mailbox 1.1](/javascript/api/outlook?view=outlook-js-1.1)
+
+## PowerPoint
+
+- [PowerPointApi 1.1](/javascript/api/powerpoint?view=powerpoint-js-1.1)
+
+## Visio
+
+- [VisioApi 1.1](/javascript/api/visio?view=visio-js-1.1)
+
+## Word
+
+- [Word Preview](/javascript/api/word?view=word-js-preview)
+- [WordApi 1.3](/javascript/api/word?view=word-js-1.3)
+- [WordApi 1.2](/javascript/api/word?view=word-js-1.2)
+- [WordApi 1.1](/javascript/api/word?view=word-js-1.1)
+
+## Common API
+
+- [Common API](/javascript/api/office?view=common-js)
 
 > [!TIP]
 > Use the filter selection box above the table of contents to change the requirement set at any time. If the current page is not available in that requirement set, your browser will revert back to the previously selected requirement set.
