@@ -1,7 +1,8 @@
 items:
   - name: API reference
-    href: overview.md
     items:
+      - name: API reference overview
+        href: overview.md
       - name: Common API
         uid: office
         items:

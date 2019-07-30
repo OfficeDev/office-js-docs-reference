@@ -44,7 +44,6 @@ interface INewToc {
     items: [
         {
             name: string,
-            href: string,
             items?: [
                 {
                     name: string,
@@ -140,8 +139,8 @@ tryCatch(async () => {
     fsx.removeSync(commonTocFolder + "/overview.md");
 
     console.log(`Creating global TOC`);
-    let globalToc = <INewToc>{items: [{"name": "API Reference"}]};
-    globalToc.items[0].items = [{"name": "API Reference Overview", "href": "/overview/overview.md"},
+    let globalToc = <INewToc>{items: [{"name": "API reference"}]};
+    globalToc.items[0].items = [{"name": "API reference overview", "href": "/overview/overview.md"},
                                 {"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
                                 {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
@@ -182,11 +181,12 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
     let newToc = <INewToc>{};
     let membersToMove = <IMembers>{};
 
-    newToc.items = [{
-        "name": origToc.items[0].name,
-        "href": origToc.items[0].href
-    }];
-    newToc.items[0].items = [] as any;
+    newToc.items = [{"name": "API reference"}];
+    newToc.items[0].items = [{
+        "name": "API reference overview",
+        "href": "overview.md"
+    }] as any;
+    
 
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
@@ -367,12 +367,12 @@ function fixCommonToc(tocPath: string): INewToc {
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
-
-    newToc.items = [{
-        "name": origToc.items[0].name,
-        "href": origToc.items[0].href
-    }];
-    newToc.items[0].items = [] as any;
+    
+    newToc.items = [{"name": "API reference"}];
+    newToc.items[0].items = [{
+        "name": "API reference overview",
+        "href": "overview.md"
+    }] as any;
 
     // create folders for common (shared) API subcategories
     let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
