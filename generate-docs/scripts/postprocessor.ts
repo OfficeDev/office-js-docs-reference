@@ -368,11 +368,10 @@ function fixCommonToc(tocPath: string): INewToc {
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
     
-    newToc.items = [{"name": "API reference"}];
-    newToc.items[0].items = [{
-        "name": "API reference overview",
-        "href": "overview.md"
-    }] as any;
+    newToc.items = [{
+        "name": "API reference",
+        "items": [] as any
+    }];
 
     // create folders for common (shared) API subcategories
     let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
