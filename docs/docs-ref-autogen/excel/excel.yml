@@ -224,6 +224,7 @@ items:
       - excel.Excel.GeometricShape
       - excel.Excel.GeometricShapeType
       - excel.Excel.getDataCommonPostprocess
+      - excel.Excel.GroupOption
       - excel.Excel.GroupShapeCollection
       - excel.Excel.HeaderFooter
       - excel.Excel.HeaderFooterGroup
@@ -1563,6 +1564,8 @@ references:
     name: Excel.GeometricShape
   - uid: excel.Excel.GeometricShapeType
     name: Excel.GeometricShapeType
+  - uid: excel.Excel.GroupOption
+    name: Excel.GroupOption
   - uid: excel.Excel.GroupShapeCollection
     name: Excel.GroupShapeCollection
   - uid: excel.Excel.HeaderFooter

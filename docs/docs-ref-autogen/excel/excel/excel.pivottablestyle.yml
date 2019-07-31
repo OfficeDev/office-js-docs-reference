@@ -184,7 +184,7 @@ items:
           - string
   - uid: excel.Excel.PivotTableStyle.readOnly
     summary: >-
-      Specifies if this PivotTableStyle object is read-only. Read-only.
+      Specifies whether this PivotTableStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

@@ -199,7 +199,7 @@ items:
             - number
   - uid: excel.Excel.CommentCollection.getItemByCell
     summary: >-
-      Gets the comment from the specified cell.
+      Gets the comment from the specifed cell.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

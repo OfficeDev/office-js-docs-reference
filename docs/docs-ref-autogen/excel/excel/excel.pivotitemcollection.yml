@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.PivotItemCollection
     summary: |-
-      Represents a collection of all the Pivot Items related to their parent PivotField.
+      Represents a collection of all the PivotItems related to their parent PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotItemCollection
@@ -39,7 +39,7 @@ items:
           - excel.Excel.RequestContext
   - uid: excel.Excel.PivotItemCollection.getCount
     summary: |-
-      Gets the number of pivot hierarchies in the collection.
+      Gets the number of PivotItems in the collection.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
@@ -55,7 +55,7 @@ items:
         description: ''
   - uid: excel.Excel.PivotItemCollection.getItem
     summary: |-
-      Gets a PivotHierarchy by its name or id.
+      Gets a PivotItem by its name or id.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
@@ -71,12 +71,12 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the PivotTable to be retrieved.
+          description: Name of the PivotItem to be retrieved.
           type:
             - string
   - uid: excel.Excel.PivotItemCollection.getItemOrNullObject
     summary: |-
-      Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+      Gets a PivotItem by name. If the PivotItem does not exist, will return a null object.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
@@ -92,7 +92,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the PivotHierarchy to be retrieved.
+          description: Name of the PivotItem to be retrieved.
           type:
             - string
   - uid: excel.Excel.PivotItemCollection.items

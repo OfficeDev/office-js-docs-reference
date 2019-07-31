@@ -68,6 +68,7 @@ items:
       - excel.Excel.Worksheet.shapes
       - excel.Excel.Worksheet.showGridlines
       - excel.Excel.Worksheet.showHeadings
+      - excel.Excel.Worksheet.showOutlineLevels
       - excel.Excel.Worksheet.slicers
       - excel.Excel.Worksheet.standardHeight
       - excel.Excel.Worksheet.standardWidth
@@ -1251,7 +1252,9 @@ items:
           ```
   - uid: excel.Excel.Worksheet.onSingleClicked
     summary: >-
-      Occurs when left-clicked/tapped operation happens in the worksheet.
+      Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in
+      the following cases: - The user drags the mouse for multi-selection. - The user selects a cell in the mode when
+      cell arguments are selected for formula references.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW
@@ -1484,6 +1487,37 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Worksheet.showOutlineLevels
+    summary: >-
+      Shows row or column groups by their outline levels. Outlines group and summarize a list of data in the worksheet.
+      The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed. The
+      acceptable argument range is between 0 and 8. A value of 0 does not change the current display. A value greater
+      than the current number of levels displays all the levels.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: 'showOutlineLevels(rowLevels, columnLevels)'
+    fullName: 'showOutlineLevels(rowLevels, columnLevels)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showOutlineLevels(rowLevels: number, columnLevels: number): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: rowLevels
+          description: The number of row levels of an outline to display.
+          type:
+            - number
+        - id: columnLevels
+          description: The number of column levels of an outline to display.
+          type:
+            - number
   - uid: excel.Excel.Worksheet.slicers
     summary: >-
       Returns collection of slicers that are part of the worksheet. Read-only.

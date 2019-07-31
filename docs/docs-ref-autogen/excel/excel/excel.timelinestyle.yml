@@ -184,7 +184,7 @@ items:
           - string
   - uid: excel.Excel.TimelineStyle.readOnly
     summary: >-
-      Specifies if this TimelineStyle object is read-only. Read-only.
+      Specifies whether this TimelineStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

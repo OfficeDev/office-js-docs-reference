@@ -29,6 +29,7 @@ items:
       - excel.Excel.Comment.load_1
       - excel.Excel.Comment.load_2
       - excel.Excel.Comment.replies
+      - excel.Excel.Comment.resolved
       - excel.Excel.Comment.set
       - excel.Excel.Comment.set_1
       - excel.Excel.Comment.toJSON
@@ -313,6 +314,24 @@ items:
       return:
         type:
           - excel.Excel.CommentReplyCollection
+  - uid: excel.Excel.Comment.resolved
+    summary: >-
+      Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolved: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.Comment.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate

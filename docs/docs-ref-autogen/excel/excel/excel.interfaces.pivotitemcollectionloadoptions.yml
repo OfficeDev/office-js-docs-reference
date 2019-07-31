@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Interfaces.PivotItemCollectionLoadOptions
     summary: |-
-      Represents a collection of all the Pivot Items related to their parent PivotField.
+      Represents a collection of all the PivotItems related to their parent PivotField.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.PivotItemCollectionLoadOptions

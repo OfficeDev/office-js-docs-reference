@@ -31,7 +31,7 @@ items:
           - string
   - uid: excel.Excel.Interfaces.SlicerStyleData.readOnly
     summary: >-
-      Specifies if this SlicerStyle object is read-only. Read-only.
+      Specifies whether this SlicerStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

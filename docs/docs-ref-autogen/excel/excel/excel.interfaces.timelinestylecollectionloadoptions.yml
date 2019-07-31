@@ -50,7 +50,7 @@ items:
           - boolean
   - uid: excel.Excel.Interfaces.TimelineStyleCollectionLoadOptions.readOnly
     summary: >-
-      For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only. Read-only.
+      For EACH ITEM in the collection: Specifies whether this TimelineStyle object is read-only. Read-only.
 
 
       \[ [API set: ExcelApi BETA (PREVIEW

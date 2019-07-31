@@ -81,9 +81,13 @@ items:
       - excel.Excel.Range.getUsedRange
       - excel.Excel.Range.getUsedRangeOrNullObject
       - excel.Excel.Range.getVisibleView
+      - excel.Excel.Range.group
+      - excel.Excel.Range.group_1
       - excel.Excel.Range.hasSpill
       - excel.Excel.Range.height
       - excel.Excel.Range.hidden
+      - excel.Excel.Range.hideGroupDetails
+      - excel.Excel.Range.hideGroupDetails_1
       - excel.Excel.Range.hyperlink
       - excel.Excel.Range.insert
       - excel.Excel.Range.insert_1
@@ -111,12 +115,16 @@ items:
       - excel.Excel.Range.setDirty
       - excel.Excel.Range.setRowProperties
       - excel.Excel.Range.showCard
+      - excel.Excel.Range.showGroupDetails
+      - excel.Excel.Range.showGroupDetails_1
       - excel.Excel.Range.sort
       - excel.Excel.Range.style
       - excel.Excel.Range.text
       - excel.Excel.Range.toJSON
       - excel.Excel.Range.top
       - excel.Excel.Range.track
+      - excel.Excel.Range.ungroup
+      - excel.Excel.Range.ungroup_1
       - excel.Excel.Range.unmerge
       - excel.Excel.Range.untrack
       - excel.Excel.Range.values
@@ -2068,6 +2076,60 @@ items:
         type:
           - excel.Excel.RangeView
         description: ''
+  - uid: excel.Excel.Range.group
+    summary: >-
+      Groups columns and rows for an outline.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: group(groupOption)
+    fullName: group(groupOption)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'group(groupOption: Excel.GroupOption): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOption
+          description: >-
+            Specifies how the range can be grouped by rows or columns. An `InvalidArgument` error is thrown when the
+            group option differs from the range's `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow`
+            is true and `groupOption` is "ByColumns" or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+          type:
+            - excel.Excel.GroupOption
+  - uid: excel.Excel.Range.group_1
+    summary: >-
+      Groups columns and rows for an outline.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: group(groupOptionString)
+    fullName: group(groupOptionString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'group(groupOptionString: "ByRows" | "ByColumns"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOptionString
+          description: >-
+            Specifies how the range can be grouped by rows or columns. An `InvalidArgument` error is thrown when the
+            group option differs from the range's `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow`
+            is true and `groupOption` is "ByColumns" or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+          type:
+            - '"ByRows" | "ByColumns"'
   - uid: excel.Excel.Range.hasSpill
     summary: >-
       Represents if all cells have a spill border. Returns true if all cells have a spill border, or false if all cells
@@ -2120,6 +2182,54 @@ items:
       return:
         type:
           - boolean
+  - uid: excel.Excel.Range.hideGroupDetails
+    summary: >-
+      Hide details of the row or column group.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: hideGroupDetails(groupOption)
+    fullName: hideGroupDetails(groupOption)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'hideGroupDetails(groupOption: Excel.GroupOption): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOption
+          description: Specifies whether to hide details of grouped rows or grouped columns.
+          type:
+            - excel.Excel.GroupOption
+  - uid: excel.Excel.Range.hideGroupDetails_1
+    summary: >-
+      Hide details of the row or column group.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: hideGroupDetails(groupOptionString)
+    fullName: hideGroupDetails(groupOptionString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'hideGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOptionString
+          description: Specifies whether to hide details of grouped rows or grouped columns.
+          type:
+            - '"ByRows" | "ByColumns"'
   - uid: excel.Excel.Range.hyperlink
     summary: |-
       Represents the hyperlink for the current range.
@@ -2965,6 +3075,54 @@ items:
         type:
           - void
         description: ''
+  - uid: excel.Excel.Range.showGroupDetails
+    summary: >-
+      Show details of the row or column group.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: showGroupDetails(groupOption)
+    fullName: showGroupDetails(groupOption)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showGroupDetails(groupOption: Excel.GroupOption): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOption
+          description: Specifies whether to show details of grouped rows or grouped columns.
+          type:
+            - excel.Excel.GroupOption
+  - uid: excel.Excel.Range.showGroupDetails_1
+    summary: >-
+      Show details of the row or column group.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: showGroupDetails(groupOptionString)
+    fullName: showGroupDetails(groupOptionString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOptionString
+          description: Specifies whether to show details of grouped rows or grouped columns.
+          type:
+            - '"ByRows" | "ByColumns"'
   - uid: excel.Excel.Range.sort
     summary: |-
       Represents the range sort of the current range. Read-only.
@@ -3087,6 +3245,54 @@ items:
         type:
           - excel.Excel.Range
         description: ''
+  - uid: excel.Excel.Range.ungroup
+    summary: >-
+      Ungroups columns and rows for an outline.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: ungroup(groupOption)
+    fullName: ungroup(groupOption)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(groupOption: Excel.GroupOption): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOption
+          description: Specifies how the range can be ungrouped by rows or columns.
+          type:
+            - excel.Excel.GroupOption
+  - uid: excel.Excel.Range.ungroup_1
+    summary: >-
+      Ungroups columns and rows for an outline.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: ungroup(groupOptionString)
+    fullName: ungroup(groupOptionString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'ungroup(groupOptionString: "ByRows" | "ByColumns"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: groupOptionString
+          description: Specifies how the range can be ungrouped by rows or columns.
+          type:
+            - '"ByRows" | "ByColumns"'
   - uid: excel.Excel.Range.unmerge
     summary: |-
       Unmerge the range cells into separate cells.

@@ -10,6 +10,9 @@ The JavaScript API for Office enables you to create web applications that intera
 
 The following is a list of host-specific requirement sets (and the cross-host Common APIs). Each item links to a version of the API reference documentation that is supported by that requirement set (e.g. ExcelApi 1.3 shows APIs in ExcelApi 1.1, 1.2, 1.3 as well as the Common API).
 
+> [!TIP]
+> Choose a link on this page to view reference documentation for APIs supported by the specified requirement set, or use the filter selection drop-down menu above the table of contents to change the requirement set at any time.
+
 ## Excel
 
 - [ExcelApi Preview](/javascript/api/excel?view=excel-js-preview)
@@ -25,7 +28,7 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 
 ## OneNote
 
-- [OneNote 1.1](/javascript/api/excel?view=onenote-js-1.1)
+- [OneNote 1.1](/javascript/api/onenote?view=onenote-js-1.1)
 
 ## Outlook
 
@@ -56,9 +59,6 @@ The following is a list of host-specific requirement sets (and the cross-host Co
 ## Common API
 
 - [Common API](/javascript/api/office?view=common-js)
-
-> [!TIP]
-> Use the filter selection box above the table of contents to change the requirement set at any time. If the current page is not available in that requirement set, your browser will revert back to the previously selected requirement set.
 
 ## See also
 

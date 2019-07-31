@@ -60,7 +60,7 @@ items:
           ```
   - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetX
     summary: >-
-      The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the
+      The distance, in points, from the left-clicked/tapped point to the left (or right for RTL) gridline edge of the
       left-clicked/tapped cell.
 
 

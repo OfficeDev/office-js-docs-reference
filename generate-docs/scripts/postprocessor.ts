@@ -140,7 +140,7 @@ tryCatch(async () => {
 
     console.log(`Creating global TOC`);
     let globalToc = <INewToc>{items: [{"name": "API reference"}]};
-    globalToc.items[0].items = [{"name": "API reference overview", "href": "/overview/overview.md"},
+    globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview/overview"},
                                 {"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
                                 {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
                                 {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
@@ -372,6 +372,11 @@ function fixCommonToc(tocPath: string): INewToc {
         "name": "API reference",
         "items": [] as any
     }];
+    
+    newToc.items[0].items = [{
+        "name": "API reference overview",
+        "href": "overview.md"
+    }] as any;
 
     // create folders for common (shared) API subcategories
     let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};

@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.Interfaces.PivotHierarchyCollectionLoadOptions
     summary: |-
-      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+      Represents a collection of all the PivotHierarchies that are part of the PivotTable.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Interfaces.PivotHierarchyCollectionLoadOptions

@@ -14,6 +14,7 @@ items:
       - excel.Excel.Interfaces.CommentReplyData.content
       - excel.Excel.Interfaces.CommentReplyData.creationDate
       - excel.Excel.Interfaces.CommentReplyData.id
+      - excel.Excel.Interfaces.CommentReplyData.resolved
   - uid: excel.Excel.Interfaces.CommentReplyData.authorEmail
     summary: >-
       Gets the email of the comment reply's author.
@@ -104,3 +105,21 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.resolved
+    summary: >-
+      Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type:
+          - boolean

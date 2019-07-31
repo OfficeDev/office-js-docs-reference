@@ -10,6 +10,7 @@ items:
     package: excel
     children:
       - excel.Excel.Interfaces.CommentUpdateData.content
+      - excel.Excel.Interfaces.CommentUpdateData.resolved
   - uid: excel.Excel.Interfaces.CommentUpdateData.content
     summary: >-
       Gets or sets the comment's content. The string is plain text.
@@ -28,3 +29,21 @@ items:
       return:
         type:
           - string
+  - uid: excel.Excel.Interfaces.CommentUpdateData.resolved
+    summary: >-
+      Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type:
+          - boolean

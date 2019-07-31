@@ -2,7 +2,7 @@
 items:
   - uid: excel.Excel.PivotFieldCollection
     summary: |-
-      Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+      Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.PivotFieldCollection
@@ -39,7 +39,7 @@ items:
           - excel.Excel.RequestContext
   - uid: excel.Excel.PivotFieldCollection.getCount
     summary: |-
-      Gets the number of pivot hierarchies in the collection.
+      Gets the number of pivot fields in the collection.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getCount()
@@ -55,7 +55,7 @@ items:
         description: ''
   - uid: excel.Excel.PivotFieldCollection.getItem
     summary: |-
-      Gets a PivotHierarchy by its name or id.
+      Gets a PivotField by its name or id.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItem(name)
@@ -71,12 +71,12 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the PivotTable to be retrieved.
+          description: Name of the PivotField to be retrieved.
           type:
             - string
   - uid: excel.Excel.PivotFieldCollection.getItemOrNullObject
     summary: |-
-      Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+      Gets a PivotField by name. If the PivotField does not exist, will return a null object.
 
       \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: getItemOrNullObject(name)
@@ -92,7 +92,7 @@ items:
         description: ''
       parameters:
         - id: name
-          description: Name of the PivotHierarchy to be retrieved.
+          description: Name of the PivotField to be retrieved.
           type:
             - string
   - uid: excel.Excel.PivotFieldCollection.items

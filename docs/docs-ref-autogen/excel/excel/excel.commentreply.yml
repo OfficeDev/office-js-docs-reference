@@ -29,6 +29,7 @@ items:
       - excel.Excel.CommentReply.load
       - excel.Excel.CommentReply.load_1
       - excel.Excel.CommentReply.load_2
+      - excel.Excel.CommentReply.resolved
       - excel.Excel.CommentReply.set
       - excel.Excel.CommentReply.set_1
       - excel.Excel.CommentReply.toJSON
@@ -303,6 +304,24 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.CommentReply.resolved
+    summary: >-
+      Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly resolved: boolean;'
+      return:
+        type:
+          - boolean
   - uid: excel.Excel.CommentReply.set
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
