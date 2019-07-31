@@ -100,6 +100,7 @@ tryCatch(async () => {
         }
     });
 
+
     console.log(`Namespace pass on Outlook docs`);
     // replace Outlook/CommonAPI namespace references with Office
     fsx.readdirSync(docsSource)
@@ -129,14 +130,6 @@ tryCatch(async () => {
                     fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
                 });
         });
-
-    console.log(`Moving common TOC to its own folder`);
-    fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
-    fsx.copySync(commonTocFolder + "/overview.md", "../yaml/common/overview.md");
-
-    // remove to prevent build errors
-    fsx.removeSync(commonTocFolder + "/toc.yml");
-    fsx.removeSync(commonTocFolder + "/overview.md");
 
     console.log(`Creating global TOC`);
     let globalToc = <INewToc>{items: [{"name": "API reference"}]};
@@ -181,7 +174,10 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
     let newToc = <INewToc>{};
     let membersToMove = <IMembers>{};
 
-    newToc.items = [{"name": "API reference"}];
+    newToc.items = [{
+        "name": "API reference",
+        "items": [] as any
+    }];
     newToc.items[0].items = [{
         "name": "API reference overview",
         "href": "overview.md"
@@ -358,12 +354,12 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
     });
 
     // append the common API toc
-    newToc.items[0].items.push(commonToc.items[0].items[0]);
+    newToc.items[0].items.push((commonToc.items[0] as any).items[1]);
     return newToc;
 }
 
 function fixCommonToc(tocPath: string): INewToc {
-    console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
+    console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
@@ -372,11 +368,6 @@ function fixCommonToc(tocPath: string): INewToc {
         "name": "API reference",
         "items": [] as any
     }];
-    
-    newToc.items[0].items = [{
-        "name": "API reference overview",
-        "href": "overview.md"
-    }] as any;
 
     // create folders for common (shared) API subcategories
     let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
@@ -407,6 +398,13 @@ function fixCommonToc(tocPath: string): INewToc {
             }
         });
     });
+
+    
+    // add API reference overview to Common API
+    newToc.items[0].items.unshift({
+        "name": "API reference overview",
+        "href": "overview.md"
+    } as any);
 
     return newToc;
 }
