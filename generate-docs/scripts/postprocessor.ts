@@ -131,6 +131,15 @@ tryCatch(async () => {
                 });
         });
 
+        
+    console.log(`Moving common TOC to its own folder`);
+    fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
+    fsx.copySync(commonTocFolder + "/overview.md", "../yaml/common/overview.md");
+
+    // remove to prevent build errors
+    fsx.removeSync(commonTocFolder + "/toc.yml");
+    fsx.removeSync(commonTocFolder + "/overview.md");
+
     console.log(`Creating global TOC`);
     let globalToc = <INewToc>{items: [{"name": "API reference"}]};
     globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview/overview"},
