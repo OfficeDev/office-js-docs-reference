@@ -1,0 +1,279 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeFill
+    summary: |-
+      Represents the fill formatting of a shape object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeFill
+    fullName: Excel.ShapeFill
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.ShapeFill.clear
+      - excel.Excel.ShapeFill.context
+      - excel.Excel.ShapeFill.foregroundColor
+      - excel.Excel.ShapeFill.load
+      - excel.Excel.ShapeFill.load_1
+      - excel.Excel.ShapeFill.load_2
+      - excel.Excel.ShapeFill.set
+      - excel.Excel.ShapeFill.set_1
+      - excel.Excel.ShapeFill.setSolidColor
+      - excel.Excel.ShapeFill.toJSON
+      - excel.Excel.ShapeFill.transparency
+      - excel.Excel.ShapeFill.type
+  - uid: excel.Excel.ShapeFill.clear
+    summary: |-
+      Clears the fill formatting of this shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.ShapeFill.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.ShapeFill.foregroundColor
+    summary: >-
+      Represents the shape fill foreground color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
+      named HTML color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: foregroundColor
+    fullName: foregroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'foregroundColor: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.ShapeFill.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.ShapeFill` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ShapeFill` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ShapeFill` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.ShapeFillLoadOptions): Excel.ShapeFill;'
+      return:
+        type:
+          - excel.Excel.ShapeFill
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ShapeFillLoadOptions
+  - uid: excel.Excel.ShapeFill.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ShapeFill;'
+      return:
+        type:
+          - excel.Excel.ShapeFill
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ShapeFill.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeFill;'
+      return:
+        type:
+          - excel.Excel.ShapeFill
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.ShapeFill.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ShapeFill): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ShapeFillUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ShapeFillUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ShapeFill.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ShapeFill): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ShapeFill
+  - uid: excel.Excel.ShapeFill.setSolidColor
+    summary: |-
+      Sets the fill formatting of the shape to a uniform color. This changes the fill type to "Solid".
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setSolidColor(color)
+    fullName: setSolidColor(color)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setSolidColor(color: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: color
+          description: >-
+            A string that represents the fill color in HTML color format, of the form \#RRGGBB (e.g. "FFA500") or as a
+            named HTML color (e.g. "orange").
+          type:
+            - string
+  - uid: excel.Excel.ShapeFill.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ShapeFill object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.ShapeFillData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ShapeFillData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ShapeFillData
+        description: ''
+  - uid: excel.Excel.ShapeFill.transparency
+    summary: >-
+      Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns
+      null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with
+      a gradient fill type.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: transparency
+    fullName: transparency
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'transparency: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.ShapeFill.type
+    summary: |-
+      Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        readonly type: Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" |
+        "Mixed";
+      return:
+        type:
+          - Excel.ShapeFillType | "NoFill" | "Solid" | "Gradient" | "Pattern" | "PictureAndTexture" | "Mixed"

@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.HostType
+    summary: Specifies the host Office application in which the add-in is running.
+    name: Office.HostType
+    fullName: Office.HostType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.HostType.Access
+      - office.Office.HostType.Excel
+      - office.Office.HostType.OneNote
+      - office.Office.HostType.Outlook
+      - office.Office.HostType.PowerPoint
+      - office.Office.HostType.Project
+      - office.Office.HostType.Word
+  - uid: office.Office.HostType.Access
+    summary: >-
+      The Office host is Microsoft Access.
+
+
+      **Important**: We no longer recommend that you create and use Access web apps and databases in SharePoint. As an
+      alternative, we recommend that you use [Microsoft PowerApps](https://powerapps.microsoft.com/) to build no-code
+      business solutions for web and mobile devices.
+    name: Access
+    fullName: Access
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Excel
+    summary: The Office host is Microsoft Excel.
+    name: Excel
+    fullName: Excel
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.OneNote
+    summary: The Office host is Microsoft OneNote.
+    name: OneNote
+    fullName: OneNote
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Outlook
+    summary: The Office host is Microsoft Outlook.
+    name: Outlook
+    fullName: Outlook
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.PowerPoint
+    summary: The Office host is Microsoft PowerPoint.
+    name: PowerPoint
+    fullName: PowerPoint
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Project
+    summary: The Office host is Microsoft Project.
+    name: Project
+    fullName: Project
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.HostType.Word
+    summary: The Office host is Microsoft Word.
+    name: Word
+    fullName: Word
+    langs:
+      - typeScript
+    type: field

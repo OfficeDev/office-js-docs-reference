@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Dialog
+    summary: >-
+      The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event
+      handlers and closing the dialog.
+    remarks: >-
+      **Requirement set**:
+      [DialogAPI](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/dialog-api-requirement-sets)
+    name: Office.Dialog
+    fullName: Office.Dialog
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.Office.Dialog.addEventHandler
+      - office.Office.Dialog.close
+      - office.Office.Dialog.sendMessage
+  - uid: office.Office.Dialog.addEventHandler
+    summary: |-
+      Registers an event handler. The two supported events are:
+
+      - DialogMessageReceived. Triggered when the dialog box sends a message to its parent.
+
+      - DialogEventReceived. Triggered when the dialog box has been closed or otherwise unloaded.
+    name: 'addEventHandler(eventType, handler)'
+    fullName: 'addEventHandler(eventType, handler)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'addEventHandler(eventType: Office.EventType, handler: Function): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: eventType
+          description: ''
+          type:
+            - office.Office.EventType
+        - id: handler
+          description: ''
+          type:
+            - Function
+  - uid: office.Office.Dialog.close
+    summary: Called from a parent page to close the corresponding dialog box.
+    name: close()
+    fullName: close()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'close(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: office.Office.Dialog.sendMessage
+    summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
+    name: sendMessage(name)
+    fullName: sendMessage(name)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'sendMessage(name: string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: name
+          description: ''
+          type:
+            - string

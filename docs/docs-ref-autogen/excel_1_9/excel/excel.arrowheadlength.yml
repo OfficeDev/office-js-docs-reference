@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ArrowheadLength
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ArrowheadLength
+    fullName: Excel.ArrowheadLength
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ArrowheadLength.long
+      - excel.Excel.ArrowheadLength.medium
+      - excel.Excel.ArrowheadLength.short
+  - uid: excel.Excel.ArrowheadLength.long
+    name: long
+    fullName: long
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Long"'
+  - uid: excel.Excel.ArrowheadLength.medium
+    name: medium
+    fullName: medium
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Medium"'
+  - uid: excel.Excel.ArrowheadLength.short
+    name: short
+    fullName: short
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Short"'

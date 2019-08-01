@@ -1,0 +1,138 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ErrorCodes
+    name: Excel.ErrorCodes
+    fullName: Excel.ErrorCodes
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ErrorCodes.accessDenied
+      - excel.Excel.ErrorCodes.apiNotFound
+      - excel.Excel.ErrorCodes.conflict
+      - excel.Excel.ErrorCodes.generalException
+      - excel.Excel.ErrorCodes.insertDeleteConflict
+      - excel.Excel.ErrorCodes.invalidArgument
+      - excel.Excel.ErrorCodes.invalidBinding
+      - excel.Excel.ErrorCodes.invalidOperation
+      - excel.Excel.ErrorCodes.invalidOperationInCellEditMode
+      - excel.Excel.ErrorCodes.invalidReference
+      - excel.Excel.ErrorCodes.invalidSelection
+      - excel.Excel.ErrorCodes.itemAlreadyExists
+      - excel.Excel.ErrorCodes.itemNotFound
+      - excel.Excel.ErrorCodes.nonBlankCellOffSheet
+      - excel.Excel.ErrorCodes.notImplemented
+      - excel.Excel.ErrorCodes.unsupportedOperation
+  - uid: excel.Excel.ErrorCodes.accessDenied
+    name: accessDenied
+    fullName: accessDenied
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccessDenied"'
+  - uid: excel.Excel.ErrorCodes.apiNotFound
+    name: apiNotFound
+    fullName: apiNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ApiNotFound"'
+  - uid: excel.Excel.ErrorCodes.conflict
+    name: conflict
+    fullName: conflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Conflict"'
+  - uid: excel.Excel.ErrorCodes.generalException
+    name: generalException
+    fullName: generalException
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeneralException"'
+  - uid: excel.Excel.ErrorCodes.insertDeleteConflict
+    name: insertDeleteConflict
+    fullName: insertDeleteConflict
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InsertDeleteConflict"'
+  - uid: excel.Excel.ErrorCodes.invalidArgument
+    name: invalidArgument
+    fullName: invalidArgument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidArgument"'
+  - uid: excel.Excel.ErrorCodes.invalidBinding
+    name: invalidBinding
+    fullName: invalidBinding
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidBinding"'
+  - uid: excel.Excel.ErrorCodes.invalidOperation
+    name: invalidOperation
+    fullName: invalidOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidOperation"'
+  - uid: excel.Excel.ErrorCodes.invalidOperationInCellEditMode
+    name: invalidOperationInCellEditMode
+    fullName: invalidOperationInCellEditMode
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidOperationInCellEditMode"'
+  - uid: excel.Excel.ErrorCodes.invalidReference
+    name: invalidReference
+    fullName: invalidReference
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidReference"'
+  - uid: excel.Excel.ErrorCodes.invalidSelection
+    name: invalidSelection
+    fullName: invalidSelection
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"InvalidSelection"'
+  - uid: excel.Excel.ErrorCodes.itemAlreadyExists
+    name: itemAlreadyExists
+    fullName: itemAlreadyExists
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemAlreadyExists"'
+  - uid: excel.Excel.ErrorCodes.itemNotFound
+    name: itemNotFound
+    fullName: itemNotFound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ItemNotFound"'
+  - uid: excel.Excel.ErrorCodes.nonBlankCellOffSheet
+    name: nonBlankCellOffSheet
+    fullName: nonBlankCellOffSheet
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonBlankCellOffSheet"'
+  - uid: excel.Excel.ErrorCodes.notImplemented
+    name: notImplemented
+    fullName: notImplemented
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotImplemented"'
+  - uid: excel.Excel.ErrorCodes.unsupportedOperation
+    name: unsupportedOperation
+    fullName: unsupportedOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UnsupportedOperation"'

@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    summary: >-
+      An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in
+      "conditionalDataBarPositiveFormat.set(<!-- -->{ ... }<!-- -->)".
+    name: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    fullName: Excel.Interfaces.ConditionalDataBarPositiveFormatUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel

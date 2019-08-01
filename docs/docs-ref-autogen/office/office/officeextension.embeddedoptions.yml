@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.EmbeddedOptions
+    name: OfficeExtension.EmbeddedOptions
+    fullName: OfficeExtension.EmbeddedOptions
+    langs:
+      - typeScript
+    type: interface
+    package: office
+    children:
+      - office.OfficeExtension.EmbeddedOptions.container
+      - office.OfficeExtension.EmbeddedOptions.height
+      - office.OfficeExtension.EmbeddedOptions.id
+      - office.OfficeExtension.EmbeddedOptions.sessionKey
+      - office.OfficeExtension.EmbeddedOptions.timeoutInMilliseconds
+      - office.OfficeExtension.EmbeddedOptions.width
+  - uid: office.OfficeExtension.EmbeddedOptions.container
+    name: container
+    fullName: container
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'container?: HTMLElement,'
+      return:
+        type:
+          - HTMLElement
+  - uid: office.OfficeExtension.EmbeddedOptions.height
+    name: height
+    fullName: height
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'height?: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.EmbeddedOptions.id
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.EmbeddedOptions.sessionKey
+    name: sessionKey
+    fullName: sessionKey
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'sessionKey?: string,'
+      return:
+        type:
+          - string
+  - uid: office.OfficeExtension.EmbeddedOptions.timeoutInMilliseconds
+    name: timeoutInMilliseconds
+    fullName: timeoutInMilliseconds
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'timeoutInMilliseconds?: number;'
+      return:
+        type:
+          - number
+  - uid: office.OfficeExtension.EmbeddedOptions.width
+    name: width
+    fullName: width
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'width?: string;'
+      return:
+        type:
+          - string

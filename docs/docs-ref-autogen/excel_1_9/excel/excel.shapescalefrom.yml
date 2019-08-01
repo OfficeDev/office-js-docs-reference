@@ -1,0 +1,38 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeScaleFrom
+    summary: |-
+      Specifies which part of the shape retains its position when the shape is scaled.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeScaleFrom
+    fullName: Excel.ShapeScaleFrom
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeScaleFrom.scaleFromBottomRight
+      - excel.Excel.ShapeScaleFrom.scaleFromMiddle
+      - excel.Excel.ShapeScaleFrom.scaleFromTopLeft
+  - uid: excel.Excel.ShapeScaleFrom.scaleFromBottomRight
+    name: scaleFromBottomRight
+    fullName: scaleFromBottomRight
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ScaleFromBottomRight"'
+  - uid: excel.Excel.ShapeScaleFrom.scaleFromMiddle
+    name: scaleFromMiddle
+    fullName: scaleFromMiddle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ScaleFromMiddle"'
+  - uid: excel.Excel.ShapeScaleFrom.scaleFromTopLeft
+    name: scaleFromTopLeft
+    fullName: scaleFromTopLeft
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ScaleFromTopLeft"'

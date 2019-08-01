@@ -165,6 +165,10 @@
             "redirect_url": "/javascript/api/office/office.documentselectionchangedeventargs"
         },
         {
+            "source_path": "docs/docs-ref-autogen/overview/office.md",
+            "redirect_url": "/javascript/api/overview"
+        },
+        {
             "source_path": "docs/docs-ref-autogen/excel/excel.showcardpostprocessaction.md",
             "redirect_url": "/javascript/api/excel"
         },

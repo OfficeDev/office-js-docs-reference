@@ -1,0 +1,70 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ColumnPropertiesLoadOptions
+    summary: |-
+      Represents which column properties to load, when used as part of a "range.getColumnProperties" method.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ColumnPropertiesLoadOptions
+    fullName: Excel.ColumnPropertiesLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    extends:
+      - excel.Excel.CellPropertiesLoadOptions
+    package: excel
+    children:
+      - excel.Excel.ColumnPropertiesLoadOptions.columnHidden
+      - excel.Excel.ColumnPropertiesLoadOptions.columnIndex
+      - excel.Excel.ColumnPropertiesLoadOptions.format
+  - uid: excel.Excel.ColumnPropertiesLoadOptions.columnHidden
+    summary: |-
+      Specifies whether to load on the `columnHidden` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnHidden
+    fullName: columnHidden
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnHidden?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ColumnPropertiesLoadOptions.columnIndex
+    summary: |-
+      Specifies whether to load on the `columnIndex` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ColumnPropertiesLoadOptions.format
+    summary: |-
+      Specifies whether to load on the `format` property.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: |-
+        format?: Excel.CellPropertiesFormatLoadOptions & {
+                    columnWidth?: boolean;
+                };
+      return:
+        type:
+          - |-
+            Excel.CellPropertiesFormatLoadOptions & {
+                        columnWidth?: boolean;
+                    }

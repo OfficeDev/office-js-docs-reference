@@ -1,0 +1,1827 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Body
+    summary: |-
+      Represents the body of a document or a section.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Body
+    fullName: Word.Body
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: word
+    children:
+      - word.Word.Body.clear
+      - word.Word.Body.contentControls
+      - word.Word.Body.context
+      - word.Word.Body.font
+      - word.Word.Body.getHtml
+      - word.Word.Body.getOoxml
+      - word.Word.Body.getRange
+      - word.Word.Body.getRange_1
+      - word.Word.Body.inlinePictures
+      - word.Word.Body.insertBreak
+      - word.Word.Body.insertBreak_1
+      - word.Word.Body.insertContentControl
+      - word.Word.Body.insertFileFromBase64
+      - word.Word.Body.insertFileFromBase64_1
+      - word.Word.Body.insertHtml
+      - word.Word.Body.insertHtml_1
+      - word.Word.Body.insertInlinePictureFromBase64
+      - word.Word.Body.insertInlinePictureFromBase64_1
+      - word.Word.Body.insertOoxml
+      - word.Word.Body.insertOoxml_1
+      - word.Word.Body.insertParagraph
+      - word.Word.Body.insertParagraph_1
+      - word.Word.Body.insertTable
+      - word.Word.Body.insertTable_1
+      - word.Word.Body.insertText
+      - word.Word.Body.insertText_1
+      - word.Word.Body.lists
+      - word.Word.Body.load
+      - word.Word.Body.load_1
+      - word.Word.Body.load_2
+      - word.Word.Body.paragraphs
+      - word.Word.Body.parentBody
+      - word.Word.Body.parentBodyOrNullObject
+      - word.Word.Body.parentContentControl
+      - word.Word.Body.parentContentControlOrNullObject
+      - word.Word.Body.parentSection
+      - word.Word.Body.parentSectionOrNullObject
+      - word.Word.Body.search
+      - word.Word.Body.select
+      - word.Word.Body.select_1
+      - word.Word.Body.set
+      - word.Word.Body.set_1
+      - word.Word.Body.style
+      - word.Word.Body.styleBuiltIn
+      - word.Word.Body.tables
+      - word.Word.Body.text
+      - word.Word.Body.toJSON
+      - word.Word.Body.track
+      - word.Word.Body.type
+      - word.Word.Body.untrack
+  - uid: word.Word.Body.clear
+    summary: |-
+      Clears the contents of the body object. The user can perform the undo operation on the cleared content.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: clear()
+    fullName: clear()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clear(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to clear the contents of the body.
+              body.clear();
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Cleared the body contents.');
+              });
+          })
+          .catch(function (error) {
+              console.log("Error: " + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          // The Silly stories add-in sample shows how the 
+          // clear method can be used to clear the contents of a document.
+          // https://aka.ms/sillystorywordaddin
+          ```
+  - uid: word.Word.Body.contentControls
+    summary: |-
+      Gets the collection of rich text content control objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: contentControls
+    fullName: contentControls
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly contentControls: Word.ContentControlCollection;'
+      return:
+        type:
+          - word.Word.ContentControlCollection
+  - uid: word.Word.Body.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - word.Word.RequestContext
+  - uid: word.Word.Body.font
+    summary: |-
+      Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly font: Word.Font;'
+      return:
+        type:
+          - word.Word.Font
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Get the style and the font size, font name, and font color properties on the body object.
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to load font and style information for the document body.
+              context.load(body, 'font/size, font/name, font/color, style');
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  // Show the results of the load method. Here we show the
+                  // property values on the body object.
+                  var results = 'Font size: ' + body.font.size +
+                                '; Font name: ' + body.font.name +
+                                '; Font color: ' + body.font.color +
+                                '; Body style: ' + body.style;
+
+                  console.log(results);
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: word.Word.Body.getHtml
+    summary: >-
+      Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be
+      a close, but not exact, match to the formatting of the document. This method does not return the exact same HTML
+      for the same document on different platforms (Windows, Mac, etc.). If you need exact fidelity, or consistency
+      across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getHtml()
+    fullName: getHtml()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getHtml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to get the HTML contents of the body.
+              var bodyHTML = body.getHtml();
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log("Body HTML contents: " + bodyHTML.value);
+              });
+          })
+          .catch(function (error) {
+              console.log("Error: " + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: word.Word.Body.getOoxml
+    summary: |-
+      Gets the OOXML (Office Open XML) representation of the body object.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getOoxml()
+    fullName: getOoxml()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getOoxml(): OfficeExtension.ClientResult<string>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<string>
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to get the OOXML contents of the body.
+              var bodyOOXML = body.getOoxml();
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log("Body OOXML contents: " + bodyOOXML.value);
+              });
+          })
+          .catch(function (error) {
+              console.log("Error: " + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: word.Word.Body.getRange
+    summary: |-
+      Gets the whole body, or the starting or ending point of the body, as a range.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getRange(rangeLocation)
+    fullName: getRange(rangeLocation)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocation
+          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
+          type:
+            - word.Word.RangeLocation
+  - uid: word.Word.Body.getRange_1
+    summary: |-
+      Gets the whole body, or the starting or ending point of the body, as a range.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: getRange(rangeLocationString)
+    fullName: getRange(rangeLocationString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: rangeLocationString
+          description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', ''After'', or ''Content''.'
+          type:
+            - '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
+  - uid: word.Word.Body.inlinePictures
+    summary: >-
+      Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: inlinePictures
+    fullName: inlinePictures
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly inlinePictures: Word.InlinePictureCollection;'
+      return:
+        type:
+          - word.Word.InlinePictureCollection
+  - uid: word.Word.Body.insertBreak
+    summary: |-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertBreak(breakType, insertLocation)'
+    fullName: 'insertBreak(breakType, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertBreak(breakType: Word.BreakType, insertLocation: Word.InsertLocation): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (ctx) {
+
+              // Create a proxy object for the document body.
+              var body = ctx.document.body;
+
+              // Queue a commmand to insert a page break at the start of the document body.
+              body.insertBreak(Word.BreakType.page, Word.InsertLocation.start);
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return ctx.sync().then(function () {
+                  console.log('Added a page break at the start of the document body.');
+              });
+          })
+          .catch(function (error) {
+              console.log("Error: " + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: breakType
+          description: Required. The break type to add to the body.
+          type:
+            - word.Word.BreakType
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertBreak_1
+    summary: |-
+      Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertBreak(breakTypeString, insertLocation)'
+    fullName: 'insertBreak(breakTypeString, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertBreak(breakTypeString: "Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" |
+        "SectionOdd" | "Line", insertLocation: "Before" | "After" | "Start" | "End" | "Replace"): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: breakTypeString
+          description: Required. The break type to add to the body.
+          type:
+            - '"Page" | "Next" | "SectionNext" | "SectionContinuous" | "SectionEven" | "SectionOdd" | "Line"'
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.insertContentControl
+    summary: |-
+      Wraps the body object with a Rich Text content control.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: insertContentControl()
+    fullName: insertContentControl()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertContentControl(): Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to wrap the body in a content control.
+              body.insertContentControl();
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Wrapped the body in a content control.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: word.Word.Body.insertFileFromBase64
+    summary: >-
+      Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertFileFromBase64(base64File, insertLocation)'
+    fullName: 'insertFileFromBase64(base64File, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to insert base64 encoded .docx at the beginning of the content body.
+              // You will need to implement getBase64() to pass in a string of a base64 encoded docx file.
+              body.insertFileFromBase64(getBase64(), Word.InsertLocation.start);
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Added base64 encoded text to the beginning of the document body.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertFileFromBase64_1
+    summary: >-
+      Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertFileFromBase64(base64File, insertLocationString)'
+    fullName: 'insertFileFromBase64(base64File, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertFileFromBase64(base64File: string, insertLocationString: "Before" | "After" | "Start" | "End" |
+        "Replace"): Word.Range;
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: base64File
+          description: Required. The base64 encoded content of a .docx file.
+          type:
+            - string
+        - id: insertLocationString
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.insertHtml
+    summary: |-
+      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertHtml(html, insertLocation)'
+    fullName: 'insertHtml(html, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to insert HTML in to the beginning of the body.
+              body.insertHtml(
+                  '<strong>This is text inserted with body.insertHtml()</strong>', Word.InsertLocation.start);
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('HTML added to the beginning of the document body.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted in the document.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertHtml_1
+    summary: |-
+      Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertHtml(html, insertLocationString)'
+    fullName: 'insertHtml(html, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: html
+          description: Required. The HTML to be inserted in the document.
+          type:
+            - string
+        - id: insertLocationString
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.insertInlinePictureFromBase64
+    summary: |-
+      Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocation: Word.InsertLocation):
+        Word.InlinePicture;
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to insert OOXML in to the beginning of the body.
+              body.insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", Word.InsertLocation.start);
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('OOXML added to the beginning of the document body.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
+          // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
+
+          // The Word-Add-in-DocumentAssembly sample shows how you can use this API to assemble a document.
+          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+          ```
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted in the body.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertInlinePictureFromBase64_1
+    summary: |-
+      Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
+    fullName: 'insertInlinePictureFromBase64(base64EncodedImage, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertInlinePictureFromBase64(base64EncodedImage: string, insertLocationString: "Before" | "After" | "Start" |
+        "End" | "Replace"): Word.InlinePicture;
+      return:
+        type:
+          - word.Word.InlinePicture
+        description: ''
+      parameters:
+        - id: base64EncodedImage
+          description: Required. The base64 encoded image to be inserted in the body.
+          type:
+            - string
+        - id: insertLocationString
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.insertOoxml
+    summary: |-
+      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertOoxml(ooxml, insertLocation)'
+    fullName: 'insertOoxml(ooxml, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertOoxml_1
+    summary: |-
+      Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertOoxml(ooxml, insertLocationString)'
+    fullName: 'insertOoxml(ooxml, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: ooxml
+          description: Required. The OOXML to be inserted.
+          type:
+            - string
+        - id: insertLocationString
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.insertParagraph
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: 'insertParagraph(paragraphText, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
+      return:
+        type:
+          - word.Word.Paragraph
+        description: >-
+
+
+          #### Examples
+
+
+          ```javascript
+
+          // Run a batch operation against the Word object model.
+
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to insert the paragraph at the end of the document body.
+              body.insertParagraph('Content of a new paragraph', Word.InsertLocation.end);
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Paragraph added at the end of the document body.');
+              });
+          })
+
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+
+
+          // The Word-Add-in-DocumentAssembly sample shows how you can use the insertParagraph method to assemble a
+          document.
+
+          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+
+          ```
+
+          ```typescript
+
+          await Word.run(async (context) => {
+              let paragraph = context.document.body.insertParagraph("Timeline", "End");
+              paragraph.style = "Heading 2";
+              let paragraph2 = context.document.body.insertParagraph("The Services shall commence on July 31, 2015, and shall continue through July 29, 2015.", "End");
+              paragraph2.style = "Normal";
+              let paragraph3 = context.document.body.insertParagraph("Project Costs by Phase", "End");
+              paragraph3.style = "Heading 2";
+              // Note a content control with the title of "ProjectCosts" is added. Content will be replaced later.
+              let paragraph4 = context.document.body.insertParagraph("<Add Project Costs Here>", "End");
+              paragraph4.style = "Normal";
+              paragraph4.font.highlightColor = "#FFFF00";
+              let contentControl = paragraph4.insertContentControl();
+              contentControl.title = "ProjectCosts";
+              let paragraph5 = context.document.body.insertParagraph("Project Team", "End");
+              paragraph5.style = "Heading 2";
+              paragraph5.font.highlightColor = "#FFFFFF";
+              let paragraph6 = context.document.body.insertParagraph("Terms of Work", "End");
+              paragraph6.style = "Heading 1";
+              let paragraph7 = context.document.body.insertParagraph("Contractor shall provide the Services and Deliverable(s) as follows:", "End");
+              paragraph7.style = "Normal";
+              let paragraph8 = context.document.body.insertParagraph("Out-of-Pocket Expenses / Invoice Procedures", "End");
+              paragraph8.style = "Heading 2";
+              let paragraph9 = context.document.body.insertParagraph("Client will be invoiced monthly for the consulting services and T&L expenses. Standard Contractor invoicing is assumed to be acceptable. Invoices are due upon receipt. client will be invoiced all costs associated with out-of-pocket expenses (including, without limitation, costs and expenses associated with meals, lodging, local transportation and any other applicable business expenses) listed on the invoice as a separate line item. Reimbursement for out-of-pocket expenses in connection with performance of this SOW, when authorized and up to the limits set forth in this SOW, shall be in accordance with Client's then-current published policies governing travel and associated business expenses, which information shall be provided by the Client Project Manager.", "End");
+              paragraph9.style = "Normal";
+              // Insert a page break at the end of the document.
+              context.document.body.insertBreak("Page", "End");
+
+              await context.sync();
+          });
+
+          ```
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertParagraph_1
+    summary: |-
+      Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertParagraph(paragraphText, insertLocationString)'
+    fullName: 'insertParagraph(paragraphText, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
+        Word.Paragraph;
+      return:
+        type:
+          - word.Word.Paragraph
+        description: ''
+      parameters:
+        - id: paragraphText
+          description: Required. The paragraph text to be inserted.
+          type:
+            - string
+        - id: insertLocationString
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.insertTable
+    summary: |-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocation: Word.InsertLocation, values?: string[][]):
+        Word.Table;
+      return:
+        type:
+          - word.Word.Table
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+            // Use a two-dimensional array to hold the initial table values.
+            let data = [
+              ["Tokyo", "Beijing", "Seattle"],
+              ["Apple", "Orange", "Pineapple"]
+            ];
+            let table = context.document.body.insertTable(2, 3, "Start", data);
+            table.styleBuiltIn = Word.Style.gridTable5Dark_Accent2;
+            table.styleFirstColumn = false;
+
+            await context.sync();
+          });
+          ```
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: insertLocation
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - word.Word.InsertLocation
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: word.Word.Body.insertTable_1
+    summary: |-
+      Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
+    fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" |
+        "Replace", values?: string[][]): Word.Table;
+      return:
+        type:
+          - word.Word.Table
+        description: ''
+      parameters:
+        - id: rowCount
+          description: Required. The number of rows in the table.
+          type:
+            - number
+        - id: columnCount
+          description: Required. The number of columns in the table.
+          type:
+            - number
+        - id: insertLocationString
+          description: Required. The value can be 'Start' or 'End'.
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+        - id: values
+          description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
+          type:
+            - 'string[][]'
+  - uid: word.Word.Body.insertText
+    summary: >-
+      Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertText(text, insertLocation)'
+    fullName: 'insertText(text, insertLocation)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to insert text in to the beginning of the body.
+              body.insertText('This is text inserted with body.insertText()', Word.InsertLocation.start);
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Text added to the beginning of the document body.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: text
+          description: Required. Text to be inserted.
+          type:
+            - string
+        - id: insertLocation
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - word.Word.InsertLocation
+  - uid: word.Word.Body.insertText_1
+    summary: >-
+      Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or
+      'End'.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'insertText(text, insertLocationString)'
+    fullName: 'insertText(text, insertLocationString)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
+      return:
+        type:
+          - word.Word.Range
+        description: ''
+      parameters:
+        - id: text
+          description: Required. Text to be inserted.
+          type:
+            - string
+        - id: insertLocationString
+          description: 'Required. The value can be ''Replace'', ''Start'', or ''End''.'
+          type:
+            - '"Before" | "After" | "Start" | "End" | "Replace"'
+  - uid: word.Word.Body.lists
+    summary: |-
+      Gets the collection of list objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: lists
+    fullName: lists
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly lists: Word.ListCollection;'
+      return:
+        type:
+          - word.Word.ListCollection
+  - uid: word.Word.Body.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Word.Body` - Where option is a comma-delimited string or an array of strings
+      that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Word.Body` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Body` - Only available on
+      collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection
+      items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not
+      included in the result. If option.top is specified, the result set will start after skipping the specified number
+      of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Word.Interfaces.BodyLoadOptions): Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - word.Word.Interfaces.BodyLoadOptions
+  - uid: word.Word.Body.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: word.Word.Body.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: word.Word.Body.paragraphs
+    summary: |-
+      Gets the collection of paragraph objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: paragraphs
+    fullName: paragraphs
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly paragraphs: Word.ParagraphCollection;'
+      return:
+        type:
+          - word.Word.ParagraphCollection
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Word.run(async (context) => {
+            let paragraphs = context.document.body.paragraphs;
+            paragraphs.load("text");
+            await context.sync();
+
+            let text = [];
+            paragraphs.items.forEach((item) => {
+              let paragraph = item.text.trim();
+              if (paragraph) {
+                paragraph.split(" ").forEach((term) => {
+                  let currentTerm = term.trim();
+                  if (currentTerm) {
+                    text.push(currentTerm);
+                  }
+                });
+              }
+            });
+
+            let makeTextDistinct = new Set(text);
+            let distinctText = Array.from(makeTextDistinct);
+            let allSearchResults = [];
+
+            for (let i = 0; i < distinctText.length; i++) {
+              let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+              results.load("text");
+
+              // Map search term with its results.
+              let correlatedResults = {
+                searchTerm: distinctText[i],
+                hits: results
+              };
+
+              allSearchResults.push(correlatedResults);
+            }
+
+            await context.sync();
+
+            // Display counts.
+            allSearchResults.forEach((result) => {
+              let length = result.hits.items.length;
+
+              console.log("Search term: " + result.searchTerm + " => Count: " + length);
+            });
+          });
+          ```
+  - uid: word.Word.Body.parentBody
+    summary: >-
+      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Throws if there
+      isn't a parent body. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBody
+    fullName: parentBody
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentBody: Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+  - uid: word.Word.Body.parentBodyOrNullObject
+    summary: >-
+      Gets the parent body of the body. For example, a table cell body's parent body could be a header. Returns a null
+      object if there isn't a parent body. Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentBodyOrNullObject
+    fullName: parentBodyOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentBodyOrNullObject: Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+  - uid: word.Word.Body.parentContentControl
+    summary: |-
+      Gets the content control that contains the body. Throws if there isn't a parent content control. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControl: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: word.Word.Body.parentContentControlOrNullObject
+    summary: >-
+      Gets the content control that contains the body. Returns a null object if there isn't a parent content control.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControlOrNullObject
+    fullName: parentContentControlOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
+      return:
+        type:
+          - word.Word.ContentControl
+  - uid: word.Word.Body.parentSection
+    summary: |-
+      Gets the parent section of the body. Throws if there isn't a parent section. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentSection
+    fullName: parentSection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentSection: Word.Section;'
+      return:
+        type:
+          - word.Word.Section
+  - uid: word.Word.Body.parentSectionOrNullObject
+    summary: |-
+      Gets the parent section of the body. Returns a null object if there isn't a parent section. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentSectionOrNullObject
+    fullName: parentSectionOrNullObject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly parentSectionOrNullObject: Word.Section;'
+      return:
+        type:
+          - word.Word.Section
+  - uid: word.Word.Body.search
+    summary: >-
+      Performs a search with the specified SearchOptions on the scope of the body object. The search results are a
+      collection of range objects.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: 'search(searchText, searchOptions)'
+    fullName: 'search(searchText, searchOptions)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: |-
+        search(searchText: string, searchOptions?: Word.SearchOptions | {
+                    ignorePunct?: boolean;
+                    ignoreSpace?: boolean;
+                    matchCase?: boolean;
+                    matchPrefix?: boolean;
+                    matchSuffix?: boolean;
+                    matchWholeWord?: boolean;
+                    matchWildcards?: boolean;
+                }): Word.RangeCollection;
+      return:
+        type:
+          - word.Word.RangeCollection
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to search the document.
+              var searchResults = context.document.body.search('video', {matchCase: false});
+
+              // Queue a commmand to load the results.
+              context.load(searchResults, 'text, font');
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  var results = 'Found count: ' + searchResults.items.length +
+                                '; we highlighted the results.';
+
+                  // Queue a command to change the font for each found item.
+                  for (var i = 0; i < searchResults.items.length; i++) {
+                    searchResults.items[i].font.color = '#FF0000'    // Change color to Red
+                    searchResults.items[i].font.highlightColor = '#FFFF00';
+                    searchResults.items[i].font.bold = true;
+                  }
+
+                  // Synchronize the document state by executing the queued commands,
+                  // and return a promise to indicate task completion.
+                  return context.sync().then(function () {
+                      console.log(results);
+                  });
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+
+          // The Word-Add-in-DocumentAssembly sample provides another example of how to search a document.
+          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+            let results = context.document.body.search("Online");
+            results.load("length");
+
+            await context.sync();
+
+            // Let's traverse the search results... and highlight...
+            for (let i = 0; i < results.items.length; i++) {
+              results.items[i].font.highlightColor = "yellow";
+            }
+
+            await context.sync();
+          });
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+            // Check out how wildcard expression are built, also use the second parameter of the search method to include search modes
+            // (i.e. use wildcards).
+            let results = context.document.body.search("$*.[0-9][0-9]", { matchWildcards: true });
+            results.load("length");
+
+            await context.sync();
+
+            // Let's traverse the search results... and highlight...
+            for (let i = 0; i < results.items.length; i++) {
+              results.items[i].font.highlightColor = "red";
+              results.items[i].font.color = "white";
+            }
+
+            await context.sync();
+          });
+          ```
+          ```typescript
+          await Word.run(async (context) => {
+            let paragraphs = context.document.body.paragraphs;
+            paragraphs.load("text");
+            await context.sync();
+
+            let text = [];
+            paragraphs.items.forEach((item) => {
+              let paragraph = item.text.trim();
+              if (paragraph) {
+                paragraph.split(" ").forEach((term) => {
+                  let currentTerm = term.trim();
+                  if (currentTerm) {
+                    text.push(currentTerm);
+                  }
+                });
+              }
+            });
+
+            let makeTextDistinct = new Set(text);
+            let distinctText = Array.from(makeTextDistinct);
+            let allSearchResults = [];
+
+            for (let i = 0; i < distinctText.length; i++) {
+              let results = context.document.body.search(distinctText[i], { matchCase: true, matchWholeWord: true });
+              results.load("text");
+
+              // Map search term with its results.
+              let correlatedResults = {
+                searchTerm: distinctText[i],
+                hits: results
+              };
+
+              allSearchResults.push(correlatedResults);
+            }
+
+            await context.sync();
+
+            // Display counts.
+            allSearchResults.forEach((result) => {
+              let length = result.hits.items.length;
+
+              console.log("Search term: " + result.searchTerm + " => Count: " + length);
+            });
+          });
+          ```
+      parameters:
+        - id: searchText
+          description: Required. The search text. Can be a maximum of 255 characters.
+          type:
+            - string
+        - id: searchOptions
+          description: Optional. Options for the search.
+          type:
+            - |-
+              Word.SearchOptions | {
+                          ignorePunct?: boolean;
+                          ignoreSpace?: boolean;
+                          matchCase?: boolean;
+                          matchPrefix?: boolean;
+                          matchSuffix?: boolean;
+                          matchWholeWord?: boolean;
+                          matchWildcards?: boolean;
+                      }
+  - uid: word.Word.Body.select
+    summary: |-
+      Selects the body and navigates the Word UI to it.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionMode)
+    fullName: select(selectionMode)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionMode?: Word.SelectionMode): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to select the document body. The Word UI will
+              // move to the selected document body.
+              body.select();
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log('Selected the document body.');
+              });
+          })
+          .catch(function (error) {
+              console.log('Error: ' + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+      parameters:
+        - id: selectionMode
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - word.Word.SelectionMode
+  - uid: word.Word.Body.select_1
+    summary: |-
+      Selects the body and navigates the Word UI to it.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: select(selectionModeString)
+    fullName: select(selectionModeString)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: selectionModeString
+          description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
+          type:
+            - '"Select" | "Start" | "End"'
+  - uid: word.Word.Body.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Word.Body): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.BodyUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.BodyUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: word.Word.Body.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Word.Body): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - word.Word.Body
+  - uid: word.Word.Body.style
+    summary: >-
+      Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.Body.styleBuiltIn
+    summary: >-
+      Gets or sets the built-in style name for the body. Use this property for built-in styles that are portable between
+      locales. To use custom styles or localized style names, see the "style" property.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: styleBuiltIn
+    fullName: styleBuiltIn
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        styleBuiltIn: Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+        "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" | "Toc7"
+        | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" | "EndnoteReference"
+        | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" | "NoSpacing" | "ListParagraph" |
+        "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" | "SubtleReference" | "IntenseReference" |
+        "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" | "PlainTable1" | "PlainTable2" | "PlainTable3" |
+        "PlainTable4" | "PlainTable5" | "TableGridLight" | "GridTable1Light" | "GridTable1Light_Accent1" |
+        "GridTable1Light_Accent2" | "GridTable1Light_Accent3" | "GridTable1Light_Accent4" | "GridTable1Light_Accent5" |
+        "GridTable1Light_Accent6" | "GridTable2" | "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" |
+        "GridTable2_Accent4" | "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" |
+        "GridTable3_Accent2" | "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6"
+        | "GridTable4" | "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+        "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+        "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+        "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" | "GridTable6Colorful_Accent2" |
+        "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" | "GridTable6Colorful_Accent5" |
+        "GridTable6Colorful_Accent6" | "GridTable7Colorful" | "GridTable7Colorful_Accent1" |
+        "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" | "GridTable7Colorful_Accent4" |
+        "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" | "ListTable1Light" | "ListTable1Light_Accent1" |
+        "ListTable1Light_Accent2" | "ListTable1Light_Accent3" | "ListTable1Light_Accent4" | "ListTable1Light_Accent5" |
+        "ListTable1Light_Accent6" | "ListTable2" | "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" |
+        "ListTable2_Accent4" | "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" |
+        "ListTable3_Accent2" | "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6"
+        | "ListTable4" | "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+        "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+        "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+        "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" | "ListTable6Colorful_Accent2" |
+        "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" | "ListTable6Colorful_Accent5" |
+        "ListTable6Colorful_Accent6" | "ListTable7Colorful" | "ListTable7Colorful_Accent1" |
+        "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" | "ListTable7Colorful_Accent4" |
+        "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6";
+      return:
+        type:
+          - >-
+            Word.Style | "Other" | "Normal" | "Heading1" | "Heading2" | "Heading3" | "Heading4" | "Heading5" |
+            "Heading6" | "Heading7" | "Heading8" | "Heading9" | "Toc1" | "Toc2" | "Toc3" | "Toc4" | "Toc5" | "Toc6" |
+            "Toc7" | "Toc8" | "Toc9" | "FootnoteText" | "Header" | "Footer" | "Caption" | "FootnoteReference" |
+            "EndnoteReference" | "EndnoteText" | "Title" | "Subtitle" | "Hyperlink" | "Strong" | "Emphasis" |
+            "NoSpacing" | "ListParagraph" | "Quote" | "IntenseQuote" | "SubtleEmphasis" | "IntenseEmphasis" |
+            "SubtleReference" | "IntenseReference" | "BookTitle" | "Bibliography" | "TocHeading" | "TableGrid" |
+            "PlainTable1" | "PlainTable2" | "PlainTable3" | "PlainTable4" | "PlainTable5" | "TableGridLight" |
+            "GridTable1Light" | "GridTable1Light_Accent1" | "GridTable1Light_Accent2" | "GridTable1Light_Accent3" |
+            "GridTable1Light_Accent4" | "GridTable1Light_Accent5" | "GridTable1Light_Accent6" | "GridTable2" |
+            "GridTable2_Accent1" | "GridTable2_Accent2" | "GridTable2_Accent3" | "GridTable2_Accent4" |
+            "GridTable2_Accent5" | "GridTable2_Accent6" | "GridTable3" | "GridTable3_Accent1" | "GridTable3_Accent2" |
+            "GridTable3_Accent3" | "GridTable3_Accent4" | "GridTable3_Accent5" | "GridTable3_Accent6" | "GridTable4" |
+            "GridTable4_Accent1" | "GridTable4_Accent2" | "GridTable4_Accent3" | "GridTable4_Accent4" |
+            "GridTable4_Accent5" | "GridTable4_Accent6" | "GridTable5Dark" | "GridTable5Dark_Accent1" |
+            "GridTable5Dark_Accent2" | "GridTable5Dark_Accent3" | "GridTable5Dark_Accent4" | "GridTable5Dark_Accent5" |
+            "GridTable5Dark_Accent6" | "GridTable6Colorful" | "GridTable6Colorful_Accent1" |
+            "GridTable6Colorful_Accent2" | "GridTable6Colorful_Accent3" | "GridTable6Colorful_Accent4" |
+            "GridTable6Colorful_Accent5" | "GridTable6Colorful_Accent6" | "GridTable7Colorful" |
+            "GridTable7Colorful_Accent1" | "GridTable7Colorful_Accent2" | "GridTable7Colorful_Accent3" |
+            "GridTable7Colorful_Accent4" | "GridTable7Colorful_Accent5" | "GridTable7Colorful_Accent6" |
+            "ListTable1Light" | "ListTable1Light_Accent1" | "ListTable1Light_Accent2" | "ListTable1Light_Accent3" |
+            "ListTable1Light_Accent4" | "ListTable1Light_Accent5" | "ListTable1Light_Accent6" | "ListTable2" |
+            "ListTable2_Accent1" | "ListTable2_Accent2" | "ListTable2_Accent3" | "ListTable2_Accent4" |
+            "ListTable2_Accent5" | "ListTable2_Accent6" | "ListTable3" | "ListTable3_Accent1" | "ListTable3_Accent2" |
+            "ListTable3_Accent3" | "ListTable3_Accent4" | "ListTable3_Accent5" | "ListTable3_Accent6" | "ListTable4" |
+            "ListTable4_Accent1" | "ListTable4_Accent2" | "ListTable4_Accent3" | "ListTable4_Accent4" |
+            "ListTable4_Accent5" | "ListTable4_Accent6" | "ListTable5Dark" | "ListTable5Dark_Accent1" |
+            "ListTable5Dark_Accent2" | "ListTable5Dark_Accent3" | "ListTable5Dark_Accent4" | "ListTable5Dark_Accent5" |
+            "ListTable5Dark_Accent6" | "ListTable6Colorful" | "ListTable6Colorful_Accent1" |
+            "ListTable6Colorful_Accent2" | "ListTable6Colorful_Accent3" | "ListTable6Colorful_Accent4" |
+            "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
+            "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
+            "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
+  - uid: word.Word.Body.tables
+    summary: |-
+      Gets the collection of table objects in the body. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Word.TableCollection;'
+      return:
+        type:
+          - word.Word.TableCollection
+  - uid: word.Word.Body.text
+    summary: |-
+      Gets the text of the body. Use the insertText method to insert text. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly text: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          // Get the text property on the body object
+          // Run a batch operation against the Word object model.
+          Word.run(function (context) {
+
+              // Create a proxy object for the document body.
+              var body = context.document.body;
+
+              // Queue a commmand to load the text in document body.
+              context.load(body, 'text');
+
+              // Synchronize the document state by executing the queued commands,
+              // and return a promise to indicate task completion.
+              return context.sync().then(function () {
+                  console.log("Body contents: " + body.text);
+              });
+          })
+          .catch(function (error) {
+              console.log("Error: " + JSON.stringify(error));
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: word.Word.Body.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Word.Body object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Word.Interfaces.BodyData`<!-- -->) that contains shallow copies of any loaded child
+      properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Word.Interfaces.BodyData;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyData
+        description: ''
+  - uid: word.Word.Body.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+        description: ''
+  - uid: word.Word.Body.type
+    summary: |-
+      Gets the type of the body. The type can be 'MainDoc', 'Section', 'Header', 'Footer', or 'TableCell'. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly type: Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell";'
+      return:
+        type:
+          - Word.BodyType | "Unknown" | "MainDoc" | "Section" | "Header" | "Footer" | "TableCell"
+  - uid: word.Word.Body.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): Word.Body;'
+      return:
+        type:
+          - word.Word.Body
+        description: ''

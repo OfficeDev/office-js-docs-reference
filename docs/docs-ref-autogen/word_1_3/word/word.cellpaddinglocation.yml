@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.CellPaddingLocation
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.CellPaddingLocation
+    fullName: Word.CellPaddingLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.CellPaddingLocation.bottom
+      - word.Word.CellPaddingLocation.left
+      - word.Word.CellPaddingLocation.right
+      - word.Word.CellPaddingLocation.top
+  - uid: word.Word.CellPaddingLocation.bottom
+    name: bottom
+    fullName: bottom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bottom"'
+  - uid: word.Word.CellPaddingLocation.left
+    name: left
+    fullName: left
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Left"'
+  - uid: word.Word.CellPaddingLocation.right
+    name: right
+    fullName: right
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Right"'
+  - uid: word.Word.CellPaddingLocation.top
+    name: top
+    fullName: top
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Top"'

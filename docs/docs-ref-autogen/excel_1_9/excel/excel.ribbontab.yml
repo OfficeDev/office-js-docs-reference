@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RibbonTab
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.RibbonTab
+    fullName: Excel.RibbonTab
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.RibbonTab.addIns
+      - excel.Excel.RibbonTab.data
+      - excel.Excel.RibbonTab.developer
+      - excel.Excel.RibbonTab.draw
+      - excel.Excel.RibbonTab.formulas
+      - excel.Excel.RibbonTab.help
+      - excel.Excel.RibbonTab.home
+      - excel.Excel.RibbonTab.insert
+      - excel.Excel.RibbonTab.others
+      - excel.Excel.RibbonTab.pageLayout
+      - excel.Excel.RibbonTab.review
+      - excel.Excel.RibbonTab.view
+  - uid: excel.Excel.RibbonTab.addIns
+    name: addIns
+    fullName: addIns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AddIns"'
+  - uid: excel.Excel.RibbonTab.data
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Data"'
+  - uid: excel.Excel.RibbonTab.developer
+    name: developer
+    fullName: developer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Developer"'
+  - uid: excel.Excel.RibbonTab.draw
+    name: draw
+    fullName: draw
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Draw"'
+  - uid: excel.Excel.RibbonTab.formulas
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formulas"'
+  - uid: excel.Excel.RibbonTab.help
+    name: help
+    fullName: help
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Help"'
+  - uid: excel.Excel.RibbonTab.home
+    name: home
+    fullName: home
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Home"'
+  - uid: excel.Excel.RibbonTab.insert
+    name: insert
+    fullName: insert
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Insert"'
+  - uid: excel.Excel.RibbonTab.others
+    name: others
+    fullName: others
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Others"'
+  - uid: excel.Excel.RibbonTab.pageLayout
+    name: pageLayout
+    fullName: pageLayout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PageLayout"'
+  - uid: excel.Excel.RibbonTab.review
+    name: review
+    fullName: review
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Review"'
+  - uid: excel.Excel.RibbonTab.view
+    name: view
+    fullName: view
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"View"'

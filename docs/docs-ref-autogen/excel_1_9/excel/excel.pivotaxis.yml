@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PivotAxis
+    summary: |-
+      The ShowAs Calculation function for the Data Pivot Field.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.PivotAxis
+    fullName: Excel.PivotAxis
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.PivotAxis.column
+      - excel.Excel.PivotAxis.data
+      - excel.Excel.PivotAxis.filter
+      - excel.Excel.PivotAxis.row
+      - excel.Excel.PivotAxis.unknown
+  - uid: excel.Excel.PivotAxis.column
+    summary: The column axis.
+    name: column
+    fullName: column
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Column"'
+  - uid: excel.Excel.PivotAxis.data
+    summary: The data axis.
+    name: data
+    fullName: data
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Data"'
+  - uid: excel.Excel.PivotAxis.filter
+    summary: The filter axis.
+    name: filter
+    fullName: filter
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Filter"'
+  - uid: excel.Excel.PivotAxis.row
+    summary: The row axis.
+    name: row
+    fullName: row
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Row"'
+  - uid: excel.Excel.PivotAxis.unknown
+    summary: The axis or region is unknown or unsupported.
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.ContentControlCollectionUpdateData
+    summary: >-
+      An interface for updating data on the ContentControlCollection object, for use in
+      "contentControlCollection.set(<!-- -->{ ... }<!-- -->)".
+    name: Word.Interfaces.ContentControlCollectionUpdateData
+    fullName: Word.Interfaces.ContentControlCollectionUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.ContentControlCollectionUpdateData.items
+  - uid: word.Word.Interfaces.ContentControlCollectionUpdateData.items
+    name: items
+    fullName: items
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'items?: Word.Interfaces.ContentControlData[];'
+      return:
+        type:
+          - 'Word.Interfaces.ContentControlData[]'

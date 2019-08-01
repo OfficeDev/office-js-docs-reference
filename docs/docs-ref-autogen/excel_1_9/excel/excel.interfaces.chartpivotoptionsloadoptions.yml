@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions
+    summary: |-
+      Encapsulates the options for the pivot chart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartPivotOptionsLoadOptions
+    fullName: Excel.Interfaces.ChartPivotOptionsLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.$all
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showAxisFieldButtons
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showLegendFieldButtons
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showReportFilterFieldButtons
+      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showValueFieldButtons
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showAxisFieldButtons
+    summary: >-
+      Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property
+      corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab,
+      which is available when a PivotChart is selected.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showAxisFieldButtons
+    fullName: showAxisFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showAxisFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showLegendFieldButtons
+    summary: |-
+      Specifies whether or not to display the legend field buttons on a PivotChart
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showLegendFieldButtons
+    fullName: showLegendFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showLegendFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showReportFilterFieldButtons
+    summary: |-
+      Specifies whether or not to display the report filter field buttons on a PivotChart.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showReportFilterFieldButtons
+    fullName: showReportFilterFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showReportFilterFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showValueFieldButtons
+    summary: |-
+      Specifies whether or not to display the show value field buttons on a PivotChart
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showValueFieldButtons
+    fullName: showValueFieldButtons
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showValueFieldButtons?: boolean;'
+      return:
+        type:
+          - boolean

@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.TableBorderUpdateData
+    summary: 'An interface for updating data on the TableBorder object, for use in "tableBorder.set(<!-- -->{ ... }<!-- -->)".'
+    name: Word.Interfaces.TableBorderUpdateData
+    fullName: Word.Interfaces.TableBorderUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word

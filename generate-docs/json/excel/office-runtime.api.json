@@ -1,0 +1,928 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.3.2",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "office-runtime",
+  "docComment": "",
+  "name": "office-runtime",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "",
+      "name": "",
+      "members": [
+        {
+          "kind": "Namespace",
+          "canonicalReference": "(OfficeRuntime:namespace)",
+          "docComment": "/**\n * Office runtime namespace.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare namespace "
+            },
+            {
+              "kind": "Reference",
+              "text": "OfficeRuntime"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "OfficeRuntime",
+          "members": [
+            {
+              "kind": "Interface",
+              "canonicalReference": "(Dialog:interface)",
+              "docComment": "/**\n * Object representing the dialog box.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Dialog"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Dialog",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(close:0)",
+                  "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "close"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [],
+                  "name": "close"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "(displayWebDialog:0)",
+              "docComment": "/**\n * Method that enables a pop up web dialog box.\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "displayWebDialog"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "url"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "options"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DisplayWebDialogOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Dialog"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 15
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 0,
+              "parameters": [
+                {
+                  "parameterName": "url",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  }
+                }
+              ],
+              "name": "displayWebDialog"
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(DisplayWebDialogOptions:interface)",
+              "docComment": "/**\n * Provides display options and actions a dialog box may take.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DisplayWebDialogOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "DisplayWebDialogOptions",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "displayInIFrame",
+                  "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "displayInIFrame"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "displayInIFrame",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "height",
+                  "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "height"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "height",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "onClose",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onClose"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "() => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "onClose",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "onMessage",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onMessage"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "message"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": string, "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "onMessage",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 9
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "onRuntimeError",
+                  "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onRuntimeError"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Dialog"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "onRuntimeError",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 11
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "width",
+                  "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "width"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "width",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(Storage:interface)",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Storage"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Storage",
+              "members": [
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getItem:0)",
+                  "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string | null>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    }
+                  ],
+                  "name": "getItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getItems:0)",
+                  "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getItems"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<{ ["
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": string]: string | null }>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "keys",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    }
+                  ],
+                  "name": "getItems"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(getKeys:0)",
+                  "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "getKeys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "(): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<string[]>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 4
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [],
+                  "name": "getKeys"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeItem:0)",
+                  "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    }
+                  ],
+                  "name": "removeItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(removeItems:0)",
+                  "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "removeItems"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keys"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "keys",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    }
+                  ],
+                  "name": "removeItems"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(setItem:0)",
+                  "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "setItem"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "value"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 12
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "key",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "value",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 9
+                      }
+                    }
+                  ],
+                  "name": "setItem"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(setItems:0)",
+                  "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "setItems"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "keyValues"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "{ ["
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "key"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": string]: string }"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Promise"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "<void>"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 10
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 0,
+                  "parameters": [
+                    {
+                      "parameterName": "keyValues",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 7
+                      }
+                    }
+                  ],
+                  "name": "setItems"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Variable",
+              "canonicalReference": "storage",
+              "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "storage"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Storage"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "storage",
+              "variableTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs
+    summary: >-
+      Provides information about the worksheet that raised the left-clicked/tapped event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.WorksheetSingleClickedEventArgs
+    fullName: Excel.WorksheetSingleClickedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetSingleClickedEventArgs.address
+      - excel.Excel.WorksheetSingleClickedEventArgs.offsetX
+      - excel.Excel.WorksheetSingleClickedEventArgs.offsetY
+      - excel.Excel.WorksheetSingleClickedEventArgs.type
+      - excel.Excel.WorksheetSingleClickedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs.address
+    summary: >-
+      Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: address
+    fullName: address
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'address: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              sheet.onSingleClicked.add((event) => {
+                  return Excel.run((context) => {
+                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
+                      return context.sync();
+                  });
+              });
+
+              console.log("The worksheet click handler is registered.");
+
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetX
+    summary: >-
+      The distance, in points, from the left-clicked/tapped point to the left (or right for RTL) gridline edge of the
+      left-clicked/tapped cell.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: offsetX
+    fullName: offsetX
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offsetX: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetY
+    summary: >-
+      The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped
+      cell.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: offsetY
+    fullName: offsetY
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'offsetY: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs.type
+    summary: >-
+      Gets the type of the event.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetSingleClicked";'
+      return:
+        type:
+          - '"WorksheetSingleClicked"'
+  - uid: excel.Excel.WorksheetSingleClickedEventArgs.worksheetId
+    summary: >-
+      Gets the id of the worksheet in which the cell was left-clicked/tapped.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string

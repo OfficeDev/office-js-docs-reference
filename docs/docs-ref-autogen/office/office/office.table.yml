@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.Table
+    summary: >-
+      Specifies enumerated values for the `cells` property in the cellFormat parameter of [table formatting
+      methods](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
+    name: Office.Table
+    fullName: Office.Table
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.Table.All
+      - office.Office.Table.Data
+      - office.Office.Table.Headers
+  - uid: office.Office.Table.All
+    summary: 'The entire table, including column headers, data, and totals (if any).'
+    name: All
+    fullName: All
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Table.Data
+    summary: Only the data (no headers and totals).
+    name: Data
+    fullName: Data
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.Table.Headers
+    summary: Only the header row.
+    name: Headers
+    fullName: Headers
+    langs:
+      - typeScript
+    type: field

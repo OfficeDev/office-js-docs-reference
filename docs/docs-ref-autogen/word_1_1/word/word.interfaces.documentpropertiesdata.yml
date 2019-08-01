@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.DocumentPropertiesData
+    summary: An interface describing the data returned by calling "documentProperties.toJSON()".
+    name: Word.Interfaces.DocumentPropertiesData
+    fullName: Word.Interfaces.DocumentPropertiesData
+    langs:
+      - typeScript
+    type: interface
+    package: word

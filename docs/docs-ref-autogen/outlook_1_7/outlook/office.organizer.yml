@@ -1,0 +1,110 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook.Office.Organizer
+    summary: >-
+      Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This
+      object provides a method to get the organizer value of an appointment in an Outlook add-in.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+    name: Office.Organizer
+    fullName: Office.Organizer
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook
+    children:
+      - Outlook.Office.Organizer.getAsync
+      - Outlook.Office.Organizer.getAsync_1
+  - uid: Outlook.Office.Organizer.getAsync
+    summary: >-
+      Gets the organizer value of an appointment as an
+      [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) in the asyncResult.value property.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+    name: 'getAsync(options, callback)'
+    fullName: 'getAsync(options, callback)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        getAsync(options: Office.AsyncContextOptions, callback: (asyncResult:
+        Office.AsyncResult<EmailAddressDetails>) => void): void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: options
+          description: >-
+            An object literal that contains one or more of the following properties. asyncContext: Developers can
+            provide any object they wish to access in the callback method.
+          type:
+            - Office.AsyncContextOptions
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is an AsyncResult object. The `value` property of the result is the appointment's
+            organizer value, as an EmailAddressDetails object.
+          type:
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
+  - uid: Outlook.Office.Organizer.getAsync_1
+    summary: >-
+      Gets the organizer value of an appointment as an
+      [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) in the asyncResult.value property.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
+
+
+      #### Examples
+
+
+      ```javascript
+
+      Office.context.mailbox.item.organizer.getAsync(
+          function(asyncResult) {
+              console.log(JSON.stringify(asyncResult));
+          }
+      );
+
+      ```
+    name: getAsync(callback)
+    fullName: getAsync(callback)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getAsync(callback?: (asyncResult: Office.AsyncResult<EmailAddressDetails>) => void): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: callback
+          description: >-
+            When the method completes, the function passed in the callback parameter is called with a single parameter,
+            asyncResult, which is an AsyncResult object. The `value` property of the result is the appointment's
+            organizer value, as an EmailAddressDetails object.
+          type:
+            - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'

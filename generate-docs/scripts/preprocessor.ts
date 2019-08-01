@@ -92,8 +92,8 @@ tryCatch(async () => {
 
     console.log("\ncreate file: excel.d.ts (release)");
     fsx.writeFileSync(
-        '../api-extractor-inputs-excel-release/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
+        '../api-extractor-inputs-excel-release/excel_1_9/excel.d.ts',
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true)
     );
 
     console.log("create file: onenote.d.ts");
@@ -128,8 +128,8 @@ tryCatch(async () => {
 
     console.log("\ncreate file: word.d.ts (release)");
     fsx.writeFileSync(
-        '../api-extractor-inputs-word-release/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+        '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
+        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other", true)
     );
 
     // ----
@@ -205,7 +205,18 @@ tryCatch(async () => {
 
     console.log("\nWriting snippets to: " + path.resolve("../json/snippets.yaml"));
 
-    fsx.writeFileSync("../json/snippets.yaml", yaml.dump(snippets));
+    fsx.writeFileSync("../json/snippets.yaml", yaml.safeDump(
+        snippets,
+        {sortKeys: <any>((a: string, b: string) => {
+            if (a < b) {
+                return -1;
+            } else if (a > b) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })}
+    ));
 
     console.log("\nPreprocessor script complete!");
 
@@ -244,9 +255,9 @@ function applyRegularExpressions (definitionsIn) {
         .replace(/(\s*)(@param)(\s+)(\w+)(\s+)([^\-])/g, `$1$2$3$4$5- $6`);
 }
 
-function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other"): string {
-    const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"../api-extractor-inputs-office/office\"\n";
-    const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"../api-extractor-inputs-outlook/outlook\"\n";
+function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other", isVersioned?: boolean): string {
+    const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-office/office\"\n";
+    const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-outlook/outlook\"\n";
     const commonApiNamespaceImportForOutlook = "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"\n";
     if (hostName === "Outlook") {
         hostDts = hostDts.replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.");

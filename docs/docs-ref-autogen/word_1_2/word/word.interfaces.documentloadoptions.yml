@@ -1,0 +1,82 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.DocumentLoadOptions
+    summary: >-
+      The Document object is the top level object. A Document object contains one or more sections, content controls,
+      and the body that contains the contents of the document.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.DocumentLoadOptions
+    fullName: Word.Interfaces.DocumentLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.DocumentLoadOptions.$all
+      - word.Word.Interfaces.DocumentLoadOptions.allowCloseOnUntitled
+      - word.Word.Interfaces.DocumentLoadOptions.body
+      - word.Word.Interfaces.DocumentLoadOptions.saved
+  - uid: word.Word.Interfaces.DocumentLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.DocumentLoadOptions.allowCloseOnUntitled
+    summary: >-
+      Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this
+      document even if this document is untitled. True to close, false otherwise.
+
+
+      \[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: allowCloseOnUntitled
+    fullName: allowCloseOnUntitled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'allowCloseOnUntitled?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.DocumentLoadOptions.body
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyLoadOptions
+  - uid: word.Word.Interfaces.DocumentLoadOptions.saved
+    summary: >-
+      Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
+      changed since it was saved. Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: saved
+    fullName: saved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'saved?: boolean;'
+      return:
+        type:
+          - boolean

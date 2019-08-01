@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.DocumentUpdateData
+    summary: 'An interface for updating data on the Document object, for use in "document.set(<!-- -->{ ... }<!-- -->)".'
+    name: Word.Interfaces.DocumentUpdateData
+    fullName: Word.Interfaces.DocumentUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.DocumentUpdateData.body
+  - uid: word.Word.Interfaces.DocumentUpdateData.body
+    summary: >-
+      Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
+      etc..
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body?: Word.Interfaces.BodyUpdateData;'
+      return:
+        type:
+          - word.Word.Interfaces.BodyUpdateData

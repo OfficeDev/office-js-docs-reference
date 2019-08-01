@@ -1,0 +1,125 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CommentReplyData
+    summary: An interface describing the data returned by calling "commentReply.toJSON()".
+    name: Excel.Interfaces.CommentReplyData
+    fullName: Excel.Interfaces.CommentReplyData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CommentReplyData.authorEmail
+      - excel.Excel.Interfaces.CommentReplyData.authorName
+      - excel.Excel.Interfaces.CommentReplyData.content
+      - excel.Excel.Interfaces.CommentReplyData.creationDate
+      - excel.Excel.Interfaces.CommentReplyData.id
+      - excel.Excel.Interfaces.CommentReplyData.resolved
+  - uid: excel.Excel.Interfaces.CommentReplyData.authorEmail
+    summary: >-
+      Gets the email of the comment reply's author.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.authorName
+    summary: >-
+      Gets the name of the comment reply's author.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.content
+    summary: >-
+      Gets or sets the comment reply's content. The string is plain text.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.creationDate
+    summary: >-
+      Gets the creation time of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: Date;'
+      return:
+        type:
+          - Date
+  - uid: excel.Excel.Interfaces.CommentReplyData.id
+    summary: >-
+      Represents the comment reply identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.CommentReplyData.resolved
+    summary: >-
+      Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type:
+          - boolean

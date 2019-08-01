@@ -1,0 +1,1430 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.GeometricShapeType
+    summary: |-
+      Specifies the shape type for a GeometricShape object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.GeometricShapeType
+    fullName: Excel.GeometricShapeType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.GeometricShapeType.accentBorderCallout1
+      - excel.Excel.GeometricShapeType.accentBorderCallout2
+      - excel.Excel.GeometricShapeType.accentBorderCallout3
+      - excel.Excel.GeometricShapeType.accentCallout1
+      - excel.Excel.GeometricShapeType.accentCallout2
+      - excel.Excel.GeometricShapeType.accentCallout3
+      - excel.Excel.GeometricShapeType.actionButtonBackPrevious
+      - excel.Excel.GeometricShapeType.actionButtonBeginning
+      - excel.Excel.GeometricShapeType.actionButtonBlank
+      - excel.Excel.GeometricShapeType.actionButtonDocument
+      - excel.Excel.GeometricShapeType.actionButtonEnd
+      - excel.Excel.GeometricShapeType.actionButtonForwardNext
+      - excel.Excel.GeometricShapeType.actionButtonHelp
+      - excel.Excel.GeometricShapeType.actionButtonHome
+      - excel.Excel.GeometricShapeType.actionButtonInformation
+      - excel.Excel.GeometricShapeType.actionButtonMovie
+      - excel.Excel.GeometricShapeType.actionButtonReturn
+      - excel.Excel.GeometricShapeType.actionButtonSound
+      - excel.Excel.GeometricShapeType.arc
+      - excel.Excel.GeometricShapeType.bentArrow
+      - excel.Excel.GeometricShapeType.bentUpArrow
+      - excel.Excel.GeometricShapeType.bevel
+      - excel.Excel.GeometricShapeType.blockArc
+      - excel.Excel.GeometricShapeType.borderCallout1
+      - excel.Excel.GeometricShapeType.borderCallout2
+      - excel.Excel.GeometricShapeType.borderCallout3
+      - excel.Excel.GeometricShapeType.bracePair
+      - excel.Excel.GeometricShapeType.bracketPair
+      - excel.Excel.GeometricShapeType.callout1
+      - excel.Excel.GeometricShapeType.callout2
+      - excel.Excel.GeometricShapeType.callout3
+      - excel.Excel.GeometricShapeType.can
+      - excel.Excel.GeometricShapeType.chartPlus
+      - excel.Excel.GeometricShapeType.chartStar
+      - excel.Excel.GeometricShapeType.chartX
+      - excel.Excel.GeometricShapeType.chevron
+      - excel.Excel.GeometricShapeType.chord
+      - excel.Excel.GeometricShapeType.circularArrow
+      - excel.Excel.GeometricShapeType.cloud
+      - excel.Excel.GeometricShapeType.cloudCallout
+      - excel.Excel.GeometricShapeType.corner
+      - excel.Excel.GeometricShapeType.cornerTabs
+      - excel.Excel.GeometricShapeType.cube
+      - excel.Excel.GeometricShapeType.curvedDownArrow
+      - excel.Excel.GeometricShapeType.curvedLeftArrow
+      - excel.Excel.GeometricShapeType.curvedRightArrow
+      - excel.Excel.GeometricShapeType.curvedUpArrow
+      - excel.Excel.GeometricShapeType.decagon
+      - excel.Excel.GeometricShapeType.diagonalStripe
+      - excel.Excel.GeometricShapeType.diamond
+      - excel.Excel.GeometricShapeType.dodecagon
+      - excel.Excel.GeometricShapeType.donut
+      - excel.Excel.GeometricShapeType.doubleWave
+      - excel.Excel.GeometricShapeType.downArrow
+      - excel.Excel.GeometricShapeType.downArrowCallout
+      - excel.Excel.GeometricShapeType.ellipse
+      - excel.Excel.GeometricShapeType.ellipseRibbon
+      - excel.Excel.GeometricShapeType.ellipseRibbon2
+      - excel.Excel.GeometricShapeType.flowChartAlternateProcess
+      - excel.Excel.GeometricShapeType.flowChartCollate
+      - excel.Excel.GeometricShapeType.flowChartConnector
+      - excel.Excel.GeometricShapeType.flowChartDecision
+      - excel.Excel.GeometricShapeType.flowChartDelay
+      - excel.Excel.GeometricShapeType.flowChartDisplay
+      - excel.Excel.GeometricShapeType.flowChartDocument
+      - excel.Excel.GeometricShapeType.flowChartExtract
+      - excel.Excel.GeometricShapeType.flowChartInputOutput
+      - excel.Excel.GeometricShapeType.flowChartInternalStorage
+      - excel.Excel.GeometricShapeType.flowChartMagneticDisk
+      - excel.Excel.GeometricShapeType.flowChartMagneticDrum
+      - excel.Excel.GeometricShapeType.flowChartMagneticTape
+      - excel.Excel.GeometricShapeType.flowChartManualInput
+      - excel.Excel.GeometricShapeType.flowChartManualOperation
+      - excel.Excel.GeometricShapeType.flowChartMerge
+      - excel.Excel.GeometricShapeType.flowChartMultidocument
+      - excel.Excel.GeometricShapeType.flowChartOfflineStorage
+      - excel.Excel.GeometricShapeType.flowChartOffpageConnector
+      - excel.Excel.GeometricShapeType.flowChartOnlineStorage
+      - excel.Excel.GeometricShapeType.flowChartOr
+      - excel.Excel.GeometricShapeType.flowChartPredefinedProcess
+      - excel.Excel.GeometricShapeType.flowChartPreparation
+      - excel.Excel.GeometricShapeType.flowChartProcess
+      - excel.Excel.GeometricShapeType.flowChartPunchedCard
+      - excel.Excel.GeometricShapeType.flowChartPunchedTape
+      - excel.Excel.GeometricShapeType.flowChartSort
+      - excel.Excel.GeometricShapeType.flowChartSummingJunction
+      - excel.Excel.GeometricShapeType.flowChartTerminator
+      - excel.Excel.GeometricShapeType.foldedCorner
+      - excel.Excel.GeometricShapeType.frame
+      - excel.Excel.GeometricShapeType.funnel
+      - excel.Excel.GeometricShapeType.gear6
+      - excel.Excel.GeometricShapeType.gear9
+      - excel.Excel.GeometricShapeType.halfFrame
+      - excel.Excel.GeometricShapeType.heart
+      - excel.Excel.GeometricShapeType.heptagon
+      - excel.Excel.GeometricShapeType.hexagon
+      - excel.Excel.GeometricShapeType.homePlate
+      - excel.Excel.GeometricShapeType.horizontalScroll
+      - excel.Excel.GeometricShapeType.irregularSeal1
+      - excel.Excel.GeometricShapeType.irregularSeal2
+      - excel.Excel.GeometricShapeType.leftArrow
+      - excel.Excel.GeometricShapeType.leftArrowCallout
+      - excel.Excel.GeometricShapeType.leftBrace
+      - excel.Excel.GeometricShapeType.leftBracket
+      - excel.Excel.GeometricShapeType.leftCircularArrow
+      - excel.Excel.GeometricShapeType.leftRightArrow
+      - excel.Excel.GeometricShapeType.leftRightArrowCallout
+      - excel.Excel.GeometricShapeType.leftRightCircularArrow
+      - excel.Excel.GeometricShapeType.leftRightRibbon
+      - excel.Excel.GeometricShapeType.leftRightUpArrow
+      - excel.Excel.GeometricShapeType.leftUpArrow
+      - excel.Excel.GeometricShapeType.lightningBolt
+      - excel.Excel.GeometricShapeType.lineInverse
+      - excel.Excel.GeometricShapeType.mathDivide
+      - excel.Excel.GeometricShapeType.mathEqual
+      - excel.Excel.GeometricShapeType.mathMinus
+      - excel.Excel.GeometricShapeType.mathMultiply
+      - excel.Excel.GeometricShapeType.mathNotEqual
+      - excel.Excel.GeometricShapeType.mathPlus
+      - excel.Excel.GeometricShapeType.moon
+      - excel.Excel.GeometricShapeType.nonIsoscelesTrapezoid
+      - excel.Excel.GeometricShapeType.noSmoking
+      - excel.Excel.GeometricShapeType.notchedRightArrow
+      - excel.Excel.GeometricShapeType.octagon
+      - excel.Excel.GeometricShapeType.parallelogram
+      - excel.Excel.GeometricShapeType.pentagon
+      - excel.Excel.GeometricShapeType.pie
+      - excel.Excel.GeometricShapeType.pieWedge
+      - excel.Excel.GeometricShapeType.plaque
+      - excel.Excel.GeometricShapeType.plaqueTabs
+      - excel.Excel.GeometricShapeType.plus
+      - excel.Excel.GeometricShapeType.quadArrow
+      - excel.Excel.GeometricShapeType.quadArrowCallout
+      - excel.Excel.GeometricShapeType.rectangle
+      - excel.Excel.GeometricShapeType.ribbon
+      - excel.Excel.GeometricShapeType.ribbon2
+      - excel.Excel.GeometricShapeType.rightArrow
+      - excel.Excel.GeometricShapeType.rightArrowCallout
+      - excel.Excel.GeometricShapeType.rightBrace
+      - excel.Excel.GeometricShapeType.rightBracket
+      - excel.Excel.GeometricShapeType.rightTriangle
+      - excel.Excel.GeometricShapeType.round1Rectangle
+      - excel.Excel.GeometricShapeType.round2DiagonalRectangle
+      - excel.Excel.GeometricShapeType.round2SameRectangle
+      - excel.Excel.GeometricShapeType.roundRectangle
+      - excel.Excel.GeometricShapeType.smileyFace
+      - excel.Excel.GeometricShapeType.snip1Rectangle
+      - excel.Excel.GeometricShapeType.snip2DiagonalRectangle
+      - excel.Excel.GeometricShapeType.snip2SameRectangle
+      - excel.Excel.GeometricShapeType.snipRoundRectangle
+      - excel.Excel.GeometricShapeType.squareTabs
+      - excel.Excel.GeometricShapeType.star10
+      - excel.Excel.GeometricShapeType.star12
+      - excel.Excel.GeometricShapeType.star16
+      - excel.Excel.GeometricShapeType.star24
+      - excel.Excel.GeometricShapeType.star32
+      - excel.Excel.GeometricShapeType.star4
+      - excel.Excel.GeometricShapeType.star5
+      - excel.Excel.GeometricShapeType.star6
+      - excel.Excel.GeometricShapeType.star7
+      - excel.Excel.GeometricShapeType.star8
+      - excel.Excel.GeometricShapeType.stripedRightArrow
+      - excel.Excel.GeometricShapeType.sun
+      - excel.Excel.GeometricShapeType.swooshArrow
+      - excel.Excel.GeometricShapeType.teardrop
+      - excel.Excel.GeometricShapeType.trapezoid
+      - excel.Excel.GeometricShapeType.triangle
+      - excel.Excel.GeometricShapeType.upArrow
+      - excel.Excel.GeometricShapeType.upArrowCallout
+      - excel.Excel.GeometricShapeType.upDownArrow
+      - excel.Excel.GeometricShapeType.upDownArrowCallout
+      - excel.Excel.GeometricShapeType.uturnArrow
+      - excel.Excel.GeometricShapeType.verticalScroll
+      - excel.Excel.GeometricShapeType.wave
+      - excel.Excel.GeometricShapeType.wedgeEllipseCallout
+      - excel.Excel.GeometricShapeType.wedgeRectCallout
+      - excel.Excel.GeometricShapeType.wedgeRRectCallout
+  - uid: excel.Excel.GeometricShapeType.accentBorderCallout1
+    name: accentBorderCallout1
+    fullName: accentBorderCallout1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccentBorderCallout1"'
+  - uid: excel.Excel.GeometricShapeType.accentBorderCallout2
+    name: accentBorderCallout2
+    fullName: accentBorderCallout2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccentBorderCallout2"'
+  - uid: excel.Excel.GeometricShapeType.accentBorderCallout3
+    name: accentBorderCallout3
+    fullName: accentBorderCallout3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccentBorderCallout3"'
+  - uid: excel.Excel.GeometricShapeType.accentCallout1
+    name: accentCallout1
+    fullName: accentCallout1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccentCallout1"'
+  - uid: excel.Excel.GeometricShapeType.accentCallout2
+    name: accentCallout2
+    fullName: accentCallout2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccentCallout2"'
+  - uid: excel.Excel.GeometricShapeType.accentCallout3
+    name: accentCallout3
+    fullName: accentCallout3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"AccentCallout3"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonBackPrevious
+    name: actionButtonBackPrevious
+    fullName: actionButtonBackPrevious
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonBackPrevious"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonBeginning
+    name: actionButtonBeginning
+    fullName: actionButtonBeginning
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonBeginning"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonBlank
+    name: actionButtonBlank
+    fullName: actionButtonBlank
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonBlank"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonDocument
+    name: actionButtonDocument
+    fullName: actionButtonDocument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonDocument"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonEnd
+    name: actionButtonEnd
+    fullName: actionButtonEnd
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonEnd"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonForwardNext
+    name: actionButtonForwardNext
+    fullName: actionButtonForwardNext
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonForwardNext"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonHelp
+    name: actionButtonHelp
+    fullName: actionButtonHelp
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonHelp"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonHome
+    name: actionButtonHome
+    fullName: actionButtonHome
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonHome"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonInformation
+    name: actionButtonInformation
+    fullName: actionButtonInformation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonInformation"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonMovie
+    name: actionButtonMovie
+    fullName: actionButtonMovie
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonMovie"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonReturn
+    name: actionButtonReturn
+    fullName: actionButtonReturn
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonReturn"'
+  - uid: excel.Excel.GeometricShapeType.actionButtonSound
+    name: actionButtonSound
+    fullName: actionButtonSound
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ActionButtonSound"'
+  - uid: excel.Excel.GeometricShapeType.arc
+    name: arc
+    fullName: arc
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Arc"'
+  - uid: excel.Excel.GeometricShapeType.bentArrow
+    name: bentArrow
+    fullName: bentArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BentArrow"'
+  - uid: excel.Excel.GeometricShapeType.bentUpArrow
+    name: bentUpArrow
+    fullName: bentUpArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BentUpArrow"'
+  - uid: excel.Excel.GeometricShapeType.bevel
+    name: bevel
+    fullName: bevel
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Bevel"'
+  - uid: excel.Excel.GeometricShapeType.blockArc
+    name: blockArc
+    fullName: blockArc
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BlockArc"'
+  - uid: excel.Excel.GeometricShapeType.borderCallout1
+    name: borderCallout1
+    fullName: borderCallout1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BorderCallout1"'
+  - uid: excel.Excel.GeometricShapeType.borderCallout2
+    name: borderCallout2
+    fullName: borderCallout2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BorderCallout2"'
+  - uid: excel.Excel.GeometricShapeType.borderCallout3
+    name: borderCallout3
+    fullName: borderCallout3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BorderCallout3"'
+  - uid: excel.Excel.GeometricShapeType.bracePair
+    name: bracePair
+    fullName: bracePair
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BracePair"'
+  - uid: excel.Excel.GeometricShapeType.bracketPair
+    name: bracketPair
+    fullName: bracketPair
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"BracketPair"'
+  - uid: excel.Excel.GeometricShapeType.callout1
+    name: callout1
+    fullName: callout1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Callout1"'
+  - uid: excel.Excel.GeometricShapeType.callout2
+    name: callout2
+    fullName: callout2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Callout2"'
+  - uid: excel.Excel.GeometricShapeType.callout3
+    name: callout3
+    fullName: callout3
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Callout3"'
+  - uid: excel.Excel.GeometricShapeType.can
+    name: can
+    fullName: can
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Can"'
+  - uid: excel.Excel.GeometricShapeType.chartPlus
+    name: chartPlus
+    fullName: chartPlus
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ChartPlus"'
+  - uid: excel.Excel.GeometricShapeType.chartStar
+    name: chartStar
+    fullName: chartStar
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ChartStar"'
+  - uid: excel.Excel.GeometricShapeType.chartX
+    name: chartX
+    fullName: chartX
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ChartX"'
+  - uid: excel.Excel.GeometricShapeType.chevron
+    name: chevron
+    fullName: chevron
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Chevron"'
+  - uid: excel.Excel.GeometricShapeType.chord
+    name: chord
+    fullName: chord
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Chord"'
+  - uid: excel.Excel.GeometricShapeType.circularArrow
+    name: circularArrow
+    fullName: circularArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CircularArrow"'
+  - uid: excel.Excel.GeometricShapeType.cloud
+    name: cloud
+    fullName: cloud
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cloud"'
+  - uid: excel.Excel.GeometricShapeType.cloudCallout
+    name: cloudCallout
+    fullName: cloudCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CloudCallout"'
+  - uid: excel.Excel.GeometricShapeType.corner
+    name: corner
+    fullName: corner
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Corner"'
+  - uid: excel.Excel.GeometricShapeType.cornerTabs
+    name: cornerTabs
+    fullName: cornerTabs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CornerTabs"'
+  - uid: excel.Excel.GeometricShapeType.cube
+    name: cube
+    fullName: cube
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Cube"'
+  - uid: excel.Excel.GeometricShapeType.curvedDownArrow
+    name: curvedDownArrow
+    fullName: curvedDownArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CurvedDownArrow"'
+  - uid: excel.Excel.GeometricShapeType.curvedLeftArrow
+    name: curvedLeftArrow
+    fullName: curvedLeftArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CurvedLeftArrow"'
+  - uid: excel.Excel.GeometricShapeType.curvedRightArrow
+    name: curvedRightArrow
+    fullName: curvedRightArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CurvedRightArrow"'
+  - uid: excel.Excel.GeometricShapeType.curvedUpArrow
+    name: curvedUpArrow
+    fullName: curvedUpArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"CurvedUpArrow"'
+  - uid: excel.Excel.GeometricShapeType.decagon
+    name: decagon
+    fullName: decagon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Decagon"'
+  - uid: excel.Excel.GeometricShapeType.diagonalStripe
+    name: diagonalStripe
+    fullName: diagonalStripe
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DiagonalStripe"'
+  - uid: excel.Excel.GeometricShapeType.diamond
+    name: diamond
+    fullName: diamond
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Diamond"'
+  - uid: excel.Excel.GeometricShapeType.dodecagon
+    name: dodecagon
+    fullName: dodecagon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Dodecagon"'
+  - uid: excel.Excel.GeometricShapeType.donut
+    name: donut
+    fullName: donut
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Donut"'
+  - uid: excel.Excel.GeometricShapeType.doubleWave
+    name: doubleWave
+    fullName: doubleWave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DoubleWave"'
+  - uid: excel.Excel.GeometricShapeType.downArrow
+    name: downArrow
+    fullName: downArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DownArrow"'
+  - uid: excel.Excel.GeometricShapeType.downArrowCallout
+    name: downArrowCallout
+    fullName: downArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"DownArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.ellipse
+    name: ellipse
+    fullName: ellipse
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ellipse"'
+  - uid: excel.Excel.GeometricShapeType.ellipseRibbon
+    name: ellipseRibbon
+    fullName: ellipseRibbon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EllipseRibbon"'
+  - uid: excel.Excel.GeometricShapeType.ellipseRibbon2
+    name: ellipseRibbon2
+    fullName: ellipseRibbon2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EllipseRibbon2"'
+  - uid: excel.Excel.GeometricShapeType.flowChartAlternateProcess
+    name: flowChartAlternateProcess
+    fullName: flowChartAlternateProcess
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartAlternateProcess"'
+  - uid: excel.Excel.GeometricShapeType.flowChartCollate
+    name: flowChartCollate
+    fullName: flowChartCollate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartCollate"'
+  - uid: excel.Excel.GeometricShapeType.flowChartConnector
+    name: flowChartConnector
+    fullName: flowChartConnector
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartConnector"'
+  - uid: excel.Excel.GeometricShapeType.flowChartDecision
+    name: flowChartDecision
+    fullName: flowChartDecision
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartDecision"'
+  - uid: excel.Excel.GeometricShapeType.flowChartDelay
+    name: flowChartDelay
+    fullName: flowChartDelay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartDelay"'
+  - uid: excel.Excel.GeometricShapeType.flowChartDisplay
+    name: flowChartDisplay
+    fullName: flowChartDisplay
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartDisplay"'
+  - uid: excel.Excel.GeometricShapeType.flowChartDocument
+    name: flowChartDocument
+    fullName: flowChartDocument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartDocument"'
+  - uid: excel.Excel.GeometricShapeType.flowChartExtract
+    name: flowChartExtract
+    fullName: flowChartExtract
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartExtract"'
+  - uid: excel.Excel.GeometricShapeType.flowChartInputOutput
+    name: flowChartInputOutput
+    fullName: flowChartInputOutput
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartInputOutput"'
+  - uid: excel.Excel.GeometricShapeType.flowChartInternalStorage
+    name: flowChartInternalStorage
+    fullName: flowChartInternalStorage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartInternalStorage"'
+  - uid: excel.Excel.GeometricShapeType.flowChartMagneticDisk
+    name: flowChartMagneticDisk
+    fullName: flowChartMagneticDisk
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartMagneticDisk"'
+  - uid: excel.Excel.GeometricShapeType.flowChartMagneticDrum
+    name: flowChartMagneticDrum
+    fullName: flowChartMagneticDrum
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartMagneticDrum"'
+  - uid: excel.Excel.GeometricShapeType.flowChartMagneticTape
+    name: flowChartMagneticTape
+    fullName: flowChartMagneticTape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartMagneticTape"'
+  - uid: excel.Excel.GeometricShapeType.flowChartManualInput
+    name: flowChartManualInput
+    fullName: flowChartManualInput
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartManualInput"'
+  - uid: excel.Excel.GeometricShapeType.flowChartManualOperation
+    name: flowChartManualOperation
+    fullName: flowChartManualOperation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartManualOperation"'
+  - uid: excel.Excel.GeometricShapeType.flowChartMerge
+    name: flowChartMerge
+    fullName: flowChartMerge
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartMerge"'
+  - uid: excel.Excel.GeometricShapeType.flowChartMultidocument
+    name: flowChartMultidocument
+    fullName: flowChartMultidocument
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartMultidocument"'
+  - uid: excel.Excel.GeometricShapeType.flowChartOfflineStorage
+    name: flowChartOfflineStorage
+    fullName: flowChartOfflineStorage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartOfflineStorage"'
+  - uid: excel.Excel.GeometricShapeType.flowChartOffpageConnector
+    name: flowChartOffpageConnector
+    fullName: flowChartOffpageConnector
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartOffpageConnector"'
+  - uid: excel.Excel.GeometricShapeType.flowChartOnlineStorage
+    name: flowChartOnlineStorage
+    fullName: flowChartOnlineStorage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartOnlineStorage"'
+  - uid: excel.Excel.GeometricShapeType.flowChartOr
+    name: flowChartOr
+    fullName: flowChartOr
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartOr"'
+  - uid: excel.Excel.GeometricShapeType.flowChartPredefinedProcess
+    name: flowChartPredefinedProcess
+    fullName: flowChartPredefinedProcess
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartPredefinedProcess"'
+  - uid: excel.Excel.GeometricShapeType.flowChartPreparation
+    name: flowChartPreparation
+    fullName: flowChartPreparation
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartPreparation"'
+  - uid: excel.Excel.GeometricShapeType.flowChartProcess
+    name: flowChartProcess
+    fullName: flowChartProcess
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartProcess"'
+  - uid: excel.Excel.GeometricShapeType.flowChartPunchedCard
+    name: flowChartPunchedCard
+    fullName: flowChartPunchedCard
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartPunchedCard"'
+  - uid: excel.Excel.GeometricShapeType.flowChartPunchedTape
+    name: flowChartPunchedTape
+    fullName: flowChartPunchedTape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartPunchedTape"'
+  - uid: excel.Excel.GeometricShapeType.flowChartSort
+    name: flowChartSort
+    fullName: flowChartSort
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartSort"'
+  - uid: excel.Excel.GeometricShapeType.flowChartSummingJunction
+    name: flowChartSummingJunction
+    fullName: flowChartSummingJunction
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartSummingJunction"'
+  - uid: excel.Excel.GeometricShapeType.flowChartTerminator
+    name: flowChartTerminator
+    fullName: flowChartTerminator
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FlowChartTerminator"'
+  - uid: excel.Excel.GeometricShapeType.foldedCorner
+    name: foldedCorner
+    fullName: foldedCorner
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FoldedCorner"'
+  - uid: excel.Excel.GeometricShapeType.frame
+    name: frame
+    fullName: frame
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Frame"'
+  - uid: excel.Excel.GeometricShapeType.funnel
+    name: funnel
+    fullName: funnel
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Funnel"'
+  - uid: excel.Excel.GeometricShapeType.gear6
+    name: gear6
+    fullName: gear6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gear6"'
+  - uid: excel.Excel.GeometricShapeType.gear9
+    name: gear9
+    fullName: gear9
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gear9"'
+  - uid: excel.Excel.GeometricShapeType.halfFrame
+    name: halfFrame
+    fullName: halfFrame
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HalfFrame"'
+  - uid: excel.Excel.GeometricShapeType.heart
+    name: heart
+    fullName: heart
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heart"'
+  - uid: excel.Excel.GeometricShapeType.heptagon
+    name: heptagon
+    fullName: heptagon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Heptagon"'
+  - uid: excel.Excel.GeometricShapeType.hexagon
+    name: hexagon
+    fullName: hexagon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hexagon"'
+  - uid: excel.Excel.GeometricShapeType.homePlate
+    name: homePlate
+    fullName: homePlate
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HomePlate"'
+  - uid: excel.Excel.GeometricShapeType.horizontalScroll
+    name: horizontalScroll
+    fullName: horizontalScroll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"HorizontalScroll"'
+  - uid: excel.Excel.GeometricShapeType.irregularSeal1
+    name: irregularSeal1
+    fullName: irregularSeal1
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"IrregularSeal1"'
+  - uid: excel.Excel.GeometricShapeType.irregularSeal2
+    name: irregularSeal2
+    fullName: irregularSeal2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"IrregularSeal2"'
+  - uid: excel.Excel.GeometricShapeType.leftArrow
+    name: leftArrow
+    fullName: leftArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftArrow"'
+  - uid: excel.Excel.GeometricShapeType.leftArrowCallout
+    name: leftArrowCallout
+    fullName: leftArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.leftBrace
+    name: leftBrace
+    fullName: leftBrace
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftBrace"'
+  - uid: excel.Excel.GeometricShapeType.leftBracket
+    name: leftBracket
+    fullName: leftBracket
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftBracket"'
+  - uid: excel.Excel.GeometricShapeType.leftCircularArrow
+    name: leftCircularArrow
+    fullName: leftCircularArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftCircularArrow"'
+  - uid: excel.Excel.GeometricShapeType.leftRightArrow
+    name: leftRightArrow
+    fullName: leftRightArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftRightArrow"'
+  - uid: excel.Excel.GeometricShapeType.leftRightArrowCallout
+    name: leftRightArrowCallout
+    fullName: leftRightArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftRightArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.leftRightCircularArrow
+    name: leftRightCircularArrow
+    fullName: leftRightCircularArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftRightCircularArrow"'
+  - uid: excel.Excel.GeometricShapeType.leftRightRibbon
+    name: leftRightRibbon
+    fullName: leftRightRibbon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftRightRibbon"'
+  - uid: excel.Excel.GeometricShapeType.leftRightUpArrow
+    name: leftRightUpArrow
+    fullName: leftRightUpArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftRightUpArrow"'
+  - uid: excel.Excel.GeometricShapeType.leftUpArrow
+    name: leftUpArrow
+    fullName: leftUpArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LeftUpArrow"'
+  - uid: excel.Excel.GeometricShapeType.lightningBolt
+    name: lightningBolt
+    fullName: lightningBolt
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LightningBolt"'
+  - uid: excel.Excel.GeometricShapeType.lineInverse
+    name: lineInverse
+    fullName: lineInverse
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"LineInverse"'
+  - uid: excel.Excel.GeometricShapeType.mathDivide
+    name: mathDivide
+    fullName: mathDivide
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MathDivide"'
+  - uid: excel.Excel.GeometricShapeType.mathEqual
+    name: mathEqual
+    fullName: mathEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MathEqual"'
+  - uid: excel.Excel.GeometricShapeType.mathMinus
+    name: mathMinus
+    fullName: mathMinus
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MathMinus"'
+  - uid: excel.Excel.GeometricShapeType.mathMultiply
+    name: mathMultiply
+    fullName: mathMultiply
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MathMultiply"'
+  - uid: excel.Excel.GeometricShapeType.mathNotEqual
+    name: mathNotEqual
+    fullName: mathNotEqual
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MathNotEqual"'
+  - uid: excel.Excel.GeometricShapeType.mathPlus
+    name: mathPlus
+    fullName: mathPlus
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MathPlus"'
+  - uid: excel.Excel.GeometricShapeType.moon
+    name: moon
+    fullName: moon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Moon"'
+  - uid: excel.Excel.GeometricShapeType.nonIsoscelesTrapezoid
+    name: nonIsoscelesTrapezoid
+    fullName: nonIsoscelesTrapezoid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NonIsoscelesTrapezoid"'
+  - uid: excel.Excel.GeometricShapeType.noSmoking
+    name: noSmoking
+    fullName: noSmoking
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NoSmoking"'
+  - uid: excel.Excel.GeometricShapeType.notchedRightArrow
+    name: notchedRightArrow
+    fullName: notchedRightArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NotchedRightArrow"'
+  - uid: excel.Excel.GeometricShapeType.octagon
+    name: octagon
+    fullName: octagon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Octagon"'
+  - uid: excel.Excel.GeometricShapeType.parallelogram
+    name: parallelogram
+    fullName: parallelogram
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Parallelogram"'
+  - uid: excel.Excel.GeometricShapeType.pentagon
+    name: pentagon
+    fullName: pentagon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pentagon"'
+  - uid: excel.Excel.GeometricShapeType.pie
+    name: pie
+    fullName: pie
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pie"'
+  - uid: excel.Excel.GeometricShapeType.pieWedge
+    name: pieWedge
+    fullName: pieWedge
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PieWedge"'
+  - uid: excel.Excel.GeometricShapeType.plaque
+    name: plaque
+    fullName: plaque
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Plaque"'
+  - uid: excel.Excel.GeometricShapeType.plaqueTabs
+    name: plaqueTabs
+    fullName: plaqueTabs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PlaqueTabs"'
+  - uid: excel.Excel.GeometricShapeType.plus
+    name: plus
+    fullName: plus
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Plus"'
+  - uid: excel.Excel.GeometricShapeType.quadArrow
+    name: quadArrow
+    fullName: quadArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"QuadArrow"'
+  - uid: excel.Excel.GeometricShapeType.quadArrowCallout
+    name: quadArrowCallout
+    fullName: quadArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"QuadArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.rectangle
+    name: rectangle
+    fullName: rectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Rectangle"'
+  - uid: excel.Excel.GeometricShapeType.ribbon
+    name: ribbon
+    fullName: ribbon
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ribbon"'
+  - uid: excel.Excel.GeometricShapeType.ribbon2
+    name: ribbon2
+    fullName: ribbon2
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Ribbon2"'
+  - uid: excel.Excel.GeometricShapeType.rightArrow
+    name: rightArrow
+    fullName: rightArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightArrow"'
+  - uid: excel.Excel.GeometricShapeType.rightArrowCallout
+    name: rightArrowCallout
+    fullName: rightArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.rightBrace
+    name: rightBrace
+    fullName: rightBrace
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightBrace"'
+  - uid: excel.Excel.GeometricShapeType.rightBracket
+    name: rightBracket
+    fullName: rightBracket
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightBracket"'
+  - uid: excel.Excel.GeometricShapeType.rightTriangle
+    name: rightTriangle
+    fullName: rightTriangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RightTriangle"'
+  - uid: excel.Excel.GeometricShapeType.round1Rectangle
+    name: round1Rectangle
+    fullName: round1Rectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Round1Rectangle"'
+  - uid: excel.Excel.GeometricShapeType.round2DiagonalRectangle
+    name: round2DiagonalRectangle
+    fullName: round2DiagonalRectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Round2DiagonalRectangle"'
+  - uid: excel.Excel.GeometricShapeType.round2SameRectangle
+    name: round2SameRectangle
+    fullName: round2SameRectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Round2SameRectangle"'
+  - uid: excel.Excel.GeometricShapeType.roundRectangle
+    name: roundRectangle
+    fullName: roundRectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"RoundRectangle"'
+  - uid: excel.Excel.GeometricShapeType.smileyFace
+    name: smileyFace
+    fullName: smileyFace
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SmileyFace"'
+  - uid: excel.Excel.GeometricShapeType.snip1Rectangle
+    name: snip1Rectangle
+    fullName: snip1Rectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Snip1Rectangle"'
+  - uid: excel.Excel.GeometricShapeType.snip2DiagonalRectangle
+    name: snip2DiagonalRectangle
+    fullName: snip2DiagonalRectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Snip2DiagonalRectangle"'
+  - uid: excel.Excel.GeometricShapeType.snip2SameRectangle
+    name: snip2SameRectangle
+    fullName: snip2SameRectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Snip2SameRectangle"'
+  - uid: excel.Excel.GeometricShapeType.snipRoundRectangle
+    name: snipRoundRectangle
+    fullName: snipRoundRectangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SnipRoundRectangle"'
+  - uid: excel.Excel.GeometricShapeType.squareTabs
+    name: squareTabs
+    fullName: squareTabs
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SquareTabs"'
+  - uid: excel.Excel.GeometricShapeType.star10
+    name: star10
+    fullName: star10
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star10"'
+  - uid: excel.Excel.GeometricShapeType.star12
+    name: star12
+    fullName: star12
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star12"'
+  - uid: excel.Excel.GeometricShapeType.star16
+    name: star16
+    fullName: star16
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star16"'
+  - uid: excel.Excel.GeometricShapeType.star24
+    name: star24
+    fullName: star24
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star24"'
+  - uid: excel.Excel.GeometricShapeType.star32
+    name: star32
+    fullName: star32
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star32"'
+  - uid: excel.Excel.GeometricShapeType.star4
+    name: star4
+    fullName: star4
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star4"'
+  - uid: excel.Excel.GeometricShapeType.star5
+    name: star5
+    fullName: star5
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star5"'
+  - uid: excel.Excel.GeometricShapeType.star6
+    name: star6
+    fullName: star6
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star6"'
+  - uid: excel.Excel.GeometricShapeType.star7
+    name: star7
+    fullName: star7
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star7"'
+  - uid: excel.Excel.GeometricShapeType.star8
+    name: star8
+    fullName: star8
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Star8"'
+  - uid: excel.Excel.GeometricShapeType.stripedRightArrow
+    name: stripedRightArrow
+    fullName: stripedRightArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StripedRightArrow"'
+  - uid: excel.Excel.GeometricShapeType.sun
+    name: sun
+    fullName: sun
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Sun"'
+  - uid: excel.Excel.GeometricShapeType.swooshArrow
+    name: swooshArrow
+    fullName: swooshArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SwooshArrow"'
+  - uid: excel.Excel.GeometricShapeType.teardrop
+    name: teardrop
+    fullName: teardrop
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Teardrop"'
+  - uid: excel.Excel.GeometricShapeType.trapezoid
+    name: trapezoid
+    fullName: trapezoid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Trapezoid"'
+  - uid: excel.Excel.GeometricShapeType.triangle
+    name: triangle
+    fullName: triangle
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Triangle"'
+  - uid: excel.Excel.GeometricShapeType.upArrow
+    name: upArrow
+    fullName: upArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UpArrow"'
+  - uid: excel.Excel.GeometricShapeType.upArrowCallout
+    name: upArrowCallout
+    fullName: upArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UpArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.upDownArrow
+    name: upDownArrow
+    fullName: upDownArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UpDownArrow"'
+  - uid: excel.Excel.GeometricShapeType.upDownArrowCallout
+    name: upDownArrowCallout
+    fullName: upDownArrowCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UpDownArrowCallout"'
+  - uid: excel.Excel.GeometricShapeType.uturnArrow
+    name: uturnArrow
+    fullName: uturnArrow
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"UturnArrow"'
+  - uid: excel.Excel.GeometricShapeType.verticalScroll
+    name: verticalScroll
+    fullName: verticalScroll
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"VerticalScroll"'
+  - uid: excel.Excel.GeometricShapeType.wave
+    name: wave
+    fullName: wave
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Wave"'
+  - uid: excel.Excel.GeometricShapeType.wedgeEllipseCallout
+    name: wedgeEllipseCallout
+    fullName: wedgeEllipseCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WedgeEllipseCallout"'
+  - uid: excel.Excel.GeometricShapeType.wedgeRectCallout
+    name: wedgeRectCallout
+    fullName: wedgeRectCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WedgeRectCallout"'
+  - uid: excel.Excel.GeometricShapeType.wedgeRRectCallout
+    name: wedgeRRectCallout
+    fullName: wedgeRRectCallout
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"WedgeRRectCallout"'
