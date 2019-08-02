@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.BorderWeight
+    summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.BorderWeight
+    fullName: Excel.BorderWeight
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.BorderWeight.hairline
+      - excel.Excel.BorderWeight.medium
+      - excel.Excel.BorderWeight.thick
+      - excel.Excel.BorderWeight.thin
+  - uid: excel.Excel.BorderWeight.hairline
+    name: hairline
+    fullName: hairline
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Hairline"'
+  - uid: excel.Excel.BorderWeight.medium
+    name: medium
+    fullName: medium
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Medium"'
+  - uid: excel.Excel.BorderWeight.thick
+    name: thick
+    fullName: thick
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Thick"'
+  - uid: excel.Excel.BorderWeight.thin
+    name: thin
+    fullName: thin
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Thin"'

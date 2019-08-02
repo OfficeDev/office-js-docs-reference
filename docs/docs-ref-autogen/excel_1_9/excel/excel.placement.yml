@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Placement
+    summary: |-
+      Specifies the way that an object is attached to its underlying cells.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Placement
+    fullName: Excel.Placement
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.Placement.absolute
+      - excel.Excel.Placement.oneCell
+      - excel.Excel.Placement.twoCell
+  - uid: excel.Excel.Placement.absolute
+    summary: The object is free floating.
+    name: absolute
+    fullName: absolute
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Absolute"'
+  - uid: excel.Excel.Placement.oneCell
+    summary: The object is moved and sized with the cells.
+    name: oneCell
+    fullName: oneCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"OneCell"'
+  - uid: excel.Excel.Placement.twoCell
+    summary: The object is moved with the cells.
+    name: twoCell
+    fullName: twoCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TwoCell"'

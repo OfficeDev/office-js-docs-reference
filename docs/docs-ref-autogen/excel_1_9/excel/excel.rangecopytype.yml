@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.RangeCopyType
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.RangeCopyType
+    fullName: Excel.RangeCopyType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.RangeCopyType.all
+      - excel.Excel.RangeCopyType.formats
+      - excel.Excel.RangeCopyType.formulas
+      - excel.Excel.RangeCopyType.values
+  - uid: excel.Excel.RangeCopyType.all
+    name: all
+    fullName: all
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"All"'
+  - uid: excel.Excel.RangeCopyType.formats
+    name: formats
+    fullName: formats
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formats"'
+  - uid: excel.Excel.RangeCopyType.formulas
+    name: formulas
+    fullName: formulas
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Formulas"'
+  - uid: excel.Excel.RangeCopyType.values
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Values"'

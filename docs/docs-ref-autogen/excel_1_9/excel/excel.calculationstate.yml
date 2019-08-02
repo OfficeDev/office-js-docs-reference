@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.CalculationState
+    summary: |-
+      Represents the state of calculation across the entire Excel application.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.CalculationState
+    fullName: Excel.CalculationState
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.CalculationState.calculating
+      - excel.Excel.CalculationState.done
+      - excel.Excel.CalculationState.pending
+  - uid: excel.Excel.CalculationState.calculating
+    summary: Calculations in progress.
+    name: calculating
+    fullName: calculating
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Calculating"'
+  - uid: excel.Excel.CalculationState.done
+    summary: Calculations complete.
+    name: done
+    fullName: done
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Done"'
+  - uid: excel.Excel.CalculationState.pending
+    summary: 'Changes that trigger calculation have been made, but a recalculation has not yet been performed.'
+    name: pending
+    fullName: pending
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pending"'

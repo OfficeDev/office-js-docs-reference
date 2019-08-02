@@ -1,0 +1,203 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData
+    summary: 'An interface for updating data on the TextFrame object, for use in "textFrame.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.TextFrameUpdateData
+    fullName: Excel.Interfaces.TextFrameUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TextFrameUpdateData.autoSizeSetting
+      - excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
+      - excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
+      - excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
+      - excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
+      - excel.Excel.Interfaces.TextFrameUpdateData.orientation
+      - excel.Excel.Interfaces.TextFrameUpdateData.readingOrder
+      - excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
+      - excel.Excel.Interfaces.TextFrameUpdateData.topMargin
+      - excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
+      - excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.autoSizeSetting
+    summary: >-
+      Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
+      text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSizeSetting
+    fullName: autoSizeSetting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        autoSizeSetting?: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" |
+        "AutoSizeMixed";
+      return:
+        type:
+          - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
+    summary: |-
+      Represents the bottom margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment?: Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" |
+        "JustifyLow" | "Distributed" | "ThaiDistributed";
+      return:
+        type:
+          - >-
+            Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
+            | "ThaiDistributed"
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
+    summary: |-
+      Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalOverflow
+    fullName: horizontalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalOverflow?: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip";'
+      return:
+        type:
+          - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
+    summary: |-
+      Represents the left margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.orientation
+    summary: |-
+      Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        orientation?: Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+        "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
+      return:
+        type:
+          - >-
+            Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+            "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.readingOrder
+    summary: >-
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      Excel.ShapeTextReadingOrder for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder?: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
+    summary: |-
+      Represents the right margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.topMargin
+    summary: |-
+      Represents the top margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
+    summary: |-
+      Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        verticalAlignment?: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" |
+        "Distributed";
+      return:
+        type:
+          - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
+  - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
+    summary: |-
+      Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalOverflow
+    fullName: verticalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalOverflow?: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip";'
+      return:
+        type:
+          - Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"

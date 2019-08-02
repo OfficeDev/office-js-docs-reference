@@ -1,0 +1,312 @@
+### YamlMime:UniversalReference
+items:
+  - uid: Outlook.Office.AppointmentForm
+    summary: |-
+      The AppointmentForm namespace is used to access the currently selected appointment.
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: Restricted
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: Office.AppointmentForm
+    fullName: Office.AppointmentForm
+    langs:
+      - typeScript
+    type: interface
+    package: Outlook
+    children:
+      - Outlook.Office.AppointmentForm.body
+      - Outlook.Office.AppointmentForm.end
+      - Outlook.Office.AppointmentForm.location
+      - Outlook.Office.AppointmentForm.optionalAttendees
+      - Outlook.Office.AppointmentForm.requiredAttendees
+      - Outlook.Office.AppointmentForm.resources
+      - Outlook.Office.AppointmentForm.start
+      - Outlook.Office.AppointmentForm.subject
+  - uid: Outlook.Office.AppointmentForm.body
+    summary: |-
+      Gets an object that provides methods for manipulating the body of an item.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook.Office.AppointmentForm.end
+    summary: >-
+      Gets or sets the date and time that the appointment is to end.
+
+
+      The end property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
+      convertToLocalClientTime method to convert the end property value to the client's local date and time.
+
+
+      *Read mode*
+
+
+      The end property returns a Date object.
+
+
+      *Compose mode*
+
+
+      The end property returns a Time object.
+
+
+      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: end
+    fullName: end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Date;'
+      return:
+        type:
+          - Date
+  - uid: Outlook.Office.AppointmentForm.location
+    summary: >-
+      Gets or sets the location of an appointment.
+
+
+      *Read mode*
+
+
+      The location property returns a string that contains the location of the appointment.
+
+
+      *Compose mode*
+
+
+      The location property returns a Location object that provides methods that are used to get and set the location of
+      the appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: location
+    fullName: location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: string;'
+      return:
+        type:
+          - string
+  - uid: Outlook.Office.AppointmentForm.optionalAttendees
+    summary: >-
+      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      of the current item.
+
+
+      *Read mode*
+
+
+      The optionalAttendees property returns an array that contains an EmailAddressDetails object for each optional
+      attendee to the meeting.
+
+
+      *Compose mode*
+
+
+      The optionalAttendees property returns a Recipients object that provides methods to get or update the optional
+      attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: optionalAttendees
+    fullName: optionalAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalAttendees: string[] | EmailAddressDetails[];'
+      return:
+        type:
+          - 'string[] | EmailAddressDetails[]'
+  - uid: Outlook.Office.AppointmentForm.requiredAttendees
+    summary: >-
+      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
+      of the current item.
+
+
+      *Read mode*
+
+
+      The requiredAttendees property returns an array that contains an EmailAddressDetails object for each required
+      attendee to the meeting.
+
+
+      *Compose mode*
+
+
+      The requiredAttendees property returns a Recipients object that provides methods to get or update the required
+      attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: requiredAttendees
+    fullName: requiredAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requiredAttendees: string[] | EmailAddressDetails[];'
+      return:
+        type:
+          - 'string[] | EmailAddressDetails[]'
+  - uid: Outlook.Office.AppointmentForm.resources
+    summary: >-
+      Provides access to the resources of an event. Returns an array of strings containing the resources required for
+      the appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: resources
+    fullName: resources
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resources: string[];'
+      return:
+        type:
+          - 'string[]'
+  - uid: Outlook.Office.AppointmentForm.start
+    summary: >-
+      Gets or sets the date and time that the appointment is to begin.
+
+
+      The start property is expressed as a Coordinated Universal Time (UTC) date and time value. You can use the
+      convertToLocalClientTime method to convert the value to the client's local date and time.
+
+
+      *Read mode*
+
+
+      The start property returns a Date object.
+
+
+      *Compose mode*
+
+
+      The start property returns a Time object.
+
+
+      When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: start
+    fullName: start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: Date;'
+      return:
+        type:
+          - Date
+  - uid: Outlook.Office.AppointmentForm.subject
+    summary: >-
+      Gets or sets the description that appears in the subject field of an item.
+
+
+      The subject property gets or sets the entire subject of the item, as sent by the email server.
+
+
+      *Read mode*
+
+
+      The subject property returns a string. Use the normalizedSubject property to get the subject minus any leading
+      prefixes such as RE: and FW:.
+
+
+      *Compose mode*
+
+
+      The subject property returns a Subject object that provides methods to get and set the subject.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+    name: subject
+    fullName: subject
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'subject: string;'
+      return:
+        type:
+          - string

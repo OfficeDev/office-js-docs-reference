@@ -1,0 +1,175 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.TableRowData
+    summary: An interface describing the data returned by calling "tableRow.toJSON()".
+    name: Word.Interfaces.TableRowData
+    fullName: Word.Interfaces.TableRowData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.TableRowData.cellCount
+      - word.Word.Interfaces.TableRowData.cells
+      - word.Word.Interfaces.TableRowData.font
+      - word.Word.Interfaces.TableRowData.horizontalAlignment
+      - word.Word.Interfaces.TableRowData.isHeader
+      - word.Word.Interfaces.TableRowData.preferredHeight
+      - word.Word.Interfaces.TableRowData.rowIndex
+      - word.Word.Interfaces.TableRowData.shadingColor
+      - word.Word.Interfaces.TableRowData.values
+      - word.Word.Interfaces.TableRowData.verticalAlignment
+  - uid: word.Word.Interfaces.TableRowData.cellCount
+    summary: |-
+      Gets the number of cells in the row. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cellCount
+    fullName: cellCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cellCount?: number;'
+      return:
+        type:
+          - number
+  - uid: word.Word.Interfaces.TableRowData.cells
+    summary: |-
+      Gets cells. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: cells
+    fullName: cells
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'cells?: Word.Interfaces.TableCellData[];'
+      return:
+        type:
+          - 'Word.Interfaces.TableCellData[]'
+  - uid: word.Word.Interfaces.TableRowData.font
+    summary: |-
+      Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type:
+          - word.Word.Interfaces.FontData
+  - uid: word.Word.Interfaces.TableRowData.horizontalAlignment
+    summary: >-
+      Gets and sets the horizontal alignment of every cell in the row. The value can be 'Left', 'Centered', 'Right', or
+      'Justified'.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment?: Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified";'
+      return:
+        type:
+          - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
+  - uid: word.Word.Interfaces.TableRowData.isHeader
+    summary: >-
+      Checks whether the row is a header row. Read-only. To set the number of header rows, use HeaderRowCount on the
+      Table object.
+
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: isHeader
+    fullName: isHeader
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isHeader?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.TableRowData.preferredHeight
+    summary: |-
+      Gets and sets the preferred height of the row in points.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: preferredHeight
+    fullName: preferredHeight
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'preferredHeight?: number;'
+      return:
+        type:
+          - number
+  - uid: word.Word.Interfaces.TableRowData.rowIndex
+    summary: |-
+      Gets the index of the row in its parent table. Read-only.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: number;'
+      return:
+        type:
+          - number
+  - uid: word.Word.Interfaces.TableRowData.shadingColor
+    summary: |-
+      Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: shadingColor
+    fullName: shadingColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'shadingColor?: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.Interfaces.TableRowData.values
+    summary: |-
+      Gets and sets the text values in the row, as a 2D Javascript array.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: values
+    fullName: values
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'values?: string[][];'
+      return:
+        type:
+          - 'string[][]'
+  - uid: word.Word.Interfaces.TableRowData.verticalAlignment
+    summary: |-
+      Gets and sets the vertical alignment of the cells in the row. The value can be 'Top', 'Center', or 'Bottom'.
+
+      \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom";'
+      return:
+        type:
+          - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"

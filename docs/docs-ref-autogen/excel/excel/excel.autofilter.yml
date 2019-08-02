@@ -1,0 +1,314 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.AutoFilter
+    summary: >-
+      Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the
+      cell contents.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.AutoFilter
+    fullName: Excel.AutoFilter
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.AutoFilter.apply
+      - excel.Excel.AutoFilter.clearCriteria
+      - excel.Excel.AutoFilter.context
+      - excel.Excel.AutoFilter.criteria
+      - excel.Excel.AutoFilter.enabled
+      - excel.Excel.AutoFilter.getRange
+      - excel.Excel.AutoFilter.getRangeOrNullObject
+      - excel.Excel.AutoFilter.isDataFiltered
+      - excel.Excel.AutoFilter.load
+      - excel.Excel.AutoFilter.load_1
+      - excel.Excel.AutoFilter.load_2
+      - excel.Excel.AutoFilter.reapply
+      - excel.Excel.AutoFilter.remove
+      - excel.Excel.AutoFilter.toJSON
+  - uid: excel.Excel.AutoFilter.apply
+    summary: |-
+      Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'apply(range, columnIndex, criteria)'
+    fullName: 'apply(range, columnIndex, criteria)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'apply(range: Range | string, columnIndex?: number, criteria?: Excel.FilterCriteria): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const sheet = context.workbook.worksheets.getActiveWorksheet();
+              const farmData = sheet.getUsedRange();
+
+              // This filter will only show the rows with the top 25% of values in column 3.
+              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: range
+          description: The range over which the AutoFilter will apply on.
+          type:
+            - Range | string
+        - id: columnIndex
+          description: The zero-based column index to which the AutoFilter is applied.
+          type:
+            - number
+        - id: criteria
+          description: The filter criteria.
+          type:
+            - excel.Excel.FilterCriteria
+  - uid: excel.Excel.AutoFilter.clearCriteria
+    summary: |-
+      Clears the filter criteria of the AutoFilter.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: clearCriteria()
+    fullName: clearCriteria()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'clearCriteria(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.AutoFilter.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.AutoFilter.criteria
+    summary: |-
+      An array that holds all the filter criteria in the autofiltered range. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: criteria
+    fullName: criteria
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly criteria: Excel.FilterCriteria[];'
+      return:
+        type:
+          - 'Excel.FilterCriteria[]'
+  - uid: excel.Excel.AutoFilter.enabled
+    summary: |-
+      Indicates if the AutoFilter is enabled or not. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: enabled
+    fullName: enabled
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly enabled: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.AutoFilter.getRange
+    summary: |-
+      Returns the Range object that represents the range to which the AutoFilter applies.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRange()
+    fullName: getRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.AutoFilter.getRangeOrNullObject
+    summary: >-
+      Returns the Range object that represents the range to which the AutoFilter applies. If there is no Range object
+      associated with the AutoFilter, this method returns a null object.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getRangeOrNullObject()
+    fullName: getRangeOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getRangeOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.AutoFilter.isDataFiltered
+    summary: |-
+      Indicates if the AutoFilter has filter criteria. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDataFiltered
+    fullName: isDataFiltered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly isDataFiltered: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.AutoFilter.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.AutoFilter` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.AutoFilter` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.AutoFilter` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.AutoFilterLoadOptions
+  - uid: excel.Excel.AutoFilter.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.AutoFilter.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.AutoFilter;'
+      return:
+        type:
+          - excel.Excel.AutoFilter
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.AutoFilter.reapply
+    summary: |-
+      Applies the specified Autofilter object currently on the range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: reapply()
+    fullName: reapply()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'reapply(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.AutoFilter.remove
+    summary: |-
+      Removes the AutoFilter for the range.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: remove()
+    fullName: remove()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type:
+          - void
+        description: ''
+  - uid: excel.Excel.AutoFilter.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.AutoFilter object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.AutoFilterData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.AutoFilterData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.AutoFilterData
+        description: ''

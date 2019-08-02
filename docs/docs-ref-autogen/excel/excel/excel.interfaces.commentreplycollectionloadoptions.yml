@@ -1,0 +1,145 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions
+    summary: >-
+      Represents a collection of comment reply objects that are part of the comment.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    fullName: Excel.Interfaces.CommentReplyCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
+      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.resolved
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
+    isPreview: true
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
+    summary: >-
+      For EACH ITEM in the collection: Gets the email of the comment reply's author.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorEmail
+    fullName: authorEmail
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorEmail?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
+    summary: >-
+      For EACH ITEM in the collection: Gets the name of the comment reply's author.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: authorName
+    fullName: authorName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'authorName?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'content?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
+    summary: >-
+      For EACH ITEM in the collection: Gets the creation time of the comment reply.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: creationDate
+    fullName: creationDate
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'creationDate?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
+    summary: >-
+      For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.resolved
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply
+      is in the resolved state.
+
+
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: resolved
+    fullName: resolved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'resolved?: boolean;'
+      return:
+        type:
+          - boolean

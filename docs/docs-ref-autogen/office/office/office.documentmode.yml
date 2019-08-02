@@ -1,0 +1,28 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.DocumentMode
+    summary: Specifies whether the document in the associated application is read-only or read-write.
+    remarks: 'Returned by the mode property of the [Document](xref:office.Office.Document) object.'
+    name: Office.DocumentMode
+    fullName: Office.DocumentMode
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.DocumentMode.ReadOnly
+      - office.Office.DocumentMode.ReadWrite
+  - uid: office.Office.DocumentMode.ReadOnly
+    summary: The document is read-only.
+    name: ReadOnly
+    fullName: ReadOnly
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.DocumentMode.ReadWrite
+    summary: The document can be read and written to.
+    name: ReadWrite
+    fullName: ReadWrite
+    langs:
+      - typeScript
+    type: field

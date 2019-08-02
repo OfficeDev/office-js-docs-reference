@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.HeaderFooterType
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.HeaderFooterType
+    fullName: Word.HeaderFooterType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.HeaderFooterType.evenPages
+      - word.Word.HeaderFooterType.firstPage
+      - word.Word.HeaderFooterType.primary
+  - uid: word.Word.HeaderFooterType.evenPages
+    summary: Returns all headers or footers on even-numbered pages of a section.
+    name: evenPages
+    fullName: evenPages
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"EvenPages"'
+  - uid: word.Word.HeaderFooterType.firstPage
+    summary: Returns the header or footer on the first page of a section.
+    name: firstPage
+    fullName: firstPage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FirstPage"'
+  - uid: word.Word.HeaderFooterType.primary
+    summary: >-
+      Returns the header or footer on all pages of a section, with the first page or odd pages excluded if they are
+      different.
+    name: primary
+    fullName: primary
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Primary"'

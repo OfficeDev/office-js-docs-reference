@@ -1,0 +1,431 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.3.2",
+    "schemaVersion": 1001,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "custom-functions-runtime",
+  "docComment": "",
+  "name": "custom-functions-runtime",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "",
+      "name": "",
+      "members": [
+        {
+          "kind": "Namespace",
+          "canonicalReference": "(CustomFunctions:namespace)",
+          "docComment": "/**\n * CustomFunctions namespace, used by Excel Custom Functions\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare namespace "
+            },
+            {
+              "kind": "Reference",
+              "text": "CustomFunctions"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "CustomFunctions",
+          "members": [
+            {
+              "kind": "Function",
+              "canonicalReference": "(associate:1)",
+              "docComment": "/**\n * Associates the JavaScript function to the name given by the \"id\" property in the metadata JSON file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "associate"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "id"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "functionObject"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "functionObject",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 9,
+                    "endIndex": 10
+                  }
+                }
+              ],
+              "name": "associate"
+            },
+            {
+              "kind": "Function",
+              "canonicalReference": "(associate:2)",
+              "docComment": "/**\n * Associates the JavaScript functions to the names given by the \"id\" properties in the metadata JSON file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export function "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "associate"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "mappings"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{ ["
+                },
+                {
+                  "kind": "Reference",
+                  "text": "key"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": string]: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Function"
+                },
+                {
+                  "kind": "Content",
+                  "text": " }"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 11,
+                "endIndex": 12
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "mappings",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 10
+                  }
+                }
+              ],
+              "name": "associate"
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(CancelableInvocation:interface)",
+              "docComment": "/**\n * Provides information about the invocation of a cancelable custom function. A cancelable custom function can provide a handler for the onCanceled event.\n *\n * To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: `{ \"cancelable\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableInvocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Invocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "CancelableInvocation",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "onCanceled",
+                  "docComment": "/**\n * Event handler called when the custom function is canceled.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "onCanceled"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "() => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "onCanceled",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 3,
+                  "endIndex": 5
+                }
+              ]
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(Invocation:interface)",
+              "docComment": "/**\n * Provides information about the invocation of a custom function.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Invocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "Invocation",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "address",
+                  "docComment": "/**\n * The cell address where the function is being called, if requested, otherwise undefined.\n *\n * To request the address for the function, in the metadata JSON file, the function options should specify: `{ \"requiresAddress\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "address"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "address",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(StreamingInvocation:interface)",
+              "docComment": "/**\n * Provides information about the invocation of a streaming custom function. A streaming custom function can provide results which can change over time.\n *\n * Call `setResult()` one or more times to provide the result instead of returning a result from the function.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StreamingInvocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ResultType"
+                },
+                {
+                  "kind": "Content",
+                  "text": "> extends "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "CancelableInvocation"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "typeParameters": [
+                {
+                  "typeParameterName": "ResultType",
+                  "constraintTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  },
+                  "defaultTypeTokenRange": {
+                    "startIndex": 0,
+                    "endIndex": 0
+                  }
+                }
+              ],
+              "name": "StreamingInvocation",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "setResult",
+                  "docComment": "/**\n * Set the result for the custom function. May be called more than once.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "setResult"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "value"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "ResultType"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Error"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ") => void"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "setResult",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 9
+                  }
+                }
+              ],
+              "extendsTokenRanges": [
+                {
+                  "startIndex": 5,
+                  "endIndex": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

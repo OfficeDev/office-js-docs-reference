@@ -1,0 +1,818 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.PageLayout
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.PageLayout
+    fullName: Excel.PageLayout
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.PageLayout.blackAndWhite
+      - excel.Excel.PageLayout.bottomMargin
+      - excel.Excel.PageLayout.centerHorizontally
+      - excel.Excel.PageLayout.centerVertically
+      - excel.Excel.PageLayout.context
+      - excel.Excel.PageLayout.draftMode
+      - excel.Excel.PageLayout.firstPageNumber
+      - excel.Excel.PageLayout.footerMargin
+      - excel.Excel.PageLayout.getPrintArea
+      - excel.Excel.PageLayout.getPrintAreaOrNullObject
+      - excel.Excel.PageLayout.getPrintTitleColumns
+      - excel.Excel.PageLayout.getPrintTitleColumnsOrNullObject
+      - excel.Excel.PageLayout.getPrintTitleRows
+      - excel.Excel.PageLayout.getPrintTitleRowsOrNullObject
+      - excel.Excel.PageLayout.headerMargin
+      - excel.Excel.PageLayout.headersFooters
+      - excel.Excel.PageLayout.leftMargin
+      - excel.Excel.PageLayout.load
+      - excel.Excel.PageLayout.load_1
+      - excel.Excel.PageLayout.load_2
+      - excel.Excel.PageLayout.orientation
+      - excel.Excel.PageLayout.paperSize
+      - excel.Excel.PageLayout.printComments
+      - excel.Excel.PageLayout.printErrors
+      - excel.Excel.PageLayout.printGridlines
+      - excel.Excel.PageLayout.printHeadings
+      - excel.Excel.PageLayout.printOrder
+      - excel.Excel.PageLayout.rightMargin
+      - excel.Excel.PageLayout.set
+      - excel.Excel.PageLayout.set_1
+      - excel.Excel.PageLayout.setPrintArea
+      - excel.Excel.PageLayout.setPrintMargins
+      - excel.Excel.PageLayout.setPrintMargins_1
+      - excel.Excel.PageLayout.setPrintTitleColumns
+      - excel.Excel.PageLayout.setPrintTitleRows
+      - excel.Excel.PageLayout.toJSON
+      - excel.Excel.PageLayout.topMargin
+      - excel.Excel.PageLayout.zoom
+  - uid: excel.Excel.PageLayout.blackAndWhite
+    summary: |-
+      Gets or sets the worksheet's black and white print option.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: blackAndWhite
+    fullName: blackAndWhite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackAndWhite: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.PageLayout.bottomMargin
+    summary: |-
+      Gets or sets the worksheet's bottom page margin to use for printing in points.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayout.centerHorizontally
+    summary: >-
+      Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
+      horizontally when it's printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerHorizontally
+    fullName: centerHorizontally
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHorizontally: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.centerHorizontally = true;
+              farmSheet.pageLayout.centerVertically = true;
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.PageLayout.centerVertically
+    summary: >-
+      Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
+      vertically when it's printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerVertically
+    fullName: centerVertically
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerVertically: boolean;'
+      return:
+        type:
+          - boolean
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.centerHorizontally = true;
+              farmSheet.pageLayout.centerVertically = true;
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.PageLayout.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.PageLayout.draftMode
+    summary: |-
+      Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: draftMode
+    fullName: draftMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'draftMode: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.PageLayout.firstPageNumber
+    summary: |-
+      Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPageNumber
+    fullName: firstPageNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstPageNumber: number | "";'
+      return:
+        type:
+          - number | ""
+  - uid: excel.Excel.PageLayout.footerMargin
+    summary: |-
+      Gets or sets the worksheet's footer margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: footerMargin
+    fullName: footerMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footerMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayout.getPrintArea
+    summary: >-
+      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the
+      worksheet. If there is no print area, an ItemNotFound error will be thrown.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintArea()
+    fullName: getPrintArea()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintArea(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: ''
+  - uid: excel.Excel.PageLayout.getPrintAreaOrNullObject
+    summary: >-
+      Gets the RangeAreas object, comprising one or more rectangular ranges, that represents the print area for the
+      worksheet. If there is no print area, a null object will be returned.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintAreaOrNullObject()
+    fullName: getPrintAreaOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintAreaOrNullObject(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: ''
+  - uid: excel.Excel.PageLayout.getPrintTitleColumns
+    summary: |-
+      Gets the range object representing the title columns.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleColumns()
+    fullName: getPrintTitleColumns()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleColumns(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.PageLayout.getPrintTitleColumnsOrNullObject
+    summary: |-
+      Gets the range object representing the title columns. If not set, this will return a null object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleColumnsOrNullObject()
+    fullName: getPrintTitleColumnsOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleColumnsOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.PageLayout.getPrintTitleRows
+    summary: |-
+      Gets the range object representing the title rows.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleRows()
+    fullName: getPrintTitleRows()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleRows(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.PageLayout.getPrintTitleRowsOrNullObject
+    summary: |-
+      Gets the range object representing the title rows. If not set, this will return a null object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getPrintTitleRowsOrNullObject()
+    fullName: getPrintTitleRowsOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getPrintTitleRowsOrNullObject(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: ''
+  - uid: excel.Excel.PageLayout.headerMargin
+    summary: |-
+      Gets or sets the worksheet's header margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headerMargin
+    fullName: headerMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayout.headersFooters
+    summary: |-
+      Header and footer configuration for the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headersFooters
+    fullName: headersFooters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly headersFooters: Excel.HeaderFooterGroup;'
+      return:
+        type:
+          - excel.Excel.HeaderFooterGroup
+  - uid: excel.Excel.PageLayout.leftMargin
+    summary: |-
+      Gets or sets the worksheet's left margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayout.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.PageLayout` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.PageLayout` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.PageLayout` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.PageLayoutLoadOptions): Excel.PageLayout;'
+      return:
+        type:
+          - excel.Excel.PageLayout
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.PageLayoutLoadOptions
+  - uid: excel.Excel.PageLayout.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.PageLayout;'
+      return:
+        type:
+          - excel.Excel.PageLayout
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.PageLayout.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PageLayout;'
+      return:
+        type:
+          - excel.Excel.PageLayout
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.PageLayout.orientation
+    summary: |-
+      Gets or sets the worksheet's orientation of the page.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'orientation: Excel.PageOrientation | "Portrait" | "Landscape";'
+      return:
+        type:
+          - Excel.PageOrientation | "Portrait" | "Landscape"
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.orientation = Excel.PageOrientation.landscape;
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.PageLayout.paperSize
+    summary: |-
+      Gets or sets the worksheet's paper size of the page.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: paperSize
+    fullName: paperSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        paperSize: Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" |
+        "Executive" | "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" |
+        "Note" | "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" |
+        "Esheet" | "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" |
+        "EnvelopeB4" | "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" |
+        "FanfoldUS" | "FanfoldStdGerman" | "FanfoldLegalGerman";
+      return:
+        type:
+          - >-
+            Excel.PaperType | "Letter" | "LetterSmall" | "Tabloid" | "Ledger" | "Legal" | "Statement" | "Executive" |
+            "A3" | "A4" | "A4Small" | "A5" | "B4" | "B5" | "Folio" | "Quatro" | "Paper10x14" | "Paper11x17" | "Note" |
+            "Envelope9" | "Envelope10" | "Envelope11" | "Envelope12" | "Envelope14" | "Csheet" | "Dsheet" | "Esheet" |
+            "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" |
+            "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" |
+            "FanfoldStdGerman" | "FanfoldLegalGerman"
+  - uid: excel.Excel.PageLayout.printComments
+    summary: |-
+      Gets or sets whether the worksheet's comments should be displayed when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printComments
+    fullName: printComments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printComments: Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace";'
+      return:
+        type:
+          - Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
+  - uid: excel.Excel.PageLayout.printErrors
+    summary: |-
+      Gets or sets the worksheet's print errors option.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printErrors
+    fullName: printErrors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printErrors: Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable";'
+      return:
+        type:
+          - Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
+  - uid: excel.Excel.PageLayout.printGridlines
+    summary: |-
+      Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printGridlines
+    fullName: printGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printGridlines: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.PageLayout.printHeadings
+    summary: |-
+      Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printHeadings
+    fullName: printHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printHeadings: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.PageLayout.printOrder
+    summary: >-
+      Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
+      number printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printOrder
+    fullName: printOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printOrder: Excel.PrintOrder | "DownThenOver" | "OverThenDown";'
+      return:
+        type:
+          - Excel.PrintOrder | "DownThenOver" | "OverThenDown"
+  - uid: excel.Excel.PageLayout.rightMargin
+    summary: |-
+      Gets or sets the worksheet's right margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayout.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.PageLayout): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.PageLayoutUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.PageLayoutUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.PageLayout.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.PageLayout): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.PageLayout
+  - uid: excel.Excel.PageLayout.setPrintArea
+    summary: |-
+      Sets the worksheet's print area.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setPrintArea(printArea)
+    fullName: setPrintArea(printArea)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPrintArea(printArea: Range | RangeAreas | string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.setPrintArea("A1:D41");
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: printArea
+          description: 'The range, or RangeAreas of the content to print.'
+          type:
+            - Range | RangeAreas | string
+  - uid: excel.Excel.PageLayout.setPrintMargins
+    summary: |-
+      Sets the worksheet's page margins with units.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setPrintMargins(unit, marginOptions)'
+    fullName: 'setPrintMargins(unit, marginOptions)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPrintMargins(unit: Excel.PrintMarginUnit, marginOptions: Excel.PageLayoutMarginOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: unit
+          description: Measurement unit for the margins provided.
+          type:
+            - excel.Excel.PrintMarginUnit
+        - id: marginOptions
+          description: 'Margin values to set, margins not provided will remain unchanged.'
+          type:
+            - excel.Excel.PageLayoutMarginOptions
+  - uid: excel.Excel.PageLayout.setPrintMargins_1
+    summary: |-
+      Sets the worksheet's page margins with units.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: 'setPrintMargins(unitString, marginOptions)'
+    fullName: 'setPrintMargins(unitString, marginOptions)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: >-
+        setPrintMargins(unitString: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions):
+        void;
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: unitString
+          description: Measurement unit for the margins provided.
+          type:
+            - '"Points" | "Inches" | "Centimeters"'
+        - id: marginOptions
+          description: 'Margin values to set, margins not provided will remain unchanged.'
+          type:
+            - excel.Excel.PageLayoutMarginOptions
+  - uid: excel.Excel.PageLayout.setPrintTitleColumns
+    summary: |-
+      Sets the columns that contain the cells to be repeated at the left of each page of the worksheet for printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setPrintTitleColumns(printTitleColumns)
+    fullName: setPrintTitleColumns(printTitleColumns)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPrintTitleColumns(printTitleColumns: Range | string): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: printTitleColumns
+          description: 'The columns to be repeated to the left of each page, range must span the entire column to be valid.'
+          type:
+            - Range | string
+  - uid: excel.Excel.PageLayout.setPrintTitleRows
+    summary: |-
+      Sets the rows that contain the cells to be repeated at the top of each page of the worksheet for printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: setPrintTitleRows(printTitleRows)
+    fullName: setPrintTitleRows(printTitleRows)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'setPrintTitleRows(printTitleRows: Range | string): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.setPrintTitleRows("$1:$1");
+              await context.sync();
+          });
+          ```
+      parameters:
+        - id: printTitleRows
+          description: 'The rows to be repeated at the top of each page, range must span the entire row to be valid.'
+          type:
+            - Range | string
+  - uid: excel.Excel.PageLayout.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.PageLayout object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.PageLayoutData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.PageLayoutData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.PageLayoutData
+        description: ''
+  - uid: excel.Excel.PageLayout.topMargin
+    summary: |-
+      Gets or sets the worksheet's top margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.PageLayout.zoom
+    summary: >-
+      Gets or sets the worksheet's print zoom options. The `PageLayoutZoomOptions` object must be set as a JSON object
+      (use `x.zoom = {...}` instead of `x.zoom.scale = ...`<!-- -->).
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zoom
+    fullName: zoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zoom: Excel.PageLayoutZoomOptions;'
+      return:
+        type:
+          - excel.Excel.PageLayoutZoomOptions
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const farmSheet = context.workbook.worksheets.getItem("Print");
+              farmSheet.pageLayout.zoom = { scale: 200 };
+              await context.sync();
+          });
+          ```

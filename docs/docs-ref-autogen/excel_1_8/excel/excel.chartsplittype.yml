@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartSplitType
+    summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartSplitType
+    fullName: Excel.ChartSplitType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartSplitType.splitByCustomSplit
+      - excel.Excel.ChartSplitType.splitByPercentValue
+      - excel.Excel.ChartSplitType.splitByPosition
+      - excel.Excel.ChartSplitType.splitByValue
+  - uid: excel.Excel.ChartSplitType.splitByCustomSplit
+    name: splitByCustomSplit
+    fullName: splitByCustomSplit
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByCustomSplit"'
+  - uid: excel.Excel.ChartSplitType.splitByPercentValue
+    name: splitByPercentValue
+    fullName: splitByPercentValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByPercentValue"'
+  - uid: excel.Excel.ChartSplitType.splitByPosition
+    name: splitByPosition
+    fullName: splitByPosition
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByPosition"'
+  - uid: excel.Excel.ChartSplitType.splitByValue
+    name: splitByValue
+    fullName: splitByValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"SplitByValue"'

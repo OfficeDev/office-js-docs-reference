@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeType
+    summary: |-
+      Specifies the type of a shape.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeType
+    fullName: Excel.ShapeType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeType.geometricShape
+      - excel.Excel.ShapeType.group
+      - excel.Excel.ShapeType.image
+      - excel.Excel.ShapeType.line
+      - excel.Excel.ShapeType.unsupported
+  - uid: excel.Excel.ShapeType.geometricShape
+    name: geometricShape
+    fullName: geometricShape
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"GeometricShape"'
+  - uid: excel.Excel.ShapeType.group
+    name: group
+    fullName: group
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Group"'
+  - uid: excel.Excel.ShapeType.image
+    name: image
+    fullName: image
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Image"'
+  - uid: excel.Excel.ShapeType.line
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Line"'
+  - uid: excel.Excel.ShapeType.unsupported
+    name: unsupported
+    fullName: unsupported
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unsupported"'

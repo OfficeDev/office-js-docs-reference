@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.PageLoadCompleteEventArgs
+    summary: |-
+      Provides information about the page that raised the PageLoadComplete event.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: Visio.PageLoadCompleteEventArgs
+    fullName: Visio.PageLoadCompleteEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    remarks: |-
+
+
+      #### Examples
+
+      ```javascript
+      Visio.run(session, function (ctx) {
+          var document1= ctx.document;
+          eventResult1 = document1.onPageLoadComplete.add(
+              function (args){
+                  console.log("Page name: "+args.pageName);
+              });
+
+          return ctx.sync().then(function () {
+              console.log("Success");
+          });
+      }).catch(function(error) {
+          console.log("Error: " + error);
+          if (error instanceof OfficeExtension.Error) {
+              console.log("Debug info: " + JSON.stringify(error.debugInfo));
+          }
+      });
+      ```
+    children:
+      - visio.Visio.PageLoadCompleteEventArgs.pageName
+      - visio.Visio.PageLoadCompleteEventArgs.success
+  - uid: visio.Visio.PageLoadCompleteEventArgs.pageName
+    summary: |-
+      Gets the name of the page that raised the PageLoad event.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: pageName
+    fullName: pageName
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'pageName: string;'
+      return:
+        type:
+          - string
+  - uid: visio.Visio.PageLoadCompleteEventArgs.success
+    summary: |-
+      Gets the success or failure of the PageLoadComplete event.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: success
+    fullName: success
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'success: boolean;'
+      return:
+        type:
+          - boolean

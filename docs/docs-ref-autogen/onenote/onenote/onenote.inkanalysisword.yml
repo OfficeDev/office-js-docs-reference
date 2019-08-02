@@ -1,0 +1,340 @@
+### YamlMime:UniversalReference
+items:
+  - uid: onenote.OneNote.InkAnalysisWord
+    summary: |-
+      Represents ink analysis data for an identified word formed by ink strokes.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: OneNote.InkAnalysisWord
+    fullName: OneNote.InkAnalysisWord
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: onenote
+    children:
+      - onenote.OneNote.InkAnalysisWord.context
+      - onenote.OneNote.InkAnalysisWord.id
+      - onenote.OneNote.InkAnalysisWord.languageId
+      - onenote.OneNote.InkAnalysisWord.line
+      - onenote.OneNote.InkAnalysisWord.load
+      - onenote.OneNote.InkAnalysisWord.load_1
+      - onenote.OneNote.InkAnalysisWord.load_2
+      - onenote.OneNote.InkAnalysisWord.set
+      - onenote.OneNote.InkAnalysisWord.set_1
+      - onenote.OneNote.InkAnalysisWord.strokePointers
+      - onenote.OneNote.InkAnalysisWord.toJSON
+      - onenote.OneNote.InkAnalysisWord.track
+      - onenote.OneNote.InkAnalysisWord.untrack
+      - onenote.OneNote.InkAnalysisWord.wordAlternates
+  - uid: onenote.OneNote.InkAnalysisWord.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - onenote.OneNote.RequestContext
+  - uid: onenote.OneNote.InkAnalysisWord.id
+    summary: |-
+      Gets the ID of the InkAnalysisWord object. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly id: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkAnalysisWord.languageId
+    summary: |-
+      The id of the recognized language in this inkAnalysisWord. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: languageId
+    fullName: languageId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly languageId: string;'
+      return:
+        type:
+          - string
+  - uid: onenote.OneNote.InkAnalysisWord.line
+    summary: |-
+      Reference to the parent InkAnalysisLine. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: line
+    fullName: line
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly line: OneNote.InkAnalysisLine;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisLine
+  - uid: onenote.OneNote.InkAnalysisWord.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): OneNote.InkAnalysisWord` - Where option is a comma-delimited string or an array
+      of strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): OneNote.InkAnalysisWord` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: OneNote.Interfaces.InkAnalysisWordLoadOptions): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisWord
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - onenote.OneNote.Interfaces.InkAnalysisWordLoadOptions
+  - uid: onenote.OneNote.InkAnalysisWord.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisWord
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          OneNote.run(function (ctx) {        
+              var app = ctx.application;
+              
+              // Gets the active page.
+              var page = app.getActivePage();
+              
+              page.load('inkAnalysisOrNull/paragraphs/lines/words');
+              return ctx.sync()
+                  .then(function() {
+                      var inkParagraphs = page.inkAnalysisOrNull.paragraphs;
+                      $.each(inkParagraphs.items, function(i, inkParagraph) {
+                          var inkLines = inkParagraph.lines;
+                          $.each(inkLines.items, function(j, inkLine) {
+                              var inkWords = inkLine.words;
+                              $.each(inkWords.items, function(k, inkWord) {
+                              
+                                  // Log language Id of the word
+                                  console.log(inkWord.languageId);
+                                  
+                                  // Log every ink analyzed words.
+                                  $.each(inkWord.wordAlternates, function(l, word) {
+                                      console.log(word);                                    
+                                  })
+                              })
+                          })
+                      })
+                  })
+          })
+          .catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          }); 
+          ```
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: onenote.OneNote.InkAnalysisWord.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisWord
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: onenote.OneNote.InkAnalysisWord.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: OneNote.InkAnalysisWord): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.InkAnalysisWordUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.InkAnalysisWordUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: onenote.OneNote.InkAnalysisWord.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: OneNote.InkAnalysisWord): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - onenote.OneNote.InkAnalysisWord
+  - uid: onenote.OneNote.InkAnalysisWord.strokePointers
+    summary: |-
+      Weak references to the ink strokes that were recognized as part of this ink analysis word. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: strokePointers
+    fullName: strokePointers
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly strokePointers: OneNote.InkStrokePointer[];'
+      return:
+        type:
+          - 'OneNote.InkStrokePointer[]'
+  - uid: onenote.OneNote.InkAnalysisWord.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original OneNote.InkAnalysisWord object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `OneNote.Interfaces.InkAnalysisWordData`<!-- -->) that contains shallow copies
+      of any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): OneNote.Interfaces.InkAnalysisWordData;'
+      return:
+        type:
+          - onenote.OneNote.Interfaces.InkAnalysisWordData
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisWord.track
+    summary: >-
+      Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
+      for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
+      sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a
+      method on the object, you needed to have added the object to the tracked object collection when the object was
+      first created.
+    name: track()
+    fullName: track()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'track(): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisWord
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisWord.untrack
+    summary: >-
+      Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
+      context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
+      remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before
+      the memory release takes effect.
+    name: untrack()
+    fullName: untrack()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'untrack(): OneNote.InkAnalysisWord;'
+      return:
+        type:
+          - onenote.OneNote.InkAnalysisWord
+        description: ''
+  - uid: onenote.OneNote.InkAnalysisWord.wordAlternates
+    summary: |-
+      The words that were recognized in this ink word, in order of likelihood. Read-only.
+
+      \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
+    name: wordAlternates
+    fullName: wordAlternates
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly wordAlternates: string[];'
+      return:
+        type:
+          - 'string[]'

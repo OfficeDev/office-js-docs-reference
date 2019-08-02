@@ -1,0 +1,10 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.TableRowUpdateData
+    summary: 'An interface for updating data on the TableRow object, for use in "tableRow.set(<!-- -->{ ... }<!-- -->)".'
+    name: Word.Interfaces.TableRowUpdateData
+    fullName: Word.Interfaces.TableRowUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: word

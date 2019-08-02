@@ -1,0 +1,748 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Workbook
+    summary: >-
+      Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+      To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
+      API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks)<!-- -->.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Workbook
+    fullName: Excel.Workbook
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.Workbook.application
+      - excel.Excel.Workbook.autoSave
+      - excel.Excel.Workbook.bindings
+      - excel.Excel.Workbook.calculationEngineVersion
+      - excel.Excel.Workbook.chartDataPointTrack
+      - excel.Excel.Workbook.context
+      - excel.Excel.Workbook.customXmlParts
+      - excel.Excel.Workbook.dataConnections
+      - excel.Excel.Workbook.functions
+      - excel.Excel.Workbook.getActiveCell
+      - excel.Excel.Workbook.getActiveChart
+      - excel.Excel.Workbook.getActiveChartOrNullObject
+      - excel.Excel.Workbook.getIsActiveCollabSession
+      - excel.Excel.Workbook.getSelectedRange
+      - excel.Excel.Workbook.getSelectedRanges
+      - excel.Excel.Workbook.isDirty
+      - excel.Excel.Workbook.load
+      - excel.Excel.Workbook.load_1
+      - excel.Excel.Workbook.load_2
+      - excel.Excel.Workbook.name
+      - excel.Excel.Workbook.names
+      - excel.Excel.Workbook.onAutoSaveSettingChanged
+      - excel.Excel.Workbook.onSelectionChanged
+      - excel.Excel.Workbook.pivotTables
+      - excel.Excel.Workbook.previouslySaved
+      - excel.Excel.Workbook.properties
+      - excel.Excel.Workbook.protection
+      - excel.Excel.Workbook.readOnly
+      - excel.Excel.Workbook.set
+      - excel.Excel.Workbook.set_1
+      - excel.Excel.Workbook.settings
+      - excel.Excel.Workbook.styles
+      - excel.Excel.Workbook.tables
+      - excel.Excel.Workbook.toJSON
+      - excel.Excel.Workbook.usePrecisionAsDisplayed
+      - excel.Excel.Workbook.worksheets
+  - uid: excel.Excel.Workbook.application
+    summary: |-
+      Represents the Excel application instance that contains this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly application: Excel.Application;'
+      return:
+        type:
+          - excel.Excel.Application
+  - uid: excel.Excel.Workbook.autoSave
+    summary: |-
+      Specifies whether or not the workbook is in autosave mode. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSave
+    fullName: autoSave
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly autoSave: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Workbook.bindings
+    summary: |-
+      Represents a collection of bindings that are part of the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bindings
+    fullName: bindings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly bindings: Excel.BindingCollection;'
+      return:
+        type:
+          - excel.Excel.BindingCollection
+  - uid: excel.Excel.Workbook.calculationEngineVersion
+    summary: |-
+      Returns a number about the version of Excel Calculation Engine. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: calculationEngineVersion
+    fullName: calculationEngineVersion
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly calculationEngineVersion: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Workbook.chartDataPointTrack
+    summary: >-
+      True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
+      charts track the index of the data points.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartDataPointTrack
+    fullName: chartDataPointTrack
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartDataPointTrack: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Workbook.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.Workbook.customXmlParts
+    summary: |-
+      Represents the collection of custom XML parts contained by this workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.5](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: customXmlParts
+    fullName: customXmlParts
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
+      return:
+        type:
+          - excel.Excel.CustomXmlPartCollection
+  - uid: excel.Excel.Workbook.dataConnections
+    summary: |-
+      Represents all data connections in the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: dataConnections
+    fullName: dataConnections
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly dataConnections: Excel.DataConnectionCollection;'
+      return:
+        type:
+          - excel.Excel.DataConnectionCollection
+  - uid: excel.Excel.Workbook.functions
+    summary: |-
+      Represents a collection of worksheet functions that can be used for computation. Read-only.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: functions
+    fullName: functions
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly functions: Excel.Functions;'
+      return:
+        type:
+          - excel.Excel.Functions
+  - uid: excel.Excel.Workbook.getActiveCell
+    summary: |-
+      Gets the currently active cell from the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getActiveCell()
+    fullName: getActiveCell()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveCell(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              let myWorkbook = context.workbook;
+              let activeCell = myWorkbook.getActiveCell();
+              activeCell.load("address");
+
+              await context.sync();
+              
+              console.log("The active cell is " + activeCell.address);
+          });
+          ```
+  - uid: excel.Excel.Workbook.getActiveChart
+    summary: >-
+      Gets the currently active chart in the workbook. If there is no active chart, will throw exception when invoke
+      this statement
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getActiveChart()
+    fullName: getActiveChart()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChart(): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+  - uid: excel.Excel.Workbook.getActiveChartOrNullObject
+    summary: |-
+      Gets the currently active chart in the workbook. If there is no active chart, will return null object
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getActiveChartOrNullObject()
+    fullName: getActiveChartOrNullObject()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getActiveChartOrNullObject(): Excel.Chart;'
+      return:
+        type:
+          - excel.Excel.Chart
+        description: ''
+  - uid: excel.Excel.Workbook.getIsActiveCollabSession
+    summary: >-
+      True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
+      between when the workbook status changes and when the changes are reflected on the result of the method.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getIsActiveCollabSession()
+    fullName: getIsActiveCollabSession()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getIsActiveCollabSession(): OfficeExtension.ClientResult<boolean>;'
+      return:
+        type:
+          - OfficeExtension.ClientResult<boolean>
+        description: ''
+  - uid: excel.Excel.Workbook.getSelectedRange
+    summary: >-
+      Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
+      will throw an error.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getSelectedRange()
+    fullName: getSelectedRange()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRange(): Excel.Range;'
+      return:
+        type:
+          - excel.Excel.Range
+        description: |-
+
+
+          #### Examples
+
+          ```javascript
+          Excel.run(function (ctx) { 
+              var selectedRange = ctx.workbook.getSelectedRange();
+              selectedRange.load('address');
+              return ctx.sync().then(function() {
+                      console.log(selectedRange.address);
+              });
+          }).catch(function(error) {
+              console.log("Error: " + error);
+              if (error instanceof OfficeExtension.Error) {
+                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
+              }
+          });
+          ```
+  - uid: excel.Excel.Workbook.getSelectedRanges
+    summary: >-
+      Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
+      RangeAreas object that represents all the selected ranges.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: getSelectedRanges()
+    fullName: getSelectedRanges()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'getSelectedRanges(): Excel.RangeAreas;'
+      return:
+        type:
+          - excel.Excel.RangeAreas
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+
+              const selectedRanges = context.workbook.getSelectedRanges();
+              selectedRanges.format.fill.color = "lightblue";
+
+              await context.sync();
+          })
+          ```
+  - uid: excel.Excel.Workbook.isDirty
+    summary: >-
+      Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
+      true if you want to close a modified workbook without either saving it or being prompted to save it.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: isDirty
+    fullName: isDirty
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'isDirty: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Workbook.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.Workbook` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.Workbook` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.Workbook` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.WorkbookLoadOptions
+  - uid: excel.Excel.Workbook.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.Workbook.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
+      return:
+        type:
+          - excel.Excel.Workbook
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.Workbook.name
+    summary: |-
+      Gets the workbook name. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly name: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Workbook.names
+    summary: |-
+      Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: names
+    fullName: names
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly names: Excel.NamedItemCollection;'
+      return:
+        type:
+          - excel.Excel.NamedItemCollection
+  - uid: excel.Excel.Workbook.onAutoSaveSettingChanged
+    summary: |-
+      Occurs when the autoSave setting is changed on the workbook.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onAutoSaveSettingChanged
+    fullName: onAutoSaveSettingChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onAutoSaveSettingChanged: OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
+  - uid: excel.Excel.Workbook.onSelectionChanged
+    summary: |-
+      Occurs when the selection in the document is changed.
+
+      \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: onSelectionChanged
+    fullName: onSelectionChanged
+    langs:
+      - typeScript
+    type: event
+    syntax:
+      content: 'readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>;'
+      return:
+        type:
+          - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
+  - uid: excel.Excel.Workbook.pivotTables
+    summary: |-
+      Represents a collection of PivotTables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.3](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: pivotTables
+    fullName: pivotTables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly pivotTables: Excel.PivotTableCollection;'
+      return:
+        type:
+          - excel.Excel.PivotTableCollection
+  - uid: excel.Excel.Workbook.previouslySaved
+    summary: |-
+      Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: previouslySaved
+    fullName: previouslySaved
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly previouslySaved: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Workbook.properties
+    summary: |-
+      Gets the workbook properties. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: properties
+    fullName: properties
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly properties: Excel.DocumentProperties;'
+      return:
+        type:
+          - excel.Excel.DocumentProperties
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              let titleValue = "Excel document properties API";
+              let subjectValue = "Set and get document properties";
+              let keywordsValue = "Set and get operations";
+              let commentsValue = "This is an Excel document properties API code sample";
+              let categoryValue = "Office Add-ins";
+              let managerValue = "John";
+              let companyValue = "Microsoft";
+
+              let docProperties = context.workbook.properties;
+
+              // Set the writeable document properties.
+              docProperties.title = titleValue;
+              docProperties.subject = subjectValue;
+              docProperties.keywords = keywordsValue;
+              docProperties.comments = commentsValue;
+              docProperties.category = categoryValue;
+              docProperties.manager = managerValue;
+              docProperties.company = companyValue;
+
+              await context.sync();
+
+              console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
+          });
+          ```
+  - uid: excel.Excel.Workbook.protection
+    summary: |-
+      Returns workbook protection object for a workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: protection
+    fullName: protection
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly protection: Excel.WorkbookProtection;'
+      return:
+        type:
+          - excel.Excel.WorkbookProtection
+  - uid: excel.Excel.Workbook.readOnly
+    summary: |-
+      True if the workbook is open in Read-only mode. Read-only.
+
+      \[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readOnly
+    fullName: readOnly
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly readOnly: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Workbook.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.Workbook): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.WorkbookUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.WorkbookUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.Workbook.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.Workbook): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.Workbook
+  - uid: excel.Excel.Workbook.settings
+    summary: |-
+      Represents a collection of Settings associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.4](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: settings
+    fullName: settings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly settings: Excel.SettingCollection;'
+      return:
+        type:
+          - excel.Excel.SettingCollection
+  - uid: excel.Excel.Workbook.styles
+    summary: |-
+      Represents a collection of styles associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: styles
+    fullName: styles
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly styles: Excel.StyleCollection;'
+      return:
+        type:
+          - excel.Excel.StyleCollection
+  - uid: excel.Excel.Workbook.tables
+    summary: |-
+      Represents a collection of tables associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: tables
+    fullName: tables
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly tables: Excel.TableCollection;'
+      return:
+        type:
+          - excel.Excel.TableCollection
+  - uid: excel.Excel.Workbook.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.WorkbookData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.WorkbookData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.WorkbookData
+        description: ''
+  - uid: excel.Excel.Workbook.usePrecisionAsDisplayed
+    summary: >-
+      True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
+      Data will permanently lose accuracy when switching this property from false to true.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: usePrecisionAsDisplayed
+    fullName: usePrecisionAsDisplayed
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'usePrecisionAsDisplayed: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Workbook.worksheets
+    summary: |-
+      Represents a collection of worksheets associated with the workbook. Read-only.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheets
+    fullName: worksheets
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly worksheets: Excel.WorksheetCollection;'
+      return:
+        type:
+          - excel.Excel.WorksheetCollection

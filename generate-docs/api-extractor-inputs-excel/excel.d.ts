@@ -1007,7 +1007,7 @@ export declare namespace Excel {
         address: string;
         /**
          *
-         * Gets the change type that represents how the Changed event is triggered. See Excel.RowHiddenChangeType for details.
+         * Gets the change type that represents how the RowHiddenChanged event is triggered. See Excel.RowHiddenChangeType for details.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -1340,7 +1340,7 @@ export declare namespace Excel {
         address: string;
         /**
          *
-         * The distance, in points, from the left-clicked/tapped point to the left (right for RTL) gridline edge of the left-clicked/tapped cell.
+         * The distance, in points, from the left-clicked/tapped point to the left (or right for RTL) gridline edge of the left-clicked/tapped cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -2873,6 +2873,21 @@ export declare namespace Excel {
          */
         replaceAll(text: string, replacement: string, criteria: Excel.ReplaceCriteria): OfficeExtension.ClientResult<number>;
         /**
+         *
+         * Shows row or column groups by their outline levels.
+            Outlines group and summarize a list of data in the worksheet.
+            The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed.
+            The acceptable argument range is between 0 and 8.
+            A value of 0 does not change the current display. A value greater than the current number of levels displays all the levels.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param rowLevels - The number of row levels of an outline to display.
+         * @param columnLevels - The number of column levels of an outline to display.
+         */
+        showOutlineLevels(rowLevels: number, columnLevels: number): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
          * @remarks
@@ -2994,7 +3009,9 @@ export declare namespace Excel {
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
         /**
          *
-         * Occurs when left-clicked/tapped operation happens in the worksheet.
+         * Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in the following cases:
+                    - The user drags the mouse for multi-selection.
+                    - The user selects a cell in the mode when cell arguments are selected for formula references.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          *
@@ -3243,7 +3260,9 @@ export declare namespace Excel {
         readonly onSelectionChanged: OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>;
         /**
          *
-         * Occurs when left-clicked/tapped operation happens in the worksheet collection.
+         * Occurs when left-clicked/tapped operation happens in the worksheet collection. This event will not be fired when clicking in the following cases:
+                    - The user drags the mouse for multi-selection.
+                    - The user selects a cell in the mode when cell arguments are selected for formula references.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          *
@@ -4237,6 +4256,50 @@ export declare namespace Excel {
         getVisibleView(): Excel.RangeView;
         /**
          *
+         * Groups columns and rows for an outline.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param groupOption - Specifies how the range can be grouped by rows or columns.
+            An `InvalidArgument` error is thrown when the group option differs from the range's
+            `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+            or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+         */
+        group(groupOption: Excel.GroupOption): void;
+        /**
+         *
+         * Groups columns and rows for an outline.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @param groupOptionString - Specifies how the range can be grouped by rows or columns.
+            An `InvalidArgument` error is thrown when the group option differs from the range's
+            `isEntireRow` or `isEntireColumn` property (i.e., `range.isEntireRow` is true and `groupOption` is "ByColumns"
+            or `range.isEntireColumn` is true and `groupOption` is "ByRows").
+         */
+        group(groupOptionString: "ByRows" | "ByColumns"): void;
+        /**
+         *
+         * Hide details of the row or column group.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param groupOption - Specifies whether to hide details of grouped rows or grouped columns.
+         */
+        hideGroupDetails(groupOption: Excel.GroupOption): void;
+        /**
+         *
+         * Hide details of the row or column group.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @param groupOptionString - Specifies whether to hide details of grouped rows or grouped columns.
+         */
+        hideGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;
+        /**
+         *
          * Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.
          *
          * [Api set: ExcelApi 1.1]
@@ -4333,6 +4396,44 @@ export declare namespace Excel {
          * [Api set: ExcelApi 1.7]
          */
         showCard(): void;
+        /**
+         *
+         * Show details of the row or column group.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param groupOption - Specifies whether to show details of grouped rows or grouped columns.
+         */
+        showGroupDetails(groupOption: Excel.GroupOption): void;
+        /**
+         *
+         * Show details of the row or column group.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @param groupOptionString - Specifies whether to show details of grouped rows or grouped columns.
+         */
+        showGroupDetails(groupOptionString: "ByRows" | "ByColumns"): void;
+        /**
+         *
+         * Ungroups columns and rows for an outline.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         *
+         * @param groupOption - Specifies how the range can be ungrouped by rows or columns.
+         */
+        ungroup(groupOption: Excel.GroupOption): void;
+        /**
+         *
+         * Ungroups columns and rows for an outline.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         *
+         * @param groupOptionString - Specifies how the range can be ungrouped by rows or columns.
+         */
+        ungroup(groupOptionString: "ByRows" | "ByColumns"): void;
         /**
          *
          * Unmerge the range cells into separate cells.
@@ -14083,7 +14184,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+     * Represents a collection of all the PivotHierarchies that are part of the PivotTable.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14105,7 +14206,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotHierarchy to be retrieved.
          */
         getItem(name: string): Excel.PivotHierarchy;
         /**
@@ -14253,7 +14354,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotTable to be retrieved.
+         * @param name - Name of the RowColumnPivotHierarchy to be retrieved.
          */
         getItem(name: string): Excel.RowColumnPivotHierarchy;
         /**
@@ -14422,7 +14523,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotTable to be retrieved.
+         * @param name - Name of the FilterPivotHierarchy to be retrieved.
          */
         getItem(name: string): Excel.FilterPivotHierarchy;
         /**
@@ -14597,7 +14698,7 @@ export declare namespace Excel {
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotTable to be retrieved.
+         * @param name - Name of the DataPivotHierarchy to be retrieved.
          */
         getItem(name: string): Excel.DataPivotHierarchy;
         /**
@@ -14783,7 +14884,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+     * Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14794,27 +14895,27 @@ export declare namespace Excel {
         readonly items: Excel.PivotField[];
         /**
          *
-         * Gets the number of pivot hierarchies in the collection.
+         * Gets the number of pivot fields in the collection.
          *
          * [Api set: ExcelApi 1.8]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a PivotHierarchy by its name or id.
+         * Gets a PivotField by its name or id.
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotField to be retrieved.
          */
         getItem(name: string): Excel.PivotField;
         /**
          *
-         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+         * Gets a PivotField by name. If the PivotField does not exist, will return a null object.
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotHierarchy to be retrieved.
+         * @param name - Name of the PivotField to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotField;
         /**
@@ -14976,7 +15077,7 @@ export declare namespace Excel {
     }
     /**
      *
-     * Represents a collection of all the Pivot Items related to their parent PivotField.
+     * Represents a collection of all the PivotItems related to their parent PivotField.
      *
      * [Api set: ExcelApi 1.8]
      */
@@ -14987,27 +15088,27 @@ export declare namespace Excel {
         readonly items: Excel.PivotItem[];
         /**
          *
-         * Gets the number of pivot hierarchies in the collection.
+         * Gets the number of PivotItems in the collection.
          *
          * [Api set: ExcelApi 1.8]
          */
         getCount(): OfficeExtension.ClientResult<number>;
         /**
          *
-         * Gets a PivotHierarchy by its name or id.
+         * Gets a PivotItem by its name or id.
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotTable to be retrieved.
+         * @param name - Name of the PivotItem to be retrieved.
          */
         getItem(name: string): Excel.PivotItem;
         /**
          *
-         * Gets a PivotHierarchy by name. If the PivotHierarchy does not exist, will return a null object.
+         * Gets a PivotItem by name. If the PivotItem does not exist, will return a null object.
          *
          * [Api set: ExcelApi 1.8]
          *
-         * @param name - Name of the PivotHierarchy to be retrieved.
+         * @param name - Name of the PivotItem to be retrieved.
          */
         getItemOrNullObject(name: string): Excel.PivotItem;
         /**
@@ -17934,7 +18035,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies if this TableStyle object is read-only. Read-only.
+         * Specifies whether this TableStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18124,7 +18225,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies if this PivotTableStyle object is read-only. Read-only.
+         * Specifies whether this PivotTableStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18314,7 +18415,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies if this SlicerStyle object is read-only. Read-only.
+         * Specifies whether this SlicerStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -18504,7 +18605,7 @@ export declare namespace Excel {
         name: string;
         /**
          *
-         * Specifies if this TimelineStyle object is read-only. Read-only.
+         * Specifies whether this TimelineStyle object is read-only. Read-only.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19411,7 +19512,7 @@ export declare namespace Excel {
         getItemAt(index: number): Excel.Comment;
         /**
          *
-         * Gets the comment from the specified cell.
+         * Gets the comment from the specifed cell.
          *
          * [Api set: ExcelApi BETA (PREVIEW ONLY)]
          * @beta
@@ -19515,6 +19616,14 @@ export declare namespace Excel {
          * @beta
          */
         readonly id: string;
+        /**
+         *
+         * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        resolved: boolean;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          *
          * @remarks
@@ -19717,6 +19826,14 @@ export declare namespace Excel {
          * @beta
          */
         readonly id: string;
+        /**
+         *
+         * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+         *
+         * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+         * @beta
+         */
+        readonly resolved: boolean;
         /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
          *
          * @remarks
@@ -23885,6 +24002,24 @@ export declare namespace Excel {
         linearTrend = "LinearTrend",
         growthTrend = "GrowthTrend",
         flashFill = "FlashFill"
+    }
+    /**
+     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+     * @beta
+     */
+    enum GroupOption {
+        /**
+         *
+         * Group by rows.
+         *
+         */
+        byRows = "ByRows",
+        /**
+         *
+         * Group by columns.
+         *
+         */
+        byColumns = "ByColumns"
     }
     /**
      * [Api set: ExcelApi 1.9]
@@ -32460,6 +32595,14 @@ export declare namespace Excel {
              * @beta
              */
             content?: string;
+            /**
+             *
+             * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /** An interface for updating data on the CommentReplyCollection object, for use in "commentReplyCollection.set({ ... })". */
         export interface CommentReplyCollectionUpdateData {
@@ -33598,8 +33741,8 @@ export declare namespace Excel {
             /**
              *
              * Represents if ALL the cells would be saved as an array formula.
-            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+             * Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+             * Returns null if there is a mixture of cells that would and would not be saved as an array formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37895,7 +38038,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies if this TableStyle object is read-only. Read-only.
+             * Specifies whether this TableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37918,7 +38061,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies if this PivotTableStyle object is read-only. Read-only.
+             * Specifies whether this PivotTableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37941,7 +38084,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies if this SlicerStyle object is read-only. Read-only.
+             * Specifies whether this SlicerStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -37964,7 +38107,7 @@ export declare namespace Excel {
             name?: string;
             /**
              *
-             * Specifies if this TimelineStyle object is read-only. Read-only.
+             * Specifies whether this TimelineStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -38296,6 +38439,14 @@ export declare namespace Excel {
              * @beta
              */
             id?: string;
+            /**
+             *
+             * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /** An interface describing the data returned by calling "commentReplyCollection.toJSON()". */
         export interface CommentReplyCollectionData {
@@ -38343,6 +38494,14 @@ export declare namespace Excel {
              * @beta
              */
             id?: string;
+            /**
+             *
+             * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /** An interface describing the data returned by calling "shapeCollection.toJSON()". */
         export interface ShapeCollectionData {
@@ -39686,8 +39845,8 @@ export declare namespace Excel {
             /**
              *
              * Represents if ALL the cells would be saved as an array formula.
-            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+             * Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+             * Returns null if there is a mixture of cells that would and would not be saved as an array formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -44572,7 +44731,7 @@ export declare namespace Excel {
         }
         /**
          *
-         * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+         * Represents a collection of all the PivotHierarchies that are part of the PivotTable.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -44868,7 +45027,7 @@ export declare namespace Excel {
         }
         /**
          *
-         * Represents a collection of all the PivotTables that are part of the workbook or worksheet.
+         * Represents a collection of all the PivotFields that are part of a PivotTable's hierarchy.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -44942,7 +45101,7 @@ export declare namespace Excel {
         }
         /**
          *
-         * Represents a collection of all the Pivot Items related to their parent PivotField.
+         * Represents a collection of all the PivotItems related to their parent PivotField.
          *
          * [Api set: ExcelApi 1.8]
          */
@@ -46336,7 +46495,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies if this TableStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies whether this TableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46362,7 +46521,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies if this TableStyle object is read-only. Read-only.
+             * Specifies whether this TableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46388,7 +46547,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies if this PivotTableStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies whether this PivotTableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46414,7 +46573,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies if this PivotTableStyle object is read-only. Read-only.
+             * Specifies whether this PivotTableStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46440,7 +46599,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies if this SlicerStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies whether this SlicerStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46466,7 +46625,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies if this SlicerStyle object is read-only. Read-only.
+             * Specifies whether this SlicerStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46492,7 +46651,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * For EACH ITEM in the collection: Specifies if this TimelineStyle object is read-only. Read-only.
+             * For EACH ITEM in the collection: Specifies whether this TimelineStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -46518,7 +46677,7 @@ export declare namespace Excel {
             name?: boolean;
             /**
              *
-             * Specifies if this TimelineStyle object is read-only. Read-only.
+             * Specifies whether this TimelineStyle object is read-only. Read-only.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47013,8 +47172,8 @@ export declare namespace Excel {
             /**
              *
              * For EACH ITEM in the collection: Represents if ALL the cells would be saved as an array formula.
-            Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
-            Returns null if there is a mixture of cells that would and would not be saved as an array formula.
+             * Returns true if ALL cells would be saved as an array, or false if ALL cells would NOT be saved as an array formula.
+             * Returns null if there is a mixture of cells that would and would not be saved as an array formula.
              *
              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
              * @beta
@@ -47117,6 +47276,14 @@ export declare namespace Excel {
              * @beta
              */
             id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /**
          *
@@ -47167,6 +47334,14 @@ export declare namespace Excel {
              * @beta
              */
             id?: boolean;
+            /**
+             *
+             * Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /**
          *
@@ -47217,6 +47392,14 @@ export declare namespace Excel {
              * @beta
              */
             id?: boolean;
+            /**
+             *
+             * For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /**
          *
@@ -47267,6 +47450,14 @@ export declare namespace Excel {
              * @beta
              */
             id?: boolean;
+            /**
+             *
+             * Gets or sets the comment reply status. A value of "true" means the comment reply is in the resolved state.
+             *
+             * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+             * @beta
+             */
+            resolved?: boolean;
         }
         /**
          *

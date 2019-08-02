@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.GroupOption
+    summary: >-
+      \[ [API set: ExcelApi BETA (PREVIEW
+      ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    isPreview: true
+    name: Excel.GroupOption
+    fullName: Excel.GroupOption
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.GroupOption.byColumns
+      - excel.Excel.GroupOption.byRows
+  - uid: excel.Excel.GroupOption.byColumns
+    summary: Group by columns.
+    isPreview: true
+    name: byColumns
+    fullName: byColumns
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByColumns"'
+  - uid: excel.Excel.GroupOption.byRows
+    summary: Group by rows.
+    isPreview: true
+    name: byRows
+    fullName: byRows
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"ByRows"'

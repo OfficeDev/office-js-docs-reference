@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json",
+  "mainEntryPointFilePath": "excel.d.ts",
+  "apiReport": {
+    "enabled": false
+  },
+  "docModel": {
+    "enabled": true,
+    "apiJsonFilePath": "../../json/excel_1_3/<unscopedPackageName>.api.json"
+  },
+  "dtsRollup": {
+    "enabled": false
+  },
+  "messages": {
+    "extractorMessageReporting": {
+      "ae-missing-release-tag": {
+        "logLevel": "none"
+      },
+      "ae-forgotten-export": {
+        "logLevel": "none"
+      }
+    },
+    "tsdocMessageReporting": {
+      "tsdoc-escape-right-brace": {
+        "logLevel": "none"
+      },
+      "tsdoc-escape-greater-than": {
+        "logLevel": "none"
+      },
+      "tsdoc-malformed-inline-tag": {
+        "logLevel": "none"
+      },
+      "tsdoc-unnecessary-backslash": {
+        "logLevel": "none"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.ValueFormat
+    summary: >-
+      Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their
+      formatting applied.
+    remarks: >-
+      For example, if the valueFormat parameter is specified as "formatted", a number formatted as currency, or a date
+      formatted as mm/dd/yy in the host application will have its formatting preserved. If the valueFormat parameter is
+      specified as "unformatted", a date will be returned in its underlying sequential serial number form.
+    name: Office.ValueFormat
+    fullName: Office.ValueFormat
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.ValueFormat.Formatted
+      - office.Office.ValueFormat.Unformatted
+  - uid: office.Office.ValueFormat.Formatted
+    summary: Return formatted data.
+    name: Formatted
+    fullName: Formatted
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.ValueFormat.Unformatted
+    summary: Return unformatted data.
+    name: Unformatted
+    fullName: Unformatted
+    langs:
+      - typeScript
+    type: field
