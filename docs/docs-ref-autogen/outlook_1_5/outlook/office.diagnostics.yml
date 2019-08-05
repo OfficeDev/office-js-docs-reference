@@ -26,7 +26,7 @@ items:
     summary: |-
       Gets a string that represents the name of the host application.
 
-      A string that can be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
+      A string that can be one of the following values: "Outlook", "OutlookIOS", or "OutlookWebApp".
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
