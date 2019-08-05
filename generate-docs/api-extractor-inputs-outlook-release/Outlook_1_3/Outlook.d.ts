@@ -842,7 +842,7 @@ export declare namespace Office {
         /**
          * Gets a string that represents the name of the host application.
          *
-         * A string that can be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
+         * A string that can be one of the following values: "Outlook", "OutlookIOS", or "OutlookWebApp".
          *
          * [Api set: Mailbox 1.0]
          *
