@@ -12730,7 +12730,7 @@ Word.InlinePicture.getNext:
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
             if (firstPicture.isNullObject) {
-                console.log('There are inline pictures in this document.')
+                console.log('There are no inline pictures in this document.')
             } else {
                 console.log(firstPicture.altTextTitle);
             }
@@ -12758,7 +12758,7 @@ Word.InlinePicture.getNextOrNullObject:
         // and return a promise to indicate task completion.
         return context.sync().then(function () {
             if (firstPicture.isNullObject) {
-                console.log('There are inline pictures in this document.')
+                console.log('There are no inline pictures in this document.')
             } else {
                 console.log(firstPicture.altTextTitle);
             }
