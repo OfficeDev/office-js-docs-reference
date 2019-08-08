@@ -92,8 +92,11 @@ items:
           }
           ```
   - uid: office.Office.AsyncResult.diagnostics
-    summary: Gets an object that may provide additional information if an error occurred.
+    summary: 'Gets an object that may provide additional information if an [error](xref:office.Office.Error) occurred.'
     remarks: >-
+      This property returns additional information if the following errors occur with these supported APIs.
+
+
       *Supported APIs*
 
 
