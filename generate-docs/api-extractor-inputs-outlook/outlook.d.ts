@@ -1832,6 +1832,8 @@ export declare namespace Office {
          *
          * A string that can be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
          *
+         * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
+         *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
@@ -1842,10 +1844,10 @@ export declare namespace Office {
          */
         hostName: string;
         /**
-         * Gets a string that represents the version of either the host application or the Exchange Server.
+         * Gets a string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0").
          *
-         * If the mail add-in is running in Outlook client on the desktop or iOS, the hostVersion property returns the version of the host 
-         * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server. An example is the string "15.0.468.0".
+         * If the mail add-in is running in Outlook on a desktop or mobile client, the hostVersion property returns the version of the host 
+         * application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -7424,11 +7426,12 @@ export declare namespace Office {
          * Contains the following members:
          * 
          *  - hostName (string): A string that represents the name of the host application. 
-         * It be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
+         * It should be one of the following values: "Outlook", "OutlookWebApp", "OutlookIOS", or "OutlookAndroid".
+         * **Note**: The "Outlook" value is returned for Outlook on desktop clients (i.e., Windows and Mac).
          * 
-         *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server. 
-         * If the mail add-in is running in Outlook on desktop clients or iOS, the hostVersion property returns the version of the 
-         * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server. An example is the string "15.0.468.0".
+         *  - hostVersion (string): A string that represents the version of either the host application or the Exchange Server (e.g., "15.0.468.0"). 
+         * If the mail add-in is running in Outlook on desktop or mobile clients, the hostVersion property returns the version of the 
+         * host application, Outlook. In Outlook on the web, the property returns the version of the Exchange Server.
          * 
          *  - OWAView (MailboxEnums.OWAView or string): An enum (or string literal) that represents the current view of Outlook on the web. 
          * If the host application is not Outlook on the web, then accessing this property results in undefined. 
@@ -7775,6 +7778,8 @@ export declare namespace Office {
          * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
          * The lifetime of the callback token is 5 minutes.
          *
+         * The token is returned as a string in the `asyncResult.value` property.
+         *
          * *REST Tokens*
          *
          * When a REST token is requested (options.isRest = true), the resulting token will not work to authenticate Exchange Web Services calls. 
@@ -7802,12 +7807,20 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          * 
+         * **Errors**:
+         * 
+         * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
+         * 
+         * - InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.
+         * 
+         * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
+         * 
          * @param options - An object literal that contains one or more of the following properties.
          *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
          *        asyncContext: Any state data that is passed to the asynchronous method.
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
-         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+         *                 type Office.AsyncResult. The token is returned as a string in the `asyncResult.value` property.
+         *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          */
         getCallbackTokenAsync(options: CommonAPI.AsyncContextOptions & { isRest?: boolean }, callback: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
         /**
@@ -7815,6 +7828,8 @@ export declare namespace Office {
          *
          * The getCallbackTokenAsync method makes an asynchronous call to get an opaque token from the Exchange Server that hosts the user's mailbox. 
          * The lifetime of the callback token is 5 minutes.
+         *
+         * The token is returned as a string in the `asyncResult.value` property.
          *
          * You can pass the token and an attachment identifier or item identifier to a third-party system. 
          * The third-party system uses the token as a bearer authorization token to call the Exchange Web Services (EWS) GetAttachment or 
@@ -7825,24 +7840,32 @@ export declare namespace Office {
          * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. 
          * Your app must have ReadWriteItem permissions to call the saveAsync method.
          *
-         * [Api set: Mailbox 1.3]
+         * [Api set: Mailbox 1.0]
          *
          * @remarks
          *
+         * **Errors**:
+         * 
+         * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
+         * 
+         * - InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.
+         * 
+         * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-         *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
-         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+         *                 type Office.AsyncResult. The token is returned as a string in the `asyncResult.value` property.
+         *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getCallbackTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
         /**
          * Gets a token identifying the user and the Office Add-in.
          *
-         * The token is provided as a string in the asyncResult.value property.
+         * The token is returned as a string in the `asyncResult.value` property.
          *
          * [Api set: Mailbox 1.0]
          *
@@ -7855,10 +7878,18 @@ export declare namespace Office {
          * The getUserIdentityTokenAsync method returns a token that you can use to identify and 
          * {@link https://docs.microsoft.com/outlook/add-ins/authentication | authenticate the add-in and user with a third-party system}.
          *
+         * **Errors**:
+         * 
+         * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
+         * 
+         * - InternalServerError: The Exchange server returned an error. Please look at the diagnostics object for more information.
+         * 
+         * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
+         * 
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult.
-         *                 The token is provided as a string in the `asyncResult.value` property.
-         *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+         *                 The token is returned as a string in the `asyncResult.value` property.
+         *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
          * @param userContext - Optional. Any state data that is passed to the asynchronous method.
          */
         getUserIdentityTokenAsync(callback: (asyncResult: CommonAPI.AsyncResult<string>) => void, userContext?: any): void;
