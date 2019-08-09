@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableData
+  - uid: 'excel!Excel.Interfaces.PivotTableData:interface'
     summary: An interface describing the data returned by calling "pivotTable.toJSON()".
     name: Excel.Interfaces.PivotTableData
     fullName: Excel.Interfaces.PivotTableData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableData.columnHierarchies
-      - excel.Excel.Interfaces.PivotTableData.dataHierarchies
-      - excel.Excel.Interfaces.PivotTableData.enableDataValueEditing
-      - excel.Excel.Interfaces.PivotTableData.filterHierarchies
-      - excel.Excel.Interfaces.PivotTableData.hierarchies
-      - excel.Excel.Interfaces.PivotTableData.id
-      - excel.Excel.Interfaces.PivotTableData.name
-      - excel.Excel.Interfaces.PivotTableData.rowHierarchies
-      - excel.Excel.Interfaces.PivotTableData.useCustomSortLists
-  - uid: excel.Excel.Interfaces.PivotTableData.columnHierarchies
+      - 'excel!Excel.Interfaces.PivotTableData#columnHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#dataHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#enableDataValueEditing:member'
+      - 'excel!Excel.Interfaces.PivotTableData#filterHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#hierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#id:member'
+      - 'excel!Excel.Interfaces.PivotTableData#name:member'
+      - 'excel!Excel.Interfaces.PivotTableData#rowHierarchies:member'
+      - 'excel!Excel.Interfaces.PivotTableData#useCustomSortLists:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableData#columnHierarchies:member'
     summary: |-
       The Column Pivot Hierarchies of the PivotTable.
 
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.dataHierarchies
+  - uid: 'excel!Excel.Interfaces.PivotTableData#dataHierarchies:member'
     summary: |-
       The Data Pivot Hierarchies of the PivotTable.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.DataPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.enableDataValueEditing
+  - uid: 'excel!Excel.Interfaces.PivotTableData#enableDataValueEditing:member'
     summary: |-
       Specifies whether the PivotTable allows values in the data body to be edited by the user.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableData.filterHierarchies
+  - uid: 'excel!Excel.Interfaces.PivotTableData#filterHierarchies:member'
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.FilterPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.hierarchies
+  - uid: 'excel!Excel.Interfaces.PivotTableData#hierarchies:member'
     summary: |-
       The Pivot Hierarchies of the PivotTable.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.id
+  - uid: 'excel!Excel.Interfaces.PivotTableData#id:member'
     summary: |-
       Id of the PivotTable. Read-only.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableData.name
+  - uid: 'excel!Excel.Interfaces.PivotTableData#name:member'
     summary: |-
       Name of the PivotTable.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableData.rowHierarchies
+  - uid: 'excel!Excel.Interfaces.PivotTableData#rowHierarchies:member'
     summary: |-
       The Row Pivot Hierarchies of the PivotTable.
 
@@ -138,7 +138,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RowColumnPivotHierarchyData[]'
-  - uid: excel.Excel.Interfaces.PivotTableData.useCustomSortLists
+  - uid: 'excel!Excel.Interfaces.PivotTableData#useCustomSortLists:member'
     summary: |-
       Specifies whether the PivotTable uses custom lists when sorting.
 

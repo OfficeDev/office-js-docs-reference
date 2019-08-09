@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeLoadOptions
+  - uid: 'word!Word.Interfaces.RangeLoadOptions:interface'
     summary: |-
       Represents a contiguous area in a document.
 
@@ -10,23 +10,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeLoadOptions.$all
-      - word.Word.Interfaces.RangeLoadOptions.font
-      - word.Word.Interfaces.RangeLoadOptions.hyperlink
-      - word.Word.Interfaces.RangeLoadOptions.isEmpty
-      - word.Word.Interfaces.RangeLoadOptions.parentBody
-      - word.Word.Interfaces.RangeLoadOptions.parentContentControl
-      - word.Word.Interfaces.RangeLoadOptions.parentContentControlOrNullObject
-      - word.Word.Interfaces.RangeLoadOptions.parentTable
-      - word.Word.Interfaces.RangeLoadOptions.parentTableCell
-      - word.Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject
-      - word.Word.Interfaces.RangeLoadOptions.parentTableOrNullObject
-      - word.Word.Interfaces.RangeLoadOptions.style
-      - word.Word.Interfaces.RangeLoadOptions.styleBuiltIn
-      - word.Word.Interfaces.RangeLoadOptions.text
-  - uid: word.Word.Interfaces.RangeLoadOptions.$all
+      - 'word!Word.Interfaces.RangeLoadOptions#$all:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#font:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#hyperlink:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#isEmpty:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentBody:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentTableCell:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#style:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#styleBuiltIn:member'
+      - 'word!Word.Interfaces.RangeLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.font
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#font:member'
     summary: |-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
 
@@ -51,8 +51,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.hyperlink
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#hyperlink:member'
     summary: >-
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
       when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.isEmpty
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#isEmpty:member'
     summary: |-
       Checks whether the range length is zero. Read-only.
 
@@ -85,7 +85,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentBody
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentBody:member'
     summary: |-
       Gets the parent body of the range.
 
@@ -99,8 +99,8 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentContentControl:member'
     summary: |-
       Gets the content control that contains the range. Throws if there isn't a parent content control.
 
@@ -114,8 +114,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentContentControlOrNullObject
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentContentControlOrNullObject:member'
     summary: |-
       Gets the content control that contains the range. Returns a null object if there isn't a parent content control.
 
@@ -129,8 +129,8 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentTable
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentTable:member'
     summary: |-
       Gets the table that contains the range. Throws if it is not contained in a table.
 
@@ -144,8 +144,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentTableCell
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentTableCell:member'
     summary: |-
       Gets the table cell that contains the range. Throws if it is not contained in a table cell.
 
@@ -159,8 +159,8 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentTableCellOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentTableCellOrNullObject:member'
     summary: |-
       Gets the table cell that contains the range. Returns a null object if it is not contained in a table cell.
 
@@ -174,8 +174,8 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.parentTableOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#parentTableOrNullObject:member'
     summary: |-
       Gets the table that contains the range. Returns a null object if it is not contained in a table.
 
@@ -189,8 +189,8 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.RangeLoadOptions.style
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#style:member'
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -207,7 +207,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.styleBuiltIn
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
@@ -224,7 +224,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.RangeLoadOptions.text
+  - uid: 'word!Word.Interfaces.RangeLoadOptions#text:member'
     summary: |-
       Gets the text of the range. Read-only.
 

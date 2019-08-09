@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
     summary: |-
       Represents a RichText object in a Paragraph.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.RichTextLoadOptions.$all
-      - onenote.OneNote.Interfaces.RichTextLoadOptions.id
-      - onenote.OneNote.Interfaces.RichTextLoadOptions.languageId
-      - onenote.OneNote.Interfaces.RichTextLoadOptions.paragraph
-      - onenote.OneNote.Interfaces.RichTextLoadOptions.text
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#id:member'
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.languageId
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#languageId:member'
     summary: |-
       The language id of the text. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.paragraph
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#paragraph:member'
     summary: |-
       Gets the Paragraph object that contains the RichText object.
 
@@ -72,8 +72,8 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions.text
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions#text:member'
     summary: |-
       Gets the text content of the RichText object. Read-only.
 

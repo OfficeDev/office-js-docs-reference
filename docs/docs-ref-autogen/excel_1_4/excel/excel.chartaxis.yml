@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxis
+  - uid: 'excel!Excel.ChartAxis:class'
     summary: |-
       Represents a single axis in a chart.
 
@@ -12,24 +12,24 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxis.context
-      - excel.Excel.ChartAxis.format
-      - excel.Excel.ChartAxis.load
-      - excel.Excel.ChartAxis.load_1
-      - excel.Excel.ChartAxis.load_2
-      - excel.Excel.ChartAxis.majorGridlines
-      - excel.Excel.ChartAxis.majorUnit
-      - excel.Excel.ChartAxis.maximum
-      - excel.Excel.ChartAxis.minimum
-      - excel.Excel.ChartAxis.minorGridlines
-      - excel.Excel.ChartAxis.minorUnit
-      - excel.Excel.ChartAxis.set
-      - excel.Excel.ChartAxis.set_1
-      - excel.Excel.ChartAxis.title
-      - excel.Excel.ChartAxis.toJSON
-  - uid: excel.Excel.ChartAxis.context
+      - 'excel!Excel.ChartAxis#context:member'
+      - 'excel!Excel.ChartAxis#format:member'
+      - 'excel!Excel.ChartAxis#load:member(1)'
+      - 'excel!Excel.ChartAxis#load:member(2)'
+      - 'excel!Excel.ChartAxis#load:member(3)'
+      - 'excel!Excel.ChartAxis#majorGridlines:member'
+      - 'excel!Excel.ChartAxis#majorUnit:member'
+      - 'excel!Excel.ChartAxis#maximum:member'
+      - 'excel!Excel.ChartAxis#minimum:member'
+      - 'excel!Excel.ChartAxis#minorGridlines:member'
+      - 'excel!Excel.ChartAxis#minorUnit:member'
+      - 'excel!Excel.ChartAxis#set:member(1)'
+      - 'excel!Excel.ChartAxis#set:member(2)'
+      - 'excel!Excel.ChartAxis#title:member'
+      - 'excel!Excel.ChartAxis#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartAxis#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -42,8 +42,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartAxis.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxis#format:member'
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting. Read-only.
 
@@ -57,8 +57,8 @@ items:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
-  - uid: excel.Excel.ChartAxis.load
+          - 'excel!Excel.ChartAxisFormat:class'
+  - uid: 'excel!Excel.ChartAxis#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -89,14 +89,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - 'excel!Excel.ChartAxis:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisLoadOptions
-  - uid: excel.Excel.ChartAxis.load_1
+            - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+  - uid: 'excel!Excel.ChartAxis#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -109,52 +109,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the maximum of Chart Axis from Chart1
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var axis = chart.axes.valueAxis;
-              axis.load('maximum');
-              return ctx.sync().then(function() {
-                      console.log(axis.maximum);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.axes.valueAxis.maximum = 5;
-              chart.axes.valueAxis.minimum = 0;
-              chart.axes.valueAxis.majorUnit = 1;
-              chart.axes.valueAxis.minorUnit = 0.2;
-              return ctx.sync().then(function() {
-                      console.log("Axis Settings Changed");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartAxis:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartAxis.load_2
+  - uid: 'excel!Excel.ChartAxis#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -167,7 +129,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - 'excel!Excel.ChartAxis:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -176,7 +138,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartAxis.majorGridlines
+  - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
 
@@ -190,8 +152,8 @@ items:
       content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
-  - uid: excel.Excel.ChartAxis.majorUnit
+          - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartAxis#majorUnit:member'
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
       returned value is always a number.
@@ -208,7 +170,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.maximum
+  - uid: 'excel!Excel.ChartAxis#maximum:member'
     summary: >-
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -225,7 +187,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.minimum
+  - uid: 'excel!Excel.ChartAxis#minimum:member'
     summary: >-
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -242,7 +204,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.minorGridlines
+  - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
 
@@ -256,8 +218,8 @@ items:
       content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
-  - uid: excel.Excel.ChartAxis.minorUnit
+          - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartAxis#minorUnit:member'
     summary: >-
       Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
       automatic axis values). The returned value is always a number.
@@ -274,7 +236,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.set
+  - uid: 'excel!Excel.ChartAxis#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -304,7 +266,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartAxis.set_1
+  - uid: 'excel!Excel.ChartAxis#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -321,8 +283,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxis
-  - uid: excel.Excel.ChartAxis.title
+            - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxis#title:member'
     summary: |-
       Represents the axis title. Read-only.
 
@@ -336,8 +298,8 @@ items:
       content: 'readonly title: Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
-  - uid: excel.Excel.ChartAxis.toJSON
+          - 'excel!Excel.ChartAxisTitle:class'
+  - uid: 'excel!Excel.ChartAxis#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -353,5 +315,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - 'excel!Excel.Interfaces.ChartAxisData:interface'
         description: ''

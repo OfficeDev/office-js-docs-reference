@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataChangeType
+  - uid: 'excel!Excel.DataChangeType:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.DataChangeType
     fullName: Excel.DataChangeType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DataChangeType.cellDeleted
-      - excel.Excel.DataChangeType.cellInserted
-      - excel.Excel.DataChangeType.columnDeleted
-      - excel.Excel.DataChangeType.columnInserted
-      - excel.Excel.DataChangeType.rangeEdited
-      - excel.Excel.DataChangeType.rowDeleted
-      - excel.Excel.DataChangeType.rowInserted
-      - excel.Excel.DataChangeType.unknown
-  - uid: excel.Excel.DataChangeType.cellDeleted
+      - 'excel!Excel.DataChangeType.cellDeleted:member'
+      - 'excel!Excel.DataChangeType.cellInserted:member'
+      - 'excel!Excel.DataChangeType.columnDeleted:member'
+      - 'excel!Excel.DataChangeType.columnInserted:member'
+      - 'excel!Excel.DataChangeType.rangeEdited:member'
+      - 'excel!Excel.DataChangeType.rowDeleted:member'
+      - 'excel!Excel.DataChangeType.rowInserted:member'
+      - 'excel!Excel.DataChangeType.unknown:member'
+  - uid: 'excel!Excel.DataChangeType.cellDeleted:member'
     summary: CellDeleted represents the data change event is triggered by deleting cells.
     name: cellDeleted
     fullName: cellDeleted
@@ -25,7 +25,7 @@ items:
       - typeScript
     type: field
     numericValue: '"CellDeleted"'
-  - uid: excel.Excel.DataChangeType.cellInserted
+  - uid: 'excel!Excel.DataChangeType.cellInserted:member'
     summary: CellInserted represents the data change event is triggered by inserting new cells.
     name: cellInserted
     fullName: cellInserted
@@ -33,7 +33,7 @@ items:
       - typeScript
     type: field
     numericValue: '"CellInserted"'
-  - uid: excel.Excel.DataChangeType.columnDeleted
+  - uid: 'excel!Excel.DataChangeType.columnDeleted:member'
     summary: ColumnDeleted represents the data change event is triggered by deleting columns.
     name: columnDeleted
     fullName: columnDeleted
@@ -41,7 +41,7 @@ items:
       - typeScript
     type: field
     numericValue: '"ColumnDeleted"'
-  - uid: excel.Excel.DataChangeType.columnInserted
+  - uid: 'excel!Excel.DataChangeType.columnInserted:member'
     summary: ColumnInserted represents the data change event is triggered by inserting new columns.
     name: columnInserted
     fullName: columnInserted
@@ -49,7 +49,7 @@ items:
       - typeScript
     type: field
     numericValue: '"ColumnInserted"'
-  - uid: excel.Excel.DataChangeType.rangeEdited
+  - uid: 'excel!Excel.DataChangeType.rangeEdited:member'
     summary: RangeEdited represents the data change event is triggered by range being edited.
     name: rangeEdited
     fullName: rangeEdited
@@ -57,7 +57,7 @@ items:
       - typeScript
     type: field
     numericValue: '"RangeEdited"'
-  - uid: excel.Excel.DataChangeType.rowDeleted
+  - uid: 'excel!Excel.DataChangeType.rowDeleted:member'
     summary: RowDeleted represents the data change event is triggered by deleting rows.
     name: rowDeleted
     fullName: rowDeleted
@@ -65,7 +65,7 @@ items:
       - typeScript
     type: field
     numericValue: '"RowDeleted"'
-  - uid: excel.Excel.DataChangeType.rowInserted
+  - uid: 'excel!Excel.DataChangeType.rowInserted:member'
     summary: RowInserted represents the data change event is triggered by inserting new rows.
     name: rowInserted
     fullName: rowInserted
@@ -73,7 +73,7 @@ items:
       - typeScript
     type: field
     numericValue: '"RowInserted"'
-  - uid: excel.Excel.DataChangeType.unknown
+  - uid: 'excel!Excel.DataChangeType.unknown:member'
     summary: Unknown represents the type of data change is not the listed types.
     name: unknown
     fullName: unknown

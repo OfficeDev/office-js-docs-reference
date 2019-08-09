@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SettingCollection
+  - uid: 'excel!Excel.SettingCollection:class'
     summary: >-
       Represents a collection of key-value pair setting objects that are part of the workbook. The scope is limited to
       per file and add-in (task-pane or content) combination.
@@ -14,20 +14,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SettingCollection.add
-      - excel.Excel.SettingCollection.context
-      - excel.Excel.SettingCollection.getCount
-      - excel.Excel.SettingCollection.getItem
-      - excel.Excel.SettingCollection.getItemOrNullObject
-      - excel.Excel.SettingCollection.items
-      - excel.Excel.SettingCollection.load
-      - excel.Excel.SettingCollection.load_1
-      - excel.Excel.SettingCollection.load_2
-      - excel.Excel.SettingCollection.onSettingsChanged
-      - excel.Excel.SettingCollection.toJSON
-  - uid: excel.Excel.SettingCollection.add
+      - 'excel!Excel.SettingCollection#add:member(1)'
+      - 'excel!Excel.SettingCollection#context:member'
+      - 'excel!Excel.SettingCollection#getCount:member(1)'
+      - 'excel!Excel.SettingCollection#getItem:member(1)'
+      - 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SettingCollection#items:member'
+      - 'excel!Excel.SettingCollection#load:member(1)'
+      - 'excel!Excel.SettingCollection#load:member(2)'
+      - 'excel!Excel.SettingCollection#load:member(3)'
+      - 'excel!Excel.SettingCollection#onSettingsChanged:member'
+      - 'excel!Excel.SettingCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.SettingCollection#add:member(1)'
     summary: |-
       Sets or adds the specified setting to the workbook.
 
@@ -41,21 +41,8 @@ items:
       content: 'add(key: string, value: string | number | boolean | Date | Array<any> | any): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-
-              await context.sync();
-              console.log("Settings changed handler registered.");
-          });
-          ```
+          - 'excel!Excel.Setting:class'
+        description: ''
       parameters:
         - id: key
           description: The Key of the new setting.
@@ -65,7 +52,7 @@ items:
           description: The Value for the new setting.
           type:
             - string | number | boolean | Date | Array<any> | any
-  - uid: excel.Excel.SettingCollection.context
+  - uid: 'excel!Excel.SettingCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -78,8 +65,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.SettingCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SettingCollection#getCount:member(1)'
     summary: |-
       Gets the number of Settings in the collection.
 
@@ -95,7 +82,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.SettingCollection.getItem
+  - uid: 'excel!Excel.SettingCollection#getItem:member(1)'
     summary: |-
       Gets a Setting entry via the key.
 
@@ -109,14 +96,14 @@ items:
       content: 'getItem(key: string): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
+          - 'excel!Excel.Setting:class'
         description: ''
       parameters:
         - id: key
           description: Key of the setting.
           type:
             - string
-  - uid: excel.Excel.SettingCollection.getItemOrNullObject
+  - uid: 'excel!Excel.SettingCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a Setting entry via the key. If the Setting does not exist, will return a null object.
 
@@ -130,36 +117,14 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Setting;'
       return:
         type:
-          - excel.Excel.Setting
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings;
-              let needsReview = settings.getItem("NeedsReview");
-              needsReview.delete();
-              needsReview = settings.getItemOrNullObject("NeedsReview");
-
-              await context.sync();
-
-              if (needsReview.isNullObject) {
-                  console.log("The setting has been deleted");
-              } else {
-                  console.log("The setting was not deleted");
-              }
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Setting:class'
+        description: ''
       parameters:
         - id: key
           description: The key of the setting.
           type:
             - string
-  - uid: excel.Excel.SettingCollection.items
+  - uid: 'excel!Excel.SettingCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -171,7 +136,7 @@ items:
       return:
         type:
           - 'Excel.Setting[]'
-  - uid: excel.Excel.SettingCollection.load
+  - uid: 'excel!Excel.SettingCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -204,14 +169,14 @@ items:
         Excel.SettingCollection;
       return:
         type:
-          - excel.Excel.SettingCollection
+          - 'excel!Excel.SettingCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.SettingCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.SettingCollection.load_1
+  - uid: 'excel!Excel.SettingCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -224,14 +189,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
+          - 'excel!Excel.SettingCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.SettingCollection.load_2
+  - uid: 'excel!Excel.SettingCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -241,14 +206,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
+          - 'excel!Excel.SettingCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.SettingCollection.onSettingsChanged
+  - uid: 'excel!Excel.SettingCollection#onSettingsChanged:member'
     summary: |-
       Occurs when the Settings in the document are changed.
 
@@ -263,21 +228,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SettingsChangedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const settings = context.workbook.settings; 
-              settings.onSettingsChanged.add(onChangedSetting);
-
-              await context.sync();
-              console.log("Settings changed handler registered.");
-          });
-          ```
-  - uid: excel.Excel.SettingCollection.toJSON
+  - uid: 'excel!Excel.SettingCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -293,5 +244,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SettingCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.SettingCollectionData
+          - 'excel!Excel.Interfaces.SettingCollectionData:interface'
         description: ''

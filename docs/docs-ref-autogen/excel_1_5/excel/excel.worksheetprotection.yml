@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetProtection
+  - uid: 'excel!Excel.WorksheetProtection:class'
     summary: |-
       Represents the protection of a sheet object.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetProtection.context
-      - excel.Excel.WorksheetProtection.load
-      - excel.Excel.WorksheetProtection.load_1
-      - excel.Excel.WorksheetProtection.load_2
-      - excel.Excel.WorksheetProtection.options
-      - excel.Excel.WorksheetProtection.protect
-      - excel.Excel.WorksheetProtection.protected
-      - excel.Excel.WorksheetProtection.toJSON
-  - uid: excel.Excel.WorksheetProtection.context
+      - 'excel!Excel.WorksheetProtection#context:member'
+      - 'excel!Excel.WorksheetProtection#load:member(1)'
+      - 'excel!Excel.WorksheetProtection#load:member(2)'
+      - 'excel!Excel.WorksheetProtection#load:member(3)'
+      - 'excel!Excel.WorksheetProtection#options:member'
+      - 'excel!Excel.WorksheetProtection#protect:member(1)'
+      - 'excel!Excel.WorksheetProtection#protected:member'
+      - 'excel!Excel.WorksheetProtection#toJSON:member(1)'
+  - uid: 'excel!Excel.WorksheetProtection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.WorksheetProtection.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -67,14 +67,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetProtectionLoadOptions): Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
+          - 'excel!Excel.WorksheetProtection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
-  - uid: excel.Excel.WorksheetProtection.load_1
+            - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -87,14 +87,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
+          - 'excel!Excel.WorksheetProtection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.WorksheetProtection.load_2
+  - uid: 'excel!Excel.WorksheetProtection#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -107,7 +107,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
+          - 'excel!Excel.WorksheetProtection:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -116,7 +116,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.WorksheetProtection.options
+  - uid: 'excel!Excel.WorksheetProtection#options:member'
     summary: |-
       Sheet protection options. Read-only.
 
@@ -130,8 +130,8 @@ items:
       content: 'readonly options: Excel.WorksheetProtectionOptions;'
       return:
         type:
-          - excel.Excel.WorksheetProtectionOptions
-  - uid: excel.Excel.WorksheetProtection.protect
+          - 'excel!Excel.WorksheetProtectionOptions:interface'
+  - uid: 'excel!Excel.WorksheetProtection#protect:member(1)'
     summary: >-
       Protects a worksheet. Fails if the worksheet has already been protected.
 
@@ -148,66 +148,17 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function(ctx) {
-            // get a reference to Sheet1
-            var sheet = ctx.workbook.worksheets.getItem("Sheet1");
-
-            // Protect inserting or deleting rows in Sheet1
-            sheet.protection.protect({
-              allowInsertRows: false,
-              allowDeleteRows: false
-            });
-
-            return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```typescript
-          await Excel.run(async (context) => {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.load("protection/protected");
-
-              await context.sync();
-
-              if (!activeSheet.protection.protected) {
-                  activeSheet.protection.protect();
-              }
-          });
-          ```
-          ```typescript
-          let password = await passwordHandler();
-          passwordHelper(password);
-          await Excel.run(async (context) => {
-              let activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.load("protection/protected");
-
-              await context.sync();
-
-              if (!activeSheet.protection.protected) {
-                  activeSheet.protection.protect(null, password);
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: options
           description: Optional. Sheet protection options.
           type:
-            - excel.Excel.WorksheetProtectionOptions
+            - 'excel!Excel.WorksheetProtectionOptions:interface'
         - id: password
           description: Optional. Sheet protection password.
           type:
             - string
-  - uid: excel.Excel.WorksheetProtection.protected
+  - uid: 'excel!Excel.WorksheetProtection#protected:member'
     summary: |-
       Indicates if the worksheet is protected. Read-only.
 
@@ -222,7 +173,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtection.toJSON
+  - uid: 'excel!Excel.WorksheetProtection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -238,5 +189,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionData
+          - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
         description: ''

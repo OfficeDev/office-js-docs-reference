@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalRangeFont
+  - uid: 'excel!Excel.ConditionalRangeFont:class'
     summary: |-
       This object represents the font attributes (font style, color, etc.) for an object.
 
@@ -12,22 +12,22 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalRangeFont.bold
-      - excel.Excel.ConditionalRangeFont.clear
-      - excel.Excel.ConditionalRangeFont.color
-      - excel.Excel.ConditionalRangeFont.context
-      - excel.Excel.ConditionalRangeFont.italic
-      - excel.Excel.ConditionalRangeFont.load
-      - excel.Excel.ConditionalRangeFont.load_1
-      - excel.Excel.ConditionalRangeFont.load_2
-      - excel.Excel.ConditionalRangeFont.set
-      - excel.Excel.ConditionalRangeFont.set_1
-      - excel.Excel.ConditionalRangeFont.strikethrough
-      - excel.Excel.ConditionalRangeFont.toJSON
-      - excel.Excel.ConditionalRangeFont.underline
-  - uid: excel.Excel.ConditionalRangeFont.bold
+      - 'excel!Excel.ConditionalRangeFont#bold:member'
+      - 'excel!Excel.ConditionalRangeFont#clear:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#color:member'
+      - 'excel!Excel.ConditionalRangeFont#context:member'
+      - 'excel!Excel.ConditionalRangeFont#italic:member'
+      - 'excel!Excel.ConditionalRangeFont#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#load:member(2)'
+      - 'excel!Excel.ConditionalRangeFont#load:member(3)'
+      - 'excel!Excel.ConditionalRangeFont#set:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#set:member(2)'
+      - 'excel!Excel.ConditionalRangeFont#strikethrough:member'
+      - 'excel!Excel.ConditionalRangeFont#toJSON:member(1)'
+      - 'excel!Excel.ConditionalRangeFont#underline:member'
+  - uid: 'excel!Excel.ConditionalRangeFont#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ConditionalRangeFont.clear
+  - uid: 'excel!Excel.ConditionalRangeFont#clear:member(1)'
     summary: |-
       Resets the font formats.
 
@@ -58,7 +58,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.ConditionalRangeFont.color
+  - uid: 'excel!Excel.ConditionalRangeFont#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalRangeFont.context
+  - uid: 'excel!Excel.ConditionalRangeFont#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -86,8 +86,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ConditionalRangeFont.italic
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeFont#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -102,7 +102,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ConditionalRangeFont.load
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -133,14 +133,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFontLoadOptions): Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
+          - 'excel!Excel.ConditionalRangeFont:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalRangeFontLoadOptions
-  - uid: excel.Excel.ConditionalRangeFont.load_1
+            - 'excel!Excel.Interfaces.ConditionalRangeFontLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -153,14 +153,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
+          - 'excel!Excel.ConditionalRangeFont:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalRangeFont.load_2
+  - uid: 'excel!Excel.ConditionalRangeFont#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -173,7 +173,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
+          - 'excel!Excel.ConditionalRangeFont:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -182,7 +182,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ConditionalRangeFont.set
+  - uid: 'excel!Excel.ConditionalRangeFont#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -212,7 +212,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ConditionalRangeFont.set_1
+  - uid: 'excel!Excel.ConditionalRangeFont#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -229,8 +229,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalRangeFont
-  - uid: excel.Excel.ConditionalRangeFont.strikethrough
+            - 'excel!Excel.ConditionalRangeFont:class'
+  - uid: 'excel!Excel.ConditionalRangeFont#strikethrough:member'
     summary: |-
       Represents the strikethrough status of the font.
 
@@ -245,7 +245,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ConditionalRangeFont.toJSON
+  - uid: 'excel!Excel.ConditionalRangeFont#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -261,9 +261,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFontData
+          - 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
         description: ''
-  - uid: excel.Excel.ConditionalRangeFont.underline
+  - uid: 'excel!Excel.ConditionalRangeFont#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 

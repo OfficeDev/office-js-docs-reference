@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Style
+  - uid: 'excel!Excel.Style:class'
     summary: |-
       An object encapsulating a style's format and other properties.
 
@@ -12,38 +12,38 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Style.borders
-      - excel.Excel.Style.builtIn
-      - excel.Excel.Style.context
-      - excel.Excel.Style.delete
-      - excel.Excel.Style.fill
-      - excel.Excel.Style.font
-      - excel.Excel.Style.formulaHidden
-      - excel.Excel.Style.horizontalAlignment
-      - excel.Excel.Style.includeAlignment
-      - excel.Excel.Style.includeBorder
-      - excel.Excel.Style.includeFont
-      - excel.Excel.Style.includeNumber
-      - excel.Excel.Style.includePatterns
-      - excel.Excel.Style.includeProtection
-      - excel.Excel.Style.indentLevel
-      - excel.Excel.Style.load
-      - excel.Excel.Style.load_1
-      - excel.Excel.Style.load_2
-      - excel.Excel.Style.locked
-      - excel.Excel.Style.name
-      - excel.Excel.Style.numberFormat
-      - excel.Excel.Style.numberFormatLocal
-      - excel.Excel.Style.readingOrder
-      - excel.Excel.Style.set
-      - excel.Excel.Style.set_1
-      - excel.Excel.Style.shrinkToFit
-      - excel.Excel.Style.toJSON
-      - excel.Excel.Style.verticalAlignment
-      - excel.Excel.Style.wrapText
-  - uid: excel.Excel.Style.borders
+      - 'excel!Excel.Style#borders:member'
+      - 'excel!Excel.Style#builtIn:member'
+      - 'excel!Excel.Style#context:member'
+      - 'excel!Excel.Style#delete:member(1)'
+      - 'excel!Excel.Style#fill:member'
+      - 'excel!Excel.Style#font:member'
+      - 'excel!Excel.Style#formulaHidden:member'
+      - 'excel!Excel.Style#horizontalAlignment:member'
+      - 'excel!Excel.Style#includeAlignment:member'
+      - 'excel!Excel.Style#includeBorder:member'
+      - 'excel!Excel.Style#includeFont:member'
+      - 'excel!Excel.Style#includeNumber:member'
+      - 'excel!Excel.Style#includePatterns:member'
+      - 'excel!Excel.Style#includeProtection:member'
+      - 'excel!Excel.Style#indentLevel:member'
+      - 'excel!Excel.Style#load:member(1)'
+      - 'excel!Excel.Style#load:member(2)'
+      - 'excel!Excel.Style#load:member(3)'
+      - 'excel!Excel.Style#locked:member'
+      - 'excel!Excel.Style#name:member'
+      - 'excel!Excel.Style#numberFormat:member'
+      - 'excel!Excel.Style#numberFormatLocal:member'
+      - 'excel!Excel.Style#readingOrder:member'
+      - 'excel!Excel.Style#set:member(1)'
+      - 'excel!Excel.Style#set:member(2)'
+      - 'excel!Excel.Style#shrinkToFit:member'
+      - 'excel!Excel.Style#toJSON:member(1)'
+      - 'excel!Excel.Style#verticalAlignment:member'
+      - 'excel!Excel.Style#wrapText:member'
+  - uid: 'excel!Excel.Style#borders:member'
     summary: |-
       A Border collection of four Border objects that represent the style of the four borders.
 
@@ -57,8 +57,8 @@ items:
       content: 'readonly borders: Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
-  - uid: excel.Excel.Style.builtIn
+          - 'excel!Excel.RangeBorderCollection:class'
+  - uid: 'excel!Excel.Style#builtIn:member'
     summary: |-
       Indicates if the style is a built-in style.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.context
+  - uid: 'excel!Excel.Style#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -86,8 +86,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Style.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Style#delete:member(1)'
     summary: |-
       Deletes this style.
 
@@ -102,25 +102,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let style = context.workbook.styles.getItem("Diagonal Orientation Style");
-
-              // Delete the diagonal orientation style from the style collection.
-              // Styles are in the Home tab ribbon.
-              style.delete();
-
-              await context.sync();
-
-              console.log("Successfully deleted the diagonal orientation style from the Home tab ribbon.");
-          });
-          ```
-  - uid: excel.Excel.Style.fill
+        description: ''
+  - uid: 'excel!Excel.Style#fill:member'
     summary: |-
       The Fill of the style.
 
@@ -134,8 +117,8 @@ items:
       content: 'readonly fill: Excel.RangeFill;'
       return:
         type:
-          - excel.Excel.RangeFill
-  - uid: excel.Excel.Style.font
+          - 'excel!Excel.RangeFill:class'
+  - uid: 'excel!Excel.Style#font:member'
     summary: |-
       A Font object that represents the font of the style.
 
@@ -149,29 +132,8 @@ items:
       content: 'readonly font: Excel.RangeFont;'
       return:
         type:
-          - excel.Excel.RangeFont
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let style = context.workbook.styles.getItem("Normal");
-              style.font.load("bold, color, italic, name, size");
-              style.fill.load("color");
-
-              await context.sync();
-
-              console.log("Bold: " + style.font.bold);
-              console.log("Font color: " + style.font.color);
-              console.log("Italic: " + style.font.italic);
-              console.log("Name: " + style.font.name);
-              console.log("Size: " + style.font.size);
-              console.log("Fill color: " + style.fill.color);
-          });
-          ```
-  - uid: excel.Excel.Style.formulaHidden
+          - 'excel!Excel.RangeFont:class'
+  - uid: 'excel!Excel.Style#formulaHidden:member'
     summary: |-
       Indicates if the formula will be hidden when the worksheet is protected.
 
@@ -186,7 +148,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.horizontalAlignment
+  - uid: 'excel!Excel.Style#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment for the style. See Excel.HorizontalAlignment for details.
 
@@ -205,25 +167,7 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let worksheet = context.workbook.worksheets.getItem("Sample");
-              let range = worksheet.getRange("A1:E1");
-
-              // Apply built-in style. 
-              // Styles are in the Home tab ribbon.
-              range.style = Excel.BuiltInStyle.neutral;
-              range.format.horizontalAlignment = "Right";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Style.includeAlignment
+  - uid: 'excel!Excel.Style#includeAlignment:member'
     summary: >-
       Indicates if the style includes the AutoIndent, HorizontalAlignment, VerticalAlignment, WrapText, IndentLevel, and
       TextOrientation properties.
@@ -240,7 +184,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.includeBorder
+  - uid: 'excel!Excel.Style#includeBorder:member'
     summary: |-
       Indicates if the style includes the Color, ColorIndex, LineStyle, and Weight border properties.
 
@@ -255,7 +199,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.includeFont
+  - uid: 'excel!Excel.Style#includeFont:member'
     summary: >-
       Indicates if the style includes the Background, Bold, Color, ColorIndex, FontStyle, Italic, Name, Size,
       Strikethrough, Subscript, Superscript, and Underline font properties.
@@ -272,7 +216,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.includeNumber
+  - uid: 'excel!Excel.Style#includeNumber:member'
     summary: |-
       Indicates if the style includes the NumberFormat property.
 
@@ -287,7 +231,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.includePatterns
+  - uid: 'excel!Excel.Style#includePatterns:member'
     summary: >-
       Indicates if the style includes the Color, ColorIndex, InvertIfNegative, Pattern, PatternColor, and
       PatternColorIndex interior properties.
@@ -304,7 +248,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.includeProtection
+  - uid: 'excel!Excel.Style#includeProtection:member'
     summary: |-
       Indicates if the style includes the FormulaHidden and Locked protection properties.
 
@@ -319,7 +263,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.indentLevel
+  - uid: 'excel!Excel.Style#indentLevel:member'
     summary: |-
       An integer from 0 to 250 that indicates the indent level for the style.
 
@@ -334,7 +278,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Style.load
+  - uid: 'excel!Excel.Style#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -356,30 +300,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-
-      #### Examples
-
-
-      ```typescript
-
-      await Excel.run(async (context) => {
-          let style = context.workbook.styles.getItem("Diagonal Orientation Style");            
-          style.load("textOrientation, horizontalAlignment, autoIndent, readingOrder, wrapText, includeProtection, shrinkToFit, locked");
-
-          await context.sync();
-
-          console.log("Orientation: " + style.textOrientation);
-          console.log("Horizontal alignment: " + style.horizontalAlignment);
-          console.log("Add indent: " + style.autoIndent);
-          console.log("Reading order: " + style.readingOrder);
-          console.log("Wrap text: " + style.wrapText);
-          console.log("Include protection: " + style.includeProtection);
-          console.log("Shrink to fit: " + style.shrinkToFit);
-          console.log("Style locked: " + style.locked);
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -389,14 +309,14 @@ items:
       content: 'load(option?: Excel.Interfaces.StyleLoadOptions): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
+          - 'excel!Excel.Style:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.StyleLoadOptions
-  - uid: excel.Excel.Style.load_1
+            - 'excel!Excel.Interfaces.StyleLoadOptions:interface'
+  - uid: 'excel!Excel.Style#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -409,14 +329,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
+          - 'excel!Excel.Style:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Style.load_2
+  - uid: 'excel!Excel.Style#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -429,7 +349,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
+          - 'excel!Excel.Style:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -438,7 +358,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Style.locked
+  - uid: 'excel!Excel.Style#locked:member'
     summary: |-
       Indicates if the object is locked when the worksheet is protected.
 
@@ -453,7 +373,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.name
+  - uid: 'excel!Excel.Style#name:member'
     summary: |-
       The name of the style.
 
@@ -468,7 +388,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Style.numberFormat
+  - uid: 'excel!Excel.Style#numberFormat:member'
     summary: |-
       The format code of the number format for the style.
 
@@ -483,7 +403,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Style.numberFormatLocal
+  - uid: 'excel!Excel.Style#numberFormatLocal:member'
     summary: |-
       The localized format code of the number format for the style.
 
@@ -498,7 +418,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Style.readingOrder
+  - uid: 'excel!Excel.Style#readingOrder:member'
     summary: |-
       The reading order for the style.
 
@@ -513,7 +433,7 @@ items:
       return:
         type:
           - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Style.set
+  - uid: 'excel!Excel.Style#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -543,7 +463,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Style.set_1
+  - uid: 'excel!Excel.Style#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -560,8 +480,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Style
-  - uid: excel.Excel.Style.shrinkToFit
+            - 'excel!Excel.Style:class'
+  - uid: 'excel!Excel.Style#shrinkToFit:member'
     summary: |-
       Indicates if text automatically shrinks to fit in the available column width.
 
@@ -576,7 +496,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Style.toJSON
+  - uid: 'excel!Excel.Style#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -592,9 +512,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleData;'
       return:
         type:
-          - excel.Excel.Interfaces.StyleData
+          - 'excel!Excel.Interfaces.StyleData:interface'
         description: ''
-  - uid: excel.Excel.Style.verticalAlignment
+  - uid: 'excel!Excel.Style#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment for the style. See Excel.VerticalAlignment for details.
 
@@ -609,7 +529,7 @@ items:
       return:
         type:
           - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
-  - uid: excel.Excel.Style.wrapText
+  - uid: 'excel!Excel.Style#wrapText:member'
     summary: |-
       Indicates if Microsoft Excel wraps the text in the object.
 

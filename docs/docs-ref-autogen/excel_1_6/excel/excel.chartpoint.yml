@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartPoint
+  - uid: 'excel!Excel.ChartPoint:class'
     summary: |-
       Represents a point of a series in a chart.
 
@@ -12,18 +12,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartPoint.context
-      - excel.Excel.ChartPoint.format
-      - excel.Excel.ChartPoint.load
-      - excel.Excel.ChartPoint.load_1
-      - excel.Excel.ChartPoint.load_2
-      - excel.Excel.ChartPoint.set
-      - excel.Excel.ChartPoint.set_1
-      - excel.Excel.ChartPoint.toJSON
-      - excel.Excel.ChartPoint.value
-  - uid: excel.Excel.ChartPoint.context
+      - 'excel!Excel.ChartPoint#context:member'
+      - 'excel!Excel.ChartPoint#format:member'
+      - 'excel!Excel.ChartPoint#load:member(1)'
+      - 'excel!Excel.ChartPoint#load:member(2)'
+      - 'excel!Excel.ChartPoint#load:member(3)'
+      - 'excel!Excel.ChartPoint#set:member(1)'
+      - 'excel!Excel.ChartPoint#set:member(2)'
+      - 'excel!Excel.ChartPoint#toJSON:member(1)'
+      - 'excel!Excel.ChartPoint#value:member'
+  - uid: 'excel!Excel.ChartPoint#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartPoint.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartPoint#format:member'
     summary: |-
       Encapsulates the format properties chart point. Read-only.
 
@@ -51,8 +51,8 @@ items:
       content: 'readonly format: Excel.ChartPointFormat;'
       return:
         type:
-          - excel.Excel.ChartPointFormat
-  - uid: excel.Excel.ChartPoint.load
+          - 'excel!Excel.ChartPointFormat:class'
+  - uid: 'excel!Excel.ChartPoint#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -83,14 +83,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartPointLoadOptions): Excel.ChartPoint;'
       return:
         type:
-          - excel.Excel.ChartPoint
+          - 'excel!Excel.ChartPoint:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartPointLoadOptions
-  - uid: excel.Excel.ChartPoint.load_1
+            - 'excel!Excel.Interfaces.ChartPointLoadOptions:interface'
+  - uid: 'excel!Excel.ChartPoint#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -103,14 +103,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPoint;'
       return:
         type:
-          - excel.Excel.ChartPoint
+          - 'excel!Excel.ChartPoint:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartPoint.load_2
+  - uid: 'excel!Excel.ChartPoint#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -123,7 +123,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPoint;'
       return:
         type:
-          - excel.Excel.ChartPoint
+          - 'excel!Excel.ChartPoint:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -132,7 +132,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartPoint.set
+  - uid: 'excel!Excel.ChartPoint#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -162,7 +162,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartPoint.set_1
+  - uid: 'excel!Excel.ChartPoint#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -179,8 +179,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartPoint
-  - uid: excel.Excel.ChartPoint.toJSON
+            - 'excel!Excel.ChartPoint:class'
+  - uid: 'excel!Excel.ChartPoint#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -196,9 +196,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPointData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointData
+          - 'excel!Excel.Interfaces.ChartPointData:interface'
         description: ''
-  - uid: excel.Excel.ChartPoint.value
+  - uid: 'excel!Excel.ChartPoint#value:member'
     summary: |-
       Returns the value of a chart point. Read-only.
 

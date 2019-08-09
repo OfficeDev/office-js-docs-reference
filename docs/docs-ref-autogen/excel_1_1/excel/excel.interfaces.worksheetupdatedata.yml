@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetUpdateData
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData:interface'
     summary: 'An interface for updating data on the Worksheet object, for use in "worksheet.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.WorksheetUpdateData
     fullName: Excel.Interfaces.WorksheetUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetUpdateData.name
-      - excel.Excel.Interfaces.WorksheetUpdateData.position
-      - excel.Excel.Interfaces.WorksheetUpdateData.visibility
-  - uid: excel.Excel.Interfaces.WorksheetUpdateData.name
+      - 'excel!Excel.Interfaces.WorksheetUpdateData#name:member'
+      - 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
+      - 'excel!Excel.Interfaces.WorksheetUpdateData#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetUpdateData.position
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetUpdateData.visibility
+  - uid: 'excel!Excel.Interfaces.WorksheetUpdateData#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 

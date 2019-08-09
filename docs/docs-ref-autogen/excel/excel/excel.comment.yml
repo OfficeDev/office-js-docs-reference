@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Comment
+  - uid: 'excel!Excel.Comment:class'
     summary: >-
       Represents a cell comment object in the workbook.
 
@@ -15,25 +15,25 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Comment.authorEmail
-      - excel.Excel.Comment.authorName
-      - excel.Excel.Comment.content
-      - excel.Excel.Comment.context
-      - excel.Excel.Comment.creationDate
-      - excel.Excel.Comment.delete
-      - excel.Excel.Comment.getLocation
-      - excel.Excel.Comment.id
-      - excel.Excel.Comment.load
-      - excel.Excel.Comment.load_1
-      - excel.Excel.Comment.load_2
-      - excel.Excel.Comment.replies
-      - excel.Excel.Comment.resolved
-      - excel.Excel.Comment.set
-      - excel.Excel.Comment.set_1
-      - excel.Excel.Comment.toJSON
-  - uid: excel.Excel.Comment.authorEmail
+      - 'excel!Excel.Comment#authorEmail:member'
+      - 'excel!Excel.Comment#authorName:member'
+      - 'excel!Excel.Comment#content:member'
+      - 'excel!Excel.Comment#context:member'
+      - 'excel!Excel.Comment#creationDate:member'
+      - 'excel!Excel.Comment#delete:member(1)'
+      - 'excel!Excel.Comment#getLocation:member(1)'
+      - 'excel!Excel.Comment#id:member'
+      - 'excel!Excel.Comment#load:member(1)'
+      - 'excel!Excel.Comment#load:member(2)'
+      - 'excel!Excel.Comment#load:member(3)'
+      - 'excel!Excel.Comment#replies:member'
+      - 'excel!Excel.Comment#resolved:member'
+      - 'excel!Excel.Comment#set:member(1)'
+      - 'excel!Excel.Comment#set:member(2)'
+      - 'excel!Excel.Comment#toJSON:member(1)'
+  - uid: 'excel!Excel.Comment#authorEmail:member'
     summary: >-
       Gets the email of the comment's author.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Comment.authorName
+  - uid: 'excel!Excel.Comment#authorName:member'
     summary: >-
       Gets the name of the comment's author.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Comment.content
+  - uid: 'excel!Excel.Comment#content:member'
     summary: >-
       Gets or sets the comment's content. The string is plain text.
 
@@ -87,19 +87,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const comment = context.workbook.comments.getItemAt(0);
-              comment.content = "PLEASE add headers here.";
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Comment.context
+  - uid: 'excel!Excel.Comment#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -113,8 +101,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Comment.creationDate
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Comment#creationDate:member'
     summary: >-
       Gets the creation time of the comment. Returns null if the comment was converted from a note, since the comment
       does not have a creation date.
@@ -133,7 +121,7 @@ items:
       return:
         type:
           - Date
-  - uid: excel.Excel.Comment.delete
+  - uid: 'excel!Excel.Comment#delete:member(1)'
     summary: >-
       Deletes the comment thread.
 
@@ -151,18 +139,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              context.workbook.comments.getItemByCell("Comments!A2").delete();
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Comment.getLocation
+        description: ''
+  - uid: 'excel!Excel.Comment#getLocation:member(1)'
     summary: >-
       Gets the cell where this comment is located.
 
@@ -179,9 +157,9 @@ items:
       content: 'getLocation(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.Comment.id
+  - uid: 'excel!Excel.Comment#id:member'
     summary: >-
       Represents the comment identifier. Read-only.
 
@@ -199,7 +177,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Comment.load
+  - uid: 'excel!Excel.Comment#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -231,14 +209,14 @@ items:
       content: 'load(option?: Excel.Interfaces.CommentLoadOptions): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CommentLoadOptions
-  - uid: excel.Excel.Comment.load_1
+            - 'excel!Excel.Interfaces.CommentLoadOptions:interface'
+  - uid: 'excel!Excel.Comment#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -252,14 +230,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
+          - 'excel!Excel.Comment:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Comment.load_2
+  - uid: 'excel!Excel.Comment#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -273,22 +251,8 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Comment;'
       return:
         type:
-          - excel.Excel.Comment
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const comment = context.workbook.comments.getItemByCell("Comments!A2");
-              comment.load(["authorEmail", "authorName", "creationDate"]);
-              await context.sync();
-
-              console.log(`${comment.creationDate.toDateString()}: ${comment.authorName} (${comment.authorEmail})`);
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Comment:class'
+        description: ''
       parameters:
         - id: propertyNamesAndPaths
           description: >-
@@ -296,7 +260,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Comment.replies
+  - uid: 'excel!Excel.Comment#replies:member'
     summary: >-
       Represents a collection of reply objects associated with the comment. Read-only.
 
@@ -313,8 +277,8 @@ items:
       content: 'readonly replies: Excel.CommentReplyCollection;'
       return:
         type:
-          - excel.Excel.CommentReplyCollection
-  - uid: excel.Excel.Comment.resolved
+          - 'excel!Excel.CommentReplyCollection:class'
+  - uid: 'excel!Excel.Comment#resolved:member'
     summary: >-
       Gets or sets the comment thread status. A value of "true" means the comment thread is in the resolved state.
 
@@ -332,7 +296,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Comment.set
+  - uid: 'excel!Excel.Comment#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -363,7 +327,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Comment.set_1
+  - uid: 'excel!Excel.Comment#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -381,8 +345,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Comment
-  - uid: excel.Excel.Comment.toJSON
+            - 'excel!Excel.Comment:class'
+  - uid: 'excel!Excel.Comment#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -399,5 +363,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CommentData;'
       return:
         type:
-          - excel.Excel.Interfaces.CommentData
+          - 'excel!Excel.Interfaces.CommentData:interface'
         description: ''

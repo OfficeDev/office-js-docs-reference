@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeBorderData
+  - uid: 'excel!Excel.Interfaces.RangeBorderData:interface'
     summary: An interface describing the data returned by calling "rangeBorder.toJSON()".
     name: Excel.Interfaces.RangeBorderData
     fullName: Excel.Interfaces.RangeBorderData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeBorderData.color
-      - excel.Excel.Interfaces.RangeBorderData.sideIndex
-      - excel.Excel.Interfaces.RangeBorderData.style
-      - excel.Excel.Interfaces.RangeBorderData.weight
-  - uid: excel.Excel.Interfaces.RangeBorderData.color
+      - 'excel!Excel.Interfaces.RangeBorderData#color:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#sideIndex:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#style:member'
+      - 'excel!Excel.Interfaces.RangeBorderData#weight:member'
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeBorderData.sideIndex
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#sideIndex:member'
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
 
@@ -49,7 +49,7 @@ items:
           - >-
             Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
             "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
-  - uid: excel.Excel.Interfaces.RangeBorderData.style
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -70,7 +70,7 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
-  - uid: excel.Excel.Interfaces.RangeBorderData.weight
+  - uid: 'excel!Excel.Interfaces.RangeBorderData#weight:member'
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 

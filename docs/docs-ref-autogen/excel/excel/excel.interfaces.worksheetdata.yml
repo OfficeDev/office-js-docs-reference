@@ -1,37 +1,37 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetData
+  - uid: 'excel!Excel.Interfaces.WorksheetData:interface'
     summary: An interface describing the data returned by calling "worksheet.toJSON()".
     name: Excel.Interfaces.WorksheetData
     fullName: Excel.Interfaces.WorksheetData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetData.autoFilter
-      - excel.Excel.Interfaces.WorksheetData.charts
-      - excel.Excel.Interfaces.WorksheetData.comments
-      - excel.Excel.Interfaces.WorksheetData.enableCalculation
-      - excel.Excel.Interfaces.WorksheetData.horizontalPageBreaks
-      - excel.Excel.Interfaces.WorksheetData.id
-      - excel.Excel.Interfaces.WorksheetData.name
-      - excel.Excel.Interfaces.WorksheetData.names
-      - excel.Excel.Interfaces.WorksheetData.pageLayout
-      - excel.Excel.Interfaces.WorksheetData.pivotTables
-      - excel.Excel.Interfaces.WorksheetData.position
-      - excel.Excel.Interfaces.WorksheetData.protection
-      - excel.Excel.Interfaces.WorksheetData.shapes
-      - excel.Excel.Interfaces.WorksheetData.showGridlines
-      - excel.Excel.Interfaces.WorksheetData.showHeadings
-      - excel.Excel.Interfaces.WorksheetData.slicers
-      - excel.Excel.Interfaces.WorksheetData.standardHeight
-      - excel.Excel.Interfaces.WorksheetData.standardWidth
-      - excel.Excel.Interfaces.WorksheetData.tabColor
-      - excel.Excel.Interfaces.WorksheetData.tables
-      - excel.Excel.Interfaces.WorksheetData.verticalPageBreaks
-      - excel.Excel.Interfaces.WorksheetData.visibility
-  - uid: excel.Excel.Interfaces.WorksheetData.autoFilter
+      - 'excel!Excel.Interfaces.WorksheetData#autoFilter:member'
+      - 'excel!Excel.Interfaces.WorksheetData#charts:member'
+      - 'excel!Excel.Interfaces.WorksheetData#comments:member'
+      - 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
+      - 'excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member'
+      - 'excel!Excel.Interfaces.WorksheetData#id:member'
+      - 'excel!Excel.Interfaces.WorksheetData#name:member'
+      - 'excel!Excel.Interfaces.WorksheetData#names:member'
+      - 'excel!Excel.Interfaces.WorksheetData#pageLayout:member'
+      - 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorksheetData#position:member'
+      - 'excel!Excel.Interfaces.WorksheetData#protection:member'
+      - 'excel!Excel.Interfaces.WorksheetData#shapes:member'
+      - 'excel!Excel.Interfaces.WorksheetData#showGridlines:member'
+      - 'excel!Excel.Interfaces.WorksheetData#showHeadings:member'
+      - 'excel!Excel.Interfaces.WorksheetData#slicers:member'
+      - 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
+      - 'excel!Excel.Interfaces.WorksheetData#standardWidth:member'
+      - 'excel!Excel.Interfaces.WorksheetData#tabColor:member'
+      - 'excel!Excel.Interfaces.WorksheetData#tables:member'
+      - 'excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member'
+      - 'excel!Excel.Interfaces.WorksheetData#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#autoFilter:member'
     summary: |-
       Represents the AutoFilter object of the worksheet. Read-Only.
 
@@ -45,8 +45,8 @@ items:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterData;'
       return:
         type:
-          - excel.Excel.Interfaces.AutoFilterData
-  - uid: excel.Excel.Interfaces.WorksheetData.charts
+          - 'excel!Excel.Interfaces.AutoFilterData:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.ChartData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.comments
+  - uid: 'excel!Excel.Interfaces.WorksheetData#comments:member'
     summary: >-
       Returns a collection of all the Comments objects on the worksheet. Read-only.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.CommentData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.enableCalculation
+  - uid: 'excel!Excel.Interfaces.WorksheetData#enableCalculation:member'
     summary: >-
       Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetData.horizontalPageBreaks
+  - uid: 'excel!Excel.Interfaces.WorksheetData#horizontalPageBreaks:member'
     summary: |-
       Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
 
@@ -111,7 +111,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PageBreakData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.id
+  - uid: 'excel!Excel.Interfaces.WorksheetData#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetData.name
+  - uid: 'excel!Excel.Interfaces.WorksheetData#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetData.names
+  - uid: 'excel!Excel.Interfaces.WorksheetData#names:member'
     summary: |-
       Collection of names scoped to the current worksheet. Read-only.
 
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.NamedItemData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.pageLayout
+  - uid: 'excel!Excel.Interfaces.WorksheetData#pageLayout:member'
     summary: |-
       Gets the PageLayout object of the worksheet.
 
@@ -172,8 +172,8 @@ items:
       content: 'pageLayout?: Excel.Interfaces.PageLayoutData;'
       return:
         type:
-          - excel.Excel.Interfaces.PageLayoutData
-  - uid: excel.Excel.Interfaces.WorksheetData.pivotTables
+          - 'excel!Excel.Interfaces.PageLayoutData:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#pivotTables:member'
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.
 
@@ -188,7 +188,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotTableData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.position
+  - uid: 'excel!Excel.Interfaces.WorksheetData#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -203,7 +203,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetData.protection
+  - uid: 'excel!Excel.Interfaces.WorksheetData#protection:member'
     summary: |-
       Returns sheet protection object for a worksheet. Read-only.
 
@@ -217,8 +217,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionData
-  - uid: excel.Excel.Interfaces.WorksheetData.shapes
+          - 'excel!Excel.Interfaces.WorksheetProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetData#shapes:member'
     summary: |-
       Returns the collection of all the Shape objects on the worksheet. Read-only.
 
@@ -233,7 +233,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.ShapeData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.showGridlines
+  - uid: 'excel!Excel.Interfaces.WorksheetData#showGridlines:member'
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
 
@@ -248,7 +248,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetData.showHeadings
+  - uid: 'excel!Excel.Interfaces.WorksheetData#showHeadings:member'
     summary: |-
       Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
 
@@ -263,7 +263,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetData.slicers
+  - uid: 'excel!Excel.Interfaces.WorksheetData#slicers:member'
     summary: >-
       Returns collection of slicers that are part of the worksheet. Read-only.
 
@@ -281,7 +281,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.SlicerData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.standardHeight
+  - uid: 'excel!Excel.Interfaces.WorksheetData#standardHeight:member'
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
 
@@ -296,7 +296,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetData.standardWidth
+  - uid: 'excel!Excel.Interfaces.WorksheetData#standardWidth:member'
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
@@ -314,7 +314,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.WorksheetData.tabColor
+  - uid: 'excel!Excel.Interfaces.WorksheetData#tabColor:member'
     summary: >-
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
@@ -333,7 +333,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorksheetData.tables
+  - uid: 'excel!Excel.Interfaces.WorksheetData#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.
 
@@ -348,7 +348,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.verticalPageBreaks
+  - uid: 'excel!Excel.Interfaces.WorksheetData#verticalPageBreaks:member'
     summary: |-
       Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
 
@@ -363,7 +363,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PageBreakData[]'
-  - uid: excel.Excel.Interfaces.WorksheetData.visibility
+  - uid: 'excel!Excel.Interfaces.WorksheetData#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 

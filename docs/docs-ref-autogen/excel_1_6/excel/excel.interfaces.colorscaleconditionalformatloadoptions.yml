@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions:interface'
     summary: |-
       Represents an IconSet criteria for conditional formatting.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions.criteria
-      - excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions.threeColorScale
-  - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member'
+      - 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member'
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions.criteria
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#criteria:member'
     summary: |-
       The criteria of the color scale. Midpoint is optional when using a two point color scale.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ColorScaleConditionalFormatLoadOptions.threeColorScale
+  - uid: 'excel!Excel.Interfaces.ColorScaleConditionalFormatLoadOptions#threeColorScale:member'
     summary: >-
       If true the color scale will have three points (minimum, midpoint, maximum), otherwise it will have two (minimum,
       maximum).

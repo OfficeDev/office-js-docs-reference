@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.UI
+  - uid: 'office!Office.UI:interface'
     summary: >-
       Provides objects and methods that you can use to create and manipulate UI components, such as dialog boxes, in
       your Office Add-ins.
@@ -14,13 +14,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.UI.closeContainer
-      - office.Office.UI.displayDialogAsync
-      - office.Office.UI.displayDialogAsync_1
-      - office.Office.UI.messageParent
-  - uid: office.Office.UI.closeContainer
+      - 'office!Office.UI#closeContainer:member(1)'
+      - 'office!Office.UI#displayDialogAsync:member(1)'
+      - 'office!Office.UI#displayDialogAsync:member(2)'
+      - 'office!Office.UI#messageParent:member(1)'
+  - uid: 'office!Office.UI#closeContainer:member(1)'
     summary: Closes the UI container where the JavaScript is executing.
     remarks: >-
       **Hosts**: Excel, Word, PowerPoint, Outlook (Minimum requirement set: Mailbox 1.5)
@@ -52,7 +52,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office.Office.UI.displayDialogAsync
+  - uid: 'office!Office.UI#displayDialogAsync:member(1)'
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
       **Hosts**: Word, Excel, Outlook, PowerPoint
@@ -165,17 +165,17 @@ items:
             - string
         - id: options
           description: >-
-            Optional. Accepts an [Office.DialogOptions](xref:office.Office.DialogOptions) object to define dialog
-            display.
+            Optional. Accepts an [Office.DialogOptions](xref:office!Office.DialogOptions:interface) object to define
+            dialog display.
           type:
-            - office.Office.DialogOptions
+            - 'office!Office.DialogOptions:interface'
         - id: callback
           description: >-
             Optional. Accepts a callback method to handle the dialog creation attempt. If successful, the
             AsyncResult.value is a Dialog object.
           type:
             - '(result: AsyncResult<Dialog>) => void'
-  - uid: office.Office.UI.displayDialogAsync_1
+  - uid: 'office!Office.UI#displayDialogAsync:member(2)'
     summary: Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     remarks: >-
       **Hosts**: Excel, Outlook, PowerPoint, Word
@@ -290,7 +290,7 @@ items:
             AsyncResult.value is a Dialog object.
           type:
             - '(result: AsyncResult<Dialog>) => void'
-  - uid: office.Office.UI.messageParent
+  - uid: 'office!Office.UI#messageParent:member(1)'
     summary: >-
       Delivers a message from the dialog box to its parent/opener page. The page calling this API must be on the same
       domain as the parent.

@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomPropertyData
+  - uid: 'excel!Excel.Interfaces.CustomPropertyData:interface'
     summary: An interface describing the data returned by calling "customProperty.toJSON()".
     name: Excel.Interfaces.CustomPropertyData
     fullName: Excel.Interfaces.CustomPropertyData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomPropertyData.key
-      - excel.Excel.Interfaces.CustomPropertyData.type
-      - excel.Excel.Interfaces.CustomPropertyData.value
-  - uid: excel.Excel.Interfaces.CustomPropertyData.key
+      - 'excel!Excel.Interfaces.CustomPropertyData#key:member'
+      - 'excel!Excel.Interfaces.CustomPropertyData#type:member'
+      - 'excel!Excel.Interfaces.CustomPropertyData#value:member'
+  - uid: 'excel!Excel.Interfaces.CustomPropertyData#key:member'
     summary: |-
       Gets the key of the custom property. Read only.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.CustomPropertyData.type
+  - uid: 'excel!Excel.Interfaces.CustomPropertyData#type:member'
     summary: |-
       Gets the value type of the custom property. Read only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - Excel.DocumentPropertyType | "Number" | "Boolean" | "Date" | "String" | "Float"
-  - uid: excel.Excel.Interfaces.CustomPropertyData.value
+  - uid: 'excel!Excel.Interfaces.CustomPropertyData#value:member'
     summary: |-
       Gets or sets the value of the custom property.
 

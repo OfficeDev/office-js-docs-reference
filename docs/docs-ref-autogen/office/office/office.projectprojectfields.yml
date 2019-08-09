@@ -1,47 +1,47 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.ProjectProjectFields
+  - uid: 'office!Office.ProjectProjectFields:enum'
     summary: >-
-      Specifies the project fields that are available as a parameter for the [Document](xref:office.Office.Document)<!--
-      -->.getProjectFieldAsync method.
+      Specifies the project fields that are available as a parameter for the
+      [Document](xref:office!Office.Document:interface)<!-- -->.getProjectFieldAsync method.
     remarks: >-
-      A ProjectProjectFields constant can be used as a parameter of the [Document](xref:office.Office.Document)<!--
-      -->.getProjectFieldAsync method.
+      A ProjectProjectFields constant can be used as a parameter of the
+      [Document](xref:office!Office.Document:interface)<!-- -->.getProjectFieldAsync method.
     name: Office.ProjectProjectFields
     fullName: Office.ProjectProjectFields
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.ProjectProjectFields.CurrencyDigits
-      - office.Office.ProjectProjectFields.CurrencySymbol
-      - office.Office.ProjectProjectFields.CurrencySymbolPosition
-      - office.Office.ProjectProjectFields.DurationUnits
-      - office.Office.ProjectProjectFields.Finish
-      - office.Office.ProjectProjectFields.GUID
-      - office.Office.ProjectProjectFields.ProjectServerUrl
-      - office.Office.ProjectProjectFields.ReadOnly
-      - office.Office.ProjectProjectFields.Start
-      - office.Office.ProjectProjectFields.VERSION
-      - office.Office.ProjectProjectFields.WorkUnits
-      - office.Office.ProjectProjectFields.WSSList
-      - office.Office.ProjectProjectFields.WSSUrl
-  - uid: office.Office.ProjectProjectFields.CurrencyDigits
+      - 'office!Office.ProjectProjectFields.CurrencyDigits:member'
+      - 'office!Office.ProjectProjectFields.CurrencySymbol:member'
+      - 'office!Office.ProjectProjectFields.CurrencySymbolPosition:member'
+      - 'office!Office.ProjectProjectFields.DurationUnits:member'
+      - 'office!Office.ProjectProjectFields.Finish:member'
+      - 'office!Office.ProjectProjectFields.GUID:member'
+      - 'office!Office.ProjectProjectFields.ProjectServerUrl:member'
+      - 'office!Office.ProjectProjectFields.ReadOnly:member'
+      - 'office!Office.ProjectProjectFields.Start:member'
+      - 'office!Office.ProjectProjectFields.VERSION:member'
+      - 'office!Office.ProjectProjectFields.WorkUnits:member'
+      - 'office!Office.ProjectProjectFields.WSSList:member'
+      - 'office!Office.ProjectProjectFields.WSSUrl:member'
+  - uid: 'office!Office.ProjectProjectFields.CurrencyDigits:member'
     summary: The number of digits after the decimal for the currency.
     name: CurrencyDigits
     fullName: CurrencyDigits
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.CurrencySymbol
+  - uid: 'office!Office.ProjectProjectFields.CurrencySymbol:member'
     summary: The currency symbol.
     name: CurrencySymbol
     fullName: CurrencySymbol
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.CurrencySymbolPosition
+  - uid: 'office!Office.ProjectProjectFields.CurrencySymbolPosition:member'
     summary: >-
       The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value
       with no space (0$) = 1; Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
@@ -50,69 +50,69 @@ items:
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.DurationUnits
+  - uid: 'office!Office.ProjectProjectFields.DurationUnits:member'
     name: DurationUnits
     fullName: DurationUnits
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.Finish
+  - uid: 'office!Office.ProjectProjectFields.Finish:member'
     summary: The project finish date.
     name: Finish
     fullName: Finish
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.GUID
+  - uid: 'office!Office.ProjectProjectFields.GUID:member'
     summary: The GUID of the project.
     name: GUID
     fullName: GUID
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.ProjectServerUrl
+  - uid: 'office!Office.ProjectProjectFields.ProjectServerUrl:member'
     summary: 'The Project Web App URL, for projects that are stored in Project Server.'
     name: ProjectServerUrl
     fullName: ProjectServerUrl
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.ReadOnly
+  - uid: 'office!Office.ProjectProjectFields.ReadOnly:member'
     summary: Specifies whether the project is read-only.
     name: ReadOnly
     fullName: ReadOnly
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.Start
+  - uid: 'office!Office.ProjectProjectFields.Start:member'
     summary: The project start date.
     name: Start
     fullName: Start
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.VERSION
+  - uid: 'office!Office.ProjectProjectFields.VERSION:member'
     summary: The project version.
     name: VERSION
     fullName: VERSION
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.WorkUnits
+  - uid: 'office!Office.ProjectProjectFields.WorkUnits:member'
     summary: 'The work units of the project, such as days or hours.'
     name: WorkUnits
     fullName: WorkUnits
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.WSSList
+  - uid: 'office!Office.ProjectProjectFields.WSSList:member'
     summary: 'The name of the SharePoint list, for projects that are synchronized with a tasks list.'
     name: WSSList
     fullName: WSSList
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ProjectProjectFields.WSSUrl
+  - uid: 'office!Office.ProjectProjectFields.WSSUrl:member'
     summary: 'The SharePoint URL, for projects that are synchronized with a SharePoint list.'
     name: WSSUrl
     fullName: WSSUrl

@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions:interface'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.Interfaces.HeaderFooterLoadOptions
     fullName: Excel.Interfaces.HeaderFooterLoadOptions
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.$all
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.centerFooter
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.centerHeader
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.leftFooter
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.leftHeader
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.rightFooter
-      - excel.Excel.Interfaces.HeaderFooterLoadOptions.rightHeader
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.$all
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeader:member'
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeader:member'
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooter:member'
+      - 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeader:member'
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.centerFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerFooter:member'
     summary: >-
       Gets or sets the center footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.centerHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#centerHeader:member'
     summary: >-
       Gets or sets the center header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.leftFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftFooter:member'
     summary: >-
       Gets or sets the left footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.leftHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#leftHeader:member'
     summary: >-
       Gets or sets the left header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.rightFooter
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightFooter:member'
     summary: >-
       Gets or sets the right footer of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.
@@ -112,7 +112,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.HeaderFooterLoadOptions.rightHeader
+  - uid: 'excel!Excel.Interfaces.HeaderFooterLoadOptions#rightHeader:member'
     summary: >-
       Gets or sets the right header of the worksheet. To apply font formatting or insert a variable value, use format
       codes specified here: https://msdn.microsoft.com/en-us/library/bb225426.aspx.

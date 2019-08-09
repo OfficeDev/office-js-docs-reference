@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTextVerticalAlignment
+  - uid: 'excel!Excel.ChartTextVerticalAlignment:enum'
     summary: |-
       Represents the vertical alignment for the specified object.
 
@@ -10,42 +10,42 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartTextVerticalAlignment.bottom
-      - excel.Excel.ChartTextVerticalAlignment.center
-      - excel.Excel.ChartTextVerticalAlignment.distributed
-      - excel.Excel.ChartTextVerticalAlignment.justify
-      - excel.Excel.ChartTextVerticalAlignment.top
-  - uid: excel.Excel.ChartTextVerticalAlignment.bottom
+      - 'excel!Excel.ChartTextVerticalAlignment.bottom:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.center:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.distributed:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.justify:member'
+      - 'excel!Excel.ChartTextVerticalAlignment.top:member'
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.bottom:member'
     name: bottom
     fullName: bottom
     langs:
       - typeScript
     type: field
     numericValue: '"Bottom"'
-  - uid: excel.Excel.ChartTextVerticalAlignment.center
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.center:member'
     name: center
     fullName: center
     langs:
       - typeScript
     type: field
     numericValue: '"Center"'
-  - uid: excel.Excel.ChartTextVerticalAlignment.distributed
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.distributed:member'
     name: distributed
     fullName: distributed
     langs:
       - typeScript
     type: field
     numericValue: '"Distributed"'
-  - uid: excel.Excel.ChartTextVerticalAlignment.justify
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.justify:member'
     name: justify
     fullName: justify
     langs:
       - typeScript
     type: field
     numericValue: '"Justify"'
-  - uid: excel.Excel.ChartTextVerticalAlignment.top
+  - uid: 'excel!Excel.ChartTextVerticalAlignment.top:member'
     name: top
     fullName: top
     langs:

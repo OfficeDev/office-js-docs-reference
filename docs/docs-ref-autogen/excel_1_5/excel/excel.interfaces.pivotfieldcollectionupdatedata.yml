@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotFieldCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotFieldCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the PivotFieldCollection object, for use in "pivotFieldCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotFieldCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.PivotFieldCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotFieldCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

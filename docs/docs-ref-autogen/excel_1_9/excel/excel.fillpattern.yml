@@ -1,176 +1,176 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FillPattern
+  - uid: 'excel!Excel.FillPattern:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FillPattern
     fullName: Excel.FillPattern
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FillPattern.checker
-      - excel.Excel.FillPattern.crissCross
-      - excel.Excel.FillPattern.down
-      - excel.Excel.FillPattern.gray16
-      - excel.Excel.FillPattern.gray25
-      - excel.Excel.FillPattern.gray50
-      - excel.Excel.FillPattern.gray75
-      - excel.Excel.FillPattern.gray8
-      - excel.Excel.FillPattern.grid
-      - excel.Excel.FillPattern.horizontal
-      - excel.Excel.FillPattern.lightDown
-      - excel.Excel.FillPattern.lightHorizontal
-      - excel.Excel.FillPattern.lightUp
-      - excel.Excel.FillPattern.lightVertical
-      - excel.Excel.FillPattern.linearGradient
-      - excel.Excel.FillPattern.none
-      - excel.Excel.FillPattern.rectangularGradient
-      - excel.Excel.FillPattern.semiGray75
-      - excel.Excel.FillPattern.solid
-      - excel.Excel.FillPattern.up
-      - excel.Excel.FillPattern.vertical
-  - uid: excel.Excel.FillPattern.checker
+      - 'excel!Excel.FillPattern.checker:member'
+      - 'excel!Excel.FillPattern.crissCross:member'
+      - 'excel!Excel.FillPattern.down:member'
+      - 'excel!Excel.FillPattern.gray16:member'
+      - 'excel!Excel.FillPattern.gray25:member'
+      - 'excel!Excel.FillPattern.gray50:member'
+      - 'excel!Excel.FillPattern.gray75:member'
+      - 'excel!Excel.FillPattern.gray8:member'
+      - 'excel!Excel.FillPattern.grid:member'
+      - 'excel!Excel.FillPattern.horizontal:member'
+      - 'excel!Excel.FillPattern.lightDown:member'
+      - 'excel!Excel.FillPattern.lightHorizontal:member'
+      - 'excel!Excel.FillPattern.lightUp:member'
+      - 'excel!Excel.FillPattern.lightVertical:member'
+      - 'excel!Excel.FillPattern.linearGradient:member'
+      - 'excel!Excel.FillPattern.none:member'
+      - 'excel!Excel.FillPattern.rectangularGradient:member'
+      - 'excel!Excel.FillPattern.semiGray75:member'
+      - 'excel!Excel.FillPattern.solid:member'
+      - 'excel!Excel.FillPattern.up:member'
+      - 'excel!Excel.FillPattern.vertical:member'
+  - uid: 'excel!Excel.FillPattern.checker:member'
     name: checker
     fullName: checker
     langs:
       - typeScript
     type: field
     numericValue: '"Checker"'
-  - uid: excel.Excel.FillPattern.crissCross
+  - uid: 'excel!Excel.FillPattern.crissCross:member'
     name: crissCross
     fullName: crissCross
     langs:
       - typeScript
     type: field
     numericValue: '"CrissCross"'
-  - uid: excel.Excel.FillPattern.down
+  - uid: 'excel!Excel.FillPattern.down:member'
     name: down
     fullName: down
     langs:
       - typeScript
     type: field
     numericValue: '"Down"'
-  - uid: excel.Excel.FillPattern.gray16
+  - uid: 'excel!Excel.FillPattern.gray16:member'
     name: gray16
     fullName: gray16
     langs:
       - typeScript
     type: field
     numericValue: '"Gray16"'
-  - uid: excel.Excel.FillPattern.gray25
+  - uid: 'excel!Excel.FillPattern.gray25:member'
     name: gray25
     fullName: gray25
     langs:
       - typeScript
     type: field
     numericValue: '"Gray25"'
-  - uid: excel.Excel.FillPattern.gray50
+  - uid: 'excel!Excel.FillPattern.gray50:member'
     name: gray50
     fullName: gray50
     langs:
       - typeScript
     type: field
     numericValue: '"Gray50"'
-  - uid: excel.Excel.FillPattern.gray75
+  - uid: 'excel!Excel.FillPattern.gray75:member'
     name: gray75
     fullName: gray75
     langs:
       - typeScript
     type: field
     numericValue: '"Gray75"'
-  - uid: excel.Excel.FillPattern.gray8
+  - uid: 'excel!Excel.FillPattern.gray8:member'
     name: gray8
     fullName: gray8
     langs:
       - typeScript
     type: field
     numericValue: '"Gray8"'
-  - uid: excel.Excel.FillPattern.grid
+  - uid: 'excel!Excel.FillPattern.grid:member'
     name: grid
     fullName: grid
     langs:
       - typeScript
     type: field
     numericValue: '"Grid"'
-  - uid: excel.Excel.FillPattern.horizontal
+  - uid: 'excel!Excel.FillPattern.horizontal:member'
     name: horizontal
     fullName: horizontal
     langs:
       - typeScript
     type: field
     numericValue: '"Horizontal"'
-  - uid: excel.Excel.FillPattern.lightDown
+  - uid: 'excel!Excel.FillPattern.lightDown:member'
     name: lightDown
     fullName: lightDown
     langs:
       - typeScript
     type: field
     numericValue: '"LightDown"'
-  - uid: excel.Excel.FillPattern.lightHorizontal
+  - uid: 'excel!Excel.FillPattern.lightHorizontal:member'
     name: lightHorizontal
     fullName: lightHorizontal
     langs:
       - typeScript
     type: field
     numericValue: '"LightHorizontal"'
-  - uid: excel.Excel.FillPattern.lightUp
+  - uid: 'excel!Excel.FillPattern.lightUp:member'
     name: lightUp
     fullName: lightUp
     langs:
       - typeScript
     type: field
     numericValue: '"LightUp"'
-  - uid: excel.Excel.FillPattern.lightVertical
+  - uid: 'excel!Excel.FillPattern.lightVertical:member'
     name: lightVertical
     fullName: lightVertical
     langs:
       - typeScript
     type: field
     numericValue: '"LightVertical"'
-  - uid: excel.Excel.FillPattern.linearGradient
+  - uid: 'excel!Excel.FillPattern.linearGradient:member'
     name: linearGradient
     fullName: linearGradient
     langs:
       - typeScript
     type: field
     numericValue: '"LinearGradient"'
-  - uid: excel.Excel.FillPattern.none
+  - uid: 'excel!Excel.FillPattern.none:member'
     name: none
     fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.FillPattern.rectangularGradient
+  - uid: 'excel!Excel.FillPattern.rectangularGradient:member'
     name: rectangularGradient
     fullName: rectangularGradient
     langs:
       - typeScript
     type: field
     numericValue: '"RectangularGradient"'
-  - uid: excel.Excel.FillPattern.semiGray75
+  - uid: 'excel!Excel.FillPattern.semiGray75:member'
     name: semiGray75
     fullName: semiGray75
     langs:
       - typeScript
     type: field
     numericValue: '"SemiGray75"'
-  - uid: excel.Excel.FillPattern.solid
+  - uid: 'excel!Excel.FillPattern.solid:member'
     name: solid
     fullName: solid
     langs:
       - typeScript
     type: field
     numericValue: '"Solid"'
-  - uid: excel.Excel.FillPattern.up
+  - uid: 'excel!Excel.FillPattern.up:member'
     name: up
     fullName: up
     langs:
       - typeScript
     type: field
     numericValue: '"Up"'
-  - uid: excel.Excel.FillPattern.vertical
+  - uid: 'excel!Excel.FillPattern.vertical:member'
     name: vertical
     fullName: vertical
     langs:

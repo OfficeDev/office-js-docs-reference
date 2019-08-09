@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Workbook
+  - uid: 'excel!Excel.Workbook:class'
     summary: >-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
       To learn more about the workbook object model, read [Work with workbooks using the Excel JavaScript
@@ -15,58 +15,58 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Workbook.application
-      - excel.Excel.Workbook.autoSave
-      - excel.Excel.Workbook.bindings
-      - excel.Excel.Workbook.calculationEngineVersion
-      - excel.Excel.Workbook.chartDataPointTrack
-      - excel.Excel.Workbook.close
-      - excel.Excel.Workbook.close_1
-      - excel.Excel.Workbook.comments
-      - excel.Excel.Workbook.context
-      - excel.Excel.Workbook.customXmlParts
-      - excel.Excel.Workbook.dataConnections
-      - excel.Excel.Workbook.functions
-      - excel.Excel.Workbook.getActiveCell
-      - excel.Excel.Workbook.getActiveChart
-      - excel.Excel.Workbook.getActiveChartOrNullObject
-      - excel.Excel.Workbook.getActiveSlicer
-      - excel.Excel.Workbook.getActiveSlicerOrNullObject
-      - excel.Excel.Workbook.getIsActiveCollabSession
-      - excel.Excel.Workbook.getSelectedRange
-      - excel.Excel.Workbook.getSelectedRanges
-      - excel.Excel.Workbook.isDirty
-      - excel.Excel.Workbook.load
-      - excel.Excel.Workbook.load_1
-      - excel.Excel.Workbook.load_2
-      - excel.Excel.Workbook.name
-      - excel.Excel.Workbook.names
-      - excel.Excel.Workbook.onAutoSaveSettingChanged
-      - excel.Excel.Workbook.onSelectionChanged
-      - excel.Excel.Workbook.pivotTables
-      - excel.Excel.Workbook.pivotTableStyles
-      - excel.Excel.Workbook.previouslySaved
-      - excel.Excel.Workbook.properties
-      - excel.Excel.Workbook.protection
-      - excel.Excel.Workbook.readOnly
-      - excel.Excel.Workbook.save
-      - excel.Excel.Workbook.save_1
-      - excel.Excel.Workbook.set
-      - excel.Excel.Workbook.set_1
-      - excel.Excel.Workbook.settings
-      - excel.Excel.Workbook.slicers
-      - excel.Excel.Workbook.slicerStyles
-      - excel.Excel.Workbook.styles
-      - excel.Excel.Workbook.tables
-      - excel.Excel.Workbook.tableStyles
-      - excel.Excel.Workbook.timelineStyles
-      - excel.Excel.Workbook.toJSON
-      - excel.Excel.Workbook.use1904DateSystem
-      - excel.Excel.Workbook.usePrecisionAsDisplayed
-      - excel.Excel.Workbook.worksheets
-  - uid: excel.Excel.Workbook.application
+      - 'excel!Excel.Workbook#application:member'
+      - 'excel!Excel.Workbook#autoSave:member'
+      - 'excel!Excel.Workbook#bindings:member'
+      - 'excel!Excel.Workbook#calculationEngineVersion:member'
+      - 'excel!Excel.Workbook#chartDataPointTrack:member'
+      - 'excel!Excel.Workbook#close:member(1)'
+      - 'excel!Excel.Workbook#close:member(2)'
+      - 'excel!Excel.Workbook#comments:member'
+      - 'excel!Excel.Workbook#context:member'
+      - 'excel!Excel.Workbook#customXmlParts:member'
+      - 'excel!Excel.Workbook#dataConnections:member'
+      - 'excel!Excel.Workbook#functions:member'
+      - 'excel!Excel.Workbook#getActiveCell:member(1)'
+      - 'excel!Excel.Workbook#getActiveChart:member(1)'
+      - 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
+      - 'excel!Excel.Workbook#getActiveSlicer:member(1)'
+      - 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
+      - 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
+      - 'excel!Excel.Workbook#getSelectedRange:member(1)'
+      - 'excel!Excel.Workbook#getSelectedRanges:member(1)'
+      - 'excel!Excel.Workbook#isDirty:member'
+      - 'excel!Excel.Workbook#load:member(1)'
+      - 'excel!Excel.Workbook#load:member(2)'
+      - 'excel!Excel.Workbook#load:member(3)'
+      - 'excel!Excel.Workbook#name:member'
+      - 'excel!Excel.Workbook#names:member'
+      - 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
+      - 'excel!Excel.Workbook#onSelectionChanged:member'
+      - 'excel!Excel.Workbook#pivotTables:member'
+      - 'excel!Excel.Workbook#pivotTableStyles:member'
+      - 'excel!Excel.Workbook#previouslySaved:member'
+      - 'excel!Excel.Workbook#properties:member'
+      - 'excel!Excel.Workbook#protection:member'
+      - 'excel!Excel.Workbook#readOnly:member'
+      - 'excel!Excel.Workbook#save:member(1)'
+      - 'excel!Excel.Workbook#save:member(2)'
+      - 'excel!Excel.Workbook#set:member(1)'
+      - 'excel!Excel.Workbook#set:member(2)'
+      - 'excel!Excel.Workbook#settings:member'
+      - 'excel!Excel.Workbook#slicers:member'
+      - 'excel!Excel.Workbook#slicerStyles:member'
+      - 'excel!Excel.Workbook#styles:member'
+      - 'excel!Excel.Workbook#tables:member'
+      - 'excel!Excel.Workbook#tableStyles:member'
+      - 'excel!Excel.Workbook#timelineStyles:member'
+      - 'excel!Excel.Workbook#toJSON:member(1)'
+      - 'excel!Excel.Workbook#use1904DateSystem:member'
+      - 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
+      - 'excel!Excel.Workbook#worksheets:member'
+  - uid: 'excel!Excel.Workbook#application:member'
     summary: |-
       Represents the Excel application instance that contains this workbook. Read-only.
 
@@ -80,8 +80,8 @@ items:
       content: 'readonly application: Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
-  - uid: excel.Excel.Workbook.autoSave
+          - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.Workbook#autoSave:member'
     summary: |-
       Specifies whether or not the workbook is in autosave mode. Read-Only.
 
@@ -96,7 +96,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.bindings
+  - uid: 'excel!Excel.Workbook#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -110,8 +110,8 @@ items:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
-  - uid: excel.Excel.Workbook.calculationEngineVersion
+          - 'excel!Excel.BindingCollection:class'
+  - uid: 'excel!Excel.Workbook#calculationEngineVersion:member'
     summary: |-
       Returns a number about the version of Excel Calculation Engine. Read-Only.
 
@@ -126,7 +126,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Workbook.chartDataPointTrack
+  - uid: 'excel!Excel.Workbook#chartDataPointTrack:member'
     summary: >-
       True if all charts in the workbook are tracking the actual data points to which they are attached. False if the
       charts track the index of the data points.
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.close
+  - uid: 'excel!Excel.Workbook#close:member(1)'
     summary: >-
       Close current workbook.
 
@@ -161,22 +161,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              context.workbook.close(Excel.CloseBehavior.save);
-          });
-          ```
+        description: ''
       parameters:
         - id: closeBehavior
           description: workbook close behavior.
           type:
-            - excel.Excel.CloseBehavior
-  - uid: excel.Excel.Workbook.close_1
+            - 'excel!Excel.CloseBehavior:enum'
+  - uid: 'excel!Excel.Workbook#close:member(2)'
     summary: >-
       Close current workbook.
 
@@ -200,7 +191,7 @@ items:
           description: workbook close behavior.
           type:
             - '"Save" | "SkipSave"'
-  - uid: excel.Excel.Workbook.comments
+  - uid: 'excel!Excel.Workbook#comments:member'
     summary: >-
       Represents a collection of Comments associated with the workbook. Read-only.
 
@@ -217,8 +208,8 @@ items:
       content: 'readonly comments: Excel.CommentCollection;'
       return:
         type:
-          - excel.Excel.CommentCollection
-  - uid: excel.Excel.Workbook.context
+          - 'excel!Excel.CommentCollection:class'
+  - uid: 'excel!Excel.Workbook#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -231,8 +222,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Workbook.customXmlParts
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Workbook#customXmlParts:member'
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
 
@@ -246,8 +237,8 @@ items:
       content: 'readonly customXmlParts: Excel.CustomXmlPartCollection;'
       return:
         type:
-          - excel.Excel.CustomXmlPartCollection
-  - uid: excel.Excel.Workbook.dataConnections
+          - 'excel!Excel.CustomXmlPartCollection:class'
+  - uid: 'excel!Excel.Workbook#dataConnections:member'
     summary: |-
       Represents all data connections in the workbook. Read-only.
 
@@ -261,8 +252,8 @@ items:
       content: 'readonly dataConnections: Excel.DataConnectionCollection;'
       return:
         type:
-          - excel.Excel.DataConnectionCollection
-  - uid: excel.Excel.Workbook.functions
+          - 'excel!Excel.DataConnectionCollection:class'
+  - uid: 'excel!Excel.Workbook#functions:member'
     summary: |-
       Represents a collection of worksheet functions that can be used for computation. Read-only.
 
@@ -276,8 +267,8 @@ items:
       content: 'readonly functions: Excel.Functions;'
       return:
         type:
-          - excel.Excel.Functions
-  - uid: excel.Excel.Workbook.getActiveCell
+          - 'excel!Excel.Functions:class'
+  - uid: 'excel!Excel.Workbook#getActiveCell:member(1)'
     summary: |-
       Gets the currently active cell from the workbook.
 
@@ -291,25 +282,9 @@ items:
       content: 'getActiveCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-
-              let myWorkbook = context.workbook;
-              let activeCell = myWorkbook.getActiveCell();
-              activeCell.load("address");
-
-              await context.sync();
-              
-              console.log("The active cell is " + activeCell.address);
-          });
-          ```
-  - uid: excel.Excel.Workbook.getActiveChart
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getActiveChart:member(1)'
     summary: >-
       Gets the currently active chart in the workbook. If there is no active chart, an `ItemNotFound` exception is
       thrown.
@@ -325,9 +300,9 @@ items:
       content: 'getActiveChart(): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: ''
-  - uid: excel.Excel.Workbook.getActiveChartOrNullObject
+  - uid: 'excel!Excel.Workbook#getActiveChartOrNullObject:member(1)'
     summary: |-
       Gets the currently active chart in the workbook. If there is no active chart, a null object is returned.
 
@@ -341,9 +316,9 @@ items:
       content: 'getActiveChartOrNullObject(): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: ''
-  - uid: excel.Excel.Workbook.getActiveSlicer
+  - uid: 'excel!Excel.Workbook#getActiveSlicer:member(1)'
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active slicer, an `ItemNotFound` exception is
       thrown.
@@ -361,9 +336,9 @@ items:
       content: 'getActiveSlicer(): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
-  - uid: excel.Excel.Workbook.getActiveSlicerOrNullObject
+  - uid: 'excel!Excel.Workbook#getActiveSlicerOrNullObject:member(1)'
     summary: >-
       Gets the currently active slicer in the workbook. If there is no active slicer, a null object is returned.
 
@@ -380,9 +355,9 @@ items:
       content: 'getActiveSlicerOrNullObject(): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
-  - uid: excel.Excel.Workbook.getIsActiveCollabSession
+  - uid: 'excel!Excel.Workbook#getIsActiveCollabSession:member(1)'
     summary: >-
       True if the workbook is being edited by multiple users (co-authoring). Please be aware there might be some delay
       between when the workbook status changes and when the changes are reflected on the result of the method.
@@ -400,7 +375,7 @@ items:
         type:
           - OfficeExtension.ClientResult<boolean>
         description: ''
-  - uid: excel.Excel.Workbook.getSelectedRange
+  - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
       will throw an error.
@@ -416,27 +391,9 @@ items:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var selectedRange = ctx.workbook.getSelectedRange();
-              selectedRange.load('address');
-              return ctx.sync().then(function() {
-                      console.log(selectedRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Workbook.getSelectedRanges
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#getSelectedRanges:member(1)'
     summary: >-
       Gets the currently selected one or more ranges from the workbook. Unlike getSelectedRange(), this method returns a
       RangeAreas object that represents all the selected ranges.
@@ -452,22 +409,9 @@ items:
       content: 'getSelectedRanges(): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-
-              const selectedRanges = context.workbook.getSelectedRanges();
-              selectedRanges.format.fill.color = "lightblue";
-
-              await context.sync();
-          })
-          ```
-  - uid: excel.Excel.Workbook.isDirty
+          - 'excel!Excel.RangeAreas:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#isDirty:member'
     summary: >-
       Specifies whether or not changes have been made since the workbook was last saved. You can set this property to
       true if you want to close a modified workbook without either saving it or being prompted to save it.
@@ -484,7 +428,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.load
+  - uid: 'excel!Excel.Workbook#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -515,14 +459,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorkbookLoadOptions
-  - uid: excel.Excel.Workbook.load_1
+            - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
+  - uid: 'excel!Excel.Workbook#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -535,14 +479,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Workbook.load_2
+  - uid: 'excel!Excel.Workbook#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -555,7 +499,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -564,7 +508,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Workbook.name
+  - uid: 'excel!Excel.Workbook#name:member'
     summary: |-
       Gets the workbook name. Read-only.
 
@@ -579,7 +523,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Workbook.names
+  - uid: 'excel!Excel.Workbook#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -593,8 +537,8 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
-  - uid: excel.Excel.Workbook.onAutoSaveSettingChanged
+          - 'excel!Excel.NamedItemCollection:class'
+  - uid: 'excel!Excel.Workbook#onAutoSaveSettingChanged:member'
     summary: |-
       Occurs when the autoSave setting is changed on the workbook.
 
@@ -609,7 +553,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorkbookAutoSaveSettingChangedEventArgs>
-  - uid: excel.Excel.Workbook.onSelectionChanged
+  - uid: 'excel!Excel.Workbook#onSelectionChanged:member'
     summary: |-
       Occurs when the selection in the document is changed.
 
@@ -624,7 +568,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
-  - uid: excel.Excel.Workbook.pivotTables
+  - uid: 'excel!Excel.Workbook#pivotTables:member'
     summary: |-
       Represents a collection of PivotTables associated with the workbook. Read-only.
 
@@ -638,8 +582,8 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
-  - uid: excel.Excel.Workbook.pivotTableStyles
+          - 'excel!Excel.PivotTableCollection:class'
+  - uid: 'excel!Excel.Workbook#pivotTableStyles:member'
     summary: >-
       Represents a collection of PivotTableStyles associated with the workbook. Read-only.
 
@@ -656,8 +600,8 @@ items:
       content: 'readonly pivotTableStyles: Excel.PivotTableStyleCollection;'
       return:
         type:
-          - excel.Excel.PivotTableStyleCollection
-  - uid: excel.Excel.Workbook.previouslySaved
+          - 'excel!Excel.PivotTableStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#previouslySaved:member'
     summary: |-
       Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
 
@@ -672,7 +616,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.properties
+  - uid: 'excel!Excel.Workbook#properties:member'
     summary: |-
       Gets the workbook properties. Read-only.
 
@@ -686,39 +630,8 @@ items:
       content: 'readonly properties: Excel.DocumentProperties;'
       return:
         type:
-          - excel.Excel.DocumentProperties
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let titleValue = "Excel document properties API";
-              let subjectValue = "Set and get document properties";
-              let keywordsValue = "Set and get operations";
-              let commentsValue = "This is an Excel document properties API code sample";
-              let categoryValue = "Office Add-ins";
-              let managerValue = "John";
-              let companyValue = "Microsoft";
-
-              let docProperties = context.workbook.properties;
-
-              // Set the writeable document properties.
-              docProperties.title = titleValue;
-              docProperties.subject = subjectValue;
-              docProperties.keywords = keywordsValue;
-              docProperties.comments = commentsValue;
-              docProperties.category = categoryValue;
-              docProperties.manager = managerValue;
-              docProperties.company = companyValue;
-
-              await context.sync();
-
-              console.log("Set the following document properties: title, subject, keywords, comments, category, manager, company.");
-          });
-          ```
-  - uid: excel.Excel.Workbook.protection
+          - 'excel!Excel.DocumentProperties:class'
+  - uid: 'excel!Excel.Workbook#protection:member'
     summary: |-
       Returns workbook protection object for a workbook. Read-only.
 
@@ -732,8 +645,8 @@ items:
       content: 'readonly protection: Excel.WorkbookProtection;'
       return:
         type:
-          - excel.Excel.WorkbookProtection
-  - uid: excel.Excel.Workbook.readOnly
+          - 'excel!Excel.WorkbookProtection:class'
+  - uid: 'excel!Excel.Workbook#readOnly:member'
     summary: |-
       True if the workbook is open in Read-only mode. Read-only.
 
@@ -748,7 +661,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.save
+  - uid: 'excel!Excel.Workbook#save:member(1)'
     summary: >-
       Save current workbook.
 
@@ -766,22 +679,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              context.workbook.save(Excel.SaveBehavior.save);
-          });
-          ```
+        description: ''
       parameters:
         - id: saveBehavior
           description: workbook save behavior.
           type:
-            - excel.Excel.SaveBehavior
-  - uid: excel.Excel.Workbook.save_1
+            - 'excel!Excel.SaveBehavior:enum'
+  - uid: 'excel!Excel.Workbook#save:member(2)'
     summary: >-
       Save current workbook.
 
@@ -805,7 +709,7 @@ items:
           description: workbook save behavior.
           type:
             - '"Save" | "Prompt"'
-  - uid: excel.Excel.Workbook.set
+  - uid: 'excel!Excel.Workbook#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -835,7 +739,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Workbook.set_1
+  - uid: 'excel!Excel.Workbook#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -852,8 +756,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Workbook
-  - uid: excel.Excel.Workbook.settings
+            - 'excel!Excel.Workbook:class'
+  - uid: 'excel!Excel.Workbook#settings:member'
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
 
@@ -867,8 +771,8 @@ items:
       content: 'readonly settings: Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
-  - uid: excel.Excel.Workbook.slicers
+          - 'excel!Excel.SettingCollection:class'
+  - uid: 'excel!Excel.Workbook#slicers:member'
     summary: >-
       Represents a collection of Slicers associated with the workbook. Read-only.
 
@@ -885,8 +789,8 @@ items:
       content: 'readonly slicers: Excel.SlicerCollection;'
       return:
         type:
-          - excel.Excel.SlicerCollection
-  - uid: excel.Excel.Workbook.slicerStyles
+          - 'excel!Excel.SlicerCollection:class'
+  - uid: 'excel!Excel.Workbook#slicerStyles:member'
     summary: >-
       Represents a collection of SlicerStyles associated with the workbook. Read-only.
 
@@ -903,8 +807,8 @@ items:
       content: 'readonly slicerStyles: Excel.SlicerStyleCollection;'
       return:
         type:
-          - excel.Excel.SlicerStyleCollection
-  - uid: excel.Excel.Workbook.styles
+          - 'excel!Excel.SlicerStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#styles:member'
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
 
@@ -918,8 +822,8 @@ items:
       content: 'readonly styles: Excel.StyleCollection;'
       return:
         type:
-          - excel.Excel.StyleCollection
-  - uid: excel.Excel.Workbook.tables
+          - 'excel!Excel.StyleCollection:class'
+  - uid: 'excel!Excel.Workbook#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -933,8 +837,8 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-  - uid: excel.Excel.Workbook.tableStyles
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Workbook#tableStyles:member'
     summary: >-
       Represents a collection of TableStyles associated with the workbook. Read-only.
 
@@ -951,8 +855,8 @@ items:
       content: 'readonly tableStyles: Excel.TableStyleCollection;'
       return:
         type:
-          - excel.Excel.TableStyleCollection
-  - uid: excel.Excel.Workbook.timelineStyles
+          - 'excel!Excel.TableStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#timelineStyles:member'
     summary: >-
       Represents a collection of TimelineStyles associated with the workbook. Read-only.
 
@@ -969,8 +873,8 @@ items:
       content: 'readonly timelineStyles: Excel.TimelineStyleCollection;'
       return:
         type:
-          - excel.Excel.TimelineStyleCollection
-  - uid: excel.Excel.Workbook.toJSON
+          - 'excel!Excel.TimelineStyleCollection:class'
+  - uid: 'excel!Excel.Workbook#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -986,9 +890,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookData
+          - 'excel!Excel.Interfaces.WorkbookData:interface'
         description: ''
-  - uid: excel.Excel.Workbook.use1904DateSystem
+  - uid: 'excel!Excel.Workbook#use1904DateSystem:member'
     summary: >-
       True if the workbook uses the 1904 date system.
 
@@ -1006,7 +910,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.usePrecisionAsDisplayed
+  - uid: 'excel!Excel.Workbook#usePrecisionAsDisplayed:member'
     summary: >-
       True if calculations in this workbook will be done using only the precision of the numbers as they're displayed.
       Data will permanently lose accuracy when switching this property from false to true.
@@ -1023,7 +927,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Workbook.worksheets
+  - uid: 'excel!Excel.Workbook#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 
@@ -1037,4 +941,4 @@ items:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - 'excel!Excel.WorksheetCollection:class'

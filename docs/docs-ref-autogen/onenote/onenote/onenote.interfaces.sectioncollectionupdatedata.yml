@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.SectionCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the SectionCollection object, for use in "sectionCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.SectionCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.SectionCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotFieldUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData:interface'
     summary: 'An interface for updating data on the PivotField object, for use in "pivotField.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.PivotFieldUpdateData
     fullName: Excel.Interfaces.PivotFieldUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotFieldUpdateData.name
-      - excel.Excel.Interfaces.PivotFieldUpdateData.showAllItems
-      - excel.Excel.Interfaces.PivotFieldUpdateData.subtotals
-  - uid: excel.Excel.Interfaces.PivotFieldUpdateData.name
+      - 'excel!Excel.Interfaces.PivotFieldUpdateData#name:member'
+      - 'excel!Excel.Interfaces.PivotFieldUpdateData#showAllItems:member'
+      - 'excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member'
+  - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData#name:member'
     summary: |-
       Name of the PivotField.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotFieldUpdateData.showAllItems
+  - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData#showAllItems:member'
     summary: |-
       Determines whether to show all items of the PivotField.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotFieldUpdateData.subtotals
+  - uid: 'excel!Excel.Interfaces.PivotFieldUpdateData#subtotals:member'
     summary: |-
       Subtotals of the PivotField.
 
@@ -56,4 +56,4 @@ items:
       content: 'subtotals?: Excel.Subtotals;'
       return:
         type:
-          - excel.Excel.Subtotals
+          - 'excel!Excel.Subtotals:interface'

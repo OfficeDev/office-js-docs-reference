@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeViewData
+  - uid: 'excel!Excel.Interfaces.RangeViewData:interface'
     summary: An interface describing the data returned by calling "rangeView.toJSON()".
     name: Excel.Interfaces.RangeViewData
     fullName: Excel.Interfaces.RangeViewData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeViewData.cellAddresses
-      - excel.Excel.Interfaces.RangeViewData.columnCount
-      - excel.Excel.Interfaces.RangeViewData.formulas
-      - excel.Excel.Interfaces.RangeViewData.formulasLocal
-      - excel.Excel.Interfaces.RangeViewData.formulasR1C1
-      - excel.Excel.Interfaces.RangeViewData.index
-      - excel.Excel.Interfaces.RangeViewData.numberFormat
-      - excel.Excel.Interfaces.RangeViewData.rowCount
-      - excel.Excel.Interfaces.RangeViewData.rows
-      - excel.Excel.Interfaces.RangeViewData.text
-      - excel.Excel.Interfaces.RangeViewData.values
-      - excel.Excel.Interfaces.RangeViewData.valueTypes
-  - uid: excel.Excel.Interfaces.RangeViewData.cellAddresses
+      - 'excel!Excel.Interfaces.RangeViewData#cellAddresses:member'
+      - 'excel!Excel.Interfaces.RangeViewData#columnCount:member'
+      - 'excel!Excel.Interfaces.RangeViewData#formulas:member'
+      - 'excel!Excel.Interfaces.RangeViewData#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeViewData#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeViewData#index:member'
+      - 'excel!Excel.Interfaces.RangeViewData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeViewData#rowCount:member'
+      - 'excel!Excel.Interfaces.RangeViewData#rows:member'
+      - 'excel!Excel.Interfaces.RangeViewData#text:member'
+      - 'excel!Excel.Interfaces.RangeViewData#values:member'
+      - 'excel!Excel.Interfaces.RangeViewData#valueTypes:member'
+  - uid: 'excel!Excel.Interfaces.RangeViewData#cellAddresses:member'
     summary: |-
       Represents the cell addresses of the RangeView. Read-only.
 
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.columnCount
+  - uid: 'excel!Excel.Interfaces.RangeViewData#columnCount:member'
     summary: |-
       Returns the number of visible columns. Read-only.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeViewData.formulas
+  - uid: 'excel!Excel.Interfaces.RangeViewData#formulas:member'
     summary: |-
       Represents the formula in A1-style notation.
 
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.formulasLocal
+  - uid: 'excel!Excel.Interfaces.RangeViewData#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.formulasR1C1
+  - uid: 'excel!Excel.Interfaces.RangeViewData#formulasR1C1:member'
     summary: |-
       Represents the formula in R1C1-style notation.
 
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.index
+  - uid: 'excel!Excel.Interfaces.RangeViewData#index:member'
     summary: |-
       Returns a value that represents the index of the RangeView. Read-only.
 
@@ -113,7 +113,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeViewData.numberFormat
+  - uid: 'excel!Excel.Interfaces.RangeViewData#numberFormat:member'
     summary: |-
       Represents Excel's number format code for the given cell.
 
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.rowCount
+  - uid: 'excel!Excel.Interfaces.RangeViewData#rowCount:member'
     summary: |-
       Returns the number of visible rows. Read-only.
 
@@ -143,7 +143,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeViewData.rows
+  - uid: 'excel!Excel.Interfaces.RangeViewData#rows:member'
     summary: |-
       Represents a collection of range views associated with the range. Read-only.
 
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RangeViewData[]'
-  - uid: excel.Excel.Interfaces.RangeViewData.text
+  - uid: 'excel!Excel.Interfaces.RangeViewData#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -175,7 +175,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.values
+  - uid: 'excel!Excel.Interfaces.RangeViewData#values:member'
     summary: >-
       Represents the raw values of the specified range view. The data returned could be of type string, number, or a
       boolean. Cells that contain an error will return the error string.
@@ -192,7 +192,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeViewData.valueTypes
+  - uid: 'excel!Excel.Interfaces.RangeViewData#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 

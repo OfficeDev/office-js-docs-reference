@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
     summary: |-
       Encapsulates the formatting options for line elements.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLineFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartLineFormatLoadOptions.color
-  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#color:member'
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLineFormatLoadOptions.color
+  - uid: 'excel!Excel.Interfaces.ChartLineFormatLoadOptions#color:member'
     summary: |-
       HTML color code representing the color of lines in the chart.
 

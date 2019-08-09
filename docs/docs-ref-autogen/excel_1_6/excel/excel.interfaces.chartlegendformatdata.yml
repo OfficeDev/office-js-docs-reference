@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendFormatData
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
     summary: An interface describing the data returned by calling "chartLegendFormat.toJSON()".
     name: Excel.Interfaces.ChartLegendFormatData
     fullName: Excel.Interfaces.ChartLegendFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendFormatData.font
-  - uid: excel.Excel.Interfaces.ChartLegendFormatData.font
+      - 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
 
@@ -24,4 +24,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
+          - 'excel!Excel.Interfaces.ChartFontData:interface'

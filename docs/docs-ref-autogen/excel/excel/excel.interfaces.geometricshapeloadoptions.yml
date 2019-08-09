@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
     summary: >-
       Represents a geometric shape inside a worksheet. A geometric shape can be a rectangle, block arrow, equation
       symbol, flowchart item, star, banner, callout, or any other basic shape in Excel.
@@ -12,12 +12,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.GeometricShapeLoadOptions.$all
-      - excel.Excel.Interfaces.GeometricShapeLoadOptions.id
-      - excel.Excel.Interfaces.GeometricShapeLoadOptions.shape
-  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.$all
+      - 'excel!Excel.Interfaces.GeometricShapeLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.GeometricShapeLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member'
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#id:member'
     summary: |-
       Returns the shape identifier. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GeometricShapeLoadOptions.shape
+  - uid: 'excel!Excel.Interfaces.GeometricShapeLoadOptions#shape:member'
     summary: |-
       Returns the Shape object for the geometric shape.
 
@@ -57,4 +57,4 @@ items:
       content: 'shape?: Excel.Interfaces.ShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLoadOptions
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'

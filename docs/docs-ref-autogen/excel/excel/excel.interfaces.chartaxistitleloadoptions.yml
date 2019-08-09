@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
     summary: |-
       Represents the title of a chart axis.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisTitleLoadOptions.$all
-      - excel.Excel.Interfaces.ChartAxisTitleLoadOptions.format
-      - excel.Excel.Interfaces.ChartAxisTitleLoadOptions.text
-      - excel.Excel.Interfaces.ChartAxisTitleLoadOptions.visible
-  - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#format:member'
     summary: |-
       Represents the formatting of chart axis title.
 
@@ -41,8 +41,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions.text
+          - 'excel!Excel.Interfaces.ChartAxisTitleFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#text:member'
     summary: |-
       Represents the axis title.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisTitleLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions#visible:member'
     summary: |-
       A boolean that specifies the visibility of an axis title.
 

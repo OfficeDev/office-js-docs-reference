@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions:interface'
     summary: |-
       Encapsulates the options for the pivot chart.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.$all
-      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showAxisFieldButtons
-      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showLegendFieldButtons
-      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showReportFilterFieldButtons
-      - excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showValueFieldButtons
-  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showAxisFieldButtons:member'
+      - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showLegendFieldButtons:member'
+      - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showReportFilterFieldButtons:member'
+      - 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showValueFieldButtons:member'
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showAxisFieldButtons
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showAxisFieldButtons:member'
     summary: >-
       Specifies whether or not to display the axis field buttons on a PivotChart. The ShowAxisFieldButtons property
       corresponds to the "Show Axis Field Buttons" command on the "Field Buttons" drop-down list of the "Analyze" tab,
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showLegendFieldButtons
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showLegendFieldButtons:member'
     summary: |-
       Specifies whether or not to display the legend field buttons on a PivotChart
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showReportFilterFieldButtons
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showReportFilterFieldButtons:member'
     summary: |-
       Specifies whether or not to display the report filter field buttons on a PivotChart.
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPivotOptionsLoadOptions.showValueFieldButtons
+  - uid: 'excel!Excel.Interfaces.ChartPivotOptionsLoadOptions#showValueFieldButtons:member'
     summary: |-
       Specifies whether or not to display the show value field buttons on a PivotChart
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableCollection
+  - uid: 'excel!Excel.TableCollection:class'
     summary: >-
       Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
       reached.
@@ -14,24 +14,24 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableCollection.add
-      - excel.Excel.TableCollection.context
-      - excel.Excel.TableCollection.count
-      - excel.Excel.TableCollection.getCount
-      - excel.Excel.TableCollection.getItem
-      - excel.Excel.TableCollection.getItemAt
-      - excel.Excel.TableCollection.getItemOrNullObject
-      - excel.Excel.TableCollection.items
-      - excel.Excel.TableCollection.load
-      - excel.Excel.TableCollection.load_1
-      - excel.Excel.TableCollection.load_2
-      - excel.Excel.TableCollection.onAdded
-      - excel.Excel.TableCollection.onChanged
-      - excel.Excel.TableCollection.onDeleted
-      - excel.Excel.TableCollection.toJSON
-  - uid: excel.Excel.TableCollection.add
+      - 'excel!Excel.TableCollection#add:member(1)'
+      - 'excel!Excel.TableCollection#context:member'
+      - 'excel!Excel.TableCollection#count:member'
+      - 'excel!Excel.TableCollection#getCount:member(1)'
+      - 'excel!Excel.TableCollection#getItem:member(1)'
+      - 'excel!Excel.TableCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableCollection#items:member'
+      - 'excel!Excel.TableCollection#load:member(1)'
+      - 'excel!Excel.TableCollection#load:member(2)'
+      - 'excel!Excel.TableCollection#load:member(3)'
+      - 'excel!Excel.TableCollection#onAdded:member'
+      - 'excel!Excel.TableCollection#onChanged:member'
+      - 'excel!Excel.TableCollection#onDeleted:member'
+      - 'excel!Excel.TableCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableCollection#add:member(1)'
     summary: >-
       Create a new table. The range object or source address determines the worksheet under which the table will be
       added. If the table cannot be added (e.g., because the address is invalid, or the table would overlap with another
@@ -48,26 +48,8 @@ items:
       content: 'add(address: Range | string, hasHeaders: boolean): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var table = ctx.workbook.tables.add('Sheet1!A1:E7', true);
-              table.load('name');
-              return ctx.sync().then(function() {
-                  console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Table:class'
+        description: ''
       parameters:
         - id: address
           description: >-
@@ -84,7 +66,7 @@ items:
             the data down by one row.
           type:
             - boolean
-  - uid: excel.Excel.TableCollection.context
+  - uid: 'excel!Excel.TableCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -97,8 +79,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableCollection#count:member'
     summary: |-
       Returns the number of tables in the workbook. Read-only.
 
@@ -113,7 +95,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TableCollection.getCount
+  - uid: 'excel!Excel.TableCollection#getCount:member(1)'
     summary: |-
       Gets the number of tables in the collection.
 
@@ -129,7 +111,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.TableCollection.getItem
+  - uid: 'excel!Excel.TableCollection#getItem:member(1)'
     summary: |-
       Gets a table by Name or ID.
 
@@ -143,33 +125,14 @@ items:
       content: 'getItem(key: string): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var table = ctx.workbook.tables.getItem(tableName);
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Table:class'
+        description: ''
       parameters:
         - id: key
           description: Name or ID of the table to be retrieved.
           type:
             - string
-  - uid: excel.Excel.TableCollection.getItemAt
+  - uid: 'excel!Excel.TableCollection#getItemAt:member(1)'
     summary: |-
       Gets a table based on its position in the collection.
 
@@ -183,32 +146,14 @@ items:
       content: 'getItemAt(index: number): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var table = ctx.workbook.tables.getItemAt(0);
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Table:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.TableCollection.getItemOrNullObject
+  - uid: 'excel!Excel.TableCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a table by Name or ID. If the table does not exist, will return a null object.
 
@@ -222,14 +167,14 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - 'excel!Excel.Table:class'
         description: ''
       parameters:
         - id: key
           description: Name or ID of the table to be retrieved.
           type:
             - string
-  - uid: excel.Excel.TableCollection.items
+  - uid: 'excel!Excel.TableCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -241,7 +186,7 @@ items:
       return:
         type:
           - 'Excel.Table[]'
-  - uid: excel.Excel.TableCollection.load
+  - uid: 'excel!Excel.TableCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -274,14 +219,14 @@ items:
         Excel.TableCollection;
       return:
         type:
-          - excel.Excel.TableCollection
+          - 'excel!Excel.TableCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.TableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.TableCollection.load_1
+  - uid: 'excel!Excel.TableCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -294,51 +239,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tables = ctx.workbook.tables;
-              tables.load();
-              return ctx.sync().then(function() {
-                  console.log("tables Count: " + tables.count);
-                  for (var i = 0; i < tables.items.length; i++)
-                  {
-                      console.log(tables.items[i].name);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Get the number of tables
-          Excel.run(function (ctx) { 
-              var tables = ctx.workbook.tables;
-              tables.load('count');
-              return ctx.sync().then(function() {
-                  console.log(tables.count);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableCollection.load_2
+  - uid: 'excel!Excel.TableCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -348,14 +256,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
+          - 'excel!Excel.TableCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.TableCollection.onAdded
+  - uid: 'excel!Excel.TableCollection#onAdded:member'
     summary: |-
       Occurs when new table is added in a workbook.
 
@@ -370,7 +278,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableAddedEventArgs>
-  - uid: excel.Excel.TableCollection.onChanged
+  - uid: 'excel!Excel.TableCollection#onChanged:member'
     summary: |-
       Occurs when data changes on any table in a workbook, or a worksheet.
 
@@ -385,21 +293,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableChangedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let tables = context.workbook.tables;
-              tables.onChanged.add(onChange);
-
-              await context.sync();
-              console.log("A handler has been registered for the table collection onChanged event");
-          });
-          ```
-  - uid: excel.Excel.TableCollection.onDeleted
+  - uid: 'excel!Excel.TableCollection#onDeleted:member'
     summary: |-
       Occurs when the specified table is deleted in a workbook.
 
@@ -414,7 +308,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.TableDeletedEventArgs>
-  - uid: excel.Excel.TableCollection.toJSON
+  - uid: 'excel!Excel.TableCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -430,5 +324,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionData
+          - 'excel!Excel.Interfaces.TableCollectionData:interface'
         description: ''

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData:interface'
     summary: An interface describing the data returned by calling "tableStyleCollection.toJSON()".
     name: Excel.Interfaces.TableStyleCollectionData
     fullName: Excel.Interfaces.TableStyleCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableStyleCollectionData.items
-  - uid: excel.Excel.Interfaces.TableStyleCollectionData.items
+      - 'excel!Excel.Interfaces.TableStyleCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionData#items:member'
     name: items
     fullName: items
     langs:

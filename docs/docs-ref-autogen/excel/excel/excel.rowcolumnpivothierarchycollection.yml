@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection:class'
     summary: |-
       Represents a collection of RowColumnPivotHierarchy items associated with the PivotTable.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RowColumnPivotHierarchyCollection.add
-      - excel.Excel.RowColumnPivotHierarchyCollection.context
-      - excel.Excel.RowColumnPivotHierarchyCollection.getCount
-      - excel.Excel.RowColumnPivotHierarchyCollection.getItem
-      - excel.Excel.RowColumnPivotHierarchyCollection.getItemOrNullObject
-      - excel.Excel.RowColumnPivotHierarchyCollection.items
-      - excel.Excel.RowColumnPivotHierarchyCollection.load
-      - excel.Excel.RowColumnPivotHierarchyCollection.load_1
-      - excel.Excel.RowColumnPivotHierarchyCollection.load_2
-      - excel.Excel.RowColumnPivotHierarchyCollection.remove
-      - excel.Excel.RowColumnPivotHierarchyCollection.toJSON
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.add
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#context:member'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getItem:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#items:member'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(2)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(3)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchyCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#add:member(1)'
     summary: >-
       Adds the PivotHierarchy to the current axis. If the hierarchy is present elsewhere on the row, column, or filter
       axis, it will be removed from that location.
@@ -41,14 +41,14 @@ items:
       content: 'add(pivotHierarchy: Excel.PivotHierarchy): Excel.RowColumnPivotHierarchy;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchy
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
         description: ''
       parameters:
         - id: pivotHierarchy
           description: ''
           type:
-            - excel.Excel.PivotHierarchy
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.context
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -61,8 +61,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getCount:member(1)'
     summary: |-
       Gets the number of pivot hierarchies in the collection.
 
@@ -78,7 +78,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.getItem
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItem:member(1)'
     summary: |-
       Gets a RowColumnPivotHierarchy by its name or id.
 
@@ -92,14 +92,14 @@ items:
       content: 'getItem(name: string): Excel.RowColumnPivotHierarchy;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchy
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
         description: ''
       parameters:
         - id: name
           description: Name of the RowColumnPivotHierarchy to be retrieved.
           type:
             - string
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.getItemOrNullObject
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a RowColumnPivotHierarchy by name. If the RowColumnPivotHierarchy does not exist, will return a null object.
 
@@ -113,14 +113,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.RowColumnPivotHierarchy;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchy
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
         description: ''
       parameters:
         - id: name
           description: Name of the RowColumnPivotHierarchy to be retrieved.
           type:
             - string
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.items
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - 'Excel.RowColumnPivotHierarchy[]'
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.load
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -165,14 +165,14 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.RowColumnPivotHierarchyCollection;
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchyCollection
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.RowColumnPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.load_1
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -185,14 +185,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchyCollection
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.load_2
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -202,14 +202,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.RowColumnPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchyCollection
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.remove
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#remove:member(1)'
     summary: |-
       Removes the PivotHierarchy from the current axis.
 
@@ -229,8 +229,8 @@ items:
         - id: rowColumnPivotHierarchy
           description: ''
           type:
-            - excel.Excel.RowColumnPivotHierarchy
-  - uid: excel.Excel.RowColumnPivotHierarchyCollection.toJSON
+            - 'excel!Excel.RowColumnPivotHierarchy:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchyCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -247,5 +247,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RowColumnPivotHierarchyCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.RowColumnPivotHierarchyCollectionData
+          - 'excel!Excel.Interfaces.RowColumnPivotHierarchyCollectionData:interface'
         description: ''

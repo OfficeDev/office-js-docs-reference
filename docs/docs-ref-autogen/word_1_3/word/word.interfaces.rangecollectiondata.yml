@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeCollectionData
+  - uid: 'word!Word.Interfaces.RangeCollectionData:interface'
     summary: An interface describing the data returned by calling "rangeCollection.toJSON()".
     name: Word.Interfaces.RangeCollectionData
     fullName: Word.Interfaces.RangeCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeCollectionData.items
-  - uid: word.Word.Interfaces.RangeCollectionData.items
+      - 'word!Word.Interfaces.RangeCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.RangeCollectionData#items:member'
     name: items
     fullName: items
     langs:

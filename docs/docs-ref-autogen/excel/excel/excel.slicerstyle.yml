@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SlicerStyle
+  - uid: 'excel!Excel.SlicerStyle:class'
     summary: >-
       Represents a Slicer Style, which defines style elements by region of the slicer.
 
@@ -15,20 +15,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SlicerStyle.context
-      - excel.Excel.SlicerStyle.delete
-      - excel.Excel.SlicerStyle.duplicate
-      - excel.Excel.SlicerStyle.load
-      - excel.Excel.SlicerStyle.load_1
-      - excel.Excel.SlicerStyle.load_2
-      - excel.Excel.SlicerStyle.name
-      - excel.Excel.SlicerStyle.readOnly
-      - excel.Excel.SlicerStyle.set
-      - excel.Excel.SlicerStyle.set_1
-      - excel.Excel.SlicerStyle.toJSON
-  - uid: excel.Excel.SlicerStyle.context
+      - 'excel!Excel.SlicerStyle#context:member'
+      - 'excel!Excel.SlicerStyle#delete:member(1)'
+      - 'excel!Excel.SlicerStyle#duplicate:member(1)'
+      - 'excel!Excel.SlicerStyle#load:member(1)'
+      - 'excel!Excel.SlicerStyle#load:member(2)'
+      - 'excel!Excel.SlicerStyle#load:member(3)'
+      - 'excel!Excel.SlicerStyle#name:member'
+      - 'excel!Excel.SlicerStyle#readOnly:member'
+      - 'excel!Excel.SlicerStyle#set:member(1)'
+      - 'excel!Excel.SlicerStyle#set:member(2)'
+      - 'excel!Excel.SlicerStyle#toJSON:member(1)'
+  - uid: 'excel!Excel.SlicerStyle#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -42,8 +42,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.SlicerStyle.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerStyle#delete:member(1)'
     summary: >-
       Deletes the SlicerStyle.
 
@@ -62,7 +62,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.SlicerStyle.duplicate
+  - uid: 'excel!Excel.SlicerStyle#duplicate:member(1)'
     summary: >-
       Creates a duplicate of this SlicerStyle with copies of all the style elements.
 
@@ -79,9 +79,9 @@ items:
       content: 'duplicate(): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: The new SlicerStyle object that has been duplicated from this SlicerStyle.
-  - uid: excel.Excel.SlicerStyle.load
+  - uid: 'excel!Excel.SlicerStyle#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -113,14 +113,14 @@ items:
       content: 'load(option?: Excel.Interfaces.SlicerStyleLoadOptions): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.SlicerStyleLoadOptions
-  - uid: excel.Excel.SlicerStyle.load_1
+            - 'excel!Excel.Interfaces.SlicerStyleLoadOptions:interface'
+  - uid: 'excel!Excel.SlicerStyle#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -134,14 +134,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.SlicerStyle.load_2
+  - uid: 'excel!Excel.SlicerStyle#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -155,7 +155,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -164,7 +164,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.SlicerStyle.name
+  - uid: 'excel!Excel.SlicerStyle#name:member'
     summary: >-
       Gets the name of the SlicerStyle.
 
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.SlicerStyle.readOnly
+  - uid: 'excel!Excel.SlicerStyle#readOnly:member'
     summary: >-
       Specifies whether this SlicerStyle object is read-only. Read-only.
 
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.SlicerStyle.set
+  - uid: 'excel!Excel.SlicerStyle#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -231,7 +231,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.SlicerStyle.set_1
+  - uid: 'excel!Excel.SlicerStyle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -249,8 +249,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.SlicerStyle
-  - uid: excel.Excel.SlicerStyle.toJSON
+            - 'excel!Excel.SlicerStyle:class'
+  - uid: 'excel!Excel.SlicerStyle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -267,5 +267,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SlicerStyleData;'
       return:
         type:
-          - excel.Excel.Interfaces.SlicerStyleData
+          - 'excel!Excel.Interfaces.SlicerStyleData:interface'
         description: ''

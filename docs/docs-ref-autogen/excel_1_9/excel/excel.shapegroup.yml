@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeGroup
+  - uid: 'excel!Excel.ShapeGroup:class'
     summary: >-
       Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`<!--
       -->.
@@ -14,18 +14,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeGroup.context
-      - excel.Excel.ShapeGroup.id
-      - excel.Excel.ShapeGroup.load
-      - excel.Excel.ShapeGroup.load_1
-      - excel.Excel.ShapeGroup.load_2
-      - excel.Excel.ShapeGroup.shape
-      - excel.Excel.ShapeGroup.shapes
-      - excel.Excel.ShapeGroup.toJSON
-      - excel.Excel.ShapeGroup.ungroup
-  - uid: excel.Excel.ShapeGroup.context
+      - 'excel!Excel.ShapeGroup#context:member'
+      - 'excel!Excel.ShapeGroup#id:member'
+      - 'excel!Excel.ShapeGroup#load:member(1)'
+      - 'excel!Excel.ShapeGroup#load:member(2)'
+      - 'excel!Excel.ShapeGroup#load:member(3)'
+      - 'excel!Excel.ShapeGroup#shape:member'
+      - 'excel!Excel.ShapeGroup#shapes:member'
+      - 'excel!Excel.ShapeGroup#toJSON:member(1)'
+      - 'excel!Excel.ShapeGroup#ungroup:member(1)'
+  - uid: 'excel!Excel.ShapeGroup#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ShapeGroup.id
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ShapeGroup#id:member'
     summary: |-
       Represents the shape identifier. Read-only.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ShapeGroup.load
+  - uid: 'excel!Excel.ShapeGroup#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -85,14 +85,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ShapeGroupLoadOptions): Excel.ShapeGroup;'
       return:
         type:
-          - excel.Excel.ShapeGroup
+          - 'excel!Excel.ShapeGroup:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ShapeGroupLoadOptions
-  - uid: excel.Excel.ShapeGroup.load_1
+            - 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
+  - uid: 'excel!Excel.ShapeGroup#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -105,14 +105,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ShapeGroup;'
       return:
         type:
-          - excel.Excel.ShapeGroup
+          - 'excel!Excel.ShapeGroup:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ShapeGroup.load_2
+  - uid: 'excel!Excel.ShapeGroup#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -125,7 +125,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeGroup;'
       return:
         type:
-          - excel.Excel.ShapeGroup
+          - 'excel!Excel.ShapeGroup:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -134,7 +134,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ShapeGroup.shape
+  - uid: 'excel!Excel.ShapeGroup#shape:member'
     summary: |-
       Returns the Shape object associated with the group. Read-only.
 
@@ -148,8 +148,8 @@ items:
       content: 'readonly shape: Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-  - uid: excel.Excel.ShapeGroup.shapes
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.ShapeGroup#shapes:member'
     summary: |-
       Returns the collection of Shape objects. Read-only.
 
@@ -163,8 +163,8 @@ items:
       content: 'readonly shapes: Excel.GroupShapeCollection;'
       return:
         type:
-          - excel.Excel.GroupShapeCollection
-  - uid: excel.Excel.ShapeGroup.toJSON
+          - 'excel!Excel.GroupShapeCollection:class'
+  - uid: 'excel!Excel.ShapeGroup#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -180,9 +180,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ShapeGroupData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeGroupData
+          - 'excel!Excel.Interfaces.ShapeGroupData:interface'
         description: ''
-  - uid: excel.Excel.ShapeGroup.ungroup
+  - uid: 'excel!Excel.ShapeGroup#ungroup:member(1)'
     summary: |-
       Ungroups any grouped shapes in the specified shape group.
 
@@ -197,19 +197,4 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-
-              const shapeGroup = sheet.shapes.getItem("Group").group;
-              shapeGroup.ungroup();
-              console.log("Shapes ungrouped");
-
-              await context.sync();
-          });
-          ```
+        description: ''

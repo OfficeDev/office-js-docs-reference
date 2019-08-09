@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData:interface'
     summary: >-
       An interface for updating data on the RowColumnPivotHierarchy object, for use in "rowColumnPivotHierarchy.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.name
-      - excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.position
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.name
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#name:member'
+      - 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#position:member'
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#name:member'
     summary: |-
       Name of the RowColumnPivotHierarchy.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RowColumnPivotHierarchyUpdateData.position
+  - uid: 'excel!Excel.Interfaces.RowColumnPivotHierarchyUpdateData#position:member'
     summary: |-
       Position of the RowColumnPivotHierarchy.
 

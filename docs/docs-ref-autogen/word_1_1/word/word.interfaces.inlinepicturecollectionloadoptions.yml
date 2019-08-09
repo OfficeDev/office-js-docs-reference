@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.InlinePicture](xref:word.Word.InlinePicture) objects.
+      Contains a collection of [Word.InlinePicture](xref:word!Word.InlinePicture:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.InlinePictureCollectionLoadOptions
@@ -10,17 +10,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextDescription
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextDescription:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a string that represents the alternative text associated with the
       inline image.
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.altTextTitle
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#altTextTitle:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a string that contains the title for the inline image.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.height
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#height:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a number that describes the height of the inline image.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.hyperlink
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#hyperlink:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a hyperlink on the image. Use a '\#' to separate the address part
       from the optional location part.
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.lockAspectRatio
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#lockAspectRatio:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a value that indicates whether the inline image retains its original
       proportions when you resize it.
@@ -112,7 +112,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.parentContentControl
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the inline image. Throws if there isn't a
       parent content control.
@@ -128,8 +128,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.InlinePictureCollectionLoadOptions.width
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.InlinePictureCollectionLoadOptions#width:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a number that describes the width of the inline image.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.EnhancedLocation
+  - uid: 'outlook!Office.EnhancedLocation:interface'
     summary: |-
       Represents the set of locations on an appointment.
 
@@ -18,15 +18,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.EnhancedLocation.addAsync
-      - outlook.Office.EnhancedLocation.addAsync_1
-      - outlook.Office.EnhancedLocation.getAsync
-      - outlook.Office.EnhancedLocation.getAsync_1
-      - outlook.Office.EnhancedLocation.removeAsync
-      - outlook.Office.EnhancedLocation.removeAsync_1
-  - uid: outlook.Office.EnhancedLocation.addAsync
+      - 'outlook!Office.EnhancedLocation#addAsync:member(1)'
+      - 'outlook!Office.EnhancedLocation#addAsync:member(2)'
+      - 'outlook!Office.EnhancedLocation#getAsync:member(1)'
+      - 'outlook!Office.EnhancedLocation#getAsync:member(2)'
+      - 'outlook!Office.EnhancedLocation#removeAsync:member(1)'
+      - 'outlook!Office.EnhancedLocation#removeAsync:member(2)'
+  - uid: 'outlook!Office.EnhancedLocation#addAsync:member(1)'
     summary: |-
       Adds to the set of locations associated with the appointment.
 
@@ -76,7 +76,7 @@ items:
             determine if the call succeeded.
           type:
             - '(asyncResult: Office.AsyncResultStatus) => void'
-  - uid: outlook.Office.EnhancedLocation.addAsync_1
+  - uid: 'outlook!Office.EnhancedLocation#addAsync:member(2)'
     summary: |-
       Adds to the set of locations associated with the appointment.
 
@@ -94,23 +94,6 @@ items:
 
 
       - InvalidFormatError: The format of the specified data object is not valid.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var locations = [
-          {
-              "id": "Contoso",
-              "type": Office.MailboxEnums.LocationType.Custom
-          }
-      ];
-
-      Office.context.mailbox.item.enhancedLocation.addAsync(locations);
-
-      ```
     isPreview: true
     name: 'addAsync(locationIdentifiers, callback)'
     fullName: 'addAsync(locationIdentifiers, callback)'
@@ -137,7 +120,7 @@ items:
             determine if the call succeeded.
           type:
             - '(asyncResult: Office.AsyncResultStatus) => void'
-  - uid: outlook.Office.EnhancedLocation.getAsync
+  - uid: 'outlook!Office.EnhancedLocation#getAsync:member(1)'
     summary: |-
       Gets the set of locations associated with the appointment.
 
@@ -176,7 +159,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
-  - uid: outlook.Office.EnhancedLocation.getAsync_1
+  - uid: 'outlook!Office.EnhancedLocation#getAsync:member(2)'
     summary: |-
       Gets the set of locations associated with the appointment.
 
@@ -188,27 +171,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (place) {
-              console.log("Display name: " + place.displayName);
-              console.log("Type: " + place.locationIdentifier.type);
-              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                  console.log("Email address: " + place.emailAddress);
-              }
-          });
-      }
-
-      ```
     isPreview: true
     name: getAsync(callback)
     fullName: getAsync(callback)
@@ -228,7 +190,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<LocationDetails[]>) => void'
-  - uid: outlook.Office.EnhancedLocation.removeAsync
+  - uid: 'outlook!Office.EnhancedLocation#removeAsync:member(1)'
     summary: >-
       Removes the set of locations associated with the appointment.
 
@@ -277,7 +239,7 @@ items:
             determine if the call succeeded.
           type:
             - '(asyncResult: Office.AsyncResultStatus) => void'
-  - uid: outlook.Office.EnhancedLocation.removeAsync_1
+  - uid: 'outlook!Office.EnhancedLocation#removeAsync:member(2)'
     summary: >-
       Removes the set of locations associated with the appointment.
 
@@ -294,23 +256,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (currentValue) {
-              Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-          });
-      }
-
-      ```
     isPreview: true
     name: 'removeAsync(locationIdentifiers, callback)'
     fullName: 'removeAsync(locationIdentifiers, callback)'

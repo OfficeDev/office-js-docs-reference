@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageUpdateData:interface'
     summary: 'An interface for updating data on the Page object, for use in "page.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.PageUpdateData
     fullName: OneNote.Interfaces.PageUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageUpdateData.inkAnalysisOrNull
-      - onenote.OneNote.Interfaces.PageUpdateData.pageLevel
-      - onenote.OneNote.Interfaces.PageUpdateData.title
-  - uid: onenote.OneNote.Interfaces.PageUpdateData.inkAnalysisOrNull
+      - 'onenote!OneNote.Interfaces.PageUpdateData#inkAnalysisOrNull:member'
+      - 'onenote!OneNote.Interfaces.PageUpdateData#pageLevel:member'
+      - 'onenote!OneNote.Interfaces.PageUpdateData#title:member'
+  - uid: 'onenote!OneNote.Interfaces.PageUpdateData#inkAnalysisOrNull:member'
     summary: |-
       Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
@@ -26,8 +26,8 @@ items:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisUpdateData
-  - uid: onenote.OneNote.Interfaces.PageUpdateData.pageLevel
+          - 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageUpdateData#pageLevel:member'
     summary: |-
       Gets or sets the indentation level of the page.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.PageUpdateData.title
+  - uid: 'onenote!OneNote.Interfaces.PageUpdateData#title:member'
     summary: |-
       Gets or sets the title of the page.
 

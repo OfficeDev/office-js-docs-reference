@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.TableData
-    summary: 'Represents the data in a table or an [Office.TableBinding](xref:office.Office.TableBinding)<!-- -->.'
+  - uid: 'office!Office.TableData:class'
+    summary: 'Represents the data in a table or an [Office.TableBinding](xref:office!Office.TableBinding:interface)<!-- -->.'
     name: Office.TableData
     fullName: Office.TableData
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.Office.TableData.(constructor)
-      - office.Office.TableData.(constructor)_1
-      - office.Office.TableData.headers
-      - office.Office.TableData.rows
-  - uid: office.Office.TableData.(constructor)
+      - 'office!Office.TableData:constructor(1)'
+      - 'office!Office.TableData:constructor(2)'
+      - 'office!Office.TableData#headers:member'
+      - 'office!Office.TableData#rows:member'
+  - uid: 'office!Office.TableData:constructor(1)'
     summary: Constructs a new instance of the `TableData` class
     name: '(constructor)(rows, headers)'
     fullName: '(constructor)(rows, headers)'
@@ -31,7 +31,7 @@ items:
           description: ''
           type:
             - 'any[]'
-  - uid: office.Office.TableData.(constructor)_1
+  - uid: 'office!Office.TableData:constructor(2)'
     summary: Constructs a new instance of the `TableData` class
     name: (constructor)()
     fullName: (constructor)()
@@ -40,7 +40,7 @@ items:
     type: constructor
     syntax:
       content: constructor();
-  - uid: office.Office.TableData.headers
+  - uid: 'office!Office.TableData#headers:member'
     summary: Gets or sets the headers of the table.
     remarks: >-
       To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For
@@ -56,23 +56,6 @@ items:
 
 
       - If you overwrite or update an existing table, the existing headers are not altered.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example creates a single-column table with a header and three rows.
-
-      function createTableData() {
-          var tableData = new Office.TableData();
-          tableData.headers = [['header1']];
-          tableData.rows = [['row1'], ['row2'], ['row3']];
-          return tableData;
-      }
-
-      ```
     name: headers
     fullName: headers
     langs:
@@ -83,7 +66,7 @@ items:
       return:
         type:
           - 'any[]'
-  - uid: office.Office.TableData.rows
+  - uid: 'office!Office.TableData#rows:member'
     summary: >-
       Gets or sets the rows in the table. Returns an array of arrays that contains the data in the table. Returns an
       empty array if there are no rows.
@@ -101,23 +84,6 @@ items:
 
 
       - If you overwrite or update an existing table, the existing rows are not altered.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example creates a single-column table with a header and three rows.
-
-      function createTableData() {
-          var tableData = new Office.TableData();
-          tableData.headers = [['header1']];
-          tableData.rows = [['row1'], ['row2'], ['row3']];
-          return tableData;
-      }
-
-      ```
     name: rows
     fullName: rows
     langs:

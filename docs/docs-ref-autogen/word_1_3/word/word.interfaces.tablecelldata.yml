@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableCellData
+  - uid: 'word!Word.Interfaces.TableCellData:interface'
     summary: An interface describing the data returned by calling "tableCell.toJSON()".
     name: Word.Interfaces.TableCellData
     fullName: Word.Interfaces.TableCellData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableCellData.body
-      - word.Word.Interfaces.TableCellData.cellIndex
-      - word.Word.Interfaces.TableCellData.columnWidth
-      - word.Word.Interfaces.TableCellData.horizontalAlignment
-      - word.Word.Interfaces.TableCellData.rowIndex
-      - word.Word.Interfaces.TableCellData.shadingColor
-      - word.Word.Interfaces.TableCellData.value
-      - word.Word.Interfaces.TableCellData.verticalAlignment
-      - word.Word.Interfaces.TableCellData.width
-  - uid: word.Word.Interfaces.TableCellData.body
+      - 'word!Word.Interfaces.TableCellData#body:member'
+      - 'word!Word.Interfaces.TableCellData#cellIndex:member'
+      - 'word!Word.Interfaces.TableCellData#columnWidth:member'
+      - 'word!Word.Interfaces.TableCellData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableCellData#rowIndex:member'
+      - 'word!Word.Interfaces.TableCellData#shadingColor:member'
+      - 'word!Word.Interfaces.TableCellData#value:member'
+      - 'word!Word.Interfaces.TableCellData#verticalAlignment:member'
+      - 'word!Word.Interfaces.TableCellData#width:member'
+  - uid: 'word!Word.Interfaces.TableCellData#body:member'
     summary: |-
       Gets the body object of the cell. Read-only.
 
@@ -32,8 +32,8 @@ items:
       content: 'body?: Word.Interfaces.BodyData;'
       return:
         type:
-          - word.Word.Interfaces.BodyData
-  - uid: word.Word.Interfaces.TableCellData.cellIndex
+          - 'word!Word.Interfaces.BodyData:interface'
+  - uid: 'word!Word.Interfaces.TableCellData#cellIndex:member'
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableCellData.columnWidth
+  - uid: 'word!Word.Interfaces.TableCellData#columnWidth:member'
     summary: |-
       Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableCellData.horizontalAlignment
+  - uid: 'word!Word.Interfaces.TableCellData#horizontalAlignment:member'
     summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.TableCellData.rowIndex
+  - uid: 'word!Word.Interfaces.TableCellData#rowIndex:member'
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableCellData.shadingColor
+  - uid: 'word!Word.Interfaces.TableCellData#shadingColor:member'
     summary: |-
       Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableCellData.value
+  - uid: 'word!Word.Interfaces.TableCellData#value:member'
     summary: |-
       Gets and sets the text of the cell.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableCellData.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableCellData#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -138,7 +138,7 @@ items:
       return:
         type:
           - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
-  - uid: word.Word.Interfaces.TableCellData.width
+  - uid: 'word!Word.Interfaces.TableCellData#width:member'
     summary: |-
       Gets the width of the cell in points. Read-only.
 

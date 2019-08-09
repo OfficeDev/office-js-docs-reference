@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RowColumnPivotHierarchy
+  - uid: 'excel!Excel.RowColumnPivotHierarchy:class'
     summary: |-
       Represents the Excel RowColumnPivotHierarchy.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RowColumnPivotHierarchy.context
-      - excel.Excel.RowColumnPivotHierarchy.fields
-      - excel.Excel.RowColumnPivotHierarchy.id
-      - excel.Excel.RowColumnPivotHierarchy.load
-      - excel.Excel.RowColumnPivotHierarchy.load_1
-      - excel.Excel.RowColumnPivotHierarchy.load_2
-      - excel.Excel.RowColumnPivotHierarchy.name
-      - excel.Excel.RowColumnPivotHierarchy.position
-      - excel.Excel.RowColumnPivotHierarchy.set
-      - excel.Excel.RowColumnPivotHierarchy.set_1
-      - excel.Excel.RowColumnPivotHierarchy.setToDefault
-      - excel.Excel.RowColumnPivotHierarchy.toJSON
-  - uid: excel.Excel.RowColumnPivotHierarchy.context
+      - 'excel!Excel.RowColumnPivotHierarchy#context:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#fields:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#id:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#load:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchy#load:member(2)'
+      - 'excel!Excel.RowColumnPivotHierarchy#load:member(3)'
+      - 'excel!Excel.RowColumnPivotHierarchy#name:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#position:member'
+      - 'excel!Excel.RowColumnPivotHierarchy#set:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchy#set:member(2)'
+      - 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
+      - 'excel!Excel.RowColumnPivotHierarchy#toJSON:member(1)'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RowColumnPivotHierarchy.fields
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#fields:member'
     summary: |-
       Returns the PivotFields associated with the RowColumnPivotHierarchy.
 
@@ -54,8 +54,8 @@ items:
       content: 'readonly fields: Excel.PivotFieldCollection;'
       return:
         type:
-          - excel.Excel.PivotFieldCollection
-  - uid: excel.Excel.RowColumnPivotHierarchy.id
+          - 'excel!Excel.PivotFieldCollection:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#id:member'
     summary: |-
       Id of the RowColumnPivotHierarchy.
 
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RowColumnPivotHierarchy.load
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -101,14 +101,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RowColumnPivotHierarchyLoadOptions): Excel.RowColumnPivotHierarchy;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchy
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
-  - uid: excel.Excel.RowColumnPivotHierarchy.load_1
+            - 'excel!Excel.Interfaces.RowColumnPivotHierarchyLoadOptions:interface'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -121,14 +121,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RowColumnPivotHierarchy;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchy
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RowColumnPivotHierarchy.load_2
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -141,7 +141,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RowColumnPivotHierarchy;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchy
+          - 'excel!Excel.RowColumnPivotHierarchy:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -150,7 +150,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.RowColumnPivotHierarchy.name
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#name:member'
     summary: |-
       Name of the RowColumnPivotHierarchy.
 
@@ -165,7 +165,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RowColumnPivotHierarchy.position
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#position:member'
     summary: |-
       Position of the RowColumnPivotHierarchy.
 
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RowColumnPivotHierarchy.set
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -210,7 +210,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.RowColumnPivotHierarchy.set_1
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -227,8 +227,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RowColumnPivotHierarchy
-  - uid: excel.Excel.RowColumnPivotHierarchy.setToDefault
+            - 'excel!Excel.RowColumnPivotHierarchy:class'
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#setToDefault:member(1)'
     summary: |-
       Reset the RowColumnPivotHierarchy back to its default values.
 
@@ -244,7 +244,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.RowColumnPivotHierarchy.toJSON
+  - uid: 'excel!Excel.RowColumnPivotHierarchy#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -260,5 +260,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RowColumnPivotHierarchyData;'
       return:
         type:
-          - excel.Excel.Interfaces.RowColumnPivotHierarchyData
+          - 'excel!Excel.Interfaces.RowColumnPivotHierarchyData:interface'
         description: ''

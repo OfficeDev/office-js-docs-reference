@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions:interface'
     summary: |-
       Represents the Excel PivotField.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotFieldLoadOptions.$all
-      - excel.Excel.Interfaces.PivotFieldLoadOptions.id
-      - excel.Excel.Interfaces.PivotFieldLoadOptions.name
-      - excel.Excel.Interfaces.PivotFieldLoadOptions.showAllItems
-      - excel.Excel.Interfaces.PivotFieldLoadOptions.subtotals
-  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions.$all
+      - 'excel!Excel.Interfaces.PivotFieldLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotFieldLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.PivotFieldLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotFieldLoadOptions#showAllItems:member'
+      - 'excel!Excel.Interfaces.PivotFieldLoadOptions#subtotals:member'
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions#id:member'
     summary: |-
       Id of the PivotField.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions#name:member'
     summary: |-
       Name of the PivotField.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions.showAllItems
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions#showAllItems:member'
     summary: |-
       Determines whether to show all items of the PivotField.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotFieldLoadOptions.subtotals
+  - uid: 'excel!Excel.Interfaces.PivotFieldLoadOptions#subtotals:member'
     summary: |-
       Subtotals of the PivotField.
 

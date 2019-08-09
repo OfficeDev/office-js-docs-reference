@@ -1,35 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData:interface'
     summary: 'An interface for updating data on the Chart object, for use in "chart.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartUpdateData
     fullName: Excel.Interfaces.ChartUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartUpdateData.axes
-      - excel.Excel.Interfaces.ChartUpdateData.categoryLabelLevel
-      - excel.Excel.Interfaces.ChartUpdateData.chartType
-      - excel.Excel.Interfaces.ChartUpdateData.dataLabels
-      - excel.Excel.Interfaces.ChartUpdateData.displayBlanksAs
-      - excel.Excel.Interfaces.ChartUpdateData.format
-      - excel.Excel.Interfaces.ChartUpdateData.height
-      - excel.Excel.Interfaces.ChartUpdateData.left
-      - excel.Excel.Interfaces.ChartUpdateData.legend
-      - excel.Excel.Interfaces.ChartUpdateData.name
-      - excel.Excel.Interfaces.ChartUpdateData.plotArea
-      - excel.Excel.Interfaces.ChartUpdateData.plotBy
-      - excel.Excel.Interfaces.ChartUpdateData.plotVisibleOnly
-      - excel.Excel.Interfaces.ChartUpdateData.seriesNameLevel
-      - excel.Excel.Interfaces.ChartUpdateData.showAllFieldButtons
-      - excel.Excel.Interfaces.ChartUpdateData.showDataLabelsOverMaximum
-      - excel.Excel.Interfaces.ChartUpdateData.style
-      - excel.Excel.Interfaces.ChartUpdateData.title
-      - excel.Excel.Interfaces.ChartUpdateData.top
-      - excel.Excel.Interfaces.ChartUpdateData.width
-  - uid: excel.Excel.Interfaces.ChartUpdateData.axes
+      - 'excel!Excel.Interfaces.ChartUpdateData#axes:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#categoryLabelLevel:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#chartType:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#height:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#left:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#legend:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#name:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#plotArea:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#plotBy:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#plotVisibleOnly:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#seriesNameLevel:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#showAllFieldButtons:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#showDataLabelsOverMaximum:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#style:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#title:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#top:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#axes:member'
     summary: |-
       Represents chart axes.
 
@@ -43,8 +43,8 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.categoryLabelLevel
+          - 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#categoryLabelLevel:member'
     summary: >-
       Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
       are being sourced from. Read/Write.
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.chartType
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#chartType:member'
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
 
@@ -105,7 +105,7 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.Interfaces.ChartUpdateData.dataLabels
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#dataLabels:member'
     summary: |-
       Represents the datalabels on the chart.
 
@@ -119,8 +119,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.displayBlanksAs
+          - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#displayBlanksAs:member'
     summary: |-
       Returns or sets the way that blank cells are plotted on a chart. Read/Write.
 
@@ -135,7 +135,7 @@ items:
       return:
         type:
           - Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted"
-  - uid: excel.Excel.Interfaces.ChartUpdateData.format
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#format:member'
     summary: |-
       Encapsulates the format properties for the chart area.
 
@@ -149,8 +149,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.height
+          - 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#height:member'
     summary: |-
       Represents the height, in points, of the chart object.
 
@@ -165,7 +165,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.left
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#left:member'
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.legend
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#legend:member'
     summary: |-
       Represents the legend for the chart.
 
@@ -194,8 +194,8 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.name
+          - 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#name:member'
     summary: |-
       Represents the name of a chart object.
 
@@ -210,7 +210,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartUpdateData.plotArea
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#plotArea:member'
     summary: |-
       Represents the plotArea for the chart.
 
@@ -224,8 +224,8 @@ items:
       content: 'plotArea?: Excel.Interfaces.ChartPlotAreaUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.plotBy
+          - 'excel!Excel.Interfaces.ChartPlotAreaUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#plotBy:member'
     summary: |-
       Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
 
@@ -240,7 +240,7 @@ items:
       return:
         type:
           - Excel.ChartPlotBy | "Rows" | "Columns"
-  - uid: excel.Excel.Interfaces.ChartUpdateData.plotVisibleOnly
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#plotVisibleOnly:member'
     summary: |-
       True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
 
@@ -255,7 +255,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartUpdateData.seriesNameLevel
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#seriesNameLevel:member'
     summary: >-
       Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
       being sourced from. Read/Write.
@@ -272,7 +272,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.showAllFieldButtons
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#showAllFieldButtons:member'
     summary: |-
       Represents whether to display all field buttons on a PivotChart.
 
@@ -287,7 +287,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartUpdateData.showDataLabelsOverMaximum
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#showDataLabelsOverMaximum:member'
     summary: >-
       Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
       value axis became smaller than the size of data points, you can use this property to set whether to show the data
@@ -305,7 +305,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartUpdateData.style
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#style:member'
     summary: |-
       Returns or sets the chart style for the chart. Read/Write.
 
@@ -320,7 +320,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.title
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#title:member'
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
       title.
@@ -336,8 +336,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.top
+          - 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
       top of the chart area (on a chart).
@@ -354,7 +354,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.width
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#width:member'
     summary: |-
       Represents the width, in points, of the chart object.
 

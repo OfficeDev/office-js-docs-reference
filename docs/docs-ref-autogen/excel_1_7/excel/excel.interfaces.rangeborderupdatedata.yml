@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeBorderUpdateData
+  - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData:interface'
     summary: 'An interface for updating data on the RangeBorder object, for use in "rangeBorder.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.RangeBorderUpdateData
     fullName: Excel.Interfaces.RangeBorderUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeBorderUpdateData.color
-      - excel.Excel.Interfaces.RangeBorderUpdateData.style
-      - excel.Excel.Interfaces.RangeBorderUpdateData.weight
-  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.color
+      - 'excel!Excel.Interfaces.RangeBorderUpdateData#color:member'
+      - 'excel!Excel.Interfaces.RangeBorderUpdateData#style:member'
+      - 'excel!Excel.Interfaces.RangeBorderUpdateData#weight:member'
+  - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.style
+  - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -50,7 +50,7 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
-  - uid: excel.Excel.Interfaces.RangeBorderUpdateData.weight
+  - uid: 'excel!Excel.Interfaces.RangeBorderUpdateData#weight:member'
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 

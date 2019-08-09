@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.RequestContext
+  - uid: 'visio!Visio.RequestContext:class'
     summary: >-
       The RequestContext object facilitates requests to the Visio application. Since the Office add-in and the Visio
       application run in two different processes, the request context is required to get access to the Visio object
@@ -12,11 +12,11 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientRequestContext '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.RequestContext.(constructor)
-      - visio.Visio.RequestContext.document
-  - uid: visio.Visio.RequestContext.(constructor)
+      - 'visio!Visio.RequestContext:constructor(1)'
+      - 'visio!Visio.RequestContext#document:member'
+  - uid: 'visio!Visio.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
@@ -30,7 +30,7 @@ items:
           description: ''
           type:
             - string | OfficeExtension.EmbeddedSession
-  - uid: visio.Visio.RequestContext.document
+  - uid: 'visio!Visio.RequestContext#document:member'
     name: document
     fullName: document
     langs:
@@ -40,4 +40,4 @@ items:
       content: 'readonly document: Document;'
       return:
         type:
-          - visio.Visio.Document
+          - 'visio!Visio.Document:class'

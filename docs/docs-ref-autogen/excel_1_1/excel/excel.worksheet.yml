@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Worksheet
+  - uid: 'excel!Excel.Worksheet:class'
     summary: |-
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
@@ -12,26 +12,26 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Worksheet.activate
-      - excel.Excel.Worksheet.charts
-      - excel.Excel.Worksheet.context
-      - excel.Excel.Worksheet.delete
-      - excel.Excel.Worksheet.getCell
-      - excel.Excel.Worksheet.getRange
-      - excel.Excel.Worksheet.id
-      - excel.Excel.Worksheet.load
-      - excel.Excel.Worksheet.load_1
-      - excel.Excel.Worksheet.load_2
-      - excel.Excel.Worksheet.name
-      - excel.Excel.Worksheet.position
-      - excel.Excel.Worksheet.set
-      - excel.Excel.Worksheet.set_1
-      - excel.Excel.Worksheet.tables
-      - excel.Excel.Worksheet.toJSON
-      - excel.Excel.Worksheet.visibility
-  - uid: excel.Excel.Worksheet.activate
+      - 'excel!Excel.Worksheet#activate:member(1)'
+      - 'excel!Excel.Worksheet#charts:member'
+      - 'excel!Excel.Worksheet#context:member'
+      - 'excel!Excel.Worksheet#delete:member(1)'
+      - 'excel!Excel.Worksheet#getCell:member(1)'
+      - 'excel!Excel.Worksheet#getRange:member(1)'
+      - 'excel!Excel.Worksheet#id:member'
+      - 'excel!Excel.Worksheet#load:member(1)'
+      - 'excel!Excel.Worksheet#load:member(2)'
+      - 'excel!Excel.Worksheet#load:member(3)'
+      - 'excel!Excel.Worksheet#name:member'
+      - 'excel!Excel.Worksheet#position:member'
+      - 'excel!Excel.Worksheet#set:member(1)'
+      - 'excel!Excel.Worksheet#set:member(2)'
+      - 'excel!Excel.Worksheet#tables:member'
+      - 'excel!Excel.Worksheet#toJSON:member(1)'
+      - 'excel!Excel.Worksheet#visibility:member'
+  - uid: 'excel!Excel.Worksheet#activate:member(1)'
     summary: |-
       Activate the worksheet in the Excel UI.
 
@@ -46,25 +46,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.activate();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Worksheet.charts
+        description: ''
+  - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only.
 
@@ -78,8 +61,8 @@ items:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
-  - uid: excel.Excel.Worksheet.context
+          - 'excel!Excel.ChartCollection:class'
+  - uid: 'excel!Excel.Worksheet#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -92,8 +75,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Worksheet.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Worksheet#delete:member(1)'
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
       delete operation will fail with a GeneralException.
@@ -110,25 +93,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Worksheet.getCell
+        description: ''
+  - uid: 'excel!Excel.Worksheet#getCell:member(1)'
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid.
@@ -144,28 +110,8 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var cell = worksheet.getCell(0,0);
-              cell.load('address');
-              return ctx.sync().then(function() {
-                  console.log(cell.address);
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: row
           description: The row number of the cell to be retrieved. Zero-indexed.
@@ -175,7 +121,7 @@ items:
           description: the column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Worksheet.getRange
+  - uid: 'excel!Excel.Worksheet#getRange:member(1)'
     summary: |-
       Gets the range object, representing a single rectangular block of cells, specified by the address or name.
 
@@ -189,47 +135,8 @@ items:
       content: 'getRange(address?: string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Below example uses range address to get the range object.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Below example uses a named-range to get the range object.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeName = 'MyRange';
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: address
           description: >-
@@ -237,7 +144,7 @@ items:
             the entire worksheet range is returned.
           type:
             - string
-  - uid: excel.Excel.Worksheet.id
+  - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -254,7 +161,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Worksheet.load
+  - uid: 'excel!Excel.Worksheet#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -285,14 +192,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorksheetLoadOptions
-  - uid: excel.Excel.Worksheet.load_1
+            - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+  - uid: 'excel!Excel.Worksheet#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -305,48 +212,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get worksheet properties based on sheet name.
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.load('position')
-              return ctx.sync().then(function() {
-                      console.log(worksheet.position);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Set worksheet position. 
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.position = 2;
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Worksheet.load_2
+  - uid: 'excel!Excel.Worksheet#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -359,7 +232,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -368,7 +241,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Worksheet.name
+  - uid: 'excel!Excel.Worksheet#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -383,7 +256,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Worksheet.position
+  - uid: 'excel!Excel.Worksheet#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -398,7 +271,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.set
+  - uid: 'excel!Excel.Worksheet#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -428,7 +301,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Worksheet.set_1
+  - uid: 'excel!Excel.Worksheet#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -445,8 +318,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.tables
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.
 
@@ -460,8 +333,8 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-  - uid: excel.Excel.Worksheet.toJSON
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Worksheet#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -477,9 +350,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetData
+          - 'excel!Excel.Interfaces.WorksheetData:interface'
         description: ''
-  - uid: excel.Excel.Worksheet.visibility
+  - uid: 'excel!Excel.Worksheet#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 

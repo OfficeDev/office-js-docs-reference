@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesFormat
+  - uid: 'excel!Excel.CellPropertiesFormat:interface'
     summary: |-
       Represents the returned format properties of getCellProperties or format input parameter of setCellProperties.
 
@@ -10,23 +10,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesFormat.autoIndent
-      - excel.Excel.CellPropertiesFormat.borders
-      - excel.Excel.CellPropertiesFormat.fill
-      - excel.Excel.CellPropertiesFormat.font
-      - excel.Excel.CellPropertiesFormat.horizontalAlignment
-      - excel.Excel.CellPropertiesFormat.indentLevel
-      - excel.Excel.CellPropertiesFormat.protection
-      - excel.Excel.CellPropertiesFormat.readingOrder
-      - excel.Excel.CellPropertiesFormat.shrinkToFit
-      - excel.Excel.CellPropertiesFormat.textOrientation
-      - excel.Excel.CellPropertiesFormat.useStandardHeight
-      - excel.Excel.CellPropertiesFormat.useStandardWidth
-      - excel.Excel.CellPropertiesFormat.verticalAlignment
-      - excel.Excel.CellPropertiesFormat.wrapText
-  - uid: excel.Excel.CellPropertiesFormat.autoIndent
+      - 'excel!Excel.CellPropertiesFormat#autoIndent:member'
+      - 'excel!Excel.CellPropertiesFormat#borders:member'
+      - 'excel!Excel.CellPropertiesFormat#fill:member'
+      - 'excel!Excel.CellPropertiesFormat#font:member'
+      - 'excel!Excel.CellPropertiesFormat#horizontalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormat#indentLevel:member'
+      - 'excel!Excel.CellPropertiesFormat#protection:member'
+      - 'excel!Excel.CellPropertiesFormat#readingOrder:member'
+      - 'excel!Excel.CellPropertiesFormat#shrinkToFit:member'
+      - 'excel!Excel.CellPropertiesFormat#textOrientation:member'
+      - 'excel!Excel.CellPropertiesFormat#useStandardHeight:member'
+      - 'excel!Excel.CellPropertiesFormat#useStandardWidth:member'
+      - 'excel!Excel.CellPropertiesFormat#verticalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormat#wrapText:member'
+  - uid: 'excel!Excel.CellPropertiesFormat#autoIndent:member'
     summary: |-
       Represents the `autoIndent` property.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormat.borders
+  - uid: 'excel!Excel.CellPropertiesFormat#borders:member'
     summary: |-
       Represents the `borders` property.
 
@@ -55,8 +55,8 @@ items:
       content: 'borders?: Excel.CellBorderCollection;'
       return:
         type:
-          - excel.Excel.CellBorderCollection
-  - uid: excel.Excel.CellPropertiesFormat.fill
+          - 'excel!Excel.CellBorderCollection:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#fill:member'
     summary: |-
       Represents the `fill` property.
 
@@ -70,8 +70,8 @@ items:
       content: 'fill?: Excel.CellPropertiesFill;'
       return:
         type:
-          - excel.Excel.CellPropertiesFill
-  - uid: excel.Excel.CellPropertiesFormat.font
+          - 'excel!Excel.CellPropertiesFill:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#font:member'
     summary: |-
       Represents the `font` property.
 
@@ -85,8 +85,8 @@ items:
       content: 'font?: Excel.CellPropertiesFont;'
       return:
         type:
-          - excel.Excel.CellPropertiesFont
-  - uid: excel.Excel.CellPropertiesFormat.horizontalAlignment
+          - 'excel!Excel.CellPropertiesFont:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#horizontalAlignment:member'
     summary: |-
       Represents the `horizontalAlignment` property.
 
@@ -105,7 +105,7 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
-  - uid: excel.Excel.CellPropertiesFormat.indentLevel
+  - uid: 'excel!Excel.CellPropertiesFormat#indentLevel:member'
     summary: |-
       Represents the `indentLevel` property.
 
@@ -120,7 +120,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.CellPropertiesFormat.protection
+  - uid: 'excel!Excel.CellPropertiesFormat#protection:member'
     summary: |-
       Represents the `protection` property.
 
@@ -134,8 +134,8 @@ items:
       content: 'protection?: Excel.CellPropertiesProtection;'
       return:
         type:
-          - excel.Excel.CellPropertiesProtection
-  - uid: excel.Excel.CellPropertiesFormat.readingOrder
+          - 'excel!Excel.CellPropertiesProtection:interface'
+  - uid: 'excel!Excel.CellPropertiesFormat#readingOrder:member'
     summary: |-
       Represents the `readingOrder` property.
 
@@ -150,7 +150,7 @@ items:
       return:
         type:
           - Excel.ReadingOrder | "Context" | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.CellPropertiesFormat.shrinkToFit
+  - uid: 'excel!Excel.CellPropertiesFormat#shrinkToFit:member'
     summary: |-
       Represents the `shrinkToFit` property.
 
@@ -165,7 +165,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormat.textOrientation
+  - uid: 'excel!Excel.CellPropertiesFormat#textOrientation:member'
     summary: |-
       Represents the `textOrientation` property.
 
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.CellPropertiesFormat.useStandardHeight
+  - uid: 'excel!Excel.CellPropertiesFormat#useStandardHeight:member'
     summary: |-
       Represents the `useStandardHeight` property.
 
@@ -195,7 +195,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormat.useStandardWidth
+  - uid: 'excel!Excel.CellPropertiesFormat#useStandardWidth:member'
     summary: |-
       Represents the `useStandardWidth` property.
 
@@ -210,7 +210,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormat.verticalAlignment
+  - uid: 'excel!Excel.CellPropertiesFormat#verticalAlignment:member'
     summary: |-
       Represents the `verticalAlignment` property.
 
@@ -225,7 +225,7 @@ items:
       return:
         type:
           - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
-  - uid: excel.Excel.CellPropertiesFormat.wrapText
+  - uid: 'excel!Excel.CellPropertiesFormat#wrapText:member'
     summary: |-
       Represents the `wrapText` property.
 

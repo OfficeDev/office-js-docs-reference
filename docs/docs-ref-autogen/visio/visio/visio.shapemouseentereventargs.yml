@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ShapeMouseEnterEventArgs
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
     summary: |-
       Provides information about the shape that raised the ShapeMouseEnter event.
 
@@ -10,33 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
-    remarks: |-
-
-
-      #### Examples
-
-      ```javascript
-      Visio.run(session, function (ctx) {
-          var document1= ctx.document;
-          eventResult2 = document1.onShapeMouseEnter.add(
-          function (args) {            
-              console.log(Date.now()+":OnShapeMouseEnter Event"+JSON.stringify(args));
-          });
-          return ctx.sync().then(function () {
-              console.log("Success");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+    package: visio!
     children:
-      - visio.Visio.ShapeMouseEnterEventArgs.pageName
-      - visio.Visio.ShapeMouseEnterEventArgs.shapeName
-  - uid: visio.Visio.ShapeMouseEnterEventArgs.pageName
+      - 'visio!Visio.ShapeMouseEnterEventArgs#pageName:member'
+      - 'visio!Visio.ShapeMouseEnterEventArgs#shapeName:member'
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs#pageName:member'
     summary: |-
       Gets the name of the page which has the shape object that raised the ShapeMouseEnter event.
 
@@ -51,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.ShapeMouseEnterEventArgs.shapeName
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs#shapeName:member'
     summary: |-
       Gets the name of the shape object that raised the ShapeMouseEnter event.
 

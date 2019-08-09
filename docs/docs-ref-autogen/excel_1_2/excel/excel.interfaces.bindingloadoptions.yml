@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.BindingLoadOptions
+  - uid: 'excel!Excel.Interfaces.BindingLoadOptions:interface'
     summary: |-
       Represents an Office.js binding that is defined in the workbook.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.BindingLoadOptions.$all
-      - excel.Excel.Interfaces.BindingLoadOptions.id
-      - excel.Excel.Interfaces.BindingLoadOptions.type
-  - uid: excel.Excel.Interfaces.BindingLoadOptions.$all
+      - 'excel!Excel.Interfaces.BindingLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.BindingLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.BindingLoadOptions#type:member'
+  - uid: 'excel!Excel.Interfaces.BindingLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.BindingLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.BindingLoadOptions#id:member'
     summary: |-
       Represents binding identifier. Read-only.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.BindingLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.BindingLoadOptions#type:member'
     summary: |-
       Returns the type of the binding. See Excel.BindingType for details. Read-only.
 

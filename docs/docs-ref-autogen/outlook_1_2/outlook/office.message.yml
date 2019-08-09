@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Message
+  - uid: 'outlook!Office.Message:interface'
     summary: >-
-      A subclass of [Office.Item](xref:Outlook.Office.Item) for messages.
+      A subclass of [Office.Item](xref:outlook!Office.Item:interface) for messages.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,11 +15,11 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Item
-    package: Outlook
+      - 'outlook!Office.Item:interface'
+    package: outlook!
     children:
-      - Outlook.Office.Message.conversationId
-  - uid: Outlook.Office.Message.conversationId
+      - 'outlook!Office.Message#conversationId:member'
+  - uid: 'outlook!Office.Message#conversationId:member'
     summary: >-
       Gets an identifier for the email conversation that contains a particular message.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Recipients
+  - uid: 'outlook!Office.Recipients:interface'
     summary: '\[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
       **[Minimum permission
@@ -13,15 +13,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Recipients.addAsync
-      - outlook.Office.Recipients.addAsync_1
-      - outlook.Office.Recipients.getAsync
-      - outlook.Office.Recipients.getAsync_1
-      - outlook.Office.Recipients.setAsync
-      - outlook.Office.Recipients.setAsync_1
-  - uid: outlook.Office.Recipients.addAsync
+      - 'outlook!Office.Recipients#addAsync:member(1)'
+      - 'outlook!Office.Recipients#addAsync:member(2)'
+      - 'outlook!Office.Recipients#getAsync:member(1)'
+      - 'outlook!Office.Recipients#getAsync:member(2)'
+      - 'outlook!Office.Recipients#setAsync:member(1)'
+      - 'outlook!Office.Recipients#setAsync:member(2)'
+  - uid: 'outlook!Office.Recipients#addAsync:member(1)'
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -78,7 +78,7 @@ items:
             contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Recipients.addAsync_1
+  - uid: 'outlook!Office.Recipients#addAsync:member(2)'
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -86,9 +86,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -104,38 +104,6 @@ items:
 
 
       - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example creates an array of EmailUser objects
-
-      // and adds them to the To recipients of the message.
-
-      var newRecipients = [
-          {
-              "displayName": "Allie Bellew",
-              "emailAddress": "allieb@contoso.com"
-          },
-          {
-              "displayName": "Alex Darrow",
-              "emailAddress": "alexd@contoso.com"
-          }
-      ];
-
-
-      Office.context.mailbox.item.to.addAsync(newRecipients, function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Recipients added");
-          }
-      });
-
-      ```
     name: 'addAsync(recipients, callback)'
     fullName: 'addAsync(recipients, callback)'
     langs:
@@ -161,13 +129,13 @@ items:
             contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Recipients.getAsync
+  - uid: 'outlook!Office.Recipients#getAsync:member(1)'
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
       When the call completes, the asyncResult.value property will contain an array of
-      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -203,13 +171,13 @@ items:
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
             - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
-  - uid: outlook.Office.Recipients.getAsync_1
+  - uid: 'outlook!Office.Recipients#getAsync:member(2)'
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
       When the call completes, the asyncResult.value property will contain an array of
-      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
+      [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -219,28 +187,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example gets the optional attendees of a meeting.
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              var msg = "";
-              result.value.forEach(function(recip, index) {
-                  msg = msg + recip.displayName + " (" + recip.emailAddress + ");";
-              });
-              console.log(msg);
-          }
-      });
-
-      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
@@ -259,7 +205,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
             - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
-  - uid: outlook.Office.Recipients.setAsync
+  - uid: 'outlook!Office.Recipients#setAsync:member(1)'
     summary: |-
       Sets a recipient list for an appointment or message.
 
@@ -269,9 +215,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -318,7 +264,7 @@ items:
             code that indicates any error that occurred while adding the data.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Recipients.setAsync_1
+  - uid: 'outlook!Office.Recipients#setAsync:member(2)'
     summary: |-
       Sets a recipient list for an appointment or message.
 
@@ -328,9 +274,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook!Office.EmailUser:interface) objects
 
-      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook!Office.EmailAddressDetails:interface) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -346,38 +292,6 @@ items:
 
 
       - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example creates an array of EmailUser objects and
-
-      // replaces the CC recipients of the message with the array.
-
-      var newRecipients = [
-          {
-              "displayName": "Allie Bellew",
-              "emailAddress": "allieb@contoso.com"
-          },
-          {
-              "displayName": "Alex Darrow",
-              "emailAddress": "alexd@contoso.com"
-          }
-      ];
-
-
-      Office.context.mailbox.item.cc.setAsync(newRecipients, function(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Recipients overwritten");
-          }
-      });
-
-      ```
     name: 'setAsync(recipients, callback)'
     fullName: 'setAsync(recipients, callback)'
     langs:

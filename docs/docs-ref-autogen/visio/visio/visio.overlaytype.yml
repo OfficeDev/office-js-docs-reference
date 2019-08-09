@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.OverlayType
+  - uid: 'visio!Visio.OverlayType:enum'
     summary: |-
       Represents the type of the overlay.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.OverlayType.html
-      - visio.Visio.OverlayType.image
-      - visio.Visio.OverlayType.text
-  - uid: visio.Visio.OverlayType.html
+      - 'visio!Visio.OverlayType.html:member'
+      - 'visio!Visio.OverlayType.image:member'
+      - 'visio!Visio.OverlayType.text:member'
+  - uid: 'visio!Visio.OverlayType.html:member'
     summary: html
     name: html
     fullName: html
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Html"'
-  - uid: visio.Visio.OverlayType.image
+  - uid: 'visio!Visio.OverlayType.image:member'
     summary: image
     name: image
     fullName: image
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Image"'
-  - uid: visio.Visio.OverlayType.text
+  - uid: 'visio!Visio.OverlayType.text:member'
     summary: text
     name: text
     fullName: text

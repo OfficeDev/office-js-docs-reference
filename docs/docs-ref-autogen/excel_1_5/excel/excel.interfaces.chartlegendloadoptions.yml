@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions:interface'
     summary: |-
       Represents the legend in a chart.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendLoadOptions.$all
-      - excel.Excel.Interfaces.ChartLegendLoadOptions.format
-      - excel.Excel.Interfaces.ChartLegendLoadOptions.overlay
-      - excel.Excel.Interfaces.ChartLegendLoadOptions.position
-      - excel.Excel.Interfaces.ChartLegendLoadOptions.visible
-  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#overlay:member'
+      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting.
 
@@ -42,8 +42,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartLegendFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions.overlay
+          - 'excel!Excel.Interfaces.ChartLegendFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#overlay:member'
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#position:member'
     summary: |-
       Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartLegendLoadOptions#visible:member'
     summary: |-
       A boolean value the represents the visibility of a ChartLegend object.
 

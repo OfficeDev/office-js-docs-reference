@@ -1,29 +1,29 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
     summary: 'An interface for updating data on the ChartSeries object, for use in "chartSeries.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartSeriesUpdateData
     fullName: Excel.Interfaces.ChartSeriesUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.chartType
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.doughnutHoleSize
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.filtered
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.format
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.gapWidth
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.hasDataLabels
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerForegroundColor
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerSize
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerStyle
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.name
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.plotOrder
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.showShadow
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.smooth
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.chartType
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#smooth:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member'
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -67,7 +67,7 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.doughnutHoleSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#doughnutHoleSize:member'
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
       invalid argument exception on invalid charts.
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.filtered
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#filtered:member'
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
@@ -99,7 +99,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting.
 
@@ -113,8 +113,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.gapWidth
+          - 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#gapWidth:member'
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
       line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.hasDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#hasDataLabels:member'
     summary: |-
       Boolean value representing if the series has data labels or not.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerBackgroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerBackgroundColor:member'
     summary: |-
       Represents markers background color of a chart series.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerForegroundColor:member'
     summary: |-
       Represents markers foreground color of a chart series.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerSize:member'
     summary: |-
       Represents marker size of a chart series.
 
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member'
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
@@ -210,7 +210,7 @@ items:
           - >-
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.name
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -225,7 +225,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.plotOrder
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#plotOrder:member'
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
@@ -240,7 +240,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.showShadow
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#showShadow:member'
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
@@ -255,7 +255,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.smooth
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#smooth:member'
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 

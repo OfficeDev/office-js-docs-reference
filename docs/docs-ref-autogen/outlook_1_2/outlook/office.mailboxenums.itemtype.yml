@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.ItemType
+  - uid: 'outlook!Office.MailboxEnums.ItemType:enum'
     summary: |-
       Specifies an item's type.
 
@@ -13,11 +13,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.MailboxEnums.ItemType.Appointment
-      - Outlook.Office.MailboxEnums.ItemType.Message
-  - uid: Outlook.Office.MailboxEnums.ItemType.Appointment
+      - 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
+      - 'outlook!Office.MailboxEnums.ItemType.Message:member'
+  - uid: 'outlook!Office.MailboxEnums.ItemType.Appointment:member'
     summary: An appointment item.
     name: Appointment
     fullName: Appointment
@@ -25,7 +25,7 @@ items:
       - typeScript
     type: field
     numericValue: '"appointment"'
-  - uid: Outlook.Office.MailboxEnums.ItemType.Message
+  - uid: 'outlook!Office.MailboxEnums.ItemType.Message:member'
     summary: 'An email, meeting request, meeting response, or meeting cancellation.'
     name: Message
     fullName: Message

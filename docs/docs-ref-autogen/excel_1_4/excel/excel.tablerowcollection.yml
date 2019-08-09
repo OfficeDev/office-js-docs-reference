@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableRowCollection
+  - uid: 'excel!Excel.TableRowCollection:class'
     summary: >-
       Represents a collection of all the rows that are part of the table.
 
@@ -18,19 +18,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableRowCollection.add
-      - excel.Excel.TableRowCollection.context
-      - excel.Excel.TableRowCollection.count
-      - excel.Excel.TableRowCollection.getCount
-      - excel.Excel.TableRowCollection.getItemAt
-      - excel.Excel.TableRowCollection.items
-      - excel.Excel.TableRowCollection.load
-      - excel.Excel.TableRowCollection.load_1
-      - excel.Excel.TableRowCollection.load_2
-      - excel.Excel.TableRowCollection.toJSON
-  - uid: excel.Excel.TableRowCollection.add
+      - 'excel!Excel.TableRowCollection#add:member(1)'
+      - 'excel!Excel.TableRowCollection#context:member'
+      - 'excel!Excel.TableRowCollection#count:member'
+      - 'excel!Excel.TableRowCollection#getCount:member(1)'
+      - 'excel!Excel.TableRowCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableRowCollection#items:member'
+      - 'excel!Excel.TableRowCollection#load:member(1)'
+      - 'excel!Excel.TableRowCollection#load:member(2)'
+      - 'excel!Excel.TableRowCollection#load:member(3)'
+      - 'excel!Excel.TableRowCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableRowCollection#add:member(1)'
     summary: >-
       Adds one or more rows to the table. The return object will be the top of the newly added row(s).
 
@@ -53,28 +53,8 @@ items:
         Excel.TableRow;
       return:
         type:
-          - excel.Excel.TableRow
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tables = ctx.workbook.tables;
-              var values = [["Sample", "Values", "For", "New", "Row"]];
-              var row = tables.getItem("Table1").rows.add(null, values);
-              row.load('index');
-              return ctx.sync().then(function() {
-                  console.log(row.index);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableRow:class'
+        description: ''
       parameters:
         - id: index
           description: >-
@@ -86,7 +66,7 @@ items:
           description: Optional. A 2-dimensional array of unformatted values of the table row.
           type:
             - Array<Array<boolean | string | number>> | boolean | string | number
-  - uid: excel.Excel.TableRowCollection.context
+  - uid: 'excel!Excel.TableRowCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -99,8 +79,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableRowCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableRowCollection#count:member'
     summary: |-
       Returns the number of rows in the table. Read-only.
 
@@ -115,7 +95,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TableRowCollection.getCount
+  - uid: 'excel!Excel.TableRowCollection#getCount:member(1)'
     summary: |-
       Gets the number of rows in the table.
 
@@ -131,7 +111,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.TableRowCollection.getItemAt
+  - uid: 'excel!Excel.TableRowCollection#getItemAt:member(1)'
     summary: >-
       Gets a row based on its position in the collection.
 
@@ -151,32 +131,14 @@ items:
       content: 'getItemAt(index: number): Excel.TableRow;'
       return:
         type:
-          - excel.Excel.TableRow
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablerow = ctx.workbook.tables.getItem('Table1').rows.getItemAt(0);
-              tablerow.load('name');
-              return ctx.sync().then(function() {
-                      console.log(tablerow.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableRow:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.TableRowCollection.items
+  - uid: 'excel!Excel.TableRowCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -188,7 +150,7 @@ items:
       return:
         type:
           - 'Excel.TableRow[]'
-  - uid: excel.Excel.TableRowCollection.load
+  - uid: 'excel!Excel.TableRowCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -221,14 +183,14 @@ items:
         Excel.TableRowCollection;
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - 'excel!Excel.TableRowCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.TableRowCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.TableRowCollection.load_1
+  - uid: 'excel!Excel.TableRowCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -241,55 +203,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableRowCollection;'
       return:
         type:
-          - excel.Excel.TableRowCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablerows = ctx.workbook.tables.getItem('Table1').rows;
-              tablerows.load('items');
-              return ctx.sync().then(function() {
-                  console.log("tablerows Count: " + tablerows.count);
-                  for (var i = 0; i < tablerows.items.length; i++)
-                  {
-                      console.log(tablerows.items[i].index);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // In the example, we'll select the top 100 rows of the table.
-          Excel.run(function (ctx) { 
-              var table = ctx.workbook.tables.getItem("Table1");
-              var tableRows = table.rows.load({"select" : "index, values","top": 100, "skip": 0 })
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < tableRows.items.length; i++)
-                  {
-                      console.log(tableRows.items[i].index);
-                      console.log(tableRows.items[i].values);
-                  }
-              });
-          }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-          });
-          ```
+          - 'excel!Excel.TableRowCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableRowCollection.load_2
+  - uid: 'excel!Excel.TableRowCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -299,14 +220,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableRowCollection;'
       return:
         type:
-          - excel.Excel.TableRowCollection
+          - 'excel!Excel.TableRowCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.TableRowCollection.toJSON
+  - uid: 'excel!Excel.TableRowCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -322,5 +243,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionData
+          - 'excel!Excel.Interfaces.TableRowCollectionData:interface'
         description: ''

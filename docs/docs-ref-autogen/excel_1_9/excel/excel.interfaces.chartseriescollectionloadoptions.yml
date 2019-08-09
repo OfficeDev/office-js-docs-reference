@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of chart series.
 
@@ -10,55 +10,55 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.axisGroup
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.boxwhiskerOptions
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.bubbleScale
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.dataLabels
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.explosion
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.firstSliceAngle
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumType
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumValue
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointType
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointValue
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumType
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumValue
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientStyle
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.invertColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.invertIfNegative
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.overlap
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.parentLabelStrategy
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.secondPlotSize
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showConnectorLines
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showLeaderLines
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.splitType
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.splitValue
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.varyByCategories
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#axisGroup:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#boxwhiskerOptions:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#bubbleScale:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#explosion:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#firstSliceAngle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertIfNegative:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#overlap:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#parentLabelStrategy:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#secondPlotSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showConnectorLines:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showLeaderLines:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#smooth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitValue:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#varyByCategories:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.axisGroup
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#axisGroup:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the group for the specified series. Read/Write
 
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.binOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#binOptions:member'
     summary: |-
       For EACH ITEM in the collection: Encapsulates the bin options for histogram charts and pareto charts.
 
@@ -98,8 +98,8 @@ items:
       content: 'binOptions?: Excel.Interfaces.ChartBinOptionsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBinOptionsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.boxwhiskerOptions
+          - 'excel!Excel.Interfaces.ChartBinOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#boxwhiskerOptions:member'
     summary: |-
       For EACH ITEM in the collection: Encapsulates the options for the box and whisker charts.
 
@@ -113,8 +113,8 @@ items:
       content: 'boxwhiskerOptions?: Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.bubbleScale
+          - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#bubbleScale:member'
     summary: >-
       For EACH ITEM in the collection: This can be an integer value from 0 (zero) to 300, representing the percentage of
       the default size. This property only applies to bubble charts. Read/Write.
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#chartType:member'
     summary: |-
       For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.dataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#dataLabels:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all dataLabels in the series.
 
@@ -160,8 +160,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
+          - 'excel!Excel.Interfaces.ChartDataLabelsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member'
     summary: >-
       For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
       doughnutExploded charts. Throws an invalid argument exception on invalid charts.
@@ -178,7 +178,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.explosion
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#explosion:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the explosion value for a pie-chart or doughnut-chart slice.
       Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
@@ -195,7 +195,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#filtered:member'
     summary: >-
       For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for
       surface charts.
@@ -212,7 +212,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.firstSliceAngle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#firstSliceAngle:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the angle of the first pie-chart or doughnut-chart slice, in
       degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0
@@ -230,7 +230,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#format:member'
     summary: >-
       For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line
       formatting.
@@ -246,8 +246,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
+          - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
     summary: >-
       For EACH ITEM in the collection: Represents the gap width of a chart series. Only valid on bar and column charts,
       as well as specific classes of line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -264,7 +264,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumColor:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the color for maximum value of a region map chart series.
       Read/Write.
@@ -281,7 +281,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumType:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the type for maximum value of a region map chart series.
       Read/Write.
@@ -298,7 +298,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMaximumValue
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMaximumValue:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the maximum value of a region map chart series. Read/Write.
 
@@ -313,7 +313,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointColor:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the color for midpoint value of a region map chart series.
       Read/Write.
@@ -330,7 +330,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointType:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the type for midpoint value of a region map chart series.
       Read/Write.
@@ -347,7 +347,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMidpointValue
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMidpointValue:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the midpoint value of a region map chart series. Read/Write.
 
@@ -362,7 +362,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumColor:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the color for minimum value of a region map chart series.
       Read/Write.
@@ -379,7 +379,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumType:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the type for minimum value of a region map chart series.
       Read/Write.
@@ -396,7 +396,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientMinimumValue
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientMinimumValue:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the minimum value of a region map chart series. Read/Write.
 
@@ -411,7 +411,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gradientStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gradientStyle:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets series gradient style of a region map chart. Read/Write.
 
@@ -426,7 +426,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#hasDataLabels:member'
     summary: |-
       For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
 
@@ -441,7 +441,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.invertColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertColor:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the fill color for negative data points in a series. Read/Write.
 
@@ -456,7 +456,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.invertIfNegative
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#invertIfNegative:member'
     summary: >-
       For EACH ITEM in the collection: True if Microsoft Excel inverts the pattern in the item when it corresponds to a
       negative number. Read/Write.
@@ -473,7 +473,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.mapOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#mapOptions:member'
     summary: |-
       For EACH ITEM in the collection: Encapsulates the options for a region map chart.
 
@@ -487,8 +487,8 @@ items:
       content: 'mapOptions?: Excel.Interfaces.ChartMapOptionsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartMapOptionsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
+          - 'excel!Excel.Interfaces.ChartMapOptionsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member'
     summary: |-
       For EACH ITEM in the collection: Represents markers background color of a chart series.
 
@@ -503,7 +503,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerForegroundColor:member'
     summary: |-
       For EACH ITEM in the collection: Represents markers foreground color of a chart series.
 
@@ -518,7 +518,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerSize:member'
     summary: |-
       For EACH ITEM in the collection: Represents marker size of a chart series.
 
@@ -533,7 +533,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerStyle:member'
     summary: >-
       For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for
       details.
@@ -550,7 +550,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Represents the name of a series in a chart.
 
@@ -565,7 +565,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.overlap
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#overlap:member'
     summary: >-
       For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and
       100. Applies only to 2-D bar and 2-D column charts. Read/Write.
@@ -582,7 +582,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.parentLabelStrategy
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#parentLabelStrategy:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the series parent label strategy area for a treemap chart.
       Read/Write.
@@ -599,7 +599,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#plotOrder:member'
     summary: |-
       For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
 
@@ -614,7 +614,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all points in the series.
 
@@ -628,8 +628,8 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.secondPlotSize
+          - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#secondPlotSize:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the size of the secondary section of either a pie of pie chart or
       a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
@@ -646,7 +646,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showConnectorLines
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showConnectorLines:member'
     summary: >-
       For EACH ITEM in the collection: Specifies whether or not connector lines are shown in waterfall charts.
       Read/Write.
@@ -663,7 +663,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showLeaderLines
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showLeaderLines:member'
     summary: >-
       For EACH ITEM in the collection: Specifies whether or not leader lines are displayed for each data label in the
       series. Read/Write.
@@ -680,7 +680,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showShadow:member'
     summary: |-
       For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
 
@@ -695,7 +695,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#smooth:member'
     summary: >-
       For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to
       line and scatter charts.
@@ -712,7 +712,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.splitType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitType:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the way the two sections of either a pie of pie chart or a bar of
       pie chart are split. Read/Write.
@@ -729,7 +729,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.splitValue
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#splitValue:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the threshold value that separates two sections of either a
       pie-of-pie chart or a bar-of-pie chart. Read/Write.
@@ -746,7 +746,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.varyByCategories
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#varyByCategories:member'
     summary: >-
       For EACH ITEM in the collection: True if Microsoft Excel assigns a different color or pattern to each data marker.
       The chart must contain only one series. Read/Write.
@@ -763,7 +763,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.xErrorBars
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#xErrorBars:member'
     summary: |-
       For EACH ITEM in the collection: Represents the error bar object of a chart series.
 
@@ -777,8 +777,8 @@ items:
       content: 'xErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.yErrorBars
+          - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#yErrorBars:member'
     summary: |-
       For EACH ITEM in the collection: Represents the error bar object of a chart series.
 
@@ -792,4 +792,4 @@ items:
       content: 'yErrorBars?: Excel.Interfaces.ChartErrorBarsLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
+          - 'excel!Excel.Interfaces.ChartErrorBarsLoadOptions:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartCollection
+  - uid: 'excel!Excel.ChartCollection:class'
     summary: |-
       A collection of all the chart objects on a worksheet.
 
@@ -12,26 +12,26 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartCollection.add
-      - excel.Excel.ChartCollection.add_1
-      - excel.Excel.ChartCollection.context
-      - excel.Excel.ChartCollection.count
-      - excel.Excel.ChartCollection.getCount
-      - excel.Excel.ChartCollection.getItem
-      - excel.Excel.ChartCollection.getItemAt
-      - excel.Excel.ChartCollection.getItemOrNullObject
-      - excel.Excel.ChartCollection.items
-      - excel.Excel.ChartCollection.load
-      - excel.Excel.ChartCollection.load_1
-      - excel.Excel.ChartCollection.load_2
-      - excel.Excel.ChartCollection.onActivated
-      - excel.Excel.ChartCollection.onAdded
-      - excel.Excel.ChartCollection.onDeactivated
-      - excel.Excel.ChartCollection.onDeleted
-      - excel.Excel.ChartCollection.toJSON
-  - uid: excel.Excel.ChartCollection.add
+      - 'excel!Excel.ChartCollection#add:member(1)'
+      - 'excel!Excel.ChartCollection#add:member(2)'
+      - 'excel!Excel.ChartCollection#context:member'
+      - 'excel!Excel.ChartCollection#count:member'
+      - 'excel!Excel.ChartCollection#getCount:member(1)'
+      - 'excel!Excel.ChartCollection#getItem:member(1)'
+      - 'excel!Excel.ChartCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.ChartCollection#items:member'
+      - 'excel!Excel.ChartCollection#load:member(1)'
+      - 'excel!Excel.ChartCollection#load:member(2)'
+      - 'excel!Excel.ChartCollection#load:member(3)'
+      - 'excel!Excel.ChartCollection#onActivated:member'
+      - 'excel!Excel.ChartCollection#onAdded:member'
+      - 'excel!Excel.ChartCollection#onDeactivated:member'
+      - 'excel!Excel.ChartCollection#onDeleted:member'
+      - 'excel!Excel.ChartCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartCollection#add:member(1)'
     summary: |-
       Creates a new chart.
 
@@ -45,24 +45,24 @@ items:
       content: 'add(type: Excel.ChartType, sourceData: Range, seriesBy?: Excel.ChartSeriesBy): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: ''
       parameters:
         - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
-            - excel.Excel.ChartType
+            - 'excel!Excel.ChartType:enum'
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - 'excel!Excel.Range:class'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
-            - excel.Excel.ChartSeriesBy
-  - uid: excel.Excel.ChartCollection.add_1
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.ChartCollection#add:member(2)'
     summary: |-
       Creates a new chart.
 
@@ -91,30 +91,8 @@ items:
         sourceData: Range, seriesBy?: "Auto" | "Columns" | "Rows"): Excel.Chart;
       return:
         type:
-          - excel.Excel.Chart
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Add a chart of chartType "ColumnClustered" on worksheet "Charts" 
-          // with sourceData from Range "A1:B4" and seriresBy is set to be "auto".
-          Excel.run(function (ctx) { 
-              var rangeSelection = "A1:B4";
-              var range = ctx.workbook.worksheets.getItem(sheetName)
-                  .getRange(rangeSelection);
-              var chart = ctx.workbook.worksheets.getItem(sheetName)
-                  .charts.add("ColumnClustered", range, "auto");    return ctx.sync().then(function() {
-                      console.log("New Chart Added");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Chart:class'
+        description: ''
       parameters:
         - id: typeString
           description: Represents the type of a chart. See Excel.ChartType for details.
@@ -138,14 +116,14 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - 'excel!Excel.Range:class'
         - id: seriesBy
           description: >-
             Optional. Specifies the way columns or rows are used as data series on the chart. See Excel.ChartSeriesBy
             for details.
           type:
             - '"Auto" | "Columns" | "Rows"'
-  - uid: excel.Excel.ChartCollection.context
+  - uid: 'excel!Excel.ChartCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -158,8 +136,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartCollection#count:member'
     summary: |-
       Returns the number of charts in the worksheet. Read-only.
 
@@ -174,7 +152,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartCollection.getCount
+  - uid: 'excel!Excel.ChartCollection#getCount:member(1)'
     summary: |-
       Returns the number of charts in the worksheet.
 
@@ -190,7 +168,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.ChartCollection.getItem
+  - uid: 'excel!Excel.ChartCollection#getItem:member(1)'
     summary: |-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned.
 
@@ -204,60 +182,14 @@ items:
       content: 'getItem(name: string): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var chartname = 'Chart1';
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartname);
-              return ctx.sync().then(function() {
-                      console.log(chart.height);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          Excel.run(function (ctx) { 
-              var chartId = 'SampleChartId';
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem(chartId);
-              return ctx.sync().then(function() {
-                      console.log(chart.height);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          Excel.run(function (ctx) { 
-              var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-              return ctx.sync().then(function() {
-                      console.log(chart.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Chart:class'
+        description: ''
       parameters:
         - id: name
           description: Name of the chart to be retrieved.
           type:
             - string
-  - uid: excel.Excel.ChartCollection.getItemAt
+  - uid: 'excel!Excel.ChartCollection#getItemAt:member(1)'
     summary: |-
       Gets a chart based on its position in the collection.
 
@@ -271,32 +203,14 @@ items:
       content: 'getItemAt(index: number): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var lastPosition = ctx.workbook.worksheets.getItem("Sheet1").charts.count - 1;
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItemAt(lastPosition);
-              return ctx.sync().then(function() {
-                      console.log(chart.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Chart:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.ChartCollection.getItemOrNullObject
+  - uid: 'excel!Excel.ChartCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a chart using its name. If there are multiple charts with the same name, the first one will be returned. If
       the chart does not exist, will return a null object.
@@ -312,14 +226,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: ''
       parameters:
         - id: name
           description: Name of the chart to be retrieved.
           type:
             - string
-  - uid: excel.Excel.ChartCollection.items
+  - uid: 'excel!Excel.ChartCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -331,7 +245,7 @@ items:
       return:
         type:
           - 'Excel.Chart[]'
-  - uid: excel.Excel.ChartCollection.load
+  - uid: 'excel!Excel.ChartCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -364,14 +278,14 @@ items:
         Excel.ChartCollection;
       return:
         type:
-          - excel.Excel.ChartCollection
+          - 'excel!Excel.ChartCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.ChartCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.ChartCollection.load_1
+  - uid: 'excel!Excel.ChartCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -384,50 +298,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
-              charts.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < charts.items.length; i++)
-                  {
-                      console.log(charts.items[i].name);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Get the number of charts
-          Excel.run(function (ctx) { 
-              var charts = ctx.workbook.worksheets.getItem("Sheet1").charts;
-              charts.load('count');
-              return ctx.sync().then(function() {
-                  console.log("charts: Count= " + charts.count);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartCollection.load_2
+  - uid: 'excel!Excel.ChartCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -437,14 +315,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
+          - 'excel!Excel.ChartCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.ChartCollection.onActivated
+  - uid: 'excel!Excel.ChartCollection#onActivated:member'
     summary: |-
       Occurs when a chart is activated.
 
@@ -459,24 +337,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onActivated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The ID of the active chart is: " + event.chartId)
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartCollection.onAdded
+  - uid: 'excel!Excel.ChartCollection#onAdded:member'
     summary: |-
       Occurs when a new chart is added to the worksheet.
 
@@ -491,24 +352,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartAddedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onAdded.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("A chart has been added with ID: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartCollection.onDeactivated
+  - uid: 'excel!Excel.ChartCollection#onDeactivated:member'
     summary: |-
       Occurs when a chart is deactivated.
 
@@ -523,24 +367,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onDeactivated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The chart with this ID was deactivated: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartCollection.onDeleted
+  - uid: 'excel!Excel.ChartCollection#onDeleted:member'
     summary: |-
       Occurs when a chart is deleted.
 
@@ -555,24 +382,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeletedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              context.workbook.worksheets.getActiveWorksheet()
-                  .charts.onDeleted.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The chart with this ID was deleted: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartCollection.toJSON
+  - uid: 'excel!Excel.ChartCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -588,5 +398,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionData
+          - 'excel!Excel.Interfaces.ChartCollectionData:interface'
         description: ''

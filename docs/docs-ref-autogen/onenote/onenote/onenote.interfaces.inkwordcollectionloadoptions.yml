@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of InkWord objects.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.id
-      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.languageId
-      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph
-      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#languageId:member'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#paragraph:member'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#wordAlternates:member'
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkWord object. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.languageId
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#languageId:member'
     summary: |-
       For EACH ITEM in the collection: The id of the recognized language in this ink word. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.paragraph
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#paragraph:member'
     summary: |-
       For EACH ITEM in the collection: The parent paragraph containing the ink word.
 
@@ -72,8 +72,8 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions.wordAlternates
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions#wordAlternates:member'
     summary: >-
       For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.
       Read-only.

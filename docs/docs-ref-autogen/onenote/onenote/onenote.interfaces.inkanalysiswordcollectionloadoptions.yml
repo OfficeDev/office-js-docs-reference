@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of InkAnalysisWord objects.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.id
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.languageId
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.strokePointers
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.wordAlternates
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#languageId:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#strokePointers:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#wordAlternates:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets the ID of the InkAnalysisWord object. Read-only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.languageId
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#languageId:member'
     summary: |-
       For EACH ITEM in the collection: The id of the recognized language in this inkAnalysisWord. Read-only.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.line
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#line:member'
     summary: |-
       For EACH ITEM in the collection: Reference to the parent InkAnalysisLine.
 
@@ -73,8 +73,8 @@ items:
       content: 'line?: OneNote.Interfaces.InkAnalysisLineLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.strokePointers
+          - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#strokePointers:member'
     summary: >-
       For EACH ITEM in the collection: Weak references to the ink strokes that were recognized as part of this ink
       analysis word. Read-only.
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions.wordAlternates
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions#wordAlternates:member'
     summary: >-
       For EACH ITEM in the collection: The words that were recognized in this ink word, in order of likelihood.
       Read-only.

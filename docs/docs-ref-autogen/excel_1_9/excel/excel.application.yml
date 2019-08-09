@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Application
+  - uid: 'excel!Excel.Application:class'
     summary: |-
       Represents the Excel application that manages the workbook.
 
@@ -12,24 +12,24 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Application.calculate
-      - excel.Excel.Application.calculate_1
-      - excel.Excel.Application.calculationEngineVersion
-      - excel.Excel.Application.calculationMode
-      - excel.Excel.Application.calculationState
-      - excel.Excel.Application.context
-      - excel.Excel.Application.iterativeCalculation
-      - excel.Excel.Application.load
-      - excel.Excel.Application.load_1
-      - excel.Excel.Application.load_2
-      - excel.Excel.Application.set
-      - excel.Excel.Application.set_1
-      - excel.Excel.Application.suspendApiCalculationUntilNextSync
-      - excel.Excel.Application.suspendScreenUpdatingUntilNextSync
-      - excel.Excel.Application.toJSON
-  - uid: excel.Excel.Application.calculate
+      - 'excel!Excel.Application#calculate:member(1)'
+      - 'excel!Excel.Application#calculate:member(2)'
+      - 'excel!Excel.Application#calculationEngineVersion:member'
+      - 'excel!Excel.Application#calculationMode:member'
+      - 'excel!Excel.Application#calculationState:member'
+      - 'excel!Excel.Application#context:member'
+      - 'excel!Excel.Application#iterativeCalculation:member'
+      - 'excel!Excel.Application#load:member(1)'
+      - 'excel!Excel.Application#load:member(2)'
+      - 'excel!Excel.Application#load:member(3)'
+      - 'excel!Excel.Application#set:member(1)'
+      - 'excel!Excel.Application#set:member(2)'
+      - 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
+      - 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
+      - 'excel!Excel.Application#toJSON:member(1)'
+  - uid: 'excel!Excel.Application#calculate:member(1)'
     summary: |-
       Recalculate all currently opened workbooks in Excel.
 
@@ -49,8 +49,8 @@ items:
         - id: calculationType
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
-            - excel.Excel.CalculationType
-  - uid: excel.Excel.Application.calculate_1
+            - 'excel!Excel.CalculationType:enum'
+  - uid: 'excel!Excel.Application#calculate:member(2)'
     summary: |-
       Recalculate all currently opened workbooks in Excel.
 
@@ -65,28 +65,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              ctx.workbook.application.calculate('Full');
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: calculationTypeString
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
             - '"Recalculate" | "Full" | "FullRebuild"'
-  - uid: excel.Excel.Application.calculationEngineVersion
+  - uid: 'excel!Excel.Application#calculationEngineVersion:member'
     summary: |-
       Returns the Excel calculation engine version used for the last full recalculation. Read-only.
 
@@ -101,7 +86,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Application.calculationMode
+  - uid: 'excel!Excel.Application#calculationMode:member'
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
       values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel
@@ -121,7 +106,7 @@ items:
       return:
         type:
           - Excel.CalculationMode | "Automatic" | "AutomaticExceptTables" | "Manual"
-  - uid: excel.Excel.Application.calculationState
+  - uid: 'excel!Excel.Application#calculationState:member'
     summary: |-
       Returns the calculation state of the application. See Excel.CalculationState for details. Read-only.
 
@@ -136,7 +121,7 @@ items:
       return:
         type:
           - Excel.CalculationState | "Done" | "Calculating" | "Pending"
-  - uid: excel.Excel.Application.context
+  - uid: 'excel!Excel.Application#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -149,8 +134,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Application.iterativeCalculation
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Application#iterativeCalculation:member'
     summary: >-
       Returns the Iterative Calculation settings. In Excel on Windows and Mac, the settings will apply to the Excel
       Application. In Excel on the web and other platforms, the settings will apply to the active workbook.
@@ -166,8 +151,8 @@ items:
       content: 'readonly iterativeCalculation: Excel.IterativeCalculation;'
       return:
         type:
-          - excel.Excel.IterativeCalculation
-  - uid: excel.Excel.Application.load
+          - 'excel!Excel.IterativeCalculation:class'
+  - uid: 'excel!Excel.Application#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -198,14 +183,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ApplicationLoadOptions): Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
+          - 'excel!Excel.Application:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ApplicationLoadOptions
-  - uid: excel.Excel.Application.load_1
+            - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'excel!Excel.Application#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -218,32 +203,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              var application = ctx.workbook.application;
-              application.load('calculationMode');
-              return ctx.sync().then(function() {
-                  console.log(application.calculationMode);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Application:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Application.load_2
+  - uid: 'excel!Excel.Application#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -256,7 +223,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
+          - 'excel!Excel.Application:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -265,7 +232,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Application.set
+  - uid: 'excel!Excel.Application#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -295,7 +262,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Application.set_1
+  - uid: 'excel!Excel.Application#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -312,8 +279,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Application
-  - uid: excel.Excel.Application.suspendApiCalculationUntilNextSync
+            - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.Application#suspendApiCalculationUntilNextSync:member(1)'
     summary: >-
       Suspends calculation until the next "context.sync()" is called. Once set, it is the developer's responsibility to
       re-calc the workbook, to ensure that any dependencies are propagated.
@@ -331,7 +298,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Application.suspendScreenUpdatingUntilNextSync
+  - uid: 'excel!Excel.Application#suspendScreenUpdatingUntilNextSync:member(1)'
     summary: |-
       Suspends sceen updating until the next "context.sync()" is called.
 
@@ -346,40 +313,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              const rowCount = 500;
-              const columnCount = 20;
-
-              const startTime = Date.now();
-              console.log("Starting...");
-
-              if (pauseScreenPainting) {
-                  context.application.suspendScreenUpdatingUntilNextSync();
-              }
-
-              for (let i = 0; i < rowCount; i++) {
-                  for (let j = 0; j < columnCount; j++) {
-                      let cell = sheet.getCell(i, j);
-                      cell.values = [[i * j * Math.random()]];
-                      if (untrack) {
-                          cell.untrack();
-                      }
-                  }
-              }
-
-              await context.sync();
-
-              console.log(`Ending. Adding ${rowCount * columnCount} cells took ${Date.now() - startTime} milliseconds`);
-          });
-          ```
-  - uid: excel.Excel.Application.toJSON
+        description: ''
+  - uid: 'excel!Excel.Application#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -395,5 +330,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ApplicationData;'
       return:
         type:
-          - excel.Excel.Interfaces.ApplicationData
+          - 'excel!Excel.Interfaces.ApplicationData:interface'
         description: ''

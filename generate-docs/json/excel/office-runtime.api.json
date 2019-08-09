@@ -1,23 +1,23 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.3.2",
-    "schemaVersion": 1001,
+    "toolVersion": "7.3.6",
+    "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
-  "canonicalReference": "office-runtime",
+  "canonicalReference": "office-runtime!",
   "docComment": "",
   "name": "office-runtime",
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "",
+      "canonicalReference": "office-runtime!",
       "name": "",
       "members": [
         {
           "kind": "Namespace",
-          "canonicalReference": "(OfficeRuntime:namespace)",
+          "canonicalReference": "office-runtime!OfficeRuntime:namespace",
           "docComment": "/**\n * Office runtime namespace.\n */\n",
           "excerptTokens": [
             {
@@ -38,7 +38,7 @@
           "members": [
             {
               "kind": "Interface",
-              "canonicalReference": "(Dialog:interface)",
+              "canonicalReference": "office-runtime!OfficeRuntime.Dialog:interface",
               "docComment": "/**\n * Object representing the dialog box.\n */\n",
               "excerptTokens": [
                 {
@@ -59,7 +59,7 @@
               "members": [
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(close:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Dialog#close:member(1)",
                   "docComment": "/**\n * Method to close a dialog box. Returns a Promise.\n */\n",
                   "excerptTokens": [
                     {
@@ -88,7 +88,7 @@
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [],
                   "name": "close"
                 }
@@ -97,7 +97,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "(displayWebDialog:0)",
+              "canonicalReference": "office-runtime!OfficeRuntime.displayWebDialog:function(1)",
               "docComment": "/**\n * Method that enables a pop up web dialog box.\n *\n * @param url - Must be a string.\n *\n * @param options - Optional parameter. Must be of type DisplayWebDialogOptions.\n */\n",
               "excerptTokens": [
                 {
@@ -170,7 +170,7 @@
                 "endIndex": 15
               },
               "releaseTag": "Public",
-              "overloadIndex": 0,
+              "overloadIndex": 1,
               "parameters": [
                 {
                   "parameterName": "url",
@@ -191,7 +191,7 @@
             },
             {
               "kind": "Interface",
-              "canonicalReference": "(DisplayWebDialogOptions:interface)",
+              "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface",
               "docComment": "/**\n * Provides display options and actions a dialog box may take.\n */\n",
               "excerptTokens": [
                 {
@@ -212,7 +212,7 @@
               "members": [
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "displayInIFrame",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member",
                   "docComment": "/**\n * Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true). This setting is only applicable to custom functions running on Excel Online.\n */\n",
                   "excerptTokens": [
                     {
@@ -241,7 +241,7 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "height",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member",
                   "docComment": "/**\n * Optional parameter that defines the height of the dialog box as a percentage of the current display. For example, accepts strings such as: '50%', '50'.\n */\n",
                   "excerptTokens": [
                     {
@@ -270,7 +270,7 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "onClose",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member",
                   "docComment": "/**\n * Optional callback that runs when the dialog box is closed.\n */\n",
                   "excerptTokens": [
                     {
@@ -299,7 +299,7 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "onMessage",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member",
                   "docComment": "/**\n * Optional callback that runs when the dialog box sends a message to its parent.\n */\n",
                   "excerptTokens": [
                     {
@@ -352,7 +352,7 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "onRuntimeError",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member",
                   "docComment": "/**\n * Optional callback that runs when the dialog box sends an error.\n */\n",
                   "excerptTokens": [
                     {
@@ -413,7 +413,7 @@
                 },
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "width",
+                  "canonicalReference": "office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member",
                   "docComment": "/**\n * Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such as: '50%', '50'.\n */\n",
                   "excerptTokens": [
                     {
@@ -445,7 +445,7 @@
             },
             {
               "kind": "Interface",
-              "canonicalReference": "(Storage:interface)",
+              "canonicalReference": "office-runtime!OfficeRuntime.Storage:interface",
               "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n *\n * @remarks\n *\n * Storage limit is 10 MB per domain, which may be shared by multiple add-ins.\n */\n",
               "excerptTokens": [
                 {
@@ -466,7 +466,7 @@
               "members": [
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(getItem:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItem:member(1)",
                   "docComment": "/**\n * Retrieves an item from storage based on its key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @param key - Key of item to be retrieved. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
@@ -511,7 +511,7 @@
                     "endIndex": 8
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "key",
@@ -525,7 +525,7 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(getItems:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#getItems:member(1)",
                   "docComment": "/**\n * Retrieves multiple items from storage based on their key. Returns a Promise. In the event the Promise does not resolve, returns null.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
@@ -578,7 +578,7 @@
                     "endIndex": 10
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "keys",
@@ -592,7 +592,7 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(getKeys:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#getKeys:member(1)",
                   "docComment": "/**\n * Retrieves an array of all keys from storage. Returns a Promise.\n */\n",
                   "excerptTokens": [
                     {
@@ -621,13 +621,13 @@
                     "endIndex": 4
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [],
                   "name": "getKeys"
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(removeItem:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItem:member(1)",
                   "docComment": "/**\n * Removes an item from storage based on its key. Returns a Promise.\n *\n * @param key - Key of item to be removed. Must be a string.\n */\n",
                   "excerptTokens": [
                     {
@@ -672,7 +672,7 @@
                     "endIndex": 8
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "key",
@@ -686,7 +686,7 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(removeItems:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#removeItems:member(1)",
                   "docComment": "/**\n * Removes multiple items from storage. Returns a Promise.\n *\n * @param keys - Keys of items to be removed. Must be an array of strings.\n */\n",
                   "excerptTokens": [
                     {
@@ -731,7 +731,7 @@
                     "endIndex": 8
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "keys",
@@ -745,7 +745,7 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(setItem:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItem:member(1)",
                   "docComment": "/**\n * Sets a key-value pair into storage or updates an existing key-value pair. Returns a Promise.\n *\n * @param key - Key of item to be set. Must be a string.\n *\n * @param value - Must be a string.\n */\n",
                   "excerptTokens": [
                     {
@@ -806,7 +806,7 @@
                     "endIndex": 12
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "key",
@@ -827,7 +827,7 @@
                 },
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(setItems:0)",
+                  "canonicalReference": "office-runtime!OfficeRuntime.Storage#setItems:member(1)",
                   "docComment": "/**\n * Sets multiple items into storage or updates multiple items within storage. Returns a Promise.\n *\n * @param keyValues - Key-value pairs to be set. Must be strings.\n */\n",
                   "excerptTokens": [
                     {
@@ -880,7 +880,7 @@
                     "endIndex": 10
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "keyValues",
@@ -897,7 +897,7 @@
             },
             {
               "kind": "Variable",
-              "canonicalReference": "storage",
+              "canonicalReference": "office-runtime!OfficeRuntime.storage:var",
               "docComment": "/**\n * Asynchronous, global, and persistent key-value storage.\n */\n",
               "excerptTokens": [
                 {

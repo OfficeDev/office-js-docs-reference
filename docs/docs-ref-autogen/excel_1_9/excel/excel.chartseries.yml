@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartSeries
+  - uid: 'excel!Excel.ChartSeries:class'
     summary: |-
       Represents a series in a chart.
 
@@ -12,66 +12,66 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartSeries.axisGroup
-      - excel.Excel.ChartSeries.binOptions
-      - excel.Excel.ChartSeries.boxwhiskerOptions
-      - excel.Excel.ChartSeries.bubbleScale
-      - excel.Excel.ChartSeries.chartType
-      - excel.Excel.ChartSeries.context
-      - excel.Excel.ChartSeries.dataLabels
-      - excel.Excel.ChartSeries.delete
-      - excel.Excel.ChartSeries.doughnutHoleSize
-      - excel.Excel.ChartSeries.explosion
-      - excel.Excel.ChartSeries.filtered
-      - excel.Excel.ChartSeries.firstSliceAngle
-      - excel.Excel.ChartSeries.format
-      - excel.Excel.ChartSeries.gapWidth
-      - excel.Excel.ChartSeries.gradientMaximumColor
-      - excel.Excel.ChartSeries.gradientMaximumType
-      - excel.Excel.ChartSeries.gradientMaximumValue
-      - excel.Excel.ChartSeries.gradientMidpointColor
-      - excel.Excel.ChartSeries.gradientMidpointType
-      - excel.Excel.ChartSeries.gradientMidpointValue
-      - excel.Excel.ChartSeries.gradientMinimumColor
-      - excel.Excel.ChartSeries.gradientMinimumType
-      - excel.Excel.ChartSeries.gradientMinimumValue
-      - excel.Excel.ChartSeries.gradientStyle
-      - excel.Excel.ChartSeries.hasDataLabels
-      - excel.Excel.ChartSeries.invertColor
-      - excel.Excel.ChartSeries.invertIfNegative
-      - excel.Excel.ChartSeries.load
-      - excel.Excel.ChartSeries.load_1
-      - excel.Excel.ChartSeries.load_2
-      - excel.Excel.ChartSeries.mapOptions
-      - excel.Excel.ChartSeries.markerBackgroundColor
-      - excel.Excel.ChartSeries.markerForegroundColor
-      - excel.Excel.ChartSeries.markerSize
-      - excel.Excel.ChartSeries.markerStyle
-      - excel.Excel.ChartSeries.name
-      - excel.Excel.ChartSeries.overlap
-      - excel.Excel.ChartSeries.parentLabelStrategy
-      - excel.Excel.ChartSeries.plotOrder
-      - excel.Excel.ChartSeries.points
-      - excel.Excel.ChartSeries.secondPlotSize
-      - excel.Excel.ChartSeries.set
-      - excel.Excel.ChartSeries.set_1
-      - excel.Excel.ChartSeries.setBubbleSizes
-      - excel.Excel.ChartSeries.setValues
-      - excel.Excel.ChartSeries.setXAxisValues
-      - excel.Excel.ChartSeries.showConnectorLines
-      - excel.Excel.ChartSeries.showLeaderLines
-      - excel.Excel.ChartSeries.showShadow
-      - excel.Excel.ChartSeries.smooth
-      - excel.Excel.ChartSeries.splitType
-      - excel.Excel.ChartSeries.splitValue
-      - excel.Excel.ChartSeries.toJSON
-      - excel.Excel.ChartSeries.trendlines
-      - excel.Excel.ChartSeries.varyByCategories
-      - excel.Excel.ChartSeries.xErrorBars
-      - excel.Excel.ChartSeries.yErrorBars
-  - uid: excel.Excel.ChartSeries.axisGroup
+      - 'excel!Excel.ChartSeries#axisGroup:member'
+      - 'excel!Excel.ChartSeries#binOptions:member'
+      - 'excel!Excel.ChartSeries#boxwhiskerOptions:member'
+      - 'excel!Excel.ChartSeries#bubbleScale:member'
+      - 'excel!Excel.ChartSeries#chartType:member'
+      - 'excel!Excel.ChartSeries#context:member'
+      - 'excel!Excel.ChartSeries#dataLabels:member'
+      - 'excel!Excel.ChartSeries#delete:member(1)'
+      - 'excel!Excel.ChartSeries#doughnutHoleSize:member'
+      - 'excel!Excel.ChartSeries#explosion:member'
+      - 'excel!Excel.ChartSeries#filtered:member'
+      - 'excel!Excel.ChartSeries#firstSliceAngle:member'
+      - 'excel!Excel.ChartSeries#format:member'
+      - 'excel!Excel.ChartSeries#gapWidth:member'
+      - 'excel!Excel.ChartSeries#gradientMaximumColor:member'
+      - 'excel!Excel.ChartSeries#gradientMaximumType:member'
+      - 'excel!Excel.ChartSeries#gradientMaximumValue:member'
+      - 'excel!Excel.ChartSeries#gradientMidpointColor:member'
+      - 'excel!Excel.ChartSeries#gradientMidpointType:member'
+      - 'excel!Excel.ChartSeries#gradientMidpointValue:member'
+      - 'excel!Excel.ChartSeries#gradientMinimumColor:member'
+      - 'excel!Excel.ChartSeries#gradientMinimumType:member'
+      - 'excel!Excel.ChartSeries#gradientMinimumValue:member'
+      - 'excel!Excel.ChartSeries#gradientStyle:member'
+      - 'excel!Excel.ChartSeries#hasDataLabels:member'
+      - 'excel!Excel.ChartSeries#invertColor:member'
+      - 'excel!Excel.ChartSeries#invertIfNegative:member'
+      - 'excel!Excel.ChartSeries#load:member(1)'
+      - 'excel!Excel.ChartSeries#load:member(2)'
+      - 'excel!Excel.ChartSeries#load:member(3)'
+      - 'excel!Excel.ChartSeries#mapOptions:member'
+      - 'excel!Excel.ChartSeries#markerBackgroundColor:member'
+      - 'excel!Excel.ChartSeries#markerForegroundColor:member'
+      - 'excel!Excel.ChartSeries#markerSize:member'
+      - 'excel!Excel.ChartSeries#markerStyle:member'
+      - 'excel!Excel.ChartSeries#name:member'
+      - 'excel!Excel.ChartSeries#overlap:member'
+      - 'excel!Excel.ChartSeries#parentLabelStrategy:member'
+      - 'excel!Excel.ChartSeries#plotOrder:member'
+      - 'excel!Excel.ChartSeries#points:member'
+      - 'excel!Excel.ChartSeries#secondPlotSize:member'
+      - 'excel!Excel.ChartSeries#set:member(1)'
+      - 'excel!Excel.ChartSeries#set:member(2)'
+      - 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
+      - 'excel!Excel.ChartSeries#setValues:member(1)'
+      - 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
+      - 'excel!Excel.ChartSeries#showConnectorLines:member'
+      - 'excel!Excel.ChartSeries#showLeaderLines:member'
+      - 'excel!Excel.ChartSeries#showShadow:member'
+      - 'excel!Excel.ChartSeries#smooth:member'
+      - 'excel!Excel.ChartSeries#splitType:member'
+      - 'excel!Excel.ChartSeries#splitValue:member'
+      - 'excel!Excel.ChartSeries#toJSON:member(1)'
+      - 'excel!Excel.ChartSeries#trendlines:member'
+      - 'excel!Excel.ChartSeries#varyByCategories:member'
+      - 'excel!Excel.ChartSeries#xErrorBars:member'
+      - 'excel!Excel.ChartSeries#yErrorBars:member'
+  - uid: 'excel!Excel.ChartSeries#axisGroup:member'
     summary: |-
       Returns or sets the group for the specified series. Read/Write
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - Excel.ChartAxisGroup | "Primary" | "Secondary"
-  - uid: excel.Excel.ChartSeries.binOptions
+  - uid: 'excel!Excel.ChartSeries#binOptions:member'
     summary: |-
       Encapsulates the bin options for histogram charts and pareto charts. Read-only.
 
@@ -100,8 +100,8 @@ items:
       content: 'readonly binOptions: Excel.ChartBinOptions;'
       return:
         type:
-          - excel.Excel.ChartBinOptions
-  - uid: excel.Excel.ChartSeries.boxwhiskerOptions
+          - 'excel!Excel.ChartBinOptions:class'
+  - uid: 'excel!Excel.ChartSeries#boxwhiskerOptions:member'
     summary: |-
       Encapsulates the options for the box and whisker charts. Read-only.
 
@@ -115,8 +115,8 @@ items:
       content: 'readonly boxwhiskerOptions: Excel.ChartBoxwhiskerOptions;'
       return:
         type:
-          - excel.Excel.ChartBoxwhiskerOptions
-  - uid: excel.Excel.ChartSeries.bubbleScale
+          - 'excel!Excel.ChartBoxwhiskerOptions:class'
+  - uid: 'excel!Excel.ChartSeries#bubbleScale:member'
     summary: >-
       This can be an integer value from 0 (zero) to 300, representing the percentage of the default size. This property
       only applies to bubble charts. Read/Write.
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.chartType
+  - uid: 'excel!Excel.ChartSeries#chartType:member'
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -177,7 +177,7 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.ChartSeries.context
+  - uid: 'excel!Excel.ChartSeries#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -190,8 +190,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartSeries.dataLabels
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartSeries#dataLabels:member'
     summary: |-
       Represents a collection of all dataLabels in the series.
 
@@ -205,8 +205,8 @@ items:
       content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
         type:
-          - excel.Excel.ChartDataLabels
-  - uid: excel.Excel.ChartSeries.delete
+          - 'excel!Excel.ChartDataLabels:class'
+  - uid: 'excel!Excel.ChartSeries#delete:member(1)'
     summary: |-
       Deletes the chart series.
 
@@ -221,29 +221,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-            const sheet = context.workbook.worksheets.getItem("Sample");
-            const seriesCollection = sheet.charts.getItemAt(0).series;
-            seriesCollection.load("count");
-            await context.sync();
-
-            if (seriesCollection.count > 0) {
-              const series = seriesCollection.getItemAt(0);
-
-              // Delete the first series.
-              series.delete();
-            }
-
-            await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.doughnutHoleSize
+        description: ''
+  - uid: 'excel!Excel.ChartSeries#doughnutHoleSize:member'
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
       invalid argument exception on invalid charts.
@@ -260,7 +239,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.explosion
+  - uid: 'excel!Excel.ChartSeries#explosion:member'
     summary: >-
       Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no
       explosion (the tip of the slice is in the center of the pie). Read/Write.
@@ -277,7 +256,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.filtered
+  - uid: 'excel!Excel.ChartSeries#filtered:member'
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
@@ -292,7 +271,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.firstSliceAngle
+  - uid: 'excel!Excel.ChartSeries#firstSliceAngle:member'
     summary: >-
       Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).
       Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
@@ -309,7 +288,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.format
+  - uid: 'excel!Excel.ChartSeries#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 
@@ -323,8 +302,8 @@ items:
       content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
-          - excel.Excel.ChartSeriesFormat
-  - uid: excel.Excel.ChartSeries.gapWidth
+          - 'excel!Excel.ChartSeriesFormat:class'
+  - uid: 'excel!Excel.ChartSeries#gapWidth:member'
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
       line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -341,7 +320,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.gradientMaximumColor
+  - uid: 'excel!Excel.ChartSeries#gradientMaximumColor:member'
     summary: |-
       Returns or sets the color for maximum value of a region map chart series. Read/Write.
 
@@ -356,7 +335,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartSeries.gradientMaximumType
+  - uid: 'excel!Excel.ChartSeries#gradientMaximumType:member'
     summary: |-
       Returns or sets the type for maximum value of a region map chart series. Read/Write.
 
@@ -371,7 +350,7 @@ items:
       return:
         type:
           - Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
-  - uid: excel.Excel.ChartSeries.gradientMaximumValue
+  - uid: 'excel!Excel.ChartSeries#gradientMaximumValue:member'
     summary: |-
       Returns or sets the maximum value of a region map chart series. Read/Write.
 
@@ -386,7 +365,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.gradientMidpointColor
+  - uid: 'excel!Excel.ChartSeries#gradientMidpointColor:member'
     summary: |-
       Returns or sets the color for midpoint value of a region map chart series. Read/Write.
 
@@ -401,7 +380,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartSeries.gradientMidpointType
+  - uid: 'excel!Excel.ChartSeries#gradientMidpointType:member'
     summary: |-
       Returns or sets the type for midpoint value of a region map chart series. Read/Write.
 
@@ -416,7 +395,7 @@ items:
       return:
         type:
           - Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
-  - uid: excel.Excel.ChartSeries.gradientMidpointValue
+  - uid: 'excel!Excel.ChartSeries#gradientMidpointValue:member'
     summary: |-
       Returns or sets the midpoint value of a region map chart series. Read/Write.
 
@@ -431,7 +410,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.gradientMinimumColor
+  - uid: 'excel!Excel.ChartSeries#gradientMinimumColor:member'
     summary: |-
       Returns or sets the color for minimum value of a region map chart series. Read/Write.
 
@@ -446,7 +425,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartSeries.gradientMinimumType
+  - uid: 'excel!Excel.ChartSeries#gradientMinimumType:member'
     summary: |-
       Returns or sets the type for minimum value of a region map chart series. Read/Write.
 
@@ -461,7 +440,7 @@ items:
       return:
         type:
           - Excel.ChartGradientStyleType | "ExtremeValue" | "Number" | "Percent"
-  - uid: excel.Excel.ChartSeries.gradientMinimumValue
+  - uid: 'excel!Excel.ChartSeries#gradientMinimumValue:member'
     summary: |-
       Returns or sets the minimum value of a region map chart series. Read/Write.
 
@@ -476,7 +455,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.gradientStyle
+  - uid: 'excel!Excel.ChartSeries#gradientStyle:member'
     summary: |-
       Returns or sets series gradient style of a region map chart. Read/Write.
 
@@ -491,7 +470,7 @@ items:
       return:
         type:
           - Excel.ChartGradientStyle | "TwoPhaseColor" | "ThreePhaseColor"
-  - uid: excel.Excel.ChartSeries.hasDataLabels
+  - uid: 'excel!Excel.ChartSeries#hasDataLabels:member'
     summary: |-
       Boolean value representing if the series has data labels or not.
 
@@ -506,7 +485,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.invertColor
+  - uid: 'excel!Excel.ChartSeries#invertColor:member'
     summary: |-
       Returns or sets the fill color for negative data points in a series. Read/Write.
 
@@ -521,7 +500,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartSeries.invertIfNegative
+  - uid: 'excel!Excel.ChartSeries#invertIfNegative:member'
     summary: |-
       True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
 
@@ -536,7 +515,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.load
+  - uid: 'excel!Excel.ChartSeries#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -567,14 +546,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - 'excel!Excel.ChartSeries:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartSeriesLoadOptions
-  - uid: excel.Excel.ChartSeries.load_1
+            - 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
+  - uid: 'excel!Excel.ChartSeries#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -587,33 +566,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Rename the 1st series of Chart1 to "New Series Name"
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.series.getItemAt(0).name = "New Series Name";
-              return ctx.sync().then(function() {
-                      console.log("Series1 Renamed");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartSeries:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartSeries.load_2
+  - uid: 'excel!Excel.ChartSeries#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -626,7 +586,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - 'excel!Excel.ChartSeries:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -635,7 +595,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartSeries.mapOptions
+  - uid: 'excel!Excel.ChartSeries#mapOptions:member'
     summary: |-
       Encapsulates the options for a region map chart. Read-only.
 
@@ -649,8 +609,8 @@ items:
       content: 'readonly mapOptions: Excel.ChartMapOptions;'
       return:
         type:
-          - excel.Excel.ChartMapOptions
-  - uid: excel.Excel.ChartSeries.markerBackgroundColor
+          - 'excel!Excel.ChartMapOptions:class'
+  - uid: 'excel!Excel.ChartSeries#markerBackgroundColor:member'
     summary: |-
       Represents markers background color of a chart series.
 
@@ -665,41 +625,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.markerForegroundColor
+  - uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
     summary: |-
       Represents markers foreground color of a chart series.
 
@@ -714,41 +640,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.markerSize
+  - uid: 'excel!Excel.ChartSeries#markerSize:member'
     summary: |-
       Represents marker size of a chart series.
 
@@ -763,41 +655,7 @@ items:
       return:
         type:
           - number
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.markerStyle
+  - uid: 'excel!Excel.ChartSeries#markerStyle:member'
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
@@ -816,41 +674,7 @@ items:
           - >-
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.name
+  - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -865,7 +689,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartSeries.overlap
+  - uid: 'excel!Excel.ChartSeries#overlap:member'
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
       2-D column charts. Read/Write.
@@ -882,7 +706,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.parentLabelStrategy
+  - uid: 'excel!Excel.ChartSeries#parentLabelStrategy:member'
     summary: |-
       Returns or sets the series parent label strategy area for a treemap chart. Read/Write.
 
@@ -897,7 +721,7 @@ items:
       return:
         type:
           - Excel.ChartParentLabelStrategy | "None" | "Banner" | "Overlapping"
-  - uid: excel.Excel.ChartSeries.plotOrder
+  - uid: 'excel!Excel.ChartSeries#plotOrder:member'
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
@@ -912,7 +736,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.points
+  - uid: 'excel!Excel.ChartSeries#points:member'
     summary: |-
       Represents a collection of all points in the series. Read-only.
 
@@ -926,8 +750,8 @@ items:
       content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
-          - excel.Excel.ChartPointsCollection
-  - uid: excel.Excel.ChartSeries.secondPlotSize
+          - 'excel!Excel.ChartPointsCollection:class'
+  - uid: 'excel!Excel.ChartSeries#secondPlotSize:member'
     summary: >-
       Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
       percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
@@ -944,7 +768,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.set
+  - uid: 'excel!Excel.ChartSeries#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -974,7 +798,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartSeries.set_1
+  - uid: 'excel!Excel.ChartSeries#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -991,8 +815,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartSeries
-  - uid: excel.Excel.ChartSeries.setBubbleSizes
+            - 'excel!Excel.ChartSeries:class'
+  - uid: 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.
 
@@ -1012,8 +836,8 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartSeries.setValues
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartSeries#setValues:member(1)'
     summary: |-
       Set values for a chart series. For scatter chart, it means Y axis values.
 
@@ -1028,33 +852,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-            const sheet = context.workbook.worksheets.getItem("Sample");
-
-            let seriesCollection = sheet.charts.getItemAt(0);
-            let rangeSelection = sheet.getRange("C2:C7");
-            let xRangeSelection = sheet.getRange("A1:A7");
-
-            // Add a series.
-            let newSeries = seriesCollection.series.add("Qtr2");
-            newSeries.setValues(rangeSelection);
-            newSeries.setXAxisValues(xRangeSelection);
-
-            await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartSeries.setXAxisValues
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.
 
@@ -1074,8 +878,8 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartSeries.showConnectorLines
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartSeries#showConnectorLines:member'
     summary: |-
       Specifies whether or not connector lines are shown in waterfall charts. Read/Write.
 
@@ -1090,7 +894,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.showLeaderLines
+  - uid: 'excel!Excel.ChartSeries#showLeaderLines:member'
     summary: |-
       Specifies whether or not leader lines are displayed for each data label in the series. Read/Write.
 
@@ -1105,7 +909,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.showShadow
+  - uid: 'excel!Excel.ChartSeries#showShadow:member'
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
@@ -1120,7 +924,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.smooth
+  - uid: 'excel!Excel.ChartSeries#smooth:member'
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 
@@ -1135,7 +939,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.splitType
+  - uid: 'excel!Excel.ChartSeries#splitType:member'
     summary: |-
       Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
 
@@ -1152,7 +956,7 @@ items:
       return:
         type:
           - Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
-  - uid: excel.Excel.ChartSeries.splitValue
+  - uid: 'excel!Excel.ChartSeries#splitValue:member'
     summary: >-
       Returns or sets the threshold value that separates two sections of either a pie-of-pie chart or a bar-of-pie
       chart. Read/Write.
@@ -1169,7 +973,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.toJSON
+  - uid: 'excel!Excel.ChartSeries#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1185,9 +989,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesData
+          - 'excel!Excel.Interfaces.ChartSeriesData:interface'
         description: ''
-  - uid: excel.Excel.ChartSeries.trendlines
+  - uid: 'excel!Excel.ChartSeries#trendlines:member'
     summary: |-
       Represents a collection of trendlines in the series. Read-only.
 
@@ -1201,8 +1005,8 @@ items:
       content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel.Excel.ChartTrendlineCollection
-  - uid: excel.Excel.ChartSeries.varyByCategories
+          - 'excel!Excel.ChartTrendlineCollection:class'
+  - uid: 'excel!Excel.ChartSeries#varyByCategories:member'
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
       series. Read/Write.
@@ -1219,7 +1023,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.xErrorBars
+  - uid: 'excel!Excel.ChartSeries#xErrorBars:member'
     summary: |-
       Represents the error bar object of a chart series.
 
@@ -1233,8 +1037,8 @@ items:
       content: 'readonly xErrorBars: Excel.ChartErrorBars;'
       return:
         type:
-          - excel.Excel.ChartErrorBars
-  - uid: excel.Excel.ChartSeries.yErrorBars
+          - 'excel!Excel.ChartErrorBars:class'
+  - uid: 'excel!Excel.ChartSeries#yErrorBars:member'
     summary: |-
       Represents the error bar object of a chart series.
 
@@ -1248,4 +1052,4 @@ items:
       content: 'readonly yErrorBars: Excel.ChartErrorBars;'
       return:
         type:
-          - excel.Excel.ChartErrorBars
+          - 'excel!Excel.ChartErrorBars:class'

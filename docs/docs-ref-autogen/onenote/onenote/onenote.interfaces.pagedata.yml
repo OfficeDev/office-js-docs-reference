@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageData
+  - uid: 'onenote!OneNote.Interfaces.PageData:interface'
     summary: An interface describing the data returned by calling "page.toJSON()".
     name: OneNote.Interfaces.PageData
     fullName: OneNote.Interfaces.PageData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageData.classNotebookPageSource
-      - onenote.OneNote.Interfaces.PageData.clientUrl
-      - onenote.OneNote.Interfaces.PageData.contents
-      - onenote.OneNote.Interfaces.PageData.id
-      - onenote.OneNote.Interfaces.PageData.inkAnalysisOrNull
-      - onenote.OneNote.Interfaces.PageData.pageLevel
-      - onenote.OneNote.Interfaces.PageData.title
-      - onenote.OneNote.Interfaces.PageData.webUrl
-  - uid: onenote.OneNote.Interfaces.PageData.classNotebookPageSource
+      - 'onenote!OneNote.Interfaces.PageData#classNotebookPageSource:member'
+      - 'onenote!OneNote.Interfaces.PageData#clientUrl:member'
+      - 'onenote!OneNote.Interfaces.PageData#contents:member'
+      - 'onenote!OneNote.Interfaces.PageData#id:member'
+      - 'onenote!OneNote.Interfaces.PageData#inkAnalysisOrNull:member'
+      - 'onenote!OneNote.Interfaces.PageData#pageLevel:member'
+      - 'onenote!OneNote.Interfaces.PageData#title:member'
+      - 'onenote!OneNote.Interfaces.PageData#webUrl:member'
+  - uid: 'onenote!OneNote.Interfaces.PageData#classNotebookPageSource:member'
     summary: |-
       Gets the ClassNotebookPageSource to the page.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.PageData.clientUrl
+  - uid: 'onenote!OneNote.Interfaces.PageData#clientUrl:member'
     summary: |-
       The client url of the page. Read only
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.PageData.contents
+  - uid: 'onenote!OneNote.Interfaces.PageData#contents:member'
     summary: |-
       The collection of PageContent objects on the page. Read only
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.PageContentData[]'
-  - uid: onenote.OneNote.Interfaces.PageData.id
+  - uid: 'onenote!OneNote.Interfaces.PageData#id:member'
     summary: |-
       Gets the ID of the page. Read-only.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.PageData.inkAnalysisOrNull
+  - uid: 'onenote!OneNote.Interfaces.PageData#inkAnalysisOrNull:member'
     summary: |-
       Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
@@ -91,8 +91,8 @@ items:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisData
-  - uid: onenote.OneNote.Interfaces.PageData.pageLevel
+          - 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageData#pageLevel:member'
     summary: |-
       Gets or sets the indentation level of the page.
 
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.PageData.title
+  - uid: 'onenote!OneNote.Interfaces.PageData#title:member'
     summary: |-
       Gets or sets the title of the page.
 
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.PageData.webUrl
+  - uid: 'onenote!OneNote.Interfaces.PageData#webUrl:member'
     summary: |-
       The web url of the page. Read only
 

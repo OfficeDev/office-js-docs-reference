@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableScopedCollection
+  - uid: 'excel!Excel.TableScopedCollection:class'
     summary: >-
       Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and
       the tables are sorted top to bottom and then left to right.
@@ -14,18 +14,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableScopedCollection.context
-      - excel.Excel.TableScopedCollection.getCount
-      - excel.Excel.TableScopedCollection.getFirst
-      - excel.Excel.TableScopedCollection.getItem
-      - excel.Excel.TableScopedCollection.items
-      - excel.Excel.TableScopedCollection.load
-      - excel.Excel.TableScopedCollection.load_1
-      - excel.Excel.TableScopedCollection.load_2
-      - excel.Excel.TableScopedCollection.toJSON
-  - uid: excel.Excel.TableScopedCollection.context
+      - 'excel!Excel.TableScopedCollection#context:member'
+      - 'excel!Excel.TableScopedCollection#getCount:member(1)'
+      - 'excel!Excel.TableScopedCollection#getFirst:member(1)'
+      - 'excel!Excel.TableScopedCollection#getItem:member(1)'
+      - 'excel!Excel.TableScopedCollection#items:member'
+      - 'excel!Excel.TableScopedCollection#load:member(1)'
+      - 'excel!Excel.TableScopedCollection#load:member(2)'
+      - 'excel!Excel.TableScopedCollection#load:member(3)'
+      - 'excel!Excel.TableScopedCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableScopedCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableScopedCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableScopedCollection#getCount:member(1)'
     summary: |-
       Gets the number of tables in the collection.
 
@@ -55,7 +55,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.TableScopedCollection.getFirst
+  - uid: 'excel!Excel.TableScopedCollection#getFirst:member(1)'
     summary: >-
       Gets the first table in the collection. The tables in the collection are sorted top to bottom and left to right,
       such that top left table is the first table in the collection.
@@ -71,9 +71,9 @@ items:
       content: 'getFirst(): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - 'excel!Excel.Table:class'
         description: ''
-  - uid: excel.Excel.TableScopedCollection.getItem
+  - uid: 'excel!Excel.TableScopedCollection#getItem:member(1)'
     summary: |-
       Gets a table by Name or ID.
 
@@ -87,14 +87,14 @@ items:
       content: 'getItem(key: string): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
+          - 'excel!Excel.Table:class'
         description: ''
       parameters:
         - id: key
           description: Name or ID of the table to be retrieved.
           type:
             - string
-  - uid: excel.Excel.TableScopedCollection.items
+  - uid: 'excel!Excel.TableScopedCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - 'Excel.Table[]'
-  - uid: excel.Excel.TableScopedCollection.load
+  - uid: 'excel!Excel.TableScopedCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -139,14 +139,14 @@ items:
         Excel.TableScopedCollection;
       return:
         type:
-          - excel.Excel.TableScopedCollection
+          - 'excel!Excel.TableScopedCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.TableScopedCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.TableScopedCollection.load_1
+  - uid: 'excel!Excel.TableScopedCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -159,14 +159,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableScopedCollection;'
       return:
         type:
-          - excel.Excel.TableScopedCollection
+          - 'excel!Excel.TableScopedCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableScopedCollection.load_2
+  - uid: 'excel!Excel.TableScopedCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -176,14 +176,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableScopedCollection;'
       return:
         type:
-          - excel.Excel.TableScopedCollection
+          - 'excel!Excel.TableScopedCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.TableScopedCollection.toJSON
+  - uid: 'excel!Excel.TableScopedCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -199,5 +199,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableScopedCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableScopedCollectionData
+          - 'excel!Excel.Interfaces.TableScopedCollectionData:interface'
         description: ''

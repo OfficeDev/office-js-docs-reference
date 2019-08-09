@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextRangeData
+  - uid: 'excel!Excel.Interfaces.TextRangeData:interface'
     summary: An interface describing the data returned by calling "textRange.toJSON()".
     name: Excel.Interfaces.TextRangeData
     fullName: Excel.Interfaces.TextRangeData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextRangeData.font
-      - excel.Excel.Interfaces.TextRangeData.text
-  - uid: excel.Excel.Interfaces.TextRangeData.font
+      - 'excel!Excel.Interfaces.TextRangeData#font:member'
+      - 'excel!Excel.Interfaces.TextRangeData#text:member'
+  - uid: 'excel!Excel.Interfaces.TextRangeData#font:member'
     summary: |-
       Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
 
@@ -25,8 +25,8 @@ items:
       content: 'font?: Excel.Interfaces.ShapeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeFontData
-  - uid: excel.Excel.Interfaces.TextRangeData.text
+          - 'excel!Excel.Interfaces.ShapeFontData:interface'
+  - uid: 'excel!Excel.Interfaces.TextRangeData#text:member'
     summary: |-
       Represents the plain text content of the text range.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of comment reply objects that are part of the comment.
 
@@ -13,16 +13,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
-      - excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.resolved
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorName:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#content:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#resolved:member'
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorEmail
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorEmail:member'
     summary: >-
       For EACH ITEM in the collection: Gets the email of the comment reply's author.
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.authorName
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#authorName:member'
     summary: >-
       For EACH ITEM in the collection: Gets the name of the comment reply's author.
 
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.content
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#content:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the comment reply's content. The string is plain text.
 
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.creationDate
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#creationDate:member'
     summary: >-
       For EACH ITEM in the collection: Gets the creation time of the comment reply.
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Represents the comment reply identifier. Read-only.
 
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CommentReplyCollectionLoadOptions.resolved
+  - uid: 'excel!Excel.Interfaces.CommentReplyCollectionLoadOptions#resolved:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the comment reply status. A value of "true" means the comment reply
       is in the resolved state.

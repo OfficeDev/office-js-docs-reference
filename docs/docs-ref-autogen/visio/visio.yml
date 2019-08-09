@@ -1,99 +1,99 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio
+  - uid: visio!
     name: visio
     fullName: visio
     langs:
       - typeScript
     type: package
     children:
-      - visio.Visio.Application
-      - visio.Visio.BoundingBox
-      - visio.Visio.Comment
-      - visio.Visio.CommentCollection
-      - visio.Visio.DataRefreshCompleteEventArgs
-      - visio.Visio.Document
-      - visio.Visio.DocumentLoadCompleteEventArgs
-      - visio.Visio.DocumentView
-      - visio.Visio.ErrorCodes
-      - visio.Visio.Highlight
-      - visio.Visio.Hyperlink
-      - visio.Visio.HyperlinkCollection
-      - visio.Visio.Interfaces.ApplicationData
-      - visio.Visio.Interfaces.ApplicationLoadOptions
-      - visio.Visio.Interfaces.ApplicationUpdateData
-      - visio.Visio.Interfaces.CollectionLoadOptions
-      - visio.Visio.Interfaces.CommentCollectionData
-      - visio.Visio.Interfaces.CommentCollectionLoadOptions
-      - visio.Visio.Interfaces.CommentCollectionUpdateData
-      - visio.Visio.Interfaces.CommentData
-      - visio.Visio.Interfaces.CommentLoadOptions
-      - visio.Visio.Interfaces.CommentUpdateData
-      - visio.Visio.Interfaces.DocumentData
-      - visio.Visio.Interfaces.DocumentLoadOptions
-      - visio.Visio.Interfaces.DocumentUpdateData
-      - visio.Visio.Interfaces.DocumentViewData
-      - visio.Visio.Interfaces.DocumentViewLoadOptions
-      - visio.Visio.Interfaces.DocumentViewUpdateData
-      - visio.Visio.Interfaces.HyperlinkCollectionData
-      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions
-      - visio.Visio.Interfaces.HyperlinkCollectionUpdateData
-      - visio.Visio.Interfaces.HyperlinkData
-      - visio.Visio.Interfaces.HyperlinkLoadOptions
-      - visio.Visio.Interfaces.PageCollectionData
-      - visio.Visio.Interfaces.PageCollectionLoadOptions
-      - visio.Visio.Interfaces.PageCollectionUpdateData
-      - visio.Visio.Interfaces.PageData
-      - visio.Visio.Interfaces.PageLoadOptions
-      - visio.Visio.Interfaces.PageUpdateData
-      - visio.Visio.Interfaces.PageViewData
-      - visio.Visio.Interfaces.PageViewLoadOptions
-      - visio.Visio.Interfaces.PageViewUpdateData
-      - visio.Visio.Interfaces.SelectionData
-      - visio.Visio.Interfaces.ShapeCollectionData
-      - visio.Visio.Interfaces.ShapeCollectionLoadOptions
-      - visio.Visio.Interfaces.ShapeCollectionUpdateData
-      - visio.Visio.Interfaces.ShapeData
-      - visio.Visio.Interfaces.ShapeDataItemCollectionData
-      - visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
-      - visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
-      - visio.Visio.Interfaces.ShapeDataItemData
-      - visio.Visio.Interfaces.ShapeDataItemLoadOptions
-      - visio.Visio.Interfaces.ShapeLoadOptions
-      - visio.Visio.Interfaces.ShapeUpdateData
-      - visio.Visio.Interfaces.ShapeViewData
-      - visio.Visio.Interfaces.ShapeViewLoadOptions
-      - visio.Visio.Interfaces.ShapeViewUpdateData
-      - visio.Visio.OverlayHorizontalAlignment
-      - visio.Visio.OverlayType
-      - visio.Visio.OverlayVerticalAlignment
-      - visio.Visio.Page
-      - visio.Visio.PageCollection
-      - visio.Visio.PageLoadCompleteEventArgs
-      - visio.Visio.PageRenderCompleteEventArgs
-      - visio.Visio.PageView
-      - visio.Visio.Position
-      - visio.Visio.RequestContext
-      - visio.Visio.run
-      - visio.Visio.run_1
-      - visio.Visio.run_2
-      - visio.Visio.run_3
-      - visio.Visio.Selection
-      - visio.Visio.SelectionChangedEventArgs
-      - visio.Visio.Shape
-      - visio.Visio.ShapeCollection
-      - visio.Visio.ShapeDataItem
-      - visio.Visio.ShapeDataItemCollection
-      - visio.Visio.ShapeMouseEnterEventArgs
-      - visio.Visio.ShapeMouseLeaveEventArgs
-      - visio.Visio.ShapeView
-      - visio.Visio.ToolBarType
-  - uid: visio.Visio.run
+      - 'visio!Visio.Application:class'
+      - 'visio!Visio.BoundingBox:interface'
+      - 'visio!Visio.Comment:class'
+      - 'visio!Visio.CommentCollection:class'
+      - 'visio!Visio.DataRefreshCompleteEventArgs:interface'
+      - 'visio!Visio.Document:class'
+      - 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
+      - 'visio!Visio.DocumentView:class'
+      - 'visio!Visio.ErrorCodes:enum'
+      - 'visio!Visio.Highlight:interface'
+      - 'visio!Visio.Hyperlink:class'
+      - 'visio!Visio.HyperlinkCollection:class'
+      - 'visio!Visio.Interfaces.ApplicationData:interface'
+      - 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
+      - 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.CommentCollectionData:interface'
+      - 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.CommentData:interface'
+      - 'visio!Visio.Interfaces.CommentLoadOptions:interface'
+      - 'visio!Visio.Interfaces.CommentUpdateData:interface'
+      - 'visio!Visio.Interfaces.DocumentData:interface'
+      - 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
+      - 'visio!Visio.Interfaces.DocumentUpdateData:interface'
+      - 'visio!Visio.Interfaces.DocumentViewData:interface'
+      - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+      - 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkData:interface'
+      - 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageCollectionData:interface'
+      - 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.PageData:interface'
+      - 'visio!Visio.Interfaces.PageLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageUpdateData:interface'
+      - 'visio!Visio.Interfaces.PageViewData:interface'
+      - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+      - 'visio!Visio.Interfaces.PageViewUpdateData:interface'
+      - 'visio!Visio.Interfaces.SelectionData:interface'
+      - 'visio!Visio.Interfaces.ShapeCollectionData:interface'
+      - 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.ShapeData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemData:interface'
+      - 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeUpdateData:interface'
+      - 'visio!Visio.Interfaces.ShapeViewData:interface'
+      - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+      - 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
+      - 'visio!Visio.OverlayHorizontalAlignment:enum'
+      - 'visio!Visio.OverlayType:enum'
+      - 'visio!Visio.OverlayVerticalAlignment:enum'
+      - 'visio!Visio.Page:class'
+      - 'visio!Visio.PageCollection:class'
+      - 'visio!Visio.PageLoadCompleteEventArgs:interface'
+      - 'visio!Visio.PageRenderCompleteEventArgs:interface'
+      - 'visio!Visio.PageView:class'
+      - 'visio!Visio.Position:interface'
+      - 'visio!Visio.RequestContext:class'
+      - 'visio!Visio.run:function(1)'
+      - 'visio!Visio.run:function(2)'
+      - 'visio!Visio.run:function(3)'
+      - 'visio!Visio.run:function(4)'
+      - 'visio!Visio.Selection:class'
+      - 'visio!Visio.SelectionChangedEventArgs:interface'
+      - 'visio!Visio.Shape:class'
+      - 'visio!Visio.ShapeCollection:class'
+      - 'visio!Visio.ShapeDataItem:class'
+      - 'visio!Visio.ShapeDataItemCollection:class'
+      - 'visio!Visio.ShapeMouseEnterEventArgs:interface'
+      - 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
+      - 'visio!Visio.ShapeView:class'
+      - 'visio!Visio.ToolBarType:enum'
+  - uid: 'visio!Visio.run:function(1)'
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using a new request context. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-    name: Visio.run
-    fullName: Visio.run
+    name: Visio.run(batch)
+    fullName: Visio.run(batch)
     langs:
       - typeScript
     type: function
@@ -114,12 +114,12 @@ items:
             - '(context: Visio.RequestContext) => Promise<T>'
       typeParameters:
         - id: T
-  - uid: visio.Visio.run_1
+  - uid: 'visio!Visio.run:function(2)'
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the request context of a
       previously-created API object.
-    name: Visio.run_1
-    fullName: Visio.run_1
+    name: 'Visio.run(object, batch)'
+    fullName: 'Visio.run(object, batch)'
     langs:
       - typeScript
     type: function
@@ -147,12 +147,12 @@ items:
             - '(context: Visio.RequestContext) => Promise<T>'
       typeParameters:
         - id: T
-  - uid: visio.Visio.run_2
+  - uid: 'visio!Visio.run:function(3)'
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the request context of
       previously-created API objects.
-    name: Visio.run_2
-    fullName: Visio.run_2
+    name: 'Visio.run(objects, batch)'
+    fullName: 'Visio.run(objects, batch)'
     langs:
       - typeScript
     type: function
@@ -181,7 +181,7 @@ items:
             - '(context: Visio.RequestContext) => Promise<T>'
       typeParameters:
         - id: T
-  - uid: visio.Visio.run_3
+  - uid: 'visio!Visio.run:function(4)'
     summary: >-
       Executes a batch script that performs actions on the Visio object model, using the RequestContext of a
       previously-created object. When the promise is resolved, any tracked objects that were automatically allocated
@@ -199,8 +199,8 @@ items:
 
       `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: Visio.RequestContext) => Promise<T>):
       Promise<T>;`
-    name: Visio.run_3
-    fullName: Visio.run_3
+    name: 'Visio.run(contextObject, batch)'
+    fullName: 'Visio.run(contextObject, batch)'
     langs:
       - typeScript
     type: function
@@ -231,157 +231,157 @@ items:
       typeParameters:
         - id: T
 references:
-  - uid: visio.Visio.Application
+  - uid: 'visio!Visio.Application:class'
     name: Visio.Application
-  - uid: visio.Visio.BoundingBox
+  - uid: 'visio!Visio.BoundingBox:interface'
     name: Visio.BoundingBox
-  - uid: visio.Visio.Comment
+  - uid: 'visio!Visio.Comment:class'
     name: Visio.Comment
-  - uid: visio.Visio.CommentCollection
+  - uid: 'visio!Visio.CommentCollection:class'
     name: Visio.CommentCollection
-  - uid: visio.Visio.DataRefreshCompleteEventArgs
+  - uid: 'visio!Visio.DataRefreshCompleteEventArgs:interface'
     name: Visio.DataRefreshCompleteEventArgs
-  - uid: visio.Visio.Document
+  - uid: 'visio!Visio.Document:class'
     name: Visio.Document
-  - uid: visio.Visio.DocumentLoadCompleteEventArgs
+  - uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
     name: Visio.DocumentLoadCompleteEventArgs
-  - uid: visio.Visio.DocumentView
+  - uid: 'visio!Visio.DocumentView:class'
     name: Visio.DocumentView
-  - uid: visio.Visio.ErrorCodes
+  - uid: 'visio!Visio.ErrorCodes:enum'
     name: Visio.ErrorCodes
-  - uid: visio.Visio.Highlight
+  - uid: 'visio!Visio.Highlight:interface'
     name: Visio.Highlight
-  - uid: visio.Visio.Hyperlink
+  - uid: 'visio!Visio.Hyperlink:class'
     name: Visio.Hyperlink
-  - uid: visio.Visio.HyperlinkCollection
+  - uid: 'visio!Visio.HyperlinkCollection:class'
     name: Visio.HyperlinkCollection
-  - uid: visio.Visio.Interfaces.ApplicationData
+  - uid: 'visio!Visio.Interfaces.ApplicationData:interface'
     name: Visio.Interfaces.ApplicationData
-  - uid: visio.Visio.Interfaces.ApplicationLoadOptions
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
     name: Visio.Interfaces.ApplicationLoadOptions
-  - uid: visio.Visio.Interfaces.ApplicationUpdateData
+  - uid: 'visio!Visio.Interfaces.ApplicationUpdateData:interface'
     name: Visio.Interfaces.ApplicationUpdateData
-  - uid: visio.Visio.Interfaces.CollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.CollectionLoadOptions:interface'
     name: Visio.Interfaces.CollectionLoadOptions
-  - uid: visio.Visio.Interfaces.CommentCollectionData
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
     name: Visio.Interfaces.CommentCollectionData
-  - uid: visio.Visio.Interfaces.CommentCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentCollectionLoadOptions:interface'
     name: Visio.Interfaces.CommentCollectionLoadOptions
-  - uid: visio.Visio.Interfaces.CommentCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.CommentCollectionUpdateData:interface'
     name: Visio.Interfaces.CommentCollectionUpdateData
-  - uid: visio.Visio.Interfaces.CommentData
+  - uid: 'visio!Visio.Interfaces.CommentData:interface'
     name: Visio.Interfaces.CommentData
-  - uid: visio.Visio.Interfaces.CommentLoadOptions
+  - uid: 'visio!Visio.Interfaces.CommentLoadOptions:interface'
     name: Visio.Interfaces.CommentLoadOptions
-  - uid: visio.Visio.Interfaces.CommentUpdateData
+  - uid: 'visio!Visio.Interfaces.CommentUpdateData:interface'
     name: Visio.Interfaces.CommentUpdateData
-  - uid: visio.Visio.Interfaces.DocumentData
+  - uid: 'visio!Visio.Interfaces.DocumentData:interface'
     name: Visio.Interfaces.DocumentData
-  - uid: visio.Visio.Interfaces.DocumentLoadOptions
+  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
     name: Visio.Interfaces.DocumentLoadOptions
-  - uid: visio.Visio.Interfaces.DocumentUpdateData
+  - uid: 'visio!Visio.Interfaces.DocumentUpdateData:interface'
     name: Visio.Interfaces.DocumentUpdateData
-  - uid: visio.Visio.Interfaces.DocumentViewData
+  - uid: 'visio!Visio.Interfaces.DocumentViewData:interface'
     name: Visio.Interfaces.DocumentViewData
-  - uid: visio.Visio.Interfaces.DocumentViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
     name: Visio.Interfaces.DocumentViewLoadOptions
-  - uid: visio.Visio.Interfaces.DocumentViewUpdateData
+  - uid: 'visio!Visio.Interfaces.DocumentViewUpdateData:interface'
     name: Visio.Interfaces.DocumentViewUpdateData
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionData
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
     name: Visio.Interfaces.HyperlinkCollectionData
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
     name: Visio.Interfaces.HyperlinkCollectionLoadOptions
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
     name: Visio.Interfaces.HyperlinkCollectionUpdateData
-  - uid: visio.Visio.Interfaces.HyperlinkData
+  - uid: 'visio!Visio.Interfaces.HyperlinkData:interface'
     name: Visio.Interfaces.HyperlinkData
-  - uid: visio.Visio.Interfaces.HyperlinkLoadOptions
+  - uid: 'visio!Visio.Interfaces.HyperlinkLoadOptions:interface'
     name: Visio.Interfaces.HyperlinkLoadOptions
-  - uid: visio.Visio.Interfaces.PageCollectionData
+  - uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
     name: Visio.Interfaces.PageCollectionData
-  - uid: visio.Visio.Interfaces.PageCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageCollectionLoadOptions:interface'
     name: Visio.Interfaces.PageCollectionLoadOptions
-  - uid: visio.Visio.Interfaces.PageCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.PageCollectionUpdateData:interface'
     name: Visio.Interfaces.PageCollectionUpdateData
-  - uid: visio.Visio.Interfaces.PageData
+  - uid: 'visio!Visio.Interfaces.PageData:interface'
     name: Visio.Interfaces.PageData
-  - uid: visio.Visio.Interfaces.PageLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
     name: Visio.Interfaces.PageLoadOptions
-  - uid: visio.Visio.Interfaces.PageUpdateData
+  - uid: 'visio!Visio.Interfaces.PageUpdateData:interface'
     name: Visio.Interfaces.PageUpdateData
-  - uid: visio.Visio.Interfaces.PageViewData
+  - uid: 'visio!Visio.Interfaces.PageViewData:interface'
     name: Visio.Interfaces.PageViewData
-  - uid: visio.Visio.Interfaces.PageViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
     name: Visio.Interfaces.PageViewLoadOptions
-  - uid: visio.Visio.Interfaces.PageViewUpdateData
+  - uid: 'visio!Visio.Interfaces.PageViewUpdateData:interface'
     name: Visio.Interfaces.PageViewUpdateData
-  - uid: visio.Visio.Interfaces.SelectionData
+  - uid: 'visio!Visio.Interfaces.SelectionData:interface'
     name: Visio.Interfaces.SelectionData
-  - uid: visio.Visio.Interfaces.ShapeCollectionData
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionData:interface'
     name: Visio.Interfaces.ShapeCollectionData
-  - uid: visio.Visio.Interfaces.ShapeCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionLoadOptions:interface'
     name: Visio.Interfaces.ShapeCollectionLoadOptions
-  - uid: visio.Visio.Interfaces.ShapeCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
     name: Visio.Interfaces.ShapeCollectionUpdateData
-  - uid: visio.Visio.Interfaces.ShapeData
+  - uid: 'visio!Visio.Interfaces.ShapeData:interface'
     name: Visio.Interfaces.ShapeData
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionData:interface'
     name: Visio.Interfaces.ShapeDataItemCollectionData
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionLoadOptions:interface'
     name: Visio.Interfaces.ShapeDataItemCollectionLoadOptions
-  - uid: visio.Visio.Interfaces.ShapeDataItemCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemCollectionUpdateData:interface'
     name: Visio.Interfaces.ShapeDataItemCollectionUpdateData
-  - uid: visio.Visio.Interfaces.ShapeDataItemData
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemData:interface'
     name: Visio.Interfaces.ShapeDataItemData
-  - uid: visio.Visio.Interfaces.ShapeDataItemLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeDataItemLoadOptions:interface'
     name: Visio.Interfaces.ShapeDataItemLoadOptions
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
     name: Visio.Interfaces.ShapeLoadOptions
-  - uid: visio.Visio.Interfaces.ShapeUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeUpdateData:interface'
     name: Visio.Interfaces.ShapeUpdateData
-  - uid: visio.Visio.Interfaces.ShapeViewData
+  - uid: 'visio!Visio.Interfaces.ShapeViewData:interface'
     name: Visio.Interfaces.ShapeViewData
-  - uid: visio.Visio.Interfaces.ShapeViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
     name: Visio.Interfaces.ShapeViewLoadOptions
-  - uid: visio.Visio.Interfaces.ShapeViewUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
     name: Visio.Interfaces.ShapeViewUpdateData
-  - uid: visio.Visio.OverlayHorizontalAlignment
+  - uid: 'visio!Visio.OverlayHorizontalAlignment:enum'
     name: Visio.OverlayHorizontalAlignment
-  - uid: visio.Visio.OverlayType
+  - uid: 'visio!Visio.OverlayType:enum'
     name: Visio.OverlayType
-  - uid: visio.Visio.OverlayVerticalAlignment
+  - uid: 'visio!Visio.OverlayVerticalAlignment:enum'
     name: Visio.OverlayVerticalAlignment
-  - uid: visio.Visio.Page
+  - uid: 'visio!Visio.Page:class'
     name: Visio.Page
-  - uid: visio.Visio.PageCollection
+  - uid: 'visio!Visio.PageCollection:class'
     name: Visio.PageCollection
-  - uid: visio.Visio.PageLoadCompleteEventArgs
+  - uid: 'visio!Visio.PageLoadCompleteEventArgs:interface'
     name: Visio.PageLoadCompleteEventArgs
-  - uid: visio.Visio.PageRenderCompleteEventArgs
+  - uid: 'visio!Visio.PageRenderCompleteEventArgs:interface'
     name: Visio.PageRenderCompleteEventArgs
-  - uid: visio.Visio.PageView
+  - uid: 'visio!Visio.PageView:class'
     name: Visio.PageView
-  - uid: visio.Visio.Position
+  - uid: 'visio!Visio.Position:interface'
     name: Visio.Position
-  - uid: visio.Visio.RequestContext
+  - uid: 'visio!Visio.RequestContext:class'
     name: Visio.RequestContext
-  - uid: visio.Visio.Selection
+  - uid: 'visio!Visio.Selection:class'
     name: Visio.Selection
-  - uid: visio.Visio.SelectionChangedEventArgs
+  - uid: 'visio!Visio.SelectionChangedEventArgs:interface'
     name: Visio.SelectionChangedEventArgs
-  - uid: visio.Visio.Shape
+  - uid: 'visio!Visio.Shape:class'
     name: Visio.Shape
-  - uid: visio.Visio.ShapeCollection
+  - uid: 'visio!Visio.ShapeCollection:class'
     name: Visio.ShapeCollection
-  - uid: visio.Visio.ShapeDataItem
+  - uid: 'visio!Visio.ShapeDataItem:class'
     name: Visio.ShapeDataItem
-  - uid: visio.Visio.ShapeDataItemCollection
+  - uid: 'visio!Visio.ShapeDataItemCollection:class'
     name: Visio.ShapeDataItemCollection
-  - uid: visio.Visio.ShapeMouseEnterEventArgs
+  - uid: 'visio!Visio.ShapeMouseEnterEventArgs:interface'
     name: Visio.ShapeMouseEnterEventArgs
-  - uid: visio.Visio.ShapeMouseLeaveEventArgs
+  - uid: 'visio!Visio.ShapeMouseLeaveEventArgs:interface'
     name: Visio.ShapeMouseLeaveEventArgs
-  - uid: visio.Visio.ShapeView
+  - uid: 'visio!Visio.ShapeView:class'
     name: Visio.ShapeView
-  - uid: visio.Visio.ToolBarType
+  - uid: 'visio!Visio.ToolBarType:enum'
     name: Visio.ToolBarType

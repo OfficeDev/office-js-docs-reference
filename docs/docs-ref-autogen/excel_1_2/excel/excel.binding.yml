@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Binding
+  - uid: 'excel!Excel.Binding:class'
     summary: |-
       Represents an Office.js binding that is defined in the workbook.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Binding.context
-      - excel.Excel.Binding.getRange
-      - excel.Excel.Binding.getTable
-      - excel.Excel.Binding.getText
-      - excel.Excel.Binding.id
-      - excel.Excel.Binding.load
-      - excel.Excel.Binding.load_1
-      - excel.Excel.Binding.load_2
-      - excel.Excel.Binding.onDataChanged
-      - excel.Excel.Binding.onSelectionChanged
-      - excel.Excel.Binding.toJSON
-      - excel.Excel.Binding.type
-  - uid: excel.Excel.Binding.context
+      - 'excel!Excel.Binding#context:member'
+      - 'excel!Excel.Binding#getRange:member(1)'
+      - 'excel!Excel.Binding#getTable:member(1)'
+      - 'excel!Excel.Binding#getText:member(1)'
+      - 'excel!Excel.Binding#id:member'
+      - 'excel!Excel.Binding#load:member(1)'
+      - 'excel!Excel.Binding#load:member(2)'
+      - 'excel!Excel.Binding#load:member(3)'
+      - 'excel!Excel.Binding#onDataChanged:member'
+      - 'excel!Excel.Binding#onSelectionChanged:member'
+      - 'excel!Excel.Binding#toJSON:member(1)'
+      - 'excel!Excel.Binding#type:member'
+  - uid: 'excel!Excel.Binding#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Binding.getRange
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Binding#getRange:member(1)'
     summary: |-
       Returns the range represented by the binding. Will throw an error if binding is not of the correct type.
 
@@ -54,28 +54,9 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var range = binding.getRange();
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Binding.getTable
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Binding#getTable:member(1)'
     summary: |-
       Returns the table represented by the binding. Will throw an error if binding is not of the correct type.
 
@@ -89,28 +70,9 @@ items:
       content: 'getTable(): Excel.Table;'
       return:
         type:
-          - excel.Excel.Table
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var table = binding.getTable();
-              table.load('name');
-              return ctx.sync().then(function() {
-                      console.log(table.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Binding.getText
+          - 'excel!Excel.Table:class'
+        description: ''
+  - uid: 'excel!Excel.Binding#getText:member(1)'
     summary: |-
       Returns the text represented by the binding. Will throw an error if binding is not of the correct type.
 
@@ -125,27 +87,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              var text = binding.getText();
-              binding.load('text');
-              return ctx.sync().then(function() {
-                  console.log(text);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Binding.id
+        description: ''
+  - uid: 'excel!Excel.Binding#id:member'
     summary: |-
       Represents binding identifier. Read-only.
 
@@ -160,7 +103,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Binding.load
+  - uid: 'excel!Excel.Binding#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -191,14 +134,14 @@ items:
       content: 'load(option?: Excel.Interfaces.BindingLoadOptions): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.BindingLoadOptions
-  - uid: excel.Excel.Binding.load_1
+            - 'excel!Excel.Interfaces.BindingLoadOptions:interface'
+  - uid: 'excel!Excel.Binding#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -211,32 +154,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var binding = ctx.workbook.bindings.getItemAt(0);
-              binding.load('type');
-              return ctx.sync().then(function() {
-                  console.log(binding.type);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Binding:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Binding.load_2
+  - uid: 'excel!Excel.Binding#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -249,7 +174,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
+          - 'excel!Excel.Binding:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -258,7 +183,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Binding.onDataChanged
+  - uid: 'excel!Excel.Binding#onDataChanged:member'
     summary: |-
       Occurs when data or formatting within the binding is changed.
 
@@ -273,24 +198,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.BindingDataChangedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");    
-              const salesTable = sheet.tables.getItem("SalesTable");
-              const salesByQuarterBinding = context.workbook.bindings.add(salesTable.getRange(), "Table", "SalesByQuarter");
-              salesByQuarterBinding.onDataChanged.add(onSalesDataChanged);
-
-              console.log("The data changed handler is registered.");
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Binding.onSelectionChanged
+  - uid: 'excel!Excel.Binding#onSelectionChanged:member'
     summary: |-
       Occurs when the selected content in the binding is changed.
 
@@ -305,7 +213,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.BindingSelectionChangedEventArgs>
-  - uid: excel.Excel.Binding.toJSON
+  - uid: 'excel!Excel.Binding#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -321,9 +229,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.BindingData;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingData
+          - 'excel!Excel.Interfaces.BindingData:interface'
         description: ''
-  - uid: excel.Excel.Binding.type
+  - uid: 'excel!Excel.Binding#type:member'
     summary: |-
       Returns the type of the binding. See Excel.BindingType for details. Read-only.
 

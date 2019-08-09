@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableCellCollectionData
+  - uid: 'word!Word.Interfaces.TableCellCollectionData:interface'
     summary: An interface describing the data returned by calling "tableCellCollection.toJSON()".
     name: Word.Interfaces.TableCellCollectionData
     fullName: Word.Interfaces.TableCellCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableCellCollectionData.items
-  - uid: word.Word.Interfaces.TableCellCollectionData.items
+      - 'word!Word.Interfaces.TableCellCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.TableCellCollectionData#items:member'
     name: items
     fullName: items
     langs:

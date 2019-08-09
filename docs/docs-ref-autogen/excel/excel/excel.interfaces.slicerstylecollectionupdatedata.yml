@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerStyleCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the SlicerStyleCollection object, for use in "slicerStyleCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerStyleCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.SlicerStyleCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.SlicerStyleCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

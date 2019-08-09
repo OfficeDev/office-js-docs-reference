@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.EmailUser
+  - uid: 'outlook!Office.EmailUser:interface'
     summary: |-
       Represents an email account on an Exchange Server.
 
@@ -16,11 +16,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.EmailUser.displayName
-      - Outlook.Office.EmailUser.emailAddress
-  - uid: Outlook.Office.EmailUser.displayName
+      - 'outlook!Office.EmailUser#displayName:member'
+      - 'outlook!Office.EmailUser#emailAddress:member'
+  - uid: 'outlook!Office.EmailUser#displayName:member'
     summary: Gets the display name associated with an email address.
     name: displayName
     fullName: displayName
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.EmailUser.emailAddress
+  - uid: 'outlook!Office.EmailUser#emailAddress:member'
     summary: Gets the SMTP email address.
     name: emailAddress
     fullName: emailAddress

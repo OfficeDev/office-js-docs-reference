@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableBorderData
+  - uid: 'word!Word.Interfaces.TableBorderData:interface'
     summary: An interface describing the data returned by calling "tableBorder.toJSON()".
     name: Word.Interfaces.TableBorderData
     fullName: Word.Interfaces.TableBorderData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableBorderData.color
-      - word.Word.Interfaces.TableBorderData.type
-      - word.Word.Interfaces.TableBorderData.width
-  - uid: word.Word.Interfaces.TableBorderData.color
+      - 'word!Word.Interfaces.TableBorderData#color:member'
+      - 'word!Word.Interfaces.TableBorderData#type:member'
+      - 'word!Word.Interfaces.TableBorderData#width:member'
+  - uid: 'word!Word.Interfaces.TableBorderData#color:member'
     summary: |-
       Gets or sets the table border color.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableBorderData.type
+  - uid: 'word!Word.Interfaces.TableBorderData#type:member'
     summary: |-
       Gets or sets the type of the table border.
 
@@ -50,7 +50,7 @@ items:
             | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
             "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
             "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
-  - uid: word.Word.Interfaces.TableBorderData.width
+  - uid: 'word!Word.Interfaces.TableBorderData#width:member'
     summary: >-
       Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
       widths.

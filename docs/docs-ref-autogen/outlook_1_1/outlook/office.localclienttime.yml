@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.LocalClientTime
+  - uid: 'outlook!Office.LocalClientTime:interface'
     summary: |-
       Represents a date and time in the local client's time zone. Read mode only.
 
@@ -16,17 +16,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.LocalClientTime.date
-      - Outlook.Office.LocalClientTime.hours
-      - Outlook.Office.LocalClientTime.milliseconds
-      - Outlook.Office.LocalClientTime.minutes
-      - Outlook.Office.LocalClientTime.month
-      - Outlook.Office.LocalClientTime.seconds
-      - Outlook.Office.LocalClientTime.timezoneOffset
-      - Outlook.Office.LocalClientTime.year
-  - uid: Outlook.Office.LocalClientTime.date
+      - 'outlook!Office.LocalClientTime#date:member'
+      - 'outlook!Office.LocalClientTime#hours:member'
+      - 'outlook!Office.LocalClientTime#milliseconds:member'
+      - 'outlook!Office.LocalClientTime#minutes:member'
+      - 'outlook!Office.LocalClientTime#month:member'
+      - 'outlook!Office.LocalClientTime#seconds:member'
+      - 'outlook!Office.LocalClientTime#timezoneOffset:member'
+      - 'outlook!Office.LocalClientTime#year:member'
+  - uid: 'outlook!Office.LocalClientTime#date:member'
     summary: Integer value representing the day of the month.
     name: date
     fullName: date
@@ -38,7 +38,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.hours
+  - uid: 'outlook!Office.LocalClientTime#hours:member'
     summary: Integer value representing the hour on a 24-hour clock.
     name: hours
     fullName: hours
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.milliseconds
+  - uid: 'outlook!Office.LocalClientTime#milliseconds:member'
     summary: Integer value representing the milliseconds.
     name: milliseconds
     fullName: milliseconds
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.minutes
+  - uid: 'outlook!Office.LocalClientTime#minutes:member'
     summary: Integer value representing the minutes.
     name: minutes
     fullName: minutes
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.month
+  - uid: 'outlook!Office.LocalClientTime#month:member'
     summary: 'Integer value representing the month, beginning with 0 for January to 11 for December.'
     name: month
     fullName: month
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.seconds
+  - uid: 'outlook!Office.LocalClientTime#seconds:member'
     summary: Integer value representing the seconds.
     name: seconds
     fullName: seconds
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.timezoneOffset
+  - uid: 'outlook!Office.LocalClientTime#timezoneOffset:member'
     summary: Integer value representing the number of minutes difference between the local time zone and UTC.
     name: timezoneOffset
     fullName: timezoneOffset
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - number
-  - uid: Outlook.Office.LocalClientTime.year
+  - uid: 'outlook!Office.LocalClientTime#year:member'
     summary: Integer value representing the year.
     name: year
     fullName: year

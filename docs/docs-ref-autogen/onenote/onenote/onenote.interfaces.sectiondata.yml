@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.SectionData
+  - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
     summary: An interface describing the data returned by calling "section.toJSON()".
     name: OneNote.Interfaces.SectionData
     fullName: OneNote.Interfaces.SectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.SectionData.clientUrl
-      - onenote.OneNote.Interfaces.SectionData.id
-      - onenote.OneNote.Interfaces.SectionData.isEncrypted
-      - onenote.OneNote.Interfaces.SectionData.isLocked
-      - onenote.OneNote.Interfaces.SectionData.name
-      - onenote.OneNote.Interfaces.SectionData.pages
-      - onenote.OneNote.Interfaces.SectionData.webUrl
-  - uid: onenote.OneNote.Interfaces.SectionData.clientUrl
+      - 'onenote!OneNote.Interfaces.SectionData#clientUrl:member'
+      - 'onenote!OneNote.Interfaces.SectionData#id:member'
+      - 'onenote!OneNote.Interfaces.SectionData#isEncrypted:member'
+      - 'onenote!OneNote.Interfaces.SectionData#isLocked:member'
+      - 'onenote!OneNote.Interfaces.SectionData#name:member'
+      - 'onenote!OneNote.Interfaces.SectionData#pages:member'
+      - 'onenote!OneNote.Interfaces.SectionData#webUrl:member'
+  - uid: 'onenote!OneNote.Interfaces.SectionData#clientUrl:member'
     summary: |-
       The client url of the section. Read only
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.SectionData.id
+  - uid: 'onenote!OneNote.Interfaces.SectionData#id:member'
     summary: |-
       Gets the ID of the section. Read-only.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.SectionData.isEncrypted
+  - uid: 'onenote!OneNote.Interfaces.SectionData#isEncrypted:member'
     summary: |-
       True if this section is encrypted with a password. Read only
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionData.isLocked
+  - uid: 'onenote!OneNote.Interfaces.SectionData#isLocked:member'
     summary: |-
       True if this section is locked. Read only
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.SectionData.name
+  - uid: 'onenote!OneNote.Interfaces.SectionData#name:member'
     summary: |-
       Gets the name of the section. Read-only.
 
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.SectionData.pages
+  - uid: 'onenote!OneNote.Interfaces.SectionData#pages:member'
     summary: |-
       The collection of pages in the section. Read only
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.PageData[]'
-  - uid: onenote.OneNote.Interfaces.SectionData.webUrl
+  - uid: 'onenote!OneNote.Interfaces.SectionData#webUrl:member'
     summary: |-
       The web url of the page. Read only
 

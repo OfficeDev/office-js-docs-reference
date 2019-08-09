@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.NoteTag
+  - uid: 'onenote!OneNote.NoteTag:class'
     summary: |-
       A container for the NoteTag in a paragraph.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.NoteTag.context
-      - onenote.OneNote.NoteTag.id
-      - onenote.OneNote.NoteTag.load
-      - onenote.OneNote.NoteTag.load_1
-      - onenote.OneNote.NoteTag.load_2
-      - onenote.OneNote.NoteTag.status
-      - onenote.OneNote.NoteTag.toJSON
-      - onenote.OneNote.NoteTag.track
-      - onenote.OneNote.NoteTag.type
-      - onenote.OneNote.NoteTag.untrack
-  - uid: onenote.OneNote.NoteTag.context
+      - 'onenote!OneNote.NoteTag#context:member'
+      - 'onenote!OneNote.NoteTag#id:member'
+      - 'onenote!OneNote.NoteTag#load:member(1)'
+      - 'onenote!OneNote.NoteTag#load:member(2)'
+      - 'onenote!OneNote.NoteTag#load:member(3)'
+      - 'onenote!OneNote.NoteTag#status:member'
+      - 'onenote!OneNote.NoteTag#toJSON:member(1)'
+      - 'onenote!OneNote.NoteTag#track:member(1)'
+      - 'onenote!OneNote.NoteTag#type:member'
+      - 'onenote!OneNote.NoteTag#untrack:member(1)'
+  - uid: 'onenote!OneNote.NoteTag#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -37,8 +37,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.NoteTag.id
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.NoteTag#id:member'
     summary: |-
       Gets the Id of the NoteTag object. Read-only.
 
@@ -53,7 +53,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.NoteTag.load
+  - uid: 'onenote!OneNote.NoteTag#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -84,14 +84,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.NoteTagLoadOptions): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.NoteTagLoadOptions
-  - uid: onenote.OneNote.NoteTag.load_1
+            - 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
+  - uid: 'onenote!OneNote.NoteTag#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -104,14 +104,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.NoteTag.load_2
+  - uid: 'onenote!OneNote.NoteTag#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -124,7 +124,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -133,7 +133,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.NoteTag.status
+  - uid: 'onenote!OneNote.NoteTag#status:member'
     summary: |-
       Gets the status of the NoteTag object. Read-only.
 
@@ -152,7 +152,7 @@ items:
           - >-
             OneNote.NoteTagStatus | "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet"
             | "TaskRemoved"
-  - uid: onenote.OneNote.NoteTag.toJSON
+  - uid: 'onenote!OneNote.NoteTag#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -168,9 +168,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.NoteTagData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.NoteTagData
+          - 'onenote!OneNote.Interfaces.NoteTagData:interface'
         description: ''
-  - uid: onenote.OneNote.NoteTag.track
+  - uid: 'onenote!OneNote.NoteTag#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -186,9 +186,9 @@ items:
       content: 'track(): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''
-  - uid: onenote.OneNote.NoteTag.type
+  - uid: 'onenote!OneNote.NoteTag#type:member'
     summary: |-
       Gets the type of the NoteTag object. Read-only.
 
@@ -207,7 +207,7 @@ items:
           - >-
             OneNote.NoteTagType | "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber"
             | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2"
-  - uid: onenote.OneNote.NoteTag.untrack
+  - uid: 'onenote!OneNote.NoteTag#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -222,5 +222,5 @@ items:
       content: 'untrack(): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''

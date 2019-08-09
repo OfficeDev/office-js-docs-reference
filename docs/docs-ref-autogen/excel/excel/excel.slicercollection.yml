@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SlicerCollection
+  - uid: 'excel!Excel.SlicerCollection:class'
     summary: >-
       Represents a collection of all the slicer objects on the workbook or a worksheet.
 
@@ -15,20 +15,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SlicerCollection.add
-      - excel.Excel.SlicerCollection.context
-      - excel.Excel.SlicerCollection.getCount
-      - excel.Excel.SlicerCollection.getItem
-      - excel.Excel.SlicerCollection.getItemAt
-      - excel.Excel.SlicerCollection.getItemOrNullObject
-      - excel.Excel.SlicerCollection.items
-      - excel.Excel.SlicerCollection.load
-      - excel.Excel.SlicerCollection.load_1
-      - excel.Excel.SlicerCollection.load_2
-      - excel.Excel.SlicerCollection.toJSON
-  - uid: excel.Excel.SlicerCollection.add
+      - 'excel!Excel.SlicerCollection#add:member(1)'
+      - 'excel!Excel.SlicerCollection#context:member'
+      - 'excel!Excel.SlicerCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemAt:member(1)'
+      - 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerCollection#items:member'
+      - 'excel!Excel.SlicerCollection#load:member(1)'
+      - 'excel!Excel.SlicerCollection#load:member(2)'
+      - 'excel!Excel.SlicerCollection#load:member(3)'
+      - 'excel!Excel.SlicerCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.SlicerCollection#add:member(1)'
     summary: >-
       Adds a new slicer to the workbook.
 
@@ -47,23 +47,8 @@ items:
         slicerDestination?: string | Worksheet): Excel.Slicer;
       return:
         type:
-          - excel.Excel.Slicer
-        description: |-
-          The new slicer.
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Pivot");
-              const slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Slicer:class'
+        description: The new slicer.
       parameters:
         - id: slicerSource
           description: >-
@@ -85,7 +70,7 @@ items:
             of a worksheet. This parameter can be omitted if the slicer collection is retrieved from worksheet.
           type:
             - string | Worksheet
-  - uid: excel.Excel.SlicerCollection.context
+  - uid: 'excel!Excel.SlicerCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -99,8 +84,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.SlicerCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerCollection#getCount:member(1)'
     summary: >-
       Returns the number of slicers in the collection.
 
@@ -119,7 +104,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.SlicerCollection.getItem
+  - uid: 'excel!Excel.SlicerCollection#getItem:member(1)'
     summary: >-
       Gets a slicer object using its name or id.
 
@@ -136,29 +121,14 @@ items:
       content: 'getItem(key: string): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.caption = "Fruit Types";
-              slicer.left = 395;
-              slicer.top = 15;
-              slicer.height = 135;
-              slicer.width = 150;
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Slicer:class'
+        description: ''
       parameters:
         - id: key
           description: The name or id of the slicer.
           type:
             - string
-  - uid: excel.Excel.SlicerCollection.getItemAt
+  - uid: 'excel!Excel.SlicerCollection#getItemAt:member(1)'
     summary: >-
       Gets a slicer based on its position in the collection.
 
@@ -175,14 +145,14 @@ items:
       content: 'getItemAt(index: number): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.SlicerCollection.getItemOrNullObject
+  - uid: 'excel!Excel.SlicerCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a slicer using its name or id. If the slicer does not exist, will return a null object.
 
@@ -199,14 +169,14 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
       parameters:
         - id: key
           description: Name or Id of the slicer to be retrieved.
           type:
             - string
-  - uid: excel.Excel.SlicerCollection.items
+  - uid: 'excel!Excel.SlicerCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -219,7 +189,7 @@ items:
       return:
         type:
           - 'Excel.Slicer[]'
-  - uid: excel.Excel.SlicerCollection.load
+  - uid: 'excel!Excel.SlicerCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -253,14 +223,14 @@ items:
         Excel.SlicerCollection;
       return:
         type:
-          - excel.Excel.SlicerCollection
+          - 'excel!Excel.SlicerCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.SlicerCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.SlicerCollection.load_1
+  - uid: 'excel!Excel.SlicerCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -274,14 +244,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.SlicerCollection;'
       return:
         type:
-          - excel.Excel.SlicerCollection
+          - 'excel!Excel.SlicerCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.SlicerCollection.load_2
+  - uid: 'excel!Excel.SlicerCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -292,14 +262,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.SlicerCollection;'
       return:
         type:
-          - excel.Excel.SlicerCollection
+          - 'excel!Excel.SlicerCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.SlicerCollection.toJSON
+  - uid: 'excel!Excel.SlicerCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -316,5 +286,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SlicerCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.SlicerCollectionData
+          - 'excel!Excel.Interfaces.SlicerCollectionData:interface'
         description: ''

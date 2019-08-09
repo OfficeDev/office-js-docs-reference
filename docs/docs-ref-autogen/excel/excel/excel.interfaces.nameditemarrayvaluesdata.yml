@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesData
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData:interface'
     summary: An interface describing the data returned by calling "namedItemArrayValues.toJSON()".
     name: Excel.Interfaces.NamedItemArrayValuesData
     fullName: Excel.Interfaces.NamedItemArrayValuesData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.NamedItemArrayValuesData.types
-      - excel.Excel.Interfaces.NamedItemArrayValuesData.values
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesData.types
+      - 'excel!Excel.Interfaces.NamedItemArrayValuesData#types:member'
+      - 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#types:member'
     summary: |-
       Represents the types for each item in the named item array
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
-  - uid: excel.Excel.Interfaces.NamedItemArrayValuesData.values
+  - uid: 'excel!Excel.Interfaces.NamedItemArrayValuesData#values:member'
     summary: |-
       Represents the values of each item in the named item array.
 

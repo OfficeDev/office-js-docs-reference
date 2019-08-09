@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTitle
+  - uid: 'excel!Excel.ChartTitle:class'
     summary: |-
       Represents a chart title object of a chart.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartTitle.context
-      - excel.Excel.ChartTitle.format
-      - excel.Excel.ChartTitle.load
-      - excel.Excel.ChartTitle.load_1
-      - excel.Excel.ChartTitle.load_2
-      - excel.Excel.ChartTitle.overlay
-      - excel.Excel.ChartTitle.set
-      - excel.Excel.ChartTitle.set_1
-      - excel.Excel.ChartTitle.text
-      - excel.Excel.ChartTitle.toJSON
-      - excel.Excel.ChartTitle.visible
-  - uid: excel.Excel.ChartTitle.context
+      - 'excel!Excel.ChartTitle#context:member'
+      - 'excel!Excel.ChartTitle#format:member'
+      - 'excel!Excel.ChartTitle#load:member(1)'
+      - 'excel!Excel.ChartTitle#load:member(2)'
+      - 'excel!Excel.ChartTitle#load:member(3)'
+      - 'excel!Excel.ChartTitle#overlay:member'
+      - 'excel!Excel.ChartTitle#set:member(1)'
+      - 'excel!Excel.ChartTitle#set:member(2)'
+      - 'excel!Excel.ChartTitle#text:member'
+      - 'excel!Excel.ChartTitle#toJSON:member(1)'
+      - 'excel!Excel.ChartTitle#visible:member'
+  - uid: 'excel!Excel.ChartTitle#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartTitle.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTitle#format:member'
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting. Read-only.
 
@@ -53,8 +53,8 @@ items:
       content: 'readonly format: Excel.ChartTitleFormat;'
       return:
         type:
-          - excel.Excel.ChartTitleFormat
-  - uid: excel.Excel.ChartTitle.load
+          - 'excel!Excel.ChartTitleFormat:class'
+  - uid: 'excel!Excel.ChartTitle#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -85,14 +85,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTitleLoadOptions): Excel.ChartTitle;'
       return:
         type:
-          - excel.Excel.ChartTitle
+          - 'excel!Excel.ChartTitle:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartTitleLoadOptions
-  - uid: excel.Excel.ChartTitle.load_1
+            - 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
+  - uid: 'excel!Excel.ChartTitle#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -105,54 +105,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTitle;'
       return:
         type:
-          - excel.Excel.ChartTitle
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the text of Chart Title from Chart1.
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              
-              var title = chart.title;
-              title.load('text');
-              return ctx.sync().then(function() {
-                      console.log(title.text);
-              }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-              });
-          });
-          ```
-          ```javascript
-          // Set the text of Chart Title to "My Chart" and Make it show on top of the chart without overlaying.
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              
-              chart.title.text= "My Chart"; 
-              chart.title.visible=true;
-              chart.title.overlay=true;
-              
-              return ctx.sync().then(function() {
-                  console.log("Char Title Changed");
-              }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-              });
-          });
-          ```
+          - 'excel!Excel.ChartTitle:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartTitle.load_2
+  - uid: 'excel!Excel.ChartTitle#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -165,7 +125,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTitle;'
       return:
         type:
-          - excel.Excel.ChartTitle
+          - 'excel!Excel.ChartTitle:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -174,7 +134,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartTitle.overlay
+  - uid: 'excel!Excel.ChartTitle#overlay:member'
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
 
@@ -189,7 +149,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartTitle.set
+  - uid: 'excel!Excel.ChartTitle#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -219,7 +179,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartTitle.set_1
+  - uid: 'excel!Excel.ChartTitle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -236,8 +196,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartTitle
-  - uid: excel.Excel.ChartTitle.text
+            - 'excel!Excel.ChartTitle:class'
+  - uid: 'excel!Excel.ChartTitle#text:member'
     summary: |-
       Represents the title text of a chart.
 
@@ -252,7 +212,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartTitle.toJSON
+  - uid: 'excel!Excel.ChartTitle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -268,9 +228,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTitleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleData
+          - 'excel!Excel.Interfaces.ChartTitleData:interface'
         description: ''
-  - uid: excel.Excel.ChartTitle.visible
+  - uid: 'excel!Excel.ChartTitle#visible:member'
     summary: |-
       A boolean value the represents the visibility of a chart title object.
 

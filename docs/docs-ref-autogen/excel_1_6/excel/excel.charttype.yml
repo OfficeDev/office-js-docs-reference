@@ -1,664 +1,664 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartType
+  - uid: 'excel!Excel.ChartType:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartType
     fullName: Excel.ChartType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartType._3DArea
-      - excel.Excel.ChartType._3DAreaStacked
-      - excel.Excel.ChartType._3DAreaStacked100
-      - excel.Excel.ChartType._3DBarClustered
-      - excel.Excel.ChartType._3DBarStacked
-      - excel.Excel.ChartType._3DBarStacked100
-      - excel.Excel.ChartType._3DColumn
-      - excel.Excel.ChartType._3DColumnClustered
-      - excel.Excel.ChartType._3DColumnStacked
-      - excel.Excel.ChartType._3DColumnStacked100
-      - excel.Excel.ChartType._3DLine
-      - excel.Excel.ChartType._3DPie
-      - excel.Excel.ChartType._3DPieExploded
-      - excel.Excel.ChartType.area
-      - excel.Excel.ChartType.areaStacked
-      - excel.Excel.ChartType.areaStacked100
-      - excel.Excel.ChartType.barClustered
-      - excel.Excel.ChartType.barOfPie
-      - excel.Excel.ChartType.barStacked
-      - excel.Excel.ChartType.barStacked100
-      - excel.Excel.ChartType.boxwhisker
-      - excel.Excel.ChartType.bubble
-      - excel.Excel.ChartType.bubble3DEffect
-      - excel.Excel.ChartType.columnClustered
-      - excel.Excel.ChartType.columnStacked
-      - excel.Excel.ChartType.columnStacked100
-      - excel.Excel.ChartType.coneBarClustered
-      - excel.Excel.ChartType.coneBarStacked
-      - excel.Excel.ChartType.coneBarStacked100
-      - excel.Excel.ChartType.coneCol
-      - excel.Excel.ChartType.coneColClustered
-      - excel.Excel.ChartType.coneColStacked
-      - excel.Excel.ChartType.coneColStacked100
-      - excel.Excel.ChartType.cylinderBarClustered
-      - excel.Excel.ChartType.cylinderBarStacked
-      - excel.Excel.ChartType.cylinderBarStacked100
-      - excel.Excel.ChartType.cylinderCol
-      - excel.Excel.ChartType.cylinderColClustered
-      - excel.Excel.ChartType.cylinderColStacked
-      - excel.Excel.ChartType.cylinderColStacked100
-      - excel.Excel.ChartType.doughnut
-      - excel.Excel.ChartType.doughnutExploded
-      - excel.Excel.ChartType.funnel
-      - excel.Excel.ChartType.histogram
-      - excel.Excel.ChartType.invalid
-      - excel.Excel.ChartType.line
-      - excel.Excel.ChartType.lineMarkers
-      - excel.Excel.ChartType.lineMarkersStacked
-      - excel.Excel.ChartType.lineMarkersStacked100
-      - excel.Excel.ChartType.lineStacked
-      - excel.Excel.ChartType.lineStacked100
-      - excel.Excel.ChartType.pareto
-      - excel.Excel.ChartType.pie
-      - excel.Excel.ChartType.pieExploded
-      - excel.Excel.ChartType.pieOfPie
-      - excel.Excel.ChartType.pyramidBarClustered
-      - excel.Excel.ChartType.pyramidBarStacked
-      - excel.Excel.ChartType.pyramidBarStacked100
-      - excel.Excel.ChartType.pyramidCol
-      - excel.Excel.ChartType.pyramidColClustered
-      - excel.Excel.ChartType.pyramidColStacked
-      - excel.Excel.ChartType.pyramidColStacked100
-      - excel.Excel.ChartType.radar
-      - excel.Excel.ChartType.radarFilled
-      - excel.Excel.ChartType.radarMarkers
-      - excel.Excel.ChartType.regionMap
-      - excel.Excel.ChartType.stockHLC
-      - excel.Excel.ChartType.stockOHLC
-      - excel.Excel.ChartType.stockVHLC
-      - excel.Excel.ChartType.stockVOHLC
-      - excel.Excel.ChartType.sunburst
-      - excel.Excel.ChartType.surface
-      - excel.Excel.ChartType.surfaceTopView
-      - excel.Excel.ChartType.surfaceTopViewWireframe
-      - excel.Excel.ChartType.surfaceWireframe
-      - excel.Excel.ChartType.treemap
-      - excel.Excel.ChartType.waterfall
-      - excel.Excel.ChartType.xyscatter
-      - excel.Excel.ChartType.xyscatterLines
-      - excel.Excel.ChartType.xyscatterLinesNoMarkers
-      - excel.Excel.ChartType.xyscatterSmooth
-      - excel.Excel.ChartType.xyscatterSmoothNoMarkers
-  - uid: excel.Excel.ChartType._3DArea
+      - 'excel!Excel.ChartType._3DArea:member'
+      - 'excel!Excel.ChartType._3DAreaStacked:member'
+      - 'excel!Excel.ChartType._3DAreaStacked100:member'
+      - 'excel!Excel.ChartType._3DBarClustered:member'
+      - 'excel!Excel.ChartType._3DBarStacked:member'
+      - 'excel!Excel.ChartType._3DBarStacked100:member'
+      - 'excel!Excel.ChartType._3DColumn:member'
+      - 'excel!Excel.ChartType._3DColumnClustered:member'
+      - 'excel!Excel.ChartType._3DColumnStacked:member'
+      - 'excel!Excel.ChartType._3DColumnStacked100:member'
+      - 'excel!Excel.ChartType._3DLine:member'
+      - 'excel!Excel.ChartType._3DPie:member'
+      - 'excel!Excel.ChartType._3DPieExploded:member'
+      - 'excel!Excel.ChartType.area:member'
+      - 'excel!Excel.ChartType.areaStacked:member'
+      - 'excel!Excel.ChartType.areaStacked100:member'
+      - 'excel!Excel.ChartType.barClustered:member'
+      - 'excel!Excel.ChartType.barOfPie:member'
+      - 'excel!Excel.ChartType.barStacked:member'
+      - 'excel!Excel.ChartType.barStacked100:member'
+      - 'excel!Excel.ChartType.boxwhisker:member'
+      - 'excel!Excel.ChartType.bubble:member'
+      - 'excel!Excel.ChartType.bubble3DEffect:member'
+      - 'excel!Excel.ChartType.columnClustered:member'
+      - 'excel!Excel.ChartType.columnStacked:member'
+      - 'excel!Excel.ChartType.columnStacked100:member'
+      - 'excel!Excel.ChartType.coneBarClustered:member'
+      - 'excel!Excel.ChartType.coneBarStacked:member'
+      - 'excel!Excel.ChartType.coneBarStacked100:member'
+      - 'excel!Excel.ChartType.coneCol:member'
+      - 'excel!Excel.ChartType.coneColClustered:member'
+      - 'excel!Excel.ChartType.coneColStacked:member'
+      - 'excel!Excel.ChartType.coneColStacked100:member'
+      - 'excel!Excel.ChartType.cylinderBarClustered:member'
+      - 'excel!Excel.ChartType.cylinderBarStacked:member'
+      - 'excel!Excel.ChartType.cylinderBarStacked100:member'
+      - 'excel!Excel.ChartType.cylinderCol:member'
+      - 'excel!Excel.ChartType.cylinderColClustered:member'
+      - 'excel!Excel.ChartType.cylinderColStacked:member'
+      - 'excel!Excel.ChartType.cylinderColStacked100:member'
+      - 'excel!Excel.ChartType.doughnut:member'
+      - 'excel!Excel.ChartType.doughnutExploded:member'
+      - 'excel!Excel.ChartType.funnel:member'
+      - 'excel!Excel.ChartType.histogram:member'
+      - 'excel!Excel.ChartType.invalid:member'
+      - 'excel!Excel.ChartType.line:member'
+      - 'excel!Excel.ChartType.lineMarkers:member'
+      - 'excel!Excel.ChartType.lineMarkersStacked:member'
+      - 'excel!Excel.ChartType.lineMarkersStacked100:member'
+      - 'excel!Excel.ChartType.lineStacked:member'
+      - 'excel!Excel.ChartType.lineStacked100:member'
+      - 'excel!Excel.ChartType.pareto:member'
+      - 'excel!Excel.ChartType.pie:member'
+      - 'excel!Excel.ChartType.pieExploded:member'
+      - 'excel!Excel.ChartType.pieOfPie:member'
+      - 'excel!Excel.ChartType.pyramidBarClustered:member'
+      - 'excel!Excel.ChartType.pyramidBarStacked:member'
+      - 'excel!Excel.ChartType.pyramidBarStacked100:member'
+      - 'excel!Excel.ChartType.pyramidCol:member'
+      - 'excel!Excel.ChartType.pyramidColClustered:member'
+      - 'excel!Excel.ChartType.pyramidColStacked:member'
+      - 'excel!Excel.ChartType.pyramidColStacked100:member'
+      - 'excel!Excel.ChartType.radar:member'
+      - 'excel!Excel.ChartType.radarFilled:member'
+      - 'excel!Excel.ChartType.radarMarkers:member'
+      - 'excel!Excel.ChartType.regionMap:member'
+      - 'excel!Excel.ChartType.stockHLC:member'
+      - 'excel!Excel.ChartType.stockOHLC:member'
+      - 'excel!Excel.ChartType.stockVHLC:member'
+      - 'excel!Excel.ChartType.stockVOHLC:member'
+      - 'excel!Excel.ChartType.sunburst:member'
+      - 'excel!Excel.ChartType.surface:member'
+      - 'excel!Excel.ChartType.surfaceTopView:member'
+      - 'excel!Excel.ChartType.surfaceTopViewWireframe:member'
+      - 'excel!Excel.ChartType.surfaceWireframe:member'
+      - 'excel!Excel.ChartType.treemap:member'
+      - 'excel!Excel.ChartType.waterfall:member'
+      - 'excel!Excel.ChartType.xyscatter:member'
+      - 'excel!Excel.ChartType.xyscatterLines:member'
+      - 'excel!Excel.ChartType.xyscatterLinesNoMarkers:member'
+      - 'excel!Excel.ChartType.xyscatterSmooth:member'
+      - 'excel!Excel.ChartType.xyscatterSmoothNoMarkers:member'
+  - uid: 'excel!Excel.ChartType._3DArea:member'
     name: _3DArea
     fullName: _3DArea
     langs:
       - typeScript
     type: field
     numericValue: '"3DArea"'
-  - uid: excel.Excel.ChartType._3DAreaStacked
+  - uid: 'excel!Excel.ChartType._3DAreaStacked:member'
     name: _3DAreaStacked
     fullName: _3DAreaStacked
     langs:
       - typeScript
     type: field
     numericValue: '"3DAreaStacked"'
-  - uid: excel.Excel.ChartType._3DAreaStacked100
+  - uid: 'excel!Excel.ChartType._3DAreaStacked100:member'
     name: _3DAreaStacked100
     fullName: _3DAreaStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"3DAreaStacked100"'
-  - uid: excel.Excel.ChartType._3DBarClustered
+  - uid: 'excel!Excel.ChartType._3DBarClustered:member'
     name: _3DBarClustered
     fullName: _3DBarClustered
     langs:
       - typeScript
     type: field
     numericValue: '"3DBarClustered"'
-  - uid: excel.Excel.ChartType._3DBarStacked
+  - uid: 'excel!Excel.ChartType._3DBarStacked:member'
     name: _3DBarStacked
     fullName: _3DBarStacked
     langs:
       - typeScript
     type: field
     numericValue: '"3DBarStacked"'
-  - uid: excel.Excel.ChartType._3DBarStacked100
+  - uid: 'excel!Excel.ChartType._3DBarStacked100:member'
     name: _3DBarStacked100
     fullName: _3DBarStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"3DBarStacked100"'
-  - uid: excel.Excel.ChartType._3DColumn
+  - uid: 'excel!Excel.ChartType._3DColumn:member'
     name: _3DColumn
     fullName: _3DColumn
     langs:
       - typeScript
     type: field
     numericValue: '"3DColumn"'
-  - uid: excel.Excel.ChartType._3DColumnClustered
+  - uid: 'excel!Excel.ChartType._3DColumnClustered:member'
     name: _3DColumnClustered
     fullName: _3DColumnClustered
     langs:
       - typeScript
     type: field
     numericValue: '"3DColumnClustered"'
-  - uid: excel.Excel.ChartType._3DColumnStacked
+  - uid: 'excel!Excel.ChartType._3DColumnStacked:member'
     name: _3DColumnStacked
     fullName: _3DColumnStacked
     langs:
       - typeScript
     type: field
     numericValue: '"3DColumnStacked"'
-  - uid: excel.Excel.ChartType._3DColumnStacked100
+  - uid: 'excel!Excel.ChartType._3DColumnStacked100:member'
     name: _3DColumnStacked100
     fullName: _3DColumnStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"3DColumnStacked100"'
-  - uid: excel.Excel.ChartType._3DLine
+  - uid: 'excel!Excel.ChartType._3DLine:member'
     name: _3DLine
     fullName: _3DLine
     langs:
       - typeScript
     type: field
     numericValue: '"3DLine"'
-  - uid: excel.Excel.ChartType._3DPie
+  - uid: 'excel!Excel.ChartType._3DPie:member'
     name: _3DPie
     fullName: _3DPie
     langs:
       - typeScript
     type: field
     numericValue: '"3DPie"'
-  - uid: excel.Excel.ChartType._3DPieExploded
+  - uid: 'excel!Excel.ChartType._3DPieExploded:member'
     name: _3DPieExploded
     fullName: _3DPieExploded
     langs:
       - typeScript
     type: field
     numericValue: '"3DPieExploded"'
-  - uid: excel.Excel.ChartType.area
+  - uid: 'excel!Excel.ChartType.area:member'
     name: area
     fullName: area
     langs:
       - typeScript
     type: field
     numericValue: '"Area"'
-  - uid: excel.Excel.ChartType.areaStacked
+  - uid: 'excel!Excel.ChartType.areaStacked:member'
     name: areaStacked
     fullName: areaStacked
     langs:
       - typeScript
     type: field
     numericValue: '"AreaStacked"'
-  - uid: excel.Excel.ChartType.areaStacked100
+  - uid: 'excel!Excel.ChartType.areaStacked100:member'
     name: areaStacked100
     fullName: areaStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"AreaStacked100"'
-  - uid: excel.Excel.ChartType.barClustered
+  - uid: 'excel!Excel.ChartType.barClustered:member'
     name: barClustered
     fullName: barClustered
     langs:
       - typeScript
     type: field
     numericValue: '"BarClustered"'
-  - uid: excel.Excel.ChartType.barOfPie
+  - uid: 'excel!Excel.ChartType.barOfPie:member'
     name: barOfPie
     fullName: barOfPie
     langs:
       - typeScript
     type: field
     numericValue: '"BarOfPie"'
-  - uid: excel.Excel.ChartType.barStacked
+  - uid: 'excel!Excel.ChartType.barStacked:member'
     name: barStacked
     fullName: barStacked
     langs:
       - typeScript
     type: field
     numericValue: '"BarStacked"'
-  - uid: excel.Excel.ChartType.barStacked100
+  - uid: 'excel!Excel.ChartType.barStacked100:member'
     name: barStacked100
     fullName: barStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"BarStacked100"'
-  - uid: excel.Excel.ChartType.boxwhisker
+  - uid: 'excel!Excel.ChartType.boxwhisker:member'
     name: boxwhisker
     fullName: boxwhisker
     langs:
       - typeScript
     type: field
     numericValue: '"Boxwhisker"'
-  - uid: excel.Excel.ChartType.bubble
+  - uid: 'excel!Excel.ChartType.bubble:member'
     name: bubble
     fullName: bubble
     langs:
       - typeScript
     type: field
     numericValue: '"Bubble"'
-  - uid: excel.Excel.ChartType.bubble3DEffect
+  - uid: 'excel!Excel.ChartType.bubble3DEffect:member'
     name: bubble3DEffect
     fullName: bubble3DEffect
     langs:
       - typeScript
     type: field
     numericValue: '"Bubble3DEffect"'
-  - uid: excel.Excel.ChartType.columnClustered
+  - uid: 'excel!Excel.ChartType.columnClustered:member'
     name: columnClustered
     fullName: columnClustered
     langs:
       - typeScript
     type: field
     numericValue: '"ColumnClustered"'
-  - uid: excel.Excel.ChartType.columnStacked
+  - uid: 'excel!Excel.ChartType.columnStacked:member'
     name: columnStacked
     fullName: columnStacked
     langs:
       - typeScript
     type: field
     numericValue: '"ColumnStacked"'
-  - uid: excel.Excel.ChartType.columnStacked100
+  - uid: 'excel!Excel.ChartType.columnStacked100:member'
     name: columnStacked100
     fullName: columnStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"ColumnStacked100"'
-  - uid: excel.Excel.ChartType.coneBarClustered
+  - uid: 'excel!Excel.ChartType.coneBarClustered:member'
     name: coneBarClustered
     fullName: coneBarClustered
     langs:
       - typeScript
     type: field
     numericValue: '"ConeBarClustered"'
-  - uid: excel.Excel.ChartType.coneBarStacked
+  - uid: 'excel!Excel.ChartType.coneBarStacked:member'
     name: coneBarStacked
     fullName: coneBarStacked
     langs:
       - typeScript
     type: field
     numericValue: '"ConeBarStacked"'
-  - uid: excel.Excel.ChartType.coneBarStacked100
+  - uid: 'excel!Excel.ChartType.coneBarStacked100:member'
     name: coneBarStacked100
     fullName: coneBarStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"ConeBarStacked100"'
-  - uid: excel.Excel.ChartType.coneCol
+  - uid: 'excel!Excel.ChartType.coneCol:member'
     name: coneCol
     fullName: coneCol
     langs:
       - typeScript
     type: field
     numericValue: '"ConeCol"'
-  - uid: excel.Excel.ChartType.coneColClustered
+  - uid: 'excel!Excel.ChartType.coneColClustered:member'
     name: coneColClustered
     fullName: coneColClustered
     langs:
       - typeScript
     type: field
     numericValue: '"ConeColClustered"'
-  - uid: excel.Excel.ChartType.coneColStacked
+  - uid: 'excel!Excel.ChartType.coneColStacked:member'
     name: coneColStacked
     fullName: coneColStacked
     langs:
       - typeScript
     type: field
     numericValue: '"ConeColStacked"'
-  - uid: excel.Excel.ChartType.coneColStacked100
+  - uid: 'excel!Excel.ChartType.coneColStacked100:member'
     name: coneColStacked100
     fullName: coneColStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"ConeColStacked100"'
-  - uid: excel.Excel.ChartType.cylinderBarClustered
+  - uid: 'excel!Excel.ChartType.cylinderBarClustered:member'
     name: cylinderBarClustered
     fullName: cylinderBarClustered
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderBarClustered"'
-  - uid: excel.Excel.ChartType.cylinderBarStacked
+  - uid: 'excel!Excel.ChartType.cylinderBarStacked:member'
     name: cylinderBarStacked
     fullName: cylinderBarStacked
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderBarStacked"'
-  - uid: excel.Excel.ChartType.cylinderBarStacked100
+  - uid: 'excel!Excel.ChartType.cylinderBarStacked100:member'
     name: cylinderBarStacked100
     fullName: cylinderBarStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderBarStacked100"'
-  - uid: excel.Excel.ChartType.cylinderCol
+  - uid: 'excel!Excel.ChartType.cylinderCol:member'
     name: cylinderCol
     fullName: cylinderCol
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderCol"'
-  - uid: excel.Excel.ChartType.cylinderColClustered
+  - uid: 'excel!Excel.ChartType.cylinderColClustered:member'
     name: cylinderColClustered
     fullName: cylinderColClustered
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderColClustered"'
-  - uid: excel.Excel.ChartType.cylinderColStacked
+  - uid: 'excel!Excel.ChartType.cylinderColStacked:member'
     name: cylinderColStacked
     fullName: cylinderColStacked
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderColStacked"'
-  - uid: excel.Excel.ChartType.cylinderColStacked100
+  - uid: 'excel!Excel.ChartType.cylinderColStacked100:member'
     name: cylinderColStacked100
     fullName: cylinderColStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"CylinderColStacked100"'
-  - uid: excel.Excel.ChartType.doughnut
+  - uid: 'excel!Excel.ChartType.doughnut:member'
     name: doughnut
     fullName: doughnut
     langs:
       - typeScript
     type: field
     numericValue: '"Doughnut"'
-  - uid: excel.Excel.ChartType.doughnutExploded
+  - uid: 'excel!Excel.ChartType.doughnutExploded:member'
     name: doughnutExploded
     fullName: doughnutExploded
     langs:
       - typeScript
     type: field
     numericValue: '"DoughnutExploded"'
-  - uid: excel.Excel.ChartType.funnel
+  - uid: 'excel!Excel.ChartType.funnel:member'
     name: funnel
     fullName: funnel
     langs:
       - typeScript
     type: field
     numericValue: '"Funnel"'
-  - uid: excel.Excel.ChartType.histogram
+  - uid: 'excel!Excel.ChartType.histogram:member'
     name: histogram
     fullName: histogram
     langs:
       - typeScript
     type: field
     numericValue: '"Histogram"'
-  - uid: excel.Excel.ChartType.invalid
+  - uid: 'excel!Excel.ChartType.invalid:member'
     name: invalid
     fullName: invalid
     langs:
       - typeScript
     type: field
     numericValue: '"Invalid"'
-  - uid: excel.Excel.ChartType.line
+  - uid: 'excel!Excel.ChartType.line:member'
     name: line
     fullName: line
     langs:
       - typeScript
     type: field
     numericValue: '"Line"'
-  - uid: excel.Excel.ChartType.lineMarkers
+  - uid: 'excel!Excel.ChartType.lineMarkers:member'
     name: lineMarkers
     fullName: lineMarkers
     langs:
       - typeScript
     type: field
     numericValue: '"LineMarkers"'
-  - uid: excel.Excel.ChartType.lineMarkersStacked
+  - uid: 'excel!Excel.ChartType.lineMarkersStacked:member'
     name: lineMarkersStacked
     fullName: lineMarkersStacked
     langs:
       - typeScript
     type: field
     numericValue: '"LineMarkersStacked"'
-  - uid: excel.Excel.ChartType.lineMarkersStacked100
+  - uid: 'excel!Excel.ChartType.lineMarkersStacked100:member'
     name: lineMarkersStacked100
     fullName: lineMarkersStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"LineMarkersStacked100"'
-  - uid: excel.Excel.ChartType.lineStacked
+  - uid: 'excel!Excel.ChartType.lineStacked:member'
     name: lineStacked
     fullName: lineStacked
     langs:
       - typeScript
     type: field
     numericValue: '"LineStacked"'
-  - uid: excel.Excel.ChartType.lineStacked100
+  - uid: 'excel!Excel.ChartType.lineStacked100:member'
     name: lineStacked100
     fullName: lineStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"LineStacked100"'
-  - uid: excel.Excel.ChartType.pareto
+  - uid: 'excel!Excel.ChartType.pareto:member'
     name: pareto
     fullName: pareto
     langs:
       - typeScript
     type: field
     numericValue: '"Pareto"'
-  - uid: excel.Excel.ChartType.pie
+  - uid: 'excel!Excel.ChartType.pie:member'
     name: pie
     fullName: pie
     langs:
       - typeScript
     type: field
     numericValue: '"Pie"'
-  - uid: excel.Excel.ChartType.pieExploded
+  - uid: 'excel!Excel.ChartType.pieExploded:member'
     name: pieExploded
     fullName: pieExploded
     langs:
       - typeScript
     type: field
     numericValue: '"PieExploded"'
-  - uid: excel.Excel.ChartType.pieOfPie
+  - uid: 'excel!Excel.ChartType.pieOfPie:member'
     name: pieOfPie
     fullName: pieOfPie
     langs:
       - typeScript
     type: field
     numericValue: '"PieOfPie"'
-  - uid: excel.Excel.ChartType.pyramidBarClustered
+  - uid: 'excel!Excel.ChartType.pyramidBarClustered:member'
     name: pyramidBarClustered
     fullName: pyramidBarClustered
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidBarClustered"'
-  - uid: excel.Excel.ChartType.pyramidBarStacked
+  - uid: 'excel!Excel.ChartType.pyramidBarStacked:member'
     name: pyramidBarStacked
     fullName: pyramidBarStacked
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidBarStacked"'
-  - uid: excel.Excel.ChartType.pyramidBarStacked100
+  - uid: 'excel!Excel.ChartType.pyramidBarStacked100:member'
     name: pyramidBarStacked100
     fullName: pyramidBarStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidBarStacked100"'
-  - uid: excel.Excel.ChartType.pyramidCol
+  - uid: 'excel!Excel.ChartType.pyramidCol:member'
     name: pyramidCol
     fullName: pyramidCol
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidCol"'
-  - uid: excel.Excel.ChartType.pyramidColClustered
+  - uid: 'excel!Excel.ChartType.pyramidColClustered:member'
     name: pyramidColClustered
     fullName: pyramidColClustered
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidColClustered"'
-  - uid: excel.Excel.ChartType.pyramidColStacked
+  - uid: 'excel!Excel.ChartType.pyramidColStacked:member'
     name: pyramidColStacked
     fullName: pyramidColStacked
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidColStacked"'
-  - uid: excel.Excel.ChartType.pyramidColStacked100
+  - uid: 'excel!Excel.ChartType.pyramidColStacked100:member'
     name: pyramidColStacked100
     fullName: pyramidColStacked100
     langs:
       - typeScript
     type: field
     numericValue: '"PyramidColStacked100"'
-  - uid: excel.Excel.ChartType.radar
+  - uid: 'excel!Excel.ChartType.radar:member'
     name: radar
     fullName: radar
     langs:
       - typeScript
     type: field
     numericValue: '"Radar"'
-  - uid: excel.Excel.ChartType.radarFilled
+  - uid: 'excel!Excel.ChartType.radarFilled:member'
     name: radarFilled
     fullName: radarFilled
     langs:
       - typeScript
     type: field
     numericValue: '"RadarFilled"'
-  - uid: excel.Excel.ChartType.radarMarkers
+  - uid: 'excel!Excel.ChartType.radarMarkers:member'
     name: radarMarkers
     fullName: radarMarkers
     langs:
       - typeScript
     type: field
     numericValue: '"RadarMarkers"'
-  - uid: excel.Excel.ChartType.regionMap
+  - uid: 'excel!Excel.ChartType.regionMap:member'
     name: regionMap
     fullName: regionMap
     langs:
       - typeScript
     type: field
     numericValue: '"RegionMap"'
-  - uid: excel.Excel.ChartType.stockHLC
+  - uid: 'excel!Excel.ChartType.stockHLC:member'
     name: stockHLC
     fullName: stockHLC
     langs:
       - typeScript
     type: field
     numericValue: '"StockHLC"'
-  - uid: excel.Excel.ChartType.stockOHLC
+  - uid: 'excel!Excel.ChartType.stockOHLC:member'
     name: stockOHLC
     fullName: stockOHLC
     langs:
       - typeScript
     type: field
     numericValue: '"StockOHLC"'
-  - uid: excel.Excel.ChartType.stockVHLC
+  - uid: 'excel!Excel.ChartType.stockVHLC:member'
     name: stockVHLC
     fullName: stockVHLC
     langs:
       - typeScript
     type: field
     numericValue: '"StockVHLC"'
-  - uid: excel.Excel.ChartType.stockVOHLC
+  - uid: 'excel!Excel.ChartType.stockVOHLC:member'
     name: stockVOHLC
     fullName: stockVOHLC
     langs:
       - typeScript
     type: field
     numericValue: '"StockVOHLC"'
-  - uid: excel.Excel.ChartType.sunburst
+  - uid: 'excel!Excel.ChartType.sunburst:member'
     name: sunburst
     fullName: sunburst
     langs:
       - typeScript
     type: field
     numericValue: '"Sunburst"'
-  - uid: excel.Excel.ChartType.surface
+  - uid: 'excel!Excel.ChartType.surface:member'
     name: surface
     fullName: surface
     langs:
       - typeScript
     type: field
     numericValue: '"Surface"'
-  - uid: excel.Excel.ChartType.surfaceTopView
+  - uid: 'excel!Excel.ChartType.surfaceTopView:member'
     name: surfaceTopView
     fullName: surfaceTopView
     langs:
       - typeScript
     type: field
     numericValue: '"SurfaceTopView"'
-  - uid: excel.Excel.ChartType.surfaceTopViewWireframe
+  - uid: 'excel!Excel.ChartType.surfaceTopViewWireframe:member'
     name: surfaceTopViewWireframe
     fullName: surfaceTopViewWireframe
     langs:
       - typeScript
     type: field
     numericValue: '"SurfaceTopViewWireframe"'
-  - uid: excel.Excel.ChartType.surfaceWireframe
+  - uid: 'excel!Excel.ChartType.surfaceWireframe:member'
     name: surfaceWireframe
     fullName: surfaceWireframe
     langs:
       - typeScript
     type: field
     numericValue: '"SurfaceWireframe"'
-  - uid: excel.Excel.ChartType.treemap
+  - uid: 'excel!Excel.ChartType.treemap:member'
     name: treemap
     fullName: treemap
     langs:
       - typeScript
     type: field
     numericValue: '"Treemap"'
-  - uid: excel.Excel.ChartType.waterfall
+  - uid: 'excel!Excel.ChartType.waterfall:member'
     name: waterfall
     fullName: waterfall
     langs:
       - typeScript
     type: field
     numericValue: '"Waterfall"'
-  - uid: excel.Excel.ChartType.xyscatter
+  - uid: 'excel!Excel.ChartType.xyscatter:member'
     name: xyscatter
     fullName: xyscatter
     langs:
       - typeScript
     type: field
     numericValue: '"XYScatter"'
-  - uid: excel.Excel.ChartType.xyscatterLines
+  - uid: 'excel!Excel.ChartType.xyscatterLines:member'
     name: xyscatterLines
     fullName: xyscatterLines
     langs:
       - typeScript
     type: field
     numericValue: '"XYScatterLines"'
-  - uid: excel.Excel.ChartType.xyscatterLinesNoMarkers
+  - uid: 'excel!Excel.ChartType.xyscatterLinesNoMarkers:member'
     name: xyscatterLinesNoMarkers
     fullName: xyscatterLinesNoMarkers
     langs:
       - typeScript
     type: field
     numericValue: '"XYScatterLinesNoMarkers"'
-  - uid: excel.Excel.ChartType.xyscatterSmooth
+  - uid: 'excel!Excel.ChartType.xyscatterSmooth:member'
     name: xyscatterSmooth
     fullName: xyscatterSmooth
     langs:
       - typeScript
     type: field
     numericValue: '"XYScatterSmooth"'
-  - uid: excel.Excel.ChartType.xyscatterSmoothNoMarkers
+  - uid: 'excel!Excel.ChartType.xyscatterSmoothNoMarkers:member'
     name: xyscatterSmoothNoMarkers
     fullName: xyscatterSmoothNoMarkers
     langs:

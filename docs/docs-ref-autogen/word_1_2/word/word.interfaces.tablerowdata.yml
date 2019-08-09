@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableRowData
+  - uid: 'word!Word.Interfaces.TableRowData:interface'
     summary: An interface describing the data returned by calling "tableRow.toJSON()".
     name: Word.Interfaces.TableRowData
     fullName: Word.Interfaces.TableRowData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!

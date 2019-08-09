@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the IconSetConditionalFormat object, for use in
       "iconSetConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
@@ -9,13 +9,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
-      - excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.criteria
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#reverseIconOrder:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#showIconOnly:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#criteria:member'
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
       the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - 'Excel.ConditionalIconCriterion[]'
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.reverseIconOrder
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#reverseIconOrder:member'
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.showIconOnly
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#showIconOnly:member'
     summary: |-
       If true, hides the values and only shows icons.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatUpdateData.style
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatUpdateData#style:member'
     summary: |-
       If set, displays the IconSet option for the conditional format.
 

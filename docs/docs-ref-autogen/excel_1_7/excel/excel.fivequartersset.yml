@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FiveQuartersSet
+  - uid: 'excel!Excel.FiveQuartersSet:interface'
     name: Excel.FiveQuartersSet
     fullName: Excel.FiveQuartersSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FiveQuartersSet.blackCircle
-      - excel.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
-      - excel.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
-      - excel.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
-      - excel.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
-  - uid: excel.Excel.FiveQuartersSet.blackCircle
+      - 'excel!Excel.FiveQuartersSet#blackCircle:member'
+      - 'excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
+      - 'excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
+      - 'excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
+      - 'excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
+  - uid: 'excel!Excel.FiveQuartersSet#blackCircle:member'
     name: blackCircle
     fullName: blackCircle
     langs:
@@ -23,8 +23,8 @@ items:
       content: 'blackCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveQuartersSet.circleWithOneWhiteQuarter
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#circleWithOneWhiteQuarter:member'
     name: circleWithOneWhiteQuarter
     fullName: circleWithOneWhiteQuarter
     langs:
@@ -34,8 +34,8 @@ items:
       content: 'circleWithOneWhiteQuarter: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveQuartersSet.circleWithThreeWhiteQuarters
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#circleWithThreeWhiteQuarters:member'
     name: circleWithThreeWhiteQuarters
     fullName: circleWithThreeWhiteQuarters
     langs:
@@ -45,8 +45,8 @@ items:
       content: 'circleWithThreeWhiteQuarters: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveQuartersSet.circleWithTwoWhiteQuarters
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#circleWithTwoWhiteQuarters:member'
     name: circleWithTwoWhiteQuarters
     fullName: circleWithTwoWhiteQuarters
     langs:
@@ -56,8 +56,8 @@ items:
       content: 'circleWithTwoWhiteQuarters: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveQuartersSet.whiteCircleAllWhiteQuarters
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveQuartersSet#whiteCircleAllWhiteQuarters:member'
     name: whiteCircleAllWhiteQuarters
     fullName: whiteCircleAllWhiteQuarters
     langs:
@@ -67,4 +67,4 @@ items:
       content: 'whiteCircleAllWhiteQuarters: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RangeBorder
+  - uid: 'excel!Excel.RangeBorder:class'
     summary: |-
       Represents the border of an object.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RangeBorder.color
-      - excel.Excel.RangeBorder.context
-      - excel.Excel.RangeBorder.load
-      - excel.Excel.RangeBorder.load_1
-      - excel.Excel.RangeBorder.load_2
-      - excel.Excel.RangeBorder.set
-      - excel.Excel.RangeBorder.set_1
-      - excel.Excel.RangeBorder.sideIndex
-      - excel.Excel.RangeBorder.style
-      - excel.Excel.RangeBorder.tintAndShade
-      - excel.Excel.RangeBorder.toJSON
-      - excel.Excel.RangeBorder.weight
-  - uid: excel.Excel.RangeBorder.color
+      - 'excel!Excel.RangeBorder#color:member'
+      - 'excel!Excel.RangeBorder#context:member'
+      - 'excel!Excel.RangeBorder#load:member(1)'
+      - 'excel!Excel.RangeBorder#load:member(2)'
+      - 'excel!Excel.RangeBorder#load:member(3)'
+      - 'excel!Excel.RangeBorder#set:member(1)'
+      - 'excel!Excel.RangeBorder#set:member(2)'
+      - 'excel!Excel.RangeBorder#sideIndex:member'
+      - 'excel!Excel.RangeBorder#style:member'
+      - 'excel!Excel.RangeBorder#tintAndShade:member'
+      - 'excel!Excel.RangeBorder#toJSON:member(1)'
+      - 'excel!Excel.RangeBorder#weight:member'
+  - uid: 'excel!Excel.RangeBorder#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RangeBorder.context
+  - uid: 'excel!Excel.RangeBorder#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -56,8 +56,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RangeBorder.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeBorder#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -88,14 +88,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeBorderLoadOptions): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - 'excel!Excel.RangeBorder:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeBorderLoadOptions
-  - uid: excel.Excel.RangeBorder.load_1
+            - 'excel!Excel.Interfaces.RangeBorderLoadOptions:interface'
+  - uid: 'excel!Excel.RangeBorder#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -108,60 +108,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var borders = range.format.borders;
-              borders.load('items');
-              return ctx.sync().then(function() {
-                  console.log(borders.count);
-                  for (var i = 0; i < borders.items.length; i++)
-                  {
-                      console.log(borders.items[i].sideIndex);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // The example below adds grid border around the range.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
-              range.format.borders.getItem('InsideVertical').style = 'Continuous';
-              range.format.borders.getItem('EdgeBottom').style = 'Continuous';
-              range.format.borders.getItem('EdgeLeft').style = 'Continuous';
-              range.format.borders.getItem('EdgeRight').style = 'Continuous';
-              range.format.borders.getItem('EdgeTop').style = 'Continuous';
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeBorder.load_2
+  - uid: 'excel!Excel.RangeBorder#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -174,7 +128,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
+          - 'excel!Excel.RangeBorder:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -183,7 +137,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.RangeBorder.set
+  - uid: 'excel!Excel.RangeBorder#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -213,7 +167,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.RangeBorder.set_1
+  - uid: 'excel!Excel.RangeBorder#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -230,8 +184,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RangeBorder
-  - uid: excel.Excel.RangeBorder.sideIndex
+            - 'excel!Excel.RangeBorder:class'
+  - uid: 'excel!Excel.RangeBorder#sideIndex:member'
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
 
@@ -250,7 +204,7 @@ items:
           - >-
             Excel.BorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" |
             "InsideHorizontal" | "DiagonalDown" | "DiagonalUp"
-  - uid: excel.Excel.RangeBorder.style
+  - uid: 'excel!Excel.RangeBorder#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -271,7 +225,7 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
-  - uid: excel.Excel.RangeBorder.tintAndShade
+  - uid: 'excel!Excel.RangeBorder#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Border, the value is between -1 (darkest) and
       1 (brightest), with 0 for the original color. A null value indicates that the border doesn't have uniform
@@ -289,7 +243,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeBorder.toJSON
+  - uid: 'excel!Excel.RangeBorder#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -305,9 +259,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderData
+          - 'excel!Excel.Interfaces.RangeBorderData:interface'
         description: ''
-  - uid: excel.Excel.RangeBorder.weight
+  - uid: 'excel!Excel.RangeBorder#weight:member'
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 

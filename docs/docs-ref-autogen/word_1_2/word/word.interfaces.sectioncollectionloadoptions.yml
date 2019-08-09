@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SectionCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions:interface'
     summary: |-
-      Contains the collection of the document's [Word.Section](xref:word.Word.Section) objects.
+      Contains the collection of the document's [Word.Section](xref:word!Word.Section:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.SectionCollectionLoadOptions
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SectionCollectionLoadOptions.$all
-      - word.Word.Interfaces.SectionCollectionLoadOptions.body
-  - uid: word.Word.Interfaces.SectionCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.SectionCollectionLoadOptions#body:member'
+  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.SectionCollectionLoadOptions.body
+  - uid: 'word!Word.Interfaces.SectionCollectionLoadOptions#body:member'
     summary: >-
       For EACH ITEM in the collection: Gets the body object of the section. This does not include the header/footer and
       other section metadata.
@@ -41,4 +41,4 @@ items:
       content: 'body?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ColumnProperties
+  - uid: 'excel!Excel.ColumnProperties:interface'
     summary: |-
       Represents the returned properties of getColumnProperties.
 
@@ -11,13 +11,13 @@ items:
       - typeScript
     type: interface
     extends:
-      - excel.Excel.SettableColumnProperties
-    package: excel
+      - 'excel!Excel.SettableColumnProperties:interface'
+    package: excel!
     children:
-      - excel.Excel.ColumnProperties.address
-      - excel.Excel.ColumnProperties.addressLocal
-      - excel.Excel.ColumnProperties.columnIndex
-  - uid: excel.Excel.ColumnProperties.address
+      - 'excel!Excel.ColumnProperties#address:member'
+      - 'excel!Excel.ColumnProperties#addressLocal:member'
+      - 'excel!Excel.ColumnProperties#columnIndex:member'
+  - uid: 'excel!Excel.ColumnProperties#address:member'
     summary: |-
       Represents the `address` property.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ColumnProperties.addressLocal
+  - uid: 'excel!Excel.ColumnProperties#addressLocal:member'
     summary: |-
       Represents the `addressLocal` property.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ColumnProperties.columnIndex
+  - uid: 'excel!Excel.ColumnProperties#columnIndex:member'
     summary: |-
       Represents the `columnIndex` property.
 

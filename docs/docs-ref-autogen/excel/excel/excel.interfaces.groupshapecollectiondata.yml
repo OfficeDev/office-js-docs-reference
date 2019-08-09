@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionData
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionData:interface'
     summary: An interface describing the data returned by calling "groupShapeCollection.toJSON()".
     name: Excel.Interfaces.GroupShapeCollectionData
     fullName: Excel.Interfaces.GroupShapeCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.GroupShapeCollectionData.items
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionData.items
+      - 'excel!Excel.Interfaces.GroupShapeCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionData#items:member'
     name: items
     fullName: items
     langs:

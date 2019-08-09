@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableStyleData
+  - uid: 'excel!Excel.Interfaces.TableStyleData:interface'
     summary: An interface describing the data returned by calling "tableStyle.toJSON()".
     name: Excel.Interfaces.TableStyleData
     fullName: Excel.Interfaces.TableStyleData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableStyleData.name
-      - excel.Excel.Interfaces.TableStyleData.readOnly
-  - uid: excel.Excel.Interfaces.TableStyleData.name
+      - 'excel!Excel.Interfaces.TableStyleData#name:member'
+      - 'excel!Excel.Interfaces.TableStyleData#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleData#name:member'
     summary: >-
       Gets the name of the TableStyle.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TableStyleData.readOnly
+  - uid: 'excel!Excel.Interfaces.TableStyleData#readOnly:member'
     summary: >-
       Specifies whether this TableStyle object is read-only. Read-only.
 

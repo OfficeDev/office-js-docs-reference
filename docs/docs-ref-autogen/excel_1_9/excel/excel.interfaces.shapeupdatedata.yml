@@ -1,28 +1,28 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ShapeUpdateData
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData:interface'
     summary: 'An interface for updating data on the Shape object, for use in "shape.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ShapeUpdateData
     fullName: Excel.Interfaces.ShapeUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ShapeUpdateData.altTextDescription
-      - excel.Excel.Interfaces.ShapeUpdateData.altTextTitle
-      - excel.Excel.Interfaces.ShapeUpdateData.fill
-      - excel.Excel.Interfaces.ShapeUpdateData.geometricShapeType
-      - excel.Excel.Interfaces.ShapeUpdateData.height
-      - excel.Excel.Interfaces.ShapeUpdateData.left
-      - excel.Excel.Interfaces.ShapeUpdateData.lineFormat
-      - excel.Excel.Interfaces.ShapeUpdateData.lockAspectRatio
-      - excel.Excel.Interfaces.ShapeUpdateData.name
-      - excel.Excel.Interfaces.ShapeUpdateData.rotation
-      - excel.Excel.Interfaces.ShapeUpdateData.top
-      - excel.Excel.Interfaces.ShapeUpdateData.visible
-      - excel.Excel.Interfaces.ShapeUpdateData.width
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.altTextDescription
+      - 'excel!Excel.Interfaces.ShapeUpdateData#altTextDescription:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#altTextTitle:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#fill:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#height:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#left:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#lineFormat:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#lockAspectRatio:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#name:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#rotation:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#top:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#visible:member'
+      - 'excel!Excel.Interfaces.ShapeUpdateData#width:member'
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#altTextDescription:member'
     summary: |-
       Returns or sets the alternative description text for a Shape object.
 
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.altTextTitle
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#altTextTitle:member'
     summary: |-
       Returns or sets the alternative title text for a Shape object.
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.fill
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#fill:member'
     summary: |-
       Returns the fill formatting of this shape.
 
@@ -66,8 +66,8 @@ items:
       content: 'fill?: Excel.Interfaces.ShapeFillUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeFillUpdateData
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.geometricShapeType
+          - 'excel!Excel.Interfaces.ShapeFillUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#geometricShapeType:member'
     summary: >-
       Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
       null if the shape type is not "GeometricShape".
@@ -147,7 +147,7 @@ items:
             "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
             "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
             "ChartStar" | "ChartPlus"
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.height
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#height:member'
     summary: >-
       Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
       value or zero as input.
@@ -164,7 +164,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.left
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#left:member'
     summary: >-
       The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
       argument exception when set with a negative value as input.
@@ -181,7 +181,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.lineFormat
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#lineFormat:member'
     summary: |-
       Returns the line formatting of this shape.
 
@@ -195,8 +195,8 @@ items:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLineFormatUpdateData
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.lockAspectRatio
+          - 'excel!Excel.Interfaces.ShapeLineFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#lockAspectRatio:member'
     summary: |-
       Specifies whether or not the aspect ratio of this shape is locked.
 
@@ -211,7 +211,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.name
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#name:member'
     summary: |-
       Represents the name of the shape.
 
@@ -226,7 +226,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.rotation
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#rotation:member'
     summary: |-
       Represents the rotation, in degrees, of the shape.
 
@@ -241,7 +241,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.top
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#top:member'
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
       argument exception when set with a negative value as input.
@@ -258,7 +258,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.visible
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#visible:member'
     summary: |-
       Represents the visibility of this shape.
 
@@ -273,7 +273,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ShapeUpdateData.width
+  - uid: 'excel!Excel.Interfaces.ShapeUpdateData#width:member'
     summary: >-
       Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.

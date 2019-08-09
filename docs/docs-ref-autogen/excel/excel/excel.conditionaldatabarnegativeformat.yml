@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat:class'
     summary: |-
       Represents a conditional format DataBar Format for the negative side of the data bar.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalDataBarNegativeFormat.borderColor
-      - excel.Excel.ConditionalDataBarNegativeFormat.context
-      - excel.Excel.ConditionalDataBarNegativeFormat.fillColor
-      - excel.Excel.ConditionalDataBarNegativeFormat.load
-      - excel.Excel.ConditionalDataBarNegativeFormat.load_1
-      - excel.Excel.ConditionalDataBarNegativeFormat.load_2
-      - excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
-      - excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveFillColor
-      - excel.Excel.ConditionalDataBarNegativeFormat.set
-      - excel.Excel.ConditionalDataBarNegativeFormat.set_1
-      - excel.Excel.ConditionalDataBarNegativeFormat.toJSON
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.borderColor
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#context:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(2)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(3)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(1)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(2)'
+      - 'excel!Excel.ConditionalDataBarNegativeFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#borderColor:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange"). "Empty String" if no border is present or set.
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.context
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -55,8 +55,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.fillColor
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#fillColor:member'
     summary: >-
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
       "orange").
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.load
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -106,14 +106,14 @@ items:
         Excel.ConditionalDataBarNegativeFormat;
       return:
         type:
-          - excel.Excel.ConditionalDataBarNegativeFormat
+          - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.load_1
+            - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -126,14 +126,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarNegativeFormat
+          - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.load_2
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -146,7 +146,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarNegativeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarNegativeFormat
+          - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -155,7 +155,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveBorderColor
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveBorderColor:member'
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same border color as the positive DataBar.
 
@@ -170,7 +170,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.matchPositiveFillColor
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#matchPositiveFillColor:member'
     summary: |-
       Boolean representation of whether or not the negative DataBar has the same fill color as the positive DataBar.
 
@@ -185,7 +185,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.set
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -217,7 +217,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.set_1
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -234,8 +234,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalDataBarNegativeFormat
-  - uid: excel.Excel.ConditionalDataBarNegativeFormat.toJSON
+            - 'excel!Excel.ConditionalDataBarNegativeFormat:class'
+  - uid: 'excel!Excel.ConditionalDataBarNegativeFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -251,5 +251,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarNegativeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarNegativeFormatData
+          - 'excel!Excel.Interfaces.ConditionalDataBarNegativeFormatData:interface'
         description: ''

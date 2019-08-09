@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.DocumentLoadCompleteEventArgs
+  - uid: 'visio!Visio.DocumentLoadCompleteEventArgs:interface'
     summary: |-
       Provides information about the success or failure of the DocumentLoadComplete event.
 
@@ -10,33 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
-    remarks: |-
-
-
-      #### Examples
-
-      ```javascript
-      Visio.run(session, function (ctx) {
-          var document1 = ctx.document;
-          eventResult1 = document1.onDocumentLoadComplete.add(
-              function (args){
-                  console.log("Document Loaded");
-              });
-
-          return ctx.sync().then(function () {
-              console.log("Success");
-          });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-      ```
+    package: visio!
     children:
-      - visio.Visio.DocumentLoadCompleteEventArgs.success
-  - uid: visio.Visio.DocumentLoadCompleteEventArgs.success
+      - 'visio!Visio.DocumentLoadCompleteEventArgs#success:member'
+  - uid: 'visio!Visio.DocumentLoadCompleteEventArgs#success:member'
     summary: |-
       Gets the success or failure of the DocumentLoadComplete event.
 

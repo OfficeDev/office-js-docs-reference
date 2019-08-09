@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesLoadOptions
+  - uid: 'excel!Excel.CellPropertiesLoadOptions:interface'
     summary: |-
       Represents which cell properties to load, when used as part of a "range.getCellProperties" method.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesLoadOptions.address
-      - excel.Excel.CellPropertiesLoadOptions.addressLocal
-      - excel.Excel.CellPropertiesLoadOptions.format
-      - excel.Excel.CellPropertiesLoadOptions.hidden
-      - excel.Excel.CellPropertiesLoadOptions.hyperlink
-      - excel.Excel.CellPropertiesLoadOptions.style
-  - uid: excel.Excel.CellPropertiesLoadOptions.address
+      - 'excel!Excel.CellPropertiesLoadOptions#address:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#addressLocal:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#format:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#hidden:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#hyperlink:member'
+      - 'excel!Excel.CellPropertiesLoadOptions#style:member'
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#address:member'
     summary: |-
       Specifies whether to load on the `address` property.
 
@@ -33,37 +33,7 @@ items:
       return:
         type:
           - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const cell = context.workbook.getActiveCell();
-
-              // Define the cell properties to get by setting the matching LoadOptions to true.
-              const propertiesToGet = cell.getCellProperties({
-                  address: true,
-                  format: {
-                      fill: {
-                          color: true
-                      },
-                      font: {
-                          color: true
-                      }
-                  },
-                  style: true
-              });
-
-              // Sync to get the data from the workbook.
-              await context.sync();
-              const cellProperties = propertiesToGet.value[0][0];
-              console.log(
-                  `Address: ${cellProperties.address}\nStyle: ${cellProperties.style}\nFill Color: ${cellProperties.format.fill.color}\nFont Color: ${cellProperties.format.font.color}`);
-          });
-          ```
-  - uid: excel.Excel.CellPropertiesLoadOptions.addressLocal
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#addressLocal:member'
     summary: |-
       Specifies whether to load on the `addressLocal` property.
 
@@ -78,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesLoadOptions.format
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#format:member'
     summary: |-
       Specifies whether to load on the `format` property.
 
@@ -92,8 +62,8 @@ items:
       content: 'format?: Excel.CellPropertiesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.CellPropertiesFormatLoadOptions
-  - uid: excel.Excel.CellPropertiesLoadOptions.hidden
+          - 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#hidden:member'
     summary: |-
       Specifies whether to load on the `hidden` property.
 
@@ -108,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesLoadOptions.hyperlink
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#hyperlink:member'
     summary: |-
       Specifies whether to load on the `hyperlink` property.
 
@@ -123,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesLoadOptions.style
+  - uid: 'excel!Excel.CellPropertiesLoadOptions#style:member'
     summary: |-
       Specifies whether to load on the `style` property.
 

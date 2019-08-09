@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartSeriesFormat object, for use in "chartSeriesFormat.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesFormatUpdateData.line
-  - uid: excel.Excel.Interfaces.ChartSeriesFormatUpdateData.line
+      - 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData#line:member'
     summary: |-
       Represents line formatting.
 
@@ -26,4 +26,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatUpdateData
+          - 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'

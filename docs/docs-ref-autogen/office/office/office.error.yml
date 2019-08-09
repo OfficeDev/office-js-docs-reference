@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Error
+  - uid: 'office!Office.Error:interface'
     summary: Provides specific information about an error that occurred during an asynchronous data operation.
     remarks: >-
       The Error object is accessed from the AsyncResult object that is returned in the function passed as the callback
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Error.code
-      - office.Office.Error.message
-      - office.Office.Error.name
-  - uid: office.Office.Error.code
+      - 'office!Office.Error#code:member'
+      - 'office!Office.Error#message:member'
+      - 'office!Office.Error#name:member'
+  - uid: 'office!Office.Error#code:member'
     summary: >-
       Gets the numeric code of the error. For a list of error codes, see [JavaScript API for Office error
       codes](https://docs.microsoft.com/office/dev/add-ins/reference/javascript-api-for-office-error-codes)<!-- -->.
@@ -29,28 +29,7 @@ items:
       return:
         type:
           - number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
-                      write(error.name + ": " + error.code + " - " + error.message);
-                  });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.Error.message
+  - uid: 'office!Office.Error#message:member'
     summary: Gets the name of the error.
     name: message
     fullName: message
@@ -62,28 +41,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
-                      write(error.name + ": " + error.message);
-                  });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.Error.name
+  - uid: 'office!Office.Error#name:member'
     summary: Gets a detailed description of the error.
     name: name
     fullName: name
@@ -95,24 +53,3 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // To cause an error to be thrown, select a table or a matrix, and then call the setText function.
-          function setText() {
-              Office.context.document.setSelectedDataAsync("Hello World!",
-                  function (asyncResult) {
-                      if (asyncResult.status === "failed")
-                          var error = asyncResult.error;
-                      write(error.name + ": " + error.message);
-                  });
-          }
-
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```

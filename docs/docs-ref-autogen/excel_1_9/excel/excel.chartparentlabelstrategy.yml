@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartParentLabelStrategy
+  - uid: 'excel!Excel.ChartParentLabelStrategy:enum'
     summary: |-
       Represents the parent label strategy of the chart series layout. This only applies to treemap charts
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartParentLabelStrategy.banner
-      - excel.Excel.ChartParentLabelStrategy.none
-      - excel.Excel.ChartParentLabelStrategy.overlapping
-  - uid: excel.Excel.ChartParentLabelStrategy.banner
+      - 'excel!Excel.ChartParentLabelStrategy.banner:member'
+      - 'excel!Excel.ChartParentLabelStrategy.none:member'
+      - 'excel!Excel.ChartParentLabelStrategy.overlapping:member'
+  - uid: 'excel!Excel.ChartParentLabelStrategy.banner:member'
     name: banner
     fullName: banner
     langs:
       - typeScript
     type: field
     numericValue: '"Banner"'
-  - uid: excel.Excel.ChartParentLabelStrategy.none
+  - uid: 'excel!Excel.ChartParentLabelStrategy.none:member'
     name: none
     fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.ChartParentLabelStrategy.overlapping
+  - uid: 'excel!Excel.ChartParentLabelStrategy.overlapping:member'
     name: overlapping
     fullName: overlapping
     langs:

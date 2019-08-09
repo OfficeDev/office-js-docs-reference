@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FourRatingSet
+  - uid: 'excel!Excel.FourRatingSet:interface'
     name: Excel.FourRatingSet
     fullName: Excel.FourRatingSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FourRatingSet.fourBars
-      - excel.Excel.FourRatingSet.oneBar
-      - excel.Excel.FourRatingSet.threeBars
-      - excel.Excel.FourRatingSet.twoBars
-  - uid: excel.Excel.FourRatingSet.fourBars
+      - 'excel!Excel.FourRatingSet#fourBars:member'
+      - 'excel!Excel.FourRatingSet#oneBar:member'
+      - 'excel!Excel.FourRatingSet#threeBars:member'
+      - 'excel!Excel.FourRatingSet#twoBars:member'
+  - uid: 'excel!Excel.FourRatingSet#fourBars:member'
     name: fourBars
     fullName: fourBars
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'fourBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourRatingSet.oneBar
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRatingSet#oneBar:member'
     name: oneBar
     fullName: oneBar
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'oneBar: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourRatingSet.threeBars
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRatingSet#threeBars:member'
     name: threeBars
     fullName: threeBars
     langs:
@@ -44,8 +44,8 @@ items:
       content: 'threeBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourRatingSet.twoBars
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRatingSet#twoBars:member'
     name: twoBars
     fullName: twoBars
     langs:
@@ -55,4 +55,4 @@ items:
       content: 'twoBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFillData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
     summary: An interface describing the data returned by calling "conditionalRangeFill.toJSON()".
     name: Excel.Interfaces.ConditionalRangeFillData
     fullName: Excel.Interfaces.ConditionalRangeFillData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

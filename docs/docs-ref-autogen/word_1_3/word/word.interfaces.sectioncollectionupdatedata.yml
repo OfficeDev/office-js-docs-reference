@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SectionCollectionUpdateData
+  - uid: 'word!Word.Interfaces.SectionCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the SectionCollection object, for use in "sectionCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SectionCollectionUpdateData.items
-  - uid: word.Word.Interfaces.SectionCollectionUpdateData.items
+      - 'word!Word.Interfaces.SectionCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.SectionCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.CategoryDetails
+  - uid: 'outlook!Office.CategoryDetails:interface'
     summary: |-
       Represents a category's details like name and associated color.
 
@@ -12,32 +12,17 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var categories = [
-          {
-              "displayName": "Urgent!",
-              "color": Office.MailboxEnums.CategoryColor.Preset0
-          }
-      ];
-
-      ```
     isPreview: true
     name: Office.CategoryDetails
     fullName: Office.CategoryDetails
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.CategoryDetails.color
-      - outlook.Office.CategoryDetails.displayName
-  - uid: outlook.Office.CategoryDetails.color
+      - 'outlook!Office.CategoryDetails#color:member'
+      - 'outlook!Office.CategoryDetails#displayName:member'
+  - uid: 'outlook!Office.CategoryDetails#color:member'
     summary: The color of the category.
     isPreview: true
     name: color
@@ -50,7 +35,7 @@ items:
       return:
         type:
           - MailboxEnums.CategoryColor | string
-  - uid: outlook.Office.CategoryDetails.displayName
+  - uid: 'outlook!Office.CategoryDetails#displayName:member'
     summary: The name of the category. Maximum length is 255 characters.
     isPreview: true
     name: displayName

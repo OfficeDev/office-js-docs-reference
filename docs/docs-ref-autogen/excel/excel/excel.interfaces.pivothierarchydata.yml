@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotHierarchyData
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData:interface'
     summary: An interface describing the data returned by calling "pivotHierarchy.toJSON()".
     name: Excel.Interfaces.PivotHierarchyData
     fullName: Excel.Interfaces.PivotHierarchyData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotHierarchyData.fields
-      - excel.Excel.Interfaces.PivotHierarchyData.id
-      - excel.Excel.Interfaces.PivotHierarchyData.name
-  - uid: excel.Excel.Interfaces.PivotHierarchyData.fields
+      - 'excel!Excel.Interfaces.PivotHierarchyData#fields:member'
+      - 'excel!Excel.Interfaces.PivotHierarchyData#id:member'
+      - 'excel!Excel.Interfaces.PivotHierarchyData#name:member'
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#fields:member'
     summary: |-
       Returns the PivotFields associated with the PivotHierarchy.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotFieldData[]'
-  - uid: excel.Excel.Interfaces.PivotHierarchyData.id
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#id:member'
     summary: |-
       Id of the PivotHierarchy.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotHierarchyData.name
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyData#name:member'
     summary: |-
       Name of the PivotHierarchy.
 

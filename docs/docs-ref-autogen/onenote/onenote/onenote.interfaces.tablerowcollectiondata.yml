@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionData
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
     summary: An interface describing the data returned by calling "tableRowCollection.toJSON()".
     name: OneNote.Interfaces.TableRowCollectionData
     fullName: OneNote.Interfaces.TableRowCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableRowCollectionData.items
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionData.items
+      - 'onenote!OneNote.Interfaces.TableRowCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionData#items:member'
     name: items
     fullName: items
     langs:

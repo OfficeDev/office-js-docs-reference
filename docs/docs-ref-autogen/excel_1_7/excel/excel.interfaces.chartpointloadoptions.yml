@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions:interface'
     summary: |-
       Represents a point of a series in a chart.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointLoadOptions.$all
-      - excel.Excel.Interfaces.ChartPointLoadOptions.dataLabel
-      - excel.Excel.Interfaces.ChartPointLoadOptions.format
-      - excel.Excel.Interfaces.ChartPointLoadOptions.hasDataLabel
-      - excel.Excel.Interfaces.ChartPointLoadOptions.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartPointLoadOptions.markerForegroundColor
-      - excel.Excel.Interfaces.ChartPointLoadOptions.markerSize
-      - excel.Excel.Interfaces.ChartPointLoadOptions.markerStyle
-      - excel.Excel.Interfaces.ChartPointLoadOptions.value
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#dataLabel:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#hasDataLabel:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartPointLoadOptions#value:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.dataLabel
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#dataLabel:member'
     summary: |-
       Returns the data label of a chart point.
 
@@ -46,8 +46,8 @@ items:
       content: 'dataLabel?: Excel.Interfaces.ChartDataLabelLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelLoadOptions
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.format
+          - 'excel!Excel.Interfaces.ChartDataLabelLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#format:member'
     summary: |-
       Encapsulates the format properties chart point.
 
@@ -61,8 +61,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartPointFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.hasDataLabel
+          - 'excel!Excel.Interfaces.ChartPointFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#hasDataLabel:member'
     summary: |-
       Represents whether a data point has a data label. Not applicable for surface charts.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.markerBackgroundColor
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#markerBackgroundColor:member'
     summary: |-
       HTML color code representation of the marker background color of data point. E.g. \#FF0000 represents Red.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#markerForegroundColor:member'
     summary: |-
       HTML color code representation of the marker foreground color of data point. E.g. \#FF0000 represents Red.
 
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#markerSize:member'
     summary: |-
       Represents marker size of data point.
 
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#markerStyle:member'
     summary: |-
       Represents marker style of a chart data point. See Excel.ChartMarkerStyle for details.
 
@@ -137,7 +137,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPointLoadOptions.value
+  - uid: 'excel!Excel.Interfaces.ChartPointLoadOptions#value:member'
     summary: |-
       Returns the value of a chart point. Read-only.
 

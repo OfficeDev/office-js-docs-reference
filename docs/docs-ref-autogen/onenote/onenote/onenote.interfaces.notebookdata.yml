@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.NotebookData
+  - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
     summary: An interface describing the data returned by calling "notebook.toJSON()".
     name: OneNote.Interfaces.NotebookData
     fullName: OneNote.Interfaces.NotebookData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.NotebookData.baseUrl
-      - onenote.OneNote.Interfaces.NotebookData.clientUrl
-      - onenote.OneNote.Interfaces.NotebookData.id
-      - onenote.OneNote.Interfaces.NotebookData.isVirtual
-      - onenote.OneNote.Interfaces.NotebookData.name
-      - onenote.OneNote.Interfaces.NotebookData.sectionGroups
-      - onenote.OneNote.Interfaces.NotebookData.sections
-  - uid: onenote.OneNote.Interfaces.NotebookData.baseUrl
+      - 'onenote!OneNote.Interfaces.NotebookData#baseUrl:member'
+      - 'onenote!OneNote.Interfaces.NotebookData#clientUrl:member'
+      - 'onenote!OneNote.Interfaces.NotebookData#id:member'
+      - 'onenote!OneNote.Interfaces.NotebookData#isVirtual:member'
+      - 'onenote!OneNote.Interfaces.NotebookData#name:member'
+      - 'onenote!OneNote.Interfaces.NotebookData#sectionGroups:member'
+      - 'onenote!OneNote.Interfaces.NotebookData#sections:member'
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#baseUrl:member'
     summary: |-
       The url of the site that this notebook is located. Read only
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.NotebookData.clientUrl
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#clientUrl:member'
     summary: |-
       The client url of the notebook. Read only
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.NotebookData.id
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#id:member'
     summary: |-
       Gets the ID of the notebook. Read-only.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.NotebookData.isVirtual
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#isVirtual:member'
     summary: |-
       True if the Notebook is not created by the user (i.e. 'Misplaced Sections'). Read only
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.NotebookData.name
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#name:member'
     summary: |-
       Gets the name of the notebook. Read-only.
 
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.NotebookData.sectionGroups
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#sectionGroups:member'
     summary: |-
       The section groups in the notebook. Read only
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.SectionGroupData[]'
-  - uid: onenote.OneNote.Interfaces.NotebookData.sections
+  - uid: 'onenote!OneNote.Interfaces.NotebookData#sections:member'
     summary: |-
       The the sections of the notebook. Read only
 

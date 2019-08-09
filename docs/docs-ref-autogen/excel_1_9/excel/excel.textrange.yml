@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TextRange
+  - uid: 'excel!Excel.TextRange:class'
     summary: |-
       Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TextRange.context
-      - excel.Excel.TextRange.font
-      - excel.Excel.TextRange.getSubstring
-      - excel.Excel.TextRange.load
-      - excel.Excel.TextRange.load_1
-      - excel.Excel.TextRange.load_2
-      - excel.Excel.TextRange.set
-      - excel.Excel.TextRange.set_1
-      - excel.Excel.TextRange.text
-      - excel.Excel.TextRange.toJSON
-  - uid: excel.Excel.TextRange.context
+      - 'excel!Excel.TextRange#context:member'
+      - 'excel!Excel.TextRange#font:member'
+      - 'excel!Excel.TextRange#getSubstring:member(1)'
+      - 'excel!Excel.TextRange#load:member(1)'
+      - 'excel!Excel.TextRange#load:member(2)'
+      - 'excel!Excel.TextRange#load:member(3)'
+      - 'excel!Excel.TextRange#set:member(1)'
+      - 'excel!Excel.TextRange#set:member(2)'
+      - 'excel!Excel.TextRange#text:member'
+      - 'excel!Excel.TextRange#toJSON:member(1)'
+  - uid: 'excel!Excel.TextRange#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -37,8 +37,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TextRange.font
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TextRange#font:member'
     summary: |-
       Returns a ShapeFont object that represents the font attributes for the text range. Read-only.
 
@@ -52,8 +52,8 @@ items:
       content: 'readonly font: Excel.ShapeFont;'
       return:
         type:
-          - excel.Excel.ShapeFont
-  - uid: excel.Excel.TextRange.getSubstring
+          - 'excel!Excel.ShapeFont:class'
+  - uid: 'excel!Excel.TextRange#getSubstring:member(1)'
     summary: |-
       Returns a TextRange object for the substring in the given range.
 
@@ -67,7 +67,7 @@ items:
       content: 'getSubstring(start: number, length?: number): Excel.TextRange;'
       return:
         type:
-          - excel.Excel.TextRange
+          - 'excel!Excel.TextRange:class'
         description: ''
       parameters:
         - id: start
@@ -80,7 +80,7 @@ items:
             characters from start to the end of the text range's last paragraph will be returned.
           type:
             - number
-  - uid: excel.Excel.TextRange.load
+  - uid: 'excel!Excel.TextRange#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -111,14 +111,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TextRangeLoadOptions): Excel.TextRange;'
       return:
         type:
-          - excel.Excel.TextRange
+          - 'excel!Excel.TextRange:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TextRangeLoadOptions
-  - uid: excel.Excel.TextRange.load_1
+            - 'excel!Excel.Interfaces.TextRangeLoadOptions:interface'
+  - uid: 'excel!Excel.TextRange#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -131,14 +131,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TextRange;'
       return:
         type:
-          - excel.Excel.TextRange
+          - 'excel!Excel.TextRange:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TextRange.load_2
+  - uid: 'excel!Excel.TextRange#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -151,7 +151,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextRange;'
       return:
         type:
-          - excel.Excel.TextRange
+          - 'excel!Excel.TextRange:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -160,7 +160,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TextRange.set
+  - uid: 'excel!Excel.TextRange#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -190,7 +190,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.TextRange.set_1
+  - uid: 'excel!Excel.TextRange#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -207,8 +207,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TextRange
-  - uid: excel.Excel.TextRange.text
+            - 'excel!Excel.TextRange:class'
+  - uid: 'excel!Excel.TextRange#text:member'
     summary: |-
       Represents the plain text content of the text range.
 
@@ -223,7 +223,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TextRange.toJSON
+  - uid: 'excel!Excel.TextRange#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -239,5 +239,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TextRangeData;'
       return:
         type:
-          - excel.Excel.Interfaces.TextRangeData
+          - 'excel!Excel.Interfaces.TextRangeData:interface'
         description: ''

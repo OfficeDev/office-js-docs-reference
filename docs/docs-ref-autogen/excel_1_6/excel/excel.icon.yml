@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Icon
+  - uid: 'excel!Excel.Icon:interface'
     summary: |-
       Represents a cell icon.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Icon.index
-      - excel.Excel.Icon.set
-  - uid: excel.Excel.Icon.index
+      - 'excel!Excel.Icon#index:member'
+      - 'excel!Excel.Icon#set:member'
+  - uid: 'excel!Excel.Icon#index:member'
     summary: |-
       Represents the index of the icon in the given set.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Icon.set
+  - uid: 'excel!Excel.Icon#set:member'
     summary: |-
       Represents the set that the icon is part of.
 

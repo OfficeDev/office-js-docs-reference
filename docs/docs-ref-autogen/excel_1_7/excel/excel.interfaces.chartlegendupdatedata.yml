@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
     summary: 'An interface for updating data on the ChartLegend object, for use in "chartLegend.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartLegendUpdateData
     fullName: Excel.Interfaces.ChartLegendUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendUpdateData.format
-      - excel.Excel.Interfaces.ChartLegendUpdateData.height
-      - excel.Excel.Interfaces.ChartLegendUpdateData.left
-      - excel.Excel.Interfaces.ChartLegendUpdateData.overlay
-      - excel.Excel.Interfaces.ChartLegendUpdateData.position
-      - excel.Excel.Interfaces.ChartLegendUpdateData.showShadow
-      - excel.Excel.Interfaces.ChartLegendUpdateData.top
-      - excel.Excel.Interfaces.ChartLegendUpdateData.visible
-      - excel.Excel.Interfaces.ChartLegendUpdateData.width
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.format
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#height:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#left:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#top:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
+      - 'excel!Excel.Interfaces.ChartLegendUpdateData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#format:member'
     summary: |-
       Represents the formatting of a chart legend, which includes fill and font formatting.
 
@@ -32,8 +32,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartLegendFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.height
+          - 'excel!Excel.Interfaces.ChartLegendFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#height:member'
     summary: |-
       Represents the height, in points, of the legend on the chart. Null if legend is not visible.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.left
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#left:member'
     summary: |-
       Represents the left, in points, of a chart legend. Null if legend is not visible.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.overlay
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#overlay:member'
     summary: |-
       Boolean value for whether the chart legend should overlap with the main body of the chart.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.position
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#position:member'
     summary: |-
       Represents the position of the legend on the chart. See Excel.ChartLegendPosition for details.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - Excel.ChartLegendPosition | "Invalid" | "Top" | "Bottom" | "Left" | "Right" | "Corner" | "Custom"
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.showShadow
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#showShadow:member'
     summary: |-
       Represents if the legend has a shadow on the chart.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.top
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#top:member'
     summary: |-
       Represents the top of a chart legend.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.visible
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#visible:member'
     summary: |-
       A boolean value the represents the visibility of a ChartLegend object.
 
@@ -138,7 +138,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartLegendUpdateData.width
+  - uid: 'excel!Excel.Interfaces.ChartLegendUpdateData#width:member'
     summary: |-
       Represents the width, in points, of the legend on the chart. Null if legend is not visible.
 

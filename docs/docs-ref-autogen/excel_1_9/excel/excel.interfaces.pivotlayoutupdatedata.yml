@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData:interface'
     summary: 'An interface for updating data on the PivotLayout object, for use in "pivotLayout.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.PivotLayoutUpdateData
     fullName: Excel.Interfaces.PivotLayoutUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.autoFormat
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.layoutType
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.preserveFormatting
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.showColumnGrandTotals
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.showRowGrandTotals
-      - excel.Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.autoFormat
+      - 'excel!Excel.Interfaces.PivotLayoutUpdateData#autoFormat:member'
+      - 'excel!Excel.Interfaces.PivotLayoutUpdateData#layoutType:member'
+      - 'excel!Excel.Interfaces.PivotLayoutUpdateData#preserveFormatting:member'
+      - 'excel!Excel.Interfaces.PivotLayoutUpdateData#showColumnGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutUpdateData#showRowGrandTotals:member'
+      - 'excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member'
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#autoFormat:member'
     summary: |-
       Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.layoutType
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#layoutType:member'
     summary: >-
       This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this
       will be null.
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - Excel.PivotLayoutType | "Compact" | "Tabular" | "Outline"
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.preserveFormatting
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#preserveFormatting:member'
     summary: >-
       Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as
       pivoting, sorting, or changing page field items.
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.showColumnGrandTotals
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#showColumnGrandTotals:member'
     summary: |-
       Specifies whether the PivotTable report shows grand totals for columns.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.showRowGrandTotals
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#showRowGrandTotals:member'
     summary: |-
       Specifies whether the PivotTable report shows grand totals for rows.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotLayoutUpdateData.subtotalLocation
+  - uid: 'excel!Excel.Interfaces.PivotLayoutUpdateData#subtotalLocation:member'
     summary: >-
       This property indicates the SubtotalLocationType of all fields on the PivotTable. If fields have different states,
       this will be null.

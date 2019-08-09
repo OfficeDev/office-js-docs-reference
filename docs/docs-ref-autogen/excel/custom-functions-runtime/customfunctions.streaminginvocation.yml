@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: custom-functions-runtime.CustomFunctions.StreamingInvocation
+  - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
     summary: >-
       Provides information about the invocation of a streaming custom function. A streaming custom function can provide
       results which can change over time.
@@ -13,14 +13,14 @@ items:
       - typeScript
     type: interface
     extends:
-      - custom-functions-runtime.CustomFunctions.CancelableInvocation
+      - 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
     syntax:
       typeParameters:
         - id: ResultType
-    package: custom-functions-runtime
+    package: custom-functions-runtime!
     children:
-      - custom-functions-runtime.CustomFunctions.StreamingInvocation.setResult
-  - uid: custom-functions-runtime.CustomFunctions.StreamingInvocation.setResult
+      - 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
+  - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member'
     summary: Set the result for the custom function. May be called more than once.
     name: setResult
     fullName: setResult

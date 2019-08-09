@@ -1,13 +1,13 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Contact
+  - uid: 'outlook!Office.Contact:interface'
     summary: >-
       Represents a contact stored on the server. Read mode only.
 
 
       The list of contacts associated with an email message or appointment is returned in the contacts property of the
-      [Office.Entities](xref:outlook.Office.Entities) object that is returned by the getEntities or getEntitiesByType
-      method of the active item.
+      [Office.Entities](xref:outlook!Office.Entities:interface) object that is returned by the getEntities or
+      getEntitiesByType method of the active item.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -17,45 +17,20 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var item = Office.context.mailbox.item;
-
-      // Get an array of strings that represent contacts in the current item's body.
-
-      var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-
-      console.log("There are " + contacts.length + " contacts.")
-
-      contacts.forEach(function (contact) {
-          console.log("Person name: " + JSON.stringify(contact.personName));
-          console.log("Business name: " + JSON.stringify(contact.businessName));
-          console.log("Addresses: " + JSON.stringify(contact.addresses));
-          console.log("Phone numbers: " + JSON.stringify(contact.phoneNumbers));
-          console.log("Email addresses: " + JSON.stringify(contact.emailAddresses));
-          console.log("Urls: " + JSON.stringify(contact.urls));
-      });
-
-      ```
     name: Office.Contact
     fullName: Office.Contact
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Contact.addresses
-      - outlook.Office.Contact.businessName
-      - outlook.Office.Contact.emailAddresses
-      - outlook.Office.Contact.personName
-      - outlook.Office.Contact.phoneNumbers
-      - outlook.Office.Contact.urls
-  - uid: outlook.Office.Contact.addresses
+      - 'outlook!Office.Contact#addresses:member'
+      - 'outlook!Office.Contact#businessName:member'
+      - 'outlook!Office.Contact#emailAddresses:member'
+      - 'outlook!Office.Contact#personName:member'
+      - 'outlook!Office.Contact#phoneNumbers:member'
+      - 'outlook!Office.Contact#urls:member'
+  - uid: 'outlook!Office.Contact#addresses:member'
     summary: An array of strings containing the mailing and street addresses associated with the contact. Nullable.
     name: addresses
     fullName: addresses
@@ -67,7 +42,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: outlook.Office.Contact.businessName
+  - uid: 'outlook!Office.Contact#businessName:member'
     summary: A string containing the name of the business associated with the contact. Nullable.
     name: businessName
     fullName: businessName
@@ -79,7 +54,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.Contact.emailAddresses
+  - uid: 'outlook!Office.Contact#emailAddresses:member'
     summary: An array of strings containing the SMTP email addresses associated with the contact. Nullable.
     name: emailAddresses
     fullName: emailAddresses
@@ -91,7 +66,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: outlook.Office.Contact.personName
+  - uid: 'outlook!Office.Contact#personName:member'
     summary: A string containing the name of the person associated with the contact. Nullable.
     name: personName
     fullName: personName
@@ -103,7 +78,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.Contact.phoneNumbers
+  - uid: 'outlook!Office.Contact#phoneNumbers:member'
     summary: An array containing a PhoneNumber object for each phone number associated with the contact. Nullable.
     name: phoneNumbers
     fullName: phoneNumbers
@@ -115,7 +90,7 @@ items:
       return:
         type:
           - 'PhoneNumber[]'
-  - uid: outlook.Office.Contact.urls
+  - uid: 'outlook!Office.Contact#urls:member'
     summary: An array of strings containing the Internet URLs associated with the contact. Nullable.
     name: urls
     fullName: urls

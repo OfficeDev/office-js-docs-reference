@@ -1,31 +1,31 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ContentControlData
+  - uid: 'word!Word.Interfaces.ContentControlData:interface'
     summary: An interface describing the data returned by calling "contentControl.toJSON()".
     name: Word.Interfaces.ContentControlData
     fullName: Word.Interfaces.ContentControlData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ContentControlData.appearance
-      - word.Word.Interfaces.ContentControlData.cannotDelete
-      - word.Word.Interfaces.ContentControlData.cannotEdit
-      - word.Word.Interfaces.ContentControlData.color
-      - word.Word.Interfaces.ContentControlData.contentControls
-      - word.Word.Interfaces.ContentControlData.font
-      - word.Word.Interfaces.ContentControlData.id
-      - word.Word.Interfaces.ContentControlData.inlinePictures
-      - word.Word.Interfaces.ContentControlData.paragraphs
-      - word.Word.Interfaces.ContentControlData.placeholderText
-      - word.Word.Interfaces.ContentControlData.removeWhenEdited
-      - word.Word.Interfaces.ContentControlData.style
-      - word.Word.Interfaces.ContentControlData.tag
-      - word.Word.Interfaces.ContentControlData.text
-      - word.Word.Interfaces.ContentControlData.title
-      - word.Word.Interfaces.ContentControlData.type
-  - uid: word.Word.Interfaces.ContentControlData.appearance
+      - 'word!Word.Interfaces.ContentControlData#appearance:member'
+      - 'word!Word.Interfaces.ContentControlData#cannotDelete:member'
+      - 'word!Word.Interfaces.ContentControlData#cannotEdit:member'
+      - 'word!Word.Interfaces.ContentControlData#color:member'
+      - 'word!Word.Interfaces.ContentControlData#contentControls:member'
+      - 'word!Word.Interfaces.ContentControlData#font:member'
+      - 'word!Word.Interfaces.ContentControlData#id:member'
+      - 'word!Word.Interfaces.ContentControlData#inlinePictures:member'
+      - 'word!Word.Interfaces.ContentControlData#paragraphs:member'
+      - 'word!Word.Interfaces.ContentControlData#placeholderText:member'
+      - 'word!Word.Interfaces.ContentControlData#removeWhenEdited:member'
+      - 'word!Word.Interfaces.ContentControlData#style:member'
+      - 'word!Word.Interfaces.ContentControlData#tag:member'
+      - 'word!Word.Interfaces.ContentControlData#text:member'
+      - 'word!Word.Interfaces.ContentControlData#title:member'
+      - 'word!Word.Interfaces.ContentControlData#type:member'
+  - uid: 'word!Word.Interfaces.ContentControlData#appearance:member'
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
 
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
-  - uid: word.Word.Interfaces.ContentControlData.cannotDelete
+  - uid: 'word!Word.Interfaces.ContentControlData#cannotDelete:member'
     summary: >-
       Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlData.cannotEdit
+  - uid: 'word!Word.Interfaces.ContentControlData#cannotEdit:member'
     summary: |-
       Gets or sets a value that indicates whether the user can edit the contents of the content control.
 
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlData.color
+  - uid: 'word!Word.Interfaces.ContentControlData#color:member'
     summary: |-
       Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlData.contentControls
+  - uid: 'word!Word.Interfaces.ContentControlData#contentControls:member'
     summary: |-
       Gets the collection of content control objects in the content control. Read-only.
 
@@ -102,7 +102,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.ContentControlData[]'
-  - uid: word.Word.Interfaces.ContentControlData.font
+  - uid: 'word!Word.Interfaces.ContentControlData#font:member'
     summary: >-
       Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -118,8 +118,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.ContentControlData.id
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.ContentControlData#id:member'
     summary: |-
       Gets an integer that represents the content control identifier. Read-only.
 
@@ -134,7 +134,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ContentControlData.inlinePictures
+  - uid: 'word!Word.Interfaces.ContentControlData#inlinePictures:member'
     summary: >-
       Gets the collection of inlinePicture objects in the content control. The collection does not include floating
       images. Read-only.
@@ -151,7 +151,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.InlinePictureData[]'
-  - uid: word.Word.Interfaces.ContentControlData.paragraphs
+  - uid: 'word!Word.Interfaces.ContentControlData#paragraphs:member'
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.
 
@@ -166,7 +166,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.ParagraphData[]'
-  - uid: word.Word.Interfaces.ContentControlData.placeholderText
+  - uid: 'word!Word.Interfaces.ContentControlData#placeholderText:member'
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
       is empty.
@@ -183,7 +183,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlData.removeWhenEdited
+  - uid: 'word!Word.Interfaces.ContentControlData#removeWhenEdited:member'
     summary: >-
       Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlData.style
+  - uid: 'word!Word.Interfaces.ContentControlData#style:member'
     summary: >-
       Gets or sets the style name for the content control. Use this property for custom styles and localized style
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -217,7 +217,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlData.tag
+  - uid: 'word!Word.Interfaces.ContentControlData#tag:member'
     summary: |-
       Gets or sets a tag to identify a content control.
 
@@ -232,7 +232,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlData.text
+  - uid: 'word!Word.Interfaces.ContentControlData#text:member'
     summary: |-
       Gets the text of the content control. Read-only.
 
@@ -247,7 +247,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlData.title
+  - uid: 'word!Word.Interfaces.ContentControlData#title:member'
     summary: |-
       Gets or sets the title for a content control.
 
@@ -262,7 +262,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlData.type
+  - uid: 'word!Word.Interfaces.ContentControlData#type:member'
     summary: |-
       Gets the content control type. Only rich text content controls are supported currently. Read-only.
 

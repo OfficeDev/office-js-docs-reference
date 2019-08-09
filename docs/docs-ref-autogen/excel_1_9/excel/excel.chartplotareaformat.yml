@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartPlotAreaFormat
+  - uid: 'excel!Excel.ChartPlotAreaFormat:class'
     summary: |-
       Represents the format properties for chart plotArea.
 
@@ -12,18 +12,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartPlotAreaFormat.border
-      - excel.Excel.ChartPlotAreaFormat.context
-      - excel.Excel.ChartPlotAreaFormat.fill
-      - excel.Excel.ChartPlotAreaFormat.load
-      - excel.Excel.ChartPlotAreaFormat.load_1
-      - excel.Excel.ChartPlotAreaFormat.load_2
-      - excel.Excel.ChartPlotAreaFormat.set
-      - excel.Excel.ChartPlotAreaFormat.set_1
-      - excel.Excel.ChartPlotAreaFormat.toJSON
-  - uid: excel.Excel.ChartPlotAreaFormat.border
+      - 'excel!Excel.ChartPlotAreaFormat#border:member'
+      - 'excel!Excel.ChartPlotAreaFormat#context:member'
+      - 'excel!Excel.ChartPlotAreaFormat#fill:member'
+      - 'excel!Excel.ChartPlotAreaFormat#load:member(1)'
+      - 'excel!Excel.ChartPlotAreaFormat#load:member(2)'
+      - 'excel!Excel.ChartPlotAreaFormat#load:member(3)'
+      - 'excel!Excel.ChartPlotAreaFormat#set:member(1)'
+      - 'excel!Excel.ChartPlotAreaFormat#set:member(2)'
+      - 'excel!Excel.ChartPlotAreaFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartPlotAreaFormat#border:member'
     summary: |-
       Represents the border attributes of a chart plotArea.
 
@@ -37,8 +37,8 @@ items:
       content: 'readonly border: Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
-  - uid: excel.Excel.ChartPlotAreaFormat.context
+          - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartPlotAreaFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -51,8 +51,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartPlotAreaFormat.fill
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartPlotAreaFormat#fill:member'
     summary: |-
       Represents the fill format of an object, which includes background formatting information.
 
@@ -66,8 +66,8 @@ items:
       content: 'readonly fill: Excel.ChartFill;'
       return:
         type:
-          - excel.Excel.ChartFill
-  - uid: excel.Excel.ChartPlotAreaFormat.load
+          - 'excel!Excel.ChartFill:class'
+  - uid: 'excel!Excel.ChartPlotAreaFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -98,14 +98,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartPlotAreaFormatLoadOptions): Excel.ChartPlotAreaFormat;'
       return:
         type:
-          - excel.Excel.ChartPlotAreaFormat
+          - 'excel!Excel.ChartPlotAreaFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
-  - uid: excel.Excel.ChartPlotAreaFormat.load_1
+            - 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartPlotAreaFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -118,14 +118,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPlotAreaFormat;'
       return:
         type:
-          - excel.Excel.ChartPlotAreaFormat
+          - 'excel!Excel.ChartPlotAreaFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartPlotAreaFormat.load_2
+  - uid: 'excel!Excel.ChartPlotAreaFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -138,7 +138,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPlotAreaFormat;'
       return:
         type:
-          - excel.Excel.ChartPlotAreaFormat
+          - 'excel!Excel.ChartPlotAreaFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -147,7 +147,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartPlotAreaFormat.set
+  - uid: 'excel!Excel.ChartPlotAreaFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -177,7 +177,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartPlotAreaFormat.set_1
+  - uid: 'excel!Excel.ChartPlotAreaFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -194,8 +194,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartPlotAreaFormat
-  - uid: excel.Excel.ChartPlotAreaFormat.toJSON
+            - 'excel!Excel.ChartPlotAreaFormat:class'
+  - uid: 'excel!Excel.ChartPlotAreaFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -211,5 +211,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPlotAreaFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaFormatData
+          - 'excel!Excel.Interfaces.ChartPlotAreaFormatData:interface'
         description: ''

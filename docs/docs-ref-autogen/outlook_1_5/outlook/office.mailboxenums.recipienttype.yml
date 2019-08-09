@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.RecipientType
+  - uid: 'outlook!Office.MailboxEnums.RecipientType:enum'
     summary: |-
       Specifies the type of recipient for an appointment.
 
@@ -13,13 +13,13 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.MailboxEnums.RecipientType.DistributionList
-      - Outlook.Office.MailboxEnums.RecipientType.ExternalUser
-      - Outlook.Office.MailboxEnums.RecipientType.Other
-      - Outlook.Office.MailboxEnums.RecipientType.User
-  - uid: Outlook.Office.MailboxEnums.RecipientType.DistributionList
+      - 'outlook!Office.MailboxEnums.RecipientType.DistributionList:member'
+      - 'outlook!Office.MailboxEnums.RecipientType.ExternalUser:member'
+      - 'outlook!Office.MailboxEnums.RecipientType.Other:member'
+      - 'outlook!Office.MailboxEnums.RecipientType.User:member'
+  - uid: 'outlook!Office.MailboxEnums.RecipientType.DistributionList:member'
     summary: Specifies that the recipient is a distribution list containing a list of email addresses.
     name: DistributionList
     fullName: DistributionList
@@ -27,7 +27,7 @@ items:
       - typeScript
     type: field
     numericValue: '"distributionList"'
-  - uid: Outlook.Office.MailboxEnums.RecipientType.ExternalUser
+  - uid: 'outlook!Office.MailboxEnums.RecipientType.ExternalUser:member'
     summary: Specifies that the recipient is an SMTP email address that is not on the Exchange server.
     name: ExternalUser
     fullName: ExternalUser
@@ -35,7 +35,7 @@ items:
       - typeScript
     type: field
     numericValue: '"externalUser"'
-  - uid: Outlook.Office.MailboxEnums.RecipientType.Other
+  - uid: 'outlook!Office.MailboxEnums.RecipientType.Other:member'
     summary: Specifies that the recipient is not one of the other recipient types.
     name: Other
     fullName: Other
@@ -43,7 +43,7 @@ items:
       - typeScript
     type: field
     numericValue: '"other"'
-  - uid: Outlook.Office.MailboxEnums.RecipientType.User
+  - uid: 'outlook!Office.MailboxEnums.RecipientType.User:member'
     summary: Specifies that the recipient is an SMTP email address that is on the Exchange server.
     name: User
     fullName: User

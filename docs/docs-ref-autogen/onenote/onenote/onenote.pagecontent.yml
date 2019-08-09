@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.PageContent
+  - uid: 'onenote!OneNote.PageContent:class'
     summary: >-
       Represents a region on a page that contains top-level content types such as Outline or Image. A PageContent object
       can be assigned an XY position.
@@ -14,27 +14,27 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.PageContent.context
-      - onenote.OneNote.PageContent.delete
-      - onenote.OneNote.PageContent.id
-      - onenote.OneNote.PageContent.image
-      - onenote.OneNote.PageContent.ink
-      - onenote.OneNote.PageContent.left
-      - onenote.OneNote.PageContent.load
-      - onenote.OneNote.PageContent.load_1
-      - onenote.OneNote.PageContent.load_2
-      - onenote.OneNote.PageContent.outline
-      - onenote.OneNote.PageContent.parentPage
-      - onenote.OneNote.PageContent.set
-      - onenote.OneNote.PageContent.set_1
-      - onenote.OneNote.PageContent.toJSON
-      - onenote.OneNote.PageContent.top
-      - onenote.OneNote.PageContent.track
-      - onenote.OneNote.PageContent.type
-      - onenote.OneNote.PageContent.untrack
-  - uid: onenote.OneNote.PageContent.context
+      - 'onenote!OneNote.PageContent#context:member'
+      - 'onenote!OneNote.PageContent#delete:member(1)'
+      - 'onenote!OneNote.PageContent#id:member'
+      - 'onenote!OneNote.PageContent#image:member'
+      - 'onenote!OneNote.PageContent#ink:member'
+      - 'onenote!OneNote.PageContent#left:member'
+      - 'onenote!OneNote.PageContent#load:member(1)'
+      - 'onenote!OneNote.PageContent#load:member(2)'
+      - 'onenote!OneNote.PageContent#load:member(3)'
+      - 'onenote!OneNote.PageContent#outline:member'
+      - 'onenote!OneNote.PageContent#parentPage:member'
+      - 'onenote!OneNote.PageContent#set:member(1)'
+      - 'onenote!OneNote.PageContent#set:member(2)'
+      - 'onenote!OneNote.PageContent#toJSON:member(1)'
+      - 'onenote!OneNote.PageContent#top:member'
+      - 'onenote!OneNote.PageContent#track:member(1)'
+      - 'onenote!OneNote.PageContent#type:member'
+      - 'onenote!OneNote.PageContent#untrack:member(1)'
+  - uid: 'onenote!OneNote.PageContent#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -47,8 +47,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.PageContent.delete
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.PageContent#delete:member(1)'
     summary: |-
       Deletes the PageContent object.
 
@@ -63,37 +63,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              var page = context.application.getActivePage();
-              var pageContents = page.contents;
-
-              var firstPageContent = pageContents.getItemAt(0);
-              firstPageContent.load('type');
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      if(firstPageContent.isNull === false) {
-                          firstPageContent.delete();
-                          return context.sync();
-                      }
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: onenote.OneNote.PageContent.id
+        description: ''
+  - uid: 'onenote!OneNote.PageContent#id:member'
     summary: |-
       Gets the ID of the PageContent object. Read-only.
 
@@ -108,7 +79,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.PageContent.image
+  - uid: 'onenote!OneNote.PageContent#image:member'
     summary: |-
       Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
@@ -122,8 +93,8 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
-  - uid: onenote.OneNote.PageContent.ink
+          - 'onenote!OneNote.Image:class'
+  - uid: 'onenote!OneNote.PageContent#ink:member'
     summary: |-
       Gets the ink in the PageContent object. Throws an exception if PageContentType is not Ink.
 
@@ -137,8 +108,8 @@ items:
       content: 'readonly ink: OneNote.FloatingInk;'
       return:
         type:
-          - onenote.OneNote.FloatingInk
-  - uid: onenote.OneNote.PageContent.left
+          - 'onenote!OneNote.FloatingInk:class'
+  - uid: 'onenote!OneNote.PageContent#left:member'
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
@@ -153,7 +124,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.PageContent.load
+  - uid: 'onenote!OneNote.PageContent#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -184,14 +155,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.PageContentLoadOptions): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - 'onenote!OneNote.PageContent:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.PageContentLoadOptions
-  - uid: onenote.OneNote.PageContent.load_1
+            - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
+  - uid: 'onenote!OneNote.PageContent#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -204,14 +175,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - 'onenote!OneNote.PageContent:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.PageContent.load_2
+  - uid: 'onenote!OneNote.PageContent#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -224,7 +195,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - 'onenote!OneNote.PageContent:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -233,7 +204,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.PageContent.outline
+  - uid: 'onenote!OneNote.PageContent#outline:member'
     summary: |-
       Gets the Outline in the PageContent object. Throws an exception if PageContentType is not Outline.
 
@@ -247,8 +218,8 @@ items:
       content: 'readonly outline: OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
-  - uid: onenote.OneNote.PageContent.parentPage
+          - 'onenote!OneNote.Outline:class'
+  - uid: 'onenote!OneNote.PageContent#parentPage:member'
     summary: |-
       Gets the page that contains the PageContent object. Read-only.
 
@@ -262,8 +233,8 @@ items:
       content: 'readonly parentPage: OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
-  - uid: onenote.OneNote.PageContent.set
+          - 'onenote!OneNote.Page:class'
+  - uid: 'onenote!OneNote.PageContent#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -293,7 +264,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: onenote.OneNote.PageContent.set_1
+  - uid: 'onenote!OneNote.PageContent#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -310,8 +281,8 @@ items:
         - id: properties
           description: ''
           type:
-            - onenote.OneNote.PageContent
-  - uid: onenote.OneNote.PageContent.toJSON
+            - 'onenote!OneNote.PageContent:class'
+  - uid: 'onenote!OneNote.PageContent#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -327,9 +298,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageContentData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentData
+          - 'onenote!OneNote.Interfaces.PageContentData:interface'
         description: ''
-  - uid: onenote.OneNote.PageContent.top
+  - uid: 'onenote!OneNote.PageContent#top:member'
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 
@@ -344,7 +315,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.PageContent.track
+  - uid: 'onenote!OneNote.PageContent#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -360,9 +331,9 @@ items:
       content: 'track(): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - 'onenote!OneNote.PageContent:class'
         description: ''
-  - uid: onenote.OneNote.PageContent.type
+  - uid: 'onenote!OneNote.PageContent#type:member'
     summary: |-
       Gets the type of the PageContent object. Read-only.
 
@@ -377,7 +348,7 @@ items:
       return:
         type:
           - OneNote.PageContentType | "Outline" | "Image" | "Ink" | "Other"
-  - uid: onenote.OneNote.PageContent.untrack
+  - uid: 'onenote!OneNote.PageContent#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -392,5 +363,5 @@ items:
       content: 'untrack(): OneNote.PageContent;'
       return:
         type:
-          - onenote.OneNote.PageContent
+          - 'onenote!OneNote.PageContent:class'
         description: ''

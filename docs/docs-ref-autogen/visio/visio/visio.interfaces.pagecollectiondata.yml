@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageCollectionData
+  - uid: 'visio!Visio.Interfaces.PageCollectionData:interface'
     summary: An interface describing the data returned by calling "pageCollection.toJSON()".
     name: Visio.Interfaces.PageCollectionData
     fullName: Visio.Interfaces.PageCollectionData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageCollectionData.items
-  - uid: visio.Visio.Interfaces.PageCollectionData.items
+      - 'visio!Visio.Interfaces.PageCollectionData#items:member'
+  - uid: 'visio!Visio.Interfaces.PageCollectionData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FourRedToBlackSet
+  - uid: 'excel!Excel.FourRedToBlackSet:interface'
     name: Excel.FourRedToBlackSet
     fullName: Excel.FourRedToBlackSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FourRedToBlackSet.blackCircle
-      - excel.Excel.FourRedToBlackSet.grayCircle
-      - excel.Excel.FourRedToBlackSet.pinkCircle
-      - excel.Excel.FourRedToBlackSet.redCircle
-  - uid: excel.Excel.FourRedToBlackSet.blackCircle
+      - 'excel!Excel.FourRedToBlackSet#blackCircle:member'
+      - 'excel!Excel.FourRedToBlackSet#grayCircle:member'
+      - 'excel!Excel.FourRedToBlackSet#pinkCircle:member'
+      - 'excel!Excel.FourRedToBlackSet#redCircle:member'
+  - uid: 'excel!Excel.FourRedToBlackSet#blackCircle:member'
     name: blackCircle
     fullName: blackCircle
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'blackCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourRedToBlackSet.grayCircle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRedToBlackSet#grayCircle:member'
     name: grayCircle
     fullName: grayCircle
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'grayCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourRedToBlackSet.pinkCircle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRedToBlackSet#pinkCircle:member'
     name: pinkCircle
     fullName: pinkCircle
     langs:
@@ -44,8 +44,8 @@ items:
       content: 'pinkCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourRedToBlackSet.redCircle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourRedToBlackSet#redCircle:member'
     name: redCircle
     fullName: redCircle
     langs:
@@ -55,4 +55,4 @@ items:
       content: 'redCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

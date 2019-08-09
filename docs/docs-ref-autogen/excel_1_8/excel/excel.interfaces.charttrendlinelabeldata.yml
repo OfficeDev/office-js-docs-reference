@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData:interface'
     summary: An interface describing the data returned by calling "chartTrendlineLabel.toJSON()".
     name: Excel.Interfaces.ChartTrendlineLabelData
     fullName: Excel.Interfaces.ChartTrendlineLabelData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.autoText
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.format
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.formula
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.height
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.left
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.numberFormat
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.text
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.textOrientation
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.top
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment
-      - excel.Excel.Interfaces.ChartTrendlineLabelData.width
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.autoText
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#autoText:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#format:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#formula:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#height:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#left:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#numberFormat:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#text:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#textOrientation:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#top:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineLabelData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#autoText:member'
     summary: |-
       Boolean value representing if trendline label automatically generates appropriate text based on context.
 
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.format
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#format:member'
     summary: |-
       Represents the format of chart trendline label.
 
@@ -50,8 +50,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartTrendlineLabelFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineLabelFormatData
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.formula
+          - 'excel!Excel.Interfaces.ChartTrendlineLabelFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#formula:member'
     summary: |-
       String value that represents the formula of chart trendline label using A1-style notation.
 
@@ -66,7 +66,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.height
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#height:member'
     summary: >-
       Returns the height, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
       visible.
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#horizontalAlignment:member'
     summary: >-
       Represents the horizontal alignment for chart trendline label. See Excel.ChartTextHorizontalAlignment for details.
       This property is valid only when TextOrientation of trendline label is 90, -90 or 180.
@@ -102,7 +102,7 @@ items:
       return:
         type:
           - Excel.ChartTextHorizontalAlignment | "Center" | "Left" | "Right" | "Justify" | "Distributed"
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.left
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#left:member'
     summary: >-
       Represents the distance, in points, from the left edge of chart trendline label to the left edge of chart area.
       Null if chart trendline label is not visible.
@@ -119,7 +119,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.numberFormat
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#numberFormat:member'
     summary: |-
       String value that represents the format code for trendline label.
 
@@ -134,7 +134,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.text
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#text:member'
     summary: |-
       String representing the text of the trendline label on a chart.
 
@@ -149,7 +149,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.textOrientation
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#textOrientation:member'
     summary: >-
       Represents the text orientation of chart trendline label. The value should be an integer either from -90 to 90, or
       180 for vertically-oriented text.
@@ -166,7 +166,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.top
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of chart trendline label to the top of chart area. Null if
       chart trendline label is not visible.
@@ -183,7 +183,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#verticalAlignment:member'
     summary: >-
       Represents the vertical alignment of chart trendline label. See Excel.ChartTextVerticalAlignment for details. This
       property is valid only when TextOrientation of trendline label is 0.
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - Excel.ChartTextVerticalAlignment | "Center" | "Bottom" | "Top" | "Justify" | "Distributed"
-  - uid: excel.Excel.Interfaces.ChartTrendlineLabelData.width
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineLabelData#width:member'
     summary: >-
       Returns the width, in points, of the chart trendline label. Read-only. Null if chart trendline label is not
       visible.

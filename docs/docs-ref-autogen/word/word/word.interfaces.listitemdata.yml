@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ListItemData
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
     summary: An interface describing the data returned by calling "listItem.toJSON()".
     name: Word.Interfaces.ListItemData
     fullName: Word.Interfaces.ListItemData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ListItemData.level
-      - word.Word.Interfaces.ListItemData.listString
-      - word.Word.Interfaces.ListItemData.siblingIndex
-  - uid: word.Word.Interfaces.ListItemData.level
+      - 'word!Word.Interfaces.ListItemData#level:member'
+      - 'word!Word.Interfaces.ListItemData#listString:member'
+      - 'word!Word.Interfaces.ListItemData#siblingIndex:member'
+  - uid: 'word!Word.Interfaces.ListItemData#level:member'
     summary: |-
       Gets or sets the level of the item in the list.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ListItemData.listString
+  - uid: 'word!Word.Interfaces.ListItemData#listString:member'
     summary: |-
       Gets the list item bullet, number, or picture as a string. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ListItemData.siblingIndex
+  - uid: 'word!Word.Interfaces.ListItemData#siblingIndex:member'
     summary: |-
       Gets the list item order number in relation to its siblings. Read-only.
 

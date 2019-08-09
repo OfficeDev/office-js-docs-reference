@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.NamedItemCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the NamedItemCollection object, for use in "namedItemCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.NamedItemCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.NamedItemCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.NamedItemCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

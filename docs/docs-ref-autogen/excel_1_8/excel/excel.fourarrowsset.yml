@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FourArrowsSet
+  - uid: 'excel!Excel.FourArrowsSet:interface'
     name: Excel.FourArrowsSet
     fullName: Excel.FourArrowsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FourArrowsSet.greenUpArrow
-      - excel.Excel.FourArrowsSet.redDownArrow
-      - excel.Excel.FourArrowsSet.yellowDownInclineArrow
-      - excel.Excel.FourArrowsSet.yellowUpInclineArrow
-  - uid: excel.Excel.FourArrowsSet.greenUpArrow
+      - 'excel!Excel.FourArrowsSet#greenUpArrow:member'
+      - 'excel!Excel.FourArrowsSet#redDownArrow:member'
+      - 'excel!Excel.FourArrowsSet#yellowDownInclineArrow:member'
+      - 'excel!Excel.FourArrowsSet#yellowUpInclineArrow:member'
+  - uid: 'excel!Excel.FourArrowsSet#greenUpArrow:member'
     name: greenUpArrow
     fullName: greenUpArrow
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourArrowsSet.redDownArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsSet#redDownArrow:member'
     name: redDownArrow
     fullName: redDownArrow
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourArrowsSet.yellowDownInclineArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsSet#yellowDownInclineArrow:member'
     name: yellowDownInclineArrow
     fullName: yellowDownInclineArrow
     langs:
@@ -44,8 +44,8 @@ items:
       content: 'yellowDownInclineArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourArrowsSet.yellowUpInclineArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsSet#yellowUpInclineArrow:member'
     name: yellowUpInclineArrow
     fullName: yellowUpInclineArrow
     langs:
@@ -55,4 +55,4 @@ items:
       content: 'yellowUpInclineArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

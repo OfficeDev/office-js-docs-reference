@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.RequestContext
+  - uid: 'onenote!OneNote.RequestContext:class'
     name: OneNote.RequestContext
     fullName: OneNote.RequestContext
     langs:
@@ -8,11 +8,11 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientRequestContext '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.RequestContext.(constructor)
-      - onenote.OneNote.RequestContext.application
-  - uid: onenote.OneNote.RequestContext.(constructor)
+      - 'onenote!OneNote.RequestContext:constructor(1)'
+      - 'onenote!OneNote.RequestContext#application:member'
+  - uid: 'onenote!OneNote.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
@@ -26,7 +26,7 @@ items:
           description: ''
           type:
             - string
-  - uid: onenote.OneNote.RequestContext.application
+  - uid: 'onenote!OneNote.RequestContext#application:member'
     name: application
     fullName: application
     langs:
@@ -36,4 +36,4 @@ items:
       content: 'readonly application: Application;'
       return:
         type:
-          - onenote.OneNote.Application
+          - 'onenote!OneNote.Application:class'

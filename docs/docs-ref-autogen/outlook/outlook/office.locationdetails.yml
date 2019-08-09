@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.LocationDetails
+  - uid: 'outlook!Office.LocationDetails:interface'
     summary: |-
       Represents a location. Read only.
 
@@ -12,39 +12,18 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (place) {
-              console.log("Display name: " + place.displayName);
-              console.log("Type: " + place.locationIdentifier.type);
-              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                  console.log("Email address: " + place.emailAddress);
-              }
-          });
-      }
-
-      ```
     isPreview: true
     name: Office.LocationDetails
     fullName: Office.LocationDetails
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.LocationDetails.displayName
-      - outlook.Office.LocationDetails.emailAddress
-      - outlook.Office.LocationDetails.locationIdentifier
-  - uid: outlook.Office.LocationDetails.displayName
+      - 'outlook!Office.LocationDetails#displayName:member'
+      - 'outlook!Office.LocationDetails#emailAddress:member'
+      - 'outlook!Office.LocationDetails#locationIdentifier:member'
+  - uid: 'outlook!Office.LocationDetails#displayName:member'
     summary: The location's display name.
     isPreview: true
     name: displayName
@@ -57,7 +36,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.LocationDetails.emailAddress
+  - uid: 'outlook!Office.LocationDetails#emailAddress:member'
     summary: The email address associated with the location.
     isPreview: true
     name: emailAddress
@@ -70,7 +49,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.LocationDetails.locationIdentifier
+  - uid: 'outlook!Office.LocationDetails#locationIdentifier:member'
     summary: The LocationIdentifier of the location.
     isPreview: true
     name: locationIdentifier
@@ -82,4 +61,4 @@ items:
       content: 'locationIdentifier: LocationIdentifier;'
       return:
         type:
-          - outlook.Office.LocationIdentifier
+          - 'outlook!Office.LocationIdentifier:interface'

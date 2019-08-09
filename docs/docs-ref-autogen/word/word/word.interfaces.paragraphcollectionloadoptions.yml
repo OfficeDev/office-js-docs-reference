@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions:interface'
     summary: |-
-      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
+      Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.Interfaces.ParagraphCollectionLoadOptions
@@ -10,38 +10,38 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.font
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.isLastParagraph
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.isListItem
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.leftIndent
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineSpacing
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitBefore
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.list
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.listItem
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentBody
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTable
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableOrNullObject
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceAfter
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceBefore
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.style
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.styleBuiltIn
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.tableNestingLevel
-      - word.Word.Interfaces.ParagraphCollectionLoadOptions.text
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#isLastParagraph:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#isListItem:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControlOrNullObject:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableOrNullObject:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#styleBuiltIn:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#tableNestingLevel:member'
+      - 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.alignment
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#alignment:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the alignment for a paragraph. The value can be 'left', 'centered',
       'right', or 'justified'.
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.firstLineIndent
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#firstLineIndent:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the value, in points, for a first line or hanging indent. Use a
       positive value to set a first-line indent, and use a negative value to set a hanging indent.
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.font
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#font:member'
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the paragraph. Use this to get and set font name, size,
       color, and other properties.
@@ -102,8 +102,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.isLastParagraph
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#isLastParagraph:member'
     summary: |-
       For EACH ITEM in the collection: Indicates the paragraph is the last one inside its parent body. Read-only.
 
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.isListItem
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#isListItem:member'
     summary: |-
       For EACH ITEM in the collection: Checks whether the paragraph is a list item. Read-only.
 
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.leftIndent
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#leftIndent:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the left indent value, in points, for the paragraph.
 
@@ -148,7 +148,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineSpacing
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineSpacing:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the line spacing, in points, for the specified paragraph. In the
       Word UI, this value is divided by 12.
@@ -165,7 +165,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitAfter
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitAfter:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
@@ -180,7 +180,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.lineUnitBefore
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#lineUnitBefore:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
@@ -195,7 +195,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.list
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#list:member'
     summary: >-
       For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Throws if the paragraph is not in
       a list.
@@ -211,8 +211,8 @@ items:
       content: 'list?: Word.Interfaces.ListLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listItem
+          - 'word!Word.Interfaces.ListLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listItem:member'
     summary: >-
       For EACH ITEM in the collection: Gets the ListItem for the paragraph. Throws if the paragraph is not part of a
       list.
@@ -228,8 +228,8 @@ items:
       content: 'listItem?: Word.Interfaces.ListItemLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListItemLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listItemOrNullObject
+          - 'word!Word.Interfaces.ListItemLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listItemOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the ListItem for the paragraph. Returns a null object if the paragraph is
       not part of a list.
@@ -245,8 +245,8 @@ items:
       content: 'listItemOrNullObject?: Word.Interfaces.ListItemLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListItemLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.listOrNullObject
+          - 'word!Word.Interfaces.ListItemLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#listOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the List to which this paragraph belongs. Returns a null object if the
       paragraph is not in a list.
@@ -262,8 +262,8 @@ items:
       content: 'listOrNullObject?: Word.Interfaces.ListLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ListLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.outlineLevel
+          - 'word!Word.Interfaces.ListLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#outlineLevel:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the outline level for the paragraph.
 
@@ -278,7 +278,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentBody
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentBody:member'
     summary: |-
       For EACH ITEM in the collection: Gets the parent body of the paragraph.
 
@@ -292,8 +292,8 @@ items:
       content: 'parentBody?: Word.Interfaces.BodyLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.BodyLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControl
+          - 'word!Word.Interfaces.BodyLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the paragraph. Throws if there isn't a
       parent content control.
@@ -309,8 +309,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentContentControlOrNullObject
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentContentControlOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the paragraph. Returns a null object if
       there isn't a parent content control.
@@ -326,8 +326,8 @@ items:
       content: 'parentContentControlOrNullObject?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTable
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTable:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the paragraph. Throws if it is not contained in a
       table.
@@ -343,8 +343,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCell
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCell:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Throws if it is not contained in
       a table cell.
@@ -360,8 +360,8 @@ items:
       content: 'parentTableCell?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableCellOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableCellOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table cell that contains the paragraph. Returns a null object if it is
       not contained in a table cell.
@@ -377,8 +377,8 @@ items:
       content: 'parentTableCellOrNullObject?: Word.Interfaces.TableCellLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.parentTableOrNullObject
+          - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#parentTableOrNullObject:member'
     summary: >-
       For EACH ITEM in the collection: Gets the table that contains the paragraph. Returns a null object if it is not
       contained in a table.
@@ -394,8 +394,8 @@ items:
       content: 'parentTableOrNullObject?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.rightIndent
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#rightIndent:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the right indent value, in points, for the paragraph.
 
@@ -410,7 +410,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceAfter
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceAfter:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the spacing, in points, after the paragraph.
 
@@ -425,7 +425,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.spaceBefore
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#spaceBefore:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the spacing, in points, before the paragraph.
 
@@ -440,7 +440,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.style
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the style name for the paragraph. Use this property for custom
       styles and localized style names. To use the built-in styles that are portable between locales, see the
@@ -458,7 +458,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.styleBuiltIn
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#styleBuiltIn:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the built-in style name for the paragraph. Use this property for
       built-in styles that are portable between locales. To use custom styles or localized style names, see the "style"
@@ -476,7 +476,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.tableNestingLevel
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#tableNestingLevel:member'
     summary: >-
       For EACH ITEM in the collection: Gets the level of the paragraph's table. It returns 0 if the paragraph is not in
       a table. Read-only.
@@ -493,7 +493,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ParagraphCollectionLoadOptions.text
+  - uid: 'word!Word.Interfaces.ParagraphCollectionLoadOptions#text:member'
     summary: |-
       For EACH ITEM in the collection: Gets the text of the paragraph. Read-only.
 

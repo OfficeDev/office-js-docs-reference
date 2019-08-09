@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageContentUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageContentUpdateData:interface'
     summary: 'An interface for updating data on the PageContent object, for use in "pageContent.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.PageContentUpdateData
     fullName: OneNote.Interfaces.PageContentUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageContentUpdateData.image
-      - onenote.OneNote.Interfaces.PageContentUpdateData.left
-      - onenote.OneNote.Interfaces.PageContentUpdateData.top
-  - uid: onenote.OneNote.Interfaces.PageContentUpdateData.image
+      - 'onenote!OneNote.Interfaces.PageContentUpdateData#image:member'
+      - 'onenote!OneNote.Interfaces.PageContentUpdateData#left:member'
+      - 'onenote!OneNote.Interfaces.PageContentUpdateData#top:member'
+  - uid: 'onenote!OneNote.Interfaces.PageContentUpdateData#image:member'
     summary: |-
       Gets the Image in the PageContent object. Throws an exception if PageContentType is not Image.
 
@@ -26,8 +26,8 @@ items:
       content: 'image?: OneNote.Interfaces.ImageUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageUpdateData
-  - uid: onenote.OneNote.Interfaces.PageContentUpdateData.left
+          - 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageContentUpdateData#left:member'
     summary: |-
       Gets or sets the left (X-axis) position of the PageContent object.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Interfaces.PageContentUpdateData.top
+  - uid: 'onenote!OneNote.Interfaces.PageContentUpdateData#top:member'
     summary: |-
       Gets or sets the top (Y-axis) position of the PageContent object.
 

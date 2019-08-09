@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Image
+  - uid: 'excel!Excel.Image:class'
     summary: |-
       Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Image.context
-      - excel.Excel.Image.format
-      - excel.Excel.Image.id
-      - excel.Excel.Image.load
-      - excel.Excel.Image.load_1
-      - excel.Excel.Image.load_2
-      - excel.Excel.Image.shape
-      - excel.Excel.Image.toJSON
-  - uid: excel.Excel.Image.context
+      - 'excel!Excel.Image#context:member'
+      - 'excel!Excel.Image#format:member'
+      - 'excel!Excel.Image#id:member'
+      - 'excel!Excel.Image#load:member(1)'
+      - 'excel!Excel.Image#load:member(2)'
+      - 'excel!Excel.Image#load:member(3)'
+      - 'excel!Excel.Image#shape:member'
+      - 'excel!Excel.Image#toJSON:member(1)'
+  - uid: 'excel!Excel.Image#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Image.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Image#format:member'
     summary: |-
       Returns the format of the image. Read-only.
 
@@ -51,23 +51,7 @@ items:
       return:
         type:
           - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const image = sheet.shapes.getItem("Image").image;
-              image.load("format");
-              await context.sync();
-
-              console.log("The image's format is: " + image.format);
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Image.id
+  - uid: 'excel!Excel.Image#id:member'
     summary: |-
       Represents the shape identifier for the image object. Read-only.
 
@@ -82,7 +66,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Image.load
+  - uid: 'excel!Excel.Image#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -113,14 +97,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ImageLoadOptions): Excel.Image;'
       return:
         type:
-          - excel.Excel.Image
+          - 'excel!Excel.Image:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ImageLoadOptions
-  - uid: excel.Excel.Image.load_1
+            - 'excel!Excel.Interfaces.ImageLoadOptions:interface'
+  - uid: 'excel!Excel.Image#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -133,14 +117,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Image;'
       return:
         type:
-          - excel.Excel.Image
+          - 'excel!Excel.Image:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Image.load_2
+  - uid: 'excel!Excel.Image#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -153,7 +137,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Image;'
       return:
         type:
-          - excel.Excel.Image
+          - 'excel!Excel.Image:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -162,7 +146,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Image.shape
+  - uid: 'excel!Excel.Image#shape:member'
     summary: |-
       Returns the Shape object associated with the image. Read-only.
 
@@ -176,8 +160,8 @@ items:
       content: 'readonly shape: Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-  - uid: excel.Excel.Image.toJSON
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.Image#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -193,5 +177,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ImageData;'
       return:
         type:
-          - excel.Excel.Interfaces.ImageData
+          - 'excel!Excel.Interfaces.ImageData:interface'
         description: ''

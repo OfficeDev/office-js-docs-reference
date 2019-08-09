@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookData
+  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
     summary: An interface describing the data returned by calling "workbook.toJSON()".
     name: Excel.Interfaces.WorkbookData
     fullName: Excel.Interfaces.WorkbookData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookData.bindings
-      - excel.Excel.Interfaces.WorkbookData.names
-      - excel.Excel.Interfaces.WorkbookData.pivotTables
-      - excel.Excel.Interfaces.WorkbookData.tables
-      - excel.Excel.Interfaces.WorkbookData.worksheets
-  - uid: excel.Excel.Interfaces.WorkbookData.bindings
+      - 'excel!Excel.Interfaces.WorkbookData#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#names:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.BindingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.names
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.NamedItemData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.pivotTables
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     summary: |-
       Represents a collection of PivotTables associated with the workbook. Read-only.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotTableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.tables
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.worksheets
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 

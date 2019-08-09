@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SortField
+  - uid: 'excel!Excel.SortField:interface'
     summary: |-
       Represents a condition in a sorting operation.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SortField.ascending
-      - excel.Excel.SortField.color
-      - excel.Excel.SortField.dataOption
-      - excel.Excel.SortField.icon
-      - excel.Excel.SortField.key
-      - excel.Excel.SortField.sortOn
-  - uid: excel.Excel.SortField.ascending
+      - 'excel!Excel.SortField#ascending:member'
+      - 'excel!Excel.SortField#color:member'
+      - 'excel!Excel.SortField#dataOption:member'
+      - 'excel!Excel.SortField#icon:member'
+      - 'excel!Excel.SortField#key:member'
+      - 'excel!Excel.SortField#sortOn:member'
+  - uid: 'excel!Excel.SortField#ascending:member'
     summary: |-
       Represents whether the sorting is done in an ascending fashion.
 
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.SortField.color
+  - uid: 'excel!Excel.SortField#color:member'
     summary: |-
       Represents the color that is the target of the condition if the sorting is on font or cell color.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.SortField.dataOption
+  - uid: 'excel!Excel.SortField#dataOption:member'
     summary: |-
       Represents additional sorting options for this field.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - Excel.SortDataOption | "Normal" | "TextAsNumber"
-  - uid: excel.Excel.SortField.icon
+  - uid: 'excel!Excel.SortField#icon:member'
     summary: |-
       Represents the icon that is the target of the condition if the sorting is on the cell's icon.
 
@@ -77,8 +77,8 @@ items:
       content: 'icon?: Excel.Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.SortField.key
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.SortField#key:member'
     summary: >-
       Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an
       offset from the first column (or row).
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.SortField.sortOn
+  - uid: 'excel!Excel.SortField#sortOn:member'
     summary: |-
       Represents the type of sorting of this condition.
 

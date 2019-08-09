@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableRowCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableRowCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.TableRowCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.TableRowCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.TableRowCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeFont
+  - uid: 'excel!Excel.ShapeFont:class'
     summary: |-
       Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
 
@@ -12,22 +12,22 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeFont.bold
-      - excel.Excel.ShapeFont.color
-      - excel.Excel.ShapeFont.context
-      - excel.Excel.ShapeFont.italic
-      - excel.Excel.ShapeFont.load
-      - excel.Excel.ShapeFont.load_1
-      - excel.Excel.ShapeFont.load_2
-      - excel.Excel.ShapeFont.name
-      - excel.Excel.ShapeFont.set
-      - excel.Excel.ShapeFont.set_1
-      - excel.Excel.ShapeFont.size
-      - excel.Excel.ShapeFont.toJSON
-      - excel.Excel.ShapeFont.underline
-  - uid: excel.Excel.ShapeFont.bold
+      - 'excel!Excel.ShapeFont#bold:member'
+      - 'excel!Excel.ShapeFont#color:member'
+      - 'excel!Excel.ShapeFont#context:member'
+      - 'excel!Excel.ShapeFont#italic:member'
+      - 'excel!Excel.ShapeFont#load:member(1)'
+      - 'excel!Excel.ShapeFont#load:member(2)'
+      - 'excel!Excel.ShapeFont#load:member(3)'
+      - 'excel!Excel.ShapeFont#name:member'
+      - 'excel!Excel.ShapeFont#set:member(1)'
+      - 'excel!Excel.ShapeFont#set:member(2)'
+      - 'excel!Excel.ShapeFont#size:member'
+      - 'excel!Excel.ShapeFont#toJSON:member(1)'
+      - 'excel!Excel.ShapeFont#underline:member'
+  - uid: 'excel!Excel.ShapeFont#bold:member'
     summary: |-
       Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ShapeFont.color
+  - uid: 'excel!Excel.ShapeFont#color:member'
     summary: >-
       The HTML color code representation of the text color (e.g. "\#FF0000" represents red). Returns null if the
       TextRange includes text fragments with different colors.
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ShapeFont.context
+  - uid: 'excel!Excel.ShapeFont#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -72,8 +72,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ShapeFont.italic
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ShapeFont#italic:member'
     summary: >-
       Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text
       fragments.
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ShapeFont.load
+  - uid: 'excel!Excel.ShapeFont#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -121,14 +121,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ShapeFontLoadOptions): Excel.ShapeFont;'
       return:
         type:
-          - excel.Excel.ShapeFont
+          - 'excel!Excel.ShapeFont:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ShapeFontLoadOptions
-  - uid: excel.Excel.ShapeFont.load_1
+            - 'excel!Excel.Interfaces.ShapeFontLoadOptions:interface'
+  - uid: 'excel!Excel.ShapeFont#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -141,14 +141,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ShapeFont;'
       return:
         type:
-          - excel.Excel.ShapeFont
+          - 'excel!Excel.ShapeFont:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ShapeFont.load_2
+  - uid: 'excel!Excel.ShapeFont#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -161,7 +161,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ShapeFont;'
       return:
         type:
-          - excel.Excel.ShapeFont
+          - 'excel!Excel.ShapeFont:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -170,7 +170,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ShapeFont.name
+  - uid: 'excel!Excel.ShapeFont#name:member'
     summary: >-
       Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the
       corresponding font name; otherwise it is the Latin font name.
@@ -187,7 +187,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ShapeFont.set
+  - uid: 'excel!Excel.ShapeFont#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -217,7 +217,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ShapeFont.set_1
+  - uid: 'excel!Excel.ShapeFont#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -234,8 +234,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ShapeFont
-  - uid: excel.Excel.ShapeFont.size
+            - 'excel!Excel.ShapeFont:class'
+  - uid: 'excel!Excel.ShapeFont#size:member'
     summary: >-
       Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different
       font sizes.
@@ -252,7 +252,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ShapeFont.toJSON
+  - uid: 'excel!Excel.ShapeFont#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -268,9 +268,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ShapeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeFontData
+          - 'excel!Excel.Interfaces.ShapeFontData:interface'
         description: ''
-  - uid: excel.Excel.ShapeFont.underline
+  - uid: 'excel!Excel.ShapeFont#underline:member'
     summary: >-
       Type of underline applied to the font. Returns null if the TextRange includes text fragments with different
       underline styles. See Excel.ShapeFontUnderlineStyle for details.

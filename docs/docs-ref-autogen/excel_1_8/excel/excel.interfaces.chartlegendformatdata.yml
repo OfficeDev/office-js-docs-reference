@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendFormatData
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatData:interface'
     summary: An interface describing the data returned by calling "chartLegendFormat.toJSON()".
     name: Excel.Interfaces.ChartLegendFormatData
     fullName: Excel.Interfaces.ChartLegendFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendFormatData.border
-      - excel.Excel.Interfaces.ChartLegendFormatData.font
-  - uid: excel.Excel.Interfaces.ChartLegendFormatData.border
+      - 'excel!Excel.Interfaces.ChartLegendFormatData#border:member'
+      - 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatData#border:member'
     summary: |-
       Represents the border format, which includes color, linestyle, and weight. Read-only.
 
@@ -25,8 +25,8 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
-  - uid: excel.Excel.Interfaces.ChartLegendFormatData.font
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartLegendFormatData#font:member'
     summary: |-
       Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.
 
@@ -40,4 +40,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
+          - 'excel!Excel.Interfaces.ChartFontData:interface'

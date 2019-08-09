@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ContentControl
+  - uid: 'word!Word.ContentControl:class'
     summary: >-
       Represents a content control. Content controls are bounded and potentially labeled regions in a document that
       serve as containers for specific types of content. Individual content controls may contain contents such as
@@ -15,75 +15,75 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.ContentControl.appearance
-      - word.Word.ContentControl.cannotDelete
-      - word.Word.ContentControl.cannotEdit
-      - word.Word.ContentControl.clear
-      - word.Word.ContentControl.color
-      - word.Word.ContentControl.contentControls
-      - word.Word.ContentControl.context
-      - word.Word.ContentControl.delete
-      - word.Word.ContentControl.font
-      - word.Word.ContentControl.getHtml
-      - word.Word.ContentControl.getOoxml
-      - word.Word.ContentControl.getRange
-      - word.Word.ContentControl.getRange_1
-      - word.Word.ContentControl.getTextRanges
-      - word.Word.ContentControl.id
-      - word.Word.ContentControl.inlinePictures
-      - word.Word.ContentControl.insertBreak
-      - word.Word.ContentControl.insertBreak_1
-      - word.Word.ContentControl.insertFileFromBase64
-      - word.Word.ContentControl.insertFileFromBase64_1
-      - word.Word.ContentControl.insertHtml
-      - word.Word.ContentControl.insertHtml_1
-      - word.Word.ContentControl.insertInlinePictureFromBase64
-      - word.Word.ContentControl.insertInlinePictureFromBase64_1
-      - word.Word.ContentControl.insertOoxml
-      - word.Word.ContentControl.insertOoxml_1
-      - word.Word.ContentControl.insertParagraph
-      - word.Word.ContentControl.insertParagraph_1
-      - word.Word.ContentControl.insertTable
-      - word.Word.ContentControl.insertTable_1
-      - word.Word.ContentControl.insertText
-      - word.Word.ContentControl.insertText_1
-      - word.Word.ContentControl.lists
-      - word.Word.ContentControl.load
-      - word.Word.ContentControl.load_1
-      - word.Word.ContentControl.load_2
-      - word.Word.ContentControl.onDataChanged
-      - word.Word.ContentControl.onDeleted
-      - word.Word.ContentControl.onSelectionChanged
-      - word.Word.ContentControl.paragraphs
-      - word.Word.ContentControl.parentBody
-      - word.Word.ContentControl.parentContentControl
-      - word.Word.ContentControl.parentContentControlOrNullObject
-      - word.Word.ContentControl.parentTable
-      - word.Word.ContentControl.parentTableCell
-      - word.Word.ContentControl.parentTableCellOrNullObject
-      - word.Word.ContentControl.parentTableOrNullObject
-      - word.Word.ContentControl.placeholderText
-      - word.Word.ContentControl.removeWhenEdited
-      - word.Word.ContentControl.search
-      - word.Word.ContentControl.select
-      - word.Word.ContentControl.select_1
-      - word.Word.ContentControl.set
-      - word.Word.ContentControl.set_1
-      - word.Word.ContentControl.split
-      - word.Word.ContentControl.style
-      - word.Word.ContentControl.styleBuiltIn
-      - word.Word.ContentControl.subtype
-      - word.Word.ContentControl.tables
-      - word.Word.ContentControl.tag
-      - word.Word.ContentControl.text
-      - word.Word.ContentControl.title
-      - word.Word.ContentControl.toJSON
-      - word.Word.ContentControl.track
-      - word.Word.ContentControl.type
-      - word.Word.ContentControl.untrack
-  - uid: word.Word.ContentControl.appearance
+      - 'word!Word.ContentControl#appearance:member'
+      - 'word!Word.ContentControl#cannotDelete:member'
+      - 'word!Word.ContentControl#cannotEdit:member'
+      - 'word!Word.ContentControl#clear:member(1)'
+      - 'word!Word.ContentControl#color:member'
+      - 'word!Word.ContentControl#contentControls:member'
+      - 'word!Word.ContentControl#context:member'
+      - 'word!Word.ContentControl#delete:member(1)'
+      - 'word!Word.ContentControl#font:member'
+      - 'word!Word.ContentControl#getHtml:member(1)'
+      - 'word!Word.ContentControl#getOoxml:member(1)'
+      - 'word!Word.ContentControl#getRange:member(1)'
+      - 'word!Word.ContentControl#getRange:member(2)'
+      - 'word!Word.ContentControl#getTextRanges:member(1)'
+      - 'word!Word.ContentControl#id:member'
+      - 'word!Word.ContentControl#inlinePictures:member'
+      - 'word!Word.ContentControl#insertBreak:member(1)'
+      - 'word!Word.ContentControl#insertBreak:member(2)'
+      - 'word!Word.ContentControl#insertFileFromBase64:member(1)'
+      - 'word!Word.ContentControl#insertFileFromBase64:member(2)'
+      - 'word!Word.ContentControl#insertHtml:member(1)'
+      - 'word!Word.ContentControl#insertHtml:member(2)'
+      - 'word!Word.ContentControl#insertInlinePictureFromBase64:member(1)'
+      - 'word!Word.ContentControl#insertInlinePictureFromBase64:member(2)'
+      - 'word!Word.ContentControl#insertOoxml:member(1)'
+      - 'word!Word.ContentControl#insertOoxml:member(2)'
+      - 'word!Word.ContentControl#insertParagraph:member(1)'
+      - 'word!Word.ContentControl#insertParagraph:member(2)'
+      - 'word!Word.ContentControl#insertTable:member(1)'
+      - 'word!Word.ContentControl#insertTable:member(2)'
+      - 'word!Word.ContentControl#insertText:member(1)'
+      - 'word!Word.ContentControl#insertText:member(2)'
+      - 'word!Word.ContentControl#lists:member'
+      - 'word!Word.ContentControl#load:member(1)'
+      - 'word!Word.ContentControl#load:member(2)'
+      - 'word!Word.ContentControl#load:member(3)'
+      - 'word!Word.ContentControl#onDataChanged:member'
+      - 'word!Word.ContentControl#onDeleted:member'
+      - 'word!Word.ContentControl#onSelectionChanged:member'
+      - 'word!Word.ContentControl#paragraphs:member'
+      - 'word!Word.ContentControl#parentBody:member'
+      - 'word!Word.ContentControl#parentContentControl:member'
+      - 'word!Word.ContentControl#parentContentControlOrNullObject:member'
+      - 'word!Word.ContentControl#parentTable:member'
+      - 'word!Word.ContentControl#parentTableCell:member'
+      - 'word!Word.ContentControl#parentTableCellOrNullObject:member'
+      - 'word!Word.ContentControl#parentTableOrNullObject:member'
+      - 'word!Word.ContentControl#placeholderText:member'
+      - 'word!Word.ContentControl#removeWhenEdited:member'
+      - 'word!Word.ContentControl#search:member(1)'
+      - 'word!Word.ContentControl#select:member(1)'
+      - 'word!Word.ContentControl#select:member(2)'
+      - 'word!Word.ContentControl#set:member(1)'
+      - 'word!Word.ContentControl#set:member(2)'
+      - 'word!Word.ContentControl#split:member(1)'
+      - 'word!Word.ContentControl#style:member'
+      - 'word!Word.ContentControl#styleBuiltIn:member'
+      - 'word!Word.ContentControl#subtype:member'
+      - 'word!Word.ContentControl#tables:member'
+      - 'word!Word.ContentControl#tag:member'
+      - 'word!Word.ContentControl#text:member'
+      - 'word!Word.ContentControl#title:member'
+      - 'word!Word.ContentControl#toJSON:member(1)'
+      - 'word!Word.ContentControl#track:member(1)'
+      - 'word!Word.ContentControl#type:member'
+      - 'word!Word.ContentControl#untrack:member(1)'
+  - uid: 'word!Word.ContentControl#appearance:member'
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
 
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
-  - uid: word.Word.ContentControl.cannotDelete
+  - uid: 'word!Word.ContentControl#cannotDelete:member'
     summary: >-
       Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.ContentControl.cannotEdit
+  - uid: 'word!Word.ContentControl#cannotEdit:member'
     summary: |-
       Gets or sets a value that indicates whether the user can edit the contents of the content control.
 
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.ContentControl.clear
+  - uid: 'word!Word.ContentControl#clear:member(1)'
     summary: |-
       Clears the contents of the content control. The user can perform the undo operation on the cleared content.
 
@@ -145,48 +145,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the content controls collection.
-              contentControls.load('text');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  if (contentControls.items.length === 0) {
-                      console.log("There isn't a content control in this document.");
-                  } else {
-                      
-                      // Queue a command to clear the contents of the first content control.
-                      contentControls.items[0].clear();
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync().then(function () {
-                          console.log('Content control cleared of contents.');
-                      });      
-                  }
-                      
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.ContentControl.color
+        description: ''
+  - uid: 'word!Word.ContentControl#color:member'
     summary: |-
       Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
 
@@ -201,7 +161,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.ContentControl.contentControls
+  - uid: 'word!Word.ContentControl#contentControls:member'
     summary: |-
       Gets the collection of content control objects in the content control. Read-only.
 
@@ -215,8 +175,8 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-  - uid: word.Word.ContentControl.context
+          - 'word!Word.ContentControlCollection:class'
+  - uid: 'word!Word.ContentControl#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -229,8 +189,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.ContentControl.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.ContentControl#delete:member(1)'
     summary: |-
       Deletes the content control and its content. If keepContent is set to true, the content is not deleted.
 
@@ -245,48 +205,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the content controls collection.
-              contentControls.load('text');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  if (contentControls.items.length === 0) {
-                      console.log("There isn't a content control in this document.");
-                  } else {
-                      
-                      // Queue a command to delete the first content control. The
-                      // contents will remain in the document.
-                      contentControls.items[0].delete(true);
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync().then(function () {
-                          console.log('Content control cleared of contents.');
-                      });      
-                  }
-                      
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: keepContent
           description: >-
@@ -294,7 +213,7 @@ items:
             true, the content is not deleted.
           type:
             - boolean
-  - uid: word.Word.ContentControl.font
+  - uid: 'word!Word.ContentControl#font:member'
     summary: >-
       Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -310,8 +229,8 @@ items:
       content: 'readonly font: Word.Font;'
       return:
         type:
-          - word.Word.Font
-  - uid: word.Word.ContentControl.getHtml
+          - 'word!Word.Font:class'
+  - uid: 'word!Word.ContentControl#getHtml:member(1)'
     summary: >-
       Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the
       formatting will be a close, but not exact, match to the formatting of the document. This method does not return
@@ -330,48 +249,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection that contains a specific tag.
-              var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
-              
-              // Queue a command to load the tag property for all of content controls. 
-              context.load(contentControlsWithTag, 'tag');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTag.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to get the HTML contents of the first content control.
-                      var html = contentControlsWithTag.items[0].getHtml();
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Content control HTML: ' + html.value);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.ContentControl.getOoxml
+        description: ''
+  - uid: 'word!Word.ContentControl#getOoxml:member(1)'
     summary: |-
       Gets the Office Open XML (OOXML) representation of the content control object.
 
@@ -386,48 +265,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to get the OOXML contents of the first content control.
-                      var ooxml = contentControls.items[0].getOoxml();
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Content control OOXML: ' + ooxml.value);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.ContentControl.getRange
+        description: ''
+  - uid: 'word!Word.ContentControl#getRange:member(1)'
     summary: |-
       Gets the whole content control, or the starting or ending point of the content control, as a range.
 
@@ -441,14 +280,14 @@ items:
       content: 'getRange(rangeLocation?: Word.RangeLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
           type:
-            - word.Word.RangeLocation
-  - uid: word.Word.ContentControl.getRange_1
+            - 'word!Word.RangeLocation:enum'
+  - uid: 'word!Word.ContentControl#getRange:member(2)'
     summary: |-
       Gets the whole content control, or the starting or ending point of the content control, as a range.
 
@@ -462,14 +301,14 @@ items:
       content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: rangeLocationString
           description: 'Optional. The range location can be ''Whole'', ''Before'', ''Start'', ''End'', ''After'', or ''Content''.'
           type:
             - '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
-  - uid: word.Word.ContentControl.getTextRanges
+  - uid: 'word!Word.ContentControl#getTextRanges:member(1)'
     summary: |-
       Gets the text ranges in the content control by using punctuation marks and/or other ending marks.
 
@@ -483,7 +322,7 @@ items:
       content: 'getTextRanges(endingMarks: string[], trimSpacing?: boolean): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: endingMarks
@@ -497,7 +336,7 @@ items:
             indicates that spacing characters at the start and end of the ranges are included in the range collection.
           type:
             - boolean
-  - uid: word.Word.ContentControl.id
+  - uid: 'word!Word.ContentControl#id:member'
     summary: |-
       Gets an integer that represents the content control identifier. Read-only.
 
@@ -512,7 +351,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.ContentControl.inlinePictures
+  - uid: 'word!Word.ContentControl#inlinePictures:member'
     summary: >-
       Gets the collection of inlinePicture objects in the content control. The collection does not include floating
       images. Read-only.
@@ -528,8 +367,8 @@ items:
       content: 'readonly inlinePictures: Word.InlinePictureCollection;'
       return:
         type:
-          - word.Word.InlinePictureCollection
-  - uid: word.Word.ContentControl.insertBreak
+          - 'word!Word.InlinePictureCollection:class'
+  - uid: 'word!Word.ContentControl#insertBreak:member(1)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
       'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell'
@@ -552,12 +391,12 @@ items:
         - id: breakType
           description: Required. Type of break.
           type:
-            - word.Word.BreakType
+            - 'word!Word.BreakType:enum'
         - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertBreak_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertBreak:member(2)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End',
       'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell'
@@ -577,48 +416,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a commmand to load the id property for all of content controls. 
-              context.load(contentControls, 'id');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion. We now will have 
-              // access to the content control collection.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to insert a page break after the first content control. 
-                      contentControls.items[0].insertBreak('page', "After");
-                      
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion. 
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted a page break after the first content control.');    
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: breakTypeString
           description: Required. Type of break.
@@ -628,7 +426,7 @@ items:
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.insertFileFromBase64
+  - uid: 'word!Word.ContentControl#insertFileFromBase64:member(1)'
     summary: >-
       Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -644,7 +442,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -656,8 +454,8 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertFileFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertFileFromBase64:member(2)'
     summary: >-
       Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -675,7 +473,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -688,7 +486,7 @@ items:
             'RichTextTableRow' content controls.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.insertHtml
+  - uid: 'word!Word.ContentControl#insertHtml:member(1)'
     summary: >-
       Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -704,7 +502,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: html
@@ -716,8 +514,8 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertHtml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertHtml:member(2)'
     summary: >-
       Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -733,50 +531,8 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to put HTML into the contents of the first content control.
-                      contentControls.items[0].insertHtml(
-                          '<strong>HTML content inserted into the content control.</strong>',
-                          'Start');
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted HTML in the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.Range:class'
+        description: ''
       parameters:
         - id: html
           description: Required. The HTML to be inserted in to the content control.
@@ -788,7 +544,7 @@ items:
             'RichTextTableRow' content controls.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.insertInlinePictureFromBase64
+  - uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(1)'
     summary: >-
       Inserts an inline picture into the content control at the specified location. The insertLocation value can be
       'Replace', 'Start', or 'End'.
@@ -806,7 +562,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -818,8 +574,8 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertInlinePictureFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertInlinePictureFromBase64:member(2)'
     summary: >-
       Inserts an inline picture into the content control at the specified location. The insertLocation value can be
       'Replace', 'Start', or 'End'.
@@ -837,7 +593,7 @@ items:
         "End" | "Replace"): Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -850,7 +606,7 @@ items:
             'RichTextTableRow' content controls.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.insertOoxml
+  - uid: 'word!Word.ContentControl#insertOoxml:member(1)'
     summary: >-
       Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -866,7 +622,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -878,8 +634,8 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertOoxml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertOoxml:member(2)'
     summary: >-
       Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -895,51 +651,8 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to put OOXML into the contents of the first content control.
-                      contentControls.items[0].insertOoxml("<pkg:package xmlns:pkg='http://schemas.microsoft.com/office/2006/xmlPackage'><pkg:part pkg:name='/_rels/.rels' pkg:contentType='application/vnd.openxmlformats-package.relationships+xml' pkg:padding='512'><pkg:xmlData><Relationships xmlns='http://schemas.openxmlformats.org/package/2006/relationships'><Relationship Id='rId1' Type='http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument' Target='word/document.xml'/></Relationships></pkg:xmlData></pkg:part><pkg:part pkg:name='/word/document.xml' pkg:contentType='application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml'><pkg:xmlData><w:document xmlns:w='http://schemas.openxmlformats.org/wordprocessingml/2006/main' ><w:body><w:p><w:pPr><w:spacing w:before='360' w:after='0' w:line='480' w:lineRule='auto'/><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr></w:pPr><w:r><w:rPr><w:color w:val='70AD47' w:themeColor='accent6'/><w:sz w:val='28'/></w:rPr><w:t>This text has formatting directly applied to achieve its font size, color, line spacing, and paragraph spacing.</w:t></w:r></w:p></w:body></w:document></pkg:xmlData></pkg:part></pkg:package>", "End");
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted OOXML in the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // Read "Create better add-ins for Word with Office Open XML" for guidance on working with OOXML.
-          // https://docs.microsoft.com/office/dev/add-ins/word/create-better-add-ins-for-word-with-office-open-xml
-          ```
+          - 'word!Word.Range:class'
+        description: ''
       parameters:
         - id: ooxml
           description: Required. The OOXML to be inserted in to the content control.
@@ -951,7 +664,7 @@ items:
             'RichTextTableRow' content controls.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.insertParagraph
+  - uid: 'word!Word.ContentControl#insertParagraph:member(1)'
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
       'After'.
@@ -967,7 +680,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -979,8 +692,8 @@ items:
             Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertParagraph_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertParagraph:member(2)'
     summary: >-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or
       'After'.
@@ -998,48 +711,8 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to insert a paragraph after the first content control. 
-                      contentControls.items[0].insertParagraph('Text of the inserted paragraph.', 'After');
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Inserted a paragraph after the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.Paragraph:class'
+        description: ''
       parameters:
         - id: paragraphText
           description: Required. The paragraph text to be inserted.
@@ -1051,7 +724,7 @@ items:
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.insertTable
+  - uid: 'word!Word.ContentControl#insertTable:member(1)'
     summary: >-
       Inserts a table with the specified number of rows and columns into, or next to, a content control. The
       insertLocation value can be 'Start', 'End', 'Before', or 'After'.
@@ -1069,7 +742,7 @@ items:
         Word.Table;
       return:
         type:
-          - word.Word.Table
+          - 'word!Word.Table:class'
         description: ''
       parameters:
         - id: rowCount
@@ -1085,12 +758,12 @@ items:
             Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with
             'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.
           type:
-            - word.Word.InsertLocation
+            - 'word!Word.InsertLocation:enum'
         - id: values
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.ContentControl.insertTable_1
+  - uid: 'word!Word.ContentControl#insertTable:member(2)'
     summary: >-
       Inserts a table with the specified number of rows and columns into, or next to, a content control. The
       insertLocation value can be 'Start', 'End', 'Before', or 'After'.
@@ -1108,7 +781,7 @@ items:
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
-          - word.Word.Table
+          - 'word!Word.Table:class'
         description: ''
       parameters:
         - id: rowCount
@@ -1129,7 +802,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.ContentControl.insertText
+  - uid: 'word!Word.ContentControl#insertText:member(1)'
     summary: >-
       Inserts text into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -1145,7 +818,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: text
@@ -1157,8 +830,8 @@ items:
             Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and
             'RichTextTableRow' content controls.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.ContentControl.insertText_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.ContentControl#insertText:member(2)'
     summary: >-
       Inserts text into the content control at the specified location. The insertLocation value can be 'Replace',
       'Start', or 'End'.
@@ -1174,51 +847,8 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to replace text in the first content control. 
-                      contentControls.items[0].insertText('Replaced text in the first content control.', 'Replace');
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Replaced text in the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Silly stories add-in sample shows how to use the insertText method.
-          // https://aka.ms/sillystorywordaddin
-          ```
+          - 'word!Word.Range:class'
+        description: ''
       parameters:
         - id: text
           description: Required. The text to be inserted in to the content control.
@@ -1230,7 +860,7 @@ items:
             'RichTextTableRow' content controls.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.ContentControl.lists
+  - uid: 'word!Word.ContentControl#lists:member'
     summary: |-
       Gets the collection of list objects in the content control. Read-only.
 
@@ -1244,8 +874,8 @@ items:
       content: 'readonly lists: Word.ListCollection;'
       return:
         type:
-          - word.Word.ListCollection
-  - uid: word.Word.ContentControl.load
+          - 'word!Word.ListCollection:class'
+  - uid: 'word!Word.ContentControl#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -1276,14 +906,14 @@ items:
       content: 'load(option?: Word.Interfaces.ContentControlLoadOptions): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.ContentControl.load_1
+            - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.ContentControl#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -1296,83 +926,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Load all of the content control properties
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to load the properties on the first content control. 
-                      contentControls.items[0].load(  'appearance,' +
-                                                      'cannotDelete,' +
-                                                      'cannotEdit,' +
-                                                      'id,' +
-                                                      'placeHolderText,' +
-                                                      'removeWhenEdited,' +
-                                                      'title,' +
-                                                      'text,' +
-                                                      'type,' +
-                                                      'style,' +
-                                                      'tag,' +
-                                                      'font/size,' +
-                                                      'font/name,' +
-                                                      'font/color');             
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Property values of the first content control:' + 
-                                  '   ----- appearance: ' + contentControls.items[0].appearance + 
-                                  '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
-                                  '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
-                                  '   ----- color: ' + contentControls.items[0].color +
-                                  '   ----- id: ' + contentControls.items[0].id +
-                                  '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
-                                  '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
-                                  '   ----- title: ' + contentControls.items[0].title +
-                                  '   ----- text: ' + contentControls.items[0].text +
-                                  '   ----- type: ' + contentControls.items[0].type +
-                                  '   ----- style: ' + contentControls.items[0].style +
-                                  '   ----- tag: ' + contentControls.items[0].tag +
-                                  '   ----- font size: ' + contentControls.items[0].font.size +
-                                  '   ----- font name: ' + contentControls.items[0].font.name +
-                                  '   ----- font color: ' + contentControls.items[0].font.color);
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.ContentControl:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.ContentControl.load_2
+  - uid: 'word!Word.ContentControl#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -1385,7 +946,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1394,7 +955,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.ContentControl.onDataChanged
+  - uid: 'word!Word.ContentControl#onDataChanged:member'
     summary: >-
       Occurs when data within the content control are changed. To get the new text, load this content control in the
       handler. To get the old text, do not load it.
@@ -1413,7 +974,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
-  - uid: word.Word.ContentControl.onDeleted
+  - uid: 'word!Word.ContentControl#onDeleted:member'
     summary: >-
       Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't
       be able to get its original properties.
@@ -1432,7 +993,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
-  - uid: word.Word.ContentControl.onSelectionChanged
+  - uid: 'word!Word.ContentControl#onSelectionChanged:member'
     summary: >-
       Occurs when selection within the content control is changed.
 
@@ -1450,7 +1011,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
-  - uid: word.Word.ContentControl.paragraphs
+  - uid: 'word!Word.ContentControl#paragraphs:member'
     summary: |-
       Get the collection of paragraph objects in the content control. Read-only.
 
@@ -1464,8 +1025,8 @@ items:
       content: 'readonly paragraphs: Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
-  - uid: word.Word.ContentControl.parentBody
+          - 'word!Word.ParagraphCollection:class'
+  - uid: 'word!Word.ContentControl#parentBody:member'
     summary: |-
       Gets the parent body of the content control. Read-only.
 
@@ -1479,8 +1040,8 @@ items:
       content: 'readonly parentBody: Word.Body;'
       return:
         type:
-          - word.Word.Body
-  - uid: word.Word.ContentControl.parentContentControl
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.ContentControl#parentContentControl:member'
     summary: >-
       Gets the content control that contains the content control. Throws if there isn't a parent content control.
       Read-only.
@@ -1496,8 +1057,8 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.ContentControl.parentContentControlOrNullObject
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.ContentControl#parentContentControlOrNullObject:member'
     summary: >-
       Gets the content control that contains the content control. Returns a null object if there isn't a parent content
       control. Read-only.
@@ -1513,8 +1074,8 @@ items:
       content: 'readonly parentContentControlOrNullObject: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.ContentControl.parentTable
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.ContentControl#parentTable:member'
     summary: |-
       Gets the table that contains the content control. Throws if it is not contained in a table. Read-only.
 
@@ -1528,8 +1089,8 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
-  - uid: word.Word.ContentControl.parentTableCell
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.ContentControl#parentTableCell:member'
     summary: |-
       Gets the table cell that contains the content control. Throws if it is not contained in a table cell. Read-only.
 
@@ -1543,8 +1104,8 @@ items:
       content: 'readonly parentTableCell: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
-  - uid: word.Word.ContentControl.parentTableCellOrNullObject
+          - 'word!Word.TableCell:class'
+  - uid: 'word!Word.ContentControl#parentTableCellOrNullObject:member'
     summary: >-
       Gets the table cell that contains the content control. Returns a null object if it is not contained in a table
       cell. Read-only.
@@ -1560,8 +1121,8 @@ items:
       content: 'readonly parentTableCellOrNullObject: Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
-  - uid: word.Word.ContentControl.parentTableOrNullObject
+          - 'word!Word.TableCell:class'
+  - uid: 'word!Word.ContentControl#parentTableOrNullObject:member'
     summary: >-
       Gets the table that contains the content control. Returns a null object if it is not contained in a table.
       Read-only.
@@ -1577,8 +1138,8 @@ items:
       content: 'readonly parentTableOrNullObject: Word.Table;'
       return:
         type:
-          - word.Word.Table
-  - uid: word.Word.ContentControl.placeholderText
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.ContentControl#placeholderText:member'
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
       is empty.
@@ -1595,7 +1156,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.ContentControl.removeWhenEdited
+  - uid: 'word!Word.ContentControl#removeWhenEdited:member'
     summary: >-
       Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
@@ -1612,7 +1173,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.ContentControl.search
+  - uid: 'word!Word.ContentControl#search:member(1)'
     summary: >-
       Performs a search with the specified SearchOptions on the scope of the content control object. The search results
       are a collection of range objects.
@@ -1637,48 +1198,8 @@ items:
                 }): Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the content controls collection.
-              var contentControls = context.document.contentControls;
-              
-              // Queue a command to load the id property for all of the content controls. 
-              context.load(contentControls, 'id');
-               
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControls.items.length === 0) {
-                      console.log('No content control found.');
-                  }
-                  else {
-                      // Queue a command to select the first content control.
-                      contentControls.items[0].select();
-                  
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync()
-                          .then(function () {
-                              console.log('Selected the first content control.');
-                      });
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.RangeCollection:class'
+        description: ''
       parameters:
         - id: searchText
           description: Required. The search text.
@@ -1697,7 +1218,7 @@ items:
                           matchWholeWord?: boolean;
                           matchWildcards?: boolean;
                       }
-  - uid: word.Word.ContentControl.select
+  - uid: 'word!Word.ContentControl#select:member(1)'
     summary: |-
       Selects the content control. This causes Word to scroll to the selection.
 
@@ -1717,8 +1238,8 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
-  - uid: word.Word.ContentControl.select_1
+            - 'word!Word.SelectionMode:enum'
+  - uid: 'word!Word.ContentControl#select:member(2)'
     summary: |-
       Selects the content control. This causes Word to scroll to the selection.
 
@@ -1739,7 +1260,7 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
-  - uid: word.Word.ContentControl.set
+  - uid: 'word!Word.ContentControl#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1747,43 +1268,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Word.ContentControl): void`
-
-      #### Examples
-
-      ```typescript
-      // Adds title and colors to odd and even content controls and changes their appearance.
-      await Word.run(async (context) => {
-        // Gets the complete sentence (as range) associated with the insertion point.
-        let evenContentControls = context.document.contentControls.getByTag("even");
-        let oddContentControls = context.document.contentControls.getByTag("odd");
-        evenContentControls.load("length");
-        oddContentControls.load("length");
-
-        await context.sync();
-
-        for (let i = 0; i < evenContentControls.items.length; i++) {
-          // Change a few properties and append a paragraph
-          evenContentControls.items[i].set({
-            color: "red",
-            title: "Odd ContentControl #" + (i + 1),
-            appearance: "Tags"
-          });
-          evenContentControls.items[i].insertParagraph("This is an odd content control", "End");
-        }
-
-        for (let j = 0; j < oddContentControls.items.length; j++) {
-          // Change a few properties and append a paragraph
-          oddContentControls.items[j].set({
-            color: "green",
-            title: "Even ContentControl #" + (j + 1),
-            appearance: "Tags"
-          });
-          oddContentControls.items[j].insertHtml("This is an <b>even</b> content control", "End");
-        }
-
-        await context.sync();
-      });
-      ```
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -1806,7 +1290,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.ContentControl.set_1
+  - uid: 'word!Word.ContentControl#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1823,8 +1307,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.ContentControl
-  - uid: word.Word.ContentControl.split
+            - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.ContentControl#split:member(1)'
     summary: |-
       Splits the content control into child ranges by using delimiters.
 
@@ -1840,7 +1324,7 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: delimiters
@@ -1866,7 +1350,7 @@ items:
             indicates that spacing characters at the start and end of the ranges are included in the range collection.
           type:
             - boolean
-  - uid: word.Word.ContentControl.style
+  - uid: 'word!Word.ContentControl#style:member'
     summary: >-
       Gets or sets the style name for the content control. Use this property for custom styles and localized style
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -1883,7 +1367,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.ContentControl.styleBuiltIn
+  - uid: 'word!Word.ContentControl#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the content control. Use this property for built-in styles that are
       portable between locales. To use custom styles or localized style names, see the "style" property.
@@ -1964,7 +1448,7 @@ items:
             "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
             "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
             "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
-  - uid: word.Word.ContentControl.subtype
+  - uid: 'word!Word.ContentControl#subtype:member'
     summary: >-
       Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell',
       'RichTextTableRow' and 'RichTextTable' for rich text content controls. Read-only.
@@ -1989,7 +1473,7 @@ items:
             "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
             "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
             "RichText" | "PlainText"
-  - uid: word.Word.ContentControl.tables
+  - uid: 'word!Word.ContentControl#tables:member'
     summary: |-
       Gets the collection of table objects in the content control. Read-only.
 
@@ -2003,8 +1487,8 @@ items:
       content: 'readonly tables: Word.TableCollection;'
       return:
         type:
-          - word.Word.TableCollection
-  - uid: word.Word.ContentControl.tag
+          - 'word!Word.TableCollection:class'
+  - uid: 'word!Word.ContentControl#tag:member'
     summary: |-
       Gets or sets a tag to identify a content control.
 
@@ -2019,75 +1503,7 @@ items:
       return:
         type:
           - string
-        description: >-
-
-
-          #### Examples
-
-
-          ```javascript
-
-          // Run a batch operation against the Word object model.
-
-          Word.run(function (context) {
-              
-              // Create a proxy range object for the current selection.
-              var range = context.document.getSelection();
-              
-              // Queue a commmand to create the content control.
-              var myContentControl = range.insertContentControl();
-              myContentControl.tag = 'Customer-Address';
-              myContentControl.title = ' has t';
-              myContentControl.style = 'Heading 2';
-              myContentControl.insertText('One Microsoft Way, Redmond, WA 98052', 'Replace');
-              myContentControl.cannotEdit = true;
-              
-              // Queue a command to load the id property for the content control you created.
-              context.load(myContentControl, 'id');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Created content control with id: ' + myContentControl.id);
-              });  
-          })
-
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          ```
-
-          ```typescript
-
-          // Traverses each paragraph of the document and wraps a content control on each with either a even or odd
-          tags.
-
-          await Word.run(async (context) => {
-            let paragraphs = context.document.body.paragraphs;
-            paragraphs.load("$none"); // Don't need any properties; just wrap each paragraph with a content control.
-
-            await context.sync();
-
-            for (let i = 0; i < paragraphs.items.length; i++) {
-              let contentControl = paragraphs.items[i].insertContentControl();
-              // For even, tag "even".
-              if (i % 2 === 0) {
-                contentControl.tag = "even";
-              } else {
-                contentControl.tag = "odd";
-              }
-            }
-            console.log("Content controls inserted: " + paragraphs.items.length);
-
-            await context.sync();
-          });
-
-          ```
-  - uid: word.Word.ContentControl.text
+  - uid: 'word!Word.ContentControl#text:member'
     summary: |-
       Gets the text of the content control. Read-only.
 
@@ -2102,7 +1518,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.ContentControl.title
+  - uid: 'word!Word.ContentControl#title:member'
     summary: |-
       Gets or sets the title for a content control.
 
@@ -2117,7 +1533,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.ContentControl.toJSON
+  - uid: 'word!Word.ContentControl#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -2133,9 +1549,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ContentControlData;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlData
+          - 'word!Word.Interfaces.ContentControlData:interface'
         description: ''
-  - uid: word.Word.ContentControl.track
+  - uid: 'word!Word.ContentControl#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -2151,9 +1567,9 @@ items:
       content: 'track(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
-  - uid: word.Word.ContentControl.type
+  - uid: 'word!Word.ContentControl#type:member'
     summary: |-
       Gets the content control type. Only rich text content controls are supported currently. Read-only.
 
@@ -2176,7 +1592,7 @@ items:
             "RichTextTableRow" | "RichTextTable" | "PlainTextInline" | "PlainTextParagraph" | "Picture" |
             "BuildingBlockGallery" | "CheckBox" | "ComboBox" | "DropDownList" | "DatePicker" | "RepeatingSection" |
             "RichText" | "PlainText"
-  - uid: word.Word.ContentControl.untrack
+  - uid: 'word!Word.ContentControl#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -2191,5 +1607,5 @@ items:
       content: 'untrack(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''

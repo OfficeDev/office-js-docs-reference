@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.ItemCompose
+  - uid: 'outlook!Office.ItemCompose:interface'
     summary: >-
-      The compose mode of [Office.context.mailbox.item](xref:Outlook.Office.Item)<!-- -->.
+      The compose mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,24 +15,24 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Item
-    package: Outlook
+      - 'outlook!Office.Item:interface'
+    package: outlook!
     children:
-      - Outlook.Office.ItemCompose.addFileAttachmentAsync
-      - Outlook.Office.ItemCompose.addFileAttachmentAsync_1
-      - Outlook.Office.ItemCompose.addItemAttachmentAsync
-      - Outlook.Office.ItemCompose.addItemAttachmentAsync_1
-      - Outlook.Office.ItemCompose.close
-      - Outlook.Office.ItemCompose.getSelectedDataAsync
-      - Outlook.Office.ItemCompose.getSelectedDataAsync_1
-      - Outlook.Office.ItemCompose.removeAttachmentAsync
-      - Outlook.Office.ItemCompose.removeAttachmentAsync_1
-      - Outlook.Office.ItemCompose.saveAsync
-      - Outlook.Office.ItemCompose.saveAsync_1
-      - Outlook.Office.ItemCompose.setSelectedDataAsync
-      - Outlook.Office.ItemCompose.setSelectedDataAsync_1
-      - Outlook.Office.ItemCompose.subject
-  - uid: Outlook.Office.ItemCompose.addFileAttachmentAsync
+      - 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(1)'
+      - 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(2)'
+      - 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(1)'
+      - 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(2)'
+      - 'outlook!Office.ItemCompose#close:member(1)'
+      - 'outlook!Office.ItemCompose#getSelectedDataAsync:member(1)'
+      - 'outlook!Office.ItemCompose#getSelectedDataAsync:member(2)'
+      - 'outlook!Office.ItemCompose#removeAttachmentAsync:member(1)'
+      - 'outlook!Office.ItemCompose#removeAttachmentAsync:member(2)'
+      - 'outlook!Office.ItemCompose#saveAsync:member(1)'
+      - 'outlook!Office.ItemCompose#saveAsync:member(2)'
+      - 'outlook!Office.ItemCompose#setSelectedDataAsync:member(1)'
+      - 'outlook!Office.ItemCompose#setSelectedDataAsync:member(2)'
+      - 'outlook!Office.ItemCompose#subject:member'
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(1)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -106,7 +106,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.ItemCompose.addFileAttachmentAsync_1
+  - uid: 'outlook!Office.ItemCompose#addFileAttachmentAsync:member(2)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -173,7 +173,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.ItemCompose.addItemAttachmentAsync
+  - uid: 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(1)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -244,7 +244,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.ItemCompose.addItemAttachmentAsync_1
+  - uid: 'outlook!Office.ItemCompose#addItemAttachmentAsync:member(2)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -309,7 +309,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.ItemCompose.close
+  - uid: 'outlook!Office.ItemCompose#close:member(1)'
     summary: >-
       Closes the current item that is being composed
 
@@ -343,7 +343,7 @@ items:
         type:
           - void
         description: ''
-  - uid: Outlook.Office.ItemCompose.getSelectedDataAsync
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -396,7 +396,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: Outlook.Office.ItemCompose.getSelectedDataAsync_1
+  - uid: 'outlook!Office.ItemCompose#getSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -443,7 +443,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: Outlook.Office.ItemCompose.removeAttachmentAsync
+  - uid: 'outlook!Office.ItemCompose#removeAttachmentAsync:member(1)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -500,7 +500,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemCompose.removeAttachmentAsync_1
+  - uid: 'outlook!Office.ItemCompose#removeAttachmentAsync:member(2)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -551,7 +551,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemCompose.saveAsync
+  - uid: 'outlook!Office.ItemCompose#saveAsync:member(1)'
     summary: >-
       Asynchronously saves an item.
 
@@ -624,7 +624,7 @@ items:
             error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.ItemCompose.saveAsync_1
+  - uid: 'outlook!Office.ItemCompose#saveAsync:member(2)'
     summary: >-
       Asynchronously saves an item.
 
@@ -689,7 +689,7 @@ items:
             error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.ItemCompose.setSelectedDataAsync
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -750,7 +750,7 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemCompose.setSelectedDataAsync_1
+  - uid: 'outlook!Office.ItemCompose#setSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -798,7 +798,7 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemCompose.subject
+  - uid: 'outlook!Office.ItemCompose#subject:member'
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -822,4 +822,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Outlook.Office.Subject
+          - 'outlook!Office.Subject:interface'

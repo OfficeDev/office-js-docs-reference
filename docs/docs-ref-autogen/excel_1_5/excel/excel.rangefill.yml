@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RangeFill
+  - uid: 'excel!Excel.RangeFill:class'
     summary: |-
       Represents the background of a range object.
 
@@ -12,18 +12,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RangeFill.clear
-      - excel.Excel.RangeFill.color
-      - excel.Excel.RangeFill.context
-      - excel.Excel.RangeFill.load
-      - excel.Excel.RangeFill.load_1
-      - excel.Excel.RangeFill.load_2
-      - excel.Excel.RangeFill.set
-      - excel.Excel.RangeFill.set_1
-      - excel.Excel.RangeFill.toJSON
-  - uid: excel.Excel.RangeFill.clear
+      - 'excel!Excel.RangeFill#clear:member(1)'
+      - 'excel!Excel.RangeFill#color:member'
+      - 'excel!Excel.RangeFill#context:member'
+      - 'excel!Excel.RangeFill#load:member(1)'
+      - 'excel!Excel.RangeFill#load:member(2)'
+      - 'excel!Excel.RangeFill#load:member(3)'
+      - 'excel!Excel.RangeFill#set:member(1)'
+      - 'excel!Excel.RangeFill#set:member(2)'
+      - 'excel!Excel.RangeFill#toJSON:member(1)'
+  - uid: 'excel!Excel.RangeFill#clear:member(1)'
     summary: |-
       Resets the range background.
 
@@ -38,28 +38,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F:G";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var rangeFill = range.format.fill;
-              rangeFill.clear();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.RangeFill.color
+        description: ''
+  - uid: 'excel!Excel.RangeFill#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
@@ -76,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RangeFill.context
+  - uid: 'excel!Excel.RangeFill#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -89,8 +69,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RangeFill.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeFill#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -121,14 +101,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeFillLoadOptions): Excel.RangeFill;'
       return:
         type:
-          - excel.Excel.RangeFill
+          - 'excel!Excel.RangeFill:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeFillLoadOptions
-  - uid: excel.Excel.RangeFill.load_1
+            - 'excel!Excel.Interfaces.RangeFillLoadOptions:interface'
+  - uid: 'excel!Excel.RangeFill#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -141,51 +121,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeFill;'
       return:
         type:
-          - excel.Excel.RangeFill
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F:G";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var rangeFill = range.format.fill;
-              rangeFill.load('color');
-              return ctx.sync().then(function() {
-                  console.log(rangeFill.color);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // The example below sets fill color. 
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F:G";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.format.fill.color = '0000FF';
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.RangeFill:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeFill.load_2
+  - uid: 'excel!Excel.RangeFill#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -198,7 +141,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeFill;'
       return:
         type:
-          - excel.Excel.RangeFill
+          - 'excel!Excel.RangeFill:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -207,7 +150,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.RangeFill.set
+  - uid: 'excel!Excel.RangeFill#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -237,7 +180,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.RangeFill.set_1
+  - uid: 'excel!Excel.RangeFill#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -254,8 +197,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RangeFill
-  - uid: excel.Excel.RangeFill.toJSON
+            - 'excel!Excel.RangeFill:class'
+  - uid: 'excel!Excel.RangeFill#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -271,5 +214,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillData
+          - 'excel!Excel.Interfaces.RangeFillData:interface'
         description: ''

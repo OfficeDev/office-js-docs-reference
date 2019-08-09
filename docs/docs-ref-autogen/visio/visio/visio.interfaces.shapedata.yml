@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeData
+  - uid: 'visio!Visio.Interfaces.ShapeData:interface'
     summary: An interface describing the data returned by calling "shape.toJSON()".
     name: Visio.Interfaces.ShapeData
     fullName: Visio.Interfaces.ShapeData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeData.comments
-      - visio.Visio.Interfaces.ShapeData.hyperlinks
-      - visio.Visio.Interfaces.ShapeData.id
-      - visio.Visio.Interfaces.ShapeData.name
-      - visio.Visio.Interfaces.ShapeData.select
-      - visio.Visio.Interfaces.ShapeData.shapeDataItems
-      - visio.Visio.Interfaces.ShapeData.subShapes
-      - visio.Visio.Interfaces.ShapeData.text
-      - visio.Visio.Interfaces.ShapeData.view
-  - uid: visio.Visio.Interfaces.ShapeData.comments
+      - 'visio!Visio.Interfaces.ShapeData#comments:member'
+      - 'visio!Visio.Interfaces.ShapeData#hyperlinks:member'
+      - 'visio!Visio.Interfaces.ShapeData#id:member'
+      - 'visio!Visio.Interfaces.ShapeData#name:member'
+      - 'visio!Visio.Interfaces.ShapeData#select:member'
+      - 'visio!Visio.Interfaces.ShapeData#shapeDataItems:member'
+      - 'visio!Visio.Interfaces.ShapeData#subShapes:member'
+      - 'visio!Visio.Interfaces.ShapeData#text:member'
+      - 'visio!Visio.Interfaces.ShapeData#view:member'
+  - uid: 'visio!Visio.Interfaces.ShapeData#comments:member'
     summary: |-
       Returns the Comments Collection. Read-only.
 
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - 'Visio.Interfaces.CommentData[]'
-  - uid: visio.Visio.Interfaces.ShapeData.hyperlinks
+  - uid: 'visio!Visio.Interfaces.ShapeData#hyperlinks:member'
     summary: |-
       Returns the Hyperlinks collection for a Shape object. Read-only.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - 'Visio.Interfaces.HyperlinkData[]'
-  - uid: visio.Visio.Interfaces.ShapeData.id
+  - uid: 'visio!Visio.Interfaces.ShapeData#id:member'
     summary: |-
       Shape's identifier. Read-only.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.Interfaces.ShapeData.name
+  - uid: 'visio!Visio.Interfaces.ShapeData#name:member'
     summary: |-
       Shape's name. Read-only.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.ShapeData.select
+  - uid: 'visio!Visio.Interfaces.ShapeData#select:member'
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeData.shapeDataItems
+  - uid: 'visio!Visio.Interfaces.ShapeData#shapeDataItems:member'
     summary: |-
       Returns the Shape's Data Section. Read-only.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - 'Visio.Interfaces.ShapeDataItemData[]'
-  - uid: visio.Visio.Interfaces.ShapeData.subShapes
+  - uid: 'visio!Visio.Interfaces.ShapeData#subShapes:member'
     summary: |-
       Gets SubShape Collection. Read-only.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - 'Visio.Interfaces.ShapeData[]'
-  - uid: visio.Visio.Interfaces.ShapeData.text
+  - uid: 'visio!Visio.Interfaces.ShapeData#text:member'
     summary: |-
       Shape's text. Read-only.
 
@@ -138,7 +138,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Interfaces.ShapeData.view
+  - uid: 'visio!Visio.Interfaces.ShapeData#view:member'
     summary: |-
       Returns the view of the shape. Read-only.
 
@@ -152,4 +152,4 @@ items:
       content: 'view?: Visio.Interfaces.ShapeViewData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeViewData
+          - 'visio!Visio.Interfaces.ShapeViewData:interface'

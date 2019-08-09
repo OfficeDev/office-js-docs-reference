@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions:interface'
     summary: >-
-      Contains a collection of [Word.ContentControl](xref:word.Word.ContentControl) objects. Content controls are
+      Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
       bounded and potentially labeled regions in a document that serve as containers for specific types of content.
       Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
       Currently, only rich text content controls are supported.
@@ -14,24 +14,24 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.$all
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotDelete
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotEdit
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.color
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.font
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.id
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.placeholderText
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.removeWhenEdited
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.style
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.tag
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.text
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.title
-      - word.Word.Interfaces.ContentControlCollectionLoadOptions.type
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#appearance:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotEdit:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#color:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#removeWhenEdited:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#style:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#tag:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#text:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#title:member'
+      - 'word!Word.Interfaces.ContentControlCollectionLoadOptions#type:member'
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.appearance
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#appearance:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the appearance of the content control. The value can be
       'BoundingBox', 'Tags', or 'Hidden'.
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotDelete
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotDelete:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can delete the content
       control. Mutually exclusive with removeWhenEdited.
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.cannotEdit
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#cannotEdit:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a value that indicates whether the user can edit the contents of the
       content control.
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.color
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#color:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the color of the content control. Color is specified in '\#RRGGBB'
       format or by using the color name.
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.font
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#font:member'
     summary: >-
       For EACH ITEM in the collection: Gets the text format of the content control. Use this to get and set font name,
       size, color, and other properties.
@@ -126,8 +126,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.id
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Gets an integer that represents the content control identifier. Read-only.
 
@@ -142,7 +142,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.parentContentControl
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#parentContentControl:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control that contains the content control. Throws if there isn't
       a parent content control.
@@ -158,8 +158,8 @@ items:
       content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlLoadOptions
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.placeholderText
+          - 'word!Word.Interfaces.ContentControlLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#placeholderText:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the placeholder text of the content control. Dimmed text will be
       displayed when the content control is empty.
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.removeWhenEdited
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#removeWhenEdited:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets a value that indicates whether the content control is removed after
       it is edited. Mutually exclusive with cannotDelete.
@@ -193,7 +193,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.style
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the style name for the content control. Use this property for custom
       styles and localized style names. To use the built-in styles that are portable between locales, see the
@@ -211,7 +211,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.tag
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#tag:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets a tag to identify a content control.
 
@@ -226,7 +226,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.text
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#text:member'
     summary: |-
       For EACH ITEM in the collection: Gets the text of the content control. Read-only.
 
@@ -241,7 +241,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.title
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#title:member'
     summary: |-
       For EACH ITEM in the collection: Gets or sets the title for a content control.
 
@@ -256,7 +256,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlCollectionLoadOptions.type
+  - uid: 'word!Word.Interfaces.ContentControlCollectionLoadOptions#type:member'
     summary: >-
       For EACH ITEM in the collection: Gets the content control type. Only rich text content controls are supported
       currently. Read-only.

@@ -1,35 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData:interface'
     summary: 'An interface for updating data on the PageLayout object, for use in "pageLayout.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.PageLayoutUpdateData
     fullName: Excel.Interfaces.PageLayoutUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PageLayoutUpdateData.blackAndWhite
-      - excel.Excel.Interfaces.PageLayoutUpdateData.bottomMargin
-      - excel.Excel.Interfaces.PageLayoutUpdateData.centerHorizontally
-      - excel.Excel.Interfaces.PageLayoutUpdateData.centerVertically
-      - excel.Excel.Interfaces.PageLayoutUpdateData.draftMode
-      - excel.Excel.Interfaces.PageLayoutUpdateData.firstPageNumber
-      - excel.Excel.Interfaces.PageLayoutUpdateData.footerMargin
-      - excel.Excel.Interfaces.PageLayoutUpdateData.headerMargin
-      - excel.Excel.Interfaces.PageLayoutUpdateData.headersFooters
-      - excel.Excel.Interfaces.PageLayoutUpdateData.leftMargin
-      - excel.Excel.Interfaces.PageLayoutUpdateData.orientation
-      - excel.Excel.Interfaces.PageLayoutUpdateData.paperSize
-      - excel.Excel.Interfaces.PageLayoutUpdateData.printComments
-      - excel.Excel.Interfaces.PageLayoutUpdateData.printErrors
-      - excel.Excel.Interfaces.PageLayoutUpdateData.printGridlines
-      - excel.Excel.Interfaces.PageLayoutUpdateData.printHeadings
-      - excel.Excel.Interfaces.PageLayoutUpdateData.printOrder
-      - excel.Excel.Interfaces.PageLayoutUpdateData.rightMargin
-      - excel.Excel.Interfaces.PageLayoutUpdateData.topMargin
-      - excel.Excel.Interfaces.PageLayoutUpdateData.zoom
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.blackAndWhite
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#blackAndWhite:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#bottomMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#centerHorizontally:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#centerVertically:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#draftMode:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#firstPageNumber:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#footerMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#headerMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#leftMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printComments:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printGridlines:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printHeadings:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#rightMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#topMargin:member'
+      - 'excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#blackAndWhite:member'
     summary: |-
       Gets or sets the worksheet's black and white print option.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.bottomMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#bottomMargin:member'
     summary: |-
       Gets or sets the worksheet's bottom page margin to use for printing in points.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.centerHorizontally
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#centerHorizontally:member'
     summary: >-
       Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
       horizontally when it's printed.
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.centerVertically
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#centerVertically:member'
     summary: >-
       Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
       vertically when it's printed.
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.draftMode
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#draftMode:member'
     summary: |-
       Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.firstPageNumber
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#firstPageNumber:member'
     summary: |-
       Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - number | ""
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.footerMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#footerMargin:member'
     summary: |-
       Gets or sets the worksheet's footer margin, in points, for use when printing.
 
@@ -138,7 +138,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.headerMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#headerMargin:member'
     summary: |-
       Gets or sets the worksheet's header margin, in points, for use when printing.
 
@@ -153,7 +153,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.headersFooters
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#headersFooters:member'
     summary: |-
       Header and footer configuration for the worksheet.
 
@@ -167,8 +167,8 @@ items:
       content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.HeaderFooterGroupUpdateData
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.leftMargin
+          - 'excel!Excel.Interfaces.HeaderFooterGroupUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#leftMargin:member'
     summary: |-
       Gets or sets the worksheet's left margin, in points, for use when printing.
 
@@ -183,7 +183,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.orientation
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#orientation:member'
     summary: |-
       Gets or sets the worksheet's orientation of the page.
 
@@ -198,7 +198,7 @@ items:
       return:
         type:
           - Excel.PageOrientation | "Portrait" | "Landscape"
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.paperSize
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#paperSize:member'
     summary: |-
       Gets or sets the worksheet's paper size of the page.
 
@@ -225,7 +225,7 @@ items:
             "EnvelopeDL" | "EnvelopeC5" | "EnvelopeC3" | "EnvelopeC4" | "EnvelopeC6" | "EnvelopeC65" | "EnvelopeB4" |
             "EnvelopeB5" | "EnvelopeB6" | "EnvelopeItaly" | "EnvelopeMonarch" | "EnvelopePersonal" | "FanfoldUS" |
             "FanfoldStdGerman" | "FanfoldLegalGerman"
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.printComments
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printComments:member'
     summary: |-
       Gets or sets whether the worksheet's comments should be displayed when printing.
 
@@ -240,7 +240,7 @@ items:
       return:
         type:
           - Excel.PrintComments | "NoComments" | "EndSheet" | "InPlace"
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.printErrors
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printErrors:member'
     summary: |-
       Gets or sets the worksheet's print errors option.
 
@@ -255,7 +255,7 @@ items:
       return:
         type:
           - Excel.PrintErrorType | "AsDisplayed" | "Blank" | "Dash" | "NotAvailable"
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.printGridlines
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printGridlines:member'
     summary: |-
       Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
 
@@ -270,7 +270,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.printHeadings
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printHeadings:member'
     summary: |-
       Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
 
@@ -285,7 +285,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.printOrder
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#printOrder:member'
     summary: >-
       Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
       number printed.
@@ -302,7 +302,7 @@ items:
       return:
         type:
           - Excel.PrintOrder | "DownThenOver" | "OverThenDown"
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.rightMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#rightMargin:member'
     summary: |-
       Gets or sets the worksheet's right margin, in points, for use when printing.
 
@@ -317,7 +317,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.topMargin
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#topMargin:member'
     summary: |-
       Gets or sets the worksheet's top margin, in points, for use when printing.
 
@@ -332,7 +332,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.PageLayoutUpdateData.zoom
+  - uid: 'excel!Excel.Interfaces.PageLayoutUpdateData#zoom:member'
     summary: |-
       Gets or sets the worksheet's print zoom options.
 
@@ -346,4 +346,4 @@ items:
       content: 'zoom?: Excel.PageLayoutZoomOptions;'
       return:
         type:
-          - excel.Excel.PageLayoutZoomOptions
+          - 'excel!Excel.PageLayoutZoomOptions:interface'

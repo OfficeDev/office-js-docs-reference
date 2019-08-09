@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.AppointmentCompose
+  - uid: 'outlook!Office.AppointmentCompose:interface'
     summary: >-
-      The appointment organizer mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
+      The appointment organizer mode of [Office.context.mailbox.item](xref:outlook!Office.Item:interface)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,51 +15,51 @@ items:
       - typeScript
     type: interface
     extends:
-      - outlook.Office.Appointment
-      - outlook.Office.ItemCompose
-    package: outlook
+      - 'outlook!Office.Appointment:interface'
+      - 'outlook!Office.ItemCompose:interface'
+    package: outlook!
     children:
-      - outlook.Office.AppointmentCompose.addFileAttachmentAsync
-      - outlook.Office.AppointmentCompose.addFileAttachmentAsync_1
-      - outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async
-      - outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async_1
-      - outlook.Office.AppointmentCompose.addHandlerAsync
-      - outlook.Office.AppointmentCompose.addHandlerAsync_1
-      - outlook.Office.AppointmentCompose.addItemAttachmentAsync
-      - outlook.Office.AppointmentCompose.addItemAttachmentAsync_1
-      - outlook.Office.AppointmentCompose.close
-      - outlook.Office.AppointmentCompose.getAttachmentsAsync
-      - outlook.Office.AppointmentCompose.getAttachmentsAsync_1
-      - outlook.Office.AppointmentCompose.getInitializationContextAsync
-      - outlook.Office.AppointmentCompose.getInitializationContextAsync_1
-      - outlook.Office.AppointmentCompose.getItemIdAsync
-      - outlook.Office.AppointmentCompose.getItemIdAsync_1
-      - outlook.Office.AppointmentCompose.getSelectedDataAsync
-      - outlook.Office.AppointmentCompose.getSelectedDataAsync_1
-      - outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
-      - outlook.Office.AppointmentCompose.removeAttachmentAsync
-      - outlook.Office.AppointmentCompose.removeAttachmentAsync_1
-      - outlook.Office.AppointmentCompose.removeHandlerAsync
-      - outlook.Office.AppointmentCompose.removeHandlerAsync_1
-      - outlook.Office.AppointmentCompose.saveAsync
-      - outlook.Office.AppointmentCompose.saveAsync_1
-      - outlook.Office.AppointmentCompose.setSelectedDataAsync
-      - outlook.Office.AppointmentCompose.setSelectedDataAsync_1
-      - outlook.Office.AppointmentCompose.body
-      - outlook.Office.AppointmentCompose.categories
-      - outlook.Office.AppointmentCompose.end
-      - outlook.Office.AppointmentCompose.enhancedLocation
-      - outlook.Office.AppointmentCompose.itemType
-      - outlook.Office.AppointmentCompose.location
-      - outlook.Office.AppointmentCompose.notificationMessages
-      - outlook.Office.AppointmentCompose.optionalAttendees
-      - outlook.Office.AppointmentCompose.organizer
-      - outlook.Office.AppointmentCompose.recurrence
-      - outlook.Office.AppointmentCompose.requiredAttendees
-      - outlook.Office.AppointmentCompose.seriesId
-      - outlook.Office.AppointmentCompose.start
-      - outlook.Office.AppointmentCompose.subject
-  - uid: outlook.Office.AppointmentCompose.addFileAttachmentAsync
+      - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(1)'
+      - 'outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(2)'
+      - 'outlook!Office.AppointmentCompose#addHandlerAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#addHandlerAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#body:member'
+      - 'outlook!Office.AppointmentCompose#categories:member'
+      - 'outlook!Office.AppointmentCompose#close:member(1)'
+      - 'outlook!Office.AppointmentCompose#end:member'
+      - 'outlook!Office.AppointmentCompose#enhancedLocation:member'
+      - 'outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#getAttachmentsAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#getInitializationContextAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#getInitializationContextAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#getItemIdAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#getItemIdAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#getSelectedDataAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#getSelectedDataAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#itemType:member'
+      - 'outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#location:member'
+      - 'outlook!Office.AppointmentCompose#notificationMessages:member'
+      - 'outlook!Office.AppointmentCompose#optionalAttendees:member'
+      - 'outlook!Office.AppointmentCompose#organizer:member'
+      - 'outlook!Office.AppointmentCompose#recurrence:member'
+      - 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#removeHandlerAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#removeHandlerAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#requiredAttendees:member'
+      - 'outlook!Office.AppointmentCompose#saveAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#saveAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#seriesId:member'
+      - 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)'
+      - 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(2)'
+      - 'outlook!Office.AppointmentCompose#start:member'
+      - 'outlook!Office.AppointmentCompose#subject:member'
+  - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(1)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -93,31 +93,6 @@ items:
 
 
       - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
-
-      function addAttachment() {
-          // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
-
-          var attachmentURL = "https://contoso.com/rtm/icon.png";
-          Office.context.mailbox.item.addFileAttachmentAsync(attachmentURL, attachmentURL, options, callback);
-      }
-
-      ```
     name: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     fullName: 'addFileAttachmentAsync(uri, attachmentName, options, callback)'
     langs:
@@ -159,7 +134,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.addFileAttachmentAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentAsync:member(2)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -227,7 +202,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async
+  - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(1)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -261,29 +236,6 @@ items:
 
 
       - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.addFileAttachmentFromBase64Async(
-          base64String,
-          "cute_bird.png",
-          {
-              isInline: true
-          },
-          function (asyncResult) {
-              Office.context.mailbox.item.body.setAsync(
-                  "<p>Here's a cute bird!</p><img src='cid:cute_bird.png'>",
-                  {
-                      "coercionType": "html"
-                  },
-                  function (asyncResult) {
-                  });
-          });
-      ```
     isPreview: true
     name: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
     fullName: 'addFileAttachmentFromBase64Async(base64File, attachmentName, options, callback)'
@@ -325,7 +277,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.addFileAttachmentFromBase64Async_1
+  - uid: 'outlook!Office.AppointmentCompose#addFileAttachmentFromBase64Async:member(2)'
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -392,7 +344,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.addHandlerAsync
+  - uid: 'outlook!Office.AppointmentCompose#addHandlerAsync:member(1)'
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -446,7 +398,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.addHandlerAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#addHandlerAsync:member(2)'
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -494,7 +446,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.addItemAttachmentAsync
+  - uid: 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(1)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -528,37 +480,6 @@ items:
 
 
       - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example adds an existing Outlook item as an attachment
-
-      // with the name `My Attachment`.
-
-      function callback(result) {
-          if (result.error) {
-              console.log(result.error);
-          } else {
-              console.log("Attachment added");
-          }
-      }
-
-
-      function addAttachment() {
-          // EWS ID of item to attach (shortened for readability).
-          var itemId = "AAMkADI1...AAA=";
-
-          // The values in asyncContext can be accessed in the callback.
-          var options = { 'asyncContext': { var1: 1, var2: 2 } };
-
-          Office.context.mailbox.item.addItemAttachmentAsync(itemId, "My Attachment", options, callback);
-      }
-
-      ```
     name: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     fullName: 'addItemAttachmentAsync(itemId, attachmentName, options, callback)'
     langs:
@@ -597,7 +518,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.addItemAttachmentAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#addItemAttachmentAsync:member(2)'
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -663,7 +584,52 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.close
+  - uid: 'outlook!Office.AppointmentCompose#body:member'
+    summary: |-
+      Gets an object that provides methods for manipulating the body of an item.
+
+      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: body
+    fullName: body
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'body: Body;'
+      return:
+        type:
+          - 'outlook!Office.Body:interface'
+  - uid: 'outlook!Office.AppointmentCompose#categories:member'
+    summary: |-
+      Gets an object that provides methods for managing the item's categories.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    isPreview: true
+    name: categories
+    fullName: categories
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'categories: Categories;'
+      return:
+        type:
+          - 'outlook!Office.Categories:interface'
+  - uid: 'outlook!Office.AppointmentCompose#close:member(1)'
     summary: >-
       Closes the current item that is being composed
 
@@ -698,7 +664,65 @@ items:
         type:
           - void
         description: ''
-  - uid: outlook.Office.AppointmentCompose.getAttachmentsAsync
+  - uid: 'outlook!Office.AppointmentCompose#end:member'
+    summary: >-
+      Gets or sets the date and time that the appointment is to end.
+
+
+      The end property is an [Office.Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated
+      Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end
+      property value to the client's local date and time.
+
+
+      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
+      convert the local time on the client to UTC for the server.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: end
+    fullName: end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Time;'
+      return:
+        type:
+          - 'outlook!Office.Time:interface'
+  - uid: 'outlook!Office.AppointmentCompose#enhancedLocation:member'
+    summary: >-
+      Gets or sets the locations of the appointment. The `enhancedLocation` property returns an
+      [Office.EnhancedLocation](xref:outlook!Office.EnhancedLocation:interface) object that provides methods to get,
+      remove, or add locations on an item.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    isPreview: true
+    name: enhancedLocation
+    fullName: enhancedLocation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'enhancedLocation: EnhancedLocation;'
+      return:
+        type:
+          - 'outlook!Office.EnhancedLocation:interface'
+  - uid: 'outlook!Office.AppointmentCompose#getAttachmentsAsync:member(1)'
     summary: |-
       Gets the item's attachments as an array.
 
@@ -738,7 +762,7 @@ items:
             error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
-  - uid: outlook.Office.AppointmentCompose.getAttachmentsAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#getAttachmentsAsync:member(2)'
     summary: |-
       Gets the item's attachments as an array.
 
@@ -750,36 +774,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var item = Office.context.mailbox.item;
-
-      var outputString = "";
-
-      item.getAttachmentsAsync(callback);
-
-
-      function callback(result) {
-          if (result.value.length > 0) {
-              for (i = 0 ; i < result.value.length ; i++) {
-                  var attachment = result.value [i];
-                  outputString += "<BR>" + i + ". Name: ";
-                  outputString += attachment.name;
-                  outputString += "<BR>ID: " + attachment.id;
-                  outputString += "<BR>contentType: " + attachment.contentType;
-                  outputString += "<BR>size: " + attachment.size;
-                  outputString += "<BR>attachmentType: " + attachment.attachmentType;
-                  outputString += "<BR>isInline: " + attachment.isInline;
-              }
-          }
-      }
-
-      ```
     isPreview: true
     name: getAttachmentsAsync(callback)
     fullName: getAttachmentsAsync(callback)
@@ -800,7 +794,7 @@ items:
             error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<AttachmentDetails[]>) => void'
-  - uid: outlook.Office.AppointmentCompose.getInitializationContextAsync
+  - uid: 'outlook!Office.AppointmentCompose#getInitializationContextAsync:member(1)'
     summary: >-
       Gets initialization data passed when the add-in is activated by an actionable message.
 
@@ -851,7 +845,7 @@ items:
             GenericResponseError.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.getInitializationContextAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#getInitializationContextAsync:member(2)'
     summary: >-
       Gets initialization data passed when the add-in is activated by an actionable message.
 
@@ -894,7 +888,7 @@ items:
             GenericResponseError.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.getItemIdAsync
+  - uid: 'outlook!Office.AppointmentCompose#getItemIdAsync:member(1)'
     summary: >-
       Asynchronously gets the ID of a saved item.
 
@@ -947,7 +941,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.getItemIdAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#getItemIdAsync:member(2)'
     summary: >-
       Asynchronously gets the ID of a saved item.
 
@@ -992,7 +986,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.getSelectedDataAsync
+  - uid: 'outlook!Office.AppointmentCompose#getSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -1014,33 +1008,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get selected data.
-
-      Office.initialize = function () {
-          Office.context.mailbox.item.getSelectedDataAsync(Office.CoercionType.Text, {}, getCallback);
-      };
-
-
-      function getCallback(asyncResult) {
-          var text = asyncResult.value.data;
-          var prop = asyncResult.value.sourceProperty;
-
-          Office.context.mailbox.item.setSelectedDataAsync('Setting ' + prop + ': ' + text, {}, setCallback);
-      }
-
-
-      function setCallback(asyncResult) {
-          // Check for errors.
-      }
-
-      ```
     name: 'getSelectedDataAsync(coercionType, options, callback)'
     fullName: 'getSelectedDataAsync(coercionType, options, callback)'
     langs:
@@ -1073,7 +1040,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: outlook.Office.AppointmentCompose.getSelectedDataAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#getSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -1121,7 +1088,34 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
+  - uid: 'outlook!Office.AppointmentCompose#itemType:member'
+    summary: >-
+      Gets the type of item that an instance represents.
+
+
+      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
+      is a message or an appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: itemType
+    fullName: itemType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'itemType: MailboxEnums.ItemType | string;'
+      return:
+        type:
+          - MailboxEnums.ItemType | string
+  - uid: 'outlook!Office.AppointmentCompose#loadCustomPropertiesAsync:member(1)'
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -1171,7 +1165,142 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync
+  - uid: 'outlook!Office.AppointmentCompose#location:member'
+    summary: >-
+      Gets or sets the [Office.Location](xref:outlook!Office.Location:interface) of an appointment. The location
+      property returns a Location object that provides methods that are used to get and set the location of the
+      appointment.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: location
+    fullName: location
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'location: Location;'
+      return:
+        type:
+          - 'outlook!Office.Location:interface'
+  - uid: 'outlook!Office.AppointmentCompose#notificationMessages:member'
+    summary: |-
+      Gets the notification messages for an item.
+
+      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: notificationMessages
+    fullName: notificationMessages
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'notificationMessages: NotificationMessages;'
+      return:
+        type:
+          - 'outlook!Office.NotificationMessages:interface'
+  - uid: 'outlook!Office.AppointmentCompose#optionalAttendees:member'
+    summary: >-
+      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
+      of the current item. The optionalAttendees property returns an
+      [Office.Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to get or update the
+      optional attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: optionalAttendees
+    fullName: optionalAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'optionalAttendees: Recipients;'
+      return:
+        type:
+          - 'outlook!Office.Recipients:interface'
+  - uid: 'outlook!Office.AppointmentCompose#organizer:member'
+    summary: >-
+      Gets the organizer for the specified meeting.
+
+
+      The organizer property returns an [Organizer](xref:outlook!Office.Organizer:interface) object that provides a
+      method to get the organizer value.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: organizer
+    fullName: organizer
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'organizer: Organizer;'
+      return:
+        type:
+          - 'outlook!Office.Organizer:interface'
+  - uid: 'outlook!Office.AppointmentCompose#recurrence:member'
+    summary: >-
+      Gets or sets the recurrence pattern of an appointment.
+
+
+      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
+      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
+      appointments.
+
+
+      **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+
+
+      **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
+      request of a single appointment and NOT a part of a series.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: recurrence
+    fullName: recurrence
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrence: Recurrence;'
+      return:
+        type:
+          - 'outlook!Office.Recurrence:interface'
+  - uid: 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(1)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -1198,25 +1327,6 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following code removes an attachment with an identifier of '0'.
-
-      Office.context.mailbox.item.removeAttachmentAsync(
-          '0',
-          { asyncContext : null },
-          function (asyncResult)
-          {
-              console.log(asyncResult.status);
-          }
-      );
-
-      ```
     name: 'removeAttachmentAsync(attachmentId, options, callback)'
     fullName: 'removeAttachmentAsync(attachmentId, options, callback)'
     langs:
@@ -1248,7 +1358,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#removeAttachmentAsync:member(2)'
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -1300,7 +1410,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.removeHandlerAsync
+  - uid: 'outlook!Office.AppointmentCompose#removeHandlerAsync:member(1)'
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -1348,7 +1458,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.removeHandlerAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#removeHandlerAsync:member(2)'
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -1390,7 +1500,33 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.saveAsync
+  - uid: 'outlook!Office.AppointmentCompose#requiredAttendees:member'
+    summary: >-
+      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
+      of the current item. The requiredAttendees property returns an
+      [Office.Recipients](xref:outlook!Office.Recipients:interface) object that provides methods to get or update the
+      required attendees for a meeting.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: requiredAttendees
+    fullName: requiredAttendees
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'requiredAttendees: Recipients;'
+      return:
+        type:
+          - 'outlook!Office.Recipients:interface'
+  - uid: 'outlook!Office.AppointmentCompose#saveAsync:member(1)'
     summary: >-
       Asynchronously saves an item.
 
@@ -1463,7 +1599,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.saveAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#saveAsync:member(2)'
     summary: >-
       Asynchronously saves an item.
 
@@ -1510,34 +1646,6 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.saveAsync(
-          function callback(result) {
-              // Process the result.
-          });
-
-      // The following is an example of the
-
-      // `result` parameter passed to the
-
-      // callback function. The `value`
-
-      // property contains the item ID of
-
-      // the item.
-
-      {
-          "value": "AAMkADI5...AAA=",
-          "status": "succeeded"
-      }
-
-      ```
     name: saveAsync(callback)
     fullName: saveAsync(callback)
     langs:
@@ -1556,7 +1664,46 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.AppointmentCompose.setSelectedDataAsync
+  - uid: 'outlook!Office.AppointmentCompose#seriesId:member'
+    summary: >-
+      Gets the id of the series that an instance belongs to.
+
+
+      In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent
+      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
+      parent item.
+
+
+      **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item
+      identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making
+      REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
+      details, see [Use the Outlook REST APIs from an Outlook
+      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!-- -->.
+
+
+      The seriesId property returns null for items that do not have parent items such as single appointments, series
+      items, or meeting requests and returns undefined for any other items that are not meeting requests.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
+      Organizer
+    name: seriesId
+    fullName: seriesId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'seriesId: string;'
+      return:
+        type:
+          - string
+  - uid: 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(1)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -1581,16 +1728,6 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.setSelectedDataAsync("<b>Hello World!</b>", { coercionType : "html" });
-
-      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
@@ -1628,7 +1765,7 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.setSelectedDataAsync_1
+  - uid: 'outlook!Office.AppointmentCompose#setSelectedDataAsync:member(2)'
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -1653,16 +1790,6 @@ items:
 
 
       - InvalidAttachmentId: The attachment identifier does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.setSelectedDataAsync("Hello World!");
-
-      ```
     name: 'setSelectedDataAsync(data, callback)'
     fullName: 'setSelectedDataAsync(data, callback)'
     langs:
@@ -1687,617 +1814,14 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.AppointmentCompose.body
-    summary: |-
-      Gets an object that provides methods for manipulating the body of an item.
-
-      \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the body of the item as plain text.
-
-      Office.context.mailbox.item.body.getAsync(
-          "text",
-          { asyncContext: "This is passed to the callback" },
-          function callback(result) {
-              // Do something with the result.
-          });
-
-      // The following is an example of an object that is passed as the result parameter to the callback function.
-
-      {
-          "value": "TEXT of whole body (including threads below)",
-          "status": "succeeded",
-          "asyncContext": "This is passed to the callback"
-      }
-
-      ```
-    name: body
-    fullName: body
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'body: Body;'
-      return:
-        type:
-          - outlook.Office.Body
-  - uid: outlook.Office.AppointmentCompose.categories
-    summary: |-
-      Gets an object that provides methods for managing the item's categories.
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.categories.getAsync(function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Categories: " + JSON.stringify(asyncResult.value));
-          }
-      });
-
-      ```
-    isPreview: true
-    name: categories
-    fullName: categories
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'categories: Categories;'
-      return:
-        type:
-          - outlook.Office.Categories
-  - uid: outlook.Office.AppointmentCompose.end
-    summary: >-
-      Gets or sets the date and time that the appointment is to end.
-
-
-      The end property is an [Office.Time](xref:outlook.Office.Time) object expressed as a Coordinated Universal Time
-      (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to
-      the client's local date and time.
-
-
-      When you use the Time.setAsync method to set the end time, you should use the convertToUtcClientTime method to
-      convert the local time on the client to UTC for the server.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example sets the end time of an appointment in compose mode by
-
-      // using the `setAsync` method of the `Time` object.
-
-      var endTime = new Date("3/14/2015");
-
-      var options = {
-          // Pass information that can be used in the callback.
-          asyncContext: {verb: "Set"}
-      };
-
-      Office.context.mailbox.item.end.setAsync(endTime, options, function(result) {
-          if (result.error) {
-              console.debug(result.error);
-          } else {
-              // Access the asyncContext that was passed to the setAsync function.
-              console.debug("End Time " + result.asyncContext.verb);
-          }
-      });
-
-      ```
-    name: end
-    fullName: end
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'end: Time;'
-      return:
-        type:
-          - outlook.Office.Time
-  - uid: outlook.Office.AppointmentCompose.enhancedLocation
-    summary: >-
-      Gets or sets the locations of the appointment. The `enhancedLocation` property returns an
-      [Office.EnhancedLocation](xref:outlook.Office.EnhancedLocation) object that provides methods to get, remove, or
-      add locations on an item.
-
-
-      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var locations = [
-          {
-              "id": "Contoso",
-              "type": Office.MailboxEnums.LocationType.Custom
-          }
-      ];
-
-      Office.context.mailbox.item.enhancedLocation.addAsync(locations);
-
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (place) {
-              console.log("Display name: " + place.displayName);
-              console.log("Type: " + place.locationIdentifier.type);
-              if (place.locationIdentifier.type === Office.MailboxEnums.LocationType.Room) {
-                  console.log("Email address: " + place.emailAddress);
-              }
-          });
-      }
-
-      ```
-
-      ```javascript
-
-      Office.context.mailbox.item.enhancedLocation.getAsync(callbackFunction);
-
-
-      function callbackFunction(asyncResult) {
-          asyncResult.value.forEach(function (currentValue) {
-              Office.context.mailbox.item.enhancedLocation.removeAsync([currentValue.locationIdentifier]);
-          });
-      }
-
-      ```
-    isPreview: true
-    name: enhancedLocation
-    fullName: enhancedLocation
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'enhancedLocation: EnhancedLocation;'
-      return:
-        type:
-          - outlook.Office.EnhancedLocation
-  - uid: outlook.Office.AppointmentCompose.itemType
-    summary: >-
-      Gets the type of item that an instance represents.
-
-
-      The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance
-      is a message or an appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      if (Office.context.mailbox.item.itemType === Office.MailboxEnums.ItemType.Appointment) {
-          // Do something.
-      } else {
-          // Do something else.
-      }
-
-      ```
-    name: itemType
-    fullName: itemType
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'itemType: MailboxEnums.ItemType | string;'
-      return:
-        type:
-          - MailboxEnums.ItemType | string
-  - uid: outlook.Office.AppointmentCompose.location
-    summary: >-
-      Gets or sets the [Office.Location](xref:outlook.Office.Location) of an appointment. The location property returns
-      a Location object that provides methods that are used to get and set the location of the appointment.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var userContext = { value : 1 };
-
-      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
-
-
-      function callback(asyncResult) {
-          var context = asyncResult.context;
-          var location = asyncResult.value;
-      }
-
-      ```
-    name: location
-    fullName: location
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'location: Location;'
-      return:
-        type:
-          - outlook.Office.Location
-  - uid: outlook.Office.AppointmentCompose.notificationMessages
-    summary: |-
-      Gets the notification messages for an item.
-
-      \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Get all notifications.
-
-      Office.context.mailbox.item.notificationMessages.getAllAsync(
-          function (asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-    name: notificationMessages
-    fullName: notificationMessages
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'notificationMessages: NotificationMessages;'
-      return:
-        type:
-          - outlook.Office.NotificationMessages
-  - uid: outlook.Office.AppointmentCompose.optionalAttendees
-    summary: >-
-      Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
-      of the current item. The optionalAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
-      object that provides methods to get or update the optional attendees for a meeting.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.optionalAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.optionalAttendees.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.optionalAttendees.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfOptionalAttendeesRecipients = asyncResult.value;
-      }
-
-      ```
-    name: optionalAttendees
-    fullName: optionalAttendees
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'optionalAttendees: Recipients;'
-      return:
-        type:
-          - outlook.Office.Recipients
-  - uid: outlook.Office.AppointmentCompose.organizer
-    summary: >-
-      Gets the organizer for the specified meeting.
-
-
-      The organizer property returns an [Organizer](xref:outlook.Office.Organizer) object that provides a method to get
-      the organizer value.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.organizer.getAsync(
-          function(asyncResult) {
-              console.log(JSON.stringify(asyncResult));
-          }
-      );
-
-      ```
-    name: organizer
-    fullName: organizer
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'organizer: Organizer;'
-      return:
-        type:
-          - outlook.Office.Organizer
-  - uid: outlook.Office.AppointmentCompose.recurrence
-    summary: >-
-      Gets or sets the recurrence pattern of an appointment.
-
-
-      The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is
-      a series or an instance in a series. `null` is returned for single appointments and meeting requests of single
-      appointments.
-
-
-      **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
-
-
-      **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting
-      request of a single appointment and NOT a part of a series.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example gets the Recurrence object of an appointment item.
-
-      Office.context.mailbox.item.recurrence.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var context = asyncResult.context;
-          var recurrence = asyncResult.value;
-          if (!recurrence) {
-              console.log("One-time appointment or meeting");
-          } else {
-              console.log(JSON.stringify(recurrence));
-          }
-      }
-
-
-      // The following example shows the results of the getAsync call that retrieves the recurrence for a series.
-
-      // NOTE: In this example, seriesTimeObject is a placeholder for the JSON representing the
-
-      // recurrence.seriesTime property. You should use the SeriesTime object's methods to get the
-
-      // recurrence date and time properties.
-
-      Recurrence = {
-          "recurrenceType": "weekly",
-          "recurrenceProperties": {"interval": 2, "days": ["mon","thu","fri"], "firstDayOfWeek": "sun"},
-          "seriesTime": {seriesTimeObject},
-          "recurrenceTimeZone": {"name": "Pacific Standard Time", "offset": -480}
-      }
-
-      ```
-    name: recurrence
-    fullName: recurrence
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'recurrence: Recurrence;'
-      return:
-        type:
-          - outlook.Office.Recurrence
-  - uid: outlook.Office.AppointmentCompose.requiredAttendees
-    summary: >-
-      Provides access to the required attendees of an event. The type of object and level of access depends on the mode
-      of the current item. The requiredAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
-      object that provides methods to get or update the required attendees for a meeting.
-
-
-      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.requiredAttendees.setAsync( ['alice@contoso.com', 'bob@contoso.com'] );
-
-      Office.context.mailbox.item.requiredAttendees.addAsync( ['jason@contoso.com'] );
-
-      Office.context.mailbox.item.requiredAttendees.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var arrayOfRequiredAttendeesRecipients = asyncResult.value;
-          console.log(JSON.stringify(arrayOfRequiredAttendeesRecipients));
-      }
-
-      ```
-    name: requiredAttendees
-    fullName: requiredAttendees
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'requiredAttendees: Recipients;'
-      return:
-        type:
-          - outlook.Office.Recipients
-  - uid: outlook.Office.AppointmentCompose.seriesId
-    summary: >-
-      Gets the id of the series that an instance belongs to.
-
-
-      In Outlook on the web and desktop clients, the seriesId returns the Exchange Web Services (EWS) ID of the parent
-      (series) item that this item belongs to. However, on iOS and Android, the seriesId returns the REST ID of the
-      parent item.
-
-
-      **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item
-      identifier. The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. Before making
-      REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. For more
-      details, see [Use the Outlook REST APIs from an Outlook
-      add-in](https://docs.microsoft.com/outlook/add-ins/use-rest-api)<!-- -->.
-
-
-      The seriesId property returns null for items that do not have parent items such as single appointments, series
-      items, or meeting requests and returns undefined for any other items that are not meeting requests.
-
-
-      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
-    remarks: >-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
-      Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var seriesId = Office.context.mailbox.item.seriesId;
-
-
-      // The seriesId property returns null for items that do
-
-      // not have parent items (such as single appointments,
-
-      // series items, or meeting requests) and returns
-
-      // undefined for messages that are not meeting requests.
-
-      var isSeriesInstance = (seriesId != null);
-
-      console.log("SeriesId is " + seriesId 
-          + " and isSeriesInstance is " + isSeriesInstance);
-      ```
-    name: seriesId
-    fullName: seriesId
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'seriesId: string;'
-      return:
-        type:
-          - string
-  - uid: outlook.Office.AppointmentCompose.start
+  - uid: 'outlook!Office.AppointmentCompose#start:member'
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
 
 
-      The start property is an [Office.Time](xref:outlook.Office.Time) object expressed as a Coordinated Universal Time
-      (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's
-      local date and time.
+      The start property is an [Office.Time](xref:outlook!Office.Time:interface) object expressed as a Coordinated
+      Universal Time (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to
+      the client's local date and time.
 
 
       When you use the Time.setAsync method to set the start time, you should use the convertToUtcClientTime method to
@@ -2312,34 +1836,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example sets the start time of an appointment in compose mode by
-
-      // using the `setAsync` method of the `Time` object.
-
-      var startTime = new Date("3/14/2015");
-
-      var options = {
-          // Pass information that can be used in the callback.
-          asyncContext: {verb: "Set"}
-      };
-
-      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-          if (result.error) {
-              console.debug(result.error);
-          } else {
-              // Access the asyncContext that was passed to the setAsync function.
-              console.debug("Start Time " + result.asyncContext.verb);
-          }
-      });
-
-      ```
     name: start
     fullName: start
     langs:
@@ -2349,8 +1845,8 @@ items:
       content: 'start: Time;'
       return:
         type:
-          - outlook.Office.Time
-  - uid: outlook.Office.AppointmentCompose.subject
+          - 'outlook!Office.Time:interface'
+  - uid: 'outlook!Office.AppointmentCompose#subject:member'
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -2366,21 +1862,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Appointment
       Organizer
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.subject.getAsync(callback);
-
-
-      function callback(asyncResult) {
-          var subject = asyncResult.value;
-      }
-
-      ```
     name: subject
     fullName: subject
     langs:
@@ -2390,4 +1871,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - outlook.Office.Subject
+          - 'outlook!Office.Subject:interface'

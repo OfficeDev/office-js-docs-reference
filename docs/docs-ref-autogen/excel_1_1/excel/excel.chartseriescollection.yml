@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartSeriesCollection
+  - uid: 'excel!Excel.ChartSeriesCollection:class'
     summary: |-
       Represents a collection of chart series.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartSeriesCollection.context
-      - excel.Excel.ChartSeriesCollection.count
-      - excel.Excel.ChartSeriesCollection.getItemAt
-      - excel.Excel.ChartSeriesCollection.items
-      - excel.Excel.ChartSeriesCollection.load
-      - excel.Excel.ChartSeriesCollection.load_1
-      - excel.Excel.ChartSeriesCollection.load_2
-      - excel.Excel.ChartSeriesCollection.toJSON
-  - uid: excel.Excel.ChartSeriesCollection.context
+      - 'excel!Excel.ChartSeriesCollection#context:member'
+      - 'excel!Excel.ChartSeriesCollection#count:member'
+      - 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#items:member'
+      - 'excel!Excel.ChartSeriesCollection#load:member(1)'
+      - 'excel!Excel.ChartSeriesCollection#load:member(2)'
+      - 'excel!Excel.ChartSeriesCollection#load:member(3)'
+      - 'excel!Excel.ChartSeriesCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartSeriesCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartSeriesCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartSeriesCollection#count:member'
     summary: |-
       Returns the number of series in the collection. Read-only.
 
@@ -51,7 +51,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeriesCollection.getItemAt
+  - uid: 'excel!Excel.ChartSeriesCollection#getItemAt:member(1)'
     summary: |-
       Retrieves a series based on its position in the collection.
 
@@ -65,33 +65,14 @@ items:
       content: 'getItemAt(index: number): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the name of the first series in the series collection.
-          Excel.run(function (ctx) { 
-              var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-              seriesCollection.load('items');
-              return ctx.sync().then(function() {
-                  console.log(seriesCollection.items[0].name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartSeries:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.ChartSeriesCollection.items
+  - uid: 'excel!Excel.ChartSeriesCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -103,7 +84,7 @@ items:
       return:
         type:
           - 'Excel.ChartSeries[]'
-  - uid: excel.Excel.ChartSeriesCollection.load
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -136,14 +117,14 @@ items:
         Excel.ChartSeriesCollection;
       return:
         type:
-          - excel.Excel.ChartSeriesCollection
+          - 'excel!Excel.ChartSeriesCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.ChartSeriesCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.ChartSeriesCollection.load_1
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -156,51 +137,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeriesCollection;'
       return:
         type:
-          - excel.Excel.ChartSeriesCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Getting the names of series in the series collection.
-          Excel.run(function (ctx) { 
-              var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-              seriesCollection.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < seriesCollection.items.length; i++)
-                  {
-                      console.log(seriesCollection.items[i].name);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Get the number of chart series in collection.
-          Excel.run(function (ctx) { 
-              var seriesCollection = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").series;
-              seriesCollection.load('count');
-              return ctx.sync().then(function() {
-                  console.log("series: Count= " + seriesCollection.count);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartSeriesCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartSeriesCollection.load_2
+  - uid: 'excel!Excel.ChartSeriesCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -210,14 +154,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartSeriesCollection;'
       return:
         type:
-          - excel.Excel.ChartSeriesCollection
+          - 'excel!Excel.ChartSeriesCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.ChartSeriesCollection.toJSON
+  - uid: 'excel!Excel.ChartSeriesCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -233,5 +177,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesCollectionData
+          - 'excel!Excel.Interfaces.ChartSeriesCollectionData:interface'
         description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SettingsChangedEventArgs
+  - uid: 'excel!Excel.SettingsChangedEventArgs:interface'
     summary: |-
       Provides information about the setting that raised the SettingsChanged event
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SettingsChangedEventArgs.settings
-  - uid: excel.Excel.SettingsChangedEventArgs.settings
+      - 'excel!Excel.SettingsChangedEventArgs#settings:member'
+  - uid: 'excel!Excel.SettingsChangedEventArgs#settings:member'
     summary: |-
       Gets the Setting object that represents the binding that raised the SettingsChanged event
 
@@ -27,4 +27,4 @@ items:
       content: 'settings: Excel.SettingCollection;'
       return:
         type:
-          - excel.Excel.SettingCollection
+          - 'excel!Excel.SettingCollection:class'

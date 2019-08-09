@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalRangeFormat
+  - uid: 'excel!Excel.ConditionalRangeFormat:class'
     summary: |-
       A format object encapsulating the conditional formats range's font, fill, borders, and other properties.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalRangeFormat.borders
-      - excel.Excel.ConditionalRangeFormat.context
-      - excel.Excel.ConditionalRangeFormat.fill
-      - excel.Excel.ConditionalRangeFormat.font
-      - excel.Excel.ConditionalRangeFormat.load
-      - excel.Excel.ConditionalRangeFormat.load_1
-      - excel.Excel.ConditionalRangeFormat.load_2
-      - excel.Excel.ConditionalRangeFormat.numberFormat
-      - excel.Excel.ConditionalRangeFormat.set
-      - excel.Excel.ConditionalRangeFormat.set_1
-      - excel.Excel.ConditionalRangeFormat.toJSON
-  - uid: excel.Excel.ConditionalRangeFormat.borders
+      - 'excel!Excel.ConditionalRangeFormat#borders:member'
+      - 'excel!Excel.ConditionalRangeFormat#context:member'
+      - 'excel!Excel.ConditionalRangeFormat#fill:member'
+      - 'excel!Excel.ConditionalRangeFormat#font:member'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(1)'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(2)'
+      - 'excel!Excel.ConditionalRangeFormat#load:member(3)'
+      - 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
+      - 'excel!Excel.ConditionalRangeFormat#set:member(1)'
+      - 'excel!Excel.ConditionalRangeFormat#set:member(2)'
+      - 'excel!Excel.ConditionalRangeFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ConditionalRangeFormat#borders:member'
     summary: |-
       Collection of border objects that apply to the overall conditional format range. Read-only.
 
@@ -39,8 +39,8 @@ items:
       content: 'readonly borders: Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
-  - uid: excel.Excel.ConditionalRangeFormat.context
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -53,8 +53,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ConditionalRangeFormat.fill
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#fill:member'
     summary: |-
       Returns the fill object defined on the overall conditional format range. Read-only.
 
@@ -68,8 +68,8 @@ items:
       content: 'readonly fill: Excel.ConditionalRangeFill;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFill
-  - uid: excel.Excel.ConditionalRangeFormat.font
+          - 'excel!Excel.ConditionalRangeFill:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#font:member'
     summary: |-
       Returns the font object defined on the overall conditional format range. Read-only.
 
@@ -83,8 +83,8 @@ items:
       content: 'readonly font: Excel.ConditionalRangeFont;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFont
-  - uid: excel.Excel.ConditionalRangeFormat.load
+          - 'excel!Excel.ConditionalRangeFont:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -115,14 +115,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeFormatLoadOptions): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
+          - 'excel!Excel.ConditionalRangeFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
-  - uid: excel.Excel.ConditionalRangeFormat.load_1
+            - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -135,14 +135,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
+          - 'excel!Excel.ConditionalRangeFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalRangeFormat.load_2
+  - uid: 'excel!Excel.ConditionalRangeFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -155,7 +155,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
+          - 'excel!Excel.ConditionalRangeFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -164,7 +164,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ConditionalRangeFormat.numberFormat
+  - uid: 'excel!Excel.ConditionalRangeFormat#numberFormat:member'
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.
 
@@ -179,7 +179,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ConditionalRangeFormat.set
+  - uid: 'excel!Excel.ConditionalRangeFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -209,7 +209,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ConditionalRangeFormat.set_1
+  - uid: 'excel!Excel.ConditionalRangeFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -226,8 +226,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalRangeFormat
-  - uid: excel.Excel.ConditionalRangeFormat.toJSON
+            - 'excel!Excel.ConditionalRangeFormat:class'
+  - uid: 'excel!Excel.ConditionalRangeFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -243,5 +243,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatData
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
         description: ''

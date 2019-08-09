@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Document
+  - uid: 'word!Word.Document:class'
     summary: >-
       The Document object is the top level object. A Document object contains one or more sections, content controls,
       and the body that contains the contents of the document.
@@ -14,31 +14,31 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.Document.body
-      - word.Word.Document.contentControls
-      - word.Word.Document.context
-      - word.Word.Document.customXmlParts
-      - word.Word.Document.deleteBookmark
-      - word.Word.Document.getBookmarkRange
-      - word.Word.Document.getBookmarkRangeOrNullObject
-      - word.Word.Document.getSelection
-      - word.Word.Document.load
-      - word.Word.Document.load_1
-      - word.Word.Document.load_2
-      - word.Word.Document.onContentControlAdded
-      - word.Word.Document.properties
-      - word.Word.Document.save
-      - word.Word.Document.saved
-      - word.Word.Document.sections
-      - word.Word.Document.set
-      - word.Word.Document.set_1
-      - word.Word.Document.settings
-      - word.Word.Document.toJSON
-      - word.Word.Document.track
-      - word.Word.Document.untrack
-  - uid: word.Word.Document.body
+      - 'word!Word.Document#body:member'
+      - 'word!Word.Document#contentControls:member'
+      - 'word!Word.Document#context:member'
+      - 'word!Word.Document#customXmlParts:member'
+      - 'word!Word.Document#deleteBookmark:member(1)'
+      - 'word!Word.Document#getBookmarkRange:member(1)'
+      - 'word!Word.Document#getBookmarkRangeOrNullObject:member(1)'
+      - 'word!Word.Document#getSelection:member(1)'
+      - 'word!Word.Document#load:member(1)'
+      - 'word!Word.Document#load:member(2)'
+      - 'word!Word.Document#load:member(3)'
+      - 'word!Word.Document#onContentControlAdded:member'
+      - 'word!Word.Document#properties:member'
+      - 'word!Word.Document#save:member(1)'
+      - 'word!Word.Document#saved:member'
+      - 'word!Word.Document#sections:member'
+      - 'word!Word.Document#set:member(1)'
+      - 'word!Word.Document#set:member(2)'
+      - 'word!Word.Document#settings:member'
+      - 'word!Word.Document#toJSON:member(1)'
+      - 'word!Word.Document#track:member(1)'
+      - 'word!Word.Document#untrack:member(1)'
+  - uid: 'word!Word.Document#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc.. Read-only.
@@ -54,8 +54,8 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - word.Word.Body
-  - uid: word.Word.Document.contentControls
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.Document#contentControls:member'
     summary: >-
       Gets the collection of content control objects in the document. This includes content controls in the body of the
       document, headers, footers, textboxes, etc.. Read-only.
@@ -71,8 +71,8 @@ items:
       content: 'readonly contentControls: Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-  - uid: word.Word.Document.context
+          - 'word!Word.ContentControlCollection:class'
+  - uid: 'word!Word.Document#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -85,8 +85,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Document.customXmlParts
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Document#customXmlParts:member'
     summary: >-
       Gets the custom XML parts in the document. Read-only.
 
@@ -103,8 +103,8 @@ items:
       content: 'readonly customXmlParts: Word.CustomXmlPartCollection;'
       return:
         type:
-          - word.Word.CustomXmlPartCollection
-  - uid: word.Word.Document.deleteBookmark
+          - 'word!Word.CustomXmlPartCollection:class'
+  - uid: 'word!Word.Document#deleteBookmark:member(1)'
     summary: >-
       Deletes a bookmark, if exists, from the document.
 
@@ -128,7 +128,7 @@ items:
           description: 'Required. The bookmark name, which is case-insensitive.'
           type:
             - string
-  - uid: word.Word.Document.getBookmarkRange
+  - uid: 'word!Word.Document#getBookmarkRange:member(1)'
     summary: >-
       Gets a bookmark's range. Throws if the bookmark does not exist.
 
@@ -145,14 +145,14 @@ items:
       content: 'getBookmarkRange(name: string): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: name
           description: 'Required. The bookmark name, which is case-insensitive.'
           type:
             - string
-  - uid: word.Word.Document.getBookmarkRangeOrNullObject
+  - uid: 'word!Word.Document#getBookmarkRangeOrNullObject:member(1)'
     summary: >-
       Gets a bookmark's range. Returns a null object if the bookmark does not exist.
 
@@ -169,14 +169,14 @@ items:
       content: 'getBookmarkRangeOrNullObject(name: string): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: name
           description: 'Required. The bookmark name, which is case-insensitive.'
           type:
             - string
-  - uid: word.Word.Document.getSelection
+  - uid: 'word!Word.Document#getSelection:member(1)'
     summary: |-
       Gets the current selection of the document. Multiple selections are not supported.
 
@@ -190,42 +190,9 @@ items:
       content: 'getSelection(): Word.Range;'
       return:
         type:
-          - word.Word.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              var textSample = 'This is an example of the insert text method. This is a method ' + 
-                  'which allows users to insert text into a selection. It can insert text into a ' +
-                  'relative location or it can overwrite the current selection. Since the ' +
-                  'getSelection method returns a range object, look up the range object documentation ' +
-                  'for everything you can do with a selection.';
-              
-              // Create a range proxy object for the current selection.
-              var range = context.document.getSelection();
-              
-              // Queue a commmand to insert text at the end of the selection.
-              range.insertText(textSample, Word.InsertLocation.end);
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Inserted the text at the end of the selection.');
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.Document.load
+          - 'word!Word.Range:class'
+        description: ''
+  - uid: 'word!Word.Document#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -247,46 +214,6 @@ items:
       collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-          
-          // Create a proxy object for the document.
-          var thisDocument = context.document;
-          
-          // Queue a command to load content control properties.
-          context.load(thisDocument, 'contentControls/id, contentControls/text, contentControls/tag');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (thisDocument.contentControls.items.length !== 0) {
-                  for (var i = 0; i < thisDocument.contentControls.items.length; i++) {
-                      console.log(thisDocument.contentControls.items[i].id);
-                      console.log(thisDocument.contentControls.items[i].text);
-                      console.log(thisDocument.contentControls.items[i].tag);
-                  }
-              } else {
-                  console.log('No content controls in this document.');
-              }
-          });  
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -296,14 +223,14 @@ items:
       content: 'load(option?: Word.Interfaces.DocumentLoadOptions): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.DocumentLoadOptions
-  - uid: word.Word.Document.load_1
+            - 'word!Word.Interfaces.DocumentLoadOptions:interface'
+  - uid: 'word!Word.Document#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -316,14 +243,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Document.load_2
+  - uid: 'word!Word.Document#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -336,7 +263,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -345,7 +272,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Document.onContentControlAdded
+  - uid: 'word!Word.Document#onContentControlAdded:member'
     summary: >-
       Occurs when a content control is added. Run context.sync() in the handler to get the new content control's
       properties.
@@ -364,7 +291,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Word.ContentControlEventArgs>
-  - uid: word.Word.Document.properties
+  - uid: 'word!Word.Document#properties:member'
     summary: |-
       Gets the properties of the document. Read-only.
 
@@ -378,22 +305,8 @@ items:
       content: 'readonly properties: Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Word.run(async (context) => {
-              let builtInProperties = context.document.properties;
-              builtInProperties.load("*"); // Let's get all!
-
-              await context.sync();
-              console.log(JSON.stringify(builtInProperties, null, 4));
-          });
-          ```
-  - uid: word.Word.Document.save
+          - 'word!Word.DocumentProperties:class'
+  - uid: 'word!Word.Document#save:member(1)'
     summary: >-
       Saves the document. This will use the Word default file naming convention if the document has not been saved
       before.
@@ -410,47 +323,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy object for the document.
-              var thisDocument = context.document;
-
-              // Queue a commmand to load the document save state (on the saved property).
-              context.load(thisDocument, 'saved');    
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  if (thisDocument.saved === false) {
-                      // Queue a command to save this document.
-                      thisDocument.save();
-                      
-                      // Synchronize the document state by executing the queued commands, 
-                      // and return a promise to indicate task completion.
-                      return context.sync().then(function () {
-                          console.log('Saved the document');
-                      });
-                  } else {
-                      console.log('The document has not changed since the last save.');
-                  }
-              });  
-          })
-          .catch(function (error) {
-              console.log("Error: " + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.Document.saved
+        description: ''
+  - uid: 'word!Word.Document#saved:member'
     summary: >-
       Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't
       changed since it was saved. Read-only.
@@ -467,7 +341,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Document.sections
+  - uid: 'word!Word.Document#sections:member'
     summary: |-
       Gets the collection of section objects in the document. Read-only.
 
@@ -481,8 +355,8 @@ items:
       content: 'readonly sections: Word.SectionCollection;'
       return:
         type:
-          - word.Word.SectionCollection
-  - uid: word.Word.Document.set
+          - 'word!Word.SectionCollection:class'
+  - uid: 'word!Word.Document#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -512,7 +386,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.Document.set_1
+  - uid: 'word!Word.Document#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -529,8 +403,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Document
-  - uid: word.Word.Document.settings
+            - 'word!Word.Document:class'
+  - uid: 'word!Word.Document#settings:member'
     summary: >-
       Gets the add-in's settings in the document. Read-only.
 
@@ -547,8 +421,8 @@ items:
       content: 'readonly settings: Word.SettingCollection;'
       return:
         type:
-          - word.Word.SettingCollection
-  - uid: word.Word.Document.toJSON
+          - 'word!Word.SettingCollection:class'
+  - uid: 'word!Word.Document#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -564,9 +438,9 @@ items:
       content: 'toJSON(): Word.Interfaces.DocumentData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentData
+          - 'word!Word.Interfaces.DocumentData:interface'
         description: ''
-  - uid: word.Word.Document.track
+  - uid: 'word!Word.Document#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -582,9 +456,9 @@ items:
       content: 'track(): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'
         description: ''
-  - uid: word.Word.Document.untrack
+  - uid: 'word!Word.Document#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -599,5 +473,5 @@ items:
       content: 'untrack(): Word.Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'
         description: ''

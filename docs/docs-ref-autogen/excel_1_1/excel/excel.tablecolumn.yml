@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableColumn
+  - uid: 'excel!Excel.TableColumn:class'
     summary: |-
       Represents a column in a table.
 
@@ -12,25 +12,25 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableColumn.context
-      - excel.Excel.TableColumn.delete
-      - excel.Excel.TableColumn.getDataBodyRange
-      - excel.Excel.TableColumn.getHeaderRowRange
-      - excel.Excel.TableColumn.getRange
-      - excel.Excel.TableColumn.getTotalRowRange
-      - excel.Excel.TableColumn.id
-      - excel.Excel.TableColumn.index
-      - excel.Excel.TableColumn.load
-      - excel.Excel.TableColumn.load_1
-      - excel.Excel.TableColumn.load_2
-      - excel.Excel.TableColumn.name
-      - excel.Excel.TableColumn.set
-      - excel.Excel.TableColumn.set_1
-      - excel.Excel.TableColumn.toJSON
-      - excel.Excel.TableColumn.values
-  - uid: excel.Excel.TableColumn.context
+      - 'excel!Excel.TableColumn#context:member'
+      - 'excel!Excel.TableColumn#delete:member(1)'
+      - 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
+      - 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
+      - 'excel!Excel.TableColumn#getRange:member(1)'
+      - 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
+      - 'excel!Excel.TableColumn#id:member'
+      - 'excel!Excel.TableColumn#index:member'
+      - 'excel!Excel.TableColumn#load:member(1)'
+      - 'excel!Excel.TableColumn#load:member(2)'
+      - 'excel!Excel.TableColumn#load:member(3)'
+      - 'excel!Excel.TableColumn#name:member'
+      - 'excel!Excel.TableColumn#set:member(1)'
+      - 'excel!Excel.TableColumn#set:member(2)'
+      - 'excel!Excel.TableColumn#toJSON:member(1)'
+      - 'excel!Excel.TableColumn#values:member'
+  - uid: 'excel!Excel.TableColumn#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -43,8 +43,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableColumn.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumn#delete:member(1)'
     summary: |-
       Deletes the column from the table.
 
@@ -59,25 +59,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
-              column.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.TableColumn.getDataBodyRange
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getDataBodyRange:member(1)'
     summary: |-
       Gets the range object associated with the data body of the column.
 
@@ -91,28 +74,9 @@ items:
       content: 'getDataBodyRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var dataBodyRange = column.getDataBodyRange();
-              dataBodyRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(dataBodyRange.address);
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.TableColumn.getHeaderRowRange
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getHeaderRowRange:member(1)'
     summary: |-
       Gets the range object associated with the header row of the column.
 
@@ -126,29 +90,9 @@ items:
       content: 'getHeaderRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var headerRowRange = columns.getHeaderRowRange();
-              headerRowRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(headerRowRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.TableColumn.getRange
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getRange:member(1)'
     summary: |-
       Gets the range object associated with the entire column.
 
@@ -162,29 +106,9 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var columnRange = columns.getRange();
-              columnRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(columnRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.TableColumn.getTotalRowRange
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#getTotalRowRange:member(1)'
     summary: |-
       Gets the range object associated with the totals row of the column.
 
@@ -198,29 +122,9 @@ items:
       content: 'getTotalRowRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var columns = ctx.workbook.tables.getItem(tableName).columns.getItemAt(0);
-              var totalRowRange = columns.getTotalRowRange();
-              totalRowRange.load('address');
-              return ctx.sync().then(function() {
-                  console.log(totalRowRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.TableColumn.id
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.TableColumn#id:member'
     summary: |-
       Returns a unique key that identifies the column within the table. Read-only.
 
@@ -235,7 +139,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TableColumn.index
+  - uid: 'excel!Excel.TableColumn#index:member'
     summary: |-
       Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.
 
@@ -250,7 +154,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TableColumn.load
+  - uid: 'excel!Excel.TableColumn#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -281,14 +185,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TableColumnLoadOptions): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - 'excel!Excel.TableColumn:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TableColumnLoadOptions
-  - uid: excel.Excel.TableColumn.load_1
+            - 'excel!Excel.Interfaces.TableColumnLoadOptions:interface'
+  - uid: 'excel!Excel.TableColumn#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -301,51 +205,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItem(0);
-              column.load('index');
-              return ctx.sync().then(function() {
-                  console.log(column.index);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var tables = ctx.workbook.tables;
-              var newValues = [["New"], ["Values"], ["For"], ["New"], ["Column"]];
-              var column = ctx.workbook.tables.getItem(tableName).columns.getItemAt(2);
-              column.values = newValues;
-              column.load('values');
-              return ctx.sync().then(function() {
-                  console.log(column.values);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableColumn:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableColumn.load_2
+  - uid: 'excel!Excel.TableColumn#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -358,7 +225,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - 'excel!Excel.TableColumn:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -367,7 +234,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TableColumn.name
+  - uid: 'excel!Excel.TableColumn#name:member'
     summary: >-
       Represents the name of the table column.
 
@@ -384,7 +251,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TableColumn.set
+  - uid: 'excel!Excel.TableColumn#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -414,7 +281,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.TableColumn.set_1
+  - uid: 'excel!Excel.TableColumn#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -431,8 +298,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TableColumn
-  - uid: excel.Excel.TableColumn.toJSON
+            - 'excel!Excel.TableColumn:class'
+  - uid: 'excel!Excel.TableColumn#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -448,9 +315,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnData
+          - 'excel!Excel.Interfaces.TableColumnData:interface'
         description: ''
-  - uid: excel.Excel.TableColumn.values
+  - uid: 'excel!Excel.TableColumn#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string.

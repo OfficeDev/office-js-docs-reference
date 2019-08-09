@@ -1,56 +1,56 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTrendlineType
+  - uid: 'excel!Excel.ChartTrendlineType:enum'
     summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ChartTrendlineType
     fullName: Excel.ChartTrendlineType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartTrendlineType.exponential
-      - excel.Excel.ChartTrendlineType.linear
-      - excel.Excel.ChartTrendlineType.logarithmic
-      - excel.Excel.ChartTrendlineType.movingAverage
-      - excel.Excel.ChartTrendlineType.polynomial
-      - excel.Excel.ChartTrendlineType.power
-  - uid: excel.Excel.ChartTrendlineType.exponential
+      - 'excel!Excel.ChartTrendlineType.exponential:member'
+      - 'excel!Excel.ChartTrendlineType.linear:member'
+      - 'excel!Excel.ChartTrendlineType.logarithmic:member'
+      - 'excel!Excel.ChartTrendlineType.movingAverage:member'
+      - 'excel!Excel.ChartTrendlineType.polynomial:member'
+      - 'excel!Excel.ChartTrendlineType.power:member'
+  - uid: 'excel!Excel.ChartTrendlineType.exponential:member'
     name: exponential
     fullName: exponential
     langs:
       - typeScript
     type: field
     numericValue: '"Exponential"'
-  - uid: excel.Excel.ChartTrendlineType.linear
+  - uid: 'excel!Excel.ChartTrendlineType.linear:member'
     name: linear
     fullName: linear
     langs:
       - typeScript
     type: field
     numericValue: '"Linear"'
-  - uid: excel.Excel.ChartTrendlineType.logarithmic
+  - uid: 'excel!Excel.ChartTrendlineType.logarithmic:member'
     name: logarithmic
     fullName: logarithmic
     langs:
       - typeScript
     type: field
     numericValue: '"Logarithmic"'
-  - uid: excel.Excel.ChartTrendlineType.movingAverage
+  - uid: 'excel!Excel.ChartTrendlineType.movingAverage:member'
     name: movingAverage
     fullName: movingAverage
     langs:
       - typeScript
     type: field
     numericValue: '"MovingAverage"'
-  - uid: excel.Excel.ChartTrendlineType.polynomial
+  - uid: 'excel!Excel.ChartTrendlineType.polynomial:member'
     name: polynomial
     fullName: polynomial
     langs:
       - typeScript
     type: field
     numericValue: '"Polynomial"'
-  - uid: excel.Excel.ChartTrendlineType.power
+  - uid: 'excel!Excel.ChartTrendlineType.power:member'
     name: power
     fullName: power
     langs:

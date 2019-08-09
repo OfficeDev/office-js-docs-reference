@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.DialogOptions
+  - uid: 'office!Office.DialogOptions:interface'
     summary: Provides options for how a dialog is displayed.
     name: Office.DialogOptions
     fullName: Office.DialogOptions
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.DialogOptions.asyncContext
-      - office.Office.DialogOptions.displayInIframe
-      - office.Office.DialogOptions.height
-      - office.Office.DialogOptions.promptBeforeOpen
-      - office.Office.DialogOptions.width
-  - uid: office.Office.DialogOptions.asyncContext
+      - 'office!Office.DialogOptions#asyncContext:member'
+      - 'office!Office.DialogOptions#displayInIframe:member'
+      - 'office!Office.DialogOptions#height:member'
+      - 'office!Office.DialogOptions#promptBeforeOpen:member'
+      - 'office!Office.DialogOptions#width:member'
+  - uid: 'office!Office.DialogOptions#asyncContext:member'
     summary: >-
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.DialogOptions.displayInIframe
+  - uid: 'office!Office.DialogOptions#displayInIframe:member'
     summary: >-
       Determines whether the dialog box should be displayed within an IFrame. This setting is only applicable in Office
       on the web, and is ignored by other platforms. If false (default), the dialog will be displayed as a new browser
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.DialogOptions.height
+  - uid: 'office!Office.DialogOptions#height:member'
     summary: Defines the width of the dialog as a percentage of the current display. Defaults to 80%. 250px minimum.
     name: height
     fullName: height
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.DialogOptions.promptBeforeOpen
+  - uid: 'office!Office.DialogOptions#promptBeforeOpen:member'
     summary: >-
       Determines if the pop-up blocker dialog will be shown to the user. Defaults to true.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.DialogOptions.width
+  - uid: 'office!Office.DialogOptions#width:member'
     summary: Defines the height of the dialog as a percentage of the current display. Defaults to 80%. 150px minimum.
     name: width
     fullName: width

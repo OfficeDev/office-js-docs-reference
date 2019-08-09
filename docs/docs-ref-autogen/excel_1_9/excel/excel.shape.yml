@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Shape
+  - uid: 'excel!Excel.Shape:class'
     summary: >-
       Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes,
       etc. To learn more about the shape object model, read [Work with shapes using the Excel JavaScript
@@ -15,54 +15,54 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Shape.altTextDescription
-      - excel.Excel.Shape.altTextTitle
-      - excel.Excel.Shape.connectionSiteCount
-      - excel.Excel.Shape.context
-      - excel.Excel.Shape.delete
-      - excel.Excel.Shape.fill
-      - excel.Excel.Shape.geometricShape
-      - excel.Excel.Shape.geometricShapeType
-      - excel.Excel.Shape.getAsImage
-      - excel.Excel.Shape.getAsImage_1
-      - excel.Excel.Shape.group
-      - excel.Excel.Shape.height
-      - excel.Excel.Shape.id
-      - excel.Excel.Shape.image
-      - excel.Excel.Shape.incrementLeft
-      - excel.Excel.Shape.incrementRotation
-      - excel.Excel.Shape.incrementTop
-      - excel.Excel.Shape.left
-      - excel.Excel.Shape.level
-      - excel.Excel.Shape.line
-      - excel.Excel.Shape.lineFormat
-      - excel.Excel.Shape.load
-      - excel.Excel.Shape.load_1
-      - excel.Excel.Shape.load_2
-      - excel.Excel.Shape.lockAspectRatio
-      - excel.Excel.Shape.name
-      - excel.Excel.Shape.onActivated
-      - excel.Excel.Shape.onDeactivated
-      - excel.Excel.Shape.parentGroup
-      - excel.Excel.Shape.rotation
-      - excel.Excel.Shape.scaleHeight
-      - excel.Excel.Shape.scaleHeight_1
-      - excel.Excel.Shape.scaleWidth
-      - excel.Excel.Shape.scaleWidth_1
-      - excel.Excel.Shape.set
-      - excel.Excel.Shape.set_1
-      - excel.Excel.Shape.setZOrder
-      - excel.Excel.Shape.setZOrder_1
-      - excel.Excel.Shape.textFrame
-      - excel.Excel.Shape.toJSON
-      - excel.Excel.Shape.top
-      - excel.Excel.Shape.type
-      - excel.Excel.Shape.visible
-      - excel.Excel.Shape.width
-      - excel.Excel.Shape.zOrderPosition
-  - uid: excel.Excel.Shape.altTextDescription
+      - 'excel!Excel.Shape#altTextDescription:member'
+      - 'excel!Excel.Shape#altTextTitle:member'
+      - 'excel!Excel.Shape#connectionSiteCount:member'
+      - 'excel!Excel.Shape#context:member'
+      - 'excel!Excel.Shape#delete:member(1)'
+      - 'excel!Excel.Shape#fill:member'
+      - 'excel!Excel.Shape#geometricShape:member'
+      - 'excel!Excel.Shape#geometricShapeType:member'
+      - 'excel!Excel.Shape#getAsImage:member(1)'
+      - 'excel!Excel.Shape#getAsImage:member(2)'
+      - 'excel!Excel.Shape#group:member'
+      - 'excel!Excel.Shape#height:member'
+      - 'excel!Excel.Shape#id:member'
+      - 'excel!Excel.Shape#image:member'
+      - 'excel!Excel.Shape#incrementLeft:member(1)'
+      - 'excel!Excel.Shape#incrementRotation:member(1)'
+      - 'excel!Excel.Shape#incrementTop:member(1)'
+      - 'excel!Excel.Shape#left:member'
+      - 'excel!Excel.Shape#level:member'
+      - 'excel!Excel.Shape#line:member'
+      - 'excel!Excel.Shape#lineFormat:member'
+      - 'excel!Excel.Shape#load:member(1)'
+      - 'excel!Excel.Shape#load:member(2)'
+      - 'excel!Excel.Shape#load:member(3)'
+      - 'excel!Excel.Shape#lockAspectRatio:member'
+      - 'excel!Excel.Shape#name:member'
+      - 'excel!Excel.Shape#onActivated:member'
+      - 'excel!Excel.Shape#onDeactivated:member'
+      - 'excel!Excel.Shape#parentGroup:member'
+      - 'excel!Excel.Shape#rotation:member'
+      - 'excel!Excel.Shape#scaleHeight:member(1)'
+      - 'excel!Excel.Shape#scaleHeight:member(2)'
+      - 'excel!Excel.Shape#scaleWidth:member(1)'
+      - 'excel!Excel.Shape#scaleWidth:member(2)'
+      - 'excel!Excel.Shape#set:member(1)'
+      - 'excel!Excel.Shape#set:member(2)'
+      - 'excel!Excel.Shape#setZOrder:member(1)'
+      - 'excel!Excel.Shape#setZOrder:member(2)'
+      - 'excel!Excel.Shape#textFrame:member'
+      - 'excel!Excel.Shape#toJSON:member(1)'
+      - 'excel!Excel.Shape#top:member'
+      - 'excel!Excel.Shape#type:member'
+      - 'excel!Excel.Shape#visible:member'
+      - 'excel!Excel.Shape#width:member'
+      - 'excel!Excel.Shape#zOrderPosition:member'
+  - uid: 'excel!Excel.Shape#altTextDescription:member'
     summary: |-
       Returns or sets the alternative description text for a Shape object.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Shape.altTextTitle
+  - uid: 'excel!Excel.Shape#altTextTitle:member'
     summary: |-
       Returns or sets the alternative title text for a Shape object.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Shape.connectionSiteCount
+  - uid: 'excel!Excel.Shape#connectionSiteCount:member'
     summary: |-
       Returns the number of connection sites on this shape. Read-only.
 
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.context
+  - uid: 'excel!Excel.Shape#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -120,8 +120,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Shape.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Shape#delete:member(1)'
     summary: |-
       Removes the shape from the worksheet.
 
@@ -136,27 +136,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              context.workbook.worksheets.getItemOrNullObject("Shapes").delete();
-              const sheet = context.workbook.worksheets.add("Shapes");
-
-              const shapes = sheet.shapes;
-
-              // load all the shapes in the collection without loading their properties
-              shapes.load("items/$none");
-              await context.sync();
-
-              shapes.items.forEach((shape) => shape.delete());
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Shape.fill
+        description: ''
+  - uid: 'excel!Excel.Shape#fill:member'
     summary: |-
       Returns the fill formatting of this shape. Read-only.
 
@@ -170,25 +151,8 @@ items:
       content: 'readonly fill: Excel.ShapeFill;'
       return:
         type:
-          - excel.Excel.ShapeFill
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.smileyFace);
-              shape.left = 300;
-              shape.top = 100;
-              shape.height = 100;
-              shape.width = 100;
-              shape.fill.foregroundColor = "yellow"
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Shape.geometricShape
+          - 'excel!Excel.ShapeFill:class'
+  - uid: 'excel!Excel.Shape#geometricShape:member'
     summary: >-
       Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not
       "GeometricShape".
@@ -204,8 +168,8 @@ items:
       content: 'readonly geometricShape: Excel.GeometricShape;'
       return:
         type:
-          - excel.Excel.GeometricShape
-  - uid: excel.Excel.Shape.geometricShapeType
+          - 'excel!Excel.GeometricShape:class'
+  - uid: 'excel!Excel.Shape#geometricShapeType:member'
     summary: >-
       Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns
       null if the shape type is not "GeometricShape".
@@ -285,7 +249,7 @@ items:
             "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
             "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
             "ChartStar" | "ChartPlus"
-  - uid: excel.Excel.Shape.getAsImage
+  - uid: 'excel!Excel.Shape#getAsImage:member(1)'
     summary: >-
       Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
@@ -303,29 +267,13 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Image");
-              const result = shape.getAsImage(Excel.PictureFormat.png);
-              await context.sync();
-
-              const imageString = result.value;
-              // Your add-in would save this string as a .png file.
-              console.log("The image's base64-encoded string: " + imageString);
-          });
-          ```
+        description: ''
       parameters:
         - id: format
           description: Specifies the format of the image.
           type:
-            - excel.Excel.PictureFormat
-  - uid: excel.Excel.Shape.getAsImage_1
+            - 'excel!Excel.PictureFormat:enum'
+  - uid: 'excel!Excel.Shape#getAsImage:member(2)'
     summary: >-
       Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported
       formats are `Excel.PictureFormat.BMP`<!-- -->, `Excel.PictureFormat.PNG`<!-- -->, `Excel.PictureFormat.JPEG`<!--
@@ -351,7 +299,7 @@ items:
           description: Specifies the format of the image.
           type:
             - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
-  - uid: excel.Excel.Shape.group
+  - uid: 'excel!Excel.Shape#group:member'
     summary: |-
       Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
 
@@ -365,24 +313,8 @@ items:
       content: 'readonly group: Excel.ShapeGroup;'
       return:
         type:
-          - excel.Excel.ShapeGroup
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-
-              const shapeGroup = sheet.shapes.getItem("Group").group;
-              shapeGroup.ungroup();
-              console.log("Shapes ungrouped");
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Shape.height
+          - 'excel!Excel.ShapeGroup:class'
+  - uid: 'excel!Excel.Shape#height:member'
     summary: >-
       Represents the height, in points, of the shape. Throws an invalid argument exception when set with a negative
       value or zero as input.
@@ -399,7 +331,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.id
+  - uid: 'excel!Excel.Shape#id:member'
     summary: |-
       Represents the shape identifier. Read-only.
 
@@ -414,7 +346,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Shape.image
+  - uid: 'excel!Excel.Shape#image:member'
     summary: |-
       Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
 
@@ -428,8 +360,8 @@ items:
       content: 'readonly image: Excel.Image;'
       return:
         type:
-          - excel.Excel.Image
-  - uid: excel.Excel.Shape.incrementLeft
+          - 'excel!Excel.Image:class'
+  - uid: 'excel!Excel.Shape#incrementLeft:member(1)'
     summary: |-
       Moves the shape horizontally by the specified number of points.
 
@@ -444,19 +376,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Square")
-              shape.incrementLeft(-25);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: increment
           description: >-
@@ -465,7 +385,7 @@ items:
             positive values will move the shape to the left and negative values will move it to the right.
           type:
             - number
-  - uid: excel.Excel.Shape.incrementRotation
+  - uid: 'excel!Excel.Shape#incrementRotation:member(1)'
     summary: >-
       Rotates the shape clockwise around the z-axis by the specified number of degrees. Use the `rotation` property to
       set the absolute rotation of the shape.
@@ -482,19 +402,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Image");
-              shape.incrementRotation(180);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: increment
           description: >-
@@ -502,7 +410,7 @@ items:
             rotates it counterclockwise.
           type:
             - number
-  - uid: excel.Excel.Shape.incrementTop
+  - uid: 'excel!Excel.Shape#incrementTop:member(1)'
     summary: |-
       Moves the shape vertically by the specified number of points.
 
@@ -517,19 +425,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Pentagon")
-              shape.incrementTop(25);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: increment
           description: >-
@@ -537,7 +433,7 @@ items:
             down and a negative value moves it up.
           type:
             - number
-  - uid: excel.Excel.Shape.left
+  - uid: 'excel!Excel.Shape#left:member'
     summary: >-
       The distance, in points, from the left side of the shape to the left side of the worksheet. Throws an invalid
       argument exception when set with a negative value as input.
@@ -554,7 +450,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.level
+  - uid: 'excel!Excel.Shape#level:member'
     summary: >-
       Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any
       groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a
@@ -572,7 +468,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.line
+  - uid: 'excel!Excel.Shape#line:member'
     summary: |-
       Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
 
@@ -586,28 +482,8 @@ items:
       content: 'readonly line: Excel.Line;'
       return:
         type:
-          - excel.Excel.Line
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.getItem("StraightLine").line;
-              line.beginArrowheadLength = Excel.ArrowheadLength.long;
-              line.beginArrowheadWidth = Excel.ArrowheadWidth.wide;
-              line.beginArrowheadStyle = Excel.ArrowheadStyle.oval;
-
-              line.endArrowheadLength = Excel.ArrowheadLength.long;
-              line.endArrowheadWidth = Excel.ArrowheadWidth.wide;
-              line.endArrowheadStyle = Excel.ArrowheadStyle.triangle;
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Shape.lineFormat
+          - 'excel!Excel.Line:class'
+  - uid: 'excel!Excel.Shape#lineFormat:member'
     summary: |-
       Returns the line formatting of this shape. Read-only.
 
@@ -621,8 +497,8 @@ items:
       content: 'readonly lineFormat: Excel.ShapeLineFormat;'
       return:
         type:
-          - excel.Excel.ShapeLineFormat
-  - uid: excel.Excel.Shape.load
+          - 'excel!Excel.ShapeLineFormat:class'
+  - uid: 'excel!Excel.Shape#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -653,14 +529,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ShapeLoadOptions): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ShapeLoadOptions
-  - uid: excel.Excel.Shape.load_1
+            - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Shape#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -673,14 +549,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Shape.load_2
+  - uid: 'excel!Excel.Shape#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -693,7 +569,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -702,7 +578,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Shape.lockAspectRatio
+  - uid: 'excel!Excel.Shape#lockAspectRatio:member'
     summary: |-
       Specifies whether or not the aspect ratio of this shape is locked.
 
@@ -717,21 +593,7 @@ items:
       return:
         type:
           - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.lockAspectRatio = true;
-              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Shape.name
+  - uid: 'excel!Excel.Shape#name:member'
     summary: |-
       Represents the name of the shape.
 
@@ -746,7 +608,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Shape.onActivated
+  - uid: 'excel!Excel.Shape#onActivated:member'
     summary: |-
       Occurs when the shape is activated.
 
@@ -761,7 +623,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ShapeActivatedEventArgs>
-  - uid: excel.Excel.Shape.onDeactivated
+  - uid: 'excel!Excel.Shape#onDeactivated:member'
     summary: |-
       Occurs when the shape is deactivated.
 
@@ -776,7 +638,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ShapeDeactivatedEventArgs>
-  - uid: excel.Excel.Shape.parentGroup
+  - uid: 'excel!Excel.Shape#parentGroup:member'
     summary: |-
       Represents the parent group of this shape.
 
@@ -790,8 +652,8 @@ items:
       content: 'readonly parentGroup: Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-  - uid: excel.Excel.Shape.rotation
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.Shape#rotation:member'
     summary: |-
       Represents the rotation, in degrees, of the shape.
 
@@ -806,25 +668,7 @@ items:
       return:
         type:
           - number
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.triangle);
-              shape.left = 100;
-              shape.top = 300;
-              shape.height = 150;
-              shape.width = 200;
-              shape.rotation = 45;
-              shape.fill.clear();
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Shape.scaleHeight
+  - uid: 'excel!Excel.Shape#scaleHeight:member(1)'
     summary: >-
       Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -842,20 +686,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.lockAspectRatio = true;
-              shape.scaleHeight(1.25, Excel.ShapeScaleType.currentSize);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: scaleFactor
           description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
@@ -866,14 +697,14 @@ items:
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
           type:
-            - excel.Excel.ShapeScaleType
+            - 'excel!Excel.ShapeScaleType:enum'
         - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
             represents the shape's upper left corner retains its position.
           type:
-            - excel.Excel.ShapeScaleFrom
-  - uid: excel.Excel.Shape.scaleHeight_1
+            - 'excel!Excel.ShapeScaleFrom:enum'
+  - uid: 'excel!Excel.Shape#scaleHeight:member(2)'
     summary: >-
       Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -911,7 +742,7 @@ items:
             represents the shape's upper left corner retains its position.
           type:
             - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
-  - uid: excel.Excel.Shape.scaleWidth
+  - uid: 'excel!Excel.Shape#scaleWidth:member(1)'
     summary: >-
       Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -940,14 +771,14 @@ items:
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
           type:
-            - excel.Excel.ShapeScaleType
+            - 'excel!Excel.ShapeScaleType:enum'
         - id: scaleFrom
           description: >-
             Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it
             represents the shape's upper left corner retains its position.
           type:
-            - excel.Excel.ShapeScaleFrom
-  - uid: excel.Excel.Shape.scaleWidth_1
+            - 'excel!Excel.ShapeScaleFrom:enum'
+  - uid: 'excel!Excel.Shape#scaleWidth:member(2)'
     summary: >-
       Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the
       shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their
@@ -985,7 +816,7 @@ items:
             represents the shape's upper left corner retains its position.
           type:
             - '"ScaleFromTopLeft" | "ScaleFromMiddle" | "ScaleFromBottomRight"'
-  - uid: excel.Excel.Shape.set
+  - uid: 'excel!Excel.Shape#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1015,7 +846,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Shape.set_1
+  - uid: 'excel!Excel.Shape#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1032,8 +863,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Shape
-  - uid: excel.Excel.Shape.setZOrder
+            - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.Shape#setZOrder:member(1)'
     summary: |-
       Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
@@ -1048,27 +879,15 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.getItem("Octagon")
-              shape.setZOrder(Excel.ShapeZOrder.sendBackward);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: position
           description: >-
             Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
             details.
           type:
-            - excel.Excel.ShapeZOrder
-  - uid: excel.Excel.Shape.setZOrder_1
+            - 'excel!Excel.ShapeZOrder:enum'
+  - uid: 'excel!Excel.Shape#setZOrder:member(2)'
     summary: |-
       Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
@@ -1091,7 +910,7 @@ items:
             details.
           type:
             - '"BringToFront" | "BringForward" | "SendToBack" | "SendBackward"'
-  - uid: excel.Excel.Shape.textFrame
+  - uid: 'excel!Excel.Shape#textFrame:member'
     summary: |-
       Returns the text frame object of this shape. Read only.
 
@@ -1105,8 +924,8 @@ items:
       content: 'readonly textFrame: Excel.TextFrame;'
       return:
         type:
-          - excel.Excel.TextFrame
-  - uid: excel.Excel.Shape.toJSON
+          - 'excel!Excel.TextFrame:class'
+  - uid: 'excel!Excel.Shape#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1122,9 +941,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ShapeData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeData
+          - 'excel!Excel.Interfaces.ShapeData:interface'
         description: ''
-  - uid: excel.Excel.Shape.top
+  - uid: 'excel!Excel.Shape#top:member'
     summary: >-
       The distance, in points, from the top edge of the shape to the top edge of the worksheet. Throws an invalid
       argument exception when set with a negative value as input.
@@ -1141,7 +960,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.type
+  - uid: 'excel!Excel.Shape#type:member'
     summary: |-
       Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
@@ -1156,7 +975,7 @@ items:
       return:
         type:
           - Excel.ShapeType | "Unsupported" | "Image" | "GeometricShape" | "Group" | "Line"
-  - uid: excel.Excel.Shape.visible
+  - uid: 'excel!Excel.Shape#visible:member'
     summary: |-
       Represents the visibility of this shape.
 
@@ -1171,7 +990,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Shape.width
+  - uid: 'excel!Excel.Shape#width:member'
     summary: >-
       Represents the width, in points, of the shape. Throws an invalid argument exception when set with a negative value
       or zero as input.
@@ -1188,7 +1007,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Shape.zOrderPosition
+  - uid: 'excel!Excel.Shape#zOrderPosition:member'
     summary: >-
       Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
       Read-only.

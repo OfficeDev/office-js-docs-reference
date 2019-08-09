@@ -1,33 +1,33 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentPropertiesData
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData:interface'
     summary: An interface describing the data returned by calling "documentProperties.toJSON()".
     name: Word.Interfaces.DocumentPropertiesData
     fullName: Word.Interfaces.DocumentPropertiesData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentPropertiesData.applicationName
-      - word.Word.Interfaces.DocumentPropertiesData.author
-      - word.Word.Interfaces.DocumentPropertiesData.category
-      - word.Word.Interfaces.DocumentPropertiesData.comments
-      - word.Word.Interfaces.DocumentPropertiesData.company
-      - word.Word.Interfaces.DocumentPropertiesData.creationDate
-      - word.Word.Interfaces.DocumentPropertiesData.customProperties
-      - word.Word.Interfaces.DocumentPropertiesData.format
-      - word.Word.Interfaces.DocumentPropertiesData.keywords
-      - word.Word.Interfaces.DocumentPropertiesData.lastAuthor
-      - word.Word.Interfaces.DocumentPropertiesData.lastPrintDate
-      - word.Word.Interfaces.DocumentPropertiesData.lastSaveTime
-      - word.Word.Interfaces.DocumentPropertiesData.manager
-      - word.Word.Interfaces.DocumentPropertiesData.revisionNumber
-      - word.Word.Interfaces.DocumentPropertiesData.security
-      - word.Word.Interfaces.DocumentPropertiesData.subject
-      - word.Word.Interfaces.DocumentPropertiesData.template
-      - word.Word.Interfaces.DocumentPropertiesData.title
-  - uid: word.Word.Interfaces.DocumentPropertiesData.applicationName
+      - 'word!Word.Interfaces.DocumentPropertiesData#applicationName:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#author:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#category:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#comments:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#company:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#creationDate:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#customProperties:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#format:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#keywords:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#lastAuthor:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#lastPrintDate:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#lastSaveTime:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#manager:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#revisionNumber:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#security:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#subject:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#template:member'
+      - 'word!Word.Interfaces.DocumentPropertiesData#title:member'
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#applicationName:member'
     summary: |-
       Gets the application name of the document. Read only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.author
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#author:member'
     summary: |-
       Gets or sets the author of the document.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.category
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#category:member'
     summary: |-
       Gets or sets the category of the document.
 
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.comments
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#comments:member'
     summary: |-
       Gets or sets the comments of the document.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.company
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#company:member'
     summary: |-
       Gets or sets the company of the document.
 
@@ -102,7 +102,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.creationDate
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#creationDate:member'
     summary: |-
       Gets the creation date of the document. Read only.
 
@@ -117,7 +117,7 @@ items:
       return:
         type:
           - Date
-  - uid: word.Word.Interfaces.DocumentPropertiesData.customProperties
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#customProperties:member'
     summary: |-
       Gets the collection of custom properties of the document. Read only.
 
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.CustomPropertyData[]'
-  - uid: word.Word.Interfaces.DocumentPropertiesData.format
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#format:member'
     summary: |-
       Gets or sets the format of the document.
 
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.keywords
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#keywords:member'
     summary: |-
       Gets or sets the keywords of the document.
 
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.lastAuthor
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#lastAuthor:member'
     summary: |-
       Gets the last author of the document. Read only.
 
@@ -177,7 +177,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.lastPrintDate
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#lastPrintDate:member'
     summary: |-
       Gets the last print date of the document. Read only.
 
@@ -192,7 +192,7 @@ items:
       return:
         type:
           - Date
-  - uid: word.Word.Interfaces.DocumentPropertiesData.lastSaveTime
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#lastSaveTime:member'
     summary: |-
       Gets the last save time of the document. Read only.
 
@@ -207,7 +207,7 @@ items:
       return:
         type:
           - Date
-  - uid: word.Word.Interfaces.DocumentPropertiesData.manager
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#manager:member'
     summary: |-
       Gets or sets the manager of the document.
 
@@ -222,7 +222,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.revisionNumber
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#revisionNumber:member'
     summary: |-
       Gets the revision number of the document. Read only.
 
@@ -237,7 +237,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.security
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#security:member'
     summary: |-
       Gets the security of the document. Read only.
 
@@ -252,7 +252,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.DocumentPropertiesData.subject
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#subject:member'
     summary: |-
       Gets or sets the subject of the document.
 
@@ -267,7 +267,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.template
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#template:member'
     summary: |-
       Gets the template of the document. Read only.
 
@@ -282,7 +282,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesData.title
+  - uid: 'word!Word.Interfaces.DocumentPropertiesData#title:member'
     summary: |-
       Gets or sets the title of the document.
 

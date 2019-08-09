@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointFormatData
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatData:interface'
     summary: An interface describing the data returned by calling "chartPointFormat.toJSON()".
     name: Excel.Interfaces.ChartPointFormatData
     fullName: Excel.Interfaces.ChartPointFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointFormatData.border
-  - uid: excel.Excel.Interfaces.ChartPointFormatData.border
+      - 'excel!Excel.Interfaces.ChartPointFormatData#border:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatData#border:member'
     summary: >-
       Represents the border format of a chart data point, which includes color, style, and weight information.
       Read-only.
@@ -26,4 +26,4 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'

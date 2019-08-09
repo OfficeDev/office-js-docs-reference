@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SettingCollectionData
+  - uid: 'word!Word.Interfaces.SettingCollectionData:interface'
     summary: An interface describing the data returned by calling "settingCollection.toJSON()".
     name: Word.Interfaces.SettingCollectionData
     fullName: Word.Interfaces.SettingCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SettingCollectionData.items
-  - uid: word.Word.Interfaces.SettingCollectionData.items
+      - 'word!Word.Interfaces.SettingCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.SettingCollectionData#items:member'
     name: items
     fullName: items
     langs:

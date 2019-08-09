@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of worksheet objects that are part of the workbook.
 
@@ -10,22 +10,22 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.id
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.name
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.position
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.protection
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.showGridlines
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.showHeadings
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.standardHeight
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.standardWidth
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.tabColor
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
-      - excel.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#position:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#showGridlines:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#showHeadings:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#standardHeight:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#standardWidth:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tabColor:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
+      - 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#visibility:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.charts
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#charts:member'
     summary: |-
       For EACH ITEM in the collection: Returns collection of charts that are part of the worksheet.
 
@@ -50,8 +50,8 @@ items:
       content: 'charts?: Excel.Interfaces.ChartCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.id
+          - 'excel!Excel.Interfaces.ChartCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the worksheet in a given workbook. The
       value of the identifier remains the same even when the worksheet is renamed or moved. Read-only.
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: The display name of the worksheet.
 
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.position
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#position:member'
     summary: |-
       For EACH ITEM in the collection: The zero-based position of the worksheet within the workbook.
 
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.protection
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#protection:member'
     summary: |-
       For EACH ITEM in the collection: Returns sheet protection object for a worksheet.
 
@@ -112,8 +112,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorksheetProtectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetProtectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.showGridlines
+          - 'excel!Excel.Interfaces.WorksheetProtectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#showGridlines:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the worksheet's gridlines flag. This flag determines whether
       gridlines are visible to the user.
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.showHeadings
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#showHeadings:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the worksheet's headings flag. This flag determines whether headings
       are visible to the user.
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.standardHeight
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#standardHeight:member'
     summary: >-
       For EACH ITEM in the collection: Returns the standard (default) height of all the rows in the worksheet, in
       points. Read-only.
@@ -164,7 +164,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.standardWidth
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#standardWidth:member'
     summary: >-
       For EACH ITEM in the collection: Returns or sets the standard (default) width of all the columns in the worksheet.
       One unit of column width is equal to the width of one character in the Normal style. For proportional fonts, the
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.tabColor
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tabColor:member'
     summary: >-
       For EACH ITEM in the collection: Gets or sets the worksheet tab color. When retrieving the tab color, if the
       worksheet is invisible, the value will be null. If the worksheet is visible but the tab color is set to auto, an
@@ -201,7 +201,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.tables
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#tables:member'
     summary: |-
       For EACH ITEM in the collection: Collection of tables that are part of the worksheet.
 
@@ -215,8 +215,8 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorksheetCollectionLoadOptions.visibility
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionLoadOptions#visibility:member'
     summary: >-
       For EACH ITEM in the collection: The Visibility of the worksheet.
 

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomPropertyCollectionData
+  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
     summary: An interface describing the data returned by calling "customPropertyCollection.toJSON()".
     name: Excel.Interfaces.CustomPropertyCollectionData
     fullName: Excel.Interfaces.CustomPropertyCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomPropertyCollectionData.items
-  - uid: excel.Excel.Interfaces.CustomPropertyCollectionData.items
+      - 'excel!Excel.Interfaces.CustomPropertyCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartBorder
+  - uid: 'excel!Excel.ChartBorder:class'
     summary: |-
       Represents the border formatting of a chart element.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartBorder.clear
-      - excel.Excel.ChartBorder.color
-      - excel.Excel.ChartBorder.context
-      - excel.Excel.ChartBorder.lineStyle
-      - excel.Excel.ChartBorder.load
-      - excel.Excel.ChartBorder.load_1
-      - excel.Excel.ChartBorder.load_2
-      - excel.Excel.ChartBorder.set
-      - excel.Excel.ChartBorder.set_1
-      - excel.Excel.ChartBorder.toJSON
-      - excel.Excel.ChartBorder.weight
-  - uid: excel.Excel.ChartBorder.clear
+      - 'excel!Excel.ChartBorder#clear:member(1)'
+      - 'excel!Excel.ChartBorder#color:member'
+      - 'excel!Excel.ChartBorder#context:member'
+      - 'excel!Excel.ChartBorder#lineStyle:member'
+      - 'excel!Excel.ChartBorder#load:member(1)'
+      - 'excel!Excel.ChartBorder#load:member(2)'
+      - 'excel!Excel.ChartBorder#load:member(3)'
+      - 'excel!Excel.ChartBorder#set:member(1)'
+      - 'excel!Excel.ChartBorder#set:member(2)'
+      - 'excel!Excel.ChartBorder#toJSON:member(1)'
+      - 'excel!Excel.ChartBorder#weight:member'
+  - uid: 'excel!Excel.ChartBorder#clear:member(1)'
     summary: |-
       Clear the border format of a chart element.
 
@@ -41,7 +41,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.ChartBorder.color
+  - uid: 'excel!Excel.ChartBorder#color:member'
     summary: |-
       HTML color code representing the color of borders in the chart.
 
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartBorder.context
+  - uid: 'excel!Excel.ChartBorder#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -69,8 +69,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartBorder.lineStyle
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartBorder#lineStyle:member'
     summary: |-
       Represents the line style of the border. See Excel.ChartLineStyle for details.
 
@@ -89,7 +89,7 @@ items:
           - >-
             Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
             "Grey50" | "Grey75" | "Automatic" | "RoundDot"
-  - uid: excel.Excel.ChartBorder.load
+  - uid: 'excel!Excel.ChartBorder#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -120,14 +120,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartBorderLoadOptions): Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
+          - 'excel!Excel.ChartBorder:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartBorderLoadOptions
-  - uid: excel.Excel.ChartBorder.load_1
+            - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
+  - uid: 'excel!Excel.ChartBorder#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -140,14 +140,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
+          - 'excel!Excel.ChartBorder:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartBorder.load_2
+  - uid: 'excel!Excel.ChartBorder#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -160,7 +160,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartBorder;'
       return:
         type:
-          - excel.Excel.ChartBorder
+          - 'excel!Excel.ChartBorder:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -169,7 +169,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartBorder.set
+  - uid: 'excel!Excel.ChartBorder#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -199,7 +199,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartBorder.set_1
+  - uid: 'excel!Excel.ChartBorder#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -216,8 +216,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartBorder
-  - uid: excel.Excel.ChartBorder.toJSON
+            - 'excel!Excel.ChartBorder:class'
+  - uid: 'excel!Excel.ChartBorder#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -233,9 +233,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
         description: ''
-  - uid: excel.Excel.ChartBorder.weight
+  - uid: 'excel!Excel.ChartBorder#weight:member'
     summary: |-
       Represents weight of the border, in points.
 

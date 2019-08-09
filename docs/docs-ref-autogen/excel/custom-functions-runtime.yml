@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: custom-functions-runtime
+  - uid: custom-functions-runtime!
     name: custom-functions-runtime
     fullName: custom-functions-runtime
     langs:
       - typeScript
     type: package
     children:
-      - custom-functions-runtime.CustomFunctions.associate
-      - custom-functions-runtime.CustomFunctions.associate_1
-      - custom-functions-runtime.CustomFunctions.CancelableInvocation
-      - custom-functions-runtime.CustomFunctions.Invocation
-      - custom-functions-runtime.CustomFunctions.StreamingInvocation
-  - uid: custom-functions-runtime.CustomFunctions.associate
+      - 'custom-functions-runtime!CustomFunctions.associate:function(1)'
+      - 'custom-functions-runtime!CustomFunctions.associate:function(2)'
+      - 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
+      - 'custom-functions-runtime!CustomFunctions.Invocation:interface'
+      - 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
+  - uid: 'custom-functions-runtime!CustomFunctions.associate:function(1)'
     summary: Associates the JavaScript function to the name given by the "id" property in the metadata JSON file.
-    name: CustomFunctions.associate
-    fullName: CustomFunctions.associate
+    name: 'CustomFunctions.associate(id, functionObject)'
+    fullName: 'CustomFunctions.associate(id, functionObject)'
     langs:
       - typeScript
     type: function
@@ -34,10 +34,10 @@ items:
           description: ''
           type:
             - Function
-  - uid: custom-functions-runtime.CustomFunctions.associate_1
+  - uid: 'custom-functions-runtime!CustomFunctions.associate:function(2)'
     summary: Associates the JavaScript functions to the names given by the "id" properties in the metadata JSON file.
-    name: CustomFunctions.associate_1
-    fullName: CustomFunctions.associate_1
+    name: CustomFunctions.associate(mappings)
+    fullName: CustomFunctions.associate(mappings)
     langs:
       - typeScript
     type: function
@@ -53,9 +53,9 @@ items:
           type:
             - '{ [key: string]: Function }'
 references:
-  - uid: custom-functions-runtime.CustomFunctions.CancelableInvocation
+  - uid: 'custom-functions-runtime!CustomFunctions.CancelableInvocation:interface'
     name: CustomFunctions.CancelableInvocation
-  - uid: custom-functions-runtime.CustomFunctions.Invocation
+  - uid: 'custom-functions-runtime!CustomFunctions.Invocation:interface'
     name: CustomFunctions.Invocation
-  - uid: custom-functions-runtime.CustomFunctions.StreamingInvocation
+  - uid: 'custom-functions-runtime!CustomFunctions.StreamingInvocation:interface'
     name: CustomFunctions.StreamingInvocation

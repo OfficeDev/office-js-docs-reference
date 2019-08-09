@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableDeletedEventArgs
+  - uid: 'excel!Excel.TableDeletedEventArgs:interface'
     summary: |-
       Provides information about the table that raised the OnDeleted event.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableDeletedEventArgs.source
-      - excel.Excel.TableDeletedEventArgs.tableId
-      - excel.Excel.TableDeletedEventArgs.tableName
-      - excel.Excel.TableDeletedEventArgs.type
-      - excel.Excel.TableDeletedEventArgs.worksheetId
-  - uid: excel.Excel.TableDeletedEventArgs.source
+      - 'excel!Excel.TableDeletedEventArgs#source:member'
+      - 'excel!Excel.TableDeletedEventArgs#tableId:member'
+      - 'excel!Excel.TableDeletedEventArgs#tableName:member'
+      - 'excel!Excel.TableDeletedEventArgs#type:member'
+      - 'excel!Excel.TableDeletedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.TableDeletedEventArgs#source:member'
     summary: |-
       Specifies the source of the event. See Excel.EventSource for details.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.TableDeletedEventArgs.tableId
+  - uid: 'excel!Excel.TableDeletedEventArgs#tableId:member'
     summary: |-
       Specifies the id of the table that is deleted.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TableDeletedEventArgs.tableName
+  - uid: 'excel!Excel.TableDeletedEventArgs#tableName:member'
     summary: |-
       Specifies the name of the table that is deleted.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TableDeletedEventArgs.type
+  - uid: 'excel!Excel.TableDeletedEventArgs#type:member'
     summary: |-
       Specifies the type of the event. See Excel.EventType for details.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - '"TableDeleted"'
-  - uid: excel.Excel.TableDeletedEventArgs.worksheetId
+  - uid: 'excel!Excel.TableDeletedEventArgs#worksheetId:member'
     summary: |-
       Specifies the id of the worksheet in which the table is deleted.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeCollection
+  - uid: 'excel!Excel.ShapeCollection:class'
     summary: |-
       Represents a collection of all the shapes in the worksheet.
 
@@ -12,26 +12,26 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeCollection.addGeometricShape
-      - excel.Excel.ShapeCollection.addGeometricShape_1
-      - excel.Excel.ShapeCollection.addGroup
-      - excel.Excel.ShapeCollection.addImage
-      - excel.Excel.ShapeCollection.addLine
-      - excel.Excel.ShapeCollection.addLine_1
-      - excel.Excel.ShapeCollection.addSvg
-      - excel.Excel.ShapeCollection.addTextBox
-      - excel.Excel.ShapeCollection.context
-      - excel.Excel.ShapeCollection.getCount
-      - excel.Excel.ShapeCollection.getItem
-      - excel.Excel.ShapeCollection.getItemAt
-      - excel.Excel.ShapeCollection.items
-      - excel.Excel.ShapeCollection.load
-      - excel.Excel.ShapeCollection.load_1
-      - excel.Excel.ShapeCollection.load_2
-      - excel.Excel.ShapeCollection.toJSON
-  - uid: excel.Excel.ShapeCollection.addGeometricShape
+      - 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
+      - 'excel!Excel.ShapeCollection#addGeometricShape:member(2)'
+      - 'excel!Excel.ShapeCollection#addGroup:member(1)'
+      - 'excel!Excel.ShapeCollection#addImage:member(1)'
+      - 'excel!Excel.ShapeCollection#addLine:member(1)'
+      - 'excel!Excel.ShapeCollection#addLine:member(2)'
+      - 'excel!Excel.ShapeCollection#addSvg:member(1)'
+      - 'excel!Excel.ShapeCollection#addTextBox:member(1)'
+      - 'excel!Excel.ShapeCollection#context:member'
+      - 'excel!Excel.ShapeCollection#getCount:member(1)'
+      - 'excel!Excel.ShapeCollection#getItem:member(1)'
+      - 'excel!Excel.ShapeCollection#getItemAt:member(1)'
+      - 'excel!Excel.ShapeCollection#items:member'
+      - 'excel!Excel.ShapeCollection#load:member(1)'
+      - 'excel!Excel.ShapeCollection#load:member(2)'
+      - 'excel!Excel.ShapeCollection#load:member(3)'
+      - 'excel!Excel.ShapeCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(1)'
     summary: |-
       Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
 
@@ -45,29 +45,14 @@ items:
       content: 'addGeometricShape(geometricShapeType: Excel.GeometricShapeType): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const shape = sheet.shapes.addGeometricShape(Excel.GeometricShapeType.hexagon);
-              shape.left = 5;
-              shape.top = 5;
-              shape.height = 175;
-              shape.width = 200;
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Shape:class'
+        description: ''
       parameters:
         - id: geometricShapeType
           description: Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
           type:
-            - excel.Excel.GeometricShapeType
-  - uid: excel.Excel.ShapeCollection.addGeometricShape_1
+            - 'excel!Excel.GeometricShapeType:enum'
+  - uid: 'excel!Excel.ShapeCollection#addGeometricShape:member(2)'
     summary: |-
       Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
 
@@ -112,7 +97,7 @@ items:
         "PlaqueTabs" | "ChartX" | "ChartStar" | "ChartPlus"): Excel.Shape;
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: geometricShapeTypeString
@@ -151,7 +136,7 @@ items:
               "ActionButtonMovie" | "Gear6" | "Gear9" | "Funnel" | "MathPlus" | "MathMinus" | "MathMultiply" |
               "MathDivide" | "MathEqual" | "MathNotEqual" | "CornerTabs" | "SquareTabs" | "PlaqueTabs" | "ChartX" |
               "ChartStar" | "ChartPlus"
-  - uid: excel.Excel.ShapeCollection.addGroup
+  - uid: 'excel!Excel.ShapeCollection#addGroup:member(1)'
     summary: >-
       Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of
       shapes.
@@ -167,32 +152,14 @@ items:
       content: 'addGroup(values: Array<string | Shape>): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Shapes");
-              const square = sheet.shapes.getItem("Square");
-              const pentagon = sheet.shapes.getItem("Pentagon");
-              const octagon = sheet.shapes.getItem("Octagon");
-
-              const shapeGroup = sheet.shapes.addGroup([square, pentagon, octagon]);
-              shapeGroup.name = "Group";
-              console.log("Shapes grouped");
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Shape:class'
+        description: ''
       parameters:
         - id: values
           description: An array of shape ID or shape objects.
           type:
             - Array<string | Shape>
-  - uid: excel.Excel.ShapeCollection.addImage
+  - uid: 'excel!Excel.ShapeCollection#addImage:member(1)'
     summary: >-
       Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that
       represents the new image.
@@ -208,36 +175,14 @@ items:
       content: 'addImage(base64ImageString: string): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          const myFile = <HTMLInputElement>document.getElementById("selectedFile");
-          const reader = new FileReader();
-
-          reader.onload = (event) => {
-              Excel.run((context) => {
-                  const startIndex = (<string>(<FileReader>event.target).result).indexOf("base64,");
-                  const mybase64 = (<string>(<FileReader>event.target).result).substr(startIndex + 7);
-                  const sheet = context.workbook.worksheets.getItem("Shapes");
-                  const image = sheet.shapes.addImage(mybase64);
-                  image.name = "Image";
-                  return context.sync();
-              });
-          };
-
-          // Read in the image file as a data URL.
-          reader.readAsDataURL(myFile.files[0]);
-          ```
+          - 'excel!Excel.Shape:class'
+        description: ''
       parameters:
         - id: base64ImageString
           description: A base64-encoded string representing an image in either JPEG or PNG format.
           type:
             - string
-  - uid: excel.Excel.ShapeCollection.addLine
+  - uid: 'excel!Excel.ShapeCollection#addLine:member(1)'
     summary: |-
       Adds a line to worksheet. Returns a Shape object that represents the new line.
 
@@ -253,20 +198,8 @@ items:
         Excel.ConnectorType): Excel.Shape;
       return:
         type:
-          - excel.Excel.Shape
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const line = shapes.addLine(200, 50, 300, 150, Excel.ConnectorType.straight);
-              line.name = "StraightLine";
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Shape:class'
+        description: ''
       parameters:
         - id: startLeft
           description: 'The distance, in points, from the start of the line to the left side of the worksheet.'
@@ -287,8 +220,8 @@ items:
         - id: connectorType
           description: Represents the connector type. See Excel.ConnectorType for details.
           type:
-            - excel.Excel.ConnectorType
-  - uid: excel.Excel.ShapeCollection.addLine_1
+            - 'excel!Excel.ConnectorType:enum'
+  - uid: 'excel!Excel.ShapeCollection#addLine:member(2)'
     summary: |-
       Adds a line to worksheet. Returns a Shape object that represents the new line.
 
@@ -304,7 +237,7 @@ items:
         "Elbow" | "Curve"): Excel.Shape;
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: startLeft
@@ -327,7 +260,7 @@ items:
           description: Represents the connector type. See Excel.ConnectorType for details.
           type:
             - '"Straight" | "Elbow" | "Curve"'
-  - uid: excel.Excel.ShapeCollection.addSvg
+  - uid: 'excel!Excel.ShapeCollection#addSvg:member(1)'
     summary: >-
       Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet. Returns a Shape object
       that represents the new image.
@@ -345,14 +278,14 @@ items:
       content: 'addSvg(xml: string): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: xml
           description: An XML string that represents the SVG.
           type:
             - string
-  - uid: excel.Excel.ShapeCollection.addTextBox
+  - uid: 'excel!Excel.ShapeCollection#addTextBox:member(1)'
     summary: >-
       Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the
       new text box.
@@ -368,30 +301,14 @@ items:
       content: 'addTextBox(text?: string): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
-              const textbox = shapes.addTextBox("A box with text");
-              textbox.left = 100;
-              textbox.top = 100;
-              textbox.height = 20;
-              textbox.width = 175;
-              textbox.name = "Textbox";
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Shape:class'
+        description: ''
       parameters:
         - id: text
           description: Represents the text that will be shown in the created text box.
           type:
             - string
-  - uid: excel.Excel.ShapeCollection.context
+  - uid: 'excel!Excel.ShapeCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -404,8 +321,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ShapeCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ShapeCollection#getCount:member(1)'
     summary: |-
       Returns the number of shapes in the worksheet. Read-only.
 
@@ -421,7 +338,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.ShapeCollection.getItem
+  - uid: 'excel!Excel.ShapeCollection#getItem:member(1)'
     summary: |-
       Gets a shape using its Name or ID.
 
@@ -435,14 +352,14 @@ items:
       content: 'getItem(key: string): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: key
           description: Name or ID of the shape to be retrieved.
           type:
             - string
-  - uid: excel.Excel.ShapeCollection.getItemAt
+  - uid: 'excel!Excel.ShapeCollection#getItemAt:member(1)'
     summary: |-
       Gets a shape using its position in the collection.
 
@@ -456,14 +373,14 @@ items:
       content: 'getItemAt(index: number): Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
+          - 'excel!Excel.Shape:class'
         description: ''
       parameters:
         - id: index
           description: The zero-based index of the shape to be retrieved.
           type:
             - number
-  - uid: excel.Excel.ShapeCollection.items
+  - uid: 'excel!Excel.ShapeCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -475,7 +392,7 @@ items:
       return:
         type:
           - 'Excel.Shape[]'
-  - uid: excel.Excel.ShapeCollection.load
+  - uid: 'excel!Excel.ShapeCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -508,14 +425,14 @@ items:
         Excel.ShapeCollection;
       return:
         type:
-          - excel.Excel.ShapeCollection
+          - 'excel!Excel.ShapeCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.ShapeCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.ShapeCollection.load_1
+  - uid: 'excel!Excel.ShapeCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -528,14 +445,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ShapeCollection;'
       return:
         type:
-          - excel.Excel.ShapeCollection
+          - 'excel!Excel.ShapeCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ShapeCollection.load_2
+  - uid: 'excel!Excel.ShapeCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -545,14 +462,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ShapeCollection;'
       return:
         type:
-          - excel.Excel.ShapeCollection
+          - 'excel!Excel.ShapeCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.ShapeCollection.toJSON
+  - uid: 'excel!Excel.ShapeCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -568,5 +485,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ShapeCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeCollectionData
+          - 'excel!Excel.Interfaces.ShapeCollectionData:interface'
         description: ''

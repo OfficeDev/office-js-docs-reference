@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ToolBarType
+  - uid: 'visio!Visio.ToolBarType:enum'
     summary: |-
       Toolbar IDs of the app
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.ToolBarType.commandBar
-      - visio.Visio.ToolBarType.pageNavigationBar
-      - visio.Visio.ToolBarType.statusBar
-  - uid: visio.Visio.ToolBarType.commandBar
+      - 'visio!Visio.ToolBarType.commandBar:member'
+      - 'visio!Visio.ToolBarType.pageNavigationBar:member'
+      - 'visio!Visio.ToolBarType.statusBar:member'
+  - uid: 'visio!Visio.ToolBarType.commandBar:member'
     summary: CommandBar
     name: commandBar
     fullName: commandBar
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"CommandBar"'
-  - uid: visio.Visio.ToolBarType.pageNavigationBar
+  - uid: 'visio!Visio.ToolBarType.pageNavigationBar:member'
     summary: PageNavigationBar
     name: pageNavigationBar
     fullName: pageNavigationBar
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"PageNavigationBar"'
-  - uid: visio.Visio.ToolBarType.statusBar
+  - uid: 'visio!Visio.ToolBarType.statusBar:member'
     summary: StatusBar
     name: statusBar
     fullName: statusBar

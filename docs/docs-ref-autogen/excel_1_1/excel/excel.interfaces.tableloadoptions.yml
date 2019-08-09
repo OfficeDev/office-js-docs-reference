@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions:interface'
     summary: |-
       Represents an Excel table.
 
@@ -10,17 +10,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableLoadOptions.$all
-      - excel.Excel.Interfaces.TableLoadOptions.columns
-      - excel.Excel.Interfaces.TableLoadOptions.id
-      - excel.Excel.Interfaces.TableLoadOptions.name
-      - excel.Excel.Interfaces.TableLoadOptions.rows
-      - excel.Excel.Interfaces.TableLoadOptions.showHeaders
-      - excel.Excel.Interfaces.TableLoadOptions.showTotals
-      - excel.Excel.Interfaces.TableLoadOptions.style
-  - uid: excel.Excel.Interfaces.TableLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
+      - 'excel!Excel.Interfaces.TableLoadOptions#style:member'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableLoadOptions.columns
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#columns:member'
     summary: |-
       Represents a collection of all the columns in the table.
 
@@ -45,8 +45,8 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableLoadOptions.id
+          - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#id:member'
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
       same even when the table is renamed. Read-only.
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#name:member'
     summary: |-
       Name of the table.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableLoadOptions.rows
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#rows:member'
     summary: |-
       Represents a collection of all the rows in the table.
 
@@ -92,8 +92,8 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableLoadOptions.showHeaders
+          - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showHeaders:member'
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableLoadOptions.showTotals
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#showTotals:member'
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.TableLoadOptions#style:member'
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
       TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined

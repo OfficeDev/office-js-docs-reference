@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Diagnostics
+  - uid: 'outlook!Office.Diagnostics:interface'
     summary: |-
       Provides diagnostic information to an Outlook add-in.
 
@@ -17,12 +17,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.Diagnostics.hostName
-      - Outlook.Office.Diagnostics.hostVersion
-      - Outlook.Office.Diagnostics.OWAView
-  - uid: Outlook.Office.Diagnostics.hostName
+      - 'outlook!Office.Diagnostics#hostName:member'
+      - 'outlook!Office.Diagnostics#hostVersion:member'
+      - 'outlook!Office.Diagnostics#OWAView:member'
+  - uid: 'outlook!Office.Diagnostics#hostName:member'
     summary: |-
       Gets a string that represents the name of the host application.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.Diagnostics.hostVersion
+  - uid: 'outlook!Office.Diagnostics#hostVersion:member'
     summary: >-
       Gets a string that represents the version of either the host application or the Exchange Server (e.g.,
       "15.0.468.0").
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.Diagnostics.OWAView
+  - uid: 'outlook!Office.Diagnostics#OWAView:member'
     summary: >-
       Gets a string that represents the current view of Outlook on the web.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ShapeCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ShapeCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ShapeCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ShapeCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ShapeCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ShapeCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

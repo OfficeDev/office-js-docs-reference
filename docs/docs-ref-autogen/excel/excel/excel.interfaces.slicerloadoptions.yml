@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
     summary: >-
       Represents a slicer object in the workbook.
 
@@ -13,22 +13,22 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerLoadOptions.$all
-      - excel.Excel.Interfaces.SlicerLoadOptions.caption
-      - excel.Excel.Interfaces.SlicerLoadOptions.height
-      - excel.Excel.Interfaces.SlicerLoadOptions.id
-      - excel.Excel.Interfaces.SlicerLoadOptions.isFilterCleared
-      - excel.Excel.Interfaces.SlicerLoadOptions.left
-      - excel.Excel.Interfaces.SlicerLoadOptions.name
-      - excel.Excel.Interfaces.SlicerLoadOptions.nameInFormula
-      - excel.Excel.Interfaces.SlicerLoadOptions.sortBy
-      - excel.Excel.Interfaces.SlicerLoadOptions.style
-      - excel.Excel.Interfaces.SlicerLoadOptions.top
-      - excel.Excel.Interfaces.SlicerLoadOptions.width
-      - excel.Excel.Interfaces.SlicerLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.$all
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#caption:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#isFilterCleared:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#nameInFormula:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.caption
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#caption:member'
     summary: >-
       Represents the caption of slicer.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.height
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#height:member'
     summary: >-
       Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
       or zero as input.
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#id:member'
     summary: >-
       Represents the unique id of slicer. Read-only.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.isFilterCleared
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#isFilterCleared:member'
     summary: >-
       True if all filters currently applied on the slicer are cleared.
 
@@ -113,7 +113,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#left:member'
     summary: >-
       Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
       invalid argument exception when set with negative value as input.
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#name:member'
     summary: >-
       Represents the name of slicer.
 
@@ -150,7 +150,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.nameInFormula
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#nameInFormula:member'
     summary: >-
       Represents the slicer name used in the formula.
 
@@ -168,7 +168,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.sortBy
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#sortBy:member'
     summary: >-
       Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
 
@@ -186,7 +186,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#style:member'
     summary: >-
       Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
       "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
@@ -206,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.top
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an invalid
       argument exception when set with negative value as input.
@@ -225,7 +225,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#width:member'
     summary: >-
       Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
       or zero as input.
@@ -244,7 +244,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.SlicerLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.SlicerLoadOptions#worksheet:member'
     summary: >-
       Represents the worksheet containing the slicer.
 
@@ -261,4 +261,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'

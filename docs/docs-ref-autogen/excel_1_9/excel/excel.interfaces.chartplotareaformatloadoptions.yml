@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions:interface'
     summary: |-
       Represents the format properties for chart plotArea.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border
-  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#border:member'
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartPlotAreaFormatLoadOptions.border
+  - uid: 'excel!Excel.Interfaces.ChartPlotAreaFormatLoadOptions#border:member'
     summary: |-
       Represents the border attributes of a chart plotArea.
 
@@ -39,4 +39,4 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderLoadOptions
+          - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'

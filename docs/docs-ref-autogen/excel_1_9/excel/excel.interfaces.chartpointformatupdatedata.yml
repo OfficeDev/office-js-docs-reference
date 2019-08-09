@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartPointFormat object, for use in "chartPointFormat.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointFormatUpdateData.border
-  - uid: excel.Excel.Interfaces.ChartPointFormatUpdateData.border
+      - 'excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointFormatUpdateData#border:member'
     summary: |-
       Represents the border format of a chart data point, which includes color, style, and weight information.
 
@@ -26,4 +26,4 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderUpdateData
+          - 'excel!Excel.Interfaces.ChartBorderUpdateData:interface'

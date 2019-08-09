@@ -1,33 +1,33 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeData
+  - uid: 'excel!Excel.Interfaces.RangeData:interface'
     summary: An interface describing the data returned by calling "range.toJSON()".
     name: Excel.Interfaces.RangeData
     fullName: Excel.Interfaces.RangeData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeData.address
-      - excel.Excel.Interfaces.RangeData.addressLocal
-      - excel.Excel.Interfaces.RangeData.cellCount
-      - excel.Excel.Interfaces.RangeData.columnCount
-      - excel.Excel.Interfaces.RangeData.columnHidden
-      - excel.Excel.Interfaces.RangeData.columnIndex
-      - excel.Excel.Interfaces.RangeData.format
-      - excel.Excel.Interfaces.RangeData.formulas
-      - excel.Excel.Interfaces.RangeData.formulasLocal
-      - excel.Excel.Interfaces.RangeData.formulasR1C1
-      - excel.Excel.Interfaces.RangeData.hidden
-      - excel.Excel.Interfaces.RangeData.numberFormat
-      - excel.Excel.Interfaces.RangeData.rowCount
-      - excel.Excel.Interfaces.RangeData.rowHidden
-      - excel.Excel.Interfaces.RangeData.rowIndex
-      - excel.Excel.Interfaces.RangeData.text
-      - excel.Excel.Interfaces.RangeData.values
-      - excel.Excel.Interfaces.RangeData.valueTypes
-  - uid: excel.Excel.Interfaces.RangeData.address
+      - 'excel!Excel.Interfaces.RangeData#address:member'
+      - 'excel!Excel.Interfaces.RangeData#addressLocal:member'
+      - 'excel!Excel.Interfaces.RangeData#cellCount:member'
+      - 'excel!Excel.Interfaces.RangeData#columnCount:member'
+      - 'excel!Excel.Interfaces.RangeData#columnHidden:member'
+      - 'excel!Excel.Interfaces.RangeData#columnIndex:member'
+      - 'excel!Excel.Interfaces.RangeData#format:member'
+      - 'excel!Excel.Interfaces.RangeData#formulas:member'
+      - 'excel!Excel.Interfaces.RangeData#formulasLocal:member'
+      - 'excel!Excel.Interfaces.RangeData#formulasR1C1:member'
+      - 'excel!Excel.Interfaces.RangeData#hidden:member'
+      - 'excel!Excel.Interfaces.RangeData#numberFormat:member'
+      - 'excel!Excel.Interfaces.RangeData#rowCount:member'
+      - 'excel!Excel.Interfaces.RangeData#rowHidden:member'
+      - 'excel!Excel.Interfaces.RangeData#rowIndex:member'
+      - 'excel!Excel.Interfaces.RangeData#text:member'
+      - 'excel!Excel.Interfaces.RangeData#values:member'
+      - 'excel!Excel.Interfaces.RangeData#valueTypes:member'
+  - uid: 'excel!Excel.Interfaces.RangeData#address:member'
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeData.addressLocal
+  - uid: 'excel!Excel.Interfaces.RangeData#addressLocal:member'
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeData.cellCount
+  - uid: 'excel!Excel.Interfaces.RangeData#cellCount:member'
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.columnCount
+  - uid: 'excel!Excel.Interfaces.RangeData#columnCount:member'
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.columnHidden
+  - uid: 'excel!Excel.Interfaces.RangeData#columnHidden:member'
     summary: |-
       Represents if all columns of the current range are hidden.
 
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.columnIndex
+  - uid: 'excel!Excel.Interfaces.RangeData#columnIndex:member'
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -119,7 +119,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.format
+  - uid: 'excel!Excel.Interfaces.RangeData#format:member'
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
       Read-only.
@@ -135,8 +135,8 @@ items:
       content: 'format?: Excel.Interfaces.RangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFormatData
-  - uid: excel.Excel.Interfaces.RangeData.formulas
+          - 'excel!Excel.Interfaces.RangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeData#formulas:member'
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -154,7 +154,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.formulasLocal
+  - uid: 'excel!Excel.Interfaces.RangeData#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
@@ -173,7 +173,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.formulasR1C1
+  - uid: 'excel!Excel.Interfaces.RangeData#formulasR1C1:member'
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.hidden
+  - uid: 'excel!Excel.Interfaces.RangeData#hidden:member'
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
 
@@ -206,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.numberFormat
+  - uid: 'excel!Excel.Interfaces.RangeData#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
@@ -224,7 +224,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.rowCount
+  - uid: 'excel!Excel.Interfaces.RangeData#rowCount:member'
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
@@ -239,7 +239,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.rowHidden
+  - uid: 'excel!Excel.Interfaces.RangeData#rowHidden:member'
     summary: |-
       Represents if all rows of the current range are hidden.
 
@@ -254,7 +254,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeData.rowIndex
+  - uid: 'excel!Excel.Interfaces.RangeData#rowIndex:member'
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -269,7 +269,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeData.text
+  - uid: 'excel!Excel.Interfaces.RangeData#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -286,7 +286,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: excel.Excel.Interfaces.RangeData.values
+  - uid: 'excel!Excel.Interfaces.RangeData#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
@@ -305,7 +305,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Interfaces.RangeData.valueTypes
+  - uid: 'excel!Excel.Interfaces.RangeData#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 

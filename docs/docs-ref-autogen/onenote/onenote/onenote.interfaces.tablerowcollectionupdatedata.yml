@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TableRowCollection object, for use in "tableRowCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.TableRowCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

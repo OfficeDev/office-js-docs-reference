@@ -1,38 +1,38 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData:interface'
     summary: 'An interface for updating data on the ChartSeries object, for use in "chartSeries.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartSeriesUpdateData
     fullName: Excel.Interfaces.ChartSeriesUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.axisGroup
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.chartType
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.dataLabels
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.doughnutHoleSize
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.explosion
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.filtered
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.firstSliceAngle
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.format
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.gapWidth
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.hasDataLabels
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.invertIfNegative
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerForegroundColor
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerSize
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.markerStyle
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.name
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.overlap
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.plotOrder
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.secondPlotSize
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.showShadow
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.smooth
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.splitType
-      - excel.Excel.Interfaces.ChartSeriesUpdateData.varyByCategories
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.axisGroup
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#axisGroup:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#explosion:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#firstSliceAngle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#invertIfNegative:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#overlap:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#secondPlotSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#smooth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesUpdateData#varyByCategories:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#axisGroup:member'
     summary: |-
       Returns or sets the group for the specified series. Read/Write
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - Excel.ChartAxisGroup | "Primary" | "Secondary"
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.chartType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#chartType:member'
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -91,7 +91,7 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.dataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#dataLabels:member'
     summary: |-
       Represents a collection of all dataLabels in the series.
 
@@ -105,8 +105,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsUpdateData
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.doughnutHoleSize
+          - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#doughnutHoleSize:member'
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
       invalid argument exception on invalid charts.
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.explosion
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#explosion:member'
     summary: >-
       Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no
       explosion (the tip of the slice is in the center of the pie). Read/Write.
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.filtered
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#filtered:member'
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
@@ -155,7 +155,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.firstSliceAngle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#firstSliceAngle:member'
     summary: >-
       Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical).
       Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
@@ -172,7 +172,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting.
 
@@ -186,8 +186,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.gapWidth
+          - 'excel!Excel.Interfaces.ChartSeriesFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#gapWidth:member'
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
       line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -204,7 +204,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.hasDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#hasDataLabels:member'
     summary: |-
       Boolean value representing if the series has data labels or not.
 
@@ -219,7 +219,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.invertIfNegative
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#invertIfNegative:member'
     summary: |-
       True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
 
@@ -234,7 +234,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerBackgroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerBackgroundColor:member'
     summary: |-
       Represents markers background color of a chart series.
 
@@ -249,7 +249,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerForegroundColor:member'
     summary: |-
       Represents markers foreground color of a chart series.
 
@@ -264,7 +264,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerSize:member'
     summary: |-
       Represents marker size of a chart series.
 
@@ -279,7 +279,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#markerStyle:member'
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
@@ -298,7 +298,7 @@ items:
           - >-
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.name
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -313,7 +313,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.overlap
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#overlap:member'
     summary: >-
       Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and
       2-D column charts. Read/Write.
@@ -330,7 +330,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.plotOrder
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#plotOrder:member'
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
@@ -345,7 +345,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.secondPlotSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#secondPlotSize:member'
     summary: >-
       Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a
       percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
@@ -362,7 +362,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.showShadow
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#showShadow:member'
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
@@ -377,7 +377,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.smooth
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#smooth:member'
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 
@@ -392,7 +392,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.splitType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#splitType:member'
     summary: |-
       Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
 
@@ -409,7 +409,7 @@ items:
       return:
         type:
           - Excel.ChartSplitType | "SplitByPosition" | "SplitByValue" | "SplitByPercentValue" | "SplitByCustomSplit"
-  - uid: excel.Excel.Interfaces.ChartSeriesUpdateData.varyByCategories
+  - uid: 'excel!Excel.Interfaces.ChartSeriesUpdateData#varyByCategories:member'
     summary: >-
       True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one
       series. Read/Write.

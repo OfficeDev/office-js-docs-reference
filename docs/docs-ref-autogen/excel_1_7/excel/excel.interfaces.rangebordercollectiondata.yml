@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeBorderCollectionData
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
     summary: An interface describing the data returned by calling "rangeBorderCollection.toJSON()".
     name: Excel.Interfaces.RangeBorderCollectionData
     fullName: Excel.Interfaces.RangeBorderCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeBorderCollectionData.items
-  - uid: excel.Excel.Interfaces.RangeBorderCollectionData.items
+      - 'excel!Excel.Interfaces.RangeBorderCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.RangeBorderCollectionData#items:member'
     name: items
     fullName: items
     langs:

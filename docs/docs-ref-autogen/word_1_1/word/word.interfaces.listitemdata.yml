@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ListItemData
+  - uid: 'word!Word.Interfaces.ListItemData:interface'
     summary: An interface describing the data returned by calling "listItem.toJSON()".
     name: Word.Interfaces.ListItemData
     fullName: Word.Interfaces.ListItemData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!

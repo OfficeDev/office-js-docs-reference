@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Range
+  - uid: 'excel!Excel.Range:class'
     summary: |-
       Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
 
@@ -12,79 +12,79 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Range.address
-      - excel.Excel.Range.addressLocal
-      - excel.Excel.Range.calculate
-      - excel.Excel.Range.cellCount
-      - excel.Excel.Range.clear
-      - excel.Excel.Range.clear_1
-      - excel.Excel.Range.columnCount
-      - excel.Excel.Range.columnHidden
-      - excel.Excel.Range.columnIndex
-      - excel.Excel.Range.conditionalFormats
-      - excel.Excel.Range.context
-      - excel.Excel.Range.dataValidation
-      - excel.Excel.Range.delete
-      - excel.Excel.Range.delete_1
-      - excel.Excel.Range.format
-      - excel.Excel.Range.formulas
-      - excel.Excel.Range.formulasLocal
-      - excel.Excel.Range.formulasR1C1
-      - excel.Excel.Range.getAbsoluteResizedRange
-      - excel.Excel.Range.getBoundingRect
-      - excel.Excel.Range.getCell
-      - excel.Excel.Range.getColumn
-      - excel.Excel.Range.getColumnsAfter
-      - excel.Excel.Range.getColumnsBefore
-      - excel.Excel.Range.getEntireColumn
-      - excel.Excel.Range.getEntireRow
-      - excel.Excel.Range.getImage
-      - excel.Excel.Range.getIntersection
-      - excel.Excel.Range.getIntersectionOrNullObject
-      - excel.Excel.Range.getLastCell
-      - excel.Excel.Range.getLastColumn
-      - excel.Excel.Range.getLastRow
-      - excel.Excel.Range.getOffsetRange
-      - excel.Excel.Range.getResizedRange
-      - excel.Excel.Range.getRow
-      - excel.Excel.Range.getRowsAbove
-      - excel.Excel.Range.getRowsBelow
-      - excel.Excel.Range.getSurroundingRegion
-      - excel.Excel.Range.getUsedRange
-      - excel.Excel.Range.getUsedRangeOrNullObject
-      - excel.Excel.Range.getVisibleView
-      - excel.Excel.Range.hidden
-      - excel.Excel.Range.hyperlink
-      - excel.Excel.Range.insert
-      - excel.Excel.Range.insert_1
-      - excel.Excel.Range.isEntireColumn
-      - excel.Excel.Range.isEntireRow
-      - excel.Excel.Range.load
-      - excel.Excel.Range.load_1
-      - excel.Excel.Range.load_2
-      - excel.Excel.Range.merge
-      - excel.Excel.Range.numberFormat
-      - excel.Excel.Range.numberFormatLocal
-      - excel.Excel.Range.rowCount
-      - excel.Excel.Range.rowHidden
-      - excel.Excel.Range.rowIndex
-      - excel.Excel.Range.select
-      - excel.Excel.Range.set
-      - excel.Excel.Range.set_1
-      - excel.Excel.Range.showCard
-      - excel.Excel.Range.sort
-      - excel.Excel.Range.style
-      - excel.Excel.Range.text
-      - excel.Excel.Range.toJSON
-      - excel.Excel.Range.track
-      - excel.Excel.Range.unmerge
-      - excel.Excel.Range.untrack
-      - excel.Excel.Range.values
-      - excel.Excel.Range.valueTypes
-      - excel.Excel.Range.worksheet
-  - uid: excel.Excel.Range.address
+      - 'excel!Excel.Range#address:member'
+      - 'excel!Excel.Range#addressLocal:member'
+      - 'excel!Excel.Range#calculate:member(1)'
+      - 'excel!Excel.Range#cellCount:member'
+      - 'excel!Excel.Range#clear:member(1)'
+      - 'excel!Excel.Range#clear:member(2)'
+      - 'excel!Excel.Range#columnCount:member'
+      - 'excel!Excel.Range#columnHidden:member'
+      - 'excel!Excel.Range#columnIndex:member'
+      - 'excel!Excel.Range#conditionalFormats:member'
+      - 'excel!Excel.Range#context:member'
+      - 'excel!Excel.Range#dataValidation:member'
+      - 'excel!Excel.Range#delete:member(1)'
+      - 'excel!Excel.Range#delete:member(2)'
+      - 'excel!Excel.Range#format:member'
+      - 'excel!Excel.Range#formulas:member'
+      - 'excel!Excel.Range#formulasLocal:member'
+      - 'excel!Excel.Range#formulasR1C1:member'
+      - 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
+      - 'excel!Excel.Range#getBoundingRect:member(1)'
+      - 'excel!Excel.Range#getCell:member(1)'
+      - 'excel!Excel.Range#getColumn:member(1)'
+      - 'excel!Excel.Range#getColumnsAfter:member(1)'
+      - 'excel!Excel.Range#getColumnsBefore:member(1)'
+      - 'excel!Excel.Range#getEntireColumn:member(1)'
+      - 'excel!Excel.Range#getEntireRow:member(1)'
+      - 'excel!Excel.Range#getImage:member(1)'
+      - 'excel!Excel.Range#getIntersection:member(1)'
+      - 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
+      - 'excel!Excel.Range#getLastCell:member(1)'
+      - 'excel!Excel.Range#getLastColumn:member(1)'
+      - 'excel!Excel.Range#getLastRow:member(1)'
+      - 'excel!Excel.Range#getOffsetRange:member(1)'
+      - 'excel!Excel.Range#getResizedRange:member(1)'
+      - 'excel!Excel.Range#getRow:member(1)'
+      - 'excel!Excel.Range#getRowsAbove:member(1)'
+      - 'excel!Excel.Range#getRowsBelow:member(1)'
+      - 'excel!Excel.Range#getSurroundingRegion:member(1)'
+      - 'excel!Excel.Range#getUsedRange:member(1)'
+      - 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
+      - 'excel!Excel.Range#getVisibleView:member(1)'
+      - 'excel!Excel.Range#hidden:member'
+      - 'excel!Excel.Range#hyperlink:member'
+      - 'excel!Excel.Range#insert:member(1)'
+      - 'excel!Excel.Range#insert:member(2)'
+      - 'excel!Excel.Range#isEntireColumn:member'
+      - 'excel!Excel.Range#isEntireRow:member'
+      - 'excel!Excel.Range#load:member(1)'
+      - 'excel!Excel.Range#load:member(2)'
+      - 'excel!Excel.Range#load:member(3)'
+      - 'excel!Excel.Range#merge:member(1)'
+      - 'excel!Excel.Range#numberFormat:member'
+      - 'excel!Excel.Range#numberFormatLocal:member'
+      - 'excel!Excel.Range#rowCount:member'
+      - 'excel!Excel.Range#rowHidden:member'
+      - 'excel!Excel.Range#rowIndex:member'
+      - 'excel!Excel.Range#select:member(1)'
+      - 'excel!Excel.Range#set:member(1)'
+      - 'excel!Excel.Range#set:member(2)'
+      - 'excel!Excel.Range#showCard:member(1)'
+      - 'excel!Excel.Range#sort:member'
+      - 'excel!Excel.Range#style:member'
+      - 'excel!Excel.Range#text:member'
+      - 'excel!Excel.Range#toJSON:member(1)'
+      - 'excel!Excel.Range#track:member(1)'
+      - 'excel!Excel.Range#unmerge:member(1)'
+      - 'excel!Excel.Range#untrack:member(1)'
+      - 'excel!Excel.Range#values:member'
+      - 'excel!Excel.Range#valueTypes:member'
+      - 'excel!Excel.Range#worksheet:member'
+  - uid: 'excel!Excel.Range#address:member'
     summary: >-
       Represents the range reference in A1-style. Address value will contain the Sheet reference (e.g. "Sheet1!A1:B4").
       Read-only.
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Range.addressLocal
+  - uid: 'excel!Excel.Range#addressLocal:member'
     summary: |-
       Represents range reference for the specified range in the language of the user. Read-only.
 
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Range.calculate
+  - uid: 'excel!Excel.Range#calculate:member(1)'
     summary: |-
       Calculates a range of cells on a worksheet.
 
@@ -132,7 +132,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.cellCount
+  - uid: 'excel!Excel.Range#cellCount:member'
     summary: |-
       Number of cells in the range. This API will return -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
 
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.clear
+  - uid: 'excel!Excel.Range#clear:member(1)'
     summary: |-
       Clear range values, format, fill, border, etc.
 
@@ -162,32 +162,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Below example clears format and contents of the range. 
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D:F";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.clear();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: applyTo
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
-            - excel.Excel.ClearApplyTo
-  - uid: excel.Excel.Range.clear_1
+            - 'excel!Excel.ClearApplyTo:enum'
+  - uid: 'excel!Excel.Range#clear:member(2)'
     summary: |-
       Clear range values, format, fill, border, etc.
 
@@ -208,7 +189,7 @@ items:
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
-  - uid: excel.Excel.Range.columnCount
+  - uid: 'excel!Excel.Range#columnCount:member'
     summary: |-
       Represents the total number of columns in the range. Read-only.
 
@@ -223,7 +204,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.columnHidden
+  - uid: 'excel!Excel.Range#columnHidden:member'
     summary: |-
       Represents if all columns of the current range are hidden.
 
@@ -238,7 +219,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.columnIndex
+  - uid: 'excel!Excel.Range#columnIndex:member'
     summary: |-
       Represents the column number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -253,7 +234,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.conditionalFormats
+  - uid: 'excel!Excel.Range#conditionalFormats:member'
     summary: |-
       Collection of ConditionalFormats that intersect the range. Read-only.
 
@@ -267,8 +248,8 @@ items:
       content: 'readonly conditionalFormats: Excel.ConditionalFormatCollection;'
       return:
         type:
-          - excel.Excel.ConditionalFormatCollection
-  - uid: excel.Excel.Range.context
+          - 'excel!Excel.ConditionalFormatCollection:class'
+  - uid: 'excel!Excel.Range#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -281,8 +262,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Range.dataValidation
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Range#dataValidation:member'
     summary: |-
       Returns a data validation object.
 
@@ -296,8 +277,8 @@ items:
       content: 'readonly dataValidation: Excel.DataValidation;'
       return:
         type:
-          - excel.Excel.DataValidation
-  - uid: excel.Excel.Range.delete
+          - 'excel!Excel.DataValidation:class'
+  - uid: 'excel!Excel.Range#delete:member(1)'
     summary: |-
       Deletes the cells associated with the range.
 
@@ -317,8 +298,8 @@ items:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
-            - excel.Excel.DeleteShiftDirection
-  - uid: excel.Excel.Range.delete_1
+            - 'excel!Excel.DeleteShiftDirection:enum'
+  - uid: 'excel!Excel.Range#delete:member(2)'
     summary: |-
       Deletes the cells associated with the range.
 
@@ -333,31 +314,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D:F";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.delete("Left");
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: shiftString
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - '"Up" | "Left"'
-  - uid: excel.Excel.Range.format
+  - uid: 'excel!Excel.Range#format:member'
     summary: >-
       Returns a format object, encapsulating the range's font, fill, borders, alignment, and other properties.
       Read-only.
@@ -373,8 +336,8 @@ items:
       content: 'readonly format: Excel.RangeFormat;'
       return:
         type:
-          - excel.Excel.RangeFormat
-  - uid: excel.Excel.Range.formulas
+          - 'excel!Excel.RangeFormat:class'
+  - uid: 'excel!Excel.Range#formulas:member'
     summary: >-
       Represents the formula in A1-style notation. When setting formulas to a range, the value argument can be either a
       single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -392,7 +355,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.formulasLocal
+  - uid: 'excel!Excel.Range#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German. When setting formulas to a range, the
@@ -411,7 +374,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.formulasR1C1
+  - uid: 'excel!Excel.Range#formulasR1C1:member'
     summary: >-
       Represents the formula in R1C1-style notation. When setting formulas to a range, the value argument can be either
       a single value (a string) or a two-dimensional array. If the argument is a single value, it will be applied to all
@@ -429,7 +392,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.getAbsoluteResizedRange
+  - uid: 'excel!Excel.Range#getAbsoluteResizedRange:member(1)'
     summary: >-
       Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of
       rows and columns.
@@ -445,7 +408,7 @@ items:
       content: 'getAbsoluteResizedRange(numRows: number, numColumns: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: numRows
@@ -456,7 +419,7 @@ items:
           description: The number of columns of the new range size.
           type:
             - number
-  - uid: excel.Excel.Range.getBoundingRect
+  - uid: 'excel!Excel.Range#getBoundingRect:member(1)'
     summary: >-
       Gets the smallest range object that encompasses the given ranges. For example, the GetBoundingRect of "B2:C5" and
       "D10:E15" is "B2:E15".
@@ -472,35 +435,14 @@ items:
       content: 'getBoundingRect(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D4:G6";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              var range = range.getBoundingRect("G4:H8");
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // Prints Sheet1!D4:H8
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: anotherRange
           description: The range object or address or range name.
           type:
             - Range | string
-  - uid: excel.Excel.Range.getCell
+  - uid: 'excel!Excel.Range#getCell:member(1)'
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid. The returned cell is located relative
@@ -517,30 +459,8 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var cell = range.cell(0,0);
-              cell.load('address');
-              return ctx.sync().then(function() {
-                  console.log(cell.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: row
           description: Row number of the cell to be retrieved. Zero-indexed.
@@ -550,7 +470,7 @@ items:
           description: Column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Range.getColumn
+  - uid: 'excel!Excel.Range#getColumn:member(1)'
     summary: |-
       Gets a column contained in the range.
 
@@ -564,34 +484,14 @@ items:
       content: 'getColumn(column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet19";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getColumn(1);
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!B1:B8
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: column
           description: Column number of the range to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Range.getColumnsAfter
+  - uid: 'excel!Excel.Range#getColumnsAfter:member(1)'
     summary: |-
       Gets a certain number of columns to the right of the current Range object.
 
@@ -605,7 +505,7 @@ items:
       content: 'getColumnsAfter(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -615,7 +515,7 @@ items:
             current range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getColumnsBefore
+  - uid: 'excel!Excel.Range#getColumnsBefore:member(1)'
     summary: |-
       Gets a certain number of columns to the left of the current Range object.
 
@@ -629,7 +529,7 @@ items:
       content: 'getColumnsBefore(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -639,7 +539,7 @@ items:
             current range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getEntireColumn
+  - uid: 'excel!Excel.Range#getEntireColumn:member(1)'
     summary: >-
       Gets an object that represents the entire column of the range (for example, if the current range represents cells
       "B4:E11", its `getEntireColumn` is a range that represents columns "B:E").
@@ -655,32 +555,9 @@ items:
       content: 'getEntireColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Note: the grid properties of the Range (values, numberFormat, formulas) 
-          // contains null since the Range in question is unbounded.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D:F";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              var rangeEC = range.getEntireColumn();
-              rangeEC.load('address');
-              return ctx.sync().then(function() {
-                  console.log(rangeEC.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.getEntireRow
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Range#getEntireRow:member(1)'
     summary: >-
       Gets an object that represents the entire row of the range (for example, if the current range represents cells
       "B4:E11", its `GetEntireRow` is a range that represents rows "4:11").
@@ -696,33 +573,9 @@ items:
       content: 'getEntireRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Gets an object that represents the entire row of the range 
-          // (for example, if the current range represents cells "B4:E11", 
-          // its GetEntireRow is a range that represents rows "4:11").
-          Excel.run(function (ctx) {
-              var sheetName = "Sheet1";
-              var rangeAddress = "D:F"; 
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              var rangeER = range.getEntireRow();
-              rangeER.load('address');
-              return ctx.sync().then(function() {
-                  console.log(rangeER.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.getImage
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Range#getImage:member(1)'
     summary: |-
       Renders the range as a base64-encoded png image.
 
@@ -738,7 +591,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: ''
-  - uid: excel.Excel.Range.getIntersection
+  - uid: 'excel!Excel.Range#getIntersection:member(1)'
     summary: |-
       Gets the range object that represents the rectangular intersection of the given ranges.
 
@@ -752,35 +605,14 @@ items:
       content: 'getIntersection(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = 
-                  ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getIntersection("D4:G6");
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!D4:F6
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: anotherRange
           description: The range object or range address that will be used to determine the intersection of ranges.
           type:
             - Range | string
-  - uid: excel.Excel.Range.getIntersectionOrNullObject
+  - uid: 'excel!Excel.Range#getIntersectionOrNullObject:member(1)'
     summary: >-
       Gets the range object that represents the rectangular intersection of the given ranges. If no intersection is
       found, will return a null object.
@@ -796,74 +628,14 @@ items:
       content: 'getIntersectionOrNullObject(anotherRange: Range | string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const salesTable = sheet.tables.getItem("SalesTable");
-              const dataRange = salesTable.getDataBodyRange();
-
-              // We want the most recent quarter that has data, so
-              // exclude quarters without data and get the last of
-              // the remaining columns.
-              const usedDataRange = dataRange.getUsedRange(true /* valuesOnly */);
-              const currentQuarterRange = usedDataRange.getLastColumn();
-
-              // Asian and European teams have separate contests.
-              const asianSalesRange = sheet.getRange("A2:E4");
-              const europeanSalesRange = sheet.getRange("A5:E7");
-
-              // The data for each chart is the intersection of the
-              // current quarter column and the rows for the continent.
-              const asianContestRange = asianSalesRange.getIntersectionOrNullObject(currentQuarterRange);
-              const europeanContestRange = europeanSalesRange.getIntersectionOrNullObject(currentQuarterRange);
-
-              // Must sync before you can test the output of *OrNullObject
-              // method/property.
-              await context.sync();
-
-              if (asianContestRange.isNullObject) {
-                  // See the declaration of this method for how to
-                  // test this code path.
-                  reportMissingData("Asian");
-              } else {
-                  createContinentChart(
-                      sheet,
-                      "Asian",
-                      asianContestRange,
-                      "A9",
-                      "F24"
-                  );
-              }
-
-              if (europeanContestRange.isNullObject) {
-                  // See the declaration of this method for how to
-                  // test this code path.
-                  reportMissingData("European");
-              } else {
-                  createContinentChart(
-                      sheet,
-                      "European",
-                      europeanContestRange,
-                      "A25",
-                      "F40"
-                  );
-              }
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: anotherRange
           description: The range object or range address that will be used to determine the intersection of ranges.
           type:
             - Range | string
-  - uid: excel.Excel.Range.getLastCell
+  - uid: 'excel!Excel.Range#getLastCell:member(1)'
     summary: |-
       Gets the last cell within the range. For example, the last cell of "B2:D5" is "D5".
 
@@ -877,29 +649,9 @@ items:
       content: 'getLastCell(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastCell();
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!F8
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.getLastColumn
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Range#getLastColumn:member(1)'
     summary: |-
       Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 
@@ -913,29 +665,9 @@ items:
       content: 'getLastColumn(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastColumn();
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!F1:F8
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.getLastRow
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Range#getLastRow:member(1)'
     summary: |-
       Gets the last row within the range. For example, the last row of "B2:D5" is "B5:D5".
 
@@ -949,29 +681,9 @@ items:
       content: 'getLastRow(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getLastRow();
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!A8:F8
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.getOffsetRange
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Range#getOffsetRange:member(1)'
     summary: >-
       Gets an object which represents a range that's offset from the specified range. The dimension of the returned
       range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an error
@@ -988,29 +700,8 @@ items:
       content: 'getOffsetRange(rowOffset: number, columnOffset: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D4:F6";
-              var range = 
-                  ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getOffsetRange(-1,4);
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!H3:K5
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: rowOffset
           description: >-
@@ -1024,7 +715,7 @@ items:
             offset to the right, and negative values are offset to the left.
           type:
             - number
-  - uid: excel.Excel.Range.getResizedRange
+  - uid: 'excel!Excel.Range#getResizedRange:member(1)'
     summary: >-
       Gets a Range object similar to the current Range object, but with its bottom-right corner expanded (or contracted)
       by some number of rows and columns.
@@ -1040,7 +731,7 @@ items:
       content: 'getResizedRange(deltaRows: number, deltaColumns: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: deltaRows
@@ -1055,7 +746,7 @@ items:
             positive number to expand the range, or a negative number to decrease it.
           type:
             - number
-  - uid: excel.Excel.Range.getRow
+  - uid: 'excel!Excel.Range#getRow:member(1)'
     summary: |-
       Gets a row contained in the range.
 
@@ -1069,34 +760,14 @@ items:
       content: 'getRow(row: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress).getRow(1);
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address); // prints Sheet1!A2:F2
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: row
           description: Row number of the range to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Range.getRowsAbove
+  - uid: 'excel!Excel.Range#getRowsAbove:member(1)'
     summary: |-
       Gets a certain number of rows above the current Range object.
 
@@ -1110,7 +781,7 @@ items:
       content: 'getRowsAbove(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -1120,7 +791,7 @@ items:
             range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getRowsBelow
+  - uid: 'excel!Excel.Range#getRowsBelow:member(1)'
     summary: |-
       Gets a certain number of rows below the current Range object.
 
@@ -1134,7 +805,7 @@ items:
       content: 'getRowsBelow(count?: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: count
@@ -1144,7 +815,7 @@ items:
             range. The default value is 1.
           type:
             - number
-  - uid: excel.Excel.Range.getSurroundingRegion
+  - uid: 'excel!Excel.Range#getSurroundingRegion:member(1)'
     summary: >-
       Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding
       region is a range bounded by any combination of blank rows and blank columns relative to this range.
@@ -1160,9 +831,9 @@ items:
       content: 'getSurroundingRegion(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.Range.getUsedRange
+  - uid: 'excel!Excel.Range#getUsedRange:member(1)'
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
       throw an ItemNotFound error.
@@ -1178,91 +849,14 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "D:F";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              var rangeUR = range.getUsedRange();
-              rangeUR.load('address');
-              return ctx.sync().then(function() {
-                  console.log(rangeUR.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const salesTable = sheet.tables.getItem("SalesTable");
-              const dataRange = salesTable.getDataBodyRange();
-
-              // We want the most recent quarter that has data, so
-              // exclude quarters without data and get the last of
-              // the remaining columns.
-              const usedDataRange = dataRange.getUsedRange(true /* valuesOnly */);
-              const currentQuarterRange = usedDataRange.getLastColumn();
-
-              // Asian and European teams have separate contests.
-              const asianSalesRange = sheet.getRange("A2:E4");
-              const europeanSalesRange = sheet.getRange("A5:E7");
-
-              // The data for each chart is the intersection of the
-              // current quarter column and the rows for the continent.
-              const asianContestRange = asianSalesRange.getIntersectionOrNullObject(currentQuarterRange);
-              const europeanContestRange = europeanSalesRange.getIntersectionOrNullObject(currentQuarterRange);
-
-              // Must sync before you can test the output of *OrNullObject
-              // method/property.
-              await context.sync();
-
-              if (asianContestRange.isNullObject) {
-                  // See the declaration of this method for how to
-                  // test this code path.
-                  reportMissingData("Asian");
-              } else {
-                  createContinentChart(
-                      sheet,
-                      "Asian",
-                      asianContestRange,
-                      "A9",
-                      "F24"
-                  );
-              }
-
-              if (europeanContestRange.isNullObject) {
-                  // See the declaration of this method for how to
-                  // test this code path.
-                  reportMissingData("European");
-              } else {
-                  createContinentChart(
-                      sheet,
-                      "European",
-                      europeanContestRange,
-                      "A25",
-                      "F40"
-                  );
-              }
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: valuesOnly
           description: 'Considers only cells with values as used cells. \[Api set: ExcelApi 1.2\]'
           type:
             - boolean
-  - uid: excel.Excel.Range.getUsedRangeOrNullObject
+  - uid: 'excel!Excel.Range#getUsedRangeOrNullObject:member(1)'
     summary: >-
       Returns the used range of the given range object. If there are no used cells within the range, this function will
       return a null object.
@@ -1278,52 +872,14 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const salesTable = sheet.tables.getItem("SalesTable");
-              const dataRange = salesTable.getDataBodyRange();
-
-              // Pass true so only cells with values count as used
-              const usedDataRange = dataRange.getUsedRangeOrNullObject(
-                  true /* valuesOnly */
-              );
-
-              //Must sync before reading value returned from *OrNullObject method/property.
-              await context.sync();
-
-              if (usedDataRange.isNullObject) {
-                  console.log("Need Data to Make Chart");
-                  console.log("To create a meaningful chart, press 'Fill the table' (or add names to the Product column and numbers to some of the other cells). Then press 'Try to create chart' again.");
-              } else {
-                  const chart = sheet.charts.add(
-                      Excel.ChartType.columnClustered,
-                      dataRange,
-                      "Columns"
-                  );
-                  chart.setPosition("A15", "F30");
-                  chart.title.text = "Quarterly sales chart";
-                  chart.legend.position = "Right";
-                  chart.legend.format.fill.setSolidColor("white");
-                  chart.dataLabels.format.font.size = 15;
-                  chart.dataLabels.format.font.color = "black";
-              }
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: valuesOnly
           description: Considers only cells with values as used cells.
           type:
             - boolean
-  - uid: excel.Excel.Range.getVisibleView
+  - uid: 'excel!Excel.Range#getVisibleView:member(1)'
     summary: |-
       Represents the visible rows of the current range.
 
@@ -1337,9 +893,9 @@ items:
       content: 'getVisibleView(): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - 'excel!Excel.RangeView:class'
         description: ''
-  - uid: excel.Excel.Range.hidden
+  - uid: 'excel!Excel.Range#hidden:member'
     summary: |-
       Represents if all cells of the current range are hidden. Read-only.
 
@@ -1354,7 +910,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.hyperlink
+  - uid: 'excel!Excel.Range#hyperlink:member'
     summary: |-
       Represents the hyperlink for the current range.
 
@@ -1368,39 +924,8 @@ items:
       content: 'hyperlink: Excel.RangeHyperlink;'
       return:
         type:
-          - excel.Excel.RangeHyperlink
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Orders");
-
-              let productsRange = sheet.getRange("A3:A5");
-              productsRange.load("values");
-
-              await context.sync();
-
-              // Create a hyperlink to a URL 
-              // for each product name in the first table.
-              for (let i = 0; i < productsRange.values.length; i++) {
-                  let cellRange = productsRange.getCell(i, 0);
-                  let cellText = productsRange.values[i][0];
-
-                  let hyperlink = {
-                      textToDisplay: cellText,
-                      screenTip: "Search Bing for '" + cellText + "'",
-                      address: "https://www.bing.com?q=" + cellText
-                  }
-                  cellRange.hyperlink = hyperlink;
-              }
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Range.insert
+          - 'excel!Excel.RangeHyperlink:interface'
+  - uid: 'excel!Excel.Range#insert:member(1)'
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
       space. Returns a new Range object at the now blank space.
@@ -1416,33 +941,14 @@ items:
       content: 'insert(shift: Excel.InsertShiftDirection): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F5:F10";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.insert();
-              return ctx.sync(); 
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: shift
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
-            - excel.Excel.InsertShiftDirection
-  - uid: excel.Excel.Range.insert_1
+            - 'excel!Excel.InsertShiftDirection:enum'
+  - uid: 'excel!Excel.Range#insert:member(2)'
     summary: >-
       Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make
       space. Returns a new Range object at the now blank space.
@@ -1458,14 +964,14 @@ items:
       content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: shiftString
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - '"Down" | "Right"'
-  - uid: excel.Excel.Range.isEntireColumn
+  - uid: 'excel!Excel.Range#isEntireColumn:member'
     summary: |-
       Represents if the current range is an entire column. Read-only.
 
@@ -1480,7 +986,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.isEntireRow
+  - uid: 'excel!Excel.Range#isEntireRow:member'
     summary: |-
       Represents if the current range is an entire row. Read-only.
 
@@ -1495,7 +1001,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.load
+  - uid: 'excel!Excel.Range#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -1526,14 +1032,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeLoadOptions): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeLoadOptions
-  - uid: excel.Excel.Range.load_1
+            - 'excel!Excel.Interfaces.RangeLoadOptions:interface'
+  - uid: 'excel!Excel.Range#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -1546,75 +1052,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Below example uses range address to get the range object.
-          Excel.run(function (ctx) {
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8"; 
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Below example uses a named-range to get the range object.
-          Excel.run(function (ctx) { 
-              var rangeName = 'MyRange';
-              var range = ctx.workbook.names.getItem(rangeName).range;
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // The example below sets number-format, values and formulas on a grid that contains 2x3 grid.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "F5:G7";
-              var numberFormat = [[null, "d-mmm"], [null, "d-mmm"], [null, null]]
-              var values = [["Today", 42147], ["Tomorrow", "5/24"], ["Difference in days", null]];
-              var formulas = [[null,null], [null,null], [null,"=G6-G5"]];
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.numberFormat = numberFormat;
-              range.values = values;
-              range.formulas= formulas;
-              range.load('text');
-              return ctx.sync().then(function() {
-                  console.log(range.text);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Range.load_2
+  - uid: 'excel!Excel.Range#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -1627,7 +1072,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -1636,7 +1081,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Range.merge
+  - uid: 'excel!Excel.Range#merge:member(1)'
     summary: |-
       Merge the range cells into one region in the worksheet.
 
@@ -1651,39 +1096,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:C3";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.merge(true);
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:C3";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.unmerge();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: across
           description: >-
@@ -1691,7 +1104,7 @@ items:
             value is false.
           type:
             - boolean
-  - uid: excel.Excel.Range.numberFormat
+  - uid: 'excel!Excel.Range#numberFormat:member'
     summary: >-
       Represents Excel's number format code for the given range. When setting number format to a range, the value
       argument can be either a single value (string) or a two-dimensional array. If the argument is a single value, it
@@ -1709,7 +1122,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.numberFormatLocal
+  - uid: 'excel!Excel.Range#numberFormatLocal:member'
     summary: >-
       Represents Excel's number format code for the given range as a string in the language of the user. When setting
       number format local to a range, the value argument can be either a single value (string) or a two-dimensional
@@ -1727,7 +1140,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.rowCount
+  - uid: 'excel!Excel.Range#rowCount:member'
     summary: |-
       Returns the total number of rows in the range. Read-only.
 
@@ -1742,7 +1155,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.rowHidden
+  - uid: 'excel!Excel.Range#rowHidden:member'
     summary: |-
       Represents if all rows of the current range are hidden.
 
@@ -1757,7 +1170,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Range.rowIndex
+  - uid: 'excel!Excel.Range#rowIndex:member'
     summary: |-
       Returns the row number of the first cell in the range. Zero-indexed. Read-only.
 
@@ -1772,7 +1185,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Range.select
+  - uid: 'excel!Excel.Range#select:member(1)'
     summary: |-
       Selects the specified range in the Excel UI.
 
@@ -1787,26 +1200,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              var sheetName = "Sheet1";
-              var rangeAddress = "F5:F10"; 
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.select();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.set
+        description: ''
+  - uid: 'excel!Excel.Range#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1814,45 +1209,6 @@ items:
       This method has the following additional signature:
 
       `set(properties: Excel.Range): void`
-
-      #### Examples
-
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-
-          const range = sheet.getRange("B2:E2");
-          range.set({
-              format: {
-                  fill: {
-                      color: "#4472C4"
-                  },
-                  font: {
-                      name: "Verdana",
-                      color: "white"
-                  }
-              }
-          })
-          range.format.autofitColumns();
-          await context.sync();
-      });
-      ```
-      ```typescript
-      await Excel.run(async (context) => {
-          const sheet = context.workbook.worksheets.getItem("Sample");
-
-          const sourceRange = sheet.getRange("B2:E2");
-          sourceRange.load("format/fill/color, format/font/name, format/font/color");
-          await context.sync();
-
-          // Set properties based on the loaded and synced 
-          // source range.
-          const targetRange = sheet.getRange("B7:E7");
-          targetRange.set(sourceRange); 
-          targetRange.format.autofitColumns();
-          await context.sync();
-      });
-      ```
     name: 'set(properties, options)'
     fullName: 'set(properties, options)'
     langs:
@@ -1875,7 +1231,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Range.set_1
+  - uid: 'excel!Excel.Range#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1892,8 +1248,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.Range.showCard
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.Range#showCard:member(1)'
     summary: |-
       Displays the card for an active cell if it has rich value content.
 
@@ -1909,7 +1265,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Range.sort
+  - uid: 'excel!Excel.Range#sort:member'
     summary: |-
       Represents the range sort of the current range. Read-only.
 
@@ -1923,8 +1279,8 @@ items:
       content: 'readonly sort: Excel.RangeSort;'
       return:
         type:
-          - excel.Excel.RangeSort
-  - uid: excel.Excel.Range.style
+          - 'excel!Excel.RangeSort:class'
+  - uid: 'excel!Excel.Range#style:member'
     summary: >-
       Represents the style of the current range. If the styles of the cells are inconsistent, null will be returned. For
       custom styles, the style name will be returned. For built-in styles, a string representing a value in the
@@ -1942,25 +1298,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let worksheet = context.workbook.worksheets.getItem("Sample");
-              let range = worksheet.getRange("A1:E1");
-
-              // Apply built-in style. 
-              // Styles are in the Home tab ribbon.
-              range.style = Excel.BuiltInStyle.neutral;
-              range.format.horizontalAlignment = "Right";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Range.text
+  - uid: 'excel!Excel.Range#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -1977,7 +1315,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: excel.Excel.Range.toJSON
+  - uid: 'excel!Excel.Range#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1993,9 +1331,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeData
+          - 'excel!Excel.Interfaces.RangeData:interface'
         description: ''
-  - uid: excel.Excel.Range.track
+  - uid: 'excel!Excel.Range#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -2011,9 +1349,9 @@ items:
       content: 'track(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.Range.unmerge
+  - uid: 'excel!Excel.Range#unmerge:member(1)'
     summary: |-
       Unmerge the range cells into separate cells.
 
@@ -2028,26 +1366,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:C3";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.unmerge();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Range.untrack
+        description: ''
+  - uid: 'excel!Excel.Range#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -2062,32 +1382,9 @@ items:
       content: 'untrack(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          Excel.run(async (context) => {
-              const largeRange = context.workbook.getSelectedRange();
-              largeRange.load(["rowCount", "columnCount"]);
-              await context.sync();
-
-              for (let i = 0; i < largeRange.rowCount; i++) {
-                  for (let j = 0; j < largeRange.columnCount; j++) {
-                      let cell = largeRange.getCell(i, j);
-                      cell.values = [[i *j]];
-
-                      // call untrack() to release the range from memory
-                      cell.untrack();
-                  }
-              }
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Range.values
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Range#values:member'
     summary: >-
       Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean.
       Cells that contain an error will return the error string. When setting values to a range, the value argument can
@@ -2106,7 +1403,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.Range.valueTypes
+  - uid: 'excel!Excel.Range#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 
@@ -2121,7 +1418,7 @@ items:
       return:
         type:
           - 'Excel.RangeValueType[][]'
-  - uid: excel.Excel.Range.worksheet
+  - uid: 'excel!Excel.Range#worksheet:member'
     summary: |-
       The worksheet containing the current range. Read-only.
 
@@ -2135,4 +1432,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'

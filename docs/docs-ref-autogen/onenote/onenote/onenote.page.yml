@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Page
+  - uid: 'onenote!OneNote.Page:class'
     summary: |-
       Represents a OneNote page.
 
@@ -12,36 +12,36 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Page.addOutline
-      - onenote.OneNote.Page.analyzePage
-      - onenote.OneNote.Page.applyTranslation
-      - onenote.OneNote.Page.classNotebookPageSource
-      - onenote.OneNote.Page.clientUrl
-      - onenote.OneNote.Page.contents
-      - onenote.OneNote.Page.context
-      - onenote.OneNote.Page.copyToSection
-      - onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
-      - onenote.OneNote.Page.getRestApiId
-      - onenote.OneNote.Page.hasTitleContent
-      - onenote.OneNote.Page.id
-      - onenote.OneNote.Page.inkAnalysisOrNull
-      - onenote.OneNote.Page.insertPageAsSibling
-      - onenote.OneNote.Page.insertPageAsSibling_1
-      - onenote.OneNote.Page.load
-      - onenote.OneNote.Page.load_1
-      - onenote.OneNote.Page.load_2
-      - onenote.OneNote.Page.pageLevel
-      - onenote.OneNote.Page.parentSection
-      - onenote.OneNote.Page.set
-      - onenote.OneNote.Page.set_1
-      - onenote.OneNote.Page.title
-      - onenote.OneNote.Page.toJSON
-      - onenote.OneNote.Page.track
-      - onenote.OneNote.Page.untrack
-      - onenote.OneNote.Page.webUrl
-  - uid: onenote.OneNote.Page.addOutline
+      - 'onenote!OneNote.Page#addOutline:member(1)'
+      - 'onenote!OneNote.Page#analyzePage:member(1)'
+      - 'onenote!OneNote.Page#applyTranslation:member(1)'
+      - 'onenote!OneNote.Page#classNotebookPageSource:member'
+      - 'onenote!OneNote.Page#clientUrl:member'
+      - 'onenote!OneNote.Page#contents:member'
+      - 'onenote!OneNote.Page#context:member'
+      - 'onenote!OneNote.Page#copyToSection:member(1)'
+      - 'onenote!OneNote.Page#copyToSectionAndSetClassNotebookPageSource:member(1)'
+      - 'onenote!OneNote.Page#getRestApiId:member(1)'
+      - 'onenote!OneNote.Page#hasTitleContent:member(1)'
+      - 'onenote!OneNote.Page#id:member'
+      - 'onenote!OneNote.Page#inkAnalysisOrNull:member'
+      - 'onenote!OneNote.Page#insertPageAsSibling:member(1)'
+      - 'onenote!OneNote.Page#insertPageAsSibling:member(2)'
+      - 'onenote!OneNote.Page#load:member(1)'
+      - 'onenote!OneNote.Page#load:member(2)'
+      - 'onenote!OneNote.Page#load:member(3)'
+      - 'onenote!OneNote.Page#pageLevel:member'
+      - 'onenote!OneNote.Page#parentSection:member'
+      - 'onenote!OneNote.Page#set:member(1)'
+      - 'onenote!OneNote.Page#set:member(2)'
+      - 'onenote!OneNote.Page#title:member'
+      - 'onenote!OneNote.Page#toJSON:member(1)'
+      - 'onenote!OneNote.Page#track:member(1)'
+      - 'onenote!OneNote.Page#untrack:member(1)'
+      - 'onenote!OneNote.Page#webUrl:member'
+  - uid: 'onenote!OneNote.Page#addOutline:member(1)'
     summary: |-
       Adds an Outline to the page at the specified position.
 
@@ -55,47 +55,8 @@ items:
       content: 'addOutline(left: number, top: number, html: string): OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active page.
-              var page = context.application.getActivePage();
-
-              // Queue a command to add an outline with given html. 
-              var outline = page.addOutline(200, 200,
-          "<p>Images and a table below:</p> \
-           <img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==\"> \
-           <img src=\"http://imagenes.es.sftcdn.net/es/scrn/6653000/6653659/microsoft-onenote-2013-01-535x535.png\"> \
-           <table> \
-             <tr> \
-               <td>Jill</td> \
-               <td>Smith</td> \
-               <td>50</td> \
-             </tr> \
-             <tr> \
-               <td>Eve</td> \
-               <td>Jackson</td> \
-               <td>94</td> \
-             </tr> \
-           </table>"     
-                  );
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .catch(function(error) {
-                      console.log("Error: " + error);
-                      if (error instanceof OfficeExtension.Error) {
-                          console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                      }
-                  });
-          });
-          ```
+          - 'onenote!OneNote.Outline:class'
+        description: ''
       parameters:
         - id: left
           description: 'The left position of the top, left corner of the Outline.'
@@ -112,7 +73,7 @@ items:
             the OneNote add-ins JavaScript API.
           type:
             - string
-  - uid: onenote.OneNote.Page.analyzePage
+  - uid: 'onenote!OneNote.Page#analyzePage:member(1)'
     summary: |-
       Return a json string with node id and content in html format.
 
@@ -128,7 +89,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: ''
-  - uid: onenote.OneNote.Page.applyTranslation
+  - uid: 'onenote!OneNote.Page#applyTranslation:member(1)'
     summary: |-
       Inserts a new page with translated content.
 
@@ -149,7 +110,7 @@ items:
           description: Translated content of the page
           type:
             - string
-  - uid: onenote.OneNote.Page.classNotebookPageSource
+  - uid: 'onenote!OneNote.Page#classNotebookPageSource:member'
     summary: |-
       Gets the ClassNotebookPageSource to the page.
 
@@ -164,7 +125,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Page.clientUrl
+  - uid: 'onenote!OneNote.Page#clientUrl:member'
     summary: |-
       The client url of the page. Read only
 
@@ -179,7 +140,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Page.contents
+  - uid: 'onenote!OneNote.Page#contents:member'
     summary: |-
       The collection of PageContent objects on the page. Read only
 
@@ -193,8 +154,8 @@ items:
       content: 'readonly contents: OneNote.PageContentCollection;'
       return:
         type:
-          - onenote.OneNote.PageContentCollection
-  - uid: onenote.OneNote.Page.context
+          - 'onenote!OneNote.PageContentCollection:class'
+  - uid: 'onenote!OneNote.Page#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -207,8 +168,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.Page.copyToSection
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.Page#copyToSection:member(1)'
     summary: |-
       Copies this page to specified section.
 
@@ -222,54 +183,14 @@ items:
       content: 'copyToSection(destinationSection: OneNote.Section): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx) {
-              var app = ctx.application;
-              
-              // Gets the active notebook.
-              var notebook = app.getActiveNotebook();
-              
-              // Gets the active page.
-              var page = app.getActivePage();
-              
-              // Queue a command to load sections under the notebook.
-              notebook.load('sections');
-              
-              var newPage;
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return ctx.sync()
-                  .then(function() {
-                      var section = notebook.sections.items[0];
-                      
-                      // copy page to the section.
-                      newPage = page.copyToSection(section);
-                      newPage.load('id');
-                      return ctx.sync();
-                  })
-                  .then(function() {
-                      console.log(newPage.id);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.Page:class'
+        description: ''
       parameters:
         - id: destinationSection
           description: The section to copy this page to.
           type:
-            - onenote.OneNote.Section
-  - uid: onenote.OneNote.Page.copyToSectionAndSetClassNotebookPageSource
+            - 'onenote!OneNote.Section:class'
+  - uid: 'onenote!OneNote.Page#copyToSectionAndSetClassNotebookPageSource:member(1)'
     summary: |-
       Copies this page to specified section and sets ClassNotebookPageSource.
 
@@ -283,14 +204,14 @@ items:
       content: 'copyToSectionAndSetClassNotebookPageSource(destinationSection: OneNote.Section): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
         - id: destinationSection
           description: ''
           type:
-            - onenote.OneNote.Section
-  - uid: onenote.OneNote.Page.getRestApiId
+            - 'onenote!OneNote.Section:class'
+  - uid: 'onenote!OneNote.Page#getRestApiId:member(1)'
     summary: |-
       Gets the REST API ID.
 
@@ -305,29 +226,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function(ctx){
-              // Get the current page.         
-              var page = ctx.application.getActivePage();
-              var restApiId = page.getRestApiId();
-
-              return ctx.sync().
-                  then(function(){
-                      console.log("The REST API ID is " + restApiId.value);
-                      // Note that the REST API ID isn't all you need to interact with the OneNote REST API.
-                      // This is only required for SharePoint notebooks. baseUrl will be null for OneDrive notebooks.
-                      // For SharePoint notebooks, the notebook baseUrl should be used to talk to the OneNote REST API
-                      // according to the OneNote Development Blog.
-                      // https://blogs.msdn.microsoft.com/onenotedev/2015/06/11/and-sharepoint-makes-three/
-                  });
-          });
-          ```
-  - uid: onenote.OneNote.Page.hasTitleContent
+        description: ''
+  - uid: 'onenote!OneNote.Page#hasTitleContent:member(1)'
     summary: |-
       Does the page has content title.
 
@@ -343,7 +243,7 @@ items:
         type:
           - OfficeExtension.ClientResult<boolean>
         description: ''
-  - uid: onenote.OneNote.Page.id
+  - uid: 'onenote!OneNote.Page#id:member'
     summary: |-
       Gets the ID of the page. Read-only.
 
@@ -358,7 +258,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Page.inkAnalysisOrNull
+  - uid: 'onenote!OneNote.Page#inkAnalysisOrNull:member'
     summary: |-
       Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
@@ -372,8 +272,8 @@ items:
       content: 'readonly inkAnalysisOrNull: OneNote.InkAnalysis;'
       return:
         type:
-          - onenote.OneNote.InkAnalysis
-  - uid: onenote.OneNote.Page.insertPageAsSibling
+          - 'onenote!OneNote.InkAnalysis:class'
+  - uid: 'onenote!OneNote.Page#insertPageAsSibling:member(1)'
     summary: |-
       Inserts a new page before or after the current page.
 
@@ -387,18 +287,18 @@ items:
       content: 'insertPageAsSibling(location: OneNote.InsertLocation, title: string): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
         - id: location
           description: The location of the new page relative to the current page.
           type:
-            - onenote.OneNote.InsertLocation
+            - 'onenote!OneNote.InsertLocation:enum'
         - id: title
           description: The title of the new page.
           type:
             - string
-  - uid: onenote.OneNote.Page.insertPageAsSibling_1
+  - uid: 'onenote!OneNote.Page#insertPageAsSibling:member(2)'
     summary: |-
       Inserts a new page before or after the current page.
 
@@ -412,37 +312,8 @@ items:
       content: 'insertPageAsSibling(locationString: "Before" | "After", title: string): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active page.
-              var activePage = context.application.getActivePage();
-
-              // Queue a command to add a new page after the active page. 
-              var newPage = activePage.insertPageAsSibling("After", "Next Page");
-
-              // Queue a command to load the newPage to access its data.
-              context.load(newPage);
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      console.log("page is created with title: " + newPage.title);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.Page:class'
+        description: ''
       parameters:
         - id: locationString
           description: The location of the new page relative to the current page.
@@ -452,7 +323,7 @@ items:
           description: The title of the new page.
           type:
             - string
-  - uid: onenote.OneNote.Page.load
+  - uid: 'onenote!OneNote.Page#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -483,14 +354,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.PageLoadOptions): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.PageLoadOptions
-  - uid: onenote.OneNote.Page.load_1
+            - 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+  - uid: 'onenote!OneNote.Page#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -503,105 +374,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Gets the active page.
-              var activePage = context.application.getActivePage();
-
-              // Queue a command to add a new page after the active page. 
-              var pageContents = activePage.contents;
-
-              // Queue a command to load the pageContents to access its data.
-              context.load(pageContents);
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      for(var i=0; i < pageContents.items.length; i++)
-                      {
-                          var pageContent = pageContents.items[i];
-                          if (pageContent.type == "Outline")
-                          {
-                              console.log("Found an outline");
-                          }
-                          else if (pageContent.type == "Image")
-                          {
-                              console.log("Found an image");
-                          }
-                          else if (pageContent.type == "Other")
-                          {
-                              console.log("Found a type not supported yet.");
-                          }
-                      }
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-
-              var app = context.application;
-              
-              // Gets the active page.
-              var page = app.getActivePage();
-              
-              // Queue a command to load the webUrl of the page.
-              page.load("webUrl");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      console.log(page.webUrl);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (ctx) {        
-              var app = ctx.application;
-              
-              // Gets the active page.
-              var page = app.getActivePage();
-              
-              // Load ink words
-              page.load('inkAnalysisOrNull/paragraphs/lines/words');
-              
-              return ctx.sync()
-                  .then(function() {
-                      if (!page.inkAnalysisOrNull.isNull)
-                          console.log(page.inkAnalysisOrNull.paragraphs.length);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.Page:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Page.load_2
+  - uid: 'onenote!OneNote.Page#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -614,7 +394,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -623,7 +403,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.Page.pageLevel
+  - uid: 'onenote!OneNote.Page#pageLevel:member'
     summary: |-
       Gets or sets the indentation level of the page.
 
@@ -638,7 +418,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.Page.parentSection
+  - uid: 'onenote!OneNote.Page#parentSection:member'
     summary: |-
       Gets the section that contains the page. Read-only.
 
@@ -652,8 +432,8 @@ items:
       content: 'readonly parentSection: OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
-  - uid: onenote.OneNote.Page.set
+          - 'onenote!OneNote.Section:class'
+  - uid: 'onenote!OneNote.Page#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -683,7 +463,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: onenote.OneNote.Page.set_1
+  - uid: 'onenote!OneNote.Page#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -700,8 +480,8 @@ items:
         - id: properties
           description: ''
           type:
-            - onenote.OneNote.Page
-  - uid: onenote.OneNote.Page.title
+            - 'onenote!OneNote.Page:class'
+  - uid: 'onenote!OneNote.Page#title:member'
     summary: |-
       Gets or sets the title of the page.
 
@@ -716,7 +496,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Page.toJSON
+  - uid: 'onenote!OneNote.Page#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -732,9 +512,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.PageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageData
+          - 'onenote!OneNote.Interfaces.PageData:interface'
         description: ''
-  - uid: onenote.OneNote.Page.track
+  - uid: 'onenote!OneNote.Page#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -750,9 +530,9 @@ items:
       content: 'track(): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
-  - uid: onenote.OneNote.Page.untrack
+  - uid: 'onenote!OneNote.Page#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -767,9 +547,9 @@ items:
       content: 'untrack(): OneNote.Page;'
       return:
         type:
-          - onenote.OneNote.Page
+          - 'onenote!OneNote.Page:class'
         description: ''
-  - uid: onenote.OneNote.Page.webUrl
+  - uid: 'onenote!OneNote.Page#webUrl:member'
     summary: |-
       The web url of the page. Read only
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Chart
+  - uid: 'excel!Excel.Chart:class'
     summary: >-
       Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using
       the Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
@@ -14,49 +14,49 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Chart.activate
-      - excel.Excel.Chart.axes
-      - excel.Excel.Chart.categoryLabelLevel
-      - excel.Excel.Chart.chartType
-      - excel.Excel.Chart.context
-      - excel.Excel.Chart.dataLabels
-      - excel.Excel.Chart.delete
-      - excel.Excel.Chart.displayBlanksAs
-      - excel.Excel.Chart.format
-      - excel.Excel.Chart.getImage
-      - excel.Excel.Chart.getImage_1
-      - excel.Excel.Chart.height
-      - excel.Excel.Chart.id
-      - excel.Excel.Chart.left
-      - excel.Excel.Chart.legend
-      - excel.Excel.Chart.load
-      - excel.Excel.Chart.load_1
-      - excel.Excel.Chart.load_2
-      - excel.Excel.Chart.name
-      - excel.Excel.Chart.onActivated
-      - excel.Excel.Chart.onDeactivated
-      - excel.Excel.Chart.pivotOptions
-      - excel.Excel.Chart.plotArea
-      - excel.Excel.Chart.plotBy
-      - excel.Excel.Chart.plotVisibleOnly
-      - excel.Excel.Chart.series
-      - excel.Excel.Chart.seriesNameLevel
-      - excel.Excel.Chart.set
-      - excel.Excel.Chart.set_1
-      - excel.Excel.Chart.setData
-      - excel.Excel.Chart.setData_1
-      - excel.Excel.Chart.setPosition
-      - excel.Excel.Chart.showAllFieldButtons
-      - excel.Excel.Chart.showDataLabelsOverMaximum
-      - excel.Excel.Chart.style
-      - excel.Excel.Chart.title
-      - excel.Excel.Chart.toJSON
-      - excel.Excel.Chart.top
-      - excel.Excel.Chart.width
-      - excel.Excel.Chart.worksheet
-  - uid: excel.Excel.Chart.activate
+      - 'excel!Excel.Chart#activate:member(1)'
+      - 'excel!Excel.Chart#axes:member'
+      - 'excel!Excel.Chart#categoryLabelLevel:member'
+      - 'excel!Excel.Chart#chartType:member'
+      - 'excel!Excel.Chart#context:member'
+      - 'excel!Excel.Chart#dataLabels:member'
+      - 'excel!Excel.Chart#delete:member(1)'
+      - 'excel!Excel.Chart#displayBlanksAs:member'
+      - 'excel!Excel.Chart#format:member'
+      - 'excel!Excel.Chart#getImage:member(1)'
+      - 'excel!Excel.Chart#getImage:member(2)'
+      - 'excel!Excel.Chart#height:member'
+      - 'excel!Excel.Chart#id:member'
+      - 'excel!Excel.Chart#left:member'
+      - 'excel!Excel.Chart#legend:member'
+      - 'excel!Excel.Chart#load:member(1)'
+      - 'excel!Excel.Chart#load:member(2)'
+      - 'excel!Excel.Chart#load:member(3)'
+      - 'excel!Excel.Chart#name:member'
+      - 'excel!Excel.Chart#onActivated:member'
+      - 'excel!Excel.Chart#onDeactivated:member'
+      - 'excel!Excel.Chart#pivotOptions:member'
+      - 'excel!Excel.Chart#plotArea:member'
+      - 'excel!Excel.Chart#plotBy:member'
+      - 'excel!Excel.Chart#plotVisibleOnly:member'
+      - 'excel!Excel.Chart#series:member'
+      - 'excel!Excel.Chart#seriesNameLevel:member'
+      - 'excel!Excel.Chart#set:member(1)'
+      - 'excel!Excel.Chart#set:member(2)'
+      - 'excel!Excel.Chart#setData:member(1)'
+      - 'excel!Excel.Chart#setData:member(2)'
+      - 'excel!Excel.Chart#setPosition:member(1)'
+      - 'excel!Excel.Chart#showAllFieldButtons:member'
+      - 'excel!Excel.Chart#showDataLabelsOverMaximum:member'
+      - 'excel!Excel.Chart#style:member'
+      - 'excel!Excel.Chart#title:member'
+      - 'excel!Excel.Chart#toJSON:member(1)'
+      - 'excel!Excel.Chart#top:member'
+      - 'excel!Excel.Chart#width:member'
+      - 'excel!Excel.Chart#worksheet:member'
+  - uid: 'excel!Excel.Chart#activate:member(1)'
     summary: |-
       Activates the chart in the Excel UI.
 
@@ -72,7 +72,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.Chart.axes
+  - uid: 'excel!Excel.Chart#axes:member'
     summary: |-
       Represents chart axes. Read-only.
 
@@ -86,8 +86,8 @@ items:
       content: 'readonly axes: Excel.ChartAxes;'
       return:
         type:
-          - excel.Excel.ChartAxes
-  - uid: excel.Excel.Chart.categoryLabelLevel
+          - 'excel!Excel.ChartAxes:class'
+  - uid: 'excel!Excel.Chart#categoryLabelLevel:member'
     summary: >-
       Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels
       are being sourced from. Read/Write.
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.chartType
+  - uid: 'excel!Excel.Chart#chartType:member'
     summary: |-
       Represents the type of the chart. See Excel.ChartType for details.
 
@@ -148,7 +148,7 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.Chart.context
+  - uid: 'excel!Excel.Chart#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -161,8 +161,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Chart.dataLabels
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Chart#dataLabels:member'
     summary: |-
       Represents the datalabels on the chart. Read-only.
 
@@ -176,8 +176,8 @@ items:
       content: 'readonly dataLabels: Excel.ChartDataLabels;'
       return:
         type:
-          - excel.Excel.ChartDataLabels
-  - uid: excel.Excel.Chart.delete
+          - 'excel!Excel.ChartDataLabels:class'
+  - uid: 'excel!Excel.Chart#delete:member(1)'
     summary: |-
       Deletes the chart object.
 
@@ -192,24 +192,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Chart.displayBlanksAs
+        description: ''
+  - uid: 'excel!Excel.Chart#displayBlanksAs:member'
     summary: |-
       Returns or sets the way that blank cells are plotted on a chart. Read/Write.
 
@@ -224,7 +208,7 @@ items:
       return:
         type:
           - Excel.ChartDisplayBlanksAs | "NotPlotted" | "Zero" | "Interplotted"
-  - uid: excel.Excel.Chart.format
+  - uid: 'excel!Excel.Chart#format:member'
     summary: |-
       Encapsulates the format properties for the chart area. Read-only.
 
@@ -238,8 +222,8 @@ items:
       content: 'readonly format: Excel.ChartAreaFormat;'
       return:
         type:
-          - excel.Excel.ChartAreaFormat
-  - uid: excel.Excel.Chart.getImage
+          - 'excel!Excel.ChartAreaFormat:class'
+  - uid: 'excel!Excel.Chart#getImage:member(1)'
     summary: >-
       Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
       is preserved as part of the resizing.
@@ -258,23 +242,7 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var image = chart.getImage();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: width
           description: (Optional) The desired width of the resulting image.
@@ -289,8 +257,8 @@ items:
             (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height
             and width are set).
           type:
-            - excel.Excel.ImageFittingMode
-  - uid: excel.Excel.Chart.getImage_1
+            - 'excel!Excel.ImageFittingMode:enum'
+  - uid: 'excel!Excel.Chart#getImage:member(2)'
     summary: >-
       Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions. The aspect ratio
       is preserved as part of the resizing.
@@ -325,7 +293,7 @@ items:
             and width are set).
           type:
             - '"Fit" | "FitAndCenter" | "Fill"'
-  - uid: excel.Excel.Chart.height
+  - uid: 'excel!Excel.Chart#height:member'
     summary: |-
       Represents the height, in points, of the chart object.
 
@@ -340,7 +308,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.id
+  - uid: 'excel!Excel.Chart#id:member'
     summary: |-
       The unique id of chart. Read-only.
 
@@ -355,7 +323,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Chart.left
+  - uid: 'excel!Excel.Chart#left:member'
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
@@ -370,7 +338,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.legend
+  - uid: 'excel!Excel.Chart#legend:member'
     summary: |-
       Represents the legend for the chart. Read-only.
 
@@ -384,8 +352,8 @@ items:
       content: 'readonly legend: Excel.ChartLegend;'
       return:
         type:
-          - excel.Excel.ChartLegend
-  - uid: excel.Excel.Chart.load
+          - 'excel!Excel.ChartLegend:class'
+  - uid: 'excel!Excel.Chart#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -416,14 +384,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLoadOptions): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLoadOptions
-  - uid: excel.Excel.Chart.load_1
+            - 'excel!Excel.Interfaces.ChartLoadOptions:interface'
+  - uid: 'excel!Excel.Chart#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -436,33 +404,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get a chart named "Chart1"
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.load('name');
-              return ctx.sync().then(function() {
-                      console.log(chart.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Chart:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Chart.load_2
+  - uid: 'excel!Excel.Chart#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -475,7 +424,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Chart;'
       return:
         type:
-          - excel.Excel.Chart
+          - 'excel!Excel.Chart:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -484,7 +433,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Chart.name
+  - uid: 'excel!Excel.Chart#name:member'
     summary: |-
       Represents the name of a chart object.
 
@@ -499,30 +448,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Rename the chart to new name, resize the chart to 200 points in both height and weight. 
-          // Move Chart1 to 100 points to the top and left. 
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.name = "New Name";
-              chart.top = 100;
-              chart.left = 100;
-              chart.height = 200;
-              chart.width = 200;
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Chart.onActivated
+  - uid: 'excel!Excel.Chart#onActivated:member'
     summary: |-
       Occurs when the chart is activated.
 
@@ -537,24 +463,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartActivatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-              pieChart.onActivated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The pie chart is the active chart. ID: " + event.chartId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.Chart.onDeactivated
+  - uid: 'excel!Excel.Chart#onDeactivated:member'
     summary: |-
       Occurs when the chart is deactivated.
 
@@ -569,24 +478,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.ChartDeactivatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context){
-              var pieChart = context.workbook.worksheets.getActiveWorksheet().charts.getItem("Pie");
-              pieChart.onDeactivated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The pie chart is NOT active.");
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.Chart.pivotOptions
+  - uid: 'excel!Excel.Chart#pivotOptions:member'
     summary: |-
       Encapsulates the options for a pivot chart. Read-only.
 
@@ -600,8 +492,8 @@ items:
       content: 'readonly pivotOptions: Excel.ChartPivotOptions;'
       return:
         type:
-          - excel.Excel.ChartPivotOptions
-  - uid: excel.Excel.Chart.plotArea
+          - 'excel!Excel.ChartPivotOptions:class'
+  - uid: 'excel!Excel.Chart#plotArea:member'
     summary: |-
       Represents the plotArea for the chart.
 
@@ -615,8 +507,8 @@ items:
       content: 'readonly plotArea: Excel.ChartPlotArea;'
       return:
         type:
-          - excel.Excel.ChartPlotArea
-  - uid: excel.Excel.Chart.plotBy
+          - 'excel!Excel.ChartPlotArea:class'
+  - uid: 'excel!Excel.Chart#plotBy:member'
     summary: |-
       Returns or sets the way columns or rows are used as data series on the chart. Read/Write.
 
@@ -631,7 +523,7 @@ items:
       return:
         type:
           - Excel.ChartPlotBy | "Rows" | "Columns"
-  - uid: excel.Excel.Chart.plotVisibleOnly
+  - uid: 'excel!Excel.Chart#plotVisibleOnly:member'
     summary: |-
       True if only visible cells are plotted. False if both visible and hidden cells are plotted. Read/Write.
 
@@ -646,7 +538,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Chart.series
+  - uid: 'excel!Excel.Chart#series:member'
     summary: |-
       Represents either a single series or collection of series in the chart. Read-only.
 
@@ -660,8 +552,8 @@ items:
       content: 'readonly series: Excel.ChartSeriesCollection;'
       return:
         type:
-          - excel.Excel.ChartSeriesCollection
-  - uid: excel.Excel.Chart.seriesNameLevel
+          - 'excel!Excel.ChartSeriesCollection:class'
+  - uid: 'excel!Excel.Chart#seriesNameLevel:member'
     summary: >-
       Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are
       being sourced from. Read/Write.
@@ -678,7 +570,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.set
+  - uid: 'excel!Excel.Chart#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -708,7 +600,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Chart.set_1
+  - uid: 'excel!Excel.Chart#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -725,8 +617,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Chart
-  - uid: excel.Excel.Chart.setData
+            - 'excel!Excel.Chart:class'
+  - uid: 'excel!Excel.Chart#setData:member(1)'
     summary: |-
       Resets the source data for the chart.
 
@@ -746,14 +638,14 @@ items:
         - id: sourceData
           description: The range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - 'excel!Excel.Range:class'
         - id: seriesBy
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
-            - excel.Excel.ChartSeriesBy
-  - uid: excel.Excel.Chart.setData_1
+            - 'excel!Excel.ChartSeriesBy:enum'
+  - uid: 'excel!Excel.Chart#setData:member(2)'
     summary: |-
       Resets the source data for the chart.
 
@@ -768,37 +660,19 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set the sourceData to be "A1:B4" and seriesBy to be "Columns"
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var sourceData = "A1:B4";
-              chart.setData(sourceData, "Columns");
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: sourceData
           description: The range object corresponding to the source data.
           type:
-            - excel.Excel.Range
+            - 'excel!Excel.Range:class'
         - id: seriesByString
           description: >-
             Specifies the way columns or rows are used as data series on the chart. Can be one of the following: Auto
             (default), Rows, and Columns. See Excel.ChartSeriesBy for details.
           type:
             - '"Auto" | "Columns" | "Rows"'
-  - uid: excel.Excel.Chart.setPosition
+  - uid: 'excel!Excel.Chart#setPosition:member(1)'
     summary: |-
       Positions the chart relative to cells on the worksheet.
 
@@ -813,29 +687,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Charts";
-              var rangeSelection = "A1:B4";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeSelection);
-              var sourceData = sheetName + "!" + "A1:B4";
-              var chart = ctx.workbook.worksheets.getItem(sheetName).charts.add("pie", range, "auto");
-              chart.width = 500;
-              chart.height = 300;
-              chart.setPosition("C2", null);
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: startCell
           description: >-
@@ -849,7 +701,7 @@ items:
             cell/range.
           type:
             - Range | string
-  - uid: excel.Excel.Chart.showAllFieldButtons
+  - uid: 'excel!Excel.Chart#showAllFieldButtons:member'
     summary: |-
       Represents whether to display all field buttons on a PivotChart.
 
@@ -864,7 +716,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Chart.showDataLabelsOverMaximum
+  - uid: 'excel!Excel.Chart#showDataLabelsOverMaximum:member'
     summary: >-
       Represents whether to show the data labels when the value is greater than the maximum value on the value axis. If
       value axis became smaller than the size of data points, you can use this property to set whether to show the data
@@ -882,7 +734,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Chart.style
+  - uid: 'excel!Excel.Chart#style:member'
     summary: |-
       Returns or sets the chart style for the chart. Read/Write.
 
@@ -897,7 +749,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.title
+  - uid: 'excel!Excel.Chart#title:member'
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
       title. Read-only.
@@ -913,8 +765,8 @@ items:
       content: 'readonly title: Excel.ChartTitle;'
       return:
         type:
-          - excel.Excel.ChartTitle
-  - uid: excel.Excel.Chart.toJSON
+          - 'excel!Excel.ChartTitle:class'
+  - uid: 'excel!Excel.Chart#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -930,9 +782,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartData
+          - 'excel!Excel.Interfaces.ChartData:interface'
         description: ''
-  - uid: excel.Excel.Chart.top
+  - uid: 'excel!Excel.Chart#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
       top of the chart area (on a chart).
@@ -949,7 +801,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.width
+  - uid: 'excel!Excel.Chart#width:member'
     summary: |-
       Represents the width, in points, of the chart object.
 
@@ -964,7 +816,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Chart.worksheet
+  - uid: 'excel!Excel.Chart#worksheet:member'
     summary: |-
       The worksheet containing the current chart. Read-only.
 
@@ -978,4 +830,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'

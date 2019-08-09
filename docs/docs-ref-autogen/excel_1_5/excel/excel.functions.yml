@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Functions
+  - uid: 'excel!Excel.Functions:class'
     summary: |-
       An object for evaluating Excel functions.
 
@@ -12,377 +12,377 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Functions.abs
-      - excel.Excel.Functions.accrInt
-      - excel.Excel.Functions.accrIntM
-      - excel.Excel.Functions.acos
-      - excel.Excel.Functions.acosh
-      - excel.Excel.Functions.acot
-      - excel.Excel.Functions.acoth
-      - excel.Excel.Functions.amorDegrc
-      - excel.Excel.Functions.amorLinc
-      - excel.Excel.Functions.and
-      - excel.Excel.Functions.arabic
-      - excel.Excel.Functions.areas
-      - excel.Excel.Functions.asc
-      - excel.Excel.Functions.asin
-      - excel.Excel.Functions.asinh
-      - excel.Excel.Functions.atan
-      - excel.Excel.Functions.atan2
-      - excel.Excel.Functions.atanh
-      - excel.Excel.Functions.aveDev
-      - excel.Excel.Functions.average
-      - excel.Excel.Functions.averageA
-      - excel.Excel.Functions.averageIf
-      - excel.Excel.Functions.averageIfs
-      - excel.Excel.Functions.bahtText
-      - excel.Excel.Functions.base
-      - excel.Excel.Functions.besselI
-      - excel.Excel.Functions.besselJ
-      - excel.Excel.Functions.besselK
-      - excel.Excel.Functions.besselY
-      - excel.Excel.Functions.beta_Dist
-      - excel.Excel.Functions.beta_Inv
-      - excel.Excel.Functions.bin2Dec
-      - excel.Excel.Functions.bin2Hex
-      - excel.Excel.Functions.bin2Oct
-      - excel.Excel.Functions.binom_Dist_Range
-      - excel.Excel.Functions.binom_Dist
-      - excel.Excel.Functions.binom_Inv
-      - excel.Excel.Functions.bitand
-      - excel.Excel.Functions.bitlshift
-      - excel.Excel.Functions.bitor
-      - excel.Excel.Functions.bitrshift
-      - excel.Excel.Functions.bitxor
-      - excel.Excel.Functions.ceiling_Math
-      - excel.Excel.Functions.ceiling_Precise
-      - excel.Excel.Functions.char
-      - excel.Excel.Functions.chiSq_Dist_RT
-      - excel.Excel.Functions.chiSq_Dist
-      - excel.Excel.Functions.chiSq_Inv_RT
-      - excel.Excel.Functions.chiSq_Inv
-      - excel.Excel.Functions.choose
-      - excel.Excel.Functions.clean
-      - excel.Excel.Functions.code
-      - excel.Excel.Functions.columns
-      - excel.Excel.Functions.combin
-      - excel.Excel.Functions.combina
-      - excel.Excel.Functions.complex
-      - excel.Excel.Functions.concatenate
-      - excel.Excel.Functions.confidence_Norm
-      - excel.Excel.Functions.confidence_T
-      - excel.Excel.Functions.context
-      - excel.Excel.Functions.convert
-      - excel.Excel.Functions.cos
-      - excel.Excel.Functions.cosh
-      - excel.Excel.Functions.cot
-      - excel.Excel.Functions.coth
-      - excel.Excel.Functions.count
-      - excel.Excel.Functions.countA
-      - excel.Excel.Functions.countBlank
-      - excel.Excel.Functions.countIf
-      - excel.Excel.Functions.countIfs
-      - excel.Excel.Functions.coupDayBs
-      - excel.Excel.Functions.coupDays
-      - excel.Excel.Functions.coupDaysNc
-      - excel.Excel.Functions.coupNcd
-      - excel.Excel.Functions.coupNum
-      - excel.Excel.Functions.coupPcd
-      - excel.Excel.Functions.csc
-      - excel.Excel.Functions.csch
-      - excel.Excel.Functions.cumIPmt
-      - excel.Excel.Functions.cumPrinc
-      - excel.Excel.Functions.date
-      - excel.Excel.Functions.datevalue
-      - excel.Excel.Functions.daverage
-      - excel.Excel.Functions.day
-      - excel.Excel.Functions.days
-      - excel.Excel.Functions.days360
-      - excel.Excel.Functions.db
-      - excel.Excel.Functions.dbcs
-      - excel.Excel.Functions.dcount
-      - excel.Excel.Functions.dcountA
-      - excel.Excel.Functions.ddb
-      - excel.Excel.Functions.dec2Bin
-      - excel.Excel.Functions.dec2Hex
-      - excel.Excel.Functions.dec2Oct
-      - excel.Excel.Functions.decimal
-      - excel.Excel.Functions.degrees
-      - excel.Excel.Functions.delta
-      - excel.Excel.Functions.devSq
-      - excel.Excel.Functions.dget
-      - excel.Excel.Functions.disc
-      - excel.Excel.Functions.dmax
-      - excel.Excel.Functions.dmin
-      - excel.Excel.Functions.dollar
-      - excel.Excel.Functions.dollarDe
-      - excel.Excel.Functions.dollarFr
-      - excel.Excel.Functions.dproduct
-      - excel.Excel.Functions.dstDev
-      - excel.Excel.Functions.dstDevP
-      - excel.Excel.Functions.dsum
-      - excel.Excel.Functions.duration
-      - excel.Excel.Functions.dvar
-      - excel.Excel.Functions.dvarP
-      - excel.Excel.Functions.ecma_Ceiling
-      - excel.Excel.Functions.edate
-      - excel.Excel.Functions.effect
-      - excel.Excel.Functions.eoMonth
-      - excel.Excel.Functions.erf_Precise
-      - excel.Excel.Functions.erf
-      - excel.Excel.Functions.erfC_Precise
-      - excel.Excel.Functions.erfC
-      - excel.Excel.Functions.error_Type
-      - excel.Excel.Functions.even
-      - excel.Excel.Functions.exact
-      - excel.Excel.Functions.exp
-      - excel.Excel.Functions.expon_Dist
-      - excel.Excel.Functions.f_Dist_RT
-      - excel.Excel.Functions.f_Dist
-      - excel.Excel.Functions.f_Inv_RT
-      - excel.Excel.Functions.f_Inv
-      - excel.Excel.Functions.fact
-      - excel.Excel.Functions.factDouble
-      - excel.Excel.Functions.false
-      - excel.Excel.Functions.find
-      - excel.Excel.Functions.findB
-      - excel.Excel.Functions.fisher
-      - excel.Excel.Functions.fisherInv
-      - excel.Excel.Functions.fixed
-      - excel.Excel.Functions.floor_Math
-      - excel.Excel.Functions.floor_Precise
-      - excel.Excel.Functions.fv
-      - excel.Excel.Functions.fvschedule
-      - excel.Excel.Functions.gamma_Dist
-      - excel.Excel.Functions.gamma_Inv
-      - excel.Excel.Functions.gamma
-      - excel.Excel.Functions.gammaLn_Precise
-      - excel.Excel.Functions.gammaLn
-      - excel.Excel.Functions.gauss
-      - excel.Excel.Functions.gcd
-      - excel.Excel.Functions.geoMean
-      - excel.Excel.Functions.geStep
-      - excel.Excel.Functions.harMean
-      - excel.Excel.Functions.hex2Bin
-      - excel.Excel.Functions.hex2Dec
-      - excel.Excel.Functions.hex2Oct
-      - excel.Excel.Functions.hlookup
-      - excel.Excel.Functions.hour
-      - excel.Excel.Functions.hyperlink
-      - excel.Excel.Functions.hypGeom_Dist
-      - excel.Excel.Functions.if
-      - excel.Excel.Functions.imAbs
-      - excel.Excel.Functions.imaginary
-      - excel.Excel.Functions.imArgument
-      - excel.Excel.Functions.imConjugate
-      - excel.Excel.Functions.imCos
-      - excel.Excel.Functions.imCosh
-      - excel.Excel.Functions.imCot
-      - excel.Excel.Functions.imCsc
-      - excel.Excel.Functions.imCsch
-      - excel.Excel.Functions.imDiv
-      - excel.Excel.Functions.imExp
-      - excel.Excel.Functions.imLn
-      - excel.Excel.Functions.imLog10
-      - excel.Excel.Functions.imLog2
-      - excel.Excel.Functions.imPower
-      - excel.Excel.Functions.imProduct
-      - excel.Excel.Functions.imReal
-      - excel.Excel.Functions.imSec
-      - excel.Excel.Functions.imSech
-      - excel.Excel.Functions.imSin
-      - excel.Excel.Functions.imSinh
-      - excel.Excel.Functions.imSqrt
-      - excel.Excel.Functions.imSub
-      - excel.Excel.Functions.imSum
-      - excel.Excel.Functions.imTan
-      - excel.Excel.Functions.int
-      - excel.Excel.Functions.intRate
-      - excel.Excel.Functions.ipmt
-      - excel.Excel.Functions.irr
-      - excel.Excel.Functions.isErr
-      - excel.Excel.Functions.isError
-      - excel.Excel.Functions.isEven
-      - excel.Excel.Functions.isFormula
-      - excel.Excel.Functions.isLogical
-      - excel.Excel.Functions.isNA
-      - excel.Excel.Functions.isNonText
-      - excel.Excel.Functions.isNumber
-      - excel.Excel.Functions.iso_Ceiling
-      - excel.Excel.Functions.isOdd
-      - excel.Excel.Functions.isoWeekNum
-      - excel.Excel.Functions.ispmt
-      - excel.Excel.Functions.isref
-      - excel.Excel.Functions.isText
-      - excel.Excel.Functions.kurt
-      - excel.Excel.Functions.large
-      - excel.Excel.Functions.lcm
-      - excel.Excel.Functions.left
-      - excel.Excel.Functions.leftb
-      - excel.Excel.Functions.len
-      - excel.Excel.Functions.lenb
-      - excel.Excel.Functions.ln
-      - excel.Excel.Functions.log
-      - excel.Excel.Functions.log10
-      - excel.Excel.Functions.logNorm_Dist
-      - excel.Excel.Functions.logNorm_Inv
-      - excel.Excel.Functions.lookup
-      - excel.Excel.Functions.lower
-      - excel.Excel.Functions.match
-      - excel.Excel.Functions.max
-      - excel.Excel.Functions.maxA
-      - excel.Excel.Functions.mduration
-      - excel.Excel.Functions.median
-      - excel.Excel.Functions.mid
-      - excel.Excel.Functions.midb
-      - excel.Excel.Functions.min
-      - excel.Excel.Functions.minA
-      - excel.Excel.Functions.minute
-      - excel.Excel.Functions.mirr
-      - excel.Excel.Functions.mod
-      - excel.Excel.Functions.month
-      - excel.Excel.Functions.mround
-      - excel.Excel.Functions.multiNomial
-      - excel.Excel.Functions.n
-      - excel.Excel.Functions.na
-      - excel.Excel.Functions.negBinom_Dist
-      - excel.Excel.Functions.networkDays_Intl
-      - excel.Excel.Functions.networkDays
-      - excel.Excel.Functions.nominal
-      - excel.Excel.Functions.norm_Dist
-      - excel.Excel.Functions.norm_Inv
-      - excel.Excel.Functions.norm_S_Dist
-      - excel.Excel.Functions.norm_S_Inv
-      - excel.Excel.Functions.not
-      - excel.Excel.Functions.now
-      - excel.Excel.Functions.nper
-      - excel.Excel.Functions.npv
-      - excel.Excel.Functions.numberValue
-      - excel.Excel.Functions.oct2Bin
-      - excel.Excel.Functions.oct2Dec
-      - excel.Excel.Functions.oct2Hex
-      - excel.Excel.Functions.odd
-      - excel.Excel.Functions.oddFPrice
-      - excel.Excel.Functions.oddFYield
-      - excel.Excel.Functions.oddLPrice
-      - excel.Excel.Functions.oddLYield
-      - excel.Excel.Functions.or
-      - excel.Excel.Functions.pduration
-      - excel.Excel.Functions.percentile_Exc
-      - excel.Excel.Functions.percentile_Inc
-      - excel.Excel.Functions.percentRank_Exc
-      - excel.Excel.Functions.percentRank_Inc
-      - excel.Excel.Functions.permut
-      - excel.Excel.Functions.permutationa
-      - excel.Excel.Functions.phi
-      - excel.Excel.Functions.pi
-      - excel.Excel.Functions.pmt
-      - excel.Excel.Functions.poisson_Dist
-      - excel.Excel.Functions.power
-      - excel.Excel.Functions.ppmt
-      - excel.Excel.Functions.price
-      - excel.Excel.Functions.priceDisc
-      - excel.Excel.Functions.priceMat
-      - excel.Excel.Functions.product
-      - excel.Excel.Functions.proper
-      - excel.Excel.Functions.pv
-      - excel.Excel.Functions.quartile_Exc
-      - excel.Excel.Functions.quartile_Inc
-      - excel.Excel.Functions.quotient
-      - excel.Excel.Functions.radians
-      - excel.Excel.Functions.rand
-      - excel.Excel.Functions.randBetween
-      - excel.Excel.Functions.rank_Avg
-      - excel.Excel.Functions.rank_Eq
-      - excel.Excel.Functions.rate
-      - excel.Excel.Functions.received
-      - excel.Excel.Functions.replace
-      - excel.Excel.Functions.replaceB
-      - excel.Excel.Functions.rept
-      - excel.Excel.Functions.right
-      - excel.Excel.Functions.rightb
-      - excel.Excel.Functions.roman
-      - excel.Excel.Functions.round
-      - excel.Excel.Functions.roundDown
-      - excel.Excel.Functions.roundUp
-      - excel.Excel.Functions.rows
-      - excel.Excel.Functions.rri
-      - excel.Excel.Functions.sec
-      - excel.Excel.Functions.sech
-      - excel.Excel.Functions.second
-      - excel.Excel.Functions.seriesSum
-      - excel.Excel.Functions.sheet
-      - excel.Excel.Functions.sheets
-      - excel.Excel.Functions.sign
-      - excel.Excel.Functions.sin
-      - excel.Excel.Functions.sinh
-      - excel.Excel.Functions.skew_p
-      - excel.Excel.Functions.skew
-      - excel.Excel.Functions.sln
-      - excel.Excel.Functions.small
-      - excel.Excel.Functions.sqrt
-      - excel.Excel.Functions.sqrtPi
-      - excel.Excel.Functions.standardize
-      - excel.Excel.Functions.stDev_P
-      - excel.Excel.Functions.stDev_S
-      - excel.Excel.Functions.stDevA
-      - excel.Excel.Functions.stDevPA
-      - excel.Excel.Functions.substitute
-      - excel.Excel.Functions.subtotal
-      - excel.Excel.Functions.sum
-      - excel.Excel.Functions.sumIf
-      - excel.Excel.Functions.sumIfs
-      - excel.Excel.Functions.sumSq
-      - excel.Excel.Functions.syd
-      - excel.Excel.Functions.t_Dist_2T
-      - excel.Excel.Functions.t_Dist_RT
-      - excel.Excel.Functions.t_Dist
-      - excel.Excel.Functions.t_Inv_2T
-      - excel.Excel.Functions.t_Inv
-      - excel.Excel.Functions.t
-      - excel.Excel.Functions.tan
-      - excel.Excel.Functions.tanh
-      - excel.Excel.Functions.tbillEq
-      - excel.Excel.Functions.tbillPrice
-      - excel.Excel.Functions.tbillYield
-      - excel.Excel.Functions.text
-      - excel.Excel.Functions.time
-      - excel.Excel.Functions.timevalue
-      - excel.Excel.Functions.today
-      - excel.Excel.Functions.toJSON
-      - excel.Excel.Functions.trim
-      - excel.Excel.Functions.trimMean
-      - excel.Excel.Functions.true
-      - excel.Excel.Functions.trunc
-      - excel.Excel.Functions.type
-      - excel.Excel.Functions.unichar
-      - excel.Excel.Functions.unicode
-      - excel.Excel.Functions.upper
-      - excel.Excel.Functions.usdollar
-      - excel.Excel.Functions.value
-      - excel.Excel.Functions.var_P
-      - excel.Excel.Functions.var_S
-      - excel.Excel.Functions.varA
-      - excel.Excel.Functions.varPA
-      - excel.Excel.Functions.vdb
-      - excel.Excel.Functions.vlookup
-      - excel.Excel.Functions.weekday
-      - excel.Excel.Functions.weekNum
-      - excel.Excel.Functions.weibull_Dist
-      - excel.Excel.Functions.workDay_Intl
-      - excel.Excel.Functions.workDay
-      - excel.Excel.Functions.xirr
-      - excel.Excel.Functions.xnpv
-      - excel.Excel.Functions.xor
-      - excel.Excel.Functions.year
-      - excel.Excel.Functions.yearFrac
-      - excel.Excel.Functions.yield
-      - excel.Excel.Functions.yieldDisc
-      - excel.Excel.Functions.yieldMat
-      - excel.Excel.Functions.z_Test
-  - uid: excel.Excel.Functions.abs
+      - 'excel!Excel.Functions#abs:member(1)'
+      - 'excel!Excel.Functions#accrInt:member(1)'
+      - 'excel!Excel.Functions#accrIntM:member(1)'
+      - 'excel!Excel.Functions#acos:member(1)'
+      - 'excel!Excel.Functions#acosh:member(1)'
+      - 'excel!Excel.Functions#acot:member(1)'
+      - 'excel!Excel.Functions#acoth:member(1)'
+      - 'excel!Excel.Functions#amorDegrc:member(1)'
+      - 'excel!Excel.Functions#amorLinc:member(1)'
+      - 'excel!Excel.Functions#and:member(1)'
+      - 'excel!Excel.Functions#arabic:member(1)'
+      - 'excel!Excel.Functions#areas:member(1)'
+      - 'excel!Excel.Functions#asc:member(1)'
+      - 'excel!Excel.Functions#asin:member(1)'
+      - 'excel!Excel.Functions#asinh:member(1)'
+      - 'excel!Excel.Functions#atan:member(1)'
+      - 'excel!Excel.Functions#atan2:member(1)'
+      - 'excel!Excel.Functions#atanh:member(1)'
+      - 'excel!Excel.Functions#aveDev:member(1)'
+      - 'excel!Excel.Functions#average:member(1)'
+      - 'excel!Excel.Functions#averageA:member(1)'
+      - 'excel!Excel.Functions#averageIf:member(1)'
+      - 'excel!Excel.Functions#averageIfs:member(1)'
+      - 'excel!Excel.Functions#bahtText:member(1)'
+      - 'excel!Excel.Functions#base:member(1)'
+      - 'excel!Excel.Functions#besselI:member(1)'
+      - 'excel!Excel.Functions#besselJ:member(1)'
+      - 'excel!Excel.Functions#besselK:member(1)'
+      - 'excel!Excel.Functions#besselY:member(1)'
+      - 'excel!Excel.Functions#beta_Dist:member(1)'
+      - 'excel!Excel.Functions#beta_Inv:member(1)'
+      - 'excel!Excel.Functions#bin2Dec:member(1)'
+      - 'excel!Excel.Functions#bin2Hex:member(1)'
+      - 'excel!Excel.Functions#bin2Oct:member(1)'
+      - 'excel!Excel.Functions#binom_Dist_Range:member(1)'
+      - 'excel!Excel.Functions#binom_Dist:member(1)'
+      - 'excel!Excel.Functions#binom_Inv:member(1)'
+      - 'excel!Excel.Functions#bitand:member(1)'
+      - 'excel!Excel.Functions#bitlshift:member(1)'
+      - 'excel!Excel.Functions#bitor:member(1)'
+      - 'excel!Excel.Functions#bitrshift:member(1)'
+      - 'excel!Excel.Functions#bitxor:member(1)'
+      - 'excel!Excel.Functions#ceiling_Math:member(1)'
+      - 'excel!Excel.Functions#ceiling_Precise:member(1)'
+      - 'excel!Excel.Functions#char:member(1)'
+      - 'excel!Excel.Functions#chiSq_Dist_RT:member(1)'
+      - 'excel!Excel.Functions#chiSq_Dist:member(1)'
+      - 'excel!Excel.Functions#chiSq_Inv_RT:member(1)'
+      - 'excel!Excel.Functions#chiSq_Inv:member(1)'
+      - 'excel!Excel.Functions#choose:member(1)'
+      - 'excel!Excel.Functions#clean:member(1)'
+      - 'excel!Excel.Functions#code:member(1)'
+      - 'excel!Excel.Functions#columns:member(1)'
+      - 'excel!Excel.Functions#combin:member(1)'
+      - 'excel!Excel.Functions#combina:member(1)'
+      - 'excel!Excel.Functions#complex:member(1)'
+      - 'excel!Excel.Functions#concatenate:member(1)'
+      - 'excel!Excel.Functions#confidence_Norm:member(1)'
+      - 'excel!Excel.Functions#confidence_T:member(1)'
+      - 'excel!Excel.Functions#context:member'
+      - 'excel!Excel.Functions#convert:member(1)'
+      - 'excel!Excel.Functions#cos:member(1)'
+      - 'excel!Excel.Functions#cosh:member(1)'
+      - 'excel!Excel.Functions#cot:member(1)'
+      - 'excel!Excel.Functions#coth:member(1)'
+      - 'excel!Excel.Functions#count:member(1)'
+      - 'excel!Excel.Functions#countA:member(1)'
+      - 'excel!Excel.Functions#countBlank:member(1)'
+      - 'excel!Excel.Functions#countIf:member(1)'
+      - 'excel!Excel.Functions#countIfs:member(1)'
+      - 'excel!Excel.Functions#coupDayBs:member(1)'
+      - 'excel!Excel.Functions#coupDays:member(1)'
+      - 'excel!Excel.Functions#coupDaysNc:member(1)'
+      - 'excel!Excel.Functions#coupNcd:member(1)'
+      - 'excel!Excel.Functions#coupNum:member(1)'
+      - 'excel!Excel.Functions#coupPcd:member(1)'
+      - 'excel!Excel.Functions#csc:member(1)'
+      - 'excel!Excel.Functions#csch:member(1)'
+      - 'excel!Excel.Functions#cumIPmt:member(1)'
+      - 'excel!Excel.Functions#cumPrinc:member(1)'
+      - 'excel!Excel.Functions#date:member(1)'
+      - 'excel!Excel.Functions#datevalue:member(1)'
+      - 'excel!Excel.Functions#daverage:member(1)'
+      - 'excel!Excel.Functions#day:member(1)'
+      - 'excel!Excel.Functions#days:member(1)'
+      - 'excel!Excel.Functions#days360:member(1)'
+      - 'excel!Excel.Functions#db:member(1)'
+      - 'excel!Excel.Functions#dbcs:member(1)'
+      - 'excel!Excel.Functions#dcount:member(1)'
+      - 'excel!Excel.Functions#dcountA:member(1)'
+      - 'excel!Excel.Functions#ddb:member(1)'
+      - 'excel!Excel.Functions#dec2Bin:member(1)'
+      - 'excel!Excel.Functions#dec2Hex:member(1)'
+      - 'excel!Excel.Functions#dec2Oct:member(1)'
+      - 'excel!Excel.Functions#decimal:member(1)'
+      - 'excel!Excel.Functions#degrees:member(1)'
+      - 'excel!Excel.Functions#delta:member(1)'
+      - 'excel!Excel.Functions#devSq:member(1)'
+      - 'excel!Excel.Functions#dget:member(1)'
+      - 'excel!Excel.Functions#disc:member(1)'
+      - 'excel!Excel.Functions#dmax:member(1)'
+      - 'excel!Excel.Functions#dmin:member(1)'
+      - 'excel!Excel.Functions#dollar:member(1)'
+      - 'excel!Excel.Functions#dollarDe:member(1)'
+      - 'excel!Excel.Functions#dollarFr:member(1)'
+      - 'excel!Excel.Functions#dproduct:member(1)'
+      - 'excel!Excel.Functions#dstDev:member(1)'
+      - 'excel!Excel.Functions#dstDevP:member(1)'
+      - 'excel!Excel.Functions#dsum:member(1)'
+      - 'excel!Excel.Functions#duration:member(1)'
+      - 'excel!Excel.Functions#dvar:member(1)'
+      - 'excel!Excel.Functions#dvarP:member(1)'
+      - 'excel!Excel.Functions#ecma_Ceiling:member(1)'
+      - 'excel!Excel.Functions#edate:member(1)'
+      - 'excel!Excel.Functions#effect:member(1)'
+      - 'excel!Excel.Functions#eoMonth:member(1)'
+      - 'excel!Excel.Functions#erf_Precise:member(1)'
+      - 'excel!Excel.Functions#erf:member(1)'
+      - 'excel!Excel.Functions#erfC_Precise:member(1)'
+      - 'excel!Excel.Functions#erfC:member(1)'
+      - 'excel!Excel.Functions#error_Type:member(1)'
+      - 'excel!Excel.Functions#even:member(1)'
+      - 'excel!Excel.Functions#exact:member(1)'
+      - 'excel!Excel.Functions#exp:member(1)'
+      - 'excel!Excel.Functions#expon_Dist:member(1)'
+      - 'excel!Excel.Functions#f_Dist_RT:member(1)'
+      - 'excel!Excel.Functions#f_Dist:member(1)'
+      - 'excel!Excel.Functions#f_Inv_RT:member(1)'
+      - 'excel!Excel.Functions#f_Inv:member(1)'
+      - 'excel!Excel.Functions#fact:member(1)'
+      - 'excel!Excel.Functions#factDouble:member(1)'
+      - 'excel!Excel.Functions#false:member(1)'
+      - 'excel!Excel.Functions#find:member(1)'
+      - 'excel!Excel.Functions#findB:member(1)'
+      - 'excel!Excel.Functions#fisher:member(1)'
+      - 'excel!Excel.Functions#fisherInv:member(1)'
+      - 'excel!Excel.Functions#fixed:member(1)'
+      - 'excel!Excel.Functions#floor_Math:member(1)'
+      - 'excel!Excel.Functions#floor_Precise:member(1)'
+      - 'excel!Excel.Functions#fv:member(1)'
+      - 'excel!Excel.Functions#fvschedule:member(1)'
+      - 'excel!Excel.Functions#gamma_Dist:member(1)'
+      - 'excel!Excel.Functions#gamma_Inv:member(1)'
+      - 'excel!Excel.Functions#gamma:member(1)'
+      - 'excel!Excel.Functions#gammaLn_Precise:member(1)'
+      - 'excel!Excel.Functions#gammaLn:member(1)'
+      - 'excel!Excel.Functions#gauss:member(1)'
+      - 'excel!Excel.Functions#gcd:member(1)'
+      - 'excel!Excel.Functions#geoMean:member(1)'
+      - 'excel!Excel.Functions#geStep:member(1)'
+      - 'excel!Excel.Functions#harMean:member(1)'
+      - 'excel!Excel.Functions#hex2Bin:member(1)'
+      - 'excel!Excel.Functions#hex2Dec:member(1)'
+      - 'excel!Excel.Functions#hex2Oct:member(1)'
+      - 'excel!Excel.Functions#hlookup:member(1)'
+      - 'excel!Excel.Functions#hour:member(1)'
+      - 'excel!Excel.Functions#hyperlink:member(1)'
+      - 'excel!Excel.Functions#hypGeom_Dist:member(1)'
+      - 'excel!Excel.Functions#if:member(1)'
+      - 'excel!Excel.Functions#imAbs:member(1)'
+      - 'excel!Excel.Functions#imaginary:member(1)'
+      - 'excel!Excel.Functions#imArgument:member(1)'
+      - 'excel!Excel.Functions#imConjugate:member(1)'
+      - 'excel!Excel.Functions#imCos:member(1)'
+      - 'excel!Excel.Functions#imCosh:member(1)'
+      - 'excel!Excel.Functions#imCot:member(1)'
+      - 'excel!Excel.Functions#imCsc:member(1)'
+      - 'excel!Excel.Functions#imCsch:member(1)'
+      - 'excel!Excel.Functions#imDiv:member(1)'
+      - 'excel!Excel.Functions#imExp:member(1)'
+      - 'excel!Excel.Functions#imLn:member(1)'
+      - 'excel!Excel.Functions#imLog10:member(1)'
+      - 'excel!Excel.Functions#imLog2:member(1)'
+      - 'excel!Excel.Functions#imPower:member(1)'
+      - 'excel!Excel.Functions#imProduct:member(1)'
+      - 'excel!Excel.Functions#imReal:member(1)'
+      - 'excel!Excel.Functions#imSec:member(1)'
+      - 'excel!Excel.Functions#imSech:member(1)'
+      - 'excel!Excel.Functions#imSin:member(1)'
+      - 'excel!Excel.Functions#imSinh:member(1)'
+      - 'excel!Excel.Functions#imSqrt:member(1)'
+      - 'excel!Excel.Functions#imSub:member(1)'
+      - 'excel!Excel.Functions#imSum:member(1)'
+      - 'excel!Excel.Functions#imTan:member(1)'
+      - 'excel!Excel.Functions#int:member(1)'
+      - 'excel!Excel.Functions#intRate:member(1)'
+      - 'excel!Excel.Functions#ipmt:member(1)'
+      - 'excel!Excel.Functions#irr:member(1)'
+      - 'excel!Excel.Functions#isErr:member(1)'
+      - 'excel!Excel.Functions#isError:member(1)'
+      - 'excel!Excel.Functions#isEven:member(1)'
+      - 'excel!Excel.Functions#isFormula:member(1)'
+      - 'excel!Excel.Functions#isLogical:member(1)'
+      - 'excel!Excel.Functions#isNA:member(1)'
+      - 'excel!Excel.Functions#isNonText:member(1)'
+      - 'excel!Excel.Functions#isNumber:member(1)'
+      - 'excel!Excel.Functions#iso_Ceiling:member(1)'
+      - 'excel!Excel.Functions#isOdd:member(1)'
+      - 'excel!Excel.Functions#isoWeekNum:member(1)'
+      - 'excel!Excel.Functions#ispmt:member(1)'
+      - 'excel!Excel.Functions#isref:member(1)'
+      - 'excel!Excel.Functions#isText:member(1)'
+      - 'excel!Excel.Functions#kurt:member(1)'
+      - 'excel!Excel.Functions#large:member(1)'
+      - 'excel!Excel.Functions#lcm:member(1)'
+      - 'excel!Excel.Functions#left:member(1)'
+      - 'excel!Excel.Functions#leftb:member(1)'
+      - 'excel!Excel.Functions#len:member(1)'
+      - 'excel!Excel.Functions#lenb:member(1)'
+      - 'excel!Excel.Functions#ln:member(1)'
+      - 'excel!Excel.Functions#log:member(1)'
+      - 'excel!Excel.Functions#log10:member(1)'
+      - 'excel!Excel.Functions#logNorm_Dist:member(1)'
+      - 'excel!Excel.Functions#logNorm_Inv:member(1)'
+      - 'excel!Excel.Functions#lookup:member(1)'
+      - 'excel!Excel.Functions#lower:member(1)'
+      - 'excel!Excel.Functions#match:member(1)'
+      - 'excel!Excel.Functions#max:member(1)'
+      - 'excel!Excel.Functions#maxA:member(1)'
+      - 'excel!Excel.Functions#mduration:member(1)'
+      - 'excel!Excel.Functions#median:member(1)'
+      - 'excel!Excel.Functions#mid:member(1)'
+      - 'excel!Excel.Functions#midb:member(1)'
+      - 'excel!Excel.Functions#min:member(1)'
+      - 'excel!Excel.Functions#minA:member(1)'
+      - 'excel!Excel.Functions#minute:member(1)'
+      - 'excel!Excel.Functions#mirr:member(1)'
+      - 'excel!Excel.Functions#mod:member(1)'
+      - 'excel!Excel.Functions#month:member(1)'
+      - 'excel!Excel.Functions#mround:member(1)'
+      - 'excel!Excel.Functions#multiNomial:member(1)'
+      - 'excel!Excel.Functions#n:member(1)'
+      - 'excel!Excel.Functions#na:member(1)'
+      - 'excel!Excel.Functions#negBinom_Dist:member(1)'
+      - 'excel!Excel.Functions#networkDays_Intl:member(1)'
+      - 'excel!Excel.Functions#networkDays:member(1)'
+      - 'excel!Excel.Functions#nominal:member(1)'
+      - 'excel!Excel.Functions#norm_Dist:member(1)'
+      - 'excel!Excel.Functions#norm_Inv:member(1)'
+      - 'excel!Excel.Functions#norm_S_Dist:member(1)'
+      - 'excel!Excel.Functions#norm_S_Inv:member(1)'
+      - 'excel!Excel.Functions#not:member(1)'
+      - 'excel!Excel.Functions#now:member(1)'
+      - 'excel!Excel.Functions#nper:member(1)'
+      - 'excel!Excel.Functions#npv:member(1)'
+      - 'excel!Excel.Functions#numberValue:member(1)'
+      - 'excel!Excel.Functions#oct2Bin:member(1)'
+      - 'excel!Excel.Functions#oct2Dec:member(1)'
+      - 'excel!Excel.Functions#oct2Hex:member(1)'
+      - 'excel!Excel.Functions#odd:member(1)'
+      - 'excel!Excel.Functions#oddFPrice:member(1)'
+      - 'excel!Excel.Functions#oddFYield:member(1)'
+      - 'excel!Excel.Functions#oddLPrice:member(1)'
+      - 'excel!Excel.Functions#oddLYield:member(1)'
+      - 'excel!Excel.Functions#or:member(1)'
+      - 'excel!Excel.Functions#pduration:member(1)'
+      - 'excel!Excel.Functions#percentile_Exc:member(1)'
+      - 'excel!Excel.Functions#percentile_Inc:member(1)'
+      - 'excel!Excel.Functions#percentRank_Exc:member(1)'
+      - 'excel!Excel.Functions#percentRank_Inc:member(1)'
+      - 'excel!Excel.Functions#permut:member(1)'
+      - 'excel!Excel.Functions#permutationa:member(1)'
+      - 'excel!Excel.Functions#phi:member(1)'
+      - 'excel!Excel.Functions#pi:member(1)'
+      - 'excel!Excel.Functions#pmt:member(1)'
+      - 'excel!Excel.Functions#poisson_Dist:member(1)'
+      - 'excel!Excel.Functions#power:member(1)'
+      - 'excel!Excel.Functions#ppmt:member(1)'
+      - 'excel!Excel.Functions#price:member(1)'
+      - 'excel!Excel.Functions#priceDisc:member(1)'
+      - 'excel!Excel.Functions#priceMat:member(1)'
+      - 'excel!Excel.Functions#product:member(1)'
+      - 'excel!Excel.Functions#proper:member(1)'
+      - 'excel!Excel.Functions#pv:member(1)'
+      - 'excel!Excel.Functions#quartile_Exc:member(1)'
+      - 'excel!Excel.Functions#quartile_Inc:member(1)'
+      - 'excel!Excel.Functions#quotient:member(1)'
+      - 'excel!Excel.Functions#radians:member(1)'
+      - 'excel!Excel.Functions#rand:member(1)'
+      - 'excel!Excel.Functions#randBetween:member(1)'
+      - 'excel!Excel.Functions#rank_Avg:member(1)'
+      - 'excel!Excel.Functions#rank_Eq:member(1)'
+      - 'excel!Excel.Functions#rate:member(1)'
+      - 'excel!Excel.Functions#received:member(1)'
+      - 'excel!Excel.Functions#replace:member(1)'
+      - 'excel!Excel.Functions#replaceB:member(1)'
+      - 'excel!Excel.Functions#rept:member(1)'
+      - 'excel!Excel.Functions#right:member(1)'
+      - 'excel!Excel.Functions#rightb:member(1)'
+      - 'excel!Excel.Functions#roman:member(1)'
+      - 'excel!Excel.Functions#round:member(1)'
+      - 'excel!Excel.Functions#roundDown:member(1)'
+      - 'excel!Excel.Functions#roundUp:member(1)'
+      - 'excel!Excel.Functions#rows:member(1)'
+      - 'excel!Excel.Functions#rri:member(1)'
+      - 'excel!Excel.Functions#sec:member(1)'
+      - 'excel!Excel.Functions#sech:member(1)'
+      - 'excel!Excel.Functions#second:member(1)'
+      - 'excel!Excel.Functions#seriesSum:member(1)'
+      - 'excel!Excel.Functions#sheet:member(1)'
+      - 'excel!Excel.Functions#sheets:member(1)'
+      - 'excel!Excel.Functions#sign:member(1)'
+      - 'excel!Excel.Functions#sin:member(1)'
+      - 'excel!Excel.Functions#sinh:member(1)'
+      - 'excel!Excel.Functions#skew_p:member(1)'
+      - 'excel!Excel.Functions#skew:member(1)'
+      - 'excel!Excel.Functions#sln:member(1)'
+      - 'excel!Excel.Functions#small:member(1)'
+      - 'excel!Excel.Functions#sqrt:member(1)'
+      - 'excel!Excel.Functions#sqrtPi:member(1)'
+      - 'excel!Excel.Functions#standardize:member(1)'
+      - 'excel!Excel.Functions#stDev_P:member(1)'
+      - 'excel!Excel.Functions#stDev_S:member(1)'
+      - 'excel!Excel.Functions#stDevA:member(1)'
+      - 'excel!Excel.Functions#stDevPA:member(1)'
+      - 'excel!Excel.Functions#substitute:member(1)'
+      - 'excel!Excel.Functions#subtotal:member(1)'
+      - 'excel!Excel.Functions#sum:member(1)'
+      - 'excel!Excel.Functions#sumIf:member(1)'
+      - 'excel!Excel.Functions#sumIfs:member(1)'
+      - 'excel!Excel.Functions#sumSq:member(1)'
+      - 'excel!Excel.Functions#syd:member(1)'
+      - 'excel!Excel.Functions#t_Dist_2T:member(1)'
+      - 'excel!Excel.Functions#t_Dist_RT:member(1)'
+      - 'excel!Excel.Functions#t_Dist:member(1)'
+      - 'excel!Excel.Functions#t_Inv_2T:member(1)'
+      - 'excel!Excel.Functions#t_Inv:member(1)'
+      - 'excel!Excel.Functions#t:member(1)'
+      - 'excel!Excel.Functions#tan:member(1)'
+      - 'excel!Excel.Functions#tanh:member(1)'
+      - 'excel!Excel.Functions#tbillEq:member(1)'
+      - 'excel!Excel.Functions#tbillPrice:member(1)'
+      - 'excel!Excel.Functions#tbillYield:member(1)'
+      - 'excel!Excel.Functions#text:member(1)'
+      - 'excel!Excel.Functions#time:member(1)'
+      - 'excel!Excel.Functions#timevalue:member(1)'
+      - 'excel!Excel.Functions#today:member(1)'
+      - 'excel!Excel.Functions#toJSON:member(1)'
+      - 'excel!Excel.Functions#trim:member(1)'
+      - 'excel!Excel.Functions#trimMean:member(1)'
+      - 'excel!Excel.Functions#true:member(1)'
+      - 'excel!Excel.Functions#trunc:member(1)'
+      - 'excel!Excel.Functions#type:member(1)'
+      - 'excel!Excel.Functions#unichar:member(1)'
+      - 'excel!Excel.Functions#unicode:member(1)'
+      - 'excel!Excel.Functions#upper:member(1)'
+      - 'excel!Excel.Functions#usdollar:member(1)'
+      - 'excel!Excel.Functions#value:member(1)'
+      - 'excel!Excel.Functions#var_P:member(1)'
+      - 'excel!Excel.Functions#var_S:member(1)'
+      - 'excel!Excel.Functions#varA:member(1)'
+      - 'excel!Excel.Functions#varPA:member(1)'
+      - 'excel!Excel.Functions#vdb:member(1)'
+      - 'excel!Excel.Functions#vlookup:member(1)'
+      - 'excel!Excel.Functions#weekday:member(1)'
+      - 'excel!Excel.Functions#weekNum:member(1)'
+      - 'excel!Excel.Functions#weibull_Dist:member(1)'
+      - 'excel!Excel.Functions#workDay_Intl:member(1)'
+      - 'excel!Excel.Functions#workDay:member(1)'
+      - 'excel!Excel.Functions#xirr:member(1)'
+      - 'excel!Excel.Functions#xnpv:member(1)'
+      - 'excel!Excel.Functions#xor:member(1)'
+      - 'excel!Excel.Functions#year:member(1)'
+      - 'excel!Excel.Functions#yearFrac:member(1)'
+      - 'excel!Excel.Functions#yield:member(1)'
+      - 'excel!Excel.Functions#yieldDisc:member(1)'
+      - 'excel!Excel.Functions#yieldMat:member(1)'
+      - 'excel!Excel.Functions#z_Test:member(1)'
+  - uid: 'excel!Excel.Functions#abs:member(1)'
     summary: |-
       Returns the absolute value of a number, a number without its sign.
 
@@ -403,7 +403,7 @@ items:
           description: Is the real number for which you want the absolute value.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.accrInt
+  - uid: 'excel!Excel.Functions#accrInt:member(1)'
     summary: |-
       Returns the accrued interest for a security that pays periodic interest.
 
@@ -462,7 +462,7 @@ items:
             payment date = FALSE.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.accrIntM
+  - uid: 'excel!Excel.Functions#accrIntM:member(1)'
     summary: |-
       Returns the accrued interest for a security that pays interest at maturity.
 
@@ -504,7 +504,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.acos
+  - uid: 'excel!Excel.Functions#acos:member(1)'
     summary: >-
       Returns the arccosine of a number, in radians in the range 0 to Pi. The arccosine is the angle whose cosine is
       Number.
@@ -527,7 +527,7 @@ items:
           description: Is the cosine of the angle you want and must be from -1 to 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.acosh
+  - uid: 'excel!Excel.Functions#acosh:member(1)'
     summary: |-
       Returns the inverse hyperbolic cosine of a number.
 
@@ -548,7 +548,7 @@ items:
           description: Is any real number equal to or greater than 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.acot
+  - uid: 'excel!Excel.Functions#acot:member(1)'
     summary: |-
       Returns the arccotangent of a number, in radians in the range 0 to Pi.
 
@@ -569,7 +569,7 @@ items:
           description: Is the cotangent of the angle you want.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.acoth
+  - uid: 'excel!Excel.Functions#acoth:member(1)'
     summary: |-
       Returns the inverse hyperbolic cotangent of a number.
 
@@ -590,7 +590,7 @@ items:
           description: Is the hyperbolic cotangent of the angle that you want.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.amorDegrc
+  - uid: 'excel!Excel.Functions#amorDegrc:member(1)'
     summary: |-
       Returns the prorated linear depreciation of an asset for each accounting period.
 
@@ -642,7 +642,7 @@ items:
           description: 'Year\_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.'
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.amorLinc
+  - uid: 'excel!Excel.Functions#amorLinc:member(1)'
     summary: |-
       Returns the prorated linear depreciation of an asset for each accounting period.
 
@@ -694,7 +694,7 @@ items:
           description: 'Year\_basis : 0 for year of 360 days, 1 for actual, 3 for year of 365 days.'
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.and
+  - uid: 'excel!Excel.Functions#and:member(1)'
     summary: |-
       Checks whether all arguments are TRUE, and returns TRUE if all arguments are TRUE.
 
@@ -719,7 +719,7 @@ items:
             and can be logical values, arrays, or references.
           type:
             - Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.arabic
+  - uid: 'excel!Excel.Functions#arabic:member(1)'
     summary: |-
       Converts a Roman numeral to Arabic.
 
@@ -740,7 +740,7 @@ items:
           description: Is the Roman numeral you want to convert.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.areas
+  - uid: 'excel!Excel.Functions#areas:member(1)'
     summary: |-
       Returns the number of areas in a reference. An area is a range of contiguous cells or a single cell.
 
@@ -761,7 +761,7 @@ items:
           description: Is a reference to a cell or range of cells and can refer to multiple areas.
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.asc
+  - uid: 'excel!Excel.Functions#asc:member(1)'
     summary: >-
       Changes full-width (double-byte) characters to half-width (single-byte) characters. Use with double-byte character
       sets (DBCS).
@@ -784,7 +784,7 @@ items:
           description: 'Is a text, or a reference to a cell containing a text.'
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.asin
+  - uid: 'excel!Excel.Functions#asin:member(1)'
     summary: |-
       Returns the arcsine of a number in radians, in the range -Pi/2 to Pi/2.
 
@@ -805,7 +805,7 @@ items:
           description: Is the sine of the angle you want and must be from -1 to 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.asinh
+  - uid: 'excel!Excel.Functions#asinh:member(1)'
     summary: |-
       Returns the inverse hyperbolic sine of a number.
 
@@ -826,7 +826,7 @@ items:
           description: Is any real number equal to or greater than 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.atan
+  - uid: 'excel!Excel.Functions#atan:member(1)'
     summary: |-
       Returns the arctangent of a number in radians, in the range -Pi/2 to Pi/2.
 
@@ -847,7 +847,7 @@ items:
           description: Is the tangent of the angle you want.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.atan2
+  - uid: 'excel!Excel.Functions#atan2:member(1)'
     summary: |-
       Returns the arctangent of the specified x- and y- coordinates, in radians between -Pi and Pi, excluding -Pi.
 
@@ -874,7 +874,7 @@ items:
           description: Is the y-coordinate of the point.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.atanh
+  - uid: 'excel!Excel.Functions#atanh:member(1)'
     summary: |-
       Returns the inverse hyperbolic tangent of a number.
 
@@ -895,7 +895,7 @@ items:
           description: Is any real number between -1 and 1 excluding -1 and 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.aveDev
+  - uid: 'excel!Excel.Functions#aveDev:member(1)'
     summary: >-
       Returns the average of the absolute deviations of data points from their mean. Arguments can be numbers or names,
       arrays, or references that contain numbers.
@@ -922,7 +922,7 @@ items:
             deviations.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.average
+  - uid: 'excel!Excel.Functions#average:member(1)'
     summary: >-
       Returns the average (arithmetic mean) of its arguments, which can be numbers or names, arrays, or references that
       contain numbers.
@@ -947,7 +947,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 numeric arguments for which you want the average.'
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.averageA
+  - uid: 'excel!Excel.Functions#averageA:member(1)'
     summary: >-
       Returns the average (arithmetic mean) of its arguments, evaluating text and FALSE in arguments as 0; TRUE
       evaluates as 1. Arguments can be numbers, names, arrays, or references.
@@ -972,7 +972,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 arguments for which you want the average.'
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.averageIf
+  - uid: 'excel!Excel.Functions#averageIf:member(1)'
     summary: |-
       Finds average(arithmetic mean) for the cells specified by a given condition or criteria.
 
@@ -1006,7 +1006,7 @@ items:
           description: 'Are the actual cells to be used to find the average. If omitted, the cells in range are used.'
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.averageIfs
+  - uid: 'excel!Excel.Functions#averageIfs:member(1)'
     summary: |-
       Finds average(arithmetic mean) for the cells specified by a given set of conditions or criteria.
 
@@ -1037,7 +1037,7 @@ items:
             expression, or text that defines which cells will be used to find the average.
           type:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
-  - uid: excel.Excel.Functions.bahtText
+  - uid: 'excel!Excel.Functions#bahtText:member(1)'
     summary: |-
       Converts a number to text (baht).
 
@@ -1060,7 +1060,7 @@ items:
           description: Is a number that you want to convert.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.base
+  - uid: 'excel!Excel.Functions#base:member(1)'
     summary: |-
       Converts a number into a text representation with the given radix (base).
 
@@ -1092,7 +1092,7 @@ items:
           description: Is the minimum length of the returned string. If omitted leading zeros are not added.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.besselI
+  - uid: 'excel!Excel.Functions#besselI:member(1)'
     summary: |-
       Returns the modified Bessel function In(x).
 
@@ -1119,7 +1119,7 @@ items:
           description: Is the order of the Bessel function.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.besselJ
+  - uid: 'excel!Excel.Functions#besselJ:member(1)'
     summary: |-
       Returns the Bessel function Jn(x).
 
@@ -1146,7 +1146,7 @@ items:
           description: Is the order of the Bessel function.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.besselK
+  - uid: 'excel!Excel.Functions#besselK:member(1)'
     summary: |-
       Returns the modified Bessel function Kn(x).
 
@@ -1173,7 +1173,7 @@ items:
           description: Is the order of the function.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.besselY
+  - uid: 'excel!Excel.Functions#besselY:member(1)'
     summary: |-
       Returns the Bessel function Yn(x).
 
@@ -1200,7 +1200,7 @@ items:
           description: Is the order of the function.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.beta_Dist
+  - uid: 'excel!Excel.Functions#beta_Dist:member(1)'
     summary: |-
       Returns the beta probability distribution function.
 
@@ -1248,7 +1248,7 @@ items:
           description: 'Is an optional upper bound to the interval of x. If omitted, B = 1.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.beta_Inv
+  - uid: 'excel!Excel.Functions#beta_Inv:member(1)'
     summary: |-
       Returns the inverse of the cumulative beta probability density function (BETA.DIST).
 
@@ -1290,7 +1290,7 @@ items:
           description: 'Is an optional upper bound to the interval of x. If omitted, B = 1.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bin2Dec
+  - uid: 'excel!Excel.Functions#bin2Dec:member(1)'
     summary: |-
       Converts a binary number to decimal.
 
@@ -1313,7 +1313,7 @@ items:
           description: Is the binary number you want to convert.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bin2Hex
+  - uid: 'excel!Excel.Functions#bin2Hex:member(1)'
     summary: |-
       Converts a binary number to hexadecimal.
 
@@ -1341,7 +1341,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bin2Oct
+  - uid: 'excel!Excel.Functions#bin2Oct:member(1)'
     summary: |-
       Converts a binary number to octal.
 
@@ -1369,7 +1369,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.binom_Dist_Range
+  - uid: 'excel!Excel.Functions#binom_Dist_Range:member(1)'
     summary: |-
       Returns the probability of a trial result using a binomial distribution.
 
@@ -1408,7 +1408,7 @@ items:
             numberS and numberS2.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.binom_Dist
+  - uid: 'excel!Excel.Functions#binom_Dist:member(1)'
     summary: |-
       Returns the individual term binomial distribution probability.
 
@@ -1447,7 +1447,7 @@ items:
             use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.binom_Inv
+  - uid: 'excel!Excel.Functions#binom_Inv:member(1)'
     summary: >-
       Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion
       value.
@@ -1481,7 +1481,7 @@ items:
           description: 'Is the criterion value, a number between 0 and 1 inclusive.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bitand
+  - uid: 'excel!Excel.Functions#bitand:member(1)'
     summary: |-
       Returns a bitwise 'And' of two numbers.
 
@@ -1508,7 +1508,7 @@ items:
           description: Is the decimal representation of the binary number you want to evaluate.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bitlshift
+  - uid: 'excel!Excel.Functions#bitlshift:member(1)'
     summary: |-
       Returns a number shifted left by shift\_amount bits.
 
@@ -1535,7 +1535,7 @@ items:
           description: Is the number of bits that you want to shift Number left by.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bitor
+  - uid: 'excel!Excel.Functions#bitor:member(1)'
     summary: |-
       Returns a bitwise 'Or' of two numbers.
 
@@ -1562,7 +1562,7 @@ items:
           description: Is the decimal representation of the binary number you want to evaluate.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bitrshift
+  - uid: 'excel!Excel.Functions#bitrshift:member(1)'
     summary: |-
       Returns a number shifted right by shift\_amount bits.
 
@@ -1589,7 +1589,7 @@ items:
           description: Is the number of bits that you want to shift Number right by.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.bitxor
+  - uid: 'excel!Excel.Functions#bitxor:member(1)'
     summary: |-
       Returns a bitwise 'Exclusive Or' of two numbers.
 
@@ -1616,7 +1616,7 @@ items:
           description: Is the decimal representation of the binary number you want to evaluate.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ceiling_Math
+  - uid: 'excel!Excel.Functions#ceiling_Math:member(1)'
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
@@ -1648,7 +1648,7 @@ items:
           description: When given and nonzero this function will round away from zero.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ceiling_Precise
+  - uid: 'excel!Excel.Functions#ceiling_Precise:member(1)'
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
@@ -1675,7 +1675,7 @@ items:
           description: Is the multiple to which you want to round.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.char
+  - uid: 'excel!Excel.Functions#char:member(1)'
     summary: |-
       Returns the character specified by the code number from the character set for your computer.
 
@@ -1696,7 +1696,7 @@ items:
           description: Is a number between 1 and 255 specifying which character you want.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.chiSq_Dist_RT
+  - uid: 'excel!Excel.Functions#chiSq_Dist_RT:member(1)'
     summary: |-
       Returns the right-tailed probability of the chi-squared distribution.
 
@@ -1723,7 +1723,7 @@ items:
           description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.chiSq_Dist
+  - uid: 'excel!Excel.Functions#chiSq_Dist:member(1)'
     summary: |-
       Returns the left-tailed probability of the chi-squared distribution.
 
@@ -1757,7 +1757,7 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.chiSq_Inv_RT
+  - uid: 'excel!Excel.Functions#chiSq_Inv_RT:member(1)'
     summary: |-
       Returns the inverse of the right-tailed probability of the chi-squared distribution.
 
@@ -1784,7 +1784,7 @@ items:
           description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.chiSq_Inv
+  - uid: 'excel!Excel.Functions#chiSq_Inv:member(1)'
     summary: |-
       Returns the inverse of the left-tailed probability of the chi-squared distribution.
 
@@ -1811,7 +1811,7 @@ items:
           description: 'Is the number of degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.choose
+  - uid: 'excel!Excel.Functions#choose:member(1)'
     summary: |-
       Chooses a value or action to perform from a list of values, based on an index number.
 
@@ -1843,7 +1843,7 @@ items:
             functions, or text arguments from which CHOOSE selects.
           type:
             - Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.clean
+  - uid: 'excel!Excel.Functions#clean:member(1)'
     summary: |-
       Removes all nonprintable characters from text.
 
@@ -1864,7 +1864,7 @@ items:
           description: Is any worksheet information from which you want to remove nonprintable characters.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.code
+  - uid: 'excel!Excel.Functions#code:member(1)'
     summary: |-
       Returns a numeric code for the first character in a text string, in the character set used by your computer.
 
@@ -1885,7 +1885,7 @@ items:
           description: Is the text for which you want the code of the first character.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.columns
+  - uid: 'excel!Excel.Functions#columns:member(1)'
     summary: |-
       Returns the number of columns in an array or reference.
 
@@ -1906,7 +1906,7 @@ items:
           description: 'Is an array or array formula, or a reference to a range of cells for which you want the number of columns.'
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.combin
+  - uid: 'excel!Excel.Functions#combin:member(1)'
     summary: |-
       Returns the number of combinations for a given number of items.
 
@@ -1933,7 +1933,7 @@ items:
           description: Is the number of items in each combination.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.combina
+  - uid: 'excel!Excel.Functions#combina:member(1)'
     summary: |-
       Returns the number of combinations with repetitions for a given number of items.
 
@@ -1960,7 +1960,7 @@ items:
           description: Is the number of items in each combination.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.complex
+  - uid: 'excel!Excel.Functions#complex:member(1)'
     summary: |-
       Converts real and imaginary coefficients into a complex number.
 
@@ -1993,7 +1993,7 @@ items:
           description: Is the suffix for the imaginary component of the complex number.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.concatenate
+  - uid: 'excel!Excel.Functions#concatenate:member(1)'
     summary: |-
       Joins several text strings into one text string.
 
@@ -2018,7 +2018,7 @@ items:
             be text strings, numbers, or single-cell references.
           type:
             - Array<string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.confidence_Norm
+  - uid: 'excel!Excel.Functions#confidence_Norm:member(1)'
     summary: |-
       Returns the confidence interval for a population mean, using a normal distribution.
 
@@ -2052,7 +2052,7 @@ items:
           description: Is the sample size.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.confidence_T
+  - uid: 'excel!Excel.Functions#confidence_T:member(1)'
     summary: |-
       Returns the confidence interval for a population mean, using a Student's T distribution.
 
@@ -2086,7 +2086,7 @@ items:
           description: Is the sample size.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.context
+  - uid: 'excel!Excel.Functions#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -2099,8 +2099,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Functions.convert
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Functions#convert:member(1)'
     summary: |-
       Converts a number from one measurement system to another.
 
@@ -2133,7 +2133,7 @@ items:
           description: Is the units for the result.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.cos
+  - uid: 'excel!Excel.Functions#cos:member(1)'
     summary: |-
       Returns the cosine of an angle.
 
@@ -2154,7 +2154,7 @@ items:
           description: Is the angle in radians for which you want the cosine.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.cosh
+  - uid: 'excel!Excel.Functions#cosh:member(1)'
     summary: |-
       Returns the hyperbolic cosine of a number.
 
@@ -2175,7 +2175,7 @@ items:
           description: Is any real number.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.cot
+  - uid: 'excel!Excel.Functions#cot:member(1)'
     summary: |-
       Returns the cotangent of an angle.
 
@@ -2196,7 +2196,7 @@ items:
           description: Is the angle in radians for which you want the cotangent.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.coth
+  - uid: 'excel!Excel.Functions#coth:member(1)'
     summary: |-
       Returns the hyperbolic cotangent of a number.
 
@@ -2217,7 +2217,7 @@ items:
           description: Is the angle in radians for which you want the hyperbolic cotangent.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.count
+  - uid: 'excel!Excel.Functions#count:member(1)'
     summary: |-
       Counts the number of cells in a range that contain numbers.
 
@@ -2242,7 +2242,7 @@ items:
             different types of data, but only numbers are counted.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.countA
+  - uid: 'excel!Excel.Functions#countA:member(1)'
     summary: |-
       Counts the number of cells in a range that are not empty.
 
@@ -2267,7 +2267,7 @@ items:
             count. Values can be any type of information.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.countBlank
+  - uid: 'excel!Excel.Functions#countBlank:member(1)'
     summary: |-
       Counts the number of empty cells in a specified range of cells.
 
@@ -2288,7 +2288,7 @@ items:
           description: Is the range from which you want to count the empty cells.
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.countIf
+  - uid: 'excel!Excel.Functions#countIf:member(1)'
     summary: |-
       Counts the number of cells within a range that meet the given condition.
 
@@ -2315,7 +2315,7 @@ items:
           description: 'Is the condition in the form of a number, expression, or text that defines which cells will be counted.'
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.countIfs
+  - uid: 'excel!Excel.Functions#countIfs:member(1)'
     summary: |-
       Counts the number of cells specified by a given set of conditions or criteria.
 
@@ -2341,7 +2341,7 @@ items:
             or text that defines which cells will be counted.
           type:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
-  - uid: excel.Excel.Functions.coupDayBs
+  - uid: 'excel!Excel.Functions#coupDayBs:member(1)'
     summary: |-
       Returns the number of days from the beginning of the coupon period to the settlement date.
 
@@ -2379,7 +2379,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.coupDays
+  - uid: 'excel!Excel.Functions#coupDays:member(1)'
     summary: |-
       Returns the number of days in the coupon period that contains the settlement date.
 
@@ -2416,7 +2416,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.coupDaysNc
+  - uid: 'excel!Excel.Functions#coupDaysNc:member(1)'
     summary: |-
       Returns the number of days from the settlement date to the next coupon date.
 
@@ -2454,7 +2454,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.coupNcd
+  - uid: 'excel!Excel.Functions#coupNcd:member(1)'
     summary: |-
       Returns the next coupon date after the settlement date.
 
@@ -2491,7 +2491,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.coupNum
+  - uid: 'excel!Excel.Functions#coupNum:member(1)'
     summary: |-
       Returns the number of coupons payable between the settlement date and maturity date.
 
@@ -2528,7 +2528,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.coupPcd
+  - uid: 'excel!Excel.Functions#coupPcd:member(1)'
     summary: |-
       Returns the previous coupon date before the settlement date.
 
@@ -2565,7 +2565,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.csc
+  - uid: 'excel!Excel.Functions#csc:member(1)'
     summary: |-
       Returns the cosecant of an angle.
 
@@ -2586,7 +2586,7 @@ items:
           description: Is the angle in radians for which you want the cosecant.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.csch
+  - uid: 'excel!Excel.Functions#csch:member(1)'
     summary: |-
       Returns the hyperbolic cosecant of an angle.
 
@@ -2607,7 +2607,7 @@ items:
           description: Is the angle in radians for which you want the hyperbolic cosecant.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.cumIPmt
+  - uid: 'excel!Excel.Functions#cumIPmt:member(1)'
     summary: |-
       Returns the cumulative interest paid between two periods.
 
@@ -2654,7 +2654,7 @@ items:
           description: Is the timing of the payment.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.cumPrinc
+  - uid: 'excel!Excel.Functions#cumPrinc:member(1)'
     summary: |-
       Returns the cumulative principal paid on a loan between two periods.
 
@@ -2701,7 +2701,7 @@ items:
           description: Is the timing of the payment.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.date
+  - uid: 'excel!Excel.Functions#date:member(1)'
     summary: |-
       Returns the number that represents the date in Microsoft Excel date-time code.
 
@@ -2733,7 +2733,7 @@ items:
           description: Is a number from 1 to 31 representing the day of the month.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.datevalue
+  - uid: 'excel!Excel.Functions#datevalue:member(1)'
     summary: |-
       Converts a date in the form of text to a number that represents the date in Microsoft Excel date-time code.
 
@@ -2758,7 +2758,7 @@ items:
             the workbook's date system) and 12/31/9999.
           type:
             - string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.daverage
+  - uid: 'excel!Excel.Functions#daverage:member(1)'
     summary: |-
       Averages the values in a column in a list or database that match conditions you specify.
 
@@ -2794,7 +2794,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.day
+  - uid: 'excel!Excel.Functions#day:member(1)'
     summary: |-
       Returns the day of the month, a number from 1 to 31.
 
@@ -2817,7 +2817,7 @@ items:
           description: Is a number in the date-time code used by Microsoft Excel.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.days
+  - uid: 'excel!Excel.Functions#days:member(1)'
     summary: |-
       Returns the number of days between the two dates.
 
@@ -2844,7 +2844,7 @@ items:
           description: startDate and endDate are the two dates between which you want to know the number of days.
           type:
             - string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.days360
+  - uid: 'excel!Excel.Functions#days360:member(1)'
     summary: |-
       Returns the number of days between two dates based on a 360-day year (twelve 30-day months).
 
@@ -2876,7 +2876,7 @@ items:
           description: 'Is a logical value specifying the calculation method: U.S. (NASD) = FALSE or omitted; European = TRUE.'
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.db
+  - uid: 'excel!Excel.Functions#db:member(1)'
     summary: |-
       Returns the depreciation of an asset for a specified period using the fixed-declining balance method.
 
@@ -2919,7 +2919,7 @@ items:
           description: 'Is the number of months in the first year. If month is omitted, it is assumed to be 12.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dbcs
+  - uid: 'excel!Excel.Functions#dbcs:member(1)'
     summary: >-
       Changes half-width (single-byte) characters within a character string to full-width (double-byte) characters. Use
       with double-byte character sets (DBCS).
@@ -2942,7 +2942,7 @@ items:
           description: 'Is a text, or a reference to a cell containing a text.'
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dcount
+  - uid: 'excel!Excel.Functions#dcount:member(1)'
     summary: >-
       Counts the cells containing numbers in the field (column) of records in the database that match the conditions you
       specify.
@@ -2980,7 +2980,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dcountA
+  - uid: 'excel!Excel.Functions#dcountA:member(1)'
     summary: |-
       Counts nonblank cells in the field (column) of records in the database that match the conditions you specify.
 
@@ -3016,7 +3016,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ddb
+  - uid: 'excel!Excel.Functions#ddb:member(1)'
     summary: >-
       Returns the depreciation of an asset for a specified period using the double-declining balance method or some
       other method you specify.
@@ -3063,7 +3063,7 @@ items:
             balance method).
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dec2Bin
+  - uid: 'excel!Excel.Functions#dec2Bin:member(1)'
     summary: |-
       Converts a decimal number to binary.
 
@@ -3091,7 +3091,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dec2Hex
+  - uid: 'excel!Excel.Functions#dec2Hex:member(1)'
     summary: |-
       Converts a decimal number to hexadecimal.
 
@@ -3119,7 +3119,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dec2Oct
+  - uid: 'excel!Excel.Functions#dec2Oct:member(1)'
     summary: |-
       Converts a decimal number to octal.
 
@@ -3147,7 +3147,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.decimal
+  - uid: 'excel!Excel.Functions#decimal:member(1)'
     summary: |-
       Converts a text representation of a number in a given base into a decimal number.
 
@@ -3174,7 +3174,7 @@ items:
           description: Is the base Radix of the number you are converting.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.degrees
+  - uid: 'excel!Excel.Functions#degrees:member(1)'
     summary: |-
       Converts radians to degrees.
 
@@ -3195,7 +3195,7 @@ items:
           description: Is the angle in radians that you want to convert.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.delta
+  - uid: 'excel!Excel.Functions#delta:member(1)'
     summary: |-
       Tests whether two numbers are equal.
 
@@ -3223,7 +3223,7 @@ items:
           description: Is the second number.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.devSq
+  - uid: 'excel!Excel.Functions#devSq:member(1)'
     summary: |-
       Returns the sum of squares of deviations of data points from their sample mean.
 
@@ -3248,7 +3248,7 @@ items:
             DEVSQ to calculate.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.dget
+  - uid: 'excel!Excel.Functions#dget:member(1)'
     summary: |-
       Extracts from a database a single record that matches the conditions you specify.
 
@@ -3284,7 +3284,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.disc
+  - uid: 'excel!Excel.Functions#disc:member(1)'
     summary: |-
       Returns the discount rate for a security.
 
@@ -3326,7 +3326,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dmax
+  - uid: 'excel!Excel.Functions#dmax:member(1)'
     summary: |-
       Returns the largest number in the field (column) of records in the database that match the conditions you specify.
 
@@ -3362,7 +3362,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dmin
+  - uid: 'excel!Excel.Functions#dmin:member(1)'
     summary: >-
       Returns the smallest number in the field (column) of records in the database that match the conditions you
       specify.
@@ -3400,7 +3400,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dollar
+  - uid: 'excel!Excel.Functions#dollar:member(1)'
     summary: |-
       Converts a number to text, using currency format.
 
@@ -3429,7 +3429,7 @@ items:
             Decimals = 2.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dollarDe
+  - uid: 'excel!Excel.Functions#dollarDe:member(1)'
     summary: |-
       Converts a dollar price, expressed as a fraction, into a dollar price, expressed as a decimal number.
 
@@ -3457,7 +3457,7 @@ items:
           description: Is the integer to use in the denominator of the fraction.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dollarFr
+  - uid: 'excel!Excel.Functions#dollarFr:member(1)'
     summary: |-
       Converts a dollar price, expressed as a decimal number, into a dollar price, expressed as a fraction.
 
@@ -3485,7 +3485,7 @@ items:
           description: Is the integer to use in the denominator of a fraction.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dproduct
+  - uid: 'excel!Excel.Functions#dproduct:member(1)'
     summary: |-
       Multiplies the values in the field (column) of records in the database that match the conditions you specify.
 
@@ -3521,7 +3521,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dstDev
+  - uid: 'excel!Excel.Functions#dstDev:member(1)'
     summary: |-
       Estimates the standard deviation based on a sample from selected database entries.
 
@@ -3557,7 +3557,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dstDevP
+  - uid: 'excel!Excel.Functions#dstDevP:member(1)'
     summary: |-
       Calculates the standard deviation based on the entire population of selected database entries.
 
@@ -3593,7 +3593,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dsum
+  - uid: 'excel!Excel.Functions#dsum:member(1)'
     summary: |-
       Adds the numbers in the field (column) of records in the database that match the conditions you specify.
 
@@ -3629,7 +3629,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.duration
+  - uid: 'excel!Excel.Functions#duration:member(1)'
     summary: |-
       Returns the annual duration of a security with periodic interest payments.
 
@@ -3676,7 +3676,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dvar
+  - uid: 'excel!Excel.Functions#dvar:member(1)'
     summary: |-
       Estimates variance based on a sample from selected database entries.
 
@@ -3712,7 +3712,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.dvarP
+  - uid: 'excel!Excel.Functions#dvarP:member(1)'
     summary: |-
       Calculates variance based on the entire population of selected database entries.
 
@@ -3748,7 +3748,7 @@ items:
             cell below the label for a condition.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ecma_Ceiling
+  - uid: 'excel!Excel.Functions#ecma_Ceiling:member(1)'
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
@@ -3775,7 +3775,7 @@ items:
           description: Is the multiple to which you want to round.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.edate
+  - uid: 'excel!Excel.Functions#edate:member(1)'
     summary: |-
       Returns the serial number of the date that is the indicated number of months before or after the start date.
 
@@ -3803,7 +3803,7 @@ items:
           description: Is the number of months before or after startDate.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.effect
+  - uid: 'excel!Excel.Functions#effect:member(1)'
     summary: |-
       Returns the effective annual interest rate.
 
@@ -3831,7 +3831,7 @@ items:
           description: Is the number of compounding periods per year.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.eoMonth
+  - uid: 'excel!Excel.Functions#eoMonth:member(1)'
     summary: |-
       Returns the serial number of the last day of the month before or after a specified number of months.
 
@@ -3859,7 +3859,7 @@ items:
           description: Is the number of months before or after the startDate.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.erf_Precise
+  - uid: 'excel!Excel.Functions#erf_Precise:member(1)'
     summary: |-
       Returns the error function.
 
@@ -3882,7 +3882,7 @@ items:
           description: Is the lower bound for integrating ERF.PRECISE.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.erf
+  - uid: 'excel!Excel.Functions#erf:member(1)'
     summary: |-
       Returns the error function.
 
@@ -3910,7 +3910,7 @@ items:
           description: Is the upper bound for integrating ERF.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.erfC_Precise
+  - uid: 'excel!Excel.Functions#erfC_Precise:member(1)'
     summary: |-
       Returns the complementary error function.
 
@@ -3933,7 +3933,7 @@ items:
           description: Is the lower bound for integrating ERFC.PRECISE.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.erfC
+  - uid: 'excel!Excel.Functions#erfC:member(1)'
     summary: |-
       Returns the complementary error function.
 
@@ -3956,7 +3956,7 @@ items:
           description: Is the lower bound for integrating ERF.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.error_Type
+  - uid: 'excel!Excel.Functions#error_Type:member(1)'
     summary: |-
       Returns a number matching an error value.
 
@@ -3981,7 +3981,7 @@ items:
             reference to a cell containing an error value.
           type:
             - string | number | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.even
+  - uid: 'excel!Excel.Functions#even:member(1)'
     summary: |-
       Rounds a positive number up and negative number down to the nearest even integer.
 
@@ -4002,7 +4002,7 @@ items:
           description: Is the value to round.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.exact
+  - uid: 'excel!Excel.Functions#exact:member(1)'
     summary: |-
       Checks whether two text strings are exactly the same, and returns TRUE or FALSE. EXACT is case-sensitive.
 
@@ -4029,7 +4029,7 @@ items:
           description: Is the second text string.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.exp
+  - uid: 'excel!Excel.Functions#exp:member(1)'
     summary: |-
       Returns e raised to the power of a given number.
 
@@ -4052,7 +4052,7 @@ items:
             logarithm.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.expon_Dist
+  - uid: 'excel!Excel.Functions#expon_Dist:member(1)'
     summary: |-
       Returns the exponential distribution.
 
@@ -4086,7 +4086,7 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.f_Dist_RT
+  - uid: 'excel!Excel.Functions#f_Dist_RT:member(1)'
     summary: |-
       Returns the (right-tailed) F probability distribution (degree of diversity) for two data sets.
 
@@ -4118,7 +4118,7 @@ items:
           description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.f_Dist
+  - uid: 'excel!Excel.Functions#f_Dist:member(1)'
     summary: |-
       Returns the (left-tailed) F probability distribution (degree of diversity) for two data sets.
 
@@ -4157,7 +4157,7 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.f_Inv_RT
+  - uid: 'excel!Excel.Functions#f_Inv_RT:member(1)'
     summary: >-
       Returns the inverse of the (right-tailed) F probability distribution: if p = F.DIST.RT(x,...), then
       F.INV.RT(p,...) = x.
@@ -4191,7 +4191,7 @@ items:
           description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.f_Inv
+  - uid: 'excel!Excel.Functions#f_Inv:member(1)'
     summary: |-
       Returns the inverse of the (left-tailed) F probability distribution: if p = F.DIST(x,...), then F.INV(p,...) = x.
 
@@ -4223,7 +4223,7 @@ items:
           description: 'Is the denominator degrees of freedom, a number between 1 and 10^10, excluding 10^10.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.fact
+  - uid: 'excel!Excel.Functions#fact:member(1)'
     summary: |-
       Returns the factorial of a number, equal to 1*2*3*...* Number.
 
@@ -4244,7 +4244,7 @@ items:
           description: Is the nonnegative number you want the factorial of.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.factDouble
+  - uid: 'excel!Excel.Functions#factDouble:member(1)'
     summary: |-
       Returns the double factorial of a number.
 
@@ -4267,7 +4267,7 @@ items:
           description: Is the value for which to return the double factorial.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.false
+  - uid: 'excel!Excel.Functions#false:member(1)'
     summary: |-
       Returns the logical value FALSE.
 
@@ -4283,7 +4283,7 @@ items:
         type:
           - FunctionResult<boolean>
         description: ''
-  - uid: excel.Excel.Functions.find
+  - uid: 'excel!Excel.Functions#find:member(1)'
     summary: |-
       Returns the starting position of one text string within another text string. FIND is case-sensitive.
 
@@ -4319,7 +4319,7 @@ items:
             1. If omitted, startNum = 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.findB
+  - uid: 'excel!Excel.Functions#findB:member(1)'
     summary: >-
       Finds the starting position of one text string within another text string. FINDB is case-sensitive. Use with
       double-byte character sets (DBCS).
@@ -4353,7 +4353,7 @@ items:
           description: Specifies the character at which to start the search.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.fisher
+  - uid: 'excel!Excel.Functions#fisher:member(1)'
     summary: |-
       Returns the Fisher transformation.
 
@@ -4374,7 +4374,7 @@ items:
           description: 'Is the value for which you want the transformation, a number between -1 and 1, excluding -1 and 1.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.fisherInv
+  - uid: 'excel!Excel.Functions#fisherInv:member(1)'
     summary: |-
       Returns the inverse of the Fisher transformation: if y = FISHER(x), then FISHERINV(y) = x.
 
@@ -4395,7 +4395,7 @@ items:
           description: Is the value for which you want to perform the inverse of the transformation.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.fixed
+  - uid: 'excel!Excel.Functions#fixed:member(1)'
     summary: |-
       Rounds a number to the specified number of decimals and returns the result as text with or without commas.
 
@@ -4429,7 +4429,7 @@ items:
             text = FALSE or omitted.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.floor_Math
+  - uid: 'excel!Excel.Functions#floor_Math:member(1)'
     summary: |-
       Rounds a number down, to the nearest integer or to the nearest multiple of significance.
 
@@ -4461,7 +4461,7 @@ items:
           description: When given and nonzero this function will round towards zero.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.floor_Precise
+  - uid: 'excel!Excel.Functions#floor_Precise:member(1)'
     summary: |-
       Rounds a number down, to the nearest integer or to the nearest multiple of significance.
 
@@ -4488,7 +4488,7 @@ items:
           description: Is the multiple to which you want to round.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.fv
+  - uid: 'excel!Excel.Functions#fv:member(1)'
     summary: |-
       Returns the future value of an investment based on periodic, constant payments and a constant interest rate.
 
@@ -4533,7 +4533,7 @@ items:
             end of the period = 0 or omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.fvschedule
+  - uid: 'excel!Excel.Functions#fvschedule:member(1)'
     summary: |-
       Returns the future value of an initial principal after applying a series of compound interest rates.
 
@@ -4561,7 +4561,7 @@ items:
           description: Is an array of interest rates to apply.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gamma_Dist
+  - uid: 'excel!Excel.Functions#gamma_Dist:member(1)'
     summary: |-
       Returns the gamma distribution.
 
@@ -4602,7 +4602,7 @@ items:
             = FALSE or omitted.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gamma_Inv
+  - uid: 'excel!Excel.Functions#gamma_Inv:member(1)'
     summary: |-
       Returns the inverse of the gamma cumulative distribution: if p = GAMMA.DIST(x,...), then GAMMA.INV(p,...) = x.
 
@@ -4636,7 +4636,7 @@ items:
             standard gamma distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gamma
+  - uid: 'excel!Excel.Functions#gamma:member(1)'
     summary: |-
       Returns the Gamma function value.
 
@@ -4657,7 +4657,7 @@ items:
           description: Is the value for which you want to calculate Gamma.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gammaLn_Precise
+  - uid: 'excel!Excel.Functions#gammaLn_Precise:member(1)'
     summary: |-
       Returns the natural logarithm of the gamma function.
 
@@ -4680,7 +4680,7 @@ items:
           description: 'Is the value for which you want to calculate GAMMALN.PRECISE, a positive number.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gammaLn
+  - uid: 'excel!Excel.Functions#gammaLn:member(1)'
     summary: |-
       Returns the natural logarithm of the gamma function.
 
@@ -4701,7 +4701,7 @@ items:
           description: 'Is the value for which you want to calculate GAMMALN, a positive number.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gauss
+  - uid: 'excel!Excel.Functions#gauss:member(1)'
     summary: |-
       Returns 0.5 less than the standard normal cumulative distribution.
 
@@ -4722,7 +4722,7 @@ items:
           description: Is the value for which you want the distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.gcd
+  - uid: 'excel!Excel.Functions#gcd:member(1)'
     summary: |-
       Returns the greatest common divisor.
 
@@ -4745,7 +4745,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 values.'
           type:
             - Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.geoMean
+  - uid: 'excel!Excel.Functions#geoMean:member(1)'
     summary: |-
       Returns the geometric mean of an array or range of positive numeric data.
 
@@ -4770,7 +4770,7 @@ items:
             for which you want the mean.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.geStep
+  - uid: 'excel!Excel.Functions#geStep:member(1)'
     summary: |-
       Tests whether a number is greater than a threshold value.
 
@@ -4798,7 +4798,7 @@ items:
           description: Is the threshold value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.harMean
+  - uid: 'excel!Excel.Functions#harMean:member(1)'
     summary: |-
       Returns the harmonic mean of a data set of positive numbers: the reciprocal of the arithmetic mean of reciprocals.
 
@@ -4823,7 +4823,7 @@ items:
             for which you want the harmonic mean.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.hex2Bin
+  - uid: 'excel!Excel.Functions#hex2Bin:member(1)'
     summary: |-
       Converts a Hexadecimal number to binary.
 
@@ -4851,7 +4851,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.hex2Dec
+  - uid: 'excel!Excel.Functions#hex2Dec:member(1)'
     summary: |-
       Converts a hexadecimal number to decimal.
 
@@ -4874,7 +4874,7 @@ items:
           description: Is the hexadecimal number you want to convert.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.hex2Oct
+  - uid: 'excel!Excel.Functions#hex2Oct:member(1)'
     summary: |-
       Converts a hexadecimal number to octal.
 
@@ -4902,7 +4902,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.hlookup
+  - uid: 'excel!Excel.Functions#hlookup:member(1)'
     summary: >-
       Looks for a value in the top row of a table or array of values and returns the value in the same column from a row
       you specify.
@@ -4947,7 +4947,7 @@ items:
             find an exact match = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.hour
+  - uid: 'excel!Excel.Functions#hour:member(1)'
     summary: |-
       Returns the hour as a number from 0 (12:00 A.M.) to 23 (11:00 P.M.).
 
@@ -4972,7 +4972,7 @@ items:
             4:48:00 PM.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.hyperlink
+  - uid: 'excel!Excel.Functions#hyperlink:member(1)'
     summary: |-
       Creates a shortcut or jump that opens a document stored on your hard drive, a network server, or on the Internet.
 
@@ -5002,7 +5002,7 @@ items:
           description: 'Is text or a number that is displayed in the cell. If omitted, the cell displays the linkLocation text.'
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.hypGeom_Dist
+  - uid: 'excel!Excel.Functions#hypGeom_Dist:member(1)'
     summary: |-
       Returns the hypergeometric distribution.
 
@@ -5046,7 +5046,7 @@ items:
             function, use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.if
+  - uid: 'excel!Excel.Functions#if:member(1)'
     summary: |-
       Checks whether a condition is met, and returns one value if TRUE, and another value if FALSE.
 
@@ -5081,7 +5081,7 @@ items:
           description: 'Is the value that is returned if logicalTest is FALSE. If omitted, FALSE is returned.'
           type:
             - Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imAbs
+  - uid: 'excel!Excel.Functions#imAbs:member(1)'
     summary: |-
       Returns the absolute value (modulus) of a complex number.
 
@@ -5104,7 +5104,7 @@ items:
           description: Is a complex number for which you want the absolute value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imaginary
+  - uid: 'excel!Excel.Functions#imaginary:member(1)'
     summary: |-
       Returns the imaginary coefficient of a complex number.
 
@@ -5127,7 +5127,7 @@ items:
           description: Is a complex number for which you want the imaginary coefficient.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imArgument
+  - uid: 'excel!Excel.Functions#imArgument:member(1)'
     summary: |-
       Returns the argument q, an angle expressed in radians.
 
@@ -5150,7 +5150,7 @@ items:
           description: Is a complex number for which you want the argument.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imConjugate
+  - uid: 'excel!Excel.Functions#imConjugate:member(1)'
     summary: |-
       Returns the complex conjugate of a complex number.
 
@@ -5173,7 +5173,7 @@ items:
           description: Is a complex number for which you want the conjugate.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imCos
+  - uid: 'excel!Excel.Functions#imCos:member(1)'
     summary: |-
       Returns the cosine of a complex number.
 
@@ -5196,7 +5196,7 @@ items:
           description: Is a complex number for which you want the cosine.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imCosh
+  - uid: 'excel!Excel.Functions#imCosh:member(1)'
     summary: |-
       Returns the hyperbolic cosine of a complex number.
 
@@ -5219,7 +5219,7 @@ items:
           description: Is a complex number for which you want the hyperbolic cosine.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imCot
+  - uid: 'excel!Excel.Functions#imCot:member(1)'
     summary: |-
       Returns the cotangent of a complex number.
 
@@ -5242,7 +5242,7 @@ items:
           description: Is a complex number for which you want the cotangent.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imCsc
+  - uid: 'excel!Excel.Functions#imCsc:member(1)'
     summary: |-
       Returns the cosecant of a complex number.
 
@@ -5265,7 +5265,7 @@ items:
           description: Is a complex number for which you want the cosecant.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imCsch
+  - uid: 'excel!Excel.Functions#imCsch:member(1)'
     summary: |-
       Returns the hyperbolic cosecant of a complex number.
 
@@ -5288,7 +5288,7 @@ items:
           description: Is a complex number for which you want the hyperbolic cosecant.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imDiv
+  - uid: 'excel!Excel.Functions#imDiv:member(1)'
     summary: |-
       Returns the quotient of two complex numbers.
 
@@ -5316,7 +5316,7 @@ items:
           description: Is the complex denominator or divisor.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imExp
+  - uid: 'excel!Excel.Functions#imExp:member(1)'
     summary: |-
       Returns the exponential of a complex number.
 
@@ -5339,7 +5339,7 @@ items:
           description: Is a complex number for which you want the exponential.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imLn
+  - uid: 'excel!Excel.Functions#imLn:member(1)'
     summary: |-
       Returns the natural logarithm of a complex number.
 
@@ -5362,7 +5362,7 @@ items:
           description: Is a complex number for which you want the natural logarithm.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imLog10
+  - uid: 'excel!Excel.Functions#imLog10:member(1)'
     summary: |-
       Returns the base-10 logarithm of a complex number.
 
@@ -5385,7 +5385,7 @@ items:
           description: Is a complex number for which you want the common logarithm.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imLog2
+  - uid: 'excel!Excel.Functions#imLog2:member(1)'
     summary: |-
       Returns the base-2 logarithm of a complex number.
 
@@ -5408,7 +5408,7 @@ items:
           description: Is a complex number for which you want the base-2 logarithm.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imPower
+  - uid: 'excel!Excel.Functions#imPower:member(1)'
     summary: |-
       Returns a complex number raised to an integer power.
 
@@ -5436,7 +5436,7 @@ items:
           description: Is the power to which you want to raise the complex number.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imProduct
+  - uid: 'excel!Excel.Functions#imProduct:member(1)'
     summary: |-
       Returns the product of 1 to 255 complex numbers.
 
@@ -5459,7 +5459,7 @@ items:
           description: 'Inumber1, Inumber2,... are from 1 to 255 complex numbers to multiply.'
           type:
             - Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.imReal
+  - uid: 'excel!Excel.Functions#imReal:member(1)'
     summary: |-
       Returns the real coefficient of a complex number.
 
@@ -5482,7 +5482,7 @@ items:
           description: Is a complex number for which you want the real coefficient.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSec
+  - uid: 'excel!Excel.Functions#imSec:member(1)'
     summary: |-
       Returns the secant of a complex number.
 
@@ -5505,7 +5505,7 @@ items:
           description: Is a complex number for which you want the secant.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSech
+  - uid: 'excel!Excel.Functions#imSech:member(1)'
     summary: |-
       Returns the hyperbolic secant of a complex number.
 
@@ -5528,7 +5528,7 @@ items:
           description: Is a complex number for which you want the hyperbolic secant.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSin
+  - uid: 'excel!Excel.Functions#imSin:member(1)'
     summary: |-
       Returns the sine of a complex number.
 
@@ -5551,7 +5551,7 @@ items:
           description: Is a complex number for which you want the sine.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSinh
+  - uid: 'excel!Excel.Functions#imSinh:member(1)'
     summary: |-
       Returns the hyperbolic sine of a complex number.
 
@@ -5574,7 +5574,7 @@ items:
           description: Is a complex number for which you want the hyperbolic sine.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSqrt
+  - uid: 'excel!Excel.Functions#imSqrt:member(1)'
     summary: |-
       Returns the square root of a complex number.
 
@@ -5597,7 +5597,7 @@ items:
           description: Is a complex number for which you want the square root.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSub
+  - uid: 'excel!Excel.Functions#imSub:member(1)'
     summary: |-
       Returns the difference of two complex numbers.
 
@@ -5625,7 +5625,7 @@ items:
           description: Is the complex number to subtract from inumber1.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.imSum
+  - uid: 'excel!Excel.Functions#imSum:member(1)'
     summary: |-
       Returns the sum of complex numbers.
 
@@ -5648,7 +5648,7 @@ items:
           description: 'List of parameters, whose elements are from 1 to 255 complex numbers to add.'
           type:
             - Array<Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.imTan
+  - uid: 'excel!Excel.Functions#imTan:member(1)'
     summary: |-
       Returns the tangent of a complex number.
 
@@ -5671,7 +5671,7 @@ items:
           description: Is a complex number for which you want the tangent.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.int
+  - uid: 'excel!Excel.Functions#int:member(1)'
     summary: |-
       Rounds a number down to the nearest integer.
 
@@ -5692,7 +5692,7 @@ items:
           description: Is the real number you want to round down to an integer.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.intRate
+  - uid: 'excel!Excel.Functions#intRate:member(1)'
     summary: |-
       Returns the interest rate for a fully invested security.
 
@@ -5735,7 +5735,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ipmt
+  - uid: 'excel!Excel.Functions#ipmt:member(1)'
     summary: >-
       Returns the interest payment for a given period for an investment, based on periodic, constant payments and a
       constant interest rate.
@@ -5787,7 +5787,7 @@ items:
             beginning of the period = 1.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.irr
+  - uid: 'excel!Excel.Functions#irr:member(1)'
     summary: |-
       Returns the internal rate of return for a series of cash flows.
 
@@ -5816,7 +5816,7 @@ items:
           description: Is a number that you guess is close to the result of IRR; 0.1 (10 percent) if omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isErr
+  - uid: 'excel!Excel.Functions#isErr:member(1)'
     summary: >-
       Checks whether a value is an error (\#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!) excluding \#N/A, and
       returns TRUE or FALSE.
@@ -5843,7 +5843,7 @@ items:
             formula, or value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isError
+  - uid: 'excel!Excel.Functions#isError:member(1)'
     summary: >-
       Checks whether a value is an error (\#N/A, \#VALUE!, \#REF!, \#DIV/0!, \#NUM!, \#NAME?, or \#NULL!), and returns
       TRUE or FALSE.
@@ -5870,7 +5870,7 @@ items:
             formula, or value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isEven
+  - uid: 'excel!Excel.Functions#isEven:member(1)'
     summary: |-
       Returns TRUE if the number is even.
 
@@ -5893,7 +5893,7 @@ items:
           description: Is the value to test.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isFormula
+  - uid: 'excel!Excel.Functions#isFormula:member(1)'
     summary: |-
       Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
 
@@ -5916,7 +5916,7 @@ items:
             refers to a cell.
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isLogical
+  - uid: 'excel!Excel.Functions#isLogical:member(1)'
     summary: |-
       Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.
 
@@ -5941,7 +5941,7 @@ items:
             formula, or value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isNA
+  - uid: 'excel!Excel.Functions#isNA:member(1)'
     summary: |-
       Checks whether a value is \#N/A, and returns TRUE or FALSE.
 
@@ -5966,7 +5966,7 @@ items:
             formula, or value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isNonText
+  - uid: 'excel!Excel.Functions#isNonText:member(1)'
     summary: |-
       Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.
 
@@ -5989,7 +5989,7 @@ items:
           description: 'Is the value you want tested: a cell; a formula; or a name referring to a cell, formula, or value.'
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isNumber
+  - uid: 'excel!Excel.Functions#isNumber:member(1)'
     summary: |-
       Checks whether a value is a number, and returns TRUE or FALSE.
 
@@ -6014,7 +6014,7 @@ items:
             formula, or value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.iso_Ceiling
+  - uid: 'excel!Excel.Functions#iso_Ceiling:member(1)'
     summary: |-
       Rounds a number up, to the nearest integer or to the nearest multiple of significance.
 
@@ -6041,7 +6041,7 @@ items:
           description: Is the optional multiple to which you want to round.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isOdd
+  - uid: 'excel!Excel.Functions#isOdd:member(1)'
     summary: |-
       Returns TRUE if the number is odd.
 
@@ -6064,7 +6064,7 @@ items:
           description: Is the value to test.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isoWeekNum
+  - uid: 'excel!Excel.Functions#isoWeekNum:member(1)'
     summary: |-
       Returns the ISO week number in the year for a given date.
 
@@ -6087,7 +6087,7 @@ items:
           description: Is the date-time code used by Microsoft Excel for date and time calculation.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ispmt
+  - uid: 'excel!Excel.Functions#ispmt:member(1)'
     summary: |-
       Returns the interest paid during a specific period of an investment.
 
@@ -6124,7 +6124,7 @@ items:
           description: Lump sum amount that a series of future payments is right now.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isref
+  - uid: 'excel!Excel.Functions#isref:member(1)'
     summary: |-
       Checks whether a value is a reference, and returns TRUE or FALSE.
 
@@ -6149,7 +6149,7 @@ items:
             formula, or value.
           type:
             - Excel.Range | number | string | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.isText
+  - uid: 'excel!Excel.Functions#isText:member(1)'
     summary: |-
       Checks whether a value is text, and returns TRUE or FALSE.
 
@@ -6174,7 +6174,7 @@ items:
             formula, or value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.kurt
+  - uid: 'excel!Excel.Functions#kurt:member(1)'
     summary: |-
       Returns the kurtosis of a data set.
 
@@ -6199,7 +6199,7 @@ items:
             for which you want the kurtosis.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.large
+  - uid: 'excel!Excel.Functions#large:member(1)'
     summary: |-
       Returns the k-th largest value in a data set. For example, the fifth largest number.
 
@@ -6226,7 +6226,7 @@ items:
           description: Is the position (from the largest) in the array or cell range of the value to return.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.lcm
+  - uid: 'excel!Excel.Functions#lcm:member(1)'
     summary: |-
       Returns the least common multiple.
 
@@ -6249,7 +6249,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 values for which you want the least common multiple.'
           type:
             - Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.left
+  - uid: 'excel!Excel.Functions#left:member(1)'
     summary: |-
       Returns the specified number of characters from the start of a text string.
 
@@ -6276,7 +6276,7 @@ items:
           description: Specifies how many characters you want LEFT to extract; 1 if omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.leftb
+  - uid: 'excel!Excel.Functions#leftb:member(1)'
     summary: >-
       Returns the specified number of characters from the start of a text string. Use with double-byte character sets
       (DBCS).
@@ -6305,7 +6305,7 @@ items:
           description: Specifies how many characters you want LEFT to return.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.len
+  - uid: 'excel!Excel.Functions#len:member(1)'
     summary: |-
       Returns the number of characters in a text string.
 
@@ -6326,7 +6326,7 @@ items:
           description: Is the text whose length you want to find. Spaces count as characters.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.lenb
+  - uid: 'excel!Excel.Functions#lenb:member(1)'
     summary: |-
       Returns the number of characters in a text string. Use with double-byte character sets (DBCS).
 
@@ -6347,7 +6347,7 @@ items:
           description: Is the text whose length you want to find.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ln
+  - uid: 'excel!Excel.Functions#ln:member(1)'
     summary: |-
       Returns the natural logarithm of a number.
 
@@ -6368,7 +6368,7 @@ items:
           description: Is the positive real number for which you want the natural logarithm.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.log
+  - uid: 'excel!Excel.Functions#log:member(1)'
     summary: |-
       Returns the logarithm of a number to the base you specify.
 
@@ -6395,7 +6395,7 @@ items:
           description: Is the base of the logarithm; 10 if omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.log10
+  - uid: 'excel!Excel.Functions#log10:member(1)'
     summary: |-
       Returns the base-10 logarithm of a number.
 
@@ -6416,7 +6416,7 @@ items:
           description: Is the positive real number for which you want the base-10 logarithm.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.logNorm_Dist
+  - uid: 'excel!Excel.Functions#logNorm_Dist:member(1)'
     summary: >-
       Returns the lognormal distribution of x, where ln(x) is normally distributed with parameters Mean and
       Standard\_dev.
@@ -6457,7 +6457,7 @@ items:
             function, use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.logNorm_Inv
+  - uid: 'excel!Excel.Functions#logNorm_Inv:member(1)'
     summary: >-
       Returns the inverse of the lognormal cumulative distribution function of x, where ln(x) is normally distributed
       with parameters Mean and Standard\_dev.
@@ -6491,7 +6491,7 @@ items:
           description: 'Is the standard deviation of ln(x), a positive number.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.lookup
+  - uid: 'excel!Excel.Functions#lookup:member(1)'
     summary: |-
       Looks up a value either from a one-row or one-column range or from an array. Provided for backward compatibility.
 
@@ -6527,7 +6527,7 @@ items:
           description: 'Is a range that contains only one row or column, the same size as lookupVector.'
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.lower
+  - uid: 'excel!Excel.Functions#lower:member(1)'
     summary: |-
       Converts all letters in a text string to lowercase.
 
@@ -6548,7 +6548,7 @@ items:
           description: Is the text you want to convert to lowercase. Characters in Text that are not letters are not changed.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.match
+  - uid: 'excel!Excel.Functions#match:member(1)'
     summary: |-
       Returns the relative position of an item in an array that matches a specified value in a specified order.
 
@@ -6584,7 +6584,7 @@ items:
           description: 'Is a number 1, 0, or -1 indicating which value to return.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.max
+  - uid: 'excel!Excel.Functions#max:member(1)'
     summary: |-
       Returns the largest value in a set of values. Ignores logical values and text.
 
@@ -6609,7 +6609,7 @@ items:
             which you want the maximum.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.maxA
+  - uid: 'excel!Excel.Functions#maxA:member(1)'
     summary: |-
       Returns the largest value in a set of values. Does not ignore logical values and text.
 
@@ -6634,7 +6634,7 @@ items:
             which you want the maximum.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.mduration
+  - uid: 'excel!Excel.Functions#mduration:member(1)'
     summary: |-
       Returns the Macauley modified duration for a security with an assumed par value of $100.
 
@@ -6682,7 +6682,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.median
+  - uid: 'excel!Excel.Functions#median:member(1)'
     summary: |-
       Returns the median, or the number in the middle of the set of given numbers.
 
@@ -6707,7 +6707,7 @@ items:
             for which you want the median.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.mid
+  - uid: 'excel!Excel.Functions#mid:member(1)'
     summary: |-
       Returns the characters from the middle of a text string, given a starting position and length.
 
@@ -6739,7 +6739,7 @@ items:
           description: Specifies how many characters to return from Text.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.midb
+  - uid: 'excel!Excel.Functions#midb:member(1)'
     summary: >-
       Returns characters from the middle of a text string, given a starting position and length. Use with double-byte
       character sets (DBCS).
@@ -6773,7 +6773,7 @@ items:
           description: Specifies how many characters to return from text.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.min
+  - uid: 'excel!Excel.Functions#min:member(1)'
     summary: |-
       Returns the smallest number in a set of values. Ignores logical values and text.
 
@@ -6798,7 +6798,7 @@ items:
             which you want the minimum.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.minA
+  - uid: 'excel!Excel.Functions#minA:member(1)'
     summary: |-
       Returns the smallest value in a set of values. Does not ignore logical values and text.
 
@@ -6823,7 +6823,7 @@ items:
             which you want the minimum.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.minute
+  - uid: 'excel!Excel.Functions#minute:member(1)'
     summary: |-
       Returns the minute, a number from 0 to 59.
 
@@ -6848,7 +6848,7 @@ items:
             4:48:00 PM.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.mirr
+  - uid: 'excel!Excel.Functions#mirr:member(1)'
     summary: >-
       Returns the internal rate of return for a series of periodic cash flows, considering both cost of investment and
       interest on reinvestment of cash.
@@ -6884,7 +6884,7 @@ items:
           description: Is the interest rate you receive on the cash flows as you reinvest them.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.mod
+  - uid: 'excel!Excel.Functions#mod:member(1)'
     summary: |-
       Returns the remainder after a number is divided by a divisor.
 
@@ -6911,7 +6911,7 @@ items:
           description: Is the number by which you want to divide Number.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.month
+  - uid: 'excel!Excel.Functions#month:member(1)'
     summary: |-
       Returns the month, a number from 1 (January) to 12 (December).
 
@@ -6934,7 +6934,7 @@ items:
           description: Is a number in the date-time code used by Microsoft Excel.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.mround
+  - uid: 'excel!Excel.Functions#mround:member(1)'
     summary: |-
       Returns a number rounded to the desired multiple.
 
@@ -6962,7 +6962,7 @@ items:
           description: Is the multiple to which you want to round number.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.multiNomial
+  - uid: 'excel!Excel.Functions#multiNomial:member(1)'
     summary: |-
       Returns the multinomial of a set of numbers.
 
@@ -6985,7 +6985,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 values for which you want the multinomial.'
           type:
             - Array<number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.n
+  - uid: 'excel!Excel.Functions#n:member(1)'
     summary: |-
       Converts non-number value to a number, dates to serial numbers, TRUE to 1, anything else to 0 (zero).
 
@@ -7008,7 +7008,7 @@ items:
           description: Is the value you want converted.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.na
+  - uid: 'excel!Excel.Functions#na:member(1)'
     summary: |-
       Returns the error value \#N/A (value not available).
 
@@ -7024,7 +7024,7 @@ items:
         type:
           - FunctionResult<number | string>
         description: ''
-  - uid: excel.Excel.Functions.negBinom_Dist
+  - uid: 'excel!Excel.Functions#negBinom_Dist:member(1)'
     summary: >-
       Returns the negative binomial distribution, the probability that there will be Number\_f failures before the
       Number\_s-th success, with Probability\_s probability of a success.
@@ -7065,7 +7065,7 @@ items:
             use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.networkDays_Intl
+  - uid: 'excel!Excel.Functions#networkDays_Intl:member(1)'
     summary: |-
       Returns the number of whole workdays between two dates with custom weekend parameters.
 
@@ -7105,7 +7105,7 @@ items:
             and federal holidays and floating holidays.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.networkDays
+  - uid: 'excel!Excel.Functions#networkDays:member(1)'
     summary: |-
       Returns the number of whole workdays between two dates.
 
@@ -7140,7 +7140,7 @@ items:
             and federal holidays and floating holidays.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.nominal
+  - uid: 'excel!Excel.Functions#nominal:member(1)'
     summary: |-
       Returns the annual nominal interest rate.
 
@@ -7168,7 +7168,7 @@ items:
           description: Is the number of compounding periods per year.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.norm_Dist
+  - uid: 'excel!Excel.Functions#norm_Dist:member(1)'
     summary: |-
       Returns the normal distribution for the specified mean and standard deviation.
 
@@ -7207,7 +7207,7 @@ items:
             function, use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.norm_Inv
+  - uid: 'excel!Excel.Functions#norm_Inv:member(1)'
     summary: |-
       Returns the inverse of the normal cumulative distribution for the specified mean and standard deviation.
 
@@ -7239,7 +7239,7 @@ items:
           description: 'Is the standard deviation of the distribution, a positive number.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.norm_S_Dist
+  - uid: 'excel!Excel.Functions#norm_S_Dist:member(1)'
     summary: |-
       Returns the standard normal distribution (has a mean of zero and a standard deviation of one).
 
@@ -7268,7 +7268,7 @@ items:
             density function = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.norm_S_Inv
+  - uid: 'excel!Excel.Functions#norm_S_Inv:member(1)'
     summary: >-
       Returns the inverse of the standard normal cumulative distribution (has a mean of zero and a standard deviation of
       one).
@@ -7293,7 +7293,7 @@ items:
           description: 'Is a probability corresponding to the normal distribution, a number between 0 and 1 inclusive.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.not
+  - uid: 'excel!Excel.Functions#not:member(1)'
     summary: |-
       Changes FALSE to TRUE, or TRUE to FALSE.
 
@@ -7314,7 +7314,7 @@ items:
           description: Is a value or expression that can be evaluated to TRUE or FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.now
+  - uid: 'excel!Excel.Functions#now:member(1)'
     summary: |-
       Returns the current date and time formatted as a date and time.
 
@@ -7330,7 +7330,7 @@ items:
         type:
           - FunctionResult<number>
         description: ''
-  - uid: excel.Excel.Functions.nper
+  - uid: 'excel!Excel.Functions#nper:member(1)'
     summary: |-
       Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.
 
@@ -7375,7 +7375,7 @@ items:
             omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.npv
+  - uid: 'excel!Excel.Functions#npv:member(1)'
     summary: >-
       Returns the net present value of an investment based on a discount rate and a series of future payments (negative
       values) and income (positive values).
@@ -7406,7 +7406,7 @@ items:
             the end of each period.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.numberValue
+  - uid: 'excel!Excel.Functions#numberValue:member(1)'
     summary: |-
       Converts text to number in a locale-independent manner.
 
@@ -7438,7 +7438,7 @@ items:
           description: Is the character used as the group separator in the string.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oct2Bin
+  - uid: 'excel!Excel.Functions#oct2Bin:member(1)'
     summary: |-
       Converts an octal number to binary.
 
@@ -7466,7 +7466,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oct2Dec
+  - uid: 'excel!Excel.Functions#oct2Dec:member(1)'
     summary: |-
       Converts an octal number to decimal.
 
@@ -7489,7 +7489,7 @@ items:
           description: Is the octal number you want to convert.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oct2Hex
+  - uid: 'excel!Excel.Functions#oct2Hex:member(1)'
     summary: |-
       Converts an octal number to hexadecimal.
 
@@ -7517,7 +7517,7 @@ items:
           description: Is the number of characters to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.odd
+  - uid: 'excel!Excel.Functions#odd:member(1)'
     summary: |-
       Rounds a positive number up and negative number down to the nearest odd integer.
 
@@ -7538,7 +7538,7 @@ items:
           description: Is the value to round.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oddFPrice
+  - uid: 'excel!Excel.Functions#oddFPrice:member(1)'
     summary: |-
       Returns the price per $100 face value of a security with an odd first period.
 
@@ -7601,7 +7601,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oddFYield
+  - uid: 'excel!Excel.Functions#oddFYield:member(1)'
     summary: |-
       Returns the yield of a security with an odd first period.
 
@@ -7664,7 +7664,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oddLPrice
+  - uid: 'excel!Excel.Functions#oddLPrice:member(1)'
     summary: |-
       Returns the price per $100 face value of a security with an odd last period.
 
@@ -7722,7 +7722,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.oddLYield
+  - uid: 'excel!Excel.Functions#oddLYield:member(1)'
     summary: |-
       Returns the yield of a security with an odd last period.
 
@@ -7780,7 +7780,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.or
+  - uid: 'excel!Excel.Functions#or:member(1)'
     summary: >-
       Checks whether any of the arguments are TRUE, and returns TRUE or FALSE. Returns FALSE only if all arguments are
       FALSE.
@@ -7807,7 +7807,7 @@ items:
             FALSE.
           type:
             - Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.pduration
+  - uid: 'excel!Excel.Functions#pduration:member(1)'
     summary: |-
       Returns the number of periods required by an investment to reach a specified value.
 
@@ -7839,7 +7839,7 @@ items:
           description: Is the desired future value of the investment.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.percentile_Exc
+  - uid: 'excel!Excel.Functions#percentile_Exc:member(1)'
     summary: |-
       Returns the k-th percentile of values in a range, where k is in the range 0..1, exclusive.
 
@@ -7866,7 +7866,7 @@ items:
           description: 'Is the percentile value that is between 0 through 1, inclusive.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.percentile_Inc
+  - uid: 'excel!Excel.Functions#percentile_Inc:member(1)'
     summary: |-
       Returns the k-th percentile of values in a range, where k is in the range 0..1, inclusive.
 
@@ -7893,7 +7893,7 @@ items:
           description: 'Is the percentile value that is between 0 through 1, inclusive.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.percentRank_Exc
+  - uid: 'excel!Excel.Functions#percentRank_Exc:member(1)'
     summary: >-
       Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, exclusive) of the
       data set.
@@ -7929,7 +7929,7 @@ items:
             digits if omitted (0.xxx%).
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.percentRank_Inc
+  - uid: 'excel!Excel.Functions#percentRank_Inc:member(1)'
     summary: >-
       Returns the rank of a value in a data set as a percentage of the data set as a percentage (0..1, inclusive) of the
       data set.
@@ -7965,7 +7965,7 @@ items:
             digits if omitted (0.xxx%).
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.permut
+  - uid: 'excel!Excel.Functions#permut:member(1)'
     summary: |-
       Returns the number of permutations for a given number of objects that can be selected from the total objects.
 
@@ -7992,7 +7992,7 @@ items:
           description: Is the number of objects in each permutation.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.permutationa
+  - uid: 'excel!Excel.Functions#permutationa:member(1)'
     summary: >-
       Returns the number of permutations for a given number of objects (with repetitions) that can be selected from the
       total objects.
@@ -8021,7 +8021,7 @@ items:
           description: Is the number of objects in each permutation.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.phi
+  - uid: 'excel!Excel.Functions#phi:member(1)'
     summary: |-
       Returns the value of the density function for a standard normal distribution.
 
@@ -8042,7 +8042,7 @@ items:
           description: Is the number for which you want the density of the standard normal distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.pi
+  - uid: 'excel!Excel.Functions#pi:member(1)'
     summary: |-
       Returns the value of Pi, 3.14159265358979, accurate to 15 digits.
 
@@ -8058,7 +8058,7 @@ items:
         type:
           - FunctionResult<number>
         description: ''
-  - uid: excel.Excel.Functions.pmt
+  - uid: 'excel!Excel.Functions#pmt:member(1)'
     summary: |-
       Calculates the payment for a loan based on constant payments and a constant interest rate.
 
@@ -8103,7 +8103,7 @@ items:
             omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.poisson_Dist
+  - uid: 'excel!Excel.Functions#poisson_Dist:member(1)'
     summary: |-
       Returns the Poisson distribution.
 
@@ -8137,7 +8137,7 @@ items:
             function, use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.power
+  - uid: 'excel!Excel.Functions#power:member(1)'
     summary: |-
       Returns the result of a number raised to a power.
 
@@ -8164,7 +8164,7 @@ items:
           description: 'Is the exponent, to which the base number is raised.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.ppmt
+  - uid: 'excel!Excel.Functions#ppmt:member(1)'
     summary: >-
       Returns the payment on the principal for a given investment based on periodic, constant payments and a constant
       interest rate.
@@ -8214,7 +8214,7 @@ items:
             omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.price
+  - uid: 'excel!Excel.Functions#price:member(1)'
     summary: |-
       Returns the price per $100 face value of a security that pays periodic interest.
 
@@ -8266,7 +8266,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.priceDisc
+  - uid: 'excel!Excel.Functions#priceDisc:member(1)'
     summary: |-
       Returns the price per $100 face value of a discounted security.
 
@@ -8309,7 +8309,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.priceMat
+  - uid: 'excel!Excel.Functions#priceMat:member(1)'
     summary: |-
       Returns the price per $100 face value of a security that pays interest at maturity.
 
@@ -8356,7 +8356,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.product
+  - uid: 'excel!Excel.Functions#product:member(1)'
     summary: |-
       Multiplies all the numbers given as arguments.
 
@@ -8381,7 +8381,7 @@ items:
             that you want to multiply.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.proper
+  - uid: 'excel!Excel.Functions#proper:member(1)'
     summary: >-
       Converts a text string to proper case; the first letter in each word to uppercase, and all other letters to
       lowercase.
@@ -8406,7 +8406,7 @@ items:
             to partially capitalize.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.pv
+  - uid: 'excel!Excel.Functions#pv:member(1)'
     summary: |-
       Returns the present value of an investment: the total amount that a series of future payments is worth now.
 
@@ -8449,7 +8449,7 @@ items:
             omitted.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.quartile_Exc
+  - uid: 'excel!Excel.Functions#quartile_Exc:member(1)'
     summary: |-
       Returns the quartile of a data set, based on percentile values from 0..1, exclusive.
 
@@ -8476,7 +8476,7 @@ items:
           description: 'Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.quartile_Inc
+  - uid: 'excel!Excel.Functions#quartile_Inc:member(1)'
     summary: |-
       Returns the quartile of a data set, based on percentile values from 0..1, inclusive.
 
@@ -8503,7 +8503,7 @@ items:
           description: 'Is a number: minimum value = 0; 1st quartile = 1; median value = 2; 3rd quartile = 3; maximum value = 4.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.quotient
+  - uid: 'excel!Excel.Functions#quotient:member(1)'
     summary: |-
       Returns the integer portion of a division.
 
@@ -8531,7 +8531,7 @@ items:
           description: Is the divisor.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.radians
+  - uid: 'excel!Excel.Functions#radians:member(1)'
     summary: |-
       Converts degrees to radians.
 
@@ -8552,7 +8552,7 @@ items:
           description: Is an angle in degrees that you want to convert.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rand
+  - uid: 'excel!Excel.Functions#rand:member(1)'
     summary: |-
       Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).
 
@@ -8568,7 +8568,7 @@ items:
         type:
           - FunctionResult<number>
         description: ''
-  - uid: excel.Excel.Functions.randBetween
+  - uid: 'excel!Excel.Functions#randBetween:member(1)'
     summary: |-
       Returns a random number between the numbers you specify.
 
@@ -8596,7 +8596,7 @@ items:
           description: Is the largest integer RANDBETWEEN will return.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rank_Avg
+  - uid: 'excel!Excel.Functions#rank_Avg:member(1)'
     summary: >-
       Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one
       value has the same rank, the average rank is returned.
@@ -8632,7 +8632,7 @@ items:
             nonzero value.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rank_Eq
+  - uid: 'excel!Excel.Functions#rank_Eq:member(1)'
     summary: >-
       Returns the rank of a number in a list of numbers: its size relative to other values in the list; if more than one
       value has the same rank, the top rank of that set of values is returned.
@@ -8668,7 +8668,7 @@ items:
             nonzero value.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rate
+  - uid: 'excel!Excel.Functions#rate:member(1)'
     summary: >-
       Returns the interest rate per period of a loan or an investment. For example, use 6%/4 for quarterly payments at
       6% APR.
@@ -8720,7 +8720,7 @@ items:
           description: 'Is your guess for what the rate will be; if omitted, Guess = 0.1 (10 percent).'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.received
+  - uid: 'excel!Excel.Functions#received:member(1)'
     summary: |-
       Returns the amount received at maturity for a fully invested security.
 
@@ -8763,7 +8763,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.replace
+  - uid: 'excel!Excel.Functions#replace:member(1)'
     summary: |-
       Replaces part of a text string with a different text string.
 
@@ -8800,7 +8800,7 @@ items:
           description: Is the text that will replace characters in oldText.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.replaceB
+  - uid: 'excel!Excel.Functions#replaceB:member(1)'
     summary: |-
       Replaces part of a text string with a different text string. Use with double-byte character sets (DBCS).
 
@@ -8837,7 +8837,7 @@ items:
           description: Is the text that will replace characters in oldText.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rept
+  - uid: 'excel!Excel.Functions#rept:member(1)'
     summary: |-
       Repeats text a given number of times. Use REPT to fill a cell with a number of instances of a text string.
 
@@ -8864,7 +8864,7 @@ items:
           description: Is a positive number specifying the number of times to repeat text.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.right
+  - uid: 'excel!Excel.Functions#right:member(1)'
     summary: |-
       Returns the specified number of characters from the end of a text string.
 
@@ -8891,7 +8891,7 @@ items:
           description: 'Specifies how many characters you want to extract, 1 if omitted.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rightb
+  - uid: 'excel!Excel.Functions#rightb:member(1)'
     summary: >-
       Returns the specified number of characters from the end of a text string. Use with double-byte character sets
       (DBCS).
@@ -8920,7 +8920,7 @@ items:
           description: Specifies how many characters you want to extract.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.roman
+  - uid: 'excel!Excel.Functions#roman:member(1)'
     summary: |-
       Converts an Arabic numeral to Roman, as text.
 
@@ -8947,7 +8947,7 @@ items:
           description: Is the number specifying the type of Roman numeral you want.
           type:
             - boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.round
+  - uid: 'excel!Excel.Functions#round:member(1)'
     summary: |-
       Rounds a number to a specified number of digits.
 
@@ -8976,7 +8976,7 @@ items:
             to the nearest integer.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.roundDown
+  - uid: 'excel!Excel.Functions#roundDown:member(1)'
     summary: |-
       Rounds a number down, toward zero.
 
@@ -9005,7 +9005,7 @@ items:
             or omitted, to the nearest integer.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.roundUp
+  - uid: 'excel!Excel.Functions#roundUp:member(1)'
     summary: |-
       Rounds a number up, away from zero.
 
@@ -9034,7 +9034,7 @@ items:
             or omitted, to the nearest integer.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rows
+  - uid: 'excel!Excel.Functions#rows:member(1)'
     summary: |-
       Returns the number of rows in a reference or array.
 
@@ -9055,7 +9055,7 @@ items:
           description: 'Is an array, an array formula, or a reference to a range of cells for which you want the number of rows.'
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.rri
+  - uid: 'excel!Excel.Functions#rri:member(1)'
     summary: |-
       Returns an equivalent interest rate for the growth of an investment.
 
@@ -9087,7 +9087,7 @@ items:
           description: Is the future value of the investment.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sec
+  - uid: 'excel!Excel.Functions#sec:member(1)'
     summary: |-
       Returns the secant of an angle.
 
@@ -9108,7 +9108,7 @@ items:
           description: Is the angle in radians for which you want the secant.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sech
+  - uid: 'excel!Excel.Functions#sech:member(1)'
     summary: |-
       Returns the hyperbolic secant of an angle.
 
@@ -9129,7 +9129,7 @@ items:
           description: Is the angle in radians for which you want the hyperbolic secant.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.second
+  - uid: 'excel!Excel.Functions#second:member(1)'
     summary: |-
       Returns the second, a number from 0 to 59.
 
@@ -9154,7 +9154,7 @@ items:
             4:48:47 PM.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.seriesSum
+  - uid: 'excel!Excel.Functions#seriesSum:member(1)'
     summary: |-
       Returns the sum of a power series based on the formula.
 
@@ -9191,7 +9191,7 @@ items:
           description: Is a set of coefficients by which each successive power of x is multiplied.
           type:
             - Excel.Range | string | number | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sheet
+  - uid: 'excel!Excel.Functions#sheet:member(1)'
     summary: |-
       Returns the sheet number of the referenced sheet.
 
@@ -9214,7 +9214,7 @@ items:
             containing the function is returned.
           type:
             - Excel.Range | string | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sheets
+  - uid: 'excel!Excel.Functions#sheets:member(1)'
     summary: |-
       Returns the number of sheets in a reference.
 
@@ -9237,7 +9237,7 @@ items:
             in the workbook containing the function is returned.
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sign
+  - uid: 'excel!Excel.Functions#sign:member(1)'
     summary: >-
       Returns the sign of a number: 1 if the number is positive, zero if the number is zero, or -1 if the number is
       negative.
@@ -9260,7 +9260,7 @@ items:
           description: Is any real number.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sin
+  - uid: 'excel!Excel.Functions#sin:member(1)'
     summary: |-
       Returns the sine of an angle.
 
@@ -9281,7 +9281,7 @@ items:
           description: Is the angle in radians for which you want the sine. Degrees * PI()/180 = radians.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sinh
+  - uid: 'excel!Excel.Functions#sinh:member(1)'
     summary: |-
       Returns the hyperbolic sine of a number.
 
@@ -9302,7 +9302,7 @@ items:
           description: Is any real number.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.skew_p
+  - uid: 'excel!Excel.Functions#skew_p:member(1)'
     summary: >-
       Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a
       distribution around its mean.
@@ -9329,7 +9329,7 @@ items:
             for which you want the population skewness.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.skew
+  - uid: 'excel!Excel.Functions#skew:member(1)'
     summary: >-
       Returns the skewness of a distribution: a characterization of the degree of asymmetry of a distribution around its
       mean.
@@ -9356,7 +9356,7 @@ items:
             for which you want the skewness.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.sln
+  - uid: 'excel!Excel.Functions#sln:member(1)'
     summary: |-
       Returns the straight-line depreciation of an asset for one period.
 
@@ -9390,7 +9390,7 @@ items:
             asset).
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.small
+  - uid: 'excel!Excel.Functions#small:member(1)'
     summary: |-
       Returns the k-th smallest value in a data set. For example, the fifth smallest number.
 
@@ -9417,7 +9417,7 @@ items:
           description: Is the position (from the smallest) in the array or range of the value to return.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sqrt
+  - uid: 'excel!Excel.Functions#sqrt:member(1)'
     summary: |-
       Returns the square root of a number.
 
@@ -9438,7 +9438,7 @@ items:
           description: Is the number for which you want the square root.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sqrtPi
+  - uid: 'excel!Excel.Functions#sqrtPi:member(1)'
     summary: |-
       Returns the square root of (number * Pi).
 
@@ -9461,7 +9461,7 @@ items:
           description: Is the number by which p is multiplied.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.standardize
+  - uid: 'excel!Excel.Functions#standardize:member(1)'
     summary: |-
       Returns a normalized value from a distribution characterized by a mean and standard deviation.
 
@@ -9493,7 +9493,7 @@ items:
           description: 'Is the standard deviation of the distribution, a positive number.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.stDev_P
+  - uid: 'excel!Excel.Functions#stDev_P:member(1)'
     summary: |-
       Calculates standard deviation based on the entire population given as arguments (ignores logical values and text).
 
@@ -9518,7 +9518,7 @@ items:
             references that contain numbers.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.stDev_S
+  - uid: 'excel!Excel.Functions#stDev_S:member(1)'
     summary: |-
       Estimates standard deviation based on a sample (ignores logical values and text in the sample).
 
@@ -9543,7 +9543,7 @@ items:
             numbers or references that contain numbers.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.stDevA
+  - uid: 'excel!Excel.Functions#stDevA:member(1)'
     summary: >-
       Estimates standard deviation based on a sample, including logical values and text. Text and the logical value
       FALSE have the value 0; the logical value TRUE has the value 1.
@@ -9570,7 +9570,7 @@ items:
             values or names or references to values.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.stDevPA
+  - uid: 'excel!Excel.Functions#stDevPA:member(1)'
     summary: >-
       Calculates standard deviation based on an entire population, including logical values and text. Text and the
       logical value FALSE have the value 0; the logical value TRUE has the value 1.
@@ -9597,7 +9597,7 @@ items:
             names, arrays, or references that contain values.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.substitute
+  - uid: 'excel!Excel.Functions#substitute:member(1)'
     summary: |-
       Replaces existing text with new text in a text string.
 
@@ -9638,7 +9638,7 @@ items:
             replaced.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.subtotal
+  - uid: 'excel!Excel.Functions#subtotal:member(1)'
     summary: |-
       Returns a subtotal in a list or database.
 
@@ -9665,7 +9665,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 254 ranges or references for which you want the subtotal.'
           type:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.sum
+  - uid: 'excel!Excel.Functions#sum:member(1)'
     summary: |-
       Adds all the numbers in a range of cells.
 
@@ -9690,7 +9690,7 @@ items:
             cells, included if typed as arguments.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.sumIf
+  - uid: 'excel!Excel.Functions#sumIf:member(1)'
     summary: |-
       Adds the cells specified by a given condition or criteria.
 
@@ -9724,7 +9724,7 @@ items:
           description: 'Are the actual cells to sum. If omitted, the cells in range are used.'
           type:
             - Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.sumIfs
+  - uid: 'excel!Excel.Functions#sumIfs:member(1)'
     summary: |-
       Adds the cells specified by a given set of conditions or criteria.
 
@@ -9754,7 +9754,7 @@ items:
             expression, or text that defines which cells will be added.
           type:
             - Array<Excel.Range | Excel.RangeReference | Excel.FunctionResult<any> | number | string | boolean>
-  - uid: excel.Excel.Functions.sumSq
+  - uid: 'excel!Excel.Functions#sumSq:member(1)'
     summary: >-
       Returns the sum of the squares of the arguments. The arguments can be numbers, arrays, names, or references to
       cells that contain numbers.
@@ -9781,7 +9781,7 @@ items:
             you want the sum of the squares.
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.syd
+  - uid: 'excel!Excel.Functions#syd:member(1)'
     summary: |-
       Returns the sum-of-years' digits depreciation of an asset for a specified period.
 
@@ -9820,7 +9820,7 @@ items:
           description: Is the period and must use the same units as Life.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.t_Dist_2T
+  - uid: 'excel!Excel.Functions#t_Dist_2T:member(1)'
     summary: |-
       Returns the two-tailed Student's t-distribution.
 
@@ -9847,7 +9847,7 @@ items:
           description: Is an integer indicating the number of degrees of freedom that characterize the distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.t_Dist_RT
+  - uid: 'excel!Excel.Functions#t_Dist_RT:member(1)'
     summary: |-
       Returns the right-tailed Student's t-distribution.
 
@@ -9874,7 +9874,7 @@ items:
           description: Is an integer indicating the number of degrees of freedom that characterize the distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.t_Dist
+  - uid: 'excel!Excel.Functions#t_Dist:member(1)'
     summary: |-
       Returns the left-tailed Student's t-distribution.
 
@@ -9908,7 +9908,7 @@ items:
             function, use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.t_Inv_2T
+  - uid: 'excel!Excel.Functions#t_Inv_2T:member(1)'
     summary: |-
       Returns the two-tailed inverse of the Student's t-distribution.
 
@@ -9937,7 +9937,7 @@ items:
           description: Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.t_Inv
+  - uid: 'excel!Excel.Functions#t_Inv:member(1)'
     summary: |-
       Returns the left-tailed inverse of the Student's t-distribution.
 
@@ -9966,7 +9966,7 @@ items:
           description: Is a positive integer indicating the number of degrees of freedom to characterize the distribution.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.t
+  - uid: 'excel!Excel.Functions#t:member(1)'
     summary: |-
       Checks whether a value is text, and returns the text if it is, or returns double quotes (empty text) if it is not.
 
@@ -9989,7 +9989,7 @@ items:
           description: Is the value to test.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.tan
+  - uid: 'excel!Excel.Functions#tan:member(1)'
     summary: |-
       Returns the tangent of an angle.
 
@@ -10010,7 +10010,7 @@ items:
           description: Is the angle in radians for which you want the tangent. Degrees * PI()/180 = radians.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.tanh
+  - uid: 'excel!Excel.Functions#tanh:member(1)'
     summary: |-
       Returns the hyperbolic tangent of a number.
 
@@ -10031,7 +10031,7 @@ items:
           description: Is any real number.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.tbillEq
+  - uid: 'excel!Excel.Functions#tbillEq:member(1)'
     summary: |-
       Returns the bond-equivalent yield for a treasury bill.
 
@@ -10064,7 +10064,7 @@ items:
           description: Is the Treasury bill's discount rate.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.tbillPrice
+  - uid: 'excel!Excel.Functions#tbillPrice:member(1)'
     summary: |-
       Returns the price per $100 face value for a treasury bill.
 
@@ -10097,7 +10097,7 @@ items:
           description: Is the Treasury bill's discount rate.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.tbillYield
+  - uid: 'excel!Excel.Functions#tbillYield:member(1)'
     summary: |-
       Returns the yield for a treasury bill.
 
@@ -10130,7 +10130,7 @@ items:
           description: Is the Treasury Bill's price per $100 face value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.text
+  - uid: 'excel!Excel.Functions#text:member(1)'
     summary: |-
       Converts a value to text in a specific number format.
 
@@ -10161,7 +10161,7 @@ items:
             General).
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.time
+  - uid: 'excel!Excel.Functions#time:member(1)'
     summary: |-
       Converts hours, minutes, and seconds given as numbers to an Excel serial number, formatted with a time format.
 
@@ -10193,7 +10193,7 @@ items:
           description: Is a number from 0 to 59 representing the second.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.timevalue
+  - uid: 'excel!Excel.Functions#timevalue:member(1)'
     summary: >-
       Converts a text time to an Excel serial number for a time, a number from 0 (12:00:00 AM) to 0.999988426 (11:59:59
       PM). Format the number with a time format after entering the formula.
@@ -10220,7 +10220,7 @@ items:
             string is ignored).
           type:
             - string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.today
+  - uid: 'excel!Excel.Functions#today:member(1)'
     summary: |-
       Returns the current date formatted as a date.
 
@@ -10236,7 +10236,7 @@ items:
         type:
           - FunctionResult<number>
         description: ''
-  - uid: excel.Excel.Functions.toJSON
+  - uid: 'excel!Excel.Functions#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -10260,7 +10260,7 @@ items:
                         [key: string]: string;
                     }
         description: ''
-  - uid: excel.Excel.Functions.trim
+  - uid: 'excel!Excel.Functions#trim:member(1)'
     summary: |-
       Removes all spaces from a text string except for single spaces between words.
 
@@ -10281,7 +10281,7 @@ items:
           description: Is the text from which you want spaces removed.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.trimMean
+  - uid: 'excel!Excel.Functions#trimMean:member(1)'
     summary: |-
       Returns the mean of the interior portion of a set of data values.
 
@@ -10308,7 +10308,7 @@ items:
           description: Is the fractional number of data points to exclude from the top and bottom of the data set.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.true
+  - uid: 'excel!Excel.Functions#true:member(1)'
     summary: |-
       Returns the logical value TRUE.
 
@@ -10324,7 +10324,7 @@ items:
         type:
           - FunctionResult<boolean>
         description: ''
-  - uid: excel.Excel.Functions.trunc
+  - uid: 'excel!Excel.Functions#trunc:member(1)'
     summary: |-
       Truncates a number to an integer by removing the decimal, or fractional, part of the number.
 
@@ -10351,7 +10351,7 @@ items:
           description: 'Is a number specifying the precision of the truncation, 0 (zero) if omitted.'
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.type
+  - uid: 'excel!Excel.Functions#type:member(1)'
     summary: >-
       Returns an integer representing the data type of a value: number = 1; text = 2; logical value = 4; error value =
       16; array = 64.
@@ -10376,7 +10376,7 @@ items:
           description: Can be any value.
           type:
             - boolean | string | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.unichar
+  - uid: 'excel!Excel.Functions#unichar:member(1)'
     summary: |-
       Returns the Unicode character referenced by the given numeric value.
 
@@ -10399,7 +10399,7 @@ items:
           description: Is the Unicode number representing a character.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.unicode
+  - uid: 'excel!Excel.Functions#unicode:member(1)'
     summary: |-
       Returns the number (code point) corresponding to the first character of the text.
 
@@ -10420,7 +10420,7 @@ items:
           description: Is the character that you want the Unicode value of.
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.upper
+  - uid: 'excel!Excel.Functions#upper:member(1)'
     summary: |-
       Converts a text string to all uppercase letters.
 
@@ -10441,7 +10441,7 @@ items:
           description: 'Is the text you want converted to uppercase, a reference or a text string.'
           type:
             - string | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.usdollar
+  - uid: 'excel!Excel.Functions#usdollar:member(1)'
     summary: |-
       Converts a number to text, using currency format.
 
@@ -10468,7 +10468,7 @@ items:
           description: Is the number of digits to the right of the decimal point.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.value
+  - uid: 'excel!Excel.Functions#value:member(1)'
     summary: |-
       Converts a text string that represents a number to a number.
 
@@ -10491,7 +10491,7 @@ items:
           description: Is the text enclosed in quotation marks or a reference to a cell containing the text you want to convert.
           type:
             - string | boolean | number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.var_P
+  - uid: 'excel!Excel.Functions#var_P:member(1)'
     summary: |-
       Calculates variance based on the entire population (ignores logical values and text in the population).
 
@@ -10514,7 +10514,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a population.'
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.var_S
+  - uid: 'excel!Excel.Functions#var_S:member(1)'
     summary: |-
       Estimates variance based on a sample (ignores logical values and text in the sample).
 
@@ -10537,7 +10537,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 numeric arguments corresponding to a sample of a population.'
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.varA
+  - uid: 'excel!Excel.Functions#varA:member(1)'
     summary: >-
       Estimates variance based on a sample, including logical values and text. Text and the logical value FALSE have the
       value 0; the logical value TRUE has the value 1.
@@ -10562,7 +10562,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 value arguments corresponding to a sample of a population.'
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.varPA
+  - uid: 'excel!Excel.Functions#varPA:member(1)'
     summary: >-
       Calculates variance based on the entire population, including logical values and text. Text and the logical value
       FALSE have the value 0; the logical value TRUE has the value 1.
@@ -10587,7 +10587,7 @@ items:
           description: 'List of parameters, whose elements are 1 to 255 value arguments corresponding to a population.'
           type:
             - Array<number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.vdb
+  - uid: 'excel!Excel.Functions#vdb:member(1)'
     summary: >-
       Returns the depreciation of an asset for any period you specify, including partial periods, using the
       double-declining balance method or some other method you specify.
@@ -10644,7 +10644,7 @@ items:
             omitted; do not switch = TRUE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.vlookup
+  - uid: 'excel!Excel.Functions#vlookup:member(1)'
     summary: >-
       Looks for a value in the leftmost column of a table, and then returns a value in the same row from a column you
       specify. By default, the table must be sorted in an ascending order.
@@ -10691,7 +10691,7 @@ items:
             omitted; find an exact match = FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.weekday
+  - uid: 'excel!Excel.Functions#weekday:member(1)'
     summary: |-
       Returns a number from 1 to 7 identifying the day of the week of a date.
 
@@ -10720,7 +10720,7 @@ items:
             through Sunday=6, use 3.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.weekNum
+  - uid: 'excel!Excel.Functions#weekNum:member(1)'
     summary: |-
       Returns the week number in the year.
 
@@ -10748,7 +10748,7 @@ items:
           description: Is a number (1 or 2) that determines the type of the return value.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.weibull_Dist
+  - uid: 'excel!Excel.Functions#weibull_Dist:member(1)'
     summary: |-
       Returns the Weibull distribution.
 
@@ -10787,7 +10787,7 @@ items:
             use FALSE.
           type:
             - boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.workDay_Intl
+  - uid: 'excel!Excel.Functions#workDay_Intl:member(1)'
     summary: >-
       Returns the serial number of the date before or after a specified number of workdays with custom weekend
       parameters.
@@ -10829,7 +10829,7 @@ items:
             and federal holidays and floating holidays.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.workDay
+  - uid: 'excel!Excel.Functions#workDay:member(1)'
     summary: |-
       Returns the serial number of the date before or after a specified number of workdays.
 
@@ -10864,7 +10864,7 @@ items:
             and federal holidays and floating holidays.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.xirr
+  - uid: 'excel!Excel.Functions#xirr:member(1)'
     summary: |-
       Returns the internal rate of return for a schedule of cash flows.
 
@@ -10896,7 +10896,7 @@ items:
           description: Is a number that you guess is close to the result of XIRR.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.xnpv
+  - uid: 'excel!Excel.Functions#xnpv:member(1)'
     summary: |-
       Returns the net present value for a schedule of cash flows.
 
@@ -10928,7 +10928,7 @@ items:
           description: Is a schedule of payment dates that corresponds to the cash flow payments.
           type:
             - number | string | Excel.Range | boolean | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.xor
+  - uid: 'excel!Excel.Functions#xor:member(1)'
     summary: |-
       Returns a logical 'Exclusive Or' of all arguments.
 
@@ -10953,7 +10953,7 @@ items:
             and can be logical values, arrays, or references.
           type:
             - Array<boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>>
-  - uid: excel.Excel.Functions.year
+  - uid: 'excel!Excel.Functions#year:member(1)'
     summary: |-
       Returns the year of a date, an integer in the range 1900 - 9999.
 
@@ -10976,7 +10976,7 @@ items:
           description: Is a number in the date-time code used by Microsoft Excel.
           type:
             - number | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.yearFrac
+  - uid: 'excel!Excel.Functions#yearFrac:member(1)'
     summary: |-
       Returns the year fraction representing the number of whole days between start\_date and end\_date.
 
@@ -11009,7 +11009,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.yield
+  - uid: 'excel!Excel.Functions#yield:member(1)'
     summary: |-
       Returns the yield on a security that pays periodic interest.
 
@@ -11061,7 +11061,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.yieldDisc
+  - uid: 'excel!Excel.Functions#yieldDisc:member(1)'
     summary: |-
       Returns the annual yield for a discounted security. For example, a treasury bill.
 
@@ -11104,7 +11104,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.yieldMat
+  - uid: 'excel!Excel.Functions#yieldMat:member(1)'
     summary: |-
       Returns the annual yield of a security that pays interest at maturity.
 
@@ -11151,7 +11151,7 @@ items:
           description: Is the type of day count basis to use.
           type:
             - number | string | boolean | Excel.Range | Excel.RangeReference | Excel.FunctionResult<any>
-  - uid: excel.Excel.Functions.z_Test
+  - uid: 'excel!Excel.Functions#z_Test:member(1)'
     summary: |-
       Returns the one-tailed P-value of a z-test.
 

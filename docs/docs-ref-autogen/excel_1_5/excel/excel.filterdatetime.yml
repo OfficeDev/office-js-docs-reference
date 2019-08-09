@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FilterDatetime
+  - uid: 'excel!Excel.FilterDatetime:interface'
     summary: |-
       Represents how to filter a date when filtering on values.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FilterDatetime.date
-      - excel.Excel.FilterDatetime.specificity
-  - uid: excel.Excel.FilterDatetime.date
+      - 'excel!Excel.FilterDatetime#date:member'
+      - 'excel!Excel.FilterDatetime#specificity:member'
+  - uid: 'excel!Excel.FilterDatetime#date:member'
     summary: |-
       The date in ISO8601 format used to filter data.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.FilterDatetime.specificity
+  - uid: 'excel!Excel.FilterDatetime#specificity:member'
     summary: >-
       How specific the date should be used to keep data. For example, if the date is 2005-04-02 and the specifity is set
       to "month", the filter operation will keep all rows with a date in the month of april 2009.

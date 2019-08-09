@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeViewUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData:interface'
     summary: 'An interface for updating data on the ShapeView object, for use in "shapeView.set(<!-- -->{ ... }<!-- -->)".'
     name: Visio.Interfaces.ShapeViewUpdateData
     fullName: Visio.Interfaces.ShapeViewUpdateData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeViewUpdateData.highlight
-  - uid: visio.Visio.Interfaces.ShapeViewUpdateData.highlight
+      - 'visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member'
+  - uid: 'visio!Visio.Interfaces.ShapeViewUpdateData#highlight:member'
     summary: |-
       Represents the highlight around the shape.
 
@@ -24,4 +24,4 @@ items:
       content: 'highlight?: Visio.Highlight;'
       return:
         type:
-          - visio.Visio.Highlight
+          - 'visio!Visio.Highlight:interface'

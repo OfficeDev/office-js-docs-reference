@@ -1,23 +1,23 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.3.2",
-    "schemaVersion": 1001,
+    "toolVersion": "7.3.6",
+    "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
-  "canonicalReference": "custom-functions-runtime",
+  "canonicalReference": "custom-functions-runtime!",
   "docComment": "",
   "name": "custom-functions-runtime",
   "members": [
     {
       "kind": "EntryPoint",
-      "canonicalReference": "",
+      "canonicalReference": "custom-functions-runtime!",
       "name": "",
       "members": [
         {
           "kind": "Namespace",
-          "canonicalReference": "(CustomFunctions:namespace)",
+          "canonicalReference": "custom-functions-runtime!CustomFunctions:namespace",
           "docComment": "/**\n * CustomFunctions namespace, used by Excel Custom Functions\n */\n",
           "excerptTokens": [
             {
@@ -38,7 +38,7 @@
           "members": [
             {
               "kind": "Function",
-              "canonicalReference": "(associate:1)",
+              "canonicalReference": "custom-functions-runtime!CustomFunctions.associate:function(1)",
               "docComment": "/**\n * Associates the JavaScript function to the name given by the \"id\" property in the metadata JSON file.\n */\n",
               "excerptTokens": [
                 {
@@ -120,7 +120,7 @@
             },
             {
               "kind": "Function",
-              "canonicalReference": "(associate:2)",
+              "canonicalReference": "custom-functions-runtime!CustomFunctions.associate:function(2)",
               "docComment": "/**\n * Associates the JavaScript functions to the names given by the \"id\" properties in the metadata JSON file.\n */\n",
               "excerptTokens": [
                 {
@@ -195,7 +195,7 @@
             },
             {
               "kind": "Interface",
-              "canonicalReference": "(CancelableInvocation:interface)",
+              "canonicalReference": "custom-functions-runtime!CustomFunctions.CancelableInvocation:interface",
               "docComment": "/**\n * Provides information about the invocation of a cancelable custom function. A cancelable custom function can provide a handler for the onCanceled event.\n *\n * To indicate that a function is cancelable, in the metadata JSON file, the function options should specify: `{ \"cancelable\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@cancelable`.\n */\n",
               "excerptTokens": [
                 {
@@ -224,7 +224,7 @@
               "members": [
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "onCanceled",
+                  "canonicalReference": "custom-functions-runtime!CustomFunctions.CancelableInvocation#onCanceled:member",
                   "docComment": "/**\n * Event handler called when the custom function is canceled.\n */\n",
                   "excerptTokens": [
                     {
@@ -261,7 +261,7 @@
             },
             {
               "kind": "Interface",
-              "canonicalReference": "(Invocation:interface)",
+              "canonicalReference": "custom-functions-runtime!CustomFunctions.Invocation:interface",
               "docComment": "/**\n * Provides information about the invocation of a custom function.\n */\n",
               "excerptTokens": [
                 {
@@ -282,7 +282,7 @@
               "members": [
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "address",
+                  "canonicalReference": "custom-functions-runtime!CustomFunctions.Invocation#address:member",
                   "docComment": "/**\n * The cell address where the function is being called, if requested, otherwise undefined.\n *\n * To request the address for the function, in the metadata JSON file, the function options should specify: `{ \"requiresAddress\": true }`\n *\n * If the metadata JSON file is being generated from JSDoc comments, include the tag `@requiresAddress`.\n */\n",
                   "excerptTokens": [
                     {
@@ -314,7 +314,7 @@
             },
             {
               "kind": "Interface",
-              "canonicalReference": "(StreamingInvocation:interface)",
+              "canonicalReference": "custom-functions-runtime!CustomFunctions.StreamingInvocation:interface",
               "docComment": "/**\n * Provides information about the invocation of a streaming custom function. A streaming custom function can provide results which can change over time.\n *\n * Call `setResult()` one or more times to provide the result instead of returning a result from the function.\n */\n",
               "excerptTokens": [
                 {
@@ -364,7 +364,7 @@
               "members": [
                 {
                   "kind": "PropertySignature",
-                  "canonicalReference": "setResult",
+                  "canonicalReference": "custom-functions-runtime!CustomFunctions.StreamingInvocation#setResult:member",
                   "docComment": "/**\n * Set the result for the custom function. May be called more than once.\n */\n",
                   "excerptTokens": [
                     {

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartGridlinesData
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesData:interface'
     summary: An interface describing the data returned by calling "chartGridlines.toJSON()".
     name: Excel.Interfaces.ChartGridlinesData
     fullName: Excel.Interfaces.ChartGridlinesData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartGridlinesData.format
-      - excel.Excel.Interfaces.ChartGridlinesData.visible
-  - uid: excel.Excel.Interfaces.ChartGridlinesData.format
+      - 'excel!Excel.Interfaces.ChartGridlinesData#format:member'
+      - 'excel!Excel.Interfaces.ChartGridlinesData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesData#format:member'
     summary: |-
       Represents the formatting of chart gridlines. Read-only.
 
@@ -25,8 +25,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesFormatData
-  - uid: excel.Excel.Interfaces.ChartGridlinesData.visible
+          - 'excel!Excel.Interfaces.ChartGridlinesFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesData#visible:member'
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.
 

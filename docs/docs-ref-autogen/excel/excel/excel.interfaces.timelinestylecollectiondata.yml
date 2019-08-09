@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionData
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionData:interface'
     summary: An interface describing the data returned by calling "timelineStyleCollection.toJSON()".
     name: Excel.Interfaces.TimelineStyleCollectionData
     fullName: Excel.Interfaces.TimelineStyleCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TimelineStyleCollectionData.items
-  - uid: excel.Excel.Interfaces.TimelineStyleCollectionData.items
+      - 'excel!Excel.Interfaces.TimelineStyleCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.TimelineStyleCollectionData#items:member'
     name: items
     fullName: items
     langs:

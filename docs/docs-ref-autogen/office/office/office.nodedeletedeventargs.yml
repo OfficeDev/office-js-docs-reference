@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.NodeDeletedEventArgs
+  - uid: 'office!Office.NodeDeletedEventArgs:interface'
     summary: Provides information about the deleted node that raised the nodeDeleted event.
     name: Office.NodeDeletedEventArgs
     fullName: Office.NodeDeletedEventArgs
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.NodeDeletedEventArgs.isUndoRedo
-      - office.Office.NodeDeletedEventArgs.oldNextSibling
-      - office.Office.NodeDeletedEventArgs.oldNode
-  - uid: office.Office.NodeDeletedEventArgs.isUndoRedo
+      - 'office!Office.NodeDeletedEventArgs#isUndoRedo:member'
+      - 'office!Office.NodeDeletedEventArgs#oldNextSibling:member'
+      - 'office!Office.NodeDeletedEventArgs#oldNode:member'
+  - uid: 'office!Office.NodeDeletedEventArgs#isUndoRedo:member'
     summary: Gets whether the node was deleted as part of an Undo/Redo action by the user.
     name: isUndoRedo
     fullName: isUndoRedo
@@ -24,10 +24,10 @@ items:
       return:
         type:
           - boolean
-  - uid: office.Office.NodeDeletedEventArgs.oldNextSibling
+  - uid: 'office!Office.NodeDeletedEventArgs#oldNextSibling:member'
     summary: >-
       Gets the former next sibling of the node that was just deleted from the
-      [Office.CustomXmlPart](xref:office.Office.CustomXmlPart) object.
+      [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface) object.
     name: oldNextSibling
     fullName: oldNextSibling
     langs:
@@ -37,10 +37,11 @@ items:
       content: 'oldNextSibling: CustomXmlNode;'
       return:
         type:
-          - office.Office.CustomXmlNode
-  - uid: office.Office.NodeDeletedEventArgs.oldNode
+          - 'office!Office.CustomXmlNode:interface'
+  - uid: 'office!Office.NodeDeletedEventArgs#oldNode:member'
     summary: >-
-      Gets the node which was just deleted from the [Office.CustomXmlPart](xref:office.Office.CustomXmlPart) object.
+      Gets the node which was just deleted from the [Office.CustomXmlPart](xref:office!Office.CustomXmlPart:interface)
+      object.
 
 
       Note that this node may have children, if a subtree is being removed from the document. Also, this node will be a
@@ -55,4 +56,4 @@ items:
       content: 'oldNode: CustomXmlNode;'
       return:
         type:
-          - office.Office.CustomXmlNode
+          - 'office!Office.CustomXmlNode:interface'

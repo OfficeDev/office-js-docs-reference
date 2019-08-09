@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.EmbeddedOptions
+  - uid: 'office!OfficeExtension.EmbeddedOptions:interface'
     name: OfficeExtension.EmbeddedOptions
     fullName: OfficeExtension.EmbeddedOptions
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.EmbeddedOptions.container
-      - office.OfficeExtension.EmbeddedOptions.height
-      - office.OfficeExtension.EmbeddedOptions.id
-      - office.OfficeExtension.EmbeddedOptions.sessionKey
-      - office.OfficeExtension.EmbeddedOptions.timeoutInMilliseconds
-      - office.OfficeExtension.EmbeddedOptions.width
-  - uid: office.OfficeExtension.EmbeddedOptions.container
+      - 'office!OfficeExtension.EmbeddedOptions#container:member'
+      - 'office!OfficeExtension.EmbeddedOptions#height:member'
+      - 'office!OfficeExtension.EmbeddedOptions#id:member'
+      - 'office!OfficeExtension.EmbeddedOptions#sessionKey:member'
+      - 'office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member'
+      - 'office!OfficeExtension.EmbeddedOptions#width:member'
+  - uid: 'office!OfficeExtension.EmbeddedOptions#container:member'
     name: container
     fullName: container
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - HTMLElement
-  - uid: office.OfficeExtension.EmbeddedOptions.height
+  - uid: 'office!OfficeExtension.EmbeddedOptions#height:member'
     name: height
     fullName: height
     langs:
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.EmbeddedOptions.id
+  - uid: 'office!OfficeExtension.EmbeddedOptions#id:member'
     name: id
     fullName: id
     langs:
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.EmbeddedOptions.sessionKey
+  - uid: 'office!OfficeExtension.EmbeddedOptions#sessionKey:member'
     name: sessionKey
     fullName: sessionKey
     langs:
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: office.OfficeExtension.EmbeddedOptions.timeoutInMilliseconds
+  - uid: 'office!OfficeExtension.EmbeddedOptions#timeoutInMilliseconds:member'
     name: timeoutInMilliseconds
     fullName: timeoutInMilliseconds
     langs:
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - number
-  - uid: office.OfficeExtension.EmbeddedOptions.width
+  - uid: 'office!OfficeExtension.EmbeddedOptions#width:member'
     name: width
     fullName: width
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SaveBehavior
+  - uid: 'excel!Excel.SaveBehavior:enum'
     summary: |-
       Specifies the save behavior for Workbook.save API.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SaveBehavior.prompt
-      - excel.Excel.SaveBehavior.save
-  - uid: excel.Excel.SaveBehavior.prompt
+      - 'excel!Excel.SaveBehavior.prompt:member'
+      - 'excel!Excel.SaveBehavior.save:member'
+  - uid: 'excel!Excel.SaveBehavior.prompt:member'
     summary: >-
       Prompts the saveas experience to the user if the workbook has not been saved, Ignored if the workbook was
       previously saved.
@@ -24,7 +24,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Prompt"'
-  - uid: excel.Excel.SaveBehavior.save
+  - uid: 'excel!Excel.SaveBehavior.save:member'
     summary: >-
       Save the workbook without prompting the user. If file is not saved, it will save it with default name under
       default location.

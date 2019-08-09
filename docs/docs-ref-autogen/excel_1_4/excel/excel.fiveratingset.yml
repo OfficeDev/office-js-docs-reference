@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FiveRatingSet
+  - uid: 'excel!Excel.FiveRatingSet:interface'
     name: Excel.FiveRatingSet
     fullName: Excel.FiveRatingSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FiveRatingSet.fourBars
-      - excel.Excel.FiveRatingSet.noBars
-      - excel.Excel.FiveRatingSet.oneBar
-      - excel.Excel.FiveRatingSet.threeBars
-      - excel.Excel.FiveRatingSet.twoBars
-  - uid: excel.Excel.FiveRatingSet.fourBars
+      - 'excel!Excel.FiveRatingSet#fourBars:member'
+      - 'excel!Excel.FiveRatingSet#noBars:member'
+      - 'excel!Excel.FiveRatingSet#oneBar:member'
+      - 'excel!Excel.FiveRatingSet#threeBars:member'
+      - 'excel!Excel.FiveRatingSet#twoBars:member'
+  - uid: 'excel!Excel.FiveRatingSet#fourBars:member'
     name: fourBars
     fullName: fourBars
     langs:
@@ -23,8 +23,8 @@ items:
       content: 'fourBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveRatingSet.noBars
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveRatingSet#noBars:member'
     name: noBars
     fullName: noBars
     langs:
@@ -34,8 +34,8 @@ items:
       content: 'noBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveRatingSet.oneBar
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveRatingSet#oneBar:member'
     name: oneBar
     fullName: oneBar
     langs:
@@ -45,8 +45,8 @@ items:
       content: 'oneBar: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveRatingSet.threeBars
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveRatingSet#threeBars:member'
     name: threeBars
     fullName: threeBars
     langs:
@@ -56,8 +56,8 @@ items:
       content: 'threeBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveRatingSet.twoBars
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveRatingSet#twoBars:member'
     name: twoBars
     fullName: twoBars
     langs:
@@ -67,4 +67,4 @@ items:
       content: 'twoBars: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

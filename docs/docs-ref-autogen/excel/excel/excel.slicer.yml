@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Slicer
+  - uid: 'excel!Excel.Slicer:class'
     summary: >-
       Represents a slicer object in the workbook.
 
@@ -15,33 +15,33 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Slicer.caption
-      - excel.Excel.Slicer.clearFilters
-      - excel.Excel.Slicer.context
-      - excel.Excel.Slicer.delete
-      - excel.Excel.Slicer.getSelectedItems
-      - excel.Excel.Slicer.height
-      - excel.Excel.Slicer.id
-      - excel.Excel.Slicer.isFilterCleared
-      - excel.Excel.Slicer.left
-      - excel.Excel.Slicer.load
-      - excel.Excel.Slicer.load_1
-      - excel.Excel.Slicer.load_2
-      - excel.Excel.Slicer.name
-      - excel.Excel.Slicer.nameInFormula
-      - excel.Excel.Slicer.selectItems
-      - excel.Excel.Slicer.set
-      - excel.Excel.Slicer.set_1
-      - excel.Excel.Slicer.slicerItems
-      - excel.Excel.Slicer.sortBy
-      - excel.Excel.Slicer.style
-      - excel.Excel.Slicer.toJSON
-      - excel.Excel.Slicer.top
-      - excel.Excel.Slicer.width
-      - excel.Excel.Slicer.worksheet
-  - uid: excel.Excel.Slicer.caption
+      - 'excel!Excel.Slicer#caption:member'
+      - 'excel!Excel.Slicer#clearFilters:member(1)'
+      - 'excel!Excel.Slicer#context:member'
+      - 'excel!Excel.Slicer#delete:member(1)'
+      - 'excel!Excel.Slicer#getSelectedItems:member(1)'
+      - 'excel!Excel.Slicer#height:member'
+      - 'excel!Excel.Slicer#id:member'
+      - 'excel!Excel.Slicer#isFilterCleared:member'
+      - 'excel!Excel.Slicer#left:member'
+      - 'excel!Excel.Slicer#load:member(1)'
+      - 'excel!Excel.Slicer#load:member(2)'
+      - 'excel!Excel.Slicer#load:member(3)'
+      - 'excel!Excel.Slicer#name:member'
+      - 'excel!Excel.Slicer#nameInFormula:member'
+      - 'excel!Excel.Slicer#selectItems:member(1)'
+      - 'excel!Excel.Slicer#set:member(1)'
+      - 'excel!Excel.Slicer#set:member(2)'
+      - 'excel!Excel.Slicer#slicerItems:member'
+      - 'excel!Excel.Slicer#sortBy:member'
+      - 'excel!Excel.Slicer#style:member'
+      - 'excel!Excel.Slicer#toJSON:member(1)'
+      - 'excel!Excel.Slicer#top:member'
+      - 'excel!Excel.Slicer#width:member'
+      - 'excel!Excel.Slicer#worksheet:member'
+  - uid: 'excel!Excel.Slicer#caption:member'
     summary: >-
       Represents the caption of slicer.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Slicer.clearFilters
+  - uid: 'excel!Excel.Slicer#clearFilters:member(1)'
     summary: >-
       Clears all the filters currently applied on the slicer.
 
@@ -77,19 +77,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.clearFilters();
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Slicer.context
+        description: ''
+  - uid: 'excel!Excel.Slicer#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -103,8 +92,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Slicer.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Slicer#delete:member(1)'
     summary: >-
       Deletes the slicer.
 
@@ -122,19 +111,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.slicers.getItemAt(0).delete();
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Slicer.getSelectedItems
+        description: ''
+  - uid: 'excel!Excel.Slicer#getSelectedItems:member(1)'
     summary: >-
       Returns an array of selected items' keys. Read-only.
 
@@ -153,7 +131,7 @@ items:
         type:
           - 'OfficeExtension.ClientResult<string[]>'
         description: ''
-  - uid: excel.Excel.Slicer.height
+  - uid: 'excel!Excel.Slicer#height:member'
     summary: >-
       Represents the height, in points, of the slicer. Throws an invalid argument exception when set with negative value
       or zero as input.
@@ -172,7 +150,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Slicer.id
+  - uid: 'excel!Excel.Slicer#id:member'
     summary: >-
       Represents the unique id of slicer. Read-only.
 
@@ -190,7 +168,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Slicer.isFilterCleared
+  - uid: 'excel!Excel.Slicer#isFilterCleared:member'
     summary: >-
       True if all filters currently applied on the slicer are cleared.
 
@@ -208,7 +186,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Slicer.left
+  - uid: 'excel!Excel.Slicer#left:member'
     summary: >-
       Represents the distance, in points, from the left side of the slicer to the left of the worksheet. Throws an
       invalid argument exception when set with negative value as input.
@@ -227,7 +205,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Slicer.load
+  - uid: 'excel!Excel.Slicer#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -259,14 +237,14 @@ items:
       content: 'load(option?: Excel.Interfaces.SlicerLoadOptions): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.SlicerLoadOptions
-  - uid: excel.Excel.Slicer.load_1
+            - 'excel!Excel.Interfaces.SlicerLoadOptions:interface'
+  - uid: 'excel!Excel.Slicer#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -280,14 +258,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Slicer.load_2
+  - uid: 'excel!Excel.Slicer#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -301,7 +279,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Slicer;'
       return:
         type:
-          - excel.Excel.Slicer
+          - 'excel!Excel.Slicer:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -310,7 +288,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Slicer.name
+  - uid: 'excel!Excel.Slicer#name:member'
     summary: >-
       Represents the name of slicer.
 
@@ -328,7 +306,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Slicer.nameInFormula
+  - uid: 'excel!Excel.Slicer#nameInFormula:member'
     summary: >-
       Represents the slicer name used in the formula.
 
@@ -346,7 +324,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Slicer.selectItems
+  - uid: 'excel!Excel.Slicer#selectItems:member(1)'
     summary: >-
       Select slicer items based on their keys. Previous selection will be cleared. All items will be selected by default
       if the array is empty.
@@ -365,24 +343,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.selectItems(["Lemon", "Lime", "Orange"]);
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: items
           description: Optional. The specified slicer item names to be selected.
           type:
             - 'string[]'
-  - uid: excel.Excel.Slicer.set
+  - uid: 'excel!Excel.Slicer#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -413,7 +380,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Slicer.set_1
+  - uid: 'excel!Excel.Slicer#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -431,8 +398,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Slicer
-  - uid: excel.Excel.Slicer.slicerItems
+            - 'excel!Excel.Slicer:class'
+  - uid: 'excel!Excel.Slicer#slicerItems:member'
     summary: >-
       Represents the collection of SlicerItems that are part of the slicer. Read-only.
 
@@ -449,8 +416,8 @@ items:
       content: 'readonly slicerItems: Excel.SlicerItemCollection;'
       return:
         type:
-          - excel.Excel.SlicerItemCollection
-  - uid: excel.Excel.Slicer.sortBy
+          - 'excel!Excel.SlicerItemCollection:class'
+  - uid: 'excel!Excel.Slicer#sortBy:member'
     summary: >-
       Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
 
@@ -468,7 +435,7 @@ items:
       return:
         type:
           - Excel.SlicerSortType | "DataSourceOrder" | "Ascending" | "Descending"
-  - uid: excel.Excel.Slicer.style
+  - uid: 'excel!Excel.Slicer#style:member'
     summary: >-
       Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through
       "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6".
@@ -488,19 +455,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const slicer = context.workbook.slicers.getItem("Fruit Slicer");
-              slicer.style = "SlicerStyleLight6";
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Slicer.toJSON
+  - uid: 'excel!Excel.Slicer#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -517,9 +472,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.SlicerData;'
       return:
         type:
-          - excel.Excel.Interfaces.SlicerData
+          - 'excel!Excel.Interfaces.SlicerData:interface'
         description: ''
-  - uid: excel.Excel.Slicer.top
+  - uid: 'excel!Excel.Slicer#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the slicer to the top of the worksheet. Throws an invalid
       argument exception when set with negative value as input.
@@ -538,7 +493,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Slicer.width
+  - uid: 'excel!Excel.Slicer#width:member'
     summary: >-
       Represents the width, in points, of the slicer. Throws an invalid argument exception when set with negative value
       or zero as input.
@@ -557,7 +512,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Slicer.worksheet
+  - uid: 'excel!Excel.Slicer#worksheet:member'
     summary: >-
       Represents the worksheet containing the slicer. Read-only.
 
@@ -574,4 +529,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'

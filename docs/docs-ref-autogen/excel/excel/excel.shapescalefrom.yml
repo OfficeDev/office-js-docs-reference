@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShapeScaleFrom
+  - uid: 'excel!Excel.ShapeScaleFrom:enum'
     summary: |-
       Specifies which part of the shape retains its position when the shape is scaled.
 
@@ -10,26 +10,26 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShapeScaleFrom.scaleFromBottomRight
-      - excel.Excel.ShapeScaleFrom.scaleFromMiddle
-      - excel.Excel.ShapeScaleFrom.scaleFromTopLeft
-  - uid: excel.Excel.ShapeScaleFrom.scaleFromBottomRight
+      - 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
+      - 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
+      - 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
+  - uid: 'excel!Excel.ShapeScaleFrom.scaleFromBottomRight:member'
     name: scaleFromBottomRight
     fullName: scaleFromBottomRight
     langs:
       - typeScript
     type: field
     numericValue: '"ScaleFromBottomRight"'
-  - uid: excel.Excel.ShapeScaleFrom.scaleFromMiddle
+  - uid: 'excel!Excel.ShapeScaleFrom.scaleFromMiddle:member'
     name: scaleFromMiddle
     fullName: scaleFromMiddle
     langs:
       - typeScript
     type: field
     numericValue: '"ScaleFromMiddle"'
-  - uid: excel.Excel.ShapeScaleFrom.scaleFromTopLeft
+  - uid: 'excel!Excel.ShapeScaleFrom.scaleFromTopLeft:member'
     name: scaleFromTopLeft
     fullName: scaleFromTopLeft
     langs:

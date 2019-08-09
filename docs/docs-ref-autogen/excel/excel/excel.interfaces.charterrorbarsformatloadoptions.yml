@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions:interface'
     summary: |-
       Encapsulates the format properties for chart error bars.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
-  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatLoadOptions.line
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatLoadOptions#line:member'
     summary: |-
       Represents the chart line formatting.
 
@@ -39,4 +39,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'

@@ -1,29 +1,29 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphData
+  - uid: 'word!Word.Interfaces.ParagraphData:interface'
     summary: An interface describing the data returned by calling "paragraph.toJSON()".
     name: Word.Interfaces.ParagraphData
     fullName: Word.Interfaces.ParagraphData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphData.alignment
-      - word.Word.Interfaces.ParagraphData.firstLineIndent
-      - word.Word.Interfaces.ParagraphData.font
-      - word.Word.Interfaces.ParagraphData.inlinePictures
-      - word.Word.Interfaces.ParagraphData.leftIndent
-      - word.Word.Interfaces.ParagraphData.lineSpacing
-      - word.Word.Interfaces.ParagraphData.lineUnitAfter
-      - word.Word.Interfaces.ParagraphData.lineUnitBefore
-      - word.Word.Interfaces.ParagraphData.outlineLevel
-      - word.Word.Interfaces.ParagraphData.rightIndent
-      - word.Word.Interfaces.ParagraphData.spaceAfter
-      - word.Word.Interfaces.ParagraphData.spaceBefore
-      - word.Word.Interfaces.ParagraphData.style
-      - word.Word.Interfaces.ParagraphData.text
-  - uid: word.Word.Interfaces.ParagraphData.alignment
+      - 'word!Word.Interfaces.ParagraphData#alignment:member'
+      - 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
+      - 'word!Word.Interfaces.ParagraphData#font:member'
+      - 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
+      - 'word!Word.Interfaces.ParagraphData#leftIndent:member'
+      - 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
+      - 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
+      - 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
+      - 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
+      - 'word!Word.Interfaces.ParagraphData#rightIndent:member'
+      - 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
+      - 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
+      - 'word!Word.Interfaces.ParagraphData#style:member'
+      - 'word!Word.Interfaces.ParagraphData#text:member'
+  - uid: 'word!Word.Interfaces.ParagraphData#alignment:member'
     summary: |-
       Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
 
@@ -38,7 +38,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.ParagraphData.firstLineIndent
+  - uid: 'word!Word.Interfaces.ParagraphData#firstLineIndent:member'
     summary: >-
       Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line
       indent, and use a negative value to set a hanging indent.
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.font
+  - uid: 'word!Word.Interfaces.ParagraphData#font:member'
     summary: >-
       Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -71,8 +71,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.ParagraphData.inlinePictures
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.ParagraphData#inlinePictures:member'
     summary: >-
       Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
       Read-only.
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.InlinePictureData[]'
-  - uid: word.Word.Interfaces.ParagraphData.leftIndent
+  - uid: 'word!Word.Interfaces.ParagraphData#leftIndent:member'
     summary: |-
       Gets or sets the left indent value, in points, for the paragraph.
 
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.lineSpacing
+  - uid: 'word!Word.Interfaces.ParagraphData#lineSpacing:member'
     summary: >-
       Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by
       12.
@@ -121,7 +121,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.lineUnitAfter
+  - uid: 'word!Word.Interfaces.ParagraphData#lineUnitAfter:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, after the paragraph.
 
@@ -136,7 +136,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.lineUnitBefore
+  - uid: 'word!Word.Interfaces.ParagraphData#lineUnitBefore:member'
     summary: |-
       Gets or sets the amount of spacing, in grid lines, before the paragraph.
 
@@ -151,7 +151,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.outlineLevel
+  - uid: 'word!Word.Interfaces.ParagraphData#outlineLevel:member'
     summary: |-
       Gets or sets the outline level for the paragraph.
 
@@ -166,7 +166,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.rightIndent
+  - uid: 'word!Word.Interfaces.ParagraphData#rightIndent:member'
     summary: |-
       Gets or sets the right indent value, in points, for the paragraph.
 
@@ -181,7 +181,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.spaceAfter
+  - uid: 'word!Word.Interfaces.ParagraphData#spaceAfter:member'
     summary: |-
       Gets or sets the spacing, in points, after the paragraph.
 
@@ -196,7 +196,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.spaceBefore
+  - uid: 'word!Word.Interfaces.ParagraphData#spaceBefore:member'
     summary: |-
       Gets or sets the spacing, in points, before the paragraph.
 
@@ -211,7 +211,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.ParagraphData.style
+  - uid: 'word!Word.Interfaces.ParagraphData#style:member'
     summary: >-
       Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To
       use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -228,7 +228,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ParagraphData.text
+  - uid: 'word!Word.Interfaces.ParagraphData#text:member'
     summary: |-
       Gets the text of the paragraph. Read-only.
 

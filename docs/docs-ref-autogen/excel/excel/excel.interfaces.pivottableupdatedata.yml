@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotTableUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData:interface'
     summary: 'An interface for updating data on the PivotTable object, for use in "pivotTable.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.PivotTableUpdateData
     fullName: Excel.Interfaces.PivotTableUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotTableUpdateData.enableDataValueEditing
-      - excel.Excel.Interfaces.PivotTableUpdateData.name
-      - excel.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
-  - uid: excel.Excel.Interfaces.PivotTableUpdateData.enableDataValueEditing
+      - 'excel!Excel.Interfaces.PivotTableUpdateData#enableDataValueEditing:member'
+      - 'excel!Excel.Interfaces.PivotTableUpdateData#name:member'
+      - 'excel!Excel.Interfaces.PivotTableUpdateData#useCustomSortLists:member'
+  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData#enableDataValueEditing:member'
     summary: |-
       Specifies whether the PivotTable allows values in the data body to be edited by the user.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotTableUpdateData.name
+  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData#name:member'
     summary: |-
       Name of the PivotTable.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.PivotTableUpdateData.useCustomSortLists
+  - uid: 'excel!Excel.Interfaces.PivotTableUpdateData#useCustomSortLists:member'
     summary: |-
       Specifies whether the PivotTable uses custom lists when sorting.
 

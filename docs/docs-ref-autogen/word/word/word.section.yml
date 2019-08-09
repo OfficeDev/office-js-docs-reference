@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Section
+  - uid: 'word!Word.Section:class'
     summary: |-
       Represents a section in a Word document.
 
@@ -12,25 +12,25 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.Section.body
-      - word.Word.Section.context
-      - word.Word.Section.getFooter
-      - word.Word.Section.getFooter_1
-      - word.Word.Section.getHeader
-      - word.Word.Section.getHeader_1
-      - word.Word.Section.getNext
-      - word.Word.Section.getNextOrNullObject
-      - word.Word.Section.load
-      - word.Word.Section.load_1
-      - word.Word.Section.load_2
-      - word.Word.Section.set
-      - word.Word.Section.set_1
-      - word.Word.Section.toJSON
-      - word.Word.Section.track
-      - word.Word.Section.untrack
-  - uid: word.Word.Section.body
+      - 'word!Word.Section#body:member'
+      - 'word!Word.Section#context:member'
+      - 'word!Word.Section#getFooter:member(1)'
+      - 'word!Word.Section#getFooter:member(2)'
+      - 'word!Word.Section#getHeader:member(1)'
+      - 'word!Word.Section#getHeader:member(2)'
+      - 'word!Word.Section#getNext:member(1)'
+      - 'word!Word.Section#getNextOrNullObject:member(1)'
+      - 'word!Word.Section#load:member(1)'
+      - 'word!Word.Section#load:member(2)'
+      - 'word!Word.Section#load:member(3)'
+      - 'word!Word.Section#set:member(1)'
+      - 'word!Word.Section#set:member(2)'
+      - 'word!Word.Section#toJSON:member(1)'
+      - 'word!Word.Section#track:member(1)'
+      - 'word!Word.Section#untrack:member(1)'
+  - uid: 'word!Word.Section#body:member'
     summary: >-
       Gets the body object of the section. This does not include the header/footer and other section metadata.
       Read-only.
@@ -46,8 +46,8 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - word.Word.Body
-  - uid: word.Word.Section.context
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.Section#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -60,8 +60,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Section.getFooter
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Section#getFooter:member(1)'
     summary: |-
       Gets one of the section's footers.
 
@@ -75,26 +75,14 @@ items:
       content: 'getFooter(type: Word.HeaderFooterType): Word.Body;'
       return:
         type:
-          - word.Word.Body
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Word.run(async (context) => {
-            context.document.sections.getFirst().getFooter("Primary")
-              .insertParagraph("This is a footer", "End");
-
-            await context.sync();
-          });
-          ```
+          - 'word!Word.Body:class'
+        description: ''
       parameters:
         - id: type
           description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
-            - word.Word.HeaderFooterType
-  - uid: word.Word.Section.getFooter_1
+            - 'word!Word.HeaderFooterType:enum'
+  - uid: 'word!Word.Section#getFooter:member(2)'
     summary: |-
       Gets one of the section's footers.
 
@@ -108,56 +96,14 @@ items:
       content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
-          - word.Word.Body
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy sectionsCollection object.
-              var mySections = context.document.sections;
-              
-              // Queue a commmand to load the sections.
-              context.load(mySections, 'body/style');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  // Create a proxy object the primary footer of the first section. 
-                  // Note that the footer is a body object.
-                  var myFooter = mySections.items[0].getFooter("primary");
-                  
-                  // Queue a command to insert text at the end of the footer.
-                  myFooter.insertText("This is a footer.", Word.InsertLocation.end);
-                  
-                  // Queue a command to wrap the header in a content control.
-                  myFooter.insertContentControl();
-                                        
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log("Added a footer to the first section.");
-                  });                    
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.Body:class'
+        description: ''
       parameters:
         - id: typeString
           description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
             - '"Primary" | "FirstPage" | "EvenPages"'
-  - uid: word.Word.Section.getHeader
+  - uid: 'word!Word.Section#getHeader:member(1)'
     summary: |-
       Gets one of the section's headers.
 
@@ -171,26 +117,14 @@ items:
       content: 'getHeader(type: Word.HeaderFooterType): Word.Body;'
       return:
         type:
-          - word.Word.Body
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Word.run(async (context) => {
-            context.document.sections.getFirst().getHeader("Primary")
-              .insertParagraph("This is a header", "End");
-
-            await context.sync();
-          });
-          ```
+          - 'word!Word.Body:class'
+        description: ''
       parameters:
         - id: type
           description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
-            - word.Word.HeaderFooterType
-  - uid: word.Word.Section.getHeader_1
+            - 'word!Word.HeaderFooterType:enum'
+  - uid: 'word!Word.Section#getHeader:member(2)'
     summary: |-
       Gets one of the section's headers.
 
@@ -204,56 +138,14 @@ items:
       content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
-          - word.Word.Body
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-              
-              // Create a proxy sectionsCollection object.
-              var mySections = context.document.sections;
-              
-              // Queue a commmand to load the sections.
-              context.load(mySections, 'body/style');
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  
-                  // Create a proxy object the primary header of the first section. 
-                  // Note that the header is a body object.
-                  var myHeader = mySections.items[0].getHeader("primary");
-                  
-                  // Queue a command to insert text at the end of the header.
-                  myHeader.insertText("This is a header.", Word.InsertLocation.end);
-                  
-                  // Queue a command to wrap the header in a content control.
-                  myHeader.insertContentControl();
-                                        
-                  // Synchronize the document state by executing the queued commands, 
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log("Added a header to the first section.");
-                  });                    
-              });  
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.Body:class'
+        description: ''
       parameters:
         - id: typeString
           description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
             - '"Primary" | "FirstPage" | "EvenPages"'
-  - uid: word.Word.Section.getNext
+  - uid: 'word!Word.Section#getNext:member(1)'
     summary: |-
       Gets the next section. Throws if this section is the last one.
 
@@ -267,9 +159,9 @@ items:
       content: 'getNext(): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''
-  - uid: word.Word.Section.getNextOrNullObject
+  - uid: 'word!Word.Section#getNextOrNullObject:member(1)'
     summary: |-
       Gets the next section. Returns a null object if this section is the last one.
 
@@ -283,9 +175,9 @@ items:
       content: 'getNextOrNullObject(): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''
-  - uid: word.Word.Section.load
+  - uid: 'word!Word.Section#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -316,14 +208,14 @@ items:
       content: 'load(option?: Word.Interfaces.SectionLoadOptions): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.SectionLoadOptions
-  - uid: word.Word.Section.load_1
+            - 'word!Word.Interfaces.SectionLoadOptions:interface'
+  - uid: 'word!Word.Section#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -336,14 +228,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Section.load_2
+  - uid: 'word!Word.Section#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -356,7 +248,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -365,7 +257,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Section.set
+  - uid: 'word!Word.Section#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -395,7 +287,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.Section.set_1
+  - uid: 'word!Word.Section#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -412,8 +304,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Section
-  - uid: word.Word.Section.toJSON
+            - 'word!Word.Section:class'
+  - uid: 'word!Word.Section#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -429,9 +321,9 @@ items:
       content: 'toJSON(): Word.Interfaces.SectionData;'
       return:
         type:
-          - word.Word.Interfaces.SectionData
+          - 'word!Word.Interfaces.SectionData:interface'
         description: ''
-  - uid: word.Word.Section.track
+  - uid: 'word!Word.Section#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -447,9 +339,9 @@ items:
       content: 'track(): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''
-  - uid: word.Word.Section.untrack
+  - uid: 'word!Word.Section#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -464,5 +356,5 @@ items:
       content: 'untrack(): Word.Section;'
       return:
         type:
-          - word.Word.Section
+          - 'word!Word.Section:class'
         description: ''

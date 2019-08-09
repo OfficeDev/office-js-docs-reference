@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelFormatData
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
     summary: An interface describing the data returned by calling "chartDataLabelFormat.toJSON()".
     name: Excel.Interfaces.ChartDataLabelFormatData
     fullName: Excel.Interfaces.ChartDataLabelFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartDataLabelFormatData.font
-  - uid: excel.Excel.Interfaces.ChartDataLabelFormatData.font
+      - 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelFormatData#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for a chart data label. Read-only.
 
@@ -24,4 +24,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
+          - 'excel!Excel.Interfaces.ChartFontData:interface'

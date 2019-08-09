@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalDataBarRule
+  - uid: 'excel!Excel.ConditionalDataBarRule:interface'
     summary: |-
       Represents a rule-type for a Data Bar.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalDataBarRule.formula
-      - excel.Excel.ConditionalDataBarRule.type
-  - uid: excel.Excel.ConditionalDataBarRule.formula
+      - 'excel!Excel.ConditionalDataBarRule#formula:member'
+      - 'excel!Excel.ConditionalDataBarRule#type:member'
+  - uid: 'excel!Excel.ConditionalDataBarRule#formula:member'
     summary: |-
       The formula, if required, to evaluate the databar rule on.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalDataBarRule.type
+  - uid: 'excel!Excel.ConditionalDataBarRule#type:member'
     summary: |-
       The type of rule for the databar.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CustomPropertyCollection
+  - uid: 'excel!Excel.CustomPropertyCollection:class'
     summary: |-
       Contains the collection of customProperty objects.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CustomPropertyCollection.add
-      - excel.Excel.CustomPropertyCollection.context
-      - excel.Excel.CustomPropertyCollection.deleteAll
-      - excel.Excel.CustomPropertyCollection.getCount
-      - excel.Excel.CustomPropertyCollection.getItem
-      - excel.Excel.CustomPropertyCollection.getItemOrNullObject
-      - excel.Excel.CustomPropertyCollection.items
-      - excel.Excel.CustomPropertyCollection.load
-      - excel.Excel.CustomPropertyCollection.load_1
-      - excel.Excel.CustomPropertyCollection.load_2
-      - excel.Excel.CustomPropertyCollection.toJSON
-  - uid: excel.Excel.CustomPropertyCollection.add
+      - 'excel!Excel.CustomPropertyCollection#add:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#context:member'
+      - 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#items:member'
+      - 'excel!Excel.CustomPropertyCollection#load:member(1)'
+      - 'excel!Excel.CustomPropertyCollection#load:member(2)'
+      - 'excel!Excel.CustomPropertyCollection#load:member(3)'
+      - 'excel!Excel.CustomPropertyCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.CustomPropertyCollection#add:member(1)'
     summary: |-
       Creates a new or sets an existing custom property.
 
@@ -39,7 +39,7 @@ items:
       content: 'add(key: string, value: any): Excel.CustomProperty;'
       return:
         type:
-          - excel.Excel.CustomProperty
+          - 'excel!Excel.CustomProperty:class'
         description: ''
       parameters:
         - id: key
@@ -50,7 +50,7 @@ items:
           description: Required. The custom property's value.
           type:
             - any
-  - uid: excel.Excel.CustomPropertyCollection.context
+  - uid: 'excel!Excel.CustomPropertyCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -63,8 +63,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CustomPropertyCollection.deleteAll
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CustomPropertyCollection#deleteAll:member(1)'
     summary: |-
       Deletes all custom properties in this collection.
 
@@ -80,7 +80,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.CustomPropertyCollection.getCount
+  - uid: 'excel!Excel.CustomPropertyCollection#getCount:member(1)'
     summary: |-
       Gets the count of custom properties.
 
@@ -96,7 +96,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.CustomPropertyCollection.getItem
+  - uid: 'excel!Excel.CustomPropertyCollection#getItem:member(1)'
     summary: |-
       Gets a custom property object by its key, which is case-insensitive. Throws if the custom property does not exist.
 
@@ -110,14 +110,14 @@ items:
       content: 'getItem(key: string): Excel.CustomProperty;'
       return:
         type:
-          - excel.Excel.CustomProperty
+          - 'excel!Excel.CustomProperty:class'
         description: ''
       parameters:
         - id: key
           description: The key that identifies the custom property object.
           type:
             - string
-  - uid: excel.Excel.CustomPropertyCollection.getItemOrNullObject
+  - uid: 'excel!Excel.CustomPropertyCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a custom property object by its key, which is case-insensitive. Returns a null object if the custom property
       does not exist.
@@ -133,14 +133,14 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.CustomProperty;'
       return:
         type:
-          - excel.Excel.CustomProperty
+          - 'excel!Excel.CustomProperty:class'
         description: ''
       parameters:
         - id: key
           description: Required. The key that identifies the custom property object.
           type:
             - string
-  - uid: excel.Excel.CustomPropertyCollection.items
+  - uid: 'excel!Excel.CustomPropertyCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -152,7 +152,7 @@ items:
       return:
         type:
           - 'Excel.CustomProperty[]'
-  - uid: excel.Excel.CustomPropertyCollection.load
+  - uid: 'excel!Excel.CustomPropertyCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -185,14 +185,14 @@ items:
         Excel.CustomPropertyCollection;
       return:
         type:
-          - excel.Excel.CustomPropertyCollection
+          - 'excel!Excel.CustomPropertyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.CustomPropertyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.CustomPropertyCollection.load_1
+  - uid: 'excel!Excel.CustomPropertyCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -205,14 +205,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomPropertyCollection;'
       return:
         type:
-          - excel.Excel.CustomPropertyCollection
+          - 'excel!Excel.CustomPropertyCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CustomPropertyCollection.load_2
+  - uid: 'excel!Excel.CustomPropertyCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -222,14 +222,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.CustomPropertyCollection;'
       return:
         type:
-          - excel.Excel.CustomPropertyCollection
+          - 'excel!Excel.CustomPropertyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.CustomPropertyCollection.toJSON
+  - uid: 'excel!Excel.CustomPropertyCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -245,5 +245,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomPropertyCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomPropertyCollectionData
+          - 'excel!Excel.Interfaces.CustomPropertyCollectionData:interface'
         description: ''

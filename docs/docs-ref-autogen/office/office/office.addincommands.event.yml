@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.AddinCommands.Event
+  - uid: 'office!Office.AddinCommands.Event:interface'
     summary: >-
       The event object is passed as a parameter to add-in functions invoked by UI-less command buttons. The object
       allows the add-in to identify which button was clicked and to signal the host that it has completed its
@@ -22,11 +22,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.AddinCommands.Event.completed
-      - office.Office.AddinCommands.Event.source
-  - uid: office.Office.AddinCommands.Event.completed
+      - 'office!Office.AddinCommands.Event#completed:member(1)'
+      - 'office!Office.AddinCommands.Event#source:member'
+  - uid: 'office!Office.AddinCommands.Event#completed:member(1)'
     summary: >-
       Indicates that the add-in has completed processing that was triggered by an add-in command button or event
       handler.
@@ -53,42 +53,6 @@ items:
 
 
       Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function processItem (event) {
-          // Do some processing
-
-          event.completed();
-      }
-
-
-      // In the following example, the checkMessage function has
-
-      // been registered as an event handler for ItemSend.
-
-      function checkMessage(event) {
-          // Get the item being sent
-          var outgoingMsg = Office.context.mailbox.item;
-
-          // Check if subject contains "BLOCK"
-          outgoingMsg.subject.getAsync(function (result) {
-              // Subject is in result.value
-              if (result.value.indexOf('BLOCK') != -1) {
-                  // Value is found, stop send
-                  event.completed({allowEvent = false});
-              } else {
-                  // Value wasn't found, allow send
-                  event.completed({allowEvent = true});
-              }
-          });
-      }
-
-      ```
     name: completed(options)
     fullName: completed(options)
     langs:
@@ -104,93 +68,13 @@ items:
         - id: options
           description: Optional. An object that specifies behavior options for when the event is completed.
           type:
-            - office.Office.AddinCommands.EventCompletedOptions
-  - uid: office.Office.AddinCommands.Event.source
+            - 'office!Office.AddinCommands.EventCompletedOptions:interface'
+  - uid: 'office!Office.AddinCommands.Event#source:member'
     summary: Information about the control that triggered calling this function.
     remarks: >-
       This property is only supported in Outlook in [requirement
       set](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets)
       Mailbox 1.3 and later.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // In this example, consider a button defined in an add-in manifest as follows:
-
-      //<Control xsi:type="Button" id="eventTestButton">
-
-      //    <Label resid="eventButtonLabel" />
-
-      //    <Tooltip resid="eventButtonTooltip" />
-
-      //    <Supertip>
-
-      //        <Title resid="eventSuperTipTitle" />
-
-      //        <Description resid="eventSuperTipDescription" />
-
-      //    </Supertip>
-
-      //    <Icon>
-
-      //        <bt:Image size="16" resid="blue-icon-16" />
-
-      //        <bt:Image size="32" resid="blue-icon-32" />
-
-      //        <bt:Image size="80" resid="blue-icon-80" />
-
-      //    </Icon>
-
-      //    <Action xsi:type="ExecuteFunction">
-
-      //        <FunctionName>testEventObject</FunctionName>
-
-      //    </Action>
-
-      //</Control>
-
-
-      // The button has an id attribute set to eventTestButton, and will invoke
-
-      // the testEventObject function defined in the add-in.
-
-      // That function looks like this:
-
-      function testEventObject(event) {
-          // The event object implements the Event interface.
-
-          // This value will be "eventTestButton".
-          var buttonId = event.source.id;
-
-          // Signal to the host app that processing is complete.
-          event.completed();
-      }
-
-      ```
-
-      ```javascript
-
-      // Function is used by two buttons:
-
-      // button1 and button2
-
-      function multiButton (event) {
-          // Check which button was clicked.
-          var buttonId = event.source.id;
-
-          if (buttonId === 'button1') {
-              doButton1Action();
-          } else {
-              doButton2Action();
-          }
-
-          event.completed();
-      }
-
-      ```
     name: source
     fullName: source
     langs:
@@ -200,4 +84,4 @@ items:
       content: 'source:Source;'
       return:
         type:
-          - office.Office.AddinCommands.Source
+          - 'office!Office.AddinCommands.Source:interface'

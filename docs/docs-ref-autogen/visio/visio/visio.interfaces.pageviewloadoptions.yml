@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageViewLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
     summary: |-
       Represents the PageView class.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageViewLoadOptions.$all
-      - visio.Visio.Interfaces.PageViewLoadOptions.zoom
-  - uid: visio.Visio.Interfaces.PageViewLoadOptions.$all
+      - 'visio!Visio.Interfaces.PageViewLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.PageViewLoadOptions#zoom:member'
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageViewLoadOptions.zoom
+  - uid: 'visio!Visio.Interfaces.PageViewLoadOptions#zoom:member'
     summary: |-
       Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.
 

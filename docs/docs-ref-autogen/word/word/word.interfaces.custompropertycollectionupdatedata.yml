@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomPropertyCollectionUpdateData
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomPropertyCollection object, for use in
       "customPropertyCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomPropertyCollectionUpdateData.items
-  - uid: word.Word.Interfaces.CustomPropertyCollectionUpdateData.items
+      - 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.CustomPropertyCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

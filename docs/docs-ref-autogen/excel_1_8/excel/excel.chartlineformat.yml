@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartLineFormat
+  - uid: 'excel!Excel.ChartLineFormat:class'
     summary: |-
       Encapsulates the formatting options for line elements.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartLineFormat.clear
-      - excel.Excel.ChartLineFormat.color
-      - excel.Excel.ChartLineFormat.context
-      - excel.Excel.ChartLineFormat.lineStyle
-      - excel.Excel.ChartLineFormat.load
-      - excel.Excel.ChartLineFormat.load_1
-      - excel.Excel.ChartLineFormat.load_2
-      - excel.Excel.ChartLineFormat.set
-      - excel.Excel.ChartLineFormat.set_1
-      - excel.Excel.ChartLineFormat.toJSON
-      - excel.Excel.ChartLineFormat.weight
-  - uid: excel.Excel.ChartLineFormat.clear
+      - 'excel!Excel.ChartLineFormat#clear:member(1)'
+      - 'excel!Excel.ChartLineFormat#color:member'
+      - 'excel!Excel.ChartLineFormat#context:member'
+      - 'excel!Excel.ChartLineFormat#lineStyle:member'
+      - 'excel!Excel.ChartLineFormat#load:member(1)'
+      - 'excel!Excel.ChartLineFormat#load:member(2)'
+      - 'excel!Excel.ChartLineFormat#load:member(3)'
+      - 'excel!Excel.ChartLineFormat#set:member(1)'
+      - 'excel!Excel.ChartLineFormat#set:member(2)'
+      - 'excel!Excel.ChartLineFormat#toJSON:member(1)'
+      - 'excel!Excel.ChartLineFormat#weight:member'
+  - uid: 'excel!Excel.ChartLineFormat#clear:member(1)'
     summary: |-
       Clear the line format of a chart element.
 
@@ -40,27 +40,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set to show legend of Chart1 and make it on top of the chart.
-          Excel.run(function (ctx) { 
-              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.clear();
-              return ctx.sync().then(function() {
-                      console.log("Chart Major Gridlines Format Cleared");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.ChartLineFormat.color
+        description: ''
+  - uid: 'excel!Excel.ChartLineFormat#color:member'
     summary: |-
       HTML color code representing the color of lines in the chart.
 
@@ -75,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartLineFormat.context
+  - uid: 'excel!Excel.ChartLineFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -88,8 +69,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartLineFormat.lineStyle
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartLineFormat#lineStyle:member'
     summary: |-
       Represents the line style. See Excel.ChartLineStyle for details.
 
@@ -108,7 +89,7 @@ items:
           - >-
             Excel.ChartLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Grey25" |
             "Grey50" | "Grey75" | "Automatic" | "RoundDot"
-  - uid: excel.Excel.ChartLineFormat.load
+  - uid: 'excel!Excel.ChartLineFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -139,14 +120,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartLineFormatLoadOptions): Excel.ChartLineFormat;'
       return:
         type:
-          - excel.Excel.ChartLineFormat
+          - 'excel!Excel.ChartLineFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartLineFormatLoadOptions
-  - uid: excel.Excel.ChartLineFormat.load_1
+            - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartLineFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -159,33 +140,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartLineFormat;'
       return:
         type:
-          - excel.Excel.ChartLineFormat
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Set chart major gridlines on value axis to be red.
-          Excel.run(function (ctx) {
-              var gridlines = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1").axes.valueAxis.majorGridlines;
-              gridlines.format.line.color = "#FF0000";
-              return ctx.sync().then(function () {
-                  console.log("Chart Gridlines Color Updated");
-              });
-          }).catch(function (error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartLineFormat:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartLineFormat.load_2
+  - uid: 'excel!Excel.ChartLineFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -198,7 +160,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartLineFormat;'
       return:
         type:
-          - excel.Excel.ChartLineFormat
+          - 'excel!Excel.ChartLineFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -207,7 +169,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartLineFormat.set
+  - uid: 'excel!Excel.ChartLineFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -237,7 +199,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartLineFormat.set_1
+  - uid: 'excel!Excel.ChartLineFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -254,8 +216,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartLineFormat
-  - uid: excel.Excel.ChartLineFormat.toJSON
+            - 'excel!Excel.ChartLineFormat:class'
+  - uid: 'excel!Excel.ChartLineFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -271,9 +233,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartLineFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatData
+          - 'excel!Excel.Interfaces.ChartLineFormatData:interface'
         description: ''
-  - uid: excel.Excel.ChartLineFormat.weight
+  - uid: 'excel!Excel.ChartLineFormat#weight:member'
     summary: |-
       Represents weight of the line, in points.
 

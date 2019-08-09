@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.Location
+  - uid: 'outlook!Office.Location:interface'
     summary: |-
       Provides methods to get and set the location of a meeting in an Outlook add-in.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.Location.getAsync
-      - outlook.Office.Location.getAsync_1
-      - outlook.Office.Location.setAsync
-      - outlook.Office.Location.setAsync_1
-  - uid: outlook.Office.Location.getAsync
+      - 'outlook!Office.Location#getAsync:member(1)'
+      - 'outlook!Office.Location#getAsync:member(2)'
+      - 'outlook!Office.Location#setAsync:member(1)'
+      - 'outlook!Office.Location#setAsync:member(2)'
+  - uid: 'outlook!Office.Location#getAsync:member(1)'
     summary: >-
       Gets the location of an appointment.
 
@@ -35,24 +35,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var userContext = { value : 1 };
-
-      Office.context.mailbox.item.location.getAsync( { context: userContext}, callback);
-
-
-      function callback(asyncResult) {
-          var context = asyncResult.context;
-          var location = asyncResult.value;
-      }
-
-      ```
     name: 'getAsync(options, callback)'
     fullName: 'getAsync(options, callback)'
     langs:
@@ -82,7 +64,7 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Location.getAsync_1
+  - uid: 'outlook!Office.Location#getAsync:member(2)'
     summary: >-
       Gets the location of an appointment.
 
@@ -116,7 +98,7 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: outlook.Office.Location.setAsync
+  - uid: 'outlook!Office.Location#setAsync:member(1)'
     summary: >-
       Sets the location of an appointment.
 
@@ -169,7 +151,7 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.Location.setAsync_1
+  - uid: 'outlook!Office.Location#setAsync:member(2)'
     summary: >-
       Sets the location of an appointment.
 
@@ -188,23 +170,6 @@ items:
 
 
       - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.location.setAsync(
-          "Room 1",
-          function (asyncResult) {
-              if (asyncResult.status === "failed") {
-                  console.log("Action failed with error: " + asyncResult.error.message);
-              }
-          }
-      );
-
-      ```
     name: 'setAsync(location, callback)'
     fullName: 'setAsync(location, callback)'
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.NamedItem
+  - uid: 'excel!Excel.NamedItem:class'
     summary: >-
       Represents a defined name for a range of cells or value. Names can be primitive named objects (as seen in the type
       below), range object, or a reference to a range. This object can be used to obtain range object associated with
@@ -15,29 +15,29 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.NamedItem.arrayValues
-      - excel.Excel.NamedItem.comment
-      - excel.Excel.NamedItem.context
-      - excel.Excel.NamedItem.delete
-      - excel.Excel.NamedItem.formula
-      - excel.Excel.NamedItem.getRange
-      - excel.Excel.NamedItem.getRangeOrNullObject
-      - excel.Excel.NamedItem.load
-      - excel.Excel.NamedItem.load_1
-      - excel.Excel.NamedItem.load_2
-      - excel.Excel.NamedItem.name
-      - excel.Excel.NamedItem.scope
-      - excel.Excel.NamedItem.set
-      - excel.Excel.NamedItem.set_1
-      - excel.Excel.NamedItem.toJSON
-      - excel.Excel.NamedItem.type
-      - excel.Excel.NamedItem.value
-      - excel.Excel.NamedItem.visible
-      - excel.Excel.NamedItem.worksheet
-      - excel.Excel.NamedItem.worksheetOrNullObject
-  - uid: excel.Excel.NamedItem.arrayValues
+      - 'excel!Excel.NamedItem#arrayValues:member'
+      - 'excel!Excel.NamedItem#comment:member'
+      - 'excel!Excel.NamedItem#context:member'
+      - 'excel!Excel.NamedItem#delete:member(1)'
+      - 'excel!Excel.NamedItem#formula:member'
+      - 'excel!Excel.NamedItem#getRange:member(1)'
+      - 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.NamedItem#load:member(1)'
+      - 'excel!Excel.NamedItem#load:member(2)'
+      - 'excel!Excel.NamedItem#load:member(3)'
+      - 'excel!Excel.NamedItem#name:member'
+      - 'excel!Excel.NamedItem#scope:member'
+      - 'excel!Excel.NamedItem#set:member(1)'
+      - 'excel!Excel.NamedItem#set:member(2)'
+      - 'excel!Excel.NamedItem#toJSON:member(1)'
+      - 'excel!Excel.NamedItem#type:member'
+      - 'excel!Excel.NamedItem#value:member'
+      - 'excel!Excel.NamedItem#visible:member'
+      - 'excel!Excel.NamedItem#worksheet:member'
+      - 'excel!Excel.NamedItem#worksheetOrNullObject:member'
+  - uid: 'excel!Excel.NamedItem#arrayValues:member'
     summary: |-
       Returns an object containing values and types of the named item. Read-only.
 
@@ -51,8 +51,8 @@ items:
       content: 'readonly arrayValues: Excel.NamedItemArrayValues;'
       return:
         type:
-          - excel.Excel.NamedItemArrayValues
-  - uid: excel.Excel.NamedItem.comment
+          - 'excel!Excel.NamedItemArrayValues:class'
+  - uid: 'excel!Excel.NamedItem#comment:member'
     summary: |-
       Represents the comment associated with this name.
 
@@ -67,7 +67,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.NamedItem.context
+  - uid: 'excel!Excel.NamedItem#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -80,8 +80,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.NamedItem.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.NamedItem#delete:member(1)'
     summary: |-
       Deletes the given name.
 
@@ -96,31 +96,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const totalName = sheet.names.getItemOrNullObject("TotalAmount");
-              totalName.load();
-              await context.sync();
-
-              if (totalName.value) {
-                  totalName.delete();
-
-                  // Replace the named item (TotalAmount) with the actual formula for TotalAmount to avoid displaying #NAME in the cell.
-                  sheet.getRange("D11").values = [["=SUM(ExpensesTable[AMOUNT])"]];
-              } else {
-                  console.log("No named item created for the formula.");
-              }
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.NamedItem.formula
+        description: ''
+  - uid: 'excel!Excel.NamedItem#formula:member'
     summary: |-
       Gets or sets the formula of the named item. Formula always starts with a '=' sign.
 
@@ -135,33 +112,7 @@ items:
       return:
         type:
           - any
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              // Get the named item
-              const myNamedItem = sheet.names.getItemOrNullObject("MyRange");
-              myNamedItem.load("name, formula");
-              await context.sync();
-
-              if (myNamedItem.isNullObject) {
-                  console.log(`There is no named item. Create it with "Add named item for a range" first.`);
-              } else {                    
-                  // Update named item to point to the second range
-                  myNamedItem.formula = "=Sample!$B$10:$D$14";
-                  sheet.getRange("B10:D14").select();
-                  await context.sync();
-
-                  console.log(`Just updated the named item "${myNamedItem.name}" -- it's now located here: ${myNamedItem.formula}`);
-              }
-          });
-          ```
-  - uid: excel.Excel.NamedItem.getRange
+  - uid: 'excel!Excel.NamedItem#getRange:member(1)'
     summary: >-
       Returns the range object that is associated with the name. Throws an error if the named item's type is not a
       range.
@@ -177,31 +128,9 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Returns the Range object that is associated with the name. 
-          // null if the name is not of the type Range.
-          // Note: This API currently supports only the Workbook scoped items.
-          Excel.run(function (ctx) { 
-              var names = ctx.workbook.names;
-              var range = names.getItem('MyRange').getRange();
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.NamedItem.getRangeOrNullObject
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.NamedItem#getRangeOrNullObject:member(1)'
     summary: >-
       Returns the range object that is associated with the name. Returns a null object if the named item's type is not a
       range.
@@ -217,9 +146,9 @@ items:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.NamedItem.load
+  - uid: 'excel!Excel.NamedItem#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -250,14 +179,14 @@ items:
       content: 'load(option?: Excel.Interfaces.NamedItemLoadOptions): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
+          - 'excel!Excel.NamedItem:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.NamedItemLoadOptions
-  - uid: excel.Excel.NamedItem.load_1
+            - 'excel!Excel.Interfaces.NamedItemLoadOptions:interface'
+  - uid: 'excel!Excel.NamedItem#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -270,33 +199,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var names = ctx.workbook.names;
-              var namedItem = names.getItem('MyRange');
-              namedItem.load('type');
-              return ctx.sync().then(function() {
-                      console.log(namedItem.type);
-              });
-          }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-          });
-          ```
+          - 'excel!Excel.NamedItem:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.NamedItem.load_2
+  - uid: 'excel!Excel.NamedItem#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -309,7 +219,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
+          - 'excel!Excel.NamedItem:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -318,7 +228,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.NamedItem.name
+  - uid: 'excel!Excel.NamedItem#name:member'
     summary: |-
       The name of the object. Read-only.
 
@@ -333,7 +243,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.NamedItem.scope
+  - uid: 'excel!Excel.NamedItem#scope:member'
     summary: >-
       Indicates whether the name is scoped to the workbook or to a specific worksheet. Possible values are: Worksheet,
       Workbook. Read-only.
@@ -350,7 +260,7 @@ items:
       return:
         type:
           - Excel.NamedItemScope | "Worksheet" | "Workbook"
-  - uid: excel.Excel.NamedItem.set
+  - uid: 'excel!Excel.NamedItem#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -380,7 +290,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.NamedItem.set_1
+  - uid: 'excel!Excel.NamedItem#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -397,8 +307,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.NamedItem
-  - uid: excel.Excel.NamedItem.toJSON
+            - 'excel!Excel.NamedItem:class'
+  - uid: 'excel!Excel.NamedItem#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -414,9 +324,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemData;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemData
+          - 'excel!Excel.Interfaces.NamedItemData:interface'
         description: ''
-  - uid: excel.Excel.NamedItem.type
+  - uid: 'excel!Excel.NamedItem#type:member'
     summary: >-
       Indicates the type of the value returned by the name's formula. See Excel.NamedItemType for details. Read-only.
 
@@ -433,7 +343,7 @@ items:
       return:
         type:
           - Excel.NamedItemType | "String" | "Integer" | "Double" | "Boolean" | "Range" | "Error" | "Array"
-  - uid: excel.Excel.NamedItem.value
+  - uid: 'excel!Excel.NamedItem#value:member'
     summary: |-
       Represents the value computed by the name's formula. For a named range, will return the range address. Read-only.
 
@@ -448,7 +358,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.NamedItem.visible
+  - uid: 'excel!Excel.NamedItem#visible:member'
     summary: |-
       Specifies whether the object is visible or not.
 
@@ -463,7 +373,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.NamedItem.worksheet
+  - uid: 'excel!Excel.NamedItem#worksheet:member'
     summary: >-
       Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook
       instead.
@@ -479,8 +389,8 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
-  - uid: excel.Excel.NamedItem.worksheetOrNullObject
+          - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.NamedItem#worksheetOrNullObject:member'
     summary: >-
       Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the
       workbook instead.
@@ -496,4 +406,4 @@ items:
       content: 'readonly worksheetOrNullObject: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'

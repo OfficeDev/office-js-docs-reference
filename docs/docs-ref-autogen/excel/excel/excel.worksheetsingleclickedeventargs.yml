@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetSingleClickedEventArgs
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs:interface'
     summary: >-
       Provides information about the worksheet that raised the left-clicked/tapped event.
 
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetSingleClickedEventArgs.address
-      - excel.Excel.WorksheetSingleClickedEventArgs.offsetX
-      - excel.Excel.WorksheetSingleClickedEventArgs.offsetY
-      - excel.Excel.WorksheetSingleClickedEventArgs.type
-      - excel.Excel.WorksheetSingleClickedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetSingleClickedEventArgs.address
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#address:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#offsetX:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#offsetY:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
+      - 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#address:member'
     summary: >-
       Gets the address that represents the cell which was left-clicked/tapped for a specific worksheet.
 
@@ -38,27 +38,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.onSingleClicked.add((event) => {
-                  return Excel.run((context) => {
-                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
-                      return context.sync();
-                  });
-              });
-
-              console.log("The worksheet click handler is registered.");
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetX
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#offsetX:member'
     summary: >-
       The distance, in points, from the left-clicked/tapped point to the left (or right for RTL) gridline edge of the
       left-clicked/tapped cell.
@@ -77,7 +57,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.WorksheetSingleClickedEventArgs.offsetY
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#offsetY:member'
     summary: >-
       The distance, in points, from the left-clicked/tapped point to the top gridline edge of the left-clicked/tapped
       cell.
@@ -96,7 +76,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.WorksheetSingleClickedEventArgs.type
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#type:member'
     summary: >-
       Gets the type of the event.
 
@@ -114,7 +94,7 @@ items:
       return:
         type:
           - '"WorksheetSingleClicked"'
-  - uid: excel.Excel.WorksheetSingleClickedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetSingleClickedEventArgs#worksheetId:member'
     summary: >-
       Gets the id of the worksheet in which the cell was left-clicked/tapped.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalPresetCriteriaRule
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule:interface'
     summary: |-
       Represents the Preset Criteria Conditional Format Rule
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalPresetCriteriaRule.criterion
-  - uid: excel.Excel.ConditionalPresetCriteriaRule.criterion
+      - 'excel!Excel.ConditionalPresetCriteriaRule#criterion:member'
+  - uid: 'excel!Excel.ConditionalPresetCriteriaRule#criterion:member'
     summary: |-
       The criterion of the conditional format.
 
@@ -38,20 +38,3 @@ items:
             "ThisMonth" | "NextMonth" | "AboveAverage" | "BelowAverage" | "EqualOrAboveAverage" | "EqualOrBelowAverage"
             | "OneStdDevAboveAverage" | "OneStdDevBelowAverage" | "TwoStdDevAboveAverage" | "TwoStdDevBelowAverage" |
             "ThreeStdDevAboveAverage" | "ThreeStdDevBelowAverage" | "UniqueValues" | "DuplicateValues"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B2:M5");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.presetCriteria);
-              conditionalFormat.preset.format.font.color = "white";
-              conditionalFormat.preset.rule = { criterion: Excel.ConditionalFormatPresetCriterion.oneStdDevAboveAverage };
-
-              await context.sync();
-          });
-          ```

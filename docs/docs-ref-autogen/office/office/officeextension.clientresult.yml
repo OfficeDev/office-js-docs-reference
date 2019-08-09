@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.ClientResult
+  - uid: 'office!OfficeExtension.ClientResult:class'
     summary: >-
       Contains the result for methods that return primitive types. The object's value property is retrieved from the
       document after `context.sync()` is invoked.
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.ClientResult.value
-  - uid: office.OfficeExtension.ClientResult.value
+      - 'office!OfficeExtension.ClientResult#value:member'
+  - uid: 'office!OfficeExtension.ClientResult#value:member'
     summary: The value of the result that is retrieved from the document after `context.sync()` is invoked.
     name: value
     fullName: value

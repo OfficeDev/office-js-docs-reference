@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomPropertyCollection object, for use in
       "customPropertyCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.CustomPropertyCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.CustomPropertyCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.CustomPropertyCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

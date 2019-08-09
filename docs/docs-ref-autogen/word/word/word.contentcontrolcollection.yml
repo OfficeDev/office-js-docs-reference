@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ContentControlCollection
+  - uid: 'word!Word.ContentControlCollection:class'
     summary: >-
-      Contains a collection of [Word.ContentControl](xref:word.Word.ContentControl) objects. Content controls are
+      Contains a collection of [Word.ContentControl](xref:word!Word.ContentControl:class) objects. Content controls are
       bounded and potentially labeled regions in a document that serve as containers for specific types of content.
       Individual content controls may contain contents such as images, tables, or paragraphs of formatted text.
       Currently, only rich text content controls are supported.
@@ -16,25 +16,25 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.ContentControlCollection.context
-      - word.Word.ContentControlCollection.getById
-      - word.Word.ContentControlCollection.getByIdOrNullObject
-      - word.Word.ContentControlCollection.getByTag
-      - word.Word.ContentControlCollection.getByTitle
-      - word.Word.ContentControlCollection.getByTypes
-      - word.Word.ContentControlCollection.getFirst
-      - word.Word.ContentControlCollection.getFirstOrNullObject
-      - word.Word.ContentControlCollection.getItem
-      - word.Word.ContentControlCollection.items
-      - word.Word.ContentControlCollection.load
-      - word.Word.ContentControlCollection.load_1
-      - word.Word.ContentControlCollection.load_2
-      - word.Word.ContentControlCollection.toJSON
-      - word.Word.ContentControlCollection.track
-      - word.Word.ContentControlCollection.untrack
-  - uid: word.Word.ContentControlCollection.context
+      - 'word!Word.ContentControlCollection#context:member'
+      - 'word!Word.ContentControlCollection#getById:member(1)'
+      - 'word!Word.ContentControlCollection#getByIdOrNullObject:member(1)'
+      - 'word!Word.ContentControlCollection#getByTag:member(1)'
+      - 'word!Word.ContentControlCollection#getByTitle:member(1)'
+      - 'word!Word.ContentControlCollection#getByTypes:member(1)'
+      - 'word!Word.ContentControlCollection#getFirst:member(1)'
+      - 'word!Word.ContentControlCollection#getFirstOrNullObject:member(1)'
+      - 'word!Word.ContentControlCollection#getItem:member(1)'
+      - 'word!Word.ContentControlCollection#items:member'
+      - 'word!Word.ContentControlCollection#load:member(1)'
+      - 'word!Word.ContentControlCollection#load:member(2)'
+      - 'word!Word.ContentControlCollection#load:member(3)'
+      - 'word!Word.ContentControlCollection#toJSON:member(1)'
+      - 'word!Word.ContentControlCollection#track:member(1)'
+      - 'word!Word.ContentControlCollection#untrack:member(1)'
+  - uid: 'word!Word.ContentControlCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -47,8 +47,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.ContentControlCollection.getById
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.ContentControlCollection#getById:member(1)'
     summary: >-
       Gets a content control by its identifier. Throws if there isn't a content control with the identifier in this
       collection.
@@ -64,68 +64,14 @@ items:
       content: 'getById(id: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getById(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('The content control with that Id has been found in this document.');
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There is no content control with that ID.')
-                  } else {
-                      console.log('The content control with that ID has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.ContentControl:class'
+        description: ''
       parameters:
         - id: id
           description: Required. A content control identifier.
           type:
             - number
-  - uid: word.Word.ContentControlCollection.getByIdOrNullObject
+  - uid: 'word!Word.ContentControlCollection#getByIdOrNullObject:member(1)'
     summary: >-
       Gets a content control by its identifier. Returns a null object if there isn't a content control with the
       identifier in this collection.
@@ -141,45 +87,14 @@ items:
       content: 'getByIdOrNullObject(id: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content control that contains a specific id.
-              var contentControl = context.document.contentControls.getByIdOrNullObject(30086310);
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There is no content control with that ID.')
-                  } else {
-                      console.log('The content control with that ID has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.ContentControl:class'
+        description: ''
       parameters:
         - id: id
           description: Required. A content control identifier.
           type:
             - number
-  - uid: word.Word.ContentControlCollection.getByTag
+  - uid: 'word!Word.ContentControlCollection#getByTag:member(1)'
     summary: |-
       Gets the content controls that have the specified tag.
 
@@ -193,65 +108,14 @@ items:
       content: 'getByTag(tag: string): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content controls collection that contains a specific tag.
-              var contentControlsWithTag = context.document.contentControls.getByTag('Customer-Address');
-
-              // Queue a command to load the text property for all of content controls with a specific tag.
-              context.load(contentControlsWithTag, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTag.items.length === 0) {
-                      console.log("There isn't a content control with a tag of Customer-Address in this document.");
-                  } else {
-                      console.log(
-                          'The first content control with the tag of Customer-Address has this text: ' + 
-                          contentControlsWithTag.items[0].text);
-                  }
-
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Word-Add-in-DocumentAssembly sample has another example of using the getByTag method.
-          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-          ```
-          ```typescript
-          await Word.run(async (context) => {
-              let contentControls = context.document.contentControls.getByTag("customer");
-              contentControls.load("text");
-
-              await context.sync();
-
-              for (let i = 0; i < contentControls.items.length; i++) {
-                contentControls.items[i].insertText("Fabrikam", "Replace");
-              }
-
-              await context.sync();
-          });
-          ```
+          - 'word!Word.ContentControlCollection:class'
+        description: ''
       parameters:
         - id: tag
           description: Required. A tag set on a content control.
           type:
             - string
-  - uid: word.Word.ContentControlCollection.getByTitle
+  - uid: 'word!Word.ContentControlCollection#getByTitle:member(1)'
     summary: |-
       Gets the content controls that have the specified title.
 
@@ -265,52 +129,14 @@ items:
       content: 'getByTitle(title: string): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the content controls collection that contains a specific title.
-              var contentControlsWithTitle = context.document.contentControls.getByTitle('Enter Customer Address Here');
-
-              // Queue a command to load the text property for all of content controls with a specific title.
-              context.load(contentControlsWithTitle, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControlsWithTitle.items.length === 0) {
-                      console.log(
-                          "There isn't a content control with a title of 'Enter Customer Address Here' in this document.");
-                  } else {
-                      console.log(
-                          "The first content control with the title of 'Enter Customer Address Here' has this text: " + 
-                          contentControlsWithTitle.items[0].text);
-                  }
-
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-
-          // The Word-Add-in-DocumentAssembly sample has another example of using the getByTitle method.
-          // https://github.com/OfficeDev/Word-Add-in-DocumentAssembly
-          ```
+          - 'word!Word.ContentControlCollection:class'
+        description: ''
       parameters:
         - id: title
           description: Required. The title of a content control.
           type:
             - string
-  - uid: word.Word.ContentControlCollection.getByTypes
+  - uid: 'word!Word.ContentControlCollection#getByTypes:member(1)'
     summary: |-
       Gets the content controls that have the specified types and/or subtypes.
 
@@ -324,14 +150,14 @@ items:
       content: 'getByTypes(types: Word.ContentControlType[]): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: types
           description: Required. An array of content control types and/or subtypes.
           type:
             - 'Word.ContentControlType[]'
-  - uid: word.Word.ContentControlCollection.getFirst
+  - uid: 'word!Word.ContentControlCollection#getFirst:member(1)'
     summary: |-
       Gets the first content control in this collection. Throws if this collection is empty.
 
@@ -345,40 +171,9 @@ items:
       content: 'getFirst(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Create a proxy object for the first content control in the document.
-              var contentControl = context.document.contentControls.getFirstOrNullObject();
-
-              // Queue a command to load the text property for a content control.
-              context.load(contentControl, 'text');
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  if (contentControl.isNullObject) {
-                      console.log('There are no content controls in this document.')
-                  } else {
-                      console.log('The first content control has been found in this document.');
-                  }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.ContentControlCollection.getFirstOrNullObject
+          - 'word!Word.ContentControl:class'
+        description: ''
+  - uid: 'word!Word.ContentControlCollection#getFirstOrNullObject:member(1)'
     summary: |-
       Gets the first content control in this collection. Returns a null object if this collection is empty.
 
@@ -392,9 +187,9 @@ items:
       content: 'getFirstOrNullObject(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
-  - uid: word.Word.ContentControlCollection.getItem
+  - uid: 'word!Word.ContentControlCollection#getItem:member(1)'
     summary: |-
       Gets a content control by its index in the collection.
 
@@ -408,14 +203,14 @@ items:
       content: 'getItem(index: number): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
       parameters:
         - id: index
           description: The index.
           type:
             - number
-  - uid: word.Word.ContentControlCollection.items
+  - uid: 'word!Word.ContentControlCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -427,7 +222,7 @@ items:
       return:
         type:
           - 'Word.ContentControl[]'
-  - uid: word.Word.ContentControlCollection.load
+  - uid: 'word!Word.ContentControlCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -449,86 +244,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-
-          // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
-
-          // Queue a command to load the id property for all of the content controls.
-          context.load(contentControls, 'id');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              if (contentControls.items.length === 0) {
-                  console.log('No content control found.');
-              }
-              else {
-                  // Queue a command to load the properties on the first content control.
-                  contentControls.items[0].load(  'appearance,' +
-                                                  'cannotDelete,' +
-                                                  'cannotEdit,' +
-                                                  'id,' +
-                                                  'placeHolderText,' +
-                                                  'removeWhenEdited,' +
-                                                  'title,' +
-                                                  'text,' +
-                                                  'type,' +
-                                                  'style,' +
-                                                  'tag,' +
-                                                  'font/size,' +
-                                                  'font/name,' +
-                                                  'font/color');
-
-                  // Synchronize the document state by executing the queued commands,
-                  // and return a promise to indicate task completion.
-                  return context.sync()
-                      .then(function () {
-                          console.log('Property values of the first content control:' +
-                              '   ----- appearance: ' + contentControls.items[0].appearance +
-                              '   ----- cannotDelete: ' + contentControls.items[0].cannotDelete +
-                              '   ----- cannotEdit: ' + contentControls.items[0].cannotEdit +
-                              '   ----- color: ' + contentControls.items[0].color +
-                              '   ----- id: ' + contentControls.items[0].id +
-                              '   ----- placeHolderText: ' + contentControls.items[0].placeholderText +
-                              '   ----- removeWhenEdited: ' + contentControls.items[0].removeWhenEdited +
-                              '   ----- title: ' + contentControls.items[0].title +
-                              '   ----- text: ' + contentControls.items[0].text +
-                              '   ----- type: ' + contentControls.items[0].type +
-                              '   ----- style: ' + contentControls.items[0].style +
-                              '   ----- tag: ' + contentControls.items[0].tag +
-                              '   ----- font size: ' + contentControls.items[0].font.size +
-                              '   ----- font name: ' + contentControls.items[0].font.name +
-                              '   ----- font color: ' + contentControls.items[0].font.color);
-                  });
-              }
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-
-      // The Silly stories add-in sample shows how the load method is used
-
-      // to load the content control collection with the tag and title properties.
-
-      // https://aka.ms/sillystorywordaddin
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -540,14 +255,14 @@ items:
         Word.ContentControlCollection;
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.ContentControlCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.ContentControlCollection.load_1
+  - uid: 'word!Word.ContentControlCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -560,14 +275,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.ContentControlCollection.load_2
+  - uid: 'word!Word.ContentControlCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -577,14 +292,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: word.Word.ContentControlCollection.toJSON
+  - uid: 'word!Word.ContentControlCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -600,9 +315,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ContentControlCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.ContentControlCollectionData
+          - 'word!Word.Interfaces.ContentControlCollectionData:interface'
         description: ''
-  - uid: word.Word.ContentControlCollection.track
+  - uid: 'word!Word.ContentControlCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -618,9 +333,9 @@ items:
       content: 'track(): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''
-  - uid: word.Word.ContentControlCollection.untrack
+  - uid: 'word!Word.ContentControlCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -635,5 +350,5 @@ items:
       content: 'untrack(): Word.ContentControlCollection;'
       return:
         type:
-          - word.Word.ContentControlCollection
+          - 'word!Word.ContentControlCollection:class'
         description: ''

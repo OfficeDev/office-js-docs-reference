@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ShapeCollection
+  - uid: 'visio!Visio.ShapeCollection:class'
     summary: |-
       Represents the Shape Collection.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.ShapeCollection.context
-      - visio.Visio.ShapeCollection.getCount
-      - visio.Visio.ShapeCollection.getItem
-      - visio.Visio.ShapeCollection.items
-      - visio.Visio.ShapeCollection.load
-      - visio.Visio.ShapeCollection.load_1
-      - visio.Visio.ShapeCollection.load_2
-      - visio.Visio.ShapeCollection.toJSON
-  - uid: visio.Visio.ShapeCollection.context
+      - 'visio!Visio.ShapeCollection#context:member'
+      - 'visio!Visio.ShapeCollection#getCount:member(1)'
+      - 'visio!Visio.ShapeCollection#getItem:member(1)'
+      - 'visio!Visio.ShapeCollection#items:member'
+      - 'visio!Visio.ShapeCollection#load:member(1)'
+      - 'visio!Visio.ShapeCollection#load:member(2)'
+      - 'visio!Visio.ShapeCollection#load:member(3)'
+      - 'visio!Visio.ShapeCollection#toJSON:member(1)'
+  - uid: 'visio!Visio.ShapeCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.ShapeCollection.getCount
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.ShapeCollection#getCount:member(1)'
     summary: |-
       Gets the number of Shapes in the collection.
 
@@ -51,26 +51,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<number>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var numShapesActivePage = activePage.shapes.getCount();
-              return ctx.sync().then(function () {
-                  console.log("Shapes Count: " + numShapesActivePage.value);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: visio.Visio.ShapeCollection.getItem
+        description: ''
+  - uid: 'visio!Visio.ShapeCollection#getItem:member(1)'
     summary: |-
       Gets a Shape using its key (name or Index).
 
@@ -84,14 +66,14 @@ items:
       content: 'getItem(key: number | string): Visio.Shape;'
       return:
         type:
-          - visio.Visio.Shape
+          - 'visio!Visio.Shape:class'
         description: ''
       parameters:
         - id: key
           description: Key is the Name or Index of the shape to be retrieved.
           type:
             - number | string
-  - uid: visio.Visio.ShapeCollection.items
+  - uid: 'visio!Visio.ShapeCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -103,7 +85,7 @@ items:
       return:
         type:
           - 'Visio.Shape[]'
-  - uid: visio.Visio.ShapeCollection.load
+  - uid: 'visio!Visio.ShapeCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -136,14 +118,14 @@ items:
         Visio.ShapeCollection;
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - 'visio!Visio.ShapeCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Visio.Interfaces.ShapeCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
-  - uid: visio.Visio.ShapeCollection.load_1
+  - uid: 'visio!Visio.ShapeCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -156,14 +138,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - 'visio!Visio.ShapeCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.ShapeCollection.load_2
+  - uid: 'visio!Visio.ShapeCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -173,14 +155,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
+          - 'visio!Visio.ShapeCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: visio.Visio.ShapeCollection.toJSON
+  - uid: 'visio!Visio.ShapeCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -196,5 +178,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeCollectionData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeCollectionData
+          - 'visio!Visio.Interfaces.ShapeCollectionData:interface'
         description: ''

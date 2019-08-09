@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
     summary: |-
       Represents a conditional format DataBar Format for the positive side of the data bar.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.borderColor
-      - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.fillColor
-      - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.gradientFill
-  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#borderColor:member'
+      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#fillColor:member'
+      - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.borderColor
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#borderColor:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange"). "" (empty string) if no border is present or set.
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.fillColor
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#fillColor:member'
     summary: >-
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
       "orange").
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions.gradientFill
+  - uid: 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions#gradientFill:member'
     summary: |-
       Boolean representation of whether or not the DataBar has a gradient.
 

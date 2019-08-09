@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxes
+  - uid: 'excel!Excel.ChartAxes:class'
     summary: |-
       Represents the chart axes.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxes.categoryAxis
-      - excel.Excel.ChartAxes.context
-      - excel.Excel.ChartAxes.load
-      - excel.Excel.ChartAxes.load_1
-      - excel.Excel.ChartAxes.load_2
-      - excel.Excel.ChartAxes.seriesAxis
-      - excel.Excel.ChartAxes.set
-      - excel.Excel.ChartAxes.set_1
-      - excel.Excel.ChartAxes.toJSON
-      - excel.Excel.ChartAxes.valueAxis
-  - uid: excel.Excel.ChartAxes.categoryAxis
+      - 'excel!Excel.ChartAxes#categoryAxis:member'
+      - 'excel!Excel.ChartAxes#context:member'
+      - 'excel!Excel.ChartAxes#load:member(1)'
+      - 'excel!Excel.ChartAxes#load:member(2)'
+      - 'excel!Excel.ChartAxes#load:member(3)'
+      - 'excel!Excel.ChartAxes#seriesAxis:member'
+      - 'excel!Excel.ChartAxes#set:member(1)'
+      - 'excel!Excel.ChartAxes#set:member(2)'
+      - 'excel!Excel.ChartAxes#toJSON:member(1)'
+      - 'excel!Excel.ChartAxes#valueAxis:member'
+  - uid: 'excel!Excel.ChartAxes#categoryAxis:member'
     summary: |-
       Represents the category axis in a chart. Read-only.
 
@@ -38,8 +38,8 @@ items:
       content: 'readonly categoryAxis: Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
-  - uid: excel.Excel.ChartAxes.context
+          - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxes#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -52,8 +52,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartAxes.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxes#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -84,14 +84,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxesLoadOptions): Excel.ChartAxes;'
       return:
         type:
-          - excel.Excel.ChartAxes
+          - 'excel!Excel.ChartAxes:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxesLoadOptions
-  - uid: excel.Excel.ChartAxes.load_1
+            - 'excel!Excel.Interfaces.ChartAxesLoadOptions:interface'
+  - uid: 'excel!Excel.ChartAxes#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -104,14 +104,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxes;'
       return:
         type:
-          - excel.Excel.ChartAxes
+          - 'excel!Excel.ChartAxes:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartAxes.load_2
+  - uid: 'excel!Excel.ChartAxes#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -124,7 +124,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxes;'
       return:
         type:
-          - excel.Excel.ChartAxes
+          - 'excel!Excel.ChartAxes:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -133,7 +133,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartAxes.seriesAxis
+  - uid: 'excel!Excel.ChartAxes#seriesAxis:member'
     summary: |-
       Represents the series axis of a 3-dimensional chart. Read-only.
 
@@ -147,8 +147,8 @@ items:
       content: 'readonly seriesAxis: Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
-  - uid: excel.Excel.ChartAxes.set
+          - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxes#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -178,7 +178,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartAxes.set_1
+  - uid: 'excel!Excel.ChartAxes#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -195,8 +195,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxes
-  - uid: excel.Excel.ChartAxes.toJSON
+            - 'excel!Excel.ChartAxes:class'
+  - uid: 'excel!Excel.ChartAxes#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -212,9 +212,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesData
+          - 'excel!Excel.Interfaces.ChartAxesData:interface'
         description: ''
-  - uid: excel.Excel.ChartAxes.valueAxis
+  - uid: 'excel!Excel.ChartAxes#valueAxis:member'
     summary: |-
       Represents the value axis in an axis. Read-only.
 
@@ -228,4 +228,4 @@ items:
       content: 'readonly valueAxis: Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - 'excel!Excel.ChartAxis:class'

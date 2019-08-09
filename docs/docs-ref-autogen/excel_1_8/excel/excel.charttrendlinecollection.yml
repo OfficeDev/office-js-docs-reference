@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTrendlineCollection
+  - uid: 'excel!Excel.ChartTrendlineCollection:class'
     summary: |-
       Represents a collection of Chart Trendlines.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartTrendlineCollection.add
-      - excel.Excel.ChartTrendlineCollection.add_1
-      - excel.Excel.ChartTrendlineCollection.context
-      - excel.Excel.ChartTrendlineCollection.getCount
-      - excel.Excel.ChartTrendlineCollection.getItem
-      - excel.Excel.ChartTrendlineCollection.items
-      - excel.Excel.ChartTrendlineCollection.load
-      - excel.Excel.ChartTrendlineCollection.load_1
-      - excel.Excel.ChartTrendlineCollection.load_2
-      - excel.Excel.ChartTrendlineCollection.toJSON
-  - uid: excel.Excel.ChartTrendlineCollection.add
+      - 'excel!Excel.ChartTrendlineCollection#add:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#add:member(2)'
+      - 'excel!Excel.ChartTrendlineCollection#context:member'
+      - 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#items:member'
+      - 'excel!Excel.ChartTrendlineCollection#load:member(1)'
+      - 'excel!Excel.ChartTrendlineCollection#load:member(2)'
+      - 'excel!Excel.ChartTrendlineCollection#load:member(3)'
+      - 'excel!Excel.ChartTrendlineCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(1)'
     summary: |-
       Adds a new trendline to trendline collection.
 
@@ -38,30 +38,14 @@ items:
       content: 'add(type?: Excel.ChartTrendlineType): Excel.ChartTrendline;'
       return:
         type:
-          - excel.Excel.ChartTrendline
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series;
-
-               // Add a trendline.  
-              seriesCollection.getItemAt(0).trendlines.add("Linear");
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.ChartTrendline:class'
+        description: ''
       parameters:
         - id: type
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
-            - excel.Excel.ChartTrendlineType
-  - uid: excel.Excel.ChartTrendlineCollection.add_1
+            - 'excel!Excel.ChartTrendlineType:enum'
+  - uid: 'excel!Excel.ChartTrendlineCollection#add:member(2)'
     summary: |-
       Adds a new trendline to trendline collection.
 
@@ -77,14 +61,14 @@ items:
         Excel.ChartTrendline;
       return:
         type:
-          - excel.Excel.ChartTrendline
+          - 'excel!Excel.ChartTrendline:class'
         description: ''
       parameters:
         - id: typeString
           description: Specifies the trendline type. The default value is "Linear". See Excel.ChartTrendline for details.
           type:
             - '"Linear" | "Exponential" | "Logarithmic" | "MovingAverage" | "Polynomial" | "Power"'
-  - uid: excel.Excel.ChartTrendlineCollection.context
+  - uid: 'excel!Excel.ChartTrendlineCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -97,8 +81,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartTrendlineCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTrendlineCollection#getCount:member(1)'
     summary: |-
       Returns the number of trendlines in the collection.
 
@@ -114,7 +98,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.ChartTrendlineCollection.getItem
+  - uid: 'excel!Excel.ChartTrendlineCollection#getItem:member(1)'
     summary: |-
       Get trendline object by index, which is the insertion order in items array.
 
@@ -128,14 +112,14 @@ items:
       content: 'getItem(index: number): Excel.ChartTrendline;'
       return:
         type:
-          - excel.Excel.ChartTrendline
+          - 'excel!Excel.ChartTrendline:class'
         description: ''
       parameters:
         - id: index
           description: Represents the insertion order in items array.
           type:
             - number
-  - uid: excel.Excel.ChartTrendlineCollection.items
+  - uid: 'excel!Excel.ChartTrendlineCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -147,7 +131,7 @@ items:
       return:
         type:
           - 'Excel.ChartTrendline[]'
-  - uid: excel.Excel.ChartTrendlineCollection.load
+  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -180,14 +164,14 @@ items:
         Excel.ChartTrendlineCollection;
       return:
         type:
-          - excel.Excel.ChartTrendlineCollection
+          - 'excel!Excel.ChartTrendlineCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.ChartTrendlineCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.ChartTrendlineCollection.load_1
+  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -200,14 +184,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel.Excel.ChartTrendlineCollection
+          - 'excel!Excel.ChartTrendlineCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartTrendlineCollection.load_2
+  - uid: 'excel!Excel.ChartTrendlineCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -217,14 +201,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel.Excel.ChartTrendlineCollection
+          - 'excel!Excel.ChartTrendlineCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.ChartTrendlineCollection.toJSON
+  - uid: 'excel!Excel.ChartTrendlineCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -240,5 +224,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineCollectionData
+          - 'excel!Excel.Interfaces.ChartTrendlineCollectionData:interface'
         description: ''

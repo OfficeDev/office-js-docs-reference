@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.InkStroke
+  - uid: 'onenote!OneNote.InkStroke:class'
     summary: |-
       Represents a single stroke of ink.
 
@@ -12,18 +12,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.InkStroke.context
-      - onenote.OneNote.InkStroke.floatingInk
-      - onenote.OneNote.InkStroke.id
-      - onenote.OneNote.InkStroke.load
-      - onenote.OneNote.InkStroke.load_1
-      - onenote.OneNote.InkStroke.load_2
-      - onenote.OneNote.InkStroke.toJSON
-      - onenote.OneNote.InkStroke.track
-      - onenote.OneNote.InkStroke.untrack
-  - uid: onenote.OneNote.InkStroke.context
+      - 'onenote!OneNote.InkStroke#context:member'
+      - 'onenote!OneNote.InkStroke#floatingInk:member'
+      - 'onenote!OneNote.InkStroke#id:member'
+      - 'onenote!OneNote.InkStroke#load:member(1)'
+      - 'onenote!OneNote.InkStroke#load:member(2)'
+      - 'onenote!OneNote.InkStroke#load:member(3)'
+      - 'onenote!OneNote.InkStroke#toJSON:member(1)'
+      - 'onenote!OneNote.InkStroke#track:member(1)'
+      - 'onenote!OneNote.InkStroke#untrack:member(1)'
+  - uid: 'onenote!OneNote.InkStroke#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.InkStroke.floatingInk
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.InkStroke#floatingInk:member'
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
@@ -51,8 +51,8 @@ items:
       content: 'readonly floatingInk: OneNote.FloatingInk;'
       return:
         type:
-          - onenote.OneNote.FloatingInk
-  - uid: onenote.OneNote.InkStroke.id
+          - 'onenote!OneNote.FloatingInk:class'
+  - uid: 'onenote!OneNote.InkStroke#id:member'
     summary: |-
       Gets the ID of the InkStroke object. Read-only.
 
@@ -67,7 +67,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.InkStroke.load
+  - uid: 'onenote!OneNote.InkStroke#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -98,14 +98,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkStrokeLoadOptions): OneNote.InkStroke;'
       return:
         type:
-          - onenote.OneNote.InkStroke
+          - 'onenote!OneNote.InkStroke:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.InkStrokeLoadOptions
-  - uid: onenote.OneNote.InkStroke.load_1
+            - 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
+  - uid: 'onenote!OneNote.InkStroke#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -118,14 +118,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.InkStroke;'
       return:
         type:
-          - onenote.OneNote.InkStroke
+          - 'onenote!OneNote.InkStroke:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.InkStroke.load_2
+  - uid: 'onenote!OneNote.InkStroke#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -138,7 +138,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkStroke;'
       return:
         type:
-          - onenote.OneNote.InkStroke
+          - 'onenote!OneNote.InkStroke:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -147,7 +147,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.InkStroke.toJSON
+  - uid: 'onenote!OneNote.InkStroke#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -163,9 +163,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkStrokeData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkStrokeData
+          - 'onenote!OneNote.Interfaces.InkStrokeData:interface'
         description: ''
-  - uid: onenote.OneNote.InkStroke.track
+  - uid: 'onenote!OneNote.InkStroke#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -181,9 +181,9 @@ items:
       content: 'track(): OneNote.InkStroke;'
       return:
         type:
-          - onenote.OneNote.InkStroke
+          - 'onenote!OneNote.InkStroke:class'
         description: ''
-  - uid: onenote.OneNote.InkStroke.untrack
+  - uid: 'onenote!OneNote.InkStroke#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -198,5 +198,5 @@ items:
       content: 'untrack(): OneNote.InkStroke;'
       return:
         type:
-          - onenote.OneNote.InkStroke
+          - 'onenote!OneNote.InkStroke:class'
         description: ''

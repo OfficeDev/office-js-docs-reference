@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PageBreakCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.PageBreakCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the PageBreakCollection object, for use in "pageBreakCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PageBreakCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.PageBreakCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.PageBreakCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

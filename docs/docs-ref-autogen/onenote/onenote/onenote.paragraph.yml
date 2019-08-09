@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Paragraph
+  - uid: 'onenote!OneNote.Paragraph:class'
     summary: |-
       A container for the visible content on a page. A Paragraph can contain any one ParagraphType type of content.
 
@@ -12,42 +12,42 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Paragraph.addNoteTag
-      - onenote.OneNote.Paragraph.addNoteTag_1
-      - onenote.OneNote.Paragraph.context
-      - onenote.OneNote.Paragraph.delete
-      - onenote.OneNote.Paragraph.getParagraphInfo
-      - onenote.OneNote.Paragraph.id
-      - onenote.OneNote.Paragraph.image
-      - onenote.OneNote.Paragraph.inkWords
-      - onenote.OneNote.Paragraph.insertHtmlAsSibling
-      - onenote.OneNote.Paragraph.insertHtmlAsSibling_1
-      - onenote.OneNote.Paragraph.insertImageAsSibling
-      - onenote.OneNote.Paragraph.insertImageAsSibling_1
-      - onenote.OneNote.Paragraph.insertRichTextAsSibling
-      - onenote.OneNote.Paragraph.insertRichTextAsSibling_1
-      - onenote.OneNote.Paragraph.insertTableAsSibling
-      - onenote.OneNote.Paragraph.insertTableAsSibling_1
-      - onenote.OneNote.Paragraph.load
-      - onenote.OneNote.Paragraph.load_1
-      - onenote.OneNote.Paragraph.load_2
-      - onenote.OneNote.Paragraph.outline
-      - onenote.OneNote.Paragraph.paragraphs
-      - onenote.OneNote.Paragraph.parentParagraph
-      - onenote.OneNote.Paragraph.parentParagraphOrNull
-      - onenote.OneNote.Paragraph.parentTableCell
-      - onenote.OneNote.Paragraph.parentTableCellOrNull
-      - onenote.OneNote.Paragraph.richText
-      - onenote.OneNote.Paragraph.set
-      - onenote.OneNote.Paragraph.set_1
-      - onenote.OneNote.Paragraph.table
-      - onenote.OneNote.Paragraph.toJSON
-      - onenote.OneNote.Paragraph.track
-      - onenote.OneNote.Paragraph.type
-      - onenote.OneNote.Paragraph.untrack
-  - uid: onenote.OneNote.Paragraph.addNoteTag
+      - 'onenote!OneNote.Paragraph#addNoteTag:member(1)'
+      - 'onenote!OneNote.Paragraph#addNoteTag:member(2)'
+      - 'onenote!OneNote.Paragraph#context:member'
+      - 'onenote!OneNote.Paragraph#delete:member(1)'
+      - 'onenote!OneNote.Paragraph#getParagraphInfo:member(1)'
+      - 'onenote!OneNote.Paragraph#id:member'
+      - 'onenote!OneNote.Paragraph#image:member'
+      - 'onenote!OneNote.Paragraph#inkWords:member'
+      - 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(1)'
+      - 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(2)'
+      - 'onenote!OneNote.Paragraph#insertImageAsSibling:member(1)'
+      - 'onenote!OneNote.Paragraph#insertImageAsSibling:member(2)'
+      - 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(1)'
+      - 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(2)'
+      - 'onenote!OneNote.Paragraph#insertTableAsSibling:member(1)'
+      - 'onenote!OneNote.Paragraph#insertTableAsSibling:member(2)'
+      - 'onenote!OneNote.Paragraph#load:member(1)'
+      - 'onenote!OneNote.Paragraph#load:member(2)'
+      - 'onenote!OneNote.Paragraph#load:member(3)'
+      - 'onenote!OneNote.Paragraph#outline:member'
+      - 'onenote!OneNote.Paragraph#paragraphs:member'
+      - 'onenote!OneNote.Paragraph#parentParagraph:member'
+      - 'onenote!OneNote.Paragraph#parentParagraphOrNull:member'
+      - 'onenote!OneNote.Paragraph#parentTableCell:member'
+      - 'onenote!OneNote.Paragraph#parentTableCellOrNull:member'
+      - 'onenote!OneNote.Paragraph#richText:member'
+      - 'onenote!OneNote.Paragraph#set:member(1)'
+      - 'onenote!OneNote.Paragraph#set:member(2)'
+      - 'onenote!OneNote.Paragraph#table:member'
+      - 'onenote!OneNote.Paragraph#toJSON:member(1)'
+      - 'onenote!OneNote.Paragraph#track:member(1)'
+      - 'onenote!OneNote.Paragraph#type:member'
+      - 'onenote!OneNote.Paragraph#untrack:member(1)'
+  - uid: 'onenote!OneNote.Paragraph#addNoteTag:member(1)'
     summary: |-
       Add NoteTag to the paragraph.
 
@@ -61,18 +61,18 @@ items:
       content: 'addNoteTag(type: OneNote.NoteTagType, status: OneNote.NoteTagStatus): OneNote.NoteTag;'
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''
       parameters:
         - id: type
           description: The type of the NoteTag.
           type:
-            - onenote.OneNote.NoteTagType
+            - 'onenote!OneNote.NoteTagType:enum'
         - id: status
           description: The status of the NoteTag.
           type:
-            - onenote.OneNote.NoteTagStatus
-  - uid: onenote.OneNote.Paragraph.addNoteTag_1
+            - 'onenote!OneNote.NoteTagStatus:enum'
+  - uid: 'onenote!OneNote.Paragraph#addNoteTag:member(2)'
     summary: |-
       Add NoteTag to the paragraph.
 
@@ -89,7 +89,7 @@ items:
         | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
       return:
         type:
-          - onenote.OneNote.NoteTag
+          - 'onenote!OneNote.NoteTag:class'
         description: ''
       parameters:
         - id: typeString
@@ -102,7 +102,7 @@ items:
           description: The status of the NoteTag.
           type:
             - '"Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"'
-  - uid: onenote.OneNote.Paragraph.context
+  - uid: 'onenote!OneNote.Paragraph#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -115,8 +115,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.Paragraph.delete
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.Paragraph#delete:member(1)'
     summary: |-
       Deletes the paragraph
 
@@ -131,47 +131,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page
-              // Assuming its an outline, get the outline's paragraphs.
-              var pageContent = pageContents.getItemAt(0);
-              
-              var paragraphs = pageContent.outline.paragraphs;
-              
-              var firstParagraph = paragraphs.getItemAt(0);
-              
-              // Queue a command to load the id and type of the first paragraph
-              firstParagraph.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      
-                      // Queue a command to delete the first paragraph                 
-                      firstParagraph.delete();
-                      
-                      // Run the command to delete it
-                      return context.sync();
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: onenote.OneNote.Paragraph.getParagraphInfo
+        description: ''
+  - uid: 'onenote!OneNote.Paragraph#getParagraphInfo:member(1)'
     summary: |-
       Get list information of paragraph
 
@@ -187,7 +148,7 @@ items:
         type:
           - OfficeExtension.ClientResult<OneNote.ParagraphInfo>
         description: ''
-  - uid: onenote.OneNote.Paragraph.id
+  - uid: 'onenote!OneNote.Paragraph#id:member'
     summary: |-
       Gets the ID of the Paragraph object. Read-only.
 
@@ -202,7 +163,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Paragraph.image
+  - uid: 'onenote!OneNote.Paragraph#image:member'
     summary: |-
       Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
 
@@ -216,8 +177,8 @@ items:
       content: 'readonly image: OneNote.Image;'
       return:
         type:
-          - onenote.OneNote.Image
-  - uid: onenote.OneNote.Paragraph.inkWords
+          - 'onenote!OneNote.Image:class'
+  - uid: 'onenote!OneNote.Paragraph#inkWords:member'
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
 
@@ -231,8 +192,8 @@ items:
       content: 'readonly inkWords: OneNote.InkWordCollection;'
       return:
         type:
-          - onenote.OneNote.InkWordCollection
-  - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling
+          - 'onenote!OneNote.InkWordCollection:class'
+  - uid: 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(1)'
     summary: |-
       Inserts the specified HTML content
 
@@ -247,50 +208,12 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page
-              // Assuming its an outline, get the outline's paragraphs.
-              var pageContent = pageContents.getItemAt(0);
-              var paragraphs = pageContent.outline.paragraphs;
-              var firstParagraph = paragraphs.getItemAt(0);
-
-              // Queue a command to load the id and type of the first paragraph
-              firstParagraph.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-
-                      // Queue commands to insert before and after the first paragraph
-                      firstParagraph.insertHtmlAsSibling("Before", "<p>ContentBeforeFirstParagraph</p>");
-                      firstParagraph.insertHtmlAsSibling("After", "<p>ContentAfterFirstParagraph</p>");
-                      
-                      // Run the command to run inserts
-                      return context.sync();
-                  });
-          ))
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: insertLocation
           description: The location of new contents relative to the current Paragraph.
           type:
-            - onenote.OneNote.InsertLocation
+            - 'onenote!OneNote.InsertLocation:enum'
         - id: html
           description: >-
             An HTML string that describes the visual presentation of the content. See [Supported
@@ -298,7 +221,7 @@ items:
             the OneNote add-ins JavaScript API.
           type:
             - string
-  - uid: onenote.OneNote.Paragraph.insertHtmlAsSibling_1
+  - uid: 'onenote!OneNote.Paragraph#insertHtmlAsSibling:member(2)'
     summary: |-
       Inserts the specified HTML content
 
@@ -326,7 +249,7 @@ items:
             the OneNote add-ins JavaScript API.
           type:
             - string
-  - uid: onenote.OneNote.Paragraph.insertImageAsSibling
+  - uid: 'onenote!OneNote.Paragraph#insertImageAsSibling:member(1)'
     summary: |-
       Inserts the image at the specified insert location..
 
@@ -342,51 +265,13 @@ items:
         number): OneNote.Image;
       return:
         type:
-          - onenote.OneNote.Image
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page
-              // Assuming its an outline, get the outline's paragraphs.
-              var pageContent = pageContents.getItemAt(0);
-              var paragraphs = pageContent.outline.paragraphs;
-              var firstParagraph = paragraphs.getItemAt(0);
-
-              // Queue a command to load the id and type of the first paragraph
-              firstParagraph.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-
-                      // Queue commands to insert before and after the first paragraph
-                      firstParagraph.insertImageAsSibling("Before", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
-                      firstParagraph.insertImageAsSibling("After", "R0lGODlhDwAPAKECAAAAzMzM/////wAAACwAAAAADwAPAAACIISPeQHsrZ5ModrLlN48CXF8m2iQ3YmmKqVlRtW4MLwWACH+H09wdGltaXplZCBieSBVbGVhZCBTbWFydFNhdmVyIQAAOw==");
-                      
-                      // Run the command to insert images
-                      return context.sync();
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.Image:class'
+        description: ''
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
-            - onenote.OneNote.InsertLocation
+            - 'onenote!OneNote.InsertLocation:enum'
         - id: base64EncodedImage
           description: HTML string to append.
           type:
@@ -399,7 +284,7 @@ items:
           description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
-  - uid: onenote.OneNote.Paragraph.insertImageAsSibling_1
+  - uid: 'onenote!OneNote.Paragraph#insertImageAsSibling:member(2)'
     summary: |-
       Inserts the image at the specified insert location..
 
@@ -415,7 +300,7 @@ items:
         height: number): OneNote.Image;
       return:
         type:
-          - onenote.OneNote.Image
+          - 'onenote!OneNote.Image:class'
         description: ''
       parameters:
         - id: insertLocationString
@@ -434,7 +319,7 @@ items:
           description: Optional. Height in the unit of Points. The default value is null and image height will be respected.
           type:
             - number
-  - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling
+  - uid: 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(1)'
     summary: |-
       Inserts the paragraph text at the specifiec insert location.
 
@@ -448,56 +333,18 @@ items:
       content: 'insertRichTextAsSibling(insertLocation: OneNote.InsertLocation, paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page
-              // Assuming its an outline, get the outline's paragraphs.
-              var pageContent = pageContents.getItemAt(0);
-              var paragraphs = pageContent.outline.paragraphs;
-              var firstParagraph = paragraphs.getItemAt(0);
-
-              // Queue a command to load the id and type of the first paragraph
-              firstParagraph.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-
-                      // Queue commands to insert before and after the first paragraph
-                      firstParagraph.insertRichTextAsSibling("Before", "Text Appears Before Paragraph");
-                      firstParagraph.insertRichTextAsSibling("After", "Text Appears After Paragraph");
-                      
-                      // Run the command to insert text contents
-                      return context.sync();
-                  });
-          })    
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
-          ```
+          - 'onenote!OneNote.RichText:class'
+        description: ''
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
-            - onenote.OneNote.InsertLocation
+            - 'onenote!OneNote.InsertLocation:enum'
         - id: paragraphText
           description: HTML string to append.
           type:
             - string
-  - uid: onenote.OneNote.Paragraph.insertRichTextAsSibling_1
+  - uid: 'onenote!OneNote.Paragraph#insertRichTextAsSibling:member(2)'
     summary: |-
       Inserts the paragraph text at the specifiec insert location.
 
@@ -511,7 +358,7 @@ items:
       content: 'insertRichTextAsSibling(insertLocationString: "Before" | "After", paragraphText: string): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: ''
       parameters:
         - id: insertLocationString
@@ -522,7 +369,7 @@ items:
           description: HTML string to append.
           type:
             - string
-  - uid: onenote.OneNote.Paragraph.insertTableAsSibling
+  - uid: 'onenote!OneNote.Paragraph#insertTableAsSibling:member(1)'
     summary: |-
       Adds a table with the specified number of rows and columns before or after the current paragraph.
 
@@ -538,13 +385,13 @@ items:
         string[][]): OneNote.Table;
       return:
         type:
-          - onenote.OneNote.Table
+          - 'onenote!OneNote.Table:class'
         description: ''
       parameters:
         - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
-            - onenote.OneNote.InsertLocation
+            - 'onenote!OneNote.InsertLocation:enum'
         - id: rowCount
           description: The number of rows in the table.
           type:
@@ -557,7 +404,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: onenote.OneNote.Paragraph.insertTableAsSibling_1
+  - uid: 'onenote!OneNote.Paragraph#insertTableAsSibling:member(2)'
     summary: |-
       Adds a table with the specified number of rows and columns before or after the current paragraph.
 
@@ -573,7 +420,7 @@ items:
         string[][]): OneNote.Table;
       return:
         type:
-          - onenote.OneNote.Table
+          - 'onenote!OneNote.Table:class'
         description: ''
       parameters:
         - id: insertLocationString
@@ -592,7 +439,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: onenote.OneNote.Paragraph.load
+  - uid: 'onenote!OneNote.Paragraph#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -623,14 +470,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.ParagraphLoadOptions): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Paragraph.load_1
+            - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Paragraph#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -643,86 +490,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
-              
-              // Queue a command to load the outline property of each pageContent.
-              pageContents.load("outline");
-                  
-              // Get the first PageContent on the page, and then get its Outline.
-              var pageContent = pageContents._GetItem(0);
-              var paragraphs = pageContent.outline.paragraphs;
-                      
-              // Queue a command to load the id and type of each paragraph.
-              paragraphs.load("id,type");
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      
-                      // Write the text.                  
-                      $.each(paragraphs.items, function(index, paragraph) {
-                          console.log("Paragraph type: " + paragraph.type);
-                          console.log("Paragraph ID: " + paragraph.id);
-                      });
-                  });
-          })        
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
-          ```
-          ```javascript
-          OneNote.run(function(context) {
-              var app = context.application;
-              
-              // Gets the active outline
-              var outline = app.getActiveOutline();
-              
-              // load nested paragraphs and their types.
-              outline.load("paragraphs/type");
-              
-              return context.sync().then(function () {
-                  var paragraphs = outline.paragraphs.items;
-                  
-                  var promise;
-                  // for each nested paragraphs, load tables only
-                  for (var i = 0; i < paragraphs.length; i++) {
-                      var paragraph = paragraphs[i];
-                      if (paragraph.type == "Table") {
-                          paragraph.load("table/id");
-                          promise =  context.sync().then(function() {
-                              console.log(paragraph.table.id);
-                          });
-                      }
-                  }
-                  return promise;
-              })
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.Paragraph:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.Paragraph.load_2
+  - uid: 'onenote!OneNote.Paragraph#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -735,7 +510,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -744,7 +519,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.Paragraph.outline
+  - uid: 'onenote!OneNote.Paragraph#outline:member'
     summary: |-
       Gets the Outline object that contains the Paragraph. Read-only.
 
@@ -758,8 +533,8 @@ items:
       content: 'readonly outline: OneNote.Outline;'
       return:
         type:
-          - onenote.OneNote.Outline
-  - uid: onenote.OneNote.Paragraph.paragraphs
+          - 'onenote!OneNote.Outline:class'
+  - uid: 'onenote!OneNote.Paragraph#paragraphs:member'
     summary: |-
       The collection of paragraphs under this paragraph. Read only
 
@@ -773,8 +548,8 @@ items:
       content: 'readonly paragraphs: OneNote.ParagraphCollection;'
       return:
         type:
-          - onenote.OneNote.ParagraphCollection
-  - uid: onenote.OneNote.Paragraph.parentParagraph
+          - 'onenote!OneNote.ParagraphCollection:class'
+  - uid: 'onenote!OneNote.Paragraph#parentParagraph:member'
     summary: |-
       Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
 
@@ -788,8 +563,8 @@ items:
       content: 'readonly parentParagraph: OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
-  - uid: onenote.OneNote.Paragraph.parentParagraphOrNull
+          - 'onenote!OneNote.Paragraph:class'
+  - uid: 'onenote!OneNote.Paragraph#parentParagraphOrNull:member'
     summary: |-
       Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
 
@@ -803,8 +578,8 @@ items:
       content: 'readonly parentParagraphOrNull: OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
-  - uid: onenote.OneNote.Paragraph.parentTableCell
+          - 'onenote!OneNote.Paragraph:class'
+  - uid: 'onenote!OneNote.Paragraph#parentTableCell:member'
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws
       ItemNotFound. Read-only.
@@ -820,8 +595,8 @@ items:
       content: 'readonly parentTableCell: OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
-  - uid: onenote.OneNote.Paragraph.parentTableCellOrNull
+          - 'onenote!OneNote.TableCell:class'
+  - uid: 'onenote!OneNote.Paragraph#parentTableCellOrNull:member'
     summary: >-
       Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null.
       Read-only.
@@ -837,8 +612,8 @@ items:
       content: 'readonly parentTableCellOrNull: OneNote.TableCell;'
       return:
         type:
-          - onenote.OneNote.TableCell
-  - uid: onenote.OneNote.Paragraph.richText
+          - 'onenote!OneNote.TableCell:class'
+  - uid: 'onenote!OneNote.Paragraph#richText:member'
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
 
@@ -852,8 +627,8 @@ items:
       content: 'readonly richText: OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
-  - uid: onenote.OneNote.Paragraph.set
+          - 'onenote!OneNote.RichText:class'
+  - uid: 'onenote!OneNote.Paragraph#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -883,7 +658,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: onenote.OneNote.Paragraph.set_1
+  - uid: 'onenote!OneNote.Paragraph#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -900,8 +675,8 @@ items:
         - id: properties
           description: ''
           type:
-            - onenote.OneNote.Paragraph
-  - uid: onenote.OneNote.Paragraph.table
+            - 'onenote!OneNote.Paragraph:class'
+  - uid: 'onenote!OneNote.Paragraph#table:member'
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
 
@@ -915,8 +690,8 @@ items:
       content: 'readonly table: OneNote.Table;'
       return:
         type:
-          - onenote.OneNote.Table
-  - uid: onenote.OneNote.Paragraph.toJSON
+          - 'onenote!OneNote.Table:class'
+  - uid: 'onenote!OneNote.Paragraph#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -932,9 +707,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.ParagraphData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphData
+          - 'onenote!OneNote.Interfaces.ParagraphData:interface'
         description: ''
-  - uid: onenote.OneNote.Paragraph.track
+  - uid: 'onenote!OneNote.Paragraph#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -950,9 +725,9 @@ items:
       content: 'track(): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''
-  - uid: onenote.OneNote.Paragraph.type
+  - uid: 'onenote!OneNote.Paragraph#type:member'
     summary: |-
       Gets the type of the Paragraph object. Read-only.
 
@@ -967,7 +742,7 @@ items:
       return:
         type:
           - OneNote.ParagraphType | "RichText" | "Image" | "Table" | "Ink" | "Other"
-  - uid: onenote.OneNote.Paragraph.untrack
+  - uid: 'onenote!OneNote.Paragraph#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -982,5 +757,5 @@ items:
       content: 'untrack(): OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
+          - 'onenote!OneNote.Paragraph:class'
         description: ''

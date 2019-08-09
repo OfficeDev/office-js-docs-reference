@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.BodyData
+  - uid: 'word!Word.Interfaces.BodyData:interface'
     summary: An interface describing the data returned by calling "body.toJSON()".
     name: Word.Interfaces.BodyData
     fullName: Word.Interfaces.BodyData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.BodyData.contentControls
-      - word.Word.Interfaces.BodyData.font
-      - word.Word.Interfaces.BodyData.inlinePictures
-      - word.Word.Interfaces.BodyData.paragraphs
-      - word.Word.Interfaces.BodyData.style
-      - word.Word.Interfaces.BodyData.text
-  - uid: word.Word.Interfaces.BodyData.contentControls
+      - 'word!Word.Interfaces.BodyData#contentControls:member'
+      - 'word!Word.Interfaces.BodyData#font:member'
+      - 'word!Word.Interfaces.BodyData#inlinePictures:member'
+      - 'word!Word.Interfaces.BodyData#paragraphs:member'
+      - 'word!Word.Interfaces.BodyData#style:member'
+      - 'word!Word.Interfaces.BodyData#text:member'
+  - uid: 'word!Word.Interfaces.BodyData#contentControls:member'
     summary: |-
       Gets the collection of rich text content control objects in the body. Read-only.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.ContentControlData[]'
-  - uid: word.Word.Interfaces.BodyData.font
+  - uid: 'word!Word.Interfaces.BodyData#font:member'
     summary: |-
       Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
 
@@ -44,8 +44,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.BodyData.inlinePictures
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.BodyData#inlinePictures:member'
     summary: >-
       Gets the collection of InlinePicture objects in the body. The collection does not include floating images.
       Read-only.
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.InlinePictureData[]'
-  - uid: word.Word.Interfaces.BodyData.paragraphs
+  - uid: 'word!Word.Interfaces.BodyData#paragraphs:member'
     summary: |-
       Gets the collection of paragraph objects in the body. Read-only.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.ParagraphData[]'
-  - uid: word.Word.Interfaces.BodyData.style
+  - uid: 'word!Word.Interfaces.BodyData#style:member'
     summary: >-
       Gets or sets the style name for the body. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.BodyData.text
+  - uid: 'word!Word.Interfaces.BodyData#text:member'
     summary: |-
       Gets the text of the body. Use the insertText method to insert text. Read-only.
 

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
     summary: 'An interface for updating data on the InkAnalysis object, for use in "inkAnalysis.set(<!-- -->{ ... }<!-- -->)".'
     name: OneNote.Interfaces.InkAnalysisUpdateData
     fullName: OneNote.Interfaces.InkAnalysisUpdateData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisUpdateData.page
-  - uid: onenote.OneNote.Interfaces.InkAnalysisUpdateData.page
+      - 'onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData#page:member'
     summary: |-
       Gets the parent page object.
 
@@ -24,4 +24,4 @@ items:
       content: 'page?: OneNote.Interfaces.PageUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageUpdateData
+          - 'onenote!OneNote.Interfaces.PageUpdateData:interface'

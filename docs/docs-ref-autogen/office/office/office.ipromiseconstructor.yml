@@ -1,39 +1,39 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.IPromiseConstructor
+  - uid: 'office!Office.IPromiseConstructor:interface'
     name: Office.IPromiseConstructor
     fullName: Office.IPromiseConstructor
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.IPromiseConstructor.all
-      - office.Office.IPromiseConstructor.all_9
-      - office.Office.IPromiseConstructor.all_1
-      - office.Office.IPromiseConstructor.all_2
-      - office.Office.IPromiseConstructor.all_3
-      - office.Office.IPromiseConstructor.all_4
-      - office.Office.IPromiseConstructor.all_5
-      - office.Office.IPromiseConstructor.all_6
-      - office.Office.IPromiseConstructor.all_7
-      - office.Office.IPromiseConstructor.all_8
-      - office.Office.IPromiseConstructor.race
-      - office.Office.IPromiseConstructor.race_9
-      - office.Office.IPromiseConstructor.race_1
-      - office.Office.IPromiseConstructor.race_2
-      - office.Office.IPromiseConstructor.race_3
-      - office.Office.IPromiseConstructor.race_4
-      - office.Office.IPromiseConstructor.race_5
-      - office.Office.IPromiseConstructor.race_6
-      - office.Office.IPromiseConstructor.race_7
-      - office.Office.IPromiseConstructor.race_8
-      - office.Office.IPromiseConstructor.reject
-      - office.Office.IPromiseConstructor.reject_1
-      - office.Office.IPromiseConstructor.resolve
-      - office.Office.IPromiseConstructor.resolve_1
-      - office.Office.IPromiseConstructor.prototype
-  - uid: office.Office.IPromiseConstructor.all
+      - 'office!Office.IPromiseConstructor#all:member(1)'
+      - 'office!Office.IPromiseConstructor#all:member(10)'
+      - 'office!Office.IPromiseConstructor#all:member(2)'
+      - 'office!Office.IPromiseConstructor#all:member(3)'
+      - 'office!Office.IPromiseConstructor#all:member(4)'
+      - 'office!Office.IPromiseConstructor#all:member(5)'
+      - 'office!Office.IPromiseConstructor#all:member(6)'
+      - 'office!Office.IPromiseConstructor#all:member(7)'
+      - 'office!Office.IPromiseConstructor#all:member(8)'
+      - 'office!Office.IPromiseConstructor#all:member(9)'
+      - 'office!Office.IPromiseConstructor#prototype:member'
+      - 'office!Office.IPromiseConstructor#race:member(1)'
+      - 'office!Office.IPromiseConstructor#race:member(10)'
+      - 'office!Office.IPromiseConstructor#race:member(2)'
+      - 'office!Office.IPromiseConstructor#race:member(3)'
+      - 'office!Office.IPromiseConstructor#race:member(4)'
+      - 'office!Office.IPromiseConstructor#race:member(5)'
+      - 'office!Office.IPromiseConstructor#race:member(6)'
+      - 'office!Office.IPromiseConstructor#race:member(7)'
+      - 'office!Office.IPromiseConstructor#race:member(8)'
+      - 'office!Office.IPromiseConstructor#race:member(9)'
+      - 'office!Office.IPromiseConstructor#reject:member(1)'
+      - 'office!Office.IPromiseConstructor#reject:member(2)'
+      - 'office!Office.IPromiseConstructor#resolve:member(1)'
+      - 'office!Office.IPromiseConstructor#resolve:member(2)'
+  - uid: 'office!Office.IPromiseConstructor#all:member(1)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -71,7 +71,7 @@ items:
         - id: T8
         - id: T9
         - id: T10
-  - uid: office.Office.IPromiseConstructor.all_9
+  - uid: 'office!Office.IPromiseConstructor#all:member(10)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -93,7 +93,7 @@ items:
             - '(T | PromiseLike<T>)[]'
       typeParameters:
         - id: T
-  - uid: office.Office.IPromiseConstructor.all_1
+  - uid: 'office!Office.IPromiseConstructor#all:member(2)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -128,7 +128,7 @@ items:
         - id: T7
         - id: T8
         - id: T9
-  - uid: office.Office.IPromiseConstructor.all_2
+  - uid: 'office!Office.IPromiseConstructor#all:member(3)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -162,7 +162,7 @@ items:
         - id: T6
         - id: T7
         - id: T8
-  - uid: office.Office.IPromiseConstructor.all_3
+  - uid: 'office!Office.IPromiseConstructor#all:member(4)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -195,7 +195,7 @@ items:
         - id: T5
         - id: T6
         - id: T7
-  - uid: office.Office.IPromiseConstructor.all_4
+  - uid: 'office!Office.IPromiseConstructor#all:member(5)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -226,7 +226,7 @@ items:
         - id: T4
         - id: T5
         - id: T6
-  - uid: office.Office.IPromiseConstructor.all_5
+  - uid: 'office!Office.IPromiseConstructor#all:member(6)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -256,7 +256,7 @@ items:
         - id: T3
         - id: T4
         - id: T5
-  - uid: office.Office.IPromiseConstructor.all_6
+  - uid: 'office!Office.IPromiseConstructor#all:member(7)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -283,7 +283,7 @@ items:
         - id: T2
         - id: T3
         - id: T4
-  - uid: office.Office.IPromiseConstructor.all_7
+  - uid: 'office!Office.IPromiseConstructor#all:member(8)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -309,7 +309,7 @@ items:
         - id: T1
         - id: T2
         - id: T3
-  - uid: office.Office.IPromiseConstructor.all_8
+  - uid: 'office!Office.IPromiseConstructor#all:member(9)'
     summary: >-
       Creates a Promise that is resolved with an array of results when all of the provided Promises resolve, or rejected
       when any Promise is rejected.
@@ -332,7 +332,19 @@ items:
       typeParameters:
         - id: T1
         - id: T2
-  - uid: office.Office.IPromiseConstructor.race
+  - uid: 'office!Office.IPromiseConstructor#prototype:member'
+    summary: A reference to the prototype.
+    name: prototype
+    fullName: prototype
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly prototype: Promise<any>;'
+      return:
+        type:
+          - Promise<any>
+  - uid: 'office!Office.IPromiseConstructor#race:member(1)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -368,7 +380,7 @@ items:
         - id: T8
         - id: T9
         - id: T10
-  - uid: office.Office.IPromiseConstructor.race_9
+  - uid: 'office!Office.IPromiseConstructor#race:member(10)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -388,7 +400,7 @@ items:
             - '(T | PromiseLike<T>)[]'
       typeParameters:
         - id: T
-  - uid: office.Office.IPromiseConstructor.race_1
+  - uid: 'office!Office.IPromiseConstructor#race:member(2)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -421,7 +433,7 @@ items:
         - id: T7
         - id: T8
         - id: T9
-  - uid: office.Office.IPromiseConstructor.race_2
+  - uid: 'office!Office.IPromiseConstructor#race:member(3)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -453,7 +465,7 @@ items:
         - id: T6
         - id: T7
         - id: T8
-  - uid: office.Office.IPromiseConstructor.race_3
+  - uid: 'office!Office.IPromiseConstructor#race:member(4)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -484,7 +496,7 @@ items:
         - id: T5
         - id: T6
         - id: T7
-  - uid: office.Office.IPromiseConstructor.race_4
+  - uid: 'office!Office.IPromiseConstructor#race:member(5)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -513,7 +525,7 @@ items:
         - id: T4
         - id: T5
         - id: T6
-  - uid: office.Office.IPromiseConstructor.race_5
+  - uid: 'office!Office.IPromiseConstructor#race:member(6)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -541,7 +553,7 @@ items:
         - id: T3
         - id: T4
         - id: T5
-  - uid: office.Office.IPromiseConstructor.race_6
+  - uid: 'office!Office.IPromiseConstructor#race:member(7)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -566,7 +578,7 @@ items:
         - id: T2
         - id: T3
         - id: T4
-  - uid: office.Office.IPromiseConstructor.race_7
+  - uid: 'office!Office.IPromiseConstructor#race:member(8)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -590,7 +602,7 @@ items:
         - id: T1
         - id: T2
         - id: T3
-  - uid: office.Office.IPromiseConstructor.race_8
+  - uid: 'office!Office.IPromiseConstructor#race:member(9)'
     summary: Creates a Promise that is resolved or rejected when any of the provided Promises are resolved or rejected.
     name: race(values)
     fullName: race(values)
@@ -611,7 +623,7 @@ items:
       typeParameters:
         - id: T1
         - id: T2
-  - uid: office.Office.IPromiseConstructor.reject
+  - uid: 'office!Office.IPromiseConstructor#reject:member(1)'
     summary: Creates a new rejected promise for the provided reason.
     name: reject(reason)
     fullName: reject(reason)
@@ -629,7 +641,7 @@ items:
           description: The reason the promise was rejected.
           type:
             - any
-  - uid: office.Office.IPromiseConstructor.reject_1
+  - uid: 'office!Office.IPromiseConstructor#reject:member(2)'
     summary: Creates a new rejected promise for the provided reason.
     name: reject(reason)
     fullName: reject(reason)
@@ -649,7 +661,7 @@ items:
             - any
       typeParameters:
         - id: T
-  - uid: office.Office.IPromiseConstructor.resolve
+  - uid: 'office!Office.IPromiseConstructor#resolve:member(1)'
     summary: Creates a new resolved promise for the provided value.
     name: resolve(value)
     fullName: resolve(value)
@@ -669,7 +681,7 @@ items:
             - T | PromiseLike<T>
       typeParameters:
         - id: T
-  - uid: office.Office.IPromiseConstructor.resolve_1
+  - uid: 'office!Office.IPromiseConstructor#resolve:member(2)'
     summary: Creates a new resolved promise.
     name: resolve()
     fullName: resolve()
@@ -682,15 +694,3 @@ items:
         type:
           - Promise<void>
         description: A resolved promise.
-  - uid: office.Office.IPromiseConstructor.prototype
-    summary: A reference to the prototype.
-    name: prototype
-    fullName: prototype
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'readonly prototype: Promise<any>;'
-      return:
-        type:
-          - Promise<any>

@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData:interface'
     summary: An interface describing the data returned by calling "chartDataLabels.toJSON()".
     name: Excel.Interfaces.ChartDataLabelsData
     fullName: Excel.Interfaces.ChartDataLabelsData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartDataLabelsData.format
-      - excel.Excel.Interfaces.ChartDataLabelsData.position
-      - excel.Excel.Interfaces.ChartDataLabelsData.separator
-      - excel.Excel.Interfaces.ChartDataLabelsData.showBubbleSize
-      - excel.Excel.Interfaces.ChartDataLabelsData.showCategoryName
-      - excel.Excel.Interfaces.ChartDataLabelsData.showLegendKey
-      - excel.Excel.Interfaces.ChartDataLabelsData.showPercentage
-      - excel.Excel.Interfaces.ChartDataLabelsData.showSeriesName
-      - excel.Excel.Interfaces.ChartDataLabelsData.showValue
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.format
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#format:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#position:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#separator:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#showBubbleSize:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#showCategoryName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#showLegendKey:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#showPercentage:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#showSeriesName:member'
+      - 'excel!Excel.Interfaces.ChartDataLabelsData#showValue:member'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#format:member'
     summary: |-
       Represents the format of chart data labels, which includes fill and font formatting. Read-only.
 
@@ -32,8 +32,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartDataLabelFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelFormatData
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.position
+          - 'excel!Excel.Interfaces.ChartDataLabelFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#position:member'
     summary: >-
       DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for
       details.
@@ -54,7 +54,7 @@ items:
           - >-
             Excel.ChartDataLabelPosition | "Invalid" | "None" | "Center" | "InsideEnd" | "InsideBase" | "OutsideEnd" |
             "Left" | "Right" | "Top" | "Bottom" | "BestFit" | "Callout"
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.separator
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#separator:member'
     summary: |-
       String representing the separator used for the data labels on a chart.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.showBubbleSize
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#showBubbleSize:member'
     summary: |-
       Boolean value representing if the data label bubble size is visible or not.
 
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.showCategoryName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#showCategoryName:member'
     summary: |-
       Boolean value representing if the data label category name is visible or not.
 
@@ -99,7 +99,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.showLegendKey
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#showLegendKey:member'
     summary: |-
       Boolean value representing if the data label legend key is visible or not.
 
@@ -114,7 +114,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.showPercentage
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#showPercentage:member'
     summary: |-
       Boolean value representing if the data label percentage is visible or not.
 
@@ -129,7 +129,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.showSeriesName
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#showSeriesName:member'
     summary: |-
       Boolean value representing if the data label series name is visible or not.
 
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartDataLabelsData.showValue
+  - uid: 'excel!Excel.Interfaces.ChartDataLabelsData#showValue:member'
     summary: |-
       Boolean value representing if the data label value is visible or not.
 

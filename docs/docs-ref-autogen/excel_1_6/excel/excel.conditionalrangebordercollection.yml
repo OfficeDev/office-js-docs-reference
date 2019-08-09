@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalRangeBorderCollection
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection:class'
     summary: |-
       Represents the border objects that make up range border.
 
@@ -12,23 +12,23 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalRangeBorderCollection.bottom
-      - excel.Excel.ConditionalRangeBorderCollection.context
-      - excel.Excel.ConditionalRangeBorderCollection.count
-      - excel.Excel.ConditionalRangeBorderCollection.getItem
-      - excel.Excel.ConditionalRangeBorderCollection.getItem_1
-      - excel.Excel.ConditionalRangeBorderCollection.getItemAt
-      - excel.Excel.ConditionalRangeBorderCollection.items
-      - excel.Excel.ConditionalRangeBorderCollection.left
-      - excel.Excel.ConditionalRangeBorderCollection.load
-      - excel.Excel.ConditionalRangeBorderCollection.load_1
-      - excel.Excel.ConditionalRangeBorderCollection.load_2
-      - excel.Excel.ConditionalRangeBorderCollection.right
-      - excel.Excel.ConditionalRangeBorderCollection.toJSON
-      - excel.Excel.ConditionalRangeBorderCollection.top
-  - uid: excel.Excel.ConditionalRangeBorderCollection.bottom
+      - 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#context:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#count:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#items:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#left:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(2)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#load:member(3)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#right:member'
+      - 'excel!Excel.ConditionalRangeBorderCollection#toJSON:member(1)'
+      - 'excel!Excel.ConditionalRangeBorderCollection#top:member'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#bottom:member'
     summary: |-
       Gets the bottom border. Read-only.
 
@@ -42,8 +42,8 @@ items:
       content: 'readonly bottom: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
-  - uid: excel.Excel.ConditionalRangeBorderCollection.context
+          - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -56,8 +56,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ConditionalRangeBorderCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#count:member'
     summary: |-
       Number of border objects in the collection. Read-only.
 
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ConditionalRangeBorderCollection.getItem
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(1)'
     summary: |-
       Gets a border object using its name.
 
@@ -86,14 +86,14 @@ items:
       content: 'getItem(index: Excel.ConditionalRangeBorderIndex): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
-            - excel.Excel.ConditionalRangeBorderIndex
-  - uid: excel.Excel.ConditionalRangeBorderCollection.getItem_1
+            - 'excel!Excel.ConditionalRangeBorderIndex:enum'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItem:member(2)'
     summary: |-
       Gets a border object using its name.
 
@@ -107,14 +107,14 @@ items:
       content: 'getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'
         description: ''
       parameters:
         - id: indexString
           description: Index value of the border object to be retrieved. See Excel.ConditionalRangeBorderIndex for details.
           type:
             - '"EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"'
-  - uid: excel.Excel.ConditionalRangeBorderCollection.getItemAt
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#getItemAt:member(1)'
     summary: |-
       Gets a border object using its index.
 
@@ -128,14 +128,14 @@ items:
       content: 'getItemAt(index: number): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.ConditionalRangeBorderCollection.items
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -147,7 +147,7 @@ items:
       return:
         type:
           - 'Excel.ConditionalRangeBorder[]'
-  - uid: excel.Excel.ConditionalRangeBorderCollection.left
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#left:member'
     summary: |-
       Gets the left border. Read-only.
 
@@ -161,8 +161,8 @@ items:
       content: 'readonly left: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
-  - uid: excel.Excel.ConditionalRangeBorderCollection.load
+          - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -195,14 +195,14 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.ConditionalRangeBorderCollection;
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.ConditionalRangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.ConditionalRangeBorderCollection.load_1
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -215,14 +215,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalRangeBorderCollection.load_2
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -232,14 +232,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.ConditionalRangeBorderCollection;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorderCollection
+          - 'excel!Excel.ConditionalRangeBorderCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.ConditionalRangeBorderCollection.right
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#right:member'
     summary: |-
       Gets the right border. Read-only.
 
@@ -253,8 +253,8 @@ items:
       content: 'readonly right: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
-  - uid: excel.Excel.ConditionalRangeBorderCollection.toJSON
+          - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -270,9 +270,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
         description: ''
-  - uid: excel.Excel.ConditionalRangeBorderCollection.top
+  - uid: 'excel!Excel.ConditionalRangeBorderCollection#top:member'
     summary: |-
       Gets the top border. Read-only.
 
@@ -286,4 +286,4 @@ items:
       content: 'readonly top: Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'

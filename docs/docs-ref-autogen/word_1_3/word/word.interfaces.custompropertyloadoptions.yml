@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomPropertyLoadOptions
+  - uid: 'word!Word.Interfaces.CustomPropertyLoadOptions:interface'
     summary: |-
       Represents a custom property.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomPropertyLoadOptions.$all
-      - word.Word.Interfaces.CustomPropertyLoadOptions.key
-      - word.Word.Interfaces.CustomPropertyLoadOptions.type
-      - word.Word.Interfaces.CustomPropertyLoadOptions.value
-  - uid: word.Word.Interfaces.CustomPropertyLoadOptions.$all
+      - 'word!Word.Interfaces.CustomPropertyLoadOptions#$all:member'
+      - 'word!Word.Interfaces.CustomPropertyLoadOptions#key:member'
+      - 'word!Word.Interfaces.CustomPropertyLoadOptions#type:member'
+      - 'word!Word.Interfaces.CustomPropertyLoadOptions#value:member'
+  - uid: 'word!Word.Interfaces.CustomPropertyLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomPropertyLoadOptions.key
+  - uid: 'word!Word.Interfaces.CustomPropertyLoadOptions#key:member'
     summary: |-
       Gets the key of the custom property. Read only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomPropertyLoadOptions.type
+  - uid: 'word!Word.Interfaces.CustomPropertyLoadOptions#type:member'
     summary: |-
       Gets the value type of the custom property. Possible values are: String, Number, Date, Boolean. Read only.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.CustomPropertyLoadOptions.value
+  - uid: 'word!Word.Interfaces.CustomPropertyLoadOptions#value:member'
     summary: >-
       Gets or sets the value of the custom property. Note that even though Word on the web and the docx file format
       allow these properties to be arbitrarily long, the desktop version of Word will truncate string values to 255

@@ -1,9 +1,9 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.GoToByIdOptions
+  - uid: 'office!Office.GoToByIdOptions:interface'
     summary: Provides options for whether to select the location that is navigated to.
     remarks: >-
-      The behavior caused by the [options.selectionMode](xref:office.Office.SelectionMode) option varies by host:
+      The behavior caused by the [options.selectionMode](xref:office!Office.SelectionMode:enum) option varies by host:
 
 
       In Excel: `Office.SelectionMode.Selected` selects all content in the binding, or named item.
@@ -23,11 +23,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.GoToByIdOptions.asyncContext
-      - office.Office.GoToByIdOptions.selectionMode
-  - uid: office.Office.GoToByIdOptions.asyncContext
+      - 'office!Office.GoToByIdOptions#asyncContext:member'
+      - 'office!Office.GoToByIdOptions#selectionMode:member'
+  - uid: 'office!Office.GoToByIdOptions#asyncContext:member'
     summary: >-
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
@@ -41,10 +41,10 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.GoToByIdOptions.selectionMode
+  - uid: 'office!Office.GoToByIdOptions#selectionMode:member'
     summary: >-
       Specifies whether the location specified by the id parameter is selected (highlighted). Use
-      [Office.SelectionMode](xref:office.Office.SelectionMode) or string equivalent. See the Remarks for more
+      [Office.SelectionMode](xref:office!Office.SelectionMode:enum) or string equivalent. See the Remarks for more
       information.
     name: selectionMode
     fullName: selectionMode

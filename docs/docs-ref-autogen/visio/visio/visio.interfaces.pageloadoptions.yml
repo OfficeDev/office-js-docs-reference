@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.PageLoadOptions
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions:interface'
     summary: |-
       Represents the Page class.
 
@@ -10,16 +10,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.PageLoadOptions.$all
-      - visio.Visio.Interfaces.PageLoadOptions.height
-      - visio.Visio.Interfaces.PageLoadOptions.index
-      - visio.Visio.Interfaces.PageLoadOptions.isBackground
-      - visio.Visio.Interfaces.PageLoadOptions.name
-      - visio.Visio.Interfaces.PageLoadOptions.view
-      - visio.Visio.Interfaces.PageLoadOptions.width
-  - uid: visio.Visio.Interfaces.PageLoadOptions.$all
+      - 'visio!Visio.Interfaces.PageLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.PageLoadOptions#height:member'
+      - 'visio!Visio.Interfaces.PageLoadOptions#index:member'
+      - 'visio!Visio.Interfaces.PageLoadOptions#isBackground:member'
+      - 'visio!Visio.Interfaces.PageLoadOptions#name:member'
+      - 'visio!Visio.Interfaces.PageLoadOptions#view:member'
+      - 'visio!Visio.Interfaces.PageLoadOptions#width:member'
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageLoadOptions.height
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#height:member'
     summary: |-
       Returns the height of the page. Read-only.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageLoadOptions.index
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#index:member'
     summary: |-
       Index of the Page. Read-only.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageLoadOptions.isBackground
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#isBackground:member'
     summary: |-
       Whether the page is a background page or not. Read-only.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageLoadOptions.name
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#name:member'
     summary: |-
       Page name. Read-only.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.PageLoadOptions.view
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#view:member'
     summary: |-
       Returns the view of the page.
 
@@ -104,8 +104,8 @@ items:
       content: 'view?: Visio.Interfaces.PageViewLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.PageViewLoadOptions
-  - uid: visio.Visio.Interfaces.PageLoadOptions.width
+          - 'visio!Visio.Interfaces.PageViewLoadOptions:interface'
+  - uid: 'visio!Visio.Interfaces.PageLoadOptions#width:member'
     summary: |-
       Returns the width of the page. Read-only.
 

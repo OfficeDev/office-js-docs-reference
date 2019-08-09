@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ContentControlEventArgs
+  - uid: 'word!Word.ContentControlEventArgs:interface'
     summary: >-
       Provides information about the content control that raised an event.
 
@@ -13,11 +13,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.ContentControlEventArgs.contentControl
-      - word.Word.ContentControlEventArgs.eventType
-  - uid: word.Word.ContentControlEventArgs.contentControl
+      - 'word!Word.ContentControlEventArgs#contentControl:member'
+      - 'word!Word.ContentControlEventArgs#eventType:member'
+  - uid: 'word!Word.ContentControlEventArgs#contentControl:member'
     summary: >-
       The object that raised the event. Load this object to get its properties.
 
@@ -34,8 +34,8 @@ items:
       content: 'contentControl: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.ContentControlEventArgs.eventType
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.ContentControlEventArgs#eventType:member'
     summary: >-
       The event type. See Word.EventType for details.
 

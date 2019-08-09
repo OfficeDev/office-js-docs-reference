@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartGridlinesUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartGridlines object, for use in "chartGridlines.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartGridlinesUpdateData.format
-      - excel.Excel.Interfaces.ChartGridlinesUpdateData.visible
-  - uid: excel.Excel.Interfaces.ChartGridlinesUpdateData.format
+      - 'excel!Excel.Interfaces.ChartGridlinesUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartGridlinesUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData#format:member'
     summary: |-
       Represents the formatting of chart gridlines.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartGridlinesUpdateData.visible
+          - 'excel!Excel.Interfaces.ChartGridlinesFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesUpdateData#visible:member'
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.
 

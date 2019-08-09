@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.RequestContext
+  - uid: 'word!Word.RequestContext:class'
     summary: >-
       The RequestContext object facilitates requests to the Word application. Since the Office add-in and the Word
       application run in two different processes, the request context is required to get access to the Word object model
@@ -12,105 +12,12 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientRequestContext '
-    package: word
-    remarks: >-
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example shows how the request context is used to load the text property on a paragraph
-      collection.
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-
-          // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
-
-          // Queue a commmand to load the text property for all of the paragraphs.
-          context.load(paragraphs, 'text');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-
-              // Queue a a set of commands to get the HTML of the first paragraph.
-              var html = paragraphs.items[0].getHtml();
-
-              // Synchronize the document state by executing the queued commands,
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log('Paragraph HTML: ' + html.value);
-              });
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      // Note: You must call load() after adding tracked objects.    
-
-      ```
-
-      ```javascript
-
-      // The following example shows the sync method used twice: 
-
-      //   1) load the content controls collection with the text property for each content control, and
-
-      //   2) clearing the contents of the first content control in the collection.
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-
-          // Create a proxy object for the content controls collection.
-          var contentControls = context.document.contentControls;
-
-          // Queue a command to load the content controls collection.
-          contentControls.load('text');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-
-              if (contentControls.items.length === 0) {
-                  console.log("There isn't a content control in this document.");
-              } else {
-
-                  // Queue a command to clear the contents of the first content control.
-                  contentControls.items[0].clear();
-                  // Synchronize the document state by executing the queued commands,
-                  // and return a promise to indicate task completion.
-                  return context.sync().then(function () {
-                      console.log('Content control cleared of contents.');
-                  });
-              }
-
-          });
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
+    package: word!
     children:
-      - word.Word.RequestContext.(constructor)
-      - word.Word.RequestContext.application
-      - word.Word.RequestContext.document
-  - uid: word.Word.RequestContext.(constructor)
+      - 'word!Word.RequestContext:constructor(1)'
+      - 'word!Word.RequestContext#application:member'
+      - 'word!Word.RequestContext#document:member'
+  - uid: 'word!Word.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
@@ -124,7 +31,7 @@ items:
           description: ''
           type:
             - string
-  - uid: word.Word.RequestContext.application
+  - uid: 'word!Word.RequestContext#application:member'
     name: application
     fullName: application
     langs:
@@ -134,8 +41,8 @@ items:
       content: 'readonly application: Application;'
       return:
         type:
-          - word.Word.Application
-  - uid: word.Word.RequestContext.document
+          - 'word!Word.Application:class'
+  - uid: 'word!Word.RequestContext#document:member'
     name: document
     fullName: document
     langs:
@@ -145,4 +52,4 @@ items:
       content: 'readonly document: Document;'
       return:
         type:
-          - word.Word.Document
+          - 'word!Word.Document:class'

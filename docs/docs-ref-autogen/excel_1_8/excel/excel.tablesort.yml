@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableSort
+  - uid: 'excel!Excel.TableSort:class'
     summary: |-
       Manages sorting operations on Table objects.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableSort.apply
-      - excel.Excel.TableSort.apply_1
-      - excel.Excel.TableSort.clear
-      - excel.Excel.TableSort.context
-      - excel.Excel.TableSort.fields
-      - excel.Excel.TableSort.load
-      - excel.Excel.TableSort.load_1
-      - excel.Excel.TableSort.load_2
-      - excel.Excel.TableSort.matchCase
-      - excel.Excel.TableSort.method
-      - excel.Excel.TableSort.reapply
-      - excel.Excel.TableSort.toJSON
-  - uid: excel.Excel.TableSort.apply
+      - 'excel!Excel.TableSort#apply:member(1)'
+      - 'excel!Excel.TableSort#apply:member(2)'
+      - 'excel!Excel.TableSort#clear:member(1)'
+      - 'excel!Excel.TableSort#context:member'
+      - 'excel!Excel.TableSort#fields:member'
+      - 'excel!Excel.TableSort#load:member(1)'
+      - 'excel!Excel.TableSort#load:member(2)'
+      - 'excel!Excel.TableSort#load:member(3)'
+      - 'excel!Excel.TableSort#matchCase:member'
+      - 'excel!Excel.TableSort#method:member'
+      - 'excel!Excel.TableSort#reapply:member(1)'
+      - 'excel!Excel.TableSort#toJSON:member(1)'
+  - uid: 'excel!Excel.TableSort#apply:member(1)'
     summary: |-
       Perform a sort operation.
 
@@ -41,29 +41,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tableName = 'Table1';
-              var table = ctx.workbook.tables.getItem(tableName);
-              table.sort.apply([ 
-                      {
-                          key: 2,
-                          ascending: true
-                      },
-                  ], true);
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: fields
           description: The list of conditions to sort on.
@@ -76,8 +54,8 @@ items:
         - id: method
           description: Optional. The ordering method used for Chinese characters.
           type:
-            - excel.Excel.SortMethod
-  - uid: excel.Excel.TableSort.apply_1
+            - 'excel!Excel.SortMethod:enum'
+  - uid: 'excel!Excel.TableSort#apply:member(2)'
     summary: |-
       Perform a sort operation.
 
@@ -106,7 +84,7 @@ items:
           description: Optional. The ordering method used for Chinese characters.
           type:
             - '"PinYin" | "StrokeCount"'
-  - uid: excel.Excel.TableSort.clear
+  - uid: 'excel!Excel.TableSort#clear:member(1)'
     summary: >-
       Clears the sorting that is currently on the table. While this doesn't modify the table's ordering, it clears the
       state of the header buttons.
@@ -124,7 +102,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.TableSort.context
+  - uid: 'excel!Excel.TableSort#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -137,8 +115,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableSort.fields
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableSort#fields:member'
     summary: |-
       Represents the current conditions used to last sort the table. Read-only.
 
@@ -153,7 +131,7 @@ items:
       return:
         type:
           - 'Excel.SortField[]'
-  - uid: excel.Excel.TableSort.load
+  - uid: 'excel!Excel.TableSort#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -184,14 +162,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TableSortLoadOptions): Excel.TableSort;'
       return:
         type:
-          - excel.Excel.TableSort
+          - 'excel!Excel.TableSort:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TableSortLoadOptions
-  - uid: excel.Excel.TableSort.load_1
+            - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+  - uid: 'excel!Excel.TableSort#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -204,14 +182,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableSort;'
       return:
         type:
-          - excel.Excel.TableSort
+          - 'excel!Excel.TableSort:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableSort.load_2
+  - uid: 'excel!Excel.TableSort#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -224,7 +202,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TableSort;'
       return:
         type:
-          - excel.Excel.TableSort
+          - 'excel!Excel.TableSort:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -233,7 +211,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TableSort.matchCase
+  - uid: 'excel!Excel.TableSort#matchCase:member'
     summary: |-
       Represents whether the casing impacted the last sort of the table. Read-only.
 
@@ -248,7 +226,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.TableSort.method
+  - uid: 'excel!Excel.TableSort#method:member'
     summary: |-
       Represents Chinese character ordering method last used to sort the table. Read-only.
 
@@ -263,7 +241,7 @@ items:
       return:
         type:
           - Excel.SortMethod | "PinYin" | "StrokeCount"
-  - uid: excel.Excel.TableSort.reapply
+  - uid: 'excel!Excel.TableSort#reapply:member(1)'
     summary: |-
       Reapplies the current sorting parameters to the table.
 
@@ -279,7 +257,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.TableSort.toJSON
+  - uid: 'excel!Excel.TableSort#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -295,5 +273,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableSortData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableSortData
+          - 'excel!Excel.Interfaces.TableSortData:interface'
         description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxis
+  - uid: 'excel!Excel.ChartAxis:class'
     summary: |-
       Represents a single axis in a chart.
 
@@ -12,48 +12,48 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxis.axisGroup
-      - excel.Excel.ChartAxis.baseTimeUnit
-      - excel.Excel.ChartAxis.categoryType
-      - excel.Excel.ChartAxis.context
-      - excel.Excel.ChartAxis.customDisplayUnit
-      - excel.Excel.ChartAxis.displayUnit
-      - excel.Excel.ChartAxis.format
-      - excel.Excel.ChartAxis.height
-      - excel.Excel.ChartAxis.left
-      - excel.Excel.ChartAxis.load
-      - excel.Excel.ChartAxis.load_1
-      - excel.Excel.ChartAxis.load_2
-      - excel.Excel.ChartAxis.logBase
-      - excel.Excel.ChartAxis.majorGridlines
-      - excel.Excel.ChartAxis.majorTickMark
-      - excel.Excel.ChartAxis.majorTimeUnitScale
-      - excel.Excel.ChartAxis.majorUnit
-      - excel.Excel.ChartAxis.maximum
-      - excel.Excel.ChartAxis.minimum
-      - excel.Excel.ChartAxis.minorGridlines
-      - excel.Excel.ChartAxis.minorTickMark
-      - excel.Excel.ChartAxis.minorTimeUnitScale
-      - excel.Excel.ChartAxis.minorUnit
-      - excel.Excel.ChartAxis.reversePlotOrder
-      - excel.Excel.ChartAxis.scaleType
-      - excel.Excel.ChartAxis.set
-      - excel.Excel.ChartAxis.set_1
-      - excel.Excel.ChartAxis.setCategoryNames
-      - excel.Excel.ChartAxis.setCustomDisplayUnit
-      - excel.Excel.ChartAxis.showDisplayUnitLabel
-      - excel.Excel.ChartAxis.tickLabelPosition
-      - excel.Excel.ChartAxis.tickLabelSpacing
-      - excel.Excel.ChartAxis.tickMarkSpacing
-      - excel.Excel.ChartAxis.title
-      - excel.Excel.ChartAxis.toJSON
-      - excel.Excel.ChartAxis.top
-      - excel.Excel.ChartAxis.type
-      - excel.Excel.ChartAxis.visible
-      - excel.Excel.ChartAxis.width
-  - uid: excel.Excel.ChartAxis.axisGroup
+      - 'excel!Excel.ChartAxis#axisGroup:member'
+      - 'excel!Excel.ChartAxis#baseTimeUnit:member'
+      - 'excel!Excel.ChartAxis#categoryType:member'
+      - 'excel!Excel.ChartAxis#context:member'
+      - 'excel!Excel.ChartAxis#customDisplayUnit:member'
+      - 'excel!Excel.ChartAxis#displayUnit:member'
+      - 'excel!Excel.ChartAxis#format:member'
+      - 'excel!Excel.ChartAxis#height:member'
+      - 'excel!Excel.ChartAxis#left:member'
+      - 'excel!Excel.ChartAxis#load:member(1)'
+      - 'excel!Excel.ChartAxis#load:member(2)'
+      - 'excel!Excel.ChartAxis#load:member(3)'
+      - 'excel!Excel.ChartAxis#logBase:member'
+      - 'excel!Excel.ChartAxis#majorGridlines:member'
+      - 'excel!Excel.ChartAxis#majorTickMark:member'
+      - 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
+      - 'excel!Excel.ChartAxis#majorUnit:member'
+      - 'excel!Excel.ChartAxis#maximum:member'
+      - 'excel!Excel.ChartAxis#minimum:member'
+      - 'excel!Excel.ChartAxis#minorGridlines:member'
+      - 'excel!Excel.ChartAxis#minorTickMark:member'
+      - 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
+      - 'excel!Excel.ChartAxis#minorUnit:member'
+      - 'excel!Excel.ChartAxis#reversePlotOrder:member'
+      - 'excel!Excel.ChartAxis#scaleType:member'
+      - 'excel!Excel.ChartAxis#set:member(1)'
+      - 'excel!Excel.ChartAxis#set:member(2)'
+      - 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
+      - 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
+      - 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
+      - 'excel!Excel.ChartAxis#tickLabelPosition:member'
+      - 'excel!Excel.ChartAxis#tickLabelSpacing:member'
+      - 'excel!Excel.ChartAxis#tickMarkSpacing:member'
+      - 'excel!Excel.ChartAxis#title:member'
+      - 'excel!Excel.ChartAxis#toJSON:member(1)'
+      - 'excel!Excel.ChartAxis#top:member'
+      - 'excel!Excel.ChartAxis#type:member'
+      - 'excel!Excel.ChartAxis#visible:member'
+      - 'excel!Excel.ChartAxis#width:member'
+  - uid: 'excel!Excel.ChartAxis#axisGroup:member'
     summary: |-
       Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - Excel.ChartAxisGroup | "Primary" | "Secondary"
-  - uid: excel.Excel.ChartAxis.baseTimeUnit
+  - uid: 'excel!Excel.ChartAxis#baseTimeUnit:member'
     summary: |-
       Returns or sets the base unit for the specified category axis.
 
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
-  - uid: excel.Excel.ChartAxis.categoryType
+  - uid: 'excel!Excel.ChartAxis#categoryType:member'
     summary: |-
       Returns or sets the category axis type.
 
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
-  - uid: excel.Excel.ChartAxis.context
+  - uid: 'excel!Excel.ChartAxis#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -111,8 +111,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartAxis.customDisplayUnit
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxis#customDisplayUnit:member'
     summary: >-
       Represents the custom axis display unit value. Read-only. To set this property, please use the
       SetCustomDisplayUnit(double) method.
@@ -129,7 +129,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartAxis.displayUnit
+  - uid: 'excel!Excel.ChartAxis#displayUnit:member'
     summary: |-
       Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
 
@@ -148,28 +148,7 @@ items:
           - >-
             Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
             "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let chart = sheet.charts.getItemAt(0);
-              let categoryAxis = chart.axes.categoryAxis;
-              let valueAxis = chart.axes.valueAxis;
-
-              // Load to get display unit.
-              valueAxis.load("displayUnit");
-
-              await context.sync();
-
-              console.log("The vertical axis display unit is: " + valueAxis.displayUnit);
-          });
-          ```
-  - uid: excel.Excel.ChartAxis.format
+  - uid: 'excel!Excel.ChartAxis#format:member'
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting. Read-only.
 
@@ -183,8 +162,8 @@ items:
       content: 'readonly format: Excel.ChartAxisFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisFormat
-  - uid: excel.Excel.ChartAxis.height
+          - 'excel!Excel.ChartAxisFormat:class'
+  - uid: 'excel!Excel.ChartAxis#height:member'
     summary: |-
       Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
 
@@ -199,7 +178,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartAxis.left
+  - uid: 'excel!Excel.ChartAxis#left:member'
     summary: >-
       Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
       not visible. Read-only.
@@ -216,7 +195,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartAxis.load
+  - uid: 'excel!Excel.ChartAxis#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -247,14 +226,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisLoadOptions): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - 'excel!Excel.ChartAxis:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisLoadOptions
-  - uid: excel.Excel.ChartAxis.load_1
+            - 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
+  - uid: 'excel!Excel.ChartAxis#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -267,52 +246,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the maximum of Chart Axis from Chart1
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              var axis = chart.axes.valueAxis;
-              axis.load('maximum');
-              return ctx.sync().then(function() {
-                      console.log(axis.maximum);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Set the maximum, minimum, majorunit, minorunit of valueaxis. 
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.axes.valueAxis.maximum = 5;
-              chart.axes.valueAxis.minimum = 0;
-              chart.axes.valueAxis.majorUnit = 1;
-              chart.axes.valueAxis.minorUnit = 0.2;
-              return ctx.sync().then(function() {
-                      console.log("Axis Settings Changed");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartAxis:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartAxis.load_2
+  - uid: 'excel!Excel.ChartAxis#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -325,7 +266,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxis;'
       return:
         type:
-          - excel.Excel.ChartAxis
+          - 'excel!Excel.ChartAxis:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -334,7 +275,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartAxis.logBase
+  - uid: 'excel!Excel.ChartAxis#logBase:member'
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
 
@@ -349,7 +290,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartAxis.majorGridlines
+  - uid: 'excel!Excel.ChartAxis#majorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the major gridlines for the specified axis. Read-only.
 
@@ -363,8 +304,8 @@ items:
       content: 'readonly majorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
-  - uid: excel.Excel.ChartAxis.majorTickMark
+          - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartAxis#majorTickMark:member'
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
@@ -379,7 +320,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
-  - uid: excel.Excel.ChartAxis.majorTimeUnitScale
+  - uid: 'excel!Excel.ChartAxis#majorTimeUnitScale:member'
     summary: >-
       Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
       TimeScale.
@@ -396,7 +337,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
-  - uid: excel.Excel.ChartAxis.majorUnit
+  - uid: 'excel!Excel.ChartAxis#majorUnit:member'
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
       returned value is always a number.
@@ -413,7 +354,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.maximum
+  - uid: 'excel!Excel.ChartAxis#maximum:member'
     summary: >-
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -430,7 +371,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.minimum
+  - uid: 'excel!Excel.ChartAxis#minimum:member'
     summary: >-
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -447,7 +388,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.minorGridlines
+  - uid: 'excel!Excel.ChartAxis#minorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
 
@@ -461,8 +402,8 @@ items:
       content: 'readonly minorGridlines: Excel.ChartGridlines;'
       return:
         type:
-          - excel.Excel.ChartGridlines
-  - uid: excel.Excel.ChartAxis.minorTickMark
+          - 'excel!Excel.ChartGridlines:class'
+  - uid: 'excel!Excel.ChartAxis#minorTickMark:member'
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
@@ -477,7 +418,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
-  - uid: excel.Excel.ChartAxis.minorTimeUnitScale
+  - uid: 'excel!Excel.ChartAxis#minorTimeUnitScale:member'
     summary: >-
       Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
       TimeScale.
@@ -494,7 +435,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
-  - uid: excel.Excel.ChartAxis.minorUnit
+  - uid: 'excel!Excel.ChartAxis#minorUnit:member'
     summary: >-
       Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
       automatic axis values). The returned value is always a number.
@@ -511,7 +452,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.reversePlotOrder
+  - uid: 'excel!Excel.ChartAxis#reversePlotOrder:member'
     summary: |-
       Represents whether Microsoft Excel plots data points from last to first.
 
@@ -526,7 +467,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartAxis.scaleType
+  - uid: 'excel!Excel.ChartAxis#scaleType:member'
     summary: |-
       Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
 
@@ -541,7 +482,7 @@ items:
       return:
         type:
           - Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
-  - uid: excel.Excel.ChartAxis.set
+  - uid: 'excel!Excel.ChartAxis#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -571,7 +512,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartAxis.set_1
+  - uid: 'excel!Excel.ChartAxis#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -588,8 +529,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxis
-  - uid: excel.Excel.ChartAxis.setCategoryNames
+            - 'excel!Excel.ChartAxis:class'
+  - uid: 'excel!Excel.ChartAxis#setCategoryNames:member(1)'
     summary: |-
       Sets all the category names for the specified axis.
 
@@ -609,8 +550,8 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartAxis.setCustomDisplayUnit
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartAxis#setCustomDisplayUnit:member(1)'
     summary: |-
       Sets the axis display unit to a custom value.
 
@@ -631,7 +572,7 @@ items:
           description: Custom value of the display unit.
           type:
             - number
-  - uid: excel.Excel.ChartAxis.showDisplayUnitLabel
+  - uid: 'excel!Excel.ChartAxis#showDisplayUnitLabel:member'
     summary: |-
       Represents whether the axis display unit label is visible.
 
@@ -646,24 +587,7 @@ items:
       return:
         type:
           - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              let chart = sheet.charts.getItemAt(0);
-              let axis = chart.axes.valueAxis;
-
-              // Remove display unit.
-              axis.showDisplayUnitLabel = false;
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartAxis.tickLabelPosition
+  - uid: 'excel!Excel.ChartAxis#tickLabelPosition:member'
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
       details.
@@ -680,7 +604,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
-  - uid: excel.Excel.ChartAxis.tickLabelSpacing
+  - uid: 'excel!Excel.ChartAxis#tickLabelSpacing:member'
     summary: >-
       Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
       empty string for automatic setting. The returned value is always a number.
@@ -697,7 +621,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.ChartAxis.tickMarkSpacing
+  - uid: 'excel!Excel.ChartAxis#tickMarkSpacing:member'
     summary: |-
       Represents the number of categories or series between tick marks.
 
@@ -712,7 +636,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartAxis.title
+  - uid: 'excel!Excel.ChartAxis#title:member'
     summary: |-
       Represents the axis title. Read-only.
 
@@ -726,8 +650,8 @@ items:
       content: 'readonly title: Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
-  - uid: excel.Excel.ChartAxis.toJSON
+          - 'excel!Excel.ChartAxisTitle:class'
+  - uid: 'excel!Excel.ChartAxis#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -743,9 +667,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisData
+          - 'excel!Excel.Interfaces.ChartAxisData:interface'
         description: ''
-  - uid: excel.Excel.ChartAxis.top
+  - uid: 'excel!Excel.ChartAxis#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is
       not visible. Read-only.
@@ -762,7 +686,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartAxis.type
+  - uid: 'excel!Excel.ChartAxis#type:member'
     summary: |-
       Represents the axis type. See Excel.ChartAxisType for details.
 
@@ -777,7 +701,7 @@ items:
       return:
         type:
           - Excel.ChartAxisType | "Invalid" | "Category" | "Value" | "Series"
-  - uid: excel.Excel.ChartAxis.visible
+  - uid: 'excel!Excel.ChartAxis#visible:member'
     summary: |-
       A boolean value represents the visibility of the axis.
 
@@ -792,7 +716,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartAxis.width
+  - uid: 'excel!Excel.ChartAxis#width:member'
     summary: |-
       Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RunOptions
+  - uid: 'excel!Excel.RunOptions:interface'
     name: Excel.RunOptions
     fullName: Excel.RunOptions
     langs:
@@ -8,10 +8,10 @@ items:
     type: interface
     extends:
       - 'OfficeExtension.RunOptions<Session> '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RunOptions.delayForCellEdit
-  - uid: excel.Excel.RunOptions.delayForCellEdit
+      - 'excel!Excel.RunOptions#delayForCellEdit:member'
+  - uid: 'excel!Excel.RunOptions#delayForCellEdit:member'
     summary: >-
       Determines whether Excel will delay the batch request until the user exits cell edit mode.
 

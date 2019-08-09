@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.DocumentView
+  - uid: 'visio!Visio.DocumentView:class'
     summary: |-
       Represents the DocumentView class.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.DocumentView.context
-      - visio.Visio.DocumentView.disableHyperlinks
-      - visio.Visio.DocumentView.disablePan
-      - visio.Visio.DocumentView.disablePanZoomWindow
-      - visio.Visio.DocumentView.disableZoom
-      - visio.Visio.DocumentView.hideDiagramBoundary
-      - visio.Visio.DocumentView.load
-      - visio.Visio.DocumentView.load_1
-      - visio.Visio.DocumentView.load_2
-      - visio.Visio.DocumentView.set
-      - visio.Visio.DocumentView.set_1
-      - visio.Visio.DocumentView.toJSON
-  - uid: visio.Visio.DocumentView.context
+      - 'visio!Visio.DocumentView#context:member'
+      - 'visio!Visio.DocumentView#disableHyperlinks:member'
+      - 'visio!Visio.DocumentView#disablePan:member'
+      - 'visio!Visio.DocumentView#disablePanZoomWindow:member'
+      - 'visio!Visio.DocumentView#disableZoom:member'
+      - 'visio!Visio.DocumentView#hideDiagramBoundary:member'
+      - 'visio!Visio.DocumentView#load:member(1)'
+      - 'visio!Visio.DocumentView#load:member(2)'
+      - 'visio!Visio.DocumentView#load:member(3)'
+      - 'visio!Visio.DocumentView#set:member(1)'
+      - 'visio!Visio.DocumentView#set:member(2)'
+      - 'visio!Visio.DocumentView#toJSON:member(1)'
+  - uid: 'visio!Visio.DocumentView#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.DocumentView.disableHyperlinks
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.DocumentView#disableHyperlinks:member'
     summary: |-
       Disable Hyperlinks.
 
@@ -55,24 +55,7 @@ items:
       return:
         type:
           - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var documentView = ctx.document.view;
-              documentView.disableHyperlinks();
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: visio.Visio.DocumentView.disablePan
+  - uid: 'visio!Visio.DocumentView#disablePan:member'
     summary: |-
       Disable Pan.
 
@@ -87,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.DocumentView.disablePanZoomWindow
+  - uid: 'visio!Visio.DocumentView#disablePanZoomWindow:member'
     summary: |-
       Disable PanZoomWindow.
 
@@ -102,7 +85,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.DocumentView.disableZoom
+  - uid: 'visio!Visio.DocumentView#disableZoom:member'
     summary: |-
       Disable Zoom.
 
@@ -117,7 +100,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.DocumentView.hideDiagramBoundary
+  - uid: 'visio!Visio.DocumentView#hideDiagramBoundary:member'
     summary: |-
       Hide Diagram Boundary.
 
@@ -132,7 +115,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.DocumentView.load
+  - uid: 'visio!Visio.DocumentView#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -163,14 +146,14 @@ items:
       content: 'load(option?: Visio.Interfaces.DocumentViewLoadOptions): Visio.DocumentView;'
       return:
         type:
-          - visio.Visio.DocumentView
+          - 'visio!Visio.DocumentView:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.DocumentViewLoadOptions
-  - uid: visio.Visio.DocumentView.load_1
+            - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'
+  - uid: 'visio!Visio.DocumentView#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -183,14 +166,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.DocumentView;'
       return:
         type:
-          - visio.Visio.DocumentView
+          - 'visio!Visio.DocumentView:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.DocumentView.load_2
+  - uid: 'visio!Visio.DocumentView#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -203,7 +186,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.DocumentView;'
       return:
         type:
-          - visio.Visio.DocumentView
+          - 'visio!Visio.DocumentView:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -212,7 +195,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: visio.Visio.DocumentView.set
+  - uid: 'visio!Visio.DocumentView#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -242,7 +225,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: visio.Visio.DocumentView.set_1
+  - uid: 'visio!Visio.DocumentView#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -259,8 +242,8 @@ items:
         - id: properties
           description: ''
           type:
-            - visio.Visio.DocumentView
-  - uid: visio.Visio.DocumentView.toJSON
+            - 'visio!Visio.DocumentView:class'
+  - uid: 'visio!Visio.DocumentView#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -276,5 +259,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.DocumentViewData;'
       return:
         type:
-          - visio.Visio.Interfaces.DocumentViewData
+          - 'visio!Visio.Interfaces.DocumentViewData:interface'
         description: ''

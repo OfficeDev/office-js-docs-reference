@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableBorderUpdateData
+  - uid: 'word!Word.Interfaces.TableBorderUpdateData:interface'
     summary: 'An interface for updating data on the TableBorder object, for use in "tableBorder.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.TableBorderUpdateData
     fullName: Word.Interfaces.TableBorderUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableBorderUpdateData.color
-      - word.Word.Interfaces.TableBorderUpdateData.type
-      - word.Word.Interfaces.TableBorderUpdateData.width
-  - uid: word.Word.Interfaces.TableBorderUpdateData.color
+      - 'word!Word.Interfaces.TableBorderUpdateData#color:member'
+      - 'word!Word.Interfaces.TableBorderUpdateData#type:member'
+      - 'word!Word.Interfaces.TableBorderUpdateData#width:member'
+  - uid: 'word!Word.Interfaces.TableBorderUpdateData#color:member'
     summary: |-
       Gets or sets the table border color.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableBorderUpdateData.type
+  - uid: 'word!Word.Interfaces.TableBorderUpdateData#type:member'
     summary: |-
       Gets or sets the type of the table border.
 
@@ -50,7 +50,7 @@ items:
             | "Triple" | "ThinThickSmall" | "ThickThinSmall" | "ThinThickThinSmall" | "ThinThickMed" | "ThickThinMed" |
             "ThinThickThinMed" | "ThinThickLarge" | "ThickThinLarge" | "ThinThickThinLarge" | "Wave" | "DoubleWave" |
             "DashedSmall" | "DashDotStroked" | "ThreeDEmboss" | "ThreeDEngrave"
-  - uid: word.Word.Interfaces.TableBorderUpdateData.width
+  - uid: 'word!Word.Interfaces.TableBorderUpdateData#width:member'
     summary: >-
       Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed
       widths.

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
     summary: |-
       Encapsulates the format properties for chart gridlines.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions.line
-  - uid: excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions.line
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions#line:member'
     summary: |-
       Represents chart line formatting.
 
@@ -39,4 +39,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatLoadOptions
+          - 'excel!Excel.Interfaces.ChartLineFormatLoadOptions:interface'

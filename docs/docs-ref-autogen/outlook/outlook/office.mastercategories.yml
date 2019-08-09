@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MasterCategories
+  - uid: 'outlook!Office.MasterCategories:interface'
     summary: >-
       Represents the categories master list on the mailbox.
 
@@ -23,15 +23,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.MasterCategories.addAsync
-      - outlook.Office.MasterCategories.addAsync_1
-      - outlook.Office.MasterCategories.getAsync
-      - outlook.Office.MasterCategories.getAsync_1
-      - outlook.Office.MasterCategories.removeAsync
-      - outlook.Office.MasterCategories.removeAsync_1
-  - uid: outlook.Office.MasterCategories.addAsync
+      - 'outlook!Office.MasterCategories#addAsync:member(1)'
+      - 'outlook!Office.MasterCategories#addAsync:member(2)'
+      - 'outlook!Office.MasterCategories#getAsync:member(1)'
+      - 'outlook!Office.MasterCategories#getAsync:member(2)'
+      - 'outlook!Office.MasterCategories#removeAsync:member(1)'
+      - 'outlook!Office.MasterCategories#removeAsync:member(2)'
+  - uid: 'outlook!Office.MasterCategories#addAsync:member(1)'
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
@@ -86,7 +86,7 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MasterCategories.addAsync_1
+  - uid: 'outlook!Office.MasterCategories#addAsync:member(2)'
     summary: >-
       Adds categories to the master list on a mailbox. Each category must have a unique name but multiple categories can
       use the same color.
@@ -107,30 +107,6 @@ items:
 
 
       - PermissionDenied: The user does not have permission to perform this action.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var masterCategoriesToAdd = [
-          {
-              "displayName": "Urgent!",
-              "color": Office.MailboxEnums.CategoryColor.Preset0
-          }
-      ];
-
-
-      Office.context.mailbox.masterCategories.addAsync(masterCategoriesToAdd, function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("Successfully added categories to master list");
-          } else {
-              console.log("masterCategories.addAsync call failed with error: " + asyncResult.error.message);
-          }
-      });
-
-      ```
     isPreview: true
     name: 'addAsync(categories, callback)'
     fullName: 'addAsync(categories, callback)'
@@ -158,7 +134,7 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MasterCategories.getAsync
+  - uid: 'outlook!Office.MasterCategories#getAsync:member(1)'
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -198,7 +174,7 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-  - uid: outlook.Office.MasterCategories.getAsync_1
+  - uid: 'outlook!Office.MasterCategories#getAsync:member(2)'
     summary: Gets the master list of categories on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -207,26 +183,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.masterCategories.getAsync(function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              var masterCategories = asyncResult.value;
-              console.log("Master categories:");
-              masterCategories.forEach(function (item) {
-                  console.log("-- " + JSON.stringify(item));
-              });
-          }
-      });
-
-      ```
     isPreview: true
     name: getAsync(callback)
     fullName: getAsync(callback)
@@ -249,7 +205,7 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<CategoryDetails[]>) => void'
-  - uid: outlook.Office.MasterCategories.removeAsync
+  - uid: 'outlook!Office.MasterCategories#removeAsync:member(1)'
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -300,7 +256,7 @@ items:
             \[Api set: Mailbox Preview\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.MasterCategories.removeAsync_1
+  - uid: 'outlook!Office.MasterCategories#removeAsync:member(2)'
     summary: Removes categories from the master list on a mailbox.
     remarks: >-
       **[Minimum permission
@@ -316,25 +272,6 @@ items:
 
 
       - PermissionDenied: The user does not have permission to perform this action.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var masterCategoriesToRemove = ["Urgent!"];
-
-
-      Office.context.mailbox.masterCategories.removeAsync(masterCategoriesToRemove, function (asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
-              console.log("Successfully removed categories from master list");
-          } else {
-              console.log("masterCategories.removeAsync call failed with error: " + asyncResult.error.message);
-          }
-      });
-
-      ```
     isPreview: true
     name: 'removeAsync(categories, callback)'
     fullName: 'removeAsync(categories, callback)'

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartPointUpdateData:interface'
     summary: 'An interface for updating data on the ChartPoint object, for use in "chartPoint.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartPointUpdateData
     fullName: Excel.Interfaces.ChartPointUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointUpdateData.format
-  - uid: excel.Excel.Interfaces.ChartPointUpdateData.format
+      - 'excel!Excel.Interfaces.ChartPointUpdateData#format:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointUpdateData#format:member'
     summary: |-
       Encapsulates the format properties chart point.
 
@@ -24,4 +24,4 @@ items:
       content: 'format?: Excel.Interfaces.ChartPointFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointFormatUpdateData
+          - 'excel!Excel.Interfaces.ChartPointFormatUpdateData:interface'

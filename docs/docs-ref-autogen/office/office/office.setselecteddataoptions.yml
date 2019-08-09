@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.SetSelectedDataOptions
+  - uid: 'office!Office.SetSelectedDataOptions:interface'
     summary: Provides options for how to insert data to the selection.
     name: Office.SetSelectedDataOptions
     fullName: Office.SetSelectedDataOptions
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.SetSelectedDataOptions.asyncContext
-      - office.Office.SetSelectedDataOptions.cellFormat
-      - office.Office.SetSelectedDataOptions.coercionType
-      - office.Office.SetSelectedDataOptions.imageHeight
-      - office.Office.SetSelectedDataOptions.imageLeft
-      - office.Office.SetSelectedDataOptions.imageTop
-      - office.Office.SetSelectedDataOptions.imageWidth
-      - office.Office.SetSelectedDataOptions.tableOptions
-  - uid: office.Office.SetSelectedDataOptions.asyncContext
+      - 'office!Office.SetSelectedDataOptions#asyncContext:member'
+      - 'office!Office.SetSelectedDataOptions#cellFormat:member'
+      - 'office!Office.SetSelectedDataOptions#coercionType:member'
+      - 'office!Office.SetSelectedDataOptions#imageHeight:member'
+      - 'office!Office.SetSelectedDataOptions#imageLeft:member'
+      - 'office!Office.SetSelectedDataOptions#imageTop:member'
+      - 'office!Office.SetSelectedDataOptions#imageWidth:member'
+      - 'office!Office.SetSelectedDataOptions#tableOptions:member'
+  - uid: 'office!Office.SetSelectedDataOptions#asyncContext:member'
     summary: >-
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.SetSelectedDataOptions.cellFormat
+  - uid: 'office!Office.SetSelectedDataOptions#cellFormat:member'
     summary: >-
       Use only with binding type table and when a TableData object is passed for the data parameter. An array of objects
       that specify a range of columns, rows, or cells and specify, as key-value pairs, the cell formatting to apply to
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - 'RangeFormatConfiguration[]'
-  - uid: office.Office.SetSelectedDataOptions.coercionType
+  - uid: 'office!Office.SetSelectedDataOptions#coercionType:member'
     summary: Explicitly sets the shape of the data object. If not supplied is inferred from the data type.
     name: coercionType
     fullName: coercionType
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - Office.CoercionType | string
-  - uid: office.Office.SetSelectedDataOptions.imageHeight
+  - uid: 'office!Office.SetSelectedDataOptions#imageHeight:member'
     summary: >-
       This option is applicable for inserting images. Indicates the image height. If this option is provided without the
       imageWidth, the image will scale to match the value of the image height. If both image width and image height are
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.SetSelectedDataOptions.imageLeft
+  - uid: 'office!Office.SetSelectedDataOptions#imageLeft:member'
     summary: >-
       This option is applicable for inserting images. Indicates the insert location in relation to the left side of the
       slide for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word.
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.SetSelectedDataOptions.imageTop
+  - uid: 'office!Office.SetSelectedDataOptions#imageTop:member'
     summary: >-
       This option is applicable for inserting images. Indicates the insert location in relation to the top of the slide
       for PowerPoint, and its relation to the currently selected cell in Excel. This value is ignored for Word. This
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.SetSelectedDataOptions.imageWidth
+  - uid: 'office!Office.SetSelectedDataOptions#imageWidth:member'
     summary: >-
       This option is applicable for inserting images. Indicates the image width. If this option is provided without the
       imageHeight, the image will scale to match the value of the image width. If both image width and image height are
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - number
-  - uid: office.Office.SetSelectedDataOptions.tableOptions
+  - uid: 'office!Office.SetSelectedDataOptions#tableOptions:member'
     summary: >-
       For an inserted table, a list of key-value pairs that specify table formatting options, such as header row, total
       row, and banded rows. Example: `{bandedRows: true,  filterButton: false}`

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SlicerStyleCollection
+  - uid: 'excel!Excel.SlicerStyleCollection:class'
     summary: >-
       Represents a collection of SlicerStyle objects.
 
@@ -15,21 +15,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SlicerStyleCollection.add
-      - excel.Excel.SlicerStyleCollection.context
-      - excel.Excel.SlicerStyleCollection.getCount
-      - excel.Excel.SlicerStyleCollection.getDefault
-      - excel.Excel.SlicerStyleCollection.getItem
-      - excel.Excel.SlicerStyleCollection.getItemOrNullObject
-      - excel.Excel.SlicerStyleCollection.items
-      - excel.Excel.SlicerStyleCollection.load
-      - excel.Excel.SlicerStyleCollection.load_1
-      - excel.Excel.SlicerStyleCollection.load_2
-      - excel.Excel.SlicerStyleCollection.setDefault
-      - excel.Excel.SlicerStyleCollection.toJSON
-  - uid: excel.Excel.SlicerStyleCollection.add
+      - 'excel!Excel.SlicerStyleCollection#add:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#context:member'
+      - 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#items:member'
+      - 'excel!Excel.SlicerStyleCollection#load:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#load:member(2)'
+      - 'excel!Excel.SlicerStyleCollection#load:member(3)'
+      - 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
+      - 'excel!Excel.SlicerStyleCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.SlicerStyleCollection#add:member(1)'
     summary: >-
       Creates a blank SlicerStyle with the specified name.
 
@@ -46,7 +46,7 @@ items:
       content: 'add(name: string, makeUniqueName?: boolean): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: The newly created SlicerStyle.
       parameters:
         - id: name
@@ -59,7 +59,7 @@ items:
           description: 'Optional, defaults to false. If true, will append numbers to the name in order to make it unique, if needed.'
           type:
             - boolean
-  - uid: excel.Excel.SlicerStyleCollection.context
+  - uid: 'excel!Excel.SlicerStyleCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -73,8 +73,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.SlicerStyleCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerStyleCollection#getCount:member(1)'
     summary: >-
       Gets the number of slicer styles in the collection.
 
@@ -93,7 +93,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.SlicerStyleCollection.getDefault
+  - uid: 'excel!Excel.SlicerStyleCollection#getDefault:member(1)'
     summary: >-
       Gets the default SlicerStyle for the parent object's scope.
 
@@ -110,9 +110,9 @@ items:
       content: 'getDefault(): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: The SlicerStyle object that is the current default SlicerStyle.
-  - uid: excel.Excel.SlicerStyleCollection.getItem
+  - uid: 'excel!Excel.SlicerStyleCollection#getItem:member(1)'
     summary: >-
       Gets a SlicerStyle by name.
 
@@ -129,14 +129,14 @@ items:
       content: 'getItem(name: string): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: The SlicerStyle object whose name matches the input.
       parameters:
         - id: name
           description: Name of the SlicerStyle to be retrieved.
           type:
             - string
-  - uid: excel.Excel.SlicerStyleCollection.getItemOrNullObject
+  - uid: 'excel!Excel.SlicerStyleCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a SlicerStyle by name. If the SlicerStyle does not exist, will return a null object.
 
@@ -153,14 +153,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.SlicerStyle;'
       return:
         type:
-          - excel.Excel.SlicerStyle
+          - 'excel!Excel.SlicerStyle:class'
         description: The SlicerStyle object whose name matches the input.
       parameters:
         - id: name
           description: Name of the SlicerStyle to be retrieved.
           type:
             - string
-  - uid: excel.Excel.SlicerStyleCollection.items
+  - uid: 'excel!Excel.SlicerStyleCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -173,7 +173,7 @@ items:
       return:
         type:
           - 'Excel.SlicerStyle[]'
-  - uid: excel.Excel.SlicerStyleCollection.load
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -207,14 +207,14 @@ items:
         Excel.SlicerStyleCollection;
       return:
         type:
-          - excel.Excel.SlicerStyleCollection
+          - 'excel!Excel.SlicerStyleCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.SlicerStyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.SlicerStyleCollection.load_1
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -228,14 +228,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.SlicerStyleCollection;'
       return:
         type:
-          - excel.Excel.SlicerStyleCollection
+          - 'excel!Excel.SlicerStyleCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.SlicerStyleCollection.load_2
+  - uid: 'excel!Excel.SlicerStyleCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -246,14 +246,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.SlicerStyleCollection;'
       return:
         type:
-          - excel.Excel.SlicerStyleCollection
+          - 'excel!Excel.SlicerStyleCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.SlicerStyleCollection.setDefault
+  - uid: 'excel!Excel.SlicerStyleCollection#setDefault:member(1)'
     summary: >-
       Sets the default SlicerStyle for use in the parent object's scope.
 
@@ -277,7 +277,7 @@ items:
           description: The SlicerStyle object or name of the SlicerStyle object that should be the new default.
           type:
             - SlicerStyle | string
-  - uid: excel.Excel.SlicerStyleCollection.toJSON
+  - uid: 'excel!Excel.SlicerStyleCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -294,5 +294,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SlicerStyleCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.SlicerStyleCollectionData
+          - 'excel!Excel.Interfaces.SlicerStyleCollectionData:interface'
         description: ''

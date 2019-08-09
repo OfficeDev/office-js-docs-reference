@@ -1,28 +1,28 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Bindings
+  - uid: 'office!Office.Bindings:interface'
     summary: Represents the bindings the add-in has within the document.
     name: Office.Bindings
     fullName: Office.Bindings
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Bindings.addFromNamedItemAsync
-      - office.Office.Bindings.addFromNamedItemAsync_1
-      - office.Office.Bindings.addFromPromptAsync
-      - office.Office.Bindings.addFromPromptAsync_1
-      - office.Office.Bindings.addFromSelectionAsync
-      - office.Office.Bindings.addFromSelectionAsync_1
-      - office.Office.Bindings.getAllAsync
-      - office.Office.Bindings.getAllAsync_1
-      - office.Office.Bindings.getByIdAsync
-      - office.Office.Bindings.getByIdAsync_1
-      - office.Office.Bindings.releaseByIdAsync
-      - office.Office.Bindings.releaseByIdAsync_1
-      - office.Office.Bindings.document
-  - uid: office.Office.Bindings.addFromNamedItemAsync
+      - 'office!Office.Bindings#addFromNamedItemAsync:member(1)'
+      - 'office!Office.Bindings#addFromNamedItemAsync:member(2)'
+      - 'office!Office.Bindings#addFromPromptAsync:member(1)'
+      - 'office!Office.Bindings#addFromPromptAsync:member(2)'
+      - 'office!Office.Bindings#addFromSelectionAsync:member(1)'
+      - 'office!Office.Bindings#addFromSelectionAsync:member(2)'
+      - 'office!Office.Bindings#document:member'
+      - 'office!Office.Bindings#getAllAsync:member(1)'
+      - 'office!Office.Bindings#getAllAsync:member(2)'
+      - 'office!Office.Bindings#getByIdAsync:member(1)'
+      - 'office!Office.Bindings#getByIdAsync:member(2)'
+      - 'office!Office.Bindings#releaseByIdAsync:member(1)'
+      - 'office!Office.Bindings#releaseByIdAsync:member(2)'
+  - uid: 'office!Office.Bindings#addFromNamedItemAsync:member(1)'
     summary: Creates a binding against a named object in the document.
     remarks: >-
       **Requirement sets**:
@@ -65,83 +65,6 @@ items:
       **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and
       you try to bind to one these content controls with this method (by specifying its name as the itemName parameter),
       the operation will fail.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example adds a binding to the myRange named item in Excel as a "matrix" binding,
-
-      // and assigns the binding's id as myMatrix.
-
-      function bindNamedItem() {
-          Office.context.document.bindings.addFromNamedItemAsync(
-              "myRange", "matrix", {id:'myMatrix'}, function (result) {
-              if (result.status == 'succeeded'){
-                  write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
-                  }
-              else
-                  write('Error: ' + result.error.message);
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-
-      // The following example adds a binding to the Table1 named item in Excel as a "table" binding,
-
-      // and assigns the binding's id as myTable.
-
-      function bindNamedItem() {
-          Office.context.document.bindings.addFromNamedItemAsync(
-              "Table1", "table", {id:'myTable'}, function (result) {
-              if (result.status == 'succeeded'){
-                  write('Added new binding with type: ' + result.value.type + ' and id: ' + result.value.id);
-                  }
-              else
-                  write('Error: ' + result.error.message);
-          });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-
-      // The following example creates a text binding in Word to a rich text content control named "FirstName",
-
-      // assigns the id "firstName", and then displays that information.
-
-      function bindContentControl() {
-          Office.context.document.bindings.addFromNamedItemAsync('FirstName', 
-              Office.BindingType.Text, {id:'firstName'},
-              function (result) {
-                  if (result.status === Office.AsyncResultStatus.Succeeded) {
-                      write('Control bound. Binding.id: '
-                          + result.value.id + ' Binding.type: ' + result.value.type);
-                  } else {
-                      write('Error:', result.error.message);
-                  }
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
     fullName: 'addFromNamedItemAsync(itemName, bindingType, options, callback)'
     langs:
@@ -162,22 +85,22 @@ items:
             - string
         - id: bindingType
           description: >-
-            The [Office.BindingType](xref:office.Office.BindingType) for the data. The method returns null if the
+            The [Office.BindingType](xref:office!Office.BindingType:enum) for the data. The method returns null if the
             selected object cannot be coerced into the specified type.
           type:
-            - office.Office.BindingType
+            - 'office!Office.BindingType:enum'
         - id: options
           description: Provides options for configuring the binding that is created.
           type:
-            - office.Office.AddBindingFromNamedItemOptions
+            - 'office!Office.AddBindingFromNamedItemOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object that represents the specified named item.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the specified named item.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.addFromNamedItemAsync_1
+  - uid: 'office!Office.Bindings#addFromNamedItemAsync:member(2)'
     summary: Creates a binding against a named object in the document.
     remarks: >-
       [MatrixBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#matrixbindings)<!--
@@ -232,18 +155,18 @@ items:
             - string
         - id: bindingType
           description: >-
-            The [Office.BindingType](xref:office.Office.BindingType) for the data. The method returns null if the
+            The [Office.BindingType](xref:office!Office.BindingType:enum) for the data. The method returns null if the
             selected object cannot be coerced into the specified type.
           type:
-            - office.Office.BindingType
+            - 'office!Office.BindingType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object that represents the specified named item.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the specified named item.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.addFromPromptAsync
+  - uid: 'office!Office.Bindings#addFromPromptAsync:member(1)'
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
       **Requirement set**: [Not in a
@@ -252,29 +175,6 @@ items:
 
       Adds a binding object of the specified type to the Bindings collection, which will be identified with the supplied
       id. The method fails if the specified selection cannot be bound.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function addBindingFromPrompt() {
-          Office.context.document.bindings.addFromPromptAsync(
-              Office.BindingType.Text, 
-              { id: 'MyBinding', promptText: 'Select text to bind to.' },
-              function (asyncResult) {
-                  write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'addFromPromptAsync(bindingType, options, callback)'
     fullName: 'addFromPromptAsync(bindingType, options, callback)'
     langs:
@@ -294,19 +194,19 @@ items:
             Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
             coerced into the specified type.
           type:
-            - office.Office.BindingType
+            - 'office!Office.BindingType:enum'
         - id: options
           description: Provides options for configuring the prompt and identifying the binding that is created.
           type:
-            - office.Office.AddBindingFromPromptOptions
+            - 'office!Office.AddBindingFromPromptOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object that represents the selection specified by the user.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.addFromPromptAsync_1
+  - uid: 'office!Office.Bindings#addFromPromptAsync:member(2)'
     summary: Create a binding by prompting the user to make a selection on the document.
     remarks: >-
       **Requirement set**: [Not in a
@@ -332,15 +232,15 @@ items:
             Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
             coerced into the specified type.
           type:
-            - office.Office.BindingType
+            - 'office!Office.BindingType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object that represents the selection specified by the user.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.addFromSelectionAsync
+  - uid: 'office!Office.Bindings#addFromSelectionAsync:member(1)'
     summary: Create a binding based on the user's current selection.
     remarks: >-
       **Requirement sets**:
@@ -367,28 +267,6 @@ items:
       bindingType parameter. If you need to use an existing id and change the bindingType, call the
       Bindings.releaseByIdAsync method first to release the binding, and then call the addFromSelectionAsync method to
       reestablish the binding with a new type.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function addBindingFromSelection() {
-          Office.context.document.bindings.addFromSelectionAsync(Office.BindingType.Text, { id: 'MyBinding' }, 
-              function (asyncResult) {
-              write('Added new binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
-              }
-          );
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'addFromSelectionAsync(bindingType, options, callback)'
     fullName: 'addFromSelectionAsync(bindingType, options, callback)'
     langs:
@@ -408,19 +286,19 @@ items:
             Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
             coerced into the specified type.
           type:
-            - office.Office.BindingType
+            - 'office!Office.BindingType:enum'
         - id: options
           description: Provides options for configuring the prompt and identifying the binding that is created.
           type:
-            - office.Office.AddBindingFromSelectionOptions
+            - 'office!Office.AddBindingFromSelectionOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object that represents the selection specified by the user.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.addFromSelectionAsync_1
+  - uid: 'office!Office.Bindings#addFromSelectionAsync:member(2)'
     summary: Create a binding based on the user's current selection.
     remarks: >-
       **Requirement sets**:
@@ -464,15 +342,29 @@ items:
             Specifies the type of the binding object to create. Required. Returns null if the selected object cannot be
             coerced into the specified type.
           type:
-            - office.Office.BindingType
+            - 'office!Office.BindingType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object that represents the selection specified by the user.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object that represents the selection specified by the user.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.getAllAsync
+  - uid: 'office!Office.Bindings#document:member'
+    summary: >-
+      Gets an [Office.Document](xref:office!Office.Document:interface) object that represents the document associated
+      with this set of bindings.
+    name: document
+    fullName: document
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'document: Document;'
+      return:
+        type:
+          - 'office!Office.Document:interface'
+  - uid: 'office!Office.Bindings#getAllAsync:member(1)'
     summary: Gets all bindings that were previously created.
     remarks: >-
       **Requirement sets**:
@@ -503,15 +395,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            that contains each binding created for the referenced Bindings object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array that contains each binding created for the referenced Bindings object.
           type:
             - '(result: AsyncResult<Binding[]>) => void'
-  - uid: office.Office.Bindings.getAllAsync_1
+  - uid: 'office!Office.Bindings#getAllAsync:member(2)'
     summary: Gets all bindings that were previously created.
     remarks: >-
       **Requirement sets**:
@@ -527,30 +419,6 @@ items:
 
       -
       [TextBindings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#textbindings)
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayAllBindingNames() {
-          Office.context.document.bindings.getAllAsync(function (asyncResult) {
-              var bindingString = '';
-              for (var i in asyncResult.value) {
-                  bindingString += asyncResult.value[i].id + '\n';
-              }
-              write('Existing bindings: ' + bindingString);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: getAllAsync(callback)
     fullName: getAllAsync(callback)
     langs:
@@ -566,11 +434,11 @@ items:
         - id: callback
           description: >-
             A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            that contains each binding created for the referenced Bindings object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array that contains each binding created for the referenced Bindings object.
           type:
             - '(result: AsyncResult<Binding[]>) => void'
-  - uid: office.Office.Bindings.getByIdAsync
+  - uid: 'office!Office.Bindings#getByIdAsync:member(1)'
     summary: Retrieves a binding based on its Name
     remarks: >-
       **Requirement sets**:
@@ -610,15 +478,15 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object specified by the id in the call.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object specified by the id in the call.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.getByIdAsync_1
+  - uid: 'office!Office.Bindings#getByIdAsync:member(2)'
     summary: Retrieves a binding based on its Name
     remarks: >-
       **Requirement sets**:
@@ -637,26 +505,6 @@ items:
 
 
       Fails if the specified id does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayBindingType() {
-          Office.context.document.bindings.getByIdAsync('MyBinding', function (asyncResult) {
-              write('Retrieved binding with type: ' + asyncResult.value.type + ' and id: ' + asyncResult.value.id);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'getByIdAsync(id, callback)'
     fullName: 'getByIdAsync(id, callback)'
     langs:
@@ -676,11 +524,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            Binding object specified by the id in the call.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the Binding object specified by the id in the call.
           type:
             - '(result: AsyncResult<Binding>) => void'
-  - uid: office.Office.Bindings.releaseByIdAsync
+  - uid: 'office!Office.Bindings#releaseByIdAsync:member(1)'
     summary: Removes the binding from the document
     remarks: >-
       **Requirement sets**:
@@ -720,14 +568,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Bindings.releaseByIdAsync_1
+  - uid: 'office!Office.Bindings#releaseByIdAsync:member(2)'
     summary: Removes the binding from the document
     remarks: >-
       **Requirement sets**:
@@ -746,24 +594,6 @@ items:
 
 
       Fails if the specified id does not exist.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.document.bindings.releaseByIdAsync("MyBinding", function (asyncResult) { 
-          write("Released MyBinding!"); 
-      }); 
-
-      // Function that writes to a div with id='message' on the page. 
-
-      function write(message){ 
-          document.getElementById('message').innerText += message;  
-      }
-
-      ```
     name: 'releaseByIdAsync(id, callback)'
     fullName: 'releaseByIdAsync(id, callback)'
     langs:
@@ -783,20 +613,6 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Bindings.document
-    summary: >-
-      Gets an [Office.Document](xref:office.Office.Document) object that represents the document associated with this
-      set of bindings.
-    name: document
-    fullName: document
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'document: Document;'
-      return:
-        type:
-          - office.Office.Document

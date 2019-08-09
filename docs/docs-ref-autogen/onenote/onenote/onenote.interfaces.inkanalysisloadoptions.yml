@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
     summary: |-
       Represents ink analysis data for a given set of ink strokes.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.id
-      - onenote.OneNote.Interfaces.InkAnalysisLoadOptions.page
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#id:member'
     summary: |-
       Gets the ID of the InkAnalysis object. Read-only.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions.page
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions#page:member'
     summary: |-
       Gets the parent page object.
 
@@ -55,4 +55,4 @@ items:
       content: 'page?: OneNote.Interfaces.PageLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageLoadOptions
+          - 'onenote!OneNote.Interfaces.PageLoadOptions:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Dialog
+  - uid: 'office!Office.Dialog:interface'
     summary: >-
       The object that is returned when `UI.displayDialogAsync` is called. It exposes methods for registering event
       handlers and closing the dialog.
@@ -12,12 +12,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Dialog.addEventHandler
-      - office.Office.Dialog.close
-      - office.Office.Dialog.sendMessage
-  - uid: office.Office.Dialog.addEventHandler
+      - 'office!Office.Dialog#addEventHandler:member(1)'
+      - 'office!Office.Dialog#close:member(1)'
+      - 'office!Office.Dialog#sendMessage:member(1)'
+  - uid: 'office!Office.Dialog#addEventHandler:member(1)'
     summary: |-
       Registers an event handler. The two supported events are:
 
@@ -39,12 +39,12 @@ items:
         - id: eventType
           description: ''
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: ''
           type:
             - Function
-  - uid: office.Office.Dialog.close
+  - uid: 'office!Office.Dialog#close:member(1)'
     summary: Called from a parent page to close the corresponding dialog box.
     name: close()
     fullName: close()
@@ -57,7 +57,7 @@ items:
         type:
           - void
         description: ''
-  - uid: office.Office.Dialog.sendMessage
+  - uid: 'office!Office.Dialog#sendMessage:member(1)'
     summary: FOR INTERNAL USE ONLY. DO NOT CALL IN YOUR CODE.
     name: sendMessage(name)
     fullName: sendMessage(name)

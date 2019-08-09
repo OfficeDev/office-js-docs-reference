@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableCellCollectionUpdateData
+  - uid: 'word!Word.Interfaces.TableCellCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the TableCellCollection object, for use in "tableCellCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableCellCollectionUpdateData.items
-  - uid: word.Word.Interfaces.TableCellCollectionUpdateData.items
+      - 'word!Word.Interfaces.TableCellCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.TableCellCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

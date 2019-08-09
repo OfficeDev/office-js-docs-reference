@@ -1,25 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData:interface'
     summary: 'An interface for updating data on the Chart object, for use in "chart.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartUpdateData
     fullName: Excel.Interfaces.ChartUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartUpdateData.axes
-      - excel.Excel.Interfaces.ChartUpdateData.dataLabels
-      - excel.Excel.Interfaces.ChartUpdateData.format
-      - excel.Excel.Interfaces.ChartUpdateData.height
-      - excel.Excel.Interfaces.ChartUpdateData.left
-      - excel.Excel.Interfaces.ChartUpdateData.legend
-      - excel.Excel.Interfaces.ChartUpdateData.name
-      - excel.Excel.Interfaces.ChartUpdateData.title
-      - excel.Excel.Interfaces.ChartUpdateData.top
-      - excel.Excel.Interfaces.ChartUpdateData.width
-  - uid: excel.Excel.Interfaces.ChartUpdateData.axes
+      - 'excel!Excel.Interfaces.ChartUpdateData#axes:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#dataLabels:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#height:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#left:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#legend:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#name:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#title:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#top:member'
+      - 'excel!Excel.Interfaces.ChartUpdateData#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#axes:member'
     summary: |-
       Represents chart axes.
 
@@ -33,8 +33,8 @@ items:
       content: 'axes?: Excel.Interfaces.ChartAxesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxesUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.dataLabels
+          - 'excel!Excel.Interfaces.ChartAxesUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#dataLabels:member'
     summary: |-
       Represents the datalabels on the chart.
 
@@ -48,8 +48,8 @@ items:
       content: 'dataLabels?: Excel.Interfaces.ChartDataLabelsUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartDataLabelsUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.format
+          - 'excel!Excel.Interfaces.ChartDataLabelsUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#format:member'
     summary: |-
       Encapsulates the format properties for the chart area.
 
@@ -63,8 +63,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAreaFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAreaFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.height
+          - 'excel!Excel.Interfaces.ChartAreaFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#height:member'
     summary: |-
       Represents the height, in points, of the chart object.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.left
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#left:member'
     summary: |-
       The distance, in points, from the left side of the chart to the worksheet origin.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.legend
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#legend:member'
     summary: |-
       Represents the legend for the chart.
 
@@ -108,8 +108,8 @@ items:
       content: 'legend?: Excel.Interfaces.ChartLegendUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLegendUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.name
+          - 'excel!Excel.Interfaces.ChartLegendUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#name:member'
     summary: |-
       Represents the name of a chart object.
 
@@ -124,7 +124,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartUpdateData.title
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#title:member'
     summary: >-
       Represents the title of the specified chart, including the text, visibility, position, and formatting of the
       title.
@@ -140,8 +140,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartTitleUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleUpdateData
-  - uid: excel.Excel.Interfaces.ChartUpdateData.top
+          - 'excel!Excel.Interfaces.ChartTitleUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the object to the top of row 1 (on a worksheet) or the
       top of the chart area (on a chart).
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartUpdateData.width
+  - uid: 'excel!Excel.Interfaces.ChartUpdateData#width:member'
     summary: |-
       Represents the width, in points, of the chart object.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.RunOptions
+  - uid: 'office!OfficeExtension.RunOptions:interface'
     summary: 'Additional options passed into `{Host}.run(...)`<!-- -->.'
     name: OfficeExtension.RunOptions
     fullName: OfficeExtension.RunOptions
@@ -10,11 +10,11 @@ items:
     syntax:
       typeParameters:
         - id: T
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.RunOptions.previousObjects
-      - office.OfficeExtension.RunOptions.session
-  - uid: office.OfficeExtension.RunOptions.previousObjects
+      - 'office!OfficeExtension.RunOptions#previousObjects:member'
+      - 'office!OfficeExtension.RunOptions#session:member'
+  - uid: 'office!OfficeExtension.RunOptions#previousObjects:member'
     summary: >-
       A previously-created context, or API object, or array of objects. The batch will use the same RequestContext as
       the passed-in object, which means that any changes applied to the object will be picked up by `context.sync()`<!--
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - 'ClientObject | ClientObject[] | ClientRequestContext'
-  - uid: office.OfficeExtension.RunOptions.session
+  - uid: 'office!OfficeExtension.RunOptions#session:member'
     summary: The URL of the remote workbook and the request headers to be sent.
     name: session
     fullName: session

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetAddedEventArgs
+  - uid: 'excel!Excel.WorksheetAddedEventArgs:interface'
     summary: |-
       Provides information about the worksheet that raised the Added event.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetAddedEventArgs.source
-      - excel.Excel.WorksheetAddedEventArgs.type
-      - excel.Excel.WorksheetAddedEventArgs.worksheetId
-  - uid: excel.Excel.WorksheetAddedEventArgs.source
+      - 'excel!Excel.WorksheetAddedEventArgs#source:member'
+      - 'excel!Excel.WorksheetAddedEventArgs#type:member'
+      - 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#source:member'
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.WorksheetAddedEventArgs.type
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - '"WorksheetAdded"'
-  - uid: excel.Excel.WorksheetAddedEventArgs.worksheetId
+  - uid: 'excel!Excel.WorksheetAddedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet that is added to the workbook.
 
@@ -60,18 +60,3 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          async function onWorksheetAdd(event) {
-              await Excel.run(async (context) => {
-                  console.log(
-                      "Handler for worksheet onAdded event has been triggered. Newly added worksheet Id : " +
-                      event.worksheetId
-                  );
-              });
-          }
-          ```

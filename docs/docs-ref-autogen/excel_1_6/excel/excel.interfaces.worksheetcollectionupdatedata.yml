@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorksheetCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the WorksheetCollection object, for use in "worksheetCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorksheetCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.WorksheetCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.WorksheetCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

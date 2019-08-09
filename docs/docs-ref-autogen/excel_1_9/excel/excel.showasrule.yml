@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ShowAsRule
+  - uid: 'excel!Excel.ShowAsRule:interface'
     summary: '\[ [API set: ExcelApi 1.8](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ShowAsRule
     fullName: Excel.ShowAsRule
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ShowAsRule.baseField
-      - excel.Excel.ShowAsRule.baseItem
-      - excel.Excel.ShowAsRule.calculation
-  - uid: excel.Excel.ShowAsRule.baseField
+      - 'excel!Excel.ShowAsRule#baseField:member'
+      - 'excel!Excel.ShowAsRule#baseItem:member'
+      - 'excel!Excel.ShowAsRule#calculation:member'
+  - uid: 'excel!Excel.ShowAsRule#baseField:member'
     summary: |-
       The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
 
@@ -26,8 +26,8 @@ items:
       content: 'baseField?: Excel.PivotField;'
       return:
         type:
-          - excel.Excel.PivotField
-  - uid: excel.Excel.ShowAsRule.baseItem
+          - 'excel!Excel.PivotField:class'
+  - uid: 'excel!Excel.ShowAsRule#baseItem:member'
     summary: |-
       The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
 
@@ -41,39 +41,8 @@ items:
       content: 'baseItem?: Excel.PivotItem;'
       return:
         type:
-          - excel.Excel.PivotItem
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              const farmDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold at Farm");
-              const wholesaleDataHierarchy: Excel.DataPivotHierarchy = pivotTable.dataHierarchies.getItem("Sum of Crates Sold Wholesale");
-
-              farmDataHierarchy.load("showAs");
-              wholesaleDataHierarchy.load("showAs");
-              await context.sync();
-
-              // show the difference between crate sales of the "A Farms" and the other farms
-              // this difference is both aggregated and shown for individual fruit types (where applicable)
-              let farmShowAs = farmDataHierarchy.showAs;
-              farmShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
-              farmShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");
-              farmShowAs.baseItem = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm").items.getItem("A Farms");
-              farmDataHierarchy.showAs = farmShowAs;
-
-              let wholesaleShowAs = wholesaleDataHierarchy.showAs;
-              wholesaleShowAs.calculation = Excel.ShowAsCalculation.differenceFrom;
-              wholesaleShowAs.baseField = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm");
-              wholesaleShowAs.baseItem = pivotTable.rowHierarchies.getItem("Farm").fields.getItem("Farm").items.getItem("A Farms");
-              wholesaleDataHierarchy.showAs = wholesaleShowAs;
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ShowAsRule.calculation
+          - 'excel!Excel.PivotItem:class'
+  - uid: 'excel!Excel.ShowAsRule#calculation:member'
     summary: |-
       The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.
 

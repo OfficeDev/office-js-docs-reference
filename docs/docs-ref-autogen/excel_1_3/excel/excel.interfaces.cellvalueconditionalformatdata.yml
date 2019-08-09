@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatData
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatData:interface'
     summary: An interface describing the data returned by calling "cellValueConditionalFormat.toJSON()".
     name: Excel.Interfaces.CellValueConditionalFormatData
     fullName: Excel.Interfaces.CellValueConditionalFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

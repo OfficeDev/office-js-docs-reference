@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartFormatStringLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartFormatStringLoadOptions:interface'
     summary: >-
       Represents the substring in chart related objects that contains text, like ChartTitle object, ChartAxisTitle
       object, etc.
@@ -12,11 +12,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartFormatStringLoadOptions.$all
-      - excel.Excel.Interfaces.ChartFormatStringLoadOptions.font
-  - uid: excel.Excel.Interfaces.ChartFormatStringLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartFormatStringLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartFormatStringLoadOptions#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartFormatStringLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartFormatStringLoadOptions.font
+  - uid: 'excel!Excel.Interfaces.ChartFormatStringLoadOptions#font:member'
     summary: |-
       Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
 
@@ -41,4 +41,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontLoadOptions
+          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Shape
+  - uid: 'visio!Visio.Shape:class'
     summary: |-
       Represents the Shape class.
 
@@ -12,26 +12,26 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Shape.comments
-      - visio.Visio.Shape.context
-      - visio.Visio.Shape.getBounds
-      - visio.Visio.Shape.hyperlinks
-      - visio.Visio.Shape.id
-      - visio.Visio.Shape.load
-      - visio.Visio.Shape.load_1
-      - visio.Visio.Shape.load_2
-      - visio.Visio.Shape.name
-      - visio.Visio.Shape.select
-      - visio.Visio.Shape.set
-      - visio.Visio.Shape.set_1
-      - visio.Visio.Shape.shapeDataItems
-      - visio.Visio.Shape.subShapes
-      - visio.Visio.Shape.text
-      - visio.Visio.Shape.toJSON
-      - visio.Visio.Shape.view
-  - uid: visio.Visio.Shape.comments
+      - 'visio!Visio.Shape#comments:member'
+      - 'visio!Visio.Shape#context:member'
+      - 'visio!Visio.Shape#getBounds:member(1)'
+      - 'visio!Visio.Shape#hyperlinks:member'
+      - 'visio!Visio.Shape#id:member'
+      - 'visio!Visio.Shape#load:member(1)'
+      - 'visio!Visio.Shape#load:member(2)'
+      - 'visio!Visio.Shape#load:member(3)'
+      - 'visio!Visio.Shape#name:member'
+      - 'visio!Visio.Shape#select:member'
+      - 'visio!Visio.Shape#set:member(1)'
+      - 'visio!Visio.Shape#set:member(2)'
+      - 'visio!Visio.Shape#shapeDataItems:member'
+      - 'visio!Visio.Shape#subShapes:member'
+      - 'visio!Visio.Shape#text:member'
+      - 'visio!Visio.Shape#toJSON:member(1)'
+      - 'visio!Visio.Shape#view:member'
+  - uid: 'visio!Visio.Shape#comments:member'
     summary: |-
       Returns the Comments Collection. Read-only.
 
@@ -45,8 +45,8 @@ items:
       content: 'readonly comments: Visio.CommentCollection;'
       return:
         type:
-          - visio.Visio.CommentCollection
-  - uid: visio.Visio.Shape.context
+          - 'visio!Visio.CommentCollection:class'
+  - uid: 'visio!Visio.Shape#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -59,8 +59,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.Shape.getBounds
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.Shape#getBounds:member(1)'
     summary: |-
       Returns the BoundingBox object that specifies bounding box of the shape.
 
@@ -76,7 +76,7 @@ items:
         type:
           - OfficeExtension.ClientResult<Visio.BoundingBox>
         description: ''
-  - uid: visio.Visio.Shape.hyperlinks
+  - uid: 'visio!Visio.Shape#hyperlinks:member'
     summary: |-
       Returns the Hyperlinks collection for a Shape object. Read-only.
 
@@ -90,8 +90,8 @@ items:
       content: 'readonly hyperlinks: Visio.HyperlinkCollection;'
       return:
         type:
-          - visio.Visio.HyperlinkCollection
-  - uid: visio.Visio.Shape.id
+          - 'visio!Visio.HyperlinkCollection:class'
+  - uid: 'visio!Visio.Shape#id:member'
     summary: |-
       Shape's identifier. Read-only.
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.Shape.load
+  - uid: 'visio!Visio.Shape#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -137,14 +137,14 @@ items:
       content: 'load(option?: Visio.Interfaces.ShapeLoadOptions): Visio.Shape;'
       return:
         type:
-          - visio.Visio.Shape
+          - 'visio!Visio.Shape:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.ShapeLoadOptions
-  - uid: visio.Visio.Shape.load_1
+            - 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'visio!Visio.Shape#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -157,50 +157,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.Shape;'
       return:
         type:
-          - visio.Visio.Shape
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shapeName = "Sample Name";
-              var shape = activePage.shapes.getItem(shapeName);
-              shape.load(["name", "id", "text", "select"]);
-              return ctx.sync().then(function () {
-                  console.log(shape.name);
-                  console.log(shape.id);
-                  console.log(shape.text);
-                  console.log(shape.select);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
-              shape.view.highlight = { color: "#E7E7E7", width: 100 };
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'visio!Visio.Shape:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.Shape.load_2
+  - uid: 'visio!Visio.Shape#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -213,7 +177,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.Shape;'
       return:
         type:
-          - visio.Visio.Shape
+          - 'visio!Visio.Shape:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -222,7 +186,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: visio.Visio.Shape.name
+  - uid: 'visio!Visio.Shape#name:member'
     summary: |-
       Shape's name. Read-only.
 
@@ -237,7 +201,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Shape.select
+  - uid: 'visio!Visio.Shape#select:member'
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
@@ -252,7 +216,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Shape.set
+  - uid: 'visio!Visio.Shape#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -282,7 +246,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: visio.Visio.Shape.set_1
+  - uid: 'visio!Visio.Shape#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -299,8 +263,8 @@ items:
         - id: properties
           description: ''
           type:
-            - visio.Visio.Shape
-  - uid: visio.Visio.Shape.shapeDataItems
+            - 'visio!Visio.Shape:class'
+  - uid: 'visio!Visio.Shape#shapeDataItems:member'
     summary: |-
       Returns the Shape's Data Section. Read-only.
 
@@ -314,8 +278,8 @@ items:
       content: 'readonly shapeDataItems: Visio.ShapeDataItemCollection;'
       return:
         type:
-          - visio.Visio.ShapeDataItemCollection
-  - uid: visio.Visio.Shape.subShapes
+          - 'visio!Visio.ShapeDataItemCollection:class'
+  - uid: 'visio!Visio.Shape#subShapes:member'
     summary: |-
       Gets SubShape Collection. Read-only.
 
@@ -329,8 +293,8 @@ items:
       content: 'readonly subShapes: Visio.ShapeCollection;'
       return:
         type:
-          - visio.Visio.ShapeCollection
-  - uid: visio.Visio.Shape.text
+          - 'visio!Visio.ShapeCollection:class'
+  - uid: 'visio!Visio.Shape#text:member'
     summary: |-
       Shape's text. Read-only.
 
@@ -345,7 +309,7 @@ items:
       return:
         type:
           - string
-  - uid: visio.Visio.Shape.toJSON
+  - uid: 'visio!Visio.Shape#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -361,9 +325,9 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeData
+          - 'visio!Visio.Interfaces.ShapeData:interface'
         description: ''
-  - uid: visio.Visio.Shape.view
+  - uid: 'visio!Visio.Shape#view:member'
     summary: |-
       Returns the view of the shape. Read-only.
 
@@ -377,4 +341,4 @@ items:
       content: 'readonly view: Visio.ShapeView;'
       return:
         type:
-          - visio.Visio.ShapeView
+          - 'visio!Visio.ShapeView:class'

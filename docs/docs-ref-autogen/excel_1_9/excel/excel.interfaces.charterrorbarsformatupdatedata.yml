@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData.line
-  - uid: excel.Excel.Interfaces.ChartErrorBarsFormatUpdateData.line
+      - 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartErrorBarsFormatUpdateData#line:member'
     summary: |-
       Represents the chart line formatting.
 
@@ -26,4 +26,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatUpdateData
+          - 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'

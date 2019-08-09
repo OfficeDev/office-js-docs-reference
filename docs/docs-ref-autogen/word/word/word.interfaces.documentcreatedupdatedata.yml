@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentCreatedUpdateData
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData:interface'
     summary: >-
       An interface for updating data on the DocumentCreated object, for use in "documentCreated.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentCreatedUpdateData.body
-      - word.Word.Interfaces.DocumentCreatedUpdateData.properties
-  - uid: word.Word.Interfaces.DocumentCreatedUpdateData.body
+      - 'word!Word.Interfaces.DocumentCreatedUpdateData#body:member'
+      - 'word!Word.Interfaces.DocumentCreatedUpdateData#properties:member'
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData#body:member'
     summary: >-
       Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes,
       etc..
@@ -31,8 +31,8 @@ items:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.BodyUpdateData
-  - uid: word.Word.Interfaces.DocumentCreatedUpdateData.properties
+          - 'word!Word.Interfaces.BodyUpdateData:interface'
+  - uid: 'word!Word.Interfaces.DocumentCreatedUpdateData#properties:member'
     summary: >-
       Gets the properties of the document.
 
@@ -49,4 +49,4 @@ items:
       content: 'properties?: Word.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesUpdateData
+          - 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'

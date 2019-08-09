@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartTrendline object, for use in "chartTrendline.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,20 +9,20 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.backwardPeriod
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.format
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.forwardPeriod
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.intercept
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.label
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.movingAveragePeriod
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.name
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.polynomialOrder
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.showEquation
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.showRSquared
-      - excel.Excel.Interfaces.ChartTrendlineUpdateData.type
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.backwardPeriod
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#backwardPeriod:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#forwardPeriod:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#intercept:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#label:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#movingAveragePeriod:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#name:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#polynomialOrder:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#showEquation:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#showRSquared:member'
+      - 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#backwardPeriod:member'
     summary: |-
       Represents the number of periods that the trendline extends backward.
 
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.format
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#format:member'
     summary: |-
       Represents the formatting of a chart trendline.
 
@@ -51,8 +51,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartTrendlineFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.forwardPeriod
+          - 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#forwardPeriod:member'
     summary: |-
       Represents the number of periods that the trendline extends forward.
 
@@ -67,7 +67,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.intercept
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#intercept:member'
     summary: >-
       Represents the intercept value of the trendline. Can be set to a numeric value or an empty string (for automatic
       values). The returned value is always a number.
@@ -84,7 +84,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.label
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#label:member'
     summary: |-
       Represents the label of a chart trendline.
 
@@ -98,8 +98,8 @@ items:
       content: 'label?: Excel.Interfaces.ChartTrendlineLabelUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineLabelUpdateData
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.movingAveragePeriod
+          - 'excel!Excel.Interfaces.ChartTrendlineLabelUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#movingAveragePeriod:member'
     summary: |-
       Represents the period of a chart trendline. Only applicable for trendline with MovingAverage type.
 
@@ -114,7 +114,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.name
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#name:member'
     summary: >-
       Represents the name of the trendline. Can be set to a string value, or can be set to null value represents
       automatic values. The returned value is always a string
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.polynomialOrder
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#polynomialOrder:member'
     summary: |-
       Represents the order of a chart trendline. Only applicable for trendline with Polynomial type.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.showEquation
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#showEquation:member'
     summary: |-
       True if the equation for the trendline is displayed on the chart.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.showRSquared
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#showRSquared:member'
     summary: |-
       True if the R-squared for the trendline is displayed on the chart.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTrendlineUpdateData.type
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineUpdateData#type:member'
     summary: |-
       Represents the type of a chart trendline.
 

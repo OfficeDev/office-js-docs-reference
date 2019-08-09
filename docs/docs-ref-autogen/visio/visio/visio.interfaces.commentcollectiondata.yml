@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.CommentCollectionData
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData:interface'
     summary: An interface describing the data returned by calling "commentCollection.toJSON()".
     name: Visio.Interfaces.CommentCollectionData
     fullName: Visio.Interfaces.CommentCollectionData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.CommentCollectionData.items
-  - uid: visio.Visio.Interfaces.CommentCollectionData.items
+      - 'visio!Visio.Interfaces.CommentCollectionData#items:member'
+  - uid: 'visio!Visio.Interfaces.CommentCollectionData#items:member'
     name: items
     fullName: items
     langs:

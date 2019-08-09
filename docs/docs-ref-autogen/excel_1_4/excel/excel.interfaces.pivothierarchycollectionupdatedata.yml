@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the PivotHierarchyCollection object, for use in
       "pivotHierarchyCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.PivotHierarchyCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.PivotHierarchyCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.PivotHierarchyCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

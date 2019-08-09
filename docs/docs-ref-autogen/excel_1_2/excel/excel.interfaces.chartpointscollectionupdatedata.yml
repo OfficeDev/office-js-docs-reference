@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointsCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartPointsCollection object, for use in "chartPointsCollection.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointsCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ChartPointsCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

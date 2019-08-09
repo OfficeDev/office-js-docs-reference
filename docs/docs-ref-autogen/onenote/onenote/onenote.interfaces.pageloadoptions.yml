@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
     summary: |-
       Represents a OneNote page.
 
@@ -10,19 +10,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageLoadOptions.$all
-      - onenote.OneNote.Interfaces.PageLoadOptions.classNotebookPageSource
-      - onenote.OneNote.Interfaces.PageLoadOptions.clientUrl
-      - onenote.OneNote.Interfaces.PageLoadOptions.contents
-      - onenote.OneNote.Interfaces.PageLoadOptions.id
-      - onenote.OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull
-      - onenote.OneNote.Interfaces.PageLoadOptions.pageLevel
-      - onenote.OneNote.Interfaces.PageLoadOptions.parentSection
-      - onenote.OneNote.Interfaces.PageLoadOptions.title
-      - onenote.OneNote.Interfaces.PageLoadOptions.webUrl
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#classNotebookPageSource:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#clientUrl:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#contents:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#pageLevel:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#parentSection:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#title:member'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions#webUrl:member'
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.classNotebookPageSource
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#classNotebookPageSource:member'
     summary: |-
       Gets the ClassNotebookPageSource to the page.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.clientUrl
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#clientUrl:member'
     summary: |-
       The client url of the page. Read only
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.contents
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#contents:member'
     summary: |-
       The collection of PageContent objects on the page. Read only
 
@@ -77,8 +77,8 @@ items:
       content: 'contents?: OneNote.Interfaces.PageContentCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.id
+          - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#id:member'
     summary: |-
       Gets the ID of the page. Read-only.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.inkAnalysisOrNull
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#inkAnalysisOrNull:member'
     summary: |-
       Text interpretation for the ink on the page. Returns null if there is no ink analysis information. Read only.
 
@@ -107,8 +107,8 @@ items:
       content: 'inkAnalysisOrNull?: OneNote.Interfaces.InkAnalysisLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.pageLevel
+          - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#pageLevel:member'
     summary: |-
       Gets or sets the indentation level of the page.
 
@@ -123,7 +123,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.parentSection
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#parentSection:member'
     summary: |-
       Gets the section that contains the page.
 
@@ -137,8 +137,8 @@ items:
       content: 'parentSection?: OneNote.Interfaces.SectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.title
+          - 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#title:member'
     summary: |-
       Gets or sets the title of the page.
 
@@ -153,7 +153,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions.webUrl
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions#webUrl:member'
     summary: |-
       The web url of the page. Read only
 

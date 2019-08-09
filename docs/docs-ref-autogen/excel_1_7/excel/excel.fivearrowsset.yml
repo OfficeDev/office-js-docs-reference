@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FiveArrowsSet
+  - uid: 'excel!Excel.FiveArrowsSet:interface'
     name: Excel.FiveArrowsSet
     fullName: Excel.FiveArrowsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FiveArrowsSet.greenUpArrow
-      - excel.Excel.FiveArrowsSet.redDownArrow
-      - excel.Excel.FiveArrowsSet.yellowDownInclineArrow
-      - excel.Excel.FiveArrowsSet.yellowSideArrow
-      - excel.Excel.FiveArrowsSet.yellowUpInclineArrow
-  - uid: excel.Excel.FiveArrowsSet.greenUpArrow
+      - 'excel!Excel.FiveArrowsSet#greenUpArrow:member'
+      - 'excel!Excel.FiveArrowsSet#redDownArrow:member'
+      - 'excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member'
+      - 'excel!Excel.FiveArrowsSet#yellowSideArrow:member'
+      - 'excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member'
+  - uid: 'excel!Excel.FiveArrowsSet#greenUpArrow:member'
     name: greenUpArrow
     fullName: greenUpArrow
     langs:
@@ -23,8 +23,8 @@ items:
       content: 'greenUpArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveArrowsSet.redDownArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#redDownArrow:member'
     name: redDownArrow
     fullName: redDownArrow
     langs:
@@ -34,8 +34,8 @@ items:
       content: 'redDownArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveArrowsSet.yellowDownInclineArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#yellowDownInclineArrow:member'
     name: yellowDownInclineArrow
     fullName: yellowDownInclineArrow
     langs:
@@ -45,8 +45,8 @@ items:
       content: 'yellowDownInclineArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveArrowsSet.yellowSideArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#yellowSideArrow:member'
     name: yellowSideArrow
     fullName: yellowSideArrow
     langs:
@@ -56,8 +56,8 @@ items:
       content: 'yellowSideArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FiveArrowsSet.yellowUpInclineArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FiveArrowsSet#yellowUpInclineArrow:member'
     name: yellowUpInclineArrow
     fullName: yellowUpInclineArrow
     langs:
@@ -67,4 +67,4 @@ items:
       content: 'yellowUpInclineArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

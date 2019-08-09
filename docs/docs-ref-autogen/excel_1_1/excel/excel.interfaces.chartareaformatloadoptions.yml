@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions:interface'
     summary: |-
       Encapsulates the format properties for the overall chart area.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartAreaFormatLoadOptions.font
-  - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAreaFormatLoadOptions.font
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatLoadOptions#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object.
 
@@ -39,4 +39,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontLoadOptions
+          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatData
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
     summary: An interface describing the data returned by calling "customConditionalFormat.toJSON()".
     name: Excel.Interfaces.CustomConditionalFormatData
     fullName: Excel.Interfaces.CustomConditionalFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomConditionalFormatData.format
-      - excel.Excel.Interfaces.CustomConditionalFormatData.rule
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatData.format
+      - 'excel!Excel.Interfaces.CustomConditionalFormatData#format:member'
+      - 'excel!Excel.Interfaces.CustomConditionalFormatData#rule:member'
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData#format:member'
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
       Read-only.
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatData
-  - uid: excel.Excel.Interfaces.CustomConditionalFormatData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.CustomConditionalFormatData#rule:member'
     summary: |-
       Represents the Rule object on this conditional format. Read-only.
 
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.Interfaces.ConditionalFormatRuleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalFormatRuleData
+          - 'excel!Excel.Interfaces.ConditionalFormatRuleData:interface'

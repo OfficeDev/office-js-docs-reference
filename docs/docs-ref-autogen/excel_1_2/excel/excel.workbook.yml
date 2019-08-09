@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Workbook
+  - uid: 'excel!Excel.Workbook:class'
     summary: |-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
@@ -12,24 +12,24 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Workbook.application
-      - excel.Excel.Workbook.bindings
-      - excel.Excel.Workbook.context
-      - excel.Excel.Workbook.functions
-      - excel.Excel.Workbook.getSelectedRange
-      - excel.Excel.Workbook.load
-      - excel.Excel.Workbook.load_1
-      - excel.Excel.Workbook.load_2
-      - excel.Excel.Workbook.names
-      - excel.Excel.Workbook.onSelectionChanged
-      - excel.Excel.Workbook.set
-      - excel.Excel.Workbook.set_1
-      - excel.Excel.Workbook.tables
-      - excel.Excel.Workbook.toJSON
-      - excel.Excel.Workbook.worksheets
-  - uid: excel.Excel.Workbook.application
+      - 'excel!Excel.Workbook#application:member'
+      - 'excel!Excel.Workbook#bindings:member'
+      - 'excel!Excel.Workbook#context:member'
+      - 'excel!Excel.Workbook#functions:member'
+      - 'excel!Excel.Workbook#getSelectedRange:member(1)'
+      - 'excel!Excel.Workbook#load:member(1)'
+      - 'excel!Excel.Workbook#load:member(2)'
+      - 'excel!Excel.Workbook#load:member(3)'
+      - 'excel!Excel.Workbook#names:member'
+      - 'excel!Excel.Workbook#onSelectionChanged:member'
+      - 'excel!Excel.Workbook#set:member(1)'
+      - 'excel!Excel.Workbook#set:member(2)'
+      - 'excel!Excel.Workbook#tables:member'
+      - 'excel!Excel.Workbook#toJSON:member(1)'
+      - 'excel!Excel.Workbook#worksheets:member'
+  - uid: 'excel!Excel.Workbook#application:member'
     summary: |-
       Represents the Excel application instance that contains this workbook. Read-only.
 
@@ -43,8 +43,8 @@ items:
       content: 'readonly application: Excel.Application;'
       return:
         type:
-          - excel.Excel.Application
-  - uid: excel.Excel.Workbook.bindings
+          - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.Workbook#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -58,8 +58,8 @@ items:
       content: 'readonly bindings: Excel.BindingCollection;'
       return:
         type:
-          - excel.Excel.BindingCollection
-  - uid: excel.Excel.Workbook.context
+          - 'excel!Excel.BindingCollection:class'
+  - uid: 'excel!Excel.Workbook#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -72,8 +72,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Workbook.functions
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Workbook#functions:member'
     summary: |-
       Represents a collection of worksheet functions that can be used for computation. Read-only.
 
@@ -87,8 +87,8 @@ items:
       content: 'readonly functions: Excel.Functions;'
       return:
         type:
-          - excel.Excel.Functions
-  - uid: excel.Excel.Workbook.getSelectedRange
+          - 'excel!Excel.Functions:class'
+  - uid: 'excel!Excel.Workbook#getSelectedRange:member(1)'
     summary: >-
       Gets the currently selected single range from the workbook. If there are multiple ranges selected, this method
       will throw an error.
@@ -104,27 +104,9 @@ items:
       content: 'getSelectedRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var selectedRange = ctx.workbook.getSelectedRange();
-              selectedRange.load('address');
-              return ctx.sync().then(function() {
-                      console.log(selectedRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Workbook.load
+          - 'excel!Excel.Range:class'
+        description: ''
+  - uid: 'excel!Excel.Workbook#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -155,14 +137,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorkbookLoadOptions): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorkbookLoadOptions
-  - uid: excel.Excel.Workbook.load_1
+            - 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
+  - uid: 'excel!Excel.Workbook#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -175,14 +157,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Workbook.load_2
+  - uid: 'excel!Excel.Workbook#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -195,7 +177,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -204,7 +186,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Workbook.names
+  - uid: 'excel!Excel.Workbook#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -218,8 +200,8 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
-  - uid: excel.Excel.Workbook.onSelectionChanged
+          - 'excel!Excel.NamedItemCollection:class'
+  - uid: 'excel!Excel.Workbook#onSelectionChanged:member'
     summary: |-
       Occurs when the selection in the document is changed.
 
@@ -234,7 +216,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.SelectionChangedEventArgs>
-  - uid: excel.Excel.Workbook.set
+  - uid: 'excel!Excel.Workbook#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -264,7 +246,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Workbook.set_1
+  - uid: 'excel!Excel.Workbook#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -281,8 +263,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Workbook
-  - uid: excel.Excel.Workbook.tables
+            - 'excel!Excel.Workbook:class'
+  - uid: 'excel!Excel.Workbook#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -296,8 +278,8 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-  - uid: excel.Excel.Workbook.toJSON
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Workbook#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -313,9 +295,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorkbookData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookData
+          - 'excel!Excel.Interfaces.WorkbookData:interface'
         description: ''
-  - uid: excel.Excel.Workbook.worksheets
+  - uid: 'excel!Excel.Workbook#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 
@@ -329,4 +311,4 @@ items:
       content: 'readonly worksheets: Excel.WorksheetCollection;'
       return:
         type:
-          - excel.Excel.WorksheetCollection
+          - 'excel!Excel.WorksheetCollection:class'

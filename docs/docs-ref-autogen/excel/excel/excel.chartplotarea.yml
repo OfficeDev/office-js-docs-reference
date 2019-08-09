@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartPlotArea
+  - uid: 'excel!Excel.ChartPlotArea:class'
     summary: |-
       This object represents the attributes for a chart plotArea object.
 
@@ -12,26 +12,26 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartPlotArea.context
-      - excel.Excel.ChartPlotArea.format
-      - excel.Excel.ChartPlotArea.height
-      - excel.Excel.ChartPlotArea.insideHeight
-      - excel.Excel.ChartPlotArea.insideLeft
-      - excel.Excel.ChartPlotArea.insideTop
-      - excel.Excel.ChartPlotArea.insideWidth
-      - excel.Excel.ChartPlotArea.left
-      - excel.Excel.ChartPlotArea.load
-      - excel.Excel.ChartPlotArea.load_1
-      - excel.Excel.ChartPlotArea.load_2
-      - excel.Excel.ChartPlotArea.position
-      - excel.Excel.ChartPlotArea.set
-      - excel.Excel.ChartPlotArea.set_1
-      - excel.Excel.ChartPlotArea.toJSON
-      - excel.Excel.ChartPlotArea.top
-      - excel.Excel.ChartPlotArea.width
-  - uid: excel.Excel.ChartPlotArea.context
+      - 'excel!Excel.ChartPlotArea#context:member'
+      - 'excel!Excel.ChartPlotArea#format:member'
+      - 'excel!Excel.ChartPlotArea#height:member'
+      - 'excel!Excel.ChartPlotArea#insideHeight:member'
+      - 'excel!Excel.ChartPlotArea#insideLeft:member'
+      - 'excel!Excel.ChartPlotArea#insideTop:member'
+      - 'excel!Excel.ChartPlotArea#insideWidth:member'
+      - 'excel!Excel.ChartPlotArea#left:member'
+      - 'excel!Excel.ChartPlotArea#load:member(1)'
+      - 'excel!Excel.ChartPlotArea#load:member(2)'
+      - 'excel!Excel.ChartPlotArea#load:member(3)'
+      - 'excel!Excel.ChartPlotArea#position:member'
+      - 'excel!Excel.ChartPlotArea#set:member(1)'
+      - 'excel!Excel.ChartPlotArea#set:member(2)'
+      - 'excel!Excel.ChartPlotArea#toJSON:member(1)'
+      - 'excel!Excel.ChartPlotArea#top:member'
+      - 'excel!Excel.ChartPlotArea#width:member'
+  - uid: 'excel!Excel.ChartPlotArea#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -44,8 +44,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartPlotArea.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartPlotArea#format:member'
     summary: |-
       Represents the formatting of a chart plotArea.
 
@@ -59,8 +59,8 @@ items:
       content: 'readonly format: Excel.ChartPlotAreaFormat;'
       return:
         type:
-          - excel.Excel.ChartPlotAreaFormat
-  - uid: excel.Excel.ChartPlotArea.height
+          - 'excel!Excel.ChartPlotAreaFormat:class'
+  - uid: 'excel!Excel.ChartPlotArea#height:member'
     summary: |-
       Represents the height value of plotArea.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.insideHeight
+  - uid: 'excel!Excel.ChartPlotArea#insideHeight:member'
     summary: |-
       Represents the insideHeight value of plotArea.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.insideLeft
+  - uid: 'excel!Excel.ChartPlotArea#insideLeft:member'
     summary: |-
       Represents the insideLeft value of plotArea.
 
@@ -105,7 +105,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.insideTop
+  - uid: 'excel!Excel.ChartPlotArea#insideTop:member'
     summary: |-
       Represents the insideTop value of plotArea.
 
@@ -120,7 +120,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.insideWidth
+  - uid: 'excel!Excel.ChartPlotArea#insideWidth:member'
     summary: |-
       Represents the insideWidth value of plotArea.
 
@@ -135,7 +135,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.left
+  - uid: 'excel!Excel.ChartPlotArea#left:member'
     summary: |-
       Represents the left value of plotArea.
 
@@ -150,7 +150,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.load
+  - uid: 'excel!Excel.ChartPlotArea#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -181,14 +181,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartPlotAreaLoadOptions): Excel.ChartPlotArea;'
       return:
         type:
-          - excel.Excel.ChartPlotArea
+          - 'excel!Excel.ChartPlotArea:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartPlotAreaLoadOptions
-  - uid: excel.Excel.ChartPlotArea.load_1
+            - 'excel!Excel.Interfaces.ChartPlotAreaLoadOptions:interface'
+  - uid: 'excel!Excel.ChartPlotArea#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -201,14 +201,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartPlotArea;'
       return:
         type:
-          - excel.Excel.ChartPlotArea
+          - 'excel!Excel.ChartPlotArea:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartPlotArea.load_2
+  - uid: 'excel!Excel.ChartPlotArea#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -221,7 +221,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartPlotArea;'
       return:
         type:
-          - excel.Excel.ChartPlotArea
+          - 'excel!Excel.ChartPlotArea:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -230,7 +230,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartPlotArea.position
+  - uid: 'excel!Excel.ChartPlotArea#position:member'
     summary: |-
       Represents the position of plotArea.
 
@@ -245,7 +245,7 @@ items:
       return:
         type:
           - Excel.ChartPlotAreaPosition | "Automatic" | "Custom"
-  - uid: excel.Excel.ChartPlotArea.set
+  - uid: 'excel!Excel.ChartPlotArea#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -275,7 +275,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartPlotArea.set_1
+  - uid: 'excel!Excel.ChartPlotArea#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -292,8 +292,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartPlotArea
-  - uid: excel.Excel.ChartPlotArea.toJSON
+            - 'excel!Excel.ChartPlotArea:class'
+  - uid: 'excel!Excel.ChartPlotArea#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -309,9 +309,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartPlotAreaData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPlotAreaData
+          - 'excel!Excel.Interfaces.ChartPlotAreaData:interface'
         description: ''
-  - uid: excel.Excel.ChartPlotArea.top
+  - uid: 'excel!Excel.ChartPlotArea#top:member'
     summary: |-
       Represents the top value of plotArea.
 
@@ -326,7 +326,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartPlotArea.width
+  - uid: 'excel!Excel.ChartPlotArea#width:member'
     summary: |-
       Represents the width value of plotArea.
 

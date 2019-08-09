@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
     summary: An interface describing the data returned by calling "inkAnalysisParagraph.toJSON()".
     name: OneNote.Interfaces.InkAnalysisParagraphData
     fullName: OneNote.Interfaces.InkAnalysisParagraphData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphData.id
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphData.inkAnalysis
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphData.lines
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData.id
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#inkAnalysis:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#id:member'
     summary: |-
       Gets the ID of the InkAnalysisParagraph object. Read-only.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData.inkAnalysis
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#inkAnalysis:member'
     summary: |-
       Reference to the parent InkAnalysisPage. Read-only.
 
@@ -41,8 +41,8 @@ items:
       content: 'inkAnalysis?: OneNote.Interfaces.InkAnalysisData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData.lines
+          - 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData#lines:member'
     summary: |-
       Gets the ink analysis lines in this ink analysis paragraph. Read-only.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Setting
+  - uid: 'word!Word.Setting:class'
     summary: >-
       Represents a setting of the add-in.
 
@@ -15,22 +15,22 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.Setting._replaceDateWithStringDate
-      - word.Word.Setting.context
-      - word.Word.Setting.delete
-      - word.Word.Setting.key
-      - word.Word.Setting.load
-      - word.Word.Setting.load_1
-      - word.Word.Setting.load_2
-      - word.Word.Setting.set
-      - word.Word.Setting.set_1
-      - word.Word.Setting.toJSON
-      - word.Word.Setting.track
-      - word.Word.Setting.untrack
-      - word.Word.Setting.value
-  - uid: word.Word.Setting._replaceDateWithStringDate
+      - 'word!Word.Setting._replaceDateWithStringDate:member(1)'
+      - 'word!Word.Setting#context:member'
+      - 'word!Word.Setting#delete:member(1)'
+      - 'word!Word.Setting#key:member'
+      - 'word!Word.Setting#load:member(1)'
+      - 'word!Word.Setting#load:member(2)'
+      - 'word!Word.Setting#load:member(3)'
+      - 'word!Word.Setting#set:member(1)'
+      - 'word!Word.Setting#set:member(2)'
+      - 'word!Word.Setting#toJSON:member(1)'
+      - 'word!Word.Setting#track:member(1)'
+      - 'word!Word.Setting#untrack:member(1)'
+      - 'word!Word.Setting#value:member'
+  - uid: 'word!Word.Setting._replaceDateWithStringDate:member(1)'
     isPreview: true
     name: _replaceDateWithStringDate(value)
     fullName: _replaceDateWithStringDate(value)
@@ -48,7 +48,7 @@ items:
           description: ''
           type:
             - any
-  - uid: word.Word.Setting.context
+  - uid: 'word!Word.Setting#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -62,8 +62,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.Setting.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.Setting#delete:member(1)'
     summary: >-
       Deletes the setting.
 
@@ -81,49 +81,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              var startMonth = settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to get the count of settings.
-              var count = settings.getCount();
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(count.value);
-
-                  // Queue a command to delete the setting.
-                  startMonth.delete();
-
-                  // Queue a command to get the new count of settings.
-                  count = settings.getCount();
-              })
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              .then(context.sync)
-              .then(function () {
-                  console.log(count.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.Setting.key
+        description: ''
+  - uid: 'word!Word.Setting#key:member'
     summary: >-
       Gets the key of the setting. Read only.
 
@@ -141,7 +100,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Setting.load
+  - uid: 'word!Word.Setting#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -173,14 +132,14 @@ items:
       content: 'load(option?: Word.Interfaces.SettingLoadOptions): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.SettingLoadOptions
-  - uid: word.Word.Setting.load_1
+            - 'word!Word.Interfaces.SettingLoadOptions:interface'
+  - uid: 'word!Word.Setting#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -194,14 +153,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.Setting.load_2
+  - uid: 'word!Word.Setting#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -215,7 +174,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -224,7 +183,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.Setting.set
+  - uid: 'word!Word.Setting#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -255,7 +214,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.Setting.set_1
+  - uid: 'word!Word.Setting#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -273,8 +232,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.Setting
-  - uid: word.Word.Setting.toJSON
+            - 'word!Word.Setting:class'
+  - uid: 'word!Word.Setting#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -291,9 +250,9 @@ items:
       content: 'toJSON(): Word.Interfaces.SettingData;'
       return:
         type:
-          - word.Word.Interfaces.SettingData
+          - 'word!Word.Interfaces.SettingData:interface'
         description: ''
-  - uid: word.Word.Setting.track
+  - uid: 'word!Word.Setting#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -310,9 +269,9 @@ items:
       content: 'track(): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
-  - uid: word.Word.Setting.untrack
+  - uid: 'word!Word.Setting#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -328,9 +287,9 @@ items:
       content: 'untrack(): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
-  - uid: word.Word.Setting.value
+  - uid: 'word!Word.Setting#value:member'
     summary: >-
       Gets or sets the value of the setting.
 

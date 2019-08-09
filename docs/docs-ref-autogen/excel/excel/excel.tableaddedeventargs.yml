@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableAddedEventArgs
+  - uid: 'excel!Excel.TableAddedEventArgs:interface'
     summary: |-
       Provides information about the table that raised the OnAdded event.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableAddedEventArgs.source
-      - excel.Excel.TableAddedEventArgs.tableId
-      - excel.Excel.TableAddedEventArgs.type
-      - excel.Excel.TableAddedEventArgs.worksheetId
-  - uid: excel.Excel.TableAddedEventArgs.source
+      - 'excel!Excel.TableAddedEventArgs#source:member'
+      - 'excel!Excel.TableAddedEventArgs#tableId:member'
+      - 'excel!Excel.TableAddedEventArgs#type:member'
+      - 'excel!Excel.TableAddedEventArgs#worksheetId:member'
+  - uid: 'excel!Excel.TableAddedEventArgs#source:member'
     summary: |-
       Gets the source of the event. See Excel.EventSource for details.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - Excel.EventSource | "Local" | "Remote"
-  - uid: excel.Excel.TableAddedEventArgs.tableId
+  - uid: 'excel!Excel.TableAddedEventArgs#tableId:member'
     summary: |-
       Gets the id of the table that is added.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TableAddedEventArgs.type
+  - uid: 'excel!Excel.TableAddedEventArgs#type:member'
     summary: |-
       Gets the type of the event. See Excel.EventType for details.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - '"TableAdded"'
-  - uid: excel.Excel.TableAddedEventArgs.worksheetId
+  - uid: 'excel!Excel.TableAddedEventArgs#worksheetId:member'
     summary: |-
       Gets the id of the worksheet in which the table is added.
 

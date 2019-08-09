@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotTable
+  - uid: 'excel!Excel.PivotTable:class'
     summary: |-
       Represents an Excel PivotTable.
 
@@ -12,27 +12,27 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PivotTable.columnHierarchies
-      - excel.Excel.PivotTable.context
-      - excel.Excel.PivotTable.dataHierarchies
-      - excel.Excel.PivotTable.delete
-      - excel.Excel.PivotTable.filterHierarchies
-      - excel.Excel.PivotTable.hierarchies
-      - excel.Excel.PivotTable.id
-      - excel.Excel.PivotTable.layout
-      - excel.Excel.PivotTable.load
-      - excel.Excel.PivotTable.load_1
-      - excel.Excel.PivotTable.load_2
-      - excel.Excel.PivotTable.name
-      - excel.Excel.PivotTable.refresh
-      - excel.Excel.PivotTable.rowHierarchies
-      - excel.Excel.PivotTable.set
-      - excel.Excel.PivotTable.set_1
-      - excel.Excel.PivotTable.toJSON
-      - excel.Excel.PivotTable.worksheet
-  - uid: excel.Excel.PivotTable.columnHierarchies
+      - 'excel!Excel.PivotTable#columnHierarchies:member'
+      - 'excel!Excel.PivotTable#context:member'
+      - 'excel!Excel.PivotTable#dataHierarchies:member'
+      - 'excel!Excel.PivotTable#delete:member(1)'
+      - 'excel!Excel.PivotTable#filterHierarchies:member'
+      - 'excel!Excel.PivotTable#hierarchies:member'
+      - 'excel!Excel.PivotTable#id:member'
+      - 'excel!Excel.PivotTable#layout:member'
+      - 'excel!Excel.PivotTable#load:member(1)'
+      - 'excel!Excel.PivotTable#load:member(2)'
+      - 'excel!Excel.PivotTable#load:member(3)'
+      - 'excel!Excel.PivotTable#name:member'
+      - 'excel!Excel.PivotTable#refresh:member(1)'
+      - 'excel!Excel.PivotTable#rowHierarchies:member'
+      - 'excel!Excel.PivotTable#set:member(1)'
+      - 'excel!Excel.PivotTable#set:member(2)'
+      - 'excel!Excel.PivotTable#toJSON:member(1)'
+      - 'excel!Excel.PivotTable#worksheet:member'
+  - uid: 'excel!Excel.PivotTable#columnHierarchies:member'
     summary: |-
       The Column Pivot Hierarchies of the PivotTable.
 
@@ -46,32 +46,8 @@ items:
       content: 'readonly columnHierarchies: Excel.RowColumnPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchyCollection
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");       
-
-              // check if the PivotTable already has a column
-              const column = pivotTable.columnHierarchies.getItemOrNullObject("Farm");
-              column.load("id");
-              await context.sync();
-
-              if (column.isNullObject) {
-                  // ading the farm column to the column hierarchy automatically removes it from the row hierarchy
-                  pivotTable.columnHierarchies.add(pivotTable.hierarchies.getItem("Farm"));
-              } else {
-                  pivotTable.columnHierarchies.remove(column);
-              }
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.PivotTable.context
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+  - uid: 'excel!Excel.PivotTable#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -84,8 +60,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotTable.dataHierarchies
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotTable#dataHierarchies:member'
     summary: |-
       The Data Pivot Hierarchies of the PivotTable.
 
@@ -99,22 +75,8 @@ items:
       content: 'readonly dataHierarchies: Excel.DataPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchyCollection
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold at Farm"));
-              pivotTable.dataHierarchies.add(pivotTable.hierarchies.getItem("Crates Sold Wholesale"));
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.PivotTable.delete
+          - 'excel!Excel.DataPivotHierarchyCollection:class'
+  - uid: 'excel!Excel.PivotTable#delete:member(1)'
     summary: |-
       Deletes the PivotTable.
 
@@ -129,19 +91,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              context.workbook.worksheets.getItem("Pivot").pivotTables.getItem("Farm Sales").delete();
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.PivotTable.filterHierarchies
+        description: ''
+  - uid: 'excel!Excel.PivotTable#filterHierarchies:member'
     summary: |-
       The Filter Pivot Hierarchies of the PivotTable.
 
@@ -155,30 +106,8 @@ items:
       content: 'readonly filterHierarchies: Excel.FilterPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.FilterPivotHierarchyCollection
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          async function filter(functionType: Excel.AggregationFunction) {
-              await Excel.run(async (context) => {
-                  const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-                  const filters = pivotTable.filterHierarchies;
-                  const filter = filters.getItemOrNullObject("Classification");
-                  filter.load();
-                  await context.sync();
-
-                  // add the Classification hierarchy to the filter, if it's not already there
-                  if (filter.isNullObject) {
-                      filters.add(pivotTable.hierarchies.getItem("Classification"));
-                      await context.sync();
-                  }
-              });
-          }
-          ```
-  - uid: excel.Excel.PivotTable.hierarchies
+          - 'excel!Excel.FilterPivotHierarchyCollection:class'
+  - uid: 'excel!Excel.PivotTable#hierarchies:member'
     summary: |-
       The Pivot Hierarchies of the PivotTable.
 
@@ -192,8 +121,8 @@ items:
       content: 'readonly hierarchies: Excel.PivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.PivotHierarchyCollection
-  - uid: excel.Excel.PivotTable.id
+          - 'excel!Excel.PivotHierarchyCollection:class'
+  - uid: 'excel!Excel.PivotTable#id:member'
     summary: |-
       Id of the PivotTable. Read-only.
 
@@ -208,7 +137,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.PivotTable.layout
+  - uid: 'excel!Excel.PivotTable#layout:member'
     summary: |-
       The PivotLayout describing the layout and visual structure of the PivotTable.
 
@@ -222,31 +151,8 @@ items:
       content: 'readonly layout: Excel.PivotLayout;'
       return:
         type:
-          - excel.Excel.PivotLayout
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const pivotTable = context.workbook.worksheets.getActiveWorksheet().pivotTables.getItem("Farm Sales");
-              pivotTable.layout.load("layoutType");
-              await context.sync();
-
-              // cycle between the three layout types
-              if (pivotTable.layout.layoutType === "Compact") {
-                  pivotTable.layout.layoutType = "Outline";
-              } else if (pivotTable.layout.layoutType === "Outline") {
-                  pivotTable.layout.layoutType = "Tabular";
-              } else {
-                  pivotTable.layout.layoutType = "Compact";
-              }
-              await context.sync();
-              console.log("Pivot layout is now " + pivotTable.layout.layoutType);
-          });
-          ```
-  - uid: excel.Excel.PivotTable.load
+          - 'excel!Excel.PivotLayout:class'
+  - uid: 'excel!Excel.PivotTable#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -277,14 +183,14 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotTableLoadOptions): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - 'excel!Excel.PivotTable:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PivotTableLoadOptions
-  - uid: excel.Excel.PivotTable.load_1
+            - 'excel!Excel.Interfaces.PivotTableLoadOptions:interface'
+  - uid: 'excel!Excel.PivotTable#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -297,14 +203,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - 'excel!Excel.PivotTable:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotTable.load_2
+  - uid: 'excel!Excel.PivotTable#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -317,7 +223,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - 'excel!Excel.PivotTable:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -326,7 +232,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.PivotTable.name
+  - uid: 'excel!Excel.PivotTable#name:member'
     summary: |-
       Name of the PivotTable.
 
@@ -341,7 +247,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.PivotTable.refresh
+  - uid: 'excel!Excel.PivotTable#refresh:member(1)'
     summary: |-
       Refreshes the PivotTable.
 
@@ -357,7 +263,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.PivotTable.rowHierarchies
+  - uid: 'excel!Excel.PivotTable#rowHierarchies:member'
     summary: |-
       The Row Pivot Hierarchies of the PivotTable.
 
@@ -371,8 +277,8 @@ items:
       content: 'readonly rowHierarchies: Excel.RowColumnPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.RowColumnPivotHierarchyCollection
-  - uid: excel.Excel.PivotTable.set
+          - 'excel!Excel.RowColumnPivotHierarchyCollection:class'
+  - uid: 'excel!Excel.PivotTable#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -402,7 +308,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.PivotTable.set_1
+  - uid: 'excel!Excel.PivotTable#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -419,8 +325,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PivotTable
-  - uid: excel.Excel.PivotTable.toJSON
+            - 'excel!Excel.PivotTable:class'
+  - uid: 'excel!Excel.PivotTable#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -436,9 +342,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotTableData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotTableData
+          - 'excel!Excel.Interfaces.PivotTableData:interface'
         description: ''
-  - uid: excel.Excel.PivotTable.worksheet
+  - uid: 'excel!Excel.PivotTable#worksheet:member'
     summary: |-
       The worksheet containing the current PivotTable.
 
@@ -452,4 +358,4 @@ items:
       content: 'readonly worksheet: Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphCollectionData
+  - uid: 'word!Word.Interfaces.ParagraphCollectionData:interface'
     summary: An interface describing the data returned by calling "paragraphCollection.toJSON()".
     name: Word.Interfaces.ParagraphCollectionData
     fullName: Word.Interfaces.ParagraphCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphCollectionData.items
-  - uid: word.Word.Interfaces.ParagraphCollectionData.items
+      - 'word!Word.Interfaces.ParagraphCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionData#items:member'
     name: items
     fullName: items
     langs:

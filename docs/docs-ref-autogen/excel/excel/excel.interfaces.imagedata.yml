@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ImageData
+  - uid: 'excel!Excel.Interfaces.ImageData:interface'
     summary: An interface describing the data returned by calling "image.toJSON()".
     name: Excel.Interfaces.ImageData
     fullName: Excel.Interfaces.ImageData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ImageData.format
-      - excel.Excel.Interfaces.ImageData.id
-  - uid: excel.Excel.Interfaces.ImageData.format
+      - 'excel!Excel.Interfaces.ImageData#format:member'
+      - 'excel!Excel.Interfaces.ImageData#id:member'
+  - uid: 'excel!Excel.Interfaces.ImageData#format:member'
     summary: |-
       Returns the format of the image. Read-only.
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
-  - uid: excel.Excel.Interfaces.ImageData.id
+  - uid: 'excel!Excel.Interfaces.ImageData#id:member'
     summary: |-
       Represents the shape identifier for the image object. Read-only.
 

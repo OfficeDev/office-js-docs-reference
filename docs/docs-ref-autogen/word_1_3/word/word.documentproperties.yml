@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.DocumentProperties
+  - uid: 'word!Word.DocumentProperties:class'
     summary: |-
       Represents document properties.
 
@@ -12,36 +12,36 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.DocumentProperties.applicationName
-      - word.Word.DocumentProperties.author
-      - word.Word.DocumentProperties.category
-      - word.Word.DocumentProperties.comments
-      - word.Word.DocumentProperties.company
-      - word.Word.DocumentProperties.context
-      - word.Word.DocumentProperties.creationDate
-      - word.Word.DocumentProperties.customProperties
-      - word.Word.DocumentProperties.format
-      - word.Word.DocumentProperties.keywords
-      - word.Word.DocumentProperties.lastAuthor
-      - word.Word.DocumentProperties.lastPrintDate
-      - word.Word.DocumentProperties.lastSaveTime
-      - word.Word.DocumentProperties.load
-      - word.Word.DocumentProperties.load_1
-      - word.Word.DocumentProperties.load_2
-      - word.Word.DocumentProperties.manager
-      - word.Word.DocumentProperties.revisionNumber
-      - word.Word.DocumentProperties.security
-      - word.Word.DocumentProperties.set
-      - word.Word.DocumentProperties.set_1
-      - word.Word.DocumentProperties.subject
-      - word.Word.DocumentProperties.template
-      - word.Word.DocumentProperties.title
-      - word.Word.DocumentProperties.toJSON
-      - word.Word.DocumentProperties.track
-      - word.Word.DocumentProperties.untrack
-  - uid: word.Word.DocumentProperties.applicationName
+      - 'word!Word.DocumentProperties#applicationName:member'
+      - 'word!Word.DocumentProperties#author:member'
+      - 'word!Word.DocumentProperties#category:member'
+      - 'word!Word.DocumentProperties#comments:member'
+      - 'word!Word.DocumentProperties#company:member'
+      - 'word!Word.DocumentProperties#context:member'
+      - 'word!Word.DocumentProperties#creationDate:member'
+      - 'word!Word.DocumentProperties#customProperties:member'
+      - 'word!Word.DocumentProperties#format:member'
+      - 'word!Word.DocumentProperties#keywords:member'
+      - 'word!Word.DocumentProperties#lastAuthor:member'
+      - 'word!Word.DocumentProperties#lastPrintDate:member'
+      - 'word!Word.DocumentProperties#lastSaveTime:member'
+      - 'word!Word.DocumentProperties#load:member(1)'
+      - 'word!Word.DocumentProperties#load:member(2)'
+      - 'word!Word.DocumentProperties#load:member(3)'
+      - 'word!Word.DocumentProperties#manager:member'
+      - 'word!Word.DocumentProperties#revisionNumber:member'
+      - 'word!Word.DocumentProperties#security:member'
+      - 'word!Word.DocumentProperties#set:member(1)'
+      - 'word!Word.DocumentProperties#set:member(2)'
+      - 'word!Word.DocumentProperties#subject:member'
+      - 'word!Word.DocumentProperties#template:member'
+      - 'word!Word.DocumentProperties#title:member'
+      - 'word!Word.DocumentProperties#toJSON:member(1)'
+      - 'word!Word.DocumentProperties#track:member(1)'
+      - 'word!Word.DocumentProperties#untrack:member(1)'
+  - uid: 'word!Word.DocumentProperties#applicationName:member'
     summary: |-
       Gets the application name of the document. Read only.
 
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.author
+  - uid: 'word!Word.DocumentProperties#author:member'
     summary: |-
       Gets or sets the author of the document.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.category
+  - uid: 'word!Word.DocumentProperties#category:member'
     summary: |-
       Gets or sets the category of the document.
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.comments
+  - uid: 'word!Word.DocumentProperties#comments:member'
     summary: |-
       Gets or sets the comments of the document.
 
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.company
+  - uid: 'word!Word.DocumentProperties#company:member'
     summary: |-
       Gets or sets the company of the document.
 
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.context
+  - uid: 'word!Word.DocumentProperties#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -129,8 +129,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.DocumentProperties.creationDate
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.DocumentProperties#creationDate:member'
     summary: |-
       Gets the creation date of the document. Read only.
 
@@ -145,7 +145,7 @@ items:
       return:
         type:
           - Date
-  - uid: word.Word.DocumentProperties.customProperties
+  - uid: 'word!Word.DocumentProperties#customProperties:member'
     summary: |-
       Gets the collection of custom properties of the document. Read only.
 
@@ -159,8 +159,8 @@ items:
       content: 'readonly customProperties: Word.CustomPropertyCollection;'
       return:
         type:
-          - word.Word.CustomPropertyCollection
-  - uid: word.Word.DocumentProperties.format
+          - 'word!Word.CustomPropertyCollection:class'
+  - uid: 'word!Word.DocumentProperties#format:member'
     summary: |-
       Gets or sets the format of the document.
 
@@ -175,7 +175,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.keywords
+  - uid: 'word!Word.DocumentProperties#keywords:member'
     summary: |-
       Gets or sets the keywords of the document.
 
@@ -190,7 +190,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.lastAuthor
+  - uid: 'word!Word.DocumentProperties#lastAuthor:member'
     summary: |-
       Gets the last author of the document. Read only.
 
@@ -205,7 +205,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.lastPrintDate
+  - uid: 'word!Word.DocumentProperties#lastPrintDate:member'
     summary: |-
       Gets the last print date of the document. Read only.
 
@@ -220,7 +220,7 @@ items:
       return:
         type:
           - Date
-  - uid: word.Word.DocumentProperties.lastSaveTime
+  - uid: 'word!Word.DocumentProperties#lastSaveTime:member'
     summary: |-
       Gets the last save time of the document. Read only.
 
@@ -235,7 +235,7 @@ items:
       return:
         type:
           - Date
-  - uid: word.Word.DocumentProperties.load
+  - uid: 'word!Word.DocumentProperties#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -266,14 +266,14 @@ items:
       content: 'load(option?: Word.Interfaces.DocumentPropertiesLoadOptions): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - 'word!Word.DocumentProperties:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.DocumentPropertiesLoadOptions
-  - uid: word.Word.DocumentProperties.load_1
+            - 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
+  - uid: 'word!Word.DocumentProperties#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -286,14 +286,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - 'word!Word.DocumentProperties:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.DocumentProperties.load_2
+  - uid: 'word!Word.DocumentProperties#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -306,7 +306,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - 'word!Word.DocumentProperties:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -315,7 +315,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.DocumentProperties.manager
+  - uid: 'word!Word.DocumentProperties#manager:member'
     summary: |-
       Gets or sets the manager of the document.
 
@@ -330,7 +330,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.revisionNumber
+  - uid: 'word!Word.DocumentProperties#revisionNumber:member'
     summary: |-
       Gets the revision number of the document. Read only.
 
@@ -345,7 +345,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.security
+  - uid: 'word!Word.DocumentProperties#security:member'
     summary: |-
       Gets the security of the document. Read only.
 
@@ -360,7 +360,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.DocumentProperties.set
+  - uid: 'word!Word.DocumentProperties#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -390,7 +390,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.DocumentProperties.set_1
+  - uid: 'word!Word.DocumentProperties#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -407,8 +407,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.DocumentProperties
-  - uid: word.Word.DocumentProperties.subject
+            - 'word!Word.DocumentProperties:class'
+  - uid: 'word!Word.DocumentProperties#subject:member'
     summary: |-
       Gets or sets the subject of the document.
 
@@ -423,7 +423,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.template
+  - uid: 'word!Word.DocumentProperties#template:member'
     summary: |-
       Gets the template of the document. Read only.
 
@@ -438,7 +438,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.title
+  - uid: 'word!Word.DocumentProperties#title:member'
     summary: |-
       Gets or sets the title of the document.
 
@@ -453,7 +453,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.DocumentProperties.toJSON
+  - uid: 'word!Word.DocumentProperties#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -469,9 +469,9 @@ items:
       content: 'toJSON(): Word.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - word.Word.Interfaces.DocumentPropertiesData
+          - 'word!Word.Interfaces.DocumentPropertiesData:interface'
         description: ''
-  - uid: word.Word.DocumentProperties.track
+  - uid: 'word!Word.DocumentProperties#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -487,9 +487,9 @@ items:
       content: 'track(): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - 'word!Word.DocumentProperties:class'
         description: ''
-  - uid: word.Word.DocumentProperties.untrack
+  - uid: 'word!Word.DocumentProperties#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -504,5 +504,5 @@ items:
       content: 'untrack(): Word.DocumentProperties;'
       return:
         type:
-          - word.Word.DocumentProperties
+          - 'word!Word.DocumentProperties:class'
         description: ''

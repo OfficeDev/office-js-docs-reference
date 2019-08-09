@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the InkAnalysisWordCollection object, for use in
       "inkAnalysisWordCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

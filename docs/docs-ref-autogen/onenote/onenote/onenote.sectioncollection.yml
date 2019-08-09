@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.SectionCollection
+  - uid: 'onenote!OneNote.SectionCollection:class'
     summary: |-
       Represents a collection of sections.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.SectionCollection.context
-      - onenote.OneNote.SectionCollection.count
-      - onenote.OneNote.SectionCollection.getByName
-      - onenote.OneNote.SectionCollection.getItem
-      - onenote.OneNote.SectionCollection.getItemAt
-      - onenote.OneNote.SectionCollection.items
-      - onenote.OneNote.SectionCollection.load
-      - onenote.OneNote.SectionCollection.load_1
-      - onenote.OneNote.SectionCollection.load_2
-      - onenote.OneNote.SectionCollection.toJSON
-      - onenote.OneNote.SectionCollection.track
-      - onenote.OneNote.SectionCollection.untrack
-  - uid: onenote.OneNote.SectionCollection.context
+      - 'onenote!OneNote.SectionCollection#context:member'
+      - 'onenote!OneNote.SectionCollection#count:member'
+      - 'onenote!OneNote.SectionCollection#getByName:member(1)'
+      - 'onenote!OneNote.SectionCollection#getItem:member(1)'
+      - 'onenote!OneNote.SectionCollection#getItemAt:member(1)'
+      - 'onenote!OneNote.SectionCollection#items:member'
+      - 'onenote!OneNote.SectionCollection#load:member(1)'
+      - 'onenote!OneNote.SectionCollection#load:member(2)'
+      - 'onenote!OneNote.SectionCollection#load:member(3)'
+      - 'onenote!OneNote.SectionCollection#toJSON:member(1)'
+      - 'onenote!OneNote.SectionCollection#track:member(1)'
+      - 'onenote!OneNote.SectionCollection#untrack:member(1)'
+  - uid: 'onenote!OneNote.SectionCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.SectionCollection.count
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.SectionCollection#count:member'
     summary: |-
       Returns the number of sections in the collection. Read-only.
 
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.SectionCollection.getByName
+  - uid: 'onenote!OneNote.SectionCollection#getByName:member(1)'
     summary: |-
       Gets the collection of sections with the specified name.
 
@@ -69,52 +69,14 @@ items:
       content: 'getByName(name: string): OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the sections in the current notebook.
-              var sections = context.application.getActiveNotebook().sections;
-
-              // Queue a command to load the sections. 
-              // For best performance, request specific properties.
-              sections.load("id"); 
-              
-              // Get the sections with the specified name.
-              var groceriesSections = sections.getByName("Groceries");
-              
-              // Queue a command to load the sections with the specified name.
-              groceriesSections.load("id,name");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-
-                      // Iterate through the collection or access items individually by index.
-                      if (groceriesSections.items.length > 0) {
-                          console.log("Section name: " + groceriesSections.items[0].name);
-                          console.log("Section ID: " + groceriesSections.items[0].id);
-                      }
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.SectionCollection:class'
+        description: ''
       parameters:
         - id: name
           description: The name of the section.
           type:
             - string
-  - uid: onenote.OneNote.SectionCollection.getItem
+  - uid: 'onenote!OneNote.SectionCollection#getItem:member(1)'
     summary: |-
       Gets a section by ID or by its index in the collection. Read-only.
 
@@ -128,14 +90,14 @@ items:
       content: 'getItem(index: number | string): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - 'onenote!OneNote.Section:class'
         description: ''
       parameters:
         - id: index
           description: 'The ID of the section, or the index location of the section in the collection.'
           type:
             - number | string
-  - uid: onenote.OneNote.SectionCollection.getItemAt
+  - uid: 'onenote!OneNote.SectionCollection#getItemAt:member(1)'
     summary: |-
       Gets a section on its position in the collection.
 
@@ -149,14 +111,14 @@ items:
       content: 'getItemAt(index: number): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
+          - 'onenote!OneNote.Section:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: onenote.OneNote.SectionCollection.items
+  - uid: 'onenote!OneNote.SectionCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -168,7 +130,7 @@ items:
       return:
         type:
           - 'OneNote.Section[]'
-  - uid: onenote.OneNote.SectionCollection.load
+  - uid: 'onenote!OneNote.SectionCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -201,14 +163,14 @@ items:
         OneNote.SectionCollection;
       return:
         type:
-          - onenote.OneNote.SectionCollection
+          - 'onenote!OneNote.SectionCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OneNote.Interfaces.SectionCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-  - uid: onenote.OneNote.SectionCollection.load_1
+  - uid: 'onenote!OneNote.SectionCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -221,50 +183,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the sections in the current notebook.
-              var sections = context.application.getActiveNotebook().sections;
-
-              // Queue a command to load the sections. 
-              // For best performance, request specific properties.
-              sections.load("name"); 
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      
-                      // Iterate through the collection or access items individually by index, for example: sections.items[0]
-                      $.each(sections.items, function(index, section) {
-                          if (section.name === "Homework") {
-                              section.addPage("Biology");
-                              section.addPage("Spanish");
-                              section.addPage("Computer Science");
-                          }
-                      });
-                      return context.sync();
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.SectionCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.SectionCollection.load_2
+  - uid: 'onenote!OneNote.SectionCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -274,14 +200,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
+          - 'onenote!OneNote.SectionCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: onenote.OneNote.SectionCollection.toJSON
+  - uid: 'onenote!OneNote.SectionCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -297,9 +223,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.SectionCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionCollectionData
+          - 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
         description: ''
-  - uid: onenote.OneNote.SectionCollection.track
+  - uid: 'onenote!OneNote.SectionCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -315,9 +241,9 @@ items:
       content: 'track(): OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
+          - 'onenote!OneNote.SectionCollection:class'
         description: ''
-  - uid: onenote.OneNote.SectionCollection.untrack
+  - uid: 'onenote!OneNote.SectionCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -332,5 +258,5 @@ items:
       content: 'untrack(): OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
+          - 'onenote!OneNote.SectionCollection:class'
         description: ''

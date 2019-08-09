@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomXmlPartScopedCollection object, for use in
       "customXmlPartScopedCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

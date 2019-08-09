@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Entities
+  - uid: 'outlook!Office.Entities:interface'
     summary: >-
       Represents a collection of entities found in an email message or appointment. Read mode only.
 
@@ -44,16 +44,16 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.Entities.addresses
-      - Outlook.Office.Entities.contacts
-      - Outlook.Office.Entities.emailAddresses
-      - Outlook.Office.Entities.meetingSuggestions
-      - Outlook.Office.Entities.phoneNumbers
-      - Outlook.Office.Entities.taskSuggestions
-      - Outlook.Office.Entities.urls
-  - uid: Outlook.Office.Entities.addresses
+      - 'outlook!Office.Entities#addresses:member'
+      - 'outlook!Office.Entities#contacts:member'
+      - 'outlook!Office.Entities#emailAddresses:member'
+      - 'outlook!Office.Entities#meetingSuggestions:member'
+      - 'outlook!Office.Entities#phoneNumbers:member'
+      - 'outlook!Office.Entities#taskSuggestions:member'
+      - 'outlook!Office.Entities#urls:member'
+  - uid: 'outlook!Office.Entities#addresses:member'
     summary: Gets the physical addresses (street or mailing addresses) found in an email message or appointment.
     name: addresses
     fullName: addresses
@@ -65,16 +65,7 @@ items:
       return:
         type:
           - 'string[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var addresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.Address);
-          ```
-  - uid: Outlook.Office.Entities.contacts
+  - uid: 'outlook!Office.Entities#contacts:member'
     summary: Gets the contacts found in an email address or appointment.
     name: contacts
     fullName: contacts
@@ -86,16 +77,7 @@ items:
       return:
         type:
           - 'Contact[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var contacts = item.getEntitiesByType(Office.MailboxEnums.EntityType.Contact);
-          ```
-  - uid: Outlook.Office.Entities.emailAddresses
+  - uid: 'outlook!Office.Entities#emailAddresses:member'
     summary: Gets the email addresses found in an email message or appointment.
     name: emailAddresses
     fullName: emailAddresses
@@ -107,16 +89,7 @@ items:
       return:
         type:
           - 'string[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var emailAddresses = item.getEntitiesByType(Office.MailboxEnums.EntityType.EmailAddress);
-          ```
-  - uid: Outlook.Office.Entities.meetingSuggestions
+  - uid: 'outlook!Office.Entities#meetingSuggestions:member'
     summary: Gets the meeting suggestions found in an email message.
     name: meetingSuggestions
     fullName: meetingSuggestions
@@ -128,16 +101,7 @@ items:
       return:
         type:
           - 'MeetingSuggestion[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var meetingSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.MeetingSuggestion);
-          ```
-  - uid: Outlook.Office.Entities.phoneNumbers
+  - uid: 'outlook!Office.Entities#phoneNumbers:member'
     summary: Gets the phone numbers found in an email message or appointment.
     name: phoneNumbers
     fullName: phoneNumbers
@@ -149,16 +113,7 @@ items:
       return:
         type:
           - 'PhoneNumber[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
-          ```
-  - uid: Outlook.Office.Entities.taskSuggestions
+  - uid: 'outlook!Office.Entities#taskSuggestions:member'
     summary: Gets the task suggestions found in an email message or appointment.
     name: taskSuggestions
     fullName: taskSuggestions
@@ -170,16 +125,7 @@ items:
       return:
         type:
           - 'string[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var taskSuggestions = item.getEntitiesByType(Office.MailboxEnums.EntityType.TaskSuggestion);
-          ```
-  - uid: Outlook.Office.Entities.urls
+  - uid: 'outlook!Office.Entities#urls:member'
     summary: Gets the Internet URLs present in an email message or appointment.
     name: urls
     fullName: urls
@@ -191,12 +137,3 @@ items:
       return:
         type:
           - 'string[]'
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var item = Office.context.mailbox.item;
-          var urls = item.getEntitiesByType(Office.MailboxEnums.EntityType.Url);
-          ```

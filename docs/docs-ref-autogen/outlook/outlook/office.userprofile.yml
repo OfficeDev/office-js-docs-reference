@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.UserProfile
+  - uid: 'outlook!Office.UserProfile:interface'
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
       address, and time zone.
@@ -19,13 +19,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.UserProfile.accountType
-      - outlook.Office.UserProfile.displayName
-      - outlook.Office.UserProfile.emailAddress
-      - outlook.Office.UserProfile.timeZone
-  - uid: outlook.Office.UserProfile.accountType
+      - 'outlook!Office.UserProfile#accountType:member'
+      - 'outlook!Office.UserProfile#displayName:member'
+      - 'outlook!Office.UserProfile#emailAddress:member'
+      - 'outlook!Office.UserProfile#timeZone:member'
+  - uid: 'outlook!Office.UserProfile#accountType:member'
     summary: |-
       Gets the account type of the user associated with the mailbox.
 
@@ -49,16 +49,6 @@ items:
       account.</td> </tr> <tr> <td>office365</td> <td>The mailbox is associated with an Office 365 work or school
       account.</td> </tr> <tr> <td>outlookCom</td> <td>The mailbox is associated with a personal Outlook.com
       account.</td> </tr> </table>
-
-
-      #### Examples
-
-
-      ```javascript
-
-      console.log(Office.context.mailbox.userProfile.accountType);
-
-      ```
     name: accountType
     fullName: accountType
     langs:
@@ -69,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.UserProfile.displayName
+  - uid: 'outlook!Office.UserProfile#displayName:member'
     summary: |-
       Gets the user's display name.
 
@@ -81,18 +71,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Example: Allie Bellew
-
-      console.log(Office.context.mailbox.userProfile.displayName);
-
-      ```
     name: displayName
     fullName: displayName
     langs:
@@ -103,7 +81,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.UserProfile.emailAddress
+  - uid: 'outlook!Office.UserProfile#emailAddress:member'
     summary: |-
       Gets the user's display name.
 
@@ -115,18 +93,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Example: allieb@contoso.com
-
-      console.log(Office.context.mailbox.userProfile.emailAddress);
-
-      ```
     name: emailAddress
     fullName: emailAddress
     langs:
@@ -137,7 +103,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.UserProfile.timeZone
+  - uid: 'outlook!Office.UserProfile#timeZone:member'
     summary: |-
       Gets the user's SMTP email address.
 
@@ -149,18 +115,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Example: Pacific Standard Time
-
-      console.log(Office.context.mailbox.userProfile.timeZone);
-
-      ```
     name: timeZone
     fullName: timeZone
     langs:

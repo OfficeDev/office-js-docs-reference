@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RangeBorderCollection
+  - uid: 'excel!Excel.RangeBorderCollection:class'
     summary: |-
       Represents the border objects that make up the range border.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RangeBorderCollection.context
-      - excel.Excel.RangeBorderCollection.count
-      - excel.Excel.RangeBorderCollection.getItem
-      - excel.Excel.RangeBorderCollection.getItem_1
-      - excel.Excel.RangeBorderCollection.getItemAt
-      - excel.Excel.RangeBorderCollection.items
-      - excel.Excel.RangeBorderCollection.load
-      - excel.Excel.RangeBorderCollection.load_1
-      - excel.Excel.RangeBorderCollection.load_2
-      - excel.Excel.RangeBorderCollection.tintAndShade
-      - excel.Excel.RangeBorderCollection.toJSON
-  - uid: excel.Excel.RangeBorderCollection.context
+      - 'excel!Excel.RangeBorderCollection#context:member'
+      - 'excel!Excel.RangeBorderCollection#count:member'
+      - 'excel!Excel.RangeBorderCollection#getItem:member(1)'
+      - 'excel!Excel.RangeBorderCollection#getItem:member(2)'
+      - 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
+      - 'excel!Excel.RangeBorderCollection#items:member'
+      - 'excel!Excel.RangeBorderCollection#load:member(1)'
+      - 'excel!Excel.RangeBorderCollection#load:member(2)'
+      - 'excel!Excel.RangeBorderCollection#load:member(3)'
+      - 'excel!Excel.RangeBorderCollection#tintAndShade:member'
+      - 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.RangeBorderCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RangeBorderCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeBorderCollection#count:member'
     summary: |-
       Number of border objects in the collection. Read-only.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeBorderCollection.getItem
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(1)'
     summary: |-
       Gets a border object using its name.
 
@@ -68,37 +68,14 @@ items:
       content: 'getItem(index: Excel.BorderIndex): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var borderName = 'EdgeTop';
-              var border = range.format.borders.getItem(borderName);
-              border.load('style');
-              return ctx.sync().then(function() {
-                      console.log(border.style);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
-            - excel.Excel.BorderIndex
-  - uid: excel.Excel.RangeBorderCollection.getItem_1
+            - 'excel!Excel.BorderIndex:enum'
+  - uid: 'excel!Excel.RangeBorderCollection#getItem:member(2)'
     summary: |-
       Gets a border object using its name.
 
@@ -114,7 +91,7 @@ items:
         | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
       return:
         type:
-          - excel.Excel.RangeBorder
+          - 'excel!Excel.RangeBorder:class'
         description: ''
       parameters:
         - id: indexString
@@ -123,7 +100,7 @@ items:
             - >-
               "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
               "DiagonalDown" | "DiagonalUp"
-  - uid: excel.Excel.RangeBorderCollection.getItemAt
+  - uid: 'excel!Excel.RangeBorderCollection#getItemAt:member(1)'
     summary: |-
       Gets a border object using its index.
 
@@ -137,36 +114,14 @@ items:
       content: 'getItemAt(index: number): Excel.RangeBorder;'
       return:
         type:
-          - excel.Excel.RangeBorder
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var border = range.format.borders.getItemAt(0);
-              border.load('sideIndex');
-              return ctx.sync().then(function() {
-                  console.log(border.sideIndex);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.RangeBorder:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.RangeBorderCollection.items
+  - uid: 'excel!Excel.RangeBorderCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -178,7 +133,7 @@ items:
       return:
         type:
           - 'Excel.RangeBorder[]'
-  - uid: excel.Excel.RangeBorderCollection.load
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -211,14 +166,14 @@ items:
         Excel.RangeBorderCollection;
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - 'excel!Excel.RangeBorderCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.RangeBorderCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.RangeBorderCollection.load_1
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -231,60 +186,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              var borders = range.format.borders;
-              border.load('items');
-              return ctx.sync().then(function() {
-                  console.log(borders.count);
-                  for (var i = 0; i < borders.items.length; i++)
-                  {
-                      console.log(borders.items[i].sideIndex);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // The example below adds grid border around the range.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeAddress);
-              range.format.borders.getItem('InsideHorizontal').style = 'Continuous';
-              range.format.borders.getItem('InsideVertical').style = 'Continuous';
-              range.format.borders.getItem('EdgeBottom').style = 'Continuous';
-              range.format.borders.getItem('EdgeLeft').style = 'Continuous';
-              range.format.borders.getItem('EdgeRight').style = 'Continuous';
-              range.format.borders.getItem('EdgeTop').style = 'Continuous';
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.RangeBorderCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeBorderCollection.load_2
+  - uid: 'excel!Excel.RangeBorderCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -294,14 +203,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.RangeBorderCollection;'
       return:
         type:
-          - excel.Excel.RangeBorderCollection
+          - 'excel!Excel.RangeBorderCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.RangeBorderCollection.tintAndShade
+  - uid: 'excel!Excel.RangeBorderCollection#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Borders, the value is between -1 (darkest) and
       1 (brightest), with 0 for the original color. A null value indicates that the entire border collections don't have
@@ -319,7 +228,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeBorderCollection.toJSON
+  - uid: 'excel!Excel.RangeBorderCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -335,5 +244,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeBorderCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeBorderCollectionData
+          - 'excel!Excel.Interfaces.RangeBorderCollectionData:interface'
         description: ''

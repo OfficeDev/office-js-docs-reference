@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions:interface'
     summary: |-
       Represents document properties.
 
@@ -10,27 +10,27 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.$all
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.applicationName
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.author
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.category
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.comments
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.company
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.creationDate
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.format
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.keywords
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.lastAuthor
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.lastPrintDate
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.lastSaveTime
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.manager
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.revisionNumber
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.security
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.subject
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.template
-      - word.Word.Interfaces.DocumentPropertiesLoadOptions.title
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.$all
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#$all:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#applicationName:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#author:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#category:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#comments:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#company:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#format:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastPrintDate:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastSaveTime:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#manager:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#security:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#subject:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#template:member'
+      - 'word!Word.Interfaces.DocumentPropertiesLoadOptions#title:member'
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.applicationName
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#applicationName:member'
     summary: |-
       Gets the application name of the document. Read only.
 
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.author
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#author:member'
     summary: |-
       Gets or sets the author of the document.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.category
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#category:member'
     summary: |-
       Gets or sets the category of the document.
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.comments
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#comments:member'
     summary: |-
       Gets or sets the comments of the document.
 
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.company
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#company:member'
     summary: |-
       Gets or sets the company of the document.
 
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.creationDate
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#creationDate:member'
     summary: |-
       Gets the creation date of the document. Read only.
 
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.format
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#format:member'
     summary: |-
       Gets or sets the format of the document.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.keywords
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#keywords:member'
     summary: |-
       Gets or sets the keywords of the document.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.lastAuthor
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastAuthor:member'
     summary: |-
       Gets the last author of the document. Read only.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.lastPrintDate
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastPrintDate:member'
     summary: |-
       Gets the last print date of the document. Read only.
 
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.lastSaveTime
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#lastSaveTime:member'
     summary: |-
       Gets the last save time of the document. Read only.
 
@@ -206,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.manager
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#manager:member'
     summary: |-
       Gets or sets the manager of the document.
 
@@ -221,7 +221,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.revisionNumber
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#revisionNumber:member'
     summary: |-
       Gets the revision number of the document. Read only.
 
@@ -236,7 +236,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.security
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#security:member'
     summary: |-
       Gets the security of the document. Read only.
 
@@ -251,7 +251,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.subject
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#subject:member'
     summary: |-
       Gets or sets the subject of the document.
 
@@ -266,7 +266,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.template
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#template:member'
     summary: |-
       Gets the template of the document. Read only.
 
@@ -281,7 +281,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.DocumentPropertiesLoadOptions.title
+  - uid: 'word!Word.Interfaces.DocumentPropertiesLoadOptions#title:member'
     summary: |-
       Gets or sets the title of the document.
 

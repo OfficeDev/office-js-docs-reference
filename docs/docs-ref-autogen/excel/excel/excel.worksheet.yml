@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Worksheet
+  - uid: 'excel!Excel.Worksheet:class'
     summary: >-
       An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet
       object model, read [Work with worksheets using the Excel JavaScript
@@ -15,69 +15,69 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Worksheet.activate
-      - excel.Excel.Worksheet.autoFilter
-      - excel.Excel.Worksheet.calculate
-      - excel.Excel.Worksheet.charts
-      - excel.Excel.Worksheet.comments
-      - excel.Excel.Worksheet.context
-      - excel.Excel.Worksheet.copy
-      - excel.Excel.Worksheet.copy_1
-      - excel.Excel.Worksheet.delete
-      - excel.Excel.Worksheet.enableCalculation
-      - excel.Excel.Worksheet.findAll
-      - excel.Excel.Worksheet.findAllOrNullObject
-      - excel.Excel.Worksheet.freezePanes
-      - excel.Excel.Worksheet.getCell
-      - excel.Excel.Worksheet.getNext
-      - excel.Excel.Worksheet.getNextOrNullObject
-      - excel.Excel.Worksheet.getPrevious
-      - excel.Excel.Worksheet.getPreviousOrNullObject
-      - excel.Excel.Worksheet.getRange
-      - excel.Excel.Worksheet.getRangeByIndexes
-      - excel.Excel.Worksheet.getRanges
-      - excel.Excel.Worksheet.getUsedRange
-      - excel.Excel.Worksheet.getUsedRangeOrNullObject
-      - excel.Excel.Worksheet.horizontalPageBreaks
-      - excel.Excel.Worksheet.id
-      - excel.Excel.Worksheet.load
-      - excel.Excel.Worksheet.load_1
-      - excel.Excel.Worksheet.load_2
-      - excel.Excel.Worksheet.name
-      - excel.Excel.Worksheet.names
-      - excel.Excel.Worksheet.onActivated
-      - excel.Excel.Worksheet.onCalculated
-      - excel.Excel.Worksheet.onChanged
-      - excel.Excel.Worksheet.onColumnSorted
-      - excel.Excel.Worksheet.onDeactivated
-      - excel.Excel.Worksheet.onFiltered
-      - excel.Excel.Worksheet.onFormatChanged
-      - excel.Excel.Worksheet.onRowHiddenChanged
-      - excel.Excel.Worksheet.onRowSorted
-      - excel.Excel.Worksheet.onSelectionChanged
-      - excel.Excel.Worksheet.onSingleClicked
-      - excel.Excel.Worksheet.pageLayout
-      - excel.Excel.Worksheet.pivotTables
-      - excel.Excel.Worksheet.position
-      - excel.Excel.Worksheet.protection
-      - excel.Excel.Worksheet.replaceAll
-      - excel.Excel.Worksheet.set
-      - excel.Excel.Worksheet.set_1
-      - excel.Excel.Worksheet.shapes
-      - excel.Excel.Worksheet.showGridlines
-      - excel.Excel.Worksheet.showHeadings
-      - excel.Excel.Worksheet.showOutlineLevels
-      - excel.Excel.Worksheet.slicers
-      - excel.Excel.Worksheet.standardHeight
-      - excel.Excel.Worksheet.standardWidth
-      - excel.Excel.Worksheet.tabColor
-      - excel.Excel.Worksheet.tables
-      - excel.Excel.Worksheet.toJSON
-      - excel.Excel.Worksheet.verticalPageBreaks
-      - excel.Excel.Worksheet.visibility
-  - uid: excel.Excel.Worksheet.activate
+      - 'excel!Excel.Worksheet#activate:member(1)'
+      - 'excel!Excel.Worksheet#autoFilter:member'
+      - 'excel!Excel.Worksheet#calculate:member(1)'
+      - 'excel!Excel.Worksheet#charts:member'
+      - 'excel!Excel.Worksheet#comments:member'
+      - 'excel!Excel.Worksheet#context:member'
+      - 'excel!Excel.Worksheet#copy:member(1)'
+      - 'excel!Excel.Worksheet#copy:member(2)'
+      - 'excel!Excel.Worksheet#delete:member(1)'
+      - 'excel!Excel.Worksheet#enableCalculation:member'
+      - 'excel!Excel.Worksheet#findAll:member(1)'
+      - 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#freezePanes:member'
+      - 'excel!Excel.Worksheet#getCell:member(1)'
+      - 'excel!Excel.Worksheet#getNext:member(1)'
+      - 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getPrevious:member(1)'
+      - 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#getRange:member(1)'
+      - 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
+      - 'excel!Excel.Worksheet#getRanges:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRange:member(1)'
+      - 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
+      - 'excel!Excel.Worksheet#horizontalPageBreaks:member'
+      - 'excel!Excel.Worksheet#id:member'
+      - 'excel!Excel.Worksheet#load:member(1)'
+      - 'excel!Excel.Worksheet#load:member(2)'
+      - 'excel!Excel.Worksheet#load:member(3)'
+      - 'excel!Excel.Worksheet#name:member'
+      - 'excel!Excel.Worksheet#names:member'
+      - 'excel!Excel.Worksheet#onActivated:member'
+      - 'excel!Excel.Worksheet#onCalculated:member'
+      - 'excel!Excel.Worksheet#onChanged:member'
+      - 'excel!Excel.Worksheet#onColumnSorted:member'
+      - 'excel!Excel.Worksheet#onDeactivated:member'
+      - 'excel!Excel.Worksheet#onFiltered:member'
+      - 'excel!Excel.Worksheet#onFormatChanged:member'
+      - 'excel!Excel.Worksheet#onRowHiddenChanged:member'
+      - 'excel!Excel.Worksheet#onRowSorted:member'
+      - 'excel!Excel.Worksheet#onSelectionChanged:member'
+      - 'excel!Excel.Worksheet#onSingleClicked:member'
+      - 'excel!Excel.Worksheet#pageLayout:member'
+      - 'excel!Excel.Worksheet#pivotTables:member'
+      - 'excel!Excel.Worksheet#position:member'
+      - 'excel!Excel.Worksheet#protection:member'
+      - 'excel!Excel.Worksheet#replaceAll:member(1)'
+      - 'excel!Excel.Worksheet#set:member(1)'
+      - 'excel!Excel.Worksheet#set:member(2)'
+      - 'excel!Excel.Worksheet#shapes:member'
+      - 'excel!Excel.Worksheet#showGridlines:member'
+      - 'excel!Excel.Worksheet#showHeadings:member'
+      - 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
+      - 'excel!Excel.Worksheet#slicers:member'
+      - 'excel!Excel.Worksheet#standardHeight:member'
+      - 'excel!Excel.Worksheet#standardWidth:member'
+      - 'excel!Excel.Worksheet#tabColor:member'
+      - 'excel!Excel.Worksheet#tables:member'
+      - 'excel!Excel.Worksheet#toJSON:member(1)'
+      - 'excel!Excel.Worksheet#verticalPageBreaks:member'
+      - 'excel!Excel.Worksheet#visibility:member'
+  - uid: 'excel!Excel.Worksheet#activate:member(1)'
     summary: |-
       Activate the worksheet in the Excel UI.
 
@@ -92,25 +92,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.activate();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Worksheet.autoFilter
+        description: ''
+  - uid: 'excel!Excel.Worksheet#autoFilter:member'
     summary: |-
       Represents the AutoFilter object of the worksheet. Read-Only.
 
@@ -124,23 +107,8 @@ items:
       content: 'readonly autoFilter: Excel.AutoFilter;'
       return:
         type:
-          - excel.Excel.AutoFilter
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              const farmData = sheet.getUsedRange();
-
-              // This filter will only show the rows with the top 25% of values in column 3.
-              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.calculate
+          - 'excel!Excel.AutoFilter:class'
+  - uid: 'excel!Excel.Worksheet#calculate:member(1)'
     summary: |-
       Calculates all cells on a worksheet.
 
@@ -161,7 +129,7 @@ items:
           description: 'True, to mark all as dirty.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.charts
+  - uid: 'excel!Excel.Worksheet#charts:member'
     summary: |-
       Returns collection of charts that are part of the worksheet. Read-only.
 
@@ -175,8 +143,8 @@ items:
       content: 'readonly charts: Excel.ChartCollection;'
       return:
         type:
-          - excel.Excel.ChartCollection
-  - uid: excel.Excel.Worksheet.comments
+          - 'excel!Excel.ChartCollection:class'
+  - uid: 'excel!Excel.Worksheet#comments:member'
     summary: >-
       Returns a collection of all the Comments objects on the worksheet. Read-only.
 
@@ -193,8 +161,8 @@ items:
       content: 'readonly comments: Excel.CommentCollection;'
       return:
         type:
-          - excel.Excel.CommentCollection
-  - uid: excel.Excel.Worksheet.context
+          - 'excel!Excel.CommentCollection:class'
+  - uid: 'excel!Excel.Worksheet#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -207,8 +175,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.Worksheet.copy
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.Worksheet#copy:member(1)'
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
 
@@ -222,37 +190,18 @@ items:
       content: 'copy(positionType?: Excel.WorksheetPositionType, relativeTo?: Excel.Worksheet): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-
-              let myWorkbook = context.workbook;
-              let sampleSheet = myWorkbook.worksheets.getActiveWorksheet();
-              let copiedSheet = sampleSheet.copy("End")
-
-              sampleSheet.load("name");
-              copiedSheet.load("name");
-
-              await context.sync();
-
-              console.log("'" + sampleSheet.name + "' was copied to '" + copiedSheet.name + "'")
-          });
-          ```
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: positionType
           description: Optional.
           type:
-            - excel.Excel.WorksheetPositionType
+            - 'excel!Excel.WorksheetPositionType:enum'
         - id: relativeTo
           description: Optional.
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.copy_1
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#copy:member(2)'
     summary: |-
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
 
@@ -268,7 +217,7 @@ items:
         Excel.Worksheet;
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: positionTypeString
@@ -278,8 +227,8 @@ items:
         - id: relativeTo
           description: Optional.
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.delete
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#delete:member(1)'
     summary: >-
       Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the
       delete operation will fail with an `InvalidOperation` exception. You should first change its visibility to hidden
@@ -297,25 +246,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.delete();
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.Worksheet.enableCalculation
+        description: ''
+  - uid: 'excel!Excel.Worksheet#enableCalculation:member'
     summary: >-
       Gets or sets the enableCalculation property of the worksheet. True if Excel recalculates the worksheet when
       necessary. False if Excel doesn't recalculate the sheet.
@@ -332,7 +264,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Worksheet.findAll
+  - uid: 'excel!Excel.Worksheet#findAll:member(1)'
     summary: >-
       Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object,
       comprising one or more rectangular ranges.
@@ -348,7 +280,7 @@ items:
       content: 'findAll(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If no cells
           meet this criteria, an ItemNotFound error will be thrown.
@@ -362,8 +294,8 @@ items:
             Additional search criteria, including whether the search needs to match the entire cell or be case
             sensitive.
           type:
-            - excel.Excel.WorksheetSearchCriteria
-  - uid: excel.Excel.Worksheet.findAllOrNullObject
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
+  - uid: 'excel!Excel.Worksheet#findAllOrNullObject:member(1)'
     summary: >-
       Finds all occurrences of the given string based on the criteria specified and returns them as a RangeAreas object,
       comprising one or more rectangular ranges.
@@ -379,34 +311,10 @@ items:
       content: 'findAllOrNullObject(text: string, criteria: Excel.WorksheetSearchCriteria): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
+          - 'excel!Excel.RangeAreas:class'
         description: >-
           A RangeArea object, comprising one or more rectangular ranges, that matches the search criteria. If there are
           no matches, this function will return a null object.
-
-
-          #### Examples
-
-
-          ```typescript
-
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const foundRanges = sheet.findAllOrNullObject("Complete", {
-                  completeMatch: true,
-                  matchCase: false
-              });
-
-              await context.sync();
-
-              if (foundRanges.isNullObject) {
-                  console.log("No complete projects");
-              } else {
-                  foundRanges.format.fill.color = "green"
-              }
-          });
-
-          ```
       parameters:
         - id: text
           description: The string to find.
@@ -417,8 +325,8 @@ items:
             Additional search criteria, including whether the search needs to match the entire cell or be case
             sensitive.
           type:
-            - excel.Excel.WorksheetSearchCriteria
-  - uid: excel.Excel.Worksheet.freezePanes
+            - 'excel!Excel.WorksheetSearchCriteria:interface'
+  - uid: 'excel!Excel.Worksheet#freezePanes:member'
     summary: |-
       Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
 
@@ -432,8 +340,8 @@ items:
       content: 'readonly freezePanes: Excel.WorksheetFreezePanes;'
       return:
         type:
-          - excel.Excel.WorksheetFreezePanes
-  - uid: excel.Excel.Worksheet.getCell
+          - 'excel!Excel.WorksheetFreezePanes:class'
+  - uid: 'excel!Excel.Worksheet#getCell:member(1)'
     summary: >-
       Gets the range object containing the single cell based on row and column numbers. The cell can be outside the
       bounds of its parent range, so long as it stays within the worksheet grid.
@@ -449,28 +357,8 @@ items:
       content: 'getCell(row: number, column: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var cell = worksheet.getCell(0,0);
-              cell.load('address');
-              return ctx.sync().then(function() {
-                  console.log(cell.address);
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: row
           description: The row number of the cell to be retrieved. Zero-indexed.
@@ -480,7 +368,7 @@ items:
           description: the column number of the cell to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.Worksheet.getNext
+  - uid: 'excel!Excel.Worksheet#getNext:member(1)'
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will throw an
       error.
@@ -496,44 +384,14 @@ items:
       content: 'getNext(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheets = context.workbook.worksheets;
-
-              // We don't want to include the default worksheet that was created
-              // when the workbook was created, so our "firstSheet" will be the one
-              // after the literal first. Note chaining of navigation methods.
-              const firstSheet = sheets.getFirst().getNext();
-              const lastSheet = sheets.getLast();
-              const firstTaxRateRange = firstSheet.getRange("B2");
-              const lastTaxRateRange = lastSheet.getRange("B2");
-
-              firstSheet.load("name");
-              lastSheet.load("name");
-              firstTaxRateRange.load("text");
-              lastTaxRateRange.load("text");
-
-              await context.sync();
-
-              let firstYear = firstSheet.name.substr(5, 4);
-              let lastYear = lastSheet.name.substr(5, 4);
-              console.log(`Tax Rate change from ${firstYear} to ${lastYear}`, `Tax rate for ${firstYear}: ${firstTaxRateRange.text[0][0]}\nTax rate for ${lastYear}: ${lastTaxRateRange.text[0][0]}`)
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getNextOrNullObject
+  - uid: 'excel!Excel.Worksheet#getNextOrNullObject:member(1)'
     summary: >-
       Gets the worksheet that follows this one. If there are no worksheets following this one, this method will return a
       null object.
@@ -549,14 +407,14 @@ items:
       content: 'getNextOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getPrevious
+  - uid: 'excel!Excel.Worksheet#getPrevious:member(1)'
     summary: |-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will throw an error.
 
@@ -570,40 +428,14 @@ items:
       content: 'getPrevious(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheets = context.workbook.worksheets;
-              const currentSheet = sheets.getActiveWorksheet();
-              const previousYearSheet = currentSheet.getPrevious();
-              const currentTaxDueRange = currentSheet.getRange("C2");
-              const previousTaxDueRange = previousYearSheet.getRange("C2");
-
-              currentSheet.load("name");
-              previousYearSheet.load("name");
-              currentTaxDueRange.load("text");
-              previousTaxDueRange.load("text");
-
-              await context.sync();
-
-              let currentYear = currentSheet.name.substr(5, 4);
-              let previousYear = previousYearSheet.name.substr(5, 4);
-              console.log("Two Year Tax Due Comparison", `Tax due for ${currentYear} was ${currentTaxDueRange.text[0][0]}\nTax due for ${previousYear} was ${previousTaxDueRange.text[0][0]}`)
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getPreviousOrNullObject
+  - uid: 'excel!Excel.Worksheet#getPreviousOrNullObject:member(1)'
     summary: >-
       Gets the worksheet that precedes this one. If there are no previous worksheets, this method will return a null
       objet.
@@ -619,14 +451,14 @@ items:
       content: 'getPreviousOrNullObject(visibleOnly?: boolean): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: visibleOnly
           description: 'Optional. If true, considers only visible worksheets, skipping over any hidden ones.'
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getRange
+  - uid: 'excel!Excel.Worksheet#getRange:member(1)'
     summary: |-
       Gets the range object, representing a single rectangular block of cells, specified by the address or name.
 
@@ -640,47 +472,8 @@ items:
       content: 'getRange(address?: string): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Below example uses range address to get the range object.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeAddress = "A1:F8";
-              var worksheet = ctx.workbook.worksheets.getItem(sheetName);
-              var range = worksheet.getRange(rangeAddress);
-              range.load('cellCount');
-              return ctx.sync().then(function() {
-                  console.log(range.cellCount);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Below example uses a named-range to get the range object.
-          Excel.run(function (ctx) { 
-              var sheetName = "Sheet1";
-              var rangeName = 'MyRange';
-              var range = ctx.workbook.worksheets.getItem(sheetName).getRange(rangeName);
-              range.load('address');
-              return ctx.sync().then(function() {
-                  console.log(range.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: address
           description: >-
@@ -688,7 +481,7 @@ items:
             the entire worksheet range is returned.
           type:
             - string
-  - uid: excel.Excel.Worksheet.getRangeByIndexes
+  - uid: 'excel!Excel.Worksheet#getRangeByIndexes:member(1)'
     summary: >-
       Gets the range object beginning at a particular row index and column index, and spanning a certain number of rows
       and columns.
@@ -704,7 +497,7 @@ items:
       content: 'getRangeByIndexes(startRow: number, startColumn: number, rowCount: number, columnCount: number): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: startRow
@@ -723,7 +516,7 @@ items:
           description: Number of columns to include in the range.
           type:
             - number
-  - uid: excel.Excel.Worksheet.getRanges
+  - uid: 'excel!Excel.Worksheet#getRanges:member(1)'
     summary: >-
       Gets the RangeAreas object, representing one or more blocks of rectangular ranges, specified by the address or
       name.
@@ -739,22 +532,8 @@ items:
       content: 'getRanges(address?: string): Excel.RangeAreas;'
       return:
         type:
-          - excel.Excel.RangeAreas
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              const specifiedRanges = sheet.getRanges("D3:D5, G3:G5");
-              specifiedRanges.format.fill.color = "pink";
-
-              await context.sync();
-          })
-          ```
+          - 'excel!Excel.RangeAreas:class'
+        description: ''
       parameters:
         - id: address
           description: >-
@@ -762,7 +541,7 @@ items:
             "A1:B2, A5:B5". If not specified, an RangeArea object for the entire worksheet is returned.
           type:
             - string
-  - uid: excel.Excel.Worksheet.getUsedRange
+  - uid: 'excel!Excel.Worksheet#getUsedRange:member(1)'
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return the top left cell (i.e. it will *not* throw an error).
@@ -778,28 +557,8 @@ items:
       content: 'getUsedRange(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              var usedRange = worksheet.getUsedRange();
-              usedRange.load('address');
-              return ctx.sync().then(function() {
-                      console.log(usedRange.address);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Range:class'
+        description: ''
       parameters:
         - id: valuesOnly
           description: >-
@@ -807,7 +566,7 @@ items:
             1.2\]
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.getUsedRangeOrNullObject
+  - uid: 'excel!Excel.Worksheet#getUsedRangeOrNullObject:member(1)'
     summary: >-
       The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them.
       If the entire worksheet is blank, this function will return a null object.
@@ -823,14 +582,14 @@ items:
       content: 'getUsedRangeOrNullObject(valuesOnly?: boolean): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
       parameters:
         - id: valuesOnly
           description: Optional. Considers only cells with values as used cells.
           type:
             - boolean
-  - uid: excel.Excel.Worksheet.horizontalPageBreaks
+  - uid: 'excel!Excel.Worksheet#horizontalPageBreaks:member'
     summary: |-
       Gets the horizontal page break collection for the worksheet. This collection only contains manual page breaks.
 
@@ -844,8 +603,8 @@ items:
       content: 'readonly horizontalPageBreaks: Excel.PageBreakCollection;'
       return:
         type:
-          - excel.Excel.PageBreakCollection
-  - uid: excel.Excel.Worksheet.id
+          - 'excel!Excel.PageBreakCollection:class'
+  - uid: 'excel!Excel.Worksheet#id:member'
     summary: >-
       Returns a value that uniquely identifies the worksheet in a given workbook. The value of the identifier remains
       the same even when the worksheet is renamed or moved. Read-only.
@@ -862,7 +621,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Worksheet.load
+  - uid: 'excel!Excel.Worksheet#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -893,14 +652,14 @@ items:
       content: 'load(option?: Excel.Interfaces.WorksheetLoadOptions): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.WorksheetLoadOptions
-  - uid: excel.Excel.Worksheet.load_1
+            - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'
+  - uid: 'excel!Excel.Worksheet#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -913,48 +672,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get worksheet properties based on sheet name.
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.load('position')
-              return ctx.sync().then(function() {
-                      console.log(worksheet.position);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Set worksheet position. 
-          Excel.run(function (ctx) { 
-              var wSheetName = 'Sheet1';
-              var worksheet = ctx.workbook.worksheets.getItem(wSheetName);
-              worksheet.position = 2;
-              return ctx.sync(); 
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.Worksheet:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.Worksheet.load_2
+  - uid: 'excel!Excel.Worksheet#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -967,7 +692,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.Worksheet;'
       return:
         type:
-          - excel.Excel.Worksheet
+          - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -976,7 +701,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.Worksheet.name
+  - uid: 'excel!Excel.Worksheet#name:member'
     summary: |-
       The display name of the worksheet.
 
@@ -991,7 +716,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Worksheet.names
+  - uid: 'excel!Excel.Worksheet#names:member'
     summary: |-
       Collection of names scoped to the current worksheet. Read-only.
 
@@ -1005,8 +730,8 @@ items:
       content: 'readonly names: Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
-  - uid: excel.Excel.Worksheet.onActivated
+          - 'excel!Excel.NamedItemCollection:class'
+  - uid: 'excel!Excel.Worksheet#onActivated:member'
     summary: |-
       Occurs when the worksheet is activated.
 
@@ -1021,24 +746,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetActivatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onActivated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The activated worksheet ID is: " + event.worksheetId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.onCalculated
+  - uid: 'excel!Excel.Worksheet#onCalculated:member'
     summary: |-
       Occurs when the worksheet is calculated.
 
@@ -1053,24 +761,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetCalculatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onCalculated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The worksheet has recalculated.");
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.onChanged
+  - uid: 'excel!Excel.Worksheet#onChanged:member'
     summary: |-
       Occurs when data changed on a specific worksheet.
 
@@ -1085,21 +776,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetChangedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onChanged.add(onChange);
-
-              await context.sync();
-              console.log("A handler has been registered for the onChanged event.");
-          });
-          ```
-  - uid: excel.Excel.Worksheet.onColumnSorted
+  - uid: 'excel!Excel.Worksheet#onColumnSorted:member'
     summary: >-
       Occurs when sorting on columns.
 
@@ -1117,7 +794,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetColumnSortedEventArgs>
-  - uid: excel.Excel.Worksheet.onDeactivated
+  - uid: 'excel!Excel.Worksheet#onDeactivated:member'
     summary: |-
       Occurs when the worksheet is deactivated.
 
@@ -1132,24 +809,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetDeactivatedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onDeactivated.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The deactivated worksheet is: " + event.worksheetId);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.onFiltered
+  - uid: 'excel!Excel.Worksheet#onFiltered:member'
     summary: >-
       Occurs when filter is applied on a specific worksheet.
 
@@ -1167,7 +827,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFilteredEventArgs>
-  - uid: excel.Excel.Worksheet.onFormatChanged
+  - uid: 'excel!Excel.Worksheet#onFormatChanged:member'
     summary: |-
       Occurs when format changed on a specific worksheet.
 
@@ -1182,7 +842,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetFormatChangedEventArgs>
-  - uid: excel.Excel.Worksheet.onRowHiddenChanged
+  - uid: 'excel!Excel.Worksheet#onRowHiddenChanged:member'
     summary: >-
       Occurs when row hidden state changed on a specific worksheet.
 
@@ -1200,7 +860,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetRowHiddenChangedEventArgs>
-  - uid: excel.Excel.Worksheet.onRowSorted
+  - uid: 'excel!Excel.Worksheet#onRowSorted:member'
     summary: >-
       Occurs when sorting on rows.
 
@@ -1218,7 +878,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetRowSortedEventArgs>
-  - uid: excel.Excel.Worksheet.onSelectionChanged
+  - uid: 'excel!Excel.Worksheet#onSelectionChanged:member'
     summary: |-
       Occurs when the selection changes on a specific worksheet.
 
@@ -1233,24 +893,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSelectionChangedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (context) {
-              var sheet = context.workbook.worksheets.getItem("Sample");
-              sheet.onSelectionChanged.add(function (event) {
-                  return Excel.run((context) => {
-                      console.log("The selected range has changed to: " + event.address);
-                      return context.sync();
-                  });
-              });
-              return context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.onSingleClicked
+  - uid: 'excel!Excel.Worksheet#onSingleClicked:member'
     summary: >-
       Occurs when left-clicked/tapped operation happens in the worksheet. This event will not be fired when clicking in
       the following cases: - The user drags the mouse for multi-selection. - The user selects a cell in the mode when
@@ -1270,27 +913,7 @@ items:
       return:
         type:
           - OfficeExtension.EventHandlers<Excel.WorksheetSingleClickedEventArgs>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.onSingleClicked.add((event) => {
-                  return Excel.run((context) => {
-                      console.log(`Click detected at ${event.address} (pixel offset from upper-left cell corner: ${event.offsetX}, ${event.offsetY})`);
-                      return context.sync();
-                  });
-              });
-
-              console.log("The worksheet click handler is registered.");
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.pageLayout
+  - uid: 'excel!Excel.Worksheet#pageLayout:member'
     summary: |-
       Gets the PageLayout object of the worksheet.
 
@@ -1304,8 +927,8 @@ items:
       content: 'readonly pageLayout: Excel.PageLayout;'
       return:
         type:
-          - excel.Excel.PageLayout
-  - uid: excel.Excel.Worksheet.pivotTables
+          - 'excel!Excel.PageLayout:class'
+  - uid: 'excel!Excel.Worksheet#pivotTables:member'
     summary: |-
       Collection of PivotTables that are part of the worksheet. Read-only.
 
@@ -1319,8 +942,8 @@ items:
       content: 'readonly pivotTables: Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
-  - uid: excel.Excel.Worksheet.position
+          - 'excel!Excel.PivotTableCollection:class'
+  - uid: 'excel!Excel.Worksheet#position:member'
     summary: |-
       The zero-based position of the worksheet within the workbook.
 
@@ -1335,7 +958,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.protection
+  - uid: 'excel!Excel.Worksheet#protection:member'
     summary: |-
       Returns sheet protection object for a worksheet. Read-only.
 
@@ -1349,8 +972,8 @@ items:
       content: 'readonly protection: Excel.WorksheetProtection;'
       return:
         type:
-          - excel.Excel.WorksheetProtection
-  - uid: excel.Excel.Worksheet.replaceAll
+          - 'excel!Excel.WorksheetProtection:class'
+  - uid: 'excel!Excel.Worksheet#replaceAll:member(1)'
     summary: |-
       Finds and replaces the given string based on the criteria specified within the current worksheet.
 
@@ -1380,8 +1003,8 @@ items:
         - id: criteria
           description: Additional Replace Criteria.
           type:
-            - excel.Excel.ReplaceCriteria
-  - uid: excel.Excel.Worksheet.set
+            - 'excel!Excel.ReplaceCriteria:interface'
+  - uid: 'excel!Excel.Worksheet#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -1411,7 +1034,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.Worksheet.set_1
+  - uid: 'excel!Excel.Worksheet#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -1428,8 +1051,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.Worksheet
-  - uid: excel.Excel.Worksheet.shapes
+            - 'excel!Excel.Worksheet:class'
+  - uid: 'excel!Excel.Worksheet#shapes:member'
     summary: |-
       Returns the collection of all the Shape objects on the worksheet. Read-only.
 
@@ -1443,8 +1066,8 @@ items:
       content: 'readonly shapes: Excel.ShapeCollection;'
       return:
         type:
-          - excel.Excel.ShapeCollection
-  - uid: excel.Excel.Worksheet.showGridlines
+          - 'excel!Excel.ShapeCollection:class'
+  - uid: 'excel!Excel.Worksheet#showGridlines:member'
     summary: |-
       Gets or sets the worksheet's gridlines flag. This flag determines whether gridlines are visible to the user.
 
@@ -1459,20 +1082,7 @@ items:
       return:
         type:
           - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              sheet.showGridlines = true;
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.showHeadings
+  - uid: 'excel!Excel.Worksheet#showHeadings:member'
     summary: |-
       Gets or sets the worksheet's headings flag. This flag determines whether headings are visible to the user.
 
@@ -1487,7 +1097,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Worksheet.showOutlineLevels
+  - uid: 'excel!Excel.Worksheet#showOutlineLevels:member(1)'
     summary: >-
       Shows row or column groups by their outline levels. Outlines group and summarize a list of data in the worksheet.
       The `rowLevels` and `columnLevels` parameters specify how many levels of the outline will be displayed. The
@@ -1518,7 +1128,7 @@ items:
           description: The number of column levels of an outline to display.
           type:
             - number
-  - uid: excel.Excel.Worksheet.slicers
+  - uid: 'excel!Excel.Worksheet#slicers:member'
     summary: >-
       Returns collection of slicers that are part of the worksheet. Read-only.
 
@@ -1535,24 +1145,8 @@ items:
       content: 'readonly slicers: Excel.SlicerCollection;'
       return:
         type:
-          - excel.Excel.SlicerCollection
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Pivot");
-              const slicer = sheet.slicers.add(
-                  "Farm Sales", /* The slicer data source. For PivotTables, this can be the PivotTable object reference or name. */
-                  "Type" /* The field in the data source to filter by. For PivotTables, this can be a PivotField object reference or ID. */
-              );
-              slicer.name = "Fruit Slicer";
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.standardHeight
+          - 'excel!Excel.SlicerCollection:class'
+  - uid: 'excel!Excel.Worksheet#standardHeight:member'
     summary: |-
       Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.
 
@@ -1567,7 +1161,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.standardWidth
+  - uid: 'excel!Excel.Worksheet#standardWidth:member'
     summary: >-
       Returns or sets the standard (default) width of all the columns in the worksheet. One unit of column width is
       equal to the width of one character in the Normal style. For proportional fonts, the width of the character 0
@@ -1585,7 +1179,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Worksheet.tabColor
+  - uid: 'excel!Excel.Worksheet#tabColor:member'
     summary: >-
       Gets or sets the worksheet tab color. When retrieving the tab color, if the worksheet is invisible, the value will
       be null. If the worksheet is visible but the tab color is set to auto, an empty string will be returned.
@@ -1604,20 +1198,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const activeSheet = context.workbook.worksheets.getActiveWorksheet();
-              activeSheet.tabColor = "#FF0000";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.Worksheet.tables
+  - uid: 'excel!Excel.Worksheet#tables:member'
     summary: |-
       Collection of tables that are part of the worksheet. Read-only.
 
@@ -1631,8 +1212,8 @@ items:
       content: 'readonly tables: Excel.TableCollection;'
       return:
         type:
-          - excel.Excel.TableCollection
-  - uid: excel.Excel.Worksheet.toJSON
+          - 'excel!Excel.TableCollection:class'
+  - uid: 'excel!Excel.Worksheet#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -1648,9 +1229,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.WorksheetData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetData
+          - 'excel!Excel.Interfaces.WorksheetData:interface'
         description: ''
-  - uid: excel.Excel.Worksheet.verticalPageBreaks
+  - uid: 'excel!Excel.Worksheet#verticalPageBreaks:member'
     summary: |-
       Gets the vertical page break collection for the worksheet. This collection only contains manual page breaks.
 
@@ -1664,8 +1245,8 @@ items:
       content: 'readonly verticalPageBreaks: Excel.PageBreakCollection;'
       return:
         type:
-          - excel.Excel.PageBreakCollection
-  - uid: excel.Excel.Worksheet.visibility
+          - 'excel!Excel.PageBreakCollection:class'
+  - uid: 'excel!Excel.Worksheet#visibility:member'
     summary: >-
       The Visibility of the worksheet.
 

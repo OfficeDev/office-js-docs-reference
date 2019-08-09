@@ -1,38 +1,38 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData:interface'
     summary: 'An interface for updating data on the ChartAxis object, for use in "chartAxis.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ChartAxisUpdateData
     fullName: Excel.Interfaces.ChartAxisUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit
-      - excel.Excel.Interfaces.ChartAxisUpdateData.categoryType
-      - excel.Excel.Interfaces.ChartAxisUpdateData.displayUnit
-      - excel.Excel.Interfaces.ChartAxisUpdateData.format
-      - excel.Excel.Interfaces.ChartAxisUpdateData.logBase
-      - excel.Excel.Interfaces.ChartAxisUpdateData.majorGridlines
-      - excel.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
-      - excel.Excel.Interfaces.ChartAxisUpdateData.majorTimeUnitScale
-      - excel.Excel.Interfaces.ChartAxisUpdateData.majorUnit
-      - excel.Excel.Interfaces.ChartAxisUpdateData.maximum
-      - excel.Excel.Interfaces.ChartAxisUpdateData.minimum
-      - excel.Excel.Interfaces.ChartAxisUpdateData.minorGridlines
-      - excel.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
-      - excel.Excel.Interfaces.ChartAxisUpdateData.minorTimeUnitScale
-      - excel.Excel.Interfaces.ChartAxisUpdateData.minorUnit
-      - excel.Excel.Interfaces.ChartAxisUpdateData.reversePlotOrder
-      - excel.Excel.Interfaces.ChartAxisUpdateData.scaleType
-      - excel.Excel.Interfaces.ChartAxisUpdateData.showDisplayUnitLabel
-      - excel.Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition
-      - excel.Excel.Interfaces.ChartAxisUpdateData.tickLabelSpacing
-      - excel.Excel.Interfaces.ChartAxisUpdateData.tickMarkSpacing
-      - excel.Excel.Interfaces.ChartAxisUpdateData.title
-      - excel.Excel.Interfaces.ChartAxisUpdateData.visible
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.baseTimeUnit
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#categoryType:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#displayUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#logBase:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#maximum:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minimum:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#reversePlotOrder:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#scaleType:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#showDisplayUnitLabel:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelSpacing:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#tickMarkSpacing:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#title:member'
+      - 'excel!Excel.Interfaces.ChartAxisUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#baseTimeUnit:member'
     summary: |-
       Returns or sets the base unit for the specified category axis.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.categoryType
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#categoryType:member'
     summary: |-
       Returns or sets the category axis type.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - Excel.ChartAxisCategoryType | "Automatic" | "TextAxis" | "DateAxis"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.displayUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#displayUnit:member'
     summary: |-
       Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
 
@@ -81,7 +81,7 @@ items:
           - >-
             Excel.ChartAxisDisplayUnit | "None" | "Hundreds" | "Thousands" | "TenThousands" | "HundredThousands" |
             "Millions" | "TenMillions" | "HundredMillions" | "Billions" | "Trillions" | "Custom"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.format
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#format:member'
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting.
 
@@ -95,8 +95,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.logBase
+          - 'excel!Excel.Interfaces.ChartAxisFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#logBase:member'
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
 
@@ -111,7 +111,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.majorGridlines
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the major gridlines for the specified axis.
 
@@ -125,8 +125,8 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.majorTickMark
+          - 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTickMark:member'
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
@@ -141,7 +141,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.majorTimeUnitScale
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorTimeUnitScale:member'
     summary: >-
       Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
       TimeScale.
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.majorUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#majorUnit:member'
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
       returned value is always a number.
@@ -175,7 +175,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.maximum
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#maximum:member'
     summary: >-
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -192,7 +192,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.minimum
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minimum:member'
     summary: >-
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -209,7 +209,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.minorGridlines
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
@@ -223,8 +223,8 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.minorTickMark
+          - 'excel!Excel.Interfaces.ChartGridlinesUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTickMark:member'
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
@@ -239,7 +239,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTickMark | "None" | "Cross" | "Inside" | "Outside"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.minorTimeUnitScale
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorTimeUnitScale:member'
     summary: >-
       Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
       TimeScale.
@@ -256,7 +256,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTimeUnit | "Days" | "Months" | "Years"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.minorUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#minorUnit:member'
     summary: >-
       Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
       automatic axis values). The returned value is always a number.
@@ -273,7 +273,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.reversePlotOrder
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#reversePlotOrder:member'
     summary: |-
       Represents whether Microsoft Excel plots data points from last to first.
 
@@ -288,7 +288,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.scaleType
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#scaleType:member'
     summary: |-
       Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
 
@@ -303,7 +303,7 @@ items:
       return:
         type:
           - Excel.ChartAxisScaleType | "Linear" | "Logarithmic"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.showDisplayUnitLabel
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#showDisplayUnitLabel:member'
     summary: |-
       Represents whether the axis display unit label is visible.
 
@@ -318,7 +318,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.tickLabelPosition
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelPosition:member'
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
       details.
@@ -335,7 +335,7 @@ items:
       return:
         type:
           - Excel.ChartAxisTickLabelPosition | "NextToAxis" | "High" | "Low" | "None"
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.tickLabelSpacing
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#tickLabelSpacing:member'
     summary: >-
       Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
       empty string for automatic setting. The returned value is always a number.
@@ -352,7 +352,7 @@ items:
       return:
         type:
           - any
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.tickMarkSpacing
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#tickMarkSpacing:member'
     summary: |-
       Represents the number of categories or series between tick marks.
 
@@ -367,7 +367,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.title
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#title:member'
     summary: |-
       Represents the axis title.
 
@@ -381,8 +381,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxisUpdateData.visible
+          - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisUpdateData#visible:member'
     summary: |-
       A boolean value represents the visibility of the axis.
 

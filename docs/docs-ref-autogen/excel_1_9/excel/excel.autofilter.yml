@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.AutoFilter
+  - uid: 'excel!Excel.AutoFilter:class'
     summary: >-
       Represents the AutoFilter object. AutoFilter turns the values in Excel column into specific filters based on the
       cell contents.
@@ -14,23 +14,23 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.AutoFilter.apply
-      - excel.Excel.AutoFilter.clearCriteria
-      - excel.Excel.AutoFilter.context
-      - excel.Excel.AutoFilter.criteria
-      - excel.Excel.AutoFilter.enabled
-      - excel.Excel.AutoFilter.getRange
-      - excel.Excel.AutoFilter.getRangeOrNullObject
-      - excel.Excel.AutoFilter.isDataFiltered
-      - excel.Excel.AutoFilter.load
-      - excel.Excel.AutoFilter.load_1
-      - excel.Excel.AutoFilter.load_2
-      - excel.Excel.AutoFilter.reapply
-      - excel.Excel.AutoFilter.remove
-      - excel.Excel.AutoFilter.toJSON
-  - uid: excel.Excel.AutoFilter.apply
+      - 'excel!Excel.AutoFilter#apply:member(1)'
+      - 'excel!Excel.AutoFilter#clearCriteria:member(1)'
+      - 'excel!Excel.AutoFilter#context:member'
+      - 'excel!Excel.AutoFilter#criteria:member'
+      - 'excel!Excel.AutoFilter#enabled:member'
+      - 'excel!Excel.AutoFilter#getRange:member(1)'
+      - 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
+      - 'excel!Excel.AutoFilter#isDataFiltered:member'
+      - 'excel!Excel.AutoFilter#load:member(1)'
+      - 'excel!Excel.AutoFilter#load:member(2)'
+      - 'excel!Excel.AutoFilter#load:member(3)'
+      - 'excel!Excel.AutoFilter#reapply:member(1)'
+      - 'excel!Excel.AutoFilter#remove:member(1)'
+      - 'excel!Excel.AutoFilter#toJSON:member(1)'
+  - uid: 'excel!Excel.AutoFilter#apply:member(1)'
     summary: |-
       Applies the AutoFilter to a range. This filters the column if column index and filter criteria are specified.
 
@@ -45,21 +45,7 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getActiveWorksheet();
-              const farmData = sheet.getUsedRange();
-
-              // This filter will only show the rows with the top 25% of values in column 3.
-              sheet.autoFilter.apply(farmData, 3, { criterion1: "25", filterOn: Excel.FilterOn.topPercent });
-              await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: range
           description: The range over which the AutoFilter will apply on.
@@ -72,8 +58,8 @@ items:
         - id: criteria
           description: The filter criteria.
           type:
-            - excel.Excel.FilterCriteria
-  - uid: excel.Excel.AutoFilter.clearCriteria
+            - 'excel!Excel.FilterCriteria:interface'
+  - uid: 'excel!Excel.AutoFilter#clearCriteria:member(1)'
     summary: |-
       Clears the filter criteria of the AutoFilter.
 
@@ -89,7 +75,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.AutoFilter.context
+  - uid: 'excel!Excel.AutoFilter#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -102,8 +88,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.AutoFilter.criteria
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.AutoFilter#criteria:member'
     summary: |-
       An array that holds all the filter criteria in the autofiltered range. Read-Only.
 
@@ -118,7 +104,7 @@ items:
       return:
         type:
           - 'Excel.FilterCriteria[]'
-  - uid: excel.Excel.AutoFilter.enabled
+  - uid: 'excel!Excel.AutoFilter#enabled:member'
     summary: |-
       Indicates if the AutoFilter is enabled or not. Read-Only.
 
@@ -133,7 +119,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.AutoFilter.getRange
+  - uid: 'excel!Excel.AutoFilter#getRange:member(1)'
     summary: |-
       Returns the Range object that represents the range to which the AutoFilter applies.
 
@@ -147,9 +133,9 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.AutoFilter.getRangeOrNullObject
+  - uid: 'excel!Excel.AutoFilter#getRangeOrNullObject:member(1)'
     summary: >-
       Returns the Range object that represents the range to which the AutoFilter applies. If there is no Range object
       associated with the AutoFilter, this method returns a null object.
@@ -165,9 +151,9 @@ items:
       content: 'getRangeOrNullObject(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.AutoFilter.isDataFiltered
+  - uid: 'excel!Excel.AutoFilter#isDataFiltered:member'
     summary: |-
       Indicates if the AutoFilter has filter criteria. Read-Only.
 
@@ -182,7 +168,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.AutoFilter.load
+  - uid: 'excel!Excel.AutoFilter#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -213,14 +199,14 @@ items:
       content: 'load(option?: Excel.Interfaces.AutoFilterLoadOptions): Excel.AutoFilter;'
       return:
         type:
-          - excel.Excel.AutoFilter
+          - 'excel!Excel.AutoFilter:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.AutoFilterLoadOptions
-  - uid: excel.Excel.AutoFilter.load_1
+            - 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+  - uid: 'excel!Excel.AutoFilter#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -233,14 +219,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.AutoFilter;'
       return:
         type:
-          - excel.Excel.AutoFilter
+          - 'excel!Excel.AutoFilter:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.AutoFilter.load_2
+  - uid: 'excel!Excel.AutoFilter#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -253,7 +239,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.AutoFilter;'
       return:
         type:
-          - excel.Excel.AutoFilter
+          - 'excel!Excel.AutoFilter:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -262,7 +248,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.AutoFilter.reapply
+  - uid: 'excel!Excel.AutoFilter#reapply:member(1)'
     summary: |-
       Applies the specified Autofilter object currently on the range.
 
@@ -278,7 +264,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.AutoFilter.remove
+  - uid: 'excel!Excel.AutoFilter#remove:member(1)'
     summary: |-
       Removes the AutoFilter for the range.
 
@@ -294,7 +280,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.AutoFilter.toJSON
+  - uid: 'excel!Excel.AutoFilter#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -310,5 +296,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.AutoFilterData;'
       return:
         type:
-          - excel.Excel.Interfaces.AutoFilterData
+          - 'excel!Excel.Interfaces.AutoFilterData:interface'
         description: ''

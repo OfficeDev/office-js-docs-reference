@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellBorderCollection
+  - uid: 'excel!Excel.CellBorderCollection:interface'
     summary: >-
       Represents the `format.borders` properties of `getCellProperties`<!-- -->, `getRowProperties`<!-- -->, and
       `getColumnProperties` or the `format.borders` input parameter of `setCellProperties`<!-- -->,
@@ -13,17 +13,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellBorderCollection.bottom
-      - excel.Excel.CellBorderCollection.diagonalDown
-      - excel.Excel.CellBorderCollection.diagonalUp
-      - excel.Excel.CellBorderCollection.horizontal
-      - excel.Excel.CellBorderCollection.left
-      - excel.Excel.CellBorderCollection.right
-      - excel.Excel.CellBorderCollection.top
-      - excel.Excel.CellBorderCollection.vertical
-  - uid: excel.Excel.CellBorderCollection.bottom
+      - 'excel!Excel.CellBorderCollection#bottom:member'
+      - 'excel!Excel.CellBorderCollection#diagonalDown:member'
+      - 'excel!Excel.CellBorderCollection#diagonalUp:member'
+      - 'excel!Excel.CellBorderCollection#horizontal:member'
+      - 'excel!Excel.CellBorderCollection#left:member'
+      - 'excel!Excel.CellBorderCollection#right:member'
+      - 'excel!Excel.CellBorderCollection#top:member'
+      - 'excel!Excel.CellBorderCollection#vertical:member'
+  - uid: 'excel!Excel.CellBorderCollection#bottom:member'
     summary: |-
       Represents the `format.borders.bottom` property.
 
@@ -37,8 +37,8 @@ items:
       content: 'bottom?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.diagonalDown
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#diagonalDown:member'
     summary: |-
       Represents the `format.borders.diagonalDown` property.
 
@@ -52,8 +52,8 @@ items:
       content: 'diagonalDown?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.diagonalUp
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#diagonalUp:member'
     summary: |-
       Represents the `format.borders.diagonalUp` property.
 
@@ -67,8 +67,8 @@ items:
       content: 'diagonalUp?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.horizontal
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#horizontal:member'
     summary: |-
       Represents the `format.borders.horizontal` property.
 
@@ -82,8 +82,8 @@ items:
       content: 'horizontal?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.left
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#left:member'
     summary: |-
       Represents the `format.borders.left` property.
 
@@ -97,8 +97,8 @@ items:
       content: 'left?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.right
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#right:member'
     summary: |-
       Represents the `format.borders.right` property.
 
@@ -112,8 +112,8 @@ items:
       content: 'right?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.top
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#top:member'
     summary: |-
       Represents the `format.borders.top` property.
 
@@ -127,8 +127,8 @@ items:
       content: 'top?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
-  - uid: excel.Excel.CellBorderCollection.vertical
+          - 'excel!Excel.CellBorder:interface'
+  - uid: 'excel!Excel.CellBorderCollection#vertical:member'
     summary: |-
       Represents the `format.borders.vertical` property.
 
@@ -142,4 +142,4 @@ items:
       content: 'vertical?: Excel.CellBorder;'
       return:
         type:
-          - excel.Excel.CellBorder
+          - 'excel!Excel.CellBorder:interface'

@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableUpdateData
+  - uid: 'excel!Excel.Interfaces.TableUpdateData:interface'
     summary: 'An interface for updating data on the Table object, for use in "table.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.TableUpdateData
     fullName: Excel.Interfaces.TableUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableUpdateData.name
-      - excel.Excel.Interfaces.TableUpdateData.showHeaders
-      - excel.Excel.Interfaces.TableUpdateData.showTotals
-      - excel.Excel.Interfaces.TableUpdateData.style
-  - uid: excel.Excel.Interfaces.TableUpdateData.name
+      - 'excel!Excel.Interfaces.TableUpdateData#name:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#showTotals:member'
+      - 'excel!Excel.Interfaces.TableUpdateData#style:member'
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#name:member'
     summary: |-
       Name of the table.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TableUpdateData.showHeaders
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showHeaders:member'
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.showTotals
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#showTotals:member'
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableUpdateData.style
+  - uid: 'excel!Excel.Interfaces.TableUpdateData#style:member'
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
       TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined

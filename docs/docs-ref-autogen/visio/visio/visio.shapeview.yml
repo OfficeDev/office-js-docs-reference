@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.ShapeView
+  - uid: 'visio!Visio.ShapeView:class'
     summary: |-
       Represents the ShapeView class.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.ShapeView.addOverlay
-      - visio.Visio.ShapeView.addOverlay_1
-      - visio.Visio.ShapeView.context
-      - visio.Visio.ShapeView.highlight
-      - visio.Visio.ShapeView.load
-      - visio.Visio.ShapeView.load_1
-      - visio.Visio.ShapeView.load_2
-      - visio.Visio.ShapeView.removeOverlay
-      - visio.Visio.ShapeView.set
-      - visio.Visio.ShapeView.set_1
-      - visio.Visio.ShapeView.toJSON
-  - uid: visio.Visio.ShapeView.addOverlay
+      - 'visio!Visio.ShapeView#addOverlay:member(1)'
+      - 'visio!Visio.ShapeView#addOverlay:member(2)'
+      - 'visio!Visio.ShapeView#context:member'
+      - 'visio!Visio.ShapeView#highlight:member'
+      - 'visio!Visio.ShapeView#load:member(1)'
+      - 'visio!Visio.ShapeView#load:member(2)'
+      - 'visio!Visio.ShapeView#load:member(3)'
+      - 'visio!Visio.ShapeView#removeOverlay:member(1)'
+      - 'visio!Visio.ShapeView#set:member(1)'
+      - 'visio!Visio.ShapeView#set:member(2)'
+      - 'visio!Visio.ShapeView#toJSON:member(1)'
+  - uid: 'visio!Visio.ShapeView#addOverlay:member(1)'
     summary: |-
       Adds an overlay on top of the shape.
 
@@ -43,29 +43,12 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<number>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
-              var overlayId = shape.view.addOverlay("Image", "Visio Online", "Center", "Middle", 50, 50);
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: OverlayType
           description: An Overlay Type. Can be 'Text' or 'Image'.
           type:
-            - visio.Visio.OverlayType
+            - 'visio!Visio.OverlayType:enum'
         - id: Content
           description: Content of Overlay.
           type:
@@ -73,11 +56,11 @@ items:
         - id: OverlayHorizontalAlignment
           description: 'Horizontal Alignment of Overlay. Can be ''Left'', ''Center'', or ''Right''.'
           type:
-            - visio.Visio.OverlayHorizontalAlignment
+            - 'visio!Visio.OverlayHorizontalAlignment:enum'
         - id: OverlayVerticalAlignment
           description: 'Vertical Alignment of Overlay. Can be ''Top'', ''Middle'', ''Bottom''.'
           type:
-            - visio.Visio.OverlayVerticalAlignment
+            - 'visio!Visio.OverlayVerticalAlignment:enum'
         - id: Width
           description: Overlay Width.
           type:
@@ -86,7 +69,7 @@ items:
           description: Overlay Height.
           type:
             - number
-  - uid: visio.Visio.ShapeView.addOverlay_1
+  - uid: 'visio!Visio.ShapeView#addOverlay:member(2)'
     summary: |-
       Adds an overlay on top of the shape.
 
@@ -130,7 +113,7 @@ items:
           description: Overlay Height.
           type:
             - number
-  - uid: visio.Visio.ShapeView.context
+  - uid: 'visio!Visio.ShapeView#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -143,8 +126,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.ShapeView.highlight
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.ShapeView#highlight:member'
     summary: |-
       Represents the highlight around the shape.
 
@@ -158,26 +141,8 @@ items:
       content: 'highlight: Visio.Highlight;'
       return:
         type:
-          - visio.Visio.Highlight
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
-              shape.view.highlight = { color: "#E7E7E7", width: 100 };
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: visio.Visio.ShapeView.load
+          - 'visio!Visio.Highlight:interface'
+  - uid: 'visio!Visio.ShapeView#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -208,14 +173,14 @@ items:
       content: 'load(option?: Visio.Interfaces.ShapeViewLoadOptions): Visio.ShapeView;'
       return:
         type:
-          - visio.Visio.ShapeView
+          - 'visio!Visio.ShapeView:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - visio.Visio.Interfaces.ShapeViewLoadOptions
-  - uid: visio.Visio.ShapeView.load_1
+            - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'
+  - uid: 'visio!Visio.ShapeView#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -228,14 +193,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.ShapeView;'
       return:
         type:
-          - visio.Visio.ShapeView
+          - 'visio!Visio.ShapeView:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.ShapeView.load_2
+  - uid: 'visio!Visio.ShapeView#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -248,7 +213,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Visio.ShapeView;'
       return:
         type:
-          - visio.Visio.ShapeView
+          - 'visio!Visio.ShapeView:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -257,7 +222,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: visio.Visio.ShapeView.removeOverlay
+  - uid: 'visio!Visio.ShapeView#removeOverlay:member(1)'
     summary: |-
       Removes particular overlay or all overlays on the Shape.
 
@@ -272,30 +237,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
-              shape.view.removeOverlay(1);
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+        description: ''
       parameters:
         - id: OverlayId
           description: An Overlay Id. Removes the specific overlay id from the shape.
           type:
             - number
-  - uid: visio.Visio.ShapeView.set
+  - uid: 'visio!Visio.ShapeView#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -325,7 +273,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: visio.Visio.ShapeView.set_1
+  - uid: 'visio!Visio.ShapeView#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -342,8 +290,8 @@ items:
         - id: properties
           description: ''
           type:
-            - visio.Visio.ShapeView
-  - uid: visio.Visio.ShapeView.toJSON
+            - 'visio!Visio.ShapeView:class'
+  - uid: 'visio!Visio.ShapeView#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -359,5 +307,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.ShapeViewData;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeViewData
+          - 'visio!Visio.Interfaces.ShapeViewData:interface'
         description: ''

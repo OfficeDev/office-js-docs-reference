@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.AsyncResult
+  - uid: 'office!Office.AsyncResult:interface'
     summary: >-
       An object which encapsulates the result of an asynchronous request, including status and error information if the
       request failed.
@@ -16,44 +16,14 @@ items:
     syntax:
       typeParameters:
         - id: T
-    package: office
-    remarks: |-
-
-
-      #### Examples
-
-      ```javascript
-      // The following is an example applicable to content and task pane add-ins.
-      // The example shows a call to the getSelectedDataAsync method of the Document object.
-      Office.context.document.getSelectedDataAsync("text", {
-              valueFormat: "unformatted",
-              filterType: "all"
-          },
-          function (result) {
-              if (result.status === "success") {
-                  var dataValue = result.value; // Get selected data.
-                  console.log('Selected data is ' + dataValue);
-              } else {
-                  var err = result.error;
-                  console.log(err.name + ": " + err.message);
-              }
-          });
-      // The anonymous function passed as the callback argument ( function (result){...}) has a single 
-      // parameter named result that provides access to an AsyncResult object when the function executes.
-      // When the call to the getSelectedDataAsync method completes, the callback function executes, 
-      // and the following line of code accesses the value property of the AsyncResult object to 
-      // return the data selected in the document:
-      var dataValue = result.value;
-      // Note that other lines of code in the function use the result parameter of the callback function 
-      // to access the status and error properties of the AsyncResult object.
-      ```
+    package: office!
     children:
-      - office.Office.AsyncResult.asyncContext
-      - office.Office.AsyncResult.diagnostics
-      - office.Office.AsyncResult.error
-      - office.Office.AsyncResult.status
-      - office.Office.AsyncResult.value
-  - uid: office.Office.AsyncResult.asyncContext
+      - 'office!Office.AsyncResult#asyncContext:member'
+      - 'office!Office.AsyncResult#diagnostics:member'
+      - 'office!Office.AsyncResult#error:member'
+      - 'office!Office.AsyncResult#status:member'
+      - 'office!Office.AsyncResult#value:member'
+  - uid: 'office!Office.AsyncResult#asyncContext:member'
     summary: >-
       Gets the user-defined item passed to the optional `asyncContext` parameter of the invoked method in the same state
       as it was passed in. This returns the user-defined item (which can be of any JavaScript type: String, Number,
@@ -69,30 +39,8 @@ items:
       return:
         type:
           - any
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function getDataWithContext() {
-              var format = "Your data: ";
-              Office.context.document.getSelectedDataAsync(
-                  Office.CoercionType.Text, 
-                  { asyncContext: format }, 
-                  showDataWithContext);
-          }
-
-          function showDataWithContext(asyncResult) {
-              write(asyncResult.asyncContext + asyncResult.value);
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.AsyncResult.diagnostics
-    summary: 'Gets an object that may provide additional information if an [error](xref:office.Office.Error) occurred.'
+  - uid: 'office!Office.AsyncResult#diagnostics:member'
+    summary: 'Gets an object that may provide additional information if an [error](xref:office!Office.Error:interface) occurred.'
     remarks: >-
       This property returns additional information if the following errors occur with these supported APIs.
 
@@ -121,10 +69,10 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.AsyncResult.error
+  - uid: 'office!Office.AsyncResult#error:member'
     summary: >-
-      Gets an [Office.Error](xref:office.Office.Error) object that provides a description of the error, if any error
-      occurred.
+      Gets an [Office.Error](xref:office!Office.Error:interface) object that provides a description of the error, if any
+      error occurred.
     name: error
     fullName: error
     langs:
@@ -134,30 +82,9 @@ items:
       content: 'error: Office.Error;'
       return:
         type:
-          - office.Office.Error
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function getData() {
-              Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
-                      write(asyncResult.error.message);
-                  }
-                  else {
-                      write(asyncResult.value);
-                  }
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.AsyncResult.status
-    summary: 'Gets the [Office.AsyncResultStatus](xref:office.Office.AsyncResultStatus) of the asynchronous operation.'
+          - 'office!Office.Error:interface'
+  - uid: 'office!Office.AsyncResult#status:member'
+    summary: 'Gets the [Office.AsyncResultStatus](xref:office!Office.AsyncResultStatus:enum) of the asynchronous operation.'
     name: status
     fullName: status
     langs:
@@ -167,64 +94,18 @@ items:
       content: 'status: AsyncResultStatus;'
       return:
         type:
-          - office.Office.AsyncResultStatus
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function getData() {
-              Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-                  if (asyncResult.status == Office.AsyncResultStatus.Failed) {
-                      write(asyncResult.error.message);
-                  }
-                  else {
-                      write(asyncResult.value);
-                  }
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.AsyncResult.value
+          - 'office!Office.AsyncResultStatus:enum'
+  - uid: 'office!Office.AsyncResult#value:member'
     summary: 'Gets the payload or content of this asynchronous operation, if any.'
     remarks: >-
       You access the AsyncResult object in the function passed as the argument to the callback parameter of an "Async"
       method, such as the `getSelectedDataAsync` and `setSelectedDataAsync` methods of the
-      [Document](xref:office.Office.Document) object.
+      [Document](xref:office!Office.Document:interface) object.
 
 
       **Note**: What the value property returns for a particular "Async" method varies depending on the purpose and
       context of that method. To determine what is returned by the value property for an "Async" method, refer to the
       "Callback value" section of the method's topic.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function getData() {
-          Office.context.document.getSelectedDataAsync(Office.CoercionType.Table, function(asyncResult) {
-              if (asyncResult.status == Office.AsyncResultStatus.Failed) {
-                  write(asyncResult.error.message);
-              }
-              else {
-                  write(asyncResult.value);
-              }
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: value
     fullName: value
     langs:

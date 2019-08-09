@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionData
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData:interface'
     summary: An interface describing the data returned by calling "customXmlPartScopedCollection.toJSON()".
     name: Excel.Interfaces.CustomXmlPartScopedCollectionData
     fullName: Excel.Interfaces.CustomXmlPartScopedCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CustomXmlPartScopedCollectionData.items
-  - uid: excel.Excel.Interfaces.CustomXmlPartScopedCollectionData.items
+      - 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.CustomXmlPartScopedCollectionData#items:member'
     name: items
     fullName: items
     langs:

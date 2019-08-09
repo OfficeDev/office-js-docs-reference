@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions:interface'
     summary: |-
       Represents the Hyperlink Collection.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.$all
-      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.address
-      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.description
-      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.extraInfo
-      - visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.subAddress
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.$all
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#address:member'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#description:member'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#extraInfo:member'
+      - 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#subAddress:member'
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.address
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#address:member'
     summary: |-
       For EACH ITEM in the collection: Gets the address of the Hyperlink object. Read-only.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.description
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#description:member'
     summary: |-
       For EACH ITEM in the collection: Gets the description of a hyperlink. Read-only.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.extraInfo
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#extraInfo:member'
     summary: >-
       For EACH ITEM in the collection: Gets the extra URL request information used to resolve the hyperlink's URL.
       Read-only.
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionLoadOptions.subAddress
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionLoadOptions#subAddress:member'
     summary: |-
       For EACH ITEM in the collection: Gets the sub-address of the Hyperlink object. Read-only.
 

@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeSymbolsSet
+  - uid: 'excel!Excel.ThreeSymbolsSet:interface'
     name: Excel.ThreeSymbolsSet
     fullName: Excel.ThreeSymbolsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeSymbolsSet.greenCheckSymbol
-      - excel.Excel.ThreeSymbolsSet.redCrossSymbol
-      - excel.Excel.ThreeSymbolsSet.yellowExclamationSymbol
-  - uid: excel.Excel.ThreeSymbolsSet.greenCheckSymbol
+      - 'excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member'
+      - 'excel!Excel.ThreeSymbolsSet#redCrossSymbol:member'
+      - 'excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member'
+  - uid: 'excel!Excel.ThreeSymbolsSet#greenCheckSymbol:member'
     name: greenCheckSymbol
     fullName: greenCheckSymbol
     langs:
@@ -21,8 +21,8 @@ items:
       content: 'greenCheckSymbol: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeSymbolsSet.redCrossSymbol
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSymbolsSet#redCrossSymbol:member'
     name: redCrossSymbol
     fullName: redCrossSymbol
     langs:
@@ -32,8 +32,8 @@ items:
       content: 'redCrossSymbol: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeSymbolsSet.yellowExclamationSymbol
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSymbolsSet#yellowExclamationSymbol:member'
     name: yellowExclamationSymbol
     fullName: yellowExclamationSymbol
     langs:
@@ -43,4 +43,4 @@ items:
       content: 'yellowExclamationSymbol: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

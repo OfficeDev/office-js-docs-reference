@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.InkWord
+  - uid: 'onenote!OneNote.InkWord:class'
     summary: |-
       A container for the ink in a word in a paragraph.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.InkWord.context
-      - onenote.OneNote.InkWord.id
-      - onenote.OneNote.InkWord.languageId
-      - onenote.OneNote.InkWord.load
-      - onenote.OneNote.InkWord.load_1
-      - onenote.OneNote.InkWord.load_2
-      - onenote.OneNote.InkWord.paragraph
-      - onenote.OneNote.InkWord.toJSON
-      - onenote.OneNote.InkWord.track
-      - onenote.OneNote.InkWord.untrack
-      - onenote.OneNote.InkWord.wordAlternates
-  - uid: onenote.OneNote.InkWord.context
+      - 'onenote!OneNote.InkWord#context:member'
+      - 'onenote!OneNote.InkWord#id:member'
+      - 'onenote!OneNote.InkWord#languageId:member'
+      - 'onenote!OneNote.InkWord#load:member(1)'
+      - 'onenote!OneNote.InkWord#load:member(2)'
+      - 'onenote!OneNote.InkWord#load:member(3)'
+      - 'onenote!OneNote.InkWord#paragraph:member'
+      - 'onenote!OneNote.InkWord#toJSON:member(1)'
+      - 'onenote!OneNote.InkWord#track:member(1)'
+      - 'onenote!OneNote.InkWord#untrack:member(1)'
+      - 'onenote!OneNote.InkWord#wordAlternates:member'
+  - uid: 'onenote!OneNote.InkWord#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.InkWord.id
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.InkWord#id:member'
     summary: |-
       Gets the ID of the InkWord object. Read-only.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.InkWord.languageId
+  - uid: 'onenote!OneNote.InkWord#languageId:member'
     summary: |-
       The id of the recognized language in this ink word. Read-only.
 
@@ -69,7 +69,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.InkWord.load
+  - uid: 'onenote!OneNote.InkWord#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -100,14 +100,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.InkWordLoadOptions): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - 'onenote!OneNote.InkWord:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.InkWordLoadOptions
-  - uid: onenote.OneNote.InkWord.load_1
+            - 'onenote!OneNote.Interfaces.InkWordLoadOptions:interface'
+  - uid: 'onenote!OneNote.InkWord#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -120,14 +120,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - 'onenote!OneNote.InkWord:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.InkWord.load_2
+  - uid: 'onenote!OneNote.InkWord#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -140,7 +140,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - 'onenote!OneNote.InkWord:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -149,7 +149,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.InkWord.paragraph
+  - uid: 'onenote!OneNote.InkWord#paragraph:member'
     summary: |-
       The parent paragraph containing the ink word. Read-only.
 
@@ -163,8 +163,8 @@ items:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
-  - uid: onenote.OneNote.InkWord.toJSON
+          - 'onenote!OneNote.Paragraph:class'
+  - uid: 'onenote!OneNote.InkWord#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -180,9 +180,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.InkWordData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkWordData
+          - 'onenote!OneNote.Interfaces.InkWordData:interface'
         description: ''
-  - uid: onenote.OneNote.InkWord.track
+  - uid: 'onenote!OneNote.InkWord#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -198,9 +198,9 @@ items:
       content: 'track(): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - 'onenote!OneNote.InkWord:class'
         description: ''
-  - uid: onenote.OneNote.InkWord.untrack
+  - uid: 'onenote!OneNote.InkWord#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -215,9 +215,9 @@ items:
       content: 'untrack(): OneNote.InkWord;'
       return:
         type:
-          - onenote.OneNote.InkWord
+          - 'onenote!OneNote.InkWord:class'
         description: ''
-  - uid: onenote.OneNote.InkWord.wordAlternates
+  - uid: 'onenote!OneNote.InkWord#wordAlternates:member'
     summary: |-
       The words that were recognized in this ink word, in order of likelihood. Read-only.
 

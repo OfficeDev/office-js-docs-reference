@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SelectionChangedEventArgs
+  - uid: 'excel!Excel.SelectionChangedEventArgs:interface'
     summary: |-
       Provides information about the document that raised the SelectionChanged event.
 
@@ -10,10 +10,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SelectionChangedEventArgs.workbook
-  - uid: excel.Excel.SelectionChangedEventArgs.workbook
+      - 'excel!Excel.SelectionChangedEventArgs#workbook:member'
+  - uid: 'excel!Excel.SelectionChangedEventArgs#workbook:member'
     summary: |-
       Gets the workbook object that raised the SelectionChanged event.
 
@@ -27,4 +27,4 @@ items:
       content: 'workbook: Excel.Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'

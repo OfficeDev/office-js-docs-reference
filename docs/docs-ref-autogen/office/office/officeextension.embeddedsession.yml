@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.EmbeddedSession
+  - uid: 'office!OfficeExtension.EmbeddedSession:class'
     name: OfficeExtension.EmbeddedSession
     fullName: OfficeExtension.EmbeddedSession
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.EmbeddedSession.(constructor)
-      - office.OfficeExtension.EmbeddedSession.init
-  - uid: office.OfficeExtension.EmbeddedSession.(constructor)
+      - 'office!OfficeExtension.EmbeddedSession:constructor(1)'
+      - 'office!OfficeExtension.EmbeddedSession#init:member(1)'
+  - uid: 'office!OfficeExtension.EmbeddedSession:constructor(1)'
     summary: Constructs a new instance of the `EmbeddedSession` class
     name: '(constructor)(url, options)'
     fullName: '(constructor)(url, options)'
@@ -27,8 +27,8 @@ items:
         - id: options
           description: ''
           type:
-            - office.OfficeExtension.EmbeddedOptions
-  - uid: office.OfficeExtension.EmbeddedSession.init
+            - 'office!OfficeExtension.EmbeddedOptions:interface'
+  - uid: 'office!OfficeExtension.EmbeddedSession#init:member(1)'
     name: init()
     fullName: init()
     langs:

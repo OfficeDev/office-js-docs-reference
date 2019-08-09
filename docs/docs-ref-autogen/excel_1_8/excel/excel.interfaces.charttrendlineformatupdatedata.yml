@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartTrendlineFormat object, for use in "chartTrendlineFormat.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTrendlineFormatUpdateData.line
-  - uid: excel.Excel.Interfaces.ChartTrendlineFormatUpdateData.line
+      - 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData#line:member'
+  - uid: 'excel!Excel.Interfaces.ChartTrendlineFormatUpdateData#line:member'
     summary: |-
       Represents chart line formatting.
 
@@ -26,4 +26,4 @@ items:
       content: 'line?: Excel.Interfaces.ChartLineFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartLineFormatUpdateData
+          - 'excel!Excel.Interfaces.ChartLineFormatUpdateData:interface'

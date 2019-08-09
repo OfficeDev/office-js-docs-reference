@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
     summary: |-
       Represents a group of ink strokes.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.$all
-      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.id
-      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.inkStrokes
-      - onenote.OneNote.Interfaces.FloatingInkLoadOptions.pageContent
-  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#inkStrokes:member'
+      - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member'
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#id:member'
     summary: |-
       Gets the ID of the FloatingInk object. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.inkStrokes
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#inkStrokes:member'
     summary: |-
       Gets the strokes of the FloatingInk object.
 
@@ -56,8 +56,8 @@ items:
       content: 'inkStrokes?: OneNote.Interfaces.InkStrokeCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions.pageContent
+          - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions#pageContent:member'
     summary: |-
       Gets the PageContent parent of the FloatingInk object.
 
@@ -71,4 +71,4 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentLoadOptions
+          - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'

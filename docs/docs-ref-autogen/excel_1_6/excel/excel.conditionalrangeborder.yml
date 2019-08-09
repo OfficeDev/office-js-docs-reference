@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalRangeBorder
+  - uid: 'excel!Excel.ConditionalRangeBorder:class'
     summary: |-
       Represents the border of an object.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalRangeBorder.color
-      - excel.Excel.ConditionalRangeBorder.context
-      - excel.Excel.ConditionalRangeBorder.load
-      - excel.Excel.ConditionalRangeBorder.load_1
-      - excel.Excel.ConditionalRangeBorder.load_2
-      - excel.Excel.ConditionalRangeBorder.set
-      - excel.Excel.ConditionalRangeBorder.set_1
-      - excel.Excel.ConditionalRangeBorder.sideIndex
-      - excel.Excel.ConditionalRangeBorder.style
-      - excel.Excel.ConditionalRangeBorder.toJSON
-  - uid: excel.Excel.ConditionalRangeBorder.color
+      - 'excel!Excel.ConditionalRangeBorder#color:member'
+      - 'excel!Excel.ConditionalRangeBorder#context:member'
+      - 'excel!Excel.ConditionalRangeBorder#load:member(1)'
+      - 'excel!Excel.ConditionalRangeBorder#load:member(2)'
+      - 'excel!Excel.ConditionalRangeBorder#load:member(3)'
+      - 'excel!Excel.ConditionalRangeBorder#set:member(1)'
+      - 'excel!Excel.ConditionalRangeBorder#set:member(2)'
+      - 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
+      - 'excel!Excel.ConditionalRangeBorder#style:member'
+      - 'excel!Excel.ConditionalRangeBorder#toJSON:member(1)'
+  - uid: 'excel!Excel.ConditionalRangeBorder#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalRangeBorder.context
+  - uid: 'excel!Excel.ConditionalRangeBorder#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -54,8 +54,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ConditionalRangeBorder.load
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalRangeBorder#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -86,14 +86,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ConditionalRangeBorderLoadOptions): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalRangeBorderLoadOptions
-  - uid: excel.Excel.ConditionalRangeBorder.load_1
+            - 'excel!Excel.Interfaces.ConditionalRangeBorderLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalRangeBorder#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -106,14 +106,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalRangeBorder.load_2
+  - uid: 'excel!Excel.ConditionalRangeBorder#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -126,7 +126,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalRangeBorder;'
       return:
         type:
-          - excel.Excel.ConditionalRangeBorder
+          - 'excel!Excel.ConditionalRangeBorder:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -135,7 +135,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ConditionalRangeBorder.set
+  - uid: 'excel!Excel.ConditionalRangeBorder#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -165,7 +165,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ConditionalRangeBorder.set_1
+  - uid: 'excel!Excel.ConditionalRangeBorder#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -182,8 +182,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalRangeBorder
-  - uid: excel.Excel.ConditionalRangeBorder.sideIndex
+            - 'excel!Excel.ConditionalRangeBorder:class'
+  - uid: 'excel!Excel.ConditionalRangeBorder#sideIndex:member'
     summary: >-
       Constant value that indicates the specific side of the border. See Excel.ConditionalRangeBorderIndex for details.
       Read-only.
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - Excel.ConditionalRangeBorderIndex | "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight"
-  - uid: excel.Excel.ConditionalRangeBorder.style
+  - uid: 'excel!Excel.ConditionalRangeBorder#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -219,7 +219,7 @@ items:
       return:
         type:
           - Excel.ConditionalRangeBorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot"
-  - uid: excel.Excel.ConditionalRangeBorder.toJSON
+  - uid: 'excel!Excel.ConditionalRangeBorder#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -235,5 +235,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalRangeBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeBorderData
+          - 'excel!Excel.Interfaces.ConditionalRangeBorderData:interface'
         description: ''

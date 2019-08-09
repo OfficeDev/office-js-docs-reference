@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ParagraphCollection
+  - uid: 'word!Word.ParagraphCollection:class'
     summary: |-
-      Contains a collection of [Word.Paragraph](xref:word.Word.Paragraph) objects.
+      Contains a collection of [Word.Paragraph](xref:word!Word.Paragraph:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ParagraphCollection
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.ParagraphCollection.context
-      - word.Word.ParagraphCollection.getFirst
-      - word.Word.ParagraphCollection.getFirstOrNullObject
-      - word.Word.ParagraphCollection.getLast
-      - word.Word.ParagraphCollection.getLastOrNullObject
-      - word.Word.ParagraphCollection.items
-      - word.Word.ParagraphCollection.load
-      - word.Word.ParagraphCollection.load_1
-      - word.Word.ParagraphCollection.load_2
-      - word.Word.ParagraphCollection.toJSON
-      - word.Word.ParagraphCollection.track
-      - word.Word.ParagraphCollection.untrack
-  - uid: word.Word.ParagraphCollection.context
+      - 'word!Word.ParagraphCollection#context:member'
+      - 'word!Word.ParagraphCollection#getFirst:member(1)'
+      - 'word!Word.ParagraphCollection#getFirstOrNullObject:member(1)'
+      - 'word!Word.ParagraphCollection#getLast:member(1)'
+      - 'word!Word.ParagraphCollection#getLastOrNullObject:member(1)'
+      - 'word!Word.ParagraphCollection#items:member'
+      - 'word!Word.ParagraphCollection#load:member(1)'
+      - 'word!Word.ParagraphCollection#load:member(2)'
+      - 'word!Word.ParagraphCollection#load:member(3)'
+      - 'word!Word.ParagraphCollection#toJSON:member(1)'
+      - 'word!Word.ParagraphCollection#track:member(1)'
+      - 'word!Word.ParagraphCollection#untrack:member(1)'
+  - uid: 'word!Word.ParagraphCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.ParagraphCollection.getFirst
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.ParagraphCollection#getFirst:member(1)'
     summary: |-
       Gets the first paragraph in this collection. Throws if the collection is empty.
 
@@ -54,9 +54,9 @@ items:
       content: 'getFirst(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.ParagraphCollection.getFirstOrNullObject
+  - uid: 'word!Word.ParagraphCollection#getFirstOrNullObject:member(1)'
     summary: |-
       Gets the first paragraph in this collection. Returns a null object if the collection is empty.
 
@@ -70,9 +70,9 @@ items:
       content: 'getFirstOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.ParagraphCollection.getLast
+  - uid: 'word!Word.ParagraphCollection#getLast:member(1)'
     summary: |-
       Gets the last paragraph in this collection. Throws if the collection is empty.
 
@@ -86,9 +86,9 @@ items:
       content: 'getLast(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.ParagraphCollection.getLastOrNullObject
+  - uid: 'word!Word.ParagraphCollection#getLastOrNullObject:member(1)'
     summary: |-
       Gets the last paragraph in this collection. Returns a null object if the collection is empty.
 
@@ -102,9 +102,9 @@ items:
       content: 'getLastOrNullObject(): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
-  - uid: word.Word.ParagraphCollection.items
+  - uid: 'word!Word.ParagraphCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - 'Word.Paragraph[]'
-  - uid: word.Word.ParagraphCollection.load
+  - uid: 'word!Word.ParagraphCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -138,47 +138,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // This example shows how to get the paragraphs in the Word document
-
-      // along with their text and font size properties.
-
-      // 
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-
-          // Create a proxy object for the paragraphs collection.
-          var paragraphs = context.document.body.paragraphs;
-
-          // Queue a commmand to load the text and font properties.
-          // It is best practice to always specify the property set. Otherwise, all properties are
-          // returned in on the object.
-          context.load(paragraphs, 'text, font/size');
-
-          // Synchronize the document state by executing the queued commands,
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-
-          // Insert code that works with the paragraphs loaded by context.load().
-          })
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -190,14 +149,14 @@ items:
         Word.ParagraphCollection;
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.ParagraphCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.ParagraphCollection.load_1
+  - uid: 'word!Word.ParagraphCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -210,14 +169,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.ParagraphCollection.load_2
+  - uid: 'word!Word.ParagraphCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -227,14 +186,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: word.Word.ParagraphCollection.toJSON
+  - uid: 'word!Word.ParagraphCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -250,9 +209,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ParagraphCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.ParagraphCollectionData
+          - 'word!Word.Interfaces.ParagraphCollectionData:interface'
         description: ''
-  - uid: word.Word.ParagraphCollection.track
+  - uid: 'word!Word.ParagraphCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -268,9 +227,9 @@ items:
       content: 'track(): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: ''
-  - uid: word.Word.ParagraphCollection.untrack
+  - uid: 'word!Word.ParagraphCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -285,5 +244,5 @@ items:
       content: 'untrack(): Word.ParagraphCollection;'
       return:
         type:
-          - word.Word.ParagraphCollection
+          - 'word!Word.ParagraphCollection:class'
         description: ''

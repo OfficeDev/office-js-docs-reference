@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PivotItemLoadOptions
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions:interface'
     summary: |-
       Represents the Excel PivotItem.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PivotItemLoadOptions.$all
-      - excel.Excel.Interfaces.PivotItemLoadOptions.id
-      - excel.Excel.Interfaces.PivotItemLoadOptions.isExpanded
-      - excel.Excel.Interfaces.PivotItemLoadOptions.name
-      - excel.Excel.Interfaces.PivotItemLoadOptions.visible
-  - uid: excel.Excel.Interfaces.PivotItemLoadOptions.$all
+      - 'excel!Excel.Interfaces.PivotItemLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PivotItemLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.PivotItemLoadOptions#isExpanded:member'
+      - 'excel!Excel.Interfaces.PivotItemLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.PivotItemLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotItemLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#id:member'
     summary: |-
       Id of the PivotItem.
 
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotItemLoadOptions.isExpanded
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#isExpanded:member'
     summary: |-
       Determines whether the item is expanded to show child items or if it's collapsed and child items are hidden.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotItemLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#name:member'
     summary: |-
       Name of the PivotItem.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PivotItemLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.PivotItemLoadOptions#visible:member'
     summary: |-
       Determines whether the PivotItem is visible or not.
 

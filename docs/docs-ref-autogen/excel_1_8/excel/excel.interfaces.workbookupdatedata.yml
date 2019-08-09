@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookUpdateData
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData:interface'
     summary: 'An interface for updating data on the Workbook object, for use in "workbook.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.WorkbookUpdateData
     fullName: Excel.Interfaces.WorkbookUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookUpdateData.properties
-  - uid: excel.Excel.Interfaces.WorkbookUpdateData.properties
+      - 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookUpdateData#properties:member'
     summary: |-
       Gets the workbook properties.
 
@@ -24,4 +24,4 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesUpdateData
+          - 'excel!Excel.Interfaces.DocumentPropertiesUpdateData:interface'

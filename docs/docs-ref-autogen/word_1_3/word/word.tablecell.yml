@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.TableCell
+  - uid: 'word!Word.TableCell:class'
     summary: |-
       Represents a table cell in a Word document.
 
@@ -12,43 +12,43 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.TableCell.body
-      - word.Word.TableCell.cellIndex
-      - word.Word.TableCell.columnWidth
-      - word.Word.TableCell.context
-      - word.Word.TableCell.deleteColumn
-      - word.Word.TableCell.deleteRow
-      - word.Word.TableCell.getBorder
-      - word.Word.TableCell.getBorder_1
-      - word.Word.TableCell.getCellPadding
-      - word.Word.TableCell.getCellPadding_1
-      - word.Word.TableCell.getNext
-      - word.Word.TableCell.getNextOrNullObject
-      - word.Word.TableCell.horizontalAlignment
-      - word.Word.TableCell.insertColumns
-      - word.Word.TableCell.insertColumns_1
-      - word.Word.TableCell.insertRows
-      - word.Word.TableCell.insertRows_1
-      - word.Word.TableCell.load
-      - word.Word.TableCell.load_1
-      - word.Word.TableCell.load_2
-      - word.Word.TableCell.parentRow
-      - word.Word.TableCell.parentTable
-      - word.Word.TableCell.rowIndex
-      - word.Word.TableCell.set
-      - word.Word.TableCell.set_1
-      - word.Word.TableCell.setCellPadding
-      - word.Word.TableCell.setCellPadding_1
-      - word.Word.TableCell.shadingColor
-      - word.Word.TableCell.toJSON
-      - word.Word.TableCell.track
-      - word.Word.TableCell.untrack
-      - word.Word.TableCell.value
-      - word.Word.TableCell.verticalAlignment
-      - word.Word.TableCell.width
-  - uid: word.Word.TableCell.body
+      - 'word!Word.TableCell#body:member'
+      - 'word!Word.TableCell#cellIndex:member'
+      - 'word!Word.TableCell#columnWidth:member'
+      - 'word!Word.TableCell#context:member'
+      - 'word!Word.TableCell#deleteColumn:member(1)'
+      - 'word!Word.TableCell#deleteRow:member(1)'
+      - 'word!Word.TableCell#getBorder:member(1)'
+      - 'word!Word.TableCell#getBorder:member(2)'
+      - 'word!Word.TableCell#getCellPadding:member(1)'
+      - 'word!Word.TableCell#getCellPadding:member(2)'
+      - 'word!Word.TableCell#getNext:member(1)'
+      - 'word!Word.TableCell#getNextOrNullObject:member(1)'
+      - 'word!Word.TableCell#horizontalAlignment:member'
+      - 'word!Word.TableCell#insertColumns:member(1)'
+      - 'word!Word.TableCell#insertColumns:member(2)'
+      - 'word!Word.TableCell#insertRows:member(1)'
+      - 'word!Word.TableCell#insertRows:member(2)'
+      - 'word!Word.TableCell#load:member(1)'
+      - 'word!Word.TableCell#load:member(2)'
+      - 'word!Word.TableCell#load:member(3)'
+      - 'word!Word.TableCell#parentRow:member'
+      - 'word!Word.TableCell#parentTable:member'
+      - 'word!Word.TableCell#rowIndex:member'
+      - 'word!Word.TableCell#set:member(1)'
+      - 'word!Word.TableCell#set:member(2)'
+      - 'word!Word.TableCell#setCellPadding:member(1)'
+      - 'word!Word.TableCell#setCellPadding:member(2)'
+      - 'word!Word.TableCell#shadingColor:member'
+      - 'word!Word.TableCell#toJSON:member(1)'
+      - 'word!Word.TableCell#track:member(1)'
+      - 'word!Word.TableCell#untrack:member(1)'
+      - 'word!Word.TableCell#value:member'
+      - 'word!Word.TableCell#verticalAlignment:member'
+      - 'word!Word.TableCell#width:member'
+  - uid: 'word!Word.TableCell#body:member'
     summary: |-
       Gets the body object of the cell. Read-only.
 
@@ -62,8 +62,8 @@ items:
       content: 'readonly body: Word.Body;'
       return:
         type:
-          - word.Word.Body
-  - uid: word.Word.TableCell.cellIndex
+          - 'word!Word.Body:class'
+  - uid: 'word!Word.TableCell#cellIndex:member'
     summary: |-
       Gets the index of the cell in its row. Read-only.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableCell.columnWidth
+  - uid: 'word!Word.TableCell#columnWidth:member'
     summary: |-
       Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableCell.context
+  - uid: 'word!Word.TableCell#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -106,8 +106,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.TableCell.deleteColumn
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.TableCell#deleteColumn:member(1)'
     summary: |-
       Deletes the column containing this cell. This is applicable to uniform tables.
 
@@ -123,7 +123,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.TableCell.deleteRow
+  - uid: 'word!Word.TableCell#deleteRow:member(1)'
     summary: |-
       Deletes the row containing this cell.
 
@@ -139,7 +139,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.TableCell.getBorder
+  - uid: 'word!Word.TableCell#getBorder:member(1)'
     summary: |-
       Gets the border style for the specified border.
 
@@ -153,14 +153,14 @@ items:
       content: 'getBorder(borderLocation: Word.BorderLocation): Word.TableBorder;'
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: borderLocation
           description: Required. The border location.
           type:
-            - word.Word.BorderLocation
-  - uid: word.Word.TableCell.getBorder_1
+            - 'word!Word.BorderLocation:enum'
+  - uid: 'word!Word.TableCell#getBorder:member(2)'
     summary: |-
       Gets the border style for the specified border.
 
@@ -176,14 +176,14 @@ items:
         "Inside" | "Outside" | "All"): Word.TableBorder;
       return:
         type:
-          - word.Word.TableBorder
+          - 'word!Word.TableBorder:class'
         description: ''
       parameters:
         - id: borderLocationString
           description: Required. The border location.
           type:
             - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
-  - uid: word.Word.TableCell.getCellPadding
+  - uid: 'word!Word.TableCell#getCellPadding:member(1)'
     summary: |-
       Gets cell padding in points.
 
@@ -203,8 +203,8 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
-            - word.Word.CellPaddingLocation
-  - uid: word.Word.TableCell.getCellPadding_1
+            - 'word!Word.CellPaddingLocation:enum'
+  - uid: 'word!Word.TableCell#getCellPadding:member(2)'
     summary: |-
       Gets cell padding in points.
 
@@ -227,7 +227,7 @@ items:
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - '"Top" | "Left" | "Bottom" | "Right"'
-  - uid: word.Word.TableCell.getNext
+  - uid: 'word!Word.TableCell#getNext:member(1)'
     summary: |-
       Gets the next cell. Throws if this cell is the last one.
 
@@ -241,9 +241,9 @@ items:
       content: 'getNext(): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
-  - uid: word.Word.TableCell.getNextOrNullObject
+  - uid: 'word!Word.TableCell#getNextOrNullObject:member(1)'
     summary: |-
       Gets the next cell. Returns a null object if this cell is the last one.
 
@@ -257,9 +257,9 @@ items:
       content: 'getNextOrNullObject(): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
-  - uid: word.Word.TableCell.horizontalAlignment
+  - uid: 'word!Word.TableCell#horizontalAlignment:member'
     summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
@@ -274,7 +274,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.TableCell.insertColumns
+  - uid: 'word!Word.TableCell#insertColumns:member(1)'
     summary: >-
       Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
       uniform tables. The string values, if specified, are set in the newly inserted rows.
@@ -296,7 +296,7 @@ items:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - 'word!Word.InsertLocation:enum'
         - id: columnCount
           description: Required. Number of columns to add.
           type:
@@ -305,7 +305,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.TableCell.insertColumns_1
+  - uid: 'word!Word.TableCell#insertColumns:member(2)'
     summary: >-
       Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to
       uniform tables. The string values, if specified, are set in the newly inserted rows.
@@ -338,7 +338,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.TableCell.insertRows
+  - uid: 'word!Word.TableCell#insertRows:member(1)'
     summary: >-
       Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
       in the newly inserted rows.
@@ -354,13 +354,13 @@ items:
       content: 'insertRows(insertLocation: Word.InsertLocation, rowCount: number, values?: string[][]): Word.TableRowCollection;'
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: insertLocation
           description: Required. It can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
+            - 'word!Word.InsertLocation:enum'
         - id: rowCount
           description: Required. Number of rows to add.
           type:
@@ -369,7 +369,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.TableCell.insertRows_1
+  - uid: 'word!Word.TableCell#insertRows:member(2)'
     summary: >-
       Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set
       in the newly inserted rows.
@@ -387,7 +387,7 @@ items:
         string[][]): Word.TableRowCollection;
       return:
         type:
-          - word.Word.TableRowCollection
+          - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
         - id: insertLocationString
@@ -402,7 +402,7 @@ items:
           description: Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
           type:
             - 'string[][]'
-  - uid: word.Word.TableCell.load
+  - uid: 'word!Word.TableCell#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -433,14 +433,14 @@ items:
       content: 'load(option?: Word.Interfaces.TableCellLoadOptions): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.TableCellLoadOptions
-  - uid: word.Word.TableCell.load_1
+            - 'word!Word.Interfaces.TableCellLoadOptions:interface'
+  - uid: 'word!Word.TableCell#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -453,14 +453,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.TableCell.load_2
+  - uid: 'word!Word.TableCell#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -473,7 +473,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -482,7 +482,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.TableCell.parentRow
+  - uid: 'word!Word.TableCell#parentRow:member'
     summary: |-
       Gets the parent row of the cell. Read-only.
 
@@ -496,8 +496,8 @@ items:
       content: 'readonly parentRow: Word.TableRow;'
       return:
         type:
-          - word.Word.TableRow
-  - uid: word.Word.TableCell.parentTable
+          - 'word!Word.TableRow:class'
+  - uid: 'word!Word.TableCell#parentTable:member'
     summary: |-
       Gets the parent table of the cell. Read-only.
 
@@ -511,8 +511,8 @@ items:
       content: 'readonly parentTable: Word.Table;'
       return:
         type:
-          - word.Word.Table
-  - uid: word.Word.TableCell.rowIndex
+          - 'word!Word.Table:class'
+  - uid: 'word!Word.TableCell#rowIndex:member'
     summary: |-
       Gets the index of the cell's row in the table. Read-only.
 
@@ -527,7 +527,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.TableCell.set
+  - uid: 'word!Word.TableCell#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -557,7 +557,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.TableCell.set_1
+  - uid: 'word!Word.TableCell#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -574,8 +574,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.TableCell
-  - uid: word.Word.TableCell.setCellPadding
+            - 'word!Word.TableCell:class'
+  - uid: 'word!Word.TableCell#setCellPadding:member(1)'
     summary: |-
       Sets cell padding in points.
 
@@ -595,12 +595,12 @@ items:
         - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
-            - word.Word.CellPaddingLocation
+            - 'word!Word.CellPaddingLocation:enum'
         - id: cellPadding
           description: Required. The cell padding.
           type:
             - number
-  - uid: word.Word.TableCell.setCellPadding_1
+  - uid: 'word!Word.TableCell#setCellPadding:member(2)'
     summary: |-
       Sets cell padding in points.
 
@@ -625,7 +625,7 @@ items:
           description: Required. The cell padding.
           type:
             - number
-  - uid: word.Word.TableCell.shadingColor
+  - uid: 'word!Word.TableCell#shadingColor:member'
     summary: |-
       Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -640,7 +640,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.TableCell.toJSON
+  - uid: 'word!Word.TableCell#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -656,9 +656,9 @@ items:
       content: 'toJSON(): Word.Interfaces.TableCellData;'
       return:
         type:
-          - word.Word.Interfaces.TableCellData
+          - 'word!Word.Interfaces.TableCellData:interface'
         description: ''
-  - uid: word.Word.TableCell.track
+  - uid: 'word!Word.TableCell#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -674,9 +674,9 @@ items:
       content: 'track(): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
-  - uid: word.Word.TableCell.untrack
+  - uid: 'word!Word.TableCell#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -691,9 +691,9 @@ items:
       content: 'untrack(): Word.TableCell;'
       return:
         type:
-          - word.Word.TableCell
+          - 'word!Word.TableCell:class'
         description: ''
-  - uid: word.Word.TableCell.value
+  - uid: 'word!Word.TableCell#value:member'
     summary: |-
       Gets and sets the text of the cell.
 
@@ -708,7 +708,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.TableCell.verticalAlignment
+  - uid: 'word!Word.TableCell#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -723,7 +723,7 @@ items:
       return:
         type:
           - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
-  - uid: word.Word.TableCell.width
+  - uid: 'word!Word.TableCell#width:member'
     summary: |-
       Gets the width of the cell in points. Read-only.
 

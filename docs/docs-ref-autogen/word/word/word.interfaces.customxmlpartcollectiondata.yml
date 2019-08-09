@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionData
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionData:interface'
     summary: An interface describing the data returned by calling "customXmlPartCollection.toJSON()".
     name: Word.Interfaces.CustomXmlPartCollectionData
     fullName: Word.Interfaces.CustomXmlPartCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomXmlPartCollectionData.items
-  - uid: word.Word.Interfaces.CustomXmlPartCollectionData.items
+      - 'word!Word.Interfaces.CustomXmlPartCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartCollectionData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the DataPivotHierarchyCollection object, for use in
       "dataPivotHierarchyCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

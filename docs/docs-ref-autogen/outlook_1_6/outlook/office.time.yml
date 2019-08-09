@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Time
+  - uid: 'outlook!Office.Time:interface'
     summary: |-
       The Time object is returned as the start or end property of an appointment in compose mode.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.Time.getAsync
-      - Outlook.Office.Time.getAsync_1
-      - Outlook.Office.Time.setAsync
-      - Outlook.Office.Time.setAsync_1
-  - uid: Outlook.Office.Time.getAsync
+      - 'outlook!Office.Time#getAsync:member(1)'
+      - 'outlook!Office.Time#getAsync:member(2)'
+      - 'outlook!Office.Time#setAsync:member(1)'
+      - 'outlook!Office.Time#setAsync:member(2)'
+  - uid: 'outlook!Office.Time#getAsync:member(1)'
     summary: >-
       Gets the start or end time of an appointment.
 
@@ -65,7 +65,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
             - '(asyncResult: Office.AsyncResult<Date>) => void'
-  - uid: Outlook.Office.Time.getAsync_1
+  - uid: 'outlook!Office.Time#getAsync:member(2)'
     summary: >-
       Gets the start or end time of an appointment.
 
@@ -82,23 +82,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.start.getAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          }
-          else {
-              console.log("Start date and time: " + asyncResult.value);
-          }
-      });
-
-      ```
     name: getAsync(callback)
     fullName: getAsync(callback)
     langs:
@@ -117,7 +100,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
             - '(asyncResult: Office.AsyncResult<Date>) => void'
-  - uid: Outlook.Office.Time.setAsync
+  - uid: 'outlook!Office.Time#setAsync:member(1)'
     summary: >-
       Sets the start or end time of an appointment.
 
@@ -144,30 +127,6 @@ items:
 
 
       - InvalidEndTime: The appointment end time is before the appointment start time.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var startTime = new Date("3/14/2015");
-
-      var options = {
-          // Pass information that can be used in the callback.
-          asyncContext: {verb: "Set"}
-      };
-
-      Office.context.mailbox.item.start.setAsync(startTime, options, function(result) {
-          if (result.error) {
-              console.debug(result.error);
-          } else {
-              // Access the asyncContext that was passed to the setAsync function.
-              console.debug("Start Time " + result.asyncContext.verb);
-          }
-      });
-
-      ```
     name: 'setAsync(dateTime, options, callback)'
     fullName: 'setAsync(dateTime, options, callback)'
     langs:
@@ -199,7 +158,7 @@ items:
             will contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Time.setAsync_1
+  - uid: 'outlook!Office.Time#setAsync:member(2)'
     summary: >-
       Sets the start or end time of an appointment.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ReplaceCriteria
+  - uid: 'excel!Excel.ReplaceCriteria:interface'
     summary: |-
       Represents the replace criteria to be used.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ReplaceCriteria.completeMatch
-      - excel.Excel.ReplaceCriteria.matchCase
-  - uid: excel.Excel.ReplaceCriteria.completeMatch
+      - 'excel!Excel.ReplaceCriteria#completeMatch:member'
+      - 'excel!Excel.ReplaceCriteria#matchCase:member'
+  - uid: 'excel!Excel.ReplaceCriteria#completeMatch:member'
     summary: |-
       Specifies whether the match needs to be complete or partial. Default is false (partial).
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ReplaceCriteria.matchCase
+  - uid: 'excel!Excel.ReplaceCriteria#matchCase:member'
     summary: |-
       Specifies whether the match is case sensitive. Default is false (insensitive).
 

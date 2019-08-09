@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartSeries
+  - uid: 'excel!Excel.ChartSeries:class'
     summary: |-
       Represents a series in a chart.
 
@@ -12,36 +12,36 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartSeries.chartType
-      - excel.Excel.ChartSeries.context
-      - excel.Excel.ChartSeries.delete
-      - excel.Excel.ChartSeries.doughnutHoleSize
-      - excel.Excel.ChartSeries.filtered
-      - excel.Excel.ChartSeries.format
-      - excel.Excel.ChartSeries.gapWidth
-      - excel.Excel.ChartSeries.hasDataLabels
-      - excel.Excel.ChartSeries.load
-      - excel.Excel.ChartSeries.load_1
-      - excel.Excel.ChartSeries.load_2
-      - excel.Excel.ChartSeries.markerBackgroundColor
-      - excel.Excel.ChartSeries.markerForegroundColor
-      - excel.Excel.ChartSeries.markerSize
-      - excel.Excel.ChartSeries.markerStyle
-      - excel.Excel.ChartSeries.name
-      - excel.Excel.ChartSeries.plotOrder
-      - excel.Excel.ChartSeries.points
-      - excel.Excel.ChartSeries.set
-      - excel.Excel.ChartSeries.set_1
-      - excel.Excel.ChartSeries.setBubbleSizes
-      - excel.Excel.ChartSeries.setValues
-      - excel.Excel.ChartSeries.setXAxisValues
-      - excel.Excel.ChartSeries.showShadow
-      - excel.Excel.ChartSeries.smooth
-      - excel.Excel.ChartSeries.toJSON
-      - excel.Excel.ChartSeries.trendlines
-  - uid: excel.Excel.ChartSeries.chartType
+      - 'excel!Excel.ChartSeries#chartType:member'
+      - 'excel!Excel.ChartSeries#context:member'
+      - 'excel!Excel.ChartSeries#delete:member(1)'
+      - 'excel!Excel.ChartSeries#doughnutHoleSize:member'
+      - 'excel!Excel.ChartSeries#filtered:member'
+      - 'excel!Excel.ChartSeries#format:member'
+      - 'excel!Excel.ChartSeries#gapWidth:member'
+      - 'excel!Excel.ChartSeries#hasDataLabels:member'
+      - 'excel!Excel.ChartSeries#load:member(1)'
+      - 'excel!Excel.ChartSeries#load:member(2)'
+      - 'excel!Excel.ChartSeries#load:member(3)'
+      - 'excel!Excel.ChartSeries#markerBackgroundColor:member'
+      - 'excel!Excel.ChartSeries#markerForegroundColor:member'
+      - 'excel!Excel.ChartSeries#markerSize:member'
+      - 'excel!Excel.ChartSeries#markerStyle:member'
+      - 'excel!Excel.ChartSeries#name:member'
+      - 'excel!Excel.ChartSeries#plotOrder:member'
+      - 'excel!Excel.ChartSeries#points:member'
+      - 'excel!Excel.ChartSeries#set:member(1)'
+      - 'excel!Excel.ChartSeries#set:member(2)'
+      - 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
+      - 'excel!Excel.ChartSeries#setValues:member(1)'
+      - 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
+      - 'excel!Excel.ChartSeries#showShadow:member'
+      - 'excel!Excel.ChartSeries#smooth:member'
+      - 'excel!Excel.ChartSeries#toJSON:member(1)'
+      - 'excel!Excel.ChartSeries#trendlines:member'
+  - uid: 'excel!Excel.ChartSeries#chartType:member'
     summary: |-
       Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -85,7 +85,7 @@ items:
             "PyramidBarStacked" | "PyramidBarStacked100" | "PyramidCol" | "3DColumn" | "Line" | "3DLine" | "3DPie" |
             "Pie" | "XYScatter" | "3DArea" | "Area" | "Doughnut" | "Radar" | "Histogram" | "Boxwhisker" | "Pareto" |
             "RegionMap" | "Treemap" | "Waterfall" | "Sunburst" | "Funnel"
-  - uid: excel.Excel.ChartSeries.context
+  - uid: 'excel!Excel.ChartSeries#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -98,8 +98,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartSeries.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartSeries#delete:member(1)'
     summary: |-
       Deletes the chart series.
 
@@ -114,29 +114,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-            const sheet = context.workbook.worksheets.getItem("Sample");
-            const seriesCollection = sheet.charts.getItemAt(0).series;
-            seriesCollection.load("count");
-            await context.sync();
-
-            if (seriesCollection.count > 0) {
-              const series = seriesCollection.getItemAt(0);
-
-              // Delete the first series.
-              series.delete();
-            }
-
-            await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.doughnutHoleSize
+        description: ''
+  - uid: 'excel!Excel.ChartSeries#doughnutHoleSize:member'
     summary: >-
       Represents the doughnut hole size of a chart series. Only valid on doughnut and doughnutExploded charts. Throws an
       invalid argument exception on invalid charts.
@@ -153,7 +132,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.filtered
+  - uid: 'excel!Excel.ChartSeries#filtered:member'
     summary: |-
       Boolean value representing if the series is filtered or not. Not applicable for surface charts.
 
@@ -168,7 +147,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.format
+  - uid: 'excel!Excel.ChartSeries#format:member'
     summary: |-
       Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
 
@@ -182,8 +161,8 @@ items:
       content: 'readonly format: Excel.ChartSeriesFormat;'
       return:
         type:
-          - excel.Excel.ChartSeriesFormat
-  - uid: excel.Excel.ChartSeries.gapWidth
+          - 'excel!Excel.ChartSeriesFormat:class'
+  - uid: 'excel!Excel.ChartSeries#gapWidth:member'
     summary: >-
       Represents the gap width of a chart series. Only valid on bar and column charts, as well as specific classes of
       line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -200,7 +179,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.hasDataLabels
+  - uid: 'excel!Excel.ChartSeries#hasDataLabels:member'
     summary: |-
       Boolean value representing if the series has data labels or not.
 
@@ -215,7 +194,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.load
+  - uid: 'excel!Excel.ChartSeries#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -246,14 +225,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartSeriesLoadOptions): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - 'excel!Excel.ChartSeries:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartSeriesLoadOptions
-  - uid: excel.Excel.ChartSeries.load_1
+            - 'excel!Excel.Interfaces.ChartSeriesLoadOptions:interface'
+  - uid: 'excel!Excel.ChartSeries#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -266,33 +245,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Rename the 1st series of Chart1 to "New Series Name"
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1");    
-              chart.series.getItemAt(0).name = "New Series Name";
-              return ctx.sync().then(function() {
-                      console.log("Series1 Renamed");
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.ChartSeries:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartSeries.load_2
+  - uid: 'excel!Excel.ChartSeries#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -305,7 +265,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartSeries;'
       return:
         type:
-          - excel.Excel.ChartSeries
+          - 'excel!Excel.ChartSeries:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -314,7 +274,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartSeries.markerBackgroundColor
+  - uid: 'excel!Excel.ChartSeries#markerBackgroundColor:member'
     summary: |-
       Represents markers background color of a chart series.
 
@@ -329,41 +289,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.markerForegroundColor
+  - uid: 'excel!Excel.ChartSeries#markerForegroundColor:member'
     summary: |-
       Represents markers foreground color of a chart series.
 
@@ -378,41 +304,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.markerSize
+  - uid: 'excel!Excel.ChartSeries#markerSize:member'
     summary: |-
       Represents marker size of a chart series.
 
@@ -427,41 +319,7 @@ items:
       return:
         type:
           - number
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.markerStyle
+  - uid: 'excel!Excel.ChartSeries#markerStyle:member'
     summary: |-
       Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
 
@@ -480,41 +338,7 @@ items:
           - >-
             Excel.ChartMarkerStyle | "Invalid" | "Automatic" | "None" | "Square" | "Diamond" | "Triangle" | "X" | "Star"
             | "Dot" | "Dash" | "Circle" | "Plus" | "Picture"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let sheet = context.workbook.worksheets.getItem("Sample");
-              let salesTable = sheet.tables.getItem("SalesTable");
-              let dataRange = sheet.getRange("A1:E7");
-
-              // Create an XY scatter chart.
-              let chart = sheet.charts.add("XYScatterSmooth", dataRange, "Auto");
-              chart.title.text = "Bicycle Parts Quarterly Sales"; 
-            
-              let series = chart.series;
-              let series0 = series.getItemAt(0);
-              let series1 = series.getItemAt(1);
-              let series2 = series.getItemAt(2);
-              let series3 = series.getItemAt(3);
-
-              // Set markers.
-              series0.markerStyle = "Dash";
-              series0.markerForegroundColor = "black";
-              series1.markerStyle = "Star";
-              series1.markerForegroundColor = "black";
-              series2.markerStyle = "X";
-              series2.markerSize = 12;
-              series3.markerStyle = "Triangle";
-              series3.markerBackgroundColor = "purple";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ChartSeries.name
+  - uid: 'excel!Excel.ChartSeries#name:member'
     summary: |-
       Represents the name of a series in a chart.
 
@@ -529,7 +353,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartSeries.plotOrder
+  - uid: 'excel!Excel.ChartSeries#plotOrder:member'
     summary: |-
       Represents the plot order of a chart series within the chart group.
 
@@ -544,7 +368,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.ChartSeries.points
+  - uid: 'excel!Excel.ChartSeries#points:member'
     summary: |-
       Represents a collection of all points in the series. Read-only.
 
@@ -558,8 +382,8 @@ items:
       content: 'readonly points: Excel.ChartPointsCollection;'
       return:
         type:
-          - excel.Excel.ChartPointsCollection
-  - uid: excel.Excel.ChartSeries.set
+          - 'excel!Excel.ChartPointsCollection:class'
+  - uid: 'excel!Excel.ChartSeries#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -589,7 +413,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartSeries.set_1
+  - uid: 'excel!Excel.ChartSeries#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -606,8 +430,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartSeries
-  - uid: excel.Excel.ChartSeries.setBubbleSizes
+            - 'excel!Excel.ChartSeries:class'
+  - uid: 'excel!Excel.ChartSeries#setBubbleSizes:member(1)'
     summary: |-
       Set bubble sizes for a chart series. Only works for bubble charts.
 
@@ -627,8 +451,8 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartSeries.setValues
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartSeries#setValues:member(1)'
     summary: |-
       Set values for a chart series. For scatter chart, it means Y axis values.
 
@@ -643,33 +467,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-            const sheet = context.workbook.worksheets.getItem("Sample");
-
-            let seriesCollection = sheet.charts.getItemAt(0);
-            let rangeSelection = sheet.getRange("C2:C7");
-            let xRangeSelection = sheet.getRange("A1:A7");
-
-            // Add a series.
-            let newSeries = seriesCollection.series.add("Qtr2");
-            newSeries.setValues(rangeSelection);
-            newSeries.setXAxisValues(xRangeSelection);
-
-            await context.sync();
-          });
-          ```
+        description: ''
       parameters:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartSeries.setXAxisValues
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartSeries#setXAxisValues:member(1)'
     summary: |-
       Set values of X axis for a chart series. Only works for scatter charts.
 
@@ -689,8 +493,8 @@ items:
         - id: sourceData
           description: The Range object corresponding to the source data.
           type:
-            - excel.Excel.Range
-  - uid: excel.Excel.ChartSeries.showShadow
+            - 'excel!Excel.Range:class'
+  - uid: 'excel!Excel.ChartSeries#showShadow:member'
     summary: |-
       Boolean value representing if the series has a shadow or not.
 
@@ -705,7 +509,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.smooth
+  - uid: 'excel!Excel.ChartSeries#smooth:member'
     summary: |-
       Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
 
@@ -720,7 +524,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ChartSeries.toJSON
+  - uid: 'excel!Excel.ChartSeries#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -736,9 +540,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartSeriesData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesData
+          - 'excel!Excel.Interfaces.ChartSeriesData:interface'
         description: ''
-  - uid: excel.Excel.ChartSeries.trendlines
+  - uid: 'excel!Excel.ChartSeries#trendlines:member'
     summary: |-
       Represents a collection of trendlines in the series. Read-only.
 
@@ -752,4 +556,4 @@ items:
       content: 'readonly trendlines: Excel.ChartTrendlineCollection;'
       return:
         type:
-          - excel.Excel.ChartTrendlineCollection
+          - 'excel!Excel.ChartTrendlineCollection:class'

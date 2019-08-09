@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalCellValueRule
+  - uid: 'excel!Excel.ConditionalCellValueRule:interface'
     summary: |-
       Represents a cell value conditional format rule.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalCellValueRule.formula1
-      - excel.Excel.ConditionalCellValueRule.formula2
-      - excel.Excel.ConditionalCellValueRule.operator
-  - uid: excel.Excel.ConditionalCellValueRule.formula1
+      - 'excel!Excel.ConditionalCellValueRule#formula1:member'
+      - 'excel!Excel.ConditionalCellValueRule#formula2:member'
+      - 'excel!Excel.ConditionalCellValueRule#operator:member'
+  - uid: 'excel!Excel.ConditionalCellValueRule#formula1:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -30,24 +30,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B21:E23");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.ConditionalCellValueRule.formula2
+  - uid: 'excel!Excel.ConditionalCellValueRule#formula2:member'
     summary: |-
       The formula, if required, to evaluate the conditional format rule on.
 
@@ -62,7 +45,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalCellValueRule.operator
+  - uid: 'excel!Excel.ConditionalCellValueRule#operator:member'
     summary: |-
       The operator of the text conditional format.
 
@@ -81,20 +64,3 @@ items:
           - >-
             Excel.ConditionalCellValueOperator | "Invalid" | "Between" | "NotBetween" | "EqualTo" | "NotEqualTo" |
             "GreaterThan" | "LessThan" | "GreaterThanOrEqual" | "LessThanOrEqual"
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B21:E23");
-              const conditionalFormat = range.conditionalFormats
-                  .add(Excel.ConditionalFormatType.cellValue);
-              conditionalFormat.cellValue.format.font.color = "red";
-              conditionalFormat.cellValue.rule = { formula1: "=0", operator: "LessThan" };
-
-              await context.sync();
-          });
-          ```

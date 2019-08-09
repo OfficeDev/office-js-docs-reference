@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
     summary: Provides display options and actions a dialog box may take.
     name: OfficeRuntime.DisplayWebDialogOptions
     fullName: OfficeRuntime.DisplayWebDialogOptions
     langs:
       - typeScript
     type: interface
-    package: office-runtime
+    package: office-runtime!
     children:
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.displayInIFrame
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member'
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#displayInIFrame:member'
     summary: >-
       Optional parameter that determines whether the dialog box displays as a popup (false) or within an IFrame (true).
       This setting is only applicable to custom functions running on Excel Online.
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.height
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#height:member'
     summary: >-
       Optional parameter that defines the height of the dialog box as a percentage of the current display. For example,
       accepts strings such as: '50%', '50'.
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - string
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onClose
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onClose:member'
     summary: Optional callback that runs when the dialog box is closed.
     name: onClose
     fullName: onClose
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - () => void
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onMessage
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onMessage:member'
     summary: Optional callback that runs when the dialog box sends a message to its parent.
     name: onMessage
     fullName: onMessage
@@ -67,7 +67,7 @@ items:
       return:
         type:
           - '(message: string, dialog?: Dialog) => void'
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.onRuntimeError
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#onRuntimeError:member'
     summary: Optional callback that runs when the dialog box sends an error.
     name: onRuntimeError
     fullName: onRuntimeError
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - '(error: Error, dialog?: Dialog) => void'
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions.width
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions#width:member'
     summary: >-
       Optional parameter that defines the width of dialog as a percentage of window. For example, accepts strings such
       as: '50%', '50'.

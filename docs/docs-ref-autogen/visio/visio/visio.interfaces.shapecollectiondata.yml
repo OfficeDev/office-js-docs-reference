@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeCollectionData
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionData:interface'
     summary: An interface describing the data returned by calling "shapeCollection.toJSON()".
     name: Visio.Interfaces.ShapeCollectionData
     fullName: Visio.Interfaces.ShapeCollectionData
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeCollectionData.items
-  - uid: visio.Visio.Interfaces.ShapeCollectionData.items
+      - 'visio!Visio.Interfaces.ShapeCollectionData#items:member'
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionData#items:member'
     name: items
     fullName: items
     langs:

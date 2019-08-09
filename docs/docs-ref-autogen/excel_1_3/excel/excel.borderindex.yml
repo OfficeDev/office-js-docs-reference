@@ -1,72 +1,72 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.BorderIndex
+  - uid: 'excel!Excel.BorderIndex:enum'
     summary: '\[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.BorderIndex
     fullName: Excel.BorderIndex
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.BorderIndex.diagonalDown
-      - excel.Excel.BorderIndex.diagonalUp
-      - excel.Excel.BorderIndex.edgeBottom
-      - excel.Excel.BorderIndex.edgeLeft
-      - excel.Excel.BorderIndex.edgeRight
-      - excel.Excel.BorderIndex.edgeTop
-      - excel.Excel.BorderIndex.insideHorizontal
-      - excel.Excel.BorderIndex.insideVertical
-  - uid: excel.Excel.BorderIndex.diagonalDown
+      - 'excel!Excel.BorderIndex.diagonalDown:member'
+      - 'excel!Excel.BorderIndex.diagonalUp:member'
+      - 'excel!Excel.BorderIndex.edgeBottom:member'
+      - 'excel!Excel.BorderIndex.edgeLeft:member'
+      - 'excel!Excel.BorderIndex.edgeRight:member'
+      - 'excel!Excel.BorderIndex.edgeTop:member'
+      - 'excel!Excel.BorderIndex.insideHorizontal:member'
+      - 'excel!Excel.BorderIndex.insideVertical:member'
+  - uid: 'excel!Excel.BorderIndex.diagonalDown:member'
     name: diagonalDown
     fullName: diagonalDown
     langs:
       - typeScript
     type: field
     numericValue: '"DiagonalDown"'
-  - uid: excel.Excel.BorderIndex.diagonalUp
+  - uid: 'excel!Excel.BorderIndex.diagonalUp:member'
     name: diagonalUp
     fullName: diagonalUp
     langs:
       - typeScript
     type: field
     numericValue: '"DiagonalUp"'
-  - uid: excel.Excel.BorderIndex.edgeBottom
+  - uid: 'excel!Excel.BorderIndex.edgeBottom:member'
     name: edgeBottom
     fullName: edgeBottom
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeBottom"'
-  - uid: excel.Excel.BorderIndex.edgeLeft
+  - uid: 'excel!Excel.BorderIndex.edgeLeft:member'
     name: edgeLeft
     fullName: edgeLeft
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeLeft"'
-  - uid: excel.Excel.BorderIndex.edgeRight
+  - uid: 'excel!Excel.BorderIndex.edgeRight:member'
     name: edgeRight
     fullName: edgeRight
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeRight"'
-  - uid: excel.Excel.BorderIndex.edgeTop
+  - uid: 'excel!Excel.BorderIndex.edgeTop:member'
     name: edgeTop
     fullName: edgeTop
     langs:
       - typeScript
     type: field
     numericValue: '"EdgeTop"'
-  - uid: excel.Excel.BorderIndex.insideHorizontal
+  - uid: 'excel!Excel.BorderIndex.insideHorizontal:member'
     name: insideHorizontal
     fullName: insideHorizontal
     langs:
       - typeScript
     type: field
     numericValue: '"InsideHorizontal"'
-  - uid: excel.Excel.BorderIndex.insideVertical
+  - uid: 'excel!Excel.BorderIndex.insideVertical:member'
     name: insideVertical
     fullName: insideVertical
     langs:

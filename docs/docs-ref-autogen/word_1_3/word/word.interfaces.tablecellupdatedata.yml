@@ -1,21 +1,21 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableCellUpdateData
+  - uid: 'word!Word.Interfaces.TableCellUpdateData:interface'
     summary: 'An interface for updating data on the TableCell object, for use in "tableCell.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.TableCellUpdateData
     fullName: Word.Interfaces.TableCellUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableCellUpdateData.body
-      - word.Word.Interfaces.TableCellUpdateData.columnWidth
-      - word.Word.Interfaces.TableCellUpdateData.horizontalAlignment
-      - word.Word.Interfaces.TableCellUpdateData.shadingColor
-      - word.Word.Interfaces.TableCellUpdateData.value
-      - word.Word.Interfaces.TableCellUpdateData.verticalAlignment
-  - uid: word.Word.Interfaces.TableCellUpdateData.body
+      - 'word!Word.Interfaces.TableCellUpdateData#body:member'
+      - 'word!Word.Interfaces.TableCellUpdateData#columnWidth:member'
+      - 'word!Word.Interfaces.TableCellUpdateData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableCellUpdateData#shadingColor:member'
+      - 'word!Word.Interfaces.TableCellUpdateData#value:member'
+      - 'word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member'
+  - uid: 'word!Word.Interfaces.TableCellUpdateData#body:member'
     summary: |-
       Gets the body object of the cell.
 
@@ -29,8 +29,8 @@ items:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.BodyUpdateData
-  - uid: word.Word.Interfaces.TableCellUpdateData.columnWidth
+          - 'word!Word.Interfaces.BodyUpdateData:interface'
+  - uid: 'word!Word.Interfaces.TableCellUpdateData#columnWidth:member'
     summary: |-
       Gets and sets the width of the cell's column in points. This is applicable to uniform tables.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableCellUpdateData.horizontalAlignment
+  - uid: 'word!Word.Interfaces.TableCellUpdateData#horizontalAlignment:member'
     summary: |-
       Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.TableCellUpdateData.shadingColor
+  - uid: 'word!Word.Interfaces.TableCellUpdateData#shadingColor:member'
     summary: |-
       Gets or sets the shading color of the cell. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -75,7 +75,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableCellUpdateData.value
+  - uid: 'word!Word.Interfaces.TableCellUpdateData#value:member'
     summary: |-
       Gets and sets the text of the cell.
 
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableCellUpdateData.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableCellUpdateData#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of the cell. The value can be 'Top', 'Center', or 'Bottom'.
 

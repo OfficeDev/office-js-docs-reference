@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.OWAView
+  - uid: 'outlook!Office.MailboxEnums.OWAView:enum'
     summary: Represents the current view of Outlook on the web.
     name: Office.MailboxEnums.OWAView
     fullName: Office.MailboxEnums.OWAView
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.MailboxEnums.OWAView.OneColumn
-      - Outlook.Office.MailboxEnums.OWAView.ThreeColumns
-      - Outlook.Office.MailboxEnums.OWAView.TwoColumns
-  - uid: Outlook.Office.MailboxEnums.OWAView.OneColumn
+      - 'outlook!Office.MailboxEnums.OWAView.OneColumn:member'
+      - 'outlook!Office.MailboxEnums.OWAView.ThreeColumns:member'
+      - 'outlook!Office.MailboxEnums.OWAView.TwoColumns:member'
+  - uid: 'outlook!Office.MailboxEnums.OWAView.OneColumn:member'
     summary: >-
       One column view. Displayed when the screen is narrow. Outlook on the web uses this single-column layout on the
       entire screen of a smartphone.
@@ -22,7 +22,7 @@ items:
       - typeScript
     type: field
     numericValue: '"OneColumn"'
-  - uid: Outlook.Office.MailboxEnums.OWAView.ThreeColumns
+  - uid: 'outlook!Office.MailboxEnums.OWAView.ThreeColumns:member'
     summary: >-
       Three column view. Displayed when the screen is wide. For example, Outlook on the web uses this view in a full
       screen window on a desktop computer.
@@ -32,7 +32,7 @@ items:
       - typeScript
     type: field
     numericValue: '"ThreeColumns"'
-  - uid: Outlook.Office.MailboxEnums.OWAView.TwoColumns
+  - uid: 'outlook!Office.MailboxEnums.OWAView.TwoColumns:member'
     summary: Two column view. Displayed when the screen is wider. Outlook on the web uses this view on most tablets.
     name: TwoColumns
     fullName: TwoColumns

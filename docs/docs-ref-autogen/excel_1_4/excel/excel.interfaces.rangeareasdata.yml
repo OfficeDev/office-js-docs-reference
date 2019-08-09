@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeAreasData
+  - uid: 'excel!Excel.Interfaces.RangeAreasData:interface'
     summary: An interface describing the data returned by calling "rangeAreas.toJSON()".
     name: Excel.Interfaces.RangeAreasData
     fullName: Excel.Interfaces.RangeAreasData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!

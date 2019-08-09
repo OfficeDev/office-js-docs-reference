@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartAxisTitle
+  - uid: 'excel!Excel.ChartAxisTitle:class'
     summary: |-
       Represents the title of a chart axis.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartAxisTitle.context
-      - excel.Excel.ChartAxisTitle.format
-      - excel.Excel.ChartAxisTitle.load
-      - excel.Excel.ChartAxisTitle.load_1
-      - excel.Excel.ChartAxisTitle.load_2
-      - excel.Excel.ChartAxisTitle.set
-      - excel.Excel.ChartAxisTitle.set_1
-      - excel.Excel.ChartAxisTitle.setFormula
-      - excel.Excel.ChartAxisTitle.text
-      - excel.Excel.ChartAxisTitle.toJSON
-      - excel.Excel.ChartAxisTitle.visible
-  - uid: excel.Excel.ChartAxisTitle.context
+      - 'excel!Excel.ChartAxisTitle#context:member'
+      - 'excel!Excel.ChartAxisTitle#format:member'
+      - 'excel!Excel.ChartAxisTitle#load:member(1)'
+      - 'excel!Excel.ChartAxisTitle#load:member(2)'
+      - 'excel!Excel.ChartAxisTitle#load:member(3)'
+      - 'excel!Excel.ChartAxisTitle#set:member(1)'
+      - 'excel!Excel.ChartAxisTitle#set:member(2)'
+      - 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
+      - 'excel!Excel.ChartAxisTitle#text:member'
+      - 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
+      - 'excel!Excel.ChartAxisTitle#visible:member'
+  - uid: 'excel!Excel.ChartAxisTitle#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartAxisTitle.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartAxisTitle#format:member'
     summary: |-
       Represents the formatting of chart axis title. Read-only.
 
@@ -53,8 +53,8 @@ items:
       content: 'readonly format: Excel.ChartAxisTitleFormat;'
       return:
         type:
-          - excel.Excel.ChartAxisTitleFormat
-  - uid: excel.Excel.ChartAxisTitle.load
+          - 'excel!Excel.ChartAxisTitleFormat:class'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -85,14 +85,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartAxisTitleLoadOptions): Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - 'excel!Excel.ChartAxisTitle:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
-  - uid: excel.Excel.ChartAxisTitle.load_1
+            - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -105,49 +105,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Get the text of Chart Axis Title from the value axis of Chart1.
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
-              var title = chart.axes.valueAxis.title;
-              title.load('text');
-              return ctx.sync().then(function() {
-                      console.log(title.text);
-              });
-          }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-          });
-          ```
-          ```javascript
-          // Add "Values" as the title for the value Axis 
-          Excel.run(function (ctx) { 
-              var chart = ctx.workbook.worksheets.getItem("Sheet1").charts.getItem("Chart1"); 
-              chart.axes.valueAxis.title.text = "Values";
-              return ctx.sync().then(function() {
-                      console.log("Axis Title Added ");
-              });
-          }).catch(function(error) {
-                  console.log("Error: " + error);
-                  if (error instanceof OfficeExtension.Error) {
-                      console.log("Debug info: " + JSON.stringify(error.debugInfo));
-                  }
-          });
-          ```
+          - 'excel!Excel.ChartAxisTitle:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartAxisTitle.load_2
+  - uid: 'excel!Excel.ChartAxisTitle#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -160,7 +125,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartAxisTitle;'
       return:
         type:
-          - excel.Excel.ChartAxisTitle
+          - 'excel!Excel.ChartAxisTitle:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -169,7 +134,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartAxisTitle.set
+  - uid: 'excel!Excel.ChartAxisTitle#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -199,7 +164,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartAxisTitle.set_1
+  - uid: 'excel!Excel.ChartAxisTitle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -216,8 +181,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartAxisTitle
-  - uid: excel.Excel.ChartAxisTitle.setFormula
+            - 'excel!Excel.ChartAxisTitle:class'
+  - uid: 'excel!Excel.ChartAxisTitle#setFormula:member(1)'
     summary: |-
       A string value that represents the formula of chart axis title using A1-style notation.
 
@@ -238,7 +203,7 @@ items:
           description: a string that present the formula to set
           type:
             - string
-  - uid: excel.Excel.ChartAxisTitle.text
+  - uid: 'excel!Excel.ChartAxisTitle#text:member'
     summary: |-
       Represents the axis title.
 
@@ -253,7 +218,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ChartAxisTitle.toJSON
+  - uid: 'excel!Excel.ChartAxisTitle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -269,9 +234,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartAxisTitleData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleData
+          - 'excel!Excel.Interfaces.ChartAxisTitleData:interface'
         description: ''
-  - uid: excel.Excel.ChartAxisTitle.visible
+  - uid: 'excel!Excel.ChartAxisTitle#visible:member'
     summary: |-
       A boolean that specifies the visibility of an axis title.
 

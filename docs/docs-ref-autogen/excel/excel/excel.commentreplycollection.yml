@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CommentReplyCollection
+  - uid: 'excel!Excel.CommentReplyCollection:class'
     summary: >-
       Represents a collection of comment reply objects that are part of the comment.
 
@@ -15,20 +15,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CommentReplyCollection.add
-      - excel.Excel.CommentReplyCollection.add_1
-      - excel.Excel.CommentReplyCollection.context
-      - excel.Excel.CommentReplyCollection.getCount
-      - excel.Excel.CommentReplyCollection.getItem
-      - excel.Excel.CommentReplyCollection.getItemAt
-      - excel.Excel.CommentReplyCollection.items
-      - excel.Excel.CommentReplyCollection.load
-      - excel.Excel.CommentReplyCollection.load_1
-      - excel.Excel.CommentReplyCollection.load_2
-      - excel.Excel.CommentReplyCollection.toJSON
-  - uid: excel.Excel.CommentReplyCollection.add
+      - 'excel!Excel.CommentReplyCollection#add:member(1)'
+      - 'excel!Excel.CommentReplyCollection#add:member(2)'
+      - 'excel!Excel.CommentReplyCollection#context:member'
+      - 'excel!Excel.CommentReplyCollection#getCount:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItem:member(1)'
+      - 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
+      - 'excel!Excel.CommentReplyCollection#items:member'
+      - 'excel!Excel.CommentReplyCollection#load:member(1)'
+      - 'excel!Excel.CommentReplyCollection#load:member(2)'
+      - 'excel!Excel.CommentReplyCollection#load:member(3)'
+      - 'excel!Excel.CommentReplyCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(1)'
     summary: >-
       Creates a comment reply for comment.
 
@@ -45,19 +45,8 @@ items:
       content: 'add(content: string, contentType?: Excel.ContentType): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const comment = context.workbook.comments.getItemAt(0);
-              comment.replies.add("Do I have to?");
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.CommentReply:class'
+        description: ''
       parameters:
         - id: content
           description: The comment content.
@@ -66,8 +55,8 @@ items:
         - id: contentType
           description: Optional. Type of the comment content
           type:
-            - excel.Excel.ContentType
-  - uid: excel.Excel.CommentReplyCollection.add_1
+            - 'excel!Excel.ContentType:enum'
+  - uid: 'excel!Excel.CommentReplyCollection#add:member(2)'
     summary: >-
       Creates a comment reply for comment.
 
@@ -84,7 +73,7 @@ items:
       content: 'add(content: string, contentTypeString?: "Plain"): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
+          - 'excel!Excel.CommentReply:class'
         description: ''
       parameters:
         - id: content
@@ -95,7 +84,7 @@ items:
           description: Optional. Type of the comment content
           type:
             - '"Plain"'
-  - uid: excel.Excel.CommentReplyCollection.context
+  - uid: 'excel!Excel.CommentReplyCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -109,8 +98,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CommentReplyCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CommentReplyCollection#getCount:member(1)'
     summary: >-
       Gets the number of comment replies in the collection.
 
@@ -129,7 +118,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.CommentReplyCollection.getItem
+  - uid: 'excel!Excel.CommentReplyCollection#getItem:member(1)'
     summary: >-
       Returns a comment reply identified by its ID. Read-only.
 
@@ -146,14 +135,14 @@ items:
       content: 'getItem(commentReplyId: string): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
+          - 'excel!Excel.CommentReply:class'
         description: ''
       parameters:
         - id: commentReplyId
           description: The identifier for the comment reply.
           type:
             - string
-  - uid: excel.Excel.CommentReplyCollection.getItemAt
+  - uid: 'excel!Excel.CommentReplyCollection#getItemAt:member(1)'
     summary: >-
       Gets a comment reply based on its position in the collection.
 
@@ -170,14 +159,14 @@ items:
       content: 'getItemAt(index: number): Excel.CommentReply;'
       return:
         type:
-          - excel.Excel.CommentReply
+          - 'excel!Excel.CommentReply:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.CommentReplyCollection.items
+  - uid: 'excel!Excel.CommentReplyCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -190,7 +179,7 @@ items:
       return:
         type:
           - 'Excel.CommentReply[]'
-  - uid: excel.Excel.CommentReplyCollection.load
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -224,14 +213,14 @@ items:
         Excel.CommentReplyCollection;
       return:
         type:
-          - excel.Excel.CommentReplyCollection
+          - 'excel!Excel.CommentReplyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.CommentReplyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.CommentReplyCollection.load_1
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -245,14 +234,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CommentReplyCollection;'
       return:
         type:
-          - excel.Excel.CommentReplyCollection
+          - 'excel!Excel.CommentReplyCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CommentReplyCollection.load_2
+  - uid: 'excel!Excel.CommentReplyCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -263,14 +252,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.CommentReplyCollection;'
       return:
         type:
-          - excel.Excel.CommentReplyCollection
+          - 'excel!Excel.CommentReplyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.CommentReplyCollection.toJSON
+  - uid: 'excel!Excel.CommentReplyCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -287,5 +276,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CommentReplyCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.CommentReplyCollectionData
+          - 'excel!Excel.Interfaces.CommentReplyCollectionData:interface'
         description: ''

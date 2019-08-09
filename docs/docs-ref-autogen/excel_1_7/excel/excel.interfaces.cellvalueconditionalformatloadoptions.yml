@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions:interface'
     summary: |-
       Represents a cell value conditional format.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.$all
-      - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.format
-      - excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.rule
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#rule:member'
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -40,8 +40,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatLoadOptions.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatLoadOptions#rule:member'
     summary: |-
       Represents the Rule object on this conditional format.
 

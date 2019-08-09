@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RequestContext
+  - uid: 'excel!Excel.RequestContext:class'
     summary: >-
       The RequestContext object facilitates requests to the Excel application. Since the Office add-in and the Excel
       application run in two different processes, the request context is required to get access to the Excel object
@@ -12,13 +12,13 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientRequestContext '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RequestContext.(constructor)
-      - excel.Excel.RequestContext.application
-      - excel.Excel.RequestContext.runtime
-      - excel.Excel.RequestContext.workbook
-  - uid: excel.Excel.RequestContext.(constructor)
+      - 'excel!Excel.RequestContext:constructor(1)'
+      - 'excel!Excel.RequestContext#application:member'
+      - 'excel!Excel.RequestContext#runtime:member'
+      - 'excel!Excel.RequestContext#workbook:member'
+  - uid: 'excel!Excel.RequestContext:constructor(1)'
     summary: Constructs a new instance of the `RequestContext` class
     name: (constructor)(url)
     fullName: (constructor)(url)
@@ -32,7 +32,7 @@ items:
           description: ''
           type:
             - string | Session
-  - uid: excel.Excel.RequestContext.application
+  - uid: 'excel!Excel.RequestContext#application:member'
     name: application
     fullName: application
     langs:
@@ -42,8 +42,8 @@ items:
       content: 'readonly application: Application;'
       return:
         type:
-          - excel.Excel.Application
-  - uid: excel.Excel.RequestContext.runtime
+          - 'excel!Excel.Application:class'
+  - uid: 'excel!Excel.RequestContext#runtime:member'
     name: runtime
     fullName: runtime
     langs:
@@ -53,8 +53,8 @@ items:
       content: 'readonly runtime: Runtime;'
       return:
         type:
-          - excel.Excel.Runtime
-  - uid: excel.Excel.RequestContext.workbook
+          - 'excel!Excel.Runtime:class'
+  - uid: 'excel!Excel.RequestContext#workbook:member'
     name: workbook
     fullName: workbook
     langs:
@@ -64,4 +64,4 @@ items:
       content: 'readonly workbook: Workbook;'
       return:
         type:
-          - excel.Excel.Workbook
+          - 'excel!Excel.Workbook:class'

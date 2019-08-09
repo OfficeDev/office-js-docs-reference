@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
     summary: >-
       An interface for updating data on the InkAnalysisLine object, for use in "inkAnalysisLine.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisLineUpdateData.paragraph
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineUpdateData.paragraph
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData#paragraph:member'
     summary: |-
       Reference to the parent InkAnalysisParagraph.
 
@@ -26,4 +26,4 @@ items:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphUpdateData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData
+          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'

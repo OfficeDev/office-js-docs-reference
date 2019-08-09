@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ContentControlUpdateData
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData:interface'
     summary: >-
       An interface for updating data on the ContentControl object, for use in "contentControl.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,19 +9,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ContentControlUpdateData.appearance
-      - word.Word.Interfaces.ContentControlUpdateData.cannotDelete
-      - word.Word.Interfaces.ContentControlUpdateData.cannotEdit
-      - word.Word.Interfaces.ContentControlUpdateData.color
-      - word.Word.Interfaces.ContentControlUpdateData.font
-      - word.Word.Interfaces.ContentControlUpdateData.placeholderText
-      - word.Word.Interfaces.ContentControlUpdateData.removeWhenEdited
-      - word.Word.Interfaces.ContentControlUpdateData.style
-      - word.Word.Interfaces.ContentControlUpdateData.tag
-      - word.Word.Interfaces.ContentControlUpdateData.title
-  - uid: word.Word.Interfaces.ContentControlUpdateData.appearance
+      - 'word!Word.Interfaces.ContentControlUpdateData#appearance:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#cannotEdit:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#color:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#font:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#placeholderText:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#removeWhenEdited:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#style:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#tag:member'
+      - 'word!Word.Interfaces.ContentControlUpdateData#title:member'
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#appearance:member'
     summary: |-
       Gets or sets the appearance of the content control. The value can be 'BoundingBox', 'Tags', or 'Hidden'.
 
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - Word.ContentControlAppearance | "BoundingBox" | "Tags" | "Hidden"
-  - uid: word.Word.Interfaces.ContentControlUpdateData.cannotDelete
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotDelete:member'
     summary: >-
       Gets or sets a value that indicates whether the user can delete the content control. Mutually exclusive with
       removeWhenEdited.
@@ -53,7 +53,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlUpdateData.cannotEdit
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#cannotEdit:member'
     summary: |-
       Gets or sets a value that indicates whether the user can edit the contents of the content control.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlUpdateData.color
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#color:member'
     summary: |-
       Gets or sets the color of the content control. Color is specified in '\#RRGGBB' format or by using the color name.
 
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlUpdateData.font
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#font:member'
     summary: |-
       Gets the text format of the content control. Use this to get and set font name, size, color, and other properties.
 
@@ -97,8 +97,8 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
-  - uid: word.Word.Interfaces.ContentControlUpdateData.placeholderText
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#placeholderText:member'
     summary: >-
       Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control
       is empty.
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlUpdateData.removeWhenEdited
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#removeWhenEdited:member'
     summary: >-
       Gets or sets a value that indicates whether the content control is removed after it is edited. Mutually exclusive
       with cannotDelete.
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.ContentControlUpdateData.style
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#style:member'
     summary: >-
       Gets or sets the style name for the content control. Use this property for custom styles and localized style
       names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -149,7 +149,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlUpdateData.tag
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#tag:member'
     summary: |-
       Gets or sets a tag to identify a content control.
 
@@ -164,7 +164,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.ContentControlUpdateData.title
+  - uid: 'word!Word.Interfaces.ContentControlUpdateData#title:member'
     summary: |-
       Gets or sets the title for a content control.
 

@@ -1,159 +1,159 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote
+  - uid: onenote!
     name: onenote
     fullName: onenote
     langs:
       - typeScript
     type: package
     children:
-      - onenote.OneNote.Application
-      - onenote.OneNote.ErrorCodes
-      - onenote.OneNote.FloatingInk
-      - onenote.OneNote.Image
-      - onenote.OneNote.ImageOcrData
-      - onenote.OneNote.InkAnalysis
-      - onenote.OneNote.InkAnalysisLine
-      - onenote.OneNote.InkAnalysisLineCollection
-      - onenote.OneNote.InkAnalysisParagraph
-      - onenote.OneNote.InkAnalysisParagraphCollection
-      - onenote.OneNote.InkAnalysisWord
-      - onenote.OneNote.InkAnalysisWordCollection
-      - onenote.OneNote.InkStroke
-      - onenote.OneNote.InkStrokeCollection
-      - onenote.OneNote.InkStrokePointer
-      - onenote.OneNote.InkWord
-      - onenote.OneNote.InkWordCollection
-      - onenote.OneNote.InsertLocation
-      - onenote.OneNote.Interfaces.ApplicationData
-      - onenote.OneNote.Interfaces.ApplicationLoadOptions
-      - onenote.OneNote.Interfaces.CollectionLoadOptions
-      - onenote.OneNote.Interfaces.FloatingInkData
-      - onenote.OneNote.Interfaces.FloatingInkLoadOptions
-      - onenote.OneNote.Interfaces.ImageData
-      - onenote.OneNote.Interfaces.ImageLoadOptions
-      - onenote.OneNote.Interfaces.ImageUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisData
-      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionData
-      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisLineData
-      - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisLineUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionData
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphData
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionData
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
-      - onenote.OneNote.Interfaces.InkAnalysisWordData
-      - onenote.OneNote.Interfaces.InkAnalysisWordLoadOptions
-      - onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
-      - onenote.OneNote.Interfaces.InkStrokeCollectionData
-      - onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
-      - onenote.OneNote.Interfaces.InkStrokeCollectionUpdateData
-      - onenote.OneNote.Interfaces.InkStrokeData
-      - onenote.OneNote.Interfaces.InkStrokeLoadOptions
-      - onenote.OneNote.Interfaces.InkWordCollectionData
-      - onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
-      - onenote.OneNote.Interfaces.InkWordCollectionUpdateData
-      - onenote.OneNote.Interfaces.InkWordData
-      - onenote.OneNote.Interfaces.InkWordLoadOptions
-      - onenote.OneNote.Interfaces.NotebookCollectionData
-      - onenote.OneNote.Interfaces.NotebookCollectionLoadOptions
-      - onenote.OneNote.Interfaces.NotebookCollectionUpdateData
-      - onenote.OneNote.Interfaces.NotebookData
-      - onenote.OneNote.Interfaces.NotebookLoadOptions
-      - onenote.OneNote.Interfaces.NoteTagData
-      - onenote.OneNote.Interfaces.NoteTagLoadOptions
-      - onenote.OneNote.Interfaces.OutlineData
-      - onenote.OneNote.Interfaces.OutlineLoadOptions
-      - onenote.OneNote.Interfaces.PageCollectionData
-      - onenote.OneNote.Interfaces.PageCollectionLoadOptions
-      - onenote.OneNote.Interfaces.PageCollectionUpdateData
-      - onenote.OneNote.Interfaces.PageContentCollectionData
-      - onenote.OneNote.Interfaces.PageContentCollectionLoadOptions
-      - onenote.OneNote.Interfaces.PageContentCollectionUpdateData
-      - onenote.OneNote.Interfaces.PageContentData
-      - onenote.OneNote.Interfaces.PageContentLoadOptions
-      - onenote.OneNote.Interfaces.PageContentUpdateData
-      - onenote.OneNote.Interfaces.PageData
-      - onenote.OneNote.Interfaces.PageLoadOptions
-      - onenote.OneNote.Interfaces.PageUpdateData
-      - onenote.OneNote.Interfaces.ParagraphCollectionData
-      - onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
-      - onenote.OneNote.Interfaces.ParagraphCollectionUpdateData
-      - onenote.OneNote.Interfaces.ParagraphData
-      - onenote.OneNote.Interfaces.ParagraphLoadOptions
-      - onenote.OneNote.Interfaces.ParagraphUpdateData
-      - onenote.OneNote.Interfaces.RichTextData
-      - onenote.OneNote.Interfaces.RichTextLoadOptions
-      - onenote.OneNote.Interfaces.SectionCollectionData
-      - onenote.OneNote.Interfaces.SectionCollectionLoadOptions
-      - onenote.OneNote.Interfaces.SectionCollectionUpdateData
-      - onenote.OneNote.Interfaces.SectionData
-      - onenote.OneNote.Interfaces.SectionGroupCollectionData
-      - onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
-      - onenote.OneNote.Interfaces.SectionGroupCollectionUpdateData
-      - onenote.OneNote.Interfaces.SectionGroupData
-      - onenote.OneNote.Interfaces.SectionGroupLoadOptions
-      - onenote.OneNote.Interfaces.SectionLoadOptions
-      - onenote.OneNote.Interfaces.TableCellCollectionData
-      - onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
-      - onenote.OneNote.Interfaces.TableCellCollectionUpdateData
-      - onenote.OneNote.Interfaces.TableCellData
-      - onenote.OneNote.Interfaces.TableCellLoadOptions
-      - onenote.OneNote.Interfaces.TableCellUpdateData
-      - onenote.OneNote.Interfaces.TableData
-      - onenote.OneNote.Interfaces.TableLoadOptions
-      - onenote.OneNote.Interfaces.TableRowCollectionData
-      - onenote.OneNote.Interfaces.TableRowCollectionLoadOptions
-      - onenote.OneNote.Interfaces.TableRowCollectionUpdateData
-      - onenote.OneNote.Interfaces.TableRowData
-      - onenote.OneNote.Interfaces.TableRowLoadOptions
-      - onenote.OneNote.Interfaces.TableUpdateData
-      - onenote.OneNote.ListType
-      - onenote.OneNote.Notebook
-      - onenote.OneNote.NotebookCollection
-      - onenote.OneNote.NoteTag
-      - onenote.OneNote.NoteTagStatus
-      - onenote.OneNote.NoteTagType
-      - onenote.OneNote.NumberType
-      - onenote.OneNote.Outline
-      - onenote.OneNote.Page
-      - onenote.OneNote.PageCollection
-      - onenote.OneNote.PageContent
-      - onenote.OneNote.PageContentCollection
-      - onenote.OneNote.PageContentType
-      - onenote.OneNote.Paragraph
-      - onenote.OneNote.ParagraphCollection
-      - onenote.OneNote.ParagraphInfo
-      - onenote.OneNote.ParagraphType
-      - onenote.OneNote.RequestContext
-      - onenote.OneNote.RichText
-      - onenote.OneNote.run
-      - onenote.OneNote.run_1
-      - onenote.OneNote.run_2
-      - onenote.OneNote.Section
-      - onenote.OneNote.SectionCollection
-      - onenote.OneNote.SectionGroup
-      - onenote.OneNote.SectionGroupCollection
-      - onenote.OneNote.Table
-      - onenote.OneNote.TableCell
-      - onenote.OneNote.TableCellCollection
-      - onenote.OneNote.TableRow
-      - onenote.OneNote.TableRowCollection
-  - uid: onenote.OneNote.run
+      - 'onenote!OneNote.Application:class'
+      - 'onenote!OneNote.ErrorCodes:enum'
+      - 'onenote!OneNote.FloatingInk:class'
+      - 'onenote!OneNote.Image:class'
+      - 'onenote!OneNote.ImageOcrData:interface'
+      - 'onenote!OneNote.InkAnalysis:class'
+      - 'onenote!OneNote.InkAnalysisLine:class'
+      - 'onenote!OneNote.InkAnalysisLineCollection:class'
+      - 'onenote!OneNote.InkAnalysisParagraph:class'
+      - 'onenote!OneNote.InkAnalysisParagraphCollection:class'
+      - 'onenote!OneNote.InkAnalysisWord:class'
+      - 'onenote!OneNote.InkAnalysisWordCollection:class'
+      - 'onenote!OneNote.InkStroke:class'
+      - 'onenote!OneNote.InkStrokeCollection:class'
+      - 'onenote!OneNote.InkStrokePointer:interface'
+      - 'onenote!OneNote.InkWord:class'
+      - 'onenote!OneNote.InkWordCollection:class'
+      - 'onenote!OneNote.InsertLocation:enum'
+      - 'onenote!OneNote.Interfaces.ApplicationData:interface'
+      - 'onenote!OneNote.Interfaces.ApplicationLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.FloatingInkData:interface'
+      - 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.ImageData:interface'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkStrokeData:interface'
+      - 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.InkWordData:interface'
+      - 'onenote!OneNote.Interfaces.InkWordLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.NotebookData:interface'
+      - 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.NoteTagData:interface'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.OutlineData:interface'
+      - 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.PageCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.PageContentData:interface'
+      - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.PageContentUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.PageData:interface'
+      - 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.PageUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.ParagraphData:interface'
+      - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.RichTextData:interface'
+      - 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.SectionCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.SectionData:interface'
+      - 'onenote!OneNote.Interfaces.SectionGroupCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.SectionGroupData:interface'
+      - 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.TableCellData:interface'
+      - 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.TableData:interface'
+      - 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
+      - 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
+      - 'onenote!OneNote.Interfaces.TableRowData:interface'
+      - 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
+      - 'onenote!OneNote.Interfaces.TableUpdateData:interface'
+      - 'onenote!OneNote.ListType:enum'
+      - 'onenote!OneNote.Notebook:class'
+      - 'onenote!OneNote.NotebookCollection:class'
+      - 'onenote!OneNote.NoteTag:class'
+      - 'onenote!OneNote.NoteTagStatus:enum'
+      - 'onenote!OneNote.NoteTagType:enum'
+      - 'onenote!OneNote.NumberType:enum'
+      - 'onenote!OneNote.Outline:class'
+      - 'onenote!OneNote.Page:class'
+      - 'onenote!OneNote.PageCollection:class'
+      - 'onenote!OneNote.PageContent:class'
+      - 'onenote!OneNote.PageContentCollection:class'
+      - 'onenote!OneNote.PageContentType:enum'
+      - 'onenote!OneNote.Paragraph:class'
+      - 'onenote!OneNote.ParagraphCollection:class'
+      - 'onenote!OneNote.ParagraphInfo:interface'
+      - 'onenote!OneNote.ParagraphType:enum'
+      - 'onenote!OneNote.RequestContext:class'
+      - 'onenote!OneNote.RichText:class'
+      - 'onenote!OneNote.run:function(1)'
+      - 'onenote!OneNote.run:function(2)'
+      - 'onenote!OneNote.run:function(3)'
+      - 'onenote!OneNote.Section:class'
+      - 'onenote!OneNote.SectionCollection:class'
+      - 'onenote!OneNote.SectionGroup:class'
+      - 'onenote!OneNote.SectionGroupCollection:class'
+      - 'onenote!OneNote.Table:class'
+      - 'onenote!OneNote.TableCell:class'
+      - 'onenote!OneNote.TableCellCollection:class'
+      - 'onenote!OneNote.TableRow:class'
+      - 'onenote!OneNote.TableRowCollection:class'
+  - uid: 'onenote!OneNote.run:function(1)'
     summary: >-
       Executes a batch script that performs actions on the OneNote object model, using a new request context. When the
       promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-    name: OneNote.run
-    fullName: OneNote.run
+    name: OneNote.run(batch)
+    fullName: OneNote.run(batch)
     langs:
       - typeScript
     type: function
@@ -174,12 +174,12 @@ items:
             - '(context: OneNote.RequestContext) => Promise<T>'
       typeParameters:
         - id: T
-  - uid: onenote.OneNote.run_1
+  - uid: 'onenote!OneNote.run:function(2)'
     summary: >-
       Executes a batch script that performs actions on the OneNote object model, using the request context of a
       previously-created API object.
-    name: OneNote.run_1
-    fullName: OneNote.run_1
+    name: 'OneNote.run(object, batch)'
+    fullName: 'OneNote.run(object, batch)'
     langs:
       - typeScript
     type: function
@@ -207,12 +207,12 @@ items:
             - '(context: OneNote.RequestContext) => Promise<T>'
       typeParameters:
         - id: T
-  - uid: onenote.OneNote.run_2
+  - uid: 'onenote!OneNote.run:function(3)'
     summary: >-
       Executes a batch script that performs actions on the OneNote object model, using the request context of
       previously-created API objects.
-    name: OneNote.run_2
-    fullName: OneNote.run_2
+    name: 'OneNote.run(objects, batch)'
+    fullName: 'OneNote.run(objects, batch)'
     langs:
       - typeScript
     type: function
@@ -239,279 +239,279 @@ items:
       typeParameters:
         - id: T
 references:
-  - uid: onenote.OneNote.Application
+  - uid: 'onenote!OneNote.Application:class'
     name: OneNote.Application
-  - uid: onenote.OneNote.ErrorCodes
+  - uid: 'onenote!OneNote.ErrorCodes:enum'
     name: OneNote.ErrorCodes
-  - uid: onenote.OneNote.FloatingInk
+  - uid: 'onenote!OneNote.FloatingInk:class'
     name: OneNote.FloatingInk
-  - uid: onenote.OneNote.Image
+  - uid: 'onenote!OneNote.Image:class'
     name: OneNote.Image
-  - uid: onenote.OneNote.ImageOcrData
+  - uid: 'onenote!OneNote.ImageOcrData:interface'
     name: OneNote.ImageOcrData
-  - uid: onenote.OneNote.InkAnalysis
+  - uid: 'onenote!OneNote.InkAnalysis:class'
     name: OneNote.InkAnalysis
-  - uid: onenote.OneNote.InkAnalysisLine
+  - uid: 'onenote!OneNote.InkAnalysisLine:class'
     name: OneNote.InkAnalysisLine
-  - uid: onenote.OneNote.InkAnalysisLineCollection
+  - uid: 'onenote!OneNote.InkAnalysisLineCollection:class'
     name: OneNote.InkAnalysisLineCollection
-  - uid: onenote.OneNote.InkAnalysisParagraph
+  - uid: 'onenote!OneNote.InkAnalysisParagraph:class'
     name: OneNote.InkAnalysisParagraph
-  - uid: onenote.OneNote.InkAnalysisParagraphCollection
+  - uid: 'onenote!OneNote.InkAnalysisParagraphCollection:class'
     name: OneNote.InkAnalysisParagraphCollection
-  - uid: onenote.OneNote.InkAnalysisWord
+  - uid: 'onenote!OneNote.InkAnalysisWord:class'
     name: OneNote.InkAnalysisWord
-  - uid: onenote.OneNote.InkAnalysisWordCollection
+  - uid: 'onenote!OneNote.InkAnalysisWordCollection:class'
     name: OneNote.InkAnalysisWordCollection
-  - uid: onenote.OneNote.InkStroke
+  - uid: 'onenote!OneNote.InkStroke:class'
     name: OneNote.InkStroke
-  - uid: onenote.OneNote.InkStrokeCollection
+  - uid: 'onenote!OneNote.InkStrokeCollection:class'
     name: OneNote.InkStrokeCollection
-  - uid: onenote.OneNote.InkStrokePointer
+  - uid: 'onenote!OneNote.InkStrokePointer:interface'
     name: OneNote.InkStrokePointer
-  - uid: onenote.OneNote.InkWord
+  - uid: 'onenote!OneNote.InkWord:class'
     name: OneNote.InkWord
-  - uid: onenote.OneNote.InkWordCollection
+  - uid: 'onenote!OneNote.InkWordCollection:class'
     name: OneNote.InkWordCollection
-  - uid: onenote.OneNote.InsertLocation
+  - uid: 'onenote!OneNote.InsertLocation:enum'
     name: OneNote.InsertLocation
-  - uid: onenote.OneNote.Interfaces.ApplicationData
+  - uid: 'onenote!OneNote.Interfaces.ApplicationData:interface'
     name: OneNote.Interfaces.ApplicationData
-  - uid: onenote.OneNote.Interfaces.ApplicationLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ApplicationLoadOptions:interface'
     name: OneNote.Interfaces.ApplicationLoadOptions
-  - uid: onenote.OneNote.Interfaces.CollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.CollectionLoadOptions:interface'
     name: OneNote.Interfaces.CollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.FloatingInkData
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkData:interface'
     name: OneNote.Interfaces.FloatingInkData
-  - uid: onenote.OneNote.Interfaces.FloatingInkLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.FloatingInkLoadOptions:interface'
     name: OneNote.Interfaces.FloatingInkLoadOptions
-  - uid: onenote.OneNote.Interfaces.ImageData
+  - uid: 'onenote!OneNote.Interfaces.ImageData:interface'
     name: OneNote.Interfaces.ImageData
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
     name: OneNote.Interfaces.ImageLoadOptions
-  - uid: onenote.OneNote.Interfaces.ImageUpdateData
+  - uid: 'onenote!OneNote.Interfaces.ImageUpdateData:interface'
     name: OneNote.Interfaces.ImageUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisData:interface'
     name: OneNote.Interfaces.InkAnalysisData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionData:interface'
     name: OneNote.Interfaces.InkAnalysisLineCollectionData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisLineCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineCollectionUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisLineCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineData:interface'
     name: OneNote.Interfaces.InkAnalysisLineData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisLineLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisLineUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionData:interface'
     name: OneNote.Interfaces.InkAnalysisParagraphCollectionData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisParagraphCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisParagraphCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphData:interface'
     name: OneNote.Interfaces.InkAnalysisParagraphData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisParagraphUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisParagraphUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisParagraphUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionData:interface'
     name: OneNote.Interfaces.InkAnalysisWordCollectionData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisWordCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordData:interface'
     name: OneNote.Interfaces.InkAnalysisWordData
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordLoadOptions:interface'
     name: OneNote.Interfaces.InkAnalysisWordLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisWordUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisWordUpdateData:interface'
     name: OneNote.Interfaces.InkAnalysisWordUpdateData
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
     name: OneNote.Interfaces.InkStrokeCollectionData
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionLoadOptions:interface'
     name: OneNote.Interfaces.InkStrokeCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData:interface'
     name: OneNote.Interfaces.InkStrokeCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.InkStrokeData
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeData:interface'
     name: OneNote.Interfaces.InkStrokeData
-  - uid: onenote.OneNote.Interfaces.InkStrokeLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeLoadOptions:interface'
     name: OneNote.Interfaces.InkStrokeLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionData:interface'
     name: OneNote.Interfaces.InkWordCollectionData
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionLoadOptions:interface'
     name: OneNote.Interfaces.InkWordCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkWordCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkWordCollectionUpdateData:interface'
     name: OneNote.Interfaces.InkWordCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.InkWordData
+  - uid: 'onenote!OneNote.Interfaces.InkWordData:interface'
     name: OneNote.Interfaces.InkWordData
-  - uid: onenote.OneNote.Interfaces.InkWordLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkWordLoadOptions:interface'
     name: OneNote.Interfaces.InkWordLoadOptions
-  - uid: onenote.OneNote.Interfaces.NotebookCollectionData
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionData:interface'
     name: OneNote.Interfaces.NotebookCollectionData
-  - uid: onenote.OneNote.Interfaces.NotebookCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionLoadOptions:interface'
     name: OneNote.Interfaces.NotebookCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.NotebookCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.NotebookCollectionUpdateData:interface'
     name: OneNote.Interfaces.NotebookCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.NotebookData
+  - uid: 'onenote!OneNote.Interfaces.NotebookData:interface'
     name: OneNote.Interfaces.NotebookData
-  - uid: onenote.OneNote.Interfaces.NotebookLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.NotebookLoadOptions:interface'
     name: OneNote.Interfaces.NotebookLoadOptions
-  - uid: onenote.OneNote.Interfaces.NoteTagData
+  - uid: 'onenote!OneNote.Interfaces.NoteTagData:interface'
     name: OneNote.Interfaces.NoteTagData
-  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
     name: OneNote.Interfaces.NoteTagLoadOptions
-  - uid: onenote.OneNote.Interfaces.OutlineData
+  - uid: 'onenote!OneNote.Interfaces.OutlineData:interface'
     name: OneNote.Interfaces.OutlineData
-  - uid: onenote.OneNote.Interfaces.OutlineLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.OutlineLoadOptions:interface'
     name: OneNote.Interfaces.OutlineLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageCollectionData
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionData:interface'
     name: OneNote.Interfaces.PageCollectionData
-  - uid: onenote.OneNote.Interfaces.PageCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionLoadOptions:interface'
     name: OneNote.Interfaces.PageCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
     name: OneNote.Interfaces.PageCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionData
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionData:interface'
     name: OneNote.Interfaces.PageContentCollectionData
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionLoadOptions:interface'
     name: OneNote.Interfaces.PageContentCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageContentCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageContentCollectionUpdateData:interface'
     name: OneNote.Interfaces.PageContentCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.PageContentData
+  - uid: 'onenote!OneNote.Interfaces.PageContentData:interface'
     name: OneNote.Interfaces.PageContentData
-  - uid: onenote.OneNote.Interfaces.PageContentLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
     name: OneNote.Interfaces.PageContentLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageContentUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageContentUpdateData:interface'
     name: OneNote.Interfaces.PageContentUpdateData
-  - uid: onenote.OneNote.Interfaces.PageData
+  - uid: 'onenote!OneNote.Interfaces.PageData:interface'
     name: OneNote.Interfaces.PageData
-  - uid: onenote.OneNote.Interfaces.PageLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.PageLoadOptions:interface'
     name: OneNote.Interfaces.PageLoadOptions
-  - uid: onenote.OneNote.Interfaces.PageUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageUpdateData:interface'
     name: OneNote.Interfaces.PageUpdateData
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionData:interface'
     name: OneNote.Interfaces.ParagraphCollectionData
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionLoadOptions:interface'
     name: OneNote.Interfaces.ParagraphCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphCollectionUpdateData:interface'
     name: OneNote.Interfaces.ParagraphCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.ParagraphData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
     name: OneNote.Interfaces.ParagraphData
-  - uid: onenote.OneNote.Interfaces.ParagraphLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
     name: OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.ParagraphUpdateData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphUpdateData:interface'
     name: OneNote.Interfaces.ParagraphUpdateData
-  - uid: onenote.OneNote.Interfaces.RichTextData
+  - uid: 'onenote!OneNote.Interfaces.RichTextData:interface'
     name: OneNote.Interfaces.RichTextData
-  - uid: onenote.OneNote.Interfaces.RichTextLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
     name: OneNote.Interfaces.RichTextLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionCollectionData
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionData:interface'
     name: OneNote.Interfaces.SectionCollectionData
-  - uid: onenote.OneNote.Interfaces.SectionCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionLoadOptions:interface'
     name: OneNote.Interfaces.SectionCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.SectionCollectionUpdateData:interface'
     name: OneNote.Interfaces.SectionCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.SectionData
+  - uid: 'onenote!OneNote.Interfaces.SectionData:interface'
     name: OneNote.Interfaces.SectionData
-  - uid: onenote.OneNote.Interfaces.SectionGroupCollectionData
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionData:interface'
     name: OneNote.Interfaces.SectionGroupCollectionData
-  - uid: onenote.OneNote.Interfaces.SectionGroupCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionLoadOptions:interface'
     name: OneNote.Interfaces.SectionGroupCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionGroupCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupCollectionUpdateData:interface'
     name: OneNote.Interfaces.SectionGroupCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.SectionGroupData
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupData:interface'
     name: OneNote.Interfaces.SectionGroupData
-  - uid: onenote.OneNote.Interfaces.SectionGroupLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
     name: OneNote.Interfaces.SectionGroupLoadOptions
-  - uid: onenote.OneNote.Interfaces.SectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.SectionLoadOptions:interface'
     name: OneNote.Interfaces.SectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionData
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionData:interface'
     name: OneNote.Interfaces.TableCellCollectionData
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionLoadOptions:interface'
     name: OneNote.Interfaces.TableCellCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableCellCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableCellCollectionUpdateData:interface'
     name: OneNote.Interfaces.TableCellCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.TableCellData
+  - uid: 'onenote!OneNote.Interfaces.TableCellData:interface'
     name: OneNote.Interfaces.TableCellData
-  - uid: onenote.OneNote.Interfaces.TableCellLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableCellLoadOptions:interface'
     name: OneNote.Interfaces.TableCellLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableCellUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableCellUpdateData:interface'
     name: OneNote.Interfaces.TableCellUpdateData
-  - uid: onenote.OneNote.Interfaces.TableData
+  - uid: 'onenote!OneNote.Interfaces.TableData:interface'
     name: OneNote.Interfaces.TableData
-  - uid: onenote.OneNote.Interfaces.TableLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableLoadOptions:interface'
     name: OneNote.Interfaces.TableLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionData
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
     name: OneNote.Interfaces.TableRowCollectionData
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionLoadOptions:interface'
     name: OneNote.Interfaces.TableRowCollectionLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableRowCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableRowCollectionUpdateData:interface'
     name: OneNote.Interfaces.TableRowCollectionUpdateData
-  - uid: onenote.OneNote.Interfaces.TableRowData
+  - uid: 'onenote!OneNote.Interfaces.TableRowData:interface'
     name: OneNote.Interfaces.TableRowData
-  - uid: onenote.OneNote.Interfaces.TableRowLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.TableRowLoadOptions:interface'
     name: OneNote.Interfaces.TableRowLoadOptions
-  - uid: onenote.OneNote.Interfaces.TableUpdateData
+  - uid: 'onenote!OneNote.Interfaces.TableUpdateData:interface'
     name: OneNote.Interfaces.TableUpdateData
-  - uid: onenote.OneNote.ListType
+  - uid: 'onenote!OneNote.ListType:enum'
     name: OneNote.ListType
-  - uid: onenote.OneNote.Notebook
+  - uid: 'onenote!OneNote.Notebook:class'
     name: OneNote.Notebook
-  - uid: onenote.OneNote.NotebookCollection
+  - uid: 'onenote!OneNote.NotebookCollection:class'
     name: OneNote.NotebookCollection
-  - uid: onenote.OneNote.NoteTag
+  - uid: 'onenote!OneNote.NoteTag:class'
     name: OneNote.NoteTag
-  - uid: onenote.OneNote.NoteTagStatus
+  - uid: 'onenote!OneNote.NoteTagStatus:enum'
     name: OneNote.NoteTagStatus
-  - uid: onenote.OneNote.NoteTagType
+  - uid: 'onenote!OneNote.NoteTagType:enum'
     name: OneNote.NoteTagType
-  - uid: onenote.OneNote.NumberType
+  - uid: 'onenote!OneNote.NumberType:enum'
     name: OneNote.NumberType
-  - uid: onenote.OneNote.Outline
+  - uid: 'onenote!OneNote.Outline:class'
     name: OneNote.Outline
-  - uid: onenote.OneNote.Page
+  - uid: 'onenote!OneNote.Page:class'
     name: OneNote.Page
-  - uid: onenote.OneNote.PageCollection
+  - uid: 'onenote!OneNote.PageCollection:class'
     name: OneNote.PageCollection
-  - uid: onenote.OneNote.PageContent
+  - uid: 'onenote!OneNote.PageContent:class'
     name: OneNote.PageContent
-  - uid: onenote.OneNote.PageContentCollection
+  - uid: 'onenote!OneNote.PageContentCollection:class'
     name: OneNote.PageContentCollection
-  - uid: onenote.OneNote.PageContentType
+  - uid: 'onenote!OneNote.PageContentType:enum'
     name: OneNote.PageContentType
-  - uid: onenote.OneNote.Paragraph
+  - uid: 'onenote!OneNote.Paragraph:class'
     name: OneNote.Paragraph
-  - uid: onenote.OneNote.ParagraphCollection
+  - uid: 'onenote!OneNote.ParagraphCollection:class'
     name: OneNote.ParagraphCollection
-  - uid: onenote.OneNote.ParagraphInfo
+  - uid: 'onenote!OneNote.ParagraphInfo:interface'
     name: OneNote.ParagraphInfo
-  - uid: onenote.OneNote.ParagraphType
+  - uid: 'onenote!OneNote.ParagraphType:enum'
     name: OneNote.ParagraphType
-  - uid: onenote.OneNote.RequestContext
+  - uid: 'onenote!OneNote.RequestContext:class'
     name: OneNote.RequestContext
-  - uid: onenote.OneNote.RichText
+  - uid: 'onenote!OneNote.RichText:class'
     name: OneNote.RichText
-  - uid: onenote.OneNote.Section
+  - uid: 'onenote!OneNote.Section:class'
     name: OneNote.Section
-  - uid: onenote.OneNote.SectionCollection
+  - uid: 'onenote!OneNote.SectionCollection:class'
     name: OneNote.SectionCollection
-  - uid: onenote.OneNote.SectionGroup
+  - uid: 'onenote!OneNote.SectionGroup:class'
     name: OneNote.SectionGroup
-  - uid: onenote.OneNote.SectionGroupCollection
+  - uid: 'onenote!OneNote.SectionGroupCollection:class'
     name: OneNote.SectionGroupCollection
-  - uid: onenote.OneNote.Table
+  - uid: 'onenote!OneNote.Table:class'
     name: OneNote.Table
-  - uid: onenote.OneNote.TableCell
+  - uid: 'onenote!OneNote.TableCell:class'
     name: OneNote.TableCell
-  - uid: onenote.OneNote.TableCellCollection
+  - uid: 'onenote!OneNote.TableCellCollection:class'
     name: OneNote.TableCellCollection
-  - uid: onenote.OneNote.TableRow
+  - uid: 'onenote!OneNote.TableRow:class'
     name: OneNote.TableRow
-  - uid: onenote.OneNote.TableRowCollection
+  - uid: 'onenote!OneNote.TableRowCollection:class'
     name: OneNote.TableRowCollection

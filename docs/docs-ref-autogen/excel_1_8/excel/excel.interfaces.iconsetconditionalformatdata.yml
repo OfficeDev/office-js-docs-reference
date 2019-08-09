@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatData
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData:interface'
     summary: An interface describing the data returned by calling "iconSetConditionalFormat.toJSON()".
     name: Excel.Interfaces.IconSetConditionalFormatData
     fullName: Excel.Interfaces.IconSetConditionalFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.IconSetConditionalFormatData.criteria
-      - excel.Excel.Interfaces.IconSetConditionalFormatData.reverseIconOrder
-      - excel.Excel.Interfaces.IconSetConditionalFormatData.showIconOnly
-      - excel.Excel.Interfaces.IconSetConditionalFormatData.style
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatData.criteria
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatData#criteria:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatData#reverseIconOrder:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatData#showIconOnly:member'
+      - 'excel!Excel.Interfaces.IconSetConditionalFormatData#style:member'
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData#criteria:member'
     summary: >-
       An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for
       the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - 'Excel.ConditionalIconCriterion[]'
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatData.reverseIconOrder
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData#reverseIconOrder:member'
     summary: |-
       If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
 
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatData.showIconOnly
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData#showIconOnly:member'
     summary: |-
       If true, hides the values and only shows icons.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.IconSetConditionalFormatData.style
+  - uid: 'excel!Excel.Interfaces.IconSetConditionalFormatData#style:member'
     summary: |-
       If set, displays the IconSet option for the conditional format.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableSortLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
     summary: |-
       Manages sorting operations on Table objects.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableSortLoadOptions.$all
-      - excel.Excel.Interfaces.TableSortLoadOptions.fields
-      - excel.Excel.Interfaces.TableSortLoadOptions.matchCase
-      - excel.Excel.Interfaces.TableSortLoadOptions.method
-  - uid: excel.Excel.Interfaces.TableSortLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableSortLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableSortLoadOptions#fields:member'
+      - 'excel!Excel.Interfaces.TableSortLoadOptions#matchCase:member'
+      - 'excel!Excel.Interfaces.TableSortLoadOptions#method:member'
+  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableSortLoadOptions.fields
+  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#fields:member'
     summary: |-
       Represents the current conditions used to last sort the table. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableSortLoadOptions.matchCase
+  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#matchCase:member'
     summary: |-
       Represents whether the casing impacted the last sort of the table. Read-only.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableSortLoadOptions.method
+  - uid: 'excel!Excel.Interfaces.TableSortLoadOptions#method:member'
     summary: |-
       Represents Chinese character ordering method last used to sort the table. Read-only.
 

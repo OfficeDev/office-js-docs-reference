@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions:interface'
     summary: |-
       A container for the NoteTag in a paragraph.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.NoteTagLoadOptions.$all
-      - onenote.OneNote.Interfaces.NoteTagLoadOptions.id
-      - onenote.OneNote.Interfaces.NoteTagLoadOptions.status
-      - onenote.OneNote.Interfaces.NoteTagLoadOptions.type
-  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#status:member'
+      - 'onenote!OneNote.Interfaces.NoteTagLoadOptions#type:member'
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#id:member'
     summary: |-
       Gets the Id of the NoteTag object. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.status
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#status:member'
     summary: |-
       Gets the status of the NoteTag object. Read-only.
 
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.NoteTagLoadOptions.type
+  - uid: 'onenote!OneNote.Interfaces.NoteTagLoadOptions#type:member'
     summary: |-
       Gets the type of the NoteTag object. Read-only.
 

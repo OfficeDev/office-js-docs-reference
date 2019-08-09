@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData:interface'
     summary: An interface describing the data returned by calling "chartBoxwhiskerOptions.toJSON()".
     name: Excel.Interfaces.ChartBoxwhiskerOptionsData
     fullName: Excel.Interfaces.ChartBoxwhiskerOptionsData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.quartileCalculation
-      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showInnerPoints
-      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanLine
-      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanMarker
-      - excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showOutlierPoints
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.quartileCalculation
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showInnerPoints:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanLine:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanMarker:member'
+      - 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showOutlierPoints:member'
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#quartileCalculation:member'
     summary: |-
       Returns or sets the quartile calculation type of a box and whisker chart. Read/Write.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - Excel.ChartBoxQuartileCalculation | "Inclusive" | "Exclusive"
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showInnerPoints
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showInnerPoints:member'
     summary: |-
       Specifies whether or not the inner points are shown in a box and whisker chart. Read/Write.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanLine
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanLine:member'
     summary: |-
       Specifies whether or not the mean line is shown in a box and whisker chart. Read/Write.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showMeanMarker
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showMeanMarker:member'
     summary: |-
       Specifies whether or not the mean marker is shown in a box and whisker chart. Read/Write.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartBoxwhiskerOptionsData.showOutlierPoints
+  - uid: 'excel!Excel.Interfaces.ChartBoxwhiskerOptionsData#showOutlierPoints:member'
     summary: |-
       Specifies whether or not outlier points are shown in a box and whisker chart. Read/Write.
 

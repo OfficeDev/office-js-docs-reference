@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.Settings
+  - uid: 'office!Office.Settings:interface'
     summary: >-
       Represents custom settings for a task pane or content add-in that are stored in the host document as name/value
       pairs.
@@ -26,19 +26,19 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.Settings.addHandlerAsync
-      - office.Office.Settings.addHandlerAsync_1
-      - office.Office.Settings.get
-      - office.Office.Settings.refreshAsync
-      - office.Office.Settings.remove
-      - office.Office.Settings.removeHandlerAsync
-      - office.Office.Settings.removeHandlerAsync_1
-      - office.Office.Settings.saveAsync
-      - office.Office.Settings.saveAsync_1
-      - office.Office.Settings.set
-  - uid: office.Office.Settings.addHandlerAsync
+      - 'office!Office.Settings#addHandlerAsync:member(1)'
+      - 'office!Office.Settings#addHandlerAsync:member(2)'
+      - 'office!Office.Settings#get:member(1)'
+      - 'office!Office.Settings#refreshAsync:member(1)'
+      - 'office!Office.Settings#remove:member(1)'
+      - 'office!Office.Settings#removeHandlerAsync:member(1)'
+      - 'office!Office.Settings#removeHandlerAsync:member(2)'
+      - 'office!Office.Settings#saveAsync:member(1)'
+      - 'office!Office.Settings#saveAsync:member(2)'
+      - 'office!Office.Settings#set:member(1)'
+  - uid: 'office!Office.Settings#addHandlerAsync:member(1)'
     summary: >-
       Adds an event handler for the settingsChanged event.
 
@@ -71,21 +71,21 @@ items:
         - id: eventType
           description: Specifies the type of event to add. Required.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
-            [Office.SettingsChangedEventArgs](xref:office.Office.SettingsChangedEventArgs)<!-- -->. Required.
+            [Office.SettingsChangedEventArgs](xref:office!Office.SettingsChangedEventArgs:interface)<!-- -->. Required.
           type:
             - any
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
 
 
             <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
@@ -96,7 +96,7 @@ items:
             returned in the AsyncResult object without being altered.</td> </tr> </table>
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Settings.addHandlerAsync_1
+  - uid: 'office!Office.Settings#addHandlerAsync:member(2)'
     summary: >-
       Adds an event handler for the settingsChanged event.
 
@@ -112,31 +112,6 @@ items:
 
       You can add multiple event handlers for the specified eventType as long as the name of each event handler function
       is unique.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function addSelectionChangedEventHandler() {
-          Office.context.document.settings.addHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-      }
-
-
-      function MyHandler(eventArgs) {
-          write('Event raised: ' + eventArgs.type);
-          doSomethingWithSettings(eventArgs.settings);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'addHandlerAsync(eventType, handler, callback)'
     fullName: 'addHandlerAsync(eventType, handler, callback)'
     langs:
@@ -154,17 +129,17 @@ items:
         - id: eventType
           description: Specifies the type of event to add. Required.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: handler
           description: >-
             The event handler function to add, whose only parameter is of type
-            [Office.SettingsChangedEventArgs](xref:office.Office.SettingsChangedEventArgs)<!-- -->. Required.
+            [Office.SettingsChangedEventArgs](xref:office!Office.SettingsChangedEventArgs:interface)<!-- -->. Required.
           type:
             - any
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
 
 
             <table> <tr> <th>Property</th> <th>Use to...</th> </tr> <tr> <td>AsyncResult.value</td> <td>Always returns
@@ -175,29 +150,11 @@ items:
             returned in the AsyncResult object without being altered.</td> </tr> </table>
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Settings.get
+  - uid: 'office!Office.Settings#get:member(1)'
     summary: Retrieves the specified setting.
     remarks: >-
       **Requirement set**:
       [Settings](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#settings)
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function displayMySetting() {
-          write('Current value for mySetting: ' + Office.context.document.settings.get('mySetting'));
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: get(name)
     fullName: get(name)
     langs:
@@ -214,7 +171,7 @@ items:
           description: ''
           type:
             - string
-  - uid: office.Office.Settings.refreshAsync
+  - uid: 'office!Office.Settings#refreshAsync:member(1)'
     summary: >-
       Reads all settings persisted in the document and refreshes the content or task pane add-in's copy of those
       settings held in memory.
@@ -240,26 +197,6 @@ items:
       of the operation.</td> </tr> <tr> <td>AsyncResult.error</td> <td>Access an Error object that provides error
       information if the operation failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of
       any type that is returned in the AsyncResult object without being altered.</td> </tr> </table>
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function refreshSettings() {
-          Office.context.document.settings.refreshAsync(function (asyncResult) {
-              write('Settings refreshed with status: ' + asyncResult.status);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: refreshAsync(callback)
     fullName: refreshAsync(callback)
     langs:
@@ -275,11 +212,11 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an
-            [Office.Settings](xref:office.Office.Settings) object with the refreshed values.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an [Office.Settings](xref:office!Office.Settings:interface) object with the refreshed values.
           type:
             - '(result: AsyncResult<Office.Settings>) => void'
-  - uid: office.Office.Settings.remove
+  - uid: 'office!Office.Settings#remove:member(1)'
     summary: >-
       Removes the specified setting.
 
@@ -294,18 +231,6 @@ items:
 
       null is a valid value for a setting. Therefore, assigning null to the setting will not remove it from the settings
       property bag.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function removeMySetting() {
-          Office.context.document.settings.remove('mySetting');
-      }
-
-      ```
     name: remove(name)
     fullName: remove(name)
     langs:
@@ -322,7 +247,7 @@ items:
           description: ''
           type:
             - string
-  - uid: office.Office.Settings.removeHandlerAsync
+  - uid: 'office!Office.Settings#removeHandlerAsync:member(1)'
     summary: Removes an event handler for the settingsChanged event.
     remarks: >-
       **Requirement set**: [Not in a
@@ -356,18 +281,18 @@ items:
         - id: eventType
           description: Specifies the type of event to remove. Required.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: options
           description: Provides options to determine which event handler or handlers are removed.
           type:
-            - office.Office.RemoveHandlerOptions
+            - 'office!Office.RemoveHandlerOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Settings.removeHandlerAsync_1
+  - uid: 'office!Office.Settings#removeHandlerAsync:member(2)'
     summary: Removes an event handler for the settingsChanged event.
     remarks: >-
       **Requirement set**: [Not in a
@@ -384,31 +309,6 @@ items:
 
       In the callback function passed to the removeHandlerAsync method, you can use the properties of the AsyncResult
       object to return the following information.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function removeSettingsChangedEventHandler() {
-          Office.context.document.settings.removeHandlerAsync(Office.EventType.SettingsChanged, MyHandler);
-      }
-
-
-      function MyHandler(eventArgs) {
-          write('Event raised: ' + eventArgs.type);
-          doSomethingWithSettings(eventArgs.settings);
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'removeHandlerAsync(eventType, callback)'
     fullName: 'removeHandlerAsync(eventType, callback)'
     langs:
@@ -424,14 +324,14 @@ items:
         - id: eventType
           description: Specifies the type of event to remove. Required.
           type:
-            - office.Office.EventType
+            - 'office!Office.EventType:enum'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Settings.saveAsync
+  - uid: 'office!Office.Settings#saveAsync:member(1)'
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >-
       **Requirement set**:
@@ -471,14 +371,14 @@ items:
         - id: options
           description: Provides options for saving settings.
           type:
-            - office.Office.SaveSettingsOptions
+            - 'office!Office.SaveSettingsOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Settings.saveAsync_1
+  - uid: 'office!Office.Settings#saveAsync:member(2)'
     summary: Persists the in-memory copy of the settings property bag in the document.
     remarks: >-
       **Requirement set**:
@@ -503,26 +403,6 @@ items:
       Error object that provides error information if the operation failed.</td> </tr> <tr>
       <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in the AsyncResult object
       without being altered.</td> </tr> </table>
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function persistSettings() {
-          Office.context.document.settings.saveAsync(function (asyncResult) {
-              write('Settings saved with status: ' + asyncResult.status);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: saveAsync(callback)
     fullName: saveAsync(callback)
     langs:
@@ -538,10 +418,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.Settings.set
+  - uid: 'office!Office.Settings#set:member(1)'
     summary: >-
       Sets or creates the specified setting.
 
@@ -559,18 +439,6 @@ items:
       setting of the specified name in the in-memory copy of the settings property bag. After you call the
       Settings.saveAsync method, the value is stored in the document as the serialized JSON representation of its data
       type. A maximum of 2MB is available for the settings of each add-in.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function setMySetting() {
-          Office.context.document.settings.set('mySetting', 'mySetting value');
-      }
-
-      ```
     name: 'set(name, value)'
     fullName: 'set(name, value)'
     langs:

@@ -1,27 +1,27 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextFrameData
+  - uid: 'excel!Excel.Interfaces.TextFrameData:interface'
     summary: An interface describing the data returned by calling "textFrame.toJSON()".
     name: Excel.Interfaces.TextFrameData
     fullName: Excel.Interfaces.TextFrameData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextFrameData.autoSizeSetting
-      - excel.Excel.Interfaces.TextFrameData.bottomMargin
-      - excel.Excel.Interfaces.TextFrameData.hasText
-      - excel.Excel.Interfaces.TextFrameData.horizontalAlignment
-      - excel.Excel.Interfaces.TextFrameData.horizontalOverflow
-      - excel.Excel.Interfaces.TextFrameData.leftMargin
-      - excel.Excel.Interfaces.TextFrameData.orientation
-      - excel.Excel.Interfaces.TextFrameData.readingOrder
-      - excel.Excel.Interfaces.TextFrameData.rightMargin
-      - excel.Excel.Interfaces.TextFrameData.topMargin
-      - excel.Excel.Interfaces.TextFrameData.verticalAlignment
-      - excel.Excel.Interfaces.TextFrameData.verticalOverflow
-  - uid: excel.Excel.Interfaces.TextFrameData.autoSizeSetting
+      - 'excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member'
+      - 'excel!Excel.Interfaces.TextFrameData#bottomMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameData#hasText:member'
+      - 'excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.TextFrameData#horizontalOverflow:member'
+      - 'excel!Excel.Interfaces.TextFrameData#leftMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameData#orientation:member'
+      - 'excel!Excel.Interfaces.TextFrameData#readingOrder:member'
+      - 'excel!Excel.Interfaces.TextFrameData#rightMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameData#topMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.TextFrameData#verticalOverflow:member'
+  - uid: 'excel!Excel.Interfaces.TextFrameData#autoSizeSetting:member'
     summary: >-
       Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
       text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
@@ -40,7 +40,7 @@ items:
       return:
         type:
           - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
-  - uid: excel.Excel.Interfaces.TextFrameData.bottomMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameData#bottomMargin:member'
     summary: |-
       Represents the bottom margin, in points, of the text frame.
 
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameData.hasText
+  - uid: 'excel!Excel.Interfaces.TextFrameData#hasText:member'
     summary: |-
       Specifies whether the text frame contains text.
 
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TextFrameData.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.TextFrameData#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
@@ -89,7 +89,7 @@ items:
           - >-
             Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
             | "ThaiDistributed"
-  - uid: excel.Excel.Interfaces.TextFrameData.horizontalOverflow
+  - uid: 'excel!Excel.Interfaces.TextFrameData#horizontalOverflow:member'
     summary: |-
       Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
@@ -104,7 +104,7 @@ items:
       return:
         type:
           - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
-  - uid: excel.Excel.Interfaces.TextFrameData.leftMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameData#leftMargin:member'
     summary: |-
       Represents the left margin, in points, of the text frame.
 
@@ -119,7 +119,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameData.orientation
+  - uid: 'excel!Excel.Interfaces.TextFrameData#orientation:member'
     summary: |-
       Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
@@ -138,7 +138,7 @@ items:
           - >-
             Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
             "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
-  - uid: excel.Excel.Interfaces.TextFrameData.readingOrder
+  - uid: 'excel!Excel.Interfaces.TextFrameData#readingOrder:member'
     summary: >-
       Represents the reading order of the text frame, either left-to-right or right-to-left. See
       Excel.ShapeTextReadingOrder for details.
@@ -155,7 +155,7 @@ items:
       return:
         type:
           - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Interfaces.TextFrameData.rightMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameData#rightMargin:member'
     summary: |-
       Represents the right margin, in points, of the text frame.
 
@@ -170,7 +170,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameData.topMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameData#topMargin:member'
     summary: |-
       Represents the top margin, in points, of the text frame.
 
@@ -185,7 +185,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameData.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.TextFrameData#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
@@ -202,7 +202,7 @@ items:
       return:
         type:
           - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
-  - uid: excel.Excel.Interfaces.TextFrameData.verticalOverflow
+  - uid: 'excel!Excel.Interfaces.TextFrameData#verticalOverflow:member'
     summary: |-
       Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 

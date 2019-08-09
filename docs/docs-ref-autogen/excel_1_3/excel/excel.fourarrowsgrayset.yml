@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FourArrowsGraySet
+  - uid: 'excel!Excel.FourArrowsGraySet:interface'
     name: Excel.FourArrowsGraySet
     fullName: Excel.FourArrowsGraySet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FourArrowsGraySet.grayDownArrow
-      - excel.Excel.FourArrowsGraySet.grayDownInclineArrow
-      - excel.Excel.FourArrowsGraySet.grayUpArrow
-      - excel.Excel.FourArrowsGraySet.grayUpInclineArrow
-  - uid: excel.Excel.FourArrowsGraySet.grayDownArrow
+      - 'excel!Excel.FourArrowsGraySet#grayDownArrow:member'
+      - 'excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member'
+      - 'excel!Excel.FourArrowsGraySet#grayUpArrow:member'
+      - 'excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayDownArrow:member'
     name: grayDownArrow
     fullName: grayDownArrow
     langs:
@@ -22,8 +22,8 @@ items:
       content: 'grayDownArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourArrowsGraySet.grayDownInclineArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayDownInclineArrow:member'
     name: grayDownInclineArrow
     fullName: grayDownInclineArrow
     langs:
@@ -33,8 +33,8 @@ items:
       content: 'grayDownInclineArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourArrowsGraySet.grayUpArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayUpArrow:member'
     name: grayUpArrow
     fullName: grayUpArrow
     langs:
@@ -44,8 +44,8 @@ items:
       content: 'grayUpArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FourArrowsGraySet.grayUpInclineArrow
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FourArrowsGraySet#grayUpInclineArrow:member'
     name: grayUpInclineArrow
     fullName: grayUpInclineArrow
     langs:
@@ -55,4 +55,4 @@ items:
       content: 'grayUpInclineArrow: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

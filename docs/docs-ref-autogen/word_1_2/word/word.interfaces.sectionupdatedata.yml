@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SectionUpdateData
+  - uid: 'word!Word.Interfaces.SectionUpdateData:interface'
     summary: 'An interface for updating data on the Section object, for use in "section.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.SectionUpdateData
     fullName: Word.Interfaces.SectionUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SectionUpdateData.body
-  - uid: word.Word.Interfaces.SectionUpdateData.body
+      - 'word!Word.Interfaces.SectionUpdateData#body:member'
+  - uid: 'word!Word.Interfaces.SectionUpdateData#body:member'
     summary: |-
       Gets the body object of the section. This does not include the header/footer and other section metadata.
 
@@ -24,4 +24,4 @@ items:
       content: 'body?: Word.Interfaces.BodyUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.BodyUpdateData
+          - 'word!Word.Interfaces.BodyUpdateData:interface'

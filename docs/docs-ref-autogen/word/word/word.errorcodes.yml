@@ -1,47 +1,47 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ErrorCodes
+  - uid: 'word!Word.ErrorCodes:enum'
     name: Word.ErrorCodes
     fullName: Word.ErrorCodes
     langs:
       - typeScript
     type: enum
-    package: word
+    package: word!
     children:
-      - word.Word.ErrorCodes.accessDenied
-      - word.Word.ErrorCodes.generalException
-      - word.Word.ErrorCodes.invalidArgument
-      - word.Word.ErrorCodes.itemNotFound
-      - word.Word.ErrorCodes.notImplemented
-  - uid: word.Word.ErrorCodes.accessDenied
+      - 'word!Word.ErrorCodes.accessDenied:member'
+      - 'word!Word.ErrorCodes.generalException:member'
+      - 'word!Word.ErrorCodes.invalidArgument:member'
+      - 'word!Word.ErrorCodes.itemNotFound:member'
+      - 'word!Word.ErrorCodes.notImplemented:member'
+  - uid: 'word!Word.ErrorCodes.accessDenied:member'
     name: accessDenied
     fullName: accessDenied
     langs:
       - typeScript
     type: field
     numericValue: '"AccessDenied"'
-  - uid: word.Word.ErrorCodes.generalException
+  - uid: 'word!Word.ErrorCodes.generalException:member'
     name: generalException
     fullName: generalException
     langs:
       - typeScript
     type: field
     numericValue: '"GeneralException"'
-  - uid: word.Word.ErrorCodes.invalidArgument
+  - uid: 'word!Word.ErrorCodes.invalidArgument:member'
     name: invalidArgument
     fullName: invalidArgument
     langs:
       - typeScript
     type: field
     numericValue: '"InvalidArgument"'
-  - uid: word.Word.ErrorCodes.itemNotFound
+  - uid: 'word!Word.ErrorCodes.itemNotFound:member'
     name: itemNotFound
     fullName: itemNotFound
     langs:
       - typeScript
     type: field
     numericValue: '"ItemNotFound"'
-  - uid: word.Word.ErrorCodes.notImplemented
+  - uid: 'word!Word.ErrorCodes.notImplemented:member'
     name: notImplemented
     fullName: notImplemented
     langs:

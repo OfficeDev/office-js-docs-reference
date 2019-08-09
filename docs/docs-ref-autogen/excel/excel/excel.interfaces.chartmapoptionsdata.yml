@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartMapOptionsData
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData:interface'
     summary: An interface describing the data returned by calling "chartMapOptions.toJSON()".
     name: Excel.Interfaces.ChartMapOptionsData
     fullName: Excel.Interfaces.ChartMapOptionsData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartMapOptionsData.labelStrategy
-      - excel.Excel.Interfaces.ChartMapOptionsData.level
-      - excel.Excel.Interfaces.ChartMapOptionsData.projectionType
-  - uid: excel.Excel.Interfaces.ChartMapOptionsData.labelStrategy
+      - 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsData#level:member'
+      - 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#labelStrategy:member'
     summary: |-
       Returns or sets the series map labels strategy of a region map chart. Read/Write.
 
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - Excel.ChartMapLabelStrategy | "None" | "BestFit" | "ShowAll"
-  - uid: excel.Excel.Interfaces.ChartMapOptionsData.level
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#level:member'
     summary: |-
       Returns or sets the series mapping level of a region map chart. Read/Write.
 
@@ -46,7 +46,7 @@ items:
           - >-
             Excel.ChartMapAreaLevel | "Automatic" | "DataOnly" | "City" | "County" | "State" | "Country" | "Continent" |
             "World"
-  - uid: excel.Excel.Interfaces.ChartMapOptionsData.projectionType
+  - uid: 'excel!Excel.Interfaces.ChartMapOptionsData#projectionType:member'
     summary: |-
       Returns or sets the series projection type of a region map chart. Read/Write.
 

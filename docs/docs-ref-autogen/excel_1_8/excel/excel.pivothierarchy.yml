@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotHierarchy
+  - uid: 'excel!Excel.PivotHierarchy:class'
     summary: |-
       Represents a single pivot hierarchy within a PivotTable.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PivotHierarchy.context
-      - excel.Excel.PivotHierarchy.fields
-      - excel.Excel.PivotHierarchy.id
-      - excel.Excel.PivotHierarchy.load
-      - excel.Excel.PivotHierarchy.load_1
-      - excel.Excel.PivotHierarchy.load_2
-      - excel.Excel.PivotHierarchy.name
-      - excel.Excel.PivotHierarchy.set
-      - excel.Excel.PivotHierarchy.set_1
-      - excel.Excel.PivotHierarchy.toJSON
-  - uid: excel.Excel.PivotHierarchy.context
+      - 'excel!Excel.PivotHierarchy#context:member'
+      - 'excel!Excel.PivotHierarchy#fields:member'
+      - 'excel!Excel.PivotHierarchy#id:member'
+      - 'excel!Excel.PivotHierarchy#load:member(1)'
+      - 'excel!Excel.PivotHierarchy#load:member(2)'
+      - 'excel!Excel.PivotHierarchy#load:member(3)'
+      - 'excel!Excel.PivotHierarchy#name:member'
+      - 'excel!Excel.PivotHierarchy#set:member(1)'
+      - 'excel!Excel.PivotHierarchy#set:member(2)'
+      - 'excel!Excel.PivotHierarchy#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotHierarchy#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -37,8 +37,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotHierarchy.fields
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotHierarchy#fields:member'
     summary: |-
       Returns the PivotFields associated with the PivotHierarchy.
 
@@ -52,8 +52,8 @@ items:
       content: 'readonly fields: Excel.PivotFieldCollection;'
       return:
         type:
-          - excel.Excel.PivotFieldCollection
-  - uid: excel.Excel.PivotHierarchy.id
+          - 'excel!Excel.PivotFieldCollection:class'
+  - uid: 'excel!Excel.PivotHierarchy#id:member'
     summary: |-
       Id of the PivotHierarchy.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.PivotHierarchy.load
+  - uid: 'excel!Excel.PivotHierarchy#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -99,14 +99,14 @@ items:
       content: 'load(option?: Excel.Interfaces.PivotHierarchyLoadOptions): Excel.PivotHierarchy;'
       return:
         type:
-          - excel.Excel.PivotHierarchy
+          - 'excel!Excel.PivotHierarchy:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.PivotHierarchyLoadOptions
-  - uid: excel.Excel.PivotHierarchy.load_1
+            - 'excel!Excel.Interfaces.PivotHierarchyLoadOptions:interface'
+  - uid: 'excel!Excel.PivotHierarchy#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -119,14 +119,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotHierarchy;'
       return:
         type:
-          - excel.Excel.PivotHierarchy
+          - 'excel!Excel.PivotHierarchy:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotHierarchy.load_2
+  - uid: 'excel!Excel.PivotHierarchy#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -139,7 +139,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.PivotHierarchy;'
       return:
         type:
-          - excel.Excel.PivotHierarchy
+          - 'excel!Excel.PivotHierarchy:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -148,7 +148,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.PivotHierarchy.name
+  - uid: 'excel!Excel.PivotHierarchy#name:member'
     summary: |-
       Name of the PivotHierarchy.
 
@@ -163,7 +163,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.PivotHierarchy.set
+  - uid: 'excel!Excel.PivotHierarchy#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -193,7 +193,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.PivotHierarchy.set_1
+  - uid: 'excel!Excel.PivotHierarchy#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -210,8 +210,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.PivotHierarchy
-  - uid: excel.Excel.PivotHierarchy.toJSON
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.PivotHierarchy#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -227,5 +227,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotHierarchyData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotHierarchyData
+          - 'excel!Excel.Interfaces.PivotHierarchyData:interface'
         description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.RichText
+  - uid: 'onenote!OneNote.RichText:class'
     summary: |-
       Represents a RichText object in a Paragraph.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.RichText.context
-      - onenote.OneNote.RichText.getHtml
-      - onenote.OneNote.RichText.id
-      - onenote.OneNote.RichText.languageId
-      - onenote.OneNote.RichText.load
-      - onenote.OneNote.RichText.load_1
-      - onenote.OneNote.RichText.load_2
-      - onenote.OneNote.RichText.paragraph
-      - onenote.OneNote.RichText.text
-      - onenote.OneNote.RichText.toJSON
-      - onenote.OneNote.RichText.track
-      - onenote.OneNote.RichText.untrack
-  - uid: onenote.OneNote.RichText.context
+      - 'onenote!OneNote.RichText#context:member'
+      - 'onenote!OneNote.RichText#getHtml:member(1)'
+      - 'onenote!OneNote.RichText#id:member'
+      - 'onenote!OneNote.RichText#languageId:member'
+      - 'onenote!OneNote.RichText#load:member(1)'
+      - 'onenote!OneNote.RichText#load:member(2)'
+      - 'onenote!OneNote.RichText#load:member(3)'
+      - 'onenote!OneNote.RichText#paragraph:member'
+      - 'onenote!OneNote.RichText#text:member'
+      - 'onenote!OneNote.RichText#toJSON:member(1)'
+      - 'onenote!OneNote.RichText#track:member(1)'
+      - 'onenote!OneNote.RichText#untrack:member(1)'
+  - uid: 'onenote!OneNote.RichText#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -39,8 +39,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.RichText.getHtml
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.RichText#getHtml:member(1)'
     summary: |-
       Get the HTML of the rich text
 
@@ -56,7 +56,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: The html of the rich text
-  - uid: onenote.OneNote.RichText.id
+  - uid: 'onenote!OneNote.RichText#id:member'
     summary: |-
       Gets the ID of the RichText object. Read-only.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.RichText.languageId
+  - uid: 'onenote!OneNote.RichText#languageId:member'
     summary: |-
       The language id of the text. Read-only.
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.RichText.load
+  - uid: 'onenote!OneNote.RichText#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -117,14 +117,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.RichTextLoadOptions): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.RichTextLoadOptions
-  - uid: onenote.OneNote.RichText.load_1
+            - 'onenote!OneNote.Interfaces.RichTextLoadOptions:interface'
+  - uid: 'onenote!OneNote.RichText#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -137,77 +137,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the collection of pageContent items from the page.
-              var pageContents = context.application.getActivePage().contents;
-
-              // Get the first PageContent on the page, and then get its outline's paragraphs.
-              var outlinePageContents = ;
-              var paragraphs = ;
-              var richTextParagraphs = ;
-              // Queue a command to load the id and type of each page content in the outline.
-              pageContents.load("id,type");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      // Load all page contents of type Outline
-                      $.each(pageContents.items, function(index, pageContent) {
-                          if(pageContent.type == 'Outline')
-                          {
-                              pageContent.load('outline,outline/paragraphs,outline/paragraphs/type');
-                              outlinePageContents.push(pageContent);
-                          }
-                      });
-                      return context.sync();
-                  })
-                  .then(function () {
-                      // Load all rich text paragraphs across outlines
-                      $.each(outlinePageContents, function(index, outlinePageContent) {
-                          var outline = outlinePageContent.outline;
-                          paragraphs = paragraphs.concat(outline.paragraphs.items);
-                      });
-                      $.each(paragraphs, function(index, paragraph) {
-                          if(paragraph.type == 'RichText')
-                          {
-                              richTextParagraphs.push(paragraph);
-                              paragraph.load("id,richText/text");
-                          }
-                      });
-                      return context.sync();
-                  })
-                  .then(function () {
-                      // Display all rich text paragraphs to the console
-                      $.each(richTextParagraphs, function(index, richTextParagraph) {
-                          var richText = richTextParagraph.richText;
-                          console.log(
-                              "Paragraph found with richtext content : " + 
-                              richText.text + " and richtext id : " + richText.id);
-                      });
-                      return context.sync();
-                  });
-          });
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
-          ```
+          - 'onenote!OneNote.RichText:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.RichText.load_2
+  - uid: 'onenote!OneNote.RichText#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -220,7 +157,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -229,7 +166,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.RichText.paragraph
+  - uid: 'onenote!OneNote.RichText#paragraph:member'
     summary: |-
       Gets the Paragraph object that contains the RichText object. Read-only.
 
@@ -243,8 +180,8 @@ items:
       content: 'readonly paragraph: OneNote.Paragraph;'
       return:
         type:
-          - onenote.OneNote.Paragraph
-  - uid: onenote.OneNote.RichText.text
+          - 'onenote!OneNote.Paragraph:class'
+  - uid: 'onenote!OneNote.RichText#text:member'
     summary: |-
       Gets the text content of the RichText object. Read-only.
 
@@ -259,7 +196,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.RichText.toJSON
+  - uid: 'onenote!OneNote.RichText#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -275,9 +212,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.RichTextData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.RichTextData
+          - 'onenote!OneNote.Interfaces.RichTextData:interface'
         description: ''
-  - uid: onenote.OneNote.RichText.track
+  - uid: 'onenote!OneNote.RichText#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -293,9 +230,9 @@ items:
       content: 'track(): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: ''
-  - uid: onenote.OneNote.RichText.untrack
+  - uid: 'onenote!OneNote.RichText#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -310,5 +247,5 @@ items:
       content: 'untrack(): OneNote.RichText;'
       return:
         type:
-          - onenote.OneNote.RichText
+          - 'onenote!OneNote.RichText:class'
         description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ListDataValidation
+  - uid: 'excel!Excel.ListDataValidation:interface'
     summary: |-
       Represents the List data validation criteria.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ListDataValidation.inCellDropDown
-      - excel.Excel.ListDataValidation.source
-  - uid: excel.Excel.ListDataValidation.inCellDropDown
+      - 'excel!Excel.ListDataValidation#inCellDropDown:member'
+      - 'excel!Excel.ListDataValidation#source:member'
+  - uid: 'excel!Excel.ListDataValidation#inCellDropDown:member'
     summary: |-
       Displays the list in cell drop down or not, it defaults to true.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ListDataValidation.source
+  - uid: 'excel!Excel.ListDataValidation#source:member'
     summary: >-
       Source of the list for data validation When setting the value, it can be passed in as a Excel Range object, or a
       string that contains comma separated number, boolean or date.

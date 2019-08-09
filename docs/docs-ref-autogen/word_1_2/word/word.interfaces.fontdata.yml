@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.FontData
+  - uid: 'word!Word.Interfaces.FontData:interface'
     summary: An interface describing the data returned by calling "font.toJSON()".
     name: Word.Interfaces.FontData
     fullName: Word.Interfaces.FontData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.FontData.bold
-      - word.Word.Interfaces.FontData.color
-      - word.Word.Interfaces.FontData.doubleStrikeThrough
-      - word.Word.Interfaces.FontData.highlightColor
-      - word.Word.Interfaces.FontData.italic
-      - word.Word.Interfaces.FontData.name
-      - word.Word.Interfaces.FontData.size
-      - word.Word.Interfaces.FontData.strikeThrough
-      - word.Word.Interfaces.FontData.subscript
-      - word.Word.Interfaces.FontData.superscript
-      - word.Word.Interfaces.FontData.underline
-  - uid: word.Word.Interfaces.FontData.bold
+      - 'word!Word.Interfaces.FontData#bold:member'
+      - 'word!Word.Interfaces.FontData#color:member'
+      - 'word!Word.Interfaces.FontData#doubleStrikeThrough:member'
+      - 'word!Word.Interfaces.FontData#highlightColor:member'
+      - 'word!Word.Interfaces.FontData#italic:member'
+      - 'word!Word.Interfaces.FontData#name:member'
+      - 'word!Word.Interfaces.FontData#size:member'
+      - 'word!Word.Interfaces.FontData#strikeThrough:member'
+      - 'word!Word.Interfaces.FontData#subscript:member'
+      - 'word!Word.Interfaces.FontData#superscript:member'
+      - 'word!Word.Interfaces.FontData#underline:member'
+  - uid: 'word!Word.Interfaces.FontData#bold:member'
     summary: >-
       Gets or sets a value that indicates whether the font is bold. True if the font is formatted as bold, otherwise,
       false.
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontData.color
+  - uid: 'word!Word.Interfaces.FontData#color:member'
     summary: >-
       Gets or sets the color for the specified font. You can provide the value in the '\#RRGGBB' format or the color
       name.
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.FontData.doubleStrikeThrough
+  - uid: 'word!Word.Interfaces.FontData#doubleStrikeThrough:member'
     summary: >-
       Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as
       double strikethrough text, otherwise, false.
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontData.highlightColor
+  - uid: 'word!Word.Interfaces.FontData#highlightColor:member'
     summary: >-
       Gets or sets the highlight color. To set it, use a value either in the '\#RRGGBB' format or the color name. To
       remove highlight color, set it to null. The returned highlight color can be in the '\#RRGGBB' format, an empty
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.FontData.italic
+  - uid: 'word!Word.Interfaces.FontData#italic:member'
     summary: >-
       Gets or sets a value that indicates whether the font is italicized. True if the font is italicized, otherwise,
       false.
@@ -112,7 +112,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontData.name
+  - uid: 'word!Word.Interfaces.FontData#name:member'
     summary: |-
       Gets or sets a value that represents the name of the font.
 
@@ -127,7 +127,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.FontData.size
+  - uid: 'word!Word.Interfaces.FontData#size:member'
     summary: |-
       Gets or sets a value that represents the font size in points.
 
@@ -142,7 +142,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.FontData.strikeThrough
+  - uid: 'word!Word.Interfaces.FontData#strikeThrough:member'
     summary: >-
       Gets or sets a value that indicates whether the font has a strikethrough. True if the font is formatted as
       strikethrough text, otherwise, false.
@@ -159,7 +159,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontData.subscript
+  - uid: 'word!Word.Interfaces.FontData#subscript:member'
     summary: >-
       Gets or sets a value that indicates whether the font is a subscript. True if the font is formatted as subscript,
       otherwise, false.
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontData.superscript
+  - uid: 'word!Word.Interfaces.FontData#superscript:member'
     summary: >-
       Gets or sets a value that indicates whether the font is a superscript. True if the font is formatted as
       superscript, otherwise, false.
@@ -193,7 +193,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.FontData.underline
+  - uid: 'word!Word.Interfaces.FontData#underline:member'
     summary: |-
       Gets or sets a value that indicates the font's underline type. 'None' if the font is not underlined.
 

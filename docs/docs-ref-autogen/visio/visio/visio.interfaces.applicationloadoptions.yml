@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ApplicationLoadOptions
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
     summary: |-
       Represents the Application.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ApplicationLoadOptions.$all
-      - visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
-      - visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
-  - uid: visio.Visio.Interfaces.ApplicationLoadOptions.$all
+      - 'visio!Visio.Interfaces.ApplicationLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.ApplicationLoadOptions#showBorders:member'
+      - 'visio!Visio.Interfaces.ApplicationLoadOptions#showToolbars:member'
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showBorders
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#showBorders:member'
     summary: |-
       Show or hide the iFrame application borders.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ApplicationLoadOptions.showToolbars
+  - uid: 'visio!Visio.Interfaces.ApplicationLoadOptions#showToolbars:member'
     summary: |-
       Show or hide the standard toolbars.
 

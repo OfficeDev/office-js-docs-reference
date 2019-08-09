@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.RequirementSetSupport
+  - uid: 'office!Office.RequirementSetSupport:interface'
     summary: Provides information about what Requirement Sets are supported in current environment.
     name: Office.RequirementSetSupport
     fullName: Office.RequirementSetSupport
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.RequirementSetSupport.isSetSupported
-  - uid: office.Office.RequirementSetSupport.isSetSupported
+      - 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
+  - uid: 'office!Office.RequirementSetSupport#isSetSupported:member(1)'
     summary: Check if the specified requirement set is supported by the host Office application.
     name: 'isSetSupported(name, minVersion)'
     fullName: 'isSetSupported(name, minVersion)'

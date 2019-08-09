@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData:interface'
     summary: An interface describing the data returned by calling "conditionalRangeBorderCollection.toJSON()".
     name: Excel.Interfaces.ConditionalRangeBorderCollectionData
     fullName: Excel.Interfaces.ConditionalRangeBorderCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeBorderCollectionData.items
-  - uid: excel.Excel.Interfaces.ConditionalRangeBorderCollectionData.items
+      - 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeBorderCollectionData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ApplicationUpdateData
+  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData:interface'
     summary: 'An interface for updating data on the Application object, for use in "application.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.ApplicationUpdateData
     fullName: Excel.Interfaces.ApplicationUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
-  - uid: excel.Excel.Interfaces.ApplicationUpdateData.calculationMode
+      - 'excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member'
+  - uid: 'excel!Excel.Interfaces.ApplicationUpdateData#calculationMode:member'
     summary: >-
       Returns the calculation mode used in the workbook, as defined by the constants in Excel.CalculationMode. Possible
       values are: `Automatic`<!-- -->, where Excel controls recalculation; `AutomaticExceptTables`<!-- -->, where Excel

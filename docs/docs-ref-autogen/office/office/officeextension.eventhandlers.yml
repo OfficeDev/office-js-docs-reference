@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.EventHandlers
+  - uid: 'office!OfficeExtension.EventHandlers:class'
     name: OfficeExtension.EventHandlers
     fullName: OfficeExtension.EventHandlers
     langs:
       - typeScript
     type: class
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.EventHandlers.(constructor)
-      - office.OfficeExtension.EventHandlers.add
-      - office.OfficeExtension.EventHandlers.remove
-  - uid: office.OfficeExtension.EventHandlers.(constructor)
+      - 'office!OfficeExtension.EventHandlers:constructor(1)'
+      - 'office!OfficeExtension.EventHandlers#add:member(1)'
+      - 'office!OfficeExtension.EventHandlers#remove:member(1)'
+  - uid: 'office!OfficeExtension.EventHandlers:constructor(1)'
     summary: Constructs a new instance of the `EventHandlers` class
     name: '(constructor)(context, parentObject, name, eventInfo)'
     fullName: '(constructor)(context, parentObject, name, eventInfo)'
@@ -24,11 +24,11 @@ items:
         - id: context
           description: ''
           type:
-            - office.OfficeExtension.ClientRequestContext
+            - 'office!OfficeExtension.ClientRequestContext:class'
         - id: parentObject
           description: ''
           type:
-            - office.OfficeExtension.ClientObject
+            - 'office!OfficeExtension.ClientObject:class'
         - id: name
           description: ''
           type:
@@ -37,7 +37,7 @@ items:
           description: ''
           type:
             - EventInfo<T>
-  - uid: office.OfficeExtension.EventHandlers.add
+  - uid: 'office!OfficeExtension.EventHandlers#add:member(1)'
     name: add(handler)
     fullName: add(handler)
     langs:
@@ -54,7 +54,7 @@ items:
           description: ''
           type:
             - '(args: T) => Promise<any>'
-  - uid: office.OfficeExtension.EventHandlers.remove
+  - uid: 'office!OfficeExtension.EventHandlers#remove:member(1)'
     name: remove(handler)
     fullName: remove(handler)
     langs:

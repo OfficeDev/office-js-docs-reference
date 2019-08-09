@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ThreeSignsSet
+  - uid: 'excel!Excel.ThreeSignsSet:interface'
     name: Excel.ThreeSignsSet
     fullName: Excel.ThreeSignsSet
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ThreeSignsSet.greenCircle
-      - excel.Excel.ThreeSignsSet.redDiamond
-      - excel.Excel.ThreeSignsSet.yellowTriangle
-  - uid: excel.Excel.ThreeSignsSet.greenCircle
+      - 'excel!Excel.ThreeSignsSet#greenCircle:member'
+      - 'excel!Excel.ThreeSignsSet#redDiamond:member'
+      - 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
+  - uid: 'excel!Excel.ThreeSignsSet#greenCircle:member'
     name: greenCircle
     fullName: greenCircle
     langs:
@@ -21,8 +21,8 @@ items:
       content: 'greenCircle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeSignsSet.redDiamond
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSignsSet#redDiamond:member'
     name: redDiamond
     fullName: redDiamond
     langs:
@@ -32,8 +32,8 @@ items:
       content: 'redDiamond: Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.ThreeSignsSet.yellowTriangle
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.ThreeSignsSet#yellowTriangle:member'
     name: yellowTriangle
     fullName: yellowTriangle
     langs:
@@ -43,4 +43,4 @@ items:
       content: 'yellowTriangle: Icon;'
       return:
         type:
-          - excel.Excel.Icon
+          - 'excel!Excel.Icon:interface'

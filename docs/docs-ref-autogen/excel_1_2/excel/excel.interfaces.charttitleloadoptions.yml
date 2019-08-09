@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions:interface'
     summary: |-
       Represents a chart title object of a chart.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTitleLoadOptions.$all
-      - excel.Excel.Interfaces.ChartTitleLoadOptions.format
-      - excel.Excel.Interfaces.ChartTitleLoadOptions.overlay
-      - excel.Excel.Interfaces.ChartTitleLoadOptions.text
-      - excel.Excel.Interfaces.ChartTitleLoadOptions.visible
-  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#text:member'
+      - 'excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart title, which includes fill and font formatting.
 
@@ -42,8 +42,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartTitleFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTitleFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions.overlay
+          - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#overlay:member'
     summary: |-
       Boolean value representing if the chart title will overlay the chart or not.
 
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions.text
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#text:member'
     summary: |-
       Represents the title text of a chart.
 
@@ -73,7 +73,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTitleLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartTitleLoadOptions#visible:member'
     summary: |-
       A boolean value the represents the visibility of a chart title object.
 

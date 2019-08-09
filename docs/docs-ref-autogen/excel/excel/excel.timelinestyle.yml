@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TimelineStyle
+  - uid: 'excel!Excel.TimelineStyle:class'
     summary: >-
       Represents a Timeline style, which defines style elements by region in the Timeline.
 
@@ -15,20 +15,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TimelineStyle.context
-      - excel.Excel.TimelineStyle.delete
-      - excel.Excel.TimelineStyle.duplicate
-      - excel.Excel.TimelineStyle.load
-      - excel.Excel.TimelineStyle.load_1
-      - excel.Excel.TimelineStyle.load_2
-      - excel.Excel.TimelineStyle.name
-      - excel.Excel.TimelineStyle.readOnly
-      - excel.Excel.TimelineStyle.set
-      - excel.Excel.TimelineStyle.set_1
-      - excel.Excel.TimelineStyle.toJSON
-  - uid: excel.Excel.TimelineStyle.context
+      - 'excel!Excel.TimelineStyle#context:member'
+      - 'excel!Excel.TimelineStyle#delete:member(1)'
+      - 'excel!Excel.TimelineStyle#duplicate:member(1)'
+      - 'excel!Excel.TimelineStyle#load:member(1)'
+      - 'excel!Excel.TimelineStyle#load:member(2)'
+      - 'excel!Excel.TimelineStyle#load:member(3)'
+      - 'excel!Excel.TimelineStyle#name:member'
+      - 'excel!Excel.TimelineStyle#readOnly:member'
+      - 'excel!Excel.TimelineStyle#set:member(1)'
+      - 'excel!Excel.TimelineStyle#set:member(2)'
+      - 'excel!Excel.TimelineStyle#toJSON:member(1)'
+  - uid: 'excel!Excel.TimelineStyle#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -42,8 +42,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TimelineStyle.delete
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TimelineStyle#delete:member(1)'
     summary: >-
       Deletes the TableStyle.
 
@@ -62,7 +62,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.TimelineStyle.duplicate
+  - uid: 'excel!Excel.TimelineStyle#duplicate:member(1)'
     summary: >-
       Creates a duplicate of this TimelineStyle with copies of all the style elements.
 
@@ -79,9 +79,9 @@ items:
       content: 'duplicate(): Excel.TimelineStyle;'
       return:
         type:
-          - excel.Excel.TimelineStyle
+          - 'excel!Excel.TimelineStyle:class'
         description: The new TimelineStyle object that has been duplicated from this TimelineStyle.
-  - uid: excel.Excel.TimelineStyle.load
+  - uid: 'excel!Excel.TimelineStyle#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -113,14 +113,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TimelineStyleLoadOptions): Excel.TimelineStyle;'
       return:
         type:
-          - excel.Excel.TimelineStyle
+          - 'excel!Excel.TimelineStyle:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TimelineStyleLoadOptions
-  - uid: excel.Excel.TimelineStyle.load_1
+            - 'excel!Excel.Interfaces.TimelineStyleLoadOptions:interface'
+  - uid: 'excel!Excel.TimelineStyle#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -134,14 +134,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TimelineStyle;'
       return:
         type:
-          - excel.Excel.TimelineStyle
+          - 'excel!Excel.TimelineStyle:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TimelineStyle.load_2
+  - uid: 'excel!Excel.TimelineStyle#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -155,7 +155,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TimelineStyle;'
       return:
         type:
-          - excel.Excel.TimelineStyle
+          - 'excel!Excel.TimelineStyle:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -164,7 +164,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TimelineStyle.name
+  - uid: 'excel!Excel.TimelineStyle#name:member'
     summary: >-
       Gets the name of the TimelineStyle.
 
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.TimelineStyle.readOnly
+  - uid: 'excel!Excel.TimelineStyle#readOnly:member'
     summary: >-
       Specifies whether this TimelineStyle object is read-only. Read-only.
 
@@ -200,7 +200,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.TimelineStyle.set
+  - uid: 'excel!Excel.TimelineStyle#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -231,7 +231,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.TimelineStyle.set_1
+  - uid: 'excel!Excel.TimelineStyle#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     isPreview: true
     name: set(properties)
@@ -249,8 +249,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TimelineStyle
-  - uid: excel.Excel.TimelineStyle.toJSON
+            - 'excel!Excel.TimelineStyle:class'
+  - uid: 'excel!Excel.TimelineStyle#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -267,5 +267,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TimelineStyleData;'
       return:
         type:
-          - excel.Excel.Interfaces.TimelineStyleData
+          - 'excel!Excel.Interfaces.TimelineStyleData:interface'
         description: ''

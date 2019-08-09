@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office-runtime
+  - uid: office-runtime!
     name: office-runtime
     fullName: office-runtime
     langs:
       - typeScript
     type: package
     children:
-      - office-runtime.OfficeRuntime.Dialog
-      - office-runtime.OfficeRuntime.displayWebDialog
-      - office-runtime.OfficeRuntime.DisplayWebDialogOptions
-      - office-runtime.OfficeRuntime.Storage
-  - uid: office-runtime.OfficeRuntime.displayWebDialog
+      - 'office-runtime!OfficeRuntime.Dialog:interface'
+      - 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
+      - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
+      - 'office-runtime!OfficeRuntime.Storage:interface'
+  - uid: 'office-runtime!OfficeRuntime.displayWebDialog:function(1)'
     summary: Method that enables a pop up web dialog box.
-    name: OfficeRuntime.displayWebDialog
-    fullName: OfficeRuntime.displayWebDialog
+    name: 'OfficeRuntime.displayWebDialog(url, options)'
+    fullName: 'OfficeRuntime.displayWebDialog(url, options)'
     langs:
       - typeScript
     type: function
@@ -32,11 +32,11 @@ items:
         - id: options
           description: Optional parameter. Must be of type DisplayWebDialogOptions.
           type:
-            - office-runtime.OfficeRuntime.DisplayWebDialogOptions
+            - 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
 references:
-  - uid: office-runtime.OfficeRuntime.Dialog
+  - uid: 'office-runtime!OfficeRuntime.Dialog:interface'
     name: OfficeRuntime.Dialog
-  - uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+  - uid: 'office-runtime!OfficeRuntime.DisplayWebDialogOptions:interface'
     name: OfficeRuntime.DisplayWebDialogOptions
-  - uid: office-runtime.OfficeRuntime.Storage
+  - uid: 'office-runtime!OfficeRuntime.Storage:interface'
     name: OfficeRuntime.Storage

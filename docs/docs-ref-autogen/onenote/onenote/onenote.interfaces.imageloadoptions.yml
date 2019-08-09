@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions:interface'
     summary: |-
       Represents an Image. An Image can be a direct child of a PageContent object or a Paragraph object.
 
@@ -10,18 +10,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ImageLoadOptions.$all
-      - onenote.OneNote.Interfaces.ImageLoadOptions.description
-      - onenote.OneNote.Interfaces.ImageLoadOptions.height
-      - onenote.OneNote.Interfaces.ImageLoadOptions.hyperlink
-      - onenote.OneNote.Interfaces.ImageLoadOptions.id
-      - onenote.OneNote.Interfaces.ImageLoadOptions.ocrData
-      - onenote.OneNote.Interfaces.ImageLoadOptions.pageContent
-      - onenote.OneNote.Interfaces.ImageLoadOptions.paragraph
-      - onenote.OneNote.Interfaces.ImageLoadOptions.width
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#description:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#height:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#hyperlink:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#ocrData:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#pageContent:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member'
+      - 'onenote!OneNote.Interfaces.ImageLoadOptions#width:member'
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.description
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#description:member'
     summary: |-
       Gets or sets the description of the Image.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.height
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#height:member'
     summary: |-
       Gets or sets the height of the Image layout.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.hyperlink
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#hyperlink:member'
     summary: |-
       Gets or sets the hyperlink of the Image.
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#id:member'
     summary: |-
       Gets the ID of the Image object. Read-only.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.ocrData
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#ocrData:member'
     summary: |-
       Gets the data obtained by OCR (Optical Character Recognition) of this Image, such as OCR text and language.
 
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.pageContent
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#pageContent:member'
     summary: >-
       Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent.
       This object defines the position of the Image on the page.
@@ -123,8 +123,8 @@ items:
       content: 'pageContent?: OneNote.Interfaces.PageContentLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.PageContentLoadOptions
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.paragraph
+          - 'onenote!OneNote.Interfaces.PageContentLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#paragraph:member'
     summary: |-
       Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph.
 
@@ -138,8 +138,8 @@ items:
       content: 'paragraph?: OneNote.Interfaces.ParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.ImageLoadOptions.width
+          - 'onenote!OneNote.Interfaces.ParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.ImageLoadOptions#width:member'
     summary: |-
       Gets or sets the width of the Image layout.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions:interface'
     summary: |-
       Provides access to the office art formatting for chart title.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartTitleFormatLoadOptions.$all
-      - excel.Excel.Interfaces.ChartTitleFormatLoadOptions.border
-      - excel.Excel.Interfaces.ChartTitleFormatLoadOptions.font
-  - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member'
+      - 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member'
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions.border
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#border:member'
     summary: |-
       Represents the border format of chart title, which includes color, linestyle, and weight.
 
@@ -40,8 +40,8 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderLoadOptions
-  - uid: excel.Excel.Interfaces.ChartTitleFormatLoadOptions.font
+          - 'excel!Excel.Interfaces.ChartBorderLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartTitleFormatLoadOptions#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for an object.
 
@@ -55,4 +55,4 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontLoadOptions
+          - 'excel!Excel.Interfaces.ChartFontLoadOptions:interface'

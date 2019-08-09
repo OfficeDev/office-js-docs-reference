@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the TextConditionalFormat object, for use in "textConditionalFormat.set(<!--
       -->{ ... }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextConditionalFormatUpdateData.format
-      - excel.Excel.Interfaces.TextConditionalFormatUpdateData.rule
-  - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData.format
+      - 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member'
+      - 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member'
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
-  - uid: excel.Excel.Interfaces.TextConditionalFormatUpdateData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.TextConditionalFormatUpdateData#rule:member'
     summary: |-
       The rule of the conditional format.
 
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.ConditionalTextComparisonRule;'
       return:
         type:
-          - excel.Excel.ConditionalTextComparisonRule
+          - 'excel!Excel.ConditionalTextComparisonRule:interface'

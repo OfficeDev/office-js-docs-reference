@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SectionCollectionData
+  - uid: 'word!Word.Interfaces.SectionCollectionData:interface'
     summary: An interface describing the data returned by calling "sectionCollection.toJSON()".
     name: Word.Interfaces.SectionCollectionData
     fullName: Word.Interfaces.SectionCollectionData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SectionCollectionData.items
-  - uid: word.Word.Interfaces.SectionCollectionData.items
+      - 'word!Word.Interfaces.SectionCollectionData#items:member'
+  - uid: 'word!Word.Interfaces.SectionCollectionData#items:member'
     name: items
     fullName: items
     langs:

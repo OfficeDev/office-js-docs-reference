@@ -1,35 +1,35 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableData
+  - uid: 'word!Word.Interfaces.TableData:interface'
     summary: An interface describing the data returned by calling "table.toJSON()".
     name: Word.Interfaces.TableData
     fullName: Word.Interfaces.TableData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableData.alignment
-      - word.Word.Interfaces.TableData.font
-      - word.Word.Interfaces.TableData.headerRowCount
-      - word.Word.Interfaces.TableData.horizontalAlignment
-      - word.Word.Interfaces.TableData.isUniform
-      - word.Word.Interfaces.TableData.nestingLevel
-      - word.Word.Interfaces.TableData.rowCount
-      - word.Word.Interfaces.TableData.rows
-      - word.Word.Interfaces.TableData.shadingColor
-      - word.Word.Interfaces.TableData.style
-      - word.Word.Interfaces.TableData.styleBandedColumns
-      - word.Word.Interfaces.TableData.styleBandedRows
-      - word.Word.Interfaces.TableData.styleBuiltIn
-      - word.Word.Interfaces.TableData.styleFirstColumn
-      - word.Word.Interfaces.TableData.styleLastColumn
-      - word.Word.Interfaces.TableData.styleTotalRow
-      - word.Word.Interfaces.TableData.tables
-      - word.Word.Interfaces.TableData.values
-      - word.Word.Interfaces.TableData.verticalAlignment
-      - word.Word.Interfaces.TableData.width
-  - uid: word.Word.Interfaces.TableData.alignment
+      - 'word!Word.Interfaces.TableData#alignment:member'
+      - 'word!Word.Interfaces.TableData#font:member'
+      - 'word!Word.Interfaces.TableData#headerRowCount:member'
+      - 'word!Word.Interfaces.TableData#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableData#isUniform:member'
+      - 'word!Word.Interfaces.TableData#nestingLevel:member'
+      - 'word!Word.Interfaces.TableData#rowCount:member'
+      - 'word!Word.Interfaces.TableData#rows:member'
+      - 'word!Word.Interfaces.TableData#shadingColor:member'
+      - 'word!Word.Interfaces.TableData#style:member'
+      - 'word!Word.Interfaces.TableData#styleBandedColumns:member'
+      - 'word!Word.Interfaces.TableData#styleBandedRows:member'
+      - 'word!Word.Interfaces.TableData#styleBuiltIn:member'
+      - 'word!Word.Interfaces.TableData#styleFirstColumn:member'
+      - 'word!Word.Interfaces.TableData#styleLastColumn:member'
+      - 'word!Word.Interfaces.TableData#styleTotalRow:member'
+      - 'word!Word.Interfaces.TableData#tables:member'
+      - 'word!Word.Interfaces.TableData#values:member'
+      - 'word!Word.Interfaces.TableData#verticalAlignment:member'
+      - 'word!Word.Interfaces.TableData#width:member'
+  - uid: 'word!Word.Interfaces.TableData#alignment:member'
     summary: |-
       Gets or sets the alignment of the table against the page column. The value can be 'Left', 'Centered', or 'Right'.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.TableData.font
+  - uid: 'word!Word.Interfaces.TableData#font:member'
     summary: |-
       Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
 
@@ -58,8 +58,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.TableData.headerRowCount
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.TableData#headerRowCount:member'
     summary: |-
       Gets and sets the number of header rows.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableData.horizontalAlignment
+  - uid: 'word!Word.Interfaces.TableData#horizontalAlignment:member'
     summary: >-
       Gets and sets the horizontal alignment of every cell in the table. The value can be 'Left', 'Centered', 'Right',
       or 'Justified'.
@@ -91,7 +91,7 @@ items:
       return:
         type:
           - Word.Alignment | "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"
-  - uid: word.Word.Interfaces.TableData.isUniform
+  - uid: 'word!Word.Interfaces.TableData#isUniform:member'
     summary: |-
       Indicates whether all of the table rows are uniform. Read-only.
 
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableData.nestingLevel
+  - uid: 'word!Word.Interfaces.TableData#nestingLevel:member'
     summary: |-
       Gets the nesting level of the table. Top-level tables have level 1. Read-only.
 
@@ -121,7 +121,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableData.rowCount
+  - uid: 'word!Word.Interfaces.TableData#rowCount:member'
     summary: |-
       Gets the number of rows in the table. Read-only.
 
@@ -136,7 +136,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.Interfaces.TableData.rows
+  - uid: 'word!Word.Interfaces.TableData#rows:member'
     summary: |-
       Gets all of the table rows. Read-only.
 
@@ -151,7 +151,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.TableRowData[]'
-  - uid: word.Word.Interfaces.TableData.shadingColor
+  - uid: 'word!Word.Interfaces.TableData#shadingColor:member'
     summary: |-
       Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by using the color name.
 
@@ -166,7 +166,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableData.style
+  - uid: 'word!Word.Interfaces.TableData#style:member'
     summary: >-
       Gets or sets the style name for the table. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -183,7 +183,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.TableData.styleBandedColumns
+  - uid: 'word!Word.Interfaces.TableData#styleBandedColumns:member'
     summary: |-
       Gets and sets whether the table has banded columns.
 
@@ -198,7 +198,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableData.styleBandedRows
+  - uid: 'word!Word.Interfaces.TableData#styleBandedRows:member'
     summary: |-
       Gets and sets whether the table has banded rows.
 
@@ -213,7 +213,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableData.styleBuiltIn
+  - uid: 'word!Word.Interfaces.TableData#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the table. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.
@@ -294,7 +294,7 @@ items:
             "ListTable6Colorful_Accent5" | "ListTable6Colorful_Accent6" | "ListTable7Colorful" |
             "ListTable7Colorful_Accent1" | "ListTable7Colorful_Accent2" | "ListTable7Colorful_Accent3" |
             "ListTable7Colorful_Accent4" | "ListTable7Colorful_Accent5" | "ListTable7Colorful_Accent6"
-  - uid: word.Word.Interfaces.TableData.styleFirstColumn
+  - uid: 'word!Word.Interfaces.TableData#styleFirstColumn:member'
     summary: |-
       Gets and sets whether the table has a first column with a special style.
 
@@ -309,7 +309,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableData.styleLastColumn
+  - uid: 'word!Word.Interfaces.TableData#styleLastColumn:member'
     summary: |-
       Gets and sets whether the table has a last column with a special style.
 
@@ -324,7 +324,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableData.styleTotalRow
+  - uid: 'word!Word.Interfaces.TableData#styleTotalRow:member'
     summary: |-
       Gets and sets whether the table has a total (last) row with a special style.
 
@@ -339,7 +339,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableData.tables
+  - uid: 'word!Word.Interfaces.TableData#tables:member'
     summary: |-
       Gets the child tables nested one level deeper. Read-only.
 
@@ -354,7 +354,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.TableData[]'
-  - uid: word.Word.Interfaces.TableData.values
+  - uid: 'word!Word.Interfaces.TableData#values:member'
     summary: |-
       Gets and sets the text values in the table, as a 2D Javascript array.
 
@@ -369,7 +369,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: word.Word.Interfaces.TableData.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableData#verticalAlignment:member'
     summary: |-
       Gets and sets the vertical alignment of every cell in the table. The value can be 'Top', 'Center', or 'Bottom'.
 
@@ -384,7 +384,7 @@ items:
       return:
         type:
           - Word.VerticalAlignment | "Mixed" | "Top" | "Center" | "Bottom"
-  - uid: word.Word.Interfaces.TableData.width
+  - uid: 'word!Word.Interfaces.TableData#width:member'
     summary: |-
       Gets and sets the width of the table in points.
 

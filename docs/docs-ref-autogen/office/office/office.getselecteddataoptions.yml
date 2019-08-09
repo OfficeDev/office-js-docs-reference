@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.GetSelectedDataOptions
+  - uid: 'office!Office.GetSelectedDataOptions:interface'
     summary: Provides options for customizing what data is returned and how it is formatted.
     name: Office.GetSelectedDataOptions
     fullName: Office.GetSelectedDataOptions
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.GetSelectedDataOptions.asyncContext
-      - office.Office.GetSelectedDataOptions.filterType
-      - office.Office.GetSelectedDataOptions.valueFormat
-  - uid: office.Office.GetSelectedDataOptions.asyncContext
+      - 'office!Office.GetSelectedDataOptions#asyncContext:member'
+      - 'office!Office.GetSelectedDataOptions#filterType:member'
+      - 'office!Office.GetSelectedDataOptions#valueFormat:member'
+  - uid: 'office!Office.GetSelectedDataOptions#asyncContext:member'
     summary: >-
       A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult
       object that is passed to a callback.
@@ -26,11 +26,11 @@ items:
       return:
         type:
           - any
-  - uid: office.Office.GetSelectedDataOptions.filterType
+  - uid: 'office!Office.GetSelectedDataOptions#filterType:member'
     summary: >-
       Specify whether to get only the visible (that is, filtered-in) data or all the data. Useful when filtering data.
-      Use [Office.FilterType](xref:office.Office.FilterType) or string equivalent. This parameter is ignored in Word
-      documents.
+      Use [Office.FilterType](xref:office!Office.FilterType:enum) or string equivalent. This parameter is ignored in
+      Word documents.
     name: filterType
     fullName: filterType
     langs:
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - Office.FilterType | string
-  - uid: office.Office.GetSelectedDataOptions.valueFormat
+  - uid: 'office!Office.GetSelectedDataOptions#valueFormat:member'
     summary: Specify whether the data is formatted. Use Office.ValueFormat or string equivalent.
     name: valueFormat
     fullName: valueFormat

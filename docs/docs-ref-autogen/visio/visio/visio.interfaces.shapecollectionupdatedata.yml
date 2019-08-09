@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ShapeCollection object, for use in "shapeCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeCollectionUpdateData.items
-  - uid: visio.Visio.Interfaces.ShapeCollectionUpdateData.items
+      - 'visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member'
+  - uid: 'visio!Visio.Interfaces.ShapeCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

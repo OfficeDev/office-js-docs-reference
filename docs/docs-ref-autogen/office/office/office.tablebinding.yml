@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.TableBinding
+  - uid: 'office!Office.TableBinding:interface'
     summary: 'Represents a binding in two dimensions of rows and columns, optionally with headers.'
     remarks: >-
       The TableBinding object inherits the `id` property, `type` property, `getDataAsync` method, and `setDataAsync`
-      method from the [Office.Binding](xref:office.Office.Binding) object.
+      method from the [Office.Binding](xref:office!Office.Binding:interface) object.
 
 
       For Excel, note that after you establish a table binding, each new row a user adds to the table is automatically
@@ -15,27 +15,27 @@ items:
       - typeScript
     type: interface
     extends:
-      - office.Office.Binding
-    package: office
+      - 'office!Office.Binding:interface'
+    package: office!
     children:
-      - office.Office.TableBinding.addColumnsAsync
-      - office.Office.TableBinding.addColumnsAsync_1
-      - office.Office.TableBinding.addRowsAsync
-      - office.Office.TableBinding.addRowsAsync_1
-      - office.Office.TableBinding.clearFormatsAsync
-      - office.Office.TableBinding.clearFormatsAsync_1
-      - office.Office.TableBinding.deleteAllDataValuesAsync
-      - office.Office.TableBinding.deleteAllDataValuesAsync_1
-      - office.Office.TableBinding.getFormatsAsync
-      - office.Office.TableBinding.getFormatsAsync_1
-      - office.Office.TableBinding.setFormatsAsync
-      - office.Office.TableBinding.setFormatsAsync_1
-      - office.Office.TableBinding.setTableOptionsAsync
-      - office.Office.TableBinding.setTableOptionsAsync_1
-      - office.Office.TableBinding.columnCount
-      - office.Office.TableBinding.hasHeaders
-      - office.Office.TableBinding.rowCount
-  - uid: office.Office.TableBinding.addColumnsAsync
+      - 'office!Office.TableBinding#addColumnsAsync:member(1)'
+      - 'office!Office.TableBinding#addColumnsAsync:member(2)'
+      - 'office!Office.TableBinding#addRowsAsync:member(1)'
+      - 'office!Office.TableBinding#addRowsAsync:member(2)'
+      - 'office!Office.TableBinding#clearFormatsAsync:member(1)'
+      - 'office!Office.TableBinding#clearFormatsAsync:member(2)'
+      - 'office!Office.TableBinding#columnCount:member'
+      - 'office!Office.TableBinding#deleteAllDataValuesAsync:member(1)'
+      - 'office!Office.TableBinding#deleteAllDataValuesAsync:member(2)'
+      - 'office!Office.TableBinding#getFormatsAsync:member(1)'
+      - 'office!Office.TableBinding#getFormatsAsync:member(2)'
+      - 'office!Office.TableBinding#hasHeaders:member'
+      - 'office!Office.TableBinding#rowCount:member'
+      - 'office!Office.TableBinding#setFormatsAsync:member(1)'
+      - 'office!Office.TableBinding#setFormatsAsync:member(2)'
+      - 'office!Office.TableBinding#setTableOptionsAsync:member(1)'
+      - 'office!Office.TableBinding#setTableOptionsAsync:member(2)'
+  - uid: 'office!Office.TableBinding#addColumnsAsync:member(1)'
     summary: Adds the specified data to the table as additional columns.
     remarks: >-
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -62,51 +62,6 @@ items:
 
       Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data
       parameter can't exceed 20,000 in a single call to this method.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example adds a single column with three rows to a bound table with the id "myTable"
-
-      // by passing a TableData object as the data argument of the addColumnsAsync method. To succeed,
-
-      // the table being updated must have three rows.
-
-
-      // Add a column to a binding of type table by passing a TableData object.
-
-      function addColumns() {
-          var myTable = new Office.TableData();
-          myTable.headers = [["Cities"]];
-          myTable.rows = [["Berlin"], ["Roma"], ["Tokyo"]];
-
-          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-              result.value.addColumnsAsync(myTable);
-          });
-      }
-
-
-      // The following example adds a single column with three rows to a bound table with the id myTable
-
-      // by passing an array of arrays ("matrix") as the data argument of the addColumnsAsync method.
-
-      // To succeed, the table being updated must have three rows.
-
-
-      // Add a column to a binding of type table by passing an array of arrays.
-
-      function addColumns() {
-          var myTable = [["Berlin"], ["Roma"], ["Tokyo"]];
-
-          Office.context.document.bindings.getByIdAsync("myTable", function (result) {
-              result.value.addColumnsAsync(myTable);
-          });
-      }
-
-      ```
     name: 'addColumnsAsync(tableData, options, callback)'
     fullName: 'addColumnsAsync(tableData, options, callback)'
     langs:
@@ -130,14 +85,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.addColumnsAsync_1
+  - uid: 'office!Office.TableBinding#addColumnsAsync:member(2)'
     summary: Adds the specified data to the table as additional columns.
     remarks: >-
       To add one or more columns specifying the values of the data and headers, pass a TableData object as the data
@@ -185,10 +140,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.addRowsAsync
+  - uid: 'office!Office.TableBinding#addRowsAsync:member(1)'
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
       The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must
@@ -210,21 +165,6 @@ items:
 
       Additional remark for Excel on the web: The total number of cells in the TableData object passed to the data
       parameter can't exceed 20,000 in a single call to this method.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function addRowsToTable() {
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              var binding = asyncResult.value;
-              binding.addRowsAsync([["6", "k"], ["7", "j"]]);
-          });
-      }
-
-      ```
     name: 'addRowsAsync(rows, options, callback)'
     fullName: 'addRowsAsync(rows, options, callback)'
     langs:
@@ -248,14 +188,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.addRowsAsync_1
+  - uid: 'office!Office.TableBinding#addRowsAsync:member(2)'
     summary: Adds the specified data to the table as additional rows.
     remarks: >-
       The success or failure of an addRowsAsync operation is atomic. That is, the entire add columns operation must
@@ -298,27 +238,15 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.clearFormatsAsync
+  - uid: 'office!Office.TableBinding#clearFormatsAsync:member(1)'
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
       Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table) for more
       information.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example shows how to clear the formatting of the bound table with an ID of "myBinding":
-
-      Office.select("bindings#myBinding").clearFormatsAsync();
-
-      ```
     name: 'clearFormatsAsync(options, callback)'
     fullName: 'clearFormatsAsync(options, callback)'
     langs:
@@ -334,14 +262,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.clearFormatsAsync_1
+  - uid: 'office!Office.TableBinding#clearFormatsAsync:member(2)'
     summary: Clears formatting on the bound table.
     remarks: >-
       See [Format tables in add-ins for
@@ -362,24 +290,24 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.deleteAllDataValuesAsync
+  - uid: 'office!Office.TableBinding#columnCount:member'
+    summary: 'Gets the number of columns in the TableBinding, as an integer value.'
+    name: columnCount
+    fullName: columnCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'office!Office.TableBinding#deleteAllDataValuesAsync:member(1)'
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
-    remarks: |-
-      In Excel, if the table has no header row, this method will delete the table itself.
-
-      #### Examples
-
-      ```javascript
-      function deleteAllRowsFromTable() {
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              var binding = asyncResult.value;
-              binding.deleteAllDataValuesAsync();
-          });
-      }
-      ```
+    remarks: 'In Excel, if the table has no header row, this method will delete the table itself.'
     name: 'deleteAllDataValuesAsync(options, callback)'
     fullName: 'deleteAllDataValuesAsync(options, callback)'
     langs:
@@ -397,14 +325,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.deleteAllDataValuesAsync_1
+  - uid: 'office!Office.TableBinding#deleteAllDataValuesAsync:member(2)'
     summary: 'Deletes all non-header rows and their values in the table, shifting appropriately for the host application.'
     remarks: 'In Excel, if the table has no header row, this method will delete the table itself.'
     name: deleteAllDataValuesAsync(callback)
@@ -422,10 +350,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.getFormatsAsync
+  - uid: 'office!Office.TableBinding#getFormatsAsync:member(1)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
       **Returned format structure**
@@ -477,15 +405,16 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            containing one or more JavaScript objects specifying the formatting of their corresponding cells.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array containing one or more JavaScript objects specifying the formatting of their corresponding
+            cells.
           type:
             - '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
-  - uid: office.Office.TableBinding.getFormatsAsync_1
+  - uid: 'office!Office.TableBinding#getFormatsAsync:member(2)'
     summary: Gets the formatting on specified items in the table.
     remarks: >-
       **Returned format structure**
@@ -537,11 +466,53 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            containing one or more JavaScript objects specifying the formatting of their corresponding cells.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array containing one or more JavaScript objects specifying the formatting of their corresponding
+            cells.
           type:
             - '(result: AsyncResult< ({ cells: any, format: any})[]>) => void'
-  - uid: office.Office.TableBinding.setFormatsAsync
+  - uid: 'office!Office.TableBinding#hasHeaders:member'
+    summary: 'True, if the table has headers; otherwise false.'
+    name: hasHeaders
+    fullName: hasHeaders
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasHeaders: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: 'office!Office.TableBinding#rowCount:member'
+    summary: 'Gets the number of rows in the TableBinding, as an integer value.'
+    remarks: >-
+      When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the
+      Insert tab), both Office host applications create a single row of headers followed by a single blank row. However,
+      if your add-in's script creates a binding for this newly inserted table (for example, by using the
+      [Office.Bindings](xref:office!Office.Bindings:interface)<!-- -->.addFromSelectionAsync method), and then checks
+      the value of the rowCount property, the value returned will differ depending whether the spreadsheet is open in
+      Excel 2013 or Excel on the web.
+
+
+      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
+
+
+      - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
+
+
+      You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the
+      row contains all empty strings.
+    name: rowCount
+    fullName: rowCount
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowCount: number;'
+      return:
+        type:
+          - number
+  - uid: 'office!Office.TableBinding#setFormatsAsync:member(1)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
       **Specifying the cellFormat parameter**
@@ -638,51 +609,6 @@ items:
 
       For more details and examples, see [How to format tables in add-ins for
       Excel](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables#format-a-table)<!-- -->.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Specifying a single target
-
-      // The following example shows a cellFormat value that sets the font color of the header row to red.
-
-      Office.select("bindings#myBinding").setFormatsAsync(
-          [{cells: Office.Table.Headers, format: {fontColor: "red"}}], 
-          function (asyncResult){});
-
-      // Specifying multiple targets
-
-      // The setFormatsAsync method can support formatting multiple targets within the bound table in a 
-
-      // single function call. To do that, you pass a list of objects in the cellFormat array 
-
-      // for each target that you want to format.
-
-      // For example, the following line of code will set the font color of the first row yellow, 
-
-      // and the fourth cell in the third row to have a white border and bold text.
-
-      Office.select("bindings#myBinding").setFormatsAsync(
-          [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
-              {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
-          function (asyncResult){});
-
-      // Additional remarks for Excel Online
-
-      // The number of formatting groups passed to the cellFormat parameter can't exceed 100. 
-
-      // A single formatting group consists of a set of formatting applied to a specified range of cells. 
-
-      // For example, the following call passes two formatting groups to cellFormat.
-
-      Office.select("bindings#myBinding").setFormatsAsync(
-          [{cells: {row: 1}, format: {fontColor: "yellow"}}, 
-              {cells: {row: 3, column: 4}, format: {borderColor: "white", fontStyle: "bold"}}], 
-          function (asyncResult){});
-      ```
     name: 'setFormatsAsync(cellFormat, options, callback)'
     fullName: 'setFormatsAsync(cellFormat, options, callback)'
     langs:
@@ -706,14 +632,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.setFormatsAsync_1
+  - uid: 'office!Office.TableBinding#setFormatsAsync:member(2)'
     summary: Sets formatting on specified items and data in the table.
     remarks: >-
       **Specifying the cellFormat parameter**
@@ -831,10 +757,10 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.setTableOptionsAsync
+  - uid: 'office!Office.TableBinding#setTableOptionsAsync:member(1)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
@@ -851,28 +777,6 @@ items:
       <td>AsyncResult.error</td> <td>Access an Error object that provides error information if the operation
       failed.</td> </tr> <tr> <td>AsyncResult.asyncContext</td> <td>A user-defined item of any type that is returned in
       the AsyncResult object without being altered.</td> </tr> </table>
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following example shows how to:
-
-      // 1. Create an object literal that specifies the table formatting options to update on the bound table.
-
-      // 2. Call setTableOptions on a previously bound table (with an id of myBinding) passing the object
-
-      //    with formatting setting as the tableOptions parameter.
-
-      function updateTableFormatting(){
-          var tableOptions = {bandedRows: true, filterButton: false, style: "TableStyleMedium3"}; 
-
-          Office.select("bindings#myBinding").setTableOptionsAsync(tableOptions, function(asyncResult){});
-      }
-
-      ```
     name: 'setTableOptionsAsync(tableOptions, options, callback)'
     fullName: 'setTableOptionsAsync(tableOptions, options, callback)'
     langs:
@@ -894,14 +798,14 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.setTableOptionsAsync_1
+  - uid: 'office!Office.TableBinding#setTableOptionsAsync:member(2)'
     summary: Updates table formatting options on the bound table.
     remarks: >-
       **Requirement set**: [Not in a
@@ -937,111 +841,6 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->.
           type:
             - '(result: AsyncResult<void>) => void'
-  - uid: office.Office.TableBinding.columnCount
-    summary: 'Gets the number of columns in the TableBinding, as an integer value.'
-    name: columnCount
-    fullName: columnCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'columnCount: number;'
-      return:
-        type:
-          - number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showBindingColumnCount() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Column: " + asyncResult.value.columnCount);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.TableBinding.hasHeaders
-    summary: 'True, if the table has headers; otherwise false.'
-    name: hasHeaders
-    fullName: hasHeaders
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'hasHeaders: boolean;'
-      return:
-        type:
-          - boolean
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showBindingHasHeaders() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Binding has headers: " + asyncResult.value.hasHeaders);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.TableBinding.rowCount
-    summary: 'Gets the number of rows in the TableBinding, as an integer value.'
-    remarks: >-
-      When you insert an empty table by selecting a single row in Excel 2013 and Excel on the web (using Table on the
-      Insert tab), both Office host applications create a single row of headers followed by a single blank row. However,
-      if your add-in's script creates a binding for this newly inserted table (for example, by using the
-      [Office.Bindings](xref:office.Office.Bindings)<!-- -->.addFromSelectionAsync method), and then checks the value of
-      the rowCount property, the value returned will differ depending whether the spreadsheet is open in Excel 2013 or
-      Excel on the web.
-
-
-      - In Excel on the desktop, rowCount will return 0 (the blank row following the headers is not counted).
-
-
-      - In Excel on the web, rowCount will return 1 (the blank row following the headers is counted).
-
-
-      You can work around this difference in your script by checking if rowCount == 1, and if so, then checking if the
-      row contains all empty strings.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function showBindingRowCount() {
-          Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-              write("Rows: " + asyncResult.value.rowCount);
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
-    name: rowCount
-    fullName: rowCount
-    langs:
-      - typeScript
-    type: property
-    syntax:
-      content: 'rowCount: number;'
-      return:
-        type:
-          - number

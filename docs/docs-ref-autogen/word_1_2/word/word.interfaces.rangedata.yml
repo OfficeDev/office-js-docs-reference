@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeData
+  - uid: 'word!Word.Interfaces.RangeData:interface'
     summary: An interface describing the data returned by calling "range.toJSON()".
     name: Word.Interfaces.RangeData
     fullName: Word.Interfaces.RangeData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeData.font
-      - word.Word.Interfaces.RangeData.inlinePictures
-      - word.Word.Interfaces.RangeData.style
-      - word.Word.Interfaces.RangeData.text
-  - uid: word.Word.Interfaces.RangeData.font
+      - 'word!Word.Interfaces.RangeData#font:member'
+      - 'word!Word.Interfaces.RangeData#inlinePictures:member'
+      - 'word!Word.Interfaces.RangeData#style:member'
+      - 'word!Word.Interfaces.RangeData#text:member'
+  - uid: 'word!Word.Interfaces.RangeData#font:member'
     summary: >-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
       Read-only.
@@ -29,8 +29,8 @@ items:
       content: 'font?: Word.Interfaces.FontData;'
       return:
         type:
-          - word.Word.Interfaces.FontData
-  - uid: word.Word.Interfaces.RangeData.inlinePictures
+          - 'word!Word.Interfaces.FontData:interface'
+  - uid: 'word!Word.Interfaces.RangeData#inlinePictures:member'
     summary: |-
       Gets the collection of inline picture objects in the range. Read-only.
 
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - 'Word.Interfaces.InlinePictureData[]'
-  - uid: word.Word.Interfaces.RangeData.style
+  - uid: 'word!Word.Interfaces.RangeData#style:member'
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.RangeData.text
+  - uid: 'word!Word.Interfaces.RangeData#text:member'
     summary: |-
       Gets the text of the range. Read-only.
 

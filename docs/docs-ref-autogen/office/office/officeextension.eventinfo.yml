@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.OfficeExtension.EventInfo
+  - uid: 'office!OfficeExtension.EventInfo:interface'
     name: OfficeExtension.EventInfo
     fullName: OfficeExtension.EventInfo
     langs:
@@ -9,12 +9,12 @@ items:
     syntax:
       typeParameters:
         - id: T
-    package: office
+    package: office!
     children:
-      - office.OfficeExtension.EventInfo.eventArgsTransformFunc
-      - office.OfficeExtension.EventInfo.registerFunc
-      - office.OfficeExtension.EventInfo.unregisterFunc
-  - uid: office.OfficeExtension.EventInfo.eventArgsTransformFunc
+      - 'office!OfficeExtension.EventInfo#eventArgsTransformFunc:member'
+      - 'office!OfficeExtension.EventInfo#registerFunc:member'
+      - 'office!OfficeExtension.EventInfo#unregisterFunc:member'
+  - uid: 'office!OfficeExtension.EventInfo#eventArgsTransformFunc:member'
     name: eventArgsTransformFunc
     fullName: eventArgsTransformFunc
     langs:
@@ -25,7 +25,7 @@ items:
       return:
         type:
           - '(args: any) => Promise<T>'
-  - uid: office.OfficeExtension.EventInfo.registerFunc
+  - uid: 'office!OfficeExtension.EventInfo#registerFunc:member'
     name: registerFunc
     fullName: registerFunc
     langs:
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - '(callback: (args: any) => void) => Promise<any>'
-  - uid: office.OfficeExtension.EventInfo.unregisterFunc
+  - uid: 'office!OfficeExtension.EventInfo#unregisterFunc:member'
     name: unregisterFunc
     fullName: unregisterFunc
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.HyperlinkCollection
+  - uid: 'visio!Visio.HyperlinkCollection:class'
     summary: |-
       Represents the Hyperlink Collection.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.HyperlinkCollection.context
-      - visio.Visio.HyperlinkCollection.getCount
-      - visio.Visio.HyperlinkCollection.getItem
-      - visio.Visio.HyperlinkCollection.items
-      - visio.Visio.HyperlinkCollection.load
-      - visio.Visio.HyperlinkCollection.load_1
-      - visio.Visio.HyperlinkCollection.load_2
-      - visio.Visio.HyperlinkCollection.toJSON
-  - uid: visio.Visio.HyperlinkCollection.context
+      - 'visio!Visio.HyperlinkCollection#context:member'
+      - 'visio!Visio.HyperlinkCollection#getCount:member(1)'
+      - 'visio!Visio.HyperlinkCollection#getItem:member(1)'
+      - 'visio!Visio.HyperlinkCollection#items:member'
+      - 'visio!Visio.HyperlinkCollection#load:member(1)'
+      - 'visio!Visio.HyperlinkCollection#load:member(2)'
+      - 'visio!Visio.HyperlinkCollection#load:member(3)'
+      - 'visio!Visio.HyperlinkCollection#toJSON:member(1)'
+  - uid: 'visio!Visio.HyperlinkCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.HyperlinkCollection.getCount
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.HyperlinkCollection#getCount:member(1)'
     summary: |-
       Gets the number of hyperlinks.
 
@@ -52,7 +52,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: visio.Visio.HyperlinkCollection.getItem
+  - uid: 'visio!Visio.HyperlinkCollection#getItem:member(1)'
     summary: |-
       Gets a Hyperlink using its key (name or Id).
 
@@ -66,14 +66,14 @@ items:
       content: 'getItem(Key: number | string): Visio.Hyperlink;'
       return:
         type:
-          - visio.Visio.Hyperlink
+          - 'visio!Visio.Hyperlink:class'
         description: ''
       parameters:
         - id: Key
           description: Key is the name or index of the Hyperlink to be retrieved.
           type:
             - number | string
-  - uid: visio.Visio.HyperlinkCollection.items
+  - uid: 'visio!Visio.HyperlinkCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -85,7 +85,7 @@ items:
       return:
         type:
           - 'Visio.Hyperlink[]'
-  - uid: visio.Visio.HyperlinkCollection.load
+  - uid: 'visio!Visio.HyperlinkCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -107,35 +107,6 @@ items:
       number of collection items that can be included in the result. Option.skip specifies the number of items that are
       to be skipped and not included in the result. If option.top is specified, the result set will start after skipping
       the specified number of items.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Visio.run(session, function (ctx) {
-          var activePage = ctx.document.getActivePage();
-          var shapeName = "Manager Belt";
-          var shape = activePage.shapes.getItem(shapeName);
-          var hyperlinks = shape.hyperlinks;
-          shapeHyperlinks.load(["description", "address", "subAddress"]);
-              ctx.sync().then(function () {
-                  for (var i = 0; i < shapeHyperlinks.items.length; i++) {
-                      var hyperlink = shapeHyperlinks.items[i];
-                      console.log(
-                          "Description:"+hyperlink.description +"Address:"+hyperlink.address +"SubAddress:  " + 
-                          hyperlink.subAddress);
-                  }
-              });
-      }).catch(function(error) {
-          console.log("Error: " + error);
-          if (error instanceof OfficeExtension.Error) {
-              console.log("Debug info: " + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -147,14 +118,14 @@ items:
         Visio.HyperlinkCollection;
       return:
         type:
-          - visio.Visio.HyperlinkCollection
+          - 'visio!Visio.HyperlinkCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Visio.Interfaces.HyperlinkCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
-  - uid: visio.Visio.HyperlinkCollection.load_1
+  - uid: 'visio!Visio.HyperlinkCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -167,14 +138,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.HyperlinkCollection;'
       return:
         type:
-          - visio.Visio.HyperlinkCollection
+          - 'visio!Visio.HyperlinkCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.HyperlinkCollection.load_2
+  - uid: 'visio!Visio.HyperlinkCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -184,14 +155,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.HyperlinkCollection;'
       return:
         type:
-          - visio.Visio.HyperlinkCollection
+          - 'visio!Visio.HyperlinkCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: visio.Visio.HyperlinkCollection.toJSON
+  - uid: 'visio!Visio.HyperlinkCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -207,5 +178,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.HyperlinkCollectionData;'
       return:
         type:
-          - visio.Visio.Interfaces.HyperlinkCollectionData
+          - 'visio!Visio.Interfaces.HyperlinkCollectionData:interface'
         description: ''

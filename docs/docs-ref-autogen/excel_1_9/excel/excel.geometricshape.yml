@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.GeometricShape
+  - uid: 'excel!Excel.GeometricShape:class'
     summary: >-
       Represents a geometric shape inside a worksheet. A geometric shape can be a rectangle, block arrow, equation
       symbol, flowchart item, star, banner, callout, or any other basic shape in Excel.
@@ -14,16 +14,16 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.GeometricShape.context
-      - excel.Excel.GeometricShape.id
-      - excel.Excel.GeometricShape.load
-      - excel.Excel.GeometricShape.load_1
-      - excel.Excel.GeometricShape.load_2
-      - excel.Excel.GeometricShape.shape
-      - excel.Excel.GeometricShape.toJSON
-  - uid: excel.Excel.GeometricShape.context
+      - 'excel!Excel.GeometricShape#context:member'
+      - 'excel!Excel.GeometricShape#id:member'
+      - 'excel!Excel.GeometricShape#load:member(1)'
+      - 'excel!Excel.GeometricShape#load:member(2)'
+      - 'excel!Excel.GeometricShape#load:member(3)'
+      - 'excel!Excel.GeometricShape#shape:member'
+      - 'excel!Excel.GeometricShape#toJSON:member(1)'
+  - uid: 'excel!Excel.GeometricShape#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.GeometricShape.id
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.GeometricShape#id:member'
     summary: |-
       Returns the shape identifier. Read-only.
 
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.GeometricShape.load
+  - uid: 'excel!Excel.GeometricShape#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -83,14 +83,14 @@ items:
       content: 'load(option?: Excel.Interfaces.GeometricShapeLoadOptions): Excel.GeometricShape;'
       return:
         type:
-          - excel.Excel.GeometricShape
+          - 'excel!Excel.GeometricShape:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.GeometricShapeLoadOptions
-  - uid: excel.Excel.GeometricShape.load_1
+            - 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
+  - uid: 'excel!Excel.GeometricShape#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -103,14 +103,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.GeometricShape;'
       return:
         type:
-          - excel.Excel.GeometricShape
+          - 'excel!Excel.GeometricShape:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.GeometricShape.load_2
+  - uid: 'excel!Excel.GeometricShape#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -123,7 +123,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.GeometricShape;'
       return:
         type:
-          - excel.Excel.GeometricShape
+          - 'excel!Excel.GeometricShape:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -132,7 +132,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.GeometricShape.shape
+  - uid: 'excel!Excel.GeometricShape#shape:member'
     summary: |-
       Returns the Shape object for the geometric shape. Read-only.
 
@@ -146,8 +146,8 @@ items:
       content: 'readonly shape: Excel.Shape;'
       return:
         type:
-          - excel.Excel.Shape
-  - uid: excel.Excel.GeometricShape.toJSON
+          - 'excel!Excel.Shape:class'
+  - uid: 'excel!Excel.GeometricShape#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -163,5 +163,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.GeometricShapeData;'
       return:
         type:
-          - excel.Excel.Interfaces.GeometricShapeData
+          - 'excel!Excel.Interfaces.GeometricShapeData:interface'
         description: ''

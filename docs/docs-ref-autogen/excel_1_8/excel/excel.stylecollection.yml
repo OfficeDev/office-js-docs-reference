@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.StyleCollection
+  - uid: 'excel!Excel.StyleCollection:class'
     summary: |-
       Represents a collection of all the styles.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.StyleCollection.add
-      - excel.Excel.StyleCollection.context
-      - excel.Excel.StyleCollection.getItem
-      - excel.Excel.StyleCollection.items
-      - excel.Excel.StyleCollection.load
-      - excel.Excel.StyleCollection.load_1
-      - excel.Excel.StyleCollection.load_2
-      - excel.Excel.StyleCollection.toJSON
-  - uid: excel.Excel.StyleCollection.add
+      - 'excel!Excel.StyleCollection#add:member(1)'
+      - 'excel!Excel.StyleCollection#context:member'
+      - 'excel!Excel.StyleCollection#getItem:member(1)'
+      - 'excel!Excel.StyleCollection#items:member'
+      - 'excel!Excel.StyleCollection#load:member(1)'
+      - 'excel!Excel.StyleCollection#load:member(2)'
+      - 'excel!Excel.StyleCollection#load:member(3)'
+      - 'excel!Excel.StyleCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.StyleCollection#add:member(1)'
     summary: |-
       Adds a new style to the collection.
 
@@ -37,39 +37,13 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let styles = context.workbook.styles;
-
-              // Add a new style to the style collection.
-              // Styles is in the Home tab ribbon.
-              styles.add("Diagonal Orientation Style");
-                    
-              let newStyle = styles.getItem("Diagonal Orientation Style");
-              
-              // The "Diagonal Orientation Style" properties.
-              newStyle.textOrientation = 38;
-              newStyle.autoIndent = true;
-              newStyle.includeProtection = true;
-              newStyle.shrinkToFit = true;
-              newStyle.locked = false;
-              
-              await context.sync();
-
-              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
-          });
-          ```
+        description: ''
       parameters:
         - id: name
           description: Name of the style to be added.
           type:
             - string
-  - uid: excel.Excel.StyleCollection.context
+  - uid: 'excel!Excel.StyleCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -82,8 +56,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.StyleCollection.getItem
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.StyleCollection#getItem:member(1)'
     summary: |-
       Gets a style by name.
 
@@ -97,40 +71,14 @@ items:
       content: 'getItem(name: string): Excel.Style;'
       return:
         type:
-          - excel.Excel.Style
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              let styles = context.workbook.styles;
-
-              // Add a new style to the style collection.
-              // Styles is in the Home tab ribbon.
-              styles.add("Diagonal Orientation Style");
-                    
-              let newStyle = styles.getItem("Diagonal Orientation Style");
-              
-              // The "Diagonal Orientation Style" properties.
-              newStyle.textOrientation = 38;
-              newStyle.autoIndent = true;
-              newStyle.includeProtection = true;
-              newStyle.shrinkToFit = true;
-              newStyle.locked = false;
-              
-              await context.sync();
-
-              console.log("Successfully added a new style with diagonal orientation to the Home tab ribbon.");
-          });
-          ```
+          - 'excel!Excel.Style:class'
+        description: ''
       parameters:
         - id: name
           description: Name of the style to be retrieved.
           type:
             - string
-  - uid: excel.Excel.StyleCollection.items
+  - uid: 'excel!Excel.StyleCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -142,7 +90,7 @@ items:
       return:
         type:
           - 'Excel.Style[]'
-  - uid: excel.Excel.StyleCollection.load
+  - uid: 'excel!Excel.StyleCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -175,14 +123,14 @@ items:
         Excel.StyleCollection;
       return:
         type:
-          - excel.Excel.StyleCollection
+          - 'excel!Excel.StyleCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.StyleCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.StyleCollection.load_1
+  - uid: 'excel!Excel.StyleCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -195,14 +143,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.StyleCollection;'
       return:
         type:
-          - excel.Excel.StyleCollection
+          - 'excel!Excel.StyleCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.StyleCollection.load_2
+  - uid: 'excel!Excel.StyleCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -212,14 +160,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.StyleCollection;'
       return:
         type:
-          - excel.Excel.StyleCollection
+          - 'excel!Excel.StyleCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.StyleCollection.toJSON
+  - uid: 'excel!Excel.StyleCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -235,5 +183,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.StyleCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.StyleCollectionData
+          - 'excel!Excel.Interfaces.StyleCollectionData:interface'
         description: ''

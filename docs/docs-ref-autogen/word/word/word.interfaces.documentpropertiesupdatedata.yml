@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData:interface'
     summary: >-
       An interface for updating data on the DocumentProperties object, for use in "documentProperties.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,18 +9,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.author
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.category
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.comments
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.company
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.format
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.keywords
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.manager
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.subject
-      - word.Word.Interfaces.DocumentPropertiesUpdateData.title
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.author
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#author:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#category:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#comments:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#company:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#format:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#keywords:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#manager:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#subject:member'
+      - 'word!Word.Interfaces.DocumentPropertiesUpdateData#title:member'
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#author:member'
     summary: |-
       Gets or sets the author of the document.
 
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.category
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#category:member'
     summary: |-
       Gets or sets the category of the document.
 
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.comments
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#comments:member'
     summary: |-
       Gets or sets the comments of the document.
 
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.company
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#company:member'
     summary: |-
       Gets or sets the company of the document.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.format
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#format:member'
     summary: |-
       Gets or sets the format of the document.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.keywords
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#keywords:member'
     summary: |-
       Gets or sets the keywords of the document.
 
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.manager
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#manager:member'
     summary: |-
       Gets or sets the manager of the document.
 
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.subject
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#subject:member'
     summary: |-
       Gets or sets the subject of the document.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.DocumentPropertiesUpdateData.title
+  - uid: 'word!Word.Interfaces.DocumentPropertiesUpdateData#title:member'
     summary: |-
       Gets or sets the title of the document.
 

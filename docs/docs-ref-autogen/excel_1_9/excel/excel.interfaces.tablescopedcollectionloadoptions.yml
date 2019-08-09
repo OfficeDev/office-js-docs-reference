@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions:interface'
     summary: >-
       Represents a scoped collection of tables. For each table its top-left corner is considered its anchor location and
       the tables are sorted top to bottom and then left to right.
@@ -12,26 +12,26 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.columns
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.highlightFirstColumn
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.highlightLastColumn
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.id
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.legacyId
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.name
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.rows
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showBandedColumns
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showBandedRows
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showFilterButton
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showHeaders
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showTotals
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.sort
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.style
-      - excel.Excel.Interfaces.TableScopedCollectionLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#columns:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#highlightFirstColumn:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#highlightLastColumn:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#legacyId:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#rows:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showBandedColumns:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showBandedRows:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showFilterButton:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showTotals:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#sort:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.autoFilter
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#autoFilter:member'
     summary: |-
       For EACH ITEM in the collection: Represents the AutoFilter object of the table.
 
@@ -56,8 +56,8 @@ items:
       content: 'autoFilter?: Excel.Interfaces.AutoFilterLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.AutoFilterLoadOptions
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.columns
+          - 'excel!Excel.Interfaces.AutoFilterLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#columns:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the columns in the table.
 
@@ -71,8 +71,8 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.highlightFirstColumn
+          - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#highlightFirstColumn:member'
     summary: |-
       For EACH ITEM in the collection: Indicates whether the first column contains special formatting.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.highlightLastColumn
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#highlightLastColumn:member'
     summary: |-
       For EACH ITEM in the collection: Indicates whether the last column contains special formatting.
 
@@ -102,7 +102,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
       of the identifier remains the same even when the table is renamed. Read-only.
@@ -119,7 +119,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.legacyId
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#legacyId:member'
     summary: |-
       For EACH ITEM in the collection: Returns a numeric id.
 
@@ -134,7 +134,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Name of the table.
 
@@ -149,7 +149,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.rows
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#rows:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the rows in the table.
 
@@ -163,8 +163,8 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showBandedColumns
+          - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showBandedColumns:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are
       highlighted differently from even ones to make reading the table easier.
@@ -181,7 +181,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showBandedRows
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showBandedRows:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are
       highlighted differently from even ones to make reading the table easier.
@@ -198,7 +198,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showFilterButton
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showFilterButton:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column
       header. Setting this is only allowed if the table contains a header row.
@@ -215,7 +215,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showHeaders
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showHeaders:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show
       or remove the header row.
@@ -232,7 +232,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.showTotals
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#showTotals:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show
       or remove the total row.
@@ -249,7 +249,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.sort
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#sort:member'
     summary: |-
       For EACH ITEM in the collection: Represents the sorting for the table.
 
@@ -263,8 +263,8 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableSortLoadOptions
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.style
+          - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are:
       TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru
@@ -282,7 +282,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableScopedCollectionLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.TableScopedCollectionLoadOptions#worksheet:member'
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current table.
 
@@ -296,4 +296,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'

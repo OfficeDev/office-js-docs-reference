@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.ValueFormat
+  - uid: 'office!Office.ValueFormat:enum'
     summary: >-
       Specifies whether values, such as numbers and dates, returned by the invoked method are returned with their
       formatting applied.
@@ -13,18 +13,18 @@ items:
     langs:
       - typeScript
     type: enum
-    package: office
+    package: office!
     children:
-      - office.Office.ValueFormat.Formatted
-      - office.Office.ValueFormat.Unformatted
-  - uid: office.Office.ValueFormat.Formatted
+      - 'office!Office.ValueFormat.Formatted:member'
+      - 'office!Office.ValueFormat.Unformatted:member'
+  - uid: 'office!Office.ValueFormat.Formatted:member'
     summary: Return formatted data.
     name: Formatted
     fullName: Formatted
     langs:
       - typeScript
     type: field
-  - uid: office.Office.ValueFormat.Unformatted
+  - uid: 'office!Office.ValueFormat.Unformatted:member'
     summary: Return unformatted data.
     name: Unformatted
     fullName: Unformatted

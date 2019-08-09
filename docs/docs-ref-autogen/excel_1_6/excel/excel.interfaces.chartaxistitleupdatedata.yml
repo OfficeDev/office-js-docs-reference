@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartAxisTitle object, for use in "chartAxisTitle.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,12 +9,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
-      - excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
-      - excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
-  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData.format
+      - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#format:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#text:member'
+      - 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#format:member'
     summary: |-
       Represents the formatting of chart axis title.
 
@@ -28,8 +28,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisTitleFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleFormatUpdateData
-  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData.text
+          - 'excel!Excel.Interfaces.ChartAxisTitleFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#text:member'
     summary: |-
       Represents the axis title.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ChartAxisTitleUpdateData.visible
+  - uid: 'excel!Excel.Interfaces.ChartAxisTitleUpdateData#visible:member'
     summary: |-
       A boolean that specifies the visibility of an axis title.
 

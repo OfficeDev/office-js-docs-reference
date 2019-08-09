@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions:interface'
     summary: |-
       Represents a collection of chart series.
 
@@ -10,25 +10,25 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
-      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#chartType:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#filtered:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#hasDataLabels:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerForegroundColor:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerSize:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerStyle:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#plotOrder:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showShadow:member'
+      - 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#smooth:member'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -39,7 +39,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#chartType:member'
     summary: |-
       For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#doughnutHoleSize:member'
     summary: >-
       For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
       doughnutExploded charts. Throws an invalid argument exception on invalid charts.
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#filtered:member'
     summary: >-
       For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for
       surface charts.
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#format:member'
     summary: >-
       For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line
       formatting.
@@ -104,8 +104,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
+          - 'excel!Excel.Interfaces.ChartSeriesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#gapWidth:member'
     summary: >-
       For EACH ITEM in the collection: Represents the gap width of a chart series. Only valid on bar and column charts,
       as well as specific classes of line and pie charts. Throws an invalid argument exception on invalid charts.
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#hasDataLabels:member'
     summary: |-
       For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
 
@@ -137,7 +137,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerBackgroundColor:member'
     summary: |-
       For EACH ITEM in the collection: Represents markers background color of a chart series.
 
@@ -152,7 +152,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerForegroundColor:member'
     summary: |-
       For EACH ITEM in the collection: Represents markers foreground color of a chart series.
 
@@ -167,7 +167,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerSize:member'
     summary: |-
       For EACH ITEM in the collection: Represents marker size of a chart series.
 
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#markerStyle:member'
     summary: >-
       For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for
       details.
@@ -199,7 +199,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Represents the name of a series in a chart.
 
@@ -214,7 +214,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#plotOrder:member'
     summary: |-
       For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
 
@@ -229,7 +229,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#points:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all points in the series.
 
@@ -243,8 +243,8 @@ items:
       content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
+          - 'excel!Excel.Interfaces.ChartPointsCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#showShadow:member'
     summary: |-
       For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
 
@@ -259,7 +259,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
+  - uid: 'excel!Excel.Interfaces.ChartSeriesCollectionLoadOptions#smooth:member'
     summary: >-
       For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to
       line and scatter charts.

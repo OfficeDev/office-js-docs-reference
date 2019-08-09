@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ChartTrendlineFormat
+  - uid: 'excel!Excel.ChartTrendlineFormat:class'
     summary: |-
       Represents the format properties for chart trendline.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ChartTrendlineFormat.context
-      - excel.Excel.ChartTrendlineFormat.line
-      - excel.Excel.ChartTrendlineFormat.load
-      - excel.Excel.ChartTrendlineFormat.load_1
-      - excel.Excel.ChartTrendlineFormat.load_2
-      - excel.Excel.ChartTrendlineFormat.set
-      - excel.Excel.ChartTrendlineFormat.set_1
-      - excel.Excel.ChartTrendlineFormat.toJSON
-  - uid: excel.Excel.ChartTrendlineFormat.context
+      - 'excel!Excel.ChartTrendlineFormat#context:member'
+      - 'excel!Excel.ChartTrendlineFormat#line:member'
+      - 'excel!Excel.ChartTrendlineFormat#load:member(1)'
+      - 'excel!Excel.ChartTrendlineFormat#load:member(2)'
+      - 'excel!Excel.ChartTrendlineFormat#load:member(3)'
+      - 'excel!Excel.ChartTrendlineFormat#set:member(1)'
+      - 'excel!Excel.ChartTrendlineFormat#set:member(2)'
+      - 'excel!Excel.ChartTrendlineFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ChartTrendlineFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ChartTrendlineFormat.line
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ChartTrendlineFormat#line:member'
     summary: |-
       Represents chart line formatting. Read-only.
 
@@ -50,46 +50,8 @@ items:
       content: 'readonly line: Excel.ChartLineFormat;'
       return:
         type:
-          - excel.Excel.ChartLineFormat
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series; 
-
-              // Get the color of the chart trendline. 
-              // In this example, it's #4472c4 which is blue.
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-              let line = trendline.format.line;
-              line.load("color");
-
-              await context.sync();
-
-              console.log("The trendline color is:" + line.color);
-          });
-          ```
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-
-              let seriesCollection = sheet.charts.getItemAt(0).series; 
-              let trendline = seriesCollection.getItemAt(0).trendlines.getItem(0);
-
-              // Set format of the trendline to a solid, red line.
-              let line = trendline.format.line;
-              line.color = '#FF0000';
-
-              await context.sync();
-
-              console.log("The trendline color has been set to:" + line.color);
-          });
-          ```
-  - uid: excel.Excel.ChartTrendlineFormat.load
+          - 'excel!Excel.ChartLineFormat:class'
+  - uid: 'excel!Excel.ChartTrendlineFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -120,14 +82,14 @@ items:
       content: 'load(option?: Excel.Interfaces.ChartTrendlineFormatLoadOptions): Excel.ChartTrendlineFormat;'
       return:
         type:
-          - excel.Excel.ChartTrendlineFormat
+          - 'excel!Excel.ChartTrendlineFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ChartTrendlineFormatLoadOptions
-  - uid: excel.Excel.ChartTrendlineFormat.load_1
+            - 'excel!Excel.Interfaces.ChartTrendlineFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ChartTrendlineFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -140,14 +102,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ChartTrendlineFormat;'
       return:
         type:
-          - excel.Excel.ChartTrendlineFormat
+          - 'excel!Excel.ChartTrendlineFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ChartTrendlineFormat.load_2
+  - uid: 'excel!Excel.ChartTrendlineFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -160,7 +122,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartTrendlineFormat;'
       return:
         type:
-          - excel.Excel.ChartTrendlineFormat
+          - 'excel!Excel.ChartTrendlineFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -169,7 +131,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ChartTrendlineFormat.set
+  - uid: 'excel!Excel.ChartTrendlineFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -199,7 +161,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ChartTrendlineFormat.set_1
+  - uid: 'excel!Excel.ChartTrendlineFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -216,8 +178,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ChartTrendlineFormat
-  - uid: excel.Excel.ChartTrendlineFormat.toJSON
+            - 'excel!Excel.ChartTrendlineFormat:class'
+  - uid: 'excel!Excel.ChartTrendlineFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -233,5 +195,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ChartTrendlineFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartTrendlineFormatData
+          - 'excel!Excel.Interfaces.ChartTrendlineFormatData:interface'
         description: ''

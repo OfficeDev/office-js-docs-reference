@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.SearchOptions
+  - uid: 'word!Word.SearchOptions:class'
     summary: |-
       Specifies the options to be included in a search operation.
 
@@ -12,25 +12,25 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.SearchOptions.context
-      - word.Word.SearchOptions.ignorePunct
-      - word.Word.SearchOptions.ignoreSpace
-      - word.Word.SearchOptions.load
-      - word.Word.SearchOptions.load_1
-      - word.Word.SearchOptions.load_2
-      - word.Word.SearchOptions.matchCase
-      - word.Word.SearchOptions.matchPrefix
-      - word.Word.SearchOptions.matchSuffix
-      - word.Word.SearchOptions.matchWholeWord
-      - word.Word.SearchOptions.matchWildcards
-      - word.Word.SearchOptions.matchWildCards
-      - word.Word.SearchOptions.newObject
-      - word.Word.SearchOptions.set
-      - word.Word.SearchOptions.set_1
-      - word.Word.SearchOptions.toJSON
-  - uid: word.Word.SearchOptions.context
+      - 'word!Word.SearchOptions#context:member'
+      - 'word!Word.SearchOptions#ignorePunct:member'
+      - 'word!Word.SearchOptions#ignoreSpace:member'
+      - 'word!Word.SearchOptions#load:member(1)'
+      - 'word!Word.SearchOptions#load:member(2)'
+      - 'word!Word.SearchOptions#load:member(3)'
+      - 'word!Word.SearchOptions#matchCase:member'
+      - 'word!Word.SearchOptions#matchPrefix:member'
+      - 'word!Word.SearchOptions#matchSuffix:member'
+      - 'word!Word.SearchOptions#matchWholeWord:member'
+      - 'word!Word.SearchOptions#matchWildcards:member'
+      - 'word!Word.SearchOptions#matchWildCards:member'
+      - 'word!Word.SearchOptions.newObject:member(1)'
+      - 'word!Word.SearchOptions#set:member(1)'
+      - 'word!Word.SearchOptions#set:member(2)'
+      - 'word!Word.SearchOptions#toJSON:member(1)'
+  - uid: 'word!Word.SearchOptions#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -43,8 +43,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.SearchOptions.ignorePunct
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.SearchOptions#ignorePunct:member'
     summary: >-
       Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the
       Ignore punctuation check box in the Find and Replace dialog box.
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.ignoreSpace
+  - uid: 'word!Word.SearchOptions#ignoreSpace:member'
     summary: >-
       Gets or sets a value that indicates whether to ignore all whitespace between words. Corresponds to the Ignore
       whitespace characters check box in the Find and Replace dialog box.
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.load
+  - uid: 'word!Word.SearchOptions#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -100,175 +100,6 @@ items:
       of collection items that can be included in the result. Option.skip specifies the number of items that are to be
       skipped and not included in the result. If option.top is specified, the result set will start after skipping the
       specified number of items.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // Ignore punctuation search
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-          
-          // Queue a command to search the document and ignore punctuation.
-          var searchResults = context.document.body.search('video you', {ignorePunct: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Search based on a prefix
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-          
-          // Queue a command to search the document based on a prefix.
-          var searchResults = context.document.body.search('vid', {matchPrefix: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = '#FFFF00'; //Yellow
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Search based on a suffix
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-
-          // Queue a command to search the document for any string of characters after 'ly'.
-          var searchResults = context.document.body.search('ly', {matchSuffix: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'orange';
-                  searchResults.items[i].font.highlightColor = 'black';
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
-
-      ```javascript
-
-      // Search using a wildcard
-
-      // Run a batch operation against the Word object model.
-
-      Word.run(function (context) {
-          
-          // Queue a command to search the document with a wildcard
-          // for any string of characters that starts with 'to' and ends with 'n'.
-          var searchResults = context.document.body.search('to*n', {matchWildCards: true});
-
-          // Queue a command to load the search results and get the font property values.
-          context.load(searchResults, 'font');
-          
-          // Synchronize the document state by executing the queued commands, 
-          // and return a promise to indicate task completion.
-          return context.sync().then(function () {
-              console.log('Found count: ' + searchResults.items.length);
-
-              // Queue a set of commands to change the font for each found item.
-              for (var i = 0; i < searchResults.items.length; i++) {
-                  searchResults.items[i].font.color = 'purple';
-                  searchResults.items[i].font.highlightColor = 'pink';
-                  searchResults.items[i].font.bold = true;
-              }
-              
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync();
-          });  
-      })
-
-      .catch(function (error) {
-          console.log('Error: ' + JSON.stringify(error));
-          if (error instanceof OfficeExtension.Error) {
-              console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-          }
-      });
-
-      ```
     name: load(option)
     fullName: load(option)
     langs:
@@ -278,14 +109,14 @@ items:
       content: 'load(option?: Word.Interfaces.SearchOptionsLoadOptions): Word.SearchOptions;'
       return:
         type:
-          - word.Word.SearchOptions
+          - 'word!Word.SearchOptions:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.SearchOptionsLoadOptions
-  - uid: word.Word.SearchOptions.load_1
+            - 'word!Word.Interfaces.SearchOptionsLoadOptions:interface'
+  - uid: 'word!Word.SearchOptions#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -298,14 +129,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.SearchOptions;'
       return:
         type:
-          - word.Word.SearchOptions
+          - 'word!Word.SearchOptions:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.SearchOptions.load_2
+  - uid: 'word!Word.SearchOptions#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -318,7 +149,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.SearchOptions;'
       return:
         type:
-          - word.Word.SearchOptions
+          - 'word!Word.SearchOptions:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -327,7 +158,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.SearchOptions.matchCase
+  - uid: 'word!Word.SearchOptions#matchCase:member'
     summary: >-
       Gets or sets a value that indicates whether to perform a case sensitive search. Corresponds to the Match case
       check box in the Find and Replace dialog box.
@@ -344,7 +175,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.matchPrefix
+  - uid: 'word!Word.SearchOptions#matchPrefix:member'
     summary: >-
       Gets or sets a value that indicates whether to match words that begin with the search string. Corresponds to the
       Match prefix check box in the Find and Replace dialog box.
@@ -361,7 +192,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.matchSuffix
+  - uid: 'word!Word.SearchOptions#matchSuffix:member'
     summary: >-
       Gets or sets a value that indicates whether to match words that end with the search string. Corresponds to the
       Match suffix check box in the Find and Replace dialog box.
@@ -378,7 +209,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.matchWholeWord
+  - uid: 'word!Word.SearchOptions#matchWholeWord:member'
     summary: >-
       Gets or sets a value that indicates whether to find operation only entire words, not text that is part of a larger
       word. Corresponds to the Find whole words only check box in the Find and Replace dialog box.
@@ -395,7 +226,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.matchWildcards
+  - uid: 'word!Word.SearchOptions#matchWildcards:member'
     summary: >-
       Gets or sets a value that indicates whether the search will be performed using special search operators.
       Corresponds to the Use wildcards check box in the Find and Replace dialog box.
@@ -412,7 +243,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.matchWildCards
+  - uid: 'word!Word.SearchOptions#matchWildCards:member'
     name: matchWildCards
     fullName: matchWildCards
     langs:
@@ -423,7 +254,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.SearchOptions.newObject
+  - uid: 'word!Word.SearchOptions.newObject:member(1)'
     summary: Create a new instance of Word.SearchOptions object
     name: newObject(context)
     fullName: newObject(context)
@@ -434,14 +265,14 @@ items:
       content: 'static newObject(context: OfficeExtension.ClientRequestContext): Word.SearchOptions;'
       return:
         type:
-          - word.Word.SearchOptions
+          - 'word!Word.SearchOptions:class'
         description: ''
       parameters:
         - id: context
           description: ''
           type:
             - OfficeExtension.ClientRequestContext
-  - uid: word.Word.SearchOptions.set
+  - uid: 'word!Word.SearchOptions#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -471,7 +302,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.SearchOptions.set_1
+  - uid: 'word!Word.SearchOptions#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -488,8 +319,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.SearchOptions
-  - uid: word.Word.SearchOptions.toJSON
+            - 'word!Word.SearchOptions:class'
+  - uid: 'word!Word.SearchOptions#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -505,5 +336,5 @@ items:
       content: 'toJSON(): Word.Interfaces.SearchOptionsData;'
       return:
         type:
-          - word.Word.Interfaces.SearchOptionsData
+          - 'word!Word.Interfaces.SearchOptionsData:interface'
         description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TableColumnCollection
+  - uid: 'excel!Excel.TableColumnCollection:class'
     summary: |-
       Represents a collection of all the columns that are part of the table.
 
@@ -12,21 +12,21 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TableColumnCollection.add
-      - excel.Excel.TableColumnCollection.context
-      - excel.Excel.TableColumnCollection.count
-      - excel.Excel.TableColumnCollection.getCount
-      - excel.Excel.TableColumnCollection.getItem
-      - excel.Excel.TableColumnCollection.getItemAt
-      - excel.Excel.TableColumnCollection.getItemOrNullObject
-      - excel.Excel.TableColumnCollection.items
-      - excel.Excel.TableColumnCollection.load
-      - excel.Excel.TableColumnCollection.load_1
-      - excel.Excel.TableColumnCollection.load_2
-      - excel.Excel.TableColumnCollection.toJSON
-  - uid: excel.Excel.TableColumnCollection.add
+      - 'excel!Excel.TableColumnCollection#add:member(1)'
+      - 'excel!Excel.TableColumnCollection#context:member'
+      - 'excel!Excel.TableColumnCollection#count:member'
+      - 'excel!Excel.TableColumnCollection#getCount:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItem:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
+      - 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.TableColumnCollection#items:member'
+      - 'excel!Excel.TableColumnCollection#load:member(1)'
+      - 'excel!Excel.TableColumnCollection#load:member(2)'
+      - 'excel!Excel.TableColumnCollection#load:member(3)'
+      - 'excel!Excel.TableColumnCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.TableColumnCollection#add:member(1)'
     summary: >-
       Adds a new column to the table.
 
@@ -45,28 +45,8 @@ items:
         string): Excel.TableColumn;
       return:
         type:
-          - excel.Excel.TableColumn
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tables = ctx.workbook.tables;
-              var values = [["Sample"], ["Values"], ["For"], ["New"], ["Column"]];
-              var column = tables.getItem("Table1").columns.add(null, values);
-              column.load('name');
-              return ctx.sync().then(function() {
-                  console.log(column.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableColumn:class'
+        description: ''
       parameters:
         - id: index
           description: >-
@@ -82,7 +62,7 @@ items:
           description: 'Optional. Specifies the name of the new column. If null, the default name will be used.'
           type:
             - string
-  - uid: excel.Excel.TableColumnCollection.context
+  - uid: 'excel!Excel.TableColumnCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -95,8 +75,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TableColumnCollection.count
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TableColumnCollection#count:member'
     summary: |-
       Returns the number of columns in the table. Read-only.
 
@@ -111,7 +91,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.TableColumnCollection.getCount
+  - uid: 'excel!Excel.TableColumnCollection#getCount:member(1)'
     summary: |-
       Gets the number of columns in the table.
 
@@ -127,7 +107,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.TableColumnCollection.getItem
+  - uid: 'excel!Excel.TableColumnCollection#getItem:member(1)'
     summary: |-
       Gets a column object by Name or ID.
 
@@ -141,32 +121,14 @@ items:
       content: 'getItem(key: number | string): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablecolumn = ctx.workbook.tables.getItem('Table1').columns.getItem(0);
-              tablecolumn.load('name');
-              return ctx.sync().then(function() {
-                      console.log(tablecolumn.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableColumn:class'
+        description: ''
       parameters:
         - id: key
           description: Column Name or ID.
           type:
             - number | string
-  - uid: excel.Excel.TableColumnCollection.getItemAt
+  - uid: 'excel!Excel.TableColumnCollection#getItemAt:member(1)'
     summary: |-
       Gets a column based on its position in the collection.
 
@@ -180,32 +142,14 @@ items:
       content: 'getItemAt(index: number): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablecolumn = ctx.workbook.tables.getItem['Table1'].columns.getItemAt(0);
-              tablecolumn.load('name');
-              return ctx.sync().then(function() {
-                      console.log(tablecolumn.name);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableColumn:class'
+        description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.TableColumnCollection.getItemOrNullObject
+  - uid: 'excel!Excel.TableColumnCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a column object by Name or ID. If the column does not exist, will return a null object.
 
@@ -219,14 +163,14 @@ items:
       content: 'getItemOrNullObject(key: number | string): Excel.TableColumn;'
       return:
         type:
-          - excel.Excel.TableColumn
+          - 'excel!Excel.TableColumn:class'
         description: ''
       parameters:
         - id: key
           description: Column Name or ID.
           type:
             - number | string
-  - uid: excel.Excel.TableColumnCollection.items
+  - uid: 'excel!Excel.TableColumnCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -238,7 +182,7 @@ items:
       return:
         type:
           - 'Excel.TableColumn[]'
-  - uid: excel.Excel.TableColumnCollection.load
+  - uid: 'excel!Excel.TableColumnCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -271,14 +215,14 @@ items:
         Excel.TableColumnCollection;
       return:
         type:
-          - excel.Excel.TableColumnCollection
+          - 'excel!Excel.TableColumnCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.TableColumnCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.TableColumnCollection.load_1
+  - uid: 'excel!Excel.TableColumnCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -291,35 +235,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TableColumnCollection;'
       return:
         type:
-          - excel.Excel.TableColumnCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var tablecolumns = ctx.workbook.tables.getItem('Table1').columns;
-              tablecolumns.load('items');
-              return ctx.sync().then(function() {
-                  console.log("tablecolumns Count: " + tablecolumns.count);
-                  for (var i = 0; i < tablecolumns.items.length; i++) {
-                      console.log(tablecolumns.items[i].name);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.TableColumnCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TableColumnCollection.load_2
+  - uid: 'excel!Excel.TableColumnCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -329,14 +252,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.TableColumnCollection;'
       return:
         type:
-          - excel.Excel.TableColumnCollection
+          - 'excel!Excel.TableColumnCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.TableColumnCollection.toJSON
+  - uid: 'excel!Excel.TableColumnCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -352,5 +275,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TableColumnCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionData
+          - 'excel!Excel.Interfaces.TableColumnCollectionData:interface'
         description: ''

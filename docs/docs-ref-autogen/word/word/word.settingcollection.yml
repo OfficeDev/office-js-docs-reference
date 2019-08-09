@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.SettingCollection
+  - uid: 'word!Word.SettingCollection:class'
     summary: >-
-      Contains the collection of [Word.Setting](xref:word.Word.Setting) objects.
+      Contains the collection of [Word.Setting](xref:word!Word.Setting:class) objects.
 
 
       \[ [API set: WordApi BETA (PREVIEW
@@ -15,22 +15,22 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.SettingCollection.add
-      - word.Word.SettingCollection.context
-      - word.Word.SettingCollection.deleteAll
-      - word.Word.SettingCollection.getCount
-      - word.Word.SettingCollection.getItem
-      - word.Word.SettingCollection.getItemOrNullObject
-      - word.Word.SettingCollection.items
-      - word.Word.SettingCollection.load
-      - word.Word.SettingCollection.load_1
-      - word.Word.SettingCollection.load_2
-      - word.Word.SettingCollection.toJSON
-      - word.Word.SettingCollection.track
-      - word.Word.SettingCollection.untrack
-  - uid: word.Word.SettingCollection.add
+      - 'word!Word.SettingCollection#add:member(1)'
+      - 'word!Word.SettingCollection#context:member'
+      - 'word!Word.SettingCollection#deleteAll:member(1)'
+      - 'word!Word.SettingCollection#getCount:member(1)'
+      - 'word!Word.SettingCollection#getItem:member(1)'
+      - 'word!Word.SettingCollection#getItemOrNullObject:member(1)'
+      - 'word!Word.SettingCollection#items:member'
+      - 'word!Word.SettingCollection#load:member(1)'
+      - 'word!Word.SettingCollection#load:member(2)'
+      - 'word!Word.SettingCollection#load:member(3)'
+      - 'word!Word.SettingCollection#toJSON:member(1)'
+      - 'word!Word.SettingCollection#track:member(1)'
+      - 'word!Word.SettingCollection#untrack:member(1)'
+  - uid: 'word!Word.SettingCollection#add:member(1)'
     summary: >-
       Creates a new setting or sets an existing setting.
 
@@ -47,7 +47,7 @@ items:
       content: 'add(key: string, value: any): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
       parameters:
         - id: key
@@ -58,7 +58,7 @@ items:
           description: Required. The setting's value.
           type:
             - any
-  - uid: word.Word.SettingCollection.context
+  - uid: 'word!Word.SettingCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -72,8 +72,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.SettingCollection.deleteAll
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.SettingCollection#deleteAll:member(1)'
     summary: >-
       Deletes all settings in this add-in.
 
@@ -91,49 +91,8 @@ items:
       return:
         type:
           - void
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to get the count of settings.
-              var count = settings.getCount();
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(count.value);
-
-                  // Queue a command to delete all settings.
-                  settings.deleteAll();
-
-                  // Queue a command to get the new count of settings.
-                  count = settings.getCount();
-              })
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              .then(context.sync)
-              .then(function () {
-                  console.log(count.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.SettingCollection.getCount
+        description: ''
+  - uid: 'word!Word.SettingCollection#getCount:member(1)'
     summary: >-
       Gets the count of settings.
 
@@ -151,49 +110,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<number>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to get the count of settings.
-              var count = settings.getCount();
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(count.value);
-
-                  // Queue a command to delete all settings.
-                  settings.deleteAll();
-
-                  // Queue a command to get the new count of settings.
-                  count = settings.getCount();
-              })
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              .then(context.sync)
-              .then(function () {
-                  console.log(count.value);
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: word.Word.SettingCollection.getItem
+        description: ''
+  - uid: 'word!Word.SettingCollection#getItem:member(1)'
     summary: >-
       Gets a setting object by its key, which is case-sensitive. Throws if the setting does not exist.
 
@@ -210,85 +128,14 @@ items:
       content: 'getItem(key: string): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-
-              // Queue a command to retrieve a setting.
-              var startMonth = settings.getItem('startMonth');
-
-              // Queue a command to load the setting.
-              context.load(startMonth);
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-              return context.sync().then(function () {
-                  console.log(JSON.stringify(startMonth.value));
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          // Run a batch operation against the Word object model.
-          Word.run(function (context) {
-
-              // Queue commands add a setting.
-              var settings = context.document.settings;
-              settings.add('startMonth', { month: 'March', year: 1998 });
-              
-              // Queue commands to retrieve settings.
-              var startMonth = settings.getItemOrNullObject('startMonth');
-              var endMonth = settings.getItemOrNullObject('endMonth');
-
-              // Queue commands to load settings.
-              context.load(startMonth);
-              context.load(endMonth);
-
-              // Synchronize the document state by executing the queued commands, 
-              // and return a promise to indicate task completion.
-                 return context.sync().then(function () {
-                     if (startMonth.isNullObject) {
-                         console.log("No such setting.");
-                     }
-                     else {
-                         console.log(JSON.stringify(startMonth.value));
-                     }
-                      if (endMonth.isNullObject) {
-                         console.log("No such setting.");
-                     }
-                     else {
-                         console.log(JSON.stringify(endMonth.value));
-                     }
-              });
-          })
-          .catch(function (error) {
-              console.log('Error: ' + JSON.stringify(error));
-              if (error instanceof OfficeExtension.Error) {
-                  console.log('Debug info: ' + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'word!Word.Setting:class'
+        description: ''
       parameters:
         - id: key
           description: The key that identifies the setting object.
           type:
             - string
-  - uid: word.Word.SettingCollection.getItemOrNullObject
+  - uid: 'word!Word.SettingCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a setting object by its key, which is case-sensitive. Returns a null object if the setting does not exist.
 
@@ -305,14 +152,14 @@ items:
       content: 'getItemOrNullObject(key: string): Word.Setting;'
       return:
         type:
-          - word.Word.Setting
+          - 'word!Word.Setting:class'
         description: ''
       parameters:
         - id: key
           description: Required. The key that identifies the setting object.
           type:
             - string
-  - uid: word.Word.SettingCollection.items
+  - uid: 'word!Word.SettingCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -325,7 +172,7 @@ items:
       return:
         type:
           - 'Word.Setting[]'
-  - uid: word.Word.SettingCollection.load
+  - uid: 'word!Word.SettingCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -359,14 +206,14 @@ items:
         Word.SettingCollection;
       return:
         type:
-          - word.Word.SettingCollection
+          - 'word!Word.SettingCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.SettingCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.SettingCollection.load_1
+  - uid: 'word!Word.SettingCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -380,14 +227,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.SettingCollection;'
       return:
         type:
-          - word.Word.SettingCollection
+          - 'word!Word.SettingCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.SettingCollection.load_2
+  - uid: 'word!Word.SettingCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -398,14 +245,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.SettingCollection;'
       return:
         type:
-          - word.Word.SettingCollection
+          - 'word!Word.SettingCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: word.Word.SettingCollection.toJSON
+  - uid: 'word!Word.SettingCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -422,9 +269,9 @@ items:
       content: 'toJSON(): Word.Interfaces.SettingCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.SettingCollectionData
+          - 'word!Word.Interfaces.SettingCollectionData:interface'
         description: ''
-  - uid: word.Word.SettingCollection.track
+  - uid: 'word!Word.SettingCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -441,9 +288,9 @@ items:
       content: 'track(): Word.SettingCollection;'
       return:
         type:
-          - word.Word.SettingCollection
+          - 'word!Word.SettingCollection:class'
         description: ''
-  - uid: word.Word.SettingCollection.untrack
+  - uid: 'word!Word.SettingCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -459,5 +306,5 @@ items:
       content: 'untrack(): Word.SettingCollection;'
       return:
         type:
-          - word.Word.SettingCollection
+          - 'word!Word.SettingCollection:class'
         description: ''

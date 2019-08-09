@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CustomConditionalFormat
+  - uid: 'excel!Excel.CustomConditionalFormat:class'
     summary: |-
       Represents a custom conditional format type.
 
@@ -12,18 +12,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CustomConditionalFormat.context
-      - excel.Excel.CustomConditionalFormat.format
-      - excel.Excel.CustomConditionalFormat.load
-      - excel.Excel.CustomConditionalFormat.load_1
-      - excel.Excel.CustomConditionalFormat.load_2
-      - excel.Excel.CustomConditionalFormat.rule
-      - excel.Excel.CustomConditionalFormat.set
-      - excel.Excel.CustomConditionalFormat.set_1
-      - excel.Excel.CustomConditionalFormat.toJSON
-  - uid: excel.Excel.CustomConditionalFormat.context
+      - 'excel!Excel.CustomConditionalFormat#context:member'
+      - 'excel!Excel.CustomConditionalFormat#format:member'
+      - 'excel!Excel.CustomConditionalFormat#load:member(1)'
+      - 'excel!Excel.CustomConditionalFormat#load:member(2)'
+      - 'excel!Excel.CustomConditionalFormat#load:member(3)'
+      - 'excel!Excel.CustomConditionalFormat#rule:member'
+      - 'excel!Excel.CustomConditionalFormat#set:member(1)'
+      - 'excel!Excel.CustomConditionalFormat#set:member(2)'
+      - 'excel!Excel.CustomConditionalFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.CustomConditionalFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.CustomConditionalFormat.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.CustomConditionalFormat#format:member'
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
       Read-only.
@@ -53,24 +53,8 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const sheet = context.workbook.worksheets.getItem("Sample");
-              const range = sheet.getRange("B8:E13");
-              const conditionalFormat = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              conditionalFormat.custom.rule.formula = '=IF(B8>INDIRECT("RC[-1]",0),TRUE)';
-              conditionalFormat.custom.format.font.color = "green";
-
-              await context.sync();
-          });
-          ```
-  - uid: excel.Excel.CustomConditionalFormat.load
+          - 'excel!Excel.ConditionalRangeFormat:class'
+  - uid: 'excel!Excel.CustomConditionalFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -101,14 +85,14 @@ items:
       content: 'load(option?: Excel.Interfaces.CustomConditionalFormatLoadOptions): Excel.CustomConditionalFormat;'
       return:
         type:
-          - excel.Excel.CustomConditionalFormat
+          - 'excel!Excel.CustomConditionalFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.CustomConditionalFormatLoadOptions
-  - uid: excel.Excel.CustomConditionalFormat.load_1
+            - 'excel!Excel.Interfaces.CustomConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.CustomConditionalFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -121,14 +105,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.CustomConditionalFormat;'
       return:
         type:
-          - excel.Excel.CustomConditionalFormat
+          - 'excel!Excel.CustomConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.CustomConditionalFormat.load_2
+  - uid: 'excel!Excel.CustomConditionalFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -141,7 +125,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.CustomConditionalFormat;'
       return:
         type:
-          - excel.Excel.CustomConditionalFormat
+          - 'excel!Excel.CustomConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -150,7 +134,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.CustomConditionalFormat.rule
+  - uid: 'excel!Excel.CustomConditionalFormat#rule:member'
     summary: |-
       Represents the Rule object on this conditional format. Read-only.
 
@@ -164,32 +148,8 @@ items:
       content: 'readonly rule: Excel.ConditionalFormatRule;'
       return:
         type:
-          - excel.Excel.ConditionalFormatRule
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) {
-              var sheet = ctx.workbook.worksheets.getActiveWorksheet();
-              var range = sheet.getRange("A1:A5");
-              range.values = [[1], [20], [""], [5], ["test"]];
-              var cf = range.conditionalFormats.add(Excel.ConditionalFormatType.custom);
-              var cfCustom = cf.customOrNullObject;
-              cfCustom.rule.formula = "=ISBLANK(A1)";
-              cfCustom.format.fill.color = "#00FF00";
-              return ctx.sync().then(function () {
-                  console.log("Added new custom conditional format highlighting all blank cells.");
-              });
-          }).catch(function (error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: excel.Excel.CustomConditionalFormat.set
+          - 'excel!Excel.ConditionalFormatRule:class'
+  - uid: 'excel!Excel.CustomConditionalFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -219,7 +179,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.CustomConditionalFormat.set_1
+  - uid: 'excel!Excel.CustomConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -236,8 +196,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.CustomConditionalFormat
-  - uid: excel.Excel.CustomConditionalFormat.toJSON
+            - 'excel!Excel.CustomConditionalFormat:class'
+  - uid: 'excel!Excel.CustomConditionalFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -253,5 +213,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.CustomConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.CustomConditionalFormatData
+          - 'excel!Excel.Interfaces.CustomConditionalFormatData:interface'
         description: ''

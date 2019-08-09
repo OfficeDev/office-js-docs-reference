@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.LocationIdentifier
+  - uid: 'outlook!Office.LocationIdentifier:interface'
     summary: |-
       Represents the id of a location.
 
@@ -12,32 +12,17 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      var locations = [
-          {
-              "id": "Contoso",
-              "type": Office.MailboxEnums.LocationType.Custom
-          }
-      ];
-
-      ```
     isPreview: true
     name: Office.LocationIdentifier
     fullName: Office.LocationIdentifier
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.LocationIdentifier.id
-      - outlook.Office.LocationIdentifier.type
-  - uid: outlook.Office.LocationIdentifier.id
+      - 'outlook!Office.LocationIdentifier#id:member'
+      - 'outlook!Office.LocationIdentifier#type:member'
+  - uid: 'outlook!Office.LocationIdentifier#id:member'
     summary: |-
       The location's unique id.
 
@@ -55,7 +40,7 @@ items:
       return:
         type:
           - string
-  - uid: outlook.Office.LocationIdentifier.type
+  - uid: 'outlook!Office.LocationIdentifier#type:member'
     summary: The location's type.
     isPreview: true
     name: type

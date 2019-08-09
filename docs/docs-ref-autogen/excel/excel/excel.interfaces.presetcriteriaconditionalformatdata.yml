@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData:interface'
     summary: An interface describing the data returned by calling "presetCriteriaConditionalFormat.toJSON()".
     name: Excel.Interfaces.PresetCriteriaConditionalFormatData
     fullName: Excel.Interfaces.PresetCriteriaConditionalFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData.format
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatData.rule
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData.format
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#format:member'
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#rule:member'
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -25,8 +25,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatData
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatData#rule:member'
     summary: |-
       The rule of the conditional format.
 
@@ -40,4 +40,4 @@ items:
       content: 'rule?: Excel.ConditionalPresetCriteriaRule;'
       return:
         type:
-          - excel.Excel.ConditionalPresetCriteriaRule
+          - 'excel!Excel.ConditionalPresetCriteriaRule:interface'

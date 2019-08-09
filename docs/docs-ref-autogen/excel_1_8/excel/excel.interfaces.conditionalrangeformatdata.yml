@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFormatData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
     summary: An interface describing the data returned by calling "conditionalRangeFormat.toJSON()".
     name: Excel.Interfaces.ConditionalRangeFormatData
     fullName: Excel.Interfaces.ConditionalRangeFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeFormatData.borders
-      - excel.Excel.Interfaces.ConditionalRangeFormatData.fill
-      - excel.Excel.Interfaces.ConditionalRangeFormatData.font
-      - excel.Excel.Interfaces.ConditionalRangeFormatData.numberFormat
-  - uid: excel.Excel.Interfaces.ConditionalRangeFormatData.borders
+      - 'excel!Excel.Interfaces.ConditionalRangeFormatData#borders:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFormatData#fill:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFormatData#font:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFormatData#numberFormat:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData#borders:member'
     summary: |-
       Collection of border objects that apply to the overall conditional format range. Read-only.
 
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.ConditionalRangeBorderData[]'
-  - uid: excel.Excel.Interfaces.ConditionalRangeFormatData.fill
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData#fill:member'
     summary: |-
       Returns the fill object defined on the overall conditional format range. Read-only.
 
@@ -42,8 +42,8 @@ items:
       content: 'fill?: Excel.Interfaces.ConditionalRangeFillData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFillData
-  - uid: excel.Excel.Interfaces.ConditionalRangeFormatData.font
+          - 'excel!Excel.Interfaces.ConditionalRangeFillData:interface'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData#font:member'
     summary: |-
       Returns the font object defined on the overall conditional format range. Read-only.
 
@@ -57,8 +57,8 @@ items:
       content: 'font?: Excel.Interfaces.ConditionalRangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFontData
-  - uid: excel.Excel.Interfaces.ConditionalRangeFormatData.numberFormat
+          - 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFormatData#numberFormat:member'
     summary: |-
       Represents Excel's number format code for the given range. Cleared if null is passed in.
 

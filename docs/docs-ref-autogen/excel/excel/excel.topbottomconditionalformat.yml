@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.TopBottomConditionalFormat
+  - uid: 'excel!Excel.TopBottomConditionalFormat:class'
     summary: |-
       Represents a Top/Bottom conditional format.
 
@@ -12,18 +12,18 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.TopBottomConditionalFormat.context
-      - excel.Excel.TopBottomConditionalFormat.format
-      - excel.Excel.TopBottomConditionalFormat.load
-      - excel.Excel.TopBottomConditionalFormat.load_1
-      - excel.Excel.TopBottomConditionalFormat.load_2
-      - excel.Excel.TopBottomConditionalFormat.rule
-      - excel.Excel.TopBottomConditionalFormat.set
-      - excel.Excel.TopBottomConditionalFormat.set_1
-      - excel.Excel.TopBottomConditionalFormat.toJSON
-  - uid: excel.Excel.TopBottomConditionalFormat.context
+      - 'excel!Excel.TopBottomConditionalFormat#context:member'
+      - 'excel!Excel.TopBottomConditionalFormat#format:member'
+      - 'excel!Excel.TopBottomConditionalFormat#load:member(1)'
+      - 'excel!Excel.TopBottomConditionalFormat#load:member(2)'
+      - 'excel!Excel.TopBottomConditionalFormat#load:member(3)'
+      - 'excel!Excel.TopBottomConditionalFormat#rule:member'
+      - 'excel!Excel.TopBottomConditionalFormat#set:member(1)'
+      - 'excel!Excel.TopBottomConditionalFormat#set:member(2)'
+      - 'excel!Excel.TopBottomConditionalFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.TopBottomConditionalFormat.format
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#format:member'
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
       Read-only.
@@ -53,8 +53,8 @@ items:
       content: 'readonly format: Excel.ConditionalRangeFormat;'
       return:
         type:
-          - excel.Excel.ConditionalRangeFormat
-  - uid: excel.Excel.TopBottomConditionalFormat.load
+          - 'excel!Excel.ConditionalRangeFormat:class'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -85,14 +85,14 @@ items:
       content: 'load(option?: Excel.Interfaces.TopBottomConditionalFormatLoadOptions): Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - excel.Excel.TopBottomConditionalFormat
+          - 'excel!Excel.TopBottomConditionalFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.TopBottomConditionalFormatLoadOptions
-  - uid: excel.Excel.TopBottomConditionalFormat.load_1
+            - 'excel!Excel.Interfaces.TopBottomConditionalFormatLoadOptions:interface'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -105,14 +105,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - excel.Excel.TopBottomConditionalFormat
+          - 'excel!Excel.TopBottomConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.TopBottomConditionalFormat.load_2
+  - uid: 'excel!Excel.TopBottomConditionalFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -125,7 +125,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TopBottomConditionalFormat;'
       return:
         type:
-          - excel.Excel.TopBottomConditionalFormat
+          - 'excel!Excel.TopBottomConditionalFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -134,7 +134,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.TopBottomConditionalFormat.rule
+  - uid: 'excel!Excel.TopBottomConditionalFormat#rule:member'
     summary: |-
       The criteria of the Top/Bottom conditional format.
 
@@ -148,8 +148,8 @@ items:
       content: 'rule: Excel.ConditionalTopBottomRule;'
       return:
         type:
-          - excel.Excel.ConditionalTopBottomRule
-  - uid: excel.Excel.TopBottomConditionalFormat.set
+          - 'excel!Excel.ConditionalTopBottomRule:interface'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -179,7 +179,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.TopBottomConditionalFormat.set_1
+  - uid: 'excel!Excel.TopBottomConditionalFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -196,8 +196,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.TopBottomConditionalFormat
-  - uid: excel.Excel.TopBottomConditionalFormat.toJSON
+            - 'excel!Excel.TopBottomConditionalFormat:class'
+  - uid: 'excel!Excel.TopBottomConditionalFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -213,5 +213,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.TopBottomConditionalFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.TopBottomConditionalFormatData
+          - 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
         description: ''

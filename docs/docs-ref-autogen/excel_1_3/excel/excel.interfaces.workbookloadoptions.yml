@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions:interface'
     summary: |-
       Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookLoadOptions.$all
-      - excel.Excel.Interfaces.WorkbookLoadOptions.application
-      - excel.Excel.Interfaces.WorkbookLoadOptions.bindings
-      - excel.Excel.Interfaces.WorkbookLoadOptions.tables
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.$all
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.application
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#application:member'
     summary: |-
       Represents the Excel application instance that contains this workbook.
 
@@ -41,8 +41,8 @@ items:
       content: 'application?: Excel.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ApplicationLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.bindings
+          - 'excel!Excel.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook.
 
@@ -56,8 +56,8 @@ items:
       content: 'bindings?: Excel.Interfaces.BindingCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.BindingCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.WorkbookLoadOptions.tables
+          - 'excel!Excel.Interfaces.BindingCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookLoadOptions#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook.
 
@@ -71,4 +71,4 @@ items:
       content: 'tables?: Excel.Interfaces.TableCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableCollectionLoadOptions
+          - 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'

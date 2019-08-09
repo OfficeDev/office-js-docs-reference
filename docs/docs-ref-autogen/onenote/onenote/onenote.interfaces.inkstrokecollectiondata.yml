@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionData
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData:interface'
     summary: An interface describing the data returned by calling "inkStrokeCollection.toJSON()".
     name: OneNote.Interfaces.InkStrokeCollectionData
     fullName: OneNote.Interfaces.InkStrokeCollectionData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkStrokeCollectionData.items
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionData.items
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionData#items:member'
     name: items
     fullName: items
     langs:

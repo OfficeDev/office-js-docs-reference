@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PivotTableCollection
+  - uid: 'excel!Excel.PivotTableCollection:class'
     summary: |-
       Represents a collection of all the PivotTables that are part of the workbook or worksheet.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PivotTableCollection.add
-      - excel.Excel.PivotTableCollection.context
-      - excel.Excel.PivotTableCollection.getCount
-      - excel.Excel.PivotTableCollection.getItem
-      - excel.Excel.PivotTableCollection.getItemOrNullObject
-      - excel.Excel.PivotTableCollection.items
-      - excel.Excel.PivotTableCollection.load
-      - excel.Excel.PivotTableCollection.load_1
-      - excel.Excel.PivotTableCollection.load_2
-      - excel.Excel.PivotTableCollection.refreshAll
-      - excel.Excel.PivotTableCollection.toJSON
-  - uid: excel.Excel.PivotTableCollection.add
+      - 'excel!Excel.PivotTableCollection#add:member(1)'
+      - 'excel!Excel.PivotTableCollection#context:member'
+      - 'excel!Excel.PivotTableCollection#getCount:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItem:member(1)'
+      - 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.PivotTableCollection#items:member'
+      - 'excel!Excel.PivotTableCollection#load:member(1)'
+      - 'excel!Excel.PivotTableCollection#load:member(2)'
+      - 'excel!Excel.PivotTableCollection#load:member(3)'
+      - 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
+      - 'excel!Excel.PivotTableCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.PivotTableCollection#add:member(1)'
     summary: |-
       Add a Pivottable based on the specified source data and insert it at the top left cell of the destination range.
 
@@ -39,21 +39,8 @@ items:
       content: 'add(name: string, source: Range | string | Table, destination: Range | string): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
-        description: |-
-          Returns the newly inserted PivotTable.
-
-          #### Examples
-
-          ```typescript
-          await Excel.run(async (context) => {
-              const rangeToAnalyze = context.workbook.worksheets.getItem("Data").getRange("A1:E21");
-              const rangeToPlacePivot = context.workbook.worksheets.getItem("Pivot").getRange("A2");
-              context.workbook.worksheets.getItem("Pivot").pivotTables.add("Farm Sales", rangeToAnalyze, rangeToPlacePivot);
-
-              await context.sync();
-          });
-          ```
+          - 'excel!Excel.PivotTable:class'
+        description: Returns the newly inserted PivotTable.
       parameters:
         - id: name
           description: The name of the new PivotTable.
@@ -71,7 +58,7 @@ items:
             where the resulting report will be placed).
           type:
             - Range | string
-  - uid: excel.Excel.PivotTableCollection.context
+  - uid: 'excel!Excel.PivotTableCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -84,8 +71,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.PivotTableCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.PivotTableCollection#getCount:member(1)'
     summary: |-
       Gets the number of pivot tables in the collection.
 
@@ -101,7 +88,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.PivotTableCollection.getItem
+  - uid: 'excel!Excel.PivotTableCollection#getItem:member(1)'
     summary: |-
       Gets a PivotTable by name.
 
@@ -115,14 +102,14 @@ items:
       content: 'getItem(name: string): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - 'excel!Excel.PivotTable:class'
         description: ''
       parameters:
         - id: name
           description: Name of the PivotTable to be retrieved.
           type:
             - string
-  - uid: excel.Excel.PivotTableCollection.getItemOrNullObject
+  - uid: 'excel!Excel.PivotTableCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a PivotTable by name. If the PivotTable does not exist, will return a null object.
 
@@ -136,14 +123,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.PivotTable;'
       return:
         type:
-          - excel.Excel.PivotTable
+          - 'excel!Excel.PivotTable:class'
         description: ''
       parameters:
         - id: name
           description: Name of the PivotTable to be retrieved.
           type:
             - string
-  - uid: excel.Excel.PivotTableCollection.items
+  - uid: 'excel!Excel.PivotTableCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -155,7 +142,7 @@ items:
       return:
         type:
           - 'Excel.PivotTable[]'
-  - uid: excel.Excel.PivotTableCollection.load
+  - uid: 'excel!Excel.PivotTableCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -188,14 +175,14 @@ items:
         Excel.PivotTableCollection;
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - 'excel!Excel.PivotTableCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.PivotTableCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.PivotTableCollection.load_1
+  - uid: 'excel!Excel.PivotTableCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -208,14 +195,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - 'excel!Excel.PivotTableCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.PivotTableCollection.load_2
+  - uid: 'excel!Excel.PivotTableCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -225,14 +212,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.PivotTableCollection;'
       return:
         type:
-          - excel.Excel.PivotTableCollection
+          - 'excel!Excel.PivotTableCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.PivotTableCollection.refreshAll
+  - uid: 'excel!Excel.PivotTableCollection#refreshAll:member(1)'
     summary: |-
       Refreshes all the pivot tables in the collection.
 
@@ -248,7 +235,7 @@ items:
         type:
           - void
         description: ''
-  - uid: excel.Excel.PivotTableCollection.toJSON
+  - uid: 'excel!Excel.PivotTableCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -264,5 +251,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.PivotTableCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.PivotTableCollectionData
+          - 'excel!Excel.Interfaces.PivotTableCollectionData:interface'
         description: ''

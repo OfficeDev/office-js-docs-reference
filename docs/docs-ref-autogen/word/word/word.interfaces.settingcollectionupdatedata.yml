@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.SettingCollectionUpdateData
+  - uid: 'word!Word.Interfaces.SettingCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the SettingCollection object, for use in "settingCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.SettingCollectionUpdateData.items
-  - uid: word.Word.Interfaces.SettingCollectionUpdateData.items
+      - 'word!Word.Interfaces.SettingCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.SettingCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

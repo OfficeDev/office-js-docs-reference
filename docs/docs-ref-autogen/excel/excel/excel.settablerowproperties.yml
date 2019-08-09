@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SettableRowProperties
+  - uid: 'excel!Excel.SettableRowProperties:interface'
     summary: |-
       Represents the input parameter of setRowProperties.
 
@@ -11,12 +11,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - excel.Excel.SettableCellProperties
-    package: excel
+      - 'excel!Excel.SettableCellProperties:interface'
+    package: excel!
     children:
-      - excel.Excel.SettableRowProperties.format
-      - excel.Excel.SettableRowProperties.rowHidden
-  - uid: excel.Excel.SettableRowProperties.format
+      - 'excel!Excel.SettableRowProperties#format:member'
+      - 'excel!Excel.SettableRowProperties#rowHidden:member'
+  - uid: 'excel!Excel.SettableRowProperties#format:member'
     summary: |-
       Represents the `format` property.
 
@@ -37,7 +37,7 @@ items:
             Excel.CellPropertiesFormat & {
                         rowHeight?: number;
                     }
-  - uid: excel.Excel.SettableRowProperties.rowHidden
+  - uid: 'excel!Excel.SettableRowProperties#rowHidden:member'
     summary: |-
       Represents the `rowHidden` property.
 

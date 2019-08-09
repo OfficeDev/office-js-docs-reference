@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData
+  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData:interface'
     summary: An interface describing the data returned by calling "topBottomConditionalFormat.toJSON()".
     name: Excel.Interfaces.TopBottomConditionalFormatData
     fullName: Excel.Interfaces.TopBottomConditionalFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TopBottomConditionalFormatData.format
-      - excel.Excel.Interfaces.TopBottomConditionalFormatData.rule
-  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData.format
+      - 'excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member'
+      - 'excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member'
+  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData#format:member'
     summary: >-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
       Read-only.
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatData
-  - uid: excel.Excel.Interfaces.TopBottomConditionalFormatData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatData:interface'
+  - uid: 'excel!Excel.Interfaces.TopBottomConditionalFormatData#rule:member'
     summary: |-
       The criteria of the Top/Bottom conditional format.
 
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.ConditionalTopBottomRule;'
       return:
         type:
-          - excel.Excel.ConditionalTopBottomRule
+          - 'excel!Excel.ConditionalTopBottomRule:interface'

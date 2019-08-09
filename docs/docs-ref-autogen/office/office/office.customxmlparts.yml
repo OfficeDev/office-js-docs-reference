@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.CustomXmlParts
+  - uid: 'office!Office.CustomXmlParts:interface'
     summary: Represents a collection of CustomXmlPart objects.
     remarks: '**Hosts**: Word'
     name: Office.CustomXmlParts
@@ -8,15 +8,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: office
+    package: office!
     children:
-      - office.Office.CustomXmlParts.addAsync
-      - office.Office.CustomXmlParts.addAsync_1
-      - office.Office.CustomXmlParts.getByIdAsync
-      - office.Office.CustomXmlParts.getByIdAsync_1
-      - office.Office.CustomXmlParts.getByNamespaceAsync
-      - office.Office.CustomXmlParts.getByNamespaceAsync_1
-  - uid: office.Office.CustomXmlParts.addAsync
+      - 'office!Office.CustomXmlParts#addAsync:member(1)'
+      - 'office!Office.CustomXmlParts#addAsync:member(2)'
+      - 'office!Office.CustomXmlParts#getByIdAsync:member(1)'
+      - 'office!Office.CustomXmlParts#getByIdAsync:member(2)'
+      - 'office!Office.CustomXmlParts#getByNamespaceAsync:member(1)'
+      - 'office!Office.CustomXmlParts#getByNamespaceAsync:member(2)'
+  - uid: 'office!Office.CustomXmlParts#addAsync:member(1)'
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: >-
       **Requirement set**:
@@ -42,52 +42,19 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            newly created CustomXmlPart object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the newly created CustomXmlPart object.
           type:
             - '(result: AsyncResult<CustomXmlPart>) => void'
-  - uid: office.Office.CustomXmlParts.addAsync_1
+  - uid: 'office!Office.CustomXmlParts#addAsync:member(2)'
     summary: Asynchronously adds a new custom XML part to a file.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function addXMLPart() {
-          Office.context.document.customXmlParts.addAsync(
-              '<root categoryId="1" xmlns="http://tempuri.org"><item name="Cheap Item" price="$193.95"/><item name="Expensive Item" price="$931.88"/></root>',
-              function (result) {});
-      }
-
-
-      function addXMLPartandHandler() {
-          Office.context.document.customXmlParts.addAsync(
-              "<testns:book xmlns:testns='http://testns.com'><testns:page number='1'>Hello</testns:page><testns:page number='2'>world!</testns:page></testns:book>",
-              function(r) { r.value.addHandlerAsync(Office.EventType.DataNodeDeleted,
-                  function(a) {write(a.type)
-                  },
-                      function(s) {write(s.status)
-                      });
-              });
-      }
-
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message;
-      }
-
-      ```
     name: 'addAsync(xml, callback)'
     fullName: 'addAsync(xml, callback)'
     langs:
@@ -107,39 +74,15 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is the
-            newly created CustomXmlPart object.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is the newly created CustomXmlPart object.
           type:
             - '(result: AsyncResult<CustomXmlPart>) => void'
-  - uid: office.Office.CustomXmlParts.getByIdAsync
+  - uid: 'office!Office.CustomXmlParts#getByIdAsync:member(1)'
     summary: Asynchronously gets the specified custom XML part by its id.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function showXMLPartInnerXML() {
-          Office.context.document.customXmlParts.getByIdAsync(
-              "{3BC85265-09D6-4205-B665-8EB239A8B9A1}", function (result) {
-              var xmlPart = result.value;
-              xmlPart.getXmlAsync({}, function (eventArgs) {
-                  write(eventArgs.value);
-              });
-          });
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'getByIdAsync(id, options, callback)'
     fullName: 'getByIdAsync(id, options, callback)'
     langs:
@@ -161,16 +104,16 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with the
-            specified id, the method returns null.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with
+            the specified id, the method returns null.
           type:
             - '(result: AsyncResult<CustomXmlPart>) => void'
-  - uid: office.Office.CustomXmlParts.getByIdAsync_1
+  - uid: 'office!Office.CustomXmlParts#getByIdAsync:member(2)'
     summary: Asynchronously gets the specified custom XML part by its id.
     remarks: >-
       **Requirement set**:
@@ -194,12 +137,12 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is a
-            CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with the
-            specified id, the method returns null.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is a CustomXmlPart object that represents the specified custom XML part. If there is no custom XML part with
+            the specified id, the method returns null.
           type:
             - '(result: AsyncResult<CustomXmlPart>) => void'
-  - uid: office.Office.CustomXmlParts.getByNamespaceAsync
+  - uid: 'office!Office.CustomXmlParts#getByNamespaceAsync:member(1)'
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     remarks: >-
       **Requirement set**:
@@ -225,41 +168,19 @@ items:
         - id: options
           description: 'Provides an option for preserving context data of any type, unchanged, for use in a callback.'
           type:
-            - office.Office.AsyncContextOptions
+            - 'office!Office.AsyncContextOptions:interface'
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            of CustomXmlPart objects that match the specified namespace.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array of CustomXmlPart objects that match the specified namespace.
           type:
             - '(result: AsyncResult<CustomXmlPart[]>) => void'
-  - uid: office.Office.CustomXmlParts.getByNamespaceAsync_1
+  - uid: 'office!Office.CustomXmlParts#getByNamespaceAsync:member(2)'
     summary: Asynchronously gets the specified custom XML part(s) by its namespace.
     remarks: >-
       **Requirement set**:
       [CustomXmlParts](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#customxmlparts)
-
-
-      #### Examples
-
-
-      ```javascript
-
-      function showXMLPartsInNamespace() {
-          Office.context.document.customXmlParts.getByNamespaceAsync(
-              "http://tempuri.org", 
-              function (eventArgs) {
-                  write("Found " + eventArgs.value.length + " parts with this namespace");
-          }); 
-      }
-
-      // Function that writes to a div with id='message' on the page.
-
-      function write(message){
-          document.getElementById('message').innerText += message; 
-      }
-
-      ```
     name: 'getByNamespaceAsync(ns, callback)'
     fullName: 'getByNamespaceAsync(ns, callback)'
     langs:
@@ -279,7 +200,7 @@ items:
         - id: callback
           description: >-
             Optional. A function that is invoked when the callback returns, whose only parameter is of type
-            [Office.AsyncResult](xref:office.Office.AsyncResult)<!-- -->. The `value` property of the result is an array
-            of CustomXmlPart objects that match the specified namespace.
+            [Office.AsyncResult](xref:office!Office.AsyncResult:interface)<!-- -->. The `value` property of the result
+            is an array of CustomXmlPart objects that match the specified namespace.
           type:
             - '(result: AsyncResult<CustomXmlPart[]>) => void'

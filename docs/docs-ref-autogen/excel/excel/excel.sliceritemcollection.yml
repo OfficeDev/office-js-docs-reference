@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.SlicerItemCollection
+  - uid: 'excel!Excel.SlicerItemCollection:class'
     summary: >-
       Represents a collection of all the slicer item objects on the slicer.
 
@@ -15,19 +15,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.SlicerItemCollection.context
-      - excel.Excel.SlicerItemCollection.getCount
-      - excel.Excel.SlicerItemCollection.getItem
-      - excel.Excel.SlicerItemCollection.getItemAt
-      - excel.Excel.SlicerItemCollection.getItemOrNullObject
-      - excel.Excel.SlicerItemCollection.items
-      - excel.Excel.SlicerItemCollection.load
-      - excel.Excel.SlicerItemCollection.load_1
-      - excel.Excel.SlicerItemCollection.load_2
-      - excel.Excel.SlicerItemCollection.toJSON
-  - uid: excel.Excel.SlicerItemCollection.context
+      - 'excel!Excel.SlicerItemCollection#context:member'
+      - 'excel!Excel.SlicerItemCollection#getCount:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItem:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
+      - 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.SlicerItemCollection#items:member'
+      - 'excel!Excel.SlicerItemCollection#load:member(1)'
+      - 'excel!Excel.SlicerItemCollection#load:member(2)'
+      - 'excel!Excel.SlicerItemCollection#load:member(3)'
+      - 'excel!Excel.SlicerItemCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.SlicerItemCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -41,8 +41,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.SlicerItemCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.SlicerItemCollection#getCount:member(1)'
     summary: >-
       Returns the number of slicer items in the slicer.
 
@@ -61,7 +61,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.SlicerItemCollection.getItem
+  - uid: 'excel!Excel.SlicerItemCollection#getItem:member(1)'
     summary: >-
       Gets a slicer item object using its key or name.
 
@@ -78,14 +78,14 @@ items:
       content: 'getItem(key: string): Excel.SlicerItem;'
       return:
         type:
-          - excel.Excel.SlicerItem
+          - 'excel!Excel.SlicerItem:class'
         description: ''
       parameters:
         - id: key
           description: The key or name of the slicer item.
           type:
             - string
-  - uid: excel.Excel.SlicerItemCollection.getItemAt
+  - uid: 'excel!Excel.SlicerItemCollection#getItemAt:member(1)'
     summary: >-
       Gets a slicer item based on its position in the collection.
 
@@ -102,14 +102,14 @@ items:
       content: 'getItemAt(index: number): Excel.SlicerItem;'
       return:
         type:
-          - excel.Excel.SlicerItem
+          - 'excel!Excel.SlicerItem:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: excel.Excel.SlicerItemCollection.getItemOrNullObject
+  - uid: 'excel!Excel.SlicerItemCollection#getItemOrNullObject:member(1)'
     summary: >-
       Gets a slicer item using its key or name. If the slicer item does not exist, will return a null object.
 
@@ -126,14 +126,14 @@ items:
       content: 'getItemOrNullObject(key: string): Excel.SlicerItem;'
       return:
         type:
-          - excel.Excel.SlicerItem
+          - 'excel!Excel.SlicerItem:class'
         description: ''
       parameters:
         - id: key
           description: Key or name of the slicer to be retrieved.
           type:
             - string
-  - uid: excel.Excel.SlicerItemCollection.items
+  - uid: 'excel!Excel.SlicerItemCollection#items:member'
     summary: Gets the loaded child items in this collection.
     isPreview: true
     name: items
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - 'Excel.SlicerItem[]'
-  - uid: excel.Excel.SlicerItemCollection.load
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -180,14 +180,14 @@ items:
         Excel.SlicerItemCollection;
       return:
         type:
-          - excel.Excel.SlicerItemCollection
+          - 'excel!Excel.SlicerItemCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.SlicerItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.SlicerItemCollection.load_1
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -201,14 +201,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.SlicerItemCollection;'
       return:
         type:
-          - excel.Excel.SlicerItemCollection
+          - 'excel!Excel.SlicerItemCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.SlicerItemCollection.load_2
+  - uid: 'excel!Excel.SlicerItemCollection#load:member(3)'
     isPreview: true
     name: load(option)
     fullName: load(option)
@@ -219,14 +219,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.SlicerItemCollection;'
       return:
         type:
-          - excel.Excel.SlicerItemCollection
+          - 'excel!Excel.SlicerItemCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.SlicerItemCollection.toJSON
+  - uid: 'excel!Excel.SlicerItemCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -243,5 +243,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.SlicerItemCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.SlicerItemCollectionData
+          - 'excel!Excel.Interfaces.SlicerItemCollectionData:interface'
         description: ''

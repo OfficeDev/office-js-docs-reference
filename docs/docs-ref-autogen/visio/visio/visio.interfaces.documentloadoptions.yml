@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.DocumentLoadOptions
+  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions:interface'
     summary: |-
       Represents the Document class.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.DocumentLoadOptions.$all
-      - visio.Visio.Interfaces.DocumentLoadOptions.application
-      - visio.Visio.Interfaces.DocumentLoadOptions.view
-  - uid: visio.Visio.Interfaces.DocumentLoadOptions.$all
+      - 'visio!Visio.Interfaces.DocumentLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.DocumentLoadOptions#application:member'
+      - 'visio!Visio.Interfaces.DocumentLoadOptions#view:member'
+  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.DocumentLoadOptions.application
+  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions#application:member'
     summary: |-
       Represents a Visio application instance that contains this document.
 
@@ -40,8 +40,8 @@ items:
       content: 'application?: Visio.Interfaces.ApplicationLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.ApplicationLoadOptions
-  - uid: visio.Visio.Interfaces.DocumentLoadOptions.view
+          - 'visio!Visio.Interfaces.ApplicationLoadOptions:interface'
+  - uid: 'visio!Visio.Interfaces.DocumentLoadOptions#view:member'
     summary: |-
       Returns the DocumentView object.
 
@@ -55,4 +55,4 @@ items:
       content: 'view?: Visio.Interfaces.DocumentViewLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.DocumentViewLoadOptions
+          - 'visio!Visio.Interfaces.DocumentViewLoadOptions:interface'

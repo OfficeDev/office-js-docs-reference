@@ -1,17 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SettingData
+  - uid: 'excel!Excel.Interfaces.SettingData:interface'
     summary: An interface describing the data returned by calling "setting.toJSON()".
     name: Excel.Interfaces.SettingData
     fullName: Excel.Interfaces.SettingData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SettingData.key
-      - excel.Excel.Interfaces.SettingData.value
-  - uid: excel.Excel.Interfaces.SettingData.key
+      - 'excel!Excel.Interfaces.SettingData#key:member'
+      - 'excel!Excel.Interfaces.SettingData#value:member'
+  - uid: 'excel!Excel.Interfaces.SettingData#key:member'
     summary: |-
       Returns the key that represents the id of the Setting. Read-only.
 
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.SettingData.value
+  - uid: 'excel!Excel.Interfaces.SettingData#value:member'
     summary: |-
       Represents the value stored for this setting.
 

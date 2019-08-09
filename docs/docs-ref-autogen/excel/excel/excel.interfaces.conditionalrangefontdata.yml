@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontData
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData:interface'
     summary: An interface describing the data returned by calling "conditionalRangeFont.toJSON()".
     name: Excel.Interfaces.ConditionalRangeFontData
     fullName: Excel.Interfaces.ConditionalRangeFontData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ConditionalRangeFontData.bold
-      - excel.Excel.Interfaces.ConditionalRangeFontData.color
-      - excel.Excel.Interfaces.ConditionalRangeFontData.italic
-      - excel.Excel.Interfaces.ConditionalRangeFontData.strikethrough
-      - excel.Excel.Interfaces.ConditionalRangeFontData.underline
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontData.bold
+      - 'excel!Excel.Interfaces.ConditionalRangeFontData#bold:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontData#color:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontData#italic:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontData#strikethrough:member'
+      - 'excel!Excel.Interfaces.ConditionalRangeFontData#underline:member'
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#bold:member'
     summary: |-
       Represents the bold status of font.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontData.color
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#color:member'
     summary: |-
       HTML color code representation of the text color. E.g. \#FF0000 represents Red.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontData.italic
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#italic:member'
     summary: |-
       Represents the italic status of the font.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontData.strikethrough
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#strikethrough:member'
     summary: |-
       Represents the strikethrough status of the font.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ConditionalRangeFontData.underline
+  - uid: 'excel!Excel.Interfaces.ConditionalRangeFontData#underline:member'
     summary: |-
       Type of underline applied to the font. See Excel.ConditionalRangeFontUnderlineStyle for details.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.BoundingBox
+  - uid: 'visio!Visio.BoundingBox:interface'
     summary: |-
       Represents the BoundingBox of the shape.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.BoundingBox.height
-      - visio.Visio.BoundingBox.width
-      - visio.Visio.BoundingBox.x
-      - visio.Visio.BoundingBox.y
-  - uid: visio.Visio.BoundingBox.height
+      - 'visio!Visio.BoundingBox#height:member'
+      - 'visio!Visio.BoundingBox#width:member'
+      - 'visio!Visio.BoundingBox#x:member'
+      - 'visio!Visio.BoundingBox#y:member'
+  - uid: 'visio!Visio.BoundingBox#height:member'
     summary: >-
       The distance between the top and bottom edges of the bounding box of the shape, excluding any data graphics
       associated with the shape.
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.BoundingBox.width
+  - uid: 'visio!Visio.BoundingBox#width:member'
     summary: >-
       The distance between the left and right edges of the bounding box of the shape, excluding any data graphics
       associated with the shape.
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.BoundingBox.x
+  - uid: 'visio!Visio.BoundingBox#x:member'
     summary: |-
       An integer that specifies the x-coordinate of the bounding box.
 
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - number
-  - uid: visio.Visio.BoundingBox.y
+  - uid: 'visio!Visio.BoundingBox#y:member'
     summary: |-
       An integer that specifies the y-coordinate of the bounding box.
 

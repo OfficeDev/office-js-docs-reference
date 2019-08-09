@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.NamedItemCollection
+  - uid: 'excel!Excel.NamedItemCollection:class'
     summary: >-
       A collection of all the NamedItem objects that are part of the workbook or worksheet, depending on how it was
       reached.
@@ -14,16 +14,16 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.NamedItemCollection.context
-      - excel.Excel.NamedItemCollection.getItem
-      - excel.Excel.NamedItemCollection.items
-      - excel.Excel.NamedItemCollection.load
-      - excel.Excel.NamedItemCollection.load_1
-      - excel.Excel.NamedItemCollection.load_2
-      - excel.Excel.NamedItemCollection.toJSON
-  - uid: excel.Excel.NamedItemCollection.context
+      - 'excel!Excel.NamedItemCollection#context:member'
+      - 'excel!Excel.NamedItemCollection#getItem:member(1)'
+      - 'excel!Excel.NamedItemCollection#items:member'
+      - 'excel!Excel.NamedItemCollection#load:member(1)'
+      - 'excel!Excel.NamedItemCollection#load:member(2)'
+      - 'excel!Excel.NamedItemCollection#load:member(3)'
+      - 'excel!Excel.NamedItemCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.NamedItemCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -36,8 +36,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.NamedItemCollection.getItem
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.NamedItemCollection#getItem:member(1)'
     summary: |-
       Gets a NamedItem object using its name.
 
@@ -51,33 +51,14 @@ items:
       content: 'getItem(name: string): Excel.NamedItem;'
       return:
         type:
-          - excel.Excel.NamedItem
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var sheetName = 'Sheet1';
-              var nameditem = ctx.workbook.names.getItem(sheetName);
-              nameditem.load('type');
-              return ctx.sync().then(function() {
-                      console.log(nameditem.type);
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.NamedItem:class'
+        description: ''
       parameters:
         - id: name
           description: Nameditem name.
           type:
             - string
-  - uid: excel.Excel.NamedItemCollection.items
+  - uid: 'excel!Excel.NamedItemCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -89,7 +70,7 @@ items:
       return:
         type:
           - 'Excel.NamedItem[]'
-  - uid: excel.Excel.NamedItemCollection.load
+  - uid: 'excel!Excel.NamedItemCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -122,14 +103,14 @@ items:
         Excel.NamedItemCollection;
       return:
         type:
-          - excel.Excel.NamedItemCollection
+          - 'excel!Excel.NamedItemCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.NamedItemCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.NamedItemCollection.load_1
+  - uid: 'excel!Excel.NamedItemCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -142,36 +123,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Excel.run(function (ctx) { 
-              var nameditems = ctx.workbook.names;
-              nameditems.load('items');
-              return ctx.sync().then(function() {
-                  for (var i = 0; i < nameditems.items.length; i++)
-                  {
-                      console.log(nameditems.items[i].name);
-                      console.log(nameditems.items[i].index);
-                  }
-              });
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'excel!Excel.NamedItemCollection:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.NamedItemCollection.load_2
+  - uid: 'excel!Excel.NamedItemCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -181,14 +140,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.NamedItemCollection;'
       return:
         type:
-          - excel.Excel.NamedItemCollection
+          - 'excel!Excel.NamedItemCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.NamedItemCollection.toJSON
+  - uid: 'excel!Excel.NamedItemCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -204,5 +163,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.NamedItemCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.NamedItemCollectionData
+          - 'excel!Excel.Interfaces.NamedItemCollectionData:interface'
         description: ''

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellBorder
+  - uid: 'excel!Excel.CellBorder:interface'
     summary: >-
       Represents the properties of a single border returned by `getCellProperties`<!-- -->, `getRowProperties`<!-- -->,
       and `getColumnProperties` or the border property input parameter of `setCellProperties`<!-- -->,
@@ -13,13 +13,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellBorder.color
-      - excel.Excel.CellBorder.style
-      - excel.Excel.CellBorder.tintAndShade
-      - excel.Excel.CellBorder.weight
-  - uid: excel.Excel.CellBorder.color
+      - 'excel!Excel.CellBorder#color:member'
+      - 'excel!Excel.CellBorder#style:member'
+      - 'excel!Excel.CellBorder#tintAndShade:member'
+      - 'excel!Excel.CellBorder#weight:member'
+  - uid: 'excel!Excel.CellBorder#color:member'
     summary: |-
       Represents the `color` property of a single border.
 
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CellBorder.style
+  - uid: 'excel!Excel.CellBorder#style:member'
     summary: |-
       Represents the `style` property of a single border.
 
@@ -53,7 +53,7 @@ items:
           - >-
             Excel.BorderLineStyle | "None" | "Continuous" | "Dash" | "DashDot" | "DashDotDot" | "Dot" | "Double" |
             "SlantDashDot"
-  - uid: excel.Excel.CellBorder.tintAndShade
+  - uid: 'excel!Excel.CellBorder#tintAndShade:member'
     summary: |-
       Represents the `tintAndShade` property of a single border.
 
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.CellBorder.weight
+  - uid: 'excel!Excel.CellBorder#weight:member'
     summary: |-
       Represents the `weight` property of a single border.
 

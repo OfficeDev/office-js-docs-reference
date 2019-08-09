@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.CustomProperties
+  - uid: 'outlook!Office.CustomProperties:interface'
     summary: >-
       The CustomProperties object represents custom properties that are specific to a particular item and specific to a
       mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific
@@ -26,13 +26,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.CustomProperties.get
-      - Outlook.Office.CustomProperties.remove
-      - Outlook.Office.CustomProperties.saveAsync
-      - Outlook.Office.CustomProperties.set
-  - uid: Outlook.Office.CustomProperties.get
+      - 'outlook!Office.CustomProperties#get:member(1)'
+      - 'outlook!Office.CustomProperties#remove:member(1)'
+      - 'outlook!Office.CustomProperties#saveAsync:member(1)'
+      - 'outlook!Office.CustomProperties#set:member(1)'
+  - uid: 'outlook!Office.CustomProperties#get:member(1)'
     summary: Returns the value of the specified custom property.
     remarks: >-
       **[Minimum permission
@@ -60,7 +60,7 @@ items:
           description: The name of the custom property to be returned.
           type:
             - string
-  - uid: Outlook.Office.CustomProperties.remove
+  - uid: 'outlook!Office.CustomProperties#remove:member(1)'
     summary: |-
       Removes the specified property from the custom property collection.
 
@@ -91,7 +91,7 @@ items:
             \[Api set: Mailbox 1.0\]
           type:
             - string
-  - uid: Outlook.Office.CustomProperties.saveAsync
+  - uid: 'outlook!Office.CustomProperties#saveAsync:member(1)'
     summary: >-
       Saves item-specific custom properties to the server.
 
@@ -111,67 +111,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // The following JavaScript code sample shows how to asynchronously use
-
-      // the loadCustomPropertiesAsync method to load custom properties that
-
-      // are specific to the current item, and the saveAsync method to save
-
-      // these properties back to the server. After loading the custom properties,
-
-      // the code sample uses the get method to read the custom property myProp,
-
-      // the set method to write the custom property otherProp, and then finally
-
-      // calls the saveAsync method to save the custom properties.
-
-
-      // The initialize function is required for all add-ins.
-
-      Office.initialize = function () {
-          // Checks for the DOM to load using the jQuery ready function.
-          $(document).ready(function () {
-              // After the DOM is loaded, add-in-specific code can run.
-              var item = Office.context.mailbox.item;
-              item.loadCustomPropertiesAsync(customPropsCallback);
-          });
-      };
-
-
-      function customPropsCallback(asyncResult) {
-          var customProps = asyncResult.value;
-          var myProp = customProps.get("myProp");
-
-          customProps.set("otherProp", "value");
-          customProps.saveAsync(saveCallback);
-      }
-
-
-      function saveCallback(asyncResult) {
-          if (asyncResult.status === Office.AsyncResultStatus.Failed) {
-              write(asyncResult.error.message);
-          }
-          else {
-              // Async call to save custom properties completed.
-              // Proceed to do the appropriate for your add-in.
-          }
-      }
-
-
-      // Writes to a div with id='message' on the page.
-
-      function write(message) {
-          document.getElementById('message').innerText += message;
-      }
-
-      ```
     name: 'saveAsync(callback, asyncContext)'
     fullName: 'saveAsync(callback, asyncContext)'
     langs:
@@ -197,7 +136,7 @@ items:
             \[Api set: Mailbox 1.0\]
           type:
             - any
-  - uid: Outlook.Office.CustomProperties.set
+  - uid: 'outlook!Office.CustomProperties#set:member(1)'
     summary: >-
       Sets the specified property to the specified value.
 

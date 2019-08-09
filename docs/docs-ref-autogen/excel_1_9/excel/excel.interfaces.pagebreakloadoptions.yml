@@ -1,18 +1,18 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PageBreakLoadOptions
+  - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions:interface'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.Interfaces.PageBreakLoadOptions
     fullName: Excel.Interfaces.PageBreakLoadOptions
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PageBreakLoadOptions.$all
-      - excel.Excel.Interfaces.PageBreakLoadOptions.columnIndex
-      - excel.Excel.Interfaces.PageBreakLoadOptions.rowIndex
-  - uid: excel.Excel.Interfaces.PageBreakLoadOptions.$all
+      - 'excel!Excel.Interfaces.PageBreakLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PageBreakLoadOptions#columnIndex:member'
+      - 'excel!Excel.Interfaces.PageBreakLoadOptions#rowIndex:member'
+  - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -23,7 +23,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageBreakLoadOptions.columnIndex
+  - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions#columnIndex:member'
     summary: |-
       Represents the column index for the page break
 
@@ -38,7 +38,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PageBreakLoadOptions.rowIndex
+  - uid: 'excel!Excel.Interfaces.PageBreakLoadOptions#rowIndex:member'
     summary: |-
       Represents the row index for the page break
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of all the tables that are part of the workbook or worksheet, depending on how it was
       reached.
@@ -12,25 +12,25 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.columns
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.highlightFirstColumn
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.highlightLastColumn
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.id
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.legacyId
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.name
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.rows
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showBandedColumns
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showBandedRows
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showFilterButton
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.showTotals
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.sort
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.style
-      - excel.Excel.Interfaces.TableCollectionLoadOptions.worksheet
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#highlightFirstColumn:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#highlightLastColumn:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#legacyId:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showBandedColumns:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showBandedRows:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showFilterButton:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#showTotals:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.columns
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#columns:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the columns in the table.
 
@@ -55,8 +55,8 @@ items:
       content: 'columns?: Excel.Interfaces.TableColumnCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableColumnCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.highlightFirstColumn
+          - 'excel!Excel.Interfaces.TableColumnCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#highlightFirstColumn:member'
     summary: |-
       For EACH ITEM in the collection: Indicates whether the first column contains special formatting.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.highlightLastColumn
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#highlightLastColumn:member'
     summary: |-
       For EACH ITEM in the collection: Indicates whether the last column contains special formatting.
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#id:member'
     summary: >-
       For EACH ITEM in the collection: Returns a value that uniquely identifies the table in a given workbook. The value
       of the identifier remains the same even when the table is renamed. Read-only.
@@ -103,7 +103,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.legacyId
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#legacyId:member'
     summary: |-
       For EACH ITEM in the collection: Returns a numeric id.
 
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Name of the table.
 
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.rows
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#rows:member'
     summary: |-
       For EACH ITEM in the collection: Represents a collection of all the rows in the table.
 
@@ -147,8 +147,8 @@ items:
       content: 'rows?: Excel.Interfaces.TableRowCollectionLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableRowCollectionLoadOptions
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showBandedColumns
+          - 'excel!Excel.Interfaces.TableRowCollectionLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showBandedColumns:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the columns show banded formatting in which odd columns are
       highlighted differently from even ones to make reading the table easier.
@@ -165,7 +165,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showBandedRows
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showBandedRows:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the rows show banded formatting in which odd rows are
       highlighted differently from even ones to make reading the table easier.
@@ -182,7 +182,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showFilterButton
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showFilterButton:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the filter buttons are visible at the top of each column
       header. Setting this is only allowed if the table contains a header row.
@@ -199,7 +199,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showHeaders
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showHeaders:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the header row is visible or not. This value can be set to show
       or remove the header row.
@@ -216,7 +216,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.showTotals
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#showTotals:member'
     summary: >-
       For EACH ITEM in the collection: Indicates whether the total row is visible or not. This value can be set to show
       or remove the total row.
@@ -233,7 +233,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.sort
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#sort:member'
     summary: |-
       For EACH ITEM in the collection: Represents the sorting for the table.
 
@@ -247,8 +247,8 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TableSortLoadOptions
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.style
+          - 'excel!Excel.Interfaces.TableSortLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#style:member'
     summary: >-
       For EACH ITEM in the collection: Constant value that represents the Table style. Possible values are:
       TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru
@@ -266,7 +266,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableCollectionLoadOptions.worksheet
+  - uid: 'excel!Excel.Interfaces.TableCollectionLoadOptions#worksheet:member'
     summary: |-
       For EACH ITEM in the collection: The worksheet containing the current table.
 
@@ -280,4 +280,4 @@ items:
       content: 'worksheet?: Excel.Interfaces.WorksheetLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.WorksheetLoadOptions
+          - 'excel!Excel.Interfaces.WorksheetLoadOptions:interface'

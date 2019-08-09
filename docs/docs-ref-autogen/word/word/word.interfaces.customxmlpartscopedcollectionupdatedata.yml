@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CustomXmlPartScopedCollection object, for use in
       "customXmlPartScopedCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
-  - uid: word.Word.Interfaces.CustomXmlPartScopedCollectionUpdateData.items
+      - 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.CustomXmlPartScopedCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.InternetHeaders
+  - uid: 'outlook!Office.InternetHeaders:interface'
     summary: >-
       The InternetHeaders object represents custom internet headers that are preserved after the message item leaves
       Exchange and is converted to a MIME message. These headers are stored as x-headers in the MIME message.
@@ -26,15 +26,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.InternetHeaders.getAsync
-      - outlook.Office.InternetHeaders.getAsync_1
-      - outlook.Office.InternetHeaders.removeAsync
-      - outlook.Office.InternetHeaders.removeAsync_1
-      - outlook.Office.InternetHeaders.setAsync
-      - outlook.Office.InternetHeaders.setAsync_1
-  - uid: outlook.Office.InternetHeaders.getAsync
+      - 'outlook!Office.InternetHeaders#getAsync:member(1)'
+      - 'outlook!Office.InternetHeaders#getAsync:member(2)'
+      - 'outlook!Office.InternetHeaders#removeAsync:member(1)'
+      - 'outlook!Office.InternetHeaders#removeAsync:member(2)'
+      - 'outlook!Office.InternetHeaders#setAsync:member(1)'
+      - 'outlook!Office.InternetHeaders#setAsync:member(2)'
+  - uid: 'outlook!Office.InternetHeaders#getAsync:member(1)'
     summary: >-
       Given an array of internet header names, this method returns a dictionary containing those internet headers and
       their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
@@ -83,7 +83,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<InternetHeaders>) => void'
-  - uid: outlook.Office.InternetHeaders.getAsync_1
+  - uid: 'outlook!Office.InternetHeaders#getAsync:member(2)'
     summary: >-
       Given an array of internet header names, this method returns a dictionary containing those internet headers and
       their values. If the add-in requests an x-header that is not available, that x-header will not be returned in the
@@ -101,22 +101,6 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.getAsync(["header1", "header2"], callback);
-
-
-      function callback(asyncResult) {
-          var dictionary = asyncResult.value;
-          var header1_value = dictionary["header1"];
-      }
-
-      ```
     isPreview: true
     name: 'getAsync(names, callback)'
     fullName: 'getAsync(names, callback)'
@@ -140,7 +124,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<InternetHeaders>) => void'
-  - uid: outlook.Office.InternetHeaders.removeAsync
+  - uid: 'outlook!Office.InternetHeaders#removeAsync:member(1)'
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
       collection.
@@ -188,7 +172,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<InternetHeaders>) => void'
-  - uid: outlook.Office.InternetHeaders.removeAsync_1
+  - uid: 'outlook!Office.InternetHeaders#removeAsync:member(2)'
     summary: >-
       Given an array of internet header names, this method removes the specified headers from the internet header
       collection.
@@ -205,16 +189,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.removeAsync(["header1", "header2"]);
-
-      ```
     isPreview: true
     name: 'removeAsync(names, callback)'
     fullName: 'removeAsync(names, callback)'
@@ -238,7 +212,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<InternetHeaders>) => void'
-  - uid: outlook.Office.InternetHeaders.setAsync
+  - uid: 'outlook!Office.InternetHeaders#setAsync:member(1)'
     summary: >-
       Sets the specified internet headers to the specified values.
 
@@ -292,7 +266,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: outlook.Office.InternetHeaders.setAsync_1
+  - uid: 'outlook!Office.InternetHeaders#setAsync:member(2)'
     summary: >-
       Sets the specified internet headers to the specified values.
 
@@ -312,16 +286,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.internetHeaders.setAsync({"header1": "value1", "header2": "value2"});
-
-      ```
     isPreview: true
     name: 'setAsync(headers, callback)'
     fullName: 'setAsync(headers, callback)'

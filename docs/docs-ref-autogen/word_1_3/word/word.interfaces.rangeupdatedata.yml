@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeUpdateData
+  - uid: 'word!Word.Interfaces.RangeUpdateData:interface'
     summary: 'An interface for updating data on the Range object, for use in "range.set(<!-- -->{ ... }<!-- -->)".'
     name: Word.Interfaces.RangeUpdateData
     fullName: Word.Interfaces.RangeUpdateData
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeUpdateData.font
-      - word.Word.Interfaces.RangeUpdateData.hyperlink
-      - word.Word.Interfaces.RangeUpdateData.style
-      - word.Word.Interfaces.RangeUpdateData.styleBuiltIn
-  - uid: word.Word.Interfaces.RangeUpdateData.font
+      - 'word!Word.Interfaces.RangeUpdateData#font:member'
+      - 'word!Word.Interfaces.RangeUpdateData#hyperlink:member'
+      - 'word!Word.Interfaces.RangeUpdateData#style:member'
+      - 'word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member'
+  - uid: 'word!Word.Interfaces.RangeUpdateData#font:member'
     summary: |-
       Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
 
@@ -27,8 +27,8 @@ items:
       content: 'font?: Word.Interfaces.FontUpdateData;'
       return:
         type:
-          - word.Word.Interfaces.FontUpdateData
-  - uid: word.Word.Interfaces.RangeUpdateData.hyperlink
+          - 'word!Word.Interfaces.FontUpdateData:interface'
+  - uid: 'word!Word.Interfaces.RangeUpdateData#hyperlink:member'
     summary: >-
       Gets the first hyperlink in the range, or sets a hyperlink on the range. All hyperlinks in the range are deleted
       when you set a new hyperlink on the range. Use a '\#' to separate the address part from the optional location
@@ -46,7 +46,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.RangeUpdateData.style
+  - uid: 'word!Word.Interfaces.RangeUpdateData#style:member'
     summary: >-
       Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
       the built-in styles that are portable between locales, see the "styleBuiltIn" property.
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.Interfaces.RangeUpdateData.styleBuiltIn
+  - uid: 'word!Word.Interfaces.RangeUpdateData#styleBuiltIn:member'
     summary: >-
       Gets or sets the built-in style name for the range. Use this property for built-in styles that are portable
       between locales. To use custom styles or localized style names, see the "style" property.

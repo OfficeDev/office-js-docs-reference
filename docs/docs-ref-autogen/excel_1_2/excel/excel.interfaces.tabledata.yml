@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableData
+  - uid: 'excel!Excel.Interfaces.TableData:interface'
     summary: An interface describing the data returned by calling "table.toJSON()".
     name: Excel.Interfaces.TableData
     fullName: Excel.Interfaces.TableData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableData.columns
-      - excel.Excel.Interfaces.TableData.id
-      - excel.Excel.Interfaces.TableData.name
-      - excel.Excel.Interfaces.TableData.rows
-      - excel.Excel.Interfaces.TableData.showHeaders
-      - excel.Excel.Interfaces.TableData.showTotals
-      - excel.Excel.Interfaces.TableData.sort
-      - excel.Excel.Interfaces.TableData.style
-  - uid: excel.Excel.Interfaces.TableData.columns
+      - 'excel!Excel.Interfaces.TableData#columns:member'
+      - 'excel!Excel.Interfaces.TableData#id:member'
+      - 'excel!Excel.Interfaces.TableData#name:member'
+      - 'excel!Excel.Interfaces.TableData#rows:member'
+      - 'excel!Excel.Interfaces.TableData#showHeaders:member'
+      - 'excel!Excel.Interfaces.TableData#showTotals:member'
+      - 'excel!Excel.Interfaces.TableData#sort:member'
+      - 'excel!Excel.Interfaces.TableData#style:member'
+  - uid: 'excel!Excel.Interfaces.TableData#columns:member'
     summary: |-
       Represents a collection of all the columns in the table. Read-only.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableColumnData[]'
-  - uid: excel.Excel.Interfaces.TableData.id
+  - uid: 'excel!Excel.Interfaces.TableData#id:member'
     summary: >-
       Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the
       same even when the table is renamed. Read-only.
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TableData.name
+  - uid: 'excel!Excel.Interfaces.TableData#name:member'
     summary: |-
       Name of the table.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.TableData.rows
+  - uid: 'excel!Excel.Interfaces.TableData#rows:member'
     summary: |-
       Represents a collection of all the rows in the table. Read-only.
 
@@ -79,7 +79,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableRowData[]'
-  - uid: excel.Excel.Interfaces.TableData.showHeaders
+  - uid: 'excel!Excel.Interfaces.TableData#showHeaders:member'
     summary: |-
       Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
 
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableData.showTotals
+  - uid: 'excel!Excel.Interfaces.TableData#showTotals:member'
     summary: |-
       Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
 
@@ -109,7 +109,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableData.sort
+  - uid: 'excel!Excel.Interfaces.TableData#sort:member'
     summary: |-
       Represents the sorting for the table. Read-only.
 
@@ -123,8 +123,8 @@ items:
       content: 'sort?: Excel.Interfaces.TableSortData;'
       return:
         type:
-          - excel.Excel.Interfaces.TableSortData
-  - uid: excel.Excel.Interfaces.TableData.style
+          - 'excel!Excel.Interfaces.TableSortData:interface'
+  - uid: 'excel!Excel.Interfaces.TableData#style:member'
     summary: >-
       Constant value that represents the Table style. Possible values are: TableStyleLight1 thru TableStyleLight21,
       TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined

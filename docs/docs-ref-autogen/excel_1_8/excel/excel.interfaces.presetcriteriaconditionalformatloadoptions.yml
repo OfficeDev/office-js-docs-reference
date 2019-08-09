@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions:interface'
     summary: >-
       Represents the the preset criteria conditional format such as above average, below average, unique values,
       contains blank, nonblank, error, and noerror.
@@ -12,12 +12,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.$all
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format
-      - excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.rule
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.$all
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#rule:member'
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -42,8 +42,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatLoadOptions
-  - uid: excel.Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.PresetCriteriaConditionalFormatLoadOptions#rule:member'
     summary: |-
       The rule of the conditional format.
 

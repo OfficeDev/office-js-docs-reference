@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the InkStrokeCollection object, for use in "inkStrokeCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkStrokeCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.InkStrokeCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.InkStrokeCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

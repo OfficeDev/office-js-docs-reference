@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.SectionGroup
+  - uid: 'onenote!OneNote.SectionGroup:class'
     summary: |-
       Represents a OneNote section group. Section groups can contain sections and other section groups.
 
@@ -12,27 +12,27 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.SectionGroup.addSection
-      - onenote.OneNote.SectionGroup.addSectionGroup
-      - onenote.OneNote.SectionGroup.clientUrl
-      - onenote.OneNote.SectionGroup.context
-      - onenote.OneNote.SectionGroup.getRestApiId
-      - onenote.OneNote.SectionGroup.id
-      - onenote.OneNote.SectionGroup.load
-      - onenote.OneNote.SectionGroup.load_1
-      - onenote.OneNote.SectionGroup.load_2
-      - onenote.OneNote.SectionGroup.name
-      - onenote.OneNote.SectionGroup.notebook
-      - onenote.OneNote.SectionGroup.parentSectionGroup
-      - onenote.OneNote.SectionGroup.parentSectionGroupOrNull
-      - onenote.OneNote.SectionGroup.sectionGroups
-      - onenote.OneNote.SectionGroup.sections
-      - onenote.OneNote.SectionGroup.toJSON
-      - onenote.OneNote.SectionGroup.track
-      - onenote.OneNote.SectionGroup.untrack
-  - uid: onenote.OneNote.SectionGroup.addSection
+      - 'onenote!OneNote.SectionGroup#addSection:member(1)'
+      - 'onenote!OneNote.SectionGroup#addSectionGroup:member(1)'
+      - 'onenote!OneNote.SectionGroup#clientUrl:member'
+      - 'onenote!OneNote.SectionGroup#context:member'
+      - 'onenote!OneNote.SectionGroup#getRestApiId:member(1)'
+      - 'onenote!OneNote.SectionGroup#id:member'
+      - 'onenote!OneNote.SectionGroup#load:member(1)'
+      - 'onenote!OneNote.SectionGroup#load:member(2)'
+      - 'onenote!OneNote.SectionGroup#load:member(3)'
+      - 'onenote!OneNote.SectionGroup#name:member'
+      - 'onenote!OneNote.SectionGroup#notebook:member'
+      - 'onenote!OneNote.SectionGroup#parentSectionGroup:member'
+      - 'onenote!OneNote.SectionGroup#parentSectionGroupOrNull:member'
+      - 'onenote!OneNote.SectionGroup#sectionGroups:member'
+      - 'onenote!OneNote.SectionGroup#sections:member'
+      - 'onenote!OneNote.SectionGroup#toJSON:member(1)'
+      - 'onenote!OneNote.SectionGroup#track:member(1)'
+      - 'onenote!OneNote.SectionGroup#untrack:member(1)'
+  - uid: 'onenote!OneNote.SectionGroup#addSection:member(1)'
     summary: |-
       Adds a new section to the end of the section group.
 
@@ -46,48 +46,14 @@ items:
       content: 'addSection(title: string): OneNote.Section;'
       return:
         type:
-          - onenote.OneNote.Section
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the section groups that are direct children of the current notebook.
-              var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-              
-              // Queue a command to load the section groups.
-              // For best performance, request specific properties.
-              sectionGroups.load("id");
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      
-                      // Add a section to each section group.
-                      $.each(sectionGroups.items, function(index, sectionGroup) {
-                          sectionGroup.addSection("Agenda");
-                      });
-                      
-                      // Run the queued commands.
-                      return context.sync();
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.Section:class'
+        description: ''
       parameters:
         - id: title
           description: The name of the new section.
           type:
             - string
-  - uid: onenote.OneNote.SectionGroup.addSectionGroup
+  - uid: 'onenote!OneNote.SectionGroup#addSectionGroup:member(1)'
     summary: |-
       Adds a new section group to the end of this sectionGroup.
 
@@ -101,55 +67,14 @@ items:
       content: 'addSectionGroup(name: string): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-              var sectionGroup;
-              var nestedSectionGroup;
-
-              // Gets the active notebook.
-              var notebook = context.application.getActiveNotebook();
-
-              // Queue a command to add a new section group.
-              var sectionGroups = notebook.sectionGroups;
-
-              // Queue a command to load the new section group.
-              sectionGroups.load();
-
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function(){
-                      sectionGroup = sectionGroups.items[0];
-                      sectionGroup.load();
-                      return context.sync();
-                  })
-                  .then(function(){
-                      nestedSectionGroup = sectionGroup.addSectionGroup("Sample nested section group");
-                      nestedSectionGroup.load();
-                      return context.sync();
-                  })
-                  .then(function() {
-                      console.log("New nested section group name is " + nestedSectionGroup.name);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          }); 
-          ```
+          - 'onenote!OneNote.SectionGroup:class'
+        description: ''
       parameters:
         - id: name
           description: The name of the new section.
           type:
             - string
-  - uid: onenote.OneNote.SectionGroup.clientUrl
+  - uid: 'onenote!OneNote.SectionGroup#clientUrl:member'
     summary: |-
       The client url of the section group. Read only
 
@@ -164,7 +89,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.SectionGroup.context
+  - uid: 'onenote!OneNote.SectionGroup#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -177,8 +102,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.SectionGroup.getRestApiId
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.SectionGroup#getRestApiId:member(1)'
     summary: |-
       Gets the REST API ID.
 
@@ -194,7 +119,7 @@ items:
         type:
           - OfficeExtension.ClientResult<string>
         description: ''
-  - uid: onenote.OneNote.SectionGroup.id
+  - uid: 'onenote!OneNote.SectionGroup#id:member'
     summary: |-
       Gets the ID of the section group. Read-only.
 
@@ -209,7 +134,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.SectionGroup.load
+  - uid: 'onenote!OneNote.SectionGroup#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -240,14 +165,14 @@ items:
       content: 'load(option?: OneNote.Interfaces.SectionGroupLoadOptions): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - 'onenote!OneNote.SectionGroup:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - onenote.OneNote.Interfaces.SectionGroupLoadOptions
-  - uid: onenote.OneNote.SectionGroup.load_1
+            - 'onenote!OneNote.Interfaces.SectionGroupLoadOptions:interface'
+  - uid: 'onenote!OneNote.SectionGroup#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -260,132 +185,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          OneNote.run(function (context) {
-                  
-              // Get the parent section group that contains the current section.
-              var sectionGroup = context.application.getActiveSection().parentSectionGroup;
-                      
-              // Queue a command to load the section group. 
-              // For best performance, request specific properties.           
-              sectionGroup.load("id,name");
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-                      
-                      // Write the properties.
-                      console.log("Section group name: " + sectionGroup.name);
-                      console.log("Section group ID: " + sectionGroup.id);
-                      
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-                  
-              // Get the parent section group that contains the current section.
-              var sectionGroup = context.application.getActiveSection().parentSectionGroup;
-                      
-              // Queue a command to load the section group with the specified properties.           
-              sectionGroup.load("name,notebook/name"); 
-                      
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function () {
-
-                      // Write the properties.
-                      console.log("Section group name: " + sectionGroup.name);
-                      console.log("Parent notebook name: " + sectionGroup.notebook.name);
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the section groups that are direct children of the current notebook.
-              var sectionGroups = context.application.getActiveNotebook().sectionGroups;
-
-              // Queue a command to load the section groups.
-              // For best performance, request specific properties.
-              sectionGroups.load("name");
-              
-              // Get the child section groups of the first section group in the notebook.
-              var nestedSectionGroups = sectionGroups._GetItem(0).sectionGroups;
-              
-              // Queue a command to load the ID and name properties of the child section groups.
-              nestedSectionGroups.load("id,name");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      
-                      // Write the properties for each child section group.
-                      $.each(nestedSectionGroups.items, function(index, sectionGroup) {
-                          console.log("Section group name: " + sectionGroup.name);  
-                          console.log("Section group ID: " + sectionGroup.id);  
-                      });
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-          ```javascript
-          OneNote.run(function (context) {
-
-              // Get the sections that are siblings of the current section.
-              var sections = context.application.getActiveSection().parentSectionGroup.sections;
-
-              // Queue a command to load the section groups.
-              // For best performance, request specific properties.
-              sections.load("id,name");
-              
-              // Run the queued commands, and return a promise to indicate task completion.
-              return context.sync()
-                  .then(function() {
-                      
-                      // Write the properties for each section.
-                      $.each(sections.items, function(index, section) {
-                          console.log("Section name: " + section.name);  
-                          console.log("Section ID: " + section.id);  
-                      });
-                  });
-          })
-          .catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'onenote!OneNote.SectionGroup:class'
+        description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.SectionGroup.load_2
+  - uid: 'onenote!OneNote.SectionGroup#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -398,7 +205,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - 'onenote!OneNote.SectionGroup:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -407,7 +214,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: onenote.OneNote.SectionGroup.name
+  - uid: 'onenote!OneNote.SectionGroup#name:member'
     summary: |-
       Gets the name of the section group. Read-only.
 
@@ -422,7 +229,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.SectionGroup.notebook
+  - uid: 'onenote!OneNote.SectionGroup#notebook:member'
     summary: |-
       Gets the notebook that contains the section group. Read-only.
 
@@ -436,8 +243,8 @@ items:
       content: 'readonly notebook: OneNote.Notebook;'
       return:
         type:
-          - onenote.OneNote.Notebook
-  - uid: onenote.OneNote.SectionGroup.parentSectionGroup
+          - 'onenote!OneNote.Notebook:class'
+  - uid: 'onenote!OneNote.SectionGroup#parentSectionGroup:member'
     summary: >-
       Gets the section group that contains the section group. Throws ItemNotFound if the section group is a direct child
       of the notebook. Read-only.
@@ -453,8 +260,8 @@ items:
       content: 'readonly parentSectionGroup: OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
-  - uid: onenote.OneNote.SectionGroup.parentSectionGroupOrNull
+          - 'onenote!OneNote.SectionGroup:class'
+  - uid: 'onenote!OneNote.SectionGroup#parentSectionGroupOrNull:member'
     summary: >-
       Gets the section group that contains the section group. Returns null if the section group is a direct child of the
       notebook. Read-only.
@@ -470,8 +277,8 @@ items:
       content: 'readonly parentSectionGroupOrNull: OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
-  - uid: onenote.OneNote.SectionGroup.sectionGroups
+          - 'onenote!OneNote.SectionGroup:class'
+  - uid: 'onenote!OneNote.SectionGroup#sectionGroups:member'
     summary: |-
       The collection of section groups in the section group. Read only
 
@@ -485,8 +292,8 @@ items:
       content: 'readonly sectionGroups: OneNote.SectionGroupCollection;'
       return:
         type:
-          - onenote.OneNote.SectionGroupCollection
-  - uid: onenote.OneNote.SectionGroup.sections
+          - 'onenote!OneNote.SectionGroupCollection:class'
+  - uid: 'onenote!OneNote.SectionGroup#sections:member'
     summary: |-
       The collection of sections in the section group. Read only
 
@@ -500,8 +307,8 @@ items:
       content: 'readonly sections: OneNote.SectionCollection;'
       return:
         type:
-          - onenote.OneNote.SectionCollection
-  - uid: onenote.OneNote.SectionGroup.toJSON
+          - 'onenote!OneNote.SectionCollection:class'
+  - uid: 'onenote!OneNote.SectionGroup#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -517,9 +324,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.SectionGroupData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.SectionGroupData
+          - 'onenote!OneNote.Interfaces.SectionGroupData:interface'
         description: ''
-  - uid: onenote.OneNote.SectionGroup.track
+  - uid: 'onenote!OneNote.SectionGroup#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -535,9 +342,9 @@ items:
       content: 'track(): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - 'onenote!OneNote.SectionGroup:class'
         description: ''
-  - uid: onenote.OneNote.SectionGroup.untrack
+  - uid: 'onenote!OneNote.SectionGroup#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -552,5 +359,5 @@ items:
       content: 'untrack(): OneNote.SectionGroup;'
       return:
         type:
-          - onenote.OneNote.SectionGroup
+          - 'onenote!OneNote.SectionGroup:class'
         description: ''

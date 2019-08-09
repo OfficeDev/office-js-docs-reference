@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.PageCollection
+  - uid: 'visio!Visio.PageCollection:class'
     summary: |-
       Represents a collection of Page objects that are part of the document.
 
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.PageCollection.context
-      - visio.Visio.PageCollection.getCount
-      - visio.Visio.PageCollection.getItem
-      - visio.Visio.PageCollection.items
-      - visio.Visio.PageCollection.load
-      - visio.Visio.PageCollection.load_1
-      - visio.Visio.PageCollection.load_2
-      - visio.Visio.PageCollection.toJSON
-  - uid: visio.Visio.PageCollection.context
+      - 'visio!Visio.PageCollection#context:member'
+      - 'visio!Visio.PageCollection#getCount:member(1)'
+      - 'visio!Visio.PageCollection#getItem:member(1)'
+      - 'visio!Visio.PageCollection#items:member'
+      - 'visio!Visio.PageCollection#load:member(1)'
+      - 'visio!Visio.PageCollection#load:member(2)'
+      - 'visio!Visio.PageCollection#load:member(3)'
+      - 'visio!Visio.PageCollection#toJSON:member(1)'
+  - uid: 'visio!Visio.PageCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - visio.Visio.RequestContext
-  - uid: visio.Visio.PageCollection.getCount
+          - 'visio!Visio.RequestContext:class'
+  - uid: 'visio!Visio.PageCollection#getCount:member(1)'
     summary: |-
       Gets the number of pages in the collection.
 
@@ -52,7 +52,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: visio.Visio.PageCollection.getItem
+  - uid: 'visio!Visio.PageCollection#getItem:member(1)'
     summary: |-
       Gets a page using its key (name or Id).
 
@@ -66,31 +66,14 @@ items:
       content: 'getItem(key: number | string): Visio.Page;'
       return:
         type:
-          - visio.Visio.Page
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var pageName = 'Page-1';
-              var page = ctx.document.pages.getItem(pageName);
-              page.activate();
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
+          - 'visio!Visio.Page:class'
+        description: ''
       parameters:
         - id: key
           description: Key is the name or Id of the page to be retrieved.
           type:
             - number | string
-  - uid: visio.Visio.PageCollection.items
+  - uid: 'visio!Visio.PageCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -102,7 +85,7 @@ items:
       return:
         type:
           - 'Visio.Page[]'
-  - uid: visio.Visio.PageCollection.load
+  - uid: 'visio!Visio.PageCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -135,14 +118,14 @@ items:
         Visio.PageCollection;
       return:
         type:
-          - visio.Visio.PageCollection
+          - 'visio!Visio.PageCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Visio.Interfaces.PageCollectionLoadOptions & Visio.Interfaces.CollectionLoadOptions
-  - uid: visio.Visio.PageCollection.load_1
+  - uid: 'visio!Visio.PageCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -155,14 +138,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Visio.PageCollection;'
       return:
         type:
-          - visio.Visio.PageCollection
+          - 'visio!Visio.PageCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: visio.Visio.PageCollection.load_2
+  - uid: 'visio!Visio.PageCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -172,14 +155,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Visio.PageCollection;'
       return:
         type:
-          - visio.Visio.PageCollection
+          - 'visio!Visio.PageCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: visio.Visio.PageCollection.toJSON
+  - uid: 'visio!Visio.PageCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -195,5 +178,5 @@ items:
       content: 'toJSON(): Visio.Interfaces.PageCollectionData;'
       return:
         type:
-          - visio.Visio.Interfaces.PageCollectionData
+          - 'visio!Visio.Interfaces.PageCollectionData:interface'
         description: ''

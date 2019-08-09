@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.RangeCollectionUpdateData
+  - uid: 'word!Word.Interfaces.RangeCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the RangeCollection object, for use in "rangeCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.RangeCollectionUpdateData.items
-  - uid: word.Word.Interfaces.RangeCollectionUpdateData.items
+      - 'word!Word.Interfaces.RangeCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.RangeCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

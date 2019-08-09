@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.ParagraphCollectionUpdateData
+  - uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ParagraphCollection object, for use in "paragraphCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.ParagraphCollectionUpdateData.items
-  - uid: word.Word.Interfaces.ParagraphCollectionUpdateData.items
+      - 'word!Word.Interfaces.ParagraphCollectionUpdateData#items:member'
+  - uid: 'word!Word.Interfaces.ParagraphCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

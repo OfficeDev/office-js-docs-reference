@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Highlight
+  - uid: 'visio!Visio.Highlight:interface'
     summary: |-
       Represents the highlight data added to the shape.
 
@@ -10,11 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Highlight.color
-      - visio.Visio.Highlight.width
-  - uid: visio.Visio.Highlight.color
+      - 'visio!Visio.Highlight#color:member'
+      - 'visio!Visio.Highlight#width:member'
+  - uid: 'visio!Visio.Highlight#color:member'
     summary: >-
       A string that specifies the color of the highlight. It must have the form "\#RRGGBB", where each letter represents
       a hexadecimal digit between 0 and F, and where RR is the red value between 0 and 0xFF (255), GG the green value
@@ -32,26 +32,7 @@ items:
       return:
         type:
           - string
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          Visio.run(session, function (ctx) {
-              var activePage = ctx.document.getActivePage();
-              var shape = activePage.shapes.getItem(0);
-              shape.view.highlight.color = "#E7E7E7";
-              shape.view.highlight.width = 100;
-              return ctx.sync();
-          }).catch(function(error) {
-              console.log("Error: " + error);
-              if (error instanceof OfficeExtension.Error) {
-                  console.log("Debug info: " + JSON.stringify(error.debugInfo));
-              }
-          });
-          ```
-  - uid: visio.Visio.Highlight.width
+  - uid: 'visio!Visio.Highlight#width:member'
     summary: |-
       A positive integer that specifies the width of the highlight's stroke in pixels.
 

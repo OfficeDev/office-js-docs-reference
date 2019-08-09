@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: powerpoint
+  - uid: powerpoint!
     name: powerpoint
     fullName: powerpoint
     langs:
       - typeScript
     type: package
     children:
-      - powerpoint.PowerPoint.createPresentation
-  - uid: powerpoint.PowerPoint.createPresentation
+      - 'powerpoint!PowerPoint.createPresentation:function(1)'
+  - uid: 'powerpoint!PowerPoint.createPresentation:function(1)'
     summary: >-
       Creates and opens a new presentation. Optionally, the presentation can be pre-populated with a base64-encoded
       .pptx file.
 
 
       \[ [API set: PowerPointApi 1.1](/office/dev/add-ins/reference/javascript-api-for-office) \]
-    name: PowerPoint.createPresentation
-    fullName: PowerPoint.createPresentation
+    name: PowerPoint.createPresentation(base64File)
+    fullName: PowerPoint.createPresentation(base64File)
     langs:
       - typeScript
     type: function
@@ -25,26 +25,7 @@ items:
       return:
         type:
           - Promise<void>
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          var myFile = document.getElementById("file");
-          var reader = new FileReader();
-
-          reader.onload = function (event) {
-              // strip off the metadata before the base64-encoded string
-              var startIndex = event.target.result.indexOf("base64,");
-              var copyBase64 = event.target.result.substr(startIndex + 7);
-
-              PowerPoint.createPresentation(copyBase64);        
-          };
-
-          // read in the file as a data URL so we can parse the base64-encoded string
-          reader.readAsDataURL(myFile.files[0]);
-          ```
+        description: ''
       parameters:
         - id: base64File
           description: Optional. The base64-encoded .pptx file. The default value is null.

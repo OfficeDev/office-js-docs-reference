@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.WorksheetProtectionOptions
+  - uid: 'excel!Excel.WorksheetProtectionOptions:interface'
     summary: |-
       Represents the options in sheet protection.
 
@@ -10,23 +10,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.WorksheetProtectionOptions.allowAutoFilter
-      - excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
-      - excel.Excel.WorksheetProtectionOptions.allowDeleteRows
-      - excel.Excel.WorksheetProtectionOptions.allowEditObjects
-      - excel.Excel.WorksheetProtectionOptions.allowEditScenarios
-      - excel.Excel.WorksheetProtectionOptions.allowFormatCells
-      - excel.Excel.WorksheetProtectionOptions.allowFormatColumns
-      - excel.Excel.WorksheetProtectionOptions.allowFormatRows
-      - excel.Excel.WorksheetProtectionOptions.allowInsertColumns
-      - excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
-      - excel.Excel.WorksheetProtectionOptions.allowInsertRows
-      - excel.Excel.WorksheetProtectionOptions.allowPivotTables
-      - excel.Excel.WorksheetProtectionOptions.allowSort
-      - excel.Excel.WorksheetProtectionOptions.selectionMode
-  - uid: excel.Excel.WorksheetProtectionOptions.allowAutoFilter
+      - 'excel!Excel.WorksheetProtectionOptions#allowAutoFilter:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowDeleteColumns:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowDeleteRows:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowEditObjects:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowEditScenarios:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowFormatCells:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowFormatColumns:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowFormatRows:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowInsertColumns:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowInsertHyperlinks:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowInsertRows:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowPivotTables:member'
+      - 'excel!Excel.WorksheetProtectionOptions#allowSort:member'
+      - 'excel!Excel.WorksheetProtectionOptions#selectionMode:member'
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowAutoFilter:member'
     summary: |-
       Represents the worksheet protection option of allowing using auto filter feature.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowDeleteColumns
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowDeleteColumns:member'
     summary: |-
       Represents the worksheet protection option of allowing deleting columns.
 
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowDeleteRows
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowDeleteRows:member'
     summary: |-
       Represents the worksheet protection option of allowing deleting rows.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowEditObjects
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowEditObjects:member'
     summary: |-
       Represents the worksheet protection option of allowing editing objects.
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowEditScenarios
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowEditScenarios:member'
     summary: |-
       Represents the worksheet protection option of allowing editing scenarios.
 
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowFormatCells
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowFormatCells:member'
     summary: |-
       Represents the worksheet protection option of allowing formatting cells.
 
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowFormatColumns
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowFormatColumns:member'
     summary: |-
       Represents the worksheet protection option of allowing formatting columns.
 
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowFormatRows
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowFormatRows:member'
     summary: |-
       Represents the worksheet protection option of allowing formatting rows.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowInsertColumns
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowInsertColumns:member'
     summary: |-
       Represents the worksheet protection option of allowing inserting columns.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowInsertHyperlinks
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowInsertHyperlinks:member'
     summary: |-
       Represents the worksheet protection option of allowing inserting hyperlinks.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowInsertRows
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowInsertRows:member'
     summary: |-
       Represents the worksheet protection option of allowing inserting rows.
 
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowPivotTables
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowPivotTables:member'
     summary: |-
       Represents the worksheet protection option of allowing using PivotTable feature.
 
@@ -206,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.allowSort
+  - uid: 'excel!Excel.WorksheetProtectionOptions#allowSort:member'
     summary: |-
       Represents the worksheet protection option of allowing using sort feature.
 
@@ -221,7 +221,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.WorksheetProtectionOptions.selectionMode
+  - uid: 'excel!Excel.WorksheetProtectionOptions#selectionMode:member'
     summary: |-
       Represents the worksheet protection option of selection mode.
 

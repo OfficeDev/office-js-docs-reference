@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
     summary: |-
       Represents major or minor gridlines on a chart axis.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartGridlinesLoadOptions.$all
-      - excel.Excel.Interfaces.ChartGridlinesLoadOptions.format
-      - excel.Excel.Interfaces.ChartGridlinesLoadOptions.visible
-  - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#visible:member'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -26,7 +26,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#format:member'
     summary: |-
       Represents the formatting of chart gridlines.
 
@@ -40,8 +40,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartGridlinesFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartGridlinesLoadOptions.visible
+          - 'excel!Excel.Interfaces.ChartGridlinesFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartGridlinesLoadOptions#visible:member'
     summary: |-
       Boolean value representing if the axis gridlines are visible or not.
 

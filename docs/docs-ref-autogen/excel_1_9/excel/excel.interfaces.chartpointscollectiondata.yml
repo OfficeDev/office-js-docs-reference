@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartPointsCollectionData
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionData:interface'
     summary: An interface describing the data returned by calling "chartPointsCollection.toJSON()".
     name: Excel.Interfaces.ChartPointsCollectionData
     fullName: Excel.Interfaces.ChartPointsCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartPointsCollectionData.items
-  - uid: excel.Excel.Interfaces.ChartPointsCollectionData.items
+      - 'excel!Excel.Interfaces.ChartPointsCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartPointsCollectionData#items:member'
     name: items
     fullName: items
     langs:

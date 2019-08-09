@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.InlinePicture
+  - uid: 'word!Word.InlinePicture:class'
     summary: |-
       Represents an inline picture.
 
@@ -12,45 +12,45 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.InlinePicture.altTextDescription
-      - word.Word.InlinePicture.altTextTitle
-      - word.Word.InlinePicture.context
-      - word.Word.InlinePicture.delete
-      - word.Word.InlinePicture.getBase64ImageSrc
-      - word.Word.InlinePicture.height
-      - word.Word.InlinePicture.hyperlink
-      - word.Word.InlinePicture.insertBreak
-      - word.Word.InlinePicture.insertBreak_1
-      - word.Word.InlinePicture.insertContentControl
-      - word.Word.InlinePicture.insertFileFromBase64
-      - word.Word.InlinePicture.insertFileFromBase64_1
-      - word.Word.InlinePicture.insertHtml
-      - word.Word.InlinePicture.insertHtml_1
-      - word.Word.InlinePicture.insertInlinePictureFromBase64
-      - word.Word.InlinePicture.insertInlinePictureFromBase64_1
-      - word.Word.InlinePicture.insertOoxml
-      - word.Word.InlinePicture.insertOoxml_1
-      - word.Word.InlinePicture.insertParagraph
-      - word.Word.InlinePicture.insertParagraph_1
-      - word.Word.InlinePicture.insertText
-      - word.Word.InlinePicture.insertText_1
-      - word.Word.InlinePicture.load
-      - word.Word.InlinePicture.load_1
-      - word.Word.InlinePicture.load_2
-      - word.Word.InlinePicture.lockAspectRatio
-      - word.Word.InlinePicture.paragraph
-      - word.Word.InlinePicture.parentContentControl
-      - word.Word.InlinePicture.select
-      - word.Word.InlinePicture.select_1
-      - word.Word.InlinePicture.set
-      - word.Word.InlinePicture.set_1
-      - word.Word.InlinePicture.toJSON
-      - word.Word.InlinePicture.track
-      - word.Word.InlinePicture.untrack
-      - word.Word.InlinePicture.width
-  - uid: word.Word.InlinePicture.altTextDescription
+      - 'word!Word.InlinePicture#altTextDescription:member'
+      - 'word!Word.InlinePicture#altTextTitle:member'
+      - 'word!Word.InlinePicture#context:member'
+      - 'word!Word.InlinePicture#delete:member(1)'
+      - 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
+      - 'word!Word.InlinePicture#height:member'
+      - 'word!Word.InlinePicture#hyperlink:member'
+      - 'word!Word.InlinePicture#insertBreak:member(1)'
+      - 'word!Word.InlinePicture#insertBreak:member(2)'
+      - 'word!Word.InlinePicture#insertContentControl:member(1)'
+      - 'word!Word.InlinePicture#insertFileFromBase64:member(1)'
+      - 'word!Word.InlinePicture#insertFileFromBase64:member(2)'
+      - 'word!Word.InlinePicture#insertHtml:member(1)'
+      - 'word!Word.InlinePicture#insertHtml:member(2)'
+      - 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(1)'
+      - 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)'
+      - 'word!Word.InlinePicture#insertOoxml:member(1)'
+      - 'word!Word.InlinePicture#insertOoxml:member(2)'
+      - 'word!Word.InlinePicture#insertParagraph:member(1)'
+      - 'word!Word.InlinePicture#insertParagraph:member(2)'
+      - 'word!Word.InlinePicture#insertText:member(1)'
+      - 'word!Word.InlinePicture#insertText:member(2)'
+      - 'word!Word.InlinePicture#load:member(1)'
+      - 'word!Word.InlinePicture#load:member(2)'
+      - 'word!Word.InlinePicture#load:member(3)'
+      - 'word!Word.InlinePicture#lockAspectRatio:member'
+      - 'word!Word.InlinePicture#paragraph:member'
+      - 'word!Word.InlinePicture#parentContentControl:member'
+      - 'word!Word.InlinePicture#select:member(1)'
+      - 'word!Word.InlinePicture#select:member(2)'
+      - 'word!Word.InlinePicture#set:member(1)'
+      - 'word!Word.InlinePicture#set:member(2)'
+      - 'word!Word.InlinePicture#toJSON:member(1)'
+      - 'word!Word.InlinePicture#track:member(1)'
+      - 'word!Word.InlinePicture#untrack:member(1)'
+      - 'word!Word.InlinePicture#width:member'
+  - uid: 'word!Word.InlinePicture#altTextDescription:member'
     summary: |-
       Gets or sets a string that represents the alternative text associated with the inline image.
 
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.InlinePicture.altTextTitle
+  - uid: 'word!Word.InlinePicture#altTextTitle:member'
     summary: |-
       Gets or sets a string that contains the title for the inline image.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.InlinePicture.context
+  - uid: 'word!Word.InlinePicture#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -93,8 +93,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.InlinePicture.delete
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.InlinePicture#delete:member(1)'
     summary: |-
       Deletes the inline picture from the document.
 
@@ -110,7 +110,7 @@ items:
         type:
           - void
         description: ''
-  - uid: word.Word.InlinePicture.getBase64ImageSrc
+  - uid: 'word!Word.InlinePicture#getBase64ImageSrc:member(1)'
     summary: |-
       Gets the base64 encoded string representation of the inline image.
 
@@ -125,26 +125,8 @@ items:
       return:
         type:
           - OfficeExtension.ClientResult<string>
-        description: |-
-
-
-          #### Examples
-
-          ```typescript
-          await Word.run(async (context) => {
-            const firstPicture = context.document.body.inlinePictures.getFirst();
-            firstPicture.load("width, height");
-
-            await context.sync();
-            console.log(`Image dimensions: ${firstPicture.width} x ${firstPicture.height}`);
-            // Get the image encoded as base64.
-            const base64 = firstPicture.getBase64ImageSrc();
-
-            await context.sync();
-            console.log(base64.value);
-          });
-          ```
-  - uid: word.Word.InlinePicture.height
+        description: ''
+  - uid: 'word!Word.InlinePicture#height:member'
     summary: |-
       Gets or sets a number that describes the height of the inline image.
 
@@ -159,7 +141,7 @@ items:
       return:
         type:
           - number
-  - uid: word.Word.InlinePicture.hyperlink
+  - uid: 'word!Word.InlinePicture#hyperlink:member'
     summary: |-
       Gets or sets a hyperlink on the image. Use a '\#' to separate the address part from the optional location part.
 
@@ -174,7 +156,7 @@ items:
       return:
         type:
           - string
-  - uid: word.Word.InlinePicture.insertBreak
+  - uid: 'word!Word.InlinePicture#insertBreak:member(1)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
       'After'.
@@ -196,12 +178,12 @@ items:
         - id: breakType
           description: Required. The break type to add.
           type:
-            - word.Word.BreakType
+            - 'word!Word.BreakType:enum'
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertBreak_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertBreak:member(2)'
     summary: >-
       Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or
       'After'.
@@ -230,7 +212,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.insertContentControl
+  - uid: 'word!Word.InlinePicture#insertContentControl:member(1)'
     summary: |-
       Wraps the inline picture with a rich text content control.
 
@@ -244,9 +226,9 @@ items:
       content: 'insertContentControl(): Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
+          - 'word!Word.ContentControl:class'
         description: ''
-  - uid: word.Word.InlinePicture.insertFileFromBase64
+  - uid: 'word!Word.InlinePicture#insertFileFromBase64:member(1)'
     summary: |-
       Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -260,7 +242,7 @@ items:
       content: 'insertFileFromBase64(base64File: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -270,8 +252,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertFileFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertFileFromBase64:member(2)'
     summary: |-
       Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -287,7 +269,7 @@ items:
         "Replace"): Word.Range;
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: base64File
@@ -298,7 +280,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.insertHtml
+  - uid: 'word!Word.InlinePicture#insertHtml:member(1)'
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -312,7 +294,7 @@ items:
       content: 'insertHtml(html: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: html
@@ -322,8 +304,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertHtml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertHtml:member(2)'
     summary: |-
       Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -337,7 +319,7 @@ items:
       content: 'insertHtml(html: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: html
@@ -348,7 +330,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.insertInlinePictureFromBase64
+  - uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(1)'
     summary: >-
       Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or
       'After'.
@@ -366,7 +348,7 @@ items:
         Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -376,8 +358,8 @@ items:
         - id: insertLocation
           description: 'Required. The value can be ''Replace'', ''Before'', or ''After''.'
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertInlinePictureFromBase64_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)'
     summary: >-
       Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or
       'After'.
@@ -395,7 +377,7 @@ items:
         "End" | "Replace"): Word.InlinePicture;
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: base64EncodedImage
@@ -406,7 +388,7 @@ items:
           description: 'Required. The value can be ''Replace'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.insertOoxml
+  - uid: 'word!Word.InlinePicture#insertOoxml:member(1)'
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -420,7 +402,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -430,8 +412,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertOoxml_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertOoxml:member(2)'
     summary: |-
       Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -445,7 +427,7 @@ items:
       content: 'insertOoxml(ooxml: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: ooxml
@@ -456,7 +438,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.insertParagraph
+  - uid: 'word!Word.InlinePicture#insertParagraph:member(1)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -470,7 +452,7 @@ items:
       content: 'insertParagraph(paragraphText: string, insertLocation: Word.InsertLocation): Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -480,8 +462,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertParagraph_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertParagraph:member(2)'
     summary: |-
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -497,7 +479,7 @@ items:
         Word.Paragraph;
       return:
         type:
-          - word.Word.Paragraph
+          - 'word!Word.Paragraph:class'
         description: ''
       parameters:
         - id: paragraphText
@@ -508,7 +490,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.insertText
+  - uid: 'word!Word.InlinePicture#insertText:member(1)'
     summary: |-
       Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -522,7 +504,7 @@ items:
       content: 'insertText(text: string, insertLocation: Word.InsertLocation): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: text
@@ -532,8 +514,8 @@ items:
         - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
-            - word.Word.InsertLocation
-  - uid: word.Word.InlinePicture.insertText_1
+            - 'word!Word.InsertLocation:enum'
+  - uid: 'word!Word.InlinePicture#insertText:member(2)'
     summary: |-
       Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
 
@@ -547,7 +529,7 @@ items:
       content: 'insertText(text: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"): Word.Range;'
       return:
         type:
-          - word.Word.Range
+          - 'word!Word.Range:class'
         description: ''
       parameters:
         - id: text
@@ -558,7 +540,7 @@ items:
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
-  - uid: word.Word.InlinePicture.load
+  - uid: 'word!Word.InlinePicture#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -589,14 +571,14 @@ items:
       content: 'load(option?: Word.Interfaces.InlinePictureLoadOptions): Word.InlinePicture;'
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - word.Word.Interfaces.InlinePictureLoadOptions
-  - uid: word.Word.InlinePicture.load_1
+            - 'word!Word.Interfaces.InlinePictureLoadOptions:interface'
+  - uid: 'word!Word.InlinePicture#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -609,14 +591,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.InlinePicture;'
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.InlinePicture.load_2
+  - uid: 'word!Word.InlinePicture#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -629,7 +611,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Word.InlinePicture;'
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -638,7 +620,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: word.Word.InlinePicture.lockAspectRatio
+  - uid: 'word!Word.InlinePicture#lockAspectRatio:member'
     summary: |-
       Gets or sets a value that indicates whether the inline image retains its original proportions when you resize it.
 
@@ -653,7 +635,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.InlinePicture.paragraph
+  - uid: 'word!Word.InlinePicture#paragraph:member'
     summary: |-
       Gets the parent paragraph that contains the inline image. Read-only.
 
@@ -667,8 +649,8 @@ items:
       content: 'readonly paragraph: Word.Paragraph;'
       return:
         type:
-          - word.Word.Paragraph
-  - uid: word.Word.InlinePicture.parentContentControl
+          - 'word!Word.Paragraph:class'
+  - uid: 'word!Word.InlinePicture#parentContentControl:member'
     summary: >-
       Gets the content control that contains the inline image. Throws if there isn't a parent content control.
       Read-only.
@@ -684,8 +666,8 @@ items:
       content: 'readonly parentContentControl: Word.ContentControl;'
       return:
         type:
-          - word.Word.ContentControl
-  - uid: word.Word.InlinePicture.select
+          - 'word!Word.ContentControl:class'
+  - uid: 'word!Word.InlinePicture#select:member(1)'
     summary: |-
       Selects the inline picture. This causes Word to scroll to the selection.
 
@@ -705,8 +687,8 @@ items:
         - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
-            - word.Word.SelectionMode
-  - uid: word.Word.InlinePicture.select_1
+            - 'word!Word.SelectionMode:enum'
+  - uid: 'word!Word.InlinePicture#select:member(2)'
     summary: |-
       Selects the inline picture. This causes Word to scroll to the selection.
 
@@ -727,7 +709,7 @@ items:
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
-  - uid: word.Word.InlinePicture.set
+  - uid: 'word!Word.InlinePicture#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -757,7 +739,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: word.Word.InlinePicture.set_1
+  - uid: 'word!Word.InlinePicture#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -774,8 +756,8 @@ items:
         - id: properties
           description: ''
           type:
-            - word.Word.InlinePicture
-  - uid: word.Word.InlinePicture.toJSON
+            - 'word!Word.InlinePicture:class'
+  - uid: 'word!Word.InlinePicture#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -791,9 +773,9 @@ items:
       content: 'toJSON(): Word.Interfaces.InlinePictureData;'
       return:
         type:
-          - word.Word.Interfaces.InlinePictureData
+          - 'word!Word.Interfaces.InlinePictureData:interface'
         description: ''
-  - uid: word.Word.InlinePicture.track
+  - uid: 'word!Word.InlinePicture#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -809,9 +791,9 @@ items:
       content: 'track(): Word.InlinePicture;'
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
-  - uid: word.Word.InlinePicture.untrack
+  - uid: 'word!Word.InlinePicture#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -826,9 +808,9 @@ items:
       content: 'untrack(): Word.InlinePicture;'
       return:
         type:
-          - word.Word.InlinePicture
+          - 'word!Word.InlinePicture:class'
         description: ''
-  - uid: word.Word.InlinePicture.width
+  - uid: 'word!Word.InlinePicture#width:member'
     summary: |-
       Gets or sets a number that describes the width of the inline image.
 

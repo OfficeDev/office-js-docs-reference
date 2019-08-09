@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Body
+  - uid: 'outlook!Office.Body:interface'
     summary: >-
       The body object provides methods for adding and updating the content of the message or appointment. It is returned
       in the body property of the selected item.
@@ -19,15 +19,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook!
     children:
-      - Outlook.Office.Body.getTypeAsync
-      - Outlook.Office.Body.getTypeAsync_1
-      - Outlook.Office.Body.prependAsync
-      - Outlook.Office.Body.prependAsync_1
-      - Outlook.Office.Body.setSelectedDataAsync
-      - Outlook.Office.Body.setSelectedDataAsync_1
-  - uid: Outlook.Office.Body.getTypeAsync
+      - 'outlook!Office.Body#getTypeAsync:member(1)'
+      - 'outlook!Office.Body#getTypeAsync:member(2)'
+      - 'outlook!Office.Body#prependAsync:member(1)'
+      - 'outlook!Office.Body#prependAsync:member(2)'
+      - 'outlook!Office.Body#setSelectedDataAsync:member(1)'
+      - 'outlook!Office.Body#setSelectedDataAsync:member(2)'
+  - uid: 'outlook!Office.Body#getTypeAsync:member(1)'
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
@@ -65,7 +65,7 @@ items:
             asyncResult.value property.
           type:
             - '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-  - uid: Outlook.Office.Body.getTypeAsync_1
+  - uid: 'outlook!Office.Body#getTypeAsync:member(2)'
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
@@ -76,22 +76,6 @@ items:
 
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose
-
-
-      #### Examples
-
-
-      ```javascript
-
-      Office.context.mailbox.item.body.getTypeAsync(function (asyncResult) {
-          if (asyncResult.status === "failed") {
-              console.log("Action failed with error: " + asyncResult.error.message);
-          } else {
-              console.log("Body type: " + asyncResult.value);
-          }
-      });
-
-      ```
     name: getTypeAsync(callback)
     fullName: getTypeAsync(callback)
     langs:
@@ -111,7 +95,7 @@ items:
             asyncResult.value property.
           type:
             - '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-  - uid: Outlook.Office.Body.prependAsync
+  - uid: 'outlook!Office.Body#prependAsync:member(1)'
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -138,22 +122,6 @@ items:
 
 
       - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // When including links in HTML markup, you can disable online link preview
-
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-
-      Office.context.mailbox.item.body.prependAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
-      ```
     name: 'prependAsync(data, options, callback)'
     fullName: 'prependAsync(data, options, callback)'
     langs:
@@ -186,7 +154,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Body.prependAsync_1
+  - uid: 'outlook!Office.Body#prependAsync:member(2)'
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -236,7 +204,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Body.setSelectedDataAsync
+  - uid: 'outlook!Office.Body#setSelectedDataAsync:member(1)'
     summary: >-
       Replaces the selection in the body with the specified text.
 
@@ -269,22 +237,6 @@ items:
 
       - InvalidFormatError: The options.coercionType parameter is set to Office.CoercionType.Html and the message body
       is in plain text.
-
-
-      #### Examples
-
-
-      ```javascript
-
-      // When including links in HTML markup, you can disable online link preview
-
-      // by setting the id attribute on the anchor (<a>) to "LPNoLP".
-
-      Office.context.mailbox.item.body.setSelectedDataAsync(
-          '<a id="LPNoLP" href="http://www.contoso.com">Click here!</a>',
-          {coercionType: Office.CoercionType.Html},
-          callback);
-      ```
     name: 'setSelectedDataAsync(data, options, callback)'
     fullName: 'setSelectedDataAsync(data, options, callback)'
     langs:
@@ -317,7 +269,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Body.setSelectedDataAsync_1
+  - uid: 'outlook!Office.Body#setSelectedDataAsync:member(2)'
     summary: >-
       Replaces the selection in the body with the specified text.
 

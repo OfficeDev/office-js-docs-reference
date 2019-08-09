@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: office.Office.MatrixBinding
+  - uid: 'office!Office.MatrixBinding:interface'
     summary: Represents a binding in two dimensions of rows and columns.
     remarks: >-
       The MatrixBinding object inherits the id property, type property, getDataAsync method, and setDataAsync method
@@ -11,12 +11,12 @@ items:
       - typeScript
     type: interface
     extends:
-      - office.Office.Binding
-    package: office
+      - 'office!Office.Binding:interface'
+    package: office!
     children:
-      - office.Office.MatrixBinding.columnCount
-      - office.Office.MatrixBinding.rowCount
-  - uid: office.Office.MatrixBinding.columnCount
+      - 'office!Office.MatrixBinding#columnCount:member'
+      - 'office!Office.MatrixBinding#rowCount:member'
+  - uid: 'office!Office.MatrixBinding#columnCount:member'
     summary: 'Gets the number of columns in the matrix data structure, as an integer value.'
     name: columnCount
     fullName: columnCount
@@ -28,23 +28,7 @@ items:
       return:
         type:
           - number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showBindingColumnCount() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Column: " + asyncResult.value.columnCount);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```
-  - uid: office.Office.MatrixBinding.rowCount
+  - uid: 'office!Office.MatrixBinding#rowCount:member'
     summary: 'Gets the number of rows in the matrix data structure, as an integer value.'
     name: rowCount
     fullName: rowCount
@@ -56,19 +40,3 @@ items:
       return:
         type:
           - number
-        description: |-
-
-
-          #### Examples
-
-          ```javascript
-          function showBindingRowCount() {
-              Office.context.document.bindings.getByIdAsync("myBinding", function (asyncResult) {
-                  write("Rows: " + asyncResult.value.rowCount);
-              });
-          }
-          // Function that writes to a div with id='message' on the page.
-          function write(message){
-              document.getElementById('message').innerText += message; 
-          }
-          ```

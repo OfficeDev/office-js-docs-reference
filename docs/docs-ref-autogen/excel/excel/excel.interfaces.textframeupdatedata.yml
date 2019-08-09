@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData:interface'
     summary: 'An interface for updating data on the TextFrame object, for use in "textFrame.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.TextFrameUpdateData
     fullName: Excel.Interfaces.TextFrameUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TextFrameUpdateData.autoSizeSetting
-      - excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
-      - excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
-      - excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.orientation
-      - excel.Excel.Interfaces.TextFrameUpdateData.readingOrder
-      - excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.topMargin
-      - excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
-      - excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.autoSizeSetting
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#bottomMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#leftMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#orientation:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#rightMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#topMargin:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member'
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#autoSizeSetting:member'
     summary: >-
       Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
       text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
@@ -39,7 +39,7 @@ items:
       return:
         type:
           - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.bottomMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#bottomMargin:member'
     summary: |-
       Represents the bottom margin, in points, of the text frame.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalAlignment
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
 
@@ -73,7 +73,7 @@ items:
           - >-
             Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
             | "ThaiDistributed"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.horizontalOverflow
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#horizontalOverflow:member'
     summary: |-
       Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
 
@@ -88,7 +88,7 @@ items:
       return:
         type:
           - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.leftMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#leftMargin:member'
     summary: |-
       Represents the left margin, in points, of the text frame.
 
@@ -103,7 +103,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.orientation
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#orientation:member'
     summary: |-
       Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
 
@@ -122,7 +122,7 @@ items:
           - >-
             Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
             "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.readingOrder
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#readingOrder:member'
     summary: >-
       Represents the reading order of the text frame, either left-to-right or right-to-left. See
       Excel.ShapeTextReadingOrder for details.
@@ -139,7 +139,7 @@ items:
       return:
         type:
           - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.rightMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#rightMargin:member'
     summary: |-
       Represents the right margin, in points, of the text frame.
 
@@ -154,7 +154,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.topMargin
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#topMargin:member'
     summary: |-
       Represents the top margin, in points, of the text frame.
 
@@ -169,7 +169,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
 
@@ -186,7 +186,7 @@ items:
       return:
         type:
           - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
-  - uid: excel.Excel.Interfaces.TextFrameUpdateData.verticalOverflow
+  - uid: 'excel!Excel.Interfaces.TextFrameUpdateData#verticalOverflow:member'
     summary: |-
       Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
 

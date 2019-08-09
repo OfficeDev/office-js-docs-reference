@@ -1,19 +1,19 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData:interface'
     summary: An interface describing the data returned by calling "chartAreaFormat.toJSON()".
     name: Excel.Interfaces.ChartAreaFormatData
     fullName: Excel.Interfaces.ChartAreaFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAreaFormatData.border
-      - excel.Excel.Interfaces.ChartAreaFormatData.colorScheme
-      - excel.Excel.Interfaces.ChartAreaFormatData.font
-      - excel.Excel.Interfaces.ChartAreaFormatData.roundedCorners
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData.border
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
+      - 'excel!Excel.Interfaces.ChartAreaFormatData#roundedCorners:member'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#border:member'
     summary: |-
       Represents the border format of chart area, which includes color, linestyle, and weight. Read-only.
 
@@ -27,8 +27,8 @@ items:
       content: 'border?: Excel.Interfaces.ChartBorderData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartBorderData
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData.colorScheme
+          - 'excel!Excel.Interfaces.ChartBorderData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#colorScheme:member'
     summary: |-
       Returns or sets color scheme of the chart. Read/Write.
 
@@ -53,7 +53,7 @@ items:
             "MonochromaticPalette5" | "MonochromaticPalette6" | "MonochromaticPalette7" | "MonochromaticPalette8" |
             "MonochromaticPalette9" | "MonochromaticPalette10" | "MonochromaticPalette11" | "MonochromaticPalette12" |
             "MonochromaticPalette13"
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData.font
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#font:member'
     summary: |-
       Represents the font attributes (font name, font size, color, etc.) for the current object. Read-only.
 
@@ -67,8 +67,8 @@ items:
       content: 'font?: Excel.Interfaces.ChartFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartFontData
-  - uid: excel.Excel.Interfaces.ChartAreaFormatData.roundedCorners
+          - 'excel!Excel.Interfaces.ChartFontData:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAreaFormatData#roundedCorners:member'
     summary: |-
       Specifies whether or not chart area of the chart has rounded corners. Read/Write.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions:interface'
     summary: |-
       Represents the shape collection inside a shape group.
 
@@ -10,34 +10,34 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextDescription
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextTitle
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.connectionSiteCount
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.fill
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShapeType
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.group
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.height
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.id
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.image
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.left
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.level
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.line
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lineFormat
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lockAspectRatio
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.name
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.rotation
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.top
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.type
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.visible
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.width
-      - excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zOrderPosition
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#altTextDescription:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#altTextTitle:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#connectionSiteCount:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#fill:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShapeType:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#group:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#id:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#image:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#level:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#line:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#lineFormat:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#lockAspectRatio:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#rotation:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#textFrame:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#visible:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#width:member'
+      - 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#zOrderPosition:member'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextDescription
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#altTextDescription:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the alternative description text for a Shape object.
 
@@ -63,7 +63,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.altTextTitle
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#altTextTitle:member'
     summary: |-
       For EACH ITEM in the collection: Returns or sets the alternative title text for a Shape object.
 
@@ -78,7 +78,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.connectionSiteCount
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#connectionSiteCount:member'
     summary: |-
       For EACH ITEM in the collection: Returns the number of connection sites on this shape. Read-only.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.fill
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#fill:member'
     summary: |-
       For EACH ITEM in the collection: Returns the fill formatting of this shape.
 
@@ -107,8 +107,8 @@ items:
       content: 'fill?: Excel.Interfaces.ShapeFillLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeFillLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShape
+          - 'excel!Excel.Interfaces.ShapeFillLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShape:member'
     summary: >-
       For EACH ITEM in the collection: Returns the geometric shape associated with the shape. An error will be thrown if
       the shape type is not "GeometricShape".
@@ -124,8 +124,8 @@ items:
       content: 'geometricShape?: Excel.Interfaces.GeometricShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.GeometricShapeLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.geometricShapeType
+          - 'excel!Excel.Interfaces.GeometricShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#geometricShapeType:member'
     summary: >-
       For EACH ITEM in the collection: Represents the geometric shape type of this geometric shape. See
       Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
@@ -142,7 +142,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.group
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#group:member'
     summary: >-
       For EACH ITEM in the collection: Returns the shape group associated with the shape. An error will be thrown if the
       shape type is not "GroupShape".
@@ -158,8 +158,8 @@ items:
       content: 'group?: Excel.Interfaces.ShapeGroupLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeGroupLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.height
+          - 'excel!Excel.Interfaces.ShapeGroupLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#height:member'
     summary: >-
       For EACH ITEM in the collection: Represents the height, in points, of the shape. Throws an invalid argument
       exception when set with a negative value or zero as input.
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.id
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#id:member'
     summary: |-
       For EACH ITEM in the collection: Represents the shape identifier. Read-only.
 
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.image
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#image:member'
     summary: >-
       For EACH ITEM in the collection: Returns the image associated with the shape. An error will be thrown if the shape
       type is not "Image".
@@ -207,8 +207,8 @@ items:
       content: 'image?: Excel.Interfaces.ImageLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ImageLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.left
+          - 'excel!Excel.Interfaces.ImageLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#left:member'
     summary: >-
       For EACH ITEM in the collection: The distance, in points, from the left side of the shape to the left side of the
       worksheet. Throws an invalid argument exception when set with a negative value as input.
@@ -225,7 +225,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.level
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#level:member'
     summary: >-
       For EACH ITEM in the collection: Represents the level of the specified shape. For example, a level of 0 means that
       the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2
@@ -243,7 +243,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.line
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#line:member'
     summary: >-
       For EACH ITEM in the collection: Returns the line associated with the shape. An error will be thrown if the shape
       type is not "Line".
@@ -259,8 +259,8 @@ items:
       content: 'line?: Excel.Interfaces.LineLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.LineLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lineFormat
+          - 'excel!Excel.Interfaces.LineLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#lineFormat:member'
     summary: |-
       For EACH ITEM in the collection: Returns the line formatting of this shape.
 
@@ -274,8 +274,8 @@ items:
       content: 'lineFormat?: Excel.Interfaces.ShapeLineFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLineFormatLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.lockAspectRatio
+          - 'excel!Excel.Interfaces.ShapeLineFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#lockAspectRatio:member'
     summary: |-
       For EACH ITEM in the collection: Specifies whether or not the aspect ratio of this shape is locked.
 
@@ -290,7 +290,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#name:member'
     summary: |-
       For EACH ITEM in the collection: Represents the name of the shape.
 
@@ -305,7 +305,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.parentGroup
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#parentGroup:member'
     summary: |-
       For EACH ITEM in the collection: Represents the parent group of this shape.
 
@@ -319,8 +319,8 @@ items:
       content: 'parentGroup?: Excel.Interfaces.ShapeLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ShapeLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.rotation
+          - 'excel!Excel.Interfaces.ShapeLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#rotation:member'
     summary: |-
       For EACH ITEM in the collection: Represents the rotation, in degrees, of the shape.
 
@@ -335,7 +335,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.textFrame
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#textFrame:member'
     summary: |-
       For EACH ITEM in the collection: Returns the text frame object of this shape. Read only.
 
@@ -349,8 +349,8 @@ items:
       content: 'textFrame?: Excel.Interfaces.TextFrameLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.TextFrameLoadOptions
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.top
+          - 'excel!Excel.Interfaces.TextFrameLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#top:member'
     summary: >-
       For EACH ITEM in the collection: The distance, in points, from the top edge of the shape to the top edge of the
       worksheet. Throws an invalid argument exception when set with a negative value as input.
@@ -367,7 +367,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#type:member'
     summary: |-
       For EACH ITEM in the collection: Returns the type of this shape. See Excel.ShapeType for details. Read-only.
 
@@ -382,7 +382,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#visible:member'
     summary: |-
       For EACH ITEM in the collection: Represents the visibility of this shape.
 
@@ -397,7 +397,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#width:member'
     summary: >-
       For EACH ITEM in the collection: Represents the width, in points, of the shape. Throws an invalid argument
       exception when set with a negative value or zero as input.
@@ -414,7 +414,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.GroupShapeCollectionLoadOptions.zOrderPosition
+  - uid: 'excel!Excel.Interfaces.GroupShapeCollectionLoadOptions#zOrderPosition:member'
     summary: >-
       For EACH ITEM in the collection: Returns the position of the specified shape in the z-order, with 0 representing
       the bottom of the order stack. Read-only.

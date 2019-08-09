@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions
+  - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions:interface'
     summary: |-
       Represents the border of an object.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeBorderLoadOptions.$all
-      - excel.Excel.Interfaces.RangeBorderLoadOptions.color
-      - excel.Excel.Interfaces.RangeBorderLoadOptions.sideIndex
-      - excel.Excel.Interfaces.RangeBorderLoadOptions.style
-      - excel.Excel.Interfaces.RangeBorderLoadOptions.weight
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.$all
+      - 'excel!Excel.Interfaces.RangeBorderLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.RangeBorderLoadOptions#color:member'
+      - 'excel!Excel.Interfaces.RangeBorderLoadOptions#sideIndex:member'
+      - 'excel!Excel.Interfaces.RangeBorderLoadOptions#style:member'
+      - 'excel!Excel.Interfaces.RangeBorderLoadOptions#weight:member'
+  - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -28,7 +28,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.color
+  - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange").
@@ -45,7 +45,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.sideIndex
+  - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions#sideIndex:member'
     summary: |-
       Constant value that indicates the specific side of the border. See Excel.BorderIndex for details. Read-only.
 
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.style
+  - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions#style:member'
     summary: >-
       One of the constants of line style specifying the line style for the border. See Excel.BorderLineStyle for
       details.
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.RangeBorderLoadOptions.weight
+  - uid: 'excel!Excel.Interfaces.RangeBorderLoadOptions#weight:member'
     summary: |-
       Specifies the weight of the border around a range. See Excel.BorderWeight for details.
 

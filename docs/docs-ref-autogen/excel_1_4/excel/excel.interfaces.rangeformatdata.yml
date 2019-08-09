@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeFormatData
+  - uid: 'excel!Excel.Interfaces.RangeFormatData:interface'
     summary: An interface describing the data returned by calling "rangeFormat.toJSON()".
     name: Excel.Interfaces.RangeFormatData
     fullName: Excel.Interfaces.RangeFormatData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeFormatData.borders
-      - excel.Excel.Interfaces.RangeFormatData.columnWidth
-      - excel.Excel.Interfaces.RangeFormatData.fill
-      - excel.Excel.Interfaces.RangeFormatData.font
-      - excel.Excel.Interfaces.RangeFormatData.horizontalAlignment
-      - excel.Excel.Interfaces.RangeFormatData.protection
-      - excel.Excel.Interfaces.RangeFormatData.rowHeight
-      - excel.Excel.Interfaces.RangeFormatData.verticalAlignment
-      - excel.Excel.Interfaces.RangeFormatData.wrapText
-  - uid: excel.Excel.Interfaces.RangeFormatData.borders
+      - 'excel!Excel.Interfaces.RangeFormatData#borders:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#columnWidth:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#fill:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#font:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#protection:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#rowHeight:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member'
+      - 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#borders:member'
     summary: |-
       Collection of border objects that apply to the overall range. Read-only.
 
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.RangeBorderData[]'
-  - uid: excel.Excel.Interfaces.RangeFormatData.columnWidth
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#columnWidth:member'
     summary: >-
       Gets or sets the width of all colums within the range. If the column widths are not uniform, null will be
       returned.
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeFormatData.fill
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#fill:member'
     summary: |-
       Returns the fill object defined on the overall range. Read-only.
 
@@ -64,8 +64,8 @@ items:
       content: 'fill?: Excel.Interfaces.RangeFillData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFillData
-  - uid: excel.Excel.Interfaces.RangeFormatData.font
+          - 'excel!Excel.Interfaces.RangeFillData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#font:member'
     summary: |-
       Returns the font object defined on the overall range. Read-only.
 
@@ -79,8 +79,8 @@ items:
       content: 'font?: Excel.Interfaces.RangeFontData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeFontData
-  - uid: excel.Excel.Interfaces.RangeFormatData.horizontalAlignment
+          - 'excel!Excel.Interfaces.RangeFontData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#horizontalAlignment:member'
     summary: |-
       Represents the horizontal alignment for the specified object. See Excel.HorizontalAlignment for details.
 
@@ -99,7 +99,7 @@ items:
           - >-
             Excel.HorizontalAlignment | "General" | "Left" | "Center" | "Right" | "Fill" | "Justify" |
             "CenterAcrossSelection" | "Distributed"
-  - uid: excel.Excel.Interfaces.RangeFormatData.protection
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#protection:member'
     summary: |-
       Returns the format protection object for a range. Read-only.
 
@@ -113,8 +113,8 @@ items:
       content: 'protection?: Excel.Interfaces.FormatProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.FormatProtectionData
-  - uid: excel.Excel.Interfaces.RangeFormatData.rowHeight
+          - 'excel!Excel.Interfaces.FormatProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#rowHeight:member'
     summary: |-
       Gets or sets the height of all rows in the range. If the row heights are not uniform, null will be returned.
 
@@ -129,7 +129,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeFormatData.verticalAlignment
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#verticalAlignment:member'
     summary: |-
       Represents the vertical alignment for the specified object. See Excel.VerticalAlignment for details.
 
@@ -144,7 +144,7 @@ items:
       return:
         type:
           - Excel.VerticalAlignment | "Top" | "Center" | "Bottom" | "Justify" | "Distributed"
-  - uid: excel.Excel.Interfaces.RangeFormatData.wrapText
+  - uid: 'excel!Excel.Interfaces.RangeFormatData#wrapText:member'
     summary: >-
       Indicates if Excel wraps the text in the object. A null value indicates that the entire range doesn't have uniform
       wrap setting

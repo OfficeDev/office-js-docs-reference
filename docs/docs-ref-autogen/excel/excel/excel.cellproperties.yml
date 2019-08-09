@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellProperties
+  - uid: 'excel!Excel.CellProperties:interface'
     summary: |-
       Represents the returned properties of getCellProperties.
 
@@ -11,13 +11,13 @@ items:
       - typeScript
     type: interface
     extends:
-      - excel.Excel.SettableCellProperties
-    package: excel
+      - 'excel!Excel.SettableCellProperties:interface'
+    package: excel!
     children:
-      - excel.Excel.CellProperties.address
-      - excel.Excel.CellProperties.addressLocal
-      - excel.Excel.CellProperties.hidden
-  - uid: excel.Excel.CellProperties.address
+      - 'excel!Excel.CellProperties#address:member'
+      - 'excel!Excel.CellProperties#addressLocal:member'
+      - 'excel!Excel.CellProperties#hidden:member'
+  - uid: 'excel!Excel.CellProperties#address:member'
     summary: |-
       Represents the `address` property.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CellProperties.addressLocal
+  - uid: 'excel!Excel.CellProperties#addressLocal:member'
     summary: |-
       Represents the `addressLocal` property.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.CellProperties.hidden
+  - uid: 'excel!Excel.CellProperties#hidden:member'
     summary: |-
       Represents the `hidden` property.
 

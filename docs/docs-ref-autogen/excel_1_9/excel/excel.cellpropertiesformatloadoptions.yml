@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions:interface'
     summary: |-
       Represents which properties to load on the format object.
 
@@ -10,23 +10,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.CellPropertiesFormatLoadOptions.autoIndent
-      - excel.Excel.CellPropertiesFormatLoadOptions.borders
-      - excel.Excel.CellPropertiesFormatLoadOptions.fill
-      - excel.Excel.CellPropertiesFormatLoadOptions.font
-      - excel.Excel.CellPropertiesFormatLoadOptions.horizontalAlignment
-      - excel.Excel.CellPropertiesFormatLoadOptions.indentLevel
-      - excel.Excel.CellPropertiesFormatLoadOptions.protection
-      - excel.Excel.CellPropertiesFormatLoadOptions.readingOrder
-      - excel.Excel.CellPropertiesFormatLoadOptions.shrinkToFit
-      - excel.Excel.CellPropertiesFormatLoadOptions.textOrientation
-      - excel.Excel.CellPropertiesFormatLoadOptions.useStandardHeight
-      - excel.Excel.CellPropertiesFormatLoadOptions.useStandardWidth
-      - excel.Excel.CellPropertiesFormatLoadOptions.verticalAlignment
-      - excel.Excel.CellPropertiesFormatLoadOptions.wrapText
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.autoIndent
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#autoIndent:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#borders:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#indentLevel:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#protection:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#readingOrder:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#shrinkToFit:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#textOrientation:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardHeight:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardWidth:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#verticalAlignment:member'
+      - 'excel!Excel.CellPropertiesFormatLoadOptions#wrapText:member'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#autoIndent:member'
     summary: |-
       Specifies whether to load on the `autoIndent` property.
 
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.borders
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#borders:member'
     summary: |-
       Specifies whether to load on the `borders` property.
 
@@ -55,8 +55,8 @@ items:
       content: 'borders?: Excel.CellPropertiesBorderLoadOptions;'
       return:
         type:
-          - excel.Excel.CellPropertiesBorderLoadOptions
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.fill
+          - 'excel!Excel.CellPropertiesBorderLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#fill:member'
     summary: |-
       Specifies whether to load on the `fill` property.
 
@@ -70,8 +70,8 @@ items:
       content: 'fill?: Excel.CellPropertiesFillLoadOptions;'
       return:
         type:
-          - excel.Excel.CellPropertiesFillLoadOptions
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.font
+          - 'excel!Excel.CellPropertiesFillLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#font:member'
     summary: |-
       Specifies whether to load on the `font` property.
 
@@ -85,8 +85,8 @@ items:
       content: 'font?: Excel.CellPropertiesFontLoadOptions;'
       return:
         type:
-          - excel.Excel.CellPropertiesFontLoadOptions
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.horizontalAlignment
+          - 'excel!Excel.CellPropertiesFontLoadOptions:interface'
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#horizontalAlignment:member'
     summary: |-
       Specifies whether to load on the `horizontalAlignment` property.
 
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.indentLevel
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#indentLevel:member'
     summary: |-
       Specifies whether to load on the `indentLevel` property.
 
@@ -116,7 +116,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.protection
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#protection:member'
     summary: |-
       Specifies whether to load on the `protection` property.
 
@@ -131,7 +131,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.readingOrder
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#readingOrder:member'
     summary: |-
       Specifies whether to load on the `readingOrder` property.
 
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.shrinkToFit
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#shrinkToFit:member'
     summary: |-
       Specifies whether to load on the `shrinkToFit` property.
 
@@ -161,7 +161,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.textOrientation
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#textOrientation:member'
     summary: |-
       Specifies whether to load on the `textOrientation` property.
 
@@ -176,7 +176,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.useStandardHeight
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardHeight:member'
     summary: |-
       Specifies whether to load on the `useStandardHeight` property.
 
@@ -191,7 +191,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.useStandardWidth
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#useStandardWidth:member'
     summary: |-
       Specifies whether to load on the `useStandardWidth` property.
 
@@ -206,7 +206,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.verticalAlignment
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#verticalAlignment:member'
     summary: |-
       Specifies whether to load on the `verticalAlignment` property.
 
@@ -221,7 +221,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.CellPropertiesFormatLoadOptions.wrapText
+  - uid: 'excel!Excel.CellPropertiesFormatLoadOptions#wrapText:member'
     summary: |-
       Specifies whether to load on the `wrapText` property.
 

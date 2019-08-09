@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RangeView
+  - uid: 'excel!Excel.RangeView:class'
     summary: |-
       RangeView represents a set of visible cells of the parent range.
 
@@ -12,29 +12,29 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.RangeView.cellAddresses
-      - excel.Excel.RangeView.columnCount
-      - excel.Excel.RangeView.context
-      - excel.Excel.RangeView.formulas
-      - excel.Excel.RangeView.formulasLocal
-      - excel.Excel.RangeView.formulasR1C1
-      - excel.Excel.RangeView.getRange
-      - excel.Excel.RangeView.index
-      - excel.Excel.RangeView.load
-      - excel.Excel.RangeView.load_1
-      - excel.Excel.RangeView.load_2
-      - excel.Excel.RangeView.numberFormat
-      - excel.Excel.RangeView.rowCount
-      - excel.Excel.RangeView.rows
-      - excel.Excel.RangeView.set
-      - excel.Excel.RangeView.set_1
-      - excel.Excel.RangeView.text
-      - excel.Excel.RangeView.toJSON
-      - excel.Excel.RangeView.values
-      - excel.Excel.RangeView.valueTypes
-  - uid: excel.Excel.RangeView.cellAddresses
+      - 'excel!Excel.RangeView#cellAddresses:member'
+      - 'excel!Excel.RangeView#columnCount:member'
+      - 'excel!Excel.RangeView#context:member'
+      - 'excel!Excel.RangeView#formulas:member'
+      - 'excel!Excel.RangeView#formulasLocal:member'
+      - 'excel!Excel.RangeView#formulasR1C1:member'
+      - 'excel!Excel.RangeView#getRange:member(1)'
+      - 'excel!Excel.RangeView#index:member'
+      - 'excel!Excel.RangeView#load:member(1)'
+      - 'excel!Excel.RangeView#load:member(2)'
+      - 'excel!Excel.RangeView#load:member(3)'
+      - 'excel!Excel.RangeView#numberFormat:member'
+      - 'excel!Excel.RangeView#rowCount:member'
+      - 'excel!Excel.RangeView#rows:member'
+      - 'excel!Excel.RangeView#set:member(1)'
+      - 'excel!Excel.RangeView#set:member(2)'
+      - 'excel!Excel.RangeView#text:member'
+      - 'excel!Excel.RangeView#toJSON:member(1)'
+      - 'excel!Excel.RangeView#values:member'
+      - 'excel!Excel.RangeView#valueTypes:member'
+  - uid: 'excel!Excel.RangeView#cellAddresses:member'
     summary: |-
       Represents the cell addresses of the RangeView. Read-only.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.RangeView.columnCount
+  - uid: 'excel!Excel.RangeView#columnCount:member'
     summary: |-
       Returns the number of visible columns. Read-only.
 
@@ -64,7 +64,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeView.context
+  - uid: 'excel!Excel.RangeView#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -77,8 +77,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.RangeView.formulas
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.RangeView#formulas:member'
     summary: |-
       Represents the formula in A1-style notation.
 
@@ -93,7 +93,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.RangeView.formulasLocal
+  - uid: 'excel!Excel.RangeView#formulasLocal:member'
     summary: >-
       Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the
       English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.RangeView.formulasR1C1
+  - uid: 'excel!Excel.RangeView#formulasR1C1:member'
     summary: |-
       Represents the formula in R1C1-style notation.
 
@@ -125,7 +125,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.RangeView.getRange
+  - uid: 'excel!Excel.RangeView#getRange:member(1)'
     summary: |-
       Gets the parent range associated with the current RangeView.
 
@@ -139,9 +139,9 @@ items:
       content: 'getRange(): Excel.Range;'
       return:
         type:
-          - excel.Excel.Range
+          - 'excel!Excel.Range:class'
         description: ''
-  - uid: excel.Excel.RangeView.index
+  - uid: 'excel!Excel.RangeView#index:member'
     summary: |-
       Returns a value that represents the index of the RangeView. Read-only.
 
@@ -156,7 +156,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeView.load
+  - uid: 'excel!Excel.RangeView#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -187,14 +187,14 @@ items:
       content: 'load(option?: Excel.Interfaces.RangeViewLoadOptions): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - 'excel!Excel.RangeView:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.RangeViewLoadOptions
-  - uid: excel.Excel.RangeView.load_1
+            - 'excel!Excel.Interfaces.RangeViewLoadOptions:interface'
+  - uid: 'excel!Excel.RangeView#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -207,14 +207,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - 'excel!Excel.RangeView:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.RangeView.load_2
+  - uid: 'excel!Excel.RangeView#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -227,7 +227,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.RangeView;'
       return:
         type:
-          - excel.Excel.RangeView
+          - 'excel!Excel.RangeView:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -236,7 +236,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.RangeView.numberFormat
+  - uid: 'excel!Excel.RangeView#numberFormat:member'
     summary: |-
       Represents Excel's number format code for the given cell.
 
@@ -251,7 +251,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.RangeView.rowCount
+  - uid: 'excel!Excel.RangeView#rowCount:member'
     summary: |-
       Returns the number of visible rows. Read-only.
 
@@ -266,7 +266,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.RangeView.rows
+  - uid: 'excel!Excel.RangeView#rows:member'
     summary: |-
       Represents a collection of range views associated with the range. Read-only.
 
@@ -280,8 +280,8 @@ items:
       content: 'readonly rows: Excel.RangeViewCollection;'
       return:
         type:
-          - excel.Excel.RangeViewCollection
-  - uid: excel.Excel.RangeView.set
+          - 'excel!Excel.RangeViewCollection:class'
+  - uid: 'excel!Excel.RangeView#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -311,7 +311,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.RangeView.set_1
+  - uid: 'excel!Excel.RangeView#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -328,8 +328,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.RangeView
-  - uid: excel.Excel.RangeView.text
+            - 'excel!Excel.RangeView:class'
+  - uid: 'excel!Excel.RangeView#text:member'
     summary: >-
       Text values of the specified range. The Text value will not depend on the cell width. The \# sign substitution
       that happens in Excel UI will not affect the text value returned by the API. Read-only.
@@ -346,7 +346,7 @@ items:
       return:
         type:
           - 'string[][]'
-  - uid: excel.Excel.RangeView.toJSON
+  - uid: 'excel!Excel.RangeView#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -362,9 +362,9 @@ items:
       content: 'toJSON(): Excel.Interfaces.RangeViewData;'
       return:
         type:
-          - excel.Excel.Interfaces.RangeViewData
+          - 'excel!Excel.Interfaces.RangeViewData:interface'
         description: ''
-  - uid: excel.Excel.RangeView.values
+  - uid: 'excel!Excel.RangeView#values:member'
     summary: >-
       Represents the raw values of the specified range view. The data returned could be of type string, number, or a
       boolean. Cells that contain an error will return the error string.
@@ -381,7 +381,7 @@ items:
       return:
         type:
           - 'any[][]'
-  - uid: excel.Excel.RangeView.valueTypes
+  - uid: 'excel!Excel.RangeView#valueTypes:member'
     summary: |-
       Represents the type of data of each cell. Read-only.
 

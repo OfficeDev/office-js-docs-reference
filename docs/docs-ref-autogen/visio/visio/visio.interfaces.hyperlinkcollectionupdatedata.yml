@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionUpdateData
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set(<!-- -->{
       ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.HyperlinkCollectionUpdateData.items
-  - uid: visio.Visio.Interfaces.HyperlinkCollectionUpdateData.items
+      - 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member'
+  - uid: 'visio!Visio.Interfaces.HyperlinkCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

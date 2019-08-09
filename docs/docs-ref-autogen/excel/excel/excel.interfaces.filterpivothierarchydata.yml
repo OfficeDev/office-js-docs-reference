@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData:interface'
     summary: An interface describing the data returned by calling "filterPivotHierarchy.toJSON()".
     name: Excel.Interfaces.FilterPivotHierarchyData
     fullName: Excel.Interfaces.FilterPivotHierarchyData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.FilterPivotHierarchyData.enableMultipleFilterItems
-      - excel.Excel.Interfaces.FilterPivotHierarchyData.fields
-      - excel.Excel.Interfaces.FilterPivotHierarchyData.id
-      - excel.Excel.Interfaces.FilterPivotHierarchyData.name
-      - excel.Excel.Interfaces.FilterPivotHierarchyData.position
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData.enableMultipleFilterItems
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyData#enableMultipleFilterItems:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyData#id:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyData#name:member'
+      - 'excel!Excel.Interfaces.FilterPivotHierarchyData#position:member'
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData#enableMultipleFilterItems:member'
     summary: |-
       Determines whether to allow multiple filter items.
 
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData.fields
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData#fields:member'
     summary: |-
       Returns the PivotFields associated with the FilterPivotHierarchy.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotFieldData[]'
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData.id
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData#id:member'
     summary: |-
       Id of the FilterPivotHierarchy.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData.name
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData#name:member'
     summary: |-
       Name of the FilterPivotHierarchy.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.FilterPivotHierarchyData.position
+  - uid: 'excel!Excel.Interfaces.FilterPivotHierarchyData#position:member'
     summary: |-
       Position of the FilterPivotHierarchy.
 

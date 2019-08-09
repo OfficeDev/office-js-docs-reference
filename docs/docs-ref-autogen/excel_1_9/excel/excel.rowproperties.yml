@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.RowProperties
+  - uid: 'excel!Excel.RowProperties:interface'
     summary: |-
       Represents the returned properties of getRowProperties.
 
@@ -11,13 +11,13 @@ items:
       - typeScript
     type: interface
     extends:
-      - excel.Excel.SettableRowProperties
-    package: excel
+      - 'excel!Excel.SettableRowProperties:interface'
+    package: excel!
     children:
-      - excel.Excel.RowProperties.address
-      - excel.Excel.RowProperties.addressLocal
-      - excel.Excel.RowProperties.rowIndex
-  - uid: excel.Excel.RowProperties.address
+      - 'excel!Excel.RowProperties#address:member'
+      - 'excel!Excel.RowProperties#addressLocal:member'
+      - 'excel!Excel.RowProperties#rowIndex:member'
+  - uid: 'excel!Excel.RowProperties#address:member'
     summary: |-
       Represents the `address` property.
 
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RowProperties.addressLocal
+  - uid: 'excel!Excel.RowProperties#addressLocal:member'
     summary: |-
       Represents the `addressLocal` property.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.RowProperties.rowIndex
+  - uid: 'excel!Excel.RowProperties#rowIndex:member'
     summary: |-
       Represents the `rowIndex` property.
 

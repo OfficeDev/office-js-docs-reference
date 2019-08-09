@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the ChartLegendEntryCollection object, for use in
       "chartLegendEntryCollection.set(<!-- -->{ ... }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.ChartLegendEntryCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.ChartLegendEntryCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

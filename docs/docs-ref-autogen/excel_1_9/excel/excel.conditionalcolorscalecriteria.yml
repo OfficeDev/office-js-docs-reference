@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalColorScaleCriteria
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria:interface'
     summary: |-
       Represents the criteria of the color scale.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalColorScaleCriteria.maximum
-      - excel.Excel.ConditionalColorScaleCriteria.midpoint
-      - excel.Excel.ConditionalColorScaleCriteria.minimum
-  - uid: excel.Excel.ConditionalColorScaleCriteria.maximum
+      - 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
+      - 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
+      - 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#maximum:member'
     summary: |-
       The maximum point Color Scale Criterion.
 
@@ -29,8 +29,8 @@ items:
       content: 'maximum: Excel.ConditionalColorScaleCriterion;'
       return:
         type:
-          - excel.Excel.ConditionalColorScaleCriterion
-  - uid: excel.Excel.ConditionalColorScaleCriteria.midpoint
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#midpoint:member'
     summary: |-
       The midpoint Color Scale Criterion if the color scale is a 3-color scale.
 
@@ -44,8 +44,8 @@ items:
       content: 'midpoint?: Excel.ConditionalColorScaleCriterion;'
       return:
         type:
-          - excel.Excel.ConditionalColorScaleCriterion
-  - uid: excel.Excel.ConditionalColorScaleCriteria.minimum
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'
+  - uid: 'excel!Excel.ConditionalColorScaleCriteria#minimum:member'
     summary: |-
       The minimum point Color Scale Criterion.
 
@@ -59,4 +59,4 @@ items:
       content: 'minimum: Excel.ConditionalColorScaleCriterion;'
       return:
         type:
-          - excel.Excel.ConditionalColorScaleCriterion
+          - 'excel!Excel.ConditionalColorScaleCriterion:interface'

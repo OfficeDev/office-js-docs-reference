@@ -1,26 +1,26 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.WorkbookData
+  - uid: 'excel!Excel.Interfaces.WorkbookData:interface'
     summary: An interface describing the data returned by calling "workbook.toJSON()".
     name: Excel.Interfaces.WorkbookData
     fullName: Excel.Interfaces.WorkbookData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.WorkbookData.bindings
-      - excel.Excel.Interfaces.WorkbookData.customXmlParts
-      - excel.Excel.Interfaces.WorkbookData.name
-      - excel.Excel.Interfaces.WorkbookData.names
-      - excel.Excel.Interfaces.WorkbookData.pivotTables
-      - excel.Excel.Interfaces.WorkbookData.properties
-      - excel.Excel.Interfaces.WorkbookData.protection
-      - excel.Excel.Interfaces.WorkbookData.settings
-      - excel.Excel.Interfaces.WorkbookData.styles
-      - excel.Excel.Interfaces.WorkbookData.tables
-      - excel.Excel.Interfaces.WorkbookData.worksheets
-  - uid: excel.Excel.Interfaces.WorkbookData.bindings
+      - 'excel!Excel.Interfaces.WorkbookData#bindings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
+      - 'excel!Excel.Interfaces.WorkbookData#name:member'
+      - 'excel!Excel.Interfaces.WorkbookData#names:member'
+      - 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#properties:member'
+      - 'excel!Excel.Interfaces.WorkbookData#protection:member'
+      - 'excel!Excel.Interfaces.WorkbookData#settings:member'
+      - 'excel!Excel.Interfaces.WorkbookData#styles:member'
+      - 'excel!Excel.Interfaces.WorkbookData#tables:member'
+      - 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#bindings:member'
     summary: |-
       Represents a collection of bindings that are part of the workbook. Read-only.
 
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.BindingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.customXmlParts
+  - uid: 'excel!Excel.Interfaces.WorkbookData#customXmlParts:member'
     summary: |-
       Represents the collection of custom XML parts contained by this workbook. Read-only.
 
@@ -50,7 +50,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.CustomXmlPartData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.name
+  - uid: 'excel!Excel.Interfaces.WorkbookData#name:member'
     summary: |-
       Gets the workbook name. Read-only.
 
@@ -65,7 +65,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.WorkbookData.names
+  - uid: 'excel!Excel.Interfaces.WorkbookData#names:member'
     summary: |-
       Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
 
@@ -80,7 +80,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.NamedItemData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.pivotTables
+  - uid: 'excel!Excel.Interfaces.WorkbookData#pivotTables:member'
     summary: |-
       Represents a collection of PivotTables associated with the workbook. Read-only.
 
@@ -95,7 +95,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.PivotTableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.properties
+  - uid: 'excel!Excel.Interfaces.WorkbookData#properties:member'
     summary: |-
       Gets the workbook properties. Read-only.
 
@@ -109,8 +109,8 @@ items:
       content: 'properties?: Excel.Interfaces.DocumentPropertiesData;'
       return:
         type:
-          - excel.Excel.Interfaces.DocumentPropertiesData
-  - uid: excel.Excel.Interfaces.WorkbookData.protection
+          - 'excel!Excel.Interfaces.DocumentPropertiesData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#protection:member'
     summary: |-
       Returns workbook protection object for a workbook. Read-only.
 
@@ -124,8 +124,8 @@ items:
       content: 'protection?: Excel.Interfaces.WorkbookProtectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.WorkbookProtectionData
-  - uid: excel.Excel.Interfaces.WorkbookData.settings
+          - 'excel!Excel.Interfaces.WorkbookProtectionData:interface'
+  - uid: 'excel!Excel.Interfaces.WorkbookData#settings:member'
     summary: |-
       Represents a collection of Settings associated with the workbook. Read-only.
 
@@ -140,7 +140,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.SettingData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.styles
+  - uid: 'excel!Excel.Interfaces.WorkbookData#styles:member'
     summary: |-
       Represents a collection of styles associated with the workbook. Read-only.
 
@@ -155,7 +155,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.StyleData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.tables
+  - uid: 'excel!Excel.Interfaces.WorkbookData#tables:member'
     summary: |-
       Represents a collection of tables associated with the workbook. Read-only.
 
@@ -170,7 +170,7 @@ items:
       return:
         type:
           - 'Excel.Interfaces.TableData[]'
-  - uid: excel.Excel.Interfaces.WorkbookData.worksheets
+  - uid: 'excel!Excel.Interfaces.WorkbookData#worksheets:member'
     summary: |-
       Represents a collection of worksheets associated with the workbook. Read-only.
 

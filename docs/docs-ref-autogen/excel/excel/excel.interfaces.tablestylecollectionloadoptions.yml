@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.TableStyleCollectionLoadOptions
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions:interface'
     summary: >-
       Represents a collection of TableStyles.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.TableStyleCollectionLoadOptions.$all
-      - excel.Excel.Interfaces.TableStyleCollectionLoadOptions.name
-      - excel.Excel.Interfaces.TableStyleCollectionLoadOptions.readOnly
-  - uid: excel.Excel.Interfaces.TableStyleCollectionLoadOptions.$all
+      - 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member'
+      - 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#readOnly:member'
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#$all:member'
     isPreview: true
     name: $all
     fullName: $all
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableStyleCollectionLoadOptions.name
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#name:member'
     summary: >-
       For EACH ITEM in the collection: Gets the name of the TableStyle.
 
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.TableStyleCollectionLoadOptions.readOnly
+  - uid: 'excel!Excel.Interfaces.TableStyleCollectionLoadOptions#readOnly:member'
     summary: >-
       For EACH ITEM in the collection: Specifies whether this TableStyle object is read-only. Read-only.
 

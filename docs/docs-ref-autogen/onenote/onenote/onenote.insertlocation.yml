@@ -1,24 +1,24 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.InsertLocation
+  - uid: 'onenote!OneNote.InsertLocation:enum'
     summary: '\[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]'
     name: OneNote.InsertLocation
     fullName: OneNote.InsertLocation
     langs:
       - typeScript
     type: enum
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.InsertLocation.after
-      - onenote.OneNote.InsertLocation.before
-  - uid: onenote.OneNote.InsertLocation.after
+      - 'onenote!OneNote.InsertLocation.after:member'
+      - 'onenote!OneNote.InsertLocation.before:member'
+  - uid: 'onenote!OneNote.InsertLocation.after:member'
     name: after
     fullName: after
     langs:
       - typeScript
     type: field
     numericValue: '"After"'
-  - uid: onenote.OneNote.InsertLocation.before
+  - uid: 'onenote!OneNote.InsertLocation.before:member'
     name: before
     fullName: before
     langs:

@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionData
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData:interface'
     summary: An interface describing the data returned by calling "dataPivotHierarchyCollection.toJSON()".
     name: Excel.Interfaces.DataPivotHierarchyCollectionData
     fullName: Excel.Interfaces.DataPivotHierarchyCollectionData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.DataPivotHierarchyCollectionData.items
-  - uid: excel.Excel.Interfaces.DataPivotHierarchyCollectionData.items
+      - 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData#items:member'
+  - uid: 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData#items:member'
     name: items
     fullName: items
     langs:

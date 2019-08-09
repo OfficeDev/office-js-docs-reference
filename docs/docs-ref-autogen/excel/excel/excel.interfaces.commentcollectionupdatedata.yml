@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CommentCollectionUpdateData
+  - uid: 'excel!Excel.Interfaces.CommentCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the CommentCollection object, for use in "commentCollection.set(<!-- -->{ ...
       }<!-- -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CommentCollectionUpdateData.items
-  - uid: excel.Excel.Interfaces.CommentCollectionUpdateData.items
+      - 'excel!Excel.Interfaces.CommentCollectionUpdateData#items:member'
+  - uid: 'excel!Excel.Interfaces.CommentCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

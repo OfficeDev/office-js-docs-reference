@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.RangeCollection
+  - uid: 'word!Word.RangeCollection:class'
     summary: |-
-      Contains a collection of [Word.Range](xref:word.Word.Range) objects.
+      Contains a collection of [Word.Range](xref:word!Word.Range:class) objects.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.RangeCollection
@@ -12,17 +12,17 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.RangeCollection.context
-      - word.Word.RangeCollection.items
-      - word.Word.RangeCollection.load
-      - word.Word.RangeCollection.load_1
-      - word.Word.RangeCollection.load_2
-      - word.Word.RangeCollection.toJSON
-      - word.Word.RangeCollection.track
-      - word.Word.RangeCollection.untrack
-  - uid: word.Word.RangeCollection.context
+      - 'word!Word.RangeCollection#context:member'
+      - 'word!Word.RangeCollection#items:member'
+      - 'word!Word.RangeCollection#load:member(1)'
+      - 'word!Word.RangeCollection#load:member(2)'
+      - 'word!Word.RangeCollection#load:member(3)'
+      - 'word!Word.RangeCollection#toJSON:member(1)'
+      - 'word!Word.RangeCollection#track:member(1)'
+      - 'word!Word.RangeCollection#untrack:member(1)'
+  - uid: 'word!Word.RangeCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -35,8 +35,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.RangeCollection.items
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.RangeCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -48,7 +48,7 @@ items:
       return:
         type:
           - 'Word.Range[]'
-  - uid: word.Word.RangeCollection.load
+  - uid: 'word!Word.RangeCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -81,14 +81,14 @@ items:
         Word.RangeCollection;
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.RangeCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.RangeCollection.load_1
+  - uid: 'word!Word.RangeCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -101,14 +101,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.RangeCollection.load_2
+  - uid: 'word!Word.RangeCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -118,14 +118,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: word.Word.RangeCollection.toJSON
+  - uid: 'word!Word.RangeCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -141,9 +141,9 @@ items:
       content: 'toJSON(): Word.Interfaces.RangeCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.RangeCollectionData
+          - 'word!Word.Interfaces.RangeCollectionData:interface'
         description: ''
-  - uid: word.Word.RangeCollection.track
+  - uid: 'word!Word.RangeCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -159,9 +159,9 @@ items:
       content: 'track(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''
-  - uid: word.Word.RangeCollection.untrack
+  - uid: 'word!Word.RangeCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -176,5 +176,5 @@ items:
       content: 'untrack(): Word.RangeCollection;'
       return:
         type:
-          - word.Word.RangeCollection
+          - 'word!Word.RangeCollection:class'
         description: ''

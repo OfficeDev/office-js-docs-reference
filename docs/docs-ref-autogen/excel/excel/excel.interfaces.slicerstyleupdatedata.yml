@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.SlicerStyleUpdateData
+  - uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData:interface'
     summary: 'An interface for updating data on the SlicerStyle object, for use in "slicerStyle.set(<!-- -->{ ... }<!-- -->)".'
     name: Excel.Interfaces.SlicerStyleUpdateData
     fullName: Excel.Interfaces.SlicerStyleUpdateData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.SlicerStyleUpdateData.name
-  - uid: excel.Excel.Interfaces.SlicerStyleUpdateData.name
+      - 'excel!Excel.Interfaces.SlicerStyleUpdateData#name:member'
+  - uid: 'excel!Excel.Interfaces.SlicerStyleUpdateData#name:member'
     summary: >-
       Gets the name of the SlicerStyle.
 

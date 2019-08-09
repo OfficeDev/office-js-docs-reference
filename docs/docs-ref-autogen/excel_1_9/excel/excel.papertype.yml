@@ -1,336 +1,336 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.PaperType
+  - uid: 'excel!Excel.PaperType:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.PaperType
     fullName: Excel.PaperType
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.PaperType.a3
-      - excel.Excel.PaperType.a4
-      - excel.Excel.PaperType.a4Small
-      - excel.Excel.PaperType.a5
-      - excel.Excel.PaperType.b4
-      - excel.Excel.PaperType.b5
-      - excel.Excel.PaperType.csheet
-      - excel.Excel.PaperType.dsheet
-      - excel.Excel.PaperType.envelope10
-      - excel.Excel.PaperType.envelope11
-      - excel.Excel.PaperType.envelope12
-      - excel.Excel.PaperType.envelope14
-      - excel.Excel.PaperType.envelope9
-      - excel.Excel.PaperType.envelopeB4
-      - excel.Excel.PaperType.envelopeB5
-      - excel.Excel.PaperType.envelopeB6
-      - excel.Excel.PaperType.envelopeC3
-      - excel.Excel.PaperType.envelopeC4
-      - excel.Excel.PaperType.envelopeC5
-      - excel.Excel.PaperType.envelopeC6
-      - excel.Excel.PaperType.envelopeC65
-      - excel.Excel.PaperType.envelopeDL
-      - excel.Excel.PaperType.envelopeItaly
-      - excel.Excel.PaperType.envelopeMonarch
-      - excel.Excel.PaperType.envelopePersonal
-      - excel.Excel.PaperType.esheet
-      - excel.Excel.PaperType.executive
-      - excel.Excel.PaperType.fanfoldLegalGerman
-      - excel.Excel.PaperType.fanfoldStdGerman
-      - excel.Excel.PaperType.fanfoldUS
-      - excel.Excel.PaperType.folio
-      - excel.Excel.PaperType.ledger
-      - excel.Excel.PaperType.legal
-      - excel.Excel.PaperType.letter
-      - excel.Excel.PaperType.letterSmall
-      - excel.Excel.PaperType.note
-      - excel.Excel.PaperType.paper10x14
-      - excel.Excel.PaperType.paper11x17
-      - excel.Excel.PaperType.quatro
-      - excel.Excel.PaperType.statement
-      - excel.Excel.PaperType.tabloid
-  - uid: excel.Excel.PaperType.a3
+      - 'excel!Excel.PaperType.a3:member'
+      - 'excel!Excel.PaperType.a4:member'
+      - 'excel!Excel.PaperType.a4Small:member'
+      - 'excel!Excel.PaperType.a5:member'
+      - 'excel!Excel.PaperType.b4:member'
+      - 'excel!Excel.PaperType.b5:member'
+      - 'excel!Excel.PaperType.csheet:member'
+      - 'excel!Excel.PaperType.dsheet:member'
+      - 'excel!Excel.PaperType.envelope10:member'
+      - 'excel!Excel.PaperType.envelope11:member'
+      - 'excel!Excel.PaperType.envelope12:member'
+      - 'excel!Excel.PaperType.envelope14:member'
+      - 'excel!Excel.PaperType.envelope9:member'
+      - 'excel!Excel.PaperType.envelopeB4:member'
+      - 'excel!Excel.PaperType.envelopeB5:member'
+      - 'excel!Excel.PaperType.envelopeB6:member'
+      - 'excel!Excel.PaperType.envelopeC3:member'
+      - 'excel!Excel.PaperType.envelopeC4:member'
+      - 'excel!Excel.PaperType.envelopeC5:member'
+      - 'excel!Excel.PaperType.envelopeC6:member'
+      - 'excel!Excel.PaperType.envelopeC65:member'
+      - 'excel!Excel.PaperType.envelopeDL:member'
+      - 'excel!Excel.PaperType.envelopeItaly:member'
+      - 'excel!Excel.PaperType.envelopeMonarch:member'
+      - 'excel!Excel.PaperType.envelopePersonal:member'
+      - 'excel!Excel.PaperType.esheet:member'
+      - 'excel!Excel.PaperType.executive:member'
+      - 'excel!Excel.PaperType.fanfoldLegalGerman:member'
+      - 'excel!Excel.PaperType.fanfoldStdGerman:member'
+      - 'excel!Excel.PaperType.fanfoldUS:member'
+      - 'excel!Excel.PaperType.folio:member'
+      - 'excel!Excel.PaperType.ledger:member'
+      - 'excel!Excel.PaperType.legal:member'
+      - 'excel!Excel.PaperType.letter:member'
+      - 'excel!Excel.PaperType.letterSmall:member'
+      - 'excel!Excel.PaperType.note:member'
+      - 'excel!Excel.PaperType.paper10x14:member'
+      - 'excel!Excel.PaperType.paper11x17:member'
+      - 'excel!Excel.PaperType.quatro:member'
+      - 'excel!Excel.PaperType.statement:member'
+      - 'excel!Excel.PaperType.tabloid:member'
+  - uid: 'excel!Excel.PaperType.a3:member'
     name: a3
     fullName: a3
     langs:
       - typeScript
     type: field
     numericValue: '"A3"'
-  - uid: excel.Excel.PaperType.a4
+  - uid: 'excel!Excel.PaperType.a4:member'
     name: a4
     fullName: a4
     langs:
       - typeScript
     type: field
     numericValue: '"A4"'
-  - uid: excel.Excel.PaperType.a4Small
+  - uid: 'excel!Excel.PaperType.a4Small:member'
     name: a4Small
     fullName: a4Small
     langs:
       - typeScript
     type: field
     numericValue: '"A4Small"'
-  - uid: excel.Excel.PaperType.a5
+  - uid: 'excel!Excel.PaperType.a5:member'
     name: a5
     fullName: a5
     langs:
       - typeScript
     type: field
     numericValue: '"A5"'
-  - uid: excel.Excel.PaperType.b4
+  - uid: 'excel!Excel.PaperType.b4:member'
     name: b4
     fullName: b4
     langs:
       - typeScript
     type: field
     numericValue: '"B4"'
-  - uid: excel.Excel.PaperType.b5
+  - uid: 'excel!Excel.PaperType.b5:member'
     name: b5
     fullName: b5
     langs:
       - typeScript
     type: field
     numericValue: '"B5"'
-  - uid: excel.Excel.PaperType.csheet
+  - uid: 'excel!Excel.PaperType.csheet:member'
     name: csheet
     fullName: csheet
     langs:
       - typeScript
     type: field
     numericValue: '"Csheet"'
-  - uid: excel.Excel.PaperType.dsheet
+  - uid: 'excel!Excel.PaperType.dsheet:member'
     name: dsheet
     fullName: dsheet
     langs:
       - typeScript
     type: field
     numericValue: '"Dsheet"'
-  - uid: excel.Excel.PaperType.envelope10
+  - uid: 'excel!Excel.PaperType.envelope10:member'
     name: envelope10
     fullName: envelope10
     langs:
       - typeScript
     type: field
     numericValue: '"Envelope10"'
-  - uid: excel.Excel.PaperType.envelope11
+  - uid: 'excel!Excel.PaperType.envelope11:member'
     name: envelope11
     fullName: envelope11
     langs:
       - typeScript
     type: field
     numericValue: '"Envelope11"'
-  - uid: excel.Excel.PaperType.envelope12
+  - uid: 'excel!Excel.PaperType.envelope12:member'
     name: envelope12
     fullName: envelope12
     langs:
       - typeScript
     type: field
     numericValue: '"Envelope12"'
-  - uid: excel.Excel.PaperType.envelope14
+  - uid: 'excel!Excel.PaperType.envelope14:member'
     name: envelope14
     fullName: envelope14
     langs:
       - typeScript
     type: field
     numericValue: '"Envelope14"'
-  - uid: excel.Excel.PaperType.envelope9
+  - uid: 'excel!Excel.PaperType.envelope9:member'
     name: envelope9
     fullName: envelope9
     langs:
       - typeScript
     type: field
     numericValue: '"Envelope9"'
-  - uid: excel.Excel.PaperType.envelopeB4
+  - uid: 'excel!Excel.PaperType.envelopeB4:member'
     name: envelopeB4
     fullName: envelopeB4
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeB4"'
-  - uid: excel.Excel.PaperType.envelopeB5
+  - uid: 'excel!Excel.PaperType.envelopeB5:member'
     name: envelopeB5
     fullName: envelopeB5
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeB5"'
-  - uid: excel.Excel.PaperType.envelopeB6
+  - uid: 'excel!Excel.PaperType.envelopeB6:member'
     name: envelopeB6
     fullName: envelopeB6
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeB6"'
-  - uid: excel.Excel.PaperType.envelopeC3
+  - uid: 'excel!Excel.PaperType.envelopeC3:member'
     name: envelopeC3
     fullName: envelopeC3
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeC3"'
-  - uid: excel.Excel.PaperType.envelopeC4
+  - uid: 'excel!Excel.PaperType.envelopeC4:member'
     name: envelopeC4
     fullName: envelopeC4
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeC4"'
-  - uid: excel.Excel.PaperType.envelopeC5
+  - uid: 'excel!Excel.PaperType.envelopeC5:member'
     name: envelopeC5
     fullName: envelopeC5
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeC5"'
-  - uid: excel.Excel.PaperType.envelopeC6
+  - uid: 'excel!Excel.PaperType.envelopeC6:member'
     name: envelopeC6
     fullName: envelopeC6
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeC6"'
-  - uid: excel.Excel.PaperType.envelopeC65
+  - uid: 'excel!Excel.PaperType.envelopeC65:member'
     name: envelopeC65
     fullName: envelopeC65
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeC65"'
-  - uid: excel.Excel.PaperType.envelopeDL
+  - uid: 'excel!Excel.PaperType.envelopeDL:member'
     name: envelopeDL
     fullName: envelopeDL
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeDL"'
-  - uid: excel.Excel.PaperType.envelopeItaly
+  - uid: 'excel!Excel.PaperType.envelopeItaly:member'
     name: envelopeItaly
     fullName: envelopeItaly
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeItaly"'
-  - uid: excel.Excel.PaperType.envelopeMonarch
+  - uid: 'excel!Excel.PaperType.envelopeMonarch:member'
     name: envelopeMonarch
     fullName: envelopeMonarch
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopeMonarch"'
-  - uid: excel.Excel.PaperType.envelopePersonal
+  - uid: 'excel!Excel.PaperType.envelopePersonal:member'
     name: envelopePersonal
     fullName: envelopePersonal
     langs:
       - typeScript
     type: field
     numericValue: '"EnvelopePersonal"'
-  - uid: excel.Excel.PaperType.esheet
+  - uid: 'excel!Excel.PaperType.esheet:member'
     name: esheet
     fullName: esheet
     langs:
       - typeScript
     type: field
     numericValue: '"Esheet"'
-  - uid: excel.Excel.PaperType.executive
+  - uid: 'excel!Excel.PaperType.executive:member'
     name: executive
     fullName: executive
     langs:
       - typeScript
     type: field
     numericValue: '"Executive"'
-  - uid: excel.Excel.PaperType.fanfoldLegalGerman
+  - uid: 'excel!Excel.PaperType.fanfoldLegalGerman:member'
     name: fanfoldLegalGerman
     fullName: fanfoldLegalGerman
     langs:
       - typeScript
     type: field
     numericValue: '"FanfoldLegalGerman"'
-  - uid: excel.Excel.PaperType.fanfoldStdGerman
+  - uid: 'excel!Excel.PaperType.fanfoldStdGerman:member'
     name: fanfoldStdGerman
     fullName: fanfoldStdGerman
     langs:
       - typeScript
     type: field
     numericValue: '"FanfoldStdGerman"'
-  - uid: excel.Excel.PaperType.fanfoldUS
+  - uid: 'excel!Excel.PaperType.fanfoldUS:member'
     name: fanfoldUS
     fullName: fanfoldUS
     langs:
       - typeScript
     type: field
     numericValue: '"FanfoldUS"'
-  - uid: excel.Excel.PaperType.folio
+  - uid: 'excel!Excel.PaperType.folio:member'
     name: folio
     fullName: folio
     langs:
       - typeScript
     type: field
     numericValue: '"Folio"'
-  - uid: excel.Excel.PaperType.ledger
+  - uid: 'excel!Excel.PaperType.ledger:member'
     name: ledger
     fullName: ledger
     langs:
       - typeScript
     type: field
     numericValue: '"Ledger"'
-  - uid: excel.Excel.PaperType.legal
+  - uid: 'excel!Excel.PaperType.legal:member'
     name: legal
     fullName: legal
     langs:
       - typeScript
     type: field
     numericValue: '"Legal"'
-  - uid: excel.Excel.PaperType.letter
+  - uid: 'excel!Excel.PaperType.letter:member'
     name: letter
     fullName: letter
     langs:
       - typeScript
     type: field
     numericValue: '"Letter"'
-  - uid: excel.Excel.PaperType.letterSmall
+  - uid: 'excel!Excel.PaperType.letterSmall:member'
     name: letterSmall
     fullName: letterSmall
     langs:
       - typeScript
     type: field
     numericValue: '"LetterSmall"'
-  - uid: excel.Excel.PaperType.note
+  - uid: 'excel!Excel.PaperType.note:member'
     name: note
     fullName: note
     langs:
       - typeScript
     type: field
     numericValue: '"Note"'
-  - uid: excel.Excel.PaperType.paper10x14
+  - uid: 'excel!Excel.PaperType.paper10x14:member'
     name: paper10x14
     fullName: paper10x14
     langs:
       - typeScript
     type: field
     numericValue: '"Paper10x14"'
-  - uid: excel.Excel.PaperType.paper11x17
+  - uid: 'excel!Excel.PaperType.paper11x17:member'
     name: paper11x17
     fullName: paper11x17
     langs:
       - typeScript
     type: field
     numericValue: '"Paper11x17"'
-  - uid: excel.Excel.PaperType.quatro
+  - uid: 'excel!Excel.PaperType.quatro:member'
     name: quatro
     fullName: quatro
     langs:
       - typeScript
     type: field
     numericValue: '"Quatro"'
-  - uid: excel.Excel.PaperType.statement
+  - uid: 'excel!Excel.PaperType.statement:member'
     name: statement
     fullName: statement
     langs:
       - typeScript
     type: field
     numericValue: '"Statement"'
-  - uid: excel.Excel.PaperType.tabloid
+  - uid: 'excel!Excel.PaperType.tabloid:member'
     name: tabloid
     fullName: tabloid
     langs:

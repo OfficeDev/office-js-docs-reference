@@ -1,56 +1,56 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ArrowheadStyle
+  - uid: 'excel!Excel.ArrowheadStyle:enum'
     summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.ArrowheadStyle
     fullName: Excel.ArrowheadStyle
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ArrowheadStyle.diamond
-      - excel.Excel.ArrowheadStyle.none
-      - excel.Excel.ArrowheadStyle.open
-      - excel.Excel.ArrowheadStyle.oval
-      - excel.Excel.ArrowheadStyle.stealth
-      - excel.Excel.ArrowheadStyle.triangle
-  - uid: excel.Excel.ArrowheadStyle.diamond
+      - 'excel!Excel.ArrowheadStyle.diamond:member'
+      - 'excel!Excel.ArrowheadStyle.none:member'
+      - 'excel!Excel.ArrowheadStyle.open:member'
+      - 'excel!Excel.ArrowheadStyle.oval:member'
+      - 'excel!Excel.ArrowheadStyle.stealth:member'
+      - 'excel!Excel.ArrowheadStyle.triangle:member'
+  - uid: 'excel!Excel.ArrowheadStyle.diamond:member'
     name: diamond
     fullName: diamond
     langs:
       - typeScript
     type: field
     numericValue: '"Diamond"'
-  - uid: excel.Excel.ArrowheadStyle.none
+  - uid: 'excel!Excel.ArrowheadStyle.none:member'
     name: none
     fullName: none
     langs:
       - typeScript
     type: field
     numericValue: '"None"'
-  - uid: excel.Excel.ArrowheadStyle.open
+  - uid: 'excel!Excel.ArrowheadStyle.open:member'
     name: open
     fullName: open
     langs:
       - typeScript
     type: field
     numericValue: '"Open"'
-  - uid: excel.Excel.ArrowheadStyle.oval
+  - uid: 'excel!Excel.ArrowheadStyle.oval:member'
     name: oval
     fullName: oval
     langs:
       - typeScript
     type: field
     numericValue: '"Oval"'
-  - uid: excel.Excel.ArrowheadStyle.stealth
+  - uid: 'excel!Excel.ArrowheadStyle.stealth:member'
     name: stealth
     fullName: stealth
     langs:
       - typeScript
     type: field
     numericValue: '"Stealth"'
-  - uid: excel.Excel.ArrowheadStyle.triangle
+  - uid: 'excel!Excel.ArrowheadStyle.triangle:member'
     name: triangle
     fullName: triangle
     langs:

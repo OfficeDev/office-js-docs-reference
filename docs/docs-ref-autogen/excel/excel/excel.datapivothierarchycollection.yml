@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.DataPivotHierarchyCollection
+  - uid: 'excel!Excel.DataPivotHierarchyCollection:class'
     summary: |-
       Represents a collection of DataPivotHierarchy items associated with the PivotTable.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.DataPivotHierarchyCollection.add
-      - excel.Excel.DataPivotHierarchyCollection.context
-      - excel.Excel.DataPivotHierarchyCollection.getCount
-      - excel.Excel.DataPivotHierarchyCollection.getItem
-      - excel.Excel.DataPivotHierarchyCollection.getItemOrNullObject
-      - excel.Excel.DataPivotHierarchyCollection.items
-      - excel.Excel.DataPivotHierarchyCollection.load
-      - excel.Excel.DataPivotHierarchyCollection.load_1
-      - excel.Excel.DataPivotHierarchyCollection.load_2
-      - excel.Excel.DataPivotHierarchyCollection.remove
-      - excel.Excel.DataPivotHierarchyCollection.toJSON
-  - uid: excel.Excel.DataPivotHierarchyCollection.add
+      - 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#context:member'
+      - 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#items:member'
+      - 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#load:member(2)'
+      - 'excel!Excel.DataPivotHierarchyCollection#load:member(3)'
+      - 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
+      - 'excel!Excel.DataPivotHierarchyCollection#toJSON:member(1)'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#add:member(1)'
     summary: |-
       Adds the PivotHierarchy to the current axis.
 
@@ -39,14 +39,14 @@ items:
       content: 'add(pivotHierarchy: Excel.PivotHierarchy): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: ''
       parameters:
         - id: pivotHierarchy
           description: ''
           type:
-            - excel.Excel.PivotHierarchy
-  - uid: excel.Excel.DataPivotHierarchyCollection.context
+            - 'excel!Excel.PivotHierarchy:class'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -59,8 +59,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.DataPivotHierarchyCollection.getCount
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getCount:member(1)'
     summary: |-
       Gets the number of pivot hierarchies in the collection.
 
@@ -76,7 +76,7 @@ items:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
-  - uid: excel.Excel.DataPivotHierarchyCollection.getItem
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItem:member(1)'
     summary: |-
       Gets a DataPivotHierarchy by its name or id.
 
@@ -90,14 +90,14 @@ items:
       content: 'getItem(name: string): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: ''
       parameters:
         - id: name
           description: Name of the DataPivotHierarchy to be retrieved.
           type:
             - string
-  - uid: excel.Excel.DataPivotHierarchyCollection.getItemOrNullObject
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#getItemOrNullObject:member(1)'
     summary: |-
       Gets a DataPivotHierarchy by name. If the DataPivotHierarchy does not exist, will return a null object.
 
@@ -111,14 +111,14 @@ items:
       content: 'getItemOrNullObject(name: string): Excel.DataPivotHierarchy;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchy
+          - 'excel!Excel.DataPivotHierarchy:class'
         description: ''
       parameters:
         - id: name
           description: Name of the DataPivotHierarchy to be retrieved.
           type:
             - string
-  - uid: excel.Excel.DataPivotHierarchyCollection.items
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - 'Excel.DataPivotHierarchy[]'
-  - uid: excel.Excel.DataPivotHierarchyCollection.load
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -163,14 +163,14 @@ items:
         Excel.Interfaces.CollectionLoadOptions): Excel.DataPivotHierarchyCollection;
       return:
         type:
-          - excel.Excel.DataPivotHierarchyCollection
+          - 'excel!Excel.DataPivotHierarchyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Excel.Interfaces.DataPivotHierarchyCollectionLoadOptions & Excel.Interfaces.CollectionLoadOptions
-  - uid: excel.Excel.DataPivotHierarchyCollection.load_1
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -183,14 +183,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.DataPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchyCollection
+          - 'excel!Excel.DataPivotHierarchyCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.DataPivotHierarchyCollection.load_2
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -200,14 +200,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Excel.DataPivotHierarchyCollection;'
       return:
         type:
-          - excel.Excel.DataPivotHierarchyCollection
+          - 'excel!Excel.DataPivotHierarchyCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: excel.Excel.DataPivotHierarchyCollection.remove
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#remove:member(1)'
     summary: |-
       Removes the PivotHierarchy from the current axis.
 
@@ -227,8 +227,8 @@ items:
         - id: DataPivotHierarchy
           description: ''
           type:
-            - excel.Excel.DataPivotHierarchy
-  - uid: excel.Excel.DataPivotHierarchyCollection.toJSON
+            - 'excel!Excel.DataPivotHierarchy:class'
+  - uid: 'excel!Excel.DataPivotHierarchyCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -244,5 +244,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.DataPivotHierarchyCollectionData;'
       return:
         type:
-          - excel.Excel.Interfaces.DataPivotHierarchyCollectionData
+          - 'excel!Excel.Interfaces.DataPivotHierarchyCollectionData:interface'
         description: ''

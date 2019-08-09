@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions:interface'
     summary: |-
       Represents a single axis in a chart.
 
@@ -10,42 +10,42 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.$all
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.axisGroup
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.baseTimeUnit
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.categoryType
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.crosses
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.crossesAt
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.customDisplayUnit
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.displayUnit
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.format
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.height
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.left
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.logBase
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.majorGridlines
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.majorTickMark
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.majorTimeUnitScale
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.majorUnit
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.maximum
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.minimum
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.minorGridlines
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.minorTickMark
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.minorTimeUnitScale
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.minorUnit
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.reversePlotOrder
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.scaleType
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.showDisplayUnitLabel
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.tickLabelPosition
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.tickLabelSpacing
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.tickMarkSpacing
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.title
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.top
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.type
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.visible
-      - excel.Excel.Interfaces.ChartAxisLoadOptions.width
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.$all
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#$all:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#axisGroup:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#baseTimeUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#categoryType:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#crosses:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#crossesAt:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#customDisplayUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#displayUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#format:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#height:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#left:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#logBase:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorTickMark:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorTimeUnitScale:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#maximum:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#minimum:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorTickMark:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorTimeUnitScale:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorUnit:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#reversePlotOrder:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#scaleType:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#showDisplayUnitLabel:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#tickLabelPosition:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#tickLabelSpacing:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#tickMarkSpacing:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#title:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#top:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#type:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#visible:member'
+      - 'excel!Excel.Interfaces.ChartAxisLoadOptions#width:member'
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.axisGroup
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#axisGroup:member'
     summary: |-
       Represents the group for the specified axis. See Excel.ChartAxisGroup for details. Read-only.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.baseTimeUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#baseTimeUnit:member'
     summary: |-
       Returns or sets the base unit for the specified category axis.
 
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.categoryType
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#categoryType:member'
     summary: |-
       Returns or sets the category axis type.
 
@@ -101,7 +101,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.crosses
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#crosses:member'
     summary: >-
       \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `Position` instead.
       Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.crossesAt
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#crossesAt:member'
     summary: >-
       \[DEPRECATED; kept for back-compat with existing first-party solutions\]. Please use `PositionAt` instead.
       Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use
@@ -136,7 +136,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.customDisplayUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#customDisplayUnit:member'
     summary: >-
       Represents the custom axis display unit value. Read-only. To set this property, please use the
       SetCustomDisplayUnit(double) method.
@@ -153,7 +153,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.displayUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#displayUnit:member'
     summary: |-
       Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
 
@@ -168,7 +168,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.format
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#format:member'
     summary: |-
       Represents the formatting of a chart object, which includes line and font formatting.
 
@@ -182,8 +182,8 @@ items:
       content: 'format?: Excel.Interfaces.ChartAxisFormatLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisFormatLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.height
+          - 'excel!Excel.Interfaces.ChartAxisFormatLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#height:member'
     summary: |-
       Represents the height, in points, of the chart axis. Null if the axis is not visible. Read-only.
 
@@ -198,7 +198,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.left
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#left:member'
     summary: >-
       Represents the distance, in points, from the left edge of the axis to the left of chart area. Null if the axis is
       not visible. Read-only.
@@ -215,7 +215,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.logBase
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#logBase:member'
     summary: |-
       Represents the base of the logarithm when using logarithmic scales.
 
@@ -230,7 +230,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.majorGridlines
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the major gridlines for the specified axis.
 
@@ -244,8 +244,8 @@ items:
       content: 'majorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.majorTickMark
+          - 'excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorTickMark:member'
     summary: |-
       Represents the type of major tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
@@ -260,7 +260,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.majorTimeUnitScale
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorTimeUnitScale:member'
     summary: >-
       Returns or sets the major unit scale value for the category axis when the CategoryType property is set to
       TimeScale.
@@ -277,7 +277,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.majorUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#majorUnit:member'
     summary: >-
       Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The
       returned value is always a number.
@@ -294,7 +294,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.maximum
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#maximum:member'
     summary: >-
       Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -311,7 +311,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.minimum
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minimum:member'
     summary: >-
       Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic
       axis values). The returned value is always a number.
@@ -328,7 +328,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.minorGridlines
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorGridlines:member'
     summary: |-
       Returns a Gridlines object that represents the minor gridlines for the specified axis.
 
@@ -342,8 +342,8 @@ items:
       content: 'minorGridlines?: Excel.Interfaces.ChartGridlinesLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartGridlinesLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.minorTickMark
+          - 'excel!Excel.Interfaces.ChartGridlinesLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorTickMark:member'
     summary: |-
       Represents the type of minor tick mark for the specified axis. See Excel.ChartAxisTickMark for details.
 
@@ -358,7 +358,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.minorTimeUnitScale
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorTimeUnitScale:member'
     summary: >-
       Returns or sets the minor unit scale value for the category axis when the CategoryType property is set to
       TimeScale.
@@ -375,7 +375,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.minorUnit
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#minorUnit:member'
     summary: >-
       Represents the interval between two minor tick marks. Can be set to a numeric value or an empty string (for
       automatic axis values). The returned value is always a number.
@@ -392,7 +392,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.reversePlotOrder
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#reversePlotOrder:member'
     summary: |-
       Represents whether Microsoft Excel plots data points from last to first.
 
@@ -407,7 +407,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.scaleType
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#scaleType:member'
     summary: |-
       Represents the value axis scale type. See Excel.ChartAxisScaleType for details.
 
@@ -422,7 +422,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.showDisplayUnitLabel
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#showDisplayUnitLabel:member'
     summary: |-
       Represents whether the axis display unit label is visible.
 
@@ -437,7 +437,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.tickLabelPosition
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#tickLabelPosition:member'
     summary: >-
       Represents the position of tick-mark labels on the specified axis. See Excel.ChartAxisTickLabelPosition for
       details.
@@ -454,7 +454,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.tickLabelSpacing
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#tickLabelSpacing:member'
     summary: >-
       Represents the number of categories or series between tick-mark labels. Can be a value from 1 through 31999 or an
       empty string for automatic setting. The returned value is always a number.
@@ -471,7 +471,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.tickMarkSpacing
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#tickMarkSpacing:member'
     summary: |-
       Represents the number of categories or series between tick marks.
 
@@ -486,7 +486,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.title
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#title:member'
     summary: |-
       Represents the axis title.
 
@@ -500,8 +500,8 @@ items:
       content: 'title?: Excel.Interfaces.ChartAxisTitleLoadOptions;'
       return:
         type:
-          - excel.Excel.Interfaces.ChartAxisTitleLoadOptions
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.top
+          - 'excel!Excel.Interfaces.ChartAxisTitleLoadOptions:interface'
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#top:member'
     summary: >-
       Represents the distance, in points, from the top edge of the axis to the top of chart area. Null if the axis is
       not visible. Read-only.
@@ -518,7 +518,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.type
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#type:member'
     summary: |-
       Represents the axis type. See Excel.ChartAxisType for details.
 
@@ -533,7 +533,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.visible
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#visible:member'
     summary: |-
       A boolean value represents the visibility of the axis.
 
@@ -548,7 +548,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.Interfaces.ChartAxisLoadOptions.width
+  - uid: 'excel!Excel.Interfaces.ChartAxisLoadOptions#width:member'
     summary: |-
       Represents the width, in points, of the chart axis. Null if the axis is not visible. Read-only.
 

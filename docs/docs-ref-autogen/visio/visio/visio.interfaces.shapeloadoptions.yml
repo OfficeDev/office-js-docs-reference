@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions:interface'
     summary: |-
       Represents the Shape class.
 
@@ -10,15 +10,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: visio
+    package: visio!
     children:
-      - visio.Visio.Interfaces.ShapeLoadOptions.$all
-      - visio.Visio.Interfaces.ShapeLoadOptions.id
-      - visio.Visio.Interfaces.ShapeLoadOptions.name
-      - visio.Visio.Interfaces.ShapeLoadOptions.select
-      - visio.Visio.Interfaces.ShapeLoadOptions.text
-      - visio.Visio.Interfaces.ShapeLoadOptions.view
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions.$all
+      - 'visio!Visio.Interfaces.ShapeLoadOptions#$all:member'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
+      - 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -29,7 +29,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions.id
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#id:member'
     summary: |-
       Shape's identifier. Read-only.
 
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions.name
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#name:member'
     summary: |-
       Shape's name. Read-only.
 
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions.select
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#select:member'
     summary: |-
       Returns true, if shape is selected. User can set true to select the shape explicitly.
 
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions.text
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#text:member'
     summary: |-
       Shape's text. Read-only.
 
@@ -89,7 +89,7 @@ items:
       return:
         type:
           - boolean
-  - uid: visio.Visio.Interfaces.ShapeLoadOptions.view
+  - uid: 'visio!Visio.Interfaces.ShapeLoadOptions#view:member'
     summary: |-
       Returns the view of the shape.
 
@@ -103,4 +103,4 @@ items:
       content: 'view?: Visio.Interfaces.ShapeViewLoadOptions;'
       return:
         type:
-          - visio.Visio.Interfaces.ShapeViewLoadOptions
+          - 'visio!Visio.Interfaces.ShapeViewLoadOptions:interface'

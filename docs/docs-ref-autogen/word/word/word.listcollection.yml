@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.ListCollection
+  - uid: 'word!Word.ListCollection:class'
     summary: |-
-      Contains a collection of [Word.List](xref:word.Word.List) objects.
+      Contains a collection of [Word.List](xref:word!Word.List:class) objects.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
     name: Word.ListCollection
@@ -12,22 +12,22 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: word
+    package: word!
     children:
-      - word.Word.ListCollection.context
-      - word.Word.ListCollection.getById
-      - word.Word.ListCollection.getByIdOrNullObject
-      - word.Word.ListCollection.getFirst
-      - word.Word.ListCollection.getFirstOrNullObject
-      - word.Word.ListCollection.getItem
-      - word.Word.ListCollection.items
-      - word.Word.ListCollection.load
-      - word.Word.ListCollection.load_1
-      - word.Word.ListCollection.load_2
-      - word.Word.ListCollection.toJSON
-      - word.Word.ListCollection.track
-      - word.Word.ListCollection.untrack
-  - uid: word.Word.ListCollection.context
+      - 'word!Word.ListCollection#context:member'
+      - 'word!Word.ListCollection#getById:member(1)'
+      - 'word!Word.ListCollection#getByIdOrNullObject:member(1)'
+      - 'word!Word.ListCollection#getFirst:member(1)'
+      - 'word!Word.ListCollection#getFirstOrNullObject:member(1)'
+      - 'word!Word.ListCollection#getItem:member(1)'
+      - 'word!Word.ListCollection#items:member'
+      - 'word!Word.ListCollection#load:member(1)'
+      - 'word!Word.ListCollection#load:member(2)'
+      - 'word!Word.ListCollection#load:member(3)'
+      - 'word!Word.ListCollection#toJSON:member(1)'
+      - 'word!Word.ListCollection#track:member(1)'
+      - 'word!Word.ListCollection#untrack:member(1)'
+  - uid: 'word!Word.ListCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -40,8 +40,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - word.Word.RequestContext
-  - uid: word.Word.ListCollection.getById
+          - 'word!Word.RequestContext:class'
+  - uid: 'word!Word.ListCollection#getById:member(1)'
     summary: |-
       Gets a list by its identifier. Throws if there isn't a list with the identifier in this collection.
 
@@ -55,14 +55,14 @@ items:
       content: 'getById(id: number): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: id
           description: Required. A list identifier.
           type:
             - number
-  - uid: word.Word.ListCollection.getByIdOrNullObject
+  - uid: 'word!Word.ListCollection#getByIdOrNullObject:member(1)'
     summary: |-
       Gets a list by its identifier. Returns a null object if there isn't a list with the identifier in this collection.
 
@@ -76,14 +76,14 @@ items:
       content: 'getByIdOrNullObject(id: number): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: id
           description: Required. A list identifier.
           type:
             - number
-  - uid: word.Word.ListCollection.getFirst
+  - uid: 'word!Word.ListCollection#getFirst:member(1)'
     summary: |-
       Gets the first list in this collection. Throws if this collection is empty.
 
@@ -97,9 +97,9 @@ items:
       content: 'getFirst(): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
-  - uid: word.Word.ListCollection.getFirstOrNullObject
+  - uid: 'word!Word.ListCollection#getFirstOrNullObject:member(1)'
     summary: |-
       Gets the first list in this collection. Returns a null object if this collection is empty.
 
@@ -113,9 +113,9 @@ items:
       content: 'getFirstOrNullObject(): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
-  - uid: word.Word.ListCollection.getItem
+  - uid: 'word!Word.ListCollection#getItem:member(1)'
     summary: |-
       Gets a list object by its index in the collection.
 
@@ -129,14 +129,14 @@ items:
       content: 'getItem(index: number): Word.List;'
       return:
         type:
-          - word.Word.List
+          - 'word!Word.List:class'
         description: ''
       parameters:
         - id: index
           description: A number that identifies the index location of a list object.
           type:
             - number
-  - uid: word.Word.ListCollection.items
+  - uid: 'word!Word.ListCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -148,7 +148,7 @@ items:
       return:
         type:
           - 'Word.List[]'
-  - uid: word.Word.ListCollection.load
+  - uid: 'word!Word.ListCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -181,14 +181,14 @@ items:
         Word.ListCollection;
       return:
         type:
-          - word.Word.ListCollection
+          - 'word!Word.ListCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - Word.Interfaces.ListCollectionLoadOptions & Word.Interfaces.CollectionLoadOptions
-  - uid: word.Word.ListCollection.load_1
+  - uid: 'word!Word.ListCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -201,14 +201,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Word.ListCollection;'
       return:
         type:
-          - word.Word.ListCollection
+          - 'word!Word.ListCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: word.Word.ListCollection.load_2
+  - uid: 'word!Word.ListCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -218,14 +218,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): Word.ListCollection;'
       return:
         type:
-          - word.Word.ListCollection
+          - 'word!Word.ListCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: word.Word.ListCollection.toJSON
+  - uid: 'word!Word.ListCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -241,9 +241,9 @@ items:
       content: 'toJSON(): Word.Interfaces.ListCollectionData;'
       return:
         type:
-          - word.Word.Interfaces.ListCollectionData
+          - 'word!Word.Interfaces.ListCollectionData:interface'
         description: ''
-  - uid: word.Word.ListCollection.track
+  - uid: 'word!Word.ListCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -259,9 +259,9 @@ items:
       content: 'track(): Word.ListCollection;'
       return:
         type:
-          - word.Word.ListCollection
+          - 'word!Word.ListCollection:class'
         description: ''
-  - uid: word.Word.ListCollection.untrack
+  - uid: 'word!Word.ListCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -276,5 +276,5 @@ items:
       content: 'untrack(): Word.ListCollection;'
       return:
         type:
-          - word.Word.ListCollection
+          - 'word!Word.ListCollection:class'
         description: ''

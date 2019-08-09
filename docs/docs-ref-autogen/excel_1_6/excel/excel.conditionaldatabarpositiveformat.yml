@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat:class'
     summary: |-
       Represents a conditional format DataBar Format for the positive side of the data bar.
 
@@ -12,19 +12,19 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.ConditionalDataBarPositiveFormat.borderColor
-      - excel.Excel.ConditionalDataBarPositiveFormat.context
-      - excel.Excel.ConditionalDataBarPositiveFormat.fillColor
-      - excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
-      - excel.Excel.ConditionalDataBarPositiveFormat.load
-      - excel.Excel.ConditionalDataBarPositiveFormat.load_1
-      - excel.Excel.ConditionalDataBarPositiveFormat.load_2
-      - excel.Excel.ConditionalDataBarPositiveFormat.set
-      - excel.Excel.ConditionalDataBarPositiveFormat.set_1
-      - excel.Excel.ConditionalDataBarPositiveFormat.toJSON
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.borderColor
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(3)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(2)'
+      - 'excel!Excel.ConditionalDataBarPositiveFormat#toJSON:member(1)'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#borderColor:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange"). "" (empty string) if no border is present or set.
@@ -41,7 +41,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.context
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -54,8 +54,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - excel.Excel.RequestContext
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.fillColor
+          - 'excel!Excel.RequestContext:class'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#fillColor:member'
     summary: >-
       HTML color code representing the fill color, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML color (e.g.
       "orange").
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.gradientFill
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#gradientFill:member'
     summary: |-
       Boolean representation of whether or not the DataBar has a gradient.
 
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - boolean
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.load
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -120,14 +120,14 @@ items:
         Excel.ConditionalDataBarPositiveFormat;
       return:
         type:
-          - excel.Excel.ConditionalDataBarPositiveFormat
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
-            - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.load_1
+            - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatLoadOptions:interface'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -140,14 +140,14 @@ items:
       content: 'load(propertyNames?: string | string[]): Excel.ConditionalDataBarPositiveFormat;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarPositiveFormat
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.load_2
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#load:member(3)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -160,7 +160,7 @@ items:
       content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ConditionalDataBarPositiveFormat;'
       return:
         type:
-          - excel.Excel.ConditionalDataBarPositiveFormat
+          - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
         description: ''
       parameters:
         - id: propertyNamesAndPaths
@@ -169,7 +169,7 @@ items:
             propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
           type:
             - '{ select?: string; expand?: string; }'
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.set
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(1)'
     summary: >-
       Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
       properties, or another API object of the same type.
@@ -201,7 +201,7 @@ items:
           description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
           type:
             - OfficeExtension.UpdateOptions
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.set_1
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#set:member(2)'
     summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
     name: set(properties)
     fullName: set(properties)
@@ -218,8 +218,8 @@ items:
         - id: properties
           description: ''
           type:
-            - excel.Excel.ConditionalDataBarPositiveFormat
-  - uid: excel.Excel.ConditionalDataBarPositiveFormat.toJSON
+            - 'excel!Excel.ConditionalDataBarPositiveFormat:class'
+  - uid: 'excel!Excel.ConditionalDataBarPositiveFormat#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -235,5 +235,5 @@ items:
       content: 'toJSON(): Excel.Interfaces.ConditionalDataBarPositiveFormatData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalDataBarPositiveFormatData
+          - 'excel!Excel.Interfaces.ConditionalDataBarPositiveFormatData:interface'
         description: ''

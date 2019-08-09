@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.BindingSelectionChangedEventArgs
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs:interface'
     summary: |-
       Provides information about the binding that raised the SelectionChanged event.
 
@@ -10,14 +10,14 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.BindingSelectionChangedEventArgs.binding
-      - excel.Excel.BindingSelectionChangedEventArgs.columnCount
-      - excel.Excel.BindingSelectionChangedEventArgs.rowCount
-      - excel.Excel.BindingSelectionChangedEventArgs.startColumn
-      - excel.Excel.BindingSelectionChangedEventArgs.startRow
-  - uid: excel.Excel.BindingSelectionChangedEventArgs.binding
+      - 'excel!Excel.BindingSelectionChangedEventArgs#binding:member'
+      - 'excel!Excel.BindingSelectionChangedEventArgs#columnCount:member'
+      - 'excel!Excel.BindingSelectionChangedEventArgs#rowCount:member'
+      - 'excel!Excel.BindingSelectionChangedEventArgs#startColumn:member'
+      - 'excel!Excel.BindingSelectionChangedEventArgs#startRow:member'
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs#binding:member'
     summary: |-
       Gets the Binding object that represents the binding that raised the SelectionChanged event.
 
@@ -31,8 +31,8 @@ items:
       content: 'binding: Excel.Binding;'
       return:
         type:
-          - excel.Excel.Binding
-  - uid: excel.Excel.BindingSelectionChangedEventArgs.columnCount
+          - 'excel!Excel.Binding:class'
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs#columnCount:member'
     summary: |-
       Gets the number of columns selected.
 
@@ -47,7 +47,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.BindingSelectionChangedEventArgs.rowCount
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs#rowCount:member'
     summary: |-
       Gets the number of rows selected.
 
@@ -62,7 +62,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.BindingSelectionChangedEventArgs.startColumn
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs#startColumn:member'
     summary: |-
       Gets the index of the first column of the selection (zero-based).
 
@@ -77,7 +77,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.BindingSelectionChangedEventArgs.startRow
+  - uid: 'excel!Excel.BindingSelectionChangedEventArgs#startRow:member'
     summary: |-
       Gets the index of the first row of the selection (zero-based).
 

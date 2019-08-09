@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.TableRowCollection
+  - uid: 'onenote!OneNote.TableRowCollection:class'
     summary: |-
       Contains a collection of TableRow objects.
 
@@ -12,20 +12,20 @@ items:
     type: class
     extends:
       - 'OfficeExtension.ClientObject '
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.TableRowCollection.context
-      - onenote.OneNote.TableRowCollection.count
-      - onenote.OneNote.TableRowCollection.getItem
-      - onenote.OneNote.TableRowCollection.getItemAt
-      - onenote.OneNote.TableRowCollection.items
-      - onenote.OneNote.TableRowCollection.load
-      - onenote.OneNote.TableRowCollection.load_1
-      - onenote.OneNote.TableRowCollection.load_2
-      - onenote.OneNote.TableRowCollection.toJSON
-      - onenote.OneNote.TableRowCollection.track
-      - onenote.OneNote.TableRowCollection.untrack
-  - uid: onenote.OneNote.TableRowCollection.context
+      - 'onenote!OneNote.TableRowCollection#context:member'
+      - 'onenote!OneNote.TableRowCollection#count:member'
+      - 'onenote!OneNote.TableRowCollection#getItem:member(1)'
+      - 'onenote!OneNote.TableRowCollection#getItemAt:member(1)'
+      - 'onenote!OneNote.TableRowCollection#items:member'
+      - 'onenote!OneNote.TableRowCollection#load:member(1)'
+      - 'onenote!OneNote.TableRowCollection#load:member(2)'
+      - 'onenote!OneNote.TableRowCollection#load:member(3)'
+      - 'onenote!OneNote.TableRowCollection#toJSON:member(1)'
+      - 'onenote!OneNote.TableRowCollection#track:member(1)'
+      - 'onenote!OneNote.TableRowCollection#untrack:member(1)'
+  - uid: 'onenote!OneNote.TableRowCollection#context:member'
     summary: >-
       The request context associated with the object. This connects the add-in's process to the Office host
       application's process.
@@ -38,8 +38,8 @@ items:
       content: 'context: RequestContext;'
       return:
         type:
-          - onenote.OneNote.RequestContext
-  - uid: onenote.OneNote.TableRowCollection.count
+          - 'onenote!OneNote.RequestContext:class'
+  - uid: 'onenote!OneNote.TableRowCollection#count:member'
     summary: |-
       Returns the number of table rows in this collection. Read-only.
 
@@ -54,7 +54,7 @@ items:
       return:
         type:
           - number
-  - uid: onenote.OneNote.TableRowCollection.getItem
+  - uid: 'onenote!OneNote.TableRowCollection#getItem:member(1)'
     summary: |-
       Gets a table row object by ID or by its index in the collection. Read-only.
 
@@ -68,14 +68,14 @@ items:
       content: 'getItem(index: number | string): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
       parameters:
         - id: index
           description: A number that identifies the index location of a table row object.
           type:
             - number | string
-  - uid: onenote.OneNote.TableRowCollection.getItemAt
+  - uid: 'onenote!OneNote.TableRowCollection#getItemAt:member(1)'
     summary: |-
       Gets a table row at its position in the collection.
 
@@ -89,14 +89,14 @@ items:
       content: 'getItemAt(index: number): OneNote.TableRow;'
       return:
         type:
-          - onenote.OneNote.TableRow
+          - 'onenote!OneNote.TableRow:class'
         description: ''
       parameters:
         - id: index
           description: Index value of the object to be retrieved. Zero-indexed.
           type:
             - number
-  - uid: onenote.OneNote.TableRowCollection.items
+  - uid: 'onenote!OneNote.TableRowCollection#items:member'
     summary: Gets the loaded child items in this collection.
     name: items
     fullName: items
@@ -108,7 +108,7 @@ items:
       return:
         type:
           - 'OneNote.TableRow[]'
-  - uid: onenote.OneNote.TableRowCollection.load
+  - uid: 'onenote!OneNote.TableRowCollection#load:member(1)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
       the properties.
@@ -141,14 +141,14 @@ items:
         OneNote.TableRowCollection;
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - 'onenote!OneNote.TableRowCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OneNote.Interfaces.TableRowCollectionLoadOptions & OneNote.Interfaces.CollectionLoadOptions
-  - uid: onenote.OneNote.TableRowCollection.load_1
+  - uid: 'onenote!OneNote.TableRowCollection#load:member(2)'
     summary: >-
       Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
       the properties.
@@ -161,14 +161,14 @@ items:
       content: 'load(propertyNames?: string | string[]): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - 'onenote!OneNote.TableRowCollection:class'
         description: ''
       parameters:
         - id: propertyNames
           description: A comma-delimited string or an array of strings that specify the properties to load.
           type:
             - 'string | string[]'
-  - uid: onenote.OneNote.TableRowCollection.load_2
+  - uid: 'onenote!OneNote.TableRowCollection#load:member(3)'
     name: load(option)
     fullName: load(option)
     langs:
@@ -178,14 +178,14 @@ items:
       content: 'load(option?: OfficeExtension.LoadOption): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - 'onenote!OneNote.TableRowCollection:class'
         description: ''
       parameters:
         - id: option
           description: ''
           type:
             - OfficeExtension.LoadOption
-  - uid: onenote.OneNote.TableRowCollection.toJSON
+  - uid: 'onenote!OneNote.TableRowCollection#toJSON:member(1)'
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
       `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
@@ -201,9 +201,9 @@ items:
       content: 'toJSON(): OneNote.Interfaces.TableRowCollectionData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableRowCollectionData
+          - 'onenote!OneNote.Interfaces.TableRowCollectionData:interface'
         description: ''
-  - uid: onenote.OneNote.TableRowCollection.track
+  - uid: 'onenote!OneNote.TableRowCollection#track:member(1)'
     summary: >-
       Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand
       for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the
@@ -219,9 +219,9 @@ items:
       content: 'track(): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - 'onenote!OneNote.TableRowCollection:class'
         description: ''
-  - uid: onenote.OneNote.TableRowCollection.untrack
+  - uid: 'onenote!OneNote.TableRowCollection#untrack:member(1)'
     summary: >-
       Release the memory associated with this object, if it has previously been tracked. This call is shorthand for
       context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please
@@ -236,5 +236,5 @@ items:
       content: 'untrack(): OneNote.TableRowCollection;'
       return:
         type:
-          - onenote.OneNote.TableRowCollection
+          - 'onenote!OneNote.TableRowCollection:class'
         description: ''

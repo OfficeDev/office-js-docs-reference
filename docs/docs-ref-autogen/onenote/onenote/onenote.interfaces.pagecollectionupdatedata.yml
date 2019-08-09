@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.PageCollectionUpdateData
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData:interface'
     summary: >-
       An interface for updating data on the PageCollection object, for use in "pageCollection.set(<!-- -->{ ... }<!--
       -->)".
@@ -9,10 +9,10 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.PageCollectionUpdateData.items
-  - uid: onenote.OneNote.Interfaces.PageCollectionUpdateData.items
+      - 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member'
+  - uid: 'onenote!OneNote.Interfaces.PageCollectionUpdateData#items:member'
     name: items
     fullName: items
     langs:

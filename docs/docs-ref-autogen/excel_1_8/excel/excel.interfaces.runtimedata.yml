@@ -1,16 +1,16 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RuntimeData
+  - uid: 'excel!Excel.Interfaces.RuntimeData:interface'
     summary: An interface describing the data returned by calling "runtime.toJSON()".
     name: Excel.Interfaces.RuntimeData
     fullName: Excel.Interfaces.RuntimeData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RuntimeData.enableEvents
-  - uid: excel.Excel.Interfaces.RuntimeData.enableEvents
+      - 'excel!Excel.Interfaces.RuntimeData#enableEvents:member'
+  - uid: 'excel!Excel.Interfaces.RuntimeData#enableEvents:member'
     summary: |-
       Toggle JavaScript events in the current task pane or content add-in.
 

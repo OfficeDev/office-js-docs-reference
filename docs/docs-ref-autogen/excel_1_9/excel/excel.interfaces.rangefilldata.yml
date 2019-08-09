@@ -1,20 +1,20 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.RangeFillData
+  - uid: 'excel!Excel.Interfaces.RangeFillData:interface'
     summary: An interface describing the data returned by calling "rangeFill.toJSON()".
     name: Excel.Interfaces.RangeFillData
     fullName: Excel.Interfaces.RangeFillData
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.RangeFillData.color
-      - excel.Excel.Interfaces.RangeFillData.pattern
-      - excel.Excel.Interfaces.RangeFillData.patternColor
-      - excel.Excel.Interfaces.RangeFillData.patternTintAndShade
-      - excel.Excel.Interfaces.RangeFillData.tintAndShade
-  - uid: excel.Excel.Interfaces.RangeFillData.color
+      - 'excel!Excel.Interfaces.RangeFillData#color:member'
+      - 'excel!Excel.Interfaces.RangeFillData#pattern:member'
+      - 'excel!Excel.Interfaces.RangeFillData#patternColor:member'
+      - 'excel!Excel.Interfaces.RangeFillData#patternTintAndShade:member'
+      - 'excel!Excel.Interfaces.RangeFillData#tintAndShade:member'
+  - uid: 'excel!Excel.Interfaces.RangeFillData#color:member'
     summary: >-
       HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
       color (e.g. "orange")
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeFillData.pattern
+  - uid: 'excel!Excel.Interfaces.RangeFillData#pattern:member'
     summary: >-
       Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are
       not supported. A null value indicates that the entire range doesn't have uniform pattern setting.
@@ -54,7 +54,7 @@ items:
             Excel.FillPattern | "None" | "Solid" | "Gray50" | "Gray75" | "Gray25" | "Horizontal" | "Vertical" | "Down" |
             "Up" | "Checker" | "SemiGray75" | "LightHorizontal" | "LightVertical" | "LightDown" | "LightUp" | "Grid" |
             "CrissCross" | "Gray16" | "Gray8" | "LinearGradient" | "RectangularGradient"
-  - uid: excel.Excel.Interfaces.RangeFillData.patternColor
+  - uid: 'excel!Excel.Interfaces.RangeFillData#patternColor:member'
     summary: >-
       Sets HTML color code representing the color of the Range pattern, of the form \#RRGGBB (e.g. "FFA500") or as a
       named HTML color (e.g. "orange"). Gets HTML color code representing the color of the Range pattern, of the form
@@ -72,7 +72,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.Interfaces.RangeFillData.patternTintAndShade
+  - uid: 'excel!Excel.Interfaces.RangeFillData#patternTintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1
       (darkest) and 1 (brightest), with 0 for the original color. If the pattern tintAndShades are not uniform, null
@@ -90,7 +90,7 @@ items:
       return:
         type:
           - number
-  - uid: excel.Excel.Interfaces.RangeFillData.tintAndShade
+  - uid: 'excel!Excel.Interfaces.RangeFillData#tintAndShade:member'
     summary: >-
       Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1
       (brightest), with 0 for the original color. If the tintAndShades are not uniform, null will be returned.

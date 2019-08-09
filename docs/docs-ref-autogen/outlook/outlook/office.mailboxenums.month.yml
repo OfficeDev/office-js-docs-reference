@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: outlook.Office.MailboxEnums.Month
+  - uid: 'outlook!Office.MailboxEnums.Month:enum'
     summary: |-
       Specifies the month.
 
@@ -13,21 +13,21 @@ items:
     langs:
       - typeScript
     type: enum
-    package: outlook
+    package: outlook!
     children:
-      - outlook.Office.MailboxEnums.Month.Apr
-      - outlook.Office.MailboxEnums.Month.Aug
-      - outlook.Office.MailboxEnums.Month.Dec
-      - outlook.Office.MailboxEnums.Month.Feb
-      - outlook.Office.MailboxEnums.Month.Jan
-      - outlook.Office.MailboxEnums.Month.Jul
-      - outlook.Office.MailboxEnums.Month.Jun
-      - outlook.Office.MailboxEnums.Month.Mar
-      - outlook.Office.MailboxEnums.Month.May
-      - outlook.Office.MailboxEnums.Month.Nov
-      - outlook.Office.MailboxEnums.Month.Oct
-      - outlook.Office.MailboxEnums.Month.Sep
-  - uid: outlook.Office.MailboxEnums.Month.Apr
+      - 'outlook!Office.MailboxEnums.Month.Apr:member'
+      - 'outlook!Office.MailboxEnums.Month.Aug:member'
+      - 'outlook!Office.MailboxEnums.Month.Dec:member'
+      - 'outlook!Office.MailboxEnums.Month.Feb:member'
+      - 'outlook!Office.MailboxEnums.Month.Jan:member'
+      - 'outlook!Office.MailboxEnums.Month.Jul:member'
+      - 'outlook!Office.MailboxEnums.Month.Jun:member'
+      - 'outlook!Office.MailboxEnums.Month.Mar:member'
+      - 'outlook!Office.MailboxEnums.Month.May:member'
+      - 'outlook!Office.MailboxEnums.Month.Nov:member'
+      - 'outlook!Office.MailboxEnums.Month.Oct:member'
+      - 'outlook!Office.MailboxEnums.Month.Sep:member'
+  - uid: 'outlook!Office.MailboxEnums.Month.Apr:member'
     summary: April
     name: Apr
     fullName: Apr
@@ -35,7 +35,7 @@ items:
       - typeScript
     type: field
     numericValue: '"apr"'
-  - uid: outlook.Office.MailboxEnums.Month.Aug
+  - uid: 'outlook!Office.MailboxEnums.Month.Aug:member'
     summary: August
     name: Aug
     fullName: Aug
@@ -43,7 +43,7 @@ items:
       - typeScript
     type: field
     numericValue: '"aug"'
-  - uid: outlook.Office.MailboxEnums.Month.Dec
+  - uid: 'outlook!Office.MailboxEnums.Month.Dec:member'
     summary: December
     name: Dec
     fullName: Dec
@@ -51,7 +51,7 @@ items:
       - typeScript
     type: field
     numericValue: '"dec"'
-  - uid: outlook.Office.MailboxEnums.Month.Feb
+  - uid: 'outlook!Office.MailboxEnums.Month.Feb:member'
     summary: February
     name: Feb
     fullName: Feb
@@ -59,7 +59,7 @@ items:
       - typeScript
     type: field
     numericValue: '"feb"'
-  - uid: outlook.Office.MailboxEnums.Month.Jan
+  - uid: 'outlook!Office.MailboxEnums.Month.Jan:member'
     summary: January
     name: Jan
     fullName: Jan
@@ -67,7 +67,7 @@ items:
       - typeScript
     type: field
     numericValue: '"jan"'
-  - uid: outlook.Office.MailboxEnums.Month.Jul
+  - uid: 'outlook!Office.MailboxEnums.Month.Jul:member'
     summary: July
     name: Jul
     fullName: Jul
@@ -75,7 +75,7 @@ items:
       - typeScript
     type: field
     numericValue: '"jul"'
-  - uid: outlook.Office.MailboxEnums.Month.Jun
+  - uid: 'outlook!Office.MailboxEnums.Month.Jun:member'
     summary: June
     name: Jun
     fullName: Jun
@@ -83,7 +83,7 @@ items:
       - typeScript
     type: field
     numericValue: '"jun"'
-  - uid: outlook.Office.MailboxEnums.Month.Mar
+  - uid: 'outlook!Office.MailboxEnums.Month.Mar:member'
     summary: March
     name: Mar
     fullName: Mar
@@ -91,7 +91,7 @@ items:
       - typeScript
     type: field
     numericValue: '"mar"'
-  - uid: outlook.Office.MailboxEnums.Month.May
+  - uid: 'outlook!Office.MailboxEnums.Month.May:member'
     summary: May
     name: May
     fullName: May
@@ -99,7 +99,7 @@ items:
       - typeScript
     type: field
     numericValue: '"may"'
-  - uid: outlook.Office.MailboxEnums.Month.Nov
+  - uid: 'outlook!Office.MailboxEnums.Month.Nov:member'
     summary: November
     name: Nov
     fullName: Nov
@@ -107,7 +107,7 @@ items:
       - typeScript
     type: field
     numericValue: '"nov"'
-  - uid: outlook.Office.MailboxEnums.Month.Oct
+  - uid: 'outlook!Office.MailboxEnums.Month.Oct:member'
     summary: October
     name: Oct
     fullName: Oct
@@ -115,7 +115,7 @@ items:
       - typeScript
     type: field
     numericValue: '"oct"'
-  - uid: outlook.Office.MailboxEnums.Month.Sep
+  - uid: 'outlook!Office.MailboxEnums.Month.Sep:member'
     summary: September
     name: Sep
     fullName: Sep

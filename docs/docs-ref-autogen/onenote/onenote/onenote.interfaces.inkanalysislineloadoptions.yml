@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions:interface'
     summary: |-
       Represents ink analysis data for an identified text line formed by ink strokes.
 
@@ -10,13 +10,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.$all
-      - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.id
-      - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.paragraph
-      - onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.words
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.$all
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#$all:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#id:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#paragraph:member'
+      - 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#words:member'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -27,7 +27,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.id
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#id:member'
     summary: |-
       Gets the ID of the InkAnalysisLine object. Read-only.
 
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - boolean
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.paragraph
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#paragraph:member'
     summary: |-
       Reference to the parent InkAnalysisParagraph.
 
@@ -56,8 +56,8 @@ items:
       content: 'paragraph?: OneNote.Interfaces.InkAnalysisParagraphLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisParagraphLoadOptions
-  - uid: onenote.OneNote.Interfaces.InkAnalysisLineLoadOptions.words
+          - 'onenote!OneNote.Interfaces.InkAnalysisParagraphLoadOptions:interface'
+  - uid: 'onenote!OneNote.Interfaces.InkAnalysisLineLoadOptions#words:member'
     summary: |-
       Gets the ink analysis words in this ink analysis line.
 
@@ -71,4 +71,4 @@ items:
       content: 'words?: OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions;'
       return:
         type:
-          - onenote.OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions
+          - 'onenote!OneNote.Interfaces.InkAnalysisWordCollectionLoadOptions:interface'

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData:interface'
     summary: >-
       An interface for updating data on the CellValueConditionalFormat object, for use in
       "cellValueConditionalFormat.set(<!-- -->{ ... }<!-- -->)".
@@ -9,11 +9,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData.format
-      - excel.Excel.Interfaces.CellValueConditionalFormatUpdateData.rule
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData.format
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#format:member'
+      - 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#rule:member'
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#format:member'
     summary: |-
       Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
 
@@ -27,8 +27,8 @@ items:
       content: 'format?: Excel.Interfaces.ConditionalRangeFormatUpdateData;'
       return:
         type:
-          - excel.Excel.Interfaces.ConditionalRangeFormatUpdateData
-  - uid: excel.Excel.Interfaces.CellValueConditionalFormatUpdateData.rule
+          - 'excel!Excel.Interfaces.ConditionalRangeFormatUpdateData:interface'
+  - uid: 'excel!Excel.Interfaces.CellValueConditionalFormatUpdateData#rule:member'
     summary: |-
       Represents the Rule object on this conditional format.
 
@@ -42,4 +42,4 @@ items:
       content: 'rule?: Excel.ConditionalCellValueRule;'
       return:
         type:
-          - excel.Excel.ConditionalCellValueRule
+          - 'excel!Excel.ConditionalCellValueRule:interface'

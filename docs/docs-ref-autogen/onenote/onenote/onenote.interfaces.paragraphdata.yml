@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: onenote.OneNote.Interfaces.ParagraphData
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData:interface'
     summary: An interface describing the data returned by calling "paragraph.toJSON()".
     name: OneNote.Interfaces.ParagraphData
     fullName: OneNote.Interfaces.ParagraphData
     langs:
       - typeScript
     type: interface
-    package: onenote
+    package: onenote!
     children:
-      - onenote.OneNote.Interfaces.ParagraphData.id
-      - onenote.OneNote.Interfaces.ParagraphData.image
-      - onenote.OneNote.Interfaces.ParagraphData.inkWords
-      - onenote.OneNote.Interfaces.ParagraphData.paragraphs
-      - onenote.OneNote.Interfaces.ParagraphData.richText
-      - onenote.OneNote.Interfaces.ParagraphData.table
-      - onenote.OneNote.Interfaces.ParagraphData.type
-  - uid: onenote.OneNote.Interfaces.ParagraphData.id
+      - 'onenote!OneNote.Interfaces.ParagraphData#id:member'
+      - 'onenote!OneNote.Interfaces.ParagraphData#image:member'
+      - 'onenote!OneNote.Interfaces.ParagraphData#inkWords:member'
+      - 'onenote!OneNote.Interfaces.ParagraphData#paragraphs:member'
+      - 'onenote!OneNote.Interfaces.ParagraphData#richText:member'
+      - 'onenote!OneNote.Interfaces.ParagraphData#table:member'
+      - 'onenote!OneNote.Interfaces.ParagraphData#type:member'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#id:member'
     summary: |-
       Gets the ID of the Paragraph object. Read-only.
 
@@ -31,7 +31,7 @@ items:
       return:
         type:
           - string
-  - uid: onenote.OneNote.Interfaces.ParagraphData.image
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#image:member'
     summary: |-
       Gets the Image object in the Paragraph. Throws an exception if ParagraphType is not Image. Read-only.
 
@@ -45,8 +45,8 @@ items:
       content: 'image?: OneNote.Interfaces.ImageData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.ImageData
-  - uid: onenote.OneNote.Interfaces.ParagraphData.inkWords
+          - 'onenote!OneNote.Interfaces.ImageData:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#inkWords:member'
     summary: |-
       Gets the Ink collection in the Paragraph. Throws an exception if ParagraphType is not Ink. Read-only.
 
@@ -61,7 +61,7 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.InkWordData[]'
-  - uid: onenote.OneNote.Interfaces.ParagraphData.paragraphs
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#paragraphs:member'
     summary: |-
       The collection of paragraphs under this paragraph. Read only
 
@@ -76,7 +76,7 @@ items:
       return:
         type:
           - 'OneNote.Interfaces.ParagraphData[]'
-  - uid: onenote.OneNote.Interfaces.ParagraphData.richText
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#richText:member'
     summary: |-
       Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only
 
@@ -90,8 +90,8 @@ items:
       content: 'richText?: OneNote.Interfaces.RichTextData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.RichTextData
-  - uid: onenote.OneNote.Interfaces.ParagraphData.table
+          - 'onenote!OneNote.Interfaces.RichTextData:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#table:member'
     summary: |-
       Gets the Table object in the Paragraph. Throws an exception if ParagraphType is not Table. Read-only.
 
@@ -105,8 +105,8 @@ items:
       content: 'table?: OneNote.Interfaces.TableData;'
       return:
         type:
-          - onenote.OneNote.Interfaces.TableData
-  - uid: onenote.OneNote.Interfaces.ParagraphData.type
+          - 'onenote!OneNote.Interfaces.TableData:interface'
+  - uid: 'onenote!OneNote.Interfaces.ParagraphData#type:member'
     summary: |-
       Gets the type of the Paragraph object. Read-only.
 

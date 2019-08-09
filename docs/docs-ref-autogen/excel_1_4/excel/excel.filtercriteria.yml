@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.FilterCriteria
+  - uid: 'excel!Excel.FilterCriteria:interface'
     summary: |-
       Represents the filtering criteria applied to a column.
 
@@ -10,17 +10,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.FilterCriteria.color
-      - excel.Excel.FilterCriteria.criterion1
-      - excel.Excel.FilterCriteria.criterion2
-      - excel.Excel.FilterCriteria.dynamicCriteria
-      - excel.Excel.FilterCriteria.filterOn
-      - excel.Excel.FilterCriteria.icon
-      - excel.Excel.FilterCriteria.operator
-      - excel.Excel.FilterCriteria.values
-  - uid: excel.Excel.FilterCriteria.color
+      - 'excel!Excel.FilterCriteria#color:member'
+      - 'excel!Excel.FilterCriteria#criterion1:member'
+      - 'excel!Excel.FilterCriteria#criterion2:member'
+      - 'excel!Excel.FilterCriteria#dynamicCriteria:member'
+      - 'excel!Excel.FilterCriteria#filterOn:member'
+      - 'excel!Excel.FilterCriteria#icon:member'
+      - 'excel!Excel.FilterCriteria#operator:member'
+      - 'excel!Excel.FilterCriteria#values:member'
+  - uid: 'excel!Excel.FilterCriteria#color:member'
     summary: |-
       The HTML color string used to filter cells. Used with "cellColor" and "fontColor" filtering.
 
@@ -35,7 +35,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.FilterCriteria.criterion1
+  - uid: 'excel!Excel.FilterCriteria#criterion1:member'
     summary: >-
       The first criterion used to filter data. Used as an operator in the case of "custom" filtering. For example "<!--
       -->&gt;<!-- -->50" for number greater than 50 or "=*s" for values ending in "s".
@@ -56,7 +56,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.FilterCriteria.criterion2
+  - uid: 'excel!Excel.FilterCriteria#criterion2:member'
     summary: |-
       The second criterion used to filter data. Only used as an operator in the case of "custom" filtering.
 
@@ -71,7 +71,7 @@ items:
       return:
         type:
           - string
-  - uid: excel.Excel.FilterCriteria.dynamicCriteria
+  - uid: 'excel!Excel.FilterCriteria#dynamicCriteria:member'
     summary: >-
       The dynamic criteria from the Excel.DynamicFilterCriteria set to apply on this column. Used with "dynamic"
       filtering.
@@ -103,7 +103,7 @@ items:
             "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" |
             "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" | "ThisWeek" |
             "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"
-  - uid: excel.Excel.FilterCriteria.filterOn
+  - uid: 'excel!Excel.FilterCriteria#filterOn:member'
     summary: |-
       The property used by the filter to determine whether the values should stay visible.
 
@@ -122,7 +122,7 @@ items:
           - >-
             Excel.FilterOn | "BottomItems" | "BottomPercent" | "CellColor" | "Dynamic" | "FontColor" | "Values" |
             "TopItems" | "TopPercent" | "Icon" | "Custom"
-  - uid: excel.Excel.FilterCriteria.icon
+  - uid: 'excel!Excel.FilterCriteria#icon:member'
     summary: |-
       The icon used to filter cells. Used with "icon" filtering.
 
@@ -136,8 +136,8 @@ items:
       content: 'icon?: Excel.Icon;'
       return:
         type:
-          - excel.Excel.Icon
-  - uid: excel.Excel.FilterCriteria.operator
+          - 'excel!Excel.Icon:interface'
+  - uid: 'excel!Excel.FilterCriteria#operator:member'
     summary: |-
       The operator used to combine criterion 1 and 2 when using "custom" filtering.
 
@@ -152,7 +152,7 @@ items:
       return:
         type:
           - Excel.FilterOperator | "And" | "Or"
-  - uid: excel.Excel.FilterCriteria.values
+  - uid: 'excel!Excel.FilterCriteria#values:member'
     summary: |-
       The set of values to be used as part of "values" filtering.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions:interface'
     summary: |-
       Contains the collection of the document's TableRow objects.
 
@@ -10,20 +10,20 @@ items:
     langs:
       - typeScript
     type: interface
-    package: word
+    package: word!
     children:
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.$all
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.cellCount
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.font
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.horizontalAlignment
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.isHeader
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.parentTable
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.preferredHeight
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.rowIndex
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.shadingColor
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.values
-      - word.Word.Interfaces.TableRowCollectionLoadOptions.verticalAlignment
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.$all
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#$all:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#cellCount:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#font:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#horizontalAlignment:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#isHeader:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#parentTable:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#preferredHeight:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#rowIndex:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#shadingColor:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#values:member'
+      - 'word!Word.Interfaces.TableRowCollectionLoadOptions#verticalAlignment:member'
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#$all:member'
     name: $all
     fullName: $all
     langs:
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.cellCount
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#cellCount:member'
     summary: |-
       For EACH ITEM in the collection: Gets the number of cells in the row. Read-only.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.font
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#font:member'
     summary: >-
       For EACH ITEM in the collection: Gets the font. Use this to get and set font name, size, color, and other
       properties.
@@ -65,8 +65,8 @@ items:
       content: 'font?: Word.Interfaces.FontLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.FontLoadOptions
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.horizontalAlignment
+          - 'word!Word.Interfaces.FontLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#horizontalAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Gets and sets the horizontal alignment of every cell in the row. The value can be
       'Left', 'Centered', 'Right', or 'Justified'.
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.isHeader
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#isHeader:member'
     summary: >-
       For EACH ITEM in the collection: Checks whether the row is a header row. Read-only. To set the number of header
       rows, use HeaderRowCount on the Table object.
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.parentTable
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#parentTable:member'
     summary: |-
       For EACH ITEM in the collection: Gets parent table.
 
@@ -114,8 +114,8 @@ items:
       content: 'parentTable?: Word.Interfaces.TableLoadOptions;'
       return:
         type:
-          - word.Word.Interfaces.TableLoadOptions
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.preferredHeight
+          - 'word!Word.Interfaces.TableLoadOptions:interface'
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#preferredHeight:member'
     summary: |-
       For EACH ITEM in the collection: Gets and sets the preferred height of the row in points.
 
@@ -130,7 +130,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.rowIndex
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#rowIndex:member'
     summary: |-
       For EACH ITEM in the collection: Gets the index of the row in its parent table. Read-only.
 
@@ -145,7 +145,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.shadingColor
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#shadingColor:member'
     summary: >-
       For EACH ITEM in the collection: Gets and sets the shading color. Color is specified in "\#RRGGBB" format or by
       using the color name.
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.values
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#values:member'
     summary: |-
       For EACH ITEM in the collection: Gets and sets the text values in the row, as a 2D Javascript array.
 
@@ -177,7 +177,7 @@ items:
       return:
         type:
           - boolean
-  - uid: word.Word.Interfaces.TableRowCollectionLoadOptions.verticalAlignment
+  - uid: 'word!Word.Interfaces.TableRowCollectionLoadOptions#verticalAlignment:member'
     summary: >-
       For EACH ITEM in the collection: Gets and sets the vertical alignment of the cells in the row. The value can be
       'Top', 'Center', or 'Bottom'.

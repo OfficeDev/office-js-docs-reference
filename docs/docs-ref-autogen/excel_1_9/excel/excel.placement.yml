@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: excel.Excel.Placement
+  - uid: 'excel!Excel.Placement:enum'
     summary: |-
       Specifies the way that an object is attached to its underlying cells.
 
@@ -10,12 +10,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: excel
+    package: excel!
     children:
-      - excel.Excel.Placement.absolute
-      - excel.Excel.Placement.oneCell
-      - excel.Excel.Placement.twoCell
-  - uid: excel.Excel.Placement.absolute
+      - 'excel!Excel.Placement.absolute:member'
+      - 'excel!Excel.Placement.oneCell:member'
+      - 'excel!Excel.Placement.twoCell:member'
+  - uid: 'excel!Excel.Placement.absolute:member'
     summary: The object is free floating.
     name: absolute
     fullName: absolute
@@ -23,7 +23,7 @@ items:
       - typeScript
     type: field
     numericValue: '"Absolute"'
-  - uid: excel.Excel.Placement.oneCell
+  - uid: 'excel!Excel.Placement.oneCell:member'
     summary: The object is moved and sized with the cells.
     name: oneCell
     fullName: oneCell
@@ -31,7 +31,7 @@ items:
       - typeScript
     type: field
     numericValue: '"OneCell"'
-  - uid: excel.Excel.Placement.twoCell
+  - uid: 'excel!Excel.Placement.twoCell:member'
     summary: The object is moved with the cells.
     name: twoCell
     fullName: twoCell
