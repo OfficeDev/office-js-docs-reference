@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Recipients
+  - uid: outlook.Office.Recipients
     summary: '\[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]'
     remarks: >-
       **[Minimum permission
@@ -13,15 +13,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Recipients.addAsync
-      - Outlook.Office.Recipients.addAsync_1
-      - Outlook.Office.Recipients.getAsync
-      - Outlook.Office.Recipients.getAsync_1
-      - Outlook.Office.Recipients.setAsync
-      - Outlook.Office.Recipients.setAsync_1
-  - uid: Outlook.Office.Recipients.addAsync
+      - outlook.Office.Recipients.addAsync
+      - outlook.Office.Recipients.addAsync_1
+      - outlook.Office.Recipients.getAsync
+      - outlook.Office.Recipients.getAsync_1
+      - outlook.Office.Recipients.setAsync
+      - outlook.Office.Recipients.setAsync_1
+  - uid: outlook.Office.Recipients.addAsync
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -78,7 +78,7 @@ items:
             contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Recipients.addAsync_1
+  - uid: outlook.Office.Recipients.addAsync_1
     summary: |-
       Adds a recipient list to the existing recipients for an appointment or message.
 
@@ -86,9 +86,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:Outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      - [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -161,13 +161,13 @@ items:
             contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Recipients.getAsync
+  - uid: outlook.Office.Recipients.getAsync
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
       When the call completes, the asyncResult.value property will contain an array of
-      [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) objects.
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -203,13 +203,13 @@ items:
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
             - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
-  - uid: Outlook.Office.Recipients.getAsync_1
+  - uid: outlook.Office.Recipients.getAsync_1
     summary: >-
       Gets a recipient list for an appointment or message.
 
 
       When the call completes, the asyncResult.value property will contain an array of
-      [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) objects.
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects.
 
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -259,7 +259,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is an array of EmailAddressDetails objects.
           type:
             - '(asyncResult: Office.AsyncResult<EmailAddressDetails[]>) => void'
-  - uid: Outlook.Office.Recipients.setAsync
+  - uid: outlook.Office.Recipients.setAsync
     summary: |-
       Sets a recipient list for an appointment or message.
 
@@ -269,9 +269,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:Outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      - [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
@@ -318,7 +318,7 @@ items:
             code that indicates any error that occurred while adding the data.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Recipients.setAsync_1
+  - uid: outlook.Office.Recipients.setAsync_1
     summary: |-
       Sets a recipient list for an appointment or message.
 
@@ -328,9 +328,9 @@ items:
 
       - Strings containing SMTP email addresses
 
-      - [Office.EmailUser](xref:Outlook.Office.EmailUser) objects
+      - [Office.EmailUser](xref:outlook.Office.EmailUser) objects
 
-      - [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) objects
+      - [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) objects
 
       \[ [API set: Mailbox 1.1](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.ItemNotificationMessageType
+  - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType
     summary: |-
       Specifies the notification message type for an appointment or message.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
-      - Outlook.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
-      - Outlook.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
-  - uid: Outlook.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
+      - outlook.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
+      - outlook.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
+      - outlook.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
+  - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType.ErrorMessage
     summary: The notificationMessage is an error message.
     name: ErrorMessage
     fullName: ErrorMessage
@@ -26,7 +26,7 @@ items:
       - typeScript
     type: field
     numericValue: '"errorMessage"'
-  - uid: Outlook.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
+  - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage
     summary: The notificationMessage is an informational message.
     name: InformationalMessage
     fullName: InformationalMessage
@@ -34,7 +34,7 @@ items:
       - typeScript
     type: field
     numericValue: '"informationalMessage"'
-  - uid: Outlook.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
+  - uid: outlook.Office.MailboxEnums.ItemNotificationMessageType.ProgressIndicator
     summary: The notificationMessage is a progress indicator.
     name: ProgressIndicator
     fullName: ProgressIndicator

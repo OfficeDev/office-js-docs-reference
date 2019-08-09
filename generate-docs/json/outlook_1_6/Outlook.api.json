@@ -6,9 +6,9 @@
     "oldestForwardsCompatibleVersion": 1001
   },
   "kind": "Package",
-  "canonicalReference": "Outlook",
+  "canonicalReference": "outlook",
   "docComment": "",
-  "name": "Outlook",
+  "name": "outlook",
   "members": [
     {
       "kind": "EntryPoint",

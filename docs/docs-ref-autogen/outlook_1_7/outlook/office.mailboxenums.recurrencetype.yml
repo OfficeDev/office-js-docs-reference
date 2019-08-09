@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.RecurrenceType
+  - uid: outlook.Office.MailboxEnums.RecurrenceType
     summary: |-
       Specifies the type of recurrence.
 
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MailboxEnums.RecurrenceType.Daily
-      - Outlook.Office.MailboxEnums.RecurrenceType.Monthly
-      - Outlook.Office.MailboxEnums.RecurrenceType.Weekday
-      - Outlook.Office.MailboxEnums.RecurrenceType.Weekly
-      - Outlook.Office.MailboxEnums.RecurrenceType.Yearly
-  - uid: Outlook.Office.MailboxEnums.RecurrenceType.Daily
+      - outlook.Office.MailboxEnums.RecurrenceType.Daily
+      - outlook.Office.MailboxEnums.RecurrenceType.Monthly
+      - outlook.Office.MailboxEnums.RecurrenceType.Weekday
+      - outlook.Office.MailboxEnums.RecurrenceType.Weekly
+      - outlook.Office.MailboxEnums.RecurrenceType.Yearly
+  - uid: outlook.Office.MailboxEnums.RecurrenceType.Daily
     summary: Daily.
     name: Daily
     fullName: Daily
@@ -28,7 +28,7 @@ items:
       - typeScript
     type: field
     numericValue: '"daily"'
-  - uid: Outlook.Office.MailboxEnums.RecurrenceType.Monthly
+  - uid: outlook.Office.MailboxEnums.RecurrenceType.Monthly
     summary: Monthly.
     name: Monthly
     fullName: Monthly
@@ -36,7 +36,7 @@ items:
       - typeScript
     type: field
     numericValue: '"monthly"'
-  - uid: Outlook.Office.MailboxEnums.RecurrenceType.Weekday
+  - uid: outlook.Office.MailboxEnums.RecurrenceType.Weekday
     summary: Weekday.
     name: Weekday
     fullName: Weekday
@@ -44,7 +44,7 @@ items:
       - typeScript
     type: field
     numericValue: '"weekday"'
-  - uid: Outlook.Office.MailboxEnums.RecurrenceType.Weekly
+  - uid: outlook.Office.MailboxEnums.RecurrenceType.Weekly
     summary: Weekly.
     name: Weekly
     fullName: Weekly
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: field
     numericValue: '"weekly"'
-  - uid: Outlook.Office.MailboxEnums.RecurrenceType.Yearly
+  - uid: outlook.Office.MailboxEnums.RecurrenceType.Yearly
     summary: Yearly.
     name: Yearly
     fullName: Yearly

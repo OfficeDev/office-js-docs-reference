@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Time
+  - uid: outlook.Office.Time
     summary: |-
       The Time object is returned as the start or end property of an appointment in compose mode.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Time.getAsync
-      - Outlook.Office.Time.getAsync_1
-      - Outlook.Office.Time.setAsync
-      - Outlook.Office.Time.setAsync_1
-  - uid: Outlook.Office.Time.getAsync
+      - outlook.Office.Time.getAsync
+      - outlook.Office.Time.getAsync_1
+      - outlook.Office.Time.setAsync
+      - outlook.Office.Time.setAsync_1
+  - uid: outlook.Office.Time.getAsync
     summary: >-
       Gets the start or end time of an appointment.
 
@@ -65,7 +65,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
             - '(asyncResult: Office.AsyncResult<Date>) => void'
-  - uid: Outlook.Office.Time.getAsync_1
+  - uid: outlook.Office.Time.getAsync_1
     summary: >-
       Gets the start or end time of an appointment.
 
@@ -117,7 +117,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is a Date object.
           type:
             - '(asyncResult: Office.AsyncResult<Date>) => void'
-  - uid: Outlook.Office.Time.setAsync
+  - uid: outlook.Office.Time.setAsync
     summary: >-
       Sets the start or end time of an appointment.
 
@@ -199,7 +199,7 @@ items:
             will contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Time.setAsync_1
+  - uid: outlook.Office.Time.setAsync_1
     summary: >-
       Sets the start or end time of an appointment.
 

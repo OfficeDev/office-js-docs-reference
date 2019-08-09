@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.ResponseType
+  - uid: outlook.Office.MailboxEnums.ResponseType
     summary: |-
       Specifies the type of response to a meeting invitation.
 
@@ -13,14 +13,14 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MailboxEnums.ResponseType.Accepted
-      - Outlook.Office.MailboxEnums.ResponseType.Declined
-      - Outlook.Office.MailboxEnums.ResponseType.None
-      - Outlook.Office.MailboxEnums.ResponseType.Organizer
-      - Outlook.Office.MailboxEnums.ResponseType.Tentative
-  - uid: Outlook.Office.MailboxEnums.ResponseType.Accepted
+      - outlook.Office.MailboxEnums.ResponseType.Accepted
+      - outlook.Office.MailboxEnums.ResponseType.Declined
+      - outlook.Office.MailboxEnums.ResponseType.None
+      - outlook.Office.MailboxEnums.ResponseType.Organizer
+      - outlook.Office.MailboxEnums.ResponseType.Tentative
+  - uid: outlook.Office.MailboxEnums.ResponseType.Accepted
     summary: The meeting request was accepted by the attendee.
     name: Accepted
     fullName: Accepted
@@ -28,7 +28,7 @@ items:
       - typeScript
     type: field
     numericValue: '"accepted"'
-  - uid: Outlook.Office.MailboxEnums.ResponseType.Declined
+  - uid: outlook.Office.MailboxEnums.ResponseType.Declined
     summary: The meeting request was declined by the attendee.
     name: Declined
     fullName: Declined
@@ -36,7 +36,7 @@ items:
       - typeScript
     type: field
     numericValue: '"declined"'
-  - uid: Outlook.Office.MailboxEnums.ResponseType.None
+  - uid: outlook.Office.MailboxEnums.ResponseType.None
     summary: There has been no response from the attendee.
     name: None
     fullName: None
@@ -44,7 +44,7 @@ items:
       - typeScript
     type: field
     numericValue: '"none"'
-  - uid: Outlook.Office.MailboxEnums.ResponseType.Organizer
+  - uid: outlook.Office.MailboxEnums.ResponseType.Organizer
     summary: The attendee is the meeting organizer.
     name: Organizer
     fullName: Organizer
@@ -52,7 +52,7 @@ items:
       - typeScript
     type: field
     numericValue: '"organizer"'
-  - uid: Outlook.Office.MailboxEnums.ResponseType.Tentative
+  - uid: outlook.Office.MailboxEnums.ResponseType.Tentative
     summary: The meeting request was tentatively accepted by the attendee.
     name: Tentative
     fullName: Tentative

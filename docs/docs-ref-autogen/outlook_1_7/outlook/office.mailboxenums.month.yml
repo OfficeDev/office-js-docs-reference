@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.Month
+  - uid: outlook.Office.MailboxEnums.Month
     summary: |-
       Specifies the month.
 
@@ -13,21 +13,21 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MailboxEnums.Month.Apr
-      - Outlook.Office.MailboxEnums.Month.Aug
-      - Outlook.Office.MailboxEnums.Month.Dec
-      - Outlook.Office.MailboxEnums.Month.Feb
-      - Outlook.Office.MailboxEnums.Month.Jan
-      - Outlook.Office.MailboxEnums.Month.Jul
-      - Outlook.Office.MailboxEnums.Month.Jun
-      - Outlook.Office.MailboxEnums.Month.Mar
-      - Outlook.Office.MailboxEnums.Month.May
-      - Outlook.Office.MailboxEnums.Month.Nov
-      - Outlook.Office.MailboxEnums.Month.Oct
-      - Outlook.Office.MailboxEnums.Month.Sep
-  - uid: Outlook.Office.MailboxEnums.Month.Apr
+      - outlook.Office.MailboxEnums.Month.Apr
+      - outlook.Office.MailboxEnums.Month.Aug
+      - outlook.Office.MailboxEnums.Month.Dec
+      - outlook.Office.MailboxEnums.Month.Feb
+      - outlook.Office.MailboxEnums.Month.Jan
+      - outlook.Office.MailboxEnums.Month.Jul
+      - outlook.Office.MailboxEnums.Month.Jun
+      - outlook.Office.MailboxEnums.Month.Mar
+      - outlook.Office.MailboxEnums.Month.May
+      - outlook.Office.MailboxEnums.Month.Nov
+      - outlook.Office.MailboxEnums.Month.Oct
+      - outlook.Office.MailboxEnums.Month.Sep
+  - uid: outlook.Office.MailboxEnums.Month.Apr
     summary: April
     name: Apr
     fullName: Apr
@@ -35,7 +35,7 @@ items:
       - typeScript
     type: field
     numericValue: '"apr"'
-  - uid: Outlook.Office.MailboxEnums.Month.Aug
+  - uid: outlook.Office.MailboxEnums.Month.Aug
     summary: August
     name: Aug
     fullName: Aug
@@ -43,7 +43,7 @@ items:
       - typeScript
     type: field
     numericValue: '"aug"'
-  - uid: Outlook.Office.MailboxEnums.Month.Dec
+  - uid: outlook.Office.MailboxEnums.Month.Dec
     summary: December
     name: Dec
     fullName: Dec
@@ -51,7 +51,7 @@ items:
       - typeScript
     type: field
     numericValue: '"dec"'
-  - uid: Outlook.Office.MailboxEnums.Month.Feb
+  - uid: outlook.Office.MailboxEnums.Month.Feb
     summary: February
     name: Feb
     fullName: Feb
@@ -59,7 +59,7 @@ items:
       - typeScript
     type: field
     numericValue: '"feb"'
-  - uid: Outlook.Office.MailboxEnums.Month.Jan
+  - uid: outlook.Office.MailboxEnums.Month.Jan
     summary: January
     name: Jan
     fullName: Jan
@@ -67,7 +67,7 @@ items:
       - typeScript
     type: field
     numericValue: '"jan"'
-  - uid: Outlook.Office.MailboxEnums.Month.Jul
+  - uid: outlook.Office.MailboxEnums.Month.Jul
     summary: July
     name: Jul
     fullName: Jul
@@ -75,7 +75,7 @@ items:
       - typeScript
     type: field
     numericValue: '"jul"'
-  - uid: Outlook.Office.MailboxEnums.Month.Jun
+  - uid: outlook.Office.MailboxEnums.Month.Jun
     summary: June
     name: Jun
     fullName: Jun
@@ -83,7 +83,7 @@ items:
       - typeScript
     type: field
     numericValue: '"jun"'
-  - uid: Outlook.Office.MailboxEnums.Month.Mar
+  - uid: outlook.Office.MailboxEnums.Month.Mar
     summary: March
     name: Mar
     fullName: Mar
@@ -91,7 +91,7 @@ items:
       - typeScript
     type: field
     numericValue: '"mar"'
-  - uid: Outlook.Office.MailboxEnums.Month.May
+  - uid: outlook.Office.MailboxEnums.Month.May
     summary: May
     name: May
     fullName: May
@@ -99,7 +99,7 @@ items:
       - typeScript
     type: field
     numericValue: '"may"'
-  - uid: Outlook.Office.MailboxEnums.Month.Nov
+  - uid: outlook.Office.MailboxEnums.Month.Nov
     summary: November
     name: Nov
     fullName: Nov
@@ -107,7 +107,7 @@ items:
       - typeScript
     type: field
     numericValue: '"nov"'
-  - uid: Outlook.Office.MailboxEnums.Month.Oct
+  - uid: outlook.Office.MailboxEnums.Month.Oct
     summary: October
     name: Oct
     fullName: Oct
@@ -115,7 +115,7 @@ items:
       - typeScript
     type: field
     numericValue: '"oct"'
-  - uid: Outlook.Office.MailboxEnums.Month.Sep
+  - uid: outlook.Office.MailboxEnums.Month.Sep
     summary: September
     name: Sep
     fullName: Sep

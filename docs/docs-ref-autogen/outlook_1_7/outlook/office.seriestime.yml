@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.SeriesTime
+  - uid: outlook.Office.SeriesTime
     summary: >-
       The SeriesTime object provides methods to get and set the dates and times of appointments in a recurring series
       and get the dates and times of meeting requests in a recurring series.
@@ -19,21 +19,21 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.SeriesTime.getDuration
-      - Outlook.Office.SeriesTime.getEndDate
-      - Outlook.Office.SeriesTime.getEndTime
-      - Outlook.Office.SeriesTime.getStartDate
-      - Outlook.Office.SeriesTime.getStartTime
-      - Outlook.Office.SeriesTime.setDuration
-      - Outlook.Office.SeriesTime.setEndDate
-      - Outlook.Office.SeriesTime.setEndDate_1
-      - Outlook.Office.SeriesTime.setStartDate
-      - Outlook.Office.SeriesTime.setStartDate_1
-      - Outlook.Office.SeriesTime.setStartTime
-      - Outlook.Office.SeriesTime.setStartTime_1
-  - uid: Outlook.Office.SeriesTime.getDuration
+      - outlook.Office.SeriesTime.getDuration
+      - outlook.Office.SeriesTime.getEndDate
+      - outlook.Office.SeriesTime.getEndTime
+      - outlook.Office.SeriesTime.getStartDate
+      - outlook.Office.SeriesTime.getStartTime
+      - outlook.Office.SeriesTime.setDuration
+      - outlook.Office.SeriesTime.setEndDate
+      - outlook.Office.SeriesTime.setEndDate_1
+      - outlook.Office.SeriesTime.setStartDate
+      - outlook.Office.SeriesTime.setStartDate_1
+      - outlook.Office.SeriesTime.setStartTime
+      - outlook.Office.SeriesTime.setStartTime_1
+  - uid: outlook.Office.SeriesTime.getDuration
     summary: |-
       Gets the duration in minutes of a usual instance in a recurring appointment series.
 
@@ -75,7 +75,7 @@ items:
         type:
           - number
         description: ''
-  - uid: Outlook.Office.SeriesTime.getEndDate
+  - uid: outlook.Office.SeriesTime.getEndDate
     summary: >-
       Gets the end date of a recurrence pattern in the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
@@ -119,7 +119,7 @@ items:
         type:
           - string
         description: ''
-  - uid: Outlook.Office.SeriesTime.getEndTime
+  - uid: outlook.Office.SeriesTime.getEndTime
     summary: >-
       Gets the end time of a usual appointment or meeting request instance of a recurrence pattern in whichever time
       zone that the user or add-in set the recurrence pattern using the following [ISO
@@ -164,7 +164,7 @@ items:
         type:
           - string
         description: ''
-  - uid: Outlook.Office.SeriesTime.getStartDate
+  - uid: outlook.Office.SeriesTime.getStartDate
     summary: >-
       Gets the start date of a recurrence pattern in the following [ISO
       8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD"
@@ -208,7 +208,7 @@ items:
         type:
           - string
         description: ''
-  - uid: Outlook.Office.SeriesTime.getStartTime
+  - uid: outlook.Office.SeriesTime.getStartTime
     summary: >-
       Gets the start time of a usual appointment instance of a recurrence pattern in whichever time zone that the
       user/add-in set the recurrence pattern using the following [ISO
@@ -250,7 +250,7 @@ items:
         type:
           - string
         description: ''
-  - uid: Outlook.Office.SeriesTime.setDuration
+  - uid: outlook.Office.SeriesTime.setDuration
     summary: >-
       Sets the duration of all appointments in a recurrence pattern. This will also change the end time of the
       recurrence pattern.
@@ -301,7 +301,7 @@ items:
           description: The length of the appointment in minutes.
           type:
             - number
-  - uid: Outlook.Office.SeriesTime.setEndDate
+  - uid: outlook.Office.SeriesTime.setEndDate
     summary: |-
       Sets the end date of a recurring appointment series.
 
@@ -355,7 +355,7 @@ items:
           description: The day value of the end date.
           type:
             - number
-  - uid: Outlook.Office.SeriesTime.setEndDate_1
+  - uid: outlook.Office.SeriesTime.setEndDate_1
     summary: |-
       Sets the end date of a recurring appointment series.
 
@@ -403,7 +403,7 @@ items:
             8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
           type:
             - string
-  - uid: Outlook.Office.SeriesTime.setStartDate
+  - uid: outlook.Office.SeriesTime.setStartDate
     summary: |-
       Sets the start date of a recurring appointment series.
 
@@ -457,7 +457,7 @@ items:
           description: The day value of the start date.
           type:
             - number
-  - uid: Outlook.Office.SeriesTime.setStartDate_1
+  - uid: outlook.Office.SeriesTime.setStartDate_1
     summary: |-
       Sets the start date of a recurring appointment series.
 
@@ -505,7 +505,7 @@ items:
             8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format: "YYYY-MM-DD".
           type:
             - string
-  - uid: Outlook.Office.SeriesTime.setStartTime
+  - uid: outlook.Office.SeriesTime.setStartTime
     summary: >-
       Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
       pattern is set (the item's time zone is used by default).
@@ -562,7 +562,7 @@ items:
           description: 'The minute value of the start time. Valid range: 0-59.'
           type:
             - number
-  - uid: Outlook.Office.SeriesTime.setStartTime_1
+  - uid: outlook.Office.SeriesTime.setStartTime_1
     summary: >-
       Sets the start time of all instances of a recurring appointment series in whichever time zone the recurrence
       pattern is set (the item's time zone is used by default).

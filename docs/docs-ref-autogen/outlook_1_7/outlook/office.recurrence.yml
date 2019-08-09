@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Recurrence
+  - uid: outlook.Office.Recurrence
     summary: >-
       The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the
       recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime,
@@ -33,17 +33,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Recurrence.getAsync
-      - Outlook.Office.Recurrence.getAsync_1
-      - Outlook.Office.Recurrence.setAsync
-      - Outlook.Office.Recurrence.setAsync_1
-      - Outlook.Office.Recurrence.recurrenceProperties
-      - Outlook.Office.Recurrence.recurrenceTimeZone
-      - Outlook.Office.Recurrence.recurrenceType
-      - Outlook.Office.Recurrence.seriesTime
-  - uid: Outlook.Office.Recurrence.getAsync
+      - outlook.Office.Recurrence.getAsync
+      - outlook.Office.Recurrence.getAsync_1
+      - outlook.Office.Recurrence.setAsync
+      - outlook.Office.Recurrence.setAsync_1
+      - outlook.Office.Recurrence.recurrenceProperties
+      - outlook.Office.Recurrence.recurrenceTimeZone
+      - outlook.Office.Recurrence.recurrenceType
+      - outlook.Office.Recurrence.seriesTime
+  - uid: outlook.Office.Recurrence.getAsync
     summary: |-
       Returns the current recurrence object of an appointment series.
 
@@ -84,7 +84,7 @@ items:
             Recurrence object.
           type:
             - '(asyncResult: Office.AsyncResult<Recurrence>) => void'
-  - uid: Outlook.Office.Recurrence.getAsync_1
+  - uid: outlook.Office.Recurrence.getAsync_1
     summary: |-
       Returns the current recurrence object of an appointment series.
 
@@ -156,7 +156,7 @@ items:
             Recurrence object.
           type:
             - '(asyncResult: Office.AsyncResult<Recurrence>) => void'
-  - uid: Outlook.Office.Recurrence.setAsync
+  - uid: outlook.Office.Recurrence.setAsync
     summary: |-
       Sets the recurrence pattern of an appointment series.
 
@@ -193,7 +193,7 @@ items:
         - id: recurrencePattern
           description: A recurrence object.
           type:
-            - Outlook.Office.Recurrence
+            - outlook.Office.Recurrence
         - id: options
           description: >-
             Optional. An object literal that contains one or more of the following properties. asyncContext: Developers
@@ -206,7 +206,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Recurrence.setAsync_1
+  - uid: outlook.Office.Recurrence.setAsync_1
     summary: |-
       Sets the recurrence pattern of an appointment series.
 
@@ -282,14 +282,14 @@ items:
         - id: recurrencePattern
           description: A recurrence object.
           type:
-            - Outlook.Office.Recurrence
+            - outlook.Office.Recurrence
         - id: callback
           description: >-
             Optional. When the method completes, the function passed in the callback parameter is called with a single
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Recurrence.recurrenceProperties
+  - uid: outlook.Office.Recurrence.recurrenceProperties
     summary: |-
       Gets or sets the properties of the recurring appointment series.
 
@@ -310,8 +310,8 @@ items:
       content: 'recurrenceProperties: RecurrenceProperties;'
       return:
         type:
-          - Outlook.Office.RecurrenceProperties
-  - uid: Outlook.Office.Recurrence.recurrenceTimeZone
+          - outlook.Office.RecurrenceProperties
+  - uid: outlook.Office.Recurrence.recurrenceTimeZone
     summary: |-
       Gets or sets the properties of the recurring appointment series.
 
@@ -333,7 +333,7 @@ items:
       return:
         type:
           - RecurrenceTimeZone
-  - uid: Outlook.Office.Recurrence.recurrenceType
+  - uid: outlook.Office.Recurrence.recurrenceType
     summary: |-
       Gets or sets the type of the recurring appointment series.
 
@@ -355,9 +355,9 @@ items:
       return:
         type:
           - MailboxEnums.RecurrenceType | string
-  - uid: Outlook.Office.Recurrence.seriesTime
+  - uid: outlook.Office.Recurrence.seriesTime
     summary: >-
-      The [Office.SeriesTime](xref:Outlook.Office.SeriesTime) object enables you to manage the start and end dates of
+      The [Office.SeriesTime](xref:outlook.Office.SeriesTime) object enables you to manage the start and end dates of
       the recurring appointment series and the usual start and end times of instances. **This object is not in UTC
       time.** Instead, it is set in the time zone specified by the recurrenceTimeZone value or defaulted to the item's
       time zone.
@@ -380,4 +380,4 @@ items:
       content: 'seriesTime: SeriesTime;'
       return:
         type:
-          - Outlook.Office.SeriesTime
+          - outlook.Office.SeriesTime
