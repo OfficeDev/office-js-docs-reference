@@ -67,14 +67,14 @@ items:
       Creates a new chart.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'add(typeString, sourceData, seriesBy)'
-    fullName: 'add(typeString, sourceData, seriesBy)'
+    name: 'add(type, sourceData, seriesBy)'
+    fullName: 'add(type, sourceData, seriesBy)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        add(typeString: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
+        add(type: "Invalid" | "ColumnClustered" | "ColumnStacked" | "ColumnStacked100" | "3DColumnClustered" |
         "3DColumnStacked" | "3DColumnStacked100" | "BarClustered" | "BarStacked" | "BarStacked100" | "3DBarClustered" |
         "3DBarStacked" | "3DBarStacked100" | "LineStacked" | "LineStacked100" | "LineMarkers" | "LineMarkersStacked" |
         "LineMarkersStacked100" | "PieOfPie" | "PieExploded" | "3DPieExploded" | "BarOfPie" | "XYScatterSmooth" |
@@ -94,7 +94,7 @@ items:
           - 'excel!Excel.Chart:class'
         description: ''
       parameters:
-        - id: typeString
+        - id: type
           description: Represents the type of a chart. See Excel.ChartType for details.
           type:
             - >-

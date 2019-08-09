@@ -205,10 +205,10 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param idString - The type of the Toolbar
+         * @param id - The type of the Toolbar
          * @param show - Whether the toolbar is visibile or not.
          */
-        showToolbar(idString: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
+        showToolbar(id: "CommandBar" | "PageNavigationBar" | "StatusBar", show: boolean): void;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1004,14 +1004,14 @@ export declare namespace Visio {
          *
          * [Api set:  1.1]
          *
-         * @param OverlayTypeString - An Overlay Type. Can be 'Text' or 'Image'.
+         * @param OverlayType - An Overlay Type. Can be 'Text' or 'Image'.
          * @param Content - Content of Overlay.
          * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.
          * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.
          * @param Width - Overlay Width.
          * @param Height - Overlay Height.
          */
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
+        addOverlay(OverlayType: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" | "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number): OfficeExtension.ClientResult<number>;
         /**
          *
          * Removes particular overlay or all overlays on the Shape.

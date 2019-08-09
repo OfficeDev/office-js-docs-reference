@@ -64,13 +64,13 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'add(content, contentTypeString)'
-    fullName: 'add(content, contentTypeString)'
+    name: 'add(content, contentType)'
+    fullName: 'add(content, contentType)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'add(content: string, contentTypeString?: "Plain"): Excel.CommentReply;'
+      content: 'add(content: string, contentType?: "Plain"): Excel.CommentReply;'
       return:
         type:
           - 'excel!Excel.CommentReply:class'
@@ -80,7 +80,7 @@ items:
           description: The comment content.
           type:
             - string
-        - id: contentTypeString
+        - id: contentType
           description: Optional. Type of the comment content
           type:
             - '"Plain"'

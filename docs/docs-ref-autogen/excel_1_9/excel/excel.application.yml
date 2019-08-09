@@ -55,19 +55,19 @@ items:
       Recalculate all currently opened workbooks in Excel.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: calculate(calculationTypeString)
-    fullName: calculate(calculationTypeString)
+    name: calculate(calculationType)
+    fullName: calculate(calculationType)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'calculate(calculationTypeString: "Recalculate" | "Full" | "FullRebuild"): void;'
+      content: 'calculate(calculationType: "Recalculate" | "Full" | "FullRebuild"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: calculationTypeString
+        - id: calculationType
           description: Specifies the calculation type to use. See Excel.CalculationType for details.
           type:
             - '"Recalculate" | "Full" | "FullRebuild"'

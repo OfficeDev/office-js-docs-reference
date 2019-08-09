@@ -87,19 +87,19 @@ items:
       Gets one of the section's footers.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getFooter(typeString)
-    fullName: getFooter(typeString)
+    name: getFooter(type)
+    fullName: getFooter(type)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getFooter(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      content: 'getFooter(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
           - 'word!Word.Body:class'
         description: ''
       parameters:
-        - id: typeString
+        - id: type
           description: 'Required. The type of footer to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
             - '"Primary" | "FirstPage" | "EvenPages"'
@@ -129,19 +129,19 @@ items:
       Gets one of the section's headers.
 
       \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getHeader(typeString)
-    fullName: getHeader(typeString)
+    name: getHeader(type)
+    fullName: getHeader(type)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getHeader(typeString: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
+      content: 'getHeader(type: "Primary" | "FirstPage" | "EvenPages"): Word.Body;'
       return:
         type:
           - 'word!Word.Body:class'
         description: ''
       parameters:
-        - id: typeString
+        - id: type
           description: 'Required. The type of header to return. This value can be: ''Primary'', ''FirstPage'', or ''EvenPages''.'
           type:
             - '"Primary" | "FirstPage" | "EvenPages"'

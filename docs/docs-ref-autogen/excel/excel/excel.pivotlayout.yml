@@ -221,21 +221,21 @@ items:
       Gets the PivotItems from an axis that make up the value in a specified range within the PivotTable.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getPivotItems(axisString, cell)'
-    fullName: 'getPivotItems(axisString, cell)'
+    name: 'getPivotItems(axis, cell)'
+    fullName: 'getPivotItems(axis, cell)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getPivotItems(axisString: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string):
+        getPivotItems(axis: "Unknown" | "Row" | "Column" | "Data" | "Filter", cell: Range | string):
         OfficeExtension.ClientResult<Excel.PivotItem[]>;
       return:
         type:
           - 'OfficeExtension.ClientResult<Excel.PivotItem[]>'
         description: A collection of PivotItems that are used to calculate the values in the specified row.
       parameters:
-        - id: axisString
+        - id: axis
           description: The axis from which to get the PivotItems. Must be either "row" or "column."
           type:
             - '"Unknown" | "Row" | "Column" | "Data" | "Filter"'
@@ -471,13 +471,13 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'setAutoSortOnCell(cell, sortByString)'
-    fullName: 'setAutoSortOnCell(cell, sortByString)'
+    name: 'setAutoSortOnCell(cell, sortBy)'
+    fullName: 'setAutoSortOnCell(cell, sortBy)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setAutoSortOnCell(cell: Range | string, sortByString: "Ascending" | "Descending"): void;'
+      content: 'setAutoSortOnCell(cell: Range | string, sortBy: "Ascending" | "Descending"): void;'
       return:
         type:
           - void
@@ -487,7 +487,7 @@ items:
           description: A single cell to use get the criteria from for applying the autosort.
           type:
             - Range | string
-        - id: sortByString
+        - id: sortBy
           description: The direction of the sort.
           type:
             - '"Ascending" | "Descending"'

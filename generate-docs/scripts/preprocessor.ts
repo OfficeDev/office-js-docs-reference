@@ -87,19 +87,19 @@ tryCatch(async () => {
     console.log("\ncreate file: excel.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"), "Other")
     );
 
     console.log("\ncreate file: excel.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel-release/excel_1_9/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true)
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"), "Other", true)
     );
 
     console.log("create file: onenote.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-onenote/onenote.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other")
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs"), "Other")
     );
 
     console.log("create file: outlook.d.ts");
@@ -117,19 +117,19 @@ tryCatch(async () => {
     console.log("create file: visio.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-visio/visio.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs")), "Other")
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Visio APIs", "End Visio APIs"), "Other")
     );
 
     console.log("create file: word.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+        handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"), "Other")
     );
 
     console.log("\ncreate file: word.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other", true)
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"), "Other", true)
     );
 
     // ----
@@ -269,29 +269,6 @@ function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook"
         hostDts = hostDts.replace(/Office\.Mailbox/g, "Outlook.Mailbox").replace(/Office\.RoamingSettings/g, "Outlook.RoamingSettings");
         return commonApiNamespaceImport + outlookApiNamespaceImport + hostDts;
     }
-}
-
-function handleLiteralParameterOverloads(dtsString: string): string {
-    // rename parameters for string literal overloads
-    const matches = dtsString.match(/([a-zA-Z]+)\??: (\"[a-zA-Z]*\").*:/g);
-    let matchIndex = 0;
-    matches.forEach((match) => {
-        let parameterName = match.substring(0, match.indexOf(": "));
-        matchIndex = dtsString.indexOf(match, matchIndex);
-        parameterName = parameterName.indexOf("?") >= 0 ? parameterName.substring(0, parameterName.length - 1) : parameterName;
-        const parameterString = "@param " + parameterName + " ";
-        const index = dtsString.lastIndexOf(parameterString, matchIndex);
-        if (index < 0) {
-            console.warn("Missing @param for literal parameter: " + match);
-        } else {
-        dtsString = dtsString.substring(0, index)
-         + "@param " + parameterName + "String "
-         + dtsString.substring(index + parameterString.length);
-         matchIndex += match.length;
-        }
-    });
-
-    return dtsString.replace(/([a-zA-Z]+)(\??: \"[a-zA-Z]*\".*:)/g, "$1String$2");
 }
 
 async function tryCatch(call: () => Promise<void>) {

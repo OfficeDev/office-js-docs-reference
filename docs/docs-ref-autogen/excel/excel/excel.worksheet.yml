@@ -206,21 +206,21 @@ items:
       Copy a worksheet and place it at the specified position. Return the copied worksheet.
 
       \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'copy(positionTypeString, relativeTo)'
-    fullName: 'copy(positionTypeString, relativeTo)'
+    name: 'copy(positionType, relativeTo)'
+    fullName: 'copy(positionType, relativeTo)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        copy(positionTypeString?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
+        copy(positionType?: "None" | "Before" | "After" | "Beginning" | "End", relativeTo?: Excel.Worksheet):
         Excel.Worksheet;
       return:
         type:
           - 'excel!Excel.Worksheet:class'
         description: ''
       parameters:
-        - id: positionTypeString
+        - id: positionType
           description: Optional.
           type:
             - '"None" | "Before" | "After" | "Beginning" | "End"'

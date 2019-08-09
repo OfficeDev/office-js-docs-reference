@@ -190,19 +190,19 @@ items:
       Inserts a new section before or after the current section.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertSectionAsSibling(locationString, title)'
-    fullName: 'insertSectionAsSibling(locationString, title)'
+    name: 'insertSectionAsSibling(location, title)'
+    fullName: 'insertSectionAsSibling(location, title)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insertSectionAsSibling(locationString: "Before" | "After", title: string): OneNote.Section;'
+      content: 'insertSectionAsSibling(location: "Before" | "After", title: string): OneNote.Section;'
       return:
         type:
           - 'onenote!OneNote.Section:class'
         description: ''
       parameters:
-        - id: locationString
+        - id: location
           description: The location of the new section relative to the current section.
           type:
             - '"Before" | "After"'

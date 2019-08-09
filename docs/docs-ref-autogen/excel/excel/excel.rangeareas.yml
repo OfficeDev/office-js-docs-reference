@@ -179,19 +179,19 @@ items:
       Clears values, format, fill, border, etc on each of the areas that comprise this RangeAreas object.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear(applyToString)
-    fullName: clear(applyToString)
+    name: clear(applyTo)
+    fullName: clear(applyTo)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      content: 'clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: applyToString
+        - id: applyTo
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details. Default is "All".
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
@@ -313,14 +313,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
+    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: "All" | "Formulas" | "Values" | "Formats",
         skipBlanks?: boolean, transpose?: boolean): void;
       return:
         type:
@@ -333,7 +333,7 @@ items:
             the outline form which can be created by removing full rows or columns from a rectangular range.
           type:
             - Range | RangeAreas | string
-        - id: copyTypeString
+        - id: copyType
           description: The type of cell data or formatting to copy over. Default is "All".
           type:
             - '"All" | "Formulas" | "Values" | "Formats"'
@@ -528,14 +528,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCells(cellTypeString, cellValueType)'
-    fullName: 'getSpecialCells(cellTypeString, cellValueType)'
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
         "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" |
         "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
         "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
@@ -544,7 +544,7 @@ items:
           - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
-        - id: cellTypeString
+        - id: cellType
           description: The type of cells to include.
           type:
             - >-
@@ -599,14 +599,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
-    fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
+    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
         "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
         "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
         "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
@@ -616,7 +616,7 @@ items:
           - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
-        - id: cellTypeString
+        - id: cellType
           description: The type of cells to include.
           type:
             - >-

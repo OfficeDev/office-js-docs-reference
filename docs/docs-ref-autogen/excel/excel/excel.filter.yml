@@ -152,13 +152,13 @@ items:
       Apply an "Icon" filter to the column for the given criteria strings.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'applyCustomFilter(criteria1, criteria2, operString)'
-    fullName: 'applyCustomFilter(criteria1, criteria2, operString)'
+    name: 'applyCustomFilter(criteria1, criteria2, oper)'
+    fullName: 'applyCustomFilter(criteria1, criteria2, oper)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'applyCustomFilter(criteria1: string, criteria2?: string, operString?: "And" | "Or"): void;'
+      content: 'applyCustomFilter(criteria1: string, criteria2?: string, oper?: "And" | "Or"): void;'
       return:
         type:
           - void
@@ -172,7 +172,7 @@ items:
           description: Optional. The second criteria string.
           type:
             - string
-        - id: operString
+        - id: oper
           description: Optional. The operator that describes how the two criteria are joined.
           type:
             - '"And" | "Or"'
@@ -202,27 +202,26 @@ items:
       Apply a "Dynamic" filter to the column.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: applyDynamicFilter(criteriaString)
-    fullName: applyDynamicFilter(criteriaString)
+    name: applyDynamicFilter(criteria)
+    fullName: applyDynamicFilter(criteria)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        applyDynamicFilter(criteriaString: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" |
-        "AllDatesInPeriodAugust" | "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" |
-        "AllDatesInPeriodJuly" | "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" |
-        "AllDatesInPeriodNovember" | "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2"
-        | "AllDatesInPeriodQuarter3" | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" |
-        "LastMonth" | "LastQuarter" | "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" |
-        "ThisMonth" | "ThisQuarter" | "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"):
-        void;
+        applyDynamicFilter(criteria: "Unknown" | "AboveAverage" | "AllDatesInPeriodApril" | "AllDatesInPeriodAugust" |
+        "AllDatesInPeriodDecember" | "AllDatesInPeriodFebruray" | "AllDatesInPeriodJanuary" | "AllDatesInPeriodJuly" |
+        "AllDatesInPeriodJune" | "AllDatesInPeriodMarch" | "AllDatesInPeriodMay" | "AllDatesInPeriodNovember" |
+        "AllDatesInPeriodOctober" | "AllDatesInPeriodQuarter1" | "AllDatesInPeriodQuarter2" | "AllDatesInPeriodQuarter3"
+        | "AllDatesInPeriodQuarter4" | "AllDatesInPeriodSeptember" | "BelowAverage" | "LastMonth" | "LastQuarter" |
+        "LastWeek" | "LastYear" | "NextMonth" | "NextQuarter" | "NextWeek" | "NextYear" | "ThisMonth" | "ThisQuarter" |
+        "ThisWeek" | "ThisYear" | "Today" | "Tomorrow" | "YearToDate" | "Yesterday"): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: criteriaString
+        - id: criteria
           description: The dynamic criteria to apply.
           type:
             - >-

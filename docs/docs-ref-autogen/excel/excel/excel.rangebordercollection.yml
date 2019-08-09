@@ -80,21 +80,21 @@ items:
       Gets a border object using its name.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getItem(indexString)
-    fullName: getItem(indexString)
+    name: getItem(index)
+    fullName: getItem(index)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getItem(indexString: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal"
-        | "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
+        getItem(index: "EdgeTop" | "EdgeBottom" | "EdgeLeft" | "EdgeRight" | "InsideVertical" | "InsideHorizontal" |
+        "DiagonalDown" | "DiagonalUp"): Excel.RangeBorder;
       return:
         type:
           - 'excel!Excel.RangeBorder:class'
         description: ''
       parameters:
-        - id: indexString
+        - id: index
           description: Index value of the border object to be retrieved. See Excel.BorderIndex for details.
           type:
             - >-

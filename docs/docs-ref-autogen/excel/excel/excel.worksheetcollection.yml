@@ -119,15 +119,15 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)'
-    fullName: 'addFromBase64(base64File, sheetNamesToInsert, positionTypeString, relativeTo)'
+    name: 'addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)'
+    fullName: 'addFromBase64(base64File, sheetNamesToInsert, positionType, relativeTo)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionTypeString?: "None" | "Before" |
-        "After" | "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
+        addFromBase64(base64File: string, sheetNamesToInsert?: string[], positionType?: "None" | "Before" | "After" |
+        "Beginning" | "End", relativeTo?: Worksheet | string): OfficeExtension.ClientResult<string[]>;
       return:
         type:
           - 'OfficeExtension.ClientResult<string[]>'
@@ -143,7 +143,7 @@ items:
             workbook are inserted.
           type:
             - 'string[]'
-        - id: positionTypeString
+        - id: positionType
           description: >-
             Optional. Where in the current workbook the new worksheets will be inserted. See Excel.WorksheetPositionType
             for details. Default is "Start".

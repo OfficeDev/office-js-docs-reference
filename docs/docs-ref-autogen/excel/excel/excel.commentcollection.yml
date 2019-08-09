@@ -75,13 +75,13 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: 'add(content, cellAddress, contentTypeString)'
-    fullName: 'add(content, cellAddress, contentTypeString)'
+    name: 'add(content, cellAddress, contentType)'
+    fullName: 'add(content, cellAddress, contentType)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'add(content: string, cellAddress: Range | string, contentTypeString?: "Plain"): Excel.Comment;'
+      content: 'add(content: string, cellAddress: Range | string, contentType?: "Plain"): Excel.Comment;'
       return:
         type:
           - 'excel!Excel.Comment:class'
@@ -98,7 +98,7 @@ items:
             range is larger than one cell.
           type:
             - Range | string
-        - id: contentTypeString
+        - id: contentType
           description: Optional. The type of the comment content
           type:
             - '"Plain"'

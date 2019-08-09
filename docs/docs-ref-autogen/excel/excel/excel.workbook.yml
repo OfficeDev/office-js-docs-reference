@@ -175,19 +175,19 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: close(closeBehaviorString)
-    fullName: close(closeBehaviorString)
+    name: close(closeBehavior)
+    fullName: close(closeBehavior)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'close(closeBehaviorString?: "Save" | "SkipSave"): void;'
+      content: 'close(closeBehavior?: "Save" | "SkipSave"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: closeBehaviorString
+        - id: closeBehavior
           description: workbook close behavior.
           type:
             - '"Save" | "SkipSave"'
@@ -693,19 +693,19 @@ items:
       \[ [API set: ExcelApi BETA (PREVIEW
       ONLY)](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     isPreview: true
-    name: save(saveBehaviorString)
-    fullName: save(saveBehaviorString)
+    name: save(saveBehavior)
+    fullName: save(saveBehavior)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'save(saveBehaviorString?: "Save" | "Prompt"): void;'
+      content: 'save(saveBehavior?: "Save" | "Prompt"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: saveBehaviorString
+        - id: saveBehavior
           description: workbook save behavior.
           type:
             - '"Save" | "Prompt"'

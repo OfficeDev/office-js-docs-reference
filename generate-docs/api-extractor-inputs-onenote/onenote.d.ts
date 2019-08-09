@@ -1601,10 +1601,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param locationString - The location of the new section relative to the current section.
+         * @param location - The location of the new section relative to the current section.
          * @param title - The name of the new section.
          */
-        insertSectionAsSibling(locationString: "Before" | "After", title: string): OneNote.Section;
+        insertSectionAsSibling(location: "Before" | "After", title: string): OneNote.Section;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -1885,10 +1885,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param locationString - The location of the new page relative to the current page.
+         * @param location - The location of the new page relative to the current page.
          * @param title - The title of the new page.
          */
-        insertPageAsSibling(locationString: "Before" | "After", title: string): OneNote.Page;
+        insertPageAsSibling(location: "Before" | "After", title: string): OneNote.Page;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -2448,10 +2448,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param typeString - The type of the NoteTag.
+         * @param type - The type of the NoteTag.
          * @param status - The status of the NoteTag.
          */
-        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
+        addNoteTag(type: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" | "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed" | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
         /**
          *
          * Deletes the paragraph
@@ -2482,10 +2482,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocationString - The location of new contents relative to the current Paragraph.
+         * @param insertLocation - The location of new contents relative to the current Paragraph.
          * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.
          */
-        insertHtmlAsSibling(insertLocationString: "Before" | "After", html: string): void;
+        insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;
         /**
          *
          * Inserts the image at the specified insert location..
@@ -2504,12 +2504,12 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocationString - The location of the table relative to the current Paragraph.
+         * @param insertLocation - The location of the table relative to the current Paragraph.
          * @param base64EncodedImage - HTML string to append.
          * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.
          * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.
          */
-        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number, height: number): OneNote.Image;
+        insertImageAsSibling(insertLocation: "Before" | "After", base64EncodedImage: string, width: number, height: number): OneNote.Image;
         /**
          *
          * Inserts the paragraph text at the specifiec insert location.
@@ -2526,10 +2526,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocationString - The location of the table relative to the current Paragraph.
+         * @param insertLocation - The location of the table relative to the current Paragraph.
          * @param paragraphText - HTML string to append.
          */
-        insertRichTextAsSibling(insertLocationString: "Before" | "After", paragraphText: string): OneNote.RichText;
+        insertRichTextAsSibling(insertLocation: "Before" | "After", paragraphText: string): OneNote.RichText;
         /**
          *
          * Adds a table with the specified number of rows and columns before or after the current paragraph.
@@ -2548,12 +2548,12 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocationString - The location of the table relative to the current Paragraph.
+         * @param insertLocation - The location of the table relative to the current Paragraph.
          * @param rowCount - The number of rows in the table.
          * @param columnCount - The number of columns in the table.
          * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
          */
-        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
+        insertTableAsSibling(insertLocation: "Before" | "After", rowCount: number, columnCount: number, values?: string[][]): OneNote.Table;
         /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
@@ -3183,10 +3183,10 @@ export declare namespace OneNote {
          *
          * [Api set: OneNoteApi 1.1]
          *
-         * @param insertLocationString - Where the new rows should be inserted relative to the current row.
+         * @param insertLocation - Where the new rows should be inserted relative to the current row.
          * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.
          */
-        insertRowAsSibling(insertLocationString: "Before" | "After", values?: string[]): OneNote.TableRow;
+        insertRowAsSibling(insertLocation: "Before" | "After", values?: string[]): OneNote.TableRow;
         /**
          *
          * Sets the shading color of all cells in the row.

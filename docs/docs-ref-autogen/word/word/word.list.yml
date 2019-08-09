@@ -194,14 +194,14 @@ items:
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'insertParagraph(paragraphText, insertLocationString)'
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: 'insertParagraph(paragraphText, insertLocation)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
+        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"):
         Word.Paragraph;
       return:
         type:
@@ -212,7 +212,7 @@ items:
           description: Required. The paragraph text to be inserted.
           type:
             - string
-        - id: insertLocationString
+        - id: insertLocation
           description: 'Required. The value can be ''Start'', ''End'', ''Before'', or ''After''.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
@@ -403,15 +403,15 @@ items:
       Sets the alignment of the bullet, number or picture at the specified level in the list.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'setLevelAlignment(level, alignmentString)'
-    fullName: 'setLevelAlignment(level, alignmentString)'
+    name: 'setLevelAlignment(level, alignment)'
+    fullName: 'setLevelAlignment(level, alignment)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setLevelAlignment(level: number, alignmentString: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" |
-        "Justified"): void;
+        setLevelAlignment(level: number, alignment: "Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"):
+        void;
       return:
         type:
           - void
@@ -421,7 +421,7 @@ items:
           description: Required. The level in the list.
           type:
             - number
-        - id: alignmentString
+        - id: alignment
           description: 'Required. The level alignment that can be ''Left'', ''Centered'', or ''Right''.'
           type:
             - '"Mixed" | "Unknown" | "Left" | "Centered" | "Right" | "Justified"'
@@ -463,15 +463,15 @@ items:
       Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'setLevelBullet(level, listBulletString, charCode, fontName)'
-    fullName: 'setLevelBullet(level, listBulletString, charCode, fontName)'
+    name: 'setLevelBullet(level, listBullet, charCode, fontName)'
+    fullName: 'setLevelBullet(level, listBullet, charCode, fontName)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setLevelBullet(level: number, listBulletString: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow"
-        | "Checkmark", charCode?: number, fontName?: string): void;
+        setLevelBullet(level: number, listBullet: "Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" |
+        "Checkmark", charCode?: number, fontName?: string): void;
       return:
         type:
           - void
@@ -481,7 +481,7 @@ items:
           description: Required. The level in the list.
           type:
             - number
-        - id: listBulletString
+        - id: listBullet
           description: Required. The bullet.
           type:
             - '"Custom" | "Solid" | "Hollow" | "Square" | "Diamonds" | "Arrow" | "Checkmark"'
@@ -564,15 +564,15 @@ items:
       Sets the numbering format at the specified level in the list.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'setLevelNumbering(level, listNumberingString, formatString)'
-    fullName: 'setLevelNumbering(level, listNumberingString, formatString)'
+    name: 'setLevelNumbering(level, listNumbering, formatString)'
+    fullName: 'setLevelNumbering(level, listNumbering, formatString)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        setLevelNumbering(level: number, listNumberingString: "None" | "Arabic" | "UpperRoman" | "LowerRoman" |
-        "UpperLetter" | "LowerLetter", formatString?: Array<string | number>): void;
+        setLevelNumbering(level: number, listNumbering: "None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter"
+        | "LowerLetter", formatString?: Array<string | number>): void;
       return:
         type:
           - void
@@ -582,7 +582,7 @@ items:
           description: Required. The level in the list.
           type:
             - number
-        - id: listNumberingString
+        - id: listNumbering
           description: Required. The ordinal format.
           type:
             - '"None" | "Arabic" | "UpperRoman" | "LowerRoman" | "UpperLetter" | "LowerLetter"'

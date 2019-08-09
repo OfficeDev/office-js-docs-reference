@@ -606,7 +606,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.Application#showToolbar:member(2)",
-                  "docComment": "/**\n * Sets the visibility of a specific toolbar in the application.\n *\n * [Api set: 1.1]\n *\n * @param idString - The type of the Toolbar\n *\n * @param show - Whether the toolbar is visibile or not.\n */\n",
+                  "docComment": "/**\n * Sets the visibility of a specific toolbar in the application.\n *\n * [Api set: 1.1]\n *\n * @param id - The type of the Toolbar\n *\n * @param show - Whether the toolbar is visibile or not.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -618,7 +618,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "idString"
+                      "text": "id"
                     },
                     {
                       "kind": "Content",
@@ -666,7 +666,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "idString",
+                      "parameterName": "id",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -17797,7 +17797,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "visio!Visio.ShapeView#addOverlay:member(2)",
-                  "docComment": "/**\n * Adds an overlay on top of the shape.\n *\n * [Api set: 1.1]\n *\n * @param OverlayTypeString - An Overlay Type. Can be 'Text' or 'Image'.\n *\n * @param Content - Content of Overlay.\n *\n * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.\n *\n * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.\n *\n * @param Width - Overlay Width.\n *\n * @param Height - Overlay Height.\n */\n",
+                  "docComment": "/**\n * Adds an overlay on top of the shape.\n *\n * [Api set: 1.1]\n *\n * @param OverlayType - An Overlay Type. Can be 'Text' or 'Image'.\n *\n * @param Content - Content of Overlay.\n *\n * @param OverlayHorizontalAlignment - Horizontal Alignment of Overlay. Can be 'Left', 'Center', or 'Right'.\n *\n * @param OverlayVerticalAlignment - Vertical Alignment of Overlay. Can be 'Top', 'Middle', 'Bottom'.\n *\n * @param Width - Overlay Width.\n *\n * @param Height - Overlay Height.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17809,7 +17809,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "OverlayTypeString"
+                      "text": "OverlayType"
                     },
                     {
                       "kind": "Content",
@@ -17933,7 +17933,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "OverlayTypeString",
+                      "parameterName": "OverlayType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5

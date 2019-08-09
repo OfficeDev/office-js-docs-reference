@@ -298,21 +298,21 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
-    fullName: 'sortByValues(sortByString, valuesHierarchy, pivotItemScope)'
+    name: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
+    fullName: 'sortByValues(sortBy, valuesHierarchy, pivotItemScope)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        sortByValues(sortByString: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy,
-        pivotItemScope?: Array<PivotItem | string>): void;
+        sortByValues(sortBy: "Ascending" | "Descending", valuesHierarchy: Excel.DataPivotHierarchy, pivotItemScope?:
+        Array<PivotItem | string>): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: sortByString
+        - id: sortBy
           description: Represents whether the sorting is done in an ascending or descending order.
           type:
             - '"Ascending" | "Descending"'

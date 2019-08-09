@@ -630,21 +630,19 @@ items:
       Sets the worksheet's page margins with units.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'setPrintMargins(unitString, marginOptions)'
-    fullName: 'setPrintMargins(unitString, marginOptions)'
+    name: 'setPrintMargins(unit, marginOptions)'
+    fullName: 'setPrintMargins(unit, marginOptions)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        setPrintMargins(unitString: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions):
-        void;
+      content: 'setPrintMargins(unit: "Points" | "Inches" | "Centimeters", marginOptions: Excel.PageLayoutMarginOptions): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: unitString
+        - id: unit
           description: Measurement unit for the margins provided.
           type:
             - '"Points" | "Inches" | "Centimeters"'

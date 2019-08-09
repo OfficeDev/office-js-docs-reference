@@ -181,14 +181,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'autoFill(destinationRange, autoFillTypeString)'
-    fullName: 'autoFill(destinationRange, autoFillTypeString)'
+    name: 'autoFill(destinationRange, autoFillType)'
+    fullName: 'autoFill(destinationRange, autoFillType)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        autoFill(destinationRange: Range | string, autoFillTypeString?: "FillDefault" | "FillCopy" | "FillSeries" |
+        autoFill(destinationRange: Range | string, autoFillType?: "FillDefault" | "FillCopy" | "FillSeries" |
         "FillFormats" | "FillValues" | "FillDays" | "FillWeekdays" | "FillMonths" | "FillYears" | "LinearTrend" |
         "GrowthTrend" | "FlashFill"): void;
       return:
@@ -200,7 +200,7 @@ items:
           description: The destination range to autofill.
           type:
             - Range | string
-        - id: autoFillTypeString
+        - id: autoFillType
           description: >-
             The type of autofill. Specifies how the destination range is to be filled, based on the contents of the
             current range. Default is "FillDefault".
@@ -265,19 +265,19 @@ items:
       Clear range values, format, fill, border, etc.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: clear(applyToString)
-    fullName: clear(applyToString)
+    name: clear(applyTo)
+    fullName: clear(applyTo)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'clear(applyToString?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
+      content: 'clear(applyTo?: "All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: applyToString
+        - id: applyTo
           description: Optional. Determines the type of clear action. See Excel.ClearApplyTo for details.
           type:
             - '"All" | "Formats" | "Contents" | "Hyperlinks" | "RemoveHyperlinks"'
@@ -444,14 +444,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
-    fullName: 'copyFrom(sourceRange, copyTypeString, skipBlanks, transpose)'
+    name: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
+    fullName: 'copyFrom(sourceRange, copyType, skipBlanks, transpose)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        copyFrom(sourceRange: Range | RangeAreas | string, copyTypeString?: "All" | "Formulas" | "Values" | "Formats",
+        copyFrom(sourceRange: Range | RangeAreas | string, copyType?: "All" | "Formulas" | "Values" | "Formats",
         skipBlanks?: boolean, transpose?: boolean): void;
       return:
         type:
@@ -464,7 +464,7 @@ items:
             outline form which can be created by removing full rows or columns from a rectangular range.
           type:
             - Range | RangeAreas | string
-        - id: copyTypeString
+        - id: copyType
           description: The type of cell data or formatting to copy over. Default is "All".
           type:
             - '"All" | "Formulas" | "Values" | "Formats"'
@@ -517,19 +517,19 @@ items:
       Deletes the cells associated with the range.
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: delete(shiftString)
-    fullName: delete(shiftString)
+    name: delete(shift)
+    fullName: delete(shift)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'delete(shiftString: "Up" | "Left"): void;'
+      content: 'delete(shift: "Up" | "Left"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: shiftString
+        - id: shift
           description: Specifies which way to shift the cells. See Excel.DeleteShiftDirection for details.
           type:
             - '"Up" | "Left"'
@@ -1217,14 +1217,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCells(cellTypeString, cellValueType)'
-    fullName: 'getSpecialCells(cellTypeString, cellValueType)'
+    name: 'getSpecialCells(cellType, cellValueType)'
+    fullName: 'getSpecialCells(cellType, cellValueType)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSpecialCells(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
+        getSpecialCells(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" | "Formulas" |
         "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" | "ErrorsLogical" |
         "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" | "ErrorsNumberText" | "Logical" |
         "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" | "NumbersText" | "Text"): Excel.RangeAreas;
@@ -1233,7 +1233,7 @@ items:
           - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
-        - id: cellTypeString
+        - id: cellType
           description: The type of cells to include.
           type:
             - >-
@@ -1288,14 +1288,14 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
-    fullName: 'getSpecialCellsOrNullObject(cellTypeString, cellValueType)'
+    name: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
+    fullName: 'getSpecialCellsOrNullObject(cellType, cellValueType)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getSpecialCellsOrNullObject(cellTypeString: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
+        getSpecialCellsOrNullObject(cellType: "ConditionalFormats" | "DataValidations" | "Blanks" | "Constants" |
         "Formulas" | "SameConditionalFormat" | "SameDataValidation" | "Visible", cellValueType?: "All" | "Errors" |
         "ErrorsLogical" | "ErrorsNumbers" | "ErrorsText" | "ErrorsLogicalNumber" | "ErrorsLogicalText" |
         "ErrorsNumberText" | "Logical" | "LogicalNumbers" | "LogicalText" | "LogicalNumbersText" | "Numbers" |
@@ -1305,7 +1305,7 @@ items:
           - 'excel!Excel.RangeAreas:class'
         description: ''
       parameters:
-        - id: cellTypeString
+        - id: cellType
           description: The type of cells to include.
           type:
             - >-
@@ -1482,19 +1482,19 @@ items:
 
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: insert(shiftString)
-    fullName: insert(shiftString)
+    name: insert(shift)
+    fullName: insert(shift)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insert(shiftString: "Down" | "Right"): Excel.Range;'
+      content: 'insert(shift: "Down" | "Right"): Excel.Range;'
       return:
         type:
           - 'excel!Excel.Range:class'
         description: ''
       parameters:
-        - id: shiftString
+        - id: shift
           description: Specifies which way to shift the cells. See Excel.InsertShiftDirection for details.
           type:
             - '"Down" | "Right"'

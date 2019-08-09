@@ -809,7 +809,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#getRange:member(2)",
-                  "docComment": "/**\n * Gets the whole body, or the starting or ending point of the body, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.\n */\n",
+                  "docComment": "/**\n * Gets the whole body, or the starting or ending point of the body, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -821,7 +821,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "rangeLocationString"
+                      "text": "rangeLocation"
                     },
                     {
                       "kind": "Content",
@@ -861,7 +861,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "rangeLocationString",
+                      "parameterName": "rangeLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -1010,7 +1010,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1022,7 +1022,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "breakTypeString"
+                      "text": "breakType"
                     },
                     {
                       "kind": "Content",
@@ -1070,7 +1070,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "breakTypeString",
+                      "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -1224,7 +1224,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1252,7 +1252,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -1299,7 +1299,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -1406,7 +1406,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the document.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1434,7 +1434,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -1481,7 +1481,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -1588,7 +1588,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the body at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the body.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1616,7 +1616,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -1663,7 +1663,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -1770,7 +1770,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1798,7 +1798,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -1845,7 +1845,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -1952,7 +1952,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1980,7 +1980,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -2027,7 +2027,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -2180,7 +2180,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Start' or 'End'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Start' or 'End'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Start' or 'End'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2224,7 +2224,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -2294,7 +2294,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
                         "endIndex": 13
@@ -2408,7 +2408,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts text into the body at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -2436,7 +2436,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -2483,7 +2483,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -3274,7 +3274,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Body#select:member(2)",
-                  "docComment": "/**\n * Selects the body and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects the body and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -3286,7 +3286,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -3318,7 +3318,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -5714,7 +5714,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#getRange:member(2)",
-                  "docComment": "/**\n * Gets the whole content control, or the starting or ending point of the content control, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocationString - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.\n */\n",
+                  "docComment": "/**\n * Gets the whole content control, or the starting or ending point of the content control, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocation - Optional. The range location can be 'Whole', 'Before', 'Start', 'End', 'After', or 'Content'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -5726,7 +5726,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "rangeLocationString"
+                      "text": "rangeLocation"
                     },
                     {
                       "kind": "Content",
@@ -5766,7 +5766,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "rangeLocationString",
+                      "parameterName": "rangeLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -6036,7 +6036,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. Type of break.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6048,7 +6048,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "breakTypeString"
+                      "text": "breakType"
                     },
                     {
                       "kind": "Content",
@@ -6096,7 +6096,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "breakTypeString",
+                      "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -6210,7 +6210,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6238,7 +6238,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -6285,7 +6285,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -6392,7 +6392,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts HTML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6420,7 +6420,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -6467,7 +6467,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -6574,7 +6574,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted in the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6602,7 +6602,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -6649,7 +6649,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -6756,7 +6756,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6784,7 +6784,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -6831,7 +6831,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -6938,7 +6938,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6966,7 +6966,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -7013,7 +7013,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -7166,7 +7166,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns into, or next to, a content control. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'. 'Before' and 'After' cannot be used with 'RichTextTable', 'RichTextTableRow' and 'RichTextTableCell' content controls.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7210,7 +7210,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -7280,7 +7280,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
                         "endIndex": 13
@@ -7394,7 +7394,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
+                  "docComment": "/**\n * Inserts text into the content control at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. The text to be inserted in to the content control.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -7422,7 +7422,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -7469,7 +7469,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -8362,7 +8362,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.ContentControl#select:member(2)",
-                  "docComment": "/**\n * Selects the content control. This causes Word to scroll to the selection.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects the content control. This causes Word to scroll to the selection.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -8374,7 +8374,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -8406,7 +8406,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -17360,7 +17360,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#getRange:member(2)",
-                  "docComment": "/**\n * Gets the picture, or the starting or ending point of the picture, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Gets the picture, or the starting or ending point of the picture, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17372,7 +17372,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "rangeLocationString"
+                      "text": "rangeLocation"
                     },
                     {
                       "kind": "Content",
@@ -17412,7 +17412,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "rangeLocationString",
+                      "parameterName": "rangeLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -17579,7 +17579,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17591,7 +17591,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "breakTypeString"
+                      "text": "breakType"
                     },
                     {
                       "kind": "Content",
@@ -17639,7 +17639,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "breakTypeString",
+                      "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -17793,7 +17793,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -17821,7 +17821,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -17868,7 +17868,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -17975,7 +17975,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18003,7 +18003,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -18050,7 +18050,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -18157,7 +18157,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts an inline picture at the specified location. The insertLocation value can be 'Replace', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18185,7 +18185,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -18232,7 +18232,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -18339,7 +18339,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18367,7 +18367,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -18414,7 +18414,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -18521,7 +18521,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18549,7 +18549,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -18596,7 +18596,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -18703,7 +18703,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -18731,7 +18731,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -18778,7 +18778,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -19402,7 +19402,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.InlinePicture#select:member(2)",
-                  "docComment": "/**\n * Selects the inline picture. This causes Word to scroll to the selection.\n *\n * [Api set: WordApi 1.2]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects the inline picture. This causes Word to scroll to the selection.\n *\n * [Api set: WordApi 1.2]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -19414,7 +19414,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -19446,7 +19446,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -44649,7 +44649,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -44677,7 +44677,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -44724,7 +44724,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -45169,7 +45169,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#setLevelAlignment:member(2)",
-                  "docComment": "/**\n * Sets the alignment of the bullet, number or picture at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param alignmentString - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.\n */\n",
+                  "docComment": "/**\n * Sets the alignment of the bullet, number or picture at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param alignment - Required. The level alignment that can be 'Left', 'Centered', or 'Right'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -45197,7 +45197,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "alignmentString"
+                      "text": "alignment"
                     },
                     {
                       "kind": "Content",
@@ -45236,7 +45236,7 @@
                       }
                     },
                     {
-                      "parameterName": "alignmentString",
+                      "parameterName": "alignment",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -45381,7 +45381,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#setLevelBullet:member(2)",
-                  "docComment": "/**\n * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param listBulletString - Required. The bullet.\n *\n * @param charCode - Optional. The bullet character's code value. Used only if the bullet is 'Custom'.\n *\n * @param fontName - Optional. The bullet's font name. Used only if the bullet is 'Custom'.\n */\n",
+                  "docComment": "/**\n * Sets the bullet format at the specified level in the list. If the bullet is 'Custom', the charCode is required.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param listBullet - Required. The bullet.\n *\n * @param charCode - Optional. The bullet character's code value. Used only if the bullet is 'Custom'.\n *\n * @param fontName - Optional. The bullet's font name. Used only if the bullet is 'Custom'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -45409,7 +45409,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "listBulletString"
+                      "text": "listBullet"
                     },
                     {
                       "kind": "Content",
@@ -45480,7 +45480,7 @@
                       }
                     },
                     {
-                      "parameterName": "listBulletString",
+                      "parameterName": "listBullet",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -45722,7 +45722,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.List#setLevelNumbering:member(2)",
-                  "docComment": "/**\n * Sets the numbering format at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param listNumberingString - Required. The ordinal format.\n *\n * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of [\"(\", level - 1, \".\", level, \")\"] can define the format of \"(2.c)\", where 2 is the parent's item number and c is this level's item number.\n */\n",
+                  "docComment": "/**\n * Sets the numbering format at the specified level in the list.\n *\n * [Api set: WordApi 1.3]\n *\n * @param level - Required. The level in the list.\n *\n * @param listNumbering - Required. The ordinal format.\n *\n * @param formatString - Optional. The numbering string format defined as an array of strings and/or integers. Each integer is a level of number type that is higher than or equal to this level. For example, an array of [\"(\", level - 1, \".\", level, \")\"] can define the format of \"(2.c)\", where 2 is the parent's item number and c is this level's item number.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -45750,7 +45750,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "listNumberingString"
+                      "text": "listNumbering"
                     },
                     {
                       "kind": "Content",
@@ -45809,7 +45809,7 @@
                       }
                     },
                     {
-                      "parameterName": "listNumberingString",
+                      "parameterName": "listNumbering",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -49245,7 +49245,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#getRange:member(2)",
-                  "docComment": "/**\n * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.\n */\n",
+                  "docComment": "/**\n * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -49257,7 +49257,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "rangeLocationString"
+                      "text": "rangeLocation"
                     },
                     {
                       "kind": "Content",
@@ -49297,7 +49297,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "rangeLocationString",
+                      "parameterName": "rangeLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -49533,7 +49533,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add to the document.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -49545,7 +49545,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "breakTypeString"
+                      "text": "breakType"
                     },
                     {
                       "kind": "Content",
@@ -49593,7 +49593,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "breakTypeString",
+                      "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -49747,7 +49747,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a document into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -49775,7 +49775,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -49822,7 +49822,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -49929,7 +49929,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -49957,7 +49957,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -50004,7 +50004,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -50111,7 +50111,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -50139,7 +50139,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -50186,7 +50186,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -50293,7 +50293,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted in the paragraph.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -50321,7 +50321,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -50368,7 +50368,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -50475,7 +50475,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -50503,7 +50503,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -50550,7 +50550,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -50703,7 +50703,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -50747,7 +50747,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -50817,7 +50817,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
                         "endIndex": 13
@@ -50931,7 +50931,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
+                  "docComment": "/**\n * Inserts text into the paragraph at the specified location. The insertLocation value can be 'Replace', 'Start', or 'End'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', or 'End'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -50959,7 +50959,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -51006,7 +51006,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -52171,7 +52171,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Paragraph#select:member(2)",
-                  "docComment": "/**\n * Selects and navigates the Word UI to the paragraph.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects and navigates the Word UI to the paragraph.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -52183,7 +52183,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -52215,7 +52215,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -54344,7 +54344,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#getRange:member(2)",
-                  "docComment": "/**\n * Clones the range, or gets the starting or ending point of the range as a new range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.\n */\n",
+                  "docComment": "/**\n * Clones the range, or gets the starting or ending point of the range as a new range.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -54356,7 +54356,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "rangeLocationString"
+                      "text": "rangeLocation"
                     },
                     {
                       "kind": "Content",
@@ -54396,7 +54396,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "rangeLocationString",
+                      "parameterName": "rangeLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -54662,7 +54662,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertBreak:member(2)",
-                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakTypeString - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param breakType - Required. The break type to add.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -54674,7 +54674,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "breakTypeString"
+                      "text": "breakType"
                     },
                     {
                       "kind": "Content",
@@ -54722,7 +54722,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "breakTypeString",
+                      "parameterName": "breakType",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -54876,7 +54876,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertFileFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a document at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param base64File - Required. The base64 encoded content of a .docx file.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -54904,7 +54904,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -54951,7 +54951,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -55058,7 +55058,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertHtml:member(2)",
-                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts HTML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param html - Required. The HTML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -55086,7 +55086,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -55133,7 +55133,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -55240,7 +55240,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertInlinePictureFromBase64:member(2)",
-                  "docComment": "/**\n * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a picture at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.2]\n *\n * @param base64EncodedImage - Required. The base64 encoded image to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -55268,7 +55268,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -55315,7 +55315,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -55422,7 +55422,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertOoxml:member(2)",
-                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts OOXML at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param ooxml - Required. The OOXML to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -55450,7 +55450,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -55497,7 +55497,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -55604,7 +55604,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -55632,7 +55632,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -55679,7 +55679,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -55832,7 +55832,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -55876,7 +55876,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -55946,7 +55946,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
                         "endIndex": 13
@@ -56060,7 +56060,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#insertText:member(2)",
-                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts text at the specified location. The insertLocation value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n *\n * [Api set: WordApi 1.1]\n *\n * @param text - Required. Text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Replace', 'Start', 'End', 'Before', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -56088,7 +56088,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -56135,7 +56135,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -57146,7 +57146,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Range#select:member(2)",
-                  "docComment": "/**\n * Selects and navigates the Word UI to the range.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects and navigates the Word UI to the range.\n *\n * [Api set: WordApi 1.1]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -57158,7 +57158,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -57190,7 +57190,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -60132,7 +60132,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#getFooter:member(2)",
-                  "docComment": "/**\n * Gets one of the section's footers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param typeString - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
+                  "docComment": "/**\n * Gets one of the section's footers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param type - Required. The type of footer to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -60144,7 +60144,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "typeString"
+                      "text": "type"
                     },
                     {
                       "kind": "Content",
@@ -60184,7 +60184,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "typeString",
+                      "parameterName": "type",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -60268,7 +60268,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Section#getHeader:member(2)",
-                  "docComment": "/**\n * Gets one of the section's headers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param typeString - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
+                  "docComment": "/**\n * Gets one of the section's headers.\n *\n * [Api set: WordApi 1.1]\n *\n * @param type - Required. The type of header to return. This value can be: 'Primary', 'FirstPage', or 'EvenPages'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -60280,7 +60280,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "typeString"
+                      "text": "type"
                     },
                     {
                       "kind": "Content",
@@ -60320,7 +60320,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "typeString",
+                      "parameterName": "type",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -65466,7 +65466,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#addColumns:member(2)",
-                  "docComment": "/**\n * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocationString - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.\n *\n * @param columnCount - Required. Number of columns to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Adds columns to the start or end of the table, using the first or last existing column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocation - Required. It can be 'Start' or 'End', corresponding to the appropriate side of the table.\n *\n * @param columnCount - Required. Number of columns to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -65478,7 +65478,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -65542,7 +65542,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -65686,7 +65686,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#addRows:member(2)",
-                  "docComment": "/**\n * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocationString - Required. It can be 'Start' or 'End'.\n *\n * @param rowCount - Required. Number of rows to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Adds rows to the start or end of the table, using the first or last existing row as a template. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocation - Required. It can be 'Start' or 'End'.\n *\n * @param rowCount - Required. Number of rows to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -65698,7 +65698,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -65770,7 +65770,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -66268,7 +66268,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getBorder:member(2)",
-                  "docComment": "/**\n * Gets the border style for the specified border.\n *\n * [Api set: WordApi 1.3]\n *\n * @param borderLocationString - Required. The border location.\n */\n",
+                  "docComment": "/**\n * Gets the border style for the specified border.\n *\n * [Api set: WordApi 1.3]\n *\n * @param borderLocation - Required. The border location.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -66280,7 +66280,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "borderLocationString"
+                      "text": "borderLocation"
                     },
                     {
                       "kind": "Content",
@@ -66320,7 +66320,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "borderLocationString",
+                      "parameterName": "borderLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -66582,7 +66582,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getCellPadding:member(2)",
-                  "docComment": "/**\n * Gets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n */\n",
+                  "docComment": "/**\n * Gets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -66594,7 +66594,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "cellPaddingLocationString"
+                      "text": "cellPaddingLocation"
                     },
                     {
                       "kind": "Content",
@@ -66638,7 +66638,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "cellPaddingLocationString",
+                      "parameterName": "cellPaddingLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -66962,7 +66962,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#getRange:member(2)",
-                  "docComment": "/**\n * Gets the range that contains this table, or the range at the start or end of the table.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocationString - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.\n */\n",
+                  "docComment": "/**\n * Gets the range that contains this table, or the range at the start or end of the table.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rangeLocation - Optional. The range location can be 'Whole', 'Start', 'End', or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -66974,7 +66974,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "rangeLocationString"
+                      "text": "rangeLocation"
                     },
                     {
                       "kind": "Content",
@@ -67014,7 +67014,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "rangeLocationString",
+                      "parameterName": "rangeLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -67233,7 +67233,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#insertParagraph:member(2)",
-                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n */\n",
+                  "docComment": "/**\n * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param paragraphText - Required. The paragraph text to be inserted.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -67261,7 +67261,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -67308,7 +67308,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
@@ -67461,7 +67461,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#insertTable:member(2)",
-                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocationString - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.\n *\n * [Api set: WordApi 1.3]\n *\n * @param rowCount - Required. The number of rows in the table.\n *\n * @param columnCount - Required. The number of columns in the table.\n *\n * @param insertLocation - Required. The value can be 'Before' or 'After'.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -67505,7 +67505,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -67575,7 +67575,7 @@
                       }
                     },
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 12,
                         "endIndex": 13
@@ -68475,7 +68475,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#select:member(2)",
-                  "docComment": "/**\n * Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.3]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.3]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -68487,7 +68487,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -68519,7 +68519,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -68777,7 +68777,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.Table#setCellPadding:member(2)",
-                  "docComment": "/**\n * Sets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n *\n * @param cellPadding - Required. The cell padding.\n */\n",
+                  "docComment": "/**\n * Sets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n *\n * @param cellPadding - Required. The cell padding.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -68789,7 +68789,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "cellPaddingLocationString"
+                      "text": "cellPaddingLocation"
                     },
                     {
                       "kind": "Content",
@@ -68837,7 +68837,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "cellPaddingLocationString",
+                      "parameterName": "cellPaddingLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -70383,7 +70383,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#getBorder:member(2)",
-                  "docComment": "/**\n * Gets the border style for the specified border.\n *\n * [Api set: WordApi 1.3]\n *\n * @param borderLocationString - Required. The border location.\n */\n",
+                  "docComment": "/**\n * Gets the border style for the specified border.\n *\n * [Api set: WordApi 1.3]\n *\n * @param borderLocation - Required. The border location.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -70395,7 +70395,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "borderLocationString"
+                      "text": "borderLocation"
                     },
                     {
                       "kind": "Content",
@@ -70435,7 +70435,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "borderLocationString",
+                      "parameterName": "borderLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -70523,7 +70523,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#getCellPadding:member(2)",
-                  "docComment": "/**\n * Gets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n */\n",
+                  "docComment": "/**\n * Gets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -70535,7 +70535,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "cellPaddingLocationString"
+                      "text": "cellPaddingLocation"
                     },
                     {
                       "kind": "Content",
@@ -70579,7 +70579,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "cellPaddingLocationString",
+                      "parameterName": "cellPaddingLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -70823,7 +70823,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#insertColumns:member(2)",
-                  "docComment": "/**\n * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocationString - Required. It can be 'Before' or 'After'.\n *\n * @param columnCount - Required. Number of columns to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Adds columns to the left or right of the cell, using the cell's column as a template. This is applicable to uniform tables. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocation - Required. It can be 'Before' or 'After'.\n *\n * @param columnCount - Required. Number of columns to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -70835,7 +70835,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -70899,7 +70899,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -71043,7 +71043,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#insertRows:member(2)",
-                  "docComment": "/**\n * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocationString - Required. It can be 'Before' or 'After'.\n *\n * @param rowCount - Required. Number of rows to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Inserts rows above or below the cell, using the cell's row as a template. The string values, if specified, are set in the newly inserted rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocation - Required. It can be 'Before' or 'After'.\n *\n * @param rowCount - Required. Number of rows to add.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -71055,7 +71055,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -71127,7 +71127,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -71741,7 +71741,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableCell#setCellPadding:member(2)",
-                  "docComment": "/**\n * Sets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n *\n * @param cellPadding - Required. The cell padding.\n */\n",
+                  "docComment": "/**\n * Sets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n *\n * @param cellPadding - Required. The cell padding.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -71753,7 +71753,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "cellPaddingLocationString"
+                      "text": "cellPaddingLocation"
                     },
                     {
                       "kind": "Content",
@@ -71801,7 +71801,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "cellPaddingLocationString",
+                      "parameterName": "cellPaddingLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -73548,7 +73548,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#getBorder:member(2)",
-                  "docComment": "/**\n * Gets the border style of the cells in the row.\n *\n * [Api set: WordApi 1.3]\n *\n * @param borderLocationString - Required. The border location.\n */\n",
+                  "docComment": "/**\n * Gets the border style of the cells in the row.\n *\n * [Api set: WordApi 1.3]\n *\n * @param borderLocation - Required. The border location.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -73560,7 +73560,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "borderLocationString"
+                      "text": "borderLocation"
                     },
                     {
                       "kind": "Content",
@@ -73600,7 +73600,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "borderLocationString",
+                      "parameterName": "borderLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -73688,7 +73688,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#getCellPadding:member(2)",
-                  "docComment": "/**\n * Gets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n */\n",
+                  "docComment": "/**\n * Gets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -73700,7 +73700,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "cellPaddingLocationString"
+                      "text": "cellPaddingLocation"
                     },
                     {
                       "kind": "Content",
@@ -73744,7 +73744,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "cellPaddingLocationString",
+                      "parameterName": "cellPaddingLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -73996,7 +73996,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#insertRows:member(2)",
-                  "docComment": "/**\n * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocationString - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.\n *\n * @param rowCount - Required. Number of rows to add\n *\n * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.\n */\n",
+                  "docComment": "/**\n * Inserts rows using this row as a template. If values are specified, inserts the values into the new rows.\n *\n * [Api set: WordApi 1.3]\n *\n * @param insertLocation - Required. Where the new rows should be inserted, relative to the current row. It can be 'Before' or 'After'.\n *\n * @param rowCount - Required. Number of rows to add\n *\n * @param values - Optional. Strings to insert in the new rows, specified as a 2D array. The number of cells in each row must not exceed the number of cells in the existing row.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -74008,7 +74008,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -74080,7 +74080,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -74689,7 +74689,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#select:member(2)",
-                  "docComment": "/**\n * Selects the row and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.3]\n *\n * @param selectionModeString - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
+                  "docComment": "/**\n * Selects the row and navigates the Word UI to it.\n *\n * [Api set: WordApi 1.3]\n *\n * @param selectionMode - Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -74701,7 +74701,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "selectionModeString"
+                      "text": "selectionMode"
                     },
                     {
                       "kind": "Content",
@@ -74733,7 +74733,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "selectionModeString",
+                      "parameterName": "selectionMode",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -74991,7 +74991,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "word!Word.TableRow#setCellPadding:member(2)",
-                  "docComment": "/**\n * Sets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocationString - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n *\n * @param cellPadding - Required. The cell padding.\n */\n",
+                  "docComment": "/**\n * Sets cell padding in points.\n *\n * [Api set: WordApi 1.3]\n *\n * @param cellPaddingLocation - Required. The cell padding location can be 'Top', 'Left', 'Bottom', or 'Right'.\n *\n * @param cellPadding - Required. The cell padding.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -75003,7 +75003,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "cellPaddingLocationString"
+                      "text": "cellPaddingLocation"
                     },
                     {
                       "kind": "Content",
@@ -75051,7 +75051,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "cellPaddingLocationString",
+                      "parameterName": "cellPaddingLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5

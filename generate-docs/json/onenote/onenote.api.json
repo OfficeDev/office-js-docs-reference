@@ -31468,7 +31468,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Page#insertPageAsSibling:member(2)",
-                  "docComment": "/**\n * Inserts a new page before or after the current page.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param locationString - The location of the new page relative to the current page.\n *\n * @param title - The title of the new page.\n */\n",
+                  "docComment": "/**\n * Inserts a new page before or after the current page.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param location - The location of the new page relative to the current page.\n *\n * @param title - The title of the new page.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -31480,7 +31480,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "locationString"
+                      "text": "location"
                     },
                     {
                       "kind": "Content",
@@ -31536,7 +31536,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "locationString",
+                      "parameterName": "location",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -34761,7 +34761,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Paragraph#addNoteTag:member(2)",
-                  "docComment": "/**\n * Add NoteTag to the paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param typeString - The type of the NoteTag.\n *\n * @param status - The status of the NoteTag.\n */\n",
+                  "docComment": "/**\n * Add NoteTag to the paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param type - The type of the NoteTag.\n *\n * @param status - The status of the NoteTag.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -34773,7 +34773,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "typeString"
+                      "text": "type"
                     },
                     {
                       "kind": "Content",
@@ -34829,7 +34829,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "typeString",
+                      "parameterName": "type",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -35175,7 +35175,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Paragraph#insertHtmlAsSibling:member(2)",
-                  "docComment": "/**\n * Inserts the specified HTML content\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of new contents relative to the current Paragraph.\n *\n * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.\n */\n",
+                  "docComment": "/**\n * Inserts the specified HTML content\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of new contents relative to the current Paragraph.\n *\n * @param html - An HTML string that describes the visual presentation of the content. See {@link https://docs.microsoft.com/office/dev/add-ins/onenote/onenote-add-ins-page-content#supported-html | Supported HTML} for the OneNote add-ins JavaScript API.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -35187,7 +35187,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -35235,7 +35235,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -35395,7 +35395,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Paragraph#insertImageAsSibling:member(2)",
-                  "docComment": "/**\n * Inserts the image at the specified insert location..\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of the table relative to the current Paragraph.\n *\n * @param base64EncodedImage - HTML string to append.\n *\n * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.\n *\n * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.\n */\n",
+                  "docComment": "/**\n * Inserts the image at the specified insert location..\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of the table relative to the current Paragraph.\n *\n * @param base64EncodedImage - HTML string to append.\n *\n * @param width - Optional. Width in the unit of Points. The default value is null and image width will be respected.\n *\n * @param height - Optional. Height in the unit of Points. The default value is null and image height will be respected.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -35407,7 +35407,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -35495,7 +35495,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -35623,7 +35623,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Paragraph#insertRichTextAsSibling:member(2)",
-                  "docComment": "/**\n * Inserts the paragraph text at the specifiec insert location.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of the table relative to the current Paragraph.\n *\n * @param paragraphText - HTML string to append.\n */\n",
+                  "docComment": "/**\n * Inserts the paragraph text at the specifiec insert location.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of the table relative to the current Paragraph.\n *\n * @param paragraphText - HTML string to append.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -35635,7 +35635,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -35691,7 +35691,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -35851,7 +35851,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Paragraph#insertTableAsSibling:member(2)",
-                  "docComment": "/**\n * Adds a table with the specified number of rows and columns before or after the current paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - The location of the table relative to the current Paragraph.\n *\n * @param rowCount - The number of rows in the table.\n *\n * @param columnCount - The number of columns in the table.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
+                  "docComment": "/**\n * Adds a table with the specified number of rows and columns before or after the current paragraph.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - The location of the table relative to the current Paragraph.\n *\n * @param rowCount - The number of rows in the table.\n *\n * @param columnCount - The number of columns in the table.\n *\n * @param values - Optional 2D array. Cells are filled if the corresponding strings are specified in the array.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -35863,7 +35863,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -35951,7 +35951,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -39520,7 +39520,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.Section#insertSectionAsSibling:member(2)",
-                  "docComment": "/**\n * Inserts a new section before or after the current section.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param locationString - The location of the new section relative to the current section.\n *\n * @param title - The name of the new section.\n */\n",
+                  "docComment": "/**\n * Inserts a new section before or after the current section.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param location - The location of the new section relative to the current section.\n *\n * @param title - The name of the new section.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -39532,7 +39532,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "locationString"
+                      "text": "location"
                     },
                     {
                       "kind": "Content",
@@ -39588,7 +39588,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "locationString",
+                      "parameterName": "location",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5
@@ -45997,7 +45997,7 @@
                 {
                   "kind": "Method",
                   "canonicalReference": "onenote!OneNote.TableRow#insertRowAsSibling:member(2)",
-                  "docComment": "/**\n * Inserts a row before or after the current row.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocationString - Where the new rows should be inserted relative to the current row.\n *\n * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.\n */\n",
+                  "docComment": "/**\n * Inserts a row before or after the current row.\n *\n * [Api set: OneNoteApi 1.1]\n *\n * @param insertLocation - Where the new rows should be inserted relative to the current row.\n *\n * @param values - Strings to insert in the new row, specified as an array. Must not have more cells than in the current row. Optional.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -46009,7 +46009,7 @@
                     },
                     {
                       "kind": "Reference",
-                      "text": "insertLocationString"
+                      "text": "insertLocation"
                     },
                     {
                       "kind": "Content",
@@ -46065,7 +46065,7 @@
                   "overloadIndex": 2,
                   "parameters": [
                     {
-                      "parameterName": "insertLocationString",
+                      "parameterName": "insertLocation",
                       "parameterTypeTokenRange": {
                         "startIndex": 4,
                         "endIndex": 5

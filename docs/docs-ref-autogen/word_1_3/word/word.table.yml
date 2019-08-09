@@ -122,21 +122,21 @@ items:
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'addColumns(insertLocationString, columnCount, values)'
-    fullName: 'addColumns(insertLocationString, columnCount, values)'
+    name: 'addColumns(insertLocation, columnCount, values)'
+    fullName: 'addColumns(insertLocation, columnCount, values)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addColumns(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?:
+        addColumns(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", columnCount: number, values?:
         string[][]): void;
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: 'Required. It can be ''Start'' or ''End'', corresponding to the appropriate side of the table.'
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
@@ -186,21 +186,21 @@ items:
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'addRows(insertLocationString, rowCount, values)'
-    fullName: 'addRows(insertLocationString, rowCount, values)'
+    name: 'addRows(insertLocation, rowCount, values)'
+    fullName: 'addRows(insertLocation, rowCount, values)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addRows(insertLocationString: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
+        addRows(insertLocation: "Before" | "After" | "Start" | "End" | "Replace", rowCount: number, values?:
         string[][]): Word.TableRowCollection;
       return:
         type:
           - 'word!Word.TableRowCollection:class'
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: Required. It can be 'Start' or 'End'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
@@ -396,21 +396,21 @@ items:
       Gets the border style for the specified border.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getBorder(borderLocationString)
-    fullName: getBorder(borderLocationString)
+    name: getBorder(borderLocation)
+    fullName: getBorder(borderLocation)
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        getBorder(borderLocationString: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" |
-        "Inside" | "Outside" | "All"): Word.TableBorder;
+        getBorder(borderLocation: "Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside"
+        | "Outside" | "All"): Word.TableBorder;
       return:
         type:
           - 'word!Word.TableBorder:class'
         description: ''
       parameters:
-        - id: borderLocationString
+        - id: borderLocation
           description: Required. The border location.
           type:
             - '"Top" | "Left" | "Bottom" | "Right" | "InsideHorizontal" | "InsideVertical" | "Inside" | "Outside" | "All"'
@@ -492,21 +492,19 @@ items:
       Gets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getCellPadding(cellPaddingLocationString)
-    fullName: getCellPadding(cellPaddingLocationString)
+    name: getCellPadding(cellPaddingLocation)
+    fullName: getCellPadding(cellPaddingLocation)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right"):
-        OfficeExtension.ClientResult<number>;
+      content: 'getCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right"): OfficeExtension.ClientResult<number>;'
       return:
         type:
           - OfficeExtension.ClientResult<number>
         description: ''
       parameters:
-        - id: cellPaddingLocationString
+        - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - '"Top" | "Left" | "Bottom" | "Right"'
@@ -632,19 +630,19 @@ items:
       Gets the range that contains this table, or the range at the start or end of the table.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: getRange(rangeLocationString)
-    fullName: getRange(rangeLocationString)
+    name: getRange(rangeLocation)
+    fullName: getRange(rangeLocation)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'getRange(rangeLocationString?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
+      content: 'getRange(rangeLocation?: "Whole" | "Start" | "End" | "Before" | "After" | "Content"): Word.Range;'
       return:
         type:
           - 'word!Word.Range:class'
         description: ''
       parameters:
-        - id: rangeLocationString
+        - id: rangeLocation
           description: 'Optional. The range location can be ''Whole'', ''Start'', ''End'', or ''After''.'
           type:
             - '"Whole" | "Start" | "End" | "Before" | "After" | "Content"'
@@ -726,14 +724,14 @@ items:
       Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'insertParagraph(paragraphText, insertLocationString)'
-    fullName: 'insertParagraph(paragraphText, insertLocationString)'
+    name: 'insertParagraph(paragraphText, insertLocation)'
+    fullName: 'insertParagraph(paragraphText, insertLocation)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        insertParagraph(paragraphText: string, insertLocationString: "Before" | "After" | "Start" | "End" | "Replace"):
+        insertParagraph(paragraphText: string, insertLocation: "Before" | "After" | "Start" | "End" | "Replace"):
         Word.Paragraph;
       return:
         type:
@@ -744,7 +742,7 @@ items:
           description: Required. The paragraph text to be inserted.
           type:
             - string
-        - id: insertLocationString
+        - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
@@ -792,14 +790,14 @@ items:
 
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'insertTable(rowCount, columnCount, insertLocationString, values)'
-    fullName: 'insertTable(rowCount, columnCount, insertLocationString, values)'
+    name: 'insertTable(rowCount, columnCount, insertLocation, values)'
+    fullName: 'insertTable(rowCount, columnCount, insertLocation, values)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        insertTable(rowCount: number, columnCount: number, insertLocationString: "Before" | "After" | "Start" | "End" |
+        insertTable(rowCount: number, columnCount: number, insertLocation: "Before" | "After" | "Start" | "End" |
         "Replace", values?: string[][]): Word.Table;
       return:
         type:
@@ -814,7 +812,7 @@ items:
           description: Required. The number of columns in the table.
           type:
             - number
-        - id: insertLocationString
+        - id: insertLocation
           description: Required. The value can be 'Before' or 'After'.
           type:
             - '"Before" | "After" | "Start" | "End" | "Replace"'
@@ -1142,19 +1140,19 @@ items:
       Selects the table, or the position at the start or end of the table, and navigates the Word UI to it.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: select(selectionModeString)
-    fullName: select(selectionModeString)
+    name: select(selectionMode)
+    fullName: select(selectionMode)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'select(selectionModeString?: "Select" | "Start" | "End"): void;'
+      content: 'select(selectionMode?: "Select" | "Start" | "End"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: selectionModeString
+        - id: selectionMode
           description: 'Optional. The selection mode can be ''Select'', ''Start'', or ''End''. ''Select'' is the default.'
           type:
             - '"Select" | "Start" | "End"'
@@ -1236,19 +1234,19 @@ items:
       Sets cell padding in points.
 
       \[ [API set: WordApi 1.3](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
-    name: 'setCellPadding(cellPaddingLocationString, cellPadding)'
-    fullName: 'setCellPadding(cellPaddingLocationString, cellPadding)'
+    name: 'setCellPadding(cellPaddingLocation, cellPadding)'
+    fullName: 'setCellPadding(cellPaddingLocation, cellPadding)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setCellPadding(cellPaddingLocationString: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
+      content: 'setCellPadding(cellPaddingLocation: "Top" | "Left" | "Bottom" | "Right", cellPadding: number): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: cellPaddingLocationString
+        - id: cellPaddingLocation
           description: 'Required. The cell padding location can be ''Top'', ''Left'', ''Bottom'', or ''Right''.'
           type:
             - '"Top" | "Left" | "Bottom" | "Right"'

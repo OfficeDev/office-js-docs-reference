@@ -77,14 +77,14 @@ items:
       Add NoteTag to the paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'addNoteTag(typeString, status)'
-    fullName: 'addNoteTag(typeString, status)'
+    name: 'addNoteTag(type, status)'
+    fullName: 'addNoteTag(type, status)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addNoteTag(typeString: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
+        addNoteTag(type: "Unknown" | "ToDo" | "Important" | "Question" | "Contact" | "Address" | "PhoneNumber" |
         "Website" | "Idea" | "Critical" | "ToDoPriority1" | "ToDoPriority2", status: "Unknown" | "Normal" | "Completed"
         | "Disabled" | "OutlookTask" | "TaskNotSyncedYet" | "TaskRemoved"): OneNote.NoteTag;
       return:
@@ -92,7 +92,7 @@ items:
           - 'onenote!OneNote.NoteTag:class'
         description: ''
       parameters:
-        - id: typeString
+        - id: type
           description: The type of the NoteTag.
           type:
             - >-
@@ -226,19 +226,19 @@ items:
       Inserts the specified HTML content
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertHtmlAsSibling(insertLocationString, html)'
-    fullName: 'insertHtmlAsSibling(insertLocationString, html)'
+    name: 'insertHtmlAsSibling(insertLocation, html)'
+    fullName: 'insertHtmlAsSibling(insertLocation, html)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insertHtmlAsSibling(insertLocationString: "Before" | "After", html: string): void;'
+      content: 'insertHtmlAsSibling(insertLocation: "Before" | "After", html: string): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of new contents relative to the current Paragraph.
           type:
             - '"Before" | "After"'
@@ -289,21 +289,21 @@ items:
       Inserts the image at the specified insert location..
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
-    fullName: 'insertImageAsSibling(insertLocationString, base64EncodedImage, width, height)'
+    name: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
+    fullName: 'insertImageAsSibling(insertLocation, base64EncodedImage, width, height)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        insertImageAsSibling(insertLocationString: "Before" | "After", base64EncodedImage: string, width: number,
-        height: number): OneNote.Image;
+        insertImageAsSibling(insertLocation: "Before" | "After", base64EncodedImage: string, width: number, height:
+        number): OneNote.Image;
       return:
         type:
           - 'onenote!OneNote.Image:class'
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
             - '"Before" | "After"'
@@ -349,19 +349,19 @@ items:
       Inserts the paragraph text at the specifiec insert location.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertRichTextAsSibling(insertLocationString, paragraphText)'
-    fullName: 'insertRichTextAsSibling(insertLocationString, paragraphText)'
+    name: 'insertRichTextAsSibling(insertLocation, paragraphText)'
+    fullName: 'insertRichTextAsSibling(insertLocation, paragraphText)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insertRichTextAsSibling(insertLocationString: "Before" | "After", paragraphText: string): OneNote.RichText;'
+      content: 'insertRichTextAsSibling(insertLocation: "Before" | "After", paragraphText: string): OneNote.RichText;'
       return:
         type:
           - 'onenote!OneNote.RichText:class'
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
             - '"Before" | "After"'
@@ -409,21 +409,21 @@ items:
       Adds a table with the specified number of rows and columns before or after the current paragraph.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertTableAsSibling(insertLocationString, rowCount, columnCount, values)'
-    fullName: 'insertTableAsSibling(insertLocationString, rowCount, columnCount, values)'
+    name: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
+    fullName: 'insertTableAsSibling(insertLocation, rowCount, columnCount, values)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        insertTableAsSibling(insertLocationString: "Before" | "After", rowCount: number, columnCount: number, values?:
+        insertTableAsSibling(insertLocation: "Before" | "After", rowCount: number, columnCount: number, values?:
         string[][]): OneNote.Table;
       return:
         type:
           - 'onenote!OneNote.Table:class'
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: The location of the table relative to the current Paragraph.
           type:
             - '"Before" | "After"'

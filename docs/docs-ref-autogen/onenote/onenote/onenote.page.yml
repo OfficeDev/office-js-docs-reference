@@ -303,19 +303,19 @@ items:
       Inserts a new page before or after the current page.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertPageAsSibling(locationString, title)'
-    fullName: 'insertPageAsSibling(locationString, title)'
+    name: 'insertPageAsSibling(location, title)'
+    fullName: 'insertPageAsSibling(location, title)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insertPageAsSibling(locationString: "Before" | "After", title: string): OneNote.Page;'
+      content: 'insertPageAsSibling(location: "Before" | "After", title: string): OneNote.Page;'
       return:
         type:
           - 'onenote!OneNote.Page:class'
         description: ''
       parameters:
-        - id: locationString
+        - id: location
           description: The location of the new page relative to the current page.
           type:
             - '"Before" | "After"'

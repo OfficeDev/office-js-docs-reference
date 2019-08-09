@@ -137,19 +137,19 @@ items:
       Inserts a row before or after the current row.
 
       \[ [API set: OneNoteApi 1.1](/office/dev/add-ins/reference/requirement-sets/onenote-api-requirement-sets) \]
-    name: 'insertRowAsSibling(insertLocationString, values)'
-    fullName: 'insertRowAsSibling(insertLocationString, values)'
+    name: 'insertRowAsSibling(insertLocation, values)'
+    fullName: 'insertRowAsSibling(insertLocation, values)'
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'insertRowAsSibling(insertLocationString: "Before" | "After", values?: string[]): OneNote.TableRow;'
+      content: 'insertRowAsSibling(insertLocation: "Before" | "After", values?: string[]): OneNote.TableRow;'
       return:
         type:
           - 'onenote!OneNote.TableRow:class'
         description: ''
       parameters:
-        - id: insertLocationString
+        - id: insertLocation
           description: Where the new rows should be inserted relative to the current row.
           type:
             - '"Before" | "After"'

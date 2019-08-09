@@ -62,15 +62,15 @@ items:
       Perform a sort operation.
 
       \[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
-    fullName: 'apply(fields, matchCase, hasHeaders, orientationString, method)'
+    name: 'apply(fields, matchCase, hasHeaders, orientation, method)'
+    fullName: 'apply(fields, matchCase, hasHeaders, orientation, method)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientationString?: "Rows" |
-        "Columns", method?: "PinYin" | "StrokeCount"): void;
+        apply(fields: Excel.SortField[], matchCase?: boolean, hasHeaders?: boolean, orientation?: "Rows" | "Columns",
+        method?: "PinYin" | "StrokeCount"): void;
       return:
         type:
           - void
@@ -88,7 +88,7 @@ items:
           description: Optional. Whether the range has a header.
           type:
             - boolean
-        - id: orientationString
+        - id: orientation
           description: Optional. Whether the operation is sorting rows or columns.
           type:
             - '"Rows" | "Columns"'

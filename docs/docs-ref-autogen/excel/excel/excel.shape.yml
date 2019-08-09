@@ -307,21 +307,19 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: getAsImage(formatString)
-    fullName: getAsImage(formatString)
+    name: getAsImage(format)
+    fullName: getAsImage(format)
     langs:
       - typeScript
     type: method
     syntax:
-      content: >-
-        getAsImage(formatString: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"):
-        OfficeExtension.ClientResult<string>;
+      content: 'getAsImage(format: "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"): OfficeExtension.ClientResult<string>;'
       return:
         type:
           - OfficeExtension.ClientResult<string>
         description: ''
       parameters:
-        - id: formatString
+        - id: format
           description: Specifies the format of the image.
           type:
             - '"UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"'
@@ -756,15 +754,15 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
-    fullName: 'scaleHeight(scaleFactor, scaleTypeString, scaleFrom)'
+    name: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleHeight(scaleFactor, scaleType, scaleFrom)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        scaleHeight(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
-        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleHeight(scaleFactor: number, scaleType: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" |
+        "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
       return:
         type:
           - void
@@ -774,7 +772,7 @@ items:
           description: Specifies the ratio between the height of the shape after you resize it and the current or original height.
           type:
             - number
-        - id: scaleTypeString
+        - id: scaleType
           description: >-
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
@@ -830,15 +828,15 @@ items:
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
-    fullName: 'scaleWidth(scaleFactor, scaleTypeString, scaleFrom)'
+    name: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
+    fullName: 'scaleWidth(scaleFactor, scaleType, scaleFrom)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        scaleWidth(scaleFactor: number, scaleTypeString: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft"
-        | "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
+        scaleWidth(scaleFactor: number, scaleType: "CurrentSize" | "OriginalSize", scaleFrom?: "ScaleFromTopLeft" |
+        "ScaleFromMiddle" | "ScaleFromBottomRight"): void;
       return:
         type:
           - void
@@ -848,7 +846,7 @@ items:
           description: Specifies the ratio between the width of the shape after you resize it and the current or original width.
           type:
             - number
-        - id: scaleTypeString
+        - id: scaleType
           description: >-
             Specifies whether the shape is scaled relative to its original or current size. The original size scaling
             option only works for images.
@@ -936,19 +934,19 @@ items:
       Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
-    name: setZOrder(positionString)
-    fullName: setZOrder(positionString)
+    name: setZOrder(position)
+    fullName: setZOrder(position)
     langs:
       - typeScript
     type: method
     syntax:
-      content: 'setZOrder(positionString: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
+      content: 'setZOrder(position: "BringToFront" | "BringForward" | "SendToBack" | "SendBackward"): void;'
       return:
         type:
           - void
         description: ''
       parameters:
-        - id: positionString
+        - id: position
           description: >-
             Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for
             details.

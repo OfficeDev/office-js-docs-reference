@@ -74,14 +74,14 @@ items:
       Adds an overlay on top of the shape.
 
       \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
-    name: 'addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
-    fullName: 'addOverlay(OverlayTypeString, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
+    name: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
+    fullName: 'addOverlay(OverlayType, Content, OverlayHorizontalAlignment, OverlayVerticalAlignment, Width, Height)'
     langs:
       - typeScript
     type: method
     syntax:
       content: >-
-        addOverlay(OverlayTypeString: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" |
+        addOverlay(OverlayType: "Text" | "Image" | "Html", Content: string, OverlayHorizontalAlignment: "Left" |
         "Center" | "Right", OverlayVerticalAlignment: "Top" | "Middle" | "Bottom", Width: number, Height: number):
         OfficeExtension.ClientResult<number>;
       return:
@@ -89,7 +89,7 @@ items:
           - OfficeExtension.ClientResult<number>
         description: ''
       parameters:
-        - id: OverlayTypeString
+        - id: OverlayType
           description: An Overlay Type. Can be 'Text' or 'Image'.
           type:
             - '"Text" | "Image" | "Html"'
