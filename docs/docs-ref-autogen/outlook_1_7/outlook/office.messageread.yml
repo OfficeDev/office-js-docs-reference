@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MessageRead
+  - uid: outlook.Office.MessageRead
     summary: >-
-      The message read mode of [Office.context.mailbox.item](xref:Outlook.Office.Item)<!-- -->.
+      The message read mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,43 +15,43 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Message
-      - Outlook.Office.ItemRead
-    package: Outlook
+      - outlook.Office.Message
+      - outlook.Office.ItemRead
+    package: outlook
     children:
-      - Outlook.Office.MessageRead.addHandlerAsync
-      - Outlook.Office.MessageRead.addHandlerAsync_1
-      - Outlook.Office.MessageRead.displayReplyAllForm
-      - Outlook.Office.MessageRead.displayReplyForm
-      - Outlook.Office.MessageRead.getEntities
-      - Outlook.Office.MessageRead.getEntitiesByType
-      - Outlook.Office.MessageRead.getFilteredEntitiesByName
-      - Outlook.Office.MessageRead.getRegExMatches
-      - Outlook.Office.MessageRead.getRegExMatchesByName
-      - Outlook.Office.MessageRead.getSelectedEntities
-      - Outlook.Office.MessageRead.getSelectedRegExMatches
-      - Outlook.Office.MessageRead.loadCustomPropertiesAsync
-      - Outlook.Office.MessageRead.removeHandlerAsync
-      - Outlook.Office.MessageRead.removeHandlerAsync_1
-      - Outlook.Office.MessageRead.attachments
-      - Outlook.Office.MessageRead.body
-      - Outlook.Office.MessageRead.cc
-      - Outlook.Office.MessageRead.conversationId
-      - Outlook.Office.MessageRead.dateTimeCreated
-      - Outlook.Office.MessageRead.dateTimeModified
-      - Outlook.Office.MessageRead.from
-      - Outlook.Office.MessageRead.internetMessageId
-      - Outlook.Office.MessageRead.itemClass
-      - Outlook.Office.MessageRead.itemId
-      - Outlook.Office.MessageRead.itemType
-      - Outlook.Office.MessageRead.normalizedSubject
-      - Outlook.Office.MessageRead.notificationMessages
-      - Outlook.Office.MessageRead.recurrence
-      - Outlook.Office.MessageRead.sender
-      - Outlook.Office.MessageRead.seriesId
-      - Outlook.Office.MessageRead.subject
-      - Outlook.Office.MessageRead.to
-  - uid: Outlook.Office.MessageRead.addHandlerAsync
+      - outlook.Office.MessageRead.addHandlerAsync
+      - outlook.Office.MessageRead.addHandlerAsync_1
+      - outlook.Office.MessageRead.displayReplyAllForm
+      - outlook.Office.MessageRead.displayReplyForm
+      - outlook.Office.MessageRead.getEntities
+      - outlook.Office.MessageRead.getEntitiesByType
+      - outlook.Office.MessageRead.getFilteredEntitiesByName
+      - outlook.Office.MessageRead.getRegExMatches
+      - outlook.Office.MessageRead.getRegExMatchesByName
+      - outlook.Office.MessageRead.getSelectedEntities
+      - outlook.Office.MessageRead.getSelectedRegExMatches
+      - outlook.Office.MessageRead.loadCustomPropertiesAsync
+      - outlook.Office.MessageRead.removeHandlerAsync
+      - outlook.Office.MessageRead.removeHandlerAsync_1
+      - outlook.Office.MessageRead.attachments
+      - outlook.Office.MessageRead.body
+      - outlook.Office.MessageRead.cc
+      - outlook.Office.MessageRead.conversationId
+      - outlook.Office.MessageRead.dateTimeCreated
+      - outlook.Office.MessageRead.dateTimeModified
+      - outlook.Office.MessageRead.from
+      - outlook.Office.MessageRead.internetMessageId
+      - outlook.Office.MessageRead.itemClass
+      - outlook.Office.MessageRead.itemId
+      - outlook.Office.MessageRead.itemType
+      - outlook.Office.MessageRead.normalizedSubject
+      - outlook.Office.MessageRead.notificationMessages
+      - outlook.Office.MessageRead.recurrence
+      - outlook.Office.MessageRead.sender
+      - outlook.Office.MessageRead.seriesId
+      - outlook.Office.MessageRead.subject
+      - outlook.Office.MessageRead.to
+  - uid: outlook.Office.MessageRead.addHandlerAsync
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -103,7 +103,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageRead.addHandlerAsync_1
+  - uid: outlook.Office.MessageRead.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -149,7 +149,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageRead.displayReplyAllForm
+  - uid: outlook.Office.MessageRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
       attendees of the selected appointment.
@@ -284,7 +284,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -294,7 +294,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageRead.displayReplyForm
+  - uid: outlook.Office.MessageRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
@@ -427,7 +427,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -437,7 +437,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageRead.getEntities
+  - uid: outlook.Office.MessageRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
 
@@ -472,9 +472,9 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Outlook.Office.Entities
+          - outlook.Office.Entities
         description: ''
-  - uid: Outlook.Office.MessageRead.getEntitiesByType
+  - uid: outlook.Office.MessageRead.getEntitiesByType
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
@@ -547,7 +547,7 @@ items:
           description: One of the EntityType enumeration values.
           type:
             - MailboxEnums.EntityType | string
-  - uid: Outlook.Office.MessageRead.getFilteredEntitiesByName
+  - uid: outlook.Office.MessageRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
@@ -587,7 +587,7 @@ items:
           description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook.Office.MessageRead.getRegExMatches
+  - uid: outlook.Office.MessageRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
@@ -678,7 +678,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: Outlook.Office.MessageRead.getRegExMatchesByName
+  - uid: outlook.Office.MessageRead.getRegExMatchesByName
     summary: >-
       Returns string values in the selected item that match the named regular expression defined in the manifest XML
       file.
@@ -761,7 +761,7 @@ items:
           description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook.Office.MessageRead.getSelectedEntities
+  - uid: outlook.Office.MessageRead.getSelectedEntities
     summary: >-
       Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
       add-ins.
@@ -800,9 +800,9 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - Outlook.Office.Entities
+          - outlook.Office.Entities
         description: ''
-  - uid: Outlook.Office.MessageRead.getSelectedRegExMatches
+  - uid: outlook.Office.MessageRead.getSelectedRegExMatches
     summary: >-
       Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
       Highlighted matches apply to contextual add-ins.
@@ -894,7 +894,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: Outlook.Office.MessageRead.loadCustomPropertiesAsync
+  - uid: outlook.Office.MessageRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -943,7 +943,7 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.MessageRead.removeHandlerAsync
+  - uid: outlook.Office.MessageRead.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -989,7 +989,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageRead.removeHandlerAsync_1
+  - uid: outlook.Office.MessageRead.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -1029,7 +1029,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageRead.attachments
+  - uid: outlook.Office.MessageRead.attachments
     summary: |-
       Gets the item's attachments as an array.
 
@@ -1087,7 +1087,7 @@ items:
       return:
         type:
           - 'AttachmentDetails[]'
-  - uid: Outlook.Office.MessageRead.body
+  - uid: outlook.Office.MessageRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -1132,8 +1132,8 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook.Office.Body
-  - uid: Outlook.Office.MessageRead.cc
+          - outlook.Office.Body
+  - uid: outlook.Office.MessageRead.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
       the mode of the current item.
@@ -1170,7 +1170,7 @@ items:
       return:
         type:
           - 'EmailAddressDetails[]'
-  - uid: Outlook.Office.MessageRead.conversationId
+  - uid: outlook.Office.MessageRead.conversationId
     summary: >-
       Gets an identifier for the email conversation that contains a particular message.
 
@@ -1213,7 +1213,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.dateTimeCreated
+  - uid: outlook.Office.MessageRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created.
 
@@ -1246,7 +1246,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.MessageRead.dateTimeModified
+  - uid: outlook.Office.MessageRead.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified.
 
@@ -1282,7 +1282,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.MessageRead.from
+  - uid: outlook.Office.MessageRead.from
     summary: >-
       Gets the email address of the sender of a message.
 
@@ -1325,8 +1325,8 @@ items:
       content: 'from: EmailAddressDetails;'
       return:
         type:
-          - Outlook.Office.EmailAddressDetails
-  - uid: Outlook.Office.MessageRead.internetMessageId
+          - outlook.Office.EmailAddressDetails
+  - uid: outlook.Office.MessageRead.internetMessageId
     summary: |-
       Gets the Internet message identifier for an email message.
 
@@ -1359,7 +1359,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.itemClass
+  - uid: outlook.Office.MessageRead.itemClass
     summary: >-
       Gets the Exchange Web Services item class of the selected item.
 
@@ -1410,7 +1410,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.itemId
+  - uid: outlook.Office.MessageRead.itemId
     summary: >-
       Gets the Exchange Web Services item identifier for the current item.
 
@@ -1468,7 +1468,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.itemType
+  - uid: outlook.Office.MessageRead.itemType
     summary: >-
       Gets the type of item that an instance represents.
 
@@ -1508,7 +1508,7 @@ items:
       return:
         type:
           - MailboxEnums.ItemType | string
-  - uid: Outlook.Office.MessageRead.normalizedSubject
+  - uid: outlook.Office.MessageRead.normalizedSubject
     summary: >-
       Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
 
@@ -1546,7 +1546,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.notificationMessages
+  - uid: outlook.Office.MessageRead.notificationMessages
     summary: |-
       Gets the notification messages for an item.
 
@@ -1582,8 +1582,8 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook.Office.NotificationMessages
-  - uid: Outlook.Office.MessageRead.recurrence
+          - outlook.Office.NotificationMessages
+  - uid: outlook.Office.MessageRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. Read and compose
       modes for appointment items. Read mode for meeting request items.
@@ -1629,8 +1629,8 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Outlook.Office.Recurrence
-  - uid: Outlook.Office.MessageRead.sender
+          - outlook.Office.Recurrence
+  - uid: outlook.Office.MessageRead.sender
     summary: >-
       Gets the email address of the sender of an email message.
 
@@ -1672,8 +1672,8 @@ items:
       content: 'sender: EmailAddressDetails;'
       return:
         type:
-          - Outlook.Office.EmailAddressDetails
-  - uid: Outlook.Office.MessageRead.seriesId
+          - outlook.Office.EmailAddressDetails
+  - uid: outlook.Office.MessageRead.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
 
@@ -1734,7 +1734,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.subject
+  - uid: outlook.Office.MessageRead.subject
     summary: >-
       Gets the description that appears in the subject field of an item.
 
@@ -1789,7 +1789,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageRead.to
+  - uid: outlook.Office.MessageRead.to
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
       the mode of the current item.

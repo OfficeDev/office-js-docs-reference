@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Item
+  - uid: outlook.Office.Item
     summary: >-
       The item namespace is used to access the currently selected message, meeting request, or appointment. You can
       determine the type of the item by using the `itemType` property.
@@ -19,13 +19,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Item.loadCustomPropertiesAsync
-      - Outlook.Office.Item.body
-      - Outlook.Office.Item.itemType
-      - Outlook.Office.Item.notificationMessages
-  - uid: Outlook.Office.Item.loadCustomPropertiesAsync
+      - outlook.Office.Item.loadCustomPropertiesAsync
+      - outlook.Office.Item.body
+      - outlook.Office.Item.itemType
+      - outlook.Office.Item.notificationMessages
+  - uid: outlook.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -120,7 +120,7 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.Item.body
+  - uid: outlook.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -166,8 +166,8 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook.Office.Body
-  - uid: Outlook.Office.Item.itemType
+          - outlook.Office.Body
+  - uid: outlook.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.
 
@@ -208,7 +208,7 @@ items:
       return:
         type:
           - MailboxEnums.ItemType | string
-  - uid: Outlook.Office.Item.notificationMessages
+  - uid: outlook.Office.Item.notificationMessages
     summary: |-
       Gets the notification messages for an item.
 
@@ -245,4 +245,4 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook.Office.NotificationMessages
+          - outlook.Office.NotificationMessages

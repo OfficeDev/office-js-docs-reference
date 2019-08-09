@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.ItemRead
+  - uid: outlook.Office.ItemRead
     summary: >-
-      The read mode of [Office.context.mailbox.item](xref:Outlook.Office.Item)<!-- -->.
+      The read mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,22 +15,22 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Item
-    package: Outlook
+      - outlook.Office.Item
+    package: outlook
     children:
-      - Outlook.Office.ItemRead.displayReplyAllForm
-      - Outlook.Office.ItemRead.displayReplyForm
-      - Outlook.Office.ItemRead.getEntities
-      - Outlook.Office.ItemRead.getEntitiesByType
-      - Outlook.Office.ItemRead.getFilteredEntitiesByName
-      - Outlook.Office.ItemRead.getRegExMatches
-      - Outlook.Office.ItemRead.getRegExMatchesByName
-      - Outlook.Office.ItemRead.attachments
-      - Outlook.Office.ItemRead.itemClass
-      - Outlook.Office.ItemRead.itemId
-      - Outlook.Office.ItemRead.normalizedSubject
-      - Outlook.Office.ItemRead.subject
-  - uid: Outlook.Office.ItemRead.displayReplyAllForm
+      - outlook.Office.ItemRead.displayReplyAllForm
+      - outlook.Office.ItemRead.displayReplyForm
+      - outlook.Office.ItemRead.getEntities
+      - outlook.Office.ItemRead.getEntitiesByType
+      - outlook.Office.ItemRead.getFilteredEntitiesByName
+      - outlook.Office.ItemRead.getRegExMatches
+      - outlook.Office.ItemRead.getRegExMatchesByName
+      - outlook.Office.ItemRead.attachments
+      - outlook.Office.ItemRead.itemClass
+      - outlook.Office.ItemRead.itemId
+      - outlook.Office.ItemRead.normalizedSubject
+      - outlook.Office.ItemRead.subject
+  - uid: outlook.Office.ItemRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
       attendees of the selected appointment.
@@ -75,7 +75,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -85,7 +85,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemRead.displayReplyForm
+  - uid: outlook.Office.ItemRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
@@ -130,7 +130,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -140,7 +140,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.ItemRead.getEntities
+  - uid: outlook.Office.ItemRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
 
@@ -162,9 +162,9 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Outlook.Office.Entities
+          - outlook.Office.Entities
         description: ''
-  - uid: Outlook.Office.ItemRead.getEntitiesByType
+  - uid: outlook.Office.ItemRead.getEntitiesByType
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
@@ -211,7 +211,7 @@ items:
           description: One of the EntityType enumeration values.
           type:
             - MailboxEnums.EntityType | string
-  - uid: Outlook.Office.ItemRead.getFilteredEntitiesByName
+  - uid: outlook.Office.ItemRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
@@ -251,7 +251,7 @@ items:
           description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook.Office.ItemRead.getRegExMatches
+  - uid: outlook.Office.ItemRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
@@ -292,7 +292,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: Outlook.Office.ItemRead.getRegExMatchesByName
+  - uid: outlook.Office.ItemRead.getRegExMatchesByName
     summary: >-
       Returns string values in the selected item that match the named regular expression defined in the manifest XML
       file.
@@ -333,7 +333,7 @@ items:
           description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook.Office.ItemRead.attachments
+  - uid: outlook.Office.ItemRead.attachments
     summary: |-
       Gets the item's attachments as an array.
 
@@ -360,7 +360,7 @@ items:
       return:
         type:
           - 'AttachmentDetails[]'
-  - uid: Outlook.Office.ItemRead.itemClass
+  - uid: outlook.Office.ItemRead.itemClass
     summary: >-
       Gets the Exchange Web Services item class of the selected item.
 
@@ -399,7 +399,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.ItemRead.itemId
+  - uid: outlook.Office.ItemRead.itemId
     summary: >-
       Gets the Exchange Web Services item identifier for the current item.
 
@@ -433,7 +433,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.ItemRead.normalizedSubject
+  - uid: outlook.Office.ItemRead.normalizedSubject
     summary: >-
       Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
 
@@ -459,7 +459,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.ItemRead.subject
+  - uid: outlook.Office.ItemRead.subject
     summary: >-
       Gets the description that appears in the subject field of an item.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.From
+  - uid: outlook.Office.From
     summary: |-
       Provides a method to get the from value of a message in an Outlook add-in.
 
@@ -16,11 +16,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.From.getAsync
-      - Outlook.Office.From.getAsync_1
-  - uid: Outlook.Office.From.getAsync
+      - outlook.Office.From.getAsync
+      - outlook.Office.From.getAsync_1
+  - uid: outlook.Office.From.getAsync
     summary: >-
       Gets the from value of a message.
 
@@ -28,7 +28,7 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
 
-      The from value of the item is provided as an [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails)
+      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
       in the asyncResult.value property.
 
 
@@ -66,7 +66,7 @@ items:
             item's from value, as an EmailAddressDetails object.
           type:
             - '(asyncResult: Office.AsyncResult<EmailAddressDetails>) => void'
-  - uid: Outlook.Office.From.getAsync_1
+  - uid: outlook.Office.From.getAsync_1
     summary: >-
       Gets the from value of a message.
 
@@ -74,7 +74,7 @@ items:
       The getAsync method starts an asynchronous call to the Exchange server to get the from value of a message.
 
 
-      The from value of the item is provided as an [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails)
+      The from value of the item is provided as an [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails)
       in the asyncResult.value property.
 
 

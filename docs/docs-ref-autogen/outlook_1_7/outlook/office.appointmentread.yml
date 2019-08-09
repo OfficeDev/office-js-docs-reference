@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.AppointmentRead
+  - uid: outlook.Office.AppointmentRead
     summary: >-
-      The appointment attendee mode of [Office.context.mailbox.item](xref:Outlook.Office.Item)<!-- -->.
+      The appointment attendee mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,43 +15,43 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Appointment
-      - Outlook.Office.ItemRead
-    package: Outlook
+      - outlook.Office.Appointment
+      - outlook.Office.ItemRead
+    package: outlook
     children:
-      - Outlook.Office.AppointmentRead.addHandlerAsync
-      - Outlook.Office.AppointmentRead.addHandlerAsync_1
-      - Outlook.Office.AppointmentRead.displayReplyAllForm
-      - Outlook.Office.AppointmentRead.displayReplyForm
-      - Outlook.Office.AppointmentRead.getEntities
-      - Outlook.Office.AppointmentRead.getEntitiesByType
-      - Outlook.Office.AppointmentRead.getFilteredEntitiesByName
-      - Outlook.Office.AppointmentRead.getRegExMatches
-      - Outlook.Office.AppointmentRead.getRegExMatchesByName
-      - Outlook.Office.AppointmentRead.getSelectedEntities
-      - Outlook.Office.AppointmentRead.getSelectedRegExMatches
-      - Outlook.Office.AppointmentRead.loadCustomPropertiesAsync
-      - Outlook.Office.AppointmentRead.removeHandlerAsync
-      - Outlook.Office.AppointmentRead.removeHandlerAsync_1
-      - Outlook.Office.AppointmentRead.attachments
-      - Outlook.Office.AppointmentRead.body
-      - Outlook.Office.AppointmentRead.dateTimeCreated
-      - Outlook.Office.AppointmentRead.dateTimeModified
-      - Outlook.Office.AppointmentRead.end
-      - Outlook.Office.AppointmentRead.itemClass
-      - Outlook.Office.AppointmentRead.itemId
-      - Outlook.Office.AppointmentRead.itemType
-      - Outlook.Office.AppointmentRead.location
-      - Outlook.Office.AppointmentRead.normalizedSubject
-      - Outlook.Office.AppointmentRead.notificationMessages
-      - Outlook.Office.AppointmentRead.optionalAttendees
-      - Outlook.Office.AppointmentRead.organizer
-      - Outlook.Office.AppointmentRead.recurrence
-      - Outlook.Office.AppointmentRead.requiredAttendees
-      - Outlook.Office.AppointmentRead.seriesId
-      - Outlook.Office.AppointmentRead.start
-      - Outlook.Office.AppointmentRead.subject
-  - uid: Outlook.Office.AppointmentRead.addHandlerAsync
+      - outlook.Office.AppointmentRead.addHandlerAsync
+      - outlook.Office.AppointmentRead.addHandlerAsync_1
+      - outlook.Office.AppointmentRead.displayReplyAllForm
+      - outlook.Office.AppointmentRead.displayReplyForm
+      - outlook.Office.AppointmentRead.getEntities
+      - outlook.Office.AppointmentRead.getEntitiesByType
+      - outlook.Office.AppointmentRead.getFilteredEntitiesByName
+      - outlook.Office.AppointmentRead.getRegExMatches
+      - outlook.Office.AppointmentRead.getRegExMatchesByName
+      - outlook.Office.AppointmentRead.getSelectedEntities
+      - outlook.Office.AppointmentRead.getSelectedRegExMatches
+      - outlook.Office.AppointmentRead.loadCustomPropertiesAsync
+      - outlook.Office.AppointmentRead.removeHandlerAsync
+      - outlook.Office.AppointmentRead.removeHandlerAsync_1
+      - outlook.Office.AppointmentRead.attachments
+      - outlook.Office.AppointmentRead.body
+      - outlook.Office.AppointmentRead.dateTimeCreated
+      - outlook.Office.AppointmentRead.dateTimeModified
+      - outlook.Office.AppointmentRead.end
+      - outlook.Office.AppointmentRead.itemClass
+      - outlook.Office.AppointmentRead.itemId
+      - outlook.Office.AppointmentRead.itemType
+      - outlook.Office.AppointmentRead.location
+      - outlook.Office.AppointmentRead.normalizedSubject
+      - outlook.Office.AppointmentRead.notificationMessages
+      - outlook.Office.AppointmentRead.optionalAttendees
+      - outlook.Office.AppointmentRead.organizer
+      - outlook.Office.AppointmentRead.recurrence
+      - outlook.Office.AppointmentRead.requiredAttendees
+      - outlook.Office.AppointmentRead.seriesId
+      - outlook.Office.AppointmentRead.start
+      - outlook.Office.AppointmentRead.subject
+  - uid: outlook.Office.AppointmentRead.addHandlerAsync
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -104,7 +104,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.addHandlerAsync_1
+  - uid: outlook.Office.AppointmentRead.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -151,7 +151,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.displayReplyAllForm
+  - uid: outlook.Office.AppointmentRead.displayReplyAllForm
     summary: >-
       Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all
       attendees of the selected appointment.
@@ -287,7 +287,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -297,7 +297,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.displayReplyForm
+  - uid: outlook.Office.AppointmentRead.displayReplyForm
     summary: >-
       Displays a reply form that includes only the sender of the selected message or the organizer of the selected
       appointment.
@@ -431,7 +431,7 @@ items:
         - id: formData
           description: >-
             A string that contains text and HTML and that represents the body of the reply form. The string is limited
-            to 32 KB OR an [Office.ReplyFormData](xref:Outlook.Office.ReplyFormData) object that contains body or
+            to 32 KB OR an [Office.ReplyFormData](xref:outlook.Office.ReplyFormData) object that contains body or
             attachment data and a callback function.
           type:
             - string | ReplyFormData
@@ -441,7 +441,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.getEntities
+  - uid: outlook.Office.AppointmentRead.getEntities
     summary: |-
       Gets the entities found in the selected item's body.
 
@@ -477,9 +477,9 @@ items:
       content: 'getEntities(): Entities;'
       return:
         type:
-          - Outlook.Office.Entities
+          - outlook.Office.Entities
         description: ''
-  - uid: Outlook.Office.AppointmentRead.getEntitiesByType
+  - uid: outlook.Office.AppointmentRead.getEntitiesByType
     summary: |-
       Gets an array of all the entities of the specified entity type found in the selected item's body.
 
@@ -553,7 +553,7 @@ items:
           description: One of the EntityType enumeration values.
           type:
             - MailboxEnums.EntityType | string
-  - uid: Outlook.Office.AppointmentRead.getFilteredEntitiesByName
+  - uid: outlook.Office.AppointmentRead.getFilteredEntitiesByName
     summary: >-
       Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
 
@@ -594,7 +594,7 @@ items:
           description: The name of the ItemHasKnownEntity rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook.Office.AppointmentRead.getRegExMatches
+  - uid: outlook.Office.AppointmentRead.getRegExMatches
     summary: >-
       Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
 
@@ -686,7 +686,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: Outlook.Office.AppointmentRead.getRegExMatchesByName
+  - uid: outlook.Office.AppointmentRead.getRegExMatchesByName
     summary: >-
       Returns string values in the selected item that match the named regular expression defined in the manifest XML
       file.
@@ -770,7 +770,7 @@ items:
           description: The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
           type:
             - string
-  - uid: Outlook.Office.AppointmentRead.getSelectedEntities
+  - uid: outlook.Office.AppointmentRead.getSelectedEntities
     summary: >-
       Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual
       add-ins.
@@ -810,9 +810,9 @@ items:
       content: 'getSelectedEntities(): Entities;'
       return:
         type:
-          - Outlook.Office.Entities
+          - outlook.Office.Entities
         description: ''
-  - uid: Outlook.Office.AppointmentRead.getSelectedRegExMatches
+  - uid: outlook.Office.AppointmentRead.getSelectedRegExMatches
     summary: >-
       Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file.
       Highlighted matches apply to contextual add-ins.
@@ -875,7 +875,7 @@ items:
           An object that contains arrays of strings that match the regular expressions defined in the manifest XML file.
           The name of each array is equal to the corresponding value of the RegExName attribute of the matching
           ItemHasRegularExpressionMatch rule or the FilterName attribute of the matching ItemHasKnownEntity rule.
-  - uid: Outlook.Office.AppointmentRead.loadCustomPropertiesAsync
+  - uid: outlook.Office.AppointmentRead.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -925,7 +925,7 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.AppointmentRead.removeHandlerAsync
+  - uid: outlook.Office.AppointmentRead.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -972,7 +972,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.removeHandlerAsync_1
+  - uid: outlook.Office.AppointmentRead.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -1013,7 +1013,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentRead.attachments
+  - uid: outlook.Office.AppointmentRead.attachments
     summary: |-
       Gets the item's attachments as an array.
 
@@ -1072,7 +1072,7 @@ items:
       return:
         type:
           - 'AttachmentDetails[]'
-  - uid: Outlook.Office.AppointmentRead.body
+  - uid: outlook.Office.AppointmentRead.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -1118,8 +1118,8 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook.Office.Body
-  - uid: Outlook.Office.AppointmentRead.dateTimeCreated
+          - outlook.Office.Body
+  - uid: outlook.Office.AppointmentRead.dateTimeCreated
     summary: |-
       Gets the date and time that an item was created.
 
@@ -1153,7 +1153,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.AppointmentRead.dateTimeModified
+  - uid: outlook.Office.AppointmentRead.dateTimeModified
     summary: |-
       Gets the date and time that an item was last modified.
 
@@ -1190,7 +1190,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.AppointmentRead.end
+  - uid: outlook.Office.AppointmentRead.end
     summary: >-
       Gets the date and time that the appointment is to end.
 
@@ -1233,7 +1233,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.AppointmentRead.itemClass
+  - uid: outlook.Office.AppointmentRead.itemClass
     summary: >-
       Gets the Exchange Web Services item class of the selected item.
 
@@ -1285,7 +1285,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentRead.itemId
+  - uid: outlook.Office.AppointmentRead.itemId
     summary: >-
       Gets the Exchange Web Services item identifier for the current item.
 
@@ -1344,7 +1344,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentRead.itemType
+  - uid: outlook.Office.AppointmentRead.itemType
     summary: >-
       Gets the type of item that an instance represents.
 
@@ -1385,7 +1385,7 @@ items:
       return:
         type:
           - MailboxEnums.ItemType | string
-  - uid: Outlook.Office.AppointmentRead.location
+  - uid: outlook.Office.AppointmentRead.location
     summary: |-
       Gets the location of an appointment.
 
@@ -1421,7 +1421,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentRead.normalizedSubject
+  - uid: outlook.Office.AppointmentRead.normalizedSubject
     summary: >-
       Gets the subject of an item, with all prefixes removed (including RE: and FWD:).
 
@@ -1460,7 +1460,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentRead.notificationMessages
+  - uid: outlook.Office.AppointmentRead.notificationMessages
     summary: |-
       Gets the notification messages for an item.
 
@@ -1497,15 +1497,15 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook.Office.NotificationMessages
-  - uid: Outlook.Office.AppointmentRead.optionalAttendees
+          - outlook.Office.NotificationMessages
+  - uid: outlook.Office.AppointmentRead.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
       of the current item.
 
 
       The optionalAttendees property returns an array that contains an
-      [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) object for each optional attendee to the
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each optional attendee to the
       meeting.
 
 
@@ -1539,7 +1539,7 @@ items:
       return:
         type:
           - 'EmailAddressDetails[]'
-  - uid: Outlook.Office.AppointmentRead.organizer
+  - uid: outlook.Office.AppointmentRead.organizer
     summary: |-
       Gets the email address of the meeting organizer for a specified meeting.
 
@@ -1574,8 +1574,8 @@ items:
       content: 'organizer: EmailAddressDetails;'
       return:
         type:
-          - Outlook.Office.EmailAddressDetails
-  - uid: Outlook.Office.AppointmentRead.recurrence
+          - outlook.Office.EmailAddressDetails
+  - uid: outlook.Office.AppointmentRead.recurrence
     summary: >-
       Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
 
@@ -1621,15 +1621,15 @@ items:
       content: 'recurrence: Recurrence;'
       return:
         type:
-          - Outlook.Office.Recurrence
-  - uid: Outlook.Office.AppointmentRead.requiredAttendees
+          - outlook.Office.Recurrence
+  - uid: outlook.Office.AppointmentRead.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
       of the current item.
 
 
       The requiredAttendees property returns an array that contains an
-      [Office.EmailAddressDetails](xref:Outlook.Office.EmailAddressDetails) object for each required attendee to the
+      [Office.EmailAddressDetails](xref:outlook.Office.EmailAddressDetails) object for each required attendee to the
       meeting.
 
 
@@ -1663,7 +1663,7 @@ items:
       return:
         type:
           - 'EmailAddressDetails[]'
-  - uid: Outlook.Office.AppointmentRead.seriesId
+  - uid: outlook.Office.AppointmentRead.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
 
@@ -1725,7 +1725,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentRead.start
+  - uid: outlook.Office.AppointmentRead.start
     summary: >-
       Gets the date and time that the appointment is to begin.
 
@@ -1764,7 +1764,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.AppointmentRead.subject
+  - uid: outlook.Office.AppointmentRead.subject
     summary: >-
       Gets the description that appears in the subject field of an item.
 

@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MeetingSuggestion
+  - uid: outlook.Office.MeetingSuggestion
     summary: >-
       Represents a suggested meeting found in an item. Read mode only.
 
@@ -50,15 +50,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MeetingSuggestion.attendees
-      - Outlook.Office.MeetingSuggestion.end
-      - Outlook.Office.MeetingSuggestion.location
-      - Outlook.Office.MeetingSuggestion.meetingString
-      - Outlook.Office.MeetingSuggestion.start
-      - Outlook.Office.MeetingSuggestion.subject
-  - uid: Outlook.Office.MeetingSuggestion.attendees
+      - outlook.Office.MeetingSuggestion.attendees
+      - outlook.Office.MeetingSuggestion.end
+      - outlook.Office.MeetingSuggestion.location
+      - outlook.Office.MeetingSuggestion.meetingString
+      - outlook.Office.MeetingSuggestion.start
+      - outlook.Office.MeetingSuggestion.subject
+  - uid: outlook.Office.MeetingSuggestion.attendees
     summary: Gets the attendees for a suggested meeting.
     name: attendees
     fullName: attendees
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - 'EmailUser[]'
-  - uid: Outlook.Office.MeetingSuggestion.end
+  - uid: outlook.Office.MeetingSuggestion.end
     summary: Gets the date and time that a suggested meeting is to end.
     name: end
     fullName: end
@@ -82,7 +82,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MeetingSuggestion.location
+  - uid: outlook.Office.MeetingSuggestion.location
     summary: Gets the location of a suggested meeting.
     name: location
     fullName: location
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MeetingSuggestion.meetingString
+  - uid: outlook.Office.MeetingSuggestion.meetingString
     summary: Gets a string that was identified as a meeting suggestion.
     name: meetingString
     fullName: meetingString
@@ -106,7 +106,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MeetingSuggestion.start
+  - uid: outlook.Office.MeetingSuggestion.start
     summary: Gets the date and time that a suggested meeting is to begin.
     name: start
     fullName: start
@@ -118,7 +118,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MeetingSuggestion.subject
+  - uid: outlook.Office.MeetingSuggestion.subject
     summary: Gets the subject of a suggested meeting.
     name: subject
     fullName: subject

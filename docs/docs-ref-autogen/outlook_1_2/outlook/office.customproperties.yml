@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.CustomProperties
+  - uid: outlook.Office.CustomProperties
     summary: >-
       The CustomProperties object represents custom properties that are specific to a particular item and specific to a
       mail add-in for Outlook. For example, there might be a need for a mail add-in to save some data that is specific
@@ -26,13 +26,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.CustomProperties.get
-      - Outlook.Office.CustomProperties.remove
-      - Outlook.Office.CustomProperties.saveAsync
-      - Outlook.Office.CustomProperties.set
-  - uid: Outlook.Office.CustomProperties.get
+      - outlook.Office.CustomProperties.get
+      - outlook.Office.CustomProperties.remove
+      - outlook.Office.CustomProperties.saveAsync
+      - outlook.Office.CustomProperties.set
+  - uid: outlook.Office.CustomProperties.get
     summary: Returns the value of the specified custom property.
     remarks: >-
       **[Minimum permission
@@ -60,7 +60,7 @@ items:
           description: The name of the custom property to be returned.
           type:
             - string
-  - uid: Outlook.Office.CustomProperties.remove
+  - uid: outlook.Office.CustomProperties.remove
     summary: |-
       Removes the specified property from the custom property collection.
 
@@ -91,7 +91,7 @@ items:
             \[Api set: Mailbox 1.0\]
           type:
             - string
-  - uid: Outlook.Office.CustomProperties.saveAsync
+  - uid: outlook.Office.CustomProperties.saveAsync
     summary: >-
       Saves item-specific custom properties to the server.
 
@@ -197,7 +197,7 @@ items:
             \[Api set: Mailbox 1.0\]
           type:
             - any
-  - uid: Outlook.Office.CustomProperties.set
+  - uid: outlook.Office.CustomProperties.set
     summary: >-
       Sets the specified property to the specified value.
 

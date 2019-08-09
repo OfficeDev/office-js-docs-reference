@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.AttachmentType
+  - uid: outlook.Office.MailboxEnums.AttachmentType
     summary: |-
       Specifies an attachment's type.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MailboxEnums.AttachmentType.Cloud
-      - Outlook.Office.MailboxEnums.AttachmentType.File
-      - Outlook.Office.MailboxEnums.AttachmentType.Item
-  - uid: Outlook.Office.MailboxEnums.AttachmentType.Cloud
+      - outlook.Office.MailboxEnums.AttachmentType.Cloud
+      - outlook.Office.MailboxEnums.AttachmentType.File
+      - outlook.Office.MailboxEnums.AttachmentType.Item
+  - uid: outlook.Office.MailboxEnums.AttachmentType.Cloud
     summary: >-
       The attachment is stored in a cloud location, such as OneDrive. The id property of the attachment contains a URL
       to the file.
@@ -28,7 +28,7 @@ items:
       - typeScript
     type: field
     numericValue: '"cloud"'
-  - uid: Outlook.Office.MailboxEnums.AttachmentType.File
+  - uid: outlook.Office.MailboxEnums.AttachmentType.File
     summary: The attachment is a file
     name: File
     fullName: File
@@ -36,7 +36,7 @@ items:
       - typeScript
     type: field
     numericValue: '"file"'
-  - uid: Outlook.Office.MailboxEnums.AttachmentType.Item
+  - uid: outlook.Office.MailboxEnums.AttachmentType.Item
     summary: The attachment is an Exchange item
     name: Item
     fullName: Item

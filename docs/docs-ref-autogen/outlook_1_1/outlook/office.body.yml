@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Body
+  - uid: outlook.Office.Body
     summary: >-
       The body object provides methods for adding and updating the content of the message or appointment. It is returned
       in the body property of the selected item.
@@ -19,15 +19,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Body.getTypeAsync
-      - Outlook.Office.Body.getTypeAsync_1
-      - Outlook.Office.Body.prependAsync
-      - Outlook.Office.Body.prependAsync_1
-      - Outlook.Office.Body.setSelectedDataAsync
-      - Outlook.Office.Body.setSelectedDataAsync_1
-  - uid: Outlook.Office.Body.getTypeAsync
+      - outlook.Office.Body.getTypeAsync
+      - outlook.Office.Body.getTypeAsync_1
+      - outlook.Office.Body.prependAsync
+      - outlook.Office.Body.prependAsync_1
+      - outlook.Office.Body.setSelectedDataAsync
+      - outlook.Office.Body.setSelectedDataAsync_1
+  - uid: outlook.Office.Body.getTypeAsync
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
@@ -65,7 +65,7 @@ items:
             asyncResult.value property.
           type:
             - '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-  - uid: Outlook.Office.Body.getTypeAsync_1
+  - uid: outlook.Office.Body.getTypeAsync_1
     summary: |-
       Gets a value that indicates whether the content is in HTML or text format.
 
@@ -111,7 +111,7 @@ items:
             asyncResult.value property.
           type:
             - '(asyncResult: Office.AsyncResult<Office.CoercionType>) => void'
-  - uid: Outlook.Office.Body.prependAsync
+  - uid: outlook.Office.Body.prependAsync
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -186,7 +186,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Body.prependAsync_1
+  - uid: outlook.Office.Body.prependAsync_1
     summary: >-
       Adds the specified content to the beginning of the item body.
 
@@ -236,7 +236,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Body.setSelectedDataAsync
+  - uid: outlook.Office.Body.setSelectedDataAsync
     summary: >-
       Replaces the selection in the body with the specified text.
 
@@ -317,7 +317,7 @@ items:
             property.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Body.setSelectedDataAsync_1
+  - uid: outlook.Office.Body.setSelectedDataAsync_1
     summary: >-
       Replaces the selection in the body with the specified text.
 

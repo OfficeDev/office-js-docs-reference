@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Location
+  - uid: outlook.Office.Location
     summary: |-
       Provides methods to get and set the location of a meeting in an Outlook add-in.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Location.getAsync
-      - Outlook.Office.Location.getAsync_1
-      - Outlook.Office.Location.setAsync
-      - Outlook.Office.Location.setAsync_1
-  - uid: Outlook.Office.Location.getAsync
+      - outlook.Office.Location.getAsync
+      - outlook.Office.Location.getAsync_1
+      - outlook.Office.Location.setAsync
+      - outlook.Office.Location.setAsync_1
+  - uid: outlook.Office.Location.getAsync
     summary: >-
       Gets the location of an appointment.
 
@@ -82,7 +82,7 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.Location.getAsync_1
+  - uid: outlook.Office.Location.getAsync_1
     summary: >-
       Gets the location of an appointment.
 
@@ -116,7 +116,7 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.Location.setAsync
+  - uid: outlook.Office.Location.setAsync
     summary: >-
       Sets the location of an appointment.
 
@@ -169,7 +169,7 @@ items:
             \[Api set: Mailbox 1.1\]
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Location.setAsync_1
+  - uid: outlook.Office.Location.setAsync_1
     summary: >-
       Sets the location of an appointment.
 
