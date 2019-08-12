@@ -120,12 +120,6 @@ tryCatch(async () => {
         handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other")
     );
 
-    console.log("create file: powerpoint.d.ts");
-    fsx.writeFileSync(
-        '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
-        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other")
-    );
-
     console.log("create file: visio.d.ts");
     fsx.writeFileSync(
         '../api-extractor-inputs-visio/visio.d.ts',
