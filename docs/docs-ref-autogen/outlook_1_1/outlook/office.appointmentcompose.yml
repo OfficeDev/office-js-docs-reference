@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.AppointmentCompose
+  - uid: outlook.Office.AppointmentCompose
     summary: >-
-      The appointment organizer mode of [Office.context.mailbox.item](xref:Outlook.Office.Item)<!-- -->.
+      The appointment organizer mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,26 +15,26 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Appointment
-      - Outlook.Office.ItemCompose
-    package: Outlook
+      - outlook.Office.Appointment
+      - outlook.Office.ItemCompose
+    package: outlook
     children:
-      - Outlook.Office.AppointmentCompose.addFileAttachmentAsync
-      - Outlook.Office.AppointmentCompose.addFileAttachmentAsync_1
-      - Outlook.Office.AppointmentCompose.addItemAttachmentAsync
-      - Outlook.Office.AppointmentCompose.addItemAttachmentAsync_1
-      - Outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
-      - Outlook.Office.AppointmentCompose.removeAttachmentAsync
-      - Outlook.Office.AppointmentCompose.removeAttachmentAsync_1
-      - Outlook.Office.AppointmentCompose.body
-      - Outlook.Office.AppointmentCompose.end
-      - Outlook.Office.AppointmentCompose.itemType
-      - Outlook.Office.AppointmentCompose.location
-      - Outlook.Office.AppointmentCompose.optionalAttendees
-      - Outlook.Office.AppointmentCompose.requiredAttendees
-      - Outlook.Office.AppointmentCompose.start
-      - Outlook.Office.AppointmentCompose.subject
-  - uid: Outlook.Office.AppointmentCompose.addFileAttachmentAsync
+      - outlook.Office.AppointmentCompose.addFileAttachmentAsync
+      - outlook.Office.AppointmentCompose.addFileAttachmentAsync_1
+      - outlook.Office.AppointmentCompose.addItemAttachmentAsync
+      - outlook.Office.AppointmentCompose.addItemAttachmentAsync_1
+      - outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
+      - outlook.Office.AppointmentCompose.removeAttachmentAsync
+      - outlook.Office.AppointmentCompose.removeAttachmentAsync_1
+      - outlook.Office.AppointmentCompose.body
+      - outlook.Office.AppointmentCompose.end
+      - outlook.Office.AppointmentCompose.itemType
+      - outlook.Office.AppointmentCompose.location
+      - outlook.Office.AppointmentCompose.optionalAttendees
+      - outlook.Office.AppointmentCompose.requiredAttendees
+      - outlook.Office.AppointmentCompose.start
+      - outlook.Office.AppointmentCompose.subject
+  - uid: outlook.Office.AppointmentCompose.addFileAttachmentAsync
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -134,7 +134,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.AppointmentCompose.addFileAttachmentAsync_1
+  - uid: outlook.Office.AppointmentCompose.addFileAttachmentAsync_1
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -202,7 +202,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.AppointmentCompose.addItemAttachmentAsync
+  - uid: outlook.Office.AppointmentCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -305,7 +305,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.AppointmentCompose.addItemAttachmentAsync_1
+  - uid: outlook.Office.AppointmentCompose.addItemAttachmentAsync_1
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -371,7 +371,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
+  - uid: outlook.Office.AppointmentCompose.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -421,7 +421,7 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.AppointmentCompose.removeAttachmentAsync
+  - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -498,7 +498,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentCompose.removeAttachmentAsync_1
+  - uid: outlook.Office.AppointmentCompose.removeAttachmentAsync_1
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -550,7 +550,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.AppointmentCompose.body
+  - uid: outlook.Office.AppointmentCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -596,13 +596,13 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook.Office.Body
-  - uid: Outlook.Office.AppointmentCompose.end
+          - outlook.Office.Body
+  - uid: outlook.Office.AppointmentCompose.end
     summary: >-
       Gets or sets the date and time that the appointment is to end.
 
 
-      The end property is an [Office.Time](xref:Outlook.Office.Time) object expressed as a Coordinated Universal Time
+      The end property is an [Office.Time](xref:outlook.Office.Time) object expressed as a Coordinated Universal Time
       (UTC) date and time value. You can use the convertToLocalClientTime method to convert the end property value to
       the client's local date and time.
 
@@ -656,8 +656,8 @@ items:
       content: 'end: Time;'
       return:
         type:
-          - Outlook.Office.Time
-  - uid: Outlook.Office.AppointmentCompose.itemType
+          - outlook.Office.Time
+  - uid: outlook.Office.AppointmentCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
 
@@ -698,9 +698,9 @@ items:
       return:
         type:
           - MailboxEnums.ItemType | string
-  - uid: Outlook.Office.AppointmentCompose.location
+  - uid: outlook.Office.AppointmentCompose.location
     summary: >-
-      Gets or sets the [Office.Location](xref:Outlook.Office.Location) of an appointment. The location property returns
+      Gets or sets the [Office.Location](xref:outlook.Office.Location) of an appointment. The location property returns
       a Location object that provides methods that are used to get and set the location of the appointment.
 
 
@@ -739,11 +739,11 @@ items:
       content: 'location: Location;'
       return:
         type:
-          - Outlook.Office.Location
-  - uid: Outlook.Office.AppointmentCompose.optionalAttendees
+          - outlook.Office.Location
+  - uid: outlook.Office.AppointmentCompose.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
-      of the current item. The optionalAttendees property returns an [Office.Recipients](xref:Outlook.Office.Recipients)
+      of the current item. The optionalAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
       object that provides methods to get or update the optional attendees for a meeting.
 
 
@@ -783,11 +783,11 @@ items:
       content: 'optionalAttendees: Recipients;'
       return:
         type:
-          - Outlook.Office.Recipients
-  - uid: Outlook.Office.AppointmentCompose.requiredAttendees
+          - outlook.Office.Recipients
+  - uid: outlook.Office.AppointmentCompose.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
-      of the current item. The requiredAttendees property returns an [Office.Recipients](xref:Outlook.Office.Recipients)
+      of the current item. The requiredAttendees property returns an [Office.Recipients](xref:outlook.Office.Recipients)
       object that provides methods to get or update the required attendees for a meeting.
 
 
@@ -828,13 +828,13 @@ items:
       content: 'requiredAttendees: Recipients;'
       return:
         type:
-          - Outlook.Office.Recipients
-  - uid: Outlook.Office.AppointmentCompose.start
+          - outlook.Office.Recipients
+  - uid: outlook.Office.AppointmentCompose.start
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
 
 
-      The start property is an [Office.Time](xref:Outlook.Office.Time) object expressed as a Coordinated Universal Time
+      The start property is an [Office.Time](xref:outlook.Office.Time) object expressed as a Coordinated Universal Time
       (UTC) date and time value. You can use the convertToLocalClientTime method to convert the value to the client's
       local date and time.
 
@@ -888,8 +888,8 @@ items:
       content: 'start: Time;'
       return:
         type:
-          - Outlook.Office.Time
-  - uid: Outlook.Office.AppointmentCompose.subject
+          - outlook.Office.Time
+  - uid: outlook.Office.AppointmentCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -929,4 +929,4 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Outlook.Office.Subject
+          - outlook.Office.Subject

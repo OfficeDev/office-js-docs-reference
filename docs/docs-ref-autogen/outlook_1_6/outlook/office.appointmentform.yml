@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.AppointmentForm
+  - uid: outlook.Office.AppointmentForm
     summary: |-
       The AppointmentForm namespace is used to access the currently selected appointment.
 
@@ -17,17 +17,17 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.AppointmentForm.body
-      - Outlook.Office.AppointmentForm.end
-      - Outlook.Office.AppointmentForm.location
-      - Outlook.Office.AppointmentForm.optionalAttendees
-      - Outlook.Office.AppointmentForm.requiredAttendees
-      - Outlook.Office.AppointmentForm.resources
-      - Outlook.Office.AppointmentForm.start
-      - Outlook.Office.AppointmentForm.subject
-  - uid: Outlook.Office.AppointmentForm.body
+      - outlook.Office.AppointmentForm.body
+      - outlook.Office.AppointmentForm.end
+      - outlook.Office.AppointmentForm.location
+      - outlook.Office.AppointmentForm.optionalAttendees
+      - outlook.Office.AppointmentForm.requiredAttendees
+      - outlook.Office.AppointmentForm.resources
+      - outlook.Office.AppointmentForm.start
+      - outlook.Office.AppointmentForm.subject
+  - uid: outlook.Office.AppointmentForm.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentForm.end
+  - uid: outlook.Office.AppointmentForm.end
     summary: >-
       Gets or sets the date and time that the appointment is to end.
 
@@ -92,7 +92,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.AppointmentForm.location
+  - uid: outlook.Office.AppointmentForm.location
     summary: >-
       Gets or sets the location of an appointment.
 
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AppointmentForm.optionalAttendees
+  - uid: outlook.Office.AppointmentForm.optionalAttendees
     summary: >-
       Provides access to the optional attendees of an event. The type of object and level of access depends on the mode
       of the current item.
@@ -166,7 +166,7 @@ items:
       return:
         type:
           - 'string[] | EmailAddressDetails[]'
-  - uid: Outlook.Office.AppointmentForm.requiredAttendees
+  - uid: outlook.Office.AppointmentForm.requiredAttendees
     summary: >-
       Provides access to the required attendees of an event. The type of object and level of access depends on the mode
       of the current item.
@@ -204,7 +204,7 @@ items:
       return:
         type:
           - 'string[] | EmailAddressDetails[]'
-  - uid: Outlook.Office.AppointmentForm.resources
+  - uid: outlook.Office.AppointmentForm.resources
     summary: >-
       Provides access to the resources of an event. Returns an array of strings containing the resources required for
       the appointment.
@@ -228,7 +228,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: Outlook.Office.AppointmentForm.start
+  - uid: outlook.Office.AppointmentForm.start
     summary: >-
       Gets or sets the date and time that the appointment is to begin.
 
@@ -271,7 +271,7 @@ items:
       return:
         type:
           - Date
-  - uid: Outlook.Office.AppointmentForm.subject
+  - uid: outlook.Office.AppointmentForm.subject
     summary: >-
       Gets or sets the description that appears in the subject field of an item.
 

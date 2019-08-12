@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.RoamingSettings
+  - uid: outlook.Office.RoamingSettings
     summary: >-
       The settings created by using the methods of the RoamingSettings object are saved per add-in and per user. That
       is, they are available only to the add-in that created them, and only from the user's mail box in which they are
@@ -58,13 +58,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.RoamingSettings.get
-      - Outlook.Office.RoamingSettings.remove
-      - Outlook.Office.RoamingSettings.saveAsync
-      - Outlook.Office.RoamingSettings.set
-  - uid: Outlook.Office.RoamingSettings.get
+      - outlook.Office.RoamingSettings.get
+      - outlook.Office.RoamingSettings.remove
+      - outlook.Office.RoamingSettings.saveAsync
+      - outlook.Office.RoamingSettings.set
+  - uid: outlook.Office.RoamingSettings.get
     summary: |-
       Retrieves the specified setting.
 
@@ -92,7 +92,7 @@ items:
           description: The case-sensitive name of the setting to retrieve.
           type:
             - string
-  - uid: Outlook.Office.RoamingSettings.remove
+  - uid: outlook.Office.RoamingSettings.remove
     summary: |-
       Removes the specified setting
 
@@ -120,7 +120,7 @@ items:
           description: The case-sensitive name of the setting to remove.
           type:
             - string
-  - uid: Outlook.Office.RoamingSettings.saveAsync
+  - uid: outlook.Office.RoamingSettings.saveAsync
     summary: >-
       Saves the settings.
 
@@ -157,7 +157,7 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.RoamingSettings.set
+  - uid: outlook.Office.RoamingSettings.set
     summary: >-
       Sets or creates the specified setting.
 

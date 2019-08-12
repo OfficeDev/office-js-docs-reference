@@ -1,12 +1,12 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.TaskSuggestion
+  - uid: outlook.Office.TaskSuggestion
     summary: >-
       Represents a suggested task identified in an item. Read mode only.
 
 
       The list of tasks suggested in an email message is returned in the taskSuggestions property of the
-      [Entities](xref:Outlook.Office.Entities) object that is returned when the getEntities or getEntitiesByType method
+      [Entities](xref:outlook.Office.Entities) object that is returned when the getEntities or getEntitiesByType method
       is called on the active item.
 
 
@@ -43,11 +43,11 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.TaskSuggestion.assignees
-      - Outlook.Office.TaskSuggestion.taskString
-  - uid: Outlook.Office.TaskSuggestion.assignees
+      - outlook.Office.TaskSuggestion.assignees
+      - outlook.Office.TaskSuggestion.taskString
+  - uid: outlook.Office.TaskSuggestion.assignees
     summary: Gets the users that should be assigned a suggested task.
     name: assignees
     fullName: assignees
@@ -59,7 +59,7 @@ items:
       return:
         type:
           - 'EmailUser[]'
-  - uid: Outlook.Office.TaskSuggestion.taskString
+  - uid: outlook.Office.TaskSuggestion.taskString
     summary: Gets the text of an item that was identified as a task suggestion.
     name: taskString
     fullName: taskString

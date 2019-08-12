@@ -7460,7 +7460,6 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
@@ -7468,7 +7467,6 @@ export declare namespace Word {
             * Gets the properties of the document.
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
@@ -8483,7 +8481,6 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             body?: Word.Interfaces.BodyData;
             /**
@@ -8491,7 +8488,6 @@ export declare namespace Word {
             * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
@@ -8507,7 +8503,6 @@ export declare namespace Word {
             * Gets the properties of the document. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
@@ -8515,7 +8510,6 @@ export declare namespace Word {
             * Gets the collection of section objects in the document. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             sections?: Word.Interfaces.SectionData[];
             /**
@@ -8531,7 +8525,6 @@ export declare namespace Word {
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
              * [Api set: WordApiHiddenDocument 1.3]
-             * @beta
              */
             saved?: boolean;
         }
@@ -10074,7 +10067,6 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
@@ -10082,7 +10074,6 @@ export declare namespace Word {
             * Gets the properties of the document.
             *
             * [Api set: WordApiHiddenDocument 1.3]
-            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
@@ -10090,7 +10081,6 @@ export declare namespace Word {
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
              * [Api set: WordApiHiddenDocument 1.3]
-             * @beta
              */
             saved?: boolean;
         }

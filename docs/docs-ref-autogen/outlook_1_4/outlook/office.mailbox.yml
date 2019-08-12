@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Mailbox
+  - uid: outlook.Office.Mailbox
     summary: |-
       Provides access to the Outlook Add-in object model for Microsoft Outlook and Microsoft Outlook on the web.
 
@@ -25,23 +25,23 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Mailbox.convertToEwsId
-      - Outlook.Office.Mailbox.convertToLocalClientTime
-      - Outlook.Office.Mailbox.convertToRestId
-      - Outlook.Office.Mailbox.convertToUtcClientTime
-      - Outlook.Office.Mailbox.displayAppointmentForm
-      - Outlook.Office.Mailbox.displayMessageForm
-      - Outlook.Office.Mailbox.displayNewAppointmentForm
-      - Outlook.Office.Mailbox.getCallbackTokenAsync
-      - Outlook.Office.Mailbox.getUserIdentityTokenAsync
-      - Outlook.Office.Mailbox.makeEwsRequestAsync
-      - Outlook.Office.Mailbox.diagnostics
-      - Outlook.Office.Mailbox.ewsUrl
-      - Outlook.Office.Mailbox.item
-      - Outlook.Office.Mailbox.userProfile
-  - uid: Outlook.Office.Mailbox.convertToEwsId
+      - outlook.Office.Mailbox.convertToEwsId
+      - outlook.Office.Mailbox.convertToLocalClientTime
+      - outlook.Office.Mailbox.convertToRestId
+      - outlook.Office.Mailbox.convertToUtcClientTime
+      - outlook.Office.Mailbox.displayAppointmentForm
+      - outlook.Office.Mailbox.displayMessageForm
+      - outlook.Office.Mailbox.displayNewAppointmentForm
+      - outlook.Office.Mailbox.getCallbackTokenAsync
+      - outlook.Office.Mailbox.getUserIdentityTokenAsync
+      - outlook.Office.Mailbox.makeEwsRequestAsync
+      - outlook.Office.Mailbox.diagnostics
+      - outlook.Office.Mailbox.ewsUrl
+      - outlook.Office.Mailbox.item
+      - outlook.Office.Mailbox.userProfile
+  - uid: outlook.Office.Mailbox.convertToEwsId
     summary: >-
       Converts an item ID formatted for REST into EWS format.
 
@@ -99,7 +99,7 @@ items:
           description: A value indicating the version of the Outlook REST API used to retrieve the item ID.
           type:
             - MailboxEnums.RestVersion | string
-  - uid: Outlook.Office.Mailbox.convertToLocalClientTime
+  - uid: outlook.Office.Mailbox.convertToLocalClientTime
     summary: >-
       Gets a dictionary containing time information in local client time.
 
@@ -133,14 +133,14 @@ items:
       content: 'convertToLocalClientTime(timeValue: Date): LocalClientTime;'
       return:
         type:
-          - Outlook.Office.LocalClientTime
+          - outlook.Office.LocalClientTime
         description: ''
       parameters:
         - id: timeValue
           description: A Date object.
           type:
             - Date
-  - uid: Outlook.Office.Mailbox.convertToRestId
+  - uid: outlook.Office.Mailbox.convertToRestId
     summary: |-
       Converts an item ID formatted for EWS into REST format.
 
@@ -198,7 +198,7 @@ items:
           description: A value indicating the version of the Outlook REST API that the converted ID will be used with.
           type:
             - MailboxEnums.RestVersion | string
-  - uid: Outlook.Office.Mailbox.convertToUtcClientTime
+  - uid: outlook.Office.Mailbox.convertToUtcClientTime
     summary: >-
       Gets a Date object from a dictionary containing time information.
 
@@ -230,8 +230,8 @@ items:
         - id: input
           description: The local time value to convert.
           type:
-            - Outlook.Office.LocalClientTime
-  - uid: Outlook.Office.Mailbox.displayAppointmentForm
+            - outlook.Office.LocalClientTime
+  - uid: outlook.Office.Mailbox.displayAppointmentForm
     summary: >-
       Displays an existing calendar appointment.
 
@@ -290,7 +290,7 @@ items:
           description: The Exchange Web Services (EWS) identifier for an existing calendar appointment.
           type:
             - string
-  - uid: Outlook.Office.Mailbox.displayMessageForm
+  - uid: outlook.Office.Mailbox.displayMessageForm
     summary: >-
       Displays an existing message.
 
@@ -349,7 +349,7 @@ items:
           description: The Exchange Web Services (EWS) identifier for an existing message.
           type:
             - string
-  - uid: Outlook.Office.Mailbox.displayNewAppointmentForm
+  - uid: outlook.Office.Mailbox.displayNewAppointmentForm
     summary: >-
       Displays a form for creating a new calendar appointment.
 
@@ -426,8 +426,8 @@ items:
         - id: parameters
           description: An AppointmentForm describing the new appointment. All properties are optional.
           type:
-            - Outlook.Office.AppointmentForm
-  - uid: Outlook.Office.Mailbox.getCallbackTokenAsync
+            - outlook.Office.AppointmentForm
+  - uid: outlook.Office.Mailbox.getCallbackTokenAsync
     summary: >-
       Gets a string that contains a token used to get an attachment or item from an Exchange Server.
 
@@ -455,6 +455,14 @@ items:
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
     remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
+      Read
+
+
       **Errors**:
 
 
@@ -467,14 +475,6 @@ items:
 
       - NetworkError: The user is no longer connected to the network. Please check your network connection and try
       again.
-
-
-      **[Minimum permission
-      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
-
-
-      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
-      Read
 
 
       #### Examples
@@ -521,7 +521,7 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
-  - uid: Outlook.Office.Mailbox.getUserIdentityTokenAsync
+  - uid: outlook.Office.Mailbox.getUserIdentityTokenAsync
     summary: |-
       Gets a token identifying the user and the Office Add-in.
 
@@ -596,7 +596,7 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
-  - uid: Outlook.Office.Mailbox.makeEwsRequestAsync
+  - uid: outlook.Office.Mailbox.makeEwsRequestAsync
     summary: >-
       Makes an asynchronous request to an Exchange Web Services (EWS) service on the Exchange server that hosts the
       user's mailbox.
@@ -741,7 +741,7 @@ items:
           description: Optional. Any state data that is passed to the asynchronous method.
           type:
             - any
-  - uid: Outlook.Office.Mailbox.diagnostics
+  - uid: outlook.Office.Mailbox.diagnostics
     summary: >-
       Provides diagnostic information to an Outlook add-in.
 
@@ -767,7 +767,7 @@ items:
       width of the screen and the window, and the number of columns that can be displayed.
 
 
-      More information is under [Office.Diagnostics](xref:Outlook.Office.Diagnostics)<!-- -->.
+      More information is under [Office.Diagnostics](xref:outlook.Office.Diagnostics)<!-- -->.
 
 
       \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
@@ -787,8 +787,8 @@ items:
       content: 'diagnostics: Diagnostics;'
       return:
         type:
-          - Outlook.Office.Diagnostics
-  - uid: Outlook.Office.Mailbox.ewsUrl
+          - outlook.Office.Diagnostics
+  - uid: outlook.Office.Mailbox.ewsUrl
     summary: >-
       Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
 
@@ -826,7 +826,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.Mailbox.item
+  - uid: outlook.Office.Mailbox.item
     summary: >-
       The mailbox item. Depending on the context in which the add-in opened, the item may be of any number of types. If
       you want to see IntelliSense for only a specific type, you should cast this item to one of the following:
@@ -842,13 +842,13 @@ items:
       return:
         type:
           - Item & ItemCompose & ItemRead & MessageRead & MessageCompose & AppointmentRead & AppointmentCompose
-  - uid: Outlook.Office.Mailbox.userProfile
+  - uid: outlook.Office.Mailbox.userProfile
     summary: >-
       Information about the user associated with the mailbox. This includes their account type, display name, email
       address, and time zone.
 
 
-      More information is under [Office.UserProfile](xref:Outlook.Office.UserProfile)
+      More information is under [Office.UserProfile](xref:outlook.Office.UserProfile)
     name: userProfile
     fullName: userProfile
     langs:
@@ -858,4 +858,4 @@ items:
       content: 'userProfile: UserProfile;'
       return:
         type:
-          - Outlook.Office.UserProfile
+          - outlook.Office.UserProfile

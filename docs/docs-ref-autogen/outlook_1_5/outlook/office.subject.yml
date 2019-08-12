@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Subject
+  - uid: outlook.Office.Subject
     summary: |-
       Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
 
@@ -16,13 +16,13 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Subject.getAsync
-      - Outlook.Office.Subject.getAsync_1
-      - Outlook.Office.Subject.setAsync
-      - Outlook.Office.Subject.setAsync_1
-  - uid: Outlook.Office.Subject.getAsync
+      - outlook.Office.Subject.getAsync
+      - outlook.Office.Subject.getAsync_1
+      - outlook.Office.Subject.setAsync
+      - outlook.Office.Subject.setAsync_1
+  - uid: outlook.Office.Subject.getAsync
     summary: >-
       Gets the subject of an appointment or message.
 
@@ -64,7 +64,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.Subject.getAsync_1
+  - uid: outlook.Office.Subject.getAsync_1
     summary: >-
       Gets the subject of an appointment or message.
 
@@ -113,7 +113,7 @@ items:
             of type Office.AsyncResult. The `value` property of the result is the subject of the item.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.Subject.setAsync
+  - uid: outlook.Office.Subject.setAsync
     summary: >-
       Sets the subject of an appointment or message.
 
@@ -167,7 +167,7 @@ items:
             contain an error code.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Subject.setAsync_1
+  - uid: outlook.Office.Subject.setAsync_1
     summary: >-
       Sets the subject of an appointment or message.
 

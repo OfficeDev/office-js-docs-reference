@@ -1,8 +1,8 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MessageCompose
+  - uid: outlook.Office.MessageCompose
     summary: >-
-      The message compose mode of [Office.context.mailbox.item](xref:Outlook.Office.Item)<!-- -->.
+      The message compose mode of [Office.context.mailbox.item](xref:outlook.Office.Item)<!-- -->.
 
 
       **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. You should
@@ -15,39 +15,39 @@ items:
       - typeScript
     type: interface
     extends:
-      - Outlook.Office.Message
-      - Outlook.Office.ItemCompose
-    package: Outlook
+      - outlook.Office.Message
+      - outlook.Office.ItemCompose
+    package: outlook
     children:
-      - Outlook.Office.MessageCompose.addFileAttachmentAsync
-      - Outlook.Office.MessageCompose.addFileAttachmentAsync_1
-      - Outlook.Office.MessageCompose.addHandlerAsync
-      - Outlook.Office.MessageCompose.addHandlerAsync_1
-      - Outlook.Office.MessageCompose.addItemAttachmentAsync
-      - Outlook.Office.MessageCompose.addItemAttachmentAsync_1
-      - Outlook.Office.MessageCompose.close
-      - Outlook.Office.MessageCompose.getSelectedDataAsync
-      - Outlook.Office.MessageCompose.getSelectedDataAsync_1
-      - Outlook.Office.MessageCompose.loadCustomPropertiesAsync
-      - Outlook.Office.MessageCompose.removeAttachmentAsync
-      - Outlook.Office.MessageCompose.removeAttachmentAsync_1
-      - Outlook.Office.MessageCompose.removeHandlerAsync
-      - Outlook.Office.MessageCompose.removeHandlerAsync_1
-      - Outlook.Office.MessageCompose.saveAsync
-      - Outlook.Office.MessageCompose.saveAsync_1
-      - Outlook.Office.MessageCompose.setSelectedDataAsync
-      - Outlook.Office.MessageCompose.setSelectedDataAsync_1
-      - Outlook.Office.MessageCompose.bcc
-      - Outlook.Office.MessageCompose.body
-      - Outlook.Office.MessageCompose.cc
-      - Outlook.Office.MessageCompose.conversationId
-      - Outlook.Office.MessageCompose.from
-      - Outlook.Office.MessageCompose.itemType
-      - Outlook.Office.MessageCompose.notificationMessages
-      - Outlook.Office.MessageCompose.seriesId
-      - Outlook.Office.MessageCompose.subject
-      - Outlook.Office.MessageCompose.to
-  - uid: Outlook.Office.MessageCompose.addFileAttachmentAsync
+      - outlook.Office.MessageCompose.addFileAttachmentAsync
+      - outlook.Office.MessageCompose.addFileAttachmentAsync_1
+      - outlook.Office.MessageCompose.addHandlerAsync
+      - outlook.Office.MessageCompose.addHandlerAsync_1
+      - outlook.Office.MessageCompose.addItemAttachmentAsync
+      - outlook.Office.MessageCompose.addItemAttachmentAsync_1
+      - outlook.Office.MessageCompose.close
+      - outlook.Office.MessageCompose.getSelectedDataAsync
+      - outlook.Office.MessageCompose.getSelectedDataAsync_1
+      - outlook.Office.MessageCompose.loadCustomPropertiesAsync
+      - outlook.Office.MessageCompose.removeAttachmentAsync
+      - outlook.Office.MessageCompose.removeAttachmentAsync_1
+      - outlook.Office.MessageCompose.removeHandlerAsync
+      - outlook.Office.MessageCompose.removeHandlerAsync_1
+      - outlook.Office.MessageCompose.saveAsync
+      - outlook.Office.MessageCompose.saveAsync_1
+      - outlook.Office.MessageCompose.setSelectedDataAsync
+      - outlook.Office.MessageCompose.setSelectedDataAsync_1
+      - outlook.Office.MessageCompose.bcc
+      - outlook.Office.MessageCompose.body
+      - outlook.Office.MessageCompose.cc
+      - outlook.Office.MessageCompose.conversationId
+      - outlook.Office.MessageCompose.from
+      - outlook.Office.MessageCompose.itemType
+      - outlook.Office.MessageCompose.notificationMessages
+      - outlook.Office.MessageCompose.seriesId
+      - outlook.Office.MessageCompose.subject
+      - outlook.Office.MessageCompose.to
+  - uid: outlook.Office.MessageCompose.addFileAttachmentAsync
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -171,7 +171,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.MessageCompose.addFileAttachmentAsync_1
+  - uid: outlook.Office.MessageCompose.addFileAttachmentAsync_1
     summary: >-
       Adds a file to a message or appointment as an attachment.
 
@@ -239,7 +239,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.MessageCompose.addHandlerAsync
+  - uid: outlook.Office.MessageCompose.addHandlerAsync
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -292,7 +292,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.addHandlerAsync_1
+  - uid: outlook.Office.MessageCompose.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -339,7 +339,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.addItemAttachmentAsync
+  - uid: outlook.Office.MessageCompose.addItemAttachmentAsync
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -442,7 +442,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.MessageCompose.addItemAttachmentAsync_1
+  - uid: outlook.Office.MessageCompose.addItemAttachmentAsync_1
     summary: >-
       Adds an Exchange item, such as a message, as an attachment to the message or appointment.
 
@@ -508,7 +508,7 @@ items:
             object that provides a description of the error.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.MessageCompose.close
+  - uid: outlook.Office.MessageCompose.close
     summary: >-
       Closes the current item that is being composed
 
@@ -543,7 +543,7 @@ items:
         type:
           - void
         description: ''
-  - uid: Outlook.Office.MessageCompose.getSelectedDataAsync
+  - uid: outlook.Office.MessageCompose.getSelectedDataAsync
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -624,7 +624,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: Outlook.Office.MessageCompose.getSelectedDataAsync_1
+  - uid: outlook.Office.MessageCompose.getSelectedDataAsync_1
     summary: >-
       Asynchronously returns selected data from the subject or body of a message.
 
@@ -672,7 +672,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<any>) => void'
-  - uid: Outlook.Office.MessageCompose.loadCustomPropertiesAsync
+  - uid: outlook.Office.MessageCompose.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -722,7 +722,7 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.MessageCompose.removeAttachmentAsync
+  - uid: outlook.Office.MessageCompose.removeAttachmentAsync
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -799,7 +799,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.removeAttachmentAsync_1
+  - uid: outlook.Office.MessageCompose.removeAttachmentAsync_1
     summary: >-
       Removes an attachment from a message or appointment.
 
@@ -851,7 +851,7 @@ items:
             contain an error code with the reason for the failure.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.removeHandlerAsync
+  - uid: outlook.Office.MessageCompose.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -898,7 +898,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.removeHandlerAsync_1
+  - uid: outlook.Office.MessageCompose.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -939,7 +939,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.saveAsync
+  - uid: outlook.Office.MessageCompose.saveAsync
     summary: >-
       Asynchronously saves an item.
 
@@ -1012,7 +1012,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.MessageCompose.saveAsync_1
+  - uid: outlook.Office.MessageCompose.saveAsync_1
     summary: >-
       Asynchronously saves an item.
 
@@ -1105,7 +1105,7 @@ items:
             of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<string>) => void'
-  - uid: Outlook.Office.MessageCompose.setSelectedDataAsync
+  - uid: outlook.Office.MessageCompose.setSelectedDataAsync
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -1177,7 +1177,7 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.setSelectedDataAsync_1
+  - uid: outlook.Office.MessageCompose.setSelectedDataAsync_1
     summary: >-
       Asynchronously inserts data into the body or subject of a message.
 
@@ -1236,7 +1236,7 @@ items:
             parameter of type Office.AsyncResult.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.MessageCompose.bcc
+  - uid: outlook.Office.MessageCompose.bcc
     summary: >-
       Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a
       message.
@@ -1278,8 +1278,8 @@ items:
       content: 'bcc: Recipients;'
       return:
         type:
-          - Outlook.Office.Recipients
-  - uid: Outlook.Office.MessageCompose.body
+          - outlook.Office.Recipients
+  - uid: outlook.Office.MessageCompose.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -1325,14 +1325,14 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook.Office.Body
-  - uid: Outlook.Office.MessageCompose.cc
+          - outlook.Office.Body
+  - uid: outlook.Office.MessageCompose.cc
     summary: >-
       Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on
       the mode of the current item.
 
 
-      The cc property returns an [Office.Recipients](xref:Outlook.Office.Recipients) object that provides methods to get
+      The cc property returns an [Office.Recipients](xref:outlook.Office.Recipients) object that provides methods to get
       or update the recipients on the Cc line of the message.
 
 
@@ -1372,8 +1372,8 @@ items:
       content: 'cc: Recipients;'
       return:
         type:
-          - Outlook.Office.Recipients
-  - uid: Outlook.Office.MessageCompose.conversationId
+          - outlook.Office.Recipients
+  - uid: outlook.Office.MessageCompose.conversationId
     summary: >-
       Gets an identifier for the email conversation that contains a particular message.
 
@@ -1417,7 +1417,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageCompose.from
+  - uid: outlook.Office.MessageCompose.from
     summary: >-
       Gets the email address of the sender of a message.
 
@@ -1461,8 +1461,8 @@ items:
       content: 'from: From;'
       return:
         type:
-          - Outlook.Office.From
-  - uid: Outlook.Office.MessageCompose.itemType
+          - outlook.Office.From
+  - uid: outlook.Office.MessageCompose.itemType
     summary: >-
       Gets the type of item that an instance represents.
 
@@ -1503,7 +1503,7 @@ items:
       return:
         type:
           - MailboxEnums.ItemType | string
-  - uid: Outlook.Office.MessageCompose.notificationMessages
+  - uid: outlook.Office.MessageCompose.notificationMessages
     summary: |-
       Gets the notification messages for an item.
 
@@ -1540,8 +1540,8 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook.Office.NotificationMessages
-  - uid: Outlook.Office.MessageCompose.seriesId
+          - outlook.Office.NotificationMessages
+  - uid: outlook.Office.MessageCompose.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
 
@@ -1603,7 +1603,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.MessageCompose.subject
+  - uid: outlook.Office.MessageCompose.subject
     summary: |-
       Gets or sets the description that appears in the subject field of an item.
 
@@ -1643,8 +1643,8 @@ items:
       content: 'subject: Subject;'
       return:
         type:
-          - Outlook.Office.Subject
-  - uid: Outlook.Office.MessageCompose.to
+          - outlook.Office.Subject
+  - uid: outlook.Office.MessageCompose.to
     summary: >-
       Provides access to the recipients on the To line of a message. The type of object and level of access depends on
       the mode of the current item.
@@ -1690,4 +1690,4 @@ items:
       content: 'to: Recipients;'
       return:
         type:
-          - Outlook.Office.Recipients
+          - outlook.Office.Recipients

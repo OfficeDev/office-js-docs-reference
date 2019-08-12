@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.Item
+  - uid: outlook.Office.Item
     summary: >-
       The item namespace is used to access the currently selected message, meeting request, or appointment. You can
       determine the type of the item by using the `itemType` property.
@@ -19,18 +19,18 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.Item.addHandlerAsync
-      - Outlook.Office.Item.addHandlerAsync_1
-      - Outlook.Office.Item.loadCustomPropertiesAsync
-      - Outlook.Office.Item.removeHandlerAsync
-      - Outlook.Office.Item.removeHandlerAsync_1
-      - Outlook.Office.Item.body
-      - Outlook.Office.Item.itemType
-      - Outlook.Office.Item.notificationMessages
-      - Outlook.Office.Item.seriesId
-  - uid: Outlook.Office.Item.addHandlerAsync
+      - outlook.Office.Item.addHandlerAsync
+      - outlook.Office.Item.addHandlerAsync_1
+      - outlook.Office.Item.loadCustomPropertiesAsync
+      - outlook.Office.Item.removeHandlerAsync
+      - outlook.Office.Item.removeHandlerAsync_1
+      - outlook.Office.Item.body
+      - outlook.Office.Item.itemType
+      - outlook.Office.Item.notificationMessages
+      - outlook.Office.Item.seriesId
+  - uid: outlook.Office.Item.addHandlerAsync
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -83,7 +83,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Item.addHandlerAsync_1
+  - uid: outlook.Office.Item.addHandlerAsync_1
     summary: >-
       Adds an event handler for a supported event. **Note**: Events are available only with task pane.
 
@@ -149,7 +149,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Item.loadCustomPropertiesAsync
+  - uid: outlook.Office.Item.loadCustomPropertiesAsync
     summary: >-
       Asynchronously loads custom properties for this add-in on the selected item.
 
@@ -244,7 +244,7 @@ items:
             accessed by the asyncResult.asyncContext property in the callback function.
           type:
             - any
-  - uid: Outlook.Office.Item.removeHandlerAsync
+  - uid: outlook.Office.Item.removeHandlerAsync
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -291,7 +291,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Item.removeHandlerAsync_1
+  - uid: outlook.Office.Item.removeHandlerAsync_1
     summary: >-
       Removes the event handlers for a supported event type. **Note**: Events are available only with task pane.
 
@@ -332,7 +332,7 @@ items:
             parameter, asyncResult, which is an Office.AsyncResult object.
           type:
             - '(asyncResult: Office.AsyncResult<void>) => void'
-  - uid: Outlook.Office.Item.body
+  - uid: outlook.Office.Item.body
     summary: |-
       Gets an object that provides methods for manipulating the body of an item.
 
@@ -378,8 +378,8 @@ items:
       content: 'body: Body;'
       return:
         type:
-          - Outlook.Office.Body
-  - uid: Outlook.Office.Item.itemType
+          - outlook.Office.Body
+  - uid: outlook.Office.Item.itemType
     summary: >-
       Gets the type of item that an instance represents.
 
@@ -420,7 +420,7 @@ items:
       return:
         type:
           - MailboxEnums.ItemType | string
-  - uid: Outlook.Office.Item.notificationMessages
+  - uid: outlook.Office.Item.notificationMessages
     summary: |-
       Gets the notification messages for an item.
 
@@ -457,8 +457,8 @@ items:
       content: 'notificationMessages: NotificationMessages;'
       return:
         type:
-          - Outlook.Office.NotificationMessages
-  - uid: Outlook.Office.Item.seriesId
+          - outlook.Office.NotificationMessages
+  - uid: outlook.Office.Item.seriesId
     summary: >-
       Gets the id of the series that an instance belongs to.
 

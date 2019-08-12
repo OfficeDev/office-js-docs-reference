@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.MailboxEnums.RestVersion
+  - uid: outlook.Office.MailboxEnums.RestVersion
     summary: |-
       Specifies the version of the REST API that corresponds to a REST-formatted item ID.
 
@@ -13,12 +13,12 @@ items:
     langs:
       - typeScript
     type: enum
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.MailboxEnums.RestVersion.Beta
-      - Outlook.Office.MailboxEnums.RestVersion.v1_0
-      - Outlook.Office.MailboxEnums.RestVersion.v2_0
-  - uid: Outlook.Office.MailboxEnums.RestVersion.Beta
+      - outlook.Office.MailboxEnums.RestVersion.Beta
+      - outlook.Office.MailboxEnums.RestVersion.v1_0
+      - outlook.Office.MailboxEnums.RestVersion.v2_0
+  - uid: outlook.Office.MailboxEnums.RestVersion.Beta
     summary: Beta.
     name: Beta
     fullName: Beta
@@ -26,7 +26,7 @@ items:
       - typeScript
     type: field
     numericValue: '"beta"'
-  - uid: Outlook.Office.MailboxEnums.RestVersion.v1_0
+  - uid: outlook.Office.MailboxEnums.RestVersion.v1_0
     summary: Version 1.0.
     name: v1_0
     fullName: v1_0
@@ -34,7 +34,7 @@ items:
       - typeScript
     type: field
     numericValue: '"v1.0"'
-  - uid: Outlook.Office.MailboxEnums.RestVersion.v2_0
+  - uid: outlook.Office.MailboxEnums.RestVersion.v2_0
     summary: Version 2.0.
     name: v2_0
     fullName: v2_0

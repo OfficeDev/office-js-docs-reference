@@ -1,6 +1,6 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: Outlook.Office.AttachmentDetails
+  - uid: outlook.Office.AttachmentDetails
     summary: >-
       Represents an attachment on an item from the server. Read mode only.
 
@@ -54,15 +54,15 @@ items:
     langs:
       - typeScript
     type: interface
-    package: Outlook
+    package: outlook
     children:
-      - Outlook.Office.AttachmentDetails.attachmentType
-      - Outlook.Office.AttachmentDetails.contentType
-      - Outlook.Office.AttachmentDetails.id
-      - Outlook.Office.AttachmentDetails.isInline
-      - Outlook.Office.AttachmentDetails.name
-      - Outlook.Office.AttachmentDetails.size
-  - uid: Outlook.Office.AttachmentDetails.attachmentType
+      - outlook.Office.AttachmentDetails.attachmentType
+      - outlook.Office.AttachmentDetails.contentType
+      - outlook.Office.AttachmentDetails.id
+      - outlook.Office.AttachmentDetails.isInline
+      - outlook.Office.AttachmentDetails.name
+      - outlook.Office.AttachmentDetails.size
+  - uid: outlook.Office.AttachmentDetails.attachmentType
     summary: Gets a value that indicates the type of an attachment.
     name: attachmentType
     fullName: attachmentType
@@ -74,7 +74,7 @@ items:
       return:
         type:
           - MailboxEnums.AttachmentType | string
-  - uid: Outlook.Office.AttachmentDetails.contentType
+  - uid: outlook.Office.AttachmentDetails.contentType
     summary: Gets the MIME content type of the attachment.
     name: contentType
     fullName: contentType
@@ -86,7 +86,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AttachmentDetails.id
+  - uid: outlook.Office.AttachmentDetails.id
     summary: Gets the Exchange attachment ID of the attachment.
     name: id
     fullName: id
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AttachmentDetails.isInline
+  - uid: outlook.Office.AttachmentDetails.isInline
     summary: Gets a value that indicates whether the attachment should be displayed in the body of the item.
     name: isInline
     fullName: isInline
@@ -110,7 +110,7 @@ items:
       return:
         type:
           - boolean
-  - uid: Outlook.Office.AttachmentDetails.name
+  - uid: outlook.Office.AttachmentDetails.name
     summary: Gets the name of the attachment.
     name: name
     fullName: name
@@ -122,7 +122,7 @@ items:
       return:
         type:
           - string
-  - uid: Outlook.Office.AttachmentDetails.size
+  - uid: outlook.Office.AttachmentDetails.size
     summary: Gets the size of the attachment in bytes.
     name: size
     fullName: size

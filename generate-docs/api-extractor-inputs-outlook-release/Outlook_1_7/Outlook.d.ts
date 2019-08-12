@@ -11,6 +11,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum AttachmentType {
@@ -33,6 +34,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.7]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum Days {
@@ -77,13 +79,13 @@ export declare namespace Office {
              */
             Day = "day"
         }
-        
         /**
          * Specifies an entity's type.
          *
          * [Api set: Mailbox 1.0]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum EntityType {
@@ -122,6 +124,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum ItemNotificationMessageType {
@@ -144,6 +147,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum ItemType {
@@ -162,6 +166,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.7]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum Month {
@@ -238,6 +243,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum RecipientType {
@@ -264,6 +270,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.7]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum RecurrenceTimeZone {
@@ -820,6 +827,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.7]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum RecurrenceType {
@@ -850,6 +858,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.0]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum ResponseType {
@@ -880,6 +889,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum RestVersion {
@@ -902,6 +912,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.7]
          *
          * @remarks
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         enum WeekNumber {
@@ -946,6 +957,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
+     * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
      * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -1110,7 +1122,6 @@ export declare namespace Office {
          */
         subject: string;
     }
-    
     /**
      * Represents an attachment on an item from the server. Read mode only.
      *
@@ -1258,7 +1269,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
          * 
@@ -1287,10 +1298,10 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
-         *
+         * 
          * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
          * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
          *                  Any errors encountered will be provided in the asyncResult.error property.
@@ -1314,7 +1325,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
          * 
@@ -1346,7 +1357,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
          * 
@@ -1376,7 +1387,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
          * 
@@ -1408,7 +1419,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The data parameter is longer than 1,000,000 characters.
          * 
@@ -1675,7 +1686,6 @@ export declare namespace Office {
          */
         emailAddress: string;
     }
-    
     /**
      * Represents a collection of entities found in an email message or appointment. Read mode only.
      *
@@ -1748,7 +1758,6 @@ export declare namespace Office {
      * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
      * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
-     * 
      */
     export interface From {
         /**
@@ -1802,6 +1811,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.7]
      * 
      * @remarks
+     * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
      * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
@@ -1864,7 +1874,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.1]
          *
          * @remarks
-         *
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
@@ -2061,7 +2071,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - AttachmentSizeExceeded: The attachment is larger than allowed.
          * 
@@ -2094,7 +2104,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - AttachmentSizeExceeded: The attachment is larger than allowed.
          * 
@@ -2109,11 +2119,10 @@ export declare namespace Office {
          *                 If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
-        
         /**
          * Adds an event handler for a supported event. **Note**: Events are available only with task pane.
          * 
-         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
+         * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and
          * `Office.EventType.RecurrenceChanged`.
          * 
          * [Api set: Mailbox 1.7]
@@ -2175,7 +2184,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
          * 
@@ -2209,7 +2218,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
          *
@@ -2282,7 +2291,7 @@ export declare namespace Office {
          * The selected data as a string with format determined by coercionType.
          *
          * @remarks
-         *
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
@@ -2335,7 +2344,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -2364,7 +2373,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -2444,7 +2453,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -2477,12 +2486,12 @@ export declare namespace Office {
          * [Api set: Mailbox 1.3]
          *
          * @remarks
-         *
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -2504,7 +2513,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -2538,7 +2547,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -3124,7 +3133,7 @@ export declare namespace Office {
          * [Api set: Mailbox 1.6]
          *
          * @remarks
-         *
+         * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
@@ -3237,6 +3246,7 @@ export declare namespace Office {
      * [Api set: Mailbox 1.0]
      *
      * @remarks
+     * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted
      * 
      * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
@@ -3281,6 +3291,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         notificationMessages: NotificationMessages;
+
         /**
          * Gets the id of the series that an instance belongs to.
          * 
@@ -3369,7 +3380,7 @@ export declare namespace Office {
         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
         * 
         * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-        *
+        * 
         * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
         *                 type Office.AsyncResult.
         * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. 
@@ -3444,6 +3455,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          */
         subject: Subject;
+
         /**
          * Adds a file to a message or appointment as an attachment.
          *
@@ -3459,7 +3471,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - AttachmentSizeExceeded: The attachment is larger than allowed.
          * 
@@ -3532,7 +3544,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
          * 
@@ -3567,7 +3579,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
          *
@@ -3600,7 +3612,6 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          */
         close(): void;
-        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -3672,7 +3683,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -3701,7 +3712,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -3742,7 +3753,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -3783,7 +3794,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -3807,7 +3818,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -3841,7 +3852,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -4021,8 +4032,6 @@ export declare namespace Office {
          *                asyncResult, which is an Office.AsyncResult object.
          */
         displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
-        
-        
         /**
          * Gets the entities found in the selected item's body.
          *
@@ -4437,7 +4446,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - AttachmentSizeExceeded: The attachment is larger than allowed.
          * 
@@ -4472,7 +4481,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - AttachmentSizeExceeded: The attachment is larger than allowed.
          * 
@@ -4553,7 +4562,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
          * 
@@ -4588,7 +4597,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfAttachmentsExceeded: The message or appointment has too many attachments.
          *
@@ -4620,7 +4629,6 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
         close(): void;
-        
         /**
          * Asynchronously returns selected data from the subject or body of a message.
          *
@@ -4717,7 +4725,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -4746,7 +4754,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -4826,7 +4834,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -4866,7 +4874,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -4889,7 +4897,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          * 
@@ -4922,7 +4930,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidAttachmentId: The attachment identifier does not exist.
          *
@@ -5050,7 +5058,6 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          */
         from: EmailAddressDetails;
-        
         /**
          * Gets the Internet message identifier for an email message.
          *
@@ -5358,8 +5365,6 @@ export declare namespace Office {
          *                asyncResult, which is an Office.AsyncResult object.
          */
         displayReplyForm(formData: string | ReplyFormData, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
-        
-        
         /**
          * Gets the entities found in the selected item's body.
          *
@@ -5747,7 +5752,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
          */
@@ -5770,7 +5775,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The location parameter is longer than 255 characters.
          */
@@ -6204,6 +6209,10 @@ export declare namespace Office {
          *
          * @remarks
          *
+         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
+         * 
+         * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
+         *
          * **Errors**:
          * 
          * - HTTPRequestFailure: The request has failed. Please look at the diagnostics object for the HTTP error code.
@@ -6212,10 +6221,6 @@ export declare namespace Office {
          * 
          * - NetworkError: The user is no longer connected to the network. Please check your network connection and try again.
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem
-         * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
-         *
          * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
          *                 type Office.AsyncResult. The token is returned as a string in the `asyncResult.value` property.
          *                 If there was an error, the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
@@ -6654,7 +6659,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
          * 
@@ -6684,7 +6689,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
          *
@@ -6752,7 +6757,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
          * 
@@ -6786,7 +6791,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - NumberOfRecipientsExceeded: The number of recipients exceeded 100 entries.
          *
@@ -6959,7 +6964,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidEndTime: The appointment end time is before its start time.
          * 
@@ -6984,7 +6989,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidEndTime: The appointment end time is before its start time.
          * 
@@ -7293,7 +7298,7 @@ export declare namespace Office {
          *
          * @remarks
          * 
-         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem         
+         * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadWriteItem
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
@@ -7397,8 +7402,6 @@ export declare namespace Office {
         setStartTime(time: string): void;
     }
 
-    
-
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *
@@ -7462,7 +7465,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
          * 
@@ -7487,7 +7490,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - DataExceedsMaximumSize: The subject parameter is longer than 255 characters.
          *
@@ -7496,6 +7499,7 @@ export declare namespace Office {
          *                 type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will contain an error code.
          */
         setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+
     }
     /**
      * Represents a suggested task identified in an item. Read mode only.
@@ -7587,7 +7591,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidEndTime: The appointment end time is before the appointment start time.
          * 
@@ -7615,7 +7619,7 @@ export declare namespace Office {
          * 
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose
          * 
-         * **Errors**: 
+         * **Errors**:
          * 
          * - InvalidEndTime: The appointment end time is before the appointment start time.
          *
@@ -7625,6 +7629,7 @@ export declare namespace Office {
          *                 If setting the date and time fails, the asyncResult.error property will contain an error code.
          */
         setAsync(dateTime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+
     }
     /**
      * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.

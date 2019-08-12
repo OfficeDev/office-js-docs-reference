@@ -210,7 +210,7 @@ items:
 
       -
       [HtmlCoercion](https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/office-add-in-requirement-sets#htmlcoercion)
-      (when using `Office.CoercionType.Html`<!-- -->),
+      (when using `Office.CoercionType.Html`<!-- -->)
 
 
       -
@@ -741,7 +741,7 @@ items:
       cells. For example, setting data to `[["=SUM(A1:A5)","=AVERAGE(A1:A5)"]]` will add those two formulas to a binding
       that contains two cells. Just as when setting a formula on a single bound cell, you can't read the added formulas
       (or any pre-existing formulas) from the binding with the `Binding.getDataAsync` method - it returns only the data
-      displayed in the bound cells.</td> </tr> <tr> <td>An `TableData` object, and the shape of the table matches the
+      displayed in the bound cells.</td> </tr> <tr> <td>A `TableData` object, and the shape of the table matches the
       bound table.</td> <td>The specified set of rows and/or headers are written, if no other data in surrounding cells
       will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter,
       you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically
