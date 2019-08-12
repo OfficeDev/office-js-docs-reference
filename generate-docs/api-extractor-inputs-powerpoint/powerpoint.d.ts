@@ -13,7 +13,7 @@ export declare namespace PowerPoint {
      * @param base64File - Optional. The base64-encoded .pptx file. The default value is null.
      */
     export function createPresentation(base64File?: string): Promise<void>;
-}  
+}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////// End PowerPoint APIs /////////////////////
