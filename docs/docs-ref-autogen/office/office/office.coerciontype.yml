@@ -1,0 +1,107 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.CoercionType
+    summary: Specifies how to coerce data returned or set by the invoked method.
+    remarks: >-
+      PowerPoint supports only `Office.CoercionType.Text`<!-- -->, `Office.CoercionType.Image`<!-- -->,
+      `Office.CoercionType.SlideRange`<!-- -->, and `Office.CoercionType.XmlSvg`<!-- -->.
+
+
+      Project supports only `Office.CoercionType.Text`<!-- -->.
+    name: Office.CoercionType
+    fullName: Office.CoercionType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.CoercionType.Html
+      - office.Office.CoercionType.Image
+      - office.Office.CoercionType.Matrix
+      - office.Office.CoercionType.Ooxml
+      - office.Office.CoercionType.SlideRange
+      - office.Office.CoercionType.Table
+      - office.Office.CoercionType.Text
+      - office.Office.CoercionType.XmlSvg
+  - uid: office.Office.CoercionType.Html
+    summary: |-
+      Return or set data as HTML.
+
+      **Note**: Only applies to data in add-ins for Word and Outlook add-ins for Outlook (compose mode).
+    name: Html
+    fullName: Html
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.Image
+    summary: 'Data is returned or set as an image stream. **Note**: Only applies to data in Excel, Word, and PowerPoint.'
+    name: Image
+    fullName: Image
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.Matrix
+    summary: >-
+      Return or set data as tabular data with no headers. Data is returned or set as an array of arrays containing
+      one-dimensional runs of characters. For example, three rows of string values in two columns would be: \[\["R1C1",
+      "R1C2"\], \["R2C1", "R2C2"\], \["R3C1", "R3C2"\]\].
+
+
+      **Note**: Only applies to data in Excel and Word.
+    name: Matrix
+    fullName: Matrix
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.Ooxml
+    summary: |-
+      Return or set data as Office Open XML.
+
+      **Note**: Only applies to data in Word.
+    name: Ooxml
+    fullName: Ooxml
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.SlideRange
+    summary: >-
+      Return a JSON object that contains an array of the ids, titles, and indexes of the selected slides. For example,
+      `{"slides":[{"id":257,"title":"Slide 2","index":2},{"id":256,"title":"Slide 1","index":1}]}` for a selection of
+      two slides.
+
+
+      **Note**: Only applies to data in PowerPoint when calling the [Document](xref:office.Office.Document)<!--
+      -->.getSelectedData method to get the current slide or selected range of slides.
+    name: SlideRange
+    fullName: SlideRange
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.Table
+    summary: >-
+      Return or set data as tabular data with optional headers. Data is returned or set as an array of arrays with
+      optional headers.
+
+
+      **Note**: Only applies to data in Excel and Word.
+    name: Table
+    fullName: Table
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.Text
+    summary: Return or set data as text (string). Data is returned or set as a one-dimensional run of characters.
+    name: Text
+    fullName: Text
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.CoercionType.XmlSvg
+    summary: >-
+      Data is returned or set as XML data containing an SVG image. **Note**: Only applies to data in Excel, Word, and
+      PowerPoint.
+    name: XmlSvg
+    fullName: XmlSvg
+    langs:
+      - typeScript
+    type: field

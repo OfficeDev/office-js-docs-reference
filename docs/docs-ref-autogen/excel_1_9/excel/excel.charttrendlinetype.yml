@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartTrendlineType
+    summary: '\[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.ChartTrendlineType
+    fullName: Excel.ChartTrendlineType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartTrendlineType.exponential
+      - excel.Excel.ChartTrendlineType.linear
+      - excel.Excel.ChartTrendlineType.logarithmic
+      - excel.Excel.ChartTrendlineType.movingAverage
+      - excel.Excel.ChartTrendlineType.polynomial
+      - excel.Excel.ChartTrendlineType.power
+  - uid: excel.Excel.ChartTrendlineType.exponential
+    name: exponential
+    fullName: exponential
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Exponential"'
+  - uid: excel.Excel.ChartTrendlineType.linear
+    name: linear
+    fullName: linear
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Linear"'
+  - uid: excel.Excel.ChartTrendlineType.logarithmic
+    name: logarithmic
+    fullName: logarithmic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Logarithmic"'
+  - uid: excel.Excel.ChartTrendlineType.movingAverage
+    name: movingAverage
+    fullName: movingAverage
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MovingAverage"'
+  - uid: excel.Excel.ChartTrendlineType.polynomial
+    name: polynomial
+    fullName: polynomial
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Polynomial"'
+  - uid: excel.Excel.ChartTrendlineType.power
+    name: power
+    fullName: power
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Power"'

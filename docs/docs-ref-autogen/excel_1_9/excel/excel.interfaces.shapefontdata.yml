@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ShapeFontData
+    summary: An interface describing the data returned by calling "shapeFont.toJSON()".
+    name: Excel.Interfaces.ShapeFontData
+    fullName: Excel.Interfaces.ShapeFontData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ShapeFontData.bold
+      - excel.Excel.Interfaces.ShapeFontData.color
+      - excel.Excel.Interfaces.ShapeFontData.italic
+      - excel.Excel.Interfaces.ShapeFontData.name
+      - excel.Excel.Interfaces.ShapeFontData.size
+      - excel.Excel.Interfaces.ShapeFontData.underline
+  - uid: excel.Excel.Interfaces.ShapeFontData.bold
+    summary: |-
+      Represents the bold status of font. Returns null the TextRange includes both bold and non-bold text fragments.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bold
+    fullName: bold
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bold?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeFontData.color
+    summary: >-
+      The HTML color code representation of the text color (e.g. "\#FF0000" represents red). Returns null if the
+      TextRange includes text fragments with different colors.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ShapeFontData.italic
+    summary: >-
+      Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text
+      fragments.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: italic
+    fullName: italic
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'italic?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ShapeFontData.name
+    summary: >-
+      Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the
+      corresponding font name; otherwise it is the Latin font name.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: string;'
+      return:
+        type:
+          - string
+  - uid: excel.Excel.Interfaces.ShapeFontData.size
+    summary: >-
+      Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different
+      font sizes.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: size
+    fullName: size
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'size?: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.Interfaces.ShapeFontData.underline
+    summary: >-
+      Type of underline applied to the font. Returns null if the TextRange includes text fragments with different
+      underline styles. See Excel.ShapeFontUnderlineStyle for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: underline
+    fullName: underline
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        underline?: Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" |
+        "Dash" | "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" |
+        "DotDotDashHeavy" | "Wavy" | "WavyHeavy" | "WavyDouble";
+      return:
+        type:
+          - >-
+            Excel.ShapeFontUnderlineStyle | "None" | "Single" | "Double" | "Heavy" | "Dotted" | "DottedHeavy" | "Dash" |
+            "DashHeavy" | "DashLong" | "DashLongHeavy" | "DotDash" | "DotDashHeavy" | "DotDotDash" | "DotDotDashHeavy" |
+            "Wavy" | "WavyHeavy" | "WavyDouble"

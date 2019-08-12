@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.RangeLocation
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.RangeLocation
+    fullName: Word.RangeLocation
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.RangeLocation.after
+      - word.Word.RangeLocation.before
+      - word.Word.RangeLocation.content
+      - word.Word.RangeLocation.end
+      - word.Word.RangeLocation.start
+      - word.Word.RangeLocation.whole
+  - uid: word.Word.RangeLocation.after
+    summary: >-
+      The point after the object. If the object is a paragraph content control or table content control, it is the point
+      after the EOP or Table characters.
+    name: after
+    fullName: after
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"After"'
+  - uid: word.Word.RangeLocation.before
+    summary: For content control only. It is the point before the opening tag.
+    name: before
+    fullName: before
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Before"'
+  - uid: word.Word.RangeLocation.content
+    summary: The range between 'Start' and 'End'.
+    name: content
+    fullName: content
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Content"'
+  - uid: word.Word.RangeLocation.end
+    summary: >-
+      The ending point of the object. For paragraph, it is the point before the EOP. For content control, it is the
+      point before the closing tag.
+    name: end
+    fullName: end
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"End"'
+  - uid: word.Word.RangeLocation.start
+    summary: 'The starting point of the object. For content control, it is the point after the opening tag.'
+    name: start
+    fullName: start
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Start"'
+  - uid: word.Word.RangeLocation.whole
+    summary: >-
+      The object's whole range. If the object is a paragraph content control or table content control, the EOP or Table
+      characters after the content control are also included.
+    name: whole
+    fullName: whole
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Whole"'

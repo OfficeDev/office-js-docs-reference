@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ImageData
+    summary: An interface describing the data returned by calling "image.toJSON()".
+    name: Excel.Interfaces.ImageData
+    fullName: Excel.Interfaces.ImageData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ImageData.format
+      - excel.Excel.Interfaces.ImageData.id
+  - uid: excel.Excel.Interfaces.ImageData.format
+    summary: |-
+      Returns the format of the image. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG";'
+      return:
+        type:
+          - Excel.PictureFormat | "UNKNOWN" | "BMP" | "JPEG" | "GIF" | "PNG" | "SVG"
+  - uid: excel.Excel.Interfaces.ImageData.id
+    summary: |-
+      Represents the shape identifier for the image object. Read-only.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: id
+    fullName: id
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'id?: string;'
+      return:
+        type:
+          - string

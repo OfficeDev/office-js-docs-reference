@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartMapProjectionType
+    summary: |-
+      Represents the region projection type of a chart series layout. This only applies to region map charts.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartMapProjectionType
+    fullName: Excel.ChartMapProjectionType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartMapProjectionType.albers
+      - excel.Excel.ChartMapProjectionType.automatic
+      - excel.Excel.ChartMapProjectionType.mercator
+      - excel.Excel.ChartMapProjectionType.miller
+      - excel.Excel.ChartMapProjectionType.robinson
+  - uid: excel.Excel.ChartMapProjectionType.albers
+    name: albers
+    fullName: albers
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Albers"'
+  - uid: excel.Excel.ChartMapProjectionType.automatic
+    name: automatic
+    fullName: automatic
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Automatic"'
+  - uid: excel.Excel.ChartMapProjectionType.mercator
+    name: mercator
+    fullName: mercator
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mercator"'
+  - uid: excel.Excel.ChartMapProjectionType.miller
+    name: miller
+    fullName: miller
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Miller"'
+  - uid: excel.Excel.ChartMapProjectionType.robinson
+    name: robinson
+    fullName: robinson
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Robinson"'

@@ -1,0 +1,278 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    summary: |-
+      Represents a collection of chart series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    fullName: Excel.Interfaces.ChartSeriesCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
+      - excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.chartType
+    summary: |-
+      For EACH ITEM in the collection: Represents the chart type of a series. See Excel.ChartType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: chartType
+    fullName: chartType
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'chartType?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.doughnutHoleSize
+    summary: >-
+      For EACH ITEM in the collection: Represents the doughnut hole size of a chart series. Only valid on doughnut and
+      doughnutExploded charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: doughnutHoleSize
+    fullName: doughnutHoleSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'doughnutHoleSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.filtered
+    summary: >-
+      For EACH ITEM in the collection: Boolean value representing if the series is filtered or not. Not applicable for
+      surface charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: filtered
+    fullName: filtered
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'filtered?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.format
+    summary: >-
+      For EACH ITEM in the collection: Represents the formatting of a chart series, which includes fill and line
+      formatting.
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'format?: Excel.Interfaces.ChartSeriesFormatLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartSeriesFormatLoadOptions
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.gapWidth
+    summary: >-
+      For EACH ITEM in the collection: Represents the gap width of a chart series. Only valid on bar and column charts,
+      as well as specific classes of line and pie charts. Throws an invalid argument exception on invalid charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: gapWidth
+    fullName: gapWidth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'gapWidth?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.hasDataLabels
+    summary: |-
+      For EACH ITEM in the collection: Boolean value representing if the series has data labels or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasDataLabels
+    fullName: hasDataLabels
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasDataLabels?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerBackgroundColor
+    summary: |-
+      For EACH ITEM in the collection: Represents markers background color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerBackgroundColor
+    fullName: markerBackgroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerBackgroundColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerForegroundColor
+    summary: |-
+      For EACH ITEM in the collection: Represents markers foreground color of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerForegroundColor
+    fullName: markerForegroundColor
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerForegroundColor?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerSize
+    summary: |-
+      For EACH ITEM in the collection: Represents marker size of a chart series.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerSize
+    fullName: markerSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.markerStyle
+    summary: >-
+      For EACH ITEM in the collection: Represents marker style of a chart series. See Excel.ChartMarkerStyle for
+      details.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: markerStyle
+    fullName: markerStyle
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'markerStyle?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.name
+    summary: |-
+      For EACH ITEM in the collection: Represents the name of a series in a chart.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: name
+    fullName: name
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'name?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.plotOrder
+    summary: |-
+      For EACH ITEM in the collection: Represents the plot order of a chart series within the chart group.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: plotOrder
+    fullName: plotOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'plotOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.points
+    summary: |-
+      For EACH ITEM in the collection: Represents a collection of all points in the series.
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: points
+    fullName: points
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'points?: Excel.Interfaces.ChartPointsCollectionLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartPointsCollectionLoadOptions
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.showShadow
+    summary: |-
+      For EACH ITEM in the collection: Boolean value representing if the series has a shadow or not.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: showShadow
+    fullName: showShadow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'showShadow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.ChartSeriesCollectionLoadOptions.smooth
+    summary: >-
+      For EACH ITEM in the collection: Boolean value representing if the series is smooth or not. Only applicable to
+      line and scatter charts.
+
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: smooth
+    fullName: smooth
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'smooth?: boolean;'
+      return:
+        type:
+          - boolean

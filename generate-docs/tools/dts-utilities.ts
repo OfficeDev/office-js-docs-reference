@@ -225,27 +225,25 @@ function extractFirstSentenceFromComment(commentText) {
 
 function buildFieldLink(relativePath: string, className: string, field: FieldStruct) {
     let fieldLink: string;
-    switch (field.type) {
-        case FieldType.Method:
-            let parameterLink: string = "";
-            let paramIndex = field.declarationString.indexOf(":");
-            while (paramIndex < field.declarationString.indexOf(")")) {
-                const wordStartIndex = Math.max(
-                    field.declarationString.lastIndexOf("(", paramIndex),
-                    field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
-                parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace("?", "") + "-";
-                paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
-            }
+    if (field.type === FieldType.Method) {
+        let parameterLink: string = "";
+        let paramIndex = field.declarationString.indexOf(":");
+        while (paramIndex < field.declarationString.indexOf(")")) {
+            const wordStartIndex = Math.max(
+                field.declarationString.lastIndexOf("(", paramIndex),
+                field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
+            parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace("?", "").replace("_", "-") + "-";
+            paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
+        }
 
-            if (parameterLink === "") {
-                parameterLink = "--";
-            }
+        if (parameterLink === "") {
+            parameterLink = "--";
+        }
 
-            fieldLink = "/" + relativePath + className + "#" + field.name + parameterLink;
-            break;
-        default:
-            fieldLink = "/" + relativePath + className + "#" + field.name;
-            break;
+
+        fieldLink = "/" + relativePath + className + "#" + field.name.replace("_", "-") + parameterLink;
+    } else {
+        fieldLink = "/" + relativePath + className + "#" + field.name;
     }
 
     return fieldLink.toLowerCase();

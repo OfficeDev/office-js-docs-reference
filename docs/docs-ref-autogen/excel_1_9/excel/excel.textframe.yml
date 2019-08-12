@@ -1,0 +1,436 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.TextFrame
+    summary: |-
+      Represents the text frame of a shape object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.TextFrame
+    fullName: Excel.TextFrame
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.TextFrame.autoSizeSetting
+      - excel.Excel.TextFrame.bottomMargin
+      - excel.Excel.TextFrame.context
+      - excel.Excel.TextFrame.deleteText
+      - excel.Excel.TextFrame.hasText
+      - excel.Excel.TextFrame.horizontalAlignment
+      - excel.Excel.TextFrame.horizontalOverflow
+      - excel.Excel.TextFrame.leftMargin
+      - excel.Excel.TextFrame.load
+      - excel.Excel.TextFrame.load_1
+      - excel.Excel.TextFrame.load_2
+      - excel.Excel.TextFrame.orientation
+      - excel.Excel.TextFrame.readingOrder
+      - excel.Excel.TextFrame.rightMargin
+      - excel.Excel.TextFrame.set
+      - excel.Excel.TextFrame.set_1
+      - excel.Excel.TextFrame.textRange
+      - excel.Excel.TextFrame.toJSON
+      - excel.Excel.TextFrame.topMargin
+      - excel.Excel.TextFrame.verticalAlignment
+      - excel.Excel.TextFrame.verticalOverflow
+  - uid: excel.Excel.TextFrame.autoSizeSetting
+    summary: >-
+      Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
+      text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSizeSetting
+    fullName: autoSizeSetting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        autoSizeSetting: Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" |
+        "AutoSizeMixed";
+      return:
+        type:
+          - Excel.ShapeAutoSize | "AutoSizeNone" | "AutoSizeTextToFitShape" | "AutoSizeShapeToFitText" | "AutoSizeMixed"
+  - uid: excel.Excel.TextFrame.bottomMargin
+    summary: |-
+      Represents the bottom margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TextFrame.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.TextFrame.deleteText
+    summary: |-
+      Deletes all the text in the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: deleteText()
+    fullName: deleteText()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'deleteText(): void;'
+      return:
+        type:
+          - void
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          await Excel.run(async (context) => {
+              const shapes = context.workbook.worksheets.getItem("Shapes").shapes;
+              const textbox = shapes.getItem("Textbox");
+              textbox.textFrame.deleteText();
+              await context.sync();
+          });
+          ```
+  - uid: excel.Excel.TextFrame.hasText
+    summary: |-
+      Specifies whether the text frame contains text.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasText
+    fullName: hasText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly hasText: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.TextFrame.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        horizontalAlignment: Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow"
+        | "Distributed" | "ThaiDistributed";
+      return:
+        type:
+          - >-
+            Excel.ShapeTextHorizontalAlignment | "Left" | "Center" | "Right" | "Justify" | "JustifyLow" | "Distributed"
+            | "ThaiDistributed"
+  - uid: excel.Excel.TextFrame.horizontalOverflow
+    summary: |-
+      Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalOverflow
+    fullName: horizontalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalOverflow: Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip";'
+      return:
+        type:
+          - Excel.ShapeTextHorizontalOverflow | "Overflow" | "Clip"
+  - uid: excel.Excel.TextFrame.leftMargin
+    summary: |-
+      Represents the left margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TextFrame.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.TextFrame` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.TextFrame` - Where option.select is a comma-delimited
+      string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the
+      navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.TextFrame` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.TextFrameLoadOptions): Excel.TextFrame;'
+      return:
+        type:
+          - excel.Excel.TextFrame
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.TextFrameLoadOptions
+  - uid: excel.Excel.TextFrame.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.TextFrame;'
+      return:
+        type:
+          - excel.Excel.TextFrame
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.TextFrame.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.TextFrame;'
+      return:
+        type:
+          - excel.Excel.TextFrame
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.TextFrame.orientation
+    summary: |-
+      Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: >-
+        orientation: Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+        "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL";
+      return:
+        type:
+          - >-
+            Excel.ShapeTextOrientation | "Horizontal" | "Vertical" | "Vertical270" | "WordArtVertical" |
+            "EastAsianVertical" | "MongolianVertical" | "WordArtVerticalRTL"
+  - uid: excel.Excel.TextFrame.readingOrder
+    summary: >-
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      Excel.ShapeTextReadingOrder for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder: Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft";'
+      return:
+        type:
+          - Excel.ShapeTextReadingOrder | "LeftToRight" | "RightToLeft"
+  - uid: excel.Excel.TextFrame.rightMargin
+    summary: |-
+      Represents the right margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TextFrame.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.TextFrame): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.TextFrameUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.TextFrameUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.TextFrame.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.TextFrame): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.TextFrame
+  - uid: excel.Excel.TextFrame.textRange
+    summary: >-
+      Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
+      text. See Excel.TextRange for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textRange
+    fullName: textRange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly textRange: Excel.TextRange;'
+      return:
+        type:
+          - excel.Excel.TextRange
+  - uid: excel.Excel.TextFrame.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.TextFrame object is an API object, the `toJSON` method returns a plain
+      JavaScript object (typed as `Excel.Interfaces.TextFrameData`<!-- -->) that contains shallow copies of any loaded
+      child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.TextFrameData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TextFrameData
+        description: ''
+  - uid: excel.Excel.TextFrame.topMargin
+    summary: |-
+      Represents the top margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin: number;'
+      return:
+        type:
+          - number
+  - uid: excel.Excel.TextFrame.verticalAlignment
+    summary: |-
+      Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment: Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed";'
+      return:
+        type:
+          - Excel.ShapeTextVerticalAlignment | "Top" | "Middle" | "Bottom" | "Justified" | "Distributed"
+  - uid: excel.Excel.TextFrame.verticalOverflow
+    summary: |-
+      Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalOverflow
+    fullName: verticalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalOverflow: Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip";'
+      return:
+        type:
+          - Excel.ShapeTextVerticalOverflow | "Overflow" | "Ellipsis" | "Clip"

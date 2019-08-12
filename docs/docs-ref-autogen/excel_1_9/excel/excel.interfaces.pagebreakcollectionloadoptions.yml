@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.Interfaces.PageBreakCollectionLoadOptions
+    fullName: Excel.Interfaces.PageBreakCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.PageBreakCollectionLoadOptions.$all
+      - excel.Excel.Interfaces.PageBreakCollectionLoadOptions.columnIndex
+      - excel.Excel.Interfaces.PageBreakCollectionLoadOptions.rowIndex
+  - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions.columnIndex
+    summary: |-
+      For EACH ITEM in the collection: Represents the column index for the page break
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: columnIndex
+    fullName: columnIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'columnIndex?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageBreakCollectionLoadOptions.rowIndex
+    summary: |-
+      For EACH ITEM in the collection: Represents the row index for the page break
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rowIndex
+    fullName: rowIndex
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rowIndex?: boolean;'
+      return:
+        type:
+          - boolean

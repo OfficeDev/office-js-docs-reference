@@ -1,0 +1,240 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions
+    summary: |-
+      Represents the text frame of a shape object.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.Interfaces.TextFrameLoadOptions
+    fullName: Excel.Interfaces.TextFrameLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.TextFrameLoadOptions.$all
+      - excel.Excel.Interfaces.TextFrameLoadOptions.autoSizeSetting
+      - excel.Excel.Interfaces.TextFrameLoadOptions.bottomMargin
+      - excel.Excel.Interfaces.TextFrameLoadOptions.hasText
+      - excel.Excel.Interfaces.TextFrameLoadOptions.horizontalAlignment
+      - excel.Excel.Interfaces.TextFrameLoadOptions.horizontalOverflow
+      - excel.Excel.Interfaces.TextFrameLoadOptions.leftMargin
+      - excel.Excel.Interfaces.TextFrameLoadOptions.orientation
+      - excel.Excel.Interfaces.TextFrameLoadOptions.readingOrder
+      - excel.Excel.Interfaces.TextFrameLoadOptions.rightMargin
+      - excel.Excel.Interfaces.TextFrameLoadOptions.textRange
+      - excel.Excel.Interfaces.TextFrameLoadOptions.topMargin
+      - excel.Excel.Interfaces.TextFrameLoadOptions.verticalAlignment
+      - excel.Excel.Interfaces.TextFrameLoadOptions.verticalOverflow
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.autoSizeSetting
+    summary: >-
+      Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the
+      text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: autoSizeSetting
+    fullName: autoSizeSetting
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'autoSizeSetting?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.bottomMargin
+    summary: |-
+      Represents the bottom margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.hasText
+    summary: |-
+      Specifies whether the text frame contains text.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: hasText
+    fullName: hasText
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'hasText?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.horizontalAlignment
+    summary: |-
+      Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalAlignment
+    fullName: horizontalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.horizontalOverflow
+    summary: |-
+      Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: horizontalOverflow
+    fullName: horizontalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'horizontalOverflow?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.leftMargin
+    summary: |-
+      Represents the left margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.orientation
+    summary: |-
+      Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'orientation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.readingOrder
+    summary: >-
+      Represents the reading order of the text frame, either left-to-right or right-to-left. See
+      Excel.ShapeTextReadingOrder for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: readingOrder
+    fullName: readingOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readingOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.rightMargin
+    summary: |-
+      Represents the right margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.textRange
+    summary: >-
+      Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the
+      text. See Excel.TextRange for details.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: textRange
+    fullName: textRange
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'textRange?: Excel.Interfaces.TextRangeLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.TextRangeLoadOptions
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.topMargin
+    summary: |-
+      Represents the top margin, in points, of the text frame.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.verticalAlignment
+    summary: |-
+      Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalAlignment
+    fullName: verticalAlignment
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalAlignment?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.TextFrameLoadOptions.verticalOverflow
+    summary: |-
+      Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: verticalOverflow
+    fullName: verticalOverflow
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'verticalOverflow?: boolean;'
+      return:
+        type:
+          - boolean

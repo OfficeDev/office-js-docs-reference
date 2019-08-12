@@ -6,7 +6,7 @@
   },
   "docModel": {
     "enabled": true,
-    "apiJsonFilePath": "../json/<unscopedPackageName>.api.json"
+    "apiJsonFilePath": "../json/word/<unscopedPackageName>.api.json"
   },
   "dtsRollup": {
     "enabled": false
@@ -19,9 +19,9 @@
       "ae-forgotten-export": {
         "logLevel": "none"
       },
-	  "ae-unresolved-link": {
-	    "logLevel": "none"
-	  }
+      "ae-unresolved-link": {
+        "logLevel": "none"
+      }
     },
     "tsdocMessageReporting": {
       "tsdoc-escape-right-brace": {

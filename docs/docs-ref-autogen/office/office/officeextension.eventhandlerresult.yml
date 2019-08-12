@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.OfficeExtension.EventHandlerResult
+    name: OfficeExtension.EventHandlerResult
+    fullName: OfficeExtension.EventHandlerResult
+    langs:
+      - typeScript
+    type: class
+    package: office
+    children:
+      - office.OfficeExtension.EventHandlerResult.(constructor)
+      - office.OfficeExtension.EventHandlerResult.context
+      - office.OfficeExtension.EventHandlerResult.remove
+  - uid: office.OfficeExtension.EventHandlerResult.(constructor)
+    summary: Constructs a new instance of the `EventHandlerResult` class
+    name: '(constructor)(context, handlers, handler)'
+    fullName: '(constructor)(context, handlers, handler)'
+    langs:
+      - typeScript
+    type: constructor
+    syntax:
+      content: 'constructor(context: ClientRequestContext, handlers: EventHandlers<T>, handler: (args: T) => Promise<any>);'
+      parameters:
+        - id: context
+          description: ''
+          type:
+            - office.OfficeExtension.ClientRequestContext
+        - id: handlers
+          description: ''
+          type:
+            - EventHandlers<T>
+        - id: handler
+          description: ''
+          type:
+            - '(args: T) => Promise<any>'
+  - uid: office.OfficeExtension.EventHandlerResult.context
+    summary: The request context associated with the object
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: ClientRequestContext;'
+      return:
+        type:
+          - office.OfficeExtension.ClientRequestContext
+  - uid: office.OfficeExtension.EventHandlerResult.remove
+    name: remove()
+    fullName: remove()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'remove(): void;'
+      return:
+        type:
+          - void
+        description: ''

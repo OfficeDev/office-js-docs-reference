@@ -1,0 +1,36 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.SelectionMode
+    summary: >-
+      Specifies whether to select (highlight) the location to navigate to (when using the
+      [Document](xref:office.Office.Document)<!-- -->.goToByIdAsync method).
+    name: Office.SelectionMode
+    fullName: Office.SelectionMode
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.SelectionMode.Default
+      - office.Office.SelectionMode.None
+      - office.Office.SelectionMode.Selected
+  - uid: office.Office.SelectionMode.Default
+    name: Default
+    fullName: Default
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.SelectionMode.None
+    summary: The cursor is moved to the beginning of the location.
+    name: None
+    fullName: None
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.SelectionMode.Selected
+    summary: The location will be selected (highlighted).
+    name: Selected
+    fullName: Selected
+    langs:
+      - typeScript
+    type: field

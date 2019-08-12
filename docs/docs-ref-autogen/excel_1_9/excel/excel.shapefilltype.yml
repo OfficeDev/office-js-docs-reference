@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ShapeFillType
+    summary: |-
+      Specifies a shape's fill type.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ShapeFillType
+    fullName: Excel.ShapeFillType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ShapeFillType.gradient
+      - excel.Excel.ShapeFillType.mixed
+      - excel.Excel.ShapeFillType.noFill
+      - excel.Excel.ShapeFillType.pattern
+      - excel.Excel.ShapeFillType.pictureAndTexture
+      - excel.Excel.ShapeFillType.solid
+  - uid: excel.Excel.ShapeFillType.gradient
+    summary: Gradient fill.
+    name: gradient
+    fullName: gradient
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Gradient"'
+  - uid: excel.Excel.ShapeFillType.mixed
+    summary: Mixed fill.
+    name: mixed
+    fullName: mixed
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Mixed"'
+  - uid: excel.Excel.ShapeFillType.noFill
+    summary: No fill.
+    name: noFill
+    fullName: noFill
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"NoFill"'
+  - uid: excel.Excel.ShapeFillType.pattern
+    summary: Pattern fill.
+    name: pattern
+    fullName: pattern
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Pattern"'
+  - uid: excel.Excel.ShapeFillType.pictureAndTexture
+    summary: Picture and texture fill.
+    name: pictureAndTexture
+    fullName: pictureAndTexture
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"PictureAndTexture"'
+  - uid: excel.Excel.ShapeFillType.solid
+    summary: Solid fill.
+    name: solid
+    fullName: solid
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Solid"'

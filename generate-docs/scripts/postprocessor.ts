@@ -44,7 +44,6 @@ interface INewToc {
     items: [
         {
             name: string,
-            href: string,
             items?: [
                 {
                     name: string,
@@ -73,33 +72,131 @@ interface INewToc {
 }
 
 tryCatch(async () => {
-
-    const tocPath = path.resolve("../yaml/toc.yml");
-
     console.log("\nStarting postprocessor script...");
 
-    console.log(`\nUpdating the structure of the TOC file: ${tocPath}`);
+    const docsSource = path.resolve("../yaml");
+    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
+
+    console.log(`Deleting old docs at: ${docsDestination}`);
+    // delete everything except the 'overview' folder from the /docs folder
+    fsx.readdirSync(docsDestination)
+        .filter(filename => filename !== "overview" && filename !== "images")
+        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
+
+    // fix all the individual TOC files
+    const commonTocFolder = path.resolve("../yaml/office");
+    const commonToc = scrubAndWriteToc(commonTocFolder);
+    const hostVersionMap = [{host: "excel", versions: 10},
+                            {host: "onenote", versions: 1},
+                            {host: "outlook", versions: 8},
+                            {host: "powerpoint", versions: 1},
+                            {host: "visio", versions: 1},
+                            {host: "word", versions: 4}];
+
+    hostVersionMap.forEach(category => {
+        scrubAndWriteToc(path.resolve(`../yaml/${category.host}`), commonToc, category.host);
+        for (let i = 1; i < category.versions; i++) {
+            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}`), commonToc, category.host);
+        }
+    });
+
+
+    console.log(`Namespace pass on Outlook docs`);
+    // replace Outlook/CommonAPI namespace references with Office
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename + "/outlook";
+            fsx.readdirSync(subfolder)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
+                });
+        });
+    console.log(`Namespace pass on Office docs`);
+    const officeFolder = docsSource + "/office/office";
+    fsx.readdirSync(officeFolder)
+        .forEach(filename => {
+            fsx.writeFileSync(officeFolder + '/' + filename, fsx.readFileSync(officeFolder + '/' + filename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
+        });
+
+    console.log(`Fixing top href`);
+    fsx.readdirSync(docsSource)
+        .filter(filename => filename.indexOf(".yml") < 0)
+        .forEach(filename => {
+            let subfolder = docsSource + '/' + filename;
+            fsx.readdirSync(subfolder)
+                .filter(subfilename => subfilename.indexOf("toc") >= 0)
+                .forEach(subfilename => {
+                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace("~/docs-ref-autogen/overview/office.md", "overview.md"));
+                });
+        });
+
+        
+    console.log(`Moving common TOC to its own folder`);
+    fsx.copySync(commonTocFolder + "/toc.yml",  "../yaml/common/toc.yml");
+    fsx.copySync(commonTocFolder + "/overview.md", "../yaml/common/overview.md");
+
+    // remove to prevent build errors
+    fsx.removeSync(commonTocFolder + "/toc.yml");
+    fsx.removeSync(commonTocFolder + "/overview.md");
+
+    console.log(`Creating global TOC`);
+    let globalToc = <INewToc>{items: [{"name": "API reference"}]};
+    globalToc.items[0].items = [{"name": "API reference overview", "href": "/javascript/api/overview"},
+                                {"name": "Excel", "href": "/javascript/api/excel?view=excel-js-preview"},
+                                {"name": "OneNote", "href": "/javascript/api/onenote?view=onenote-js-1.1"},
+                                {"name": "Outlook", "href": "/javascript/api/outlook?view=outlook-js-preview"},
+                                {"name": "PowerPoint", "href": "/javascript/api/powerpoint?view=powerpoint-js-1.1"},
+                                {"name": "Visio", "href": "/javascript/api/visio?view=visio-js-1.1"},
+                                {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
+                                {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
+    fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
+
+    console.log(`Copying docs output files to: ${docsDestination}`);
+    // copy docs output to /docs/docs-ref-autogen folder
+    fsx.readdirSync(docsSource)
+        .forEach(filename => {
+        fsx.copySync(
+            docsSource + '/' + filename,
+            docsDestination + '/' + filename
+        );
+    });
+
+    console.log("\nPostprocessor script complete!\n");
+
+    process.exit(0);
+});
+
+async function tryCatch(call: () => Promise<void>) {
+    try {
+        await call();
+    } catch (e) {
+        console.error(e);
+        process.exit(1);
+    }
+}
+
+function fixToc(tocPath: string, commonToc: INewToc): INewToc {
+    console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
     let newToc = <INewToc>{};
     let membersToMove = <IMembers>{};
 
     newToc.items = [{
-        "name": origToc.items[0].name,
-        "href": origToc.items[0].href
+        "name": "API reference",
+        "items": [] as any
     }];
-    newToc.items[0].items = [] as any;
-
-    // create a root for all the Outlook versions
-    let outlookRoot = {"name": "Outlook", "uid": "", "items": [] as any};
-    let outlookRootPushed = false;
+    newToc.items[0].items = [{
+        "name": "API reference overview",
+        "href": "overview.md"
+    }] as any;
+    
 
     // look for existing folders to move
     let outlookFolders : string[] = ["MailboxEnums"];
 
     // create folders for Excel subcategories
-    let excelRoot = {"name": "Excel", "uid": "", "items": [] as any};
-    let excelRootPushed = false;
     let excelEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-excel/excel.d.ts").toString());
 
     // let excelEventArgsFilter : string [] = ["BindingDataChangedEventArgs", "BindingSelectionChangedEventArgs", "ChartActivatedEventArgs", "ChartAddedEventArgs", "ChartDeactivatedEventArgs", "ChartDeletedEventArgs", "SelectionChangedEventArgs", "SettingsChangedEventArgs", "TableChangedEventArgs", "TableSelectionChangedEventArgs", "WorksheetActivatedEventArgs", "WorksheetAddedEventArgs", "WorksheetCalculatedEventArgs", "WorksheetChangedEventArgs", "WorksheetDeactivatedEventArgs", "WorksheetDeletedEventArgs", "WorksheetSelectionChangedEventArgs"];
@@ -114,13 +211,7 @@ tryCatch(async () => {
     //let oneNoteInterfaceFilter : string[] = ["ImageOcrData", "InkStrokePointer", "ParagraphInfo"];
 
     // create folders for word subcategories
-    let wordRoot = {"name": "Word", "uid": "", "items": [] as any};
-    let wordRootPushed = false;
     let wordEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-word/word.d.ts").toString());
-
-    // create folders for common (shared) API subcategories
-    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
-    let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
 
     // create filter lists for types we shouldn't expose
     //let outlookFilter : string[] = ['Appointment', 'AppointmentForm', 'CoercionTypeOptions', 'Diagnostics', 'ItemCompose', 'ItemRead', 'Message', 'ReplyFormAttachment', 'ReplyFormData'];
@@ -155,44 +246,27 @@ tryCatch(async () => {
                         membersToMove.items = namespaceItem.items;
                     });
 
-                    // if outlook, put in subfolders for versioning
                     if (packageName.toLocaleLowerCase().includes('outlook')) {
-                        if (!outlookRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(outlookRoot);
-                            outlookRootPushed = true;
-                        }
                         let filterToCContent = membersToMove.items.filter(item => {
                             return outlookFilter.indexOf(item.name) < 0;
                         });
+                        // move MailboxEnums to top
                         let folderIndex: number = 0;
-                            while (folderIndex >= 0) {
-                                folderIndex = membersToMove.items.findIndex(item => {
-                                    return outlookFolders.indexOf(item.name) >= 0;
-                                });
-                                if (folderIndex >= 0) {
-                                    filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
-                                }
+                        while (folderIndex >= 0) {
+                            folderIndex = membersToMove.items.findIndex(item => {
+                                return outlookFolders.indexOf(item.name) >= 0;
+                            });
+                            if (folderIndex >= 0) {
+                                filterToCContent.unshift(membersToMove.items.splice(folderIndex, 1)[0]);
                             }
-                        if (packageName === 'Outlook') { // The version without a suffix is the preview version
-                            outlookRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items": filterToCContent
-                            });
                         }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_1_', ' 1.');
-                            outlookRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items": filterToCContent
-                            });
-                        }
+
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": filterToCContent as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('excel')) {
-                        if (!excelRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(excelRoot);
-                            excelRootPushed = true;
-                        }
                         let enumList = membersToMove.items.filter(item => {
                              return excelEnumFilter.indexOf(item.name) >= 0;
                          });
@@ -207,27 +281,12 @@ tryCatch(async () => {
                         let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
                         primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
-
-                        if (packageName === 'Excel') { // The version without a suffix is the preview version
-                            excelRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items": primaryList
-                            });
-                        }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_r', ' - R');
-                            excelRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items": primaryList
-                            });
-                        }
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": primaryList as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('word')) {
-                        if (!wordRootPushed) { // add root in alphabetical order
-                            newToc.items[0].items.push(wordRoot);
-                            wordRootPushed = true;
-                        }
                         let enumList = membersToMove.items.filter(item => {
                             return wordEnumFilter.indexOf(item.name) >= 0;
                         });
@@ -237,21 +296,11 @@ tryCatch(async () => {
 
                         let wordEnumRoot = {"name": "Enums", "uid": "", "items": enumList};
                         primaryList.unshift(wordEnumRoot);
-                        if (packageName === 'Word') { // The version without a suffix is the preview version
-                            wordRoot.items.push({
-                                "name": packageName + " - Preview",
-                                "uid": packageItem.uid,
-                                "items": primaryList
-                            });
-                        }
-                        else {
-                            let packageNameVersionFormated = packageName.replace('_r', ' - R');
-                            wordRoot.items.push({
-                                "name": packageNameVersionFormated,
-                                "uid": packageItem.uid,
-                                "items": primaryList
-                            });
-                        }
+                        newToc.items[0].items.push({
+                            "name": packageName,
+                            "uid": packageItem.uid,
+                            "items": primaryList as any
+                        });
                     } else if (packageName.toLocaleLowerCase().includes('visio')) {
                         let primaryList = membersToMove.items.filter(item => {
                             return visioFilter.indexOf(item.name) < 0;
@@ -312,11 +361,26 @@ tryCatch(async () => {
             }
         });
     });
-    // Get the logical order: Preview, 1.6, 1.5, etc.
-    outlookRoot.items.reverse();
-    outlookRoot.items.unshift(outlookRoot.items.pop());
-    // add custom functions packages under excel
-    excelRoot.items.unshift(customFunctionsRoot);
+
+    // append the common API toc
+    newToc.items[0].items.push((commonToc.items[0] as any).items[1]);
+    return newToc;
+}
+
+function fixCommonToc(tocPath: string): INewToc {
+    console.log(`\nUpdating the structure of the Common TOC file: ${tocPath}`);
+
+    let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
+    let newToc = <INewToc>{};
+    
+    newToc.items = [{
+        "name": "API reference",
+        "items": [] as any
+    }];
+
+    // create folders for common (shared) API subcategories
+    let sharedEnumRoot = {"name": "Enums", "uid": "", "items": [] as any};
+    let sharedEnumFilter = generateEnumList(fsx.readFileSync("../api-extractor-inputs-office/office.d.ts").toString());
 
     // process 'office' (Common "Shared" API) package
     origToc.items.forEach((rootItem, rootIndex) => {
@@ -344,58 +408,26 @@ tryCatch(async () => {
         });
     });
 
-    // write file
-    fsx.writeFileSync(tocPath, jsyaml.safeDump(newToc));
+    
+    // add API reference overview to Common API
+    newToc.items[0].items.unshift({
+        "name": "API reference overview",
+        "href": "overview.md"
+    } as any);
 
-    const docsSource = path.resolve("../yaml");
-    const docsDestination = path.resolve("../../docs/docs-ref-autogen");
-
-    console.log(`\nCopying docs output files to: ${docsDestination}`);
-
-    // delete everything except the 'overview' folder from the /docs folder
-    fsx.readdirSync(docsDestination)
-        .filter(filename => filename !== "overview")
-        .forEach(filename => fsx.removeSync(docsDestination + '/' + filename));
-
-    fsx.readdirSync(docsSource)
-        .filter(filename => filename.indexOf("outlook") >= 0 && filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsSource + '/' + filename;
-            fsx.readdirSync(subfolder)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/CommonAPI/g, "Office"));
-                });
-        });
-        fsx.readdirSync(docsSource)
-        .filter(filename => filename.indexOf("office") >= 0 && filename.indexOf(".yml") < 0)
-        .forEach(filename => {
-            let subfolder = docsSource + '/' + filename;
-            fsx.readdirSync(subfolder).filter(filename => filename.indexOf("context") >= 0)
-                .forEach(subfilename => {
-                    fsx.writeFileSync(subfolder + '/' + subfilename, fsx.readFileSync(subfolder + '/' + subfilename).toString().replace(/Outlook\.Mailbox/g, "Office.Mailbox").replace(/Outlook\.RoamingSettings/g, "Office.RoamingSettings"));
-                });
-        });
-
-    // copy docs output to /docs/docs-ref-autogen folder
-    fsx.readdirSync(docsSource)
-        .forEach(filename => {
-        fsx.copySync(
-            docsSource + '/' + filename,
-            docsDestination + '/' + filename
-        );
-    });
-
-    console.log("\nPostprocessor script complete!\n");
-
-    process.exit(0);
-});
-
-async function tryCatch(call: () => Promise<void>) {
-    try {
-        await call();
-    } catch (e) {
-        console.error(e);
-        process.exit(1);
-    }
+    return newToc;
 }
 
+function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?: string): INewToc {
+    const tocPath = versionFolder + "/toc.yml";
+    let latestToc;
+    if (!commonToc) {
+        latestToc = fixCommonToc(tocPath);
+    } else {
+        latestToc = fixToc(tocPath, commonToc);
+    }
+
+    fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
+    fsx.copySync("../../docs/docs-ref-autogen/overview/overview.md", versionFolder + "/overview.md");
+    return latestToc;
+}

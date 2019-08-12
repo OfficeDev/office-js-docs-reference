@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.RangeFillUpdateData
+    summary: 'An interface for updating data on the RangeFill object, for use in "rangeFill.set(<!-- -->{ ... }<!-- -->)".'
+    name: Excel.Interfaces.RangeFillUpdateData
+    fullName: Excel.Interfaces.RangeFillUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.RangeFillUpdateData.color
+  - uid: excel.Excel.Interfaces.RangeFillUpdateData.color
+    summary: >-
+      HTML color code representing the color of the border line, of the form \#RRGGBB (e.g. "FFA500") or as a named HTML
+      color (e.g. "orange")
+
+
+      \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: color
+    fullName: color
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'color?: string;'
+      return:
+        type:
+          - string

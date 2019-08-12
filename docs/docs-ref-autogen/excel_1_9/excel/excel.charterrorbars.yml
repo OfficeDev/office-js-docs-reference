@@ -1,0 +1,263 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartErrorBars
+    summary: |-
+      This object represents the attributes for a chart's error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartErrorBars
+    fullName: Excel.ChartErrorBars
+    langs:
+      - typeScript
+    type: class
+    extends:
+      - 'OfficeExtension.ClientObject '
+    package: excel
+    children:
+      - excel.Excel.ChartErrorBars.context
+      - excel.Excel.ChartErrorBars.endStyleCap
+      - excel.Excel.ChartErrorBars.format
+      - excel.Excel.ChartErrorBars.include
+      - excel.Excel.ChartErrorBars.load
+      - excel.Excel.ChartErrorBars.load_1
+      - excel.Excel.ChartErrorBars.load_2
+      - excel.Excel.ChartErrorBars.set
+      - excel.Excel.ChartErrorBars.set_1
+      - excel.Excel.ChartErrorBars.toJSON
+      - excel.Excel.ChartErrorBars.type
+      - excel.Excel.ChartErrorBars.visible
+  - uid: excel.Excel.ChartErrorBars.context
+    summary: >-
+      The request context associated with the object. This connects the add-in's process to the Office host
+      application's process.
+    name: context
+    fullName: context
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'context: RequestContext;'
+      return:
+        type:
+          - excel.Excel.RequestContext
+  - uid: excel.Excel.ChartErrorBars.endStyleCap
+    summary: |-
+      Specifies whether or not the error bars have an end style cap.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: endStyleCap
+    fullName: endStyleCap
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'endStyleCap: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.ChartErrorBars.format
+    summary: |-
+      Specifies the formatting type of the error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: format
+    fullName: format
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'readonly format: Excel.ChartErrorBarsFormat;'
+      return:
+        type:
+          - excel.Excel.ChartErrorBarsFormat
+  - uid: excel.Excel.ChartErrorBars.include
+    summary: |-
+      Specifies which parts of the error bars to include.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: include
+    fullName: include
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'include: Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues";'
+      return:
+        type:
+          - Excel.ChartErrorBarsInclude | "Both" | "MinusValues" | "PlusValues"
+  - uid: excel.Excel.ChartErrorBars.load
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading
+      the properties.
+    remarks: >-
+      In addition to this signature, this method has the following signatures:
+
+
+      `load(option?: string | string[]): Excel.ChartErrorBars` - Where option is a comma-delimited string or an array of
+      strings that specify the properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; }): Excel.ChartErrorBars` - Where option.select is a
+      comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that
+      specifies the navigation properties to load.
+
+
+      `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartErrorBars` - Only
+      available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number
+      of collection items that can be included in the result. Option.skip specifies the number of items that are to be
+      skipped and not included in the result. If option.top is specified, the result set will start after skipping the
+      specified number of items.
+    name: load(option)
+    fullName: load(option)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(option?: Excel.Interfaces.ChartErrorBarsLoadOptions): Excel.ChartErrorBars;'
+      return:
+        type:
+          - excel.Excel.ChartErrorBars
+        description: ''
+      parameters:
+        - id: option
+          description: ''
+          type:
+            - excel.Excel.Interfaces.ChartErrorBarsLoadOptions
+  - uid: excel.Excel.ChartErrorBars.load_1
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNames)
+    fullName: load(propertyNames)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNames?: string | string[]): Excel.ChartErrorBars;'
+      return:
+        type:
+          - excel.Excel.ChartErrorBars
+        description: ''
+      parameters:
+        - id: propertyNames
+          description: A comma-delimited string or an array of strings that specify the properties to load.
+          type:
+            - 'string | string[]'
+  - uid: excel.Excel.ChartErrorBars.load_2
+    summary: >-
+      Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading
+      the properties.
+    name: load(propertyNamesAndPaths)
+    fullName: load(propertyNamesAndPaths)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'load(propertyNamesAndPaths?: { select?: string; expand?: string; }): Excel.ChartErrorBars;'
+      return:
+        type:
+          - excel.Excel.ChartErrorBars
+        description: ''
+      parameters:
+        - id: propertyNamesAndPaths
+          description: >-
+            Where propertyNamesAndPaths.select is a comma-delimited string that specifies the properties to load, and
+            propertyNamesAndPaths.expand is a comma-delimited string that specifies the navigation properties to load.
+          type:
+            - '{ select?: string; expand?: string; }'
+  - uid: excel.Excel.ChartErrorBars.set
+    summary: >-
+      Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate
+      properties, or another API object of the same type.
+    remarks: |-
+      This method has the following additional signature:
+
+      `set(properties: Excel.ChartErrorBars): void`
+    name: 'set(properties, options)'
+    fullName: 'set(properties, options)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Interfaces.ChartErrorBarsUpdateData, options?: OfficeExtension.UpdateOptions): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: >-
+            A JavaScript object with properties that are structured isomorphically to the properties of the object on
+            which the method is called.
+          type:
+            - Interfaces.ChartErrorBarsUpdateData
+        - id: options
+          description: Provides an option to suppress errors if the properties object tries to set any read-only properties.
+          type:
+            - OfficeExtension.UpdateOptions
+  - uid: excel.Excel.ChartErrorBars.set_1
+    summary: 'Sets multiple properties on the object at the same time, based on an existing loaded object.'
+    name: set(properties)
+    fullName: set(properties)
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'set(properties: Excel.ChartErrorBars): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: properties
+          description: ''
+          type:
+            - excel.Excel.ChartErrorBars
+  - uid: excel.Excel.ChartErrorBars.toJSON
+    summary: >-
+      Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
+      `JSON.stringify()`<!-- -->. (`JSON.stringify`<!-- -->, in turn, calls the `toJSON` method of the object that is
+      passed to it.) Whereas the original Excel.ChartErrorBars object is an API object, the `toJSON` method returns a
+      plain JavaScript object (typed as `Excel.Interfaces.ChartErrorBarsData`<!-- -->) that contains shallow copies of
+      any loaded child properties from the original object.
+    name: toJSON()
+    fullName: toJSON()
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'toJSON(): Excel.Interfaces.ChartErrorBarsData;'
+      return:
+        type:
+          - excel.Excel.Interfaces.ChartErrorBarsData
+        description: ''
+  - uid: excel.Excel.ChartErrorBars.type
+    summary: |-
+      The type of range marked by the error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom";'
+      return:
+        type:
+          - Excel.ChartErrorBarsType | "FixedValue" | "Percent" | "StDev" | "StError" | "Custom"
+  - uid: excel.Excel.ChartErrorBars.visible
+    summary: |-
+      Specifies whether or not the error bars are displayed.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: visible
+    fullName: visible
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'visible: boolean;'
+      return:
+        type:
+          - boolean

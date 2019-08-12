@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.BodyType
+    summary: '\[ [API set: WordApi](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]'
+    name: Word.BodyType
+    fullName: Word.BodyType
+    langs:
+      - typeScript
+    type: enum
+    package: word
+    children:
+      - word.Word.BodyType.footer
+      - word.Word.BodyType.header
+      - word.Word.BodyType.mainDoc
+      - word.Word.BodyType.section
+      - word.Word.BodyType.tableCell
+      - word.Word.BodyType.unknown
+  - uid: word.Word.BodyType.footer
+    name: footer
+    fullName: footer
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Footer"'
+  - uid: word.Word.BodyType.header
+    name: header
+    fullName: header
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Header"'
+  - uid: word.Word.BodyType.mainDoc
+    name: mainDoc
+    fullName: mainDoc
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"MainDoc"'
+  - uid: word.Word.BodyType.section
+    name: section
+    fullName: section
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Section"'
+  - uid: word.Word.BodyType.tableCell
+    name: tableCell
+    fullName: tableCell
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"TableCell"'
+  - uid: word.Word.BodyType.unknown
+    name: unknown
+    fullName: unknown
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Unknown"'

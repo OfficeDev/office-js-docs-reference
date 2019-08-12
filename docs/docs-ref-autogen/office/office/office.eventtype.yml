@@ -1,0 +1,220 @@
+### YamlMime:UniversalReference
+items:
+  - uid: office.Office.EventType
+    summary: >-
+      Specifies the kind of event that was raised. Returned by the `type` property of an *EventArgs object.
+
+
+      Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`<!-- -->,
+      `Office.EventType.TaskSelectionChanged`<!-- -->, and `Office.EventType.ViewSelectionChanged` event types.
+
+
+      Only task pane add-ins for Outlook support Mailbox API set event types.
+    remarks: '**`BindingDataChanged` and `BindingSelectionChanged` hosts**: Excel, Word.'
+    name: Office.EventType
+    fullName: Office.EventType
+    langs:
+      - typeScript
+    type: enum
+    package: office
+    children:
+      - office.Office.EventType.ActiveViewChanged
+      - office.Office.EventType.AppointmentTimeChanged
+      - office.Office.EventType.AttachmentsChanged
+      - office.Office.EventType.BindingDataChanged
+      - office.Office.EventType.BindingSelectionChanged
+      - office.Office.EventType.DialogEventReceived
+      - office.Office.EventType.DialogMessageReceived
+      - office.Office.EventType.DocumentSelectionChanged
+      - office.Office.EventType.EnhancedLocationsChanged
+      - office.Office.EventType.ItemChanged
+      - office.Office.EventType.NodeDeleted
+      - office.Office.EventType.NodeInserted
+      - office.Office.EventType.NodeReplaced
+      - office.Office.EventType.OfficeThemeChanged
+      - office.Office.EventType.RecipientsChanged
+      - office.Office.EventType.RecurrenceChanged
+      - office.Office.EventType.ResourceSelectionChanged
+      - office.Office.EventType.SettingsChanged
+      - office.Office.EventType.TaskSelectionChanged
+      - office.Office.EventType.ViewSelectionChanged
+  - uid: office.Office.EventType.ActiveViewChanged
+    summary: A Document.ActiveViewChanged event was raised.
+    remarks: '**Hosts**: PowerPoint'
+    name: ActiveViewChanged
+    fullName: ActiveViewChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.AppointmentTimeChanged
+    summary: >-
+      Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task
+      pane only.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: AppointmentTimeChanged
+    fullName: AppointmentTimeChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.AttachmentsChanged
+    summary: |-
+      Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    isPreview: true
+    name: AttachmentsChanged
+    fullName: AttachmentsChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.BindingDataChanged
+    summary: >-
+      Occurs when data within the binding is changed. To add an event handler for the BindingDataChanged event of a
+      binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument of type
+      [Office.BindingDataChangedEventArgs](xref:office.Office.BindingDataChangedEventArgs)<!-- -->.
+    remarks: '**Hosts**: Excel, Word'
+    name: BindingDataChanged
+    fullName: BindingDataChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.BindingSelectionChanged
+    summary: >-
+      Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged
+      event of a binding, use the addHandlerAsync method of the Binding object. The event handler receives an argument
+      of type [Office.BindingSelectionChangedEventArgs](xref:office.Office.BindingSelectionChangedEventArgs)<!-- -->.
+    remarks: '**Hosts**: Excel, Word'
+    name: BindingSelectionChanged
+    fullName: BindingSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.DialogEventReceived
+    summary: 'Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.'
+    name: DialogEventReceived
+    fullName: DialogEventReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.DialogMessageReceived
+    summary: Triggers when Dialog sends a message via MessageParent.
+    name: DialogMessageReceived
+    fullName: DialogMessageReceived
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.DocumentSelectionChanged
+    summary: Triggers when a document-level selection happens.
+    remarks: '**Hosts**: Excel, Word'
+    name: DocumentSelectionChanged
+    fullName: DocumentSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.EnhancedLocationsChanged
+    summary: |-
+      Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: EnhancedLocationsChanged
+    fullName: EnhancedLocationsChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ItemChanged
+    summary: >-
+      Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task
+      pane only.
+
+
+      \[ [API set: Mailbox 1.5](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: ItemChanged
+    fullName: ItemChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.NodeDeleted
+    summary: Triggers when a customXmlPart node is deleted.
+    name: NodeDeleted
+    fullName: NodeDeleted
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.NodeInserted
+    summary: Triggers when a customXmlPart node is inserted.
+    name: NodeInserted
+    fullName: NodeInserted
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.NodeReplaced
+    summary: Triggers when a customXmlPart node is replaced.
+    name: NodeReplaced
+    fullName: NodeReplaced
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.OfficeThemeChanged
+    summary: |-
+      Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    isPreview: true
+    name: OfficeThemeChanged
+    fullName: OfficeThemeChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.RecipientsChanged
+    summary: >-
+      Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported
+      with task pane only.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: RecipientsChanged
+    fullName: RecipientsChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.RecurrenceChanged
+    summary: |-
+      Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
+    name: RecurrenceChanged
+    fullName: RecurrenceChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ResourceSelectionChanged
+    summary: Triggers when a Resource selection happens in Project.
+    name: ResourceSelectionChanged
+    fullName: ResourceSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.SettingsChanged
+    summary: A Settings.settingsChanged event was raised.
+    remarks: '**Hosts**: Excel, PowerPoint, Word'
+    name: SettingsChanged
+    fullName: SettingsChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.TaskSelectionChanged
+    summary: Triggers when a Task selection happens in Project.
+    name: TaskSelectionChanged
+    fullName: TaskSelectionChanged
+    langs:
+      - typeScript
+    type: field
+  - uid: office.Office.EventType.ViewSelectionChanged
+    summary: Triggers when a View selection happens in Project.
+    name: ViewSelectionChanged
+    fullName: ViewSelectionChanged
+    langs:
+      - typeScript
+    type: field

@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: visio.Visio.Interfaces.DocumentUpdateData
+    summary: 'An interface for updating data on the Document object, for use in "document.set(<!-- -->{ ... }<!-- -->)".'
+    name: Visio.Interfaces.DocumentUpdateData
+    fullName: Visio.Interfaces.DocumentUpdateData
+    langs:
+      - typeScript
+    type: interface
+    package: visio
+    children:
+      - visio.Visio.Interfaces.DocumentUpdateData.application
+      - visio.Visio.Interfaces.DocumentUpdateData.view
+  - uid: visio.Visio.Interfaces.DocumentUpdateData.application
+    summary: |-
+      Represents a Visio application instance that contains this document.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: application
+    fullName: application
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'application?: Visio.Interfaces.ApplicationUpdateData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.ApplicationUpdateData
+  - uid: visio.Visio.Interfaces.DocumentUpdateData.view
+    summary: |-
+      Returns the DocumentView object.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: view
+    fullName: view
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'view?: Visio.Interfaces.DocumentViewUpdateData;'
+      return:
+        type:
+          - visio.Visio.Interfaces.DocumentViewUpdateData

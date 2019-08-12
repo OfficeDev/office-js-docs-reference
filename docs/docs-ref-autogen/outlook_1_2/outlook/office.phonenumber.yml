@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.PhoneNumber
+    summary: >-
+      Represents a phone number identified in an item. Read mode only.
+
+
+      An array of PhoneNumber objects containing the phone numbers found in an email message is returned in the
+      phoneNumbers property of the Entities object that is returned when you call the getEntities method on the selected
+      item.
+
+
+      \[ [API set: Mailbox 1.0](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    remarks: >-
+      **[Minimum permission
+      level](https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions)<!-- -->**: ReadItem
+
+
+      **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      var item = Office.context.mailbox.item;
+
+      // Get an array of strings that represent phone numbers in the current item's body.
+
+      var phoneNumbers = item.getEntitiesByType(Office.MailboxEnums.EntityType.PhoneNumber);
+
+      console.log("There are " + phoneNumbers.length + " phone numbers.")
+
+      phoneNumbers.forEach(function (phoneNumber) {
+          console.log("Phone number: " + JSON.stringify(phoneNumber.phoneString));
+          console.log("Type: " + JSON.stringify(phoneNumber.type));
+          console.log("Source text: " + JSON.stringify(phoneNumber.originalPhoneString));
+      });
+
+      ```
+    name: Office.PhoneNumber
+    fullName: Office.PhoneNumber
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.PhoneNumber.originalPhoneString
+      - outlook.Office.PhoneNumber.phoneString
+      - outlook.Office.PhoneNumber.type
+  - uid: outlook.Office.PhoneNumber.originalPhoneString
+    summary: Gets the text that was identified in an item as a phone number.
+    name: originalPhoneString
+    fullName: originalPhoneString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'originalPhoneString: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.PhoneNumber.phoneString
+    summary: >-
+      Gets a string containing a phone number. This string contains only the digits of the telephone number and excludes
+      characters like parentheses and hyphens, if they exist in the original item.
+    name: phoneString
+    fullName: phoneString
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'phoneString: string;'
+      return:
+        type:
+          - string
+  - uid: outlook.Office.PhoneNumber.type
+    summary: 'Gets a string that identifies the type of phone number: Home, Work, Mobile, Unspecified.'
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: string;'
+      return:
+        type:
+          - string

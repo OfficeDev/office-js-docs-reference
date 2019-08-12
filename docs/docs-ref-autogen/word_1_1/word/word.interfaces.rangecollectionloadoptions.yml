@@ -1,0 +1,97 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions
+    summary: |-
+      Contains a collection of [Word.Range](xref:word.Word.Range) objects.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: Word.Interfaces.RangeCollectionLoadOptions
+    fullName: Word.Interfaces.RangeCollectionLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.RangeCollectionLoadOptions.$all
+      - word.Word.Interfaces.RangeCollectionLoadOptions.font
+      - word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
+      - word.Word.Interfaces.RangeCollectionLoadOptions.style
+      - word.Word.Interfaces.RangeCollectionLoadOptions.text
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.font
+    summary: >-
+      For EACH ITEM in the collection: Gets the text format of the range. Use this to get and set font name, size,
+      color, and other properties.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.FontLoadOptions
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.parentContentControl
+    summary: >-
+      For EACH ITEM in the collection: Gets the content control that contains the range. Throws if there isn't a parent
+      content control.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: parentContentControl
+    fullName: parentContentControl
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'parentContentControl?: Word.Interfaces.ContentControlLoadOptions;'
+      return:
+        type:
+          - word.Word.Interfaces.ContentControlLoadOptions
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.style
+    summary: >-
+      For EACH ITEM in the collection: Gets or sets the style name for the range. Use this property for custom styles
+      and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn"
+      property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: word.Word.Interfaces.RangeCollectionLoadOptions.text
+    summary: |-
+      For EACH ITEM in the collection: Gets the text of the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: boolean;'
+      return:
+        type:
+          - boolean

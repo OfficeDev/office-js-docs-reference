@@ -1,0 +1,349 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions
+    summary: '\[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
+    name: Excel.Interfaces.PageLayoutLoadOptions
+    fullName: Excel.Interfaces.PageLayoutLoadOptions
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.$all
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.blackAndWhite
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.bottomMargin
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.centerHorizontally
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.centerVertically
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.draftMode
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.firstPageNumber
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.footerMargin
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.headerMargin
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.headersFooters
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.leftMargin
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.orientation
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.paperSize
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.printComments
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.printErrors
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.printGridlines
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.printHeadings
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.printOrder
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.rightMargin
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.topMargin
+      - excel.Excel.Interfaces.PageLayoutLoadOptions.zoom
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.$all
+    name: $all
+    fullName: $all
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: '$all?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.blackAndWhite
+    summary: |-
+      Gets or sets the worksheet's black and white print option.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: blackAndWhite
+    fullName: blackAndWhite
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'blackAndWhite?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.bottomMargin
+    summary: |-
+      Gets or sets the worksheet's bottom page margin to use for printing in points.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: bottomMargin
+    fullName: bottomMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'bottomMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.centerHorizontally
+    summary: >-
+      Gets or sets the worksheet's center horizontally flag. This flag determines whether the worksheet will be centered
+      horizontally when it's printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerHorizontally
+    fullName: centerHorizontally
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerHorizontally?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.centerVertically
+    summary: >-
+      Gets or sets the worksheet's center vertically flag. This flag determines whether the worksheet will be centered
+      vertically when it's printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: centerVertically
+    fullName: centerVertically
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'centerVertically?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.draftMode
+    summary: |-
+      Gets or sets the worksheet's draft mode option. If true the sheet will be printed without graphics.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: draftMode
+    fullName: draftMode
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'draftMode?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.firstPageNumber
+    summary: |-
+      Gets or sets the worksheet's first page number to print. Null value represents "auto" page numbering.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: firstPageNumber
+    fullName: firstPageNumber
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'firstPageNumber?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.footerMargin
+    summary: |-
+      Gets or sets the worksheet's footer margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: footerMargin
+    fullName: footerMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'footerMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.headerMargin
+    summary: |-
+      Gets or sets the worksheet's header margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headerMargin
+    fullName: headerMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headerMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.headersFooters
+    summary: |-
+      Header and footer configuration for the worksheet.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: headersFooters
+    fullName: headersFooters
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'headersFooters?: Excel.Interfaces.HeaderFooterGroupLoadOptions;'
+      return:
+        type:
+          - excel.Excel.Interfaces.HeaderFooterGroupLoadOptions
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.leftMargin
+    summary: |-
+      Gets or sets the worksheet's left margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: leftMargin
+    fullName: leftMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'leftMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.orientation
+    summary: |-
+      Gets or sets the worksheet's orientation of the page.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: orientation
+    fullName: orientation
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'orientation?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.paperSize
+    summary: |-
+      Gets or sets the worksheet's paper size of the page.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: paperSize
+    fullName: paperSize
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'paperSize?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.printComments
+    summary: |-
+      Gets or sets whether the worksheet's comments should be displayed when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printComments
+    fullName: printComments
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printComments?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.printErrors
+    summary: |-
+      Gets or sets the worksheet's print errors option.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printErrors
+    fullName: printErrors
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printErrors?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.printGridlines
+    summary: |-
+      Gets or sets the worksheet's print gridlines flag. This flag determines whether gridlines will be printed or not.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printGridlines
+    fullName: printGridlines
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printGridlines?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.printHeadings
+    summary: |-
+      Gets or sets the worksheet's print headings flag. This flag determines whether headings will be printed or not.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printHeadings
+    fullName: printHeadings
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printHeadings?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.printOrder
+    summary: >-
+      Gets or sets the worksheet's page print order option. This specifies the order to use for processing the page
+      number printed.
+
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: printOrder
+    fullName: printOrder
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'printOrder?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.rightMargin
+    summary: |-
+      Gets or sets the worksheet's right margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: rightMargin
+    fullName: rightMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'rightMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.topMargin
+    summary: |-
+      Gets or sets the worksheet's top margin, in points, for use when printing.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: topMargin
+    fullName: topMargin
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'topMargin?: boolean;'
+      return:
+        type:
+          - boolean
+  - uid: excel.Excel.Interfaces.PageLayoutLoadOptions.zoom
+    summary: |-
+      Gets or sets the worksheet's print zoom options.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: zoom
+    fullName: zoom
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'zoom?: boolean;'
+      return:
+        type:
+          - boolean

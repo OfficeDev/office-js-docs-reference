@@ -157,3 +157,4 @@ function lookForEnums(node: ts.Node, enumList: string[]): void {
         lookForEnums(element, enumList);
     });
 }
+

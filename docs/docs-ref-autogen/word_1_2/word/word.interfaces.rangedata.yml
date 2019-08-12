@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: word.Word.Interfaces.RangeData
+    summary: An interface describing the data returned by calling "range.toJSON()".
+    name: Word.Interfaces.RangeData
+    fullName: Word.Interfaces.RangeData
+    langs:
+      - typeScript
+    type: interface
+    package: word
+    children:
+      - word.Word.Interfaces.RangeData.font
+      - word.Word.Interfaces.RangeData.inlinePictures
+      - word.Word.Interfaces.RangeData.style
+      - word.Word.Interfaces.RangeData.text
+  - uid: word.Word.Interfaces.RangeData.font
+    summary: >-
+      Gets the text format of the range. Use this to get and set font name, size, color, and other properties.
+      Read-only.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: font
+    fullName: font
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'font?: Word.Interfaces.FontData;'
+      return:
+        type:
+          - word.Word.Interfaces.FontData
+  - uid: word.Word.Interfaces.RangeData.inlinePictures
+    summary: |-
+      Gets the collection of inline picture objects in the range. Read-only.
+
+      \[ [API set: WordApi 1.2](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: inlinePictures
+    fullName: inlinePictures
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'inlinePictures?: Word.Interfaces.InlinePictureData[];'
+      return:
+        type:
+          - 'Word.Interfaces.InlinePictureData[]'
+  - uid: word.Word.Interfaces.RangeData.style
+    summary: >-
+      Gets or sets the style name for the range. Use this property for custom styles and localized style names. To use
+      the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: style
+    fullName: style
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'style?: string;'
+      return:
+        type:
+          - string
+  - uid: word.Word.Interfaces.RangeData.text
+    summary: |-
+      Gets the text of the range. Read-only.
+
+      \[ [API set: WordApi 1.1](/office/dev/add-ins/reference/requirement-sets/word-api-requirement-sets) \]
+    name: text
+    fullName: text
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'text?: string;'
+      return:
+        type:
+          - string

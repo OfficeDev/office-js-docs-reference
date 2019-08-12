@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.ChartErrorBarsType
+    summary: |-
+      Represents the range type for error bars.
+
+      \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.ChartErrorBarsType
+    fullName: Excel.ChartErrorBarsType
+    langs:
+      - typeScript
+    type: enum
+    package: excel
+    children:
+      - excel.Excel.ChartErrorBarsType.custom
+      - excel.Excel.ChartErrorBarsType.fixedValue
+      - excel.Excel.ChartErrorBarsType.percent
+      - excel.Excel.ChartErrorBarsType.stDev
+      - excel.Excel.ChartErrorBarsType.stError
+  - uid: excel.Excel.ChartErrorBarsType.custom
+    name: custom
+    fullName: custom
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Custom"'
+  - uid: excel.Excel.ChartErrorBarsType.fixedValue
+    name: fixedValue
+    fullName: fixedValue
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"FixedValue"'
+  - uid: excel.Excel.ChartErrorBarsType.percent
+    name: percent
+    fullName: percent
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"Percent"'
+  - uid: excel.Excel.ChartErrorBarsType.stDev
+    name: stDev
+    fullName: stDev
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StDev"'
+  - uid: excel.Excel.ChartErrorBarsType.stError
+    name: stError
+    fullName: stError
+    langs:
+      - typeScript
+    type: field
+    numericValue: '"StError"'

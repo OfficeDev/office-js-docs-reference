@@ -1,0 +1,77 @@
+### YamlMime:UniversalReference
+items:
+  - uid: excel.Excel.WorksheetAddedEventArgs
+    summary: |-
+      Provides information about the worksheet that raised the Added event.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: Excel.WorksheetAddedEventArgs
+    fullName: Excel.WorksheetAddedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: excel
+    children:
+      - excel.Excel.WorksheetAddedEventArgs.source
+      - excel.Excel.WorksheetAddedEventArgs.type
+      - excel.Excel.WorksheetAddedEventArgs.worksheetId
+  - uid: excel.Excel.WorksheetAddedEventArgs.source
+    summary: |-
+      Gets the source of the event. See Excel.EventSource for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: source
+    fullName: source
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'source: Excel.EventSource | "Local" | "Remote";'
+      return:
+        type:
+          - Excel.EventSource | "Local" | "Remote"
+  - uid: excel.Excel.WorksheetAddedEventArgs.type
+    summary: |-
+      Gets the type of the event. See Excel.EventType for details.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "WorksheetAdded";'
+      return:
+        type:
+          - '"WorksheetAdded"'
+  - uid: excel.Excel.WorksheetAddedEventArgs.worksheetId
+    summary: |-
+      Gets the id of the worksheet that is added to the workbook.
+
+      \[ [API set: ExcelApi 1.7](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
+    name: worksheetId
+    fullName: worksheetId
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'worksheetId: string;'
+      return:
+        type:
+          - string
+        description: |-
+
+
+          #### Examples
+
+          ```typescript
+          async function onWorksheetAdd(event) {
+              await Excel.run(async (context) => {
+                  console.log(
+                      "Handler for worksheet onAdded event has been triggered. Newly added worksheet Id : " +
+                      event.worksheetId
+                  );
+              });
+          }
+          ```
