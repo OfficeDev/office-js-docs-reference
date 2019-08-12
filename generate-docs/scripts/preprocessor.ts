@@ -102,10 +102,22 @@ tryCatch(async () => {
         handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin OneNote APIs", "End OneNote APIs")), "Other")
     );
 
-    console.log("create file: outlook.d.ts");
+    console.log("create file: outlook.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-outlook/outlook.d.ts',
         handleCommonImports(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook")
+    );
+
+    console.log("create file: outlook.d.ts (release)");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-outlook-release/Outlook_1_7/outlook.d.ts',
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Exchange APIs", "End Exchange APIs"), "Outlook", true)
+    );
+
+    console.log("create file: powerpoint.d.ts");
+    fsx.writeFileSync(
+        '../api-extractor-inputs-powerpoint/powerpoint.d.ts',
+        handleCommonImports(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin PowerPoint APIs", "End PowerPoint APIs"), "Other")
     );
 
     console.log("create file: powerpoint.d.ts");
@@ -258,7 +270,7 @@ function applyRegularExpressions (definitionsIn) {
 function handleCommonImports(hostDts: string, hostName: "Common API" | "Outlook" | "Other", isVersioned?: boolean): string {
     const commonApiNamespaceImport = "import \{ OfficeExtension \} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-office/office\"\n";
     const outlookApiNamespaceImport = "import \{ Office as Outlook\} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-outlook/outlook\"\n";
-    const commonApiNamespaceImportForOutlook = "import \{Office as CommonAPI\} from \"../api-extractor-inputs-office/office\"\n";
+    const commonApiNamespaceImportForOutlook = "import \{Office as CommonAPI\} from \"" + (isVersioned ? "../" : "") + "../api-extractor-inputs-office/office\"\n";
     if (hostName === "Outlook") {
         hostDts = hostDts.replace(/: Office\./g, ": CommonAPI.").replace(/\<Office\./g, "<CommonAPI.");
         return commonApiNamespaceImportForOutlook + hostDts;
