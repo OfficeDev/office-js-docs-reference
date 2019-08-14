@@ -1218,72 +1218,138 @@
         "docs-ref-conceptual/**/*": "https://officespdev.uservoice.com/"
       },
       "product": {
-        "docs-ref-conceptual/objectmodel/**": [
-          "outlook"
-        ],
-        "docs-ref-autogen/custom-functions-runtime/**": [
-          "excel",
-          "custom functions"
-        ],
-        "docs-ref-autogen/office/**": [
+        "docs-ref-autogen/common/**": [
           "common"
         ],
         "docs-ref-autogen/excel/**": [
           "excel preview"
         ],
+        "docs-ref-autogen/excel/custom-functions-runtime/**": [
+          "excel",
+          "custom functions"
+        ],
+        "docs-ref-autogen/excel/excel/**": [
+          "excel preview"
+        ],
+        "docs-ref-autogen/excel/office-runtime/**": [
+          "common"
+        ],
         "docs-ref-autogen/excel_1_1/**": [
+          "excel 1.1"
+        ],
+        "docs-ref-autogen/excel_1_1/excel/**": [
           "excel 1.1"
         ],
         "docs-ref-autogen/excel_1_2/**": [
           "excel 1.2"
         ],
+        "docs-ref-autogen/excel_1_2/excel/**": [
+          "excel 1.2"
+        ],
         "docs-ref-autogen/excel_1_3/**": [
+          "excel 1.3"
+        ],
+        "docs-ref-autogen/excel_1_3/excel/**": [
           "excel 1.3"
         ],
         "docs-ref-autogen/excel_1_4/**": [
           "excel 1.4"
         ],
+        "docs-ref-autogen/excel_1_4/excel/**": [
+          "excel 1.4"
+        ],
         "docs-ref-autogen/excel_1_5/**": [
+          "excel 1.5"
+        ],
+        "docs-ref-autogen/excel_1_5/excel/**": [
           "excel 1.5"
         ],
         "docs-ref-autogen/excel_1_6/**": [
           "excel 1.6"
         ],
+        "docs-ref-autogen/excel_1_6/excel/**": [
+          "excel 1.6"
+        ],
         "docs-ref-autogen/excel_1_7/**": [
+          "excel 1.7"
+        ],
+        "docs-ref-autogen/excel_1_7/excel/**": [
           "excel 1.7"
         ],
         "docs-ref-autogen/excel_1_8/**": [
           "excel 1.8"
         ],
+        "docs-ref-autogen/excel_1_8/excel/**": [
+          "excel 1.8"
+        ],
         "docs-ref-autogen/excel_1_9/**": [
           "excel 1.9"
         ],
+        "docs-ref-autogen/excel_1_9/excel/**": [
+          "excel 1.9"
+        ],
+        "docs-ref-autogen/office/**": [
+          "common"
+        ],
+        "docs-ref-autogen/office/office/**": [
+          "common"
+        ],
         "docs-ref-autogen/onenote/**": [
+          "onenote"
+        ],
+        "docs-ref-autogen/onenote/onenote/**": [
           "onenote"
         ],
         "docs-ref-autogen/outlook/**": [
           "outlook preview"
         ],
+        "docs-ref-autogen/outlook/outlook/**": [
+          "outlook preview"
+        ],
         "docs-ref-autogen/outlook_1_1/**": [
+          "outlook 1.1"
+        ],
+        "docs-ref-autogen/outlook_1_1/outlook/**": [
           "outlook 1.1"
         ],
         "docs-ref-autogen/outlook_1_2/**": [
           "outlook 1.2"
         ],
+        "docs-ref-autogen/outlook_1_2/outlook/**": [
+          "outlook 1.2"
+        ],
         "docs-ref-autogen/outlook_1_3/**": [
+          "outlook 1.3"
+        ],
+        "docs-ref-autogen/outlook_1_3/outlook/**": [
           "outlook 1.3"
         ],
         "docs-ref-autogen/outlook_1_4/**": [
           "outlook 1.4"
         ],
+        "docs-ref-autogen/outlook_1_4/outlook/**": [
+          "outlook 1.4"
+        ],
         "docs-ref-autogen/outlook_1_5/**": [
+          "outlook 1.5"
+        ],
+        "docs-ref-autogen/outlook_1_5/outlook/**": [
           "outlook 1.5"
         ],
         "docs-ref-autogen/outlook_1_6/**": [
           "outlook 1.6"
         ],
+        "docs-ref-autogen/outlook_1_6/outlook/**": [
+          "outlook 1.6"
+        ],
         "docs-ref-autogen/outlook_1_7/**": [
           "outlook 1.7"
+        ],
+        "docs-ref-autogen/outlook_1_7/outlook/**": [
+          "outlook 1.7"
+        ],
+        "docs-ref-autogen/overview/**": [
+          "common"
         ],
         "docs-ref-autogen/powerpoint/**": [
           "powerpoint"
@@ -1291,22 +1357,40 @@
         "docs-ref-autogen/visio/**": [
           "visio"
         ],
+        "docs-ref-autogen/visio/visio/**": [
+          "visio"
+        ],
         "docs-ref-autogen/word/**": [
+          "word preview"
+        ],
+        "docs-ref-autogen/word/word/**": [
           "word preview"
         ],
         "docs-ref-autogen/word_1_1/**": [
           "word 1.1"
         ],
+        "docs-ref-autogen/word_1_1/word/**": [
+          "word 1.1"
+        ],
         "docs-ref-autogen/word_1_2/**": [
+          "word 1.2"
+        ],
+        "docs-ref-autogen/word_1_2/word/**": [
           "word 1.2"
         ],
         "docs-ref-autogen/word_1_3/**": [
           "word 1.3"
+        ],
+        "docs-ref-autogen/word_1_3/word/**": [
+          "word 1.3"
         ]
       },
       "ms.prod": {
-        "docs-ref-autogen/custom-functions-runtime/**": "excel",
+        "docs-ref-autogen/common/**": "non-product-specific",
         "docs-ref-autogen/excel/**": "excel",
+        "docs-ref-autogen/excel/custom-functions-runtime/**": "excel",
+        "docs-ref-autogen/excel/excel/**": "excel",
+        "docs-ref-autogen/excel/office-runtime/**": "non-product-specific",
         "docs-ref-autogen/excel_1_1/**": "excel",
         "docs-ref-autogen/excel_1_2/**": "excel",
         "docs-ref-autogen/excel_1_3/**": "excel",
@@ -1316,9 +1400,19 @@
         "docs-ref-autogen/excel_1_7/**": "excel",
         "docs-ref-autogen/excel_1_8/**": "excel",
         "docs-ref-autogen/excel_1_9/**": "excel",
+        "docs-ref-autogen/excel_1_1/excel/**": "excel",
+        "docs-ref-autogen/excel_1_2/excel/**": "excel",
+        "docs-ref-autogen/excel_1_3/excel/**": "excel",
+        "docs-ref-autogen/excel_1_4/excel/**": "excel",
+        "docs-ref-autogen/excel_1_5/excel/**": "excel",
+        "docs-ref-autogen/excel_1_6/excel/**": "excel",
+        "docs-ref-autogen/excel_1_7/excel/**": "excel",
+        "docs-ref-autogen/excel_1_8/excel/**": "excel",
+        "docs-ref-autogen/excel_1_9/excel/**": "excel",
         "docs-ref-autogen/office/**": "non-product-specific",
-        "docs-ref-autogen/office-runtime/**": "non-product-specific",
+        "docs-ref-autogen/office/office/**": "non-product-specific",
         "docs-ref-autogen/onenote/**": "onenote",
+        "docs-ref-autogen/onenote/onenote/**": "onenote",
         "docs-ref-autogen/outlook/**": "outlook",
         "docs-ref-autogen/outlook_1_1/**": "outlook",
         "docs-ref-autogen/outlook_1_2/**": "outlook",
@@ -1327,22 +1421,26 @@
         "docs-ref-autogen/outlook_1_5/**": "outlook",
         "docs-ref-autogen/outlook_1_6/**": "outlook",
         "docs-ref-autogen/outlook_1_7/**": "outlook",
+        "docs-ref-autogen/outlook/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_1/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_2/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_3/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_4/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_5/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_6/outlook/**": "outlook",
+        "docs-ref-autogen/outlook_1_7/outlook/**": "outlook",
         "docs-ref-autogen/overview/**": "non-product-specific",
         "docs-ref-autogen/powerpoint/**": "powerpoint",
         "docs-ref-autogen/visio/**": "visio",
+        "docs-ref-autogen/visio/visio/**": "visio",
         "docs-ref-autogen/word/**": "word",
-        "docs-ref-autogen/word_release/**": "word",
-        "docs-ref-autogen/custom-functions-runtime.yml": "excel",
-        "docs-ref-autogen/excel.yml": "excel",
-        "docs-ref-autogen/excel_release.yml": "excel",
-        "docs-ref-autogen/office-runtime.yml": "non-product-specific",
-        "docs-ref-autogen/office.yml": "non-product-specific",
-        "docs-ref-autogen/onenote.yml": "onenote",
-        "docs-ref-autogen/outlook*.yml": "outlook",
-        "docs-ref-autogen/powerpoint.yml": "powerpoint",
-        "docs-ref-autogen/visio.yml": "visio",
-        "docs-ref-autogen/word.yml": "word",
-        "docs-ref-autogen/word_release.yml": "word"
+        "docs-ref-autogen/word/word/**": "word",
+        "docs-ref-autogen/word_1_1/**": "word",
+        "docs-ref-autogen/word_1_1/word/**": "word",
+        "docs-ref-autogen/word_1_2/**": "word",
+        "docs-ref-autogen/word_1_2/word/**": "word",
+        "docs-ref-autogen/word_1_3/**": "word",
+        "docs-ref-autogen/word_1_3/word/**": "word"
       }
     },
     "template": [],
