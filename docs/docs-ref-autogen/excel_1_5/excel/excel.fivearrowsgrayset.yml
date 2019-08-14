@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.FiveArrowsGraySet
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FiveArrowsGraySet
     fullName: Excel.FiveArrowsGraySet
     langs:

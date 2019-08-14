@@ -6,6 +6,10 @@ IF EXIST "scripts\node_modules" (
     rmdir "scripts\node_modules" /s /q
 )
 
+IF EXIST "tools\node_modules" (
+    rmdir "tools\node_modules" /s /q
+)
+
 IF EXIST "json" (
     rmdir "json" /s /q
 )
@@ -24,6 +28,23 @@ pushd scripts
 call npm install
 call npm run build
 call node preprocessor.js
+popd
+
+
+pushd tools
+call npm install
+call npm run build
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_9\excel.d.ts "ExcelApi 1.9" ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_8\excel.d.ts "ExcelApi 1.8" ..\api-extractor-inputs-excel-release\Excel_1_7\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_7\excel.d.ts "ExcelApi 1.7" ..\api-extractor-inputs-excel-release\Excel_1_6\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_6\excel.d.ts "ExcelApi 1.6" ..\api-extractor-inputs-excel-release\Excel_1_5\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_5\excel.d.ts "ExcelApi 1.5" ..\api-extractor-inputs-excel-release\Excel_1_4\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_4\excel.d.ts "ExcelApi 1.4" ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts "ExcelApi 1.3" ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts
+call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts "ExcelApi 1.2" ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts
+
+call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
+call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 popd
 
 cd api-extractor-inputs-office

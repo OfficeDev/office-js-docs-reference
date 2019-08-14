@@ -1,6 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.FourArrowsSet
+    summary: '\[ [API set: ExcelApi 1.2](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]'
     name: Excel.FourArrowsSet
     fullName: Excel.FourArrowsSet
     langs:
