@@ -43,6 +43,13 @@ call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_4\excel.
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_3\excel.d.ts "ExcelApi 1.3" ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts
 call node version-remover ..\api-extractor-inputs-excel-release\Excel_1_2\excel.d.ts "ExcelApi 1.2" ..\api-extractor-inputs-excel-release\Excel_1_1\excel.d.ts
 
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_7\outlook.d.ts "Mailbox 1.7" ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_6\outlook.d.ts "Mailbox 1.6" ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_5\outlook.d.ts "Mailbox 1.5" ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_4\outlook.d.ts "Mailbox 1.4" ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_3\outlook.d.ts "Mailbox 1.3" ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts
+call node version-remover ..\api-extractor-inputs-outlook-release\outlook_1_2\outlook.d.ts "Mailbox 1.2" ..\api-extractor-inputs-outlook-release\outlook_1_1\outlook.d.ts
+
 call node version-remover ..\api-extractor-inputs-word-release\word_1_3\word.d.ts "WordApi 1.3" ..\api-extractor-inputs-word-release\word_1_2\word.d.ts
 call node version-remover ..\api-extractor-inputs-word-release\word_1_2\word.d.ts "WordApi 1.2" ..\api-extractor-inputs-word-release\word_1_1\word.d.ts
 popd
@@ -80,16 +87,22 @@ call ..\node_modules\.bin\api-extractor run
 cd ..\api-extractor-inputs-outlook-release\outlook_1_7
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\outlook_1_6
+call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.6
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\outlook_1_5
+call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.5
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\outlook_1_4
+call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.4
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\outlook_1_3
+call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.3
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\outlook_1_2
+call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.2
 call ..\..\node_modules\.bin\api-extractor run
 cd ..\outlook_1_1
+call node ..\..\scripts\versioned-dts-cleanup outlook.d.ts Outlook 1.1
 call ..\..\node_modules\.bin\api-extractor run
 cd ..
 
