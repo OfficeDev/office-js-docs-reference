@@ -6,6 +6,29 @@ items:
       - name: Excel
         uid: excel
         items:
+          - name: Custom Functions
+            uid: ''
+            items:
+              - name: Custom functions runtime
+                uid: custom-functions-runtime
+                items:
+                  - name: CancelableInvocation
+                    uid: >-
+                      custom-functions-runtime.CustomFunctions.CancelableInvocation
+                  - name: Invocation
+                    uid: custom-functions-runtime.CustomFunctions.Invocation
+                  - name: StreamingInvocation
+                    uid: >-
+                      custom-functions-runtime.CustomFunctions.StreamingInvocation
+              - name: Office runtime
+                uid: office-runtime
+                items:
+                  - name: Dialog
+                    uid: office-runtime.OfficeRuntime.Dialog
+                  - name: DisplayWebDialogOptions
+                    uid: office-runtime.OfficeRuntime.DisplayWebDialogOptions
+                  - name: Storage
+                    uid: office-runtime.OfficeRuntime.Storage
           - name: Enums
             uid: ''
             items:

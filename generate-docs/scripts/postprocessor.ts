@@ -5,6 +5,8 @@ import * as fsx from 'fs-extra';
 import * as jsyaml from "js-yaml";
 import * as path from "path";
 
+const CUSTOM_FUNCTIONS_EXCEL_STARTING_VERSION = 9;
+
 interface IOrigToc {
     items: [
         {
@@ -94,9 +96,9 @@ tryCatch(async () => {
                             {host: "word", versions: 4}];
 
     hostVersionMap.forEach(category => {
-        scrubAndWriteToc(path.resolve(`../yaml/${category.host}`), commonToc, category.host);
+        scrubAndWriteToc(path.resolve(`../yaml/${category.host}`), commonToc, category.host, category.versions);
         for (let i = 1; i < category.versions; i++) {
-            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}`), commonToc, category.host);
+            scrubAndWriteToc(path.resolve(`../yaml/${category.host}_1_${i}`), commonToc, category.host, i);
         }
     });
 
@@ -176,7 +178,7 @@ async function tryCatch(call: () => Promise<void>) {
     }
 }
 
-function fixToc(tocPath: string, commonToc: INewToc): INewToc {
+function fixToc(tocPath: string, commonToc: INewToc, versionNumber: number): INewToc {
     console.log(`Updating the structure of the TOC file: ${tocPath}`);
 
     let origToc = (jsyaml.safeLoad(fsx.readFileSync(tocPath).toString()) as IOrigToc);
@@ -281,6 +283,9 @@ function fixToc(tocPath: string, commonToc: INewToc): INewToc {
                         let excelIconSetRoot = {"name": "Icon Sets", "uid": "", "items": iconSetList};
                         primaryList.unshift(excelIconSetRoot);
                         primaryList.unshift(excelEnumRoot);
+                        if (versionNumber >= CUSTOM_FUNCTIONS_EXCEL_STARTING_VERSION) {
+                            primaryList.unshift(customFunctionsRoot);
+                        }
                         newToc.items[0].items.push({
                             "name": packageName,
                             "uid": packageItem.uid,
@@ -418,13 +423,13 @@ function fixCommonToc(tocPath: string): INewToc {
     return newToc;
 }
 
-function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?: string): INewToc {
+function scrubAndWriteToc(versionFolder: string, commonToc?: INewToc, hostName?: string, versionNumber?: number): INewToc {
     const tocPath = versionFolder + "/toc.yml";
     let latestToc;
     if (!commonToc) {
         latestToc = fixCommonToc(tocPath);
     } else {
-        latestToc = fixToc(tocPath, commonToc);
+        latestToc = fixToc(tocPath, commonToc, versionNumber);
     }
 
     fsx.writeFileSync(tocPath, jsyaml.safeDump(latestToc));
