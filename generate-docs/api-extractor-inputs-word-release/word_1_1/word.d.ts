@@ -5426,6 +5426,7 @@ export declare namespace Word {
     export class RequestContext extends OfficeExtension.ClientRequestContext {
         constructor(url?: string);
         readonly document: Document;
+        
     }
     /**
      * Executes a batch script that performs actions on the Word object model, using the RequestContext of previously created API objects.

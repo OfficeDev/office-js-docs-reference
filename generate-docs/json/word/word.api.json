@@ -64370,7 +64370,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "(application:instance)",
-                  "docComment": "",
+                  "docComment": "/**\n * [Api set: WordApi 1.3] *\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
