@@ -2689,7 +2689,7 @@
             {
               "kind": "Class",
               "canonicalReference": "(Chart:class)",
-              "docComment": "/**\n * Represents a chart object in a workbook.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Represents a chart object in a workbook. To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -49095,7 +49095,7 @@
             {
               "kind": "Class",
               "canonicalReference": "(Range:class)",
-              "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc. To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API} and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -56209,7 +56209,7 @@
             {
               "kind": "Class",
               "canonicalReference": "(Table:class)",
-              "docComment": "/**\n * Represents an Excel table.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Represents an Excel table. To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -60716,7 +60716,7 @@
             {
               "kind": "Class",
               "canonicalReference": "(Workbook:class)",
-              "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc. To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -61471,7 +61471,7 @@
             {
               "kind": "Class",
               "canonicalReference": "(Worksheet:class)",
-              "docComment": "/**\n * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
+              "docComment": "/**\n * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc. To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.\n *\n * [Api set: ExcelApi 1.1]\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

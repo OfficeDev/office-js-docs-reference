@@ -5,90 +5,116 @@ import { Office as Outlook} from "../../api-extractor-inputs-outlook/outlook"
 ////////////////////////////////////////////////////////////////
 
 export declare namespace Excel {
-    export interface ThreeArrowsSet {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowSideArrow: Icon;
         greenUpArrow: Icon;
     }
-    export interface ThreeArrowsGraySet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         graySideArrow: Icon;
         grayUpArrow: Icon;
     }
-    export interface ThreeFlagsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeFlagsSet {
         [index: number]: Icon;
         redFlag: Icon;
         yellowFlag: Icon;
         greenFlag: Icon;
     }
-    export interface ThreeTrafficLights1Set {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeTrafficLights1Set {
         [index: number]: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    export interface ThreeTrafficLights2Set {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeTrafficLights2Set {
         [index: number]: Icon;
         redTrafficLight: Icon;
         yellowTrafficLight: Icon;
         greenTrafficLight: Icon;
     }
-    export interface ThreeSignsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeSignsSet {
         [index: number]: Icon;
         redDiamond: Icon;
         yellowTriangle: Icon;
         greenCircle: Icon;
     }
-    export interface ThreeSymbolsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeSymbolsSet {
         [index: number]: Icon;
         redCrossSymbol: Icon;
         yellowExclamationSymbol: Icon;
         greenCheckSymbol: Icon;
     }
-    export interface ThreeSymbols2Set {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeSymbols2Set {
         [index: number]: Icon;
         redCross: Icon;
         yellowExclamation: Icon;
         greenCheck: Icon;
     }
-    export interface FourArrowsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FourArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    export interface FourArrowsGraySet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FourArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    export interface FourRedToBlackSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FourRedToBlackSet {
         [index: number]: Icon;
         blackCircle: Icon;
         grayCircle: Icon;
         pinkCircle: Icon;
         redCircle: Icon;
     }
-    export interface FourRatingSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FourRatingSet {
         [index: number]: Icon;
         oneBar: Icon;
         twoBars: Icon;
         threeBars: Icon;
         fourBars: Icon;
     }
-    export interface FourTrafficLightsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FourTrafficLightsSet {
         [index: number]: Icon;
         blackCircleWithBorder: Icon;
         redCircleWithBorder: Icon;
         yellowCircle: Icon;
         greenCircle: Icon;
     }
-    export interface FiveArrowsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FiveArrowsSet {
         [index: number]: Icon;
         redDownArrow: Icon;
         yellowDownInclineArrow: Icon;
@@ -96,7 +122,8 @@ export declare namespace Excel {
         yellowUpInclineArrow: Icon;
         greenUpArrow: Icon;
     }
-    export interface FiveArrowsGraySet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FiveArrowsGraySet {
         [index: number]: Icon;
         grayDownArrow: Icon;
         grayDownInclineArrow: Icon;
@@ -104,7 +131,8 @@ export declare namespace Excel {
         grayUpInclineArrow: Icon;
         grayUpArrow: Icon;
     }
-    export interface FiveRatingSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FiveRatingSet {
         [index: number]: Icon;
         noBars: Icon;
         oneBar: Icon;
@@ -112,7 +140,8 @@ export declare namespace Excel {
         threeBars: Icon;
         fourBars: Icon;
     }
-    export interface FiveQuartersSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FiveQuartersSet {
         [index: number]: Icon;
         whiteCircleAllWhiteQuarters: Icon;
         circleWithThreeWhiteQuarters: Icon;
@@ -120,19 +149,22 @@ export declare namespace Excel {
         circleWithOneWhiteQuarter: Icon;
         blackCircle: Icon;
     }
-    export interface ThreeStarsSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeStarsSet {
         [index: number]: Icon;
         silverStar: Icon;
         halfGoldStar: Icon;
         goldStar: Icon;
     }
-    export interface ThreeTrianglesSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface ThreeTrianglesSet {
         [index: number]: Icon;
         redDownTriangle: Icon;
         yellowDash: Icon;
         greenUpTriangle: Icon;
     }
-    export interface FiveBoxesSet {
+    /** [Api set: ExcelApi 1.2] */
+	export interface FiveBoxesSet {
         [index: number]: Icon;
         noFilledBoxes: Icon;
         oneFilledBox: Icon;
@@ -140,7 +172,8 @@ export declare namespace Excel {
         threeFilledBoxes: Icon;
         fourFilledBoxes: Icon;
     }
-    export interface IconCollections {
+    /** [Api set: ExcelApi 1.2] */
+	export interface IconCollections {
         threeArrows: ThreeArrowsSet;
         threeArrowsGray: ThreeArrowsGraySet;
         threeFlags: ThreeFlagsSet;
@@ -162,7 +195,8 @@ export declare namespace Excel {
         threeTriangles: ThreeTrianglesSet;
         fiveBoxes: FiveBoxesSet;
     }
-    var icons: IconCollections;
+    /** [Api set: ExcelApi 1.2] */
+	var icons: IconCollections;
     /**
      * Provides connection session for a remote workbook.
      */
@@ -184,6 +218,7 @@ export declare namespace Excel {
         constructor(url?: string | Session);
         readonly workbook: Workbook;
         readonly application: Application;
+        
     }
     export interface RunOptions extends OfficeExtension.RunOptions<Session> {
         /**
@@ -422,6 +457,7 @@ export declare namespace Excel {
     /**
      *
      * Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
+     * To learn more about the workbook object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-workbooks | Work with workbooks using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -564,6 +600,7 @@ export declare namespace Excel {
     /**
      *
      * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
+     * To learn more about the worksheet object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | Work with worksheets using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -980,6 +1017,7 @@ export declare namespace Excel {
     /**
      *
      * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
+     * To learn more about how ranges are used throughout the API, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | Work with ranges using the Excel JavaScript API} and {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges-advanced | Work with ranges using the Excel JavaScript API (advanced)}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -2147,6 +2185,7 @@ export declare namespace Excel {
     /**
      *
      * Represents an Excel table.
+     * To learn more about the table object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | Work with tables using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -3372,6 +3411,7 @@ export declare namespace Excel {
     /**
      *
      * Represents a chart object in a workbook.
+     * To learn more about the Chart object model, see {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | Work with charts using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.1]
      */
@@ -5949,6 +5989,7 @@ export declare namespace Excel {
     /**
      *
      * Represents an Excel PivotTable.
+     * To learn more about the PivotTable object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | Work with PivotTables using the Excel JavaScript API}.
      *
      * [Api set: ExcelApi 1.3]
      */

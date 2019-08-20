@@ -87,13 +87,13 @@ tryCatch(async () => {
     console.log("\ncreate file: excel.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other")
     );
 
     console.log("\ncreate file: excel.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-excel-release/excel_1_9/excel.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs")), "Other", true)
+        handleCommonImports(handleLiteralParameterOverloads(excelSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Excel APIs", "End Excel APIs"))), "Other", true)
     );
 
     console.log("create file: onenote.d.ts");
@@ -129,13 +129,13 @@ tryCatch(async () => {
     console.log("create file: word.d.ts (preview)");
     fsx.writeFileSync(
         '../api-extractor-inputs-word/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs")), "Other")
+        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(previewDefinitions, "Begin Word APIs", "End Word APIs"))), "Other")
     );
 
     console.log("\ncreate file: word.d.ts (release)");
     fsx.writeFileSync(
         '../api-extractor-inputs-word-release/word_1_3/word.d.ts',
-        handleCommonImports(handleLiteralParameterOverloads(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs")), "Other", true)
+        handleCommonImports(handleLiteralParameterOverloads(wordSpecificCleanup(dtsBuilder.extractDtsSection(releaseDefinitions, "Begin Word APIs", "End Word APIs"))), "Other", true)
     );
 
     // ----
@@ -228,6 +228,17 @@ tryCatch(async () => {
 
     process.exit(0);
 });
+
+function excelSpecificCleanup(dtsContent: string) {
+    return dtsContent.replace(/export interface .*Set {\n.*Icon;/gm, `/** [Api set: ExcelApi 1.2] */\n\t$&`)
+        .replace("readonly runtime: Runtime;", "/** [Api set: ExcelApi 1.5] **/\n\t\treadonly runtime: Runtime;")
+        .replace("export interface IconCollections {", "/** [Api set: ExcelApi 1.2] */\n\texport interface IconCollections {")
+        .replace("var icons: IconCollections;", "/** [Api set: ExcelApi 1.2] */\n\tvar icons: IconCollections;");
+}
+
+function wordSpecificCleanup(dtsContent: string) {
+    return dtsContent.replace("readonly application: Application;", "/** [Api set: WordApi 1.3] **/\n\t\treadonly application: Application;");
+}
 
 function cleanUpDts(localDtsPath: string): string {
     console.log(`\nReading from ${path.resolve(localDtsPath)}`);

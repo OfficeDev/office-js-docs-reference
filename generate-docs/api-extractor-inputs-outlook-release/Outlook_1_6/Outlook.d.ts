@@ -28,6 +28,7 @@ export declare namespace Office {
              */
             Cloud = "cloud"
         }
+        
         /**
          * Specifies an entity's type.
          *
@@ -109,6 +110,7 @@ export declare namespace Office {
              */
             Appointment = "appointment"
         }
+        
         /**
          * Represents the current view of Outlook on the web.
          */
@@ -154,6 +156,9 @@ export declare namespace Office {
              */
             Other = "other"
         }
+        
+
+        
         /**  
          * Specifies the type of response to a meeting invitation.
          *
@@ -208,6 +213,7 @@ export declare namespace Office {
              */
             Beta = "beta"
         }
+        
     }
     export interface CoercionTypeOptions {
         coercionType?: CommonAPI.CoercionType | string;
@@ -1018,6 +1024,11 @@ export declare namespace Office {
          */
         urls: string[];
     }
+
+    
+
+    
+
     /**
      * The subclass of {@link Office.Item} dealing with appointments.
      * 
@@ -1118,6 +1129,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         optionalAttendees: Recipients;
+        
+        
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item. 
          * The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees 
@@ -1132,6 +1145,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer
          */
         requiredAttendees: Recipients;
+        
         /**
          * Gets or sets the date and time that the appointment is to begin.
          *
@@ -1229,6 +1243,8 @@ export declare namespace Office {
          *                 If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -1449,6 +1465,8 @@ export declare namespace Office {
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+       
+       
         /**
          * Asynchronously saves an item.
          *
@@ -1804,6 +1822,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         organizer: EmailAddressDetails;
+        
         /**
          * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
          *
@@ -1834,6 +1853,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Attendee
          */
         start: Date;
+        
         /**
          * Gets the description that appears in the subject field of an item.
          *
@@ -1851,6 +1871,8 @@ export declare namespace Office {
          */
         subject: string;
 
+        
+        
         /**
          * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
          * selected appointment.
@@ -2135,6 +2157,9 @@ export declare namespace Office {
         *                    This object can be accessed by the asyncResult.asyncContext property in the callback function.
         */
        loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
+
+       
+        
     }
 
     /**
@@ -2190,6 +2215,12 @@ export declare namespace Office {
          */
         notificationMessages: NotificationMessages;
 
+        
+
+        
+
+        
+
        /**
         * Asynchronously loads custom properties for this add-in on the selected item.
         *
@@ -2215,6 +2246,11 @@ export declare namespace Office {
         *                    This object can be accessed by the asyncResult.asyncContext property in the callback function.
         */
        loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
+
+
+       
+
+       
     }
     /**
      * The compose mode of {@link Office.Item | Office.context.mailbox.item}.
@@ -3117,6 +3153,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
         conversationId: string;
+        
         /**
          * Gets the type of item that an instance represents.
          *
@@ -3144,6 +3181,7 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose
          */
         notificationMessages: NotificationMessages;
+        
         /**
          * Gets or sets the description that appears in the subject field of an item.
          *
@@ -3242,6 +3280,8 @@ export declare namespace Office {
          *                 the error.
          */
         addFileAttachmentAsync(uri: string, attachmentName: string, callback?: (asyncResult: CommonAPI.AsyncResult<string>) => void): void;
+        
+        
         /**
          * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
          *
@@ -3465,6 +3505,8 @@ export declare namespace Office {
          *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
          */
         removeAttachmentAsync(attachmentId: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+        
+        
         /**
          * Asynchronously saves an item.
          *
@@ -3832,6 +3874,8 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Read
          */
         notificationMessages: NotificationMessages;
+        
+        
         /**
          * Gets the email address of the sender of an email message.
          *
@@ -3882,6 +3926,8 @@ export declare namespace Office {
          */
         to: EmailAddressDetails[];
 
+        
+        
         /**
          * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
          * selected appointment.
@@ -4167,6 +4213,8 @@ export declare namespace Office {
          *                    This object can be accessed by the asyncResult.asyncContext property in the callback function.
          */
         loadCustomPropertiesAsync(callback: (asyncResult: CommonAPI.AsyncResult<CustomProperties>) => void, userContext?: any): void;
+        
+        
     }
 
     /**
@@ -5336,6 +5384,12 @@ export declare namespace Office {
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
 
+    
+
+    
+
+    
+
     /**
      * A file or item attachment. Used when displaying a reply form.
      */
@@ -5480,6 +5534,8 @@ export declare namespace Office {
         set(name: string, value: any): void;
     }
 
+    
+
     /**
      * Provides methods to get and set the subject of an appointment or message in an Outlook add-in.
      *
@@ -5577,6 +5633,7 @@ export declare namespace Office {
          *                 type Office.AsyncResult. If setting the subject fails, the asyncResult.error property will contain an error code.
          */
         setAsync(data: string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+
     }
     /**
      * Represents a suggested task identified in an item. Read mode only.
@@ -5706,6 +5763,7 @@ export declare namespace Office {
          *                 If setting the date and time fails, the asyncResult.error property will contain an error code.
          */
         setAsync(dateTime: Date, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+
     }
     /**
      * Information about the user associated with the mailbox. This includes their account type, display name, email address, and time zone.

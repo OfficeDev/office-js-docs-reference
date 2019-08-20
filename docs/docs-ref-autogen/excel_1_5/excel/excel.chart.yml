@@ -1,8 +1,10 @@
 ### YamlMime:UniversalReference
 items:
   - uid: excel.Excel.Chart
-    summary: |-
-      Represents a chart object in a workbook.
+    summary: >-
+      Represents a chart object in a workbook. To learn more about the Chart object model, see [Work with charts using
+      the Excel JavaScript API](https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts)<!-- -->.
+
 
       \[ [API set: ExcelApi 1.1](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
     name: Excel.Chart

@@ -4,6 +4,7 @@ import yaml = require('js-yaml');
 import * as colors from 'colors';
 
 const CURRENT_EXCEL_RELEASE = 9;
+const CURRENT_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS = 9;
 const CURRENT_OUTLOOK_RELEASE = 7;
 const CURRENT_WORD_RELEASE = 3;
 
@@ -95,6 +96,10 @@ tryCatch(async () => {
     const officeRuntimeJson = path.resolve("../json/office-runtime.api.json");
     fsx.copySync(customFunctionsJson, "../json/excel/custom-functions-runtime.api.json");
     fsx.copySync(officeRuntimeJson, "../json/excel/office-runtime.api.json");
+    for (let i = CURRENT_EXCEL_RELEASE; i >= CURRENT_EXCEL_RELEASE_WITH_CUSTOM_FUNCTIONS; i--) {
+        fsx.copySync(customFunctionsJson, `../json/excel_1_${i}/custom-functions-runtime.api.json`);
+        fsx.copySync(officeRuntimeJson, `../json/excel_1_${i}/office-runtime.api.json`);
+    }
 });
 
 async function tryCatch(call: () => Promise<void>) {
