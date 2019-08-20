@@ -1,7 +1,7 @@
 ### YamlMime:UniversalReference
 items:
   - uid: office.Office.RequirementSetSupport
-    summary: Provides information about what Requirement Sets are supported in current environment.
+    summary: Provides information about which Requirement Sets are supported in the current environment.
     name: Office.RequirementSetSupport
     fullName: Office.RequirementSetSupport
     langs:
@@ -10,6 +10,7 @@ items:
     package: office
     children:
       - office.Office.RequirementSetSupport.isSetSupported
+      - office.Office.RequirementSetSupport.isSetSupported_1
   - uid: office.Office.RequirementSetSupport.isSetSupported
     summary: Check if the specified requirement set is supported by the host Office application.
     name: 'isSetSupported(name, minVersion)'
@@ -18,19 +19,41 @@ items:
       - typeScript
     type: method
     syntax:
-      content: 'isSetSupported(name: string, minVersion?: string | number): boolean;'
+      content: 'isSetSupported(name: string, minVersion?: string): boolean;'
       return:
         type:
           - boolean
         description: ''
       parameters:
         - id: name
-          description: 'Set name; e.g., "MatrixBindings".'
+          description: 'The requirement set name (e.g., "ExcelApi").'
           type:
             - string
         - id: minVersion
-          description: >-
-            The minimum required version; e.g., "1.4". Note: String type is recommended data type for this parameter.
-            The use of number type is deprecated and will not be compatible with recent requirement sets.
+          description: 'The minimum required version (e.g., "1.4").'
           type:
-            - string | number
+            - string
+  - uid: office.Office.RequirementSetSupport.isSetSupported_1
+    summary: Check if the specified requirement set is supported by the host Office application.
+    name: 'isSetSupported(name, minVersionNumber)'
+    fullName: 'isSetSupported(name, minVersionNumber)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'isSetSupported(name: string, minVersionNumber?: number): boolean;'
+      return:
+        type:
+          - boolean
+        description: ''
+      parameters:
+        - id: name
+          description: 'The requirement set name (e.g., "ExcelApi").'
+          type:
+            - string
+        - id: minVersionNumber
+          description: >-
+            The minimum required version (e.g., 1.4). Warning: This overload of `isSetSupported` (where
+            `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
+          type:
+            - number

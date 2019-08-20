@@ -34007,7 +34007,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(RequirementSetSupport:interface)",
-              "docComment": "/**\n * Provides information about what Requirement Sets are supported in current environment.\n */\n",
+              "docComment": "/**\n * Provides information about which Requirement Sets are supported in the current environment.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -34027,8 +34027,8 @@
               "members": [
                 {
                   "kind": "MethodSignature",
-                  "canonicalReference": "(isSetSupported:0)",
-                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - Set name; e.g., \"MatrixBindings\".\n *\n * @param minVersion - The minimum required version; e.g., \"1.4\". Note: String type is recommended data type for this parameter. The use of number type is deprecated and will not be compatible with recent requirement sets.\n */\n",
+                  "canonicalReference": "(isSetSupported:1)",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersion - The minimum required version (e.g., \"1.4\").\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -34064,7 +34064,7 @@
                     },
                     {
                       "kind": "Content",
-                      "text": "string | number"
+                      "text": "string"
                     },
                     {
                       "kind": "Content",
@@ -34084,7 +34084,7 @@
                     "endIndex": 11
                   },
                   "releaseTag": "Public",
-                  "overloadIndex": 0,
+                  "overloadIndex": 1,
                   "parameters": [
                     {
                       "parameterName": "name",
@@ -34095,6 +34095,84 @@
                     },
                     {
                       "parameterName": "minVersion",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 8,
+                        "endIndex": 9
+                      }
+                    }
+                  ],
+                  "name": "isSetSupported"
+                },
+                {
+                  "kind": "MethodSignature",
+                  "canonicalReference": "(isSetSupported:2)",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @deprecated\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4). Warning: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "isSetSupported"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "("
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "name"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ", "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "minVersionNumber"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "?: "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "number"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "): "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "returnTypeTokenRange": {
+                    "startIndex": 10,
+                    "endIndex": 11
+                  },
+                  "releaseTag": "Public",
+                  "overloadIndex": 2,
+                  "parameters": [
+                    {
+                      "parameterName": "name",
+                      "parameterTypeTokenRange": {
+                        "startIndex": 4,
+                        "endIndex": 5
+                      }
+                    },
+                    {
+                      "parameterName": "minVersionNumber",
                       "parameterTypeTokenRange": {
                         "startIndex": 8,
                         "endIndex": 9
