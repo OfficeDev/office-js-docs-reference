@@ -49,7 +49,10 @@ items:
       - outlook.Office.Organizer
       - outlook.Office.PhoneNumber
       - outlook.Office.Recipients
+      - outlook.Office.RecipientsChangedEventArgs
+      - outlook.Office.RecipientsChangedFields
       - outlook.Office.Recurrence
+      - outlook.Office.RecurrenceChangedEventArgs
       - outlook.Office.RecurrenceProperties
       - outlook.Office.RecurrenceTimeZone
       - outlook.Office.ReplyFormAttachment
@@ -146,8 +149,14 @@ references:
     name: Office.PhoneNumber
   - uid: outlook.Office.Recipients
     name: Office.Recipients
+  - uid: outlook.Office.RecipientsChangedEventArgs
+    name: Office.RecipientsChangedEventArgs
+  - uid: outlook.Office.RecipientsChangedFields
+    name: Office.RecipientsChangedFields
   - uid: outlook.Office.Recurrence
     name: Office.Recurrence
+  - uid: outlook.Office.RecurrenceChangedEventArgs
+    name: Office.RecurrenceChangedEventArgs
   - uid: outlook.Office.RecurrenceProperties
     name: Office.RecurrenceProperties
   - uid: outlook.Office.RecurrenceTimeZone

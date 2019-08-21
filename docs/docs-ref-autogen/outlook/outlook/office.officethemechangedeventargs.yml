@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.OfficeThemeChangedEventArgs
+    summary: |-
+      Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: Office.OfficeThemeChangedEventArgs
+    fullName: Office.OfficeThemeChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.OfficeThemeChangedEventArgs.officeTheme
+      - outlook.Office.OfficeThemeChangedEventArgs.type
+  - uid: outlook.Office.OfficeThemeChangedEventArgs.officeTheme
+    summary: |-
+      Gets the updated Office theme.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: officeTheme
+    fullName: officeTheme
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'officeTheme: Office.OfficeTheme;'
+      return:
+        type:
+          - Office.OfficeTheme
+  - uid: outlook.Office.OfficeThemeChangedEventArgs.type
+    summary: |-
+      Gets the type of the event. See `Office.EventType` for details.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "officeThemeChanged";'
+      return:
+        type:
+          - '"officeThemeChanged"'
