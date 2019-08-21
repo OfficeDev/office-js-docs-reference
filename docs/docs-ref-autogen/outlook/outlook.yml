@@ -11,8 +11,10 @@ items:
       - outlook.Office.AppointmentCompose
       - outlook.Office.AppointmentForm
       - outlook.Office.AppointmentRead
+      - outlook.Office.AppointmentTimeChangedEventArgs
       - outlook.Office.AttachmentContent
       - outlook.Office.AttachmentDetails
+      - outlook.Office.AttachmentsChangedEventArgs
       - outlook.Office.Body
       - outlook.Office.Categories
       - outlook.Office.CategoryDetails
@@ -23,6 +25,7 @@ items:
       - outlook.Office.EmailAddressDetails
       - outlook.Office.EmailUser
       - outlook.Office.EnhancedLocation
+      - outlook.Office.EnhancedLocationsChangedEventArgs
       - outlook.Office.Entities
       - outlook.Office.From
       - outlook.Office.InternetHeaders
@@ -59,10 +62,14 @@ items:
       - outlook.Office.MessageRead
       - outlook.Office.NotificationMessageDetails
       - outlook.Office.NotificationMessages
+      - outlook.Office.OfficeThemeChangedEventArgs
       - outlook.Office.Organizer
       - outlook.Office.PhoneNumber
       - outlook.Office.Recipients
+      - outlook.Office.RecipientsChangedEventArgs
+      - outlook.Office.RecipientsChangedFields
       - outlook.Office.Recurrence
+      - outlook.Office.RecurrenceChangedEventArgs
       - outlook.Office.RecurrenceProperties
       - outlook.Office.RecurrenceTimeZone
       - outlook.Office.ReplyFormAttachment
@@ -84,10 +91,14 @@ references:
     name: Office.AppointmentForm
   - uid: outlook.Office.AppointmentRead
     name: Office.AppointmentRead
+  - uid: outlook.Office.AppointmentTimeChangedEventArgs
+    name: Office.AppointmentTimeChangedEventArgs
   - uid: outlook.Office.AttachmentContent
     name: Office.AttachmentContent
   - uid: outlook.Office.AttachmentDetails
     name: Office.AttachmentDetails
+  - uid: outlook.Office.AttachmentsChangedEventArgs
+    name: Office.AttachmentsChangedEventArgs
   - uid: outlook.Office.Body
     name: Office.Body
   - uid: outlook.Office.Categories
@@ -108,6 +119,8 @@ references:
     name: Office.EmailUser
   - uid: outlook.Office.EnhancedLocation
     name: Office.EnhancedLocation
+  - uid: outlook.Office.EnhancedLocationsChangedEventArgs
+    name: Office.EnhancedLocationsChangedEventArgs
   - uid: outlook.Office.Entities
     name: Office.Entities
   - uid: outlook.Office.From
@@ -180,14 +193,22 @@ references:
     name: Office.NotificationMessageDetails
   - uid: outlook.Office.NotificationMessages
     name: Office.NotificationMessages
+  - uid: outlook.Office.OfficeThemeChangedEventArgs
+    name: Office.OfficeThemeChangedEventArgs
   - uid: outlook.Office.Organizer
     name: Office.Organizer
   - uid: outlook.Office.PhoneNumber
     name: Office.PhoneNumber
   - uid: outlook.Office.Recipients
     name: Office.Recipients
+  - uid: outlook.Office.RecipientsChangedEventArgs
+    name: Office.RecipientsChangedEventArgs
+  - uid: outlook.Office.RecipientsChangedFields
+    name: Office.RecipientsChangedFields
   - uid: outlook.Office.Recurrence
     name: Office.Recurrence
+  - uid: outlook.Office.RecurrenceChangedEventArgs
+    name: Office.RecurrenceChangedEventArgs
   - uid: outlook.Office.RecurrenceProperties
     name: Office.RecurrenceProperties
   - uid: outlook.Office.RecurrenceTimeZone

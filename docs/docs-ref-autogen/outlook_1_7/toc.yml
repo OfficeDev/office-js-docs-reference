@@ -82,8 +82,14 @@ items:
             uid: outlook.Office.PhoneNumber
           - name: Recipients
             uid: outlook.Office.Recipients
+          - name: RecipientsChangedEventArgs
+            uid: outlook.Office.RecipientsChangedEventArgs
+          - name: RecipientsChangedFields
+            uid: outlook.Office.RecipientsChangedFields
           - name: Recurrence
             uid: outlook.Office.Recurrence
+          - name: RecurrenceChangedEventArgs
+            uid: outlook.Office.RecurrenceChangedEventArgs
           - name: RecurrenceProperties
             uid: outlook.Office.RecurrenceProperties
           - name: RecurrenceTimeZone

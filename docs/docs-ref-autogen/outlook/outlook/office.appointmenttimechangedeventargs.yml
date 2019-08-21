@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.AppointmentTimeChangedEventArgs
+    summary: >-
+      Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged`
+      event.
+
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: Office.AppointmentTimeChangedEventArgs
+    fullName: Office.AppointmentTimeChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.AppointmentTimeChangedEventArgs.end
+      - outlook.Office.AppointmentTimeChangedEventArgs.start
+      - outlook.Office.AppointmentTimeChangedEventArgs.type
+  - uid: outlook.Office.AppointmentTimeChangedEventArgs.end
+    summary: |-
+      Gets the appointment end date and time.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: end
+    fullName: end
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'end: Date;'
+      return:
+        type:
+          - Date
+  - uid: outlook.Office.AppointmentTimeChangedEventArgs.start
+    summary: |-
+      Gets the appointment start date and time.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: start
+    fullName: start
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'start: Date;'
+      return:
+        type:
+          - Date
+  - uid: outlook.Office.AppointmentTimeChangedEventArgs.type
+    summary: |-
+      Gets the type of the event. See `Office.EventType` for details.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "olkAppointmentTimeChanged";'
+      return:
+        type:
+          - '"olkAppointmentTimeChanged"'
