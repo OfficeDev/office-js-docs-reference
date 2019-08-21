@@ -1,0 +1,46 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.RecurrenceChangedEventArgs
+    summary: |-
+      Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: Office.RecurrenceChangedEventArgs
+    fullName: Office.RecurrenceChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.RecurrenceChangedEventArgs.recurrence
+      - outlook.Office.RecurrenceChangedEventArgs.type
+  - uid: outlook.Office.RecurrenceChangedEventArgs.recurrence
+    summary: |-
+      Gets the updated recurrence object.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: recurrence
+    fullName: recurrence
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'recurrence: Recurrence;'
+      return:
+        type:
+          - outlook.Office.Recurrence
+  - uid: outlook.Office.RecurrenceChangedEventArgs.type
+    summary: |-
+      Gets the type of the event. See `Office.EventType` for details.
+
+      \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "olkRecurrenceChanged";'
+      return:
+        type:
+          - '"olkRecurrenceChanged"'

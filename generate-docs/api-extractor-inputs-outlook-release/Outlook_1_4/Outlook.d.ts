@@ -5052,6 +5052,8 @@ export declare namespace Office {
     
     
     
+    
+    
     /**
      * A file or item attachment. Used when displaying a reply form.
      */

@@ -6786,6 +6786,50 @@ export declare namespace Office {
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
+     * Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface RecipientsChangedEventArgs { 
+        /** 
+         * Gets an object that indicates change state of recipients fields. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        changedRecipientsFields: RecipientsChangedFields; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        type: "olkRecipientsChanged"; 
+    } 
+    /**
+     * Represents `RecipientsChangedEventArgs.changedRecipientsFields` object. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface RecipientsChangedFields { 
+        /** 
+         * Gets if optional attendees were changed. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        optionalAttendees: boolean; 
+        /** 
+         * Gets if required attendees were changed. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        requiredAttendees: boolean; 
+        /** 
+         * Gets if resources were changed. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        resources: boolean; 
+    }
+    /**
      * The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of 
      * meeting requests. 
      * It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).
@@ -6974,6 +7018,25 @@ export declare namespace Office {
          *                asyncResult, which is an Office.AsyncResult object.
          */
         setAsync(recurrencePattern: Recurrence, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
+     * Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface RecurrenceChangedEventArgs { 
+        /** 
+         * Gets the updated recurrence object. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        recurrence: Recurrence; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        type: "olkRecurrenceChanged"; 
     }
     /**
      * Represents the properties of the recurrence.

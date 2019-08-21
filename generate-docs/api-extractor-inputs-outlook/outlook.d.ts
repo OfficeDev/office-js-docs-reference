@@ -3055,6 +3055,31 @@ export declare namespace Office {
         removeHandlerAsync(eventType: CommonAPI.EventType | string, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void; 
     }
     /**
+     * Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged` event. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface AppointmentTimeChangedEventArgs { 
+        /** 
+         * Gets the appointment end date and time. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        end: Date; 
+        /** 
+         * Gets the appointment start date and time. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        start: Date; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        type: "olkAppointmentTimeChanged"; 
+    }
+    /**
      * Represents the content of an attachment on a message or appointment item.
      *
      * [Api set: Mailbox Preview]
@@ -3129,6 +3154,32 @@ export declare namespace Office {
          * [Api set: Mailbox Preview]
          */
         url: string;
+    }
+    /**
+     * Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event. 
+     * 
+     * [Api set: Mailbox Preview] 
+     */ 
+    export interface AttachmentsChangedEventArgs { 
+        /** 
+         * Represents the set of attachments that were added or removed. 
+         * For each such attachment, gets a subset of {@link AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        attachmentDetails: object[]; 
+        /** 
+         * Gets whether the attachments were added or removed. See {@link MailboxEnums.AttachmentStatus} for details. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        attachmentStatus: MailboxEnums.AttachmentStatus | string; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        type: "olkAttachmentsChanged"; 
     }
     /**
      * The body object provides methods for adding and updating the content of the message or appointment. 
@@ -3956,6 +4007,25 @@ export declare namespace Office {
          * @beta
          */
         removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (asyncResult: CommonAPI.AsyncResultStatus) => void): void;
+    }
+    /**
+     * Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised. 
+     * 
+     * [Api set: Mailbox Preview] 
+     */ 
+    export interface EnhancedLocationsChangedEventArgs { 
+        /** 
+         * Gets the set of enhanced locations. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        enhancedLocations: LocationDetails[]; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        type: "olkEnhancedLocationsChanged"; 
     }
     /**
      * Represents a collection of entities found in an email message or appointment. Read mode only.
@@ -8498,6 +8568,25 @@ export declare namespace Office {
         replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
+     * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event. 
+     * 
+     * [Api set: Mailbox Preview] 
+     */ 
+    export interface OfficeThemeChangedEventArgs { 
+        /** 
+         * Gets the updated Office theme. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        officeTheme: CommonAPI.OfficeTheme; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox Preview] 
+         */ 
+        type: "officeThemeChanged"; 
+    }
+    /**
      * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. 
      * This object provides a method to get the organizer value of an appointment in an Outlook add-in.
      * 
@@ -8745,6 +8834,50 @@ export declare namespace Office {
         setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
     }
     /**
+     * Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface RecipientsChangedEventArgs { 
+        /** 
+         * Gets an object that indicates change state of recipients fields. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        changedRecipientsFields: RecipientsChangedFields; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        type: "olkRecipientsChanged"; 
+    } 
+    /**
+     * Represents `RecipientsChangedEventArgs.changedRecipientsFields` object. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface RecipientsChangedFields { 
+        /** 
+         * Gets if optional attendees were changed. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        optionalAttendees: boolean; 
+        /** 
+         * Gets if required attendees were changed. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        requiredAttendees: boolean; 
+        /** 
+         * Gets if resources were changed. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        resources: boolean; 
+    }
+    /**
      * The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of 
      * meeting requests. 
      * It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).
@@ -8933,6 +9066,25 @@ export declare namespace Office {
          *                asyncResult, which is an Office.AsyncResult object.
          */
         setAsync(recurrencePattern: Recurrence, callback?: (asyncResult: CommonAPI.AsyncResult<void>) => void): void;
+    }
+    /**
+     * Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event. 
+     * 
+     * [Api set: Mailbox 1.7] 
+     */ 
+    export interface RecurrenceChangedEventArgs { 
+        /** 
+         * Gets the updated recurrence object. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        recurrence: Recurrence; 
+        /** 
+         * Gets the type of the event. See `Office.EventType` for details. 
+         * 
+         * [Api set: Mailbox 1.7] 
+         */ 
+        type: "olkRecurrenceChanged"; 
     }
     /**
      * Represents the properties of the recurrence.

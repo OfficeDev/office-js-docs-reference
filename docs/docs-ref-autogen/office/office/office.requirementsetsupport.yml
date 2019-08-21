@@ -35,6 +35,8 @@ items:
             - string
   - uid: office.Office.RequirementSetSupport.isSetSupported_1
     summary: Check if the specified requirement set is supported by the host Office application.
+    deprecated:
+      content: Use the string overload of `isSetSupported` instead.
     name: 'isSetSupported(name, minVersionNumber)'
     fullName: 'isSetSupported(name, minVersionNumber)'
     langs:

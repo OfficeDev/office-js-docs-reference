@@ -988,7 +988,7 @@ export declare namespace Office {
 
        /**
         * Check if the specified requirement set is supported by the host Office application.
-        * @deprecated
+        * @deprecated Use the string overload of `isSetSupported` instead.
         * @param name - The requirement set name (e.g., "ExcelApi").
         * @param minVersionNumber - The minimum required version (e.g., 1.4). 
         * Warning: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
@@ -1705,11 +1705,15 @@ export declare namespace Office {
         /**
          * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
          * 
+         * The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`.
+         * 
          * [Api set: Mailbox 1.7]
          */
         AppointmentTimeChanged,
         /**
          * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
          * 
          * [Api set: Mailbox Preview]
          * 
@@ -1736,13 +1740,13 @@ export declare namespace Office {
          */
         BindingSelectionChanged,
         /**
-         * Triggers when Dialog sends a message via MessageParent.
-         */
-        DialogMessageReceived,
-        /**
          * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
          */
         DialogEventReceived,
+        /**
+         * Triggers when Dialog sends a message via MessageParent.
+         */
+        DialogMessageReceived,
         /**
          * Triggers when a document-level selection happens.
          * 
@@ -1752,17 +1756,19 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
+         * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
+         * 
+         * [Api set: Mailbox Preview]
+         */
+        EnhancedLocationsChanged,
+        /**
          * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
          * 
          * [Api set: Mailbox 1.5]
          */
         ItemChanged,
-        /**
-         * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
-         * 
-         * [Api set: Mailbox Preview]
-         */
-        EnhancedLocationsChanged,
         /**
          * Triggers when a customXmlPart node is deleted.
          */
@@ -1778,6 +1784,8 @@ export declare namespace Office {
         /**
          * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
          * 
+         * The event handler receives an argument of type `Office.OfficeThemeChangedEventArgs`.
+         * 
          * [Api set: Mailbox Preview]
          * 
          * @beta
@@ -1786,11 +1794,15 @@ export declare namespace Office {
         /**
          * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
          * 
+         * The event handler receives an argument of type `Office.RecipientsChangedEventArgs`.
+         * 
          * [Api set: Mailbox 1.7]
          */
         RecipientsChanged,
         /**
          * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`.
          * 
          * [Api set: Mailbox 1.7]
          */

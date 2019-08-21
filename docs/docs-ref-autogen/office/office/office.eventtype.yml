@@ -52,6 +52,9 @@ items:
       pane only.
 
 
+      The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`<!-- -->.
+
+
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: AppointmentTimeChanged
     fullName: AppointmentTimeChanged
@@ -61,6 +64,8 @@ items:
   - uid: office.Office.EventType.AttachmentsChanged
     summary: |-
       Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+
+      The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`<!-- -->.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     isPreview: true
@@ -117,6 +122,8 @@ items:
     summary: |-
       Triggers when the appointment location is changed in Outlook. Supported with task pane only.
 
+      The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`<!-- -->.
+
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: EnhancedLocationsChanged
     fullName: EnhancedLocationsChanged
@@ -160,6 +167,8 @@ items:
     summary: |-
       Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
 
+      The event handler receives an argument of type `Office.OfficeThemeChangedEventArgs`<!-- -->.
+
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/javascript-api-for-office) \]
     isPreview: true
     name: OfficeThemeChanged
@@ -173,6 +182,9 @@ items:
       with task pane only.
 
 
+      The event handler receives an argument of type `Office.RecipientsChangedEventArgs`<!-- -->.
+
+
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: RecipientsChanged
     fullName: RecipientsChanged
@@ -182,6 +194,8 @@ items:
   - uid: office.Office.EventType.RecurrenceChanged
     summary: |-
       Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+
+      The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`<!-- -->.
 
       \[ [API set: Mailbox 1.7](/office/dev/add-ins/reference/javascript-api-for-office) \]
     name: RecurrenceChanged

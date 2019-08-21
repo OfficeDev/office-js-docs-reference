@@ -5987,6 +5987,117 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "(AppointmentTimeChangedEventArgs:interface)",
+              "docComment": "/**\n * Provides the current dates and times of the appointment that raised the `Office.EventType.AppointmentTimeChanged` event.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AppointmentTimeChangedEventArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "AppointmentTimeChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "end",
+                  "docComment": "/**\n * Gets the appointment end date and time.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "end"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Date"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "end",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "start",
+                  "docComment": "/**\n * Gets the appointment start date and time.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "start"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Date"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "start",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "type",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkAppointmentTimeChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "(AttachmentContent:interface)",
               "docComment": "/**\n * Represents the content of an attachment on a message or appointment item.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * @beta\n */\n",
               "excerptTokens": [
@@ -6310,6 +6421,129 @@
                   ],
                   "releaseTag": "Public",
                   "name": "url",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(AttachmentsChangedEventArgs:interface)",
+              "docComment": "/**\n * Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.\n *\n * [Api set: Mailbox Preview]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AttachmentsChangedEventArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "AttachmentsChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "attachmentDetails",
+                  "docComment": "/**\n * Represents the set of attachments that were added or removed. For each such attachment, gets a subset of {@link AttachmentDetails} properties: `id`, `name`, `size`, and `attachmentType`.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "attachmentDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "object[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "attachmentDetails",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "attachmentStatus",
+                  "docComment": "/**\n * Gets whether the attachments were added or removed. See {@link MailboxEnums.AttachmentStatus} for details.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "attachmentStatus"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "MailboxEnums"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "AttachmentStatus"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": " | string"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "attachmentStatus",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "type",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkAttachmentsChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3
@@ -10005,6 +10239,92 @@
                     }
                   ],
                   "name": "removeAsync"
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(EnhancedLocationsChangedEventArgs:interface)",
+              "docComment": "/**\n * Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.\n *\n * [Api set: Mailbox Preview]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "EnhancedLocationsChangedEventArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "EnhancedLocationsChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "enhancedLocations",
+                  "docComment": "/**\n * Gets the set of enhanced locations.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "enhancedLocations"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "LocationDetails"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "[]"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "enhancedLocations",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "type",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkEnhancedLocationsChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
                 }
               ],
               "extendsTokenRanges": []
@@ -32648,6 +32968,96 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "(OfficeThemeChangedEventArgs:interface)",
+              "docComment": "/**\n * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.\n *\n * [Api set: Mailbox Preview]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "OfficeThemeChangedEventArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "OfficeThemeChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "officeTheme",
+                  "docComment": "/**\n * Gets the updated Office theme.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "officeTheme"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "CommonAPI"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "."
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "OfficeTheme"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "officeTheme",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "type",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"officeThemeChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "(Organizer:interface)",
               "docComment": "/**\n * Represents the appointment organizer, even if an alias or a delegate was used to create the appointment. This object provides a method to get the organizer value of an appointment in an Outlook add-in.\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose\n */\n",
               "excerptTokens": [
@@ -33751,6 +34161,199 @@
             },
             {
               "kind": "Interface",
+              "canonicalReference": "(RecipientsChangedEventArgs:interface)",
+              "docComment": "/**\n * Provides change status of recipients fields when the `Office.EventType.RecipientsChanged` event is raised.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RecipientsChangedEventArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RecipientsChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "changedRecipientsFields",
+                  "docComment": "/**\n * Gets an object that indicates change state of recipients fields.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "changedRecipientsFields"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "RecipientsChangedFields"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "changedRecipientsFields",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "type",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkRecipientsChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "type",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(RecipientsChangedFields:interface)",
+              "docComment": "/**\n * Represents `RecipientsChangedEventArgs.changedRecipientsFields` object.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RecipientsChangedFields"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RecipientsChangedFields",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "optionalAttendees",
+                  "docComment": "/**\n * Gets if optional attendees were changed.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "optionalAttendees"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "optionalAttendees",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "requiredAttendees",
+                  "docComment": "/**\n * Gets if required attendees were changed.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "requiredAttendees"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "requiredAttendees",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "resources",
+                  "docComment": "/**\n * Gets if resources were changed.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "resources"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "boolean"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "resources",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
               "canonicalReference": "(Recurrence:interface)",
               "docComment": "/**\n * The recurrence object provides methods to get and set the recurrence pattern of appointments but only get the recurrence pattern of meeting requests. It will have a dictionary with the following keys: seriesTime, recurrenceType, recurrenceProperties, and recurrenceTimeZone (optional).\n *\n * [Api set: Mailbox 1.7]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * **States**\n *\n * <table> <tr> <th>State</th> <th>Editable?</th> <th>Viewable?</th> </tr> <tr> <td>Appointment Organizer - Compose Series</td> <td>Yes (setAsync)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Organizer - Compose Instance</td> <td>No (setAsync returns error)</td> <td>Yes (getAsync)</td> </tr> <tr> <td>Appointment Attendee - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Appointment Attendee - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Meeting Request - Read Series</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> <tr> <td>Meeting Request - Read Instance</td> <td>No (setAsync not available)</td> <td>Yes (item.recurrence)</td> </tr> </table>\n */\n",
               "excerptTokens": [
@@ -34333,6 +34936,88 @@
                   ],
                   "releaseTag": "Public",
                   "name": "seriesTime",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                }
+              ],
+              "extendsTokenRanges": []
+            },
+            {
+              "kind": "Interface",
+              "canonicalReference": "(RecurrenceChangedEventArgs:interface)",
+              "docComment": "/**\n * Provides updated recurrence object that raised the `Office.EventType.RecurrenceChanged` event.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "export interface "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "RecurrenceChangedEventArgs"
+                },
+                {
+                  "kind": "Content",
+                  "text": " "
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "RecurrenceChangedEventArgs",
+              "members": [
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "recurrence",
+                  "docComment": "/**\n * Gets the updated recurrence object.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "recurrence"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Reference",
+                      "text": "Recurrence"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "recurrence",
+                  "propertyTypeTokenRange": {
+                    "startIndex": 2,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "kind": "PropertySignature",
+                  "canonicalReference": "type",
+                  "docComment": "/**\n * Gets the type of the event. See `Office.EventType` for details.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "excerptTokens": [
+                    {
+                      "kind": "Reference",
+                      "text": "type"
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ": "
+                    },
+                    {
+                      "kind": "Content",
+                      "text": "\"olkRecurrenceChanged\""
+                    },
+                    {
+                      "kind": "Content",
+                      "text": ";"
+                    }
+                  ],
+                  "releaseTag": "Public",
+                  "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
                     "endIndex": 3

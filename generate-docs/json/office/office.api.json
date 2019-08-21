@@ -15078,7 +15078,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "AppointmentTimeChanged",
-                  "docComment": "/**\n * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15095,7 +15095,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "AttachmentsChanged",
-                  "docComment": "/**\n * Triggers when an attachment is added to or removed from an item. Supported with task pane only.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when an attachment is added to or removed from an item. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15197,7 +15197,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "EnhancedLocationsChanged",
-                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.\n *\n * [Api set: Mailbox Preview]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15282,7 +15282,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "OfficeThemeChanged",
-                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
+                  "docComment": "/**\n * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.OfficeThemeChangedEventArgs`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15299,7 +15299,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "RecipientsChanged",
-                  "docComment": "/**\n * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.RecipientsChangedEventArgs`.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -15316,7 +15316,7 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "RecurrenceChanged",
-                  "docComment": "/**\n * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.\n *\n * [Api set: Mailbox 1.7]\n */\n",
+                  "docComment": "/**\n * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`.\n *\n * [Api set: Mailbox 1.7]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -34106,7 +34106,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(isSetSupported:2)",
-                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @deprecated\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4). Warning: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.\n */\n",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @deprecated\n *\n * Use the string overload of `isSetSupported` instead.\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4). Warning: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
