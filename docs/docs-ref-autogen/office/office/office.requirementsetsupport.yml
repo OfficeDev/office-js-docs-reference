@@ -55,7 +55,7 @@ items:
             - string
         - id: minVersionNumber
           description: >-
-            The minimum required version (e.g., 1.4). Warning: This overload of `isSetSupported` (where
+            The minimum required version (e.g., 1.4). **Warning**: This overload of `isSetSupported` (where
             `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
           type:
             - number

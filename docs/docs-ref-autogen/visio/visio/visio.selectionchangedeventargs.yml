@@ -17,12 +17,10 @@ items:
       #### Examples
 
       ```javascript
-      var eventResult; //Global Variable to store the EventHandlerResult returned on attaching handler.
+      var eventResult; // Global Variable to store the EventHandlerResult returned on attaching handler.
 
-      function AttachHandler()
-      {
-          Visio.run(function(ctx)
-          {
+      function AttachHandler() {
+          Visio.run(session, function(ctx) {
               var doc = ctx.document;
               eventResult = doc.onSelectionChanged.add(
                   function (args) {
@@ -38,22 +36,18 @@ items:
               }
           });
 
-          function onSelectionChanged(args)
-          {
+          function onSelectionChanged(args) {
               console.log(Date.now() + "Selection Changes Event" + JSON.stringify(args));
           }
       }
 
-      function RemoveHandler()
-      {
-          if(!eventResult || !eventResult.context)
-          {
+      function RemoveHandler() {
+          if (!eventResult || !eventResult.context) {
               console.log("Handler has not been attached");
               return;
           }
 
-          Visio.run(eventResult.context, function(ctx)
-          {
+          Visio.run(eventResult.context, function(ctx) {
               eventResult.remove();
               return ctx.sync().then(function (){
                   eventResult = null;

@@ -1022,6 +1022,16 @@ export declare namespace Visio {
          */
         removeOverlay(OverlayId: number): void;
         /**
+         *
+         * Shows particular overlay on the Shape.
+         *
+         * [Api set:  1.1]
+         *
+         * @param overlayId - overlay id in context
+         * @param show - to show or hide
+         */
+        showOverlay(overlayId: number, show: boolean): void;
+        /**
          * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
          *
          * @remarks

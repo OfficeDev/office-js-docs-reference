@@ -991,7 +991,7 @@ export declare namespace Office {
         * @deprecated Use the string overload of `isSetSupported` instead.
         * @param name - The requirement set name (e.g., "ExcelApi").
         * @param minVersionNumber - The minimum required version (e.g., 1.4). 
-        * Warning: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
+        * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
         */
        isSetSupported(name: string, minVersionNumber?: number): boolean;
     }
