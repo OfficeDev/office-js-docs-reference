@@ -34106,7 +34106,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(isSetSupported:2)",
-                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @deprecated\n *\n * Use the string overload of `isSetSupported` instead.\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4). Warning: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.\n */\n",
+                  "docComment": "/**\n * Check if the specified requirement set is supported by the host Office application.\n *\n * @deprecated\n *\n * Use the string overload of `isSetSupported` instead.\n *\n * @param name - The requirement set name (e.g., \"ExcelApi\").\n *\n * @param minVersionNumber - The minimum required version (e.g., 1.4). **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",

@@ -2110,7 +2110,7 @@ export declare namespace Word {
         readonly revisionNumber: string;
         /**
          *
-         * Gets the security of the document. Read only.
+         * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
          *
          * [Api set: WordApi 1.3]
          */
@@ -7460,6 +7460,7 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             body?: Word.Interfaces.BodyUpdateData;
             /**
@@ -7467,6 +7468,7 @@ export declare namespace Word {
             * Gets the properties of the document.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesUpdateData;
         }
@@ -8481,6 +8483,7 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             body?: Word.Interfaces.BodyData;
             /**
@@ -8488,6 +8491,7 @@ export declare namespace Word {
             * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             contentControls?: Word.Interfaces.ContentControlData[];
             /**
@@ -8503,6 +8507,7 @@ export declare namespace Word {
             * Gets the properties of the document. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesData;
             /**
@@ -8510,6 +8515,7 @@ export declare namespace Word {
             * Gets the collection of section objects in the document. Read-only.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             sections?: Word.Interfaces.SectionData[];
             /**
@@ -8525,6 +8531,7 @@ export declare namespace Word {
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
              * [Api set: WordApiHiddenDocument 1.3]
+             * @beta
              */
             saved?: boolean;
         }
@@ -8630,7 +8637,7 @@ export declare namespace Word {
             revisionNumber?: string;
             /**
              *
-             * Gets the security of the document. Read only.
+             * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
              *
              * [Api set: WordApi 1.3]
              */
@@ -10067,6 +10074,7 @@ export declare namespace Word {
             * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             body?: Word.Interfaces.BodyLoadOptions;
             /**
@@ -10074,6 +10082,7 @@ export declare namespace Word {
             * Gets the properties of the document.
             *
             * [Api set: WordApiHiddenDocument 1.3]
+            * @beta
             */
             properties?: Word.Interfaces.DocumentPropertiesLoadOptions;
             /**
@@ -10081,6 +10090,7 @@ export declare namespace Word {
              * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
              *
              * [Api set: WordApiHiddenDocument 1.3]
+             * @beta
              */
             saved?: boolean;
         }
@@ -10185,7 +10195,7 @@ export declare namespace Word {
             revisionNumber?: boolean;
             /**
              *
-             * Gets the security of the document. Read only.
+             * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.
              *
              * [Api set: WordApi 1.3]
              */
