@@ -153,6 +153,7 @@ tryCatch(async () => {
                                 {"name": "Word", "href": "/javascript/api/word?view=word-js-preview"},
                                 {"name": "CommonAPI", "href": "/javascript/api/office?view=common-js"}] as any;
     fsx.writeFileSync(docsDestination + "/toc.yml", jsyaml.safeDump(globalToc));
+    fsx.writeFileSync(docsDestination + "/overview/toc.yml", jsyaml.safeDump(globalToc));
 
     console.log(`Copying docs output files to: ${docsDestination}`);
     // copy docs output to /docs/docs-ref-autogen folder
