@@ -18407,7 +18407,7 @@
                 {
                   "kind": "Property",
                   "canonicalReference": "(security:instance)",
-                  "docComment": "/**\n * Gets the security of the document. Read only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                  "docComment": "/**\n * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.\n *\n * [Api set: WordApi 1.3]\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Content",
@@ -29778,7 +29778,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "body",
-                      "docComment": "/**\n * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -29813,7 +29813,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "body",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -29823,7 +29823,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "contentControls",
-                      "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -29862,7 +29862,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "contentControls",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -29921,7 +29921,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "properties",
-                      "docComment": "/**\n * Gets the properties of the document. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the properties of the document. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -29956,7 +29956,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "properties",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -29966,7 +29966,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "saved",
-                      "docComment": "/**\n * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -29985,7 +29985,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "saved",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -29995,7 +29995,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "sections",
-                      "docComment": "/**\n * Gets the collection of section objects in the document. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the collection of section objects in the document. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -30034,7 +30034,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "sections",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -30146,7 +30146,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "body",
-                      "docComment": "/**\n * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -30181,7 +30181,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "body",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -30191,7 +30191,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "properties",
-                      "docComment": "/**\n * Gets the properties of the document.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the properties of the document.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -30226,7 +30226,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "properties",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -30236,7 +30236,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "saved",
-                      "docComment": "/**\n * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -30255,7 +30255,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "saved",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -30289,7 +30289,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "body",
-                      "docComment": "/**\n * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -30324,7 +30324,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "body",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -30334,7 +30334,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "properties",
-                      "docComment": "/**\n * Gets the properties of the document.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n */\n",
+                      "docComment": "/**\n * Gets the properties of the document.\n *\n * [Api set: WordApiHiddenDocument 1.3]\n *\n * @beta\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -30369,7 +30369,7 @@
                           "text": ";"
                         }
                       ],
-                      "releaseTag": "Public",
+                      "releaseTag": "Beta",
                       "name": "properties",
                       "propertyTypeTokenRange": {
                         "startIndex": 2,
@@ -31369,7 +31369,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "security",
-                      "docComment": "/**\n * Gets the security of the document. Read only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -31915,7 +31915,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "security",
-                      "docComment": "/**\n * Gets the security of the document. Read only.\n *\n * [Api set: WordApi 1.3]\n */\n",
+                      "docComment": "/**\n * Gets security settings of the document. Read only. Some are access restrictions on the file on disk. Others are Document Protection settings. Some possible values are 0 = File on disk is read/write; 1 = Protect Document: File is encrypted and requires a password to open; 2 = Protect Document: Always Open as Read-Only; 3 = Protect Document: Both #1 and #2; 4 = File on disk is read only; 5 = Both #1 and #4; 6 = Both #2 and #4; 7 = All of #1, #2, and #4; 8 = Protect Document: Restrict Edit to read-only; 9 = Both #1 and #8; 10 = Both #2 and #8; 11 = All of #1, #2, and #8; 12 = Both #4 and #8; 13 = All of #1, #4, and #8; 14 = All of #2, #4, and #8; 15 = All of #1, #2, #4, and #8.\n *\n * [Api set: WordApi 1.3]\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",

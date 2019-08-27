@@ -24,6 +24,7 @@ items:
       - visio.Visio.ShapeView.removeOverlay
       - visio.Visio.ShapeView.set
       - visio.Visio.ShapeView.set_1
+      - visio.Visio.ShapeView.showOverlay
       - visio.Visio.ShapeView.toJSON
   - uid: visio.Visio.ShapeView.addOverlay
     summary: |-
@@ -343,6 +344,31 @@ items:
           description: ''
           type:
             - visio.Visio.ShapeView
+  - uid: visio.Visio.ShapeView.showOverlay
+    summary: |-
+      Shows particular overlay on the Shape.
+
+      \[ [API set: 1.1](/office/dev/add-ins/reference/overview/visio-javascript-reference-overview) \]
+    name: 'showOverlay(overlayId, show)'
+    fullName: 'showOverlay(overlayId, show)'
+    langs:
+      - typeScript
+    type: method
+    syntax:
+      content: 'showOverlay(overlayId: number, show: boolean): void;'
+      return:
+        type:
+          - void
+        description: ''
+      parameters:
+        - id: overlayId
+          description: overlay id in context
+          type:
+            - number
+        - id: show
+          description: to show or hide
+          type:
+            - boolean
   - uid: visio.Visio.ShapeView.toJSON
     summary: >-
       Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to
