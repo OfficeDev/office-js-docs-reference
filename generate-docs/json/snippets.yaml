@@ -5940,28 +5940,37 @@ Excel.createWorkbook:
     // read in the file as a data URL so we can parse the base64-encoded string
     reader.readAsDataURL(myFile.files[0]);
 Office.AddinCommands.Event.completed:
-  - |-
-    function processItem (event) {
+  - >-
+    // For the following example, the processItem function is
+
+    // defined in the FunctionFile referenced from the add-in manifest,
+
+    // and maps to the FunctionName of the action in the associated button
+    control.
+
+    // When the user clicks the button, this function runs.
+
+    function processItem(event) {
         // Do some processing
 
         event.completed();
     }
-
-    // In the following example, the checkMessage function has
-    // been registered as an event handler for ItemSend.
+  - |-
+    // For the following example, the checkMessage function was
+    // registered as an event handler for ItemSend.
     function checkMessage(event) {
-        // Get the item being sent
+        // Get the item being sent.
         var outgoingMsg = Office.context.mailbox.item;
 
-        // Check if subject contains "BLOCK"
+        // Check if subject contains "BLOCK".
         outgoingMsg.subject.getAsync(function (result) {
-            // Subject is in result.value
+            // Subject is in `result.value`.
             if (result.value.indexOf('BLOCK') != -1) {
-                // Value is found, stop send
-                event.completed({allowEvent = false});
+                // Value is found, stop send.
+                event.completed({allowEvent: false});
             } else {
-                // Value wasn't found, allow send
-                event.completed({allowEvent = true});
+                // Value wasn't found, allow send.
+                event.completed({allowEvent: true});
             }
         });
     }
