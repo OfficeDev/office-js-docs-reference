@@ -2457,7 +2457,7 @@ Office.AddinCommands.Event.completed:
         // Check if subject contains "BLOCK".
         outgoingMsg.subject.getAsync(function (result) {
             // Subject is in `result.value`.
-            // If value is found then stop send, else allow send.
+            // If search term is found then stop send, else allow send.
             const notFound = -1;
             var allowEvent = (result.value.indexOf('BLOCK') === notFound);
             event.completed({allowEvent: allowEvent});
