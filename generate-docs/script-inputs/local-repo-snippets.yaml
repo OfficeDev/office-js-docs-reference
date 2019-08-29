@@ -9626,6 +9626,25 @@ Office.Mailbox.convertToRestId:
 
     // Convert to a REST ID for the v2.0 version of the Outlook Mail API.
     var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+Office.Mailbox.convertToUtcClientTime:
+  - |-
+    // Represents 3:37 PM PDT on Monday, August 26, 2019.
+    var input = {
+        date: 26,
+        hours: 15,
+        milliseconds: 2,
+        minutes: 37,
+        month: 7,
+        seconds: 2,
+        timezoneOffset: -420,
+        year: 2019
+    };
+
+    // result should be a Date object.
+    var result = Office.context.mailbox.convertToUtcClientTime(input);
+    
+    // Output should be "2019-08-26T22:37:02.002Z".
+    console.log(result.toISOString());
 Office.Mailbox.displayAppointmentForm:
   - |-
     Office.context.mailbox.displayAppointmentForm(appointmentId);
