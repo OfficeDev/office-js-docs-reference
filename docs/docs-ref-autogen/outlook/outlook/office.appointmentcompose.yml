@@ -921,6 +921,7 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+    isPreview: true
     name: 'getItemIdAsync(options, callback)'
     fullName: 'getItemIdAsync(options, callback)'
     langs:
@@ -974,6 +975,7 @@ items:
 
 
       - `ItemNotSaved`<!-- -->: The id can't be retrieved until the item is saved.
+    isPreview: true
     name: getItemIdAsync(callback)
     fullName: getItemIdAsync(callback)
     langs:
