@@ -443,7 +443,7 @@
                     {
                       "kind": "MethodSignature",
                       "canonicalReference": "(completed:0)",
-                      "docComment": "/**\n * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.\n *\n * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook will warn that a function is still executing.\n *\n * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter.\n *\n * @param options - Optional. An object that specifies behavior options for when the event is completed.\n */\n",
+                      "docComment": "/**\n * Indicates that the add-in has completed processing and will automatically be closed.\n *\n * This method must be called at the end of a function which was invoked by the following.\n *\n * - A UI-less button (i.e., an add-in command defined with an Action element where the xsi:type attribute is set to ExecuteFunction)\n *\n * - An {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/event | event} defined in the {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/extensionpoint#events | Events extension point}, e.g., an `ItemSend` event\n *\n * [Api set: Mailbox 1.3]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: Restricted\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read\n *\n * Mailbox 1.3 does not have the `options` parameter while Mailbox Preview does have support for `options` parameter.\n *\n * @param options - Optional. An object that specifies behavior options for when the event is completed.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -551,7 +551,7 @@
                     {
                       "kind": "PropertySignature",
                       "canonicalReference": "allowEvent",
-                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent = false` to cancel sending of the message.\n */\n",
+                      "docComment": "/**\n * A boolean value. When the completed method is used to signal completion of an event handler, this value indicates of the handled event should continue execution or be canceled. For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.\n */\n",
                       "excerptTokens": [
                         {
                           "kind": "Reference",
@@ -15197,14 +15197,14 @@
                 {
                   "kind": "EnumMember",
                   "canonicalReference": "EnhancedLocationsChanged",
-                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Triggers when the appointment location is changed in Outlook. Supported with task pane only.\n *\n * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
                       "text": "EnhancedLocationsChanged"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "EnhancedLocationsChanged",
                   "initializerTokenRange": {
                     "startIndex": 0,

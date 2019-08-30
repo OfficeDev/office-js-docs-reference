@@ -5,6 +5,7 @@ items:
       Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
     name: Office.OfficeThemeChangedEventArgs
     fullName: Office.OfficeThemeChangedEventArgs
     langs:
@@ -19,6 +20,7 @@ items:
       Gets the updated Office theme.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
     name: officeTheme
     fullName: officeTheme
     langs:
@@ -34,6 +36,7 @@ items:
       Gets the type of the event. See `Office.EventType` for details.
 
       \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
     name: type
     fullName: type
     langs:
