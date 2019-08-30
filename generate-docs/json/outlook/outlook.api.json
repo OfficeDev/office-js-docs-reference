@@ -1709,7 +1709,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getItemIdAsync:1)",
-                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n */\n",
+                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1796,7 +1796,7 @@
                     "startIndex": 18,
                     "endIndex": 19
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -1819,7 +1819,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getItemIdAsync:2)",
-                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n */\n",
+                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Appointment Organizer\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -1882,7 +1882,7 @@
                     "startIndex": 12,
                     "endIndex": 13
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -6400,7 +6400,7 @@
                 {
                   "kind": "PropertySignature",
                   "canonicalReference": "url",
-                  "docComment": "/**\n * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.\n *\n * [Api set: Mailbox Preview]\n */\n",
+                  "docComment": "/**\n * Gets the url of the attachment if its type is `MailboxEnums.AttachmentType.Cloud`.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -6419,7 +6419,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "url",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -6432,7 +6432,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(AttachmentsChangedEventArgs:interface)",
-              "docComment": "/**\n * Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.\n *\n * [Api set: Mailbox Preview]\n */\n",
+              "docComment": "/**\n * Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -6447,7 +6447,7 @@
                   "text": " "
                 }
               ],
-              "releaseTag": "Public",
+              "releaseTag": "Beta",
               "name": "AttachmentsChangedEventArgs",
               "members": [
                 {
@@ -6472,7 +6472,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "attachmentDetails",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -6513,7 +6513,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "attachmentStatus",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -6542,7 +6542,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -10246,7 +10246,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(EnhancedLocationsChangedEventArgs:interface)",
-              "docComment": "/**\n * Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.\n *\n * [Api set: Mailbox Preview]\n */\n",
+              "docComment": "/**\n * Provides the current enhanced locations when the `Office.EventType.EnhancedLocationsChanged` event is raised.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -10261,7 +10261,7 @@
                   "text": " "
                 }
               ],
-              "releaseTag": "Public",
+              "releaseTag": "Beta",
               "name": "EnhancedLocationsChangedEventArgs",
               "members": [
                 {
@@ -10290,7 +10290,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "enhancedLocations",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -10319,7 +10319,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -27813,7 +27813,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getItemIdAsync:1)",
-                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n */\n",
+                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param options - An object literal that contains one or more of the following properties. asyncContext: Developers can provide any object they wish to access in the callback method.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -27900,7 +27900,7 @@
                     "startIndex": 18,
                     "endIndex": 19
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 1,
                   "parameters": [
                     {
@@ -27923,7 +27923,7 @@
                 {
                   "kind": "MethodSignature",
                   "canonicalReference": "(getItemIdAsync:2)",
-                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n */\n",
+                  "docComment": "/**\n * Asynchronously gets the ID of a saved item.\n *\n * When invoked, this method returns the item ID via the callback method.\n *\n * **Note**: If your add-in calls `getItemIdAsync` on an item in compose mode (e.g., to get an `itemId` to use with EWS or the REST API), be aware that when Outlook is in cached mode, it may take some time before the item is synced to the server. Until the item is synced, the `itemId` is not recognized and using it returns an error.\n *\n * [Api set: Mailbox Preview]\n *\n * @remarks\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}**: ReadItem\n *\n * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Message Compose\n *\n * **Errors**:\n *\n * - `ItemNotSaved`: The id can't be retrieved until the item is saved.\n *\n * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.\n *\n * @beta\n */\n",
                   "excerptTokens": [
                     {
                       "kind": "Reference",
@@ -27986,7 +27986,7 @@
                     "startIndex": 12,
                     "endIndex": 13
                   },
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "overloadIndex": 2,
                   "parameters": [
                     {
@@ -32969,7 +32969,7 @@
             {
               "kind": "Interface",
               "canonicalReference": "(OfficeThemeChangedEventArgs:interface)",
-              "docComment": "/**\n * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.\n *\n * [Api set: Mailbox Preview]\n */\n",
+              "docComment": "/**\n * Provides the updated Office theme that raised the `Office.EventType.OfficeThemeChanged` event.\n *\n * [Api set: Mailbox Preview]\n *\n * @beta\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -32984,7 +32984,7 @@
                   "text": " "
                 }
               ],
-              "releaseTag": "Public",
+              "releaseTag": "Beta",
               "name": "OfficeThemeChangedEventArgs",
               "members": [
                 {
@@ -33017,7 +33017,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "officeTheme",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,
@@ -33046,7 +33046,7 @@
                       "text": ";"
                     }
                   ],
-                  "releaseTag": "Public",
+                  "releaseTag": "Beta",
                   "name": "type",
                   "propertyTypeTokenRange": {
                     "startIndex": 2,

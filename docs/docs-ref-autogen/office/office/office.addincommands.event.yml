@@ -28,18 +28,19 @@ items:
       - office.Office.AddinCommands.Event.source
   - uid: office.Office.AddinCommands.Event.completed
     summary: >-
-      Indicates that the add-in has completed processing that was triggered by an add-in command button or event
-      handler.
+      Indicates that the add-in has completed processing and will automatically be closed.
 
 
-      This method must be called at the end of a function which was invoked by an add-in command defined with an Action
-      element with an xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the
-      function is complete and that it can clean up any state involved with invoking the function. For example, if the
-      user closes Outlook before this method is called, Outlook will warn that a function is still executing.
+      This method must be called at the end of a function which was invoked by the following.
 
 
-      This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing
-      processing of the event.
+      - A UI-less button (i.e., an add-in command defined with an Action element where the xsi:type attribute is set to
+      ExecuteFunction)
+
+
+      - An [event](https://docs.microsoft.com/office/dev/add-ins/reference/manifest/event) defined in the [Events
+      extension point](https://docs.microsoft.com/office/dev/add-ins/reference/manifest/extensionpoint#events)<!-- -->,
+      e.g., an `ItemSend` event
 
 
       \[ [API set: Mailbox 1.3](/office/dev/add-ins/reference/javascript-api-for-office) \]
@@ -87,7 +88,7 @@ items:
           // Check if subject contains "BLOCK".
           outgoingMsg.subject.getAsync(function (result) {
               // Subject is in `result.value`.
-              // If search term is found then stop send, else allow send.
+              // If search term "BLOCK" is found, don't send message.
               const notFound = -1;
               var allowEvent = (result.value.indexOf('BLOCK') === notFound);
               event.completed({allowEvent: allowEvent});
