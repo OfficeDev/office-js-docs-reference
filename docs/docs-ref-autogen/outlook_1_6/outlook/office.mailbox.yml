@@ -338,6 +338,37 @@ items:
 
       **[Applicable Outlook mode](https://docs.microsoft.com/outlook/add-ins/#extension-points)<!-- -->**: Compose or
       Read
+
+
+      #### Examples
+
+
+      ```javascript
+
+      // Represents 3:37 PM PDT on Monday, August 26, 2019.
+
+      var input = {
+          date: 26,
+          hours: 15,
+          milliseconds: 2,
+          minutes: 37,
+          month: 7,
+          seconds: 2,
+          timezoneOffset: -420,
+          year: 2019
+      };
+
+
+      // result should be a Date object.
+
+      var result = Office.context.mailbox.convertToUtcClientTime(input);
+
+
+      // Output should be "2019-08-26T22:37:02.002Z".
+
+      console.log(result.toISOString());
+
+      ```
     name: convertToUtcClientTime(input)
     fullName: convertToUtcClientTime(input)
     langs:
