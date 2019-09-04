@@ -147,8 +147,15 @@ items:
           - string
   - uid: excel.Excel.Range.autoFill
     summary: >-
-      Fills range from the current range to the destination range. The destination range must extend the source either
-      horizontally or vertically. Discontiguous ranges are not supported.
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
+      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
+      handle). Discontiguous ranges are not supported.
+
+
+      For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -176,8 +183,15 @@ items:
             - excel.Excel.AutoFillType
   - uid: excel.Excel.Range.autoFill_1
     summary: >-
-      Fills range from the current range to the destination range. The destination range must extend the source either
-      horizontally or vertically. Discontiguous ranges are not supported.
+      Fills range from the current range to the destination range using the specified AutoFill logic. The destination
+      range can be null, or can extend the source either horizontally or vertically. If the destination range is null,
+      data is filled out based on the surrounding cells (which is the behavior when double-clicking the UI’s range fill
+      handle). Discontiguous ranges are not supported.
+
+
+      For more information, read [Use AutoFill and Flash
+      Fill](https://support.office.com/article/video-use-autofill-and-flash-fill-2e79a709-c814-4b27-8bc2-c4dc84d49464)<!--
+      -->.
 
 
       \[ [API set: ExcelApi 1.9](/office/dev/add-ins/reference/requirement-sets/excel-api-requirement-sets) \]
@@ -617,9 +631,9 @@ items:
               // NOTE: If no match is found, an ItemNotFound error
               // is thrown when Range.find is evaluated.
               const foundRange = searchRange.find($("#searchText").text(), {
-                  completeMatch: completeMatch,
-                  matchCase: matchCase,
-                  searchDirection: searchDirection
+                  completeMatch: isCompleteMatchToggle,
+                  matchCase: isMatchCaseToggle,
+                  searchDirection: searchDirectionToggle
               });
               
               foundRange.load("address");
@@ -669,9 +683,9 @@ items:
               const table = sheet.tables.getItem("ExpensesTable");
               const searchRange = table.getRange();
               const foundRange = searchRange.findOrNullObject($("#searchText").text(), {
-                  completeMatch: completeMatch,
-                  matchCase: matchCase,
-                  searchDirection: searchDirection
+                  completeMatch: isCompleteMatchToggle,
+                  matchCase: isMatchCaseToggle,
+                  searchDirection: searchDirectionToggle
               });
               
               foundRange.load("address");

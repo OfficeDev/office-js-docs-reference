@@ -670,7 +670,6 @@ export declare namespace Office {
          * **{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}**: Compose or Read
          */
         export interface Event {
-            
             /**
              * Information about the control that triggered calling this function.
              * 
@@ -679,15 +678,17 @@ export declare namespace Office {
              * This property is only supported in Outlook in {@link https://docs.microsoft.com/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets | requirement set} Mailbox 1.3 and later.
              */
             source:Source;
+            
             /**
-             * Indicates that the add-in has completed processing that was triggered by an add-in command button or event handler.
+             * Indicates that the add-in has completed processing and will automatically be closed.
              * 
-             * This method must be called at the end of a function which was invoked by an add-in command defined with an Action element with an 
-             * xsi:type attribute set to ExecuteFunction. Calling this method signals the host client that the function is complete and that it can 
-             * clean up any state involved with invoking the function. For example, if the user closes Outlook before this method is called, Outlook 
-             * will warn that a function is still executing.
+             * This method must be called at the end of a function which was invoked by the following.
              * 
-             * This method must be called in an event handler added via Office.context.mailbox.addHandlerAsync after completing processing of the event.
+             * - A UI-less button (i.e., an add-in command defined with an Action element where the xsi:type attribute is set to ExecuteFunction)
+             * 
+             * - An {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/event | event} defined in the
+             * {@link https://docs.microsoft.com/office/dev/add-ins/reference/manifest/extensionpoint#events | Events extension point},
+             * e.g., an `ItemSend` event
              * 
              * [Api set: Mailbox 1.3]
              *
@@ -711,7 +712,7 @@ export declare namespace Office {
             /**
              * A boolean value. When the completed method is used to signal completion of an event handler, 
              * this value indicates of the handled event should continue execution or be canceled. 
-             * For example, an add-in that handles the `ItemSend` event can set `allowEvent = false` to cancel sending of the message.
+             * For example, an add-in that handles the `ItemSend` event can set `allowEvent` to `false` to cancel sending of the message.
              */
             allowEvent: boolean;
         }
@@ -976,15 +977,24 @@ export declare namespace Office {
     }
 
     /**
-     * Provides information about what Requirement Sets are supported in current environment.
+     * Provides information about which Requirement Sets are supported in the current environment.
      */
     export interface RequirementSetSupport {
-        /**
+       /**
         * Check if the specified requirement set is supported by the host Office application.
-        * @param name - Set name; e.g., "MatrixBindings".
-        * @param minVersion - The minimum required version; e.g., "1.4". Note: String type is recommended data type for this parameter. The use of number type is deprecated and will not be compatible with recent requirement sets.
+        * @param name - The requirement set name (e.g., "ExcelApi").
+        * @param minVersion - The minimum required version (e.g., "1.4").
         */
-       isSetSupported(name: string, minVersion?: string | number): boolean;
+       isSetSupported(name: string, minVersion?: string): boolean;
+
+       /**
+        * Check if the specified requirement set is supported by the host Office application.
+        * @deprecated Use the string overload of `isSetSupported` instead.
+        * @param name - The requirement set name (e.g., "ExcelApi").
+        * @param minVersionNumber - The minimum required version (e.g., 1.4). 
+        * **Warning**: This overload of `isSetSupported` (where `minVersionNumber` is a number) is deprecated. Use the string overload of `isSetSupported` instead.
+        */
+       isSetSupported(name: string, minVersionNumber?: number): boolean;
     }
 
     /**
@@ -1696,11 +1706,15 @@ export declare namespace Office {
         /**
          * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
          * 
+         * The event handler receives an argument of type `Office.AppointmentTimeChangedEventArgs`.
+         * 
          * [Api set: Mailbox 1.7]
          */
         AppointmentTimeChanged,
         /**
          * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.AttachmentsChangedEventArgs`.
          * 
          * [Api set: Mailbox Preview]
          * 
@@ -1727,13 +1741,13 @@ export declare namespace Office {
          */
         BindingSelectionChanged,
         /**
-         * Triggers when Dialog sends a message via MessageParent.
-         */
-        DialogMessageReceived,
-        /**
          * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
          */
         DialogEventReceived,
+        /**
+         * Triggers when Dialog sends a message via MessageParent.
+         */
+        DialogMessageReceived,
         /**
          * Triggers when a document-level selection happens.
          * 
@@ -1743,17 +1757,21 @@ export declare namespace Office {
          */
         DocumentSelectionChanged,
         /**
+         * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.EnhancedLocationsChangedEventArgs`.
+         * 
+         * [Api set: Mailbox Preview]
+         * 
+         * @beta
+         */
+        EnhancedLocationsChanged,
+        /**
          * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
          * 
          * [Api set: Mailbox 1.5]
          */
         ItemChanged,
-        /**
-         * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
-         * 
-         * [Api set: Mailbox Preview]
-         */
-        EnhancedLocationsChanged,
         /**
          * Triggers when a customXmlPart node is deleted.
          */
@@ -1769,6 +1787,8 @@ export declare namespace Office {
         /**
          * Triggers when the OfficeTheme is changed in Outlook. Supported with task pane only.
          * 
+         * The event handler receives an argument of type `Office.OfficeThemeChangedEventArgs`.
+         * 
          * [Api set: Mailbox Preview]
          * 
          * @beta
@@ -1777,11 +1797,15 @@ export declare namespace Office {
         /**
          * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
          * 
+         * The event handler receives an argument of type `Office.RecipientsChangedEventArgs`.
+         * 
          * [Api set: Mailbox 1.7]
          */
         RecipientsChanged,
         /**
          * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
+         * 
+         * The event handler receives an argument of type `Office.RecurrenceChangedEventArgs`.
          * 
          * [Api set: Mailbox 1.7]
          */

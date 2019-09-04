@@ -48,10 +48,14 @@ items:
             uid: outlook.Office.AppointmentCompose
           - name: AppointmentRead
             uid: outlook.Office.AppointmentRead
+          - name: AppointmentTimeChangedEventArgs
+            uid: outlook.Office.AppointmentTimeChangedEventArgs
           - name: AttachmentContent
             uid: outlook.Office.AttachmentContent
           - name: AttachmentDetails
             uid: outlook.Office.AttachmentDetails
+          - name: AttachmentsChangedEventArgs
+            uid: outlook.Office.AttachmentsChangedEventArgs
           - name: Body
             uid: outlook.Office.Body
           - name: Categories
@@ -72,6 +76,8 @@ items:
             uid: outlook.Office.EmailUser
           - name: EnhancedLocation
             uid: outlook.Office.EnhancedLocation
+          - name: EnhancedLocationsChangedEventArgs
+            uid: outlook.Office.EnhancedLocationsChangedEventArgs
           - name: Entities
             uid: outlook.Office.Entities
           - name: From
@@ -102,14 +108,22 @@ items:
             uid: outlook.Office.NotificationMessageDetails
           - name: NotificationMessages
             uid: outlook.Office.NotificationMessages
+          - name: OfficeThemeChangedEventArgs
+            uid: outlook.Office.OfficeThemeChangedEventArgs
           - name: Organizer
             uid: outlook.Office.Organizer
           - name: PhoneNumber
             uid: outlook.Office.PhoneNumber
           - name: Recipients
             uid: outlook.Office.Recipients
+          - name: RecipientsChangedEventArgs
+            uid: outlook.Office.RecipientsChangedEventArgs
+          - name: RecipientsChangedFields
+            uid: outlook.Office.RecipientsChangedFields
           - name: Recurrence
             uid: outlook.Office.Recurrence
+          - name: RecurrenceChangedEventArgs
+            uid: outlook.Office.RecurrenceChangedEventArgs
           - name: RecurrenceProperties
             uid: outlook.Office.RecurrenceProperties
           - name: RecurrenceTimeZone

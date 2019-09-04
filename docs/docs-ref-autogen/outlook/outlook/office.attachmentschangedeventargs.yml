@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+items:
+  - uid: outlook.Office.AttachmentsChangedEventArgs
+    summary: |-
+      Provides information about the attachments that raised the `Office.EventType.AttachmentsChanged` event.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: Office.AttachmentsChangedEventArgs
+    fullName: Office.AttachmentsChangedEventArgs
+    langs:
+      - typeScript
+    type: interface
+    package: outlook
+    children:
+      - outlook.Office.AttachmentsChangedEventArgs.attachmentDetails
+      - outlook.Office.AttachmentsChangedEventArgs.attachmentStatus
+      - outlook.Office.AttachmentsChangedEventArgs.type
+  - uid: outlook.Office.AttachmentsChangedEventArgs.attachmentDetails
+    summary: >-
+      Represents the set of attachments that were added or removed. For each such attachment, gets a subset of 
+      properties: `id`<!-- -->, `name`<!-- -->, `size`<!-- -->, and `attachmentType`<!-- -->.
+
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: attachmentDetails
+    fullName: attachmentDetails
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentDetails: object[];'
+      return:
+        type:
+          - 'object[]'
+  - uid: outlook.Office.AttachmentsChangedEventArgs.attachmentStatus
+    summary: |-
+      Gets whether the attachments were added or removed. See  for details.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: attachmentStatus
+    fullName: attachmentStatus
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'attachmentStatus: MailboxEnums.AttachmentStatus | string;'
+      return:
+        type:
+          - MailboxEnums.AttachmentStatus | string
+  - uid: outlook.Office.AttachmentsChangedEventArgs.type
+    summary: |-
+      Gets the type of the event. See `Office.EventType` for details.
+
+      \[ [API set: Mailbox Preview](/office/dev/add-ins/reference/requirement-sets/outlook-api-requirement-sets) \]
+    isPreview: true
+    name: type
+    fullName: type
+    langs:
+      - typeScript
+    type: property
+    syntax:
+      content: 'type: "olkAttachmentsChanged";'
+      return:
+        type:
+          - '"olkAttachmentsChanged"'
