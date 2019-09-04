@@ -2439,28 +2439,28 @@ Excel.WorksheetProtection.unprotect:
 
 Office.AddinCommands.Event.completed:
   - |-
-    function processItem (event) {
+    // For the following example, the processItem function is
+    // defined in the FunctionFile referenced from the add-in manifest,
+    // and maps to the FunctionName of the action in the associated button control.
+    function processItem(event) {
         // Do some processing
 
         event.completed();
     }
-
-    // In the following example, the checkMessage function has
-    // been registered as an event handler for ItemSend.
+  - |-
+    // For the following example, the checkMessage function was
+    // registered as an event handler for ItemSend.
     function checkMessage(event) {
-        // Get the item being sent
+        // Get the item being sent.
         var outgoingMsg = Office.context.mailbox.item;
 
-        // Check if subject contains "BLOCK"
+        // Check if subject contains "BLOCK".
         outgoingMsg.subject.getAsync(function (result) {
-            // Subject is in result.value
-            if (result.value.indexOf('BLOCK') != -1) {
-                // Value is found, stop send
-                event.completed({allowEvent = false});
-            } else {
-                // Value wasn't found, allow send
-                event.completed({allowEvent = true});
-            }
+            // Subject is in `result.value`.
+            // If search term "BLOCK" is found, don't send message.
+            const notFound = -1;
+            var allowEvent = (result.value.indexOf('BLOCK') === notFound);
+            event.completed({allowEvent: allowEvent});
         });
     }
 Office.AddinCommands.Event.source:
@@ -9100,16 +9100,21 @@ Office.AttachmentContent.format:
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-        if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
-            // Handle file attachment.
-        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
-            // Handle email item attachment.
-        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
-            // Handle .icalender attachment.
-        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
-            // Handle cloud attachment.
-        } else {
-            // Handle attachment formats that are not supported.
+        switch (result.value.format) {
+            case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                // Handle file attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                // Handle email item attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                // Handle .icalender attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Url:
+                // Handle cloud attachment.
+                break;
+            default:
+                // Handle attachment formats that are not supported.
         }
     }
 Office.AttachmentDetails:
@@ -9459,16 +9464,21 @@ Office.Item.getAttachmentContentAsync:
 
     function handleAttachmentsCallback(result) {
         // Parse string to be a url, an .eml file, a base64-encoded string, or an .icalendar file.
-        if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Base64) {
-            // Handle file attachment.
-        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Eml) {
-            // Handle email item attachment.
-        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.ICalendar) {
-            // Handle .icalender attachment.
-        } else if (result.value.format === Office.MailboxEnums.AttachmentContentFormat.Url) {
-            // Handle cloud attachment.
-        } else {
-            // Handle attachment formats that are not supported.
+        switch (result.value.format) {
+            case Office.MailboxEnums.AttachmentContentFormat.Base64:
+                // Handle file attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Eml:
+                // Handle email item attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.ICalendar:
+                // Handle .icalender attachment.
+                break;
+            case Office.MailboxEnums.AttachmentContentFormat.Url:
+                // Handle cloud attachment.
+                break;
+            default:
+                // Handle attachment formats that are not supported.
         }
     }
 Office.Item.getInitializationContextAsync_1:
@@ -9626,6 +9636,25 @@ Office.Mailbox.convertToRestId:
 
     // Convert to a REST ID for the v2.0 version of the Outlook Mail API.
     var restId = Office.context.mailbox.convertToRestId(ewsId, Office.MailboxEnums.RestVersion.v2_0);
+Office.Mailbox.convertToUtcClientTime:
+  - |-
+    // Represents 3:37 PM PDT on Monday, August 26, 2019.
+    var input = {
+        date: 26,
+        hours: 15,
+        milliseconds: 2,
+        minutes: 37,
+        month: 7,
+        seconds: 2,
+        timezoneOffset: -420,
+        year: 2019
+    };
+
+    // result should be a Date object.
+    var result = Office.context.mailbox.convertToUtcClientTime(input);
+    
+    // Output should be "2019-08-26T22:37:02.002Z".
+    console.log(result.toISOString());
 Office.Mailbox.displayAppointmentForm:
   - |-
     Office.context.mailbox.displayAppointmentForm(appointmentId);
@@ -11107,12 +11136,10 @@ Visio.PageView.zoom:
     });
 Visio.SelectionChangedEventArgs:
   - |-
-    var eventResult; //Global Variable to store the EventHandlerResult returned on attaching handler.
+    var eventResult; // Global Variable to store the EventHandlerResult returned on attaching handler.
     
-    function AttachHandler()
-    {
-        Visio.run(function(ctx)
-        {
+    function AttachHandler() {
+        Visio.run(session, function(ctx) {
             var doc = ctx.document;
             eventResult = doc.onSelectionChanged.add(
                 function (args) {
@@ -11128,22 +11155,18 @@ Visio.SelectionChangedEventArgs:
             }
         });
     
-        function onSelectionChanged(args)
-        {
+        function onSelectionChanged(args) {
             console.log(Date.now() + "Selection Changes Event" + JSON.stringify(args));
         }
     }
     
-    function RemoveHandler()
-    {
-        if(!eventResult || !eventResult.context)
-        {
+    function RemoveHandler() {
+        if (!eventResult || !eventResult.context) {
             console.log("Handler has not been attached");
             return;
         }
     
-        Visio.run(eventResult.context, function(ctx)
-        {
+        Visio.run(eventResult.context, function(ctx) {
             eventResult.remove();
             return ctx.sync().then(function (){
                 eventResult = null;
