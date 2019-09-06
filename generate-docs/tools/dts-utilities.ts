@@ -232,7 +232,8 @@ function buildFieldLink(relativePath: string, className: string, field: FieldStr
             const wordStartIndex = Math.max(
                 field.declarationString.lastIndexOf("(", paramIndex),
                 field.declarationString.lastIndexOf(" ", paramIndex)) + 1;
-            parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace("?", "").replace("_", "-") + "-";
+            // Remove the variable modifiers for the link.
+            parameterLink += "-" + field.declarationString.substring(wordStartIndex, paramIndex).replace("?", "").replace("_", "-").replace("...", "") + "-";
             paramIndex = field.declarationString.indexOf(":", paramIndex + 1);
         }
 
